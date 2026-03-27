@@ -97,11 +97,11 @@ export const theme: ThemeData = {
   --blue-800: #1e40af !important;
   --blue-900: #1e3a8a !important;
   --blur-background: color-mix(in srgb, #1e1e1e 65%, transparent) linear-gradient(#1e1e1e, color-mix(in srgb, #1e1e1e 65%, transparent)) !important;
+  --bold-weight: 600 !important;
   --callout-blend-mode: normal;
   --callout-gap: 0.5rem;
   --callout-margin: 5px;
   --callout-min-width: 200px;
-  --callout-title-weight: 600;
   --canvas-background: #1a1e24 !important;
   --canvas-card-label-color: #666 !important;
   --checkbox-border-color: #666 !important;
@@ -398,7 +398,6 @@ export const theme: ThemeData = {
   --h6-size: 1.12em !important;
   --h6-weight: 700 !important;
   --heading-formatting: #666 !important;
-  --heading-spacing: 2.5rem !important;
   --highlight: rgba(255, 255, 255, 0.075) !important;
   --highlight-mix-blend-mode: normal !important;
   --hr-color: #d6ba7c !important;
@@ -476,7 +475,6 @@ export const theme: ThemeData = {
             0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
             0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.075) !important;
-  --metadata-input-height: 28px !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.075) !important;
   --metadata-label-text-color: #bababa !important;
   --metadata-label-text-color-hover: #bababa !important;
@@ -599,7 +597,6 @@ export const theme: ThemeData = {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
             0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
             0px 15px 30px rgba(0, 0, 0, 0.3) !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --sky-100: #e0f2fe !important;
   --sky-200: #bae6fd !important;
   --sky-300: #7dd3fc !important;
@@ -723,7 +720,6 @@ export const theme: ThemeData = {
   --violet-800: #5b21b6 !important;
   --violet-900: #4c1d95 !important;
   --white: #ffffff !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --yellow-100: #fef9c3 !important;
   --yellow-200: #fef08a !important;
   --yellow-300: #fde047 !important;
@@ -789,6 +785,7 @@ html body div#quartz-root {
 
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   background-color: rgb(70, 24, 24);
+  box-shadow: rgb(220, 221, 222) 0px 0px 0px 1px inset;
   color: rgb(220, 221, 222);
   outline: rgb(220, 221, 222) none 0px;
   text-decoration: rgb(220, 221, 222);
@@ -797,6 +794,7 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
 
 html body a.internal.broken {
   background-color: rgb(70, 24, 24);
+  box-shadow: rgb(220, 221, 222) 0px 0px 0px 1px inset;
   color: rgb(102, 102, 102);
   outline: rgb(102, 102, 102) none 0px;
   text-decoration: rgba(139, 108, 239, 0.3);

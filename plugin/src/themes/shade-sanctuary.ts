@@ -9,80 +9,80 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
-  --background: rgb(25, 11, 45) !important;
-  --background-modifier-border: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --background-modifier-border-focus: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --background-modifier-border-hover: color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255)) !important;
-  --background-modifier-form-field: color-mix(in srgb, rgb(25, 11, 45) 80%, #000) !important;
-  --background-modifier-form-field-hover: color-mix(in srgb, rgb(25, 11, 45) 80%, #000) !important;
-  --background-modifier-hover: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --background-primary: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --background-primary-alt: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --background-secondary: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --background-secondary-alt: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --bases-cards-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --bases-cards-cover-background: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --bases-cards-shadow: 0 0 0 1px color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255)) !important;
-  --bases-embed-border-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --bases-group-heading-property-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --bases-table-border-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --bases-table-cell-background-active: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --bases-table-cell-background-disabled: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --bases-table-group-background: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --bases-table-header-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --bases-table-header-background-hover: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --bases-table-header-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --bases-table-summary-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --bases-table-summary-background-hover: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
+  --background: hsl(265, 60%, 11%) !important;
+  --background-modifier-border: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --background-modifier-border-focus: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --background-modifier-border-hover: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
+  --background-modifier-form-field: color-mix(in srgb, hsl(265, 60%, 11%) 80%, #000) !important;
+  --background-modifier-form-field-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, #000) !important;
+  --background-modifier-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --background-primary: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --background-primary-alt: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --background-secondary: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --background-secondary-alt: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --bases-cards-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --bases-cards-cover-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --bases-cards-shadow: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
+  --bases-embed-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --bases-group-heading-property-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --bases-table-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --bases-table-cell-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --bases-table-cell-background-disabled: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --bases-table-group-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --bases-table-header-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --bases-table-header-background-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --bases-table-header-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --bases-table-summary-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --bases-table-summary-background-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
   --black: #000 !important;
   --blue: #437cf3 !important;
   --blue-violet: #6f51f4 !important;
-  --blur-background: color-mix(in srgb, color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) 65%, transparent) linear-gradient(color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)), color-mix(in srgb, color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) 65%, transparent)) !important;
+  --blur-background: color-mix(in srgb, color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)), color-mix(in srgb, color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) 65%, transparent)) !important;
   --bodyFont: "Computer Modern", "Inter", Sans-Serif !important;
-  --canvas-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --canvas-card-label-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --canvas-dot-pattern: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
+  --canvas-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --canvas-card-label-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --canvas-dot-pattern: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
   --caret-color: #faf4ed !important;
-  --checkbox-border-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --checkbox-border-color-hover: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --checkbox-color: rgb(166, 139, 249) !important;
-  --checkbox-marker-color: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --checklist-done-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --code-background: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --code-border-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --code-bracket-background: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --code-comment: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
+  --checkbox-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --checkbox-border-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --checkbox-color: hsl(255, 89.76%, 75.9%) !important;
+  --checkbox-marker-color: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --checklist-done-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --code-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --code-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --code-bracket-background: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --code-comment: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
   --code-normal: #faf4ed !important;
-  --code-punctuation: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
+  --code-punctuation: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
   --codeFont: "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --collapse-icon-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --color-base-00: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --color-base-05: color-mix(in srgb, rgb(25, 11, 45) 40%, #000) !important;
-  --color-base-10: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --color-base-100: color-mix(in srgb, rgb(25, 11, 45) 0%, rgb(196, 153, 255)) !important;
-  --color-base-20: color-mix(in srgb, rgb(25, 11, 45) 80%, #000) !important;
-  --color-base-25: color-mix(in srgb, rgb(25, 11, 45) 80%, #000) !important;
-  --color-base-30: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --color-base-35: color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255)) !important;
-  --color-base-40: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --color-base-50: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --color-base-60: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --color-base-70: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
+  --collapse-icon-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --color-base-00: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --color-base-05: color-mix(in srgb, hsl(265, 60%, 11%) 40%, #000) !important;
+  --color-base-10: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --color-base-100: color-mix(in srgb, hsl(265, 60%, 11%) 0%, hsl(265, 100%, 80%)) !important;
+  --color-base-20: color-mix(in srgb, hsl(265, 60%, 11%) 80%, #000) !important;
+  --color-base-25: color-mix(in srgb, hsl(265, 60%, 11%) 80%, #000) !important;
+  --color-base-30: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --color-base-35: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
+  --color-base-40: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --color-base-50: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --color-base-60: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --color-base-70: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
   --cool-cyan: #43cfea !important;
   --cool-gray: #515768 !important;
   --cyan: #51e1e9 !important;
   --dark: #faf4ed !important;
   --darkgray: #faf4ed !important;
-  --divider-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --dropdown-background: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --dropdown-background-hover: color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255)) !important;
-  --embed-block-shadow-hover: 0 0 0 1px color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)), inset 0 0 0 1px color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --file-header-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --file-header-background-focused: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
+  --divider-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --dropdown-background: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --dropdown-background-hover: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
+  --embed-block-shadow-hover: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)), inset 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --file-header-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --file-header-background-focused: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
   --file-header-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
+  --flair-background: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
   --flair-color: #faf4ed !important;
   --font-callout-theme: "Computer Modern", "Sans-Serif" !important;
   --font-interface: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -91,151 +91,151 @@ export const theme: ThemeData = {
   --font-monospace: "Jetbrains Mono", "Source Code Pro", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: "Jetbrains Mono", "Source Code Pro", monospace !important;
   --font-text: "Computer Modern", "Inter", Sans-Serif !important;
-  --footnote-divider-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --footnote-id-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --footnote-id-color-no-occurrences: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --footnote-input-background-active: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --foreground: rgb(196, 153, 255) !important;
-  --graph-line: color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255)) !important;
-  --graph-node: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --graph-node-unresolved: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
+  --footnote-divider-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --footnote-id-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --footnote-id-color-no-occurrences: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --footnote-input-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --foreground: hsl(265, 100%, 80%) !important;
+  --graph-line: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
+  --graph-node: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --graph-node-unresolved: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
   --graph-text: #faf4ed !important;
-  --gray: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --h1-color: rgb(151, 77, 255) !important;
+  --gray: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --h1-color: hsl(265, 100%, 65%) !important;
   --h1-size: 24px !important;
-  --h2-color: rgb(181, 128, 255) !important;
+  --h2-color: hsl(265, 100%, 75%) !important;
   --h2-size: 22px !important;
-  --h3-color: rgb(196, 153, 255) !important;
+  --h3-color: hsl(265, 100%, 80%) !important;
   --h3-size: 20px !important;
-  --h4-color: rgb(196, 153, 255) !important;
+  --h4-color: hsl(265, 100%, 80%) !important;
   --h4-size: 18px !important;
-  --h5-color: rgb(225, 204, 255) !important;
+  --h5-color: hsl(265, 100%, 90%) !important;
   --h5-size: 17px !important;
-  --h6-color: rgb(240, 229, 255) !important;
+  --h6-color: hsl(265, 100%, 95%) !important;
   --h6-size: 16px !important;
-  --header-title-color: rgb(151, 77, 255) !important;
+  --header-title-color: hsl(265, 100%, 65%) !important;
   --headerFont: "Computer Modern", "Inter", Sans-Serif !important;
-  --heading-formatting: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --highlight: color-mix(in srgb, rgb(151, 77, 255) 25%, transparent) !important;
+  --heading-formatting: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --highlight: color-mix(in srgb, hsl(265, 100%, 65%) 25%, transparent) !important;
   --hot-red: #e3365e !important;
-  --hr-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
+  --hr-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
   --hue-bg: 265 !important;
   --hue-fg: 265 !important;
-  --icon-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
+  --icon-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
   --icon-color-focused: #faf4ed !important;
-  --icon-color-hover: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --indentation-guide-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --indentation-guide-color-active: color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255)) !important;
-  --inline-title-color: rgb(151, 77, 255) !important;
+  --icon-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --indentation-guide-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --indentation-guide-color-active: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
+  --inline-title-color: hsl(265, 100%, 65%) !important;
   --inline-title-size: 24px !important;
-  --input-date-separator: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --input-placeholder-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --interactive-hover: color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255)) !important;
-  --interactive-normal: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --light: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
+  --input-date-separator: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --input-placeholder-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --interactive-hover: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
+  --interactive-normal: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --light: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
   --light-blue: #54b6f8 !important;
-  --lightgray: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --list-marker-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --list-marker-color-hover: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
+  --lightgray: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --list-marker-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --list-marker-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
   --lum: 11% !important;
   --magenta: #e54f9b !important;
-  --menu-background: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --menu-border-color: color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255)) !important;
-  --metadata-border-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --metadata-divider-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --metadata-input-background-active: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
+  --menu-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --menu-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
+  --metadata-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --metadata-divider-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --metadata-input-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
   --metadata-input-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-text-color: #faf4ed !important;
-  --metadata-label-background-active: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
+  --metadata-label-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
   --metadata-label-font: "Jetbrains Mono", "Inter", Sans-Serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --metadata-label-text-color-hover: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --metadata-property-background-active: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255)) !important;
+  --metadata-label-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --metadata-label-text-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --metadata-property-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
   --mint: #52eea3 !important;
-  --modal-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --modal-border-color: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --nav-collapse-icon-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --nav-collapse-icon-color-collapsed: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
+  --modal-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --modal-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --nav-collapse-icon-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --nav-collapse-icon-color-collapsed: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
   --nav-heading-color: #faf4ed !important;
-  --nav-heading-color-collapsed: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --nav-heading-color-collapsed-hover: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
+  --nav-heading-color-collapsed: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --nav-heading-color-collapsed-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
   --nav-heading-color-hover: #faf4ed !important;
-  --nav-indentation-guide-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --nav-item-background-active: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --nav-item-background-hover: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --nav-item-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
+  --nav-indentation-guide-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --nav-item-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --nav-item-background-hover: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --nav-item-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
   --nav-item-color-active: #faf4ed !important;
   --nav-item-color-hover: #faf4ed !important;
   --nav-item-color-selected: #faf4ed !important;
-  --nav-tag-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --nav-tag-color-active: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --nav-tag-color-hover: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --pdf-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --pdf-page-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --pdf-shadow: 0 0 0 1px color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --pdf-sidebar-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --pill-border-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --pill-border-color-hover: color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255)) !important;
-  --pill-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
+  --nav-tag-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --nav-tag-color-active: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --nav-tag-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --pdf-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --pdf-page-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --pdf-shadow: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --pdf-sidebar-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --pill-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --pill-border-color-hover: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
+  --pill-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
   --pill-color-hover: #faf4ed !important;
-  --pill-color-remove: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --prompt-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --prompt-border-color: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
+  --pill-color-remove: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --prompt-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --prompt-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
   --purple: #c952ed !important;
-  --raised-background: color-mix(in srgb, color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) 65%, transparent) linear-gradient(color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)), color-mix(in srgb, color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) 65%, transparent)) !important;
-  --ribbon-background: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --ribbon-background-collapsed: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
+  --raised-background: color-mix(in srgb, color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) 65%, transparent) linear-gradient(color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)), color-mix(in srgb, color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) 65%, transparent)) !important;
+  --ribbon-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --ribbon-background-collapsed: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
   --sat-bg: 60% !important;
   --sat-fg: 100% !important;
-  --scrollbar-active-thumb-bg: color-mix(in srgb, rgb(25, 11, 45) 80%, rgb(196, 153, 255)) !important;
-  --scrollbar-thumb-bg: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --search-clear-button-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --search-icon-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --search-result-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
+  --scrollbar-active-thumb-bg: color-mix(in srgb, hsl(265, 60%, 11%) 80%, hsl(265, 100%, 80%)) !important;
+  --scrollbar-thumb-bg: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --search-clear-button-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --search-icon-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --search-result-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
   --setting-group-heading-color: #faf4ed !important;
-  --setting-items-background: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --setting-items-border-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --slider-thumb-border-color: color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255)) !important;
-  --slider-track-background: rgb(166, 139, 249) !important;
-  --status-bar-background: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --status-bar-border-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --status-bar-text-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --suggestion-background: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --tab-background-active: color-mix(in srgb, rgb(25, 11, 45) 25%, #000) !important;
-  --tab-container-background: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
+  --setting-items-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --setting-items-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --slider-thumb-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
+  --slider-track-background: hsl(255, 89.76%, 75.9%) !important;
+  --status-bar-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --status-bar-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --status-bar-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --suggestion-background: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --tab-background-active: color-mix(in srgb, hsl(265, 60%, 11%) 25%, #000) !important;
+  --tab-container-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
   --tab-curve: 10px !important;
-  --tab-divider-color: color-mix(in srgb, rgb(25, 11, 45) 95%, rgb(196, 153, 255)) !important;
+  --tab-divider-color: color-mix(in srgb, hsl(265, 60%, 11%) 95%, hsl(265, 100%, 80%)) !important;
   --tab-font-size: 10pt !important;
   --tab-max-width: 300px !important;
-  --tab-outline-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --tab-switcher-background: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in srgb, rgb(25, 11, 45) 50%, #000), transparent) !important;
-  --tab-text-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --tab-text-color-active: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --tab-text-color-focused: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
-  --tab-text-color-focused-active: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
+  --tab-outline-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --tab-switcher-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000), transparent) !important;
+  --tab-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --tab-text-color-active: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --tab-text-color-focused: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
+  --tab-text-color-focused-active: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
   --tab-text-color-focused-active-current: #faf4ed !important;
   --tab-width: 180px !important;
-  --table-add-button-border-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --table-border-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --table-drag-handle-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --table-header-border-color: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
+  --table-add-button-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --table-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --table-drag-handle-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --table-header-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
   --table-header-color: #faf4ed !important;
-  --text-faint: color-mix(in srgb, rgb(25, 11, 45) 60%, rgb(196, 153, 255)) !important;
-  --text-highlight-bg: color-mix(in srgb, rgb(151, 77, 255) 25%, transparent) !important;
-  --text-highlight-bg-active: color-mix(in srgb, rgb(151, 77, 255) 25%, transparent) !important;
-  --text-muted: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
+  --text-faint: color-mix(in srgb, hsl(265, 60%, 11%) 60%, hsl(265, 100%, 80%)) !important;
+  --text-highlight-bg: color-mix(in srgb, hsl(265, 100%, 65%) 25%, transparent) !important;
+  --text-highlight-bg-active: color-mix(in srgb, hsl(265, 100%, 65%) 25%, transparent) !important;
+  --text-muted: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
   --text-normal: #faf4ed !important;
-  --textHighlight: color-mix(in srgb, rgb(151, 77, 255) 25%, transparent) !important;
-  --title-color: rgb(151, 77, 255) !important;
+  --textHighlight: color-mix(in srgb, hsl(265, 100%, 65%) 25%, transparent) !important;
+  --title-color: hsl(265, 100%, 65%) !important;
   --titleFont: "Computer Modern", "Inter", Sans-Serif !important;
-  --titlebar-background: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --titlebar-background-focused: color-mix(in srgb, rgb(25, 11, 45) 50%, #000) !important;
-  --titlebar-border-color: color-mix(in srgb, rgb(25, 11, 45) 90%, rgb(196, 153, 255)) !important;
-  --titlebar-text-color: color-mix(in srgb, rgb(25, 11, 45) 30%, rgb(196, 153, 255)) !important;
+  --titlebar-background: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --titlebar-background-focused: color-mix(in srgb, hsl(265, 60%, 11%) 50%, #000) !important;
+  --titlebar-border-color: color-mix(in srgb, hsl(265, 60%, 11%) 90%, hsl(265, 100%, 80%)) !important;
+  --titlebar-text-color: color-mix(in srgb, hsl(265, 60%, 11%) 30%, hsl(265, 100%, 80%)) !important;
   --titlebar-text-color-focused: #faf4ed !important;
   --unified-heading-space: 10px !important;
   --vault-profile-color: #faf4ed !important;
@@ -652,6 +652,407 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(250, 244, 237);
   text-decoration: rgb(250, 244, 237);
   text-decoration-color: rgb(250, 244, 237);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(166, 138, 249);
+  content: " ";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M3.25 1A2.25 2.25 0 0 1 4 5.372v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.251 2.251 0 0 1 3.25 1Zm9.5 14a2.25 2.25 0 1 1 0-4.5 2.25 2.25 0 0 1 0 4.5ZM2.5 3.25a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0ZM3.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm9.5 0a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM14 7.5a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm0-4.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M5.45 5.154A4.25 4.25 0 0 0 9.25 7.5h1.378a2.251 2.251 0 1 1 0 1.5H9.25A5.734 5.734 0 0 1 5 7.123v3.505a2.25 2.25 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.95-.218ZM4.25 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm8.5-4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM5 3.25a.75.75 0 1 0 0 .005V3.25Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.02475 0.011 0.044);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
   font-weight: 400;
@@ -1029,21 +1430,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: color(srgb 0.566367 0.4332 0.7528);
   font-family: "??", "Jetbrains Mono", Inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: color(srgb 0.566367 0.4332 0.7528);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: color(srgb 0.566367 0.4332 0.7528);
-  font-family: "??", "Jetbrains Mono", Inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: color(srgb 0.566367 0.4332 0.7528);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: color(srgb 0.232533 0.1552 0.3408);
-  border-bottom-color: rgb(250, 244, 237);
-  border-left-color: rgb(250, 244, 237);
-  border-right-color: rgb(250, 244, 237);
-  border-top-color: rgb(250, 244, 237);
-  color: rgb(250, 244, 237);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: color(srgb 0.566367 0.4332 0.7528);
@@ -1378,6 +1764,155 @@ html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(171, 171, 171);
   text-decoration: line-through 1px rgb(171, 171, 171);
   text-decoration-color: rgb(171, 171, 171);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(152, 115, 247);
+  content: " ";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M3.25 1A2.25 2.25 0 0 1 4 5.372v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.251 2.251 0 0 1 3.25 1Zm9.5 14a2.25 2.25 0 1 1 0-4.5 2.25 2.25 0 0 1 0 4.5ZM2.5 3.25a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0ZM3.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm9.5 0a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM14 7.5a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm0-4.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M5.45 5.154A4.25 4.25 0 0 0 9.25 7.5h1.378a2.251 2.251 0 1 1 0 1.5H9.25A5.734 5.734 0 0 1 5 7.123v3.505a2.25 2.25 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.95-.218ZM4.25 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm8.5-4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM5 3.25a.75.75 0 1 0 0 .005V3.25Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  color: rgb(152, 115, 247);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
   font-weight: 400;
@@ -1674,10 +2209,6 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  font-family: "??", "Jetbrains Mono", Inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
   font-family: "??", "Jetbrains Mono", Inter, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     footer: `html[saved-theme="light"] body footer {

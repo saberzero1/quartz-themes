@@ -12,7 +12,7 @@ export const theme: ThemeData = {
   --accent-h: 41 !important;
   --accent-l: 100% !important;
   --accent-s: 100% !important;
-  --background-modifier-active-hover: rgba(255, 255, 255, 0.1) !important;
+  --background-modifier-active-hover: hsla(41, 100%, 100%, 0.1) !important;
   --background-modifier-border: #3b3f56 !important;
   --background-modifier-border-focus: #515b71 !important;
   --background-modifier-border-hover: #3b445d !important;
@@ -38,9 +38,9 @@ export const theme: ThemeData = {
   --bases-table-border-color: #3b3f56 !important;
   --bases-table-cell-background-active: #2a3141 !important;
   --bases-table-cell-background-disabled: #222a38 !important;
-  --bases-table-cell-background-selected: rgba(255, 255, 255, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(41, 100%, 100%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #515b71 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(255, 255, 255) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(41, 100%, 100%) !important;
   --bases-table-container-border-radius: 20px !important;
   --bases-table-group-background: #222a38 !important;
   --bases-table-header-background: #2a3141 !important;
@@ -106,7 +106,7 @@ export const theme: ThemeData = {
   --codeFont: Bookerly, Source Han Serif, Noto Serif JP, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: #5f6980 !important;
   --collapse-icon-color-collapsed: hsl(38, 102%, 115%) !important;
-  --color-accent: rgb(255, 255, 255) !important;
+  --color-accent: hsl(41, 100%, 100%) !important;
   --color-accent-1: hsl(38, 102%, 115%) !important;
   --color-accent-2: hsl(36, 105%, 129%) !important;
   --color-accent-hsl: 41, 100%, 100% !important;
@@ -141,11 +141,11 @@ export const theme: ThemeData = {
   --dark: #cdd1df !important;
   --darkgray: #cdd1df !important;
   --divider-color: #3b3f56 !important;
-  --divider-color-hover: rgb(255, 255, 255) !important;
+  --divider-color-hover: hsl(41, 100%, 100%) !important;
   --dropdown-background: #1d232f !important;
   --dropdown-background-hover: #3b445d !important;
   --embed-block-shadow-hover: 0 0 0 1px #3b3f56, inset 0 0 0 1px #3b3f56 !important;
-  --embed-border-start: 2px solid rgb(255, 255, 255) !important;
+  --embed-border-start: 2px solid hsl(41, 100%, 100%) !important;
   --file-header-background: #2a3141 !important;
   --file-header-background-focused: #2a3141 !important;
   --file-header-font: Avenir Next, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -192,7 +192,7 @@ export const theme: ThemeData = {
   --headerFont: Bookerly, Source Han Serif, Noto Serif JP, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-font: 'Merienda' !important;
   --heading-formatting: #5f6980 !important;
-  --highlight: rgba(255, 255, 255, 0.1) !important;
+  --highlight: hsla(41, 100%, 100%, 0.1) !important;
   --hr-color: #3b3f56 !important;
   --icon-color: #8890a6 !important;
   --icon-color-active: hsl(38, 102%, 115%) !important;
@@ -203,7 +203,7 @@ export const theme: ThemeData = {
   --inline-title-weight: normal !important;
   --input-date-separator: #5f6980 !important;
   --input-placeholder-color: #5f6980 !important;
-  --interactive-accent: rgb(255, 255, 255) !important;
+  --interactive-accent: hsl(41, 100%, 100%) !important;
   --interactive-accent-hover: hsl(38, 102%, 115%) !important;
   --interactive-accent-hsl: 41, 100%, 100% !important;
   --interactive-hover: #3b445d !important;
@@ -212,11 +212,11 @@ export const theme: ThemeData = {
   --lightgray: #262b3b !important;
   --link-color: hsl(38, 102%, 115%) !important;
   --link-color-hover: hsl(36, 105%, 129%) !important;
-  --link-decoration-color-active: rgba(255, 255, 255, 0.5) !important;
+  --link-decoration-color-active: hsla(41, 100%, 100%, 0.5) !important;
   --link-external-color: hsl(38, 102%, 115%) !important;
   --link-external-color-hover: hsl(36, 105%, 129%) !important;
   --link-unresolved-color: hsl(38, 102%, 115%) !important;
-  --link-unresolved-decoration-color: rgba(255, 255, 255, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(41, 100%, 100%, 0.3) !important;
   --list-bullet-size: 0.25em !important;
   --list-marker-color: white !important;
   --list-marker-color-collapsed: hsl(38, 102%, 115%) !important;
@@ -242,7 +242,7 @@ export const theme: ThemeData = {
   --nav-heading-color-collapsed: #5f6980 !important;
   --nav-heading-color-collapsed-hover: #8890a6 !important;
   --nav-heading-color-hover: #cdd1df !important;
-  --nav-item-background-selected: rgba(255, 255, 255, 0.15) !important;
+  --nav-item-background-selected: hsla(41, 100%, 100%, 0.15) !important;
   --nav-item-color: #8890a6 !important;
   --nav-item-color-active: #cdd1df !important;
   --nav-item-color-highlighted: hsl(38, 102%, 115%) !important;
@@ -305,7 +305,7 @@ export const theme: ThemeData = {
   --tab-switcher-background: #262b3b !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #262b3b, transparent) !important;
   --tab-switcher-preview-radius: 45px !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(255, 255, 255) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(41, 100%, 100%) !important;
   --tab-text-color: #5f6980 !important;
   --tab-text-color-active: #8890a6 !important;
   --tab-text-color-focused: #8890a6 !important;
@@ -314,17 +314,17 @@ export const theme: ThemeData = {
   --tab-text-color-focused-highlighted: hsl(38, 102%, 115%) !important;
   --table-add-button-border-color: #3b3f56 !important;
   --table-border-color: #3b3f56 !important;
-  --table-drag-handle-background-active: rgb(255, 255, 255) !important;
+  --table-drag-handle-background-active: hsl(41, 100%, 100%) !important;
   --table-drag-handle-color: #5f6980 !important;
   --table-drag-handle-color-active: #2a3141 !important;
   --table-header-border-color: #3b3f56 !important;
   --table-header-color: #cdd1df !important;
-  --table-selection: rgba(255, 255, 255, 0.1) !important;
-  --table-selection-border-color: rgb(255, 255, 255) !important;
+  --table-selection: hsla(41, 100%, 100%, 0.1) !important;
+  --table-selection-border-color: hsl(41, 100%, 100%) !important;
   --tag-background: #262b3b !important;
-  --tag-background-hover: rgba(255, 255, 255, 0.2) !important;
-  --tag-border-color: rgba(255, 255, 255, 0.15) !important;
-  --tag-border-color-hover: rgba(255, 255, 255, 0.15) !important;
+  --tag-background-hover: hsla(41, 100%, 100%, 0.2) !important;
+  --tag-border-color: hsla(41, 100%, 100%, 0.15) !important;
+  --tag-border-color-hover: hsla(41, 100%, 100%, 0.15) !important;
   --tag-border-width: 1px !important;
   --tag-color: hsl(38, 102%, 115%) !important;
   --tag-color-hover: hsl(38, 102%, 115%) !important;
@@ -338,10 +338,10 @@ export const theme: ThemeData = {
   --text-muted: #8890a6 !important;
   --text-normal: #cdd1df !important;
   --text-on-accent: #2a3141 !important;
-  --text-selection: rgba(255, 255, 255, 0.33) !important;
+  --text-selection: hsla(41, 100%, 100%, 0.33) !important;
   --text-success: #a5d18c !important;
   --text-warning: #fbb36c !important;
-  --textHighlight: rgba(255, 255, 255, 0.1) !important;
+  --textHighlight: hsla(41, 100%, 100%, 0.1) !important;
   --titleFont: Bookerly, Source Han Serif, Noto Serif JP, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #262b3b !important;
   --titlebar-background-focused: #1d232f !important;
@@ -1262,24 +1262,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
   color: rgb(136, 144, 166);
   font-family: "??", "Avenir Next", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgb(136, 144, 166);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(136, 144, 166);
-  font-family: "??", "Avenir Next", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(136, 144, 166);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(205, 209, 223);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-left-color: rgb(205, 209, 223);
-  border-right-color: rgb(205, 209, 223);
-  border-top-color: rgb(205, 209, 223);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  color: rgb(205, 209, 223);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(136, 144, 166);

@@ -1992,3 +1992,14 @@ mark {
 .virtual-link.glossary-entry a:hover {
   color: var(--link-color);
 }
+
+/* CALENDAR BASES */
+.bases-calendar-container .fc-scrollgrid {
+  border: 1px solid var(--background-modifier-border);
+}
+.bases-calendar-container .fc-event-main {
+  background: var(--interactive-normal);
+}
+.bases-calendar-container .bases-calendar-event-title {
+  color: var(--text-normal) !important;
+}

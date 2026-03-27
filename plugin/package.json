@@ -37,6 +37,7 @@
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
+    "generate:icons": "tsx scripts/generate-icons.ts",
     "build": "tsup",
     "prepare": "npm run build",
     "dev": "tsup --watch",
@@ -61,6 +62,7 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
+    "@lucide/icons": "^1.7.0",
     "@types/node": "^24.10.0"
   },
   "quartz": {

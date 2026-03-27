@@ -12,103 +12,103 @@ export const theme: ThemeData = {
   --accent-h: 11 !important;
   --accent-l: 50% !important;
   --accent-s: 100% !important;
-  --background-modifier-active-hover: rgb(255, 47, 0) !important;
+  --background-modifier-active-hover: hsla(11, 100%, 50%, 1) !important;
   --background-modifier-border-focus: transparent !important;
   --background-modifier-border-hover: transparent !important;
   --background-modifier-hover: transparent !important;
-  --background-primary: rgb(26, 26, 26) !important;
-  --background-primary-alt: rgb(26, 26, 26) !important;
-  --background-secondary: rgb(26, 26, 26) !important;
-  --background-secondary-alt: rgb(26, 26, 26) !important;
-  --bases-cards-background: rgb(26, 26, 26) !important;
-  --bases-cards-cover-background: rgb(26, 26, 26) !important;
+  --background-primary: hsla(0, 0%, 10%, 1) !important;
+  --background-primary-alt: hsla(0, 0%, 10%, 1) !important;
+  --background-secondary: hsla(0, 0%, 10%, 1) !important;
+  --background-secondary-alt: hsla(0, 0%, 10%, 1) !important;
+  --bases-cards-background: hsla(0, 0%, 10%, 1) !important;
+  --bases-cards-cover-background: hsla(0, 0%, 10%, 1) !important;
   --bases-cards-shadow-hover: 0 0 0 1px transparent !important;
-  --bases-group-heading-property-color: rgb(153, 153, 153) !important;
+  --bases-group-heading-property-color: hsla(0, 0%, 60%, 1) !important;
   --bases-table-border-color: transparent !important;
-  --bases-table-cell-background-active: rgb(26, 26, 26) !important;
-  --bases-table-cell-background-disabled: rgb(26, 26, 26) !important;
-  --bases-table-cell-background-selected: rgba(255, 47, 0, 0.1) !important;
+  --bases-table-cell-background-active: hsla(0, 0%, 10%, 1) !important;
+  --bases-table-cell-background-disabled: hsla(0, 0%, 10%, 1) !important;
+  --bases-table-cell-background-selected: hsla(11, 100%, 50%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px transparent !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(255, 47, 0) !important;
-  --bases-table-group-background: rgb(26, 26, 26) !important;
-  --bases-table-header-background: rgb(26, 26, 26) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(11, 100%, 50%) !important;
+  --bases-table-group-background: hsla(0, 0%, 10%, 1) !important;
+  --bases-table-header-background: hsla(0, 0%, 10%, 1) !important;
   --bases-table-header-background-hover: transparent !important;
-  --bases-table-header-color: rgb(153, 153, 153) !important;
-  --bases-table-summary-background: rgb(26, 26, 26) !important;
+  --bases-table-header-color: hsla(0, 0%, 60%, 1) !important;
+  --bases-table-summary-background: hsla(0, 0%, 10%, 1) !important;
   --bases-table-summary-background-hover: transparent !important;
-  --black-10: rgb(230, 230, 230) !important;
-  --black-100: rgb(0, 0, 0) !important;
-  --black-20: rgb(204, 204, 204) !important;
-  --black-30: rgb(179, 179, 179) !important;
-  --black-40: rgb(153, 153, 153) !important;
-  --black-50: rgb(128, 128, 128) !important;
-  --black-60: rgb(102, 102, 102) !important;
-  --black-70: rgb(77, 77, 77) !important;
-  --black-75: rgb(64, 64, 64) !important;
-  --black-80: rgb(51, 51, 51) !important;
-  --black-85: rgb(38, 38, 38) !important;
-  --black-90: rgb(26, 26, 26) !important;
-  --black-95: rgb(13, 13, 13) !important;
-  --blockquote-border-color: rgb(255, 47, 0) !important;
-  --blur-background: color-mix(in srgb, rgb(51, 51, 51) 65%, transparent) linear-gradient(rgb(51, 51, 51), color-mix(in srgb, rgb(51, 51, 51) 65%, transparent)) !important;
+  --black-10: hsla(0, 0%, 90%, 1) !important;
+  --black-100: hsla(0, 0%, 0%, 1) !important;
+  --black-20: hsla(0, 0%, 80%, 1) !important;
+  --black-30: hsla(0, 0%, 70%, 1) !important;
+  --black-40: hsla(0, 0%, 60%, 1) !important;
+  --black-50: hsla(0, 0%, 50%, 1) !important;
+  --black-60: hsla(0, 0%, 40%, 1) !important;
+  --black-70: hsla(0, 0%, 30%, 1) !important;
+  --black-75: hsla(0, 0%, 25%, 1) !important;
+  --black-80: hsla(0, 0%, 20%, 1) !important;
+  --black-85: hsla(0, 0%, 15%, 1) !important;
+  --black-90: hsla(0, 0%, 10%, 1) !important;
+  --black-95: hsla(0, 0%, 5%, 1) !important;
+  --blockquote-border-color: hsl(11, 100%, 50%) !important;
+  --blur-background: color-mix(in srgb, hsla(0, 0%, 20%, 1) 65%, transparent) linear-gradient(hsla(0, 0%, 20%, 1), color-mix(in srgb, hsla(0, 0%, 20%, 1) 65%, transparent)) !important;
   --bodyFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --button-radius: 8px !important;
   --callout-border-width: 2px;
   --callout-radius: 8px;
-  --canvas-background: rgb(26, 26, 26) !important;
-  --canvas-card-label-color: rgb(128, 128, 128) !important;
-  --caret-color: rgb(179, 179, 179) !important;
-  --checkbox-border-color: rgb(102, 102, 102) !important;
-  --checkbox-border-color-hover: rgb(102, 102, 102) !important;
-  --checkbox-color: rgb(0, 0, 0) !important;
-  --checkbox-color-hover: rgb(26, 26, 26) !important;
-  --checkbox-marker-color: rgb(255, 255, 255) !important;
+  --canvas-background: hsla(0, 0%, 10%, 1) !important;
+  --canvas-card-label-color: hsla(0, 0%, 50%, 1) !important;
+  --caret-color: hsla(0, 0%, 70%, 1) !important;
+  --checkbox-border-color: hsla(0, 0%, 40%, 1) !important;
+  --checkbox-border-color-hover: hsla(0, 0%, 40%, 1) !important;
+  --checkbox-color: hsla(0, 0%, 0%, 1) !important;
+  --checkbox-color-hover: hsla(0, 0%, 10%, 1) !important;
+  --checkbox-marker-color: hsla(0, 0%, 100%, 1) !important;
   --checkbox-radius: 8px !important;
   --checkbox-size: 15px !important;
-  --checklist-done-color: rgb(153, 153, 153) !important;
+  --checklist-done-color: hsla(0, 0%, 60%, 1) !important;
   --clickable-icon-radius: 8px !important;
-  --code-background: rgb(51, 51, 51) !important;
+  --code-background: hsla(0, 0%, 20%, 1) !important;
   --code-bracket-background: transparent !important;
-  --code-comment: rgb(128, 128, 128) !important;
-  --code-normal: rgb(204, 204, 204) !important;
-  --code-punctuation: rgb(153, 153, 153) !important;
+  --code-comment: hsla(0, 0%, 50%, 1) !important;
+  --code-normal: hsla(0, 0%, 80%, 1) !important;
+  --code-punctuation: hsla(0, 0%, 60%, 1) !important;
   --codeFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --collapse-icon-color: rgb(128, 128, 128) !important;
-  --collapse-icon-color-collapsed: rgb(255, 47, 0) !important;
-  --color-accent: rgb(255, 47, 0) !important;
+  --collapse-icon-color: hsla(0, 0%, 50%, 1) !important;
+  --collapse-icon-color-collapsed: hsla(11, 100%, 50%, 1) !important;
+  --color-accent: hsl(11, 100%, 50%) !important;
   --color-accent-1: hsl(8, 102%, 57.5%) !important;
   --color-accent-2: hsl(6, 105%, 64.5%) !important;
   --color-accent-hsl: 11, 100%, 50% !important;
-  --dark: rgb(179, 179, 179) !important;
-  --darkgray: rgb(179, 179, 179) !important;
+  --dark: hsla(0, 0%, 70%, 1) !important;
+  --darkgray: hsla(0, 0%, 70%, 1) !important;
   --divider-color: transparent !important;
-  --divider-color-hover: rgb(255, 47, 0) !important;
-  --drag-ghost-background: rgb(255, 255, 255) !important;
-  --drag-ghost-text-color: rgb(204, 204, 204) !important;
-  --dropdown-background: rgb(51, 51, 51) !important;
-  --dropdown-background-hover: rgb(26, 26, 26) !important;
-  --embed-border-start: 2px solid rgb(255, 47, 0) !important;
-  --file-header-background: rgb(26, 26, 26) !important;
-  --file-header-background-focused: rgb(26, 26, 26) !important;
+  --divider-color-hover: hsl(11, 100%, 50%) !important;
+  --drag-ghost-background: hsla(0, 0%, 100%, 1) !important;
+  --drag-ghost-text-color: hsla(0, 0%, 80%, 1) !important;
+  --dropdown-background: hsla(0, 0%, 20%, 1) !important;
+  --dropdown-background-hover: hsla(0, 0%, 10%, 1) !important;
+  --embed-border-start: 2px solid hsl(11, 100%, 50%) !important;
+  --file-header-background: hsla(0, 0%, 10%, 1) !important;
+  --file-header-background-focused: hsla(0, 0%, 10%, 1) !important;
   --file-header-font: "Lato Light", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: rgb(51, 51, 51) !important;
-  --flair-color: rgb(179, 179, 179) !important;
+  --flair-background: hsla(0, 0%, 20%, 1) !important;
+  --flair-color: hsla(0, 0%, 70%, 1) !important;
   --font-interface: "Lato Light", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: "Lato Light" !important;
   --font-mermaid: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-print: "Times New Roman", Times, serif, Arial' !important;
   --font-text: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: "Times New Roman", Times, serif !important;
-  --footnote-id-color: rgb(153, 153, 153) !important;
-  --footnote-id-color-no-occurrences: rgb(128, 128, 128) !important;
+  --footnote-id-color: hsla(0, 0%, 60%, 1) !important;
+  --footnote-id-color-no-occurrences: hsla(0, 0%, 50%, 1) !important;
   --footnote-input-background-active: transparent !important;
-  --graph-node: rgb(153, 153, 153) !important;
-  --graph-node-attachment: rgb(204, 204, 204) !important;
-  --graph-node-focused: rgb(255, 47, 0) !important;
-  --graph-node-tag: rgb(179, 179, 179) !important;
-  --graph-node-unresolved: rgb(128, 128, 128) !important;
-  --graph-text: rgb(179, 179, 179) !important;
-  --gray: rgb(153, 153, 153) !important;
+  --graph-node: hsla(0, 0%, 60%, 1) !important;
+  --graph-node-attachment: hsla(0, 0%, 80%, 1) !important;
+  --graph-node-focused: hsla(11, 100%, 50%, 1) !important;
+  --graph-node-tag: hsla(0, 0%, 70%, 1) !important;
+  --graph-node-unresolved: hsla(0, 0%, 50%, 1) !important;
+  --graph-text: hsla(0, 0%, 70%, 1) !important;
+  --gray: hsla(0, 0%, 60%, 1) !important;
   --h1-line-height: 1.5rem !important;
   --h1-size: 1.5rem !important;
   --h1-weight: 425 !important;
@@ -127,54 +127,54 @@ export const theme: ThemeData = {
   --h6-size: .88rem !important;
   --h6-weight: 375 !important;
   --headerFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: rgb(128, 128, 128) !important;
+  --heading-formatting: hsla(0, 0%, 50%, 1) !important;
   --highlight: transparent !important;
-  --hr-color: rgb(153, 153, 153) !important;
+  --hr-color: hsla(0, 0%, 60%, 1) !important;
   --hr-thickness: 1px !important;
-  --icon-color: rgb(204, 204, 204) !important;
-  --icon-color-active: rgb(255, 255, 255) !important;
-  --icon-color-focused: rgb(255, 255, 255) !important;
-  --icon-color-hover: rgb(255, 255, 255) !important;
+  --icon-color: hsla(0, 0%, 80%, 1) !important;
+  --icon-color-active: hsla(0, 0%, 100%, 1) !important;
+  --icon-color-focused: hsla(0, 0%, 100%, 1) !important;
+  --icon-color-hover: hsla(0, 0%, 100%, 1) !important;
   --inline-title-line-height: 1.5rem !important;
   --inline-title-size: 1.5rem !important;
   --inline-title-weight: 425 !important;
-  --input-date-separator: rgb(128, 128, 128) !important;
-  --input-placeholder-color: rgb(128, 128, 128) !important;
+  --input-date-separator: hsla(0, 0%, 50%, 1) !important;
+  --input-placeholder-color: hsla(0, 0%, 50%, 1) !important;
   --input-radius: 8px !important;
-  --interactive-accent: rgb(255, 47, 0) !important;
+  --interactive-accent: hsl(11, 100%, 50%) !important;
   --interactive-accent-hover: hsl(8, 102%, 57.5%) !important;
   --interactive-accent-hsl: 11, 100%, 50% !important;
-  --interactive-hover: rgb(26, 26, 26) !important;
-  --interactive-normal: rgb(51, 51, 51) !important;
-  --light: rgb(26, 26, 26) !important;
-  --lightgray: rgb(26, 26, 26) !important;
-  --link-color: rgb(179, 179, 179) !important;
-  --link-color-hover: rgb(204, 204, 204) !important;
+  --interactive-hover: hsla(0, 0%, 10%, 1) !important;
+  --interactive-normal: hsla(0, 0%, 20%, 1) !important;
+  --light: hsla(0, 0%, 10%, 1) !important;
+  --lightgray: hsla(0, 0%, 10%, 1) !important;
+  --link-color: hsla(0, 0%, 70%, 1) !important;
+  --link-color-hover: hsla(0, 0%, 80%, 1) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
-  --link-external-color: rgb(179, 179, 179) !important;
-  --link-external-color-hover: rgb(204, 204, 204) !important;
+  --link-external-color: hsla(0, 0%, 70%, 1) !important;
+  --link-external-color-hover: hsla(0, 0%, 80%, 1) !important;
   --link-external-decoration: none !important;
   --link-external-decoration-hover: none !important;
-  --link-unresolved-color: rgb(128, 128, 128) !important;
-  --link-unresolved-decoration-color: rgba(255, 47, 0, 0.3) !important;
+  --link-unresolved-color: hsla(0, 0%, 50%, 1) !important;
+  --link-unresolved-decoration-color: hsla(11, 100%, 50%, 0.3) !important;
   --link-unresolved-opacity: .4 !important;
   --list-bullet-radius: 8px !important;
-  --list-marker-color: rgb(128, 128, 128) !important;
-  --list-marker-color-collapsed: rgb(255, 47, 0) !important;
-  --list-marker-color-hover: rgb(153, 153, 153) !important;
-  --menu-background: rgb(26, 26, 26) !important;
+  --list-marker-color: hsla(0, 0%, 50%, 1) !important;
+  --list-marker-color-collapsed: hsla(11, 100%, 50%, 1) !important;
+  --list-marker-color-hover: hsla(0, 0%, 60%, 1) !important;
+  --menu-background: hsla(0, 0%, 10%, 1) !important;
   --menu-border-color: transparent !important;
-  --metadata-background-color: rgb(51, 51, 51) !important;
+  --metadata-background-color: hsla(0, 0%, 20%, 1) !important;
   --metadata-border-radius: 8px !important;
   --metadata-gap: 2px !important;
   --metadata-input-background-active: transparent !important;
   --metadata-input-font: "Lato Light", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: rgb(179, 179, 179) !important;
+  --metadata-input-text-color: hsla(0, 0%, 70%, 1) !important;
   --metadata-label-background-active: transparent !important;
   --metadata-label-font: "Lato Light", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: rgb(153, 153, 153) !important;
-  --metadata-label-text-color-hover: rgb(153, 153, 153) !important;
+  --metadata-label-text-color: hsla(0, 0%, 60%, 1) !important;
+  --metadata-label-text-color-hover: hsla(0, 0%, 60%, 1) !important;
   --metadata-padding: 2px !important;
   --metadata-property-background-active: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px transparent !important;
@@ -182,139 +182,139 @@ export const theme: ThemeData = {
   --metadata-property-radius: 8px !important;
   --metadata-property-radius-hover: 8px !important;
   --metadata-property-radius-hover-focus: 8px !important;
-  --modal-background: rgb(26, 26, 26) !important;
+  --modal-background: hsla(0, 0%, 10%, 1) !important;
   --modal-radius: 8px !important;
-  --nav-collapse-icon-color: rgb(204, 204, 204) !important;
-  --nav-collapse-icon-color-collapsed: rgb(255, 255, 255) !important;
-  --nav-heading-color: rgb(204, 204, 204) !important;
-  --nav-heading-color-colapsed-hover: rgb(255, 255, 255) !important;
-  --nav-heading-color-collapsed: rgb(204, 204, 204) !important;
-  --nav-heading-color-collapsed-hover: rgb(153, 153, 153) !important;
-  --nav-heading-color-hover: rgb(230, 230, 230) !important;
+  --nav-collapse-icon-color: hsla(0, 0%, 80%, 1) !important;
+  --nav-collapse-icon-color-collapsed: hsla(0, 0%, 100%, 1) !important;
+  --nav-heading-color: hsla(0, 0%, 80%, 1) !important;
+  --nav-heading-color-colapsed-hover: hsla(0, 0%, 100%, 1) !important;
+  --nav-heading-color-collapsed: hsla(0, 0%, 80%, 1) !important;
+  --nav-heading-color-collapsed-hover: hsla(0, 0%, 60%, 1) !important;
+  --nav-heading-color-hover: hsla(0, 0%, 90%, 1) !important;
   --nav-heading-weight: 425 !important;
-  --nav-indentation-guide-color: rgb(102, 102, 102) !important;
-  --nav-item-background-active: rgb(38, 38, 38) !important;
-  --nav-item-background-hover: rgb(38, 38, 38) !important;
-  --nav-item-background-selected: rgb(38, 38, 38) !important;
-  --nav-item-color: rgb(204, 204, 204) !important;
-  --nav-item-color-active: rgb(255, 255, 255) !important;
-  --nav-item-color-highlighted: rgb(230, 230, 230) !important;
-  --nav-item-color-hover: rgb(230, 230, 230) !important;
-  --nav-item-color-selected: rgb(255, 255, 255) !important;
+  --nav-indentation-guide-color: hsla(0, 0%, 40%, 1) !important;
+  --nav-item-background-active: hsla(0, 0%, 15%, 1) !important;
+  --nav-item-background-hover: hsla(0, 0%, 15%, 1) !important;
+  --nav-item-background-selected: hsla(0, 0%, 15%, 1) !important;
+  --nav-item-color: hsla(0, 0%, 80%, 1) !important;
+  --nav-item-color-active: hsla(0, 0%, 100%, 1) !important;
+  --nav-item-color-highlighted: hsla(0, 0%, 90%, 1) !important;
+  --nav-item-color-hover: hsla(0, 0%, 90%, 1) !important;
+  --nav-item-color-selected: hsla(0, 0%, 100%, 1) !important;
   --nav-item-weight: 425 !important;
-  --nav-tag-color: rgb(128, 128, 128) !important;
-  --nav-tag-color-active: rgb(153, 153, 153) !important;
-  --nav-tag-color-hover: rgb(153, 153, 153) !important;
-  --orange-10: rgb(51, 9, 0) !important;
-  --orange-100: rgb(255, 234, 229) !important;
-  --orange-20: rgb(102, 19, 0) !important;
-  --orange-30: rgb(153, 28, 0) !important;
-  --orange-40: rgb(204, 37, 0) !important;
-  --orange-50: rgb(255, 47, 0) !important;
-  --orange-60: rgb(255, 88, 51) !important;
-  --orange-70: rgb(255, 130, 102) !important;
-  --orange-80: rgb(255, 172, 153) !important;
-  --orange-90: rgb(255, 213, 204) !important;
-  --pdf-background: rgb(26, 26, 26) !important;
-  --pdf-page-background: rgb(26, 26, 26) !important;
-  --pdf-sidebar-background: rgb(26, 26, 26) !important;
-  --pill-background: rgb(38, 38, 38) !important;
-  --pill-background-hover: rgb(26, 26, 26) !important;
-  --pill-border-color: rgb(38, 38, 38) !important;
-  --pill-border-color-hover: rgb(26, 26, 26) !important;
-  --pill-color: rgb(204, 204, 204) !important;
-  --pill-color-hover: rgb(51, 51, 51) !important;
-  --pill-color-remove: rgb(128, 128, 128) !important;
-  --pill-color-remove-hover: rgb(255, 47, 0) !important;
+  --nav-tag-color: hsla(0, 0%, 50%, 1) !important;
+  --nav-tag-color-active: hsla(0, 0%, 60%, 1) !important;
+  --nav-tag-color-hover: hsla(0, 0%, 60%, 1) !important;
+  --orange-10: hsla(11, 100%, 10%, 1) !important;
+  --orange-100: hsla(11, 100%, 95%, 1) !important;
+  --orange-20: hsla(11, 100%, 20%, 1) !important;
+  --orange-30: hsla(11, 100%, 30%, 1) !important;
+  --orange-40: hsla(11, 100%, 40%, 1) !important;
+  --orange-50: hsla(11, 100%, 50%, 1) !important;
+  --orange-60: hsla(11, 100%, 60%, 1) !important;
+  --orange-70: hsla(11, 100%, 70%, 1) !important;
+  --orange-80: hsla(11, 100%, 80%, 1) !important;
+  --orange-90: hsla(11, 100%, 90%, 1) !important;
+  --pdf-background: hsla(0, 0%, 10%, 1) !important;
+  --pdf-page-background: hsla(0, 0%, 10%, 1) !important;
+  --pdf-sidebar-background: hsla(0, 0%, 10%, 1) !important;
+  --pill-background: hsla(0, 0%, 15%, 1) !important;
+  --pill-background-hover: hsla(0, 0%, 10%, 1) !important;
+  --pill-border-color: hsla(0, 0%, 15%, 1) !important;
+  --pill-border-color-hover: hsla(0, 0%, 10%, 1) !important;
+  --pill-color: hsla(0, 0%, 80%, 1) !important;
+  --pill-color-hover: hsla(0, 0%, 20%, 1) !important;
+  --pill-color-remove: hsla(0, 0%, 50%, 1) !important;
+  --pill-color-remove-hover: hsla(11, 100%, 50%, 1) !important;
   --pill-radius: 8px !important;
-  --prompt-background: rgb(26, 26, 26) !important;
-  --raised-background: color-mix(in srgb, rgb(51, 51, 51) 65%, transparent) linear-gradient(rgb(51, 51, 51), color-mix(in srgb, rgb(51, 51, 51) 65%, transparent)) !important;
-  --ribbon-background: rgb(0, 0, 0) !important;
-  --ribbon-background-collapsed: rgb(0, 0, 0) !important;
-  --scrollbar-active-thumb-bg: rgb(51, 51, 51) !important;
-  --scrollbar-bg-color: rgb(102, 102, 102) !important;
-  --scrollbar-thumb-bg: rgb(102, 102, 102) !important;
-  --search-clear-button-color: rgb(153, 153, 153) !important;
-  --search-icon-color: rgb(204, 204, 204) !important;
-  --search-result-background: rgb(51, 51, 51) !important;
-  --secondary: rgb(255, 47, 0) !important;
-  --setting-group-heading-color: rgb(179, 179, 179) !important;
-  --setting-items-background: rgb(26, 26, 26) !important;
+  --prompt-background: hsla(0, 0%, 10%, 1) !important;
+  --raised-background: color-mix(in srgb, hsla(0, 0%, 20%, 1) 65%, transparent) linear-gradient(hsla(0, 0%, 20%, 1), color-mix(in srgb, hsla(0, 0%, 20%, 1) 65%, transparent)) !important;
+  --ribbon-background: hsla(0, 0%, 0%, 1) !important;
+  --ribbon-background-collapsed: hsla(0, 0%, 0%, 1) !important;
+  --scrollbar-active-thumb-bg: hsla(0, 0%, 20%, 1) !important;
+  --scrollbar-bg-color: hsla(0, 0%, 40%, 1) !important;
+  --scrollbar-thumb-bg: hsla(0, 0%, 40%, 1) !important;
+  --search-clear-button-color: hsla(0, 0%, 60%, 1) !important;
+  --search-icon-color: hsla(0, 0%, 80%, 1) !important;
+  --search-result-background: hsla(0, 0%, 20%, 1) !important;
+  --secondary: hsla(11, 100%, 50%, 1) !important;
+  --setting-group-heading-color: hsla(0, 0%, 70%, 1) !important;
+  --setting-items-background: hsla(0, 0%, 10%, 1) !important;
   --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
   --slider-thumb-border-color: transparent !important;
   --slider-thumb-radius: 10px !important;
-  --slider-track-background: rgb(255, 88, 51) !important;
-  --status-bar-background: rgb(26, 26, 26) !important;
+  --slider-track-background: hsla(11, 100%, 60%, 1) !important;
+  --status-bar-background: hsla(0, 0%, 10%, 1) !important;
   --status-bar-border-color: transparent !important;
-  --status-bar-text-color: rgb(204, 204, 204) !important;
-  --suggestion-background: rgb(26, 26, 26) !important;
+  --status-bar-text-color: hsla(0, 0%, 80%, 1) !important;
+  --suggestion-background: hsla(0, 0%, 10%, 1) !important;
   --swatch-radius: 8px !important;
-  --tab-background-active: rgb(38, 38, 38) !important;
-  --tab-container-background: rgb(26, 26, 26) !important;
+  --tab-background-active: hsla(0, 0%, 15%, 1) !important;
+  --tab-container-background: hsla(0, 0%, 10%, 1) !important;
   --tab-curve: 0px !important;
   --tab-divider-color: transparent !important;
   --tab-outline-color: transparent !important;
   --tab-radius: 8px !important;
   --tab-radius-active: 8px !important;
-  --tab-switcher-background: rgb(26, 26, 26) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(26, 26, 26), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(255, 47, 0) !important;
-  --tab-text-color: rgb(204, 204, 204) !important;
-  --tab-text-color-active: rgb(153, 153, 153) !important;
-  --tab-text-color-focused: rgb(153, 153, 153) !important;
-  --tab-text-color-focused-active: rgb(230, 230, 230) !important;
-  --tab-text-color-focused-active-current: rgb(255, 88, 51) !important;
-  --tab-text-color-focused-highlighted: rgb(255, 88, 51) !important;
-  --table-background-color: rgb(102, 102, 102) !important;
+  --tab-switcher-background: hsla(0, 0%, 10%, 1) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsla(0, 0%, 10%, 1), transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(11, 100%, 50%) !important;
+  --tab-text-color: hsla(0, 0%, 80%, 1) !important;
+  --tab-text-color-active: hsla(0, 0%, 60%, 1) !important;
+  --tab-text-color-focused: hsla(0, 0%, 60%, 1) !important;
+  --tab-text-color-focused-active: hsla(0, 0%, 90%, 1) !important;
+  --tab-text-color-focused-active-current: hsla(11, 100%, 60%, 1) !important;
+  --tab-text-color-focused-highlighted: hsla(11, 100%, 60%, 1) !important;
+  --table-background-color: hsla(0, 0%, 40%, 1) !important;
   --table-border-color: transparent !important;
-  --table-drag-handle-background-active: rgb(255, 47, 0) !important;
-  --table-drag-handle-color: rgb(128, 128, 128) !important;
-  --table-header-background: rgb(38, 38, 38) !important;
-  --table-header-background-hover: rgb(26, 26, 26) !important;
+  --table-drag-handle-background-active: hsl(11, 100%, 50%) !important;
+  --table-drag-handle-color: hsla(0, 0%, 50%, 1) !important;
+  --table-header-background: hsla(0, 0%, 15%, 1) !important;
+  --table-header-background-hover: hsla(0, 0%, 10%, 1) !important;
   --table-header-border-color: transparent !important;
-  --table-header-color: rgb(204, 204, 204) !important;
+  --table-header-color: hsla(0, 0%, 80%, 1) !important;
   --table-header-font: "Lato Light" !important;
   --table-line-height: 2rem !important;
-  --table-selection: rgba(255, 47, 0, 0.1) !important;
-  --table-selection-border-color: rgb(255, 47, 0) !important;
-  --tag-background: rgba(255, 47, 0, 0.1) !important;
-  --tag-background-hover: rgba(255, 47, 0, 0.2) !important;
-  --tag-border-color: rgba(255, 47, 0, 0.15) !important;
-  --tag-border-color-hover: rgba(255, 47, 0, 0.15) !important;
-  --tag-color: rgb(255, 47, 0) !important;
-  --tag-color-hover: rgb(255, 47, 0) !important;
+  --table-selection: hsla(11, 100%, 50%, 0.1) !important;
+  --table-selection-border-color: hsl(11, 100%, 50%) !important;
+  --tag-background: hsla(11, 100%, 50%, 0.1) !important;
+  --tag-background-hover: hsla(11, 100%, 50%, 0.2) !important;
+  --tag-border-color: hsla(11, 100%, 50%, 0.15) !important;
+  --tag-border-color-hover: hsla(11, 100%, 50%, 0.15) !important;
+  --tag-color: hsla(11, 100%, 50%, 1) !important;
+  --tag-color-hover: hsla(11, 100%, 50%, 1) !important;
   --tag-radius: 8px !important;
-  --tertiary: rgb(255, 88, 51) !important;
-  --text-accent: rgb(255, 47, 0) !important;
-  --text-accent-hover: rgb(255, 88, 51) !important;
-  --text-faint: rgb(128, 128, 128) !important;
-  --text-muted: rgb(153, 153, 153) !important;
-  --text-normal: rgb(179, 179, 179) !important;
-  --text-selection: rgba(255, 47, 0, 0.33) !important;
+  --tertiary: hsla(11, 100%, 60%, 1) !important;
+  --text-accent: hsla(11, 100%, 50%, 1) !important;
+  --text-accent-hover: hsla(11, 100%, 60%, 1) !important;
+  --text-faint: hsla(0, 0%, 50%, 1) !important;
+  --text-muted: hsla(0, 0%, 60%, 1) !important;
+  --text-normal: hsla(0, 0%, 70%, 1) !important;
+  --text-selection: hsla(11, 100%, 50%, 0.33) !important;
   --textHighlight: transparent !important;
   --titleFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: rgb(26, 26, 26) !important;
-  --titlebar-background-focused: rgb(26, 26, 26) !important;
-  --titlebar-text-color: rgb(204, 204, 204) !important;
-  --titlebar-text-color-focused: rgb(204, 204, 204) !important;
+  --titlebar-background: hsla(0, 0%, 10%, 1) !important;
+  --titlebar-background-focused: hsla(0, 0%, 10%, 1) !important;
+  --titlebar-text-color: hsla(0, 0%, 80%, 1) !important;
+  --titlebar-text-color-focused: hsla(0, 0%, 80%, 1) !important;
   --toggle-border-width: 1px !important;
   --toggle-s-border-width: 1px !important;
   --vault-profile-actions-display: none !important;
-  --vault-profile-color: rgb(204, 204, 204) !important;
-  --vault-profile-color-hover: rgb(255, 255, 255) !important;
-  --white-10: rgb(26, 26, 26) !important;
-  --white-100: rgb(255, 255, 255) !important;
-  --white-20: rgb(51, 51, 51) !important;
-  --white-30: rgb(77, 77, 77) !important;
-  --white-40: rgb(102, 102, 102) !important;
-  --white-50: rgb(128, 128, 128) !important;
-  --white-60: rgb(153, 153, 153) !important;
-  --white-70: rgb(179, 179, 179) !important;
-  --white-80: rgb(204, 204, 204) !important;
-  --white-85: rgb(217, 217, 217) !important;
-  --white-90: rgb(230, 230, 230) !important;
-  --white-92: rgb(235, 235, 235) !important;
-  --white-96: rgb(245, 245, 245) !important;
+  --vault-profile-color: hsla(0, 0%, 80%, 1) !important;
+  --vault-profile-color-hover: hsla(0, 0%, 100%, 1) !important;
+  --white-10: hsla(0, 0%, 10%, 1) !important;
+  --white-100: hsla(0, 0%, 100%, 1) !important;
+  --white-20: hsla(0, 0%, 20%, 1) !important;
+  --white-30: hsla(0, 0%, 30%, 1) !important;
+  --white-40: hsla(0, 0%, 40%, 1) !important;
+  --white-50: hsla(0, 0%, 50%, 1) !important;
+  --white-60: hsla(0, 0%, 60%, 1) !important;
+  --white-70: hsla(0, 0%, 70%, 1) !important;
+  --white-80: hsla(0, 0%, 80%, 1) !important;
+  --white-85: hsla(0, 0%, 85%, 1) !important;
+  --white-90: hsla(0, 0%, 90%, 1) !important;
+  --white-92: hsla(0, 0%, 92%, 1) !important;
+  --white-96: hsla(0, 0%, 96%, 1) !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -711,6 +711,350 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(179, 179, 179);
   text-decoration: rgb(179, 179, 179);
   text-decoration-color: rgb(179, 179, 179);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(255, 255, 255);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgb(204, 204, 204);
@@ -1107,22 +1451,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   font-family: "??", "Lato Light", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 425;
   text-decoration: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(204, 204, 204);
-  font-family: "??", "Lato Light", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 425;
-  text-decoration: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(38, 38, 38);
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
   font-weight: 425;
@@ -1318,103 +1646,103 @@ html[saved-theme="dark"] body sup {
   --accent-h: 11 !important;
   --accent-l: 50% !important;
   --accent-s: 100% !important;
-  --background-modifier-active-hover: rgb(230, 230, 230) !important;
+  --background-modifier-active-hover: hsla(0, 0%, 90%, 1) !important;
   --background-modifier-border-focus: transparent !important;
   --background-modifier-border-hover: transparent !important;
   --background-modifier-hover: transparent !important;
-  --background-primary: rgb(255, 255, 255) !important;
-  --background-primary-alt: rgb(245, 245, 245) !important;
-  --background-secondary: rgb(255, 255, 255) !important;
-  --background-secondary-alt: rgb(255, 255, 255) !important;
-  --bases-cards-background: rgb(255, 255, 255) !important;
-  --bases-cards-cover-background: rgb(245, 245, 245) !important;
+  --background-primary: hsla(0, 0%, 100%, 1) !important;
+  --background-primary-alt: hsla(0, 0%, 96%, 1) !important;
+  --background-secondary: hsla(0, 0%, 100%, 1) !important;
+  --background-secondary-alt: hsla(0, 0%, 100%, 1) !important;
+  --bases-cards-background: hsla(0, 0%, 100%, 1) !important;
+  --bases-cards-cover-background: hsla(0, 0%, 96%, 1) !important;
   --bases-cards-shadow-hover: 0 0 0 1px transparent !important;
-  --bases-group-heading-property-color: rgb(102, 102, 102) !important;
-  --bases-table-cell-background-active: rgb(255, 255, 255) !important;
-  --bases-table-cell-background-disabled: rgb(245, 245, 245) !important;
-  --bases-table-cell-background-selected: rgba(255, 47, 0, 0.1) !important;
+  --bases-group-heading-property-color: hsla(0, 0%, 40%, 1) !important;
+  --bases-table-cell-background-active: hsla(0, 0%, 100%, 1) !important;
+  --bases-table-cell-background-disabled: hsla(0, 0%, 96%, 1) !important;
+  --bases-table-cell-background-selected: hsla(11, 100%, 50%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px transparent !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(10, 101%, 53.75%) !important;
-  --bases-table-group-background: rgb(245, 245, 245) !important;
-  --bases-table-header-background: rgb(255, 255, 255) !important;
+  --bases-table-group-background: hsla(0, 0%, 96%, 1) !important;
+  --bases-table-header-background: hsla(0, 0%, 100%, 1) !important;
   --bases-table-header-background-hover: transparent !important;
-  --bases-table-header-color: rgb(102, 102, 102) !important;
-  --bases-table-summary-background: rgb(255, 255, 255) !important;
+  --bases-table-header-color: hsla(0, 0%, 40%, 1) !important;
+  --bases-table-summary-background: hsla(0, 0%, 100%, 1) !important;
   --bases-table-summary-background-hover: transparent !important;
-  --black-10: rgb(230, 230, 230) !important;
-  --black-100: rgb(0, 0, 0) !important;
-  --black-20: rgb(204, 204, 204) !important;
-  --black-30: rgb(179, 179, 179) !important;
-  --black-40: rgb(153, 153, 153) !important;
-  --black-50: rgb(128, 128, 128) !important;
-  --black-60: rgb(102, 102, 102) !important;
-  --black-70: rgb(77, 77, 77) !important;
-  --black-75: rgb(64, 64, 64) !important;
-  --black-80: rgb(51, 51, 51) !important;
-  --black-85: rgb(38, 38, 38) !important;
-  --black-90: rgb(26, 26, 26) !important;
-  --black-95: rgb(13, 13, 13) !important;
+  --black-10: hsla(0, 0%, 90%, 1) !important;
+  --black-100: hsla(0, 0%, 0%, 1) !important;
+  --black-20: hsla(0, 0%, 80%, 1) !important;
+  --black-30: hsla(0, 0%, 70%, 1) !important;
+  --black-40: hsla(0, 0%, 60%, 1) !important;
+  --black-50: hsla(0, 0%, 50%, 1) !important;
+  --black-60: hsla(0, 0%, 40%, 1) !important;
+  --black-70: hsla(0, 0%, 30%, 1) !important;
+  --black-75: hsla(0, 0%, 25%, 1) !important;
+  --black-80: hsla(0, 0%, 20%, 1) !important;
+  --black-85: hsla(0, 0%, 15%, 1) !important;
+  --black-90: hsla(0, 0%, 10%, 1) !important;
+  --black-95: hsla(0, 0%, 5%, 1) !important;
   --blockquote-border-color: hsl(10, 101%, 53.75%) !important;
-  --blur-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent) linear-gradient(rgb(255, 255, 255), color-mix(in srgb, rgb(255, 255, 255) 65%, transparent)) !important;
+  --blur-background: color-mix(in srgb, hsla(0, 0%, 100%, 1) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 1), color-mix(in srgb, hsla(0, 0%, 100%, 1) 65%, transparent)) !important;
   --bodyFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --button-radius: 8px !important;
   --callout-border-width: 2px;
   --callout-radius: 8px;
-  --canvas-background: rgb(255, 255, 255) !important;
-  --canvas-card-label-color: rgb(128, 128, 128) !important;
-  --caret-color: rgb(77, 77, 77) !important;
-  --checkbox-border-color: rgb(51, 51, 51) !important;
-  --checkbox-border-color-hover: rgb(77, 77, 77) !important;
-  --checkbox-color: rgb(0, 0, 0) !important;
-  --checkbox-color-hover: rgb(26, 26, 26) !important;
-  --checkbox-marker-color: rgb(255, 255, 255) !important;
+  --canvas-background: hsla(0, 0%, 100%, 1) !important;
+  --canvas-card-label-color: hsla(0, 0%, 50%, 1) !important;
+  --caret-color: hsla(0, 0%, 30%, 1) !important;
+  --checkbox-border-color: hsla(0, 0%, 20%, 1) !important;
+  --checkbox-border-color-hover: hsla(0, 0%, 30%, 1) !important;
+  --checkbox-color: hsla(0, 0%, 0%, 1) !important;
+  --checkbox-color-hover: hsla(0, 0%, 10%, 1) !important;
+  --checkbox-marker-color: hsla(0, 0%, 100%, 1) !important;
   --checkbox-radius: 8px !important;
   --checkbox-size: 15px !important;
-  --checklist-done-color: rgb(102, 102, 102) !important;
+  --checklist-done-color: hsla(0, 0%, 40%, 1) !important;
   --clickable-icon-radius: 8px !important;
-  --code-background: rgb(255, 255, 255) !important;
+  --code-background: hsla(0, 0%, 100%, 1) !important;
   --code-bracket-background: transparent !important;
-  --code-comment: rgb(128, 128, 128) !important;
-  --code-normal: rgb(26, 26, 26) !important;
-  --code-punctuation: rgb(102, 102, 102) !important;
+  --code-comment: hsla(0, 0%, 50%, 1) !important;
+  --code-normal: hsla(0, 0%, 10%, 1) !important;
+  --code-punctuation: hsla(0, 0%, 40%, 1) !important;
   --codeFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --collapse-icon-color: rgb(128, 128, 128) !important;
-  --collapse-icon-color-collapsed: rgb(255, 47, 0) !important;
-  --color-accent: rgb(255, 47, 0) !important;
+  --collapse-icon-color: hsla(0, 0%, 50%, 1) !important;
+  --collapse-icon-color-collapsed: hsla(11, 100%, 50%, 1) !important;
+  --color-accent: hsl(11, 100%, 50%) !important;
   --color-accent-1: hsl(10, 101%, 53.75%) !important;
   --color-accent-2: hsl(8, 102%, 57.5%) !important;
   --color-accent-hsl: 11, 100%, 50% !important;
-  --dark: rgb(77, 77, 77) !important;
-  --darkgray: rgb(77, 77, 77) !important;
+  --dark: hsla(0, 0%, 30%, 1) !important;
+  --darkgray: hsla(0, 0%, 30%, 1) !important;
   --divider-color: transparent !important;
   --divider-color-hover: hsl(10, 101%, 53.75%) !important;
-  --drag-ghost-background: rgb(255, 213, 204) !important;
-  --drag-ghost-text-color: rgb(26, 26, 26) !important;
-  --dropdown-background: rgb(235, 235, 235) !important;
-  --dropdown-background-hover: rgb(255, 255, 255) !important;
+  --drag-ghost-background: hsla(11, 100%, 90%, 1) !important;
+  --drag-ghost-text-color: hsla(0, 0%, 10%, 1) !important;
+  --dropdown-background: hsla(0, 0%, 92%, 1) !important;
+  --dropdown-background-hover: hsla(0, 0%, 100%, 1) !important;
   --embed-block-shadow-hover: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
   --embed-border-start: 2px solid hsl(10, 101%, 53.75%) !important;
-  --file-header-background: rgb(255, 255, 255) !important;
-  --file-header-background-focused: rgb(255, 255, 255) !important;
+  --file-header-background: hsla(0, 0%, 100%, 1) !important;
+  --file-header-background-focused: hsla(0, 0%, 100%, 1) !important;
   --file-header-font: "Lato Light", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --flair-background: rgb(230, 230, 230) !important;
-  --flair-color: rgb(77, 77, 77) !important;
+  --flair-background: hsla(0, 0%, 90%, 1) !important;
+  --flair-color: hsla(0, 0%, 30%, 1) !important;
   --font-interface: "Lato Light", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-theme: "Lato Light" !important;
   --font-mermaid: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-print: "Times New Roman", Times, serif, Arial' !important;
   --font-text: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: "Times New Roman", Times, serif !important;
-  --footnote-id-color: rgb(102, 102, 102) !important;
-  --footnote-id-color-no-occurrences: rgb(128, 128, 128) !important;
+  --footnote-id-color: hsla(0, 0%, 40%, 1) !important;
+  --footnote-id-color-no-occurrences: hsla(0, 0%, 50%, 1) !important;
   --footnote-input-background-active: transparent !important;
-  --graph-node: rgb(51, 51, 51) !important;
-  --graph-node-attachment: rgb(0, 0, 0) !important;
-  --graph-node-focused: rgb(255, 47, 0) !important;
-  --graph-node-tag: rgb(0, 0, 0) !important;
-  --graph-node-unresolved: rgb(128, 128, 128) !important;
-  --graph-text: rgb(77, 77, 77) !important;
-  --gray: rgb(102, 102, 102) !important;
+  --graph-node: hsla(0, 0%, 20%, 1) !important;
+  --graph-node-attachment: hsla(0, 0%, 0%, 1) !important;
+  --graph-node-focused: hsla(11, 100%, 50%, 1) !important;
+  --graph-node-tag: hsla(0, 0%, 0%, 1) !important;
+  --graph-node-unresolved: hsla(0, 0%, 50%, 1) !important;
+  --graph-text: hsla(0, 0%, 30%, 1) !important;
+  --gray: hsla(0, 0%, 40%, 1) !important;
   --h1-line-height: 1.5rem !important;
   --h1-size: 1.5rem !important;
   --h1-weight: 425 !important;
@@ -1433,53 +1761,53 @@ html[saved-theme="dark"] body sup {
   --h6-size: .88rem !important;
   --h6-weight: 375 !important;
   --headerFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: rgb(128, 128, 128) !important;
+  --heading-formatting: hsla(0, 0%, 50%, 1) !important;
   --highlight: transparent !important;
-  --hr-color: rgb(51, 51, 51) !important;
+  --hr-color: hsla(0, 0%, 20%, 1) !important;
   --hr-thickness: 1px !important;
-  --icon-color: rgb(51, 51, 51) !important;
-  --icon-color-active: rgb(0, 0, 0) !important;
-  --icon-color-focused: rgb(26, 26, 26) !important;
-  --icon-color-hover: rgb(26, 26, 26) !important;
+  --icon-color: hsla(0, 0%, 20%, 1) !important;
+  --icon-color-active: hsla(0, 0%, 0%, 1) !important;
+  --icon-color-focused: hsla(0, 0%, 10%, 1) !important;
+  --icon-color-hover: hsla(0, 0%, 10%, 1) !important;
   --inline-title-line-height: 1.5rem !important;
   --inline-title-size: 1.5rem !important;
   --inline-title-weight: 425 !important;
-  --input-date-separator: rgb(128, 128, 128) !important;
-  --input-placeholder-color: rgb(128, 128, 128) !important;
+  --input-date-separator: hsla(0, 0%, 50%, 1) !important;
+  --input-placeholder-color: hsla(0, 0%, 50%, 1) !important;
   --input-radius: 8px !important;
   --interactive-accent: hsl(10, 101%, 53.75%) !important;
   --interactive-accent-hover: hsl(8, 102%, 57.5%) !important;
   --interactive-accent-hsl: 11, 100%, 50% !important;
-  --interactive-hover: rgb(255, 255, 255) !important;
-  --interactive-normal: rgb(230, 230, 230) !important;
-  --light: rgb(255, 255, 255) !important;
-  --lightgray: rgb(255, 255, 255) !important;
-  --link-color: rgb(77, 77, 77) !important;
-  --link-color-hover: rgb(0, 0, 0) !important;
+  --interactive-hover: hsla(0, 0%, 100%, 1) !important;
+  --interactive-normal: hsla(0, 0%, 90%, 1) !important;
+  --light: hsla(0, 0%, 100%, 1) !important;
+  --lightgray: hsla(0, 0%, 100%, 1) !important;
+  --link-color: hsla(0, 0%, 30%, 1) !important;
+  --link-color-hover: hsla(0, 0%, 0%, 1) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
-  --link-external-color: rgb(77, 77, 77) !important;
-  --link-external-color-hover: rgb(0, 0, 0) !important;
+  --link-external-color: hsla(0, 0%, 30%, 1) !important;
+  --link-external-color-hover: hsla(0, 0%, 0%, 1) !important;
   --link-external-decoration: none !important;
   --link-external-decoration-hover: none !important;
-  --link-unresolved-color: rgb(128, 128, 128) !important;
-  --link-unresolved-decoration-color: rgb(51, 51, 51) !important;
+  --link-unresolved-color: hsla(0, 0%, 50%, 1) !important;
+  --link-unresolved-decoration-color: hsla(0, 0%, 20%, 1) !important;
   --link-unresolved-opacity: .5 !important;
   --list-bullet-radius: 8px !important;
-  --list-marker-color: rgb(128, 128, 128) !important;
-  --list-marker-color-collapsed: rgb(255, 47, 0) !important;
-  --list-marker-color-hover: rgb(102, 102, 102) !important;
-  --menu-background: rgb(255, 255, 255) !important;
+  --list-marker-color: hsla(0, 0%, 50%, 1) !important;
+  --list-marker-color-collapsed: hsla(11, 100%, 50%, 1) !important;
+  --list-marker-color-hover: hsla(0, 0%, 40%, 1) !important;
+  --menu-background: hsla(0, 0%, 100%, 1) !important;
   --menu-border-color: transparent !important;
   --metadata-border-radius: 8px !important;
   --metadata-gap: 2px !important;
   --metadata-input-background-active: transparent !important;
   --metadata-input-font: "Lato Light", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-text-color: rgb(77, 77, 77) !important;
+  --metadata-input-text-color: hsla(0, 0%, 30%, 1) !important;
   --metadata-label-background-active: transparent !important;
   --metadata-label-font: "Lato Light", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: rgb(102, 102, 102) !important;
-  --metadata-label-text-color-hover: rgb(102, 102, 102) !important;
+  --metadata-label-text-color: hsla(0, 0%, 40%, 1) !important;
+  --metadata-label-text-color-hover: hsla(0, 0%, 40%, 1) !important;
   --metadata-padding: 2px !important;
   --metadata-property-background-active: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px transparent !important;
@@ -1487,141 +1815,141 @@ html[saved-theme="dark"] body sup {
   --metadata-property-radius: 8px !important;
   --metadata-property-radius-hover: 8px !important;
   --metadata-property-radius-hover-focus: 8px !important;
-  --modal-background: rgb(255, 255, 255) !important;
+  --modal-background: hsla(0, 0%, 100%, 1) !important;
   --modal-border-color: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
   --modal-radius: 8px !important;
-  --nav-collapse-icon-color: rgb(204, 204, 204) !important;
-  --nav-collapse-icon-color-collapsed: rgb(255, 255, 255) !important;
-  --nav-heading-color: rgb(204, 204, 204) !important;
-  --nav-heading-color-colapsed-hover: rgb(255, 255, 255) !important;
-  --nav-heading-color-collapsed: rgb(204, 204, 204) !important;
-  --nav-heading-color-collapsed-hover: rgb(102, 102, 102) !important;
-  --nav-heading-color-hover: rgb(230, 230, 230) !important;
+  --nav-collapse-icon-color: hsla(0, 0%, 80%, 1) !important;
+  --nav-collapse-icon-color-collapsed: hsla(0, 0%, 100%, 1) !important;
+  --nav-heading-color: hsla(0, 0%, 80%, 1) !important;
+  --nav-heading-color-colapsed-hover: hsla(0, 0%, 100%, 1) !important;
+  --nav-heading-color-collapsed: hsla(0, 0%, 80%, 1) !important;
+  --nav-heading-color-collapsed-hover: hsla(0, 0%, 40%, 1) !important;
+  --nav-heading-color-hover: hsla(0, 0%, 90%, 1) !important;
   --nav-heading-weight: 425 !important;
-  --nav-indentation-guide-color: rgb(102, 102, 102) !important;
-  --nav-item-background-active: rgb(51, 51, 51) !important;
-  --nav-item-background-hover: rgb(51, 51, 51) !important;
-  --nav-item-background-selected: rgb(51, 51, 51) !important;
-  --nav-item-color: rgb(204, 204, 204) !important;
-  --nav-item-color-active: rgb(255, 255, 255) !important;
-  --nav-item-color-highlighted: rgb(230, 230, 230) !important;
-  --nav-item-color-hover: rgb(230, 230, 230) !important;
-  --nav-item-color-selected: rgb(255, 255, 255) !important;
+  --nav-indentation-guide-color: hsla(0, 0%, 40%, 1) !important;
+  --nav-item-background-active: hsla(0, 0%, 20%, 1) !important;
+  --nav-item-background-hover: hsla(0, 0%, 20%, 1) !important;
+  --nav-item-background-selected: hsla(0, 0%, 20%, 1) !important;
+  --nav-item-color: hsla(0, 0%, 80%, 1) !important;
+  --nav-item-color-active: hsla(0, 0%, 100%, 1) !important;
+  --nav-item-color-highlighted: hsla(0, 0%, 90%, 1) !important;
+  --nav-item-color-hover: hsla(0, 0%, 90%, 1) !important;
+  --nav-item-color-selected: hsla(0, 0%, 100%, 1) !important;
   --nav-item-weight: 425 !important;
-  --nav-tag-color: rgb(128, 128, 128) !important;
-  --nav-tag-color-active: rgb(102, 102, 102) !important;
-  --nav-tag-color-hover: rgb(102, 102, 102) !important;
-  --orange-10: rgb(51, 9, 0) !important;
-  --orange-100: rgb(255, 234, 229) !important;
-  --orange-20: rgb(102, 19, 0) !important;
-  --orange-30: rgb(153, 28, 0) !important;
-  --orange-40: rgb(204, 37, 0) !important;
-  --orange-50: rgb(255, 47, 0) !important;
-  --orange-60: rgb(255, 88, 51) !important;
-  --orange-70: rgb(255, 130, 102) !important;
-  --orange-80: rgb(255, 172, 153) !important;
-  --orange-90: rgb(255, 213, 204) !important;
-  --pdf-background: rgb(255, 255, 255) !important;
-  --pdf-page-background: rgb(255, 255, 255) !important;
-  --pdf-sidebar-background: rgb(255, 255, 255) !important;
-  --pill-background: rgb(245, 245, 245) !important;
-  --pill-background-hover: rgb(235, 235, 235) !important;
-  --pill-border-color: rgb(230, 230, 230) !important;
-  --pill-border-color-hover: rgb(26, 26, 26) !important;
-  --pill-color: rgb(51, 51, 51) !important;
-  --pill-color-hover: rgb(51, 51, 51) !important;
-  --pill-color-remove: rgb(128, 128, 128) !important;
-  --pill-color-remove-hover: rgb(255, 47, 0) !important;
+  --nav-tag-color: hsla(0, 0%, 50%, 1) !important;
+  --nav-tag-color-active: hsla(0, 0%, 40%, 1) !important;
+  --nav-tag-color-hover: hsla(0, 0%, 40%, 1) !important;
+  --orange-10: hsla(11, 100%, 10%, 1) !important;
+  --orange-100: hsla(11, 100%, 95%, 1) !important;
+  --orange-20: hsla(11, 100%, 20%, 1) !important;
+  --orange-30: hsla(11, 100%, 30%, 1) !important;
+  --orange-40: hsla(11, 100%, 40%, 1) !important;
+  --orange-50: hsla(11, 100%, 50%, 1) !important;
+  --orange-60: hsla(11, 100%, 60%, 1) !important;
+  --orange-70: hsla(11, 100%, 70%, 1) !important;
+  --orange-80: hsla(11, 100%, 80%, 1) !important;
+  --orange-90: hsla(11, 100%, 90%, 1) !important;
+  --pdf-background: hsla(0, 0%, 100%, 1) !important;
+  --pdf-page-background: hsla(0, 0%, 100%, 1) !important;
+  --pdf-sidebar-background: hsla(0, 0%, 100%, 1) !important;
+  --pill-background: hsla(0, 0%, 96%, 1) !important;
+  --pill-background-hover: hsla(0, 0%, 92%, 1) !important;
+  --pill-border-color: hsla(0, 0%, 90%, 1) !important;
+  --pill-border-color-hover: hsla(0, 0%, 10%, 1) !important;
+  --pill-color: hsla(0, 0%, 20%, 1) !important;
+  --pill-color-hover: hsla(0, 0%, 20%, 1) !important;
+  --pill-color-remove: hsla(0, 0%, 50%, 1) !important;
+  --pill-color-remove-hover: hsla(11, 100%, 50%, 1) !important;
   --pill-radius: 8px !important;
-  --prompt-background: rgb(255, 255, 255) !important;
-  --raised-background: color-mix(in srgb, rgb(255, 255, 255) 65%, transparent) linear-gradient(rgb(255, 255, 255), color-mix(in srgb, rgb(255, 255, 255) 65%, transparent)) !important;
-  --ribbon-background: rgb(26, 26, 26) !important;
-  --ribbon-background-collapsed: rgb(26, 26, 26) !important;
-  --scrollbar-active-thumb-bg: rgb(51, 51, 51) !important;
-  --scrollbar-bg-color: rgb(102, 102, 102) !important;
-  --scrollbar-thumb-bg: rgb(102, 102, 102) !important;
-  --search-clear-button-color: rgb(102, 102, 102) !important;
-  --search-icon-color: rgb(51, 51, 51) !important;
-  --search-result-background: rgb(51, 51, 51) !important;
-  --secondary: rgb(255, 47, 0) !important;
-  --setting-group-heading-color: rgb(77, 77, 77) !important;
-  --setting-items-background: rgb(245, 245, 245) !important;
+  --prompt-background: hsla(0, 0%, 100%, 1) !important;
+  --raised-background: color-mix(in srgb, hsla(0, 0%, 100%, 1) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 1), color-mix(in srgb, hsla(0, 0%, 100%, 1) 65%, transparent)) !important;
+  --ribbon-background: hsla(0, 0%, 10%, 1) !important;
+  --ribbon-background-collapsed: hsla(0, 0%, 10%, 1) !important;
+  --scrollbar-active-thumb-bg: hsla(0, 0%, 20%, 1) !important;
+  --scrollbar-bg-color: hsla(0, 0%, 40%, 1) !important;
+  --scrollbar-thumb-bg: hsla(0, 0%, 40%, 1) !important;
+  --search-clear-button-color: hsla(0, 0%, 40%, 1) !important;
+  --search-icon-color: hsla(0, 0%, 20%, 1) !important;
+  --search-result-background: hsla(0, 0%, 20%, 1) !important;
+  --secondary: hsla(11, 100%, 50%, 1) !important;
+  --setting-group-heading-color: hsla(0, 0%, 30%, 1) !important;
+  --setting-items-background: hsla(0, 0%, 96%, 1) !important;
   --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
   --slider-thumb-border-color: transparent !important;
   --slider-thumb-radius: 10px !important;
-  --slider-track-background: rgb(51, 51, 51) !important;
-  --status-bar-background: rgb(38, 38, 38) !important;
+  --slider-track-background: hsla(0, 0%, 20%, 1) !important;
+  --status-bar-background: hsla(0, 0%, 15%, 1) !important;
   --status-bar-border-color: transparent !important;
-  --status-bar-text-color: rgb(204, 204, 204) !important;
-  --suggestion-background: rgb(255, 255, 255) !important;
+  --status-bar-text-color: hsla(0, 0%, 80%, 1) !important;
+  --suggestion-background: hsla(0, 0%, 100%, 1) !important;
   --swatch-radius: 8px !important;
   --swatch-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
-  --tab-background-active: rgb(245, 245, 245) !important;
-  --tab-container-background: rgb(255, 255, 255) !important;
+  --tab-background-active: hsla(0, 0%, 96%, 1) !important;
+  --tab-container-background: hsla(0, 0%, 100%, 1) !important;
   --tab-curve: 0px !important;
   --tab-divider-color: transparent !important;
   --tab-outline-color: transparent !important;
   --tab-radius: 8px !important;
   --tab-radius-active: 8px !important;
-  --tab-switcher-background: rgb(255, 255, 255) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, rgb(255, 255, 255), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(255, 47, 0) !important;
-  --tab-text-color: rgb(51, 51, 51) !important;
-  --tab-text-color-active: rgb(102, 102, 102) !important;
-  --tab-text-color-focused: rgb(102, 102, 102) !important;
-  --tab-text-color-focused-active: rgb(0, 0, 0) !important;
-  --tab-text-color-focused-active-current: rgb(255, 47, 0) !important;
-  --tab-text-color-focused-highlighted: rgb(255, 47, 0) !important;
-  --table-background-color: rgb(51, 51, 51) !important;
+  --tab-switcher-background: hsla(0, 0%, 100%, 1) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsla(0, 0%, 100%, 1), transparent) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(11, 100%, 50%) !important;
+  --tab-text-color: hsla(0, 0%, 20%, 1) !important;
+  --tab-text-color-active: hsla(0, 0%, 40%, 1) !important;
+  --tab-text-color-focused: hsla(0, 0%, 40%, 1) !important;
+  --tab-text-color-focused-active: hsla(0, 0%, 0%, 1) !important;
+  --tab-text-color-focused-active-current: hsla(11, 100%, 50%, 1) !important;
+  --tab-text-color-focused-highlighted: hsla(11, 100%, 50%, 1) !important;
+  --table-background-color: hsla(0, 0%, 20%, 1) !important;
   --table-drag-handle-background-active: hsl(10, 101%, 53.75%) !important;
-  --table-drag-handle-color: rgb(128, 128, 128) !important;
-  --table-drag-handle-color-active: rgb(255, 255, 255) !important;
-  --table-header-background: rgb(245, 245, 245) !important;
-  --table-header-background-hover: rgb(235, 235, 235) !important;
-  --table-header-color: rgb(26, 26, 26) !important;
+  --table-drag-handle-color: hsla(0, 0%, 50%, 1) !important;
+  --table-drag-handle-color-active: hsla(0, 0%, 100%, 1) !important;
+  --table-header-background: hsla(0, 0%, 96%, 1) !important;
+  --table-header-background-hover: hsla(0, 0%, 92%, 1) !important;
+  --table-header-color: hsla(0, 0%, 10%, 1) !important;
   --table-header-font: "Lato Light" !important;
   --table-line-height: 2rem !important;
-  --table-selection: rgba(255, 47, 0, 0.1) !important;
+  --table-selection: hsla(11, 100%, 50%, 0.1) !important;
   --table-selection-border-color: hsl(10, 101%, 53.75%) !important;
-  --tag-background: rgba(255, 47, 0, 0.1) !important;
-  --tag-background-hover: rgba(255, 47, 0, 0.2) !important;
-  --tag-border-color: rgba(255, 47, 0, 0.15) !important;
-  --tag-border-color-hover: rgba(255, 47, 0, 0.15) !important;
-  --tag-color: rgb(255, 47, 0) !important;
-  --tag-color-hover: rgb(255, 47, 0) !important;
+  --tag-background: hsla(11, 100%, 50%, 0.1) !important;
+  --tag-background-hover: hsla(11, 100%, 50%, 0.2) !important;
+  --tag-border-color: hsla(11, 100%, 50%, 0.15) !important;
+  --tag-border-color-hover: hsla(11, 100%, 50%, 0.15) !important;
+  --tag-color: hsla(11, 100%, 50%, 1) !important;
+  --tag-color-hover: hsla(11, 100%, 50%, 1) !important;
   --tag-radius: 8px !important;
-  --tertiary: rgb(255, 88, 51) !important;
-  --text-accent: rgb(255, 47, 0) !important;
-  --text-accent-hover: rgb(255, 88, 51) !important;
-  --text-faint: rgb(128, 128, 128) !important;
-  --text-muted: rgb(102, 102, 102) !important;
-  --text-normal: rgb(77, 77, 77) !important;
-  --text-on-accent: rgb(255, 255, 255) !important;
-  --text-selection: rgba(255, 47, 0, 0.2) !important;
+  --tertiary: hsla(11, 100%, 60%, 1) !important;
+  --text-accent: hsla(11, 100%, 50%, 1) !important;
+  --text-accent-hover: hsla(11, 100%, 60%, 1) !important;
+  --text-faint: hsla(0, 0%, 50%, 1) !important;
+  --text-muted: hsla(0, 0%, 40%, 1) !important;
+  --text-normal: hsla(0, 0%, 30%, 1) !important;
+  --text-on-accent: hsla(0, 0%, 100%, 1) !important;
+  --text-selection: hsla(11, 100%, 50%, 0.2) !important;
   --textHighlight: transparent !important;
   --titleFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --titlebar-background: rgb(255, 255, 255) !important;
-  --titlebar-background-focused: rgb(255, 255, 255) !important;
-  --titlebar-text-color: rgb(26, 26, 26) !important;
-  --titlebar-text-color-focused: rgb(0, 0, 0) !important;
+  --titlebar-background: hsla(0, 0%, 100%, 1) !important;
+  --titlebar-background-focused: hsla(0, 0%, 100%, 1) !important;
+  --titlebar-text-color: hsla(0, 0%, 10%, 1) !important;
+  --titlebar-text-color-focused: hsla(0, 0%, 0%, 1) !important;
   --toggle-border-width: 1px !important;
   --toggle-s-border-width: 1px !important;
   --vault-profile-actions-display: none !important;
-  --vault-profile-color: rgb(230, 230, 230) !important;
-  --vault-profile-color-hover: rgb(255, 255, 255) !important;
-  --white-10: rgb(26, 26, 26) !important;
-  --white-100: rgb(255, 255, 255) !important;
-  --white-20: rgb(51, 51, 51) !important;
-  --white-30: rgb(77, 77, 77) !important;
-  --white-40: rgb(102, 102, 102) !important;
-  --white-50: rgb(128, 128, 128) !important;
-  --white-60: rgb(153, 153, 153) !important;
-  --white-70: rgb(179, 179, 179) !important;
-  --white-80: rgb(204, 204, 204) !important;
-  --white-85: rgb(217, 217, 217) !important;
-  --white-90: rgb(230, 230, 230) !important;
-  --white-92: rgb(235, 235, 235) !important;
-  --white-96: rgb(245, 245, 245) !important;
+  --vault-profile-color: hsla(0, 0%, 90%, 1) !important;
+  --vault-profile-color-hover: hsla(0, 0%, 100%, 1) !important;
+  --white-10: hsla(0, 0%, 10%, 1) !important;
+  --white-100: hsla(0, 0%, 100%, 1) !important;
+  --white-20: hsla(0, 0%, 20%, 1) !important;
+  --white-30: hsla(0, 0%, 30%, 1) !important;
+  --white-40: hsla(0, 0%, 40%, 1) !important;
+  --white-50: hsla(0, 0%, 50%, 1) !important;
+  --white-60: hsla(0, 0%, 60%, 1) !important;
+  --white-70: hsla(0, 0%, 70%, 1) !important;
+  --white-80: hsla(0, 0%, 80%, 1) !important;
+  --white-85: hsla(0, 0%, 85%, 1) !important;
+  --white-90: hsla(0, 0%, 90%, 1) !important;
+  --white-92: hsla(0, 0%, 92%, 1) !important;
+  --white-96: hsla(0, 0%, 96%, 1) !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -2375,22 +2703,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   font-family: "??", "Lato Light", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 425;
   text-decoration: rgb(204, 204, 204);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(204, 204, 204);
-  font-family: "??", "Lato Light", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 425;
-  text-decoration: rgb(204, 204, 204);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(51, 51, 51);
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
   font-weight: 425;

@@ -14,18 +14,18 @@ export const theme: ThemeData = {
   --accent-s: 80% !important;
   --background-grad: linear-gradient(
 			45deg,
-			rgb(0, 0, 0) 0%,
-			rgb(0, 0, 0) 11%,
-			rgb(0, 0, 0) 22%,
-			rgb(0, 0, 0) 33%,
-			rgb(0, 0, 0) 44%,
-			rgb(0, 0, 0) 56%,
-			rgb(0, 0, 0) 67%,
-			rgb(0, 0, 0) 78%,
-			rgb(0, 0, 0) 89%,
-			rgb(0, 0, 0) 100%
+			hsl(240 100% 20%) 0%,
+			hsl(289 100% 21%) 11%,
+			hsl(315 100% 27%) 22%,
+			hsl(329 100% 36%) 33%,
+			hsl(337 100% 43%) 44%,
+			hsl(357 91% 59%) 56%,
+			hsl(17 100% 59%) 67%,
+			hsl(34 100% 53%) 78%,
+			hsl(45 100% 50%) 89%,
+			hsl(55 100% 50%) 100%
 		) !important;
-  --background-modifier-active-hover: rgba(0, 119, 255, 0.15) !important;
+  --background-modifier-active-hover: hsla(212, 100%, 50%, 0.15) !important;
   --background-modifier-border: #282828 !important;
   --background-modifier-border-alt: #303030 !important;
   --background-modifier-border-focus: #555 !important;
@@ -42,13 +42,13 @@ export const theme: ThemeData = {
   --bases-embed-border-color: #282828 !important;
   --bases-group-heading-property-color: #666 !important;
   --bases-table-border-color: #282828 !important;
-  --bases-table-cell-background-selected: rgba(0, 119, 255, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(212, 100%, 50%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #555 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(0, 119, 255) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(212, 100%, 50%) !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.075) !important;
   --bases-table-header-color: #666 !important;
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.075) !important;
-  --blockquote-border-color: rgb(0, 119, 255) !important;
+  --blockquote-border-color: hsl(212, 100%, 50%) !important;
   --blur-background: color-mix(in srgb, #262626 65%, transparent) linear-gradient(#262626, color-mix(in srgb, #262626 65%, transparent)) !important;
   --bodyFont: "Satoshi", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-weight: 600 !important;
@@ -63,7 +63,7 @@ export const theme: ThemeData = {
   --caret-color: #bababa !important;
   --checkbox-border-color: #999 !important;
   --checkbox-border-color-hover: #666 !important;
-  --checkbox-color: rgb(0, 119, 255) !important;
+  --checkbox-color: hsl(212, 100%, 50%) !important;
   --checkbox-color-hover: #FA99CD !important;
   --checklist-done-color: #666 !important;
   --code-border-color: #282828 !important;
@@ -81,12 +81,20 @@ export const theme: ThemeData = {
   --code-value: #A882FF !important;
   --codeFont: "Satoshi", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: #999 !important;
-  --collapse-icon-color-collapsed: rgb(0, 119, 255) !important;
-  --color-accent: rgb(0, 119, 255) !important;
+  --collapse-icon-color-collapsed: hsl(212, 100%, 50%) !important;
+  --color-accent: hsl(212, 100%, 50%) !important;
   --color-accent-1: #FA99CD !important;
   --color-accent-1-rgb: 250, 153, 205 !important;
-  --color-accent-2: rgb(0, 0, 0) !important;
-  --color-accent-hover: rgb(0, 0, 0) !important;
+  --color-accent-2: hsl(
+			254
+			80%
+			71.8%
+		) !important;
+  --color-accent-hover: hsl(
+			254
+			80%
+			71.8%
+		) !important;
   --color-accent-hsl: 212, 100%, 50% !important;
   --color-accent-rgb: 2, 122, 255 !important;
   --color-base-30: #282828 !important;
@@ -115,14 +123,14 @@ export const theme: ThemeData = {
   --dark: #bababa !important;
   --darkgray: #bababa !important;
   --divider-color: #282828 !important;
-  --divider-color-hover: rgb(0, 119, 255) !important;
+  --divider-color-hover: hsl(212, 100%, 50%) !important;
   --dropdown-background: #262626 !important;
   --dropdown-background-hover: #3F3F3F !important;
   --embed-block-shadow-hover: 0 0 0 1px #282828,
         inset 0 0 0 1px #282828 !important;
-  --embed-border-left: 2px solid rgb(0, 119, 255) !important;
+  --embed-border-left: 2px solid hsl(212, 100%, 50%) !important;
   --embed-border-right: none !important;
-  --embed-border-start: 2px solid rgb(0, 119, 255) !important;
+  --embed-border-start: 2px solid hsl(212, 100%, 50%) !important;
   --file-header-font: "Satoshi", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-line-width: 74ch !important;
   --file-margins: 32px !important;
@@ -147,7 +155,7 @@ export const theme: ThemeData = {
   --graph-node: #666 !important;
   --graph-node-attachment: #E0DE71 !important;
   --graph-node-focused: #555 !important;
-  --graph-node-tag: rgb(0, 119, 255) !important;
+  --graph-node-tag: hsl(212, 100%, 50%) !important;
   --graph-node-unresolved: #999 !important;
   --graph-text: #bababa !important;
   --gray: #666 !important;
@@ -168,7 +176,7 @@ export const theme: ThemeData = {
   --highlight: rgb(255 208 0 / 40%) !important;
   --hr-color: #282828 !important;
   --icon-color: #666 !important;
-  --icon-color-active: rgb(0, 119, 255) !important;
+  --icon-color-active: hsl(212, 100%, 50%) !important;
   --icon-color-focused: #bababa !important;
   --icon-color-hover: #666 !important;
   --inline-title-color: #dadada !important;
@@ -179,7 +187,7 @@ export const theme: ThemeData = {
   --input-placeholder-color: #999 !important;
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgb(255 255 255 / 9%), 0 2px 4px 0 rgb(0 0 0 / 15%), 0 1px 1.5px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 20%), 0 0 0 0 transparent !important;
   --input-shadow-hover: inset 0 0.5px 1px 0.5px rgb(255 255 255 / 16%), 0 2px 3px 0 rgb(0 0 0 / 30%), 0 1px 1.5px 0 rgb(0 0 0 / 20%), 0 1px 2px 0 rgb(0 0 0 / 40%), 0 0 0 0 transparent !important;
-  --interactive-accent: rgb(0, 119, 255) !important;
+  --interactive-accent: hsl(212, 100%, 50%) !important;
   --interactive-accent-hover: #FA99CD !important;
   --interactive-accent-hsl: 212, 100%, 50% !important;
   --interactive-hover: #3F3F3F !important;
@@ -190,15 +198,19 @@ export const theme: ThemeData = {
   --link-color-hover: #bababa !important;
   --link-decoration-hover: none !important;
   --link-decoration-thickness: 13% !important;
-  --link-external-color: rgb(0, 119, 255) !important;
-  --link-external-color-hover: rgb(0, 0, 0) !important;
+  --link-external-color: hsl(212, 100%, 50%) !important;
+  --link-external-color-hover: hsl(
+			254
+			80%
+			71.8%
+		) !important;
   --link-external-decoration: none !important;
   --link-external-decoration-hover: none !important;
   --link-unresolved-color: #666 !important;
   --link-unresolved-decoration-color: transparent !important;
   --list-indent: 2em !important;
   --list-marker-color: #999 !important;
-  --list-marker-color-collapsed: rgb(0, 119, 255) !important;
+  --list-marker-color-collapsed: hsl(212, 100%, 50%) !important;
   --list-marker-color-hover: #666 !important;
   --lowOp: rgb(255 255 255 / 10%) !important;
   --menu-border-color: #3F3F3F !important;
@@ -226,12 +238,16 @@ export const theme: ThemeData = {
   --nav-heading-color-hover: #bababa !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.075) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.075) !important;
-  --nav-item-background-selected: rgba(0, 119, 255, 0.2) !important;
+  --nav-item-background-selected: hsla(212, 100%, 50%, 0.2) !important;
   --nav-item-children-margin-left: 12px !important;
   --nav-item-children-padding-left: 8px !important;
   --nav-item-color: #666 !important;
   --nav-item-color-active: #bababa !important;
-  --nav-item-color-highlighted: rgb(0, 0, 0) !important;
+  --nav-item-color-highlighted: hsl(
+			254
+			80%
+			71.8%
+		) !important;
   --nav-item-color-hover: #bababa !important;
   --nav-item-color-selected: #bababa !important;
   --nav-item-padding: 4px 8px !important;
@@ -248,7 +264,7 @@ export const theme: ThemeData = {
   --pill-color: #666 !important;
   --pill-color-hover: #bababa !important;
   --pill-color-remove: #999 !important;
-  --pill-color-remove-hover: rgb(0, 119, 255) !important;
+  --pill-color-remove-hover: hsl(212, 100%, 50%) !important;
   --popover-max-height: 70vh !important;
   --popover-pdf-height: 800px !important;
   --popover-pdf-width: 600px !important;
@@ -256,12 +272,12 @@ export const theme: ThemeData = {
   --radius-l: 10px !important;
   --raised-background: color-mix(in srgb, #262626 65%, transparent) linear-gradient(#262626, color-mix(in srgb, #262626 65%, transparent)) !important;
   --sbs: 24px 24px 84px -4px rgb(0 0 13 / 5%), 0px 16px 64px 6px rgb(0 13 0 / 0.7%) !important;
-  --scrollbar-active-thumb-bg: rgb(0, 119, 255) !important;
+  --scrollbar-active-thumb-bg: hsl(212, 100%, 50%) !important;
   --scrollbar-bg: rgba(255, 255, 255, 0.1) !important;
   --scrollbar-radius: 10px !important;
   --search-clear-button-color: #666 !important;
   --search-icon-color: #666 !important;
-  --secondary: rgb(0, 119, 255) !important;
+  --secondary: hsl(212, 100%, 50%) !important;
   --setting-group-heading-color: #bababa !important;
   --setting-items-border-color: #282828 !important;
   --setting-items-radius: 10px !important;
@@ -286,33 +302,41 @@ export const theme: ThemeData = {
   --tab-divider-color: #3F3F3F !important;
   --tab-outline-color: #282828 !important;
   --tab-stacked-text-align: left !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(0, 119, 255) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(212, 100%, 50%) !important;
   --tab-text-color: #999 !important;
   --tab-text-color-active: #666 !important;
   --tab-text-color-focused: #666 !important;
   --tab-text-color-focused-active: #666 !important;
   --tab-text-color-focused-active-current: #bababa !important;
-  --tab-text-color-focused-highlighted: rgb(0, 119, 255) !important;
+  --tab-text-color-focused-highlighted: hsl(212, 100%, 50%) !important;
   --table-add-button-border-color: #282828 !important;
   --table-border-color: #282828 !important;
-  --table-drag-handle-background-active: rgb(0, 119, 255) !important;
+  --table-drag-handle-background-active: hsl(212, 100%, 50%) !important;
   --table-drag-handle-color: #999 !important;
   --table-header-border-color: #282828 !important;
   --table-header-color: #bababa !important;
   --table-header-weight: 600 !important;
-  --table-selection: rgba(0, 119, 255, 0.1) !important;
-  --table-selection-border-color: rgb(0, 119, 255) !important;
+  --table-selection: hsla(212, 100%, 50%, 0.1) !important;
+  --table-selection-border-color: hsl(212, 100%, 50%) !important;
   --table-white-space: normal !important;
-  --tag-background: rgba(0, 119, 255, 0.1) !important;
-  --tag-background-hover: rgba(0, 119, 255, 0.2) !important;
-  --tag-border-color: rgba(0, 119, 255, 0.15) !important;
-  --tag-border-color-hover: rgba(0, 119, 255, 0.15) !important;
-  --tag-color: rgb(0, 119, 255) !important;
-  --tag-color-hover: rgb(0, 119, 255) !important;
-  --tertiary: rgb(0, 0, 0) !important;
+  --tag-background: hsla(212, 100%, 50%, 0.1) !important;
+  --tag-background-hover: hsla(212, 100%, 50%, 0.2) !important;
+  --tag-border-color: hsla(212, 100%, 50%, 0.15) !important;
+  --tag-border-color-hover: hsla(212, 100%, 50%, 0.15) !important;
+  --tag-color: hsl(212, 100%, 50%) !important;
+  --tag-color-hover: hsl(212, 100%, 50%) !important;
+  --tertiary: hsl(
+			254
+			80%
+			71.8%
+		) !important;
   --test-image: url("https://i.pinimg.com/564x/15/05/3c/15053c066ed66a20595bef2f0b08c37d.jpg") !important;
-  --text-accent: rgb(0, 119, 255) !important;
-  --text-accent-hover: rgb(0, 0, 0) !important;
+  --text-accent: hsl(212, 100%, 50%) !important;
+  --text-accent-hover: hsl(
+			254
+			80%
+			71.8%
+		) !important;
   --text-error: #FB464C !important;
   --text-faint: #999 !important;
   --text-highlight-bg: rgb(255 208 0 / 40%) !important;
@@ -320,7 +344,7 @@ export const theme: ThemeData = {
   --text-muted: #666 !important;
   --text-normal: #bababa !important;
   --text-on-button: white !important;
-  --text-selection: rgba(0, 119, 255, 0.33) !important;
+  --text-selection: hsla(212, 100%, 50%, 0.33) !important;
   --text-success: #44CF6E !important;
   --text-warning: #E9973F !important;
   --textHighlight: rgb(255 208 0 / 40%) !important;
@@ -752,6 +776,436 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(186, 186, 186);
   text-decoration: rgb(186, 186, 186);
   text-decoration-color: rgb(186, 186, 186);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-circle-minus' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Ccircle cx='12' cy='12' r='9'%3E%3C/circle%3E%3Cline x1='9' y1='12' x2='15' y2='12'%3E%3C/line%3E%3C/svg%3E");
+  background-color: rgb(251, 70, 76);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-urgent' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M8 16v-4a4 4 0 0 1 8 0v4'%3E%3C/path%3E%3Cpath d='M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7'%3E%3C/path%3E%3Crect x='6' y='16' width='12' height='4' rx='1'%3E%3C/rect%3E%3C/svg%3E");
+  background-color: rgb(251, 70, 76);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-question-circle' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M12 16v.01'%3E%3C/path%3E%3Cpath d='M12 13a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483'%3E%3C/path%3E%3Ccircle cx='12' cy='12' r='9'%3E%3C/circle%3E%3C/svg%3E");
+  background-color: rgb(2, 122, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-hourglass-high' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M6.5 7h11'%3E%3C/path%3E%3Cpath d='M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z'%3E%3C/path%3E%3Cpath d='M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z'%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(224, 222, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M26 4h-4V2h-2v2h-8V2h-2v2H6a2.002 2.002 0 0 0-2 2v20a2.002 2.002 0 0 0 2 2h20a2.002 2.002 0 0 0 2-2V6a2.002 2.002 0 0 0-2-2ZM6 6h4v2h2V6h8v2h2V6h4v4H6Zm0 6h5v6H6Zm13 14h-6v-6h6Zm0-8h-6v-6h6Zm2 8v-6h5l.001 6Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&ltTransparent Rectangle&gt'/%3E%3C/svg%3E");
+  background-color: rgb(168, 130, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-arrow-back' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1'%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(233, 151, 63);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-brain' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M15.5 13a3.5 3.5 0 0 0 -3.5 3.5v1a3.5 3.5 0 0 0 7 0v-1.8'%3E%3C/path%3E%3Cpath d='M8.5 13a3.5 3.5 0 0 1 3.5 3.5v1a3.5 3.5 0 0 1 -7 0v-1.8'%3E%3C/path%3E%3Cpath d='M17.5 16a3.5 3.5 0 0 0 0 -7h-.5'%3E%3C/path%3E%3Cpath d='M19 9.3v-2.8a3.5 3.5 0 0 0 -7 0'%3E%3C/path%3E%3Cpath d='M6.5 16a3.5 3.5 0 0 1 0 -7h.5'%3E%3C/path%3E%3Cpath d='M5 9.3v-2.8a3.5 3.5 0 0 1 7 0v10'%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(168, 130, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-bookmark' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2'%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(251, 70, 76);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-seeding' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M12 10a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3'%3E%3C/path%3E%3Cpath d='M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3'%3E%3C/path%3E%3Cline x1='12' y1='20' x2='12' y2='10'%3E%3C/line%3E%3C/svg%3E");
+  background-color: rgb(68, 207, 110);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-trash-x' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M4 7h16'%3E%3C/path%3E%3Cpath d='M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12'%3E%3C/path%3E%3Cpath d='M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3'%3E%3C/path%3E%3Cpath d='M10 12l4 4m0 -4l-4 4'%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(251, 70, 76);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(0, 119, 255);
 }`,
     callouts: `html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   border-bottom-left-radius: 8px;
@@ -1017,21 +1471,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: rgb(218, 218, 218);
   font-family: "??", Satoshi, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgb(218, 218, 218);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(102, 102, 102);
-  font-family: "??", Satoshi, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(102, 102, 102);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(186, 186, 186);
-  border-left-color: rgb(186, 186, 186);
-  border-right-color: rgb(186, 186, 186);
-  border-top-color: rgb(186, 186, 186);
-  color: rgb(186, 186, 186);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(102, 102, 102);
@@ -1219,7 +1658,7 @@ html[saved-theme="dark"] body sup {
   --accent-h: 254 !important;
   --accent-l: 68% !important;
   --accent-s: 80% !important;
-  --background-modifier-active-hover: rgba(8, 108, 221, 0.15) !important;
+  --background-modifier-active-hover: hsla(212, 93%, 45%, 0.15) !important;
   --background-modifier-border: #E0E0E0 !important;
   --background-modifier-border-alt: #fff !important;
   --background-modifier-border-focus: #BDBDBD !important;
@@ -1245,16 +1684,16 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: #E0E0E0 !important;
   --bases-table-cell-background-active: #FFF !important;
   --bases-table-cell-background-disabled: #FAFAFA !important;
-  --bases-table-cell-background-selected: rgba(8, 108, 221, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(212, 93%, 45%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #BDBDBD !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(8, 108, 221) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(212, 93%, 45%) !important;
   --bases-table-group-background: #FAFAFA !important;
   --bases-table-header-background: #FFF !important;
   --bases-table-header-background-hover: rgba(0, 0, 0, 0.075) !important;
   --bases-table-header-color: #ABABAB !important;
   --bases-table-summary-background: #FFF !important;
   --bases-table-summary-background-hover: rgba(0, 0, 0, 0.075) !important;
-  --blockquote-border-color: rgb(8, 108, 221) !important;
+  --blockquote-border-color: hsl(212, 93%, 45%) !important;
   --blur-background: color-mix(in srgb, #FFF 65%, transparent) linear-gradient(#FFF, color-mix(in srgb, #FFF 65%, transparent)) !important;
   --bodyFont: "Satoshi", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-weight: 600 !important;
@@ -1272,8 +1711,12 @@ html[saved-theme="dark"] body sup {
   --cbs: 24px 24px 64px -4px rgb(0 0 0 / 1%), 0px 16px 32px 6px rgb(0 0 0 / 3%) !important;
   --checkbox-border-color: #707070 !important;
   --checkbox-border-color-hover: #ABABAB !important;
-  --checkbox-color: rgb(8, 108, 221) !important;
-  --checkbox-color-hover: rgb(0, 0, 0) !important;
+  --checkbox-color: hsl(212, 93%, 45%) !important;
+  --checkbox-color-hover: hsl(
+			254
+			80%
+			73%
+		) !important;
   --checkbox-marker-color: #FFF !important;
   --checklist-done-color: #ABABAB !important;
   --code-background: #FAFAFA !important;
@@ -1292,12 +1735,20 @@ html[saved-theme="dark"] body sup {
   --code-value: #7852EE !important;
   --codeFont: "Satoshi", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: #707070 !important;
-  --collapse-icon-color-collapsed: rgb(8, 108, 221) !important;
-  --color-accent: rgb(8, 108, 221) !important;
+  --collapse-icon-color-collapsed: hsl(212, 93%, 45%) !important;
+  --color-accent: hsl(212, 93%, 45%) !important;
   --color-accent-1: #D53984 !important;
   --color-accent-1-rgb: 213, 57, 132 !important;
-  --color-accent-2: rgb(0, 0, 0) !important;
-  --color-accent-hover: rgb(0, 0, 0) !important;
+  --color-accent-2: hsl(
+			254
+			80%
+			73%
+		) !important;
+  --color-accent-hover: hsl(
+			254
+			80%
+			73%
+		) !important;
   --color-accent-hsl: 212, 93%, 45% !important;
   --color-accent-rgb: 8, 109, 221 !important;
   --color-base-00: #FFF !important;
@@ -1331,14 +1782,14 @@ html[saved-theme="dark"] body sup {
   --dark: #5A5A5A !important;
   --darkgray: #5A5A5A !important;
   --divider-color: #E0E0E0 !important;
-  --divider-color-hover: rgb(8, 108, 221) !important;
+  --divider-color-hover: hsl(212, 93%, 45%) !important;
   --dropdown-background: #FFF !important;
   --dropdown-background-hover: #FAFAFA !important;
   --embed-block-shadow-hover: 0 0 0 1px #E0E0E0,
         inset 0 0 0 1px #E0E0E0 !important;
-  --embed-border-left: 2px solid rgb(8, 108, 221) !important;
+  --embed-border-left: 2px solid hsl(212, 93%, 45%) !important;
   --embed-border-right: none !important;
-  --embed-border-start: 2px solid rgb(8, 108, 221) !important;
+  --embed-border-start: 2px solid hsl(212, 93%, 45%) !important;
   --file-header-background: #FFF !important;
   --file-header-background-focused: #FFF !important;
   --file-header-font: "Satoshi", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -1365,7 +1816,7 @@ html[saved-theme="dark"] body sup {
   --graph-node: #ABABAB !important;
   --graph-node-attachment: #E0AC00 !important;
   --graph-node-focused: #BDBDBD !important;
-  --graph-node-tag: rgb(8, 108, 221) !important;
+  --graph-node-tag: hsl(212, 93%, 45%) !important;
   --graph-node-unresolved: #707070 !important;
   --graph-text: #5A5A5A !important;
   --gray: #ABABAB !important;
@@ -1386,7 +1837,7 @@ html[saved-theme="dark"] body sup {
   --highlight: rgb(255 208 0 / 40%) !important;
   --hr-color: #E0E0E0 !important;
   --icon-color: #ABABAB !important;
-  --icon-color-active: rgb(8, 108, 221) !important;
+  --icon-color-active: hsl(212, 93%, 45%) !important;
   --icon-color-focused: #5A5A5A !important;
   --icon-color-hover: #ABABAB !important;
   --inline-title-color: #222 !important;
@@ -1397,8 +1848,12 @@ html[saved-theme="dark"] body sup {
   --input-placeholder-color: #707070 !important;
   --input-shadow: inset 0 0 0 1px rgb(0 0 0 / 12%), 0 2px 3px 0 rgb(0 0 0 / 5%), 0 1px 1.5px 0 rgb(0 0 0 / 3%), 0 1px 2px 0 rgb(0 0 0 / 4%), 0 0 0 0 transparent !important;
   --input-shadow-hover: inset 0 0 0 1px rgb(0 0 0 / 17%), 0 2px 3px 0 rgb(0 0 0 / 10%), 0 1px 1.5px 0 rgb(0 0 0 / 3%), 0 1px 2px 0 rgb(0 0 0 / 4%), 0 0 0 0 transparent !important;
-  --interactive-accent: rgb(8, 108, 221) !important;
-  --interactive-accent-hover: rgb(0, 0, 0) !important;
+  --interactive-accent: hsl(212, 93%, 45%) !important;
+  --interactive-accent-hover: hsl(
+			254
+			80%
+			73%
+		) !important;
   --interactive-accent-hsl: 212, 93%, 45% !important;
   --interactive-hover: #FAFAFA !important;
   --interactive-normal: #FFF !important;
@@ -1409,15 +1864,19 @@ html[saved-theme="dark"] body sup {
   --link-color-hover: #5A5A5A !important;
   --link-decoration-hover: none !important;
   --link-decoration-thickness: 13% !important;
-  --link-external-color: rgb(8, 108, 221) !important;
-  --link-external-color-hover: rgb(0, 0, 0) !important;
+  --link-external-color: hsl(212, 93%, 45%) !important;
+  --link-external-color-hover: hsl(
+			254
+			80%
+			73%
+		) !important;
   --link-external-decoration: none !important;
   --link-external-decoration-hover: none !important;
   --link-unresolved-color: #ABABAB !important;
   --link-unresolved-decoration-color: transparent !important;
   --list-indent: 2em !important;
   --list-marker-color: #707070 !important;
-  --list-marker-color-collapsed: rgb(8, 108, 221) !important;
+  --list-marker-color-collapsed: hsl(212, 93%, 45%) !important;
   --list-marker-color-hover: #ABABAB !important;
   --lowOp: rgb(0 0 0 / 10%) !important;
   --menu-background: #F3F3F3 !important;
@@ -1446,12 +1905,16 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color-hover: #5A5A5A !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.075) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.075) !important;
-  --nav-item-background-selected: rgba(8, 108, 221, 0.2) !important;
+  --nav-item-background-selected: hsla(212, 93%, 45%, 0.2) !important;
   --nav-item-children-margin-left: 12px !important;
   --nav-item-children-padding-left: 8px !important;
   --nav-item-color: #ABABAB !important;
   --nav-item-color-active: #5A5A5A !important;
-  --nav-item-color-highlighted: rgb(0, 0, 0) !important;
+  --nav-item-color-highlighted: hsl(
+			254
+			80%
+			73%
+		) !important;
   --nav-item-color-hover: #5A5A5A !important;
   --nav-item-color-selected: #5A5A5A !important;
   --nav-item-padding: 4px 8px !important;
@@ -1469,7 +1932,7 @@ html[saved-theme="dark"] body sup {
   --pill-color: #ABABAB !important;
   --pill-color-hover: #5A5A5A !important;
   --pill-color-remove: #707070 !important;
-  --pill-color-remove-hover: rgb(8, 108, 221) !important;
+  --pill-color-remove-hover: hsl(212, 93%, 45%) !important;
   --popover-max-height: 70vh !important;
   --popover-pdf-height: 800px !important;
   --popover-pdf-width: 600px !important;
@@ -1480,13 +1943,13 @@ html[saved-theme="dark"] body sup {
   --ribbon-background: #F3F3F3 !important;
   --ribbon-background-collapsed: #FFF !important;
   --sbs: 24px 24px 84px -4px rgb(0 0 0 / 5%), 0px 16px 64px 6px rgb(0 0 0 / 0.7%) !important;
-  --scrollbar-active-thumb-bg: rgb(8, 108, 221) !important;
+  --scrollbar-active-thumb-bg: hsl(212, 93%, 45%) !important;
   --scrollbar-bg: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-radius: 10px !important;
   --search-clear-button-color: #ABABAB !important;
   --search-icon-color: #ABABAB !important;
   --search-result-background: #FFF !important;
-  --secondary: rgb(8, 108, 221) !important;
+  --secondary: hsl(212, 93%, 45%) !important;
   --setting-group-heading-color: #5A5A5A !important;
   --setting-items-background: #FAFAFA !important;
   --setting-items-border-color: #E0E0E0 !important;
@@ -1518,32 +1981,40 @@ html[saved-theme="dark"] body sup {
   --tab-stacked-text-align: left !important;
   --tab-switcher-background: #F3F3F3 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #F3F3F3, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(8, 108, 221) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(212, 93%, 45%) !important;
   --tab-text-color: #707070 !important;
   --tab-text-color-active: #ABABAB !important;
   --tab-text-color-focused: #ABABAB !important;
   --tab-text-color-focused-active: #ABABAB !important;
   --tab-text-color-focused-active-current: #5A5A5A !important;
-  --tab-text-color-focused-highlighted: rgb(8, 108, 221) !important;
+  --tab-text-color-focused-highlighted: hsl(212, 93%, 45%) !important;
   --table-add-button-border-color: #E0E0E0 !important;
   --table-border-color: #E0E0E0 !important;
-  --table-drag-handle-background-active: rgb(8, 108, 221) !important;
+  --table-drag-handle-background-active: hsl(212, 93%, 45%) !important;
   --table-drag-handle-color: #707070 !important;
   --table-header-border-color: #E0E0E0 !important;
   --table-header-color: #5A5A5A !important;
   --table-header-weight: 600 !important;
-  --table-selection: rgba(8, 108, 221, 0.1) !important;
-  --table-selection-border-color: rgb(8, 108, 221) !important;
+  --table-selection: hsla(212, 93%, 45%, 0.1) !important;
+  --table-selection-border-color: hsl(212, 93%, 45%) !important;
   --table-white-space: normal !important;
-  --tag-background: rgba(8, 108, 221, 0.1) !important;
-  --tag-background-hover: rgba(8, 108, 221, 0.2) !important;
-  --tag-border-color: rgba(8, 108, 221, 0.15) !important;
-  --tag-border-color-hover: rgba(8, 108, 221, 0.15) !important;
-  --tag-color: rgb(8, 108, 221) !important;
-  --tag-color-hover: rgb(8, 108, 221) !important;
-  --tertiary: rgb(0, 0, 0) !important;
-  --text-accent: rgb(8, 108, 221) !important;
-  --text-accent-hover: rgb(0, 0, 0) !important;
+  --tag-background: hsla(212, 93%, 45%, 0.1) !important;
+  --tag-background-hover: hsla(212, 93%, 45%, 0.2) !important;
+  --tag-border-color: hsla(212, 93%, 45%, 0.15) !important;
+  --tag-border-color-hover: hsla(212, 93%, 45%, 0.15) !important;
+  --tag-color: hsl(212, 93%, 45%) !important;
+  --tag-color-hover: hsl(212, 93%, 45%) !important;
+  --tertiary: hsl(
+			254
+			80%
+			73%
+		) !important;
+  --text-accent: hsl(212, 93%, 45%) !important;
+  --text-accent-hover: hsl(
+			254
+			80%
+			73%
+		) !important;
   --text-error: #E93147 !important;
   --text-faint: #707070 !important;
   --text-highlight-bg: rgb(255 208 0 / 40%) !important;
@@ -1955,6 +2426,436 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(90, 90, 90);
   text-decoration: rgb(90, 90, 90);
   text-decoration-color: rgb(90, 90, 90);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-circle-minus' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Ccircle cx='12' cy='12' r='9'%3E%3C/circle%3E%3Cline x1='9' y1='12' x2='15' y2='12'%3E%3C/line%3E%3C/svg%3E");
+  background-color: rgb(233, 49, 71);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-urgent' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M8 16v-4a4 4 0 0 1 8 0v4'%3E%3C/path%3E%3Cpath d='M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7'%3E%3C/path%3E%3Crect x='6' y='16' width='12' height='4' rx='1'%3E%3C/rect%3E%3C/svg%3E");
+  background-color: rgb(233, 49, 71);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-question-circle' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M12 16v.01'%3E%3C/path%3E%3Cpath d='M12 13a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483'%3E%3C/path%3E%3Ccircle cx='12' cy='12' r='9'%3E%3C/circle%3E%3C/svg%3E");
+  background-color: rgb(8, 109, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-hourglass-high' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M6.5 7h11'%3E%3C/path%3E%3Cpath d='M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1z'%3E%3C/path%3E%3Cpath d='M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1z'%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(224, 172, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M26 4h-4V2h-2v2h-8V2h-2v2H6a2.002 2.002 0 0 0-2 2v20a2.002 2.002 0 0 0 2 2h20a2.002 2.002 0 0 0 2-2V6a2.002 2.002 0 0 0-2-2ZM6 6h4v2h2V6h8v2h2V6h4v4H6Zm0 6h5v6H6Zm13 14h-6v-6h6Zm0-8h-6v-6h6Zm2 8v-6h5l.001 6Z'/%3E%3Cpath fill='none' d='M0 0h32v32H0z' data-name='&ltTransparent Rectangle&gt'/%3E%3C/svg%3E");
+  background-color: rgb(120, 82, 238);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-arrow-back' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1'%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(236, 117, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-brain' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M15.5 13a3.5 3.5 0 0 0 -3.5 3.5v1a3.5 3.5 0 0 0 7 0v-1.8'%3E%3C/path%3E%3Cpath d='M8.5 13a3.5 3.5 0 0 1 3.5 3.5v1a3.5 3.5 0 0 1 -7 0v-1.8'%3E%3C/path%3E%3Cpath d='M17.5 16a3.5 3.5 0 0 0 0 -7h-.5'%3E%3C/path%3E%3Cpath d='M19 9.3v-2.8a3.5 3.5 0 0 0 -7 0'%3E%3C/path%3E%3Cpath d='M6.5 16a3.5 3.5 0 0 1 0 -7h.5'%3E%3C/path%3E%3Cpath d='M5 9.3v-2.8a3.5 3.5 0 0 1 7 0v10'%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(120, 82, 238);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-bookmark' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2'%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(233, 49, 71);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-seeding' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M12 10a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3'%3E%3C/path%3E%3Cpath d='M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3'%3E%3C/path%3E%3Cline x1='12' y1='20' x2='12' y2='10'%3E%3C/line%3E%3C/svg%3E");
+  background-color: rgb(8, 185, 78);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-trash-x' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M4 7h16'%3E%3C/path%3E%3Cpath d='M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12'%3E%3C/path%3E%3Cpath d='M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3'%3E%3C/path%3E%3Cpath d='M10 12l4 4m0 -4l-4 4'%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(233, 49, 71);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"icon icon-tabler icon-tabler-check\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" stroke-width=\\"2\\" stroke=\\"currentColor\\" fill=\\"none\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"%3E%3Cpath stroke=\\"none\\" d=\\"M0 0h24v24H0z\\" fill=\\"none\\"%3E%3C/path%3E%3Cpath d=\\"M5 12l5 5l10 -10\\"%3E%3C/path%3E%3C/svg%3E");
+  background-color: rgb(8, 108, 221);
 }`,
     callouts: `html[saved-theme="light"] body .callout[data-callout="abstract"] {
   border-bottom-left-radius: 8px;
@@ -2220,21 +3121,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgb(34, 34, 34);
   font-family: "??", Satoshi, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgb(34, 34, 34);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(171, 171, 171);
-  font-family: "??", Satoshi, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(171, 171, 171);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(90, 90, 90);
-  border-left-color: rgb(90, 90, 90);
-  border-right-color: rgb(90, 90, 90);
-  border-top-color: rgb(90, 90, 90);
-  color: rgb(90, 90, 90);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(171, 171, 171);

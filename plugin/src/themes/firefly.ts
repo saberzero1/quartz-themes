@@ -664,16 +664,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
   color: rgb(173, 185, 219);
   font-family: Inter, sans-serif;
   text-decoration: rgb(173, 185, 219);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(173, 185, 219);
-  font-family: Inter, sans-serif;
-  text-decoration: rgb(173, 185, 219);
-}
-
-html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(93, 100, 140);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   cursor: pointer;

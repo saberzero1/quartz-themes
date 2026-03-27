@@ -19,7 +19,7 @@ export const theme: ThemeData = {
   --active-line-color: #18c1cd !important;
   --alt-heading-color: #8c96d9 !important;
   --b-row: #00000059 !important;
-  --background-modifier-active-hover: rgba(24, 193, 205, 0.1) !important;
+  --background-modifier-active-hover: hsla(184,79%,45%, 0.1) !important;
   --background-modifier-border: hsl(230/**/15%22%) !important;
   --background-modifier-border-focus: hsl(230/**/15%33%) !important;
   --background-modifier-border-hover: hsl(230/**/15%25%) !important;
@@ -38,7 +38,7 @@ export const theme: ThemeData = {
   --bases-table-border-color: hsl(230/**/15%40%) !important;
   --bases-table-cell-background-active: hsl(230/**/15%12%) !important;
   --bases-table-cell-background-disabled: hsl(230/**/15%14%) !important;
-  --bases-table-cell-background-selected: rgba(24, 193, 205, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(184,79%,45%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(230/**/15%33%) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #108189 !important;
   --bases-table-group-background: hsl(230/**/15%14%) !important;
@@ -64,10 +64,8 @@ export const theme: ThemeData = {
   --blur-background: color-mix(in srgb, hsl(230/**/15%12%) 65%, transparent) linear-gradient(hsl(230/**/15%12%), color-mix(in srgb, hsl(230/**/15%12%) 65%, transparent)) !important;
   --bodyFont: "iA Writer Quattro S", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-color: #ed5aa8 !important;
-  --bold-weight: 600 !important;
   --callout-padding: 8px;
   --callout-title-size: 110%;
-  --callout-title-weight: 600;
   --canvas-background: hsl(230/**/15%12%) !important;
   --canvas-card-label-color: hsl(230/**/15%40%) !important;
   --canvas-dot-pattern: hsl(230/**/15%22%) !important;
@@ -89,8 +87,6 @@ export const theme: ThemeData = {
   --collapse-icon-color: hsl(230/**/15%40%) !important;
   --collapse-icon-color-collapsed: #18c1cd !important;
   --color-accent: #18c1cd !important;
-  --color-accent-1: rgb(166, 139, 249) !important;
-  --color-accent-2: rgb(197, 182, 252) !important;
   --color-accent-hsl: 184,79%,45% !important;
   --color-base-00: hsl(230/**/15%12%) !important;
   --color-base-10: hsl(230/**/15%14%) !important;
@@ -155,8 +151,7 @@ export const theme: ThemeData = {
   --heading-formatting: hsl(230/**/15%40%) !important;
   --heading-letter-spacing: 1.5px !important;
   --heading-scaling: 1 !important;
-  --heading-spacing: 2.5rem !important;
-  --highlight: rgba(24, 193, 205, 0.1) !important;
+  --highlight: hsla(184,79%,45%, 0.1) !important;
   --highlight-hue-1: 50 !important;
   --highlight-sla-values: 85% 40%/40% !important;
   --hotkey-color: #da975d !important;
@@ -196,7 +191,7 @@ export const theme: ThemeData = {
   --link-external-color: #18c1cd !important;
   --link-external-color-hover: #ed5aa8 !important;
   --link-unresolved-color: #6fb74e !important;
-  --link-unresolved-decoration-color: rgba(24, 193, 205, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(184,79%,45%, 0.3) !important;
   --link-unresolved-opacity: .8 !important;
   --list-indent: 1.6em !important;
   --list-marker-color: hsl(230/**/15%40%) !important;
@@ -213,7 +208,6 @@ export const theme: ThemeData = {
   --metadata-gap: 1px !important;
   --metadata-input-font: "Recursive S", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.8em !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-text-color: hsl(230/**/30%82%) !important;
   --metadata-label-font: "Recursive S", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-text-color: hsl(230/**/15%73%) !important;
@@ -233,7 +227,7 @@ export const theme: ThemeData = {
   --nav-heading-color-hover: hsl(230/**/30%82%) !important;
   --nav-indentation-guide-color: hsl(230/**/15%40%) !important;
   --nav-indentation-guide-width: 1.5px !important;
-  --nav-item-background-selected: rgba(24, 193, 205, 0.15) !important;
+  --nav-item-background-selected: hsla(184,79%,45%, 0.15) !important;
   --nav-item-color: hsl(230/**/15%73%) !important;
   --nav-item-color-active: #18c1cd !important;
   --nav-item-color-highlighted: #ed5aa8 !important;
@@ -270,7 +264,6 @@ export const theme: ThemeData = {
   --setting-group-heading-color: hsl(230/**/30%82%) !important;
   --setting-items-background: hsl(230/**/15%14%) !important;
   --setting-items-border-color: hsl(230/**/15%22%) !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --signature: "⟡" !important;
   --slider-thumb-border-color: hsl(230/**/15%25%) !important;
   --slider-track-background: hsl(230/**/15%22%) !important;
@@ -303,15 +296,16 @@ export const theme: ThemeData = {
   --table-header-border-color: hsl(230/**/15%40%) !important;
   --table-header-color: hsl(230/**/30%82%) !important;
   --table-header-size: 14.4px !important;
+  --table-header-weight: 600 !important;
   --table-row-alt-background: #00000059 !important;
-  --table-selection: rgba(24, 193, 205, 0.1) !important;
+  --table-selection: hsla(184,79%,45%, 0.1) !important;
   --table-selection-border-color: #108189 !important;
   --table-text-size: 14.4px !important;
   --table-white-space: normal !important;
   --tag-background: none !important;
   --tag-background-hover: none !important;
-  --tag-border-color: rgba(24, 193, 205, 0.15) !important;
-  --tag-border-color-hover: rgba(24, 193, 205, 0.15) !important;
+  --tag-border-color: hsla(184,79%,45%, 0.15) !important;
+  --tag-border-color-hover: hsla(184,79%,45%, 0.15) !important;
   --tag-border-width: 0 !important;
   --tag-color: #da975d !important;
   --tag-color-hover: #ed5aa8 !important;
@@ -327,8 +321,8 @@ export const theme: ThemeData = {
   --text-muted: hsl(230/**/15%73%) !important;
   --text-normal: hsl(230/**/30%82%) !important;
   --text-on-accent: #fff !important;
-  --text-selection: rgb(24, 193, 205) !important;
-  --textHighlight: rgba(24, 193, 205, 0.1) !important;
+  --text-selection: hsl(184,79%,45%,20%) !important;
+  --textHighlight: hsla(184,79%,45%, 0.1) !important;
   --thin-border: 1px solid hsl(230/**/15%40%) !important;
   --thin-muted-border: 1px solid hsl(230/**/15%22%) !important;
   --titleFont: "iA Writer Quattro S", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -345,7 +339,6 @@ export const theme: ThemeData = {
   --vim-cursor-color: #b3b3b3 !important;
   --vim-cursor-outline: #e6e6e6 !important;
   --vim-cursor-outline-width: 1px !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -792,6 +785,350 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(195, 200, 223);
   text-decoration: rgb(195, 200, 223);
   text-decoration-color: rgb(195, 200, 223);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(26, 28, 35);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgba(2, 122, 255, 0.25);
@@ -1123,24 +1460,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   color: rgb(176, 179, 196);
   font-family: "??", "Recursive S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgb(176, 179, 196);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(176, 179, 196);
-  font-family: "??", "Recursive S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(176, 179, 196);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(24, 193, 205);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(24, 193, 205);
-  border-right-color: rgb(24, 193, 205);
-  border-top-color: rgb(24, 193, 205);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(24, 193, 205);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(176, 179, 196);
@@ -1260,6 +1579,7 @@ html[saved-theme="dark"] body .metadata {
   border-top-width: 1px;
   color: rgb(176, 179, 196);
   font-family: "??", "Recursive S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  margin-bottom: 12px;
   margin-left: 4px;
   margin-right: -4px;
   padding-bottom: 0px;
@@ -1343,7 +1663,7 @@ html[saved-theme="dark"] body sup {
   --active-line-color: #1396a0 !important;
   --alt-heading-color: #5460ab !important;
   --b-row: #00000014 !important;
-  --background-modifier-active-hover: rgba(19, 150, 160, 0.1) !important;
+  --background-modifier-active-hover: hsla(184,79%,35%, 0.1) !important;
   --background-modifier-border: hsl(230/**/25%88%) !important;
   --background-modifier-border-focus: hsl(230/**/25%74%) !important;
   --background-modifier-border-hover: hsl(230/**/25%83%) !important;
@@ -1361,7 +1681,7 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: hsl(230/**/25%67%) !important;
   --bases-table-cell-background-active: hsl(230/**/37.5%99%) !important;
   --bases-table-cell-background-disabled: hsl(230/**/25%97%) !important;
-  --bases-table-cell-background-selected: rgba(19, 150, 160, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(184,79%,35%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(230/**/25%74%) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px #108189 !important;
   --bases-table-group-background: hsl(230/**/25%97%) !important;
@@ -1387,10 +1707,8 @@ html[saved-theme="dark"] body sup {
   --blur-background: color-mix(in srgb, hsl(230/**/37.5%99%) 65%, transparent) linear-gradient(hsl(230/**/37.5%99%), color-mix(in srgb, hsl(230/**/37.5%99%) 65%, transparent)) !important;
   --bodyFont: "iA Writer Quattro S", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-color: #dc388f !important;
-  --bold-weight: 600 !important;
   --callout-padding: 8px;
   --callout-title-size: 110%;
-  --callout-title-weight: 600;
   --canvas-background: hsl(230/**/37.5%99%) !important;
   --canvas-card-label-color: hsl(230/**/25%67%) !important;
   --canvas-dot-pattern: hsl(230/**/25%88%) !important;
@@ -1413,8 +1731,6 @@ html[saved-theme="dark"] body sup {
   --collapse-icon-color: hsl(230/**/25%67%) !important;
   --collapse-icon-color-collapsed: #1396a0 !important;
   --color-accent: #1396a0 !important;
-  --color-accent-1: rgb(153, 115, 247) !important;
-  --color-accent-2: rgb(166, 139, 249) !important;
   --color-accent-hsl: 184,79%,35% !important;
   --color-base-00: hsl(230/**/37.5%99%) !important;
   --color-base-10: hsl(230/**/25%97%) !important;
@@ -1480,8 +1796,7 @@ html[saved-theme="dark"] body sup {
   --heading-formatting: hsl(230/**/25%67%) !important;
   --heading-letter-spacing: 1.5px !important;
   --heading-scaling: 1 !important;
-  --heading-spacing: 2.5rem !important;
-  --highlight: rgba(19, 150, 160, 0.1) !important;
+  --highlight: hsla(184,79%,35%, 0.1) !important;
   --highlight-hue-1: 50 !important;
   --highlight-sla-values: 85% 70%/40% !important;
   --hotkey-color: #c67e3f !important;
@@ -1521,7 +1836,7 @@ html[saved-theme="dark"] body sup {
   --link-external-color: #1396a0 !important;
   --link-external-color-hover: #dc388f !important;
   --link-unresolved-color: #6fb74e !important;
-  --link-unresolved-decoration-color: rgba(19, 150, 160, 0.3) !important;
+  --link-unresolved-decoration-color: hsla(184,79%,35%, 0.3) !important;
   --link-unresolved-opacity: .8 !important;
   --list-indent: 1.6em !important;
   --list-marker-color: hsl(230/**/25%67%) !important;
@@ -1538,7 +1853,6 @@ html[saved-theme="dark"] body sup {
   --metadata-gap: 1px !important;
   --metadata-input-font: "Recursive S", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.8em !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-text-color: hsl(230/**/50%24%) !important;
   --metadata-label-font: "Recursive S", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-text-color: hsl(230/**/25%35%) !important;
@@ -1558,7 +1872,7 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color-hover: hsl(230/**/50%24%) !important;
   --nav-indentation-guide-color: hsl(230/**/25%67%) !important;
   --nav-indentation-guide-width: 1.5px !important;
-  --nav-item-background-selected: rgba(19, 150, 160, 0.15) !important;
+  --nav-item-background-selected: hsla(184,79%,35%, 0.15) !important;
   --nav-item-color: hsl(230/**/25%35%) !important;
   --nav-item-color-active: #1396a0 !important;
   --nav-item-color-highlighted: #dc388f !important;
@@ -1593,7 +1907,6 @@ html[saved-theme="dark"] body sup {
   --setting-group-heading-color: hsl(230/**/50%24%) !important;
   --setting-items-background: hsl(230/**/25%97%) !important;
   --setting-items-border-color: hsl(230/**/25%88%) !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --signature: "⟡" !important;
   --slider-thumb-border-color: hsl(230/**/25%83%) !important;
   --slider-track-background: hsl(230/**/25%88%) !important;
@@ -1627,15 +1940,16 @@ html[saved-theme="dark"] body sup {
   --table-header-border-color: hsl(230/**/25%67%) !important;
   --table-header-color: hsl(230/**/50%24%) !important;
   --table-header-size: 14.4px !important;
+  --table-header-weight: 600 !important;
   --table-row-alt-background: #00000014 !important;
-  --table-selection: rgba(19, 150, 160, 0.1) !important;
+  --table-selection: hsla(184,79%,35%, 0.1) !important;
   --table-selection-border-color: #108189 !important;
   --table-text-size: 14.4px !important;
   --table-white-space: normal !important;
   --tag-background: none !important;
   --tag-background-hover: none !important;
-  --tag-border-color: rgba(19, 150, 160, 0.15) !important;
-  --tag-border-color-hover: rgba(19, 150, 160, 0.15) !important;
+  --tag-border-color: hsla(184,79%,35%, 0.15) !important;
+  --tag-border-color-hover: hsla(184,79%,35%, 0.15) !important;
   --tag-border-width: 0 !important;
   --tag-color: #c67e3f !important;
   --tag-color-hover: #dc388f !important;
@@ -1651,8 +1965,8 @@ html[saved-theme="dark"] body sup {
   --text-muted: hsl(230/**/25%35%) !important;
   --text-normal: hsl(230/**/50%24%) !important;
   --text-on-accent: #fff !important;
-  --text-selection: rgb(19, 150, 160) !important;
-  --textHighlight: rgba(19, 150, 160, 0.1) !important;
+  --text-selection: hsl(184,79%,35%,20%) !important;
+  --textHighlight: hsla(184,79%,35%, 0.1) !important;
   --thin-border: 1px solid hsl(230/**/25%67%) !important;
   --thin-muted-border: 1px solid hsl(230/**/25%88%) !important;
   --titleFont: "iA Writer Quattro S", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -1669,7 +1983,6 @@ html[saved-theme="dark"] body sup {
   --vim-cursor-color: #e6e6e6 !important;
   --vim-cursor-outline: #b0b5bf !important;
   --vim-cursor-outline-width: 1.3px !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -2116,6 +2429,350 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(31, 41, 92);
   text-decoration: rgb(31, 41, 92);
   text-decoration-color: rgb(31, 41, 92);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(251, 252, 253);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   border-bottom-color: rgba(8, 109, 221, 0.25);
@@ -2447,24 +3104,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgb(67, 74, 112);
   font-family: "??", "Recursive S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgb(67, 74, 112);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(67, 74, 112);
-  font-family: "??", "Recursive S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(67, 74, 112);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  border-bottom-color: rgb(19, 150, 160);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(19, 150, 160);
-  border-right-color: rgb(19, 150, 160);
-  border-top-color: rgb(19, 150, 160);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(19, 150, 160);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(67, 74, 112);
@@ -2584,6 +3223,7 @@ html[saved-theme="light"] body .metadata {
   border-top-width: 1px;
   color: rgb(67, 74, 112);
   font-family: "??", "Recursive S", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  margin-bottom: 12px;
   margin-left: 4px;
   margin-right: -4px;
   padding-bottom: 0px;

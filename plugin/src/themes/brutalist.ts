@@ -53,8 +53,7 @@ export const theme: ThemeData = {
   --blur-background: color-mix(in srgb, #323232 65%, transparent) linear-gradient(#323232, color-mix(in srgb, #323232 65%, transparent)) !important;
   --body-font-color-dark: #a0a0a0 !important;
   --body-font-color-light: #000000 !important;
-  --bodyFont: 'iA Writer Quattro S', sans-serif !important;
-  --bold-weight: 600 !important;
+  --bodyFont: 'Lora', serif !important;
   --button-bg-dynamic: #000000 !important;
   --button-bg-hover-dynamic: #000000 !important;
   --button-radius: 0 !important;
@@ -72,7 +71,6 @@ export const theme: ThemeData = {
   --callout-quote: 119, 119, 119;
   --callout-radius: 0;
   --callout-tip: 122, 163, 125;
-  --callout-title-weight: 600;
   --callout-warning: 212, 163, 85;
   --canvas-background: #3c3c3c !important;
   --canvas-card-label-color: #858585 !important;
@@ -125,24 +123,24 @@ export const theme: ThemeData = {
   --embed-border-start: 2px solid #cdcdcd !important;
   --file-header-background: #3c3c3c !important;
   --file-header-background-focused: #3c3c3c !important;
-  --file-header-font: 'Sen', sans-serif !important;
+  --file-header-font: 'Marcellus', serif !important;
   --flair-background: #323232 !important;
   --flair-color: #a0a0a0 !important;
   --font-colour-dark-grey-33: #333333 !important;
   --font-colour-light-grey-70: #707070 !important;
   --font-colour-light-grey-bd: #BDBDBD !important;
-  --font-default: 'Sen', sans-serif !important;
-  --font-interface: 'Sen', sans-serif !important;
-  --font-mermaid: 'iA Writer Quattro S', sans-serif !important;
+  --font-default: 'Marcellus', serif !important;
+  --font-interface: 'Marcellus', serif !important;
+  --font-interface-override: 'Marcellus', serif !important;
+  --font-mermaid: 'Lora', serif !important;
   --font-monospace: 'Noto Sans Mono', monospace !important;
   --font-monospace-override: 'Noto Sans Mono', monospace !important;
-  --font-print: iA Writer Quattro S, sans-serif, iA Writer Quattro S, sans-serif, Arial' !important;
-  --font-text: 'iA Writer Quattro S', sans-serif !important;
+  --font-print: Lora, serif, Lora, serif, Arial' !important;
+  --font-text: 'Lora', serif !important;
   --font-text-destructive: #ff4b4b !important;
-  --font-text-override: 'iA Writer Quattro S', sans-serif !important;
-  --font-text-theme: 'iA Writer Quattro S', sans-serif !important;
-  --font-ui: 'Sen', sans-serif !important;
-  --font-ui-override: 'Sen', sans-serif !important;
+  --font-text-override: 'Lora', serif !important;
+  --font-text-theme: 'Lora', serif !important;
+  --font-ui: 'Marcellus', serif !important;
   --footnote-divider-color: transparent !important;
   --footnote-id-color: #B3B3B3 !important;
   --footnote-id-color-no-occurrences: #858585 !important;
@@ -162,7 +160,7 @@ export const theme: ThemeData = {
   --h5-line-height: 1.6 !important;
   --h6-color: #cdcdcd !important;
   --h6-line-height: 1.6 !important;
-  --headerFont: 'iA Writer Quattro S', sans-serif !important;
+  --headerFont: 'Lora', serif !important;
   --heading-formatting: #858585 !important;
   --heading-spacing: 1.5em !important;
   --highlight: color-mix(in srgb, #0066FF, transparent 80%) !important;
@@ -200,7 +198,6 @@ export const theme: ThemeData = {
   --link-external-color-hover: #ffffff !important;
   --link-unresolved-color: #cdcdcd !important;
   --link-unresolved-decoration-color: hsla(0, 0%, 75%, 0.3) !important;
-  --list-indent: 2.25em !important;
   --list-marker-color: #cdcdcd !important;
   --list-marker-color-collapsed: #cdcdcd !important;
   --list-marker-color-hover: #B3B3B3 !important;
@@ -210,10 +207,9 @@ export const theme: ThemeData = {
   --metadata-border-color: transparent !important;
   --metadata-content-radius: 8px !important;
   --metadata-divider-color: transparent !important;
-  --metadata-input-font: 'Sen', sans-serif !important;
-  --metadata-input-height: 28px !important;
+  --metadata-input-font: 'Marcellus', serif !important;
   --metadata-input-text-color: #a0a0a0 !important;
-  --metadata-label-font: 'Sen', sans-serif !important;
+  --metadata-label-font: 'Marcellus', serif !important;
   --metadata-label-text-color: #B3B3B3 !important;
   --metadata-label-text-color-hover: #B3B3B3 !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #FFFFFF !important;
@@ -297,7 +293,6 @@ export const theme: ThemeData = {
   --shadow-navbar-separator-dark: inset 0 -0.5px 0 0 rgba(255, 255, 255, 0.1) !important;
   --shadow-navbar-separator-light: inset 0 -0.5px 0 0 rgba(0, 0, 0, 0.1) !important;
   --shadow-s: none !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --slider-track-background: #ffffff !important;
   --status-bar-background: #323232 !important;
   --status-bar-border-color: transparent !important;
@@ -333,7 +328,6 @@ export const theme: ThemeData = {
   --table-drag-handle-color-active: #323232 !important;
   --table-header-border-color: #c0c0c0 !important;
   --table-header-color: #a0a0a0 !important;
-  --table-header-weight: 600 !important;
   --table-selection: hsla(0, 0%, 75%, 0.1) !important;
   --table-selection-border-color: #cdcdcd !important;
   --table-selection-border-radius: 0 !important;
@@ -355,7 +349,7 @@ export const theme: ThemeData = {
   --text-on-accent: #323232 !important;
   --text-selection: #00526E !important;
   --textHighlight: color-mix(in srgb, #0066FF, transparent 80%) !important;
-  --titleFont: 'iA Writer Quattro S', sans-serif !important;
+  --titleFont: 'Lora', serif !important;
   --titlebar-background: #323232 !important;
   --titlebar-background-focused: #323232 !important;
   --titlebar-border-color: transparent !important;
@@ -369,7 +363,6 @@ export const theme: ThemeData = {
   --vault-profile-color-hover: #a0a0a0 !important;
   --vertical-tab-active-color: #B3B3B3 !important;
   --vertical-tab-header-color: #E0E0E0 !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -409,7 +402,7 @@ html[saved-theme="dark"] body div#quartz-root {
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(160, 160, 160);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(160, 160, 160) none 0px;
   text-decoration: rgb(160, 160, 160);
   text-decoration-color: rgb(160, 160, 160);
@@ -417,7 +410,7 @@ html[saved-theme="dark"] body div#quartz-root {
 
 html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(160, 160, 160);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(160, 160, 160) none 0px;
   text-decoration: rgb(160, 160, 160);
   text-decoration-color: rgb(160, 160, 160);
@@ -425,7 +418,7 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
 
 html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(160, 160, 160);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(160, 160, 160) none 0px;
   text-decoration: rgb(160, 160, 160);
   text-decoration-color: rgb(160, 160, 160);
@@ -433,7 +426,7 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
 
 html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgb(160, 160, 160);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(160, 160, 160) none 0px;
   text-decoration: rgb(160, 160, 160);
   text-decoration-color: rgb(160, 160, 160);
@@ -442,7 +435,7 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
 html[saved-theme="dark"] body .text-highlight {
   background-color: color(srgb 0 0.4 1 / 0.2);
   color: rgb(160, 160, 160);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(160, 160, 160) none 0px;
   text-decoration: rgb(160, 160, 160);
   text-decoration-color: rgb(160, 160, 160);
@@ -450,18 +443,18 @@ html[saved-theme="dark"] body .text-highlight {
 
 html[saved-theme="dark"] body del {
   color: rgb(160, 160, 160);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(160, 160, 160) none 0px;
   text-decoration: line-through rgb(160, 160, 160);
   text-decoration-color: rgb(160, 160, 160);
 }
 
 html[saved-theme="dark"] body p {
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(226, 226, 226);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(226, 226, 226) none 0px;
   text-decoration: underline rgb(226, 226, 226);
   text-decoration-color: rgb(226, 226, 226);
@@ -469,7 +462,7 @@ html[saved-theme="dark"] body p {
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(226, 226, 226);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(226, 226, 226) none 0px;
   text-decoration: underline rgb(226, 226, 226);
   text-decoration-color: rgb(226, 226, 226);
@@ -477,7 +470,7 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
 
 html[saved-theme="dark"] body a.internal.broken {
   color: rgb(205, 205, 205);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(205, 205, 205) none 0px;
   text-decoration: underline rgba(191, 191, 191, 0.3);
   text-decoration-color: rgba(191, 191, 191, 0.3);
@@ -517,7 +510,7 @@ html[saved-theme="dark"] body ul.overflow {
 }
 
 html[saved-theme="dark"] body blockquote {
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   padding-bottom: 1px;
   padding-top: 1px;
 }`,
@@ -530,7 +523,7 @@ html[saved-theme="dark"] body blockquote {
 
 html[saved-theme="dark"] body table {
   color: rgb(160, 160, 160);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   width: 562px;
 }
 
@@ -621,7 +614,7 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(160, 160, 160);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
 }
 
 html[saved-theme="dark"] body figure {
@@ -671,11 +664,11 @@ html[saved-theme="dark"] body .transclude-inner {
   border-top-color: rgb(160, 160, 160);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
 }
 
 html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
 }
 
 html[saved-theme="dark"] body input[type=checkbox] {
@@ -795,6 +788,350 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(160, 160, 160);
   text-decoration: rgb(160, 160, 160);
   text-decoration-color: rgb(160, 160, 160);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(60, 60, 60);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgb(192, 192, 192);
@@ -1038,7 +1375,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-right-radius: 0px;
   border-top-width: 0px;
   color: rgb(160, 160, 160);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
@@ -1051,7 +1388,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(160, 160, 160);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(160, 160, 160) none 0px;
   text-decoration: rgb(160, 160, 160);
   text-decoration-color: rgb(160, 160, 160);
@@ -1129,7 +1466,7 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   border-top-color: rgb(205, 205, 205);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body a.internal.tag-link::before {
@@ -1138,37 +1475,37 @@ html[saved-theme="dark"] body a.internal.tag-link::before {
 
 html[saved-theme="dark"] body h1 {
   color: rgb(205, 205, 205);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body h2 {
   color: rgb(205, 205, 205);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
   color: rgb(205, 205, 205);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body h3 {
   color: rgb(205, 205, 205);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body h4 {
   color: rgb(205, 205, 205);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body h5 {
   color: rgb(205, 205, 205);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body h6 {
   color: rgb(205, 205, 205);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body hr {
@@ -1226,11 +1563,11 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
   background-color: rgb(60, 60, 60);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 0px;
@@ -1248,7 +1585,7 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   border-top-left-radius: 0px;
   border-top-width: 0px;
   color: rgb(205, 205, 205);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body footer ul li a {
@@ -1257,7 +1594,7 @@ html[saved-theme="dark"] body footer ul li a {
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(160, 160, 160);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
@@ -1270,7 +1607,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(160, 160, 160);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }`,
     listPage: `html[saved-theme="dark"] body li.section-li {
   border-bottom-color: rgb(160, 160, 160);
@@ -1281,7 +1618,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 
 html[saved-theme="dark"] body li.section-li > .section .meta {
   color: rgb(160, 160, 160);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -1305,7 +1642,7 @@ html[saved-theme="dark"] body ul.section-ul {
 
 html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(133, 133, 133);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(160, 160, 160);
@@ -1321,7 +1658,7 @@ html[saved-theme="dark"] body .metadata {
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
   color: rgb(205, 205, 205);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body .metadata-properties {
@@ -1330,7 +1667,7 @@ html[saved-theme="dark"] body .metadata-properties {
   border-right-color: rgb(205, 205, 205);
   border-top-color: rgb(205, 205, 205);
   color: rgb(205, 205, 205);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -1339,7 +1676,7 @@ html[saved-theme="dark"] body .navigation-progress {
 
 html[saved-theme="dark"] body .page-header h2.page-title {
   color: rgb(205, 205, 205);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body abbr {
@@ -1360,7 +1697,7 @@ html[saved-theme="dark"] body input[type=text] {
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
   color: rgb(160, 160, 160);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body kbd {
@@ -1433,8 +1770,7 @@ html[saved-theme="dark"] body sup {
   --blur-background: color-mix(in srgb, #C5C5C5 65%, transparent) linear-gradient(#C5C5C5, color-mix(in srgb, #C5C5C5 65%, transparent)) !important;
   --body-font-color-dark: #a0a0a0 !important;
   --body-font-color-light: #000000 !important;
-  --bodyFont: 'iA Writer Quattro S', sans-serif !important;
-  --bold-weight: 600 !important;
+  --bodyFont: 'Lora', serif !important;
   --button-bg-dynamic: #d0d0d0 !important;
   --button-bg-hover-dynamic: #ffffff !important;
   --button-radius: 0 !important;
@@ -1452,7 +1788,6 @@ html[saved-theme="dark"] body sup {
   --callout-quote: 136, 136, 136;
   --callout-radius: 0;
   --callout-tip: 99, 138, 102;
-  --callout-title-weight: 600;
   --callout-warning: 191, 140, 59;
   --canvas-background: #C5C5C5 !important;
   --canvas-card-label-color: #7e7e7e !important;
@@ -1509,24 +1844,24 @@ html[saved-theme="dark"] body sup {
   --embed-border-start: 2px solid #000000 !important;
   --file-header-background: #C5C5C5 !important;
   --file-header-background-focused: #C5C5C5 !important;
-  --file-header-font: 'Sen', sans-serif !important;
+  --file-header-font: 'Marcellus', serif !important;
   --flair-background: #B0B0B0 !important;
   --flair-color: #000000 !important;
   --font-colour-dark-grey-33: #333333 !important;
   --font-colour-light-grey-70: #707070 !important;
   --font-colour-light-grey-bd: #BDBDBD !important;
-  --font-default: 'Sen', sans-serif !important;
-  --font-interface: 'Sen', sans-serif !important;
-  --font-mermaid: 'iA Writer Quattro S', sans-serif !important;
+  --font-default: 'Marcellus', serif !important;
+  --font-interface: 'Marcellus', serif !important;
+  --font-interface-override: 'Marcellus', serif !important;
+  --font-mermaid: 'Lora', serif !important;
   --font-monospace: 'Noto Sans Mono', monospace !important;
   --font-monospace-override: 'Noto Sans Mono', monospace !important;
-  --font-print: iA Writer Quattro S, sans-serif, iA Writer Quattro S, sans-serif, Arial' !important;
-  --font-text: 'iA Writer Quattro S', sans-serif !important;
+  --font-print: Lora, serif, Lora, serif, Arial' !important;
+  --font-text: 'Lora', serif !important;
   --font-text-destructive: #ff4b4b !important;
-  --font-text-override: 'iA Writer Quattro S', sans-serif !important;
-  --font-text-theme: 'iA Writer Quattro S', sans-serif !important;
-  --font-ui: 'Sen', sans-serif !important;
-  --font-ui-override: 'Sen', sans-serif !important;
+  --font-text-override: 'Lora', serif !important;
+  --font-text-theme: 'Lora', serif !important;
+  --font-ui: 'Marcellus', serif !important;
   --footnote-divider-color: transparent !important;
   --footnote-id-color: #222222 !important;
   --footnote-id-color-no-occurrences: #7e7e7e !important;
@@ -1546,7 +1881,7 @@ html[saved-theme="dark"] body sup {
   --h5-line-height: 1.6 !important;
   --h6-color: #000000 !important;
   --h6-line-height: 1.6 !important;
-  --headerFont: 'iA Writer Quattro S', sans-serif !important;
+  --headerFont: 'Lora', serif !important;
   --heading-formatting: #7e7e7e !important;
   --heading-spacing: 1.5em !important;
   --highlight: #94b293 !important;
@@ -1584,7 +1919,6 @@ html[saved-theme="dark"] body sup {
   --link-external-color-hover: #000000 !important;
   --link-unresolved-color: #000000 !important;
   --link-unresolved-decoration-color: hsla(0, 0%, 28%, 0.3) !important;
-  --list-indent: 2.25em !important;
   --list-marker-color: #000000 !important;
   --list-marker-color-collapsed: #000000 !important;
   --list-marker-color-hover: #222222 !important;
@@ -1594,10 +1928,9 @@ html[saved-theme="dark"] body sup {
   --metadata-border-color: transparent !important;
   --metadata-content-radius: 8px !important;
   --metadata-divider-color: transparent !important;
-  --metadata-input-font: 'Sen', sans-serif !important;
-  --metadata-input-height: 28px !important;
+  --metadata-input-font: 'Marcellus', serif !important;
   --metadata-input-text-color: #000000 !important;
-  --metadata-label-font: 'Sen', sans-serif !important;
+  --metadata-label-font: 'Marcellus', serif !important;
   --metadata-label-text-color: #222222 !important;
   --metadata-label-text-color-hover: #222222 !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #1A3319 !important;
@@ -1679,7 +2012,6 @@ html[saved-theme="dark"] body sup {
   --shadow-navbar-separator-dark: inset 0 -0.5px 0 0 rgba(255, 255, 255, 0.1) !important;
   --shadow-navbar-separator-light: inset 0 -0.5px 0 0 rgba(0, 0, 0, 0.1) !important;
   --shadow-s: none !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --slider-track-background: #ffffff !important;
   --status-bar-background: #B0B0B0 !important;
   --status-bar-border-color: transparent !important;
@@ -1715,7 +2047,6 @@ html[saved-theme="dark"] body sup {
   --table-drag-handle-color-active: #ffffff !important;
   --table-header-border-color: #232323 !important;
   --table-header-color: #000000 !important;
-  --table-header-weight: 600 !important;
   --table-selection: hsla(0, 0%, 28%, 0.1) !important;
   --table-selection-border-color: #000000 !important;
   --table-selection-border-radius: 0 !important;
@@ -1737,7 +2068,7 @@ html[saved-theme="dark"] body sup {
   --text-on-accent: #ffffff !important;
   --text-selection: #7a9f79 !important;
   --textHighlight: #94b293 !important;
-  --titleFont: 'iA Writer Quattro S', sans-serif !important;
+  --titleFont: 'Lora', serif !important;
   --titlebar-background: #B0B0B0 !important;
   --titlebar-background-focused: #B0B0B0 !important;
   --titlebar-border-color: transparent !important;
@@ -1751,7 +2082,6 @@ html[saved-theme="dark"] body sup {
   --vault-profile-color-hover: #000000 !important;
   --vertical-tab-active-color: #000000 !important;
   --vertical-tab-header-color: #000000 !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1791,7 +2121,7 @@ html[saved-theme="light"] body div#quartz-root {
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(0, 0, 0);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
@@ -1799,7 +2129,7 @@ html[saved-theme="light"] body div#quartz-root {
 
 html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: rgb(0, 0, 0);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
@@ -1807,7 +2137,7 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
 
 html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: rgb(0, 0, 0);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
@@ -1815,7 +2145,7 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
 
 html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgb(0, 0, 0);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
@@ -1824,7 +2154,7 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
 html[saved-theme="light"] body .text-highlight {
   background-color: rgb(148, 178, 147);
   color: rgb(0, 0, 0);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
@@ -1832,7 +2162,7 @@ html[saved-theme="light"] body .text-highlight {
 
 html[saved-theme="light"] body del {
   color: rgb(0, 0, 0);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: line-through rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
@@ -1840,14 +2170,14 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body p {
   color: rgb(34, 34, 34);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
   outline: rgb(34, 34, 34) none 0px;
   text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(34, 34, 34);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(80, 80, 80);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(80, 80, 80) none 0px;
   text-decoration: underline rgb(80, 80, 80);
   text-decoration-color: rgb(80, 80, 80);
@@ -1855,7 +2185,7 @@ html[saved-theme="light"] body p {
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(80, 80, 80);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(80, 80, 80) none 0px;
   text-decoration: underline rgb(80, 80, 80);
   text-decoration-color: rgb(80, 80, 80);
@@ -1863,7 +2193,7 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
 
 html[saved-theme="light"] body a.internal.broken {
   color: rgb(0, 0, 0);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: underline rgba(71, 71, 71, 0.3);
   text-decoration-color: rgba(71, 71, 71, 0.3);
@@ -1903,7 +2233,7 @@ html[saved-theme="light"] body ul.overflow {
 }
 
 html[saved-theme="light"] body blockquote {
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   padding-bottom: 1px;
   padding-top: 1px;
 }`,
@@ -1916,7 +2246,7 @@ html[saved-theme="light"] body blockquote {
 
 html[saved-theme="light"] body table {
   color: rgb(0, 0, 0);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   width: 562px;
 }
 
@@ -2007,7 +2337,7 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(0, 0, 0);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
 }
 
 html[saved-theme="light"] body figure {
@@ -2061,11 +2391,11 @@ html[saved-theme="light"] body .transclude-inner {
   border-top-color: rgb(0, 0, 0);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
 }
 
 html[saved-theme="light"] body .katex-display > .katex > .katex-html {
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
 }
 
 html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
@@ -2191,6 +2521,350 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(0, 0, 0);
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(197, 197, 197);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   border-bottom-color: rgb(35, 35, 35);
@@ -2434,7 +3108,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-right-radius: 0px;
   border-top-width: 0px;
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
@@ -2447,7 +3121,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space {
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(0, 0, 0);
-  font-family: "iA Writer Quattro S", sans-serif;
+  font-family: Lora, serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
@@ -2525,7 +3199,7 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body a.internal.tag-link::before {
@@ -2534,37 +3208,37 @@ html[saved-theme="light"] body a.internal.tag-link::before {
 
 html[saved-theme="light"] body h1 {
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body h2 {
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body h3 {
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body h4 {
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body h5 {
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body h6 {
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body hr {
@@ -2623,13 +3297,13 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(34, 34, 34);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
   text-decoration: rgb(34, 34, 34);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(34, 34, 34);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
   text-decoration: rgb(34, 34, 34);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
@@ -2653,7 +3327,7 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   border-top-left-radius: 0px;
   border-top-width: 0px;
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body footer ul li a {
@@ -2662,7 +3336,7 @@ html[saved-theme="light"] body footer ul li a {
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
@@ -2680,7 +3354,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .des
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }`,
     listPage: `html[saved-theme="light"] body li.section-li {
   border-bottom-color: rgb(0, 0, 0);
@@ -2691,7 +3365,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 
 html[saved-theme="light"] body li.section-li > .section .meta {
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
@@ -2735,7 +3409,7 @@ html[saved-theme="light"] body .darkmode svg {
 
 html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(126, 126, 126);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(0, 0, 0);
@@ -2751,7 +3425,7 @@ html[saved-theme="light"] body .metadata {
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body .metadata-properties {
@@ -2760,7 +3434,7 @@ html[saved-theme="light"] body .metadata-properties {
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body .navigation-progress {
@@ -2769,7 +3443,7 @@ html[saved-theme="light"] body .navigation-progress {
 
 html[saved-theme="light"] body .page-header h2.page-title {
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body abbr {
@@ -2790,7 +3464,7 @@ html[saved-theme="light"] body input[type=text] {
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
   color: rgb(0, 0, 0);
-  font-family: Sen, sans-serif;
+  font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body kbd {

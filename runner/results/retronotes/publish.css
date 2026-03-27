@@ -52,7 +52,388 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A,
+    U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346,
+    U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6,
+    U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043,
+    U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C,
+    U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121,
+    U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2,
+    U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319,
+    U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1,
+    U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB,
+    U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE,
+    U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4,
+    U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3,
+    U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF,
+    U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF,
+    U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0,
+    U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F,
+    U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315,
+    U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382,
+    U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6,
+    U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7,
+    U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444,
+    U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0,
+    U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA,
+    U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB,
+    U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513,
+    U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D,
+    U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC,
+    U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC,
+    U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887,
+    U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B,
+    U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C,
+    U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8,
+    U+1FB00-1FBFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Cascadia Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Monaco";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Monaco"),
+    url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
 body.theme-light {
+  --bases-embed-border-color: #ba9942 !important;
+  --bases-table-border-color: #ba9942 !important;
+  --bases-table-header-background: #f9f6ee !important;
+  --bases-table-header-background-hover: #e5d7b4 !important;
+  --focus-ring-color: #0df !important;
+  --tab-container-background: #632335 !important;
+  --table-border-color: #ba9942 !important;
+  --text-accent: hsl(43.5, 47.6%, 49.4%) !important;
+  --text-faint: rgba(30, 61, 109, 0.65) !important;
+  --text-normal: #1e3d6d !important;
+  --titlebar-background: #632335 !important;
+  --input-height: 30px !important;
   --accent-h: 43.5 !important;
   --accent-l: 49.4% !important;
   --accent-s: 47.6% !important;
@@ -65,7 +446,7 @@ body.theme-light {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(185, 152, 65, 0.1) !important;
+  --background-modifier-active-hover: hsla(43.5, 47.6%, 49.4%, 0.1) !important;
   --background-modifier-border: #ba9942 !important;
   --background-modifier-border-focus: #c6a95d !important;
   --background-modifier-border-hover: #9d8137 !important;
@@ -95,7 +476,6 @@ body.theme-light {
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px #ba9942 !important;
   --bases-cards-shadow-hover: 0 0 0 1px #9d8137 !important;
-  --bases-embed-border-color: #ba9942 !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -109,10 +489,14 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #ba9942 !important;
   --bases-table-cell-background-active: #f9f6ee !important;
   --bases-table-cell-background-disabled: #efe7d1 !important;
-  --bases-table-cell-background-selected: rgba(185, 152, 65, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(
+    43.5,
+    47.6%,
+    49.4%,
+    0.1
+  ) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #c6a95d !important;
@@ -125,8 +509,6 @@ body.theme-light {
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: #efe7d1 !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: #f9f6ee !important;
-  --bases-table-header-background-hover: #e5d7b4 !important;
   --bases-table-header-color: rgba(30, 61, 109, 0.85) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
@@ -230,10 +612,10 @@ body.theme-light {
   --code-value: #775cb0 !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: rgba(30, 61, 109, 0.65) !important;
-  --collapse-icon-color-collapsed: rgb(185, 152, 65) !important;
-  --color-accent: rgb(185, 152, 65) !important;
-  --color-accent-1: rgb(193, 159, 78) !important;
-  --color-accent-2: rgb(199, 164, 92) !important;
+  --collapse-icon-color-collapsed: hsl(43.5, 47.6%, 49.4%) !important;
+  --color-accent: hsl(43.5, 47.6%, 49.4%) !important;
+  --color-accent-1: hsl(42.5, 48.076%, 53.105%) !important;
+  --color-accent-2: hsl(40.5, 48.552%, 56.81%) !important;
   --color-accent-hsl: 43.5, 47.6%, 49.4% !important;
   --color-base-00: #f9f6ee !important;
   --color-base-05: #f4eee0 !important;
@@ -314,7 +696,6 @@ body.theme-light {
   --file-margins-y: 32px !important;
   --flair-background: #dac897 !important;
   --flair-color: #1e3d6d !important;
-  --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
@@ -436,7 +817,7 @@ body.theme-light {
   --hr-color: rgba(156, 45, 50, 0.85) !important;
   --hr-thickness: 2px !important;
   --icon-color: rgba(30, 61, 109, 0.85) !important;
-  --icon-color-active: rgb(185, 152, 65) !important;
+  --icon-color-active: hsl(43.5, 47.6%, 49.4%) !important;
   --icon-color-focused: #1e3d6d !important;
   --icon-color-hover: rgba(30, 61, 109, 0.85) !important;
   --icon-l: 18px !important;
@@ -474,7 +855,6 @@ body.theme-light {
   --input-corner-shape: round !important;
   --input-date-separator: rgba(30, 61, 109, 0.65) !important;
   --input-font-weight: 400 !important;
-  --input-height: 30px !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgba(30, 61, 109, 0.65) !important;
@@ -630,12 +1010,12 @@ body.theme-light {
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: #762a3f !important;
   --nav-item-background-hover: #762a3f !important;
-  --nav-item-background-selected: rgba(185, 152, 65, 0.15) !important;
+  --nav-item-background-selected: hsla(43.5, 47.6%, 49.4%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #f9f6ee !important;
   --nav-item-color-active: #e5d7b4 !important;
-  --nav-item-color-highlighted: rgb(185, 152, 65) !important;
+  --nav-item-color-highlighted: hsl(43.5, 47.6%, 49.4%) !important;
   --nav-item-color-hover: #e5d7b4 !important;
   --nav-item-color-selected: #e5d7b4 !important;
   --nav-item-margin-bottom: 2px !important;
@@ -671,7 +1051,7 @@ body.theme-light {
   --pill-color: rgba(30, 61, 109, 0.85) !important;
   --pill-color-hover: #1e3d6d !important;
   --pill-color-remove: rgba(30, 61, 109, 0.65) !important;
-  --pill-color-remove-hover: rgb(185, 152, 65) !important;
+  --pill-color-remove-hover: hsl(43.5, 47.6%, 49.4%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -803,7 +1183,6 @@ body.theme-light {
   --sync-avatar-color-8: #dc84a3 !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: #efe7d1 !important;
-  --tab-container-background: #632335 !important;
   --tab-curve: 6px !important;
   --tab-divider-color: none !important;
   --tab-font-size: 13px !important;
@@ -829,19 +1208,18 @@ body.theme-light {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(185, 152, 65) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(43.5, 47.6%, 49.4%) !important;
   --tab-text-color: #ababab !important;
   --tab-text-color-active: #5c5c5c !important;
   --tab-text-color-focused: #5c5c5c !important;
   --tab-text-color-focused-active: #5c5c5c !important;
   --tab-text-color-focused-active-current: #1e3d6d !important;
-  --tab-text-color-focused-highlighted: rgb(138, 92, 245) !important;
+  --tab-text-color-focused-highlighted: hsl(258, 88%, 66%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: #ba9942 !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: #ba9942 !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -865,7 +1243,7 @@ body.theme-light {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(185, 152, 65, 0.1) !important;
+  --table-selection: hsla(43.5, 47.6%, 49.4%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
   --table-selection-border-color: #762a3f !important;
   --table-selection-border-radius: 4px !important;
@@ -874,8 +1252,8 @@ body.theme-light {
   --table-white-space: break-spaces !important;
   --tag-background: rgba(156, 45, 50, 0.85) !important;
   --tag-background-hover: rgba(156, 45, 50, 0.85) !important;
-  --tag-border-color: rgba(185, 152, 65, 0.15) !important;
-  --tag-border-color-hover: rgba(185, 152, 65, 0.15) !important;
+  --tag-border-color: hsla(43.5, 47.6%, 49.4%, 0.15) !important;
+  --tag-border-color-hover: hsla(43.5, 47.6%, 49.4%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: #efe7d1 !important;
   --tag-color-hover: #efe7d1 !important;
@@ -886,20 +1264,16 @@ body.theme-light {
   --tag-padding-y: 0.12em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: rgb(185, 152, 65) !important;
-  --text-accent-hover: rgb(199, 164, 92) !important;
+  --text-accent-hover: hsl(40.5, 48.552%, 56.81%) !important;
   --text-error: #b43c3c !important;
-  --text-faint: rgba(30, 61, 109, 0.65) !important;
   --text-highlight-bg: rgba(242, 186, 68, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: rgba(30, 61, 109, 0.85) !important;
-  --text-normal: #1e3d6d !important;
   --text-on-accent: #e5d7b4 !important;
   --text-on-accent-inverted: #e5d7b4 !important;
   --text-selection: rgba(186, 153, 66, 0.5) !important;
   --text-success: #719461 !important;
   --text-warning: #db8134 !important;
-  --titlebar-background: #632335 !important;
   --titlebar-background-focused: #632335 !important;
   --titlebar-border-color: #ba9942 !important;
   --titlebar-border-width: 0px !important;
@@ -989,6 +1363,18 @@ body.theme-light {
 }
 
 body.theme-dark {
+  --bases-embed-border-color: #6e6e6e !important;
+  --bases-table-border-color: #6e6e6e !important;
+  --bases-table-header-background: #0c0c0c !important;
+  --bases-table-header-background-hover: #333333 !important;
+  --focus-ring-color: #0df !important;
+  --tab-container-background: #2a0000 !important;
+  --table-border-color: #6e6e6e !important;
+  --text-accent: hsl(-3, 102%, 14.95%) !important;
+  --text-faint: rgba(249, 246, 238, 0.65) !important;
+  --text-normal: #f9f6ee !important;
+  --titlebar-background: #2a0000 !important;
+  --input-height: 30px !important;
   --accent-h: 0 !important;
   --accent-l: 13% !important;
   --accent-s: 100% !important;
@@ -1001,7 +1387,7 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(66, 0, 0, 0.1) !important;
+  --background-modifier-active-hover: hsla(0, 100%, 13%, 0.1) !important;
   --background-modifier-border: #6e6e6e !important;
   --background-modifier-border-focus: #5a5a5a !important;
   --background-modifier-border-hover: #828282 !important;
@@ -1031,7 +1417,6 @@ body.theme-dark {
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px #6e6e6e !important;
   --bases-cards-shadow-hover: 0 0 0 1px #828282 !important;
-  --bases-embed-border-color: #6e6e6e !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -1045,14 +1430,13 @@ body.theme-dark {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-border-color: #6e6e6e !important;
   --bases-table-cell-background-active: #0c0c0c !important;
   --bases-table-cell-background-disabled: #202020 !important;
-  --bases-table-cell-background-selected: rgba(66, 0, 0, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(0, 100%, 13%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #5a5a5a !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(66, 0, 0) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(0, 100%, 13%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -1061,8 +1445,6 @@ body.theme-dark {
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: #202020 !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-background: #0c0c0c !important;
-  --bases-table-header-background-hover: #333333 !important;
   --bases-table-header-color: rgba(249, 246, 238, 0.85) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
@@ -1167,7 +1549,7 @@ body.theme-dark {
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: rgba(249, 246, 238, 0.65) !important;
   --collapse-icon-color-collapsed: hsl(-3, 102%, 14.95%) !important;
-  --color-accent: rgb(66, 0, 0) !important;
+  --color-accent: hsl(0, 100%, 13%) !important;
   --color-accent-1: hsl(-3, 102%, 14.95%) !important;
   --color-accent-2: hsl(-5, 105%, 16.77%) !important;
   --color-accent-hsl: 0, 100%, 13% !important;
@@ -1207,7 +1589,7 @@ body.theme-dark {
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: #6e6e6e !important;
-  --divider-color-hover: rgb(66, 0, 0) !important;
+  --divider-color-hover: hsl(0, 100%, 13%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -1250,7 +1632,6 @@ body.theme-dark {
   --file-margins-y: 32px !important;
   --flair-background: #474747 !important;
   --flair-color: #f9f6ee !important;
-  --focus-ring-color: #0df !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
@@ -1410,7 +1791,6 @@ body.theme-dark {
   --input-corner-shape: round !important;
   --input-date-separator: rgba(249, 246, 238, 0.65) !important;
   --input-font-weight: 400 !important;
-  --input-height: 30px !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgba(249, 246, 238, 0.65) !important;
@@ -1425,7 +1805,7 @@ body.theme-dark {
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: rgb(66, 0, 0) !important;
+  --interactive-accent: hsl(0, 100%, 13%) !important;
   --interactive-accent-hover: hsl(-3, 102%, 14.95%) !important;
   --interactive-accent-hsl: 0, 100%, 13% !important;
   --interactive-hover: #515151 !important;
@@ -1566,7 +1946,7 @@ body.theme-dark {
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: #440000 !important;
   --nav-item-background-hover: #440000 !important;
-  --nav-item-background-selected: rgba(66, 0, 0, 0.15) !important;
+  --nav-item-background-selected: hsla(0, 100%, 13%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: #f9f6ee !important;
@@ -1731,7 +2111,6 @@ body.theme-dark {
   --sync-avatar-color-8: #b16982 !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: #202020 !important;
-  --tab-container-background: #2a0000 !important;
   --tab-curve: 6px !important;
   --tab-divider-color: none !important;
   --tab-font-size: 13px !important;
@@ -1757,19 +2136,18 @@ body.theme-dark {
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(66, 0, 0) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 100%, 13%) !important;
   --tab-text-color: #666666 !important;
   --tab-text-color-active: #b3b3b3 !important;
   --tab-text-color-focused: #b3b3b3 !important;
   --tab-text-color-focused-active: #b3b3b3 !important;
   --tab-text-color-focused-active-current: #f9f6ee !important;
-  --tab-text-color-focused-highlighted: rgb(166, 139, 249) !important;
+  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: #6e6e6e !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
-  --table-border-color: #6e6e6e !important;
   --table-border-width: 1px !important;
   --table-cell-vertical-alignment: top !important;
   --table-column-alt-background: transparent !important;
@@ -1778,7 +2156,7 @@ body.theme-dark {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: rgb(66, 0, 0) !important;
+  --table-drag-handle-background-active: hsl(0, 100%, 13%) !important;
   --table-drag-handle-color: rgba(249, 246, 238, 0.65) !important;
   --table-drag-handle-color-active: #e2d6d6 !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -1793,17 +2171,17 @@ body.theme-dark {
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: rgba(66, 0, 0, 0.1) !important;
+  --table-selection: hsla(0, 100%, 13%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: rgb(66, 0, 0) !important;
+  --table-selection-border-color: hsl(0, 100%, 13%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
   --tag-background: rgba(226, 117, 44, 0.85) !important;
   --tag-background-hover: rgba(226, 117, 44, 0.85) !important;
-  --tag-border-color: rgba(66, 0, 0, 0.15) !important;
-  --tag-border-color-hover: rgba(66, 0, 0, 0.15) !important;
+  --tag-border-color: hsla(0, 100%, 13%, 0.15) !important;
+  --tag-border-color-hover: hsla(0, 100%, 13%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: #0c0c0c !important;
   --tag-color-hover: #202020 !important;
@@ -1814,20 +2192,16 @@ body.theme-dark {
   --tag-padding-y: 0.12em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent: hsl(-3, 102%, 14.95%) !important;
   --text-accent-hover: hsl(-5, 105%, 16.77%) !important;
   --text-error: #8a2e2e !important;
-  --text-faint: rgba(249, 246, 238, 0.65) !important;
   --text-highlight-bg: rgba(194, 153, 56, 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: rgba(249, 246, 238, 0.85) !important;
-  --text-normal: #f9f6ee !important;
   --text-on-accent: #e2d6d6 !important;
   --text-on-accent-inverted: #e2d6d6 !important;
   --text-selection: rgba(110, 110, 110, 0.5) !important;
   --text-success: #5a7a4d !important;
   --text-warning: #b3682a !important;
-  --titlebar-background: #2a0000 !important;
   --titlebar-background-focused: #2a0000 !important;
   --titlebar-border-color: #6e6e6e !important;
   --titlebar-border-width: 0px !important;
@@ -1928,11 +2302,13 @@ body {
   --nav-collapse-icon-color: var(--text-muted);
   --nav-collapse-icon-color-collapsed: var(--text-faint);
 }
-body .markdown-rendered a.external-link {
+body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(156, 45, 50), rgb(226, 117, 44));
+  color: rgb(156, 45, 50);
   cursor: pointer;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -1950,19 +2326,30 @@ body .markdown-rendered a.external-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(226, 117, 44) none 0px;
-  text-decoration: underline rgb(226, 117, 44);
-  text-decoration-color: light-dark(rgb(156, 45, 50), rgb(226, 117, 44));
+  outline: rgb(156, 45, 50) none 0px;
+  text-decoration: underline rgb(156, 45, 50);
+  text-decoration-color: rgb(156, 45, 50);
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .markdown-rendered a.internal-link {
+body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(156, 45, 50), rgb(226, 117, 44));
+  color: rgb(156, 45, 50);
   cursor: pointer;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -1980,19 +2367,30 @@ body .markdown-rendered a.internal-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(226, 117, 44) none 0px;
-  text-decoration: underline rgb(226, 117, 44);
-  text-decoration-color: light-dark(rgb(156, 45, 50), rgb(226, 117, 44));
+  outline: rgb(156, 45, 50) none 0px;
+  text-decoration: underline rgb(156, 45, 50);
+  text-decoration-color: rgb(156, 45, 50);
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .markdown-rendered a.internal-link.is-unresolved {
+body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(156, 45, 50, 0.85), rgba(226, 117, 44, 0.85));
+  color: rgba(156, 45, 50, 0.85);
   cursor: pointer;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2010,32 +2408,43 @@ body .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgba(226, 117, 44, 0.85) none 0px;
-  text-decoration: underline rgb(226, 117, 44);
-  text-decoration-color: light-dark(rgb(156, 45, 50), rgb(226, 117, 44));
+  outline: rgba(156, 45, 50, 0.85) none 0px;
+  text-decoration: underline rgb(156, 45, 50);
+  text-decoration-color: rgb(156, 45, 50);
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .markdown-rendered a.external-link:hover {
-  text-decoration: underline rgb(166, 138, 249);
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+body body.theme-light .markdown-rendered a.external-link:hover {
+  text-decoration: underline rgb(138, 92, 245);
+  text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: rgb(138, 92, 245);
 }
-body .markdown-rendered a.internal-link:hover {
-  text-decoration-color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+body body.theme-light .markdown-rendered a.internal-link:hover {
+  text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
-  color: light-dark(rgb(138, 92, 245), rgb(166, 138, 249));
+  color: rgb(138, 92, 245);
 }
-body .markdown-rendered p {
+body body.theme-light .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
   color: rgba(249, 246, 238, 0.85);
   cursor: auto;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2059,13 +2468,24 @@ body .markdown-rendered p {
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: none;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body strong {
+body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(79, 108, 79), rgb(100, 173, 75));
+  color: rgb(79, 108, 79);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2083,19 +2503,30 @@ body strong {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 600;
-  outline: rgb(100, 173, 75) none 0px;
-  text-decoration: rgb(100, 173, 75);
-  text-decoration-color: light-dark(rgb(79, 108, 79), rgb(100, 173, 75));
+  outline: rgb(79, 108, 79) none 0px;
+  text-decoration: rgb(79, 108, 79);
+  text-decoration-color: rgb(79, 108, 79);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body b {
+body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(79, 108, 79), rgb(100, 173, 75));
+  color: rgb(79, 108, 79);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2113,19 +2544,30 @@ body b {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 600;
-  outline: rgb(100, 173, 75) none 0px;
-  text-decoration: rgb(100, 173, 75);
-  text-decoration-color: light-dark(rgb(79, 108, 79), rgb(100, 173, 75));
+  outline: rgb(79, 108, 79) none 0px;
+  text-decoration: rgb(79, 108, 79);
+  text-decoration-color: rgb(79, 108, 79);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body em {
+body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(156, 45, 50), rgb(76, 173, 221));
+  color: rgb(156, 45, 50);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2143,19 +2585,30 @@ body em {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(76, 173, 221) none 0px;
-  text-decoration: rgb(76, 173, 221);
-  text-decoration-color: light-dark(rgb(156, 45, 50), rgb(76, 173, 221));
+  outline: rgb(156, 45, 50) none 0px;
+  text-decoration: rgb(156, 45, 50);
+  text-decoration-color: rgb(156, 45, 50);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body i {
+body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(156, 45, 50), rgb(76, 173, 221));
+  color: rgb(156, 45, 50);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2173,22 +2626,30 @@ body i {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(76, 173, 221) none 0px;
-  text-decoration: rgb(76, 173, 221);
-  text-decoration-color: light-dark(rgb(156, 45, 50), rgb(76, 173, 221));
+  outline: rgb(156, 45, 50) none 0px;
+  text-decoration: rgb(156, 45, 50);
+  text-decoration-color: rgb(156, 45, 50);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .markdown-rendered mark {
-  background-color: light-dark(
-    rgba(242, 186, 68, 0.4),
-    rgba(194, 153, 56, 0.4)
-  );
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light .markdown-rendered mark {
+  background-color: rgba(242, 186, 68, 0.4);
+  color: rgb(30, 61, 109);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2206,19 +2667,30 @@ body .markdown-rendered mark {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(249, 246, 238) none 0px;
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  outline: rgb(30, 61, 109) none 0px;
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body del {
+body body.theme-light del {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  color: rgb(30, 61, 109);
   cursor: text;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2236,16 +2708,25 @@ body del {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(249, 246, 238) none 0px;
-  text-decoration: line-through rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  outline: rgb(30, 61, 109) none 0px;
+  text-decoration: line-through rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body .suggestion-item.is-selected {
-  background-color: light-dark(rgb(118, 42, 63), rgb(68, 0, 0));
+body body.theme-light .suggestion-item.is-selected {
+  background-color: rgb(118, 42, 63);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2254,11 +2735,11 @@ body .suggestion-item.is-selected {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  color: rgb(30, 61, 109);
 }
-body div.suggestion-item {
-  background-color: light-dark(rgb(118, 42, 63), rgb(68, 0, 0));
-  border: 0px light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light div.suggestion-item {
+  background-color: rgb(118, 42, 63);
+  border: 0px rgb(30, 61, 109);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2267,12 +2748,10 @@ body div.suggestion-item {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  color: rgb(30, 61, 109);
 }
-body .markdown-rendered hr {
-  border-color: rgb(128, 128, 128)
-    light-dark(rgb(186, 153, 66), rgb(110, 110, 110))
-    light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+body body.theme-light .markdown-rendered hr {
+  border-color: rgb(128, 128, 128) rgb(186, 153, 66) rgb(186, 153, 66);
   border-style: solid solid none none;
   border-width: 0px 1px 0px 0px;
   border-top-left-radius: 0px;
@@ -2290,12 +2769,9 @@ body .markdown-rendered hr {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body div.multi-select-pill {
+body body.theme-light div.multi-select-pill {
   align-items: normal;
-  background-color: light-dark(
-    rgba(156, 45, 50, 0.85),
-    rgba(226, 117, 44, 0.85)
-  );
+  background-color: rgba(156, 45, 50, 0.85);
   display: flex;
   font-family:
     "IBM Plex Mono",
@@ -2315,7 +2791,7 @@ body div.multi-select-pill {
     sans-serif;
   font-weight: 400;
   margin-inline-start: 0px;
-  border: 0px solid light-dark(rgba(186, 153, 66, 0.15), rgba(66, 0, 0, 0.15));
+  border: 0px solid rgba(186, 153, 66, 0.15);
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
@@ -2325,16 +2801,16 @@ body div.multi-select-pill {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body div.multi-select-pill > div.multi-select-pill-content {
-  color: light-dark(rgb(239, 231, 209), rgb(12, 12, 12));
+body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
+  color: rgb(239, 231, 209);
 }
-body .markdown-rendered ul > li {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light .markdown-rendered ul > li {
+  color: rgb(30, 61, 109);
   text-align: start;
 }
-body .markdown-rendered ul > li::marker {
+body body.theme-light .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2343,17 +2819,17 @@ body .markdown-rendered ul > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: rgb(34, 34, 34);
   pointer-events: auto;
   transform: none;
 }
-body .markdown-rendered ol > li {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light .markdown-rendered ol > li {
+  color: rgb(30, 61, 109);
   text-align: start;
 }
-body .markdown-rendered ol > li::marker {
+body body.theme-light .markdown-rendered ol > li::marker {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2362,13 +2838,13 @@ body .markdown-rendered ol > li::marker {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  color: rgb(34, 34, 34);
   pointer-events: auto;
   transform: none;
 }
-body .markdown-rendered code {
+body body.theme-light .markdown-rendered code {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px solid light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border: 0px solid rgb(30, 61, 109);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2377,19 +2853,16 @@ body .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  color: rgb(30, 61, 109);
   font-family:
     "IBM Plex Mono", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     Consolas, "Source Code Pro", monospace;
   padding: 0px;
 }
-body .markdown-rendered pre > code {
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.2),
-    rgba(110, 110, 110, 0.2)
-  );
-  border: 0px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+body body.theme-light .markdown-rendered pre > code {
+  background-color: rgba(186, 153, 66, 0.2);
+  border: 0px solid rgb(186, 153, 66);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2403,13 +2876,10 @@ body .markdown-rendered pre > code {
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.2),
-    rgba(110, 110, 110, 0.2)
-  );
-  border: 0px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+body body.theme-light :not(pre) > code[class*="language-"],
+body body.theme-light pre[class*="language-"] {
+  background-color: rgba(186, 153, 66, 0.2);
+  border: 0px solid rgb(186, 153, 66);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2423,9 +2893,13 @@ body pre[class*="language-"] {
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
-body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
+body
+  body.theme-light
+  ul.contains-task-list
+  > li.task-list-item
+  > .task-list-item-checkbox {
   appearance: auto;
-  border: 1px solid light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border: 1px solid rgb(30, 61, 109);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2445,11 +2919,12 @@ body ul.contains-task-list > li.task-list-item > .task-list-item-checkbox {
   position: relative;
   top: auto;
 }
-body ul.contains-task-list > li.task-list-item {
+body body.theme-light ul.contains-task-list > li.task-list-item {
   text-align: start;
   display: list-item;
 }
 body
+  body.theme-light
   ul.contains-task-list
   > li.task-list-item
   > input[type="checkbox"]:checked {
@@ -2461,19 +2936,13 @@ body
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
 }
-body ul > li.task-list-item[data-task="x"] {
-  color: light-dark(rgba(156, 45, 50, 0.65), rgba(226, 117, 44, 0.65));
-  text-decoration: line-through rgba(226, 117, 44, 0.65);
-  text-decoration-color: light-dark(
-    rgba(156, 45, 50, 0.65),
-    rgba(226, 117, 44, 0.65)
-  );
+body body.theme-light ul > li.task-list-item[data-task="x"] {
+  color: rgba(156, 45, 50, 0.65);
+  text-decoration: line-through rgba(156, 45, 50, 0.65);
+  text-decoration-color: rgba(156, 45, 50, 0.65);
 }
-body .markdown-rendered blockquote {
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.2),
-    rgba(110, 110, 110, 0.2)
-  );
+body body.theme-light .markdown-rendered blockquote {
+  background-color: rgba(186, 153, 66, 0.2);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2497,13 +2966,13 @@ body .markdown-rendered blockquote {
   margin-inline-start: 40px;
   margin-inline-end: 40px;
 }
-body .footnote-backref {
-  color: light-dark(rgba(30, 61, 109, 0.65), rgba(249, 246, 238, 0.65));
-  text-decoration: rgba(249, 246, 238, 0.65);
+body body.theme-light .footnote-backref {
+  color: rgba(30, 61, 109, 0.65);
+  text-decoration: rgba(30, 61, 109, 0.65);
 }
-body .site-body-left-column input.search-bar {
-  background-color: light-dark(rgb(229, 215, 180), rgb(61, 61, 61));
-  border: 1px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+body body.theme-light .site-body-left-column input.search-bar {
+  background-color: rgb(229, 215, 180);
+  border: 1px solid rgb(186, 153, 66);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -2512,7 +2981,7 @@ body .site-body-left-column input.search-bar {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  color: rgb(30, 61, 109);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2530,10 +2999,9 @@ body .site-body-left-column input.search-bar {
     "Segoe UI Symbol",
     sans-serif;
 }
-body .search-results {
-  background-color: light-dark(rgb(249, 246, 238), rgb(12, 12, 12));
-  border: 2px solid
-    light-dark(rgba(156, 45, 50, 0.85), rgba(226, 117, 44, 0.85));
+body body.theme-light .search-results {
+  background-color: rgb(249, 246, 238);
+  border: 2px solid rgba(156, 45, 50, 0.85);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -2545,13 +3013,15 @@ body .search-results {
   box-shadow:
     rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
     rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
-    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
+    rgba(0, 0, 0, 0.1) 0px 15px 30px 0px;
 }
-body .search-results > * {
+body body.theme-light .search-results > * {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(229, 215, 180), rgb(226, 214, 214));
+  color: rgb(229, 215, 180);
   cursor: auto;
   filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2569,17 +3039,25 @@ body .search-results > * {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(226, 214, 214) none 0px;
-  text-decoration: rgb(226, 214, 214);
-  text-decoration-color: light-dark(rgb(229, 215, 180), rgb(226, 214, 214));
+  outline: rgb(229, 215, 180) none 0px;
+  text-decoration: rgb(229, 215, 180);
+  text-decoration-color: rgb(229, 215, 180);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
+  transform: none;
   user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
-body div.search-results {
-  border: 2px solid
-    light-dark(rgba(156, 45, 50, 0.85), rgba(226, 117, 44, 0.85));
+body body.theme-light div.search-results {
+  border: 2px solid rgba(156, 45, 50, 0.85);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -2589,11 +3067,11 @@ body div.search-results {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .search-results .suggestion-item {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light .search-results .suggestion-item {
+  color: rgb(30, 61, 109);
 }
-body div.search-results .suggestion-item {
-  border: 0px light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light div.search-results .suggestion-item {
+  border: 0px rgb(30, 61, 109);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2603,16 +3081,16 @@ body div.search-results .suggestion-item {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light .search-results .suggestion-item.is-selected {
+  color: rgb(30, 61, 109);
   font-weight: 400;
-  background-color: light-dark(rgb(118, 42, 63), rgb(68, 0, 0));
+  background-color: rgb(118, 42, 63);
 }
-body div.search-results .suggestion-item.is-selected {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light div.search-results .suggestion-item.is-selected {
+  color: rgb(30, 61, 109);
 }
-body .published-container .markdown-rendered h1 {
-  color: light-dark(rgb(156, 45, 50), rgb(226, 117, 44));
+body body.theme-light .published-container .markdown-rendered h1 {
+  color: rgb(156, 45, 50);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2631,8 +3109,8 @@ body .published-container .markdown-rendered h1 {
     sans-serif;
   text-shadow: none;
 }
-body .published-container .markdown-rendered h2 {
-  color: light-dark(rgb(156, 45, 50), rgb(226, 117, 44));
+body body.theme-light .published-container .markdown-rendered h2 {
+  color: rgb(156, 45, 50);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2651,8 +3129,8 @@ body .published-container .markdown-rendered h2 {
     sans-serif;
   text-shadow: none;
 }
-body .published-container .markdown-rendered h3 {
-  color: light-dark(rgb(156, 45, 50), rgb(226, 117, 44));
+body body.theme-light .published-container .markdown-rendered h3 {
+  color: rgb(156, 45, 50);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2671,8 +3149,8 @@ body .published-container .markdown-rendered h3 {
     sans-serif;
   text-shadow: none;
 }
-body .published-container .markdown-rendered h4 {
-  color: light-dark(rgb(156, 45, 50), rgb(226, 117, 44));
+body body.theme-light .published-container .markdown-rendered h4 {
+  color: rgb(156, 45, 50);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2691,8 +3169,8 @@ body .published-container .markdown-rendered h4 {
     sans-serif;
   text-shadow: none;
 }
-body .published-container .markdown-rendered h5 {
-  color: light-dark(rgb(156, 45, 50), rgb(226, 117, 44));
+body body.theme-light .published-container .markdown-rendered h5 {
+  color: rgb(156, 45, 50);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2711,8 +3189,8 @@ body .published-container .markdown-rendered h5 {
     sans-serif;
   text-shadow: none;
 }
-body .published-container .markdown-rendered h6 {
-  color: light-dark(rgb(156, 45, 50), rgb(226, 117, 44));
+body body.theme-light .published-container .markdown-rendered h6 {
+  color: rgb(156, 45, 50);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -2731,19 +3209,27 @@ body .published-container .markdown-rendered h6 {
     sans-serif;
   text-shadow: none;
 }
-body .outline-view-outer .outline-view .tree-item > .tree-item-self {
+body
+  body.theme-light
+  .outline-view-outer
+  .outline-view
+  .tree-item
+  > .tree-item-self {
   font-weight: 400;
 }
-body .outline-view-outer .outline-view .tree-item > .tree-item-children {
+body
+  body.theme-light
+  .outline-view-outer
+  .outline-view
+  .tree-item
+  > .tree-item-children {
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.styled-scrollbars {
-  background: light-dark(
-    rgb(249, 246, 238) none repeat scroll 0% 0% / auto padding-box border-box,
-    rgb(12, 12, 12) none repeat scroll 0% 0% / auto padding-box border-box
-  );
-  background-color: light-dark(rgb(249, 246, 238), rgb(12, 12, 12));
+body body.theme-light body.styled-scrollbars {
+  background: rgb(249, 246, 238) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  background-color: rgb(249, 246, 238);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2752,15 +3238,14 @@ body body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border: 0px rgb(30, 61, 109);
   box-shadow: none;
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
-body .callout[data-callout="note"] {
-  --callout-color: 110, 110, 110;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+body body.theme-light .callout[data-callout="note"] {
+  --callout-color: 186, 153, 66;
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2771,14 +3256,11 @@ body .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+  background-color: rgba(186, 153, 66, 0.1);
 }
-body .callout[data-callout="note"] > .callout-title {
+body body.theme-light .callout[data-callout="note"] > .callout-title {
   gap: 4px;
-  border: 0px light-dark(rgba(156, 45, 50, 0.85), rgba(226, 117, 44, 0.85));
+  border: 0px rgba(156, 45, 50, 0.85);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2789,22 +3271,18 @@ body .callout[data-callout="note"] > .callout-title {
   border-end-end-radius: 0px;
   padding: 0px;
 }
-body .callout > .callout-title > .callout-title-inner {
+body body.theme-light .callout > .callout-title > .callout-title-inner {
   font-weight: 600;
 }
-body .callout > .callout-content {
+body body.theme-light .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
   padding: 0px;
 }
-body .callout[data-callout="abstract"] {
-  --callout-color: 110, 110, 110;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+body body.theme-light .callout[data-callout="abstract"] {
+  --callout-color: 186, 153, 66;
+  background-color: rgba(186, 153, 66, 0.1);
   mix-blend-mode: normal;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2814,15 +3292,11 @@ body .callout[data-callout="abstract"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="info"] {
-  --callout-color: 110, 110, 110;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+body body.theme-light .callout[data-callout="info"] {
+  --callout-color: 186, 153, 66;
+  background-color: rgba(186, 153, 66, 0.1);
   mix-blend-mode: normal;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2832,15 +3306,11 @@ body .callout[data-callout="info"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="todo"] {
-  --callout-color: 110, 110, 110;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+body body.theme-light .callout[data-callout="todo"] {
+  --callout-color: 186, 153, 66;
+  background-color: rgba(186, 153, 66, 0.1);
   mix-blend-mode: normal;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2850,15 +3320,11 @@ body .callout[data-callout="todo"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="tip"] {
-  --callout-color: 110, 110, 110;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+body body.theme-light .callout[data-callout="tip"] {
+  --callout-color: 186, 153, 66;
+  background-color: rgba(186, 153, 66, 0.1);
   mix-blend-mode: normal;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2868,15 +3334,11 @@ body .callout[data-callout="tip"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="success"] {
-  --callout-color: 110, 110, 110;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+body body.theme-light .callout[data-callout="success"] {
+  --callout-color: 186, 153, 66;
+  background-color: rgba(186, 153, 66, 0.1);
   mix-blend-mode: normal;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2886,15 +3348,11 @@ body .callout[data-callout="success"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="question"] {
-  --callout-color: 110, 110, 110;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+body body.theme-light .callout[data-callout="question"] {
+  --callout-color: 186, 153, 66;
+  background-color: rgba(186, 153, 66, 0.1);
   mix-blend-mode: normal;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2904,15 +3362,11 @@ body .callout[data-callout="question"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="warning"] {
-  --callout-color: 110, 110, 110;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+body body.theme-light .callout[data-callout="warning"] {
+  --callout-color: 186, 153, 66;
+  background-color: rgba(186, 153, 66, 0.1);
   mix-blend-mode: normal;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2922,15 +3376,11 @@ body .callout[data-callout="warning"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="danger"] {
-  --callout-color: 110, 110, 110;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+body body.theme-light .callout[data-callout="danger"] {
+  --callout-color: 186, 153, 66;
+  background-color: rgba(186, 153, 66, 0.1);
   mix-blend-mode: normal;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2940,15 +3390,11 @@ body .callout[data-callout="danger"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="failure"] {
-  --callout-color: 110, 110, 110;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+body body.theme-light .callout[data-callout="failure"] {
+  --callout-color: 186, 153, 66;
+  background-color: rgba(186, 153, 66, 0.1);
   mix-blend-mode: normal;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2958,15 +3404,11 @@ body .callout[data-callout="failure"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="bug"] {
-  --callout-color: 110, 110, 110;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+body body.theme-light .callout[data-callout="bug"] {
+  --callout-color: 186, 153, 66;
+  background-color: rgba(186, 153, 66, 0.1);
   mix-blend-mode: normal;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2976,15 +3418,11 @@ body .callout[data-callout="bug"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="example"] {
-  --callout-color: 110, 110, 110;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+body body.theme-light .callout[data-callout="example"] {
+  --callout-color: 186, 153, 66;
+  background-color: rgba(186, 153, 66, 0.1);
   mix-blend-mode: normal;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -2994,15 +3432,11 @@ body .callout[data-callout="example"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .callout[data-callout="quote"] {
-  --callout-color: 110, 110, 110;
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.1),
-    rgba(110, 110, 110, 0.1)
-  );
+body body.theme-light .callout[data-callout="quote"] {
+  --callout-color: 186, 153, 66;
+  background-color: rgba(186, 153, 66, 0.1);
   mix-blend-mode: normal;
-  border: 2px solid
-    light-dark(rgba(186, 153, 66, 0.25), rgba(110, 110, 110, 0.25));
+  border: 2px solid rgba(186, 153, 66, 0.25);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3012,10 +3446,10 @@ body .callout[data-callout="quote"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .markdown-rendered table {
+body body.theme-light .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
   border-collapse: separate;
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  color: rgb(30, 61, 109);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -3049,7 +3483,7 @@ body .markdown-rendered table {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body .markdown-rendered thead {
+body body.theme-light .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
@@ -3061,16 +3495,16 @@ body .markdown-rendered thead {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .markdown-rendered tbody {
+body body.theme-light .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
 }
-body .markdown-rendered th {
+body body.theme-light .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(156, 45, 50), rgb(226, 117, 44));
+  color: rgb(156, 45, 50);
   font-weight: 600;
   text-align: start;
   vertical-align: top;
-  border: 1px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border: 1px solid rgb(186, 153, 66);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3081,13 +3515,13 @@ body .markdown-rendered th {
   border-end-end-radius: 0px;
   padding: 4px 8px;
 }
-body .markdown-rendered td {
+body body.theme-light .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  color: rgb(30, 61, 109);
   font-weight: 400;
   text-align: start;
   vertical-align: top;
-  border: 1px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border: 1px solid rgb(186, 153, 66);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3098,7 +3532,7 @@ body .markdown-rendered td {
   border-end-end-radius: 0px;
   padding: 4px 8px;
 }
-body .markdown-rendered tr {
+body body.theme-light .markdown-rendered tr {
   background-color: rgba(0, 0, 0, 0);
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
@@ -3110,19 +3544,19 @@ body .markdown-rendered tr {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .markdown-rendered tbody tr:nth-child(even) {
+body body.theme-light .markdown-rendered tbody tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0);
 }
-body .markdown-rendered tbody tr:nth-child(odd) {
+body body.theme-light .markdown-rendered tbody tr:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0);
 }
-body .markdown-rendered img {
+body body.theme-light .markdown-rendered img {
   border-radius: 0px;
   box-shadow: none;
   filter: none;
   max-width: none;
   object-fit: fill;
-  border: 0px light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border: 0px rgb(30, 61, 109);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3137,10 +3571,10 @@ body .markdown-rendered img {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body .markdown-rendered figure {
+body body.theme-light .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
-  border: 0px light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border: 0px rgb(30, 61, 109);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3156,8 +3590,8 @@ body .markdown-rendered figure {
   margin-inline-start: 40px;
   padding: 0px;
 }
-body .markdown-rendered figcaption {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light .markdown-rendered figcaption {
+  color: rgb(30, 61, 109);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -3184,13 +3618,13 @@ body .markdown-rendered figcaption {
   margin-inline-start: 0px;
   padding: 0px;
 }
-body .markdown-rendered video {
+body body.theme-light .markdown-rendered video {
   border-radius: 0px;
   box-shadow: none;
   filter: none;
   max-width: none;
   object-fit: contain;
-  border: 0px light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border: 0px rgb(30, 61, 109);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3205,9 +3639,9 @@ body .markdown-rendered video {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body .markdown-rendered audio {
+body body.theme-light .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border: 0px rgb(30, 61, 109);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3218,13 +3652,10 @@ body .markdown-rendered audio {
   border-end-end-radius: 0px;
   padding: 0px;
 }
-body .internal-embed {
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.15),
-    rgba(110, 110, 110, 0.15)
-  );
-  border-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  border-left: 2px solid light-dark(rgb(118, 42, 63), rgba(226, 117, 44, 0.85));
+body body.theme-light .internal-embed {
+  background-color: rgba(186, 153, 66, 0.15);
+  border-color: rgb(30, 61, 109);
+  border-left: 2px solid rgb(118, 42, 63);
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
@@ -3235,13 +3666,10 @@ body .internal-embed {
   margin: 0px;
   padding: 0px;
 }
-body .markdown-embed {
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.15),
-    rgba(110, 110, 110, 0.15)
-  );
-  border-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  border-left: 2px solid light-dark(rgb(118, 42, 63), rgba(226, 117, 44, 0.85));
+body body.theme-light .markdown-embed {
+  background-color: rgba(186, 153, 66, 0.15);
+  border-color: rgb(30, 61, 109);
+  border-left: 2px solid rgb(118, 42, 63);
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
@@ -3252,9 +3680,9 @@ body .markdown-embed {
   margin: 0px;
   padding: 0px;
 }
-body .file-embed {
-  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
-  border-color: light-dark(rgba(30, 61, 109, 0.85), rgba(249, 246, 238, 0.85));
+body body.theme-light .file-embed {
+  background-color: rgb(239, 231, 209);
+  border-color: rgba(30, 61, 109, 0.85);
   border-width: 0px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -3263,9 +3691,9 @@ body .file-embed {
   margin: 0px;
   padding: 8px;
 }
-body .metadata-container {
-  background-color: light-dark(rgb(239, 231, 209), rgb(32, 32, 32));
-  color: light-dark(rgba(30, 61, 109, 0.85), rgba(249, 246, 238, 0.85));
+body body.theme-light .metadata-container {
+  background-color: rgb(239, 231, 209);
+  color: rgba(30, 61, 109, 0.85);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -3282,7 +3710,7 @@ body .metadata-container {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border: 1px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border: 1px solid rgb(186, 153, 66);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -3290,9 +3718,9 @@ body .metadata-container {
   margin: 0px 0px 32px;
   padding: 16px;
 }
-body .metadata-properties {
+body body.theme-light .metadata-properties {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(30, 61, 109, 0.85), rgba(249, 246, 238, 0.85));
+  color: rgba(30, 61, 109, 0.85);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -3309,7 +3737,7 @@ body .metadata-properties {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border-color: light-dark(rgba(30, 61, 109, 0.85), rgba(249, 246, 238, 0.85));
+  border-color: rgba(30, 61, 109, 0.85);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3318,11 +3746,11 @@ body .metadata-properties {
   margin: 0px;
   padding: 0px;
 }
-body progress {
+body body.theme-light progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
   height: 15px;
-  border: 0px light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border: 0px rgb(30, 61, 109);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3332,10 +3760,10 @@ body progress {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body input[type="range"] {
+body body.theme-light input[type="range"] {
   accent-color: auto;
-  background-color: light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-  border: 2px inset light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  background-color: rgb(255, 255, 255);
+  border: 2px inset rgb(118, 118, 118);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3345,9 +3773,9 @@ body input[type="range"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body input[type="text"] {
+body body.theme-light input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(30, 61, 109, 0.85), rgba(249, 246, 238, 0.85));
+  color: rgba(30, 61, 109, 0.85);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -3364,8 +3792,7 @@ body input[type="text"] {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border: 0px solid
-    light-dark(rgba(30, 61, 109, 0.85), rgba(249, 246, 238, 0.85));
+  border: 0px solid rgba(30, 61, 109, 0.85);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3376,9 +3803,9 @@ body input[type="text"] {
   border-end-end-radius: 0px;
   padding: 4px 8px;
 }
-body details {
+body body.theme-light details {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border: 0px rgb(30, 61, 109);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3394,16 +3821,16 @@ body details {
   margin-inline-start: 0px;
   padding: 0px;
 }
-body summary {
+body body.theme-light summary {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  color: rgb(30, 61, 109);
   cursor: auto;
   font-weight: 400;
   padding: 0px;
 }
-body details[open] {
+body body.theme-light details[open] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(34, 34, 34), rgb(218, 218, 218));
+  border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3419,16 +3846,16 @@ body details[open] {
   margin-inline-start: 0px;
   padding: 0px;
 }
-body kbd {
-  background-color: light-dark(rgb(118, 42, 63), rgb(68, 0, 0));
+body body.theme-light kbd {
+  background-color: rgb(118, 42, 63);
   box-shadow: none;
-  color: light-dark(rgb(229, 215, 180), rgb(226, 214, 214));
+  color: rgb(229, 215, 180);
   font-family:
     "IBM Plex Mono", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     Consolas, "Source Code Pro", monospace;
   font-size: 14px;
-  border: 0px light-dark(rgb(229, 215, 180), rgb(226, 214, 214));
+  border: 0px rgb(229, 215, 180);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3439,15 +3866,15 @@ body kbd {
   border-end-end-radius: 4px;
   padding: 1.4px 3.5px;
 }
-body dl {
+body body.theme-light dl {
   margin: 16px 0px;
   margin-block-end: 15px;
   margin-block-start: 15px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body dt {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light dt {
+  color: rgb(30, 61, 109);
   font-weight: 400;
   margin: 0px;
   margin-block-end: 0px;
@@ -3455,8 +3882,8 @@ body dt {
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
-body dd {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light dd {
+  color: rgb(30, 61, 109);
   margin: 0px 0px 0px 40px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -3464,113 +3891,113 @@ body dd {
   margin-inline-start: 40px;
   padding: 0px;
 }
-body sub {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light sub {
+  color: rgb(30, 61, 109);
   font-size: 13.3333px;
   vertical-align: sub;
 }
-body sup {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light sup {
+  color: rgb(30, 61, 109);
   font-size: 13.3333px;
   vertical-align: super;
 }
-body abbr {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light abbr {
+  color: rgb(30, 61, 109);
   cursor: auto;
-  text-decoration: underline dotted rgb(249, 246, 238);
+  text-decoration: underline dotted rgb(30, 61, 109);
   text-decoration-style: dotted;
 }
-body li.task-list-item[data-task="-"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="-"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task=">"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task=">"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="/"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="/"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="?"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="?"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="!"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="!"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="*"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="*"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="l"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="l"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="b"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="b"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="i"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="i"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="S"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="S"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="I"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="I"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="p"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="p"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="c"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="c"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="f"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="f"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="k"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="k"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="u"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="u"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="d"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="d"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body li.task-list-item[data-task="w"] {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  text-decoration: rgb(249, 246, 238);
-  text-decoration-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light li.task-list-item[data-task="w"] {
+  color: rgb(30, 61, 109);
+  text-decoration: rgb(30, 61, 109);
+  text-decoration-color: rgb(30, 61, 109);
 }
-body .math-block > mjx-container.MathJax {
+body body.theme-light .math-block > mjx-container.MathJax {
   display: block;
   text-align: center;
   white-space-collapse: collapse;
@@ -3592,7 +4019,7 @@ body .math-block > mjx-container.MathJax {
     "Segoe UI Symbol",
     sans-serif;
 }
-body div.math-block > mjx-container.MathJax {
+body body.theme-light div.math-block > mjx-container.MathJax {
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -3610,15 +4037,13 @@ body div.math-block > mjx-container.MathJax {
     "Segoe UI Symbol",
     sans-serif;
 }
-body .math-inline > mjx-container.MathJax > mjx-math {
+body body.theme-light .math-inline > mjx-container.MathJax > mjx-math {
   font-family: MJXZERO, MJXTEX;
 }
-body .nav-view-outer .tree-item-self a {
-  color: rgb(249, 246, 238);
-  cursor: default;
+body body.theme-light .nav-view-outer .tree-item-self a {
+  color: rgb(34, 34, 34);
+  cursor: auto;
   font-family:
-    "IBM Plex Mono",
-    monospace,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3633,21 +4058,21 @@ body .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(249, 246, 238);
+  text-decoration: rgb(34, 34, 34);
 }
-body .nav-view-outer .tree-item-self.mod-active {
-  background-color: light-dark(rgb(118, 42, 63), rgb(68, 0, 0));
-  border: 0px light-dark(rgb(229, 215, 180), rgb(226, 214, 214));
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+body body.theme-light .nav-view-outer .tree-item-self.mod-active {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: light-dark(rgb(229, 215, 180), rgb(226, 214, 214));
-  cursor: default;
+  color: rgb(34, 34, 34);
+  cursor: auto;
   transition-behavior: normal;
   transition-delay: 0s;
   transition-duration: 0s;
@@ -3655,6 +4080,7 @@ body .nav-view-outer .tree-item-self.mod-active {
   transition-timing-function: ease;
 }
 body
+  body.theme-light
   .nav-view-outer
   .nav-view
   > .tree-item.is-collapsed
@@ -3683,6 +4109,7 @@ body
   text-decoration: rgb(249, 246, 238);
 }
 body
+  body.theme-light
   .nav-view-outer
   .nav-view
   > .tree-item
@@ -3710,20 +4137,20 @@ body
   font-weight: 400;
   text-decoration: rgb(249, 246, 238);
 }
-body .clickable-icon {
+body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  color: rgb(30, 61, 109);
   cursor: default;
-  border-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border-color: rgb(30, 61, 109);
   border-width: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-body .site-footer {
-  background-color: light-dark(rgb(229, 215, 180), rgb(51, 51, 51));
-  color: light-dark(rgba(30, 61, 109, 0.85), rgba(249, 246, 238, 0.85));
+body body.theme-light .site-footer {
+  background-color: rgb(229, 215, 180);
+  color: rgba(30, 61, 109, 0.85);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -3740,7 +4167,7 @@ body .site-footer {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  border-color: light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border-color: rgb(186, 153, 66);
   border-style: solid;
   border-width: 1px 0px 0px 1px;
   border-top-left-radius: 8px;
@@ -3748,12 +4175,12 @@ body .site-footer {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .site-footer a {
-  color: light-dark(rgba(30, 61, 109, 0.85), rgba(249, 246, 238, 0.85));
-  text-decoration: rgba(249, 246, 238, 0.85);
+body body.theme-light .site-footer a {
+  color: rgba(30, 61, 109, 0.85);
+  text-decoration: rgba(30, 61, 109, 0.85);
 }
-body .nav-header {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light .nav-header {
+  color: rgb(30, 61, 109);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -3772,21 +4199,21 @@ body .nav-header {
     sans-serif;
   font-weight: 400;
 }
-body .nav-files-container .tree-item {
+body body.theme-light .nav-files-container .tree-item {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  border-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  color: rgb(30, 61, 109);
+  border-color: rgb(30, 61, 109);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .nav-file-title {
+body body.theme-light .nav-file-title {
   color: rgb(249, 246, 238);
   text-decoration: rgb(249, 246, 238);
 }
-body .nav-file-title-content {
+body body.theme-light .nav-file-title-content {
   color: rgb(249, 246, 238);
   font-family:
     "IBM Plex Mono",
@@ -3805,42 +4232,42 @@ body .nav-file-title-content {
     "Segoe UI Symbol",
     sans-serif;
 }
-body .nav-files-container {
+body body.theme-light .nav-files-container {
   background-color: rgba(0, 0, 0, 0);
-  border-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border-color: rgb(30, 61, 109);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .site-body-left-column-site-theme-toggle {
+body body.theme-light .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(229, 215, 180), rgb(226, 214, 214));
+  color: rgb(229, 215, 180);
   cursor: default;
-  border-color: light-dark(rgb(229, 215, 180), rgb(226, 214, 214));
+  border-color: rgb(229, 215, 180);
   border-width: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-body .site-body-left-column-site-theme-toggle svg {
-  stroke: rgb(226, 214, 214);
-  color: light-dark(rgb(229, 215, 180), rgb(226, 214, 214));
+body body.theme-light .site-body-left-column-site-theme-toggle svg {
+  stroke: rgb(229, 215, 180);
+  color: rgb(229, 215, 180);
 }
-body .view-header-breadcrumb {
+body body.theme-light .view-header-breadcrumb {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgba(30, 61, 109, 0.85), rgba(249, 246, 238, 0.85));
-  border-color: light-dark(rgba(30, 61, 109, 0.85), rgba(249, 246, 238, 0.85));
+  color: rgba(30, 61, 109, 0.85);
+  border-color: rgba(30, 61, 109, 0.85);
   border-width: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-body .view-header-breadcrumb-separator {
-  color: light-dark(rgba(30, 61, 109, 0.65), rgba(249, 246, 238, 0.65));
+body body.theme-light .view-header-breadcrumb-separator {
+  color: rgba(30, 61, 109, 0.65);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -3858,8 +4285,8 @@ body .view-header-breadcrumb-separator {
     "Segoe UI Symbol",
     sans-serif;
 }
-body .page-header .page-title {
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light .page-header .page-title {
+  color: rgb(30, 61, 109);
   font-family:
     "IBM Plex Mono",
     monospace,
@@ -3877,45 +4304,42 @@ body .page-header .page-title {
     "Segoe UI Symbol",
     sans-serif;
 }
-body .math-block {
+body body.theme-light .math-block {
   background-color: rgba(0, 0, 0, 0);
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
-  border-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  color: rgb(30, 61, 109);
+  border-color: rgb(30, 61, 109);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .footnotes {
+body body.theme-light .footnotes {
   background-color: rgba(0, 0, 0, 0);
-  border-top-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border-top-color: rgb(30, 61, 109);
   border-top-width: 0px;
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  color: rgb(30, 61, 109);
 }
-body .table-wrapper {
+body body.theme-light .table-wrapper {
   background-color: rgba(0, 0, 0, 0);
-  border-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+  border-color: rgb(30, 61, 109);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body .view-content {
-  border-color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body body.theme-light .view-content {
+  border-color: rgb(30, 61, 109);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-body figure[data-rehype-pretty-code-figure] {
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.2),
-    rgba(110, 110, 110, 0.2)
-  );
-  border: 0px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+body body.theme-light figure[data-rehype-pretty-code-figure] {
+  background-color: rgba(186, 153, 66, 0.2);
+  border: 0px solid rgb(186, 153, 66);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3925,14 +4349,14 @@ body figure[data-rehype-pretty-code-figure] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: light-dark(
-    rgba(186, 153, 66, 0.2),
-    rgba(110, 110, 110, 0.2)
-  );
-  color: light-dark(rgb(30, 61, 109), rgb(249, 246, 238));
+body
+  body.theme-light
+  figure[data-rehype-pretty-code-figure]
+  > [data-rehype-pretty-code-title] {
+  background-color: rgba(186, 153, 66, 0.2);
+  color: rgb(30, 61, 109);
   font-family: monospace;
-  border: 0px solid light-dark(rgb(186, 153, 66), rgb(110, 110, 110));
+  border: 0px solid rgb(186, 153, 66);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -3942,17 +4366,17 @@ body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body pre > code [data-line] {
+body body.theme-light pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left: 0px light-dark(rgb(242, 186, 68), rgb(194, 153, 56));
+  border-left: 0px rgb(242, 186, 68);
 }
-body pre > code [data-highlighted-line] {
+body body.theme-light pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-color: light-dark(rgb(242, 186, 68), rgb(194, 153, 56));
+  border-left-color: rgb(242, 186, 68);
 }
-body pre > code [data-highlighted-chars] {
+body body.theme-light pre > code [data-highlighted-chars] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px light-dark(rgb(242, 186, 68), rgb(194, 153, 56));
+  border: 0px rgb(242, 186, 68);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3962,7 +4386,2104 @@ body pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
-body .search-highlight {
+body body.theme-light .search-highlight {
+  background-color: rgb(255, 255, 0);
+  color: rgb(0, 0, 0);
+  border: 0px rgb(0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered a.external-link {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(226, 117, 44);
+  cursor: pointer;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(226, 117, 44) none 0px;
+  text-decoration: underline rgb(226, 117, 44);
+  text-decoration-color: rgb(226, 117, 44);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .markdown-rendered a.internal-link {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(226, 117, 44);
+  cursor: pointer;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(226, 117, 44) none 0px;
+  text-decoration: underline rgb(226, 117, 44);
+  text-decoration-color: rgb(226, 117, 44);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(226, 117, 44, 0.85);
+  cursor: pointer;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgba(226, 117, 44, 0.85) none 0px;
+  text-decoration: underline rgb(226, 117, 44);
+  text-decoration-color: rgb(226, 117, 44);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  transition: opacity 0.14s ease-in-out;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .markdown-rendered a.external-link:hover {
+  text-decoration: underline rgb(166, 138, 249);
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: rgb(166, 138, 249);
+}
+body body.theme-dark .markdown-rendered a.internal-link:hover {
+  text-decoration-color: rgb(166, 138, 249);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: rgb(166, 138, 249);
+}
+body body.theme-dark .markdown-rendered p {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(249, 246, 238, 0.85);
+  cursor: auto;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgba(249, 246, 238, 0.85) none 0px;
+  text-decoration: rgba(249, 246, 238, 0.85);
+  text-decoration-color: rgba(249, 246, 238, 0.85);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: none;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark strong {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(100, 173, 75);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  outline: rgb(100, 173, 75) none 0px;
+  text-decoration: rgb(100, 173, 75);
+  text-decoration-color: rgb(100, 173, 75);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark b {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(100, 173, 75);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  outline: rgb(100, 173, 75) none 0px;
+  text-decoration: rgb(100, 173, 75);
+  text-decoration-color: rgb(100, 173, 75);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark em {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(76, 173, 221);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(76, 173, 221) none 0px;
+  text-decoration: rgb(76, 173, 221);
+  text-decoration-color: rgb(76, 173, 221);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark i {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(76, 173, 221);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(76, 173, 221) none 0px;
+  text-decoration: rgb(76, 173, 221);
+  text-decoration-color: rgb(76, 173, 221);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .markdown-rendered mark {
+  background-color: rgba(194, 153, 56, 0.4);
+  color: rgb(249, 246, 238);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(249, 246, 238) none 0px;
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark del {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(249, 246, 238);
+  cursor: text;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(249, 246, 238) none 0px;
+  text-decoration: line-through rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark .suggestion-item.is-selected {
+  background-color: rgb(68, 0, 0);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(249, 246, 238);
+}
+body body.theme-dark div.suggestion-item {
+  background-color: rgb(68, 0, 0);
+  border: 0px rgb(249, 246, 238);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(249, 246, 238);
+}
+body body.theme-dark .markdown-rendered hr {
+  border-color: rgb(128, 128, 128) rgb(110, 110, 110) rgb(110, 110, 110);
+  border-style: solid solid none none;
+  border-width: 0px 1px 0px 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  box-shadow: none;
+  margin: 0px;
+  margin-block-end: 32px;
+  margin-block-start: 32px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark div.multi-select-pill {
+  align-items: normal;
+  background-color: rgba(226, 117, 44, 0.85);
+  display: flex;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  margin-inline-start: 0px;
+  border: 0px solid rgba(66, 0, 0, 0.15);
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
+  color: rgb(12, 12, 12);
+}
+body body.theme-dark .markdown-rendered ul > li {
+  color: rgb(249, 246, 238);
+  text-align: start;
+}
+body body.theme-dark .markdown-rendered ul > li::marker {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(218, 218, 218);
+  pointer-events: auto;
+  transform: none;
+}
+body body.theme-dark .markdown-rendered ol > li {
+  color: rgb(249, 246, 238);
+  text-align: start;
+}
+body body.theme-dark .markdown-rendered ol > li::marker {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(218, 218, 218);
+  pointer-events: auto;
+  transform: none;
+}
+body body.theme-dark .markdown-rendered code {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px solid rgb(249, 246, 238);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(249, 246, 238);
+  font-family:
+    "IBM Plex Mono", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
+    Consolas, "Source Code Pro", monospace;
+  padding: 0px;
+}
+body body.theme-dark .markdown-rendered pre > code {
+  background-color: rgba(110, 110, 110, 0.2);
+  border: 0px solid rgb(110, 110, 110);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
+  padding: 12px 16px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body body.theme-dark :not(pre) > code[class*="language-"],
+body body.theme-dark pre[class*="language-"] {
+  background-color: rgba(110, 110, 110, 0.2);
+  border: 0px solid rgb(110, 110, 110);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
+  padding: 12px 16px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body
+  body.theme-dark
+  ul.contains-task-list
+  > li.task-list-item
+  > .task-list-item-checkbox {
+  appearance: auto;
+  border: 1px solid rgb(249, 246, 238);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  margin: 0px 8px 0px -24px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: 16px;
+  transition: box-shadow 0.15s ease-in-out;
+  position: relative;
+  top: auto;
+}
+body body.theme-dark ul.contains-task-list > li.task-list-item {
+  text-align: start;
+  display: list-item;
+}
+body
+  body.theme-dark
+  ul.contains-task-list
+  > li.task-list-item
+  > input[type="checkbox"]:checked {
+  content: normal;
+  top: auto;
+  inset-inline-start: auto;
+  position: static;
+  width: auto;
+  display: list-item;
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark ul > li.task-list-item[data-task="x"] {
+  color: rgba(226, 117, 44, 0.65);
+  text-decoration: line-through rgba(226, 117, 44, 0.65);
+  text-decoration-color: rgba(226, 117, 44, 0.65);
+}
+body body.theme-dark .markdown-rendered blockquote {
+  background-color: rgba(110, 110, 110, 0.2);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-style: normal;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+body body.theme-dark .footnote-backref {
+  color: rgba(249, 246, 238, 0.65);
+  text-decoration: rgba(249, 246, 238, 0.65);
+}
+body body.theme-dark .site-body-left-column input.search-bar {
+  background-color: rgb(61, 61, 61);
+  border: 1px solid rgb(110, 110, 110);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(249, 246, 238);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-dark .search-results {
+  background-color: rgb(12, 12, 12);
+  border: 2px solid rgba(226, 117, 44, 0.85);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  box-shadow:
+    rgba(0, 0, 0, 0.07) 0px 1.8px 7.3px 0px,
+    rgba(0, 0, 0, 0.114) 0px 6.3px 24.7px 0px,
+    rgba(0, 0, 0, 0.2) 0px 30px 90px 0px;
+}
+body body.theme-dark .search-results > * {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(226, 214, 214);
+  cursor: auto;
+  filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  outline: rgb(226, 214, 214) none 0px;
+  text-decoration: rgb(226, 214, 214);
+  text-decoration-color: rgb(226, 214, 214);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all;
+  transform: none;
+  user-select: text;
+  animation-name: none;
+  animation-duration: 0s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+body body.theme-dark div.search-results {
+  border: 2px solid rgba(226, 117, 44, 0.85);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .search-results .suggestion-item {
+  color: rgb(249, 246, 238);
+}
+body body.theme-dark div.search-results .suggestion-item {
+  border: 0px rgb(249, 246, 238);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .search-results .suggestion-item.is-selected {
+  color: rgb(249, 246, 238);
+  font-weight: 400;
+  background-color: rgb(68, 0, 0);
+}
+body body.theme-dark div.search-results .suggestion-item.is-selected {
+  color: rgb(249, 246, 238);
+}
+body body.theme-dark .published-container .markdown-rendered h1 {
+  color: rgb(226, 117, 44);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h2 {
+  color: rgb(226, 117, 44);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h3 {
+  color: rgb(226, 117, 44);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h4 {
+  color: rgb(226, 117, 44);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h5 {
+  color: rgb(226, 117, 44);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body body.theme-dark .published-container .markdown-rendered h6 {
+  color: rgb(226, 117, 44);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  text-shadow: none;
+}
+body
+  body.theme-dark
+  .outline-view-outer
+  .outline-view
+  .tree-item
+  > .tree-item-self {
+  font-weight: 400;
+}
+body
+  body.theme-dark
+  .outline-view-outer
+  .outline-view
+  .tree-item
+  > .tree-item-children {
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-dark body.styled-scrollbars {
+  background: rgb(12, 12, 12) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  background-color: rgb(12, 12, 12);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  border: 0px rgb(249, 246, 238);
+  box-shadow: none;
+  scrollbar-width: auto;
+  scrollbar-color: auto;
+}
+body body.theme-dark .callout[data-callout="note"] {
+  --callout-color: 110, 110, 110;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  mix-blend-mode: normal;
+  padding: 12px 12px 12px 24px;
+  background-color: rgba(110, 110, 110, 0.1);
+}
+body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  gap: 4px;
+  border: 0px rgba(226, 117, 44, 0.85);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body body.theme-dark .callout > .callout-title > .callout-title-inner {
+  font-weight: 600;
+}
+body body.theme-dark .callout > .callout-content {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0px;
+}
+body body.theme-dark .callout[data-callout="abstract"] {
+  --callout-color: 110, 110, 110;
+  background-color: rgba(110, 110, 110, 0.1);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="info"] {
+  --callout-color: 110, 110, 110;
+  background-color: rgba(110, 110, 110, 0.1);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="todo"] {
+  --callout-color: 110, 110, 110;
+  background-color: rgba(110, 110, 110, 0.1);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="tip"] {
+  --callout-color: 110, 110, 110;
+  background-color: rgba(110, 110, 110, 0.1);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="success"] {
+  --callout-color: 110, 110, 110;
+  background-color: rgba(110, 110, 110, 0.1);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="question"] {
+  --callout-color: 110, 110, 110;
+  background-color: rgba(110, 110, 110, 0.1);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="warning"] {
+  --callout-color: 110, 110, 110;
+  background-color: rgba(110, 110, 110, 0.1);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="danger"] {
+  --callout-color: 110, 110, 110;
+  background-color: rgba(110, 110, 110, 0.1);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="failure"] {
+  --callout-color: 110, 110, 110;
+  background-color: rgba(110, 110, 110, 0.1);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="bug"] {
+  --callout-color: 110, 110, 110;
+  background-color: rgba(110, 110, 110, 0.1);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="example"] {
+  --callout-color: 110, 110, 110;
+  background-color: rgba(110, 110, 110, 0.1);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="quote"] {
+  --callout-color: 110, 110, 110;
+  background-color: rgba(110, 110, 110, 0.1);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(110, 110, 110, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered table {
+  background-color: rgba(0, 0, 0, 0);
+  border-collapse: separate;
+  color: rgb(249, 246, 238);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  table-layout: auto;
+  width: 217.422px;
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 0px 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark .markdown-rendered thead {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered tbody {
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark .markdown-rendered th {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(226, 117, 44);
+  font-weight: 600;
+  text-align: start;
+  vertical-align: top;
+  border: 1px solid rgb(110, 110, 110);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 4px 8px;
+}
+body body.theme-dark .markdown-rendered td {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(249, 246, 238);
+  font-weight: 400;
+  text-align: start;
+  vertical-align: top;
+  border: 1px solid rgb(110, 110, 110);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 4px 8px;
+}
+body body.theme-dark .markdown-rendered tr {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(128, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark .markdown-rendered img {
+  border-radius: 0px;
+  box-shadow: none;
+  filter: none;
+  max-width: none;
+  object-fit: fill;
+  border: 0px rgb(249, 246, 238);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark .markdown-rendered figure {
+  background-color: rgba(0, 0, 0, 0);
+  text-align: start;
+  border: 0px rgb(249, 246, 238);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 16px 40px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
+  margin-inline-end: 40px;
+  margin-inline-start: 40px;
+  padding: 0px;
+}
+body body.theme-dark .markdown-rendered figcaption {
+  color: rgb(249, 246, 238);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  text-align: start;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body body.theme-dark .markdown-rendered video {
+  border-radius: 0px;
+  box-shadow: none;
+  filter: none;
+  max-width: none;
+  object-fit: contain;
+  border: 0px rgb(249, 246, 238);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark .markdown-rendered audio {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(249, 246, 238);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+}
+body body.theme-dark .internal-embed {
+  background-color: rgba(110, 110, 110, 0.15);
+  border-color: rgb(249, 246, 238);
+  border-left: 2px solid rgba(226, 117, 44, 0.85);
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body body.theme-dark .markdown-embed {
+  background-color: rgba(110, 110, 110, 0.15);
+  border-color: rgb(249, 246, 238);
+  border-left: 2px solid rgba(226, 117, 44, 0.85);
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body body.theme-dark .file-embed {
+  background-color: rgb(32, 32, 32);
+  border-color: rgba(249, 246, 238, 0.85);
+  border-width: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 0px;
+  padding: 8px;
+}
+body body.theme-dark .metadata-container {
+  background-color: rgb(32, 32, 32);
+  color: rgba(249, 246, 238, 0.85);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border: 1px solid rgb(110, 110, 110);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 0px 0px 32px;
+  padding: 16px;
+}
+body body.theme-dark .metadata-properties {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(249, 246, 238, 0.85);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: rgba(249, 246, 238, 0.85);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body body.theme-dark progress {
+  accent-color: auto;
+  background-color: rgba(0, 0, 0, 0);
+  height: 15px;
+  border: 0px rgb(249, 246, 238);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark input[type="range"] {
+  accent-color: auto;
+  background-color: rgb(59, 59, 59);
+  border: 2px inset rgb(133, 133, 133);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark input[type="text"] {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(249, 246, 238, 0.85);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border: 0px solid rgba(249, 246, 238, 0.85);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 4px 8px;
+}
+body body.theme-dark details {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(249, 246, 238);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body body.theme-dark summary {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(249, 246, 238);
+  cursor: auto;
+  font-weight: 400;
+  padding: 0px;
+}
+body body.theme-dark details[open] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+}
+body body.theme-dark kbd {
+  background-color: rgb(68, 0, 0);
+  box-shadow: none;
+  color: rgb(226, 214, 214);
+  font-family:
+    "IBM Plex Mono", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono",
+    "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
+    Consolas, "Source Code Pro", monospace;
+  font-size: 14px;
+  border: 0px rgb(226, 214, 214);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  padding: 1.4px 3.5px;
+}
+body body.theme-dark dl {
+  margin: 16px 0px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark dt {
+  color: rgb(249, 246, 238);
+  font-weight: 400;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+body body.theme-dark dd {
+  color: rgb(249, 246, 238);
+  margin: 0px 0px 0px 40px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 40px;
+  padding: 0px;
+}
+body body.theme-dark sub {
+  color: rgb(249, 246, 238);
+  font-size: 13.3333px;
+  vertical-align: sub;
+}
+body body.theme-dark sup {
+  color: rgb(249, 246, 238);
+  font-size: 13.3333px;
+  vertical-align: super;
+}
+body body.theme-dark abbr {
+  color: rgb(249, 246, 238);
+  cursor: auto;
+  text-decoration: underline dotted rgb(249, 246, 238);
+  text-decoration-style: dotted;
+}
+body body.theme-dark li.task-list-item[data-task="-"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task=">"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="/"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="?"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="!"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="*"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="l"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="b"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="i"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="S"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="I"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="p"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="c"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="f"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="k"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="u"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="d"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark li.task-list-item[data-task="w"] {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+  text-decoration-color: rgb(249, 246, 238);
+}
+body body.theme-dark .math-block > mjx-container.MathJax {
+  display: block;
+  text-align: center;
+  white-space-collapse: collapse;
+  text-wrap-mode: wrap;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-dark div.math-block > mjx-container.MathJax {
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-dark .math-inline > mjx-container.MathJax > mjx-math {
+  font-family: MJXZERO, MJXTEX;
+}
+body body.theme-dark .nav-view-outer .tree-item-self a {
+  color: rgb(218, 218, 218);
+  cursor: auto;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: rgb(218, 218, 218);
+}
+body body.theme-dark .nav-view-outer .tree-item-self.mod-active {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(218, 218, 218);
+  cursor: auto;
+  transition-behavior: normal;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: all;
+  transition-timing-function: ease;
+}
+body
+  body.theme-dark
+  .nav-view-outer
+  .nav-view
+  > .tree-item.is-collapsed
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
+  color: rgb(249, 246, 238);
+  cursor: default;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: rgb(249, 246, 238);
+}
+body
+  body.theme-dark
+  .nav-view-outer
+  .nav-view
+  > .tree-item
+  > .tree-item-children
+  > .tree-item
+  > .tree-item-self {
+  color: rgb(249, 246, 238);
+  cursor: default;
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  text-decoration: rgb(249, 246, 238);
+}
+body body.theme-dark .clickable-icon {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(249, 246, 238);
+  cursor: default;
+  border-color: rgb(249, 246, 238);
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body body.theme-dark .site-footer {
+  background-color: rgb(51, 51, 51);
+  color: rgba(249, 246, 238, 0.85);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: rgb(110, 110, 110);
+  border-style: solid;
+  border-width: 1px 0px 0px 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-dark .site-footer a {
+  color: rgba(249, 246, 238, 0.85);
+  text-decoration: rgba(249, 246, 238, 0.85);
+}
+body body.theme-dark .nav-header {
+  color: rgb(249, 246, 238);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+}
+body body.theme-dark .nav-files-container .tree-item {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(249, 246, 238);
+  border-color: rgb(249, 246, 238);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-dark .nav-file-title {
+  color: rgb(249, 246, 238);
+  text-decoration: rgb(249, 246, 238);
+}
+body body.theme-dark .nav-file-title-content {
+  color: rgb(249, 246, 238);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-dark .nav-files-container {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(249, 246, 238);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-dark .site-body-left-column-site-theme-toggle {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(226, 214, 214);
+  cursor: default;
+  border-color: rgb(226, 214, 214);
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body body.theme-dark .site-body-left-column-site-theme-toggle svg {
+  stroke: rgb(226, 214, 214);
+  color: rgb(226, 214, 214);
+}
+body body.theme-dark .view-header-breadcrumb {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(249, 246, 238, 0.85);
+  border-color: rgba(249, 246, 238, 0.85);
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+body body.theme-dark .view-header-breadcrumb-separator {
+  color: rgba(249, 246, 238, 0.65);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-dark .page-header .page-title {
+  color: rgb(249, 246, 238);
+  font-family:
+    "IBM Plex Mono",
+    monospace,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-dark .math-block {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(249, 246, 238);
+  border-color: rgb(249, 246, 238);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-dark .footnotes {
+  background-color: rgba(0, 0, 0, 0);
+  border-top-color: rgb(249, 246, 238);
+  border-top-width: 0px;
+  color: rgb(249, 246, 238);
+}
+body body.theme-dark .table-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(249, 246, 238);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-dark .view-content {
+  border-color: rgb(249, 246, 238);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-dark figure[data-rehype-pretty-code-figure] {
+  background-color: rgba(110, 110, 110, 0.2);
+  border: 0px solid rgb(110, 110, 110);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body
+  body.theme-dark
+  figure[data-rehype-pretty-code-figure]
+  > [data-rehype-pretty-code-title] {
+  background-color: rgba(110, 110, 110, 0.2);
+  color: rgb(249, 246, 238);
+  font-family: monospace;
+  border: 0px solid rgb(110, 110, 110);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark pre > code [data-line] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left: 0px rgb(194, 153, 56);
+}
+body body.theme-dark pre > code [data-highlighted-line] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-color: rgb(194, 153, 56);
+}
+body body.theme-dark pre > code [data-highlighted-chars] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(194, 153, 56);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
   border: 0px rgb(0, 0, 0);

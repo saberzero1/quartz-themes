@@ -15,6 +15,7 @@ import postcssColorConverter from "postcss-color-converter";
 import postcssMergeLonghand from "postcss-merge-longhand";
 import postcssScss from "postcss-scss";
 import { compileString } from "sass";
+import * as lucideIcons from "@lucide/icons";
 import { fileURLToPath } from "url";
 import getManifestCollection from "../../extensions/manifest.mjs";
 import getThemeCollection from "../../extensions/themelist.mjs";
@@ -30,6 +31,7 @@ import {
   closeDb,
   getAllStylesForThemeMode,
   getAllVariables,
+  getCheckboxIconStyles,
   getStyle,
   initializeDb,
   preparedStatements,
@@ -64,6 +66,206 @@ config.forEach((mapping) => {
 });
 
 const fontCache = new Map();
+const fontFiles = readdirSync("./extras/fonts")
+  .filter((file) => file.endsWith(".scss"))
+  .map((file) => file.replace(/\.scss$/, ""));
+const availableFonts = new Set(fontFiles);
+const genericFontNames = new Set([
+  "serif",
+  "sans-serif",
+  "monospace",
+  "cursive",
+  "fantasy",
+  "system-ui",
+  "ui-serif",
+  "ui-sans-serif",
+  "ui-monospace",
+  "ui-rounded",
+  "emoji",
+  "math",
+  "fangsong",
+  "inherit",
+  "initial",
+  "unset",
+]);
+
+function normalizeFontName(name) {
+  return name
+    .toLowerCase()
+    .replace(/['"]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function resolveFontFileName(fontName) {
+  const normalized = normalizeFontName(fontName);
+  if (availableFonts.has(normalized)) return normalized;
+  return null;
+}
+
+function extractFontNamesFromValue(value) {
+  if (!value || value.includes("var(")) return [];
+  return value
+    .split(",")
+    .map((part) => part.trim().replace(/['"]/g, ""))
+    .filter((name) => name.length > 0 && !genericFontNames.has(name));
+}
+
+function collectAutoFonts(bodyVariables) {
+  const names = new Set();
+  [bodyVariables.light, bodyVariables.dark].forEach((vars) => {
+    for (const [key, value] of Object.entries(vars)) {
+      if (!key.includes("font")) continue;
+      extractFontNamesFromValue(value).forEach((name) => {
+        const resolved = resolveFontFileName(name);
+        if (resolved) names.add(resolved);
+      });
+    }
+  });
+  return Array.from(names);
+}
+
+function renderLucideNodes(nodes) {
+  return nodes
+    .map((node) => {
+      const [tag, attrs, children] = node;
+      const attrStr = Object.entries(attrs)
+        .filter(([k]) => k !== "key")
+        .map(([k, v]) => `${k}="${v}"`)
+        .join(" ");
+      if (children && children.length > 0) {
+        return `<${tag} ${attrStr}>${renderLucideNodes(children)}</${tag}>`;
+      }
+      return `<${tag} ${attrStr}/>`;
+    })
+    .join("");
+}
+
+function buildLucideSvgString(icon) {
+  const size = icon?.size ?? icon?.width ?? 24;
+  const children = renderLucideNodes(icon.node || []);
+  return (
+    `<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" ` +
+    `viewBox="0 0 ${size} ${size}" fill="none" stroke="currentColor" ` +
+    `stroke-width="2" stroke-linecap="round" stroke-linejoin="round">` +
+    `${children}</svg>`
+  );
+}
+
+function svgToDataUri(svg) {
+  const encoded = svg
+    .replace(/"/g, "'")
+    .replace(/#/g, "%23")
+    .replace(/</g, "%3C")
+    .replace(/>/g, "%3E");
+  return `url("data:image/svg+xml;utf8,${encoded}")`;
+}
+
+const calloutIconAliases = {
+  "quote-glyph": "quote",
+  "library-big": "library",
+  "book-open": "book-open",
+  "message-square": "message-square",
+  "check-square": "check-square",
+  "clock-12": "clock-12",
+  "clock-4": "clock-4",
+  "code-2": "code-2",
+  "code-xml": "code-xml",
+  "flag-triangle-right": "flag-triangle-right",
+  "help-circle": "help-circle",
+  "layout-dashboard": "layout-dashboard",
+  "sticky-note": "sticky-note",
+  "user-check": "user-check",
+  "user-plus": "user-plus",
+  "user-x": "user-x",
+  "thumbs-up": "thumbs-up",
+  "thumbs-down": "thumbs-down",
+  "at-sign": "at-sign",
+  "circle-check-big": "circle-check-big",
+};
+
+function normalizeCalloutIconName(value) {
+  if (!value) return null;
+  const trimmed = value.trim();
+  if (
+    trimmed === "none" ||
+    trimmed === "unset" ||
+    trimmed === "" ||
+    trimmed === "normal"
+  ) {
+    return null;
+  }
+  if (trimmed.startsWith("url(")) return trimmed;
+  if (trimmed.startsWith("var(")) return trimmed;
+  if (trimmed.includes("<svg")) return trimmed;
+  const cleaned = trimmed.replace(/['"]/g, "");
+  if (/[{};]/.test(cleaned)) return null;
+  const stripped = cleaned.replace(/^lucide[:\-]/, "").replace(/^lucide-/, "");
+  return stripped;
+}
+
+function toPascalCase(value) {
+  return value
+    .split(/[^a-zA-Z0-9]/)
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join("");
+}
+
+function resolveCalloutIconUri(value) {
+  const normalized = normalizeCalloutIconName(value);
+  if (!normalized) return { uri: null, reason: "empty" };
+  if (normalized.startsWith("url(")) return { uri: normalized };
+  if (normalized.startsWith("var(")) return { uri: normalized };
+  if (normalized.includes("<svg")) return { uri: svgToDataUri(normalized) };
+
+  if (/\p{Extended_Pictographic}/u.test(normalized)) {
+    return { uri: null, reason: "emoji" };
+  }
+
+  const alias = calloutIconAliases[normalized] || normalized;
+  const candidates = [
+    alias,
+    toPascalCase(alias),
+    alias.charAt(0).toUpperCase() + alias.slice(1),
+  ];
+
+  for (const name of candidates) {
+    const icon = lucideIcons[name];
+    if (icon && icon.node) {
+      return { uri: svgToDataUri(buildLucideSvgString(icon)) };
+    }
+  }
+  return { uri: null, reason: "unknown" };
+}
+
+function extractCalloutIconMap(dataSet, warnings) {
+  const iconMap = {};
+  if (!dataSet) return iconMap;
+  for (const [selector, props] of Object.entries(dataSet)) {
+    const match = selector.match(/callout\[data-callout="([^"]+)"\]/);
+    if (!match) continue;
+    const calloutType = match[1];
+    const iconValue = props["--callout-icon"];
+    const resolved = resolveCalloutIconUri(iconValue);
+    if (resolved.uri) iconMap[calloutType] = resolved.uri;
+    if (!resolved.uri && iconValue) {
+      warnings?.add(`${calloutType}: ${iconValue}`);
+    }
+  }
+  return iconMap;
+}
+
+function buildCalloutIconCSS(iconMap) {
+  const entries = Object.entries(iconMap);
+  if (entries.length === 0) return "";
+  return entries
+    .map(
+      ([type, uri]) =>
+        `.callout[data-callout="${type}"] { --callout-icon: ${uri}; }`,
+    )
+    .join("\n");
+}
 function getCachedFontString(fontName) {
   if (fontCache.has(fontName)) {
     return fontCache.get(fontName);
@@ -99,6 +301,7 @@ themeCollection.forEach((manifest) => {
   const quartzMappings = {};
   const publishMappings = {};
   const bodyVariables = { dark: {}, light: {} };
+  const checkboxIcons = { dark: new Map(), light: new Map() };
 
   manifest.modes.forEach((m) => {
     mode = m;
@@ -127,6 +330,12 @@ themeCollection.forEach((manifest) => {
     } else {
       bodyVariables.light = vars;
     }
+
+    checkboxIcons[mode] = getCheckboxIconStyles(
+      themeName,
+      optionSetName,
+      isDarkMode,
+    );
 
     config.forEach((mapping) => {
       if (mapping.quartzSelector) {
@@ -158,6 +367,7 @@ themeCollection.forEach((manifest) => {
     quartzMappings,
     publishMappings,
     bodyVariables,
+    checkboxIcons,
   });
 });
 
@@ -245,6 +455,68 @@ function insertExtras(manifest, themeName) {
   return result;
 }
 
+function buildCheckboxRules(checkboxMap) {
+  if (!checkboxMap || checkboxMap.size === 0) return "";
+
+  const escapeAttrValue = (value) =>
+    value.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
+
+  const grouped = {};
+  for (const [key, value] of checkboxMap.entries()) {
+    const lastSep = key.lastIndexOf("::");
+    if (lastSep === -1) continue;
+
+    const selector = key.substring(0, lastSep);
+    const property = key.substring(lastSep + 2);
+
+    if (!grouped[selector]) grouped[selector] = {};
+    grouped[selector][property] = value;
+  }
+
+  const rules = [];
+  for (const [selector, props] of Object.entries(grouped)) {
+    const taskMatch = selector.match(/data-task="([^"]*)"/);
+    if (!taskMatch) continue;
+    const taskChar = taskMatch[1];
+
+    const isPseudo = selector.includes("::after");
+    const escapedTask = escapeAttrValue(taskChar);
+    const quartzBase = `li.task-list-item[data-task=\"${escapedTask}\"] input[type=\"checkbox\"]`;
+    const quartzSelector = isPseudo ? `${quartzBase}::after` : quartzBase;
+
+    const declarations = [];
+    for (const [prop, value] of Object.entries(props)) {
+      if (!value || value === "none" || value === "normal") continue;
+
+      if (prop === "-webkit-mask-image") {
+        declarations.push(`  mask-image: ${value};`);
+        declarations.push(`  -webkit-mask-image: ${value};`);
+        if (!isPseudo) {
+          declarations.push(`  mask-size: contain;`);
+          declarations.push(`  -webkit-mask-size: contain;`);
+          declarations.push(`  mask-repeat: no-repeat;`);
+          declarations.push(`  -webkit-mask-repeat: no-repeat;`);
+        }
+      } else {
+        declarations.push(`  ${prop}: ${value};`);
+      }
+    }
+
+    if (declarations.length > 0) {
+      rules.push(`${quartzSelector} {\n${declarations.join("\n")}\n}`);
+    }
+  }
+
+  return rules.join("\n\n");
+}
+
+function generateCheckboxIconCSS(checkboxIcons) {
+  return {
+    light: buildCheckboxRules(checkboxIcons.light),
+    dark: buildCheckboxRules(checkboxIcons.dark),
+  };
+}
+
 function buildCSSStrings(themeData) {
   const {
     manifest,
@@ -252,6 +524,7 @@ function buildCSSStrings(themeData) {
     quartzMappings,
     publishMappings,
     bodyVariables,
+    checkboxIcons,
   } = themeData;
   const darkData = quartzMappings.dark || null;
   const lightData = quartzMappings.light || null;
@@ -272,29 +545,6 @@ function buildCSSStrings(themeData) {
     )
     .join("\n");
 
-  const colorTargets = [
-    "color",
-    "background-color",
-    "background",
-    "border-color",
-    "border-block-start-color",
-    "border-block-end-color",
-    "border-inline-start-color",
-    "border-inline-end-color",
-    "border-bottom-color",
-    "border-top-color",
-    "border-left-color",
-    "border-right-color",
-    // "box-shadow",
-    "caret-color",
-    "column-rule-color",
-    "outline-color",
-    // "text-color",
-    "text-decoration-color",
-    "text-emphasis-color",
-    "mix-blend-mode",
-  ];
-
   let graphColors = { dark: {}, light: {} };
   let codeColors = { dark: {}, light: {} };
   const graphMapping = {
@@ -307,125 +557,54 @@ function buildCSSStrings(themeData) {
     "--quartz-graph-node-attachment": "--highlight",
   };
 
-  const data = {};
-  const dataPublish = {};
+  const dataLight = {};
+  const dataDark = {};
+  const dataPublishLight = {};
+  const dataPublishDark = {};
 
-  // Combine the two objects for Quartz
-  if (darkData && lightData) {
-    for (const key of Object.keys(darkData)) {
-      data[key] = {};
-      for (const [target, value] of Object.entries(darkData[key])) {
-        if (colorTargets.includes(target)) {
-          if (darkData[key][target] === lightData[key][target]) {
-            data[key][target] = darkData[key][target];
-          } else if (
-            key === "&[data-slug]" &&
-            [
-              "color",
-              "background",
-              "background-color",
-              "background-images",
-            ].includes(target)
-          ) {
-            data[key][target] = `light-dark(${lightData[key][target]}, ${
-              darkData[key][target]
-            }) !important`;
-          } else {
-            data[key][target] = `light-dark(${lightData[key][target]}, ${
-              darkData[key][target]
-            })`;
-          }
-        } else if (target.startsWith("--quartz-graph")) {
-          if (Array.isArray(graphMapping[target])) {
-            graphMapping[target].forEach((mapped) => {
-              graphColors["dark"][mapped] = darkData[key][target];
-              graphColors["light"][mapped] = lightData[key][target];
+  const ingestModeData = (source, target, mode) => {
+    if (!source) return;
+    for (const key of Object.keys(source)) {
+      target[key] = target[key] || {};
+      for (const [prop, value] of Object.entries(source[key])) {
+        if (prop.startsWith("--quartz-graph")) {
+          if (Array.isArray(graphMapping[prop])) {
+            graphMapping[prop].forEach((mapped) => {
+              graphColors[mode][mapped] = value;
             });
-          } else if (!graphMapping[target]) {
+          } else if (!graphMapping[prop]) {
             console.warn(
-              `Warning: Unmapped graph color target "${target}" in theme "${themeName}". Please update the graphMapping object in compile.js.`,
+              `Warning: Unmapped graph color target "${prop}" in theme "${themeName}". Please update the graphMapping object in compile.js.`,
             );
           } else {
-            graphColors["dark"][graphMapping[target]] = darkData[key][target];
-            graphColors["light"][graphMapping[target]] = lightData[key][target];
+            graphColors[mode][graphMapping[prop]] = value;
           }
-        } else if (target.startsWith("--code-")) {
-          codeColors["dark"][target] = darkData[key][target];
-          codeColors["light"][target] = lightData[key][target];
+        } else if (prop.startsWith("--code-")) {
+          codeColors[mode][prop] = value;
         } else {
-          data[key][target] = darkData[key][target];
+          target[key][prop] = value;
         }
       }
     }
-    // Add keys that are only in lightData
-    for (const key of Object.keys(lightData)) {
-      data[key] = data[key] || {};
-      for (const [target, value] of Object.entries(lightData[key])) {
-        if (data[key][target]) continue;
-        data[key][target] = lightData[key][target];
-      }
-    }
-  } else if (darkData) {
-    for (const key of Object.keys(darkData)) {
-      data[key] = {};
-      for (const [target, value] of Object.entries(darkData[key])) {
-        data[key][target] = value;
-      }
-    }
-  } else if (lightData) {
-    for (const key of Object.keys(lightData)) {
-      data[key] = {};
-      for (const [target, value] of Object.entries(lightData[key])) {
-        data[key][target] = value;
-      }
-    }
-  }
+  };
 
-  // Combine for Publish
-  if (darkPublishData && lightPublishData) {
-    for (const key of Object.keys(darkPublishData)) {
-      dataPublish[key] = {};
-      for (const [target, value] of Object.entries(darkPublishData[key])) {
-        if (colorTargets.includes(target)) {
-          if (darkPublishData[key][target] === lightPublishData[key][target]) {
-            dataPublish[key][target] = darkPublishData[key][target];
-          } else {
-            dataPublish[key][target] = `light-dark(${
-              lightPublishData[key][target]
-            }, ${darkPublishData[key][target]})`;
-          }
-        } else {
-          dataPublish[key][target] = darkPublishData[key][target];
-        }
-      }
-    }
-    for (const key of Object.keys(lightPublishData)) {
-      dataPublish[key] = dataPublish[key] || {};
-      for (const [target, value] of Object.entries(lightPublishData[key])) {
-        if (dataPublish[key][target]) continue;
-        dataPublish[key][target] = lightPublishData[key][target];
-      }
-    }
-  } else if (darkPublishData) {
-    for (const key of Object.keys(darkPublishData)) {
-      dataPublish[key] = {};
-      for (const [target, value] of Object.entries(darkPublishData[key])) {
-        dataPublish[key][target] = value;
-      }
-    }
-  } else if (lightPublishData) {
-    for (const key of Object.keys(lightPublishData)) {
-      dataPublish[key] = {};
-      for (const [target, value] of Object.entries(lightPublishData[key])) {
-        dataPublish[key][target] = value;
-      }
-    }
-  }
+  ingestModeData(lightData, dataLight, "light");
+  ingestModeData(darkData, dataDark, "dark");
+  ingestModeData(lightPublishData, dataPublishLight, "light");
+  ingestModeData(darkPublishData, dataPublishDark, "dark");
 
-  const fonts =
+  const manifestFonts =
     manifest.fonts && manifest.fonts.length > 0
       ? manifest.fonts
       : ["avenir", "inter", "source-code-pro"];
+  const autoFonts = collectAutoFonts(bodyVariables);
+  const fonts = Array.from(
+    new Set(
+      [...manifestFonts, ...autoFonts]
+        .map((font) => resolveFontFileName(font) || font)
+        .filter(Boolean),
+    ),
+  );
   let fontString = "";
   fonts.forEach((font) => {
     fontString += getCachedFontString(font);
@@ -503,6 +682,38 @@ ${bodyVarsStringDarkQuartz}
 `
           : "";
 
+  const checkboxIconCSS = generateCheckboxIconCSS(checkboxIcons);
+  const calloutWarnings = new Set();
+  const calloutIconLight = buildCalloutIconCSS(
+    extractCalloutIconMap(dataLight, calloutWarnings),
+  );
+  const calloutIconDark = buildCalloutIconCSS(
+    extractCalloutIconMap(dataDark, calloutWarnings),
+  );
+
+  const buildBodyStyles = (dataSet) => {
+    let styles = "";
+    if (!dataSet) return styles;
+    for (const [key, value] of Object.entries(dataSet)) {
+      const filteredEntries = Object.entries(value).filter(
+        ([k, v]) => v !== "inherit" && k !== "--callout-icon",
+      );
+      if (filteredEntries.length === 0) continue;
+      const values = filteredEntries
+        .map(([k, v]) => `${k}: ${v.replaceAll('"??", ', "")};`)
+        .join("\n  ");
+      styles += `\n  ${key} {\n    ${values}\n  }\n`;
+    }
+    return styles;
+  };
+
+  const baseData = lightData ? dataLight : dataDark;
+  const darkDataSet = lightData && darkData ? dataDark : null;
+  const baseCheckboxIcons = lightData
+    ? checkboxIconCSS.light
+    : checkboxIconCSS.dark;
+  const baseCalloutIcons = lightData ? calloutIconLight : calloutIconDark;
+
   let resultScss = `
 @use "sass:map";
 @use "../variables.scss" as *;
@@ -569,27 +780,55 @@ ${
 
 ${fontString}
 
-body {
+ body {
+ ${buildBodyStyles(baseData)}
+  --current-page-slug: attr(data-slug raw-string);
+ }
 `;
 
-  for (const [key, value] of Object.entries(data)) {
-    const filteredEntries = Object.entries(value).filter(
-      ([k, v]) =>
-        v !== "inherit" && !v.includes("light-dark(inherit, inherit)"),
-    );
-    if (filteredEntries.length === 0) continue;
-    const values = filteredEntries
-      .map(([k, v]) => `${k}: ${v.replaceAll('"??", ', "")};`)
-      .join("\n  ");
+  if (baseCheckboxIcons) {
     resultScss += `
-  ${key} {
-    ${values}
-  }
+${baseCheckboxIcons}
 `;
   }
-  resultScss += `
-  --current-page-slug: attr(data-slug raw-string);
+  if (baseCalloutIcons) {
+    resultScss += `
+${baseCalloutIcons}
 `;
+  }
+
+  if (darkDataSet) {
+    const darkCheckboxIcons = checkboxIconCSS.dark;
+    resultScss += `
+html[saved-theme="dark"] {
+  body {
+  ${buildBodyStyles(darkDataSet)}
+  }
+}
+`;
+    if (darkCheckboxIcons) {
+      resultScss += `
+html[saved-theme="dark"] {
+${darkCheckboxIcons}
+}
+`;
+    }
+    if (calloutIconDark) {
+      resultScss += `
+html[saved-theme="dark"] {
+${calloutIconDark}
+}
+`;
+    }
+  }
+
+  if (calloutWarnings.size > 0) {
+    const entries = [...calloutWarnings].slice(0, 20).join(", ");
+    const suffix = calloutWarnings.size > 20 ? "..." : "";
+    console.warn(
+      `Warning: Unresolved callout icons for theme "${themeName}": ${entries}${suffix}`,
+    );
+  }
 
   // Add static styles (from compile.old.js lines 466-850)
   resultScss += `
@@ -1027,7 +1266,6 @@ body {
       --color: rgb(var(--callout-quote)) !important;
     }
 ${customCalloutQuartzEntries ? "\n" + customCalloutQuartzEntries + "\n" : ""}  }
-}
 
 :root[saved-theme="light"] {
   button.darkmode {
@@ -1117,50 +1355,63 @@ ${bodyVarsStringDarkPublish}}
 `;
   }
 
-  resultPublishScss += `
-body {
-${
-  lightPublishData && darkPublishData
-    ? ""
-    : `
-  .site-body-left-column-site-theme-toggle {
-    display: none;
-  }
-`
-}
-  /* Publish-specific variable mappings (fallbacks from standard Obsidian variables) */
-  --site-name-color: var(--text-accent);
-  --sidebar-left-background: var(--background-secondary);
-  --sidebar-right-background: var(--background-secondary);
-  --sidebar-left-border-color: var(--background-modifier-border);
-  --sidebar-right-border-color: var(--background-modifier-border);
-  --page-title-color: var(--h1-color, var(--text-normal));
-  --page-title-font: var(--h1-font, var(--font-text-theme));
-  --page-title-weight: var(--h1-weight, var(--font-semibold));
-  --outline-heading-color: var(--text-muted);
-  --outline-heading-color-active: var(--text-accent);
-  --component-title-color: var(--text-muted);
-  --nav-item-color: var(--text-normal);
-  --nav-item-color-hover: var(--text-accent);
-  --nav-item-color-active: var(--text-accent);
-  --nav-parent-item-color: var(--text-normal);
-  --nav-collapse-icon-color: var(--text-muted);
-  --nav-collapse-icon-color-collapsed: var(--text-faint);
-`;
+  const buildPublishStyles = (dataSet) => {
+    let styles = "";
+    if (!dataSet) return styles;
+    for (const [key, value] of Object.entries(dataSet)) {
+      const filteredEntries = Object.entries(value).filter(
+        ([k, v]) => v !== "inherit" && k !== "--callout-icon",
+      );
+      if (filteredEntries.length === 0) continue;
+      const values = filteredEntries
+        .map(([k, v]) => `${k}: ${v.replaceAll('"??", ', "")};`)
+        .join("\n  ");
+      styles += `\n  ${key} {\n    ${values}\n  }\n`;
+    }
+    return styles;
+  };
 
-  for (const [key, value] of Object.entries(dataPublish)) {
-    const filteredEntries = Object.entries(value).filter(
-      ([k, v]) =>
-        v !== "inherit" && !v.includes("light-dark(inherit, inherit)"),
-    );
-    if (filteredEntries.length === 0) continue;
-    const values = filteredEntries
-      .map(([k, v]) => `${k}: ${v.replaceAll('"??", ', "")};`)
-      .join("\n  ");
+  resultPublishScss += `
+ body {
+ ${
+   lightPublishData && darkPublishData
+     ? ""
+     : `
+   .site-body-left-column-site-theme-toggle {
+     display: none;
+   }
+ `
+ }
+   /* Publish-specific variable mappings (fallbacks from standard Obsidian variables) */
+   --site-name-color: var(--text-accent);
+   --sidebar-left-background: var(--background-secondary);
+   --sidebar-right-background: var(--background-secondary);
+   --sidebar-left-border-color: var(--background-modifier-border);
+   --sidebar-right-border-color: var(--background-modifier-border);
+   --page-title-color: var(--h1-color, var(--text-normal));
+   --page-title-font: var(--h1-font, var(--font-text-theme));
+   --page-title-weight: var(--h1-weight, var(--font-semibold));
+   --outline-heading-color: var(--text-muted);
+   --outline-heading-color-active: var(--text-accent);
+   --component-title-color: var(--text-muted);
+   --nav-item-color: var(--text-normal);
+   --nav-item-color-hover: var(--text-accent);
+   --nav-item-color-active: var(--text-accent);
+   --nav-parent-item-color: var(--text-normal);
+   --nav-collapse-icon-color: var(--text-muted);
+   --nav-collapse-icon-color-collapsed: var(--text-faint);
+ `;
+
+  if (lightPublishData && Object.keys(dataPublishLight).length > 0) {
     resultPublishScss += `
-  ${key} {
-    ${values}
+ body.theme-light {${buildPublishStyles(dataPublishLight)}
+ }
+`;
   }
+  if (darkPublishData && Object.keys(dataPublishDark).length > 0) {
+    resultPublishScss += `
+ body.theme-dark {${buildPublishStyles(dataPublishDark)}
+ }
 `;
   }
 

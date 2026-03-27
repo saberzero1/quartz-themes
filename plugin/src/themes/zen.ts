@@ -50,7 +50,7 @@ export const theme: ThemeData = {
   --indentation-guide-color-active: rgba(245, 245, 245, 0.1) !important;
   --inline-title-color: rgb(231, 77, 71) !important;
   --input-radius: 14px !important;
-  --italic-color: rgb(166, 139, 249) !important;
+  --italic-color: hsl(255, 89.76%, 75.9%) !important;
   --lightgray: rgb(42, 42, 42) !important;
   --list-bullet-end-padding: 1.4rem !important;
   --list-indent: 1.5em !important;
@@ -67,7 +67,7 @@ export const theme: ThemeData = {
   --nav-item-background-active: rgba(245, 245, 245, 0.1) !important;
   --nav-item-background-hover: rgba(245, 245, 245, 0.1) !important;
   --nav-item-children-padding-start: 1px !important;
-  --nav-item-color-active: rgb(166, 139, 249) !important;
+  --nav-item-color-active: hsl(255, 89.76%, 75.9%) !important;
   --pdf-shadow: 0 0 0 1px rgba(245, 245, 245, 0.15) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px rgba(245, 245, 245, 0.15) !important;
   --pill-border-color: rgba(245, 245, 245, 0.15) !important;
@@ -107,7 +107,7 @@ export const theme: ThemeData = {
   --win-window-opacity: 0.2 !important;
   --window-brightness: 0.96 !important;
   --window-font-size: 15 !important;
-  --workspace-background-translucent: rgba(0, 0, 0, 0.3) !important;
+  --workspace-background-translucent: hsla(0, 0%, 0%, 0.3) !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -612,19 +612,6 @@ html[saved-theme="dark"] body hr {
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgba(210, 210, 210, 0.8);
   text-decoration: rgba(210, 210, 210, 0.8);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(166, 138, 249);
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  border-left-color: rgb(166, 138, 249);
-  border-right-color: rgb(166, 138, 249);
-  border-top-color: rgb(166, 138, 249);
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  color: rgb(166, 138, 249);
 }`,
     footer: `html[saved-theme="dark"] body footer {
   background-color: rgba(28, 28, 28, 0.7);
@@ -760,7 +747,7 @@ html[saved-theme="dark"] body sup {
   --indentation-guide-color-active: rgba(28, 28, 28, 0.05) !important;
   --inline-title-color: rgb(231, 77, 71) !important;
   --input-radius: 14px !important;
-  --italic-color: rgb(138, 92, 245) !important;
+  --italic-color: hsl(258, 88%, 66%) !important;
   --lightgray: rgb(249, 249, 249) !important;
   --list-bullet-end-padding: 1.4rem !important;
   --list-indent: 1.5em !important;
@@ -776,7 +763,7 @@ html[saved-theme="dark"] body sup {
   --nav-item-background-active: rgba(0, 0, 0, 0.1) !important;
   --nav-item-background-hover: rgba(28, 28, 28, 0.1) !important;
   --nav-item-children-padding-start: 1px !important;
-  --nav-item-color-active: rgb(138, 92, 245) !important;
+  --nav-item-color-active: hsl(258, 88%, 66%) !important;
   --pill-border-color: rgba(28, 28, 28, 0.09) !important;
   --radius-xxl: 20px !important;
   --ribbon-background: rgb(249, 249, 249) !important;
@@ -814,7 +801,7 @@ html[saved-theme="dark"] body sup {
   --win-window-opacity: 0.15 !important;
   --window-brightness: 0.96 !important;
   --window-font-size: 15 !important;
-  --workspace-background-translucent: rgba(255, 255, 255, 0.05) !important;
+  --workspace-background-translucent: hsla(0, 0%, 100%, 0.05) !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1319,19 +1306,6 @@ html[saved-theme="light"] body hr {
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgba(20, 20, 20, 0.8);
   text-decoration: rgba(20, 20, 20, 0.8);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(138, 92, 245);
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  border-left-color: rgb(138, 92, 245);
-  border-right-color: rgb(138, 92, 245);
-  border-top-color: rgb(138, 92, 245);
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  color: rgb(138, 92, 245);
 }`,
     footer: `html[saved-theme="light"] body footer {
   background-color: rgba(248, 248, 248, 0.6);

@@ -9,61 +9,61 @@ export const theme: ThemeData = {
   },
   dark: {
     base: `:root:root {
-  --accent: rgb(135, 232, 206) !important;
-  --black: rgb(28, 28, 33) !important;
-  --black-dark-1: rgb(17, 17, 19) !important;
-  --black-light-1: rgb(40, 40, 46) !important;
-  --black-light-2: rgb(52, 52, 60) !important;
-  --black-light-3: rgb(64, 64, 74) !important;
-  --border: 0.5px solid rgb(95, 88, 157) !important;
-  --current-line-bg: rgb(28, 28, 33) !important;
-  --editor-background: rgb(17, 17, 19) !important;
-  --editor-icons: rgb(134, 152, 172) !important;
-  --editor-title: rgb(218, 231, 246) !important;
-  --explorer-active: rgb(28, 28, 33) !important;
-  --explorer-active-bg: rgb(135, 232, 206) !important;
-  --explorer-hover: rgb(40, 40, 46) !important;
+  --accent: hsl(164, 68%, 72%) !important;
+  --black: hsl(240, 7%, 12%) !important;
+  --black-dark-1: hsl(240, 7%, 7%) !important;
+  --black-light-1: hsl(240, 7%, 17%) !important;
+  --black-light-2: hsl(240, 7%, 22%) !important;
+  --black-light-3: hsl(240, 7%, 27%) !important;
+  --border: 0.5px solid hsl(246, 28%, 48%) !important;
+  --current-line-bg: hsl(240, 7%, 12%) !important;
+  --editor-background: hsl(240, 7%, 7%) !important;
+  --editor-icons: hsl(211, 19%, 60%) !important;
+  --editor-title: hsl(212, 61%, 91%) !important;
+  --explorer-active: hsl(240, 7%, 12%) !important;
+  --explorer-active-bg: hsl(164, 68%, 72%) !important;
+  --explorer-hover: hsl(240, 7%, 17%) !important;
   --font: "Fira Code", monospace !important;
-  --formatting: rgb(135, 232, 206) !important;
+  --formatting: hsl(164, 68%, 72%) !important;
   --h-black: 240 !important;
   --h-purple: 246 !important;
   --h-white: 212 !important;
   --heading: 1.1rem !important;
-  --heading-color: rgb(95, 88, 157) !important;
-  --icon-accent: rgb(135, 232, 206) !important;
-  --icon-hover: rgb(135, 232, 206) !important;
-  --icon-normal: rgb(95, 88, 157) !important;
+  --heading-color: hsl(246, 28%, 48%) !important;
+  --icon-accent: hsl(164, 68%, 72%) !important;
+  --icon-hover: hsl(164, 68%, 72%) !important;
+  --icon-normal: hsl(246, 28%, 48%) !important;
   --l-black: 12% !important;
   --l-purple: 48% !important;
   --l-white: 91% !important;
-  --line-number: rgb(65, 61, 108) !important;
-  --list: rgb(95, 88, 157) !important;
+  --line-number: hsl(246, 28%, 33%) !important;
+  --list: hsl(246, 28%, 48%) !important;
   --par: 0.9rem !important;
-  --popup-dark: rgb(17, 17, 19) !important;
-  --purple: rgb(95, 88, 157) !important;
-  --purple-dark-1: rgb(85, 79, 140) !important;
-  --purple-dark-2: rgb(75, 70, 124) !important;
-  --purple-dark-3: rgb(65, 61, 108) !important;
-  --purple-dark-4: rgb(55, 51, 91) !important;
-  --purple-dark-5: rgb(46, 42, 75) !important;
-  --purple-dark-6: rgb(36, 33, 59) !important;
-  --purple-light-1: rgb(108, 102, 169) !important;
-  --purple-light-2: rgb(124, 118, 178) !important;
-  --purple-light-3: rgb(140, 134, 187) !important;
+  --popup-dark: hsl(240, 7%, 7%) !important;
+  --purple: hsl(246, 28%, 48%) !important;
+  --purple-dark-1: hsl(246, 28%, 43%) !important;
+  --purple-dark-2: hsl(246, 28%, 38%) !important;
+  --purple-dark-3: hsl(246, 28%, 33%) !important;
+  --purple-dark-4: hsl(246, 28%, 28%) !important;
+  --purple-dark-5: hsl(246, 28%, 23%) !important;
+  --purple-dark-6: hsl(246, 28%, 18%) !important;
+  --purple-light-1: hsl(246, 28%, 53%) !important;
+  --purple-light-2: hsl(246, 28%, 58%) !important;
+  --purple-light-3: hsl(246, 28%, 63%) !important;
   --s-black: 7% !important;
   --s-purple: 28% !important;
   --s-white: 61% !important;
-  --search-bar: rgb(40, 40, 46) !important;
-  --search-hover: rgb(95, 88, 157) !important;
-  --sidebar-background: rgb(28, 28, 33) !important;
+  --search-bar: hsl(240, 7%, 17%) !important;
+  --search-hover: hsl(246, 28%, 48%) !important;
+  --sidebar-background: hsl(240, 7%, 12%) !important;
   --small: 0.7rem !important;
-  --tab-background: rgb(17, 17, 19) !important;
-  --text: rgb(218, 231, 246) !important;
-  --text-mute: rgb(134, 152, 172) !important;
-  --white: rgb(218, 231, 246) !important;
-  --white-dark-1: rgb(198, 218, 241) !important;
-  --white-dark-2: rgb(177, 205, 236) !important;
-  --white-dark-3: rgb(134, 152, 172) !important;
+  --tab-background: hsl(240, 7%, 7%) !important;
+  --text: hsl(212, 61%, 91%) !important;
+  --text-mute: hsl(211, 19%, 60%) !important;
+  --white: hsl(212, 61%, 91%) !important;
+  --white-dark-1: hsl(212, 61%, 86%) !important;
+  --white-dark-2: hsl(212, 61%, 81%) !important;
+  --white-dark-3: hsl(211, 19%, 60%) !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -340,10 +340,6 @@ html body h6 {
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  font-family: "Fira Code", monospace;
-}
-
-html body .explorer .explorer-content ul.explorer-ul li a {
   font-family: "Fira Code", monospace;
 }`,
     footer: `html body footer {

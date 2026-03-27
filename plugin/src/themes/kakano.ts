@@ -148,7 +148,6 @@ export const theme: ThemeData = {
     hsl(215, 67%, 45%),
     black 95%
   ) !important;
-  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -182,11 +181,9 @@ export const theme: ThemeData = {
   --bodyFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --bold-weight: 600 !important;
   --callout-padding: 0.75em
     1.5em;
   --callout-radius: 0.25rem;
-  --callout-title-weight: 600;
   --canvas-background: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -202,7 +199,6 @@ export const theme: ThemeData = {
   --checkbox-border-color: hsl(215, 67%, 45%) !important;
   --checkbox-border-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --checkbox-color: hsl(215, 67%, 45%) !important;
-  --checkbox-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --checkbox-marker-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -253,9 +249,6 @@ export const theme: ThemeData = {
     "Roboto Mono", "Source Code Pro", monospace !important;
   --collapse-icon-color: hsl(215, 67%, 45%) !important;
   --collapse-icon-color-collapsed: hsl(215, 67%, 45%) !important;
-  --color-accent: hsl(258, 88%, 66%) !important;
-  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
-  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-blue: hsl(from hsl(215, 67%, 45%) 219 s l) !important;
   --color-cyan: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
   --color-green: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
@@ -379,7 +372,6 @@ export const theme: ThemeData = {
     white 60%
   ), transparent 30%) !important;
   --graph-node-attachment: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
   --graph-node-tag: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
   --graph-node-unresolved: color-mix(
     in srgb,
@@ -462,7 +454,6 @@ export const theme: ThemeData = {
       0.1
     ) !important;
   --interactive-accent: hsl(215, 67%, 45%) !important;
-  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --light: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -473,13 +464,7 @@ export const theme: ThemeData = {
     hsl(215, 67%, 45%),
     black 70%
   ) !important;
-  --link-color: hsl(255, 89.76%, 75.9%) !important;
-  --link-color-hover: hsl(253, 92.4%, 85.14%) !important;
   --link-decoration-thickness: 1px !important;
-  --link-external-color: hsl(255, 89.76%, 75.9%) !important;
-  --link-external-color-hover: hsl(253, 92.4%, 85.14%) !important;
-  --link-unresolved-color: hsl(255, 89.76%, 75.9%) !important;
-  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: dashed !important;
   --list-bullet-size: 0.25em !important;
   --list-indent: 1.5em !important;
@@ -552,7 +537,6 @@ export const theme: ThemeData = {
   --metadata-input-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-text-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -797,7 +781,7 @@ export const theme: ThemeData = {
     hsl(215, 67%, 45%),
     black 95%
   ) !important;
-  --secondary: hsl(255, 89.76%, 75.9%) !important;
+  --secondary: hsl(215, 67%, 45%) !important;
   --setting-group-heading-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -1020,23 +1004,14 @@ export const theme: ThemeData = {
     hsl(215, 67%, 45%),
     white 60%
   ) !important;
-  --table-header-weight: 600 !important;
-  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: hsl(215, 67%, 45%) !important;
   --tag-background: hsl(258, 88%, 66%, 0.3) !important;
-  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
-  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
-  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: hsl(
     258,
     96.8%,
     79.2%
   ) !important;
-  --tag-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --tag-weight: 400 !important;
-  --tertiary: hsl(253, 92.4%, 85.14%) !important;
-  --text-accent: hsl(255, 89.76%, 75.9%) !important;
-  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-error: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
   --text-faint: color-mix(
     in srgb,
@@ -1058,7 +1033,6 @@ export const theme: ThemeData = {
     hsl(215, 67%, 45%),
     white 95%
   ) !important;
-  --text-selection: hsla(258, 88%, 66%, 0.33) !important;
   --text-success: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
   --text-warning: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
   --textHighlight: hsl(215, 67%, 45%) !important;
@@ -1816,7 +1790,6 @@ export const theme: ThemeData = {
     black 90%
   )) !important;
   --vault-profile-font-size: 0.8rem !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1975,8 +1948,8 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: color(srgb 0.6594 0.7599 0.9006);
   font-family: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin-left: 75.8906px;
-  margin-right: 75.8906px;
+  margin-left: 139.891px;
+  margin-right: 139.891px;
   margin-top: 0px;
   width: 241.219px;
 }
@@ -2099,11 +2072,12 @@ html[saved-theme="dark"] body video {
   border-top-right-radius: 8px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: color(srgb 0.1485 0.39975 0.7515 / 0.12);
   border-bottom-color: color(srgb 0.6594 0.7599 0.9006 / 0.7);
   border-left-color: color(srgb 0.6594 0.7599 0.9006 / 0.7);
   border-right-color: color(srgb 0.6594 0.7599 0.9006 / 0.7);
   border-top-color: color(srgb 0.6594 0.7599 0.9006 / 0.7);
+  padding-left: max(16px, 50% - 300px);
+  padding-right: max(16px, 50% - 300px);
 }
 
 html[saved-theme="dark"] body .footnotes {
@@ -2114,34 +2088,26 @@ html[saved-theme="dark"] body .footnotes {
 html[saved-theme="dark"] body .transclude {
   background-color: color(srgb 0.1485 0.39975 0.7515 / 0.12);
   border-bottom-color: color(srgb 0.6594 0.7599 0.9006);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   border-left-color: color(srgb 0.6594 0.7599 0.9006);
   border-left-width: 0px;
   border-right-color: color(srgb 0.6594 0.7599 0.9006);
   border-top-color: color(srgb 0.6594 0.7599 0.9006);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: max(16px, 50% - 300px);
+  padding-right: max(16px, 50% - 300px);
   padding-top: 16px;
 }
 
 html[saved-theme="dark"] body .transclude-inner {
   background-color: color(srgb 0.1485 0.39975 0.7515 / 0.12);
   border-bottom-color: color(srgb 0.6594 0.7599 0.9006);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   border-left-color: color(srgb 0.6594 0.7599 0.9006);
   border-left-width: 0px;
   border-right-color: color(srgb 0.6594 0.7599 0.9006);
   border-top-color: color(srgb 0.6594 0.7599 0.9006);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: max(16px, 50% - 300px);
+  padding-right: max(16px, 50% - 300px);
   padding-top: 16px;
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
@@ -2271,6 +2237,357 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: color(srgb 0.6594 0.7599 0.9006);
   text-decoration: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"24px\\" height=\\"24px\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g fill=\\"%23000000\\"><polyline points=\\"4,10.5 20,10.5 20,13.5 4,13.5\\"></polyline></g></g></svg>");
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"><line x1=\\"12\\" x2=\\"12\\" y1=\\"5\\" y2=\\"13\\"/><line x1=\\"12\\" x2=\\"12\\" y1=\\"19\\" y2=\\"19\\"/></svg>");
+  background-color: color(srgb 0.6594 0.7599 0.9006);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"><path d=\\"M7.5,6.852c0.463,-1.049 1.493,-2.872 4.5,-2.852c3.957,0.026 5.001,2.617 5,4.5c-0.002,2.952 -4.963,3.463 -5,7.5\\"/><path d=\\"M12.25,20l-0.443,-0\\"/></svg>");
+  background-color: color(srgb 0.6594 0.7599 0.9006);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"24px\\" height=\\"24px\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g fill=\\"%23000000\\"><polyline points=\\"12,-12 48,-12 48,36 12,36\\" transform=\\"rotate(45) translate(5,-12)\\"></polyline></g></g></svg>");
+  background-color: color(srgb 0.6594 0.7599 0.9006);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"24px\\" height=\\"24px\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g fill=\\"%23000000\\"><polyline points=\\"15,4.5 6,12 15,19.5 16.75,17.5 10,12 16.75,6.5\\"></polyline></g></g></svg>");
+  background-color: color(srgb 0.6594 0.7599 0.9006);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"24px\\" height=\\"24px\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g fill=\\"%23000000\\"><polyline points=\\"9,4.5 18,12 9,19.5 7.25,17.5 14,12 7.25,6.5\\"></polyline></g></g></svg>");
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate(-4.000000, -6.000000)\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: color(srgb 0.007425 0.0199875 0.037575);
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: color(srgb 0 0 0 / 0.06);
@@ -2811,7 +3128,6 @@ html[saved-theme="dark"] body sup {
     white 60%
   ) !important;
   --bases-table-cell-background-active: white !important;
-  --bases-table-cell-background-selected: hsla(258, 88%, 66%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(215, 67%, 45%) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(215, 67%, 45%) !important;
   --bases-table-container-border-radius: 0.25rem !important;
@@ -2834,11 +3150,9 @@ html[saved-theme="dark"] body sup {
   --bodyFont: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --bold-weight: 600 !important;
   --callout-padding: 0.75em
     1.5em;
   --callout-radius: 0.25rem;
-  --callout-title-weight: 600;
   --canvas-background: white !important;
   --canvas-card-label-color: color-mix(
     in srgb,
@@ -2897,9 +3211,6 @@ html[saved-theme="dark"] body sup {
     "Roboto Mono", "Source Code Pro", monospace !important;
   --collapse-icon-color: hsl(215, 67%, 45%) !important;
   --collapse-icon-color-collapsed: hsl(215, 67%, 45%) !important;
-  --color-accent: hsl(258, 88%, 66%) !important;
-  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
-  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --color-blue: hsl(from hsl(215, 67%, 45%) 219 s l) !important;
   --color-cyan: hsl(from hsl(215, 67%, 45%) 179 s l) !important;
   --color-green: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
@@ -3015,7 +3326,6 @@ html[saved-theme="dark"] body sup {
     black 90%
   ), transparent 30%) !important;
   --graph-node-attachment: hsl(from hsl(215, 67%, 45%) 57 s l) !important;
-  --graph-node-focused: hsl(258, 88%, 66%) !important;
   --graph-node-tag: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
   --graph-node-unresolved: color-mix(
     in srgb,
@@ -3097,13 +3407,7 @@ html[saved-theme="dark"] body sup {
     hsl(215, 67%, 45%),
     white 60%
   ) !important;
-  --link-color: hsl(258, 88%, 66%) !important;
-  --link-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --link-decoration-thickness: 1px !important;
-  --link-external-color: hsl(258, 88%, 66%) !important;
-  --link-external-color-hover: hsl(255, 89.76%, 75.9%) !important;
-  --link-unresolved-color: hsl(258, 88%, 66%) !important;
-  --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3) !important;
   --link-unresolved-decoration-style: dashed !important;
   --list-bullet-size: 0.25em !important;
   --list-indent: 1.5em !important;
@@ -3176,7 +3480,6 @@ html[saved-theme="dark"] body sup {
   --metadata-input-font: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-text-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -3383,7 +3686,7 @@ html[saved-theme="dark"] body sup {
   --search-clear-button-color: hsl(215, 67%, 45%) !important;
   --search-icon-color: hsl(215, 67%, 45%) !important;
   --search-result-background: white !important;
-  --secondary: hsl(258, 88%, 66%) !important;
+  --secondary: hsl(215, 67%, 45%) !important;
   --setting-group-heading-color: color-mix(
     in srgb,
     hsl(215, 67%, 45%),
@@ -3594,8 +3897,6 @@ html[saved-theme="dark"] body sup {
     hsl(215, 67%, 45%),
     black 90%
   ) !important;
-  --table-header-weight: 600 !important;
-  --table-selection: hsla(258, 88%, 66%, 0.1) !important;
   --table-selection-border-color: hsl(215, 67%, 45%) !important;
   --tag-background: hsl(
     258,
@@ -3603,19 +3904,13 @@ html[saved-theme="dark"] body sup {
     66%,
     0.15
   ) !important;
-  --tag-background-hover: hsla(258, 88%, 66%, 0.2) !important;
-  --tag-border-color: hsla(258, 88%, 66%, 0.15) !important;
-  --tag-border-color-hover: hsla(258, 88%, 66%, 0.15) !important;
   --tag-color: hsl(
     258,
     88%,
     59.4%
   ) !important;
-  --tag-color-hover: hsl(258, 88%, 66%) !important;
   --tag-weight: 400 !important;
-  --tertiary: hsl(255, 89.76%, 75.9%) !important;
-  --text-accent: hsl(258, 88%, 66%) !important;
-  --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
+  --tertiary: hsl(215, 67%, 45%) !important;
   --text-error: hsl(from hsl(215, 67%, 45%) 356 s l) !important;
   --text-faint: color-mix(
     in srgb,
@@ -3637,7 +3932,6 @@ html[saved-theme="dark"] body sup {
     hsl(215, 67%, 45%),
     white 95%
   ) !important;
-  --text-selection: hsla(258, 88%, 66%, 0.2) !important;
   --text-success: hsl(from hsl(215, 67%, 45%) 124 s l) !important;
   --text-warning: hsl(from hsl(215, 67%, 45%) 27 s l) !important;
   --textHighlight: hsl(215, 67%, 45%) !important;
@@ -4397,7 +4691,6 @@ html[saved-theme="dark"] body sup {
     black 90%
   )) !important;
   --vault-profile-font-size: 0.8rem !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xmlcharset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13)'/></svg>") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -4554,8 +4847,8 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: color(srgb 0.01485 0.039975 0.07515);
   font-family: "??", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin-left: 75.8906px;
-  margin-right: 75.8906px;
+  margin-left: 139.891px;
+  margin-right: 139.891px;
   margin-top: 0px;
   width: 241.219px;
 }
@@ -4678,11 +4971,12 @@ html[saved-theme="light"] body video {
   border-top-right-radius: 8px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
-  background-color: color(srgb 0.1485 0.39975 0.7515 / 0.12);
   border-bottom-color: color(srgb 0.01485 0.039975 0.07515 / 0.7);
   border-left-color: color(srgb 0.01485 0.039975 0.07515 / 0.7);
   border-right-color: color(srgb 0.01485 0.039975 0.07515 / 0.7);
   border-top-color: color(srgb 0.01485 0.039975 0.07515 / 0.7);
+  padding-left: max(16px, 50% - 300px);
+  padding-right: max(16px, 50% - 300px);
 }
 
 html[saved-theme="light"] body .footnotes {
@@ -4693,34 +4987,26 @@ html[saved-theme="light"] body .footnotes {
 html[saved-theme="light"] body .transclude {
   background-color: color(srgb 0.1485 0.39975 0.7515 / 0.12);
   border-bottom-color: color(srgb 0.01485 0.039975 0.07515);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   border-left-color: color(srgb 0.01485 0.039975 0.07515);
   border-left-width: 0px;
   border-right-color: color(srgb 0.01485 0.039975 0.07515);
   border-top-color: color(srgb 0.01485 0.039975 0.07515);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: max(16px, 50% - 300px);
+  padding-right: max(16px, 50% - 300px);
   padding-top: 16px;
 }
 
 html[saved-theme="light"] body .transclude-inner {
   background-color: color(srgb 0.1485 0.39975 0.7515 / 0.12);
   border-bottom-color: color(srgb 0.01485 0.039975 0.07515);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   border-left-color: color(srgb 0.01485 0.039975 0.07515);
   border-left-width: 0px;
   border-right-color: color(srgb 0.01485 0.039975 0.07515);
   border-top-color: color(srgb 0.01485 0.039975 0.07515);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: max(16px, 50% - 300px);
+  padding-right: max(16px, 50% - 300px);
   padding-top: 16px;
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
@@ -4850,6 +5136,45 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: color(srgb 0.01485 0.039975 0.07515);
   text-decoration: color(srgb 0.01485 0.039975 0.07515);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"24px\\" height=\\"24px\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g fill=\\"%23000000\\"><polyline points=\\"4,10.5 20,10.5 20,13.5 4,13.5\\"></polyline></g></g></svg>");
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"><line x1=\\"12\\" x2=\\"12\\" y1=\\"5\\" y2=\\"13\\"/><line x1=\\"12\\" x2=\\"12\\" y1=\\"19\\" y2=\\"19\\"/></svg>");
+  background-color: rgb(38, 102, 192);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\"><path d=\\"M7.5,6.852c0.463,-1.049 1.493,-2.872 4.5,-2.852c3.957,0.026 5.001,2.617 5,4.5c-0.002,2.952 -4.963,3.463 -5,7.5\\"/><path d=\\"M12.25,20l-0.443,-0\\"/></svg>");
+  background-color: rgb(38, 102, 192);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"24px\\" height=\\"24px\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g fill=\\"%23000000\\"><polyline points=\\"12,-12 48,-12 48,36 12,36\\" transform=\\"rotate(45) translate(5,-12)\\"></polyline></g></g></svg>");
+  background-color: rgb(38, 102, 192);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"24px\\" height=\\"24px\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g fill=\\"%23000000\\"><polyline points=\\"15,4.5 6,12 15,19.5 16.75,17.5 10,12 16.75,6.5\\"></polyline></g></g></svg>");
+  background-color: rgb(38, 102, 192);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"24px\\" height=\\"24px\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g fill=\\"%23000000\\"><polyline points=\\"9,4.5 18,12 9,19.5 7.25,17.5 14,12 7.25,6.5\\"></polyline></g></g></svg>");
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml utf8, <svg width=\\"12px\\" height=\\"10px\\" viewBox=\\"0 0 12 8\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\"><g stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\"><g transform=\\"translate(-4.000000, -6.000000)\\" fill=\\"%23000000\\"><path d=\\"M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\\"></path></g></g></svg>");
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  color: rgb(255, 255, 255);
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: color(srgb 0.1485 0.39975 0.7515 / 0.12);

@@ -13,13 +13,15 @@ export const theme: ThemeData = {
   --accent-l: 41% !important;
   --accent-s: 80% !important;
   --background: #0d1a1a !important;
-  --background-modifier-active-hover: rgba(21, 185, 188, 0.1) !important;
+  --background-modifier-active-hover: hsla(181,
+			80%,
+			41%, 0.1) !important;
   --background-modifier-border: #2f3f3f !important;
   --background-modifier-border-focus: #2f8a8b !important;
   --background-modifier-border-hover: #2f3f3f !important;
   --background-modifier-form-field: #2f3f3f !important;
   --background-modifier-form-field-hover: #2f3f3f !important;
-  --background-modifier-hover: rgba(106, 148, 149, 0.15) !important;
+  --background-modifier-hover: hsla(181, 17%, 50%, 0.15) !important;
   --background-primary: #0d1a1a !important;
   --background-primary-alt: #2f3f3f !important;
   --background-secondary: #192e2e !important;
@@ -37,21 +39,23 @@ export const theme: ThemeData = {
   --bases-table-border-color: #2f3f3f !important;
   --bases-table-cell-background-active: #0d1a1a !important;
   --bases-table-cell-background-disabled: #2f3f3f !important;
-  --bases-table-cell-background-selected: rgba(21, 185, 188, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(181,
+			80%,
+			41%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #2f8a8b !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(21, 185, 188) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(181, 80%, 41%) !important;
   --bases-table-column-border-width: 2px !important;
   --bases-table-container-border-radius: 0.75em !important;
   --bases-table-container-border-width: 2px !important;
   --bases-table-group-background: #2f3f3f !important;
   --bases-table-header-background: #0d1a1a !important;
-  --bases-table-header-background-hover: rgba(106, 148, 149, 0.15) !important;
+  --bases-table-header-background-hover: hsla(181, 17%, 50%, 0.15) !important;
   --bases-table-header-color: #bec8c8 !important;
   --bases-table-row-border-width: 2px !important;
   --bases-table-summary-background: #0d1a1a !important;
-  --bases-table-summary-background-hover: rgba(106, 148, 149, 0.15) !important;
+  --bases-table-summary-background-hover: hsla(181, 17%, 50%, 0.15) !important;
   --blockquote-background-color: #156f73 !important;
-  --blockquote-border-color: rgb(21, 185, 188) !important;
+  --blockquote-border-color: hsl(181, 80%, 41%) !important;
   --blockquote-border-thickness: 0px !important;
   --blockquote-color: #cce8e8 !important;
   --blur-background: color-mix(in srgb, #2f3f3f 65%, transparent) linear-gradient(#2f3f3f, color-mix(in srgb, #2f3f3f 65%, transparent)) !important;
@@ -66,24 +70,24 @@ export const theme: ThemeData = {
   --caret-color: #e0e3e2 !important;
   --checkbox-border-color: #899392 !important;
   --checkbox-border-color-hover: #bec8c8 !important;
-  --checkbox-color: rgb(21, 185, 188) !important;
-  --checkbox-color-hover: rgb(22, 218, 212) !important;
+  --checkbox-color: hsl(181, 80%, 41%) !important;
+  --checkbox-color-hover: hsl(178, 81.6%, 47.15%) !important;
   --checkbox-marker-color: #0d1a1a !important;
   --checkbox-radius: 0.2rem !important;
   --checklist-done-decoration: none !important;
   --clickable-icon-radius: 0.75em !important;
   --code-background: #2f3f3f !important;
   --code-border-color: #2f3f3f !important;
-  --code-bracket-background: rgba(106, 148, 149, 0.15) !important;
+  --code-bracket-background: hsla(181, 17%, 50%, 0.15) !important;
   --code-comment: #899392 !important;
   --code-normal: #e0e3e2 !important;
   --code-punctuation: #bec8c8 !important;
   --code-radius: 0.75em !important;
   --codeFont: Roboto, OpenSans, Inter, Noto Sans JP, UD Digi Kyokasho NK-R, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: #899392 !important;
-  --collapse-icon-color-collapsed: rgb(22, 218, 212) !important;
-  --color-accent: rgb(21, 185, 188) !important;
-  --color-accent-1: rgb(22, 218, 212) !important;
+  --collapse-icon-color-collapsed: hsl(178, 81.6%, 47.15%) !important;
+  --color-accent: hsl(181, 80%, 41%) !important;
+  --color-accent-1: hsl(178, 81.6%, 47.15%) !important;
   --color-accent-2: #b0cccc !important;
   --color-accent-hsl: 181,
 			80%,
@@ -104,11 +108,11 @@ export const theme: ThemeData = {
   --dark: #e0e3e2 !important;
   --darkgray: #e0e3e2 !important;
   --divider-color: transparent !important;
-  --divider-color-hover: rgb(21, 185, 188) !important;
+  --divider-color-hover: hsl(181, 80%, 41%) !important;
   --dropdown-background: #2f3f3f !important;
   --dropdown-background-hover: #2f3f3f !important;
   --embed-block-shadow-hover: 0 0 0 1px #2f3f3f, inset 0 0 0 1px #2f3f3f !important;
-  --embed-border-start: 2px solid rgb(21, 185, 188) !important;
+  --embed-border-start: 2px solid hsl(181, 80%, 41%) !important;
   --error: #ffb4ab !important;
   --error-container: #93000a !important;
   --file-header-background: #0d1a1a !important;
@@ -125,10 +129,10 @@ export const theme: ThemeData = {
   --footnote-divider-width: 2px !important;
   --footnote-id-color: #bec8c8 !important;
   --footnote-id-color-no-occurrences: #899392 !important;
-  --footnote-input-background-active: rgba(106, 148, 149, 0.15) !important;
+  --footnote-input-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --footnote-radius: 0.75em !important;
   --graph-line: #2f3f3f !important;
-  --graph-node: rgb(26, 206, 209) !important;
+  --graph-node: hsl(181, 78%, 46%) !important;
   --graph-node-focused: #2f8a8b !important;
   --graph-node-tag: #53dfdd !important;
   --graph-node-unresolved: #b4c8e9 !important;
@@ -148,10 +152,10 @@ export const theme: ThemeData = {
   --h6-weight: 500 !important;
   --headerFont: Roboto, OpenSans, Inter, Noto Sans JP, UD Digi Kyokasho NK-R, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: #899392 !important;
-  --highlight: rgba(106, 148, 149, 0.15) !important;
+  --highlight: hsla(181, 17%, 50%, 0.15) !important;
   --hr-color: #2f3f3f !important;
   --icon-color: #bec8c8 !important;
-  --icon-color-active: rgb(22, 218, 212) !important;
+  --icon-color-active: hsl(178, 81.6%, 47.15%) !important;
   --icon-color-focused: #e0e3e2 !important;
   --icon-color-hover: #bec8c8 !important;
   --indentation-guide-width: 2px !important;
@@ -164,8 +168,8 @@ export const theme: ThemeData = {
   --input-placeholder-color: #899392 !important;
   --input-radius: 20px !important;
   --input-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
-  --interactive-accent: rgb(21, 185, 188) !important;
-  --interactive-accent-hover: rgb(22, 218, 212) !important;
+  --interactive-accent: hsl(181, 80%, 41%) !important;
+  --interactive-accent-hover: hsl(178, 81.6%, 47.15%) !important;
   --interactive-accent-hsl: 181,
 			80%,
 			41% !important;
@@ -173,16 +177,18 @@ export const theme: ThemeData = {
   --interactive-normal: #2f3f3f !important;
   --light: #0d1a1a !important;
   --lightgray: #192e2e !important;
-  --link-color: rgb(21, 185, 188) !important;
-  --link-color-hover: rgb(21, 185, 188) !important;
+  --link-color: hsl(181, 80%, 41%) !important;
+  --link-color-hover: hsl(181, 80%, 41%) !important;
   --link-decoration-thickness: 1.5px !important;
   --link-external-color: #b4c8e9 !important;
   --link-external-color-hover: #b0cccc !important;
   --link-external-decoration: none !important;
-  --link-unresolved-color: rgb(22, 218, 212) !important;
-  --link-unresolved-decoration-color: rgba(21, 185, 188, 0.3) !important;
+  --link-unresolved-color: hsl(178, 81.6%, 47.15%) !important;
+  --link-unresolved-decoration-color: hsla(181,
+			80%,
+			41%, 0.3) !important;
   --list-marker-color: #899392 !important;
-  --list-marker-color-collapsed: rgb(22, 218, 212) !important;
+  --list-marker-color-collapsed: hsl(178, 81.6%, 47.15%) !important;
   --list-marker-color-hover: #bec8c8 !important;
   --lower-accent: #156f73 !important;
   --menu-background: #192e2e !important;
@@ -194,15 +200,15 @@ export const theme: ThemeData = {
   --metadata-border-color: #2f3f3f !important;
   --metadata-border-radius: 0.75em !important;
   --metadata-divider-color: #2f3f3f !important;
-  --metadata-input-background-active: rgba(106, 148, 149, 0.15) !important;
+  --metadata-input-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --metadata-input-font: Roboto, OpenSans, Inter, Noto Sans JP, UD Digi Kyokasho NK-R, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-text-color: #e0e3e2 !important;
-  --metadata-label-background-active: rgba(106, 148, 149, 0.15) !important;
+  --metadata-label-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --metadata-label-font: Roboto, OpenSans, Inter, Noto Sans JP, UD Digi Kyokasho NK-R, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-text-color: #bec8c8 !important;
   --metadata-label-text-color-hover: #bec8c8 !important;
   --metadata-padding: 1em !important;
-  --metadata-property-background-active: rgba(106, 148, 149, 0.15) !important;
+  --metadata-property-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #2f8a8b !important;
   --metadata-property-box-shadow-hover: 0 0 0 2px #2f3f3f !important;
   --modal-background: #0d1a1a !important;
@@ -215,14 +221,16 @@ export const theme: ThemeData = {
   --nav-heading-color-collapsed: #899392 !important;
   --nav-heading-color-collapsed-hover: #bec8c8 !important;
   --nav-heading-color-hover: #e0e3e2 !important;
-  --nav-indentation-guide-color: rgb(21, 185, 188) !important;
+  --nav-indentation-guide-color: hsl(181, 80%, 41%) !important;
   --nav-indentation-guide-width: 2px !important;
-  --nav-item-background-active: rgba(106, 148, 149, 0.15) !important;
-  --nav-item-background-hover: rgba(106, 148, 149, 0.15) !important;
-  --nav-item-background-selected: rgba(21, 185, 188, 0.15) !important;
+  --nav-item-background-active: hsla(181, 17%, 50%, 0.15) !important;
+  --nav-item-background-hover: hsla(181, 17%, 50%, 0.15) !important;
+  --nav-item-background-selected: hsla(181,
+			80%,
+			41%, 0.15) !important;
   --nav-item-color: #bec8c8 !important;
   --nav-item-color-active: #e0e3e2 !important;
-  --nav-item-color-highlighted: rgb(22, 218, 212) !important;
+  --nav-item-color-highlighted: hsl(178, 81.6%, 47.15%) !important;
   --nav-item-color-hover: #e0e3e2 !important;
   --nav-item-color-selected: #e0e3e2 !important;
   --nav-item-radius: 0.75em !important;
@@ -255,10 +263,10 @@ export const theme: ThemeData = {
   --pill-color: #bec8c8 !important;
   --pill-color-hover: #e0e3e2 !important;
   --pill-color-remove: #899392 !important;
-  --pill-color-remove-hover: rgb(22, 218, 212) !important;
-  --primary: rgb(21, 185, 188) !important;
+  --pill-color-remove-hover: hsl(178, 81.6%, 47.15%) !important;
+  --primary: hsl(181, 80%, 41%) !important;
   --primary-container: #2f8a8b !important;
-  --primary-lighter: rgb(26, 206, 209) !important;
+  --primary-lighter: hsl(181, 78%, 46%) !important;
   --prompt-background: #0d1a1a !important;
   --prompt-border-color: #2f3f3f !important;
   --prompt-border-width: 2px !important;
@@ -304,17 +312,17 @@ export const theme: ThemeData = {
   --tab-radius-active: 0 !important;
   --tab-switcher-background: #192e2e !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #192e2e, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(21, 185, 188) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 80%, 41%) !important;
   --tab-text-color: #899392 !important;
   --tab-text-color-active: #bec8c8 !important;
   --tab-text-color-focused: #bec8c8 !important;
   --tab-text-color-focused-active: #bec8c8 !important;
   --tab-text-color-focused-active-current: #e0e3e2 !important;
-  --tab-text-color-focused-highlighted: rgb(22, 218, 212) !important;
+  --tab-text-color-focused-highlighted: hsl(178, 81.6%, 47.15%) !important;
   --tab-width: 250px !important;
   --table-add-button-border-color: #2f3f3f !important;
   --table-border-color: #2f3f3f !important;
-  --table-drag-handle-background-active: rgb(21, 185, 188) !important;
+  --table-drag-handle-background-active: hsl(181, 80%, 41%) !important;
   --table-drag-handle-color: #899392 !important;
   --table-header-align: center !important;
   --table-header-background: #b0cccc !important;
@@ -322,24 +330,32 @@ export const theme: ThemeData = {
   --table-header-border-color: #2f3f3f !important;
   --table-header-color: #e0e3e2 !important;
   --table-header-size: 0.875em !important;
-  --table-selection: rgba(21, 185, 188, 0.1) !important;
-  --table-selection-border-color: rgb(21, 185, 188) !important;
+  --table-selection: hsla(181,
+			80%,
+			41%, 0.1) !important;
+  --table-selection-border-color: hsl(181, 80%, 41%) !important;
   --tag-background: #354863 !important;
   --tag-background-hover: #354863 !important;
-  --tag-border-color: rgba(21, 185, 188, 0.15) !important;
-  --tag-border-color-hover: rgba(21, 185, 188, 0.15) !important;
+  --tag-border-color: hsla(181,
+			80%,
+			41%, 0.15) !important;
+  --tag-border-color-hover: hsla(181,
+			80%,
+			41%, 0.15) !important;
   --tag-color: #d4e3ff !important;
   --tag-color-hover: #d4e3ff !important;
   --tag-radius: 5px !important;
   --tertiary: #b4c8e9 !important;
   --tertiary-container: #354863 !important;
-  --text-accent: rgb(22, 218, 212) !important;
+  --text-accent: hsl(178, 81.6%, 47.15%) !important;
   --text-accent-hover: #b0cccc !important;
   --text-faint: #899392 !important;
   --text-muted: #bec8c8 !important;
   --text-normal: #e0e3e2 !important;
-  --text-selection: rgba(21, 185, 188, 0.33) !important;
-  --textHighlight: rgba(106, 148, 149, 0.15) !important;
+  --text-selection: hsla(181,
+			80%,
+			41%, 0.33) !important;
+  --textHighlight: hsla(181, 17%, 50%, 0.15) !important;
   --titleFont: Roboto, OpenSans, Inter, Noto Sans JP, UD Digi Kyokasho NK-R, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #192e2e !important;
   --titlebar-background-focused: #2f3f3f !important;
@@ -792,6 +808,436 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(224, 227, 226);
   text-decoration: rgb(224, 227, 226);
   text-decoration-color: rgb(224, 227, 226);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(13, 26, 26);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgb(212, 227, 255);
@@ -1126,25 +1572,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   text-decoration: rgb(190, 200, 200);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(190, 200, 200);
-  font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(190, 200, 200);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(106, 148, 149, 0.15);
-  border-bottom-color: rgb(224, 227, 226);
-  border-bottom-left-radius: 9.75px;
-  border-bottom-right-radius: 9.75px;
-  border-left-color: rgb(224, 227, 226);
-  border-right-color: rgb(224, 227, 226);
-  border-top-color: rgb(224, 227, 226);
-  border-top-left-radius: 9.75px;
-  border-top-right-radius: 9.75px;
-  color: rgb(224, 227, 226);
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
   font-weight: 600;
@@ -1355,13 +1782,15 @@ html[saved-theme="dark"] body sup {
   --accent-l: 21% !important;
   --accent-s: 100% !important;
   --background: #fdfcfa !important;
-  --background-modifier-active-hover: rgba(0, 105, 107, 0.1) !important;
+  --background-modifier-active-hover: hsla(181,
+			100%,
+			21%, 0.1) !important;
   --background-modifier-border: #dbe8e8 !important;
   --background-modifier-border-focus: #5fb9bb !important;
   --background-modifier-border-hover: #dbe8e8 !important;
   --background-modifier-form-field: #dbe8e8 !important;
   --background-modifier-form-field-hover: #dbe8e8 !important;
-  --background-modifier-hover: rgba(106, 148, 149, 0.15) !important;
+  --background-modifier-hover: hsla(181, 17%, 50%, 0.15) !important;
   --background-primary: #fdfcfa !important;
   --background-primary-alt: #dbe8e8 !important;
   --background-secondary: #eef5f3 !important;
@@ -1379,7 +1808,9 @@ html[saved-theme="dark"] body sup {
   --bases-table-border-color: #dbe8e8 !important;
   --bases-table-cell-background-active: #fdfcfa !important;
   --bases-table-cell-background-disabled: #dbe8e8 !important;
-  --bases-table-cell-background-selected: rgba(0, 105, 107, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(181,
+			100%,
+			21%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #5fb9bb !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(180, 101%, 22.575%) !important;
   --bases-table-column-border-width: 2px !important;
@@ -1387,11 +1818,11 @@ html[saved-theme="dark"] body sup {
   --bases-table-container-border-width: 2px !important;
   --bases-table-group-background: #dbe8e8 !important;
   --bases-table-header-background: #fdfcfa !important;
-  --bases-table-header-background-hover: rgba(106, 148, 149, 0.15) !important;
+  --bases-table-header-background-hover: hsla(181, 17%, 50%, 0.15) !important;
   --bases-table-header-color: #3f4949 !important;
   --bases-table-row-border-width: 2px !important;
   --bases-table-summary-background: #fdfcfa !important;
-  --bases-table-summary-background-hover: rgba(106, 148, 149, 0.15) !important;
+  --bases-table-summary-background-hover: hsla(181, 17%, 50%, 0.15) !important;
   --blockquote-background-color: #cce8e8 !important;
   --blockquote-border-color: hsl(180, 101%, 22.575%) !important;
   --blockquote-border-thickness: 0px !important;
@@ -1416,15 +1847,15 @@ html[saved-theme="dark"] body sup {
   --clickable-icon-radius: 0.75em !important;
   --code-background: #dbe8e8 !important;
   --code-border-color: #dbe8e8 !important;
-  --code-bracket-background: rgba(106, 148, 149, 0.15) !important;
+  --code-bracket-background: hsla(181, 17%, 50%, 0.15) !important;
   --code-comment: #6f7979 !important;
   --code-normal: #191c1c !important;
   --code-punctuation: #3f4949 !important;
   --code-radius: 0.75em !important;
   --codeFont: Roboto, OpenSans, Inter, Noto Sans JP, UD Digi Kyokasho NK-R, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: #6f7979 !important;
-  --collapse-icon-color-collapsed: rgb(0, 105, 107) !important;
-  --color-accent: rgb(0, 105, 107) !important;
+  --collapse-icon-color-collapsed: hsl(181, 100%, 21%) !important;
+  --color-accent: hsl(181, 100%, 21%) !important;
   --color-accent-1: hsl(180, 101%, 22.575%) !important;
   --color-accent-2: #4a6363 !important;
   --color-accent-hsl: 181,
@@ -1467,10 +1898,10 @@ html[saved-theme="dark"] body sup {
   --footnote-divider-width: 2px !important;
   --footnote-id-color: #3f4949 !important;
   --footnote-id-color-no-occurrences: #6f7979 !important;
-  --footnote-input-background-active: rgba(106, 148, 149, 0.15) !important;
+  --footnote-input-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --footnote-radius: 0.75em !important;
   --graph-line: #dbe8e8 !important;
-  --graph-node: rgb(10, 131, 133) !important;
+  --graph-node: hsl(181, 86%, 28%) !important;
   --graph-node-focused: #5fb9bb !important;
   --graph-node-tag: #00bfbc !important;
   --graph-node-unresolved: #4c5f7c !important;
@@ -1490,10 +1921,10 @@ html[saved-theme="dark"] body sup {
   --h6-weight: 500 !important;
   --headerFont: Roboto, OpenSans, Inter, Noto Sans JP, UD Digi Kyokasho NK-R, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: #6f7979 !important;
-  --highlight: rgba(106, 148, 149, 0.15) !important;
+  --highlight: hsla(181, 17%, 50%, 0.15) !important;
   --hr-color: #dbe8e8 !important;
   --icon-color: #3f4949 !important;
-  --icon-color-active: rgb(0, 105, 107) !important;
+  --icon-color-active: hsl(181, 100%, 21%) !important;
   --icon-color-focused: #191c1c !important;
   --icon-color-hover: #3f4949 !important;
   --indentation-guide-width: 2px !important;
@@ -1521,12 +1952,14 @@ html[saved-theme="dark"] body sup {
   --link-external-color: #4c5f7c !important;
   --link-external-color-hover: #4a6363 !important;
   --link-external-decoration: none !important;
-  --link-unresolved-color: rgb(0, 105, 107) !important;
-  --link-unresolved-decoration-color: rgba(0, 105, 107, 0.3) !important;
+  --link-unresolved-color: hsl(181, 100%, 21%) !important;
+  --link-unresolved-decoration-color: hsla(181,
+			100%,
+			21%, 0.3) !important;
   --list-marker-color: #6f7979 !important;
-  --list-marker-color-collapsed: rgb(0, 105, 107) !important;
+  --list-marker-color-collapsed: hsl(181, 100%, 21%) !important;
   --list-marker-color-hover: #3f4949 !important;
-  --lower-accent: rgb(10, 131, 133) !important;
+  --lower-accent: hsl(181, 86%, 28%) !important;
   --menu-background: #eef5f3 !important;
   --menu-border-color: #dbe8e8 !important;
   --menu-border-width: 2px !important;
@@ -1536,15 +1969,15 @@ html[saved-theme="dark"] body sup {
   --metadata-border-color: #dbe8e8 !important;
   --metadata-border-radius: 0.75em !important;
   --metadata-divider-color: #dbe8e8 !important;
-  --metadata-input-background-active: rgba(106, 148, 149, 0.15) !important;
+  --metadata-input-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --metadata-input-font: Roboto, OpenSans, Inter, Noto Sans JP, UD Digi Kyokasho NK-R, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-text-color: #191c1c !important;
-  --metadata-label-background-active: rgba(106, 148, 149, 0.15) !important;
+  --metadata-label-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --metadata-label-font: Roboto, OpenSans, Inter, Noto Sans JP, UD Digi Kyokasho NK-R, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-text-color: #3f4949 !important;
   --metadata-label-text-color-hover: #3f4949 !important;
   --metadata-padding: 1em !important;
-  --metadata-property-background-active: rgba(106, 148, 149, 0.15) !important;
+  --metadata-property-background-active: hsla(181, 17%, 50%, 0.15) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #5fb9bb !important;
   --metadata-property-box-shadow-hover: 0 0 0 2px #dbe8e8 !important;
   --modal-background: #fdfcfa !important;
@@ -1559,12 +1992,14 @@ html[saved-theme="dark"] body sup {
   --nav-heading-color-hover: #191c1c !important;
   --nav-indentation-guide-color: hsl(180, 101%, 22.575%) !important;
   --nav-indentation-guide-width: 2px !important;
-  --nav-item-background-active: rgba(106, 148, 149, 0.15) !important;
-  --nav-item-background-hover: rgba(106, 148, 149, 0.15) !important;
-  --nav-item-background-selected: rgba(0, 105, 107, 0.15) !important;
+  --nav-item-background-active: hsla(181, 17%, 50%, 0.15) !important;
+  --nav-item-background-hover: hsla(181, 17%, 50%, 0.15) !important;
+  --nav-item-background-selected: hsla(181,
+			100%,
+			21%, 0.15) !important;
   --nav-item-color: #3f4949 !important;
   --nav-item-color-active: #191c1c !important;
-  --nav-item-color-highlighted: rgb(0, 105, 107) !important;
+  --nav-item-color-highlighted: hsl(181, 100%, 21%) !important;
   --nav-item-color-hover: #191c1c !important;
   --nav-item-color-selected: #191c1c !important;
   --nav-item-radius: 0.75em !important;
@@ -1595,10 +2030,10 @@ html[saved-theme="dark"] body sup {
   --pill-color: #3f4949 !important;
   --pill-color-hover: #191c1c !important;
   --pill-color-remove: #6f7979 !important;
-  --pill-color-remove-hover: rgb(0, 105, 107) !important;
+  --pill-color-remove-hover: hsl(181, 100%, 21%) !important;
   --primary: #00696b !important;
   --primary-container: #5fb9bb !important;
-  --primary-lighter: rgb(10, 131, 133) !important;
+  --primary-lighter: hsl(181, 86%, 28%) !important;
   --prompt-background: #fdfcfa !important;
   --prompt-border-color: #dbe8e8 !important;
   --prompt-border-width: 2px !important;
@@ -1644,13 +2079,13 @@ html[saved-theme="dark"] body sup {
   --tab-radius-active: 0 !important;
   --tab-switcher-background: #eef5f3 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #eef5f3, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(0, 105, 107) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(181, 100%, 21%) !important;
   --tab-text-color: #6f7979 !important;
   --tab-text-color-active: #3f4949 !important;
   --tab-text-color-focused: #3f4949 !important;
   --tab-text-color-focused-active: #3f4949 !important;
   --tab-text-color-focused-active-current: #191c1c !important;
-  --tab-text-color-focused-highlighted: rgb(0, 105, 107) !important;
+  --tab-text-color-focused-highlighted: hsl(181, 100%, 21%) !important;
   --tab-width: 250px !important;
   --table-add-button-border-color: #dbe8e8 !important;
   --table-border-color: #dbe8e8 !important;
@@ -1662,24 +2097,32 @@ html[saved-theme="dark"] body sup {
   --table-header-border-color: #dbe8e8 !important;
   --table-header-color: #191c1c !important;
   --table-header-size: 0.875em !important;
-  --table-selection: rgba(0, 105, 107, 0.1) !important;
+  --table-selection: hsla(181,
+			100%,
+			21%, 0.1) !important;
   --table-selection-border-color: hsl(180, 101%, 22.575%) !important;
   --tag-background: #d4e3ff !important;
   --tag-background-hover: #d4e3ff !important;
-  --tag-border-color: rgba(0, 105, 107, 0.15) !important;
-  --tag-border-color-hover: rgba(0, 105, 107, 0.15) !important;
+  --tag-border-color: hsla(181,
+			100%,
+			21%, 0.15) !important;
+  --tag-border-color-hover: hsla(181,
+			100%,
+			21%, 0.15) !important;
   --tag-color: #061c36 !important;
   --tag-color-hover: #061c36 !important;
   --tag-radius: 5px !important;
   --tertiary: #4c5f7c !important;
   --tertiary-container: #d4e3ff !important;
-  --text-accent: rgb(0, 105, 107) !important;
+  --text-accent: hsl(181, 100%, 21%) !important;
   --text-accent-hover: #4a6363 !important;
   --text-faint: #6f7979 !important;
   --text-muted: #3f4949 !important;
   --text-normal: #191c1c !important;
-  --text-selection: rgba(0, 105, 107, 0.2) !important;
-  --textHighlight: rgba(106, 148, 149, 0.15) !important;
+  --text-selection: hsla(181,
+			100%,
+			21%, 0.2) !important;
+  --textHighlight: hsla(181, 17%, 50%, 0.15) !important;
   --titleFont: Roboto, OpenSans, Inter, Noto Sans JP, UD Digi Kyokasho NK-R, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #eef5f3 !important;
   --titlebar-background-focused: #eef5f3 !important;
@@ -2132,6 +2575,436 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(25, 28, 28);
   text-decoration: rgb(25, 28, 28);
   text-decoration-color: rgb(25, 28, 28);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\" viewBox=\\"0 0 21 21\\"%3E%3Cpath fill=\\"currentColor\\" d=\\"m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\"%2F%3E%3C%2Fsvg%3E");
+  background-color: rgb(253, 252, 250);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   border-bottom-color: rgb(6, 28, 54);
@@ -2466,25 +3339,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 600;
   text-decoration: rgb(63, 73, 73);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(63, 73, 73);
-  font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(63, 73, 73);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgba(106, 148, 149, 0.15);
-  border-bottom-color: rgb(25, 28, 28);
-  border-bottom-left-radius: 9.75px;
-  border-bottom-right-radius: 9.75px;
-  border-left-color: rgb(25, 28, 28);
-  border-right-color: rgb(25, 28, 28);
-  border-top-color: rgb(25, 28, 28);
-  border-top-left-radius: 9.75px;
-  border-top-right-radius: 9.75px;
-  color: rgb(25, 28, 28);
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
   font-weight: 600;

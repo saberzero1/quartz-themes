@@ -23,7 +23,7 @@ export const theme: ThemeData = {
   --atom-red: #FC4384 !important;
   --atom-white: #d4d4d4 !important;
   --atom-yellow: #E6DB74 !important;
-  --background-modifier-active-hover: rgba(0, 112, 224, 0.1) !important;
+  --background-modifier-active-hover: hsla(210, 100%, 44%, 0.1) !important;
   --background-modifier-border: #272727 !important;
   --background-modifier-border-focus: #555 !important;
   --background-modifier-border-hover: #272727 !important;
@@ -43,47 +43,47 @@ export const theme: ThemeData = {
   --bases-cards-shadow: 0 0 0 1px #272727 !important;
   --bases-cards-shadow-hover: 0 0 0 1px #272727 !important;
   --bases-embed-border-color: #272727 !important;
-  --bases-group-heading-property-color: rgb(217, 217, 217) !important;
+  --bases-group-heading-property-color: hsl(0, 0%, 85%) !important;
   --bases-table-border-color: #272727 !important;
   --bases-table-cell-background-active: #1c1c1c !important;
   --bases-table-cell-background-disabled: #272727 !important;
-  --bases-table-cell-background-selected: rgba(0, 112, 224, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(210, 100%, 44%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px #555 !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(0, 112, 224) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(210, 100%, 44%) !important;
   --bases-table-group-background: #272727 !important;
   --bases-table-header-background: #1c1c1c !important;
-  --bases-table-header-color: rgb(217, 217, 217) !important;
+  --bases-table-header-color: hsl(0, 0%, 85%) !important;
   --bases-table-summary-background: #1c1c1c !important;
-  --blockquote-border-color: rgb(0, 112, 224) !important;
+  --blockquote-border-color: hsl(210, 100%, 44%) !important;
   --blue: #2e80f2 !important;
   --blur-background: color-mix(in srgb, #272727 65%, transparent) linear-gradient(#272727, color-mix(in srgb, #272727 65%, transparent)) !important;
   --bodyFont: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --canvas-background: #1c1c1c !important;
-  --canvas-card-label-color: rgb(153, 153, 153) !important;
+  --canvas-card-label-color: hsl(0, 0%, 60%) !important;
   --canvas-dot-pattern: #272727 !important;
-  --checkbox-border-color: rgb(153, 153, 153) !important;
-  --checkbox-border-color-hover: rgb(217, 217, 217) !important;
-  --checkbox-color: rgb(0, 112, 224) !important;
-  --checkbox-color-hover: rgb(0, 120, 240) !important;
+  --checkbox-border-color: hsl(0, 0%, 60%) !important;
+  --checkbox-border-color-hover: hsl(0, 0%, 85%) !important;
+  --checkbox-color: hsl(210, 100%, 44%) !important;
+  --checkbox-color-hover: hsl(210, 100%, 46.5%) !important;
   --checkbox-marker-color: #1c1c1c !important;
   --checkbox-radius: 30% !important;
-  --checklist-done-color: rgb(217, 217, 217) !important;
+  --checklist-done-color: hsl(0, 0%, 85%) !important;
   --code-background: #272727 !important;
   --code-border-color: #272727 !important;
-  --code-comment: rgb(153, 153, 153) !important;
+  --code-comment: hsl(0, 0%, 60%) !important;
   --code-function: #ffda34 !important;
   --code-important: #F39B35 !important;
-  --code-punctuation: rgb(217, 217, 217) !important;
+  --code-punctuation: hsl(0, 0%, 85%) !important;
   --code-string: #6ea82c !important;
   --code-value: #A06FCA !important;
   --codeFont: JetBrains Mono, Fira Code, Menlo, SFMono-Regular,
     Consolas, Roboto Mono, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --collapse-icon-color: rgb(153, 153, 153) !important;
-  --collapse-icon-color-collapsed: rgb(0, 112, 224) !important;
-  --color-accent: rgb(0, 112, 224) !important;
-  --color-accent-1: rgb(0, 120, 240) !important;
-  --color-accent-2: rgb(0, 125, 250) !important;
+  --collapse-icon-color: hsl(0, 0%, 60%) !important;
+  --collapse-icon-color-collapsed: hsl(210, 100%, 44%) !important;
+  --color-accent: hsl(210, 100%, 44%) !important;
+  --color-accent-1: hsl(210, 100%, 46.5%) !important;
+  --color-accent-2: hsl(210, 100%, 49%) !important;
   --color-accent-hsl: 210, 100%, 44% !important;
   --color-base-00: #1c1c1c !important;
   --color-base-10: #272727 !important;
@@ -100,14 +100,14 @@ export const theme: ThemeData = {
   --color-orange: #F39B35 !important;
   --color-purple: #A06FCA !important;
   --color-yellow: #ffda34 !important;
-  --dark: rgb(217, 217, 217) !important;
-  --darkgray: rgb(217, 217, 217) !important;
+  --dark: hsl(0, 0%, 85%) !important;
+  --darkgray: hsl(0, 0%, 85%) !important;
   --divider-color: #272727 !important;
-  --divider-color-hover: rgb(0, 112, 224) !important;
+  --divider-color-hover: hsl(210, 100%, 44%) !important;
   --dropdown-background: #272727 !important;
   --dropdown-background-hover: #272727 !important;
   --embed-block-shadow-hover: 0 0 0 1px #272727, inset 0 0 0 1px #272727 !important;
-  --embed-border-start: 2px solid rgb(0, 112, 224) !important;
+  --embed-border-start: 2px solid hsl(210, 100%, 44%) !important;
   --file-header-background: #1c1c1c !important;
   --file-header-background-focused: #1c1c1c !important;
   --file-header-font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -133,55 +133,55 @@ export const theme: ThemeData = {
   --font-text-theme: system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Inter, Ubuntu, sans-serif !important;
   --footnote-divider-color: #272727 !important;
-  --footnote-id-color: rgb(217, 217, 217) !important;
-  --footnote-id-color-no-occurrences: rgb(153, 153, 153) !important;
+  --footnote-id-color: hsl(0, 0%, 85%) !important;
+  --footnote-id-color-no-occurrences: hsl(0, 0%, 60%) !important;
   --graph-line: #272727 !important;
-  --graph-node: rgb(217, 217, 217) !important;
+  --graph-node: hsl(0, 0%, 85%) !important;
   --graph-node-attachment: #ffda34 !important;
-  --graph-node-focused: rgb(0, 112, 224) !important;
+  --graph-node-focused: hsl(210, 100%, 44%) !important;
   --graph-node-tag: #6ea82c !important;
-  --graph-node-unresolved: rgb(153, 153, 153) !important;
-  --gray: rgb(217, 217, 217) !important;
+  --graph-node-unresolved: hsl(0, 0%, 60%) !important;
+  --gray: hsl(0, 0%, 85%) !important;
   --green: #00A7AA !important;
-  --h1-color: rgb(0, 112, 224) !important;
+  --h1-color: hsl(210, 100%, 44%) !important;
   --h1-size: 1.7rem !important;
-  --h1-text-color-dt: rgb(0, 112, 224) !important;
-  --h2-color: rgb(0, 112, 224) !important;
+  --h1-text-color-dt: hsl(210, 100%, 44%) !important;
+  --h2-color: hsl(210, 100%, 44%) !important;
   --h2-size: 1.5rem !important;
-  --h2-text-color-dt: rgb(0, 112, 224) !important;
-  --h3-color: rgb(0, 112, 224) !important;
+  --h2-text-color-dt: hsl(210, 100%, 44%) !important;
+  --h3-color: hsl(210, 100%, 44%) !important;
   --h3-size: 1.2rem !important;
-  --h3-text-color-dt: rgb(0, 112, 224) !important;
-  --h4-color: rgb(0, 112, 224) !important;
+  --h3-text-color-dt: hsl(210, 100%, 44%) !important;
+  --h4-color: hsl(210, 100%, 44%) !important;
   --h4-size: 1.1rem !important;
-  --h4-text-color-dt: rgb(0, 112, 224) !important;
-  --h5-color: rgb(0, 112, 224) !important;
+  --h4-text-color-dt: hsl(210, 100%, 44%) !important;
+  --h5-color: hsl(210, 100%, 44%) !important;
   --h5-size: 1rem !important;
-  --h5-text-color-dt: rgb(0, 112, 224) !important;
-  --h6-color: rgb(0, 112, 224) !important;
+  --h5-text-color-dt: hsl(210, 100%, 44%) !important;
+  --h6-color: hsl(210, 100%, 44%) !important;
   --h6-size: 0.9rem !important;
-  --h6-text-color-dt: rgb(0, 112, 224) !important;
+  --h6-text-color-dt: hsl(210, 100%, 44%) !important;
   --headerFont: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --heading-formatting: rgb(153, 153, 153) !important;
-  --highlight: rgba(0, 112, 224, 0.5) !important;
+  --heading-formatting: hsl(0, 0%, 60%) !important;
+  --highlight: hsla(210, 100%, 44%, 50%) !important;
   --hr-color: #272727 !important;
-  --icon-color: rgb(217, 217, 217) !important;
-  --icon-color-active: rgb(0, 112, 224) !important;
-  --icon-color-hover: rgb(217, 217, 217) !important;
+  --icon-color: hsl(0, 0%, 85%) !important;
+  --icon-color-active: hsl(210, 100%, 44%) !important;
+  --icon-color-hover: hsl(0, 0%, 85%) !important;
   --icon-muted: 0.5 !important;
-  --inline-title-color: rgb(0, 112, 224) !important;
+  --inline-title-color: hsl(210, 100%, 44%) !important;
   --inline-title-size: 1.7rem !important;
-  --input-date-separator: rgb(153, 153, 153) !important;
-  --input-placeholder-color: rgb(153, 153, 153) !important;
+  --input-date-separator: hsl(0, 0%, 60%) !important;
+  --input-placeholder-color: hsl(0, 0%, 60%) !important;
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
   --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
-  --interactive-accent: rgb(0, 112, 224) !important;
-  --interactive-accent-hover: rgb(0, 120, 240) !important;
+  --interactive-accent: hsl(210, 100%, 44%) !important;
+  --interactive-accent-hover: hsl(210, 100%, 46.5%) !important;
   --interactive-accent-hsl: 210, 100%, 44% !important;
   --interactive-hover: #272727 !important;
   --interactive-normal: #272727 !important;
@@ -191,15 +191,15 @@ export const theme: ThemeData = {
   --line-width: 40rem !important;
   --line-width-adaptive: 40rem !important;
   --line-width-wide: calc(40rem + 12.5%) !important;
-  --link-color: rgb(0, 112, 224) !important;
-  --link-color-hover: rgb(71, 163, 255) !important;
-  --link-external-color: rgb(0, 112, 224) !important;
-  --link-external-color-hover: rgb(71, 163, 255) !important;
-  --link-unresolved-color: rgb(0, 112, 224) !important;
-  --link-unresolved-decoration-color: rgba(0, 112, 224, 0.3) !important;
-  --list-marker-color: rgb(153, 153, 153) !important;
-  --list-marker-color-collapsed: rgb(0, 112, 224) !important;
-  --list-marker-color-hover: rgb(217, 217, 217) !important;
+  --link-color: hsl(210, 100%, 44%) !important;
+  --link-color-hover: hsl(210, 100%, 64%) !important;
+  --link-external-color: hsl(210, 100%, 44%) !important;
+  --link-external-color-hover: hsl(210, 100%, 64%) !important;
+  --link-unresolved-color: hsl(210, 100%, 44%) !important;
+  --link-unresolved-decoration-color: hsla(210, 100%, 44%, 0.3) !important;
+  --list-marker-color: hsl(0, 0%, 60%) !important;
+  --list-marker-color-collapsed: hsl(210, 100%, 44%) !important;
+  --list-marker-color-hover: hsl(0, 0%, 85%) !important;
   --max-col-width: 18em !important;
   --max-width: 90% !important;
   --menu-background: #1c1c1c !important;
@@ -212,23 +212,23 @@ export const theme: ThemeData = {
     Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-text-color: rgb(217, 217, 217) !important;
-  --metadata-label-text-color-hover: rgb(217, 217, 217) !important;
+  --metadata-label-text-color: hsl(0, 0%, 85%) !important;
+  --metadata-label-text-color-hover: hsl(0, 0%, 85%) !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #555 !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px #272727 !important;
   --modal-background: #1c1c1c !important;
   --modal-border-color: #555 !important;
   --modal-radius: 10px !important;
-  --nav-collapse-icon-color: rgb(153, 153, 153) !important;
-  --nav-collapse-icon-color-collapsed: rgb(153, 153, 153) !important;
-  --nav-heading-color-collapsed: rgb(153, 153, 153) !important;
-  --nav-heading-color-collapsed-hover: rgb(217, 217, 217) !important;
-  --nav-item-background-selected: rgba(0, 112, 224, 0.15) !important;
-  --nav-item-color: rgb(217, 217, 217) !important;
-  --nav-item-color-highlighted: rgb(0, 112, 224) !important;
-  --nav-tag-color: rgb(153, 153, 153) !important;
-  --nav-tag-color-active: rgb(217, 217, 217) !important;
-  --nav-tag-color-hover: rgb(217, 217, 217) !important;
+  --nav-collapse-icon-color: hsl(0, 0%, 60%) !important;
+  --nav-collapse-icon-color-collapsed: hsl(0, 0%, 60%) !important;
+  --nav-heading-color-collapsed: hsl(0, 0%, 60%) !important;
+  --nav-heading-color-collapsed-hover: hsl(0, 0%, 85%) !important;
+  --nav-item-background-selected: hsla(210, 100%, 44%, 0.15) !important;
+  --nav-item-color: hsl(0, 0%, 85%) !important;
+  --nav-item-color-highlighted: hsl(210, 100%, 44%) !important;
+  --nav-tag-color: hsl(0, 0%, 60%) !important;
+  --nav-tag-color-active: hsl(0, 0%, 85%) !important;
+  --nav-tag-color-hover: hsl(0, 0%, 85%) !important;
   --nested-padding: 1.1em !important;
   --orange: #F39B35 !important;
   --pdf-background: #1c1c1c !important;
@@ -238,9 +238,9 @@ export const theme: ThemeData = {
   --pdf-thumbnail-shadow: 0 0 0 1px #272727 !important;
   --pill-border-color: #272727 !important;
   --pill-border-color-hover: #272727 !important;
-  --pill-color: rgb(217, 217, 217) !important;
-  --pill-color-remove: rgb(153, 153, 153) !important;
-  --pill-color-remove-hover: rgb(0, 112, 224) !important;
+  --pill-color: hsl(0, 0%, 85%) !important;
+  --pill-color-remove: hsl(0, 0%, 60%) !important;
+  --pill-color-remove-hover: hsl(210, 100%, 44%) !important;
   --pink: #da7dae !important;
   --prompt-background: #1c1c1c !important;
   --prompt-border-color: #555 !important;
@@ -251,10 +251,10 @@ export const theme: ThemeData = {
   --ribbon-background: #1c1c1c !important;
   --ribbon-background-collapsed: #1c1c1c !important;
   --scrollbar-radius: 10px !important;
-  --search-clear-button-color: rgb(217, 217, 217) !important;
-  --search-icon-color: rgb(217, 217, 217) !important;
+  --search-clear-button-color: hsl(0, 0%, 85%) !important;
+  --search-icon-color: hsl(0, 0%, 85%) !important;
   --search-result-background: #1c1c1c !important;
-  --secondary: rgb(0, 112, 224) !important;
+  --secondary: hsl(210, 100%, 44%) !important;
   --setting-items-background: #272727 !important;
   --setting-items-border-color: #272727 !important;
   --setting-items-radius: 10px !important;
@@ -266,7 +266,7 @@ export const theme: ThemeData = {
   --slider-track-background: #272727 !important;
   --status-bar-background: #1c1c1c !important;
   --status-bar-border-color: #272727 !important;
-  --status-bar-text-color: rgb(217, 217, 217) !important;
+  --status-bar-text-color: hsl(0, 0%, 85%) !important;
   --suggestion-background: #1c1c1c !important;
   --sync-avatar-color-2: #F39B35 !important;
   --sync-avatar-color-3: #ffda34 !important;
@@ -279,46 +279,46 @@ export const theme: ThemeData = {
   --tab-outline-color: #272727 !important;
   --tab-switcher-background: #1c1c1c !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #1c1c1c, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(0, 112, 224) !important;
-  --tab-text-color: rgb(153, 153, 153) !important;
-  --tab-text-color-active: rgb(217, 217, 217) !important;
-  --tab-text-color-focused: rgb(217, 217, 217) !important;
-  --tab-text-color-focused-active: rgb(217, 217, 217) !important;
-  --tab-text-color-focused-highlighted: rgb(0, 112, 224) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(210, 100%, 44%) !important;
+  --tab-text-color: hsl(0, 0%, 60%) !important;
+  --tab-text-color-active: hsl(0, 0%, 85%) !important;
+  --tab-text-color-focused: hsl(0, 0%, 85%) !important;
+  --tab-text-color-focused-active: hsl(0, 0%, 85%) !important;
+  --tab-text-color-focused-highlighted: hsl(210, 100%, 44%) !important;
   --table-add-button-border-color: #272727 !important;
   --table-border-color: #272727 !important;
-  --table-drag-handle-background-active: rgb(0, 112, 224) !important;
-  --table-drag-handle-color: rgb(153, 153, 153) !important;
+  --table-drag-handle-background-active: hsl(210, 100%, 44%) !important;
+  --table-drag-handle-color: hsl(0, 0%, 60%) !important;
   --table-header-border-color: #272727 !important;
-  --table-selection: rgba(0, 112, 224, 0.1) !important;
-  --table-selection-border-color: rgb(0, 112, 224) !important;
-  --tag-background: rgba(0, 112, 224, 0.2) !important;
-  --tag-background-color: rgba(0, 112, 224, 0.2) !important;
-  --tag-background-hover: rgba(0, 112, 224, 0.2) !important;
-  --tag-border-color: rgba(0, 112, 224, 0.15) !important;
-  --tag-border-color-hover: rgba(0, 112, 224, 0.15) !important;
-  --tag-color: rgb(46, 150, 255) !important;
-  --tag-color-hover: rgb(0, 112, 224) !important;
-  --tag-font-color-d: rgb(46, 150, 255) !important;
-  --tag-font-color-l: rgb(0, 74, 148) !important;
-  --tertiary: rgb(71, 163, 255) !important;
-  --text-accent: rgb(0, 112, 224) !important;
-  --text-accent-hover: rgb(71, 163, 255) !important;
-  --text-faint: rgb(153, 153, 153) !important;
-  --text-formatted: rgb(179, 179, 179) !important;
-  --text-highlight-bg: rgba(0, 112, 224, 0.5) !important;
-  --text-highlight-bg-active: rgba(0, 112, 224, 0.7) !important;
-  --text-muted: rgb(217, 217, 217) !important;
-  --text-selection: rgba(0, 112, 224, 0.25) !important;
+  --table-selection: hsla(210, 100%, 44%, 0.1) !important;
+  --table-selection-border-color: hsl(210, 100%, 44%) !important;
+  --tag-background: hsla(210, 100%, 44%, 20%) !important;
+  --tag-background-color: hsla(210, 100%, 44%, 20%) !important;
+  --tag-background-hover: hsla(210, 100%, 44%, 0.2) !important;
+  --tag-border-color: hsla(210, 100%, 44%, 0.15) !important;
+  --tag-border-color-hover: hsla(210, 100%, 44%, 0.15) !important;
+  --tag-color: hsl(210, 100%, 59%) !important;
+  --tag-color-hover: hsl(210, 100%, 44%) !important;
+  --tag-font-color-d: hsl(210, 100%, 59%) !important;
+  --tag-font-color-l: hsl(210, 100%, 29%) !important;
+  --tertiary: hsl(210, 100%, 64%) !important;
+  --text-accent: hsl(210, 100%, 44%) !important;
+  --text-accent-hover: hsl(210, 100%, 64%) !important;
+  --text-faint: hsl(0, 0%, 60%) !important;
+  --text-formatted: hsl(0, 0%, 70%) !important;
+  --text-highlight-bg: hsla(210, 100%, 44%, 50%) !important;
+  --text-highlight-bg-active: hsla(210, 100%, 44%, 70%) !important;
+  --text-muted: hsl(0, 0%, 85%) !important;
+  --text-selection: hsla(210, 100%, 44%, 0.25) !important;
   --text-success: #6ea82c !important;
   --text-warning: #F39B35 !important;
-  --textHighlight: rgba(0, 112, 224, 0.5) !important;
+  --textHighlight: hsla(210, 100%, 44%, 50%) !important;
   --titleFont: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #1c1c1c !important;
   --titlebar-background-focused: #272727 !important;
   --titlebar-border-color: #272727 !important;
-  --titlebar-text-color: rgb(217, 217, 217) !important;
+  --titlebar-text-color: hsl(0, 0%, 85%) !important;
   --white: #ffffff !important;
   --yellow: #E6DB74 !important;
   --quartz-icon-color: currentColor !important;
@@ -553,6 +553,395 @@ html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(153, 153, 153);
   text-decoration: line-through 1px rgb(153, 153, 153);
   text-decoration-color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  color: rgb(243, 155, 53);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  color: rgb(255, 218, 52);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(0, 112, 224);
+  content: " ";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  color: rgb(243, 155, 53);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  color: rgb(243, 155, 53);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  color: rgb(251, 70, 76);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  color: rgb(251, 70, 76);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  color: rgb(255, 218, 52);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  color: rgb(255, 218, 52);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  color: rgb(251, 70, 76);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  color: rgb(110, 168, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  color: rgb(110, 168, 44);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  color: rgb(160, 111, 202);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
+  background-color: rgb(28, 28, 28);
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(28, 28, 28);
@@ -675,12 +1064,6 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(217, 217, 217);
-  font-family: "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(217, 217, 217);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content ul.explorer-ul li a {
   color: rgb(217, 217, 217);
   font-family: "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgb(217, 217, 217);
@@ -808,7 +1191,7 @@ html[saved-theme="dark"] body kbd {
   --atom-red: #FC4384 !important;
   --atom-white: #464646 !important;
   --atom-yellow: #E6DB74 !important;
-  --background-modifier-active-hover: rgba(0, 112, 224, 0.1) !important;
+  --background-modifier-active-hover: hsla(210, 100%, 44%, 0.1) !important;
   --background-modifier-border: #ebedf0 !important;
   --background-modifier-error: #fb464c !important;
   --background-modifier-error-hover: #fb464c !important;
@@ -828,13 +1211,13 @@ html[saved-theme="dark"] body kbd {
   --bases-group-heading-property-color: hsl(0, -5%, 37%) !important;
   --bases-table-border-color: #ebedf0 !important;
   --bases-table-cell-background-disabled: #f6f7f8 !important;
-  --bases-table-cell-background-selected: rgba(0, 112, 224, 0.1) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px rgb(0, 120, 240) !important;
+  --bases-table-cell-background-selected: hsla(210, 100%, 44%, 0.1) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(210, 100%, 46.5%) !important;
   --bases-table-group-background: #f6f7f8 !important;
   --bases-table-header-background-hover: #e2e5e9 !important;
   --bases-table-header-color: hsl(0, -5%, 37%) !important;
   --bases-table-summary-background-hover: #e2e5e9 !important;
-  --blockquote-border-color: rgb(0, 120, 240) !important;
+  --blockquote-border-color: hsl(210, 100%, 46.5%) !important;
   --blue: #2e80f2 !important;
   --bodyFont: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -848,8 +1231,8 @@ html[saved-theme="dark"] body kbd {
   --canvas-dot-pattern: #ebedf0 !important;
   --checkbox-border-color: hsl(0, -5%, 57%) !important;
   --checkbox-border-color-hover: hsl(0, -5%, 37%) !important;
-  --checkbox-color: rgb(0, 120, 240) !important;
-  --checkbox-color-hover: rgb(0, 125, 250) !important;
+  --checkbox-color: hsl(210, 100%, 46.5%) !important;
+  --checkbox-color-hover: hsl(210, 100%, 49%) !important;
   --checkbox-radius: 30% !important;
   --checklist-done-color: hsl(0, -5%, 37%) !important;
   --code-background: #f6f7f8 !important;
@@ -868,10 +1251,10 @@ html[saved-theme="dark"] body kbd {
   --codeFont: JetBrains Mono, Fira Code, Menlo, SFMono-Regular,
     Consolas, Roboto Mono, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: hsl(0, -5%, 57%) !important;
-  --collapse-icon-color-collapsed: rgb(0, 112, 224) !important;
-  --color-accent: rgb(0, 112, 224) !important;
-  --color-accent-1: rgb(0, 120, 240) !important;
-  --color-accent-2: rgb(0, 125, 250) !important;
+  --collapse-icon-color-collapsed: hsl(210, 100%, 44%) !important;
+  --color-accent: hsl(210, 100%, 44%) !important;
+  --color-accent-1: hsl(210, 100%, 46.5%) !important;
+  --color-accent-2: hsl(210, 100%, 49%) !important;
   --color-accent-hsl: 210, 100%, 44% !important;
   --color-base-10: #f6f7f8 !important;
   --color-base-20: #f6f7f8 !important;
@@ -891,10 +1274,10 @@ html[saved-theme="dark"] body kbd {
   --dark: hsl(0, -5%, 37%) !important;
   --darkgray: hsl(0, -5%, 37%) !important;
   --divider-color: #ebedf0 !important;
-  --divider-color-hover: rgb(0, 120, 240) !important;
+  --divider-color-hover: hsl(210, 100%, 46.5%) !important;
   --dropdown-background-hover: #f6f7f8 !important;
   --embed-block-shadow-hover: 0 0 0 1px #ebedf0, inset 0 0 0 1px #ebedf0 !important;
-  --embed-border-start: 2px solid rgb(0, 120, 240) !important;
+  --embed-border-start: 2px solid hsl(210, 100%, 46.5%) !important;
   --file-header-font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --folding-offset: 10px !important;
@@ -922,39 +1305,39 @@ html[saved-theme="dark"] body kbd {
   --footnote-input-background-active: #e2e5e9 !important;
   --graph-node: hsl(0, -5%, 37%) !important;
   --graph-node-attachment: #ffda34 !important;
-  --graph-node-focused: rgb(0, 112, 224) !important;
+  --graph-node-focused: hsl(210, 100%, 44%) !important;
   --graph-node-tag: #6ea82c !important;
   --graph-node-unresolved: hsl(0, -5%, 57%) !important;
   --gray: hsl(0, -5%, 37%) !important;
   --green: #00A7AA !important;
-  --h1-color: rgb(0, 112, 224) !important;
+  --h1-color: hsl(210, 100%, 44%) !important;
   --h1-size: 1.7rem !important;
-  --h1-text-color-lt: rgb(0, 112, 224) !important;
-  --h2-color: rgb(0, 112, 224) !important;
+  --h1-text-color-lt: hsl(210, 100%, 44%) !important;
+  --h2-color: hsl(210, 100%, 44%) !important;
   --h2-size: 1.5rem !important;
-  --h2-text-color-lt: rgb(0, 112, 224) !important;
-  --h3-color: rgb(0, 112, 224) !important;
+  --h2-text-color-lt: hsl(210, 100%, 44%) !important;
+  --h3-color: hsl(210, 100%, 44%) !important;
   --h3-size: 1.2rem !important;
-  --h3-text-color-lt: rgb(0, 112, 224) !important;
-  --h4-color: rgb(0, 112, 224) !important;
+  --h3-text-color-lt: hsl(210, 100%, 44%) !important;
+  --h4-color: hsl(210, 100%, 44%) !important;
   --h4-size: 1.1rem !important;
-  --h4-text-color-lt: rgb(0, 112, 224) !important;
-  --h5-color: rgb(0, 112, 224) !important;
+  --h4-text-color-lt: hsl(210, 100%, 44%) !important;
+  --h5-color: hsl(210, 100%, 44%) !important;
   --h5-size: 1rem !important;
-  --h5-text-color-lt: rgb(0, 112, 224) !important;
-  --h6-color: rgb(0, 112, 224) !important;
+  --h5-text-color-lt: hsl(210, 100%, 44%) !important;
+  --h6-color: hsl(210, 100%, 44%) !important;
   --h6-size: 0.9rem !important;
-  --h6-text-color-lt: rgb(0, 112, 224) !important;
+  --h6-text-color-lt: hsl(210, 100%, 44%) !important;
   --headerFont: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: hsl(0, -5%, 57%) !important;
-  --highlight: rgba(0, 112, 224, 0.5) !important;
+  --highlight: hsla(210, 100%, 44%, 50%) !important;
   --hr-color: #ebedf0 !important;
   --icon-color: hsl(0, -5%, 37%) !important;
-  --icon-color-active: rgb(0, 112, 224) !important;
+  --icon-color-active: hsl(210, 100%, 44%) !important;
   --icon-color-hover: hsl(0, -5%, 37%) !important;
   --icon-muted: 0.5 !important;
-  --inline-title-color: rgb(0, 112, 224) !important;
+  --inline-title-color: hsl(210, 100%, 44%) !important;
   --inline-title-size: 1.7rem !important;
   --input-date-separator: hsl(0, -5%, 57%) !important;
   --input-placeholder-color: hsl(0, -5%, 57%) !important;
@@ -964,8 +1347,8 @@ html[saved-theme="dark"] body kbd {
   --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17),
     0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
     0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
-  --interactive-accent: rgb(0, 120, 240) !important;
-  --interactive-accent-hover: rgb(0, 125, 250) !important;
+  --interactive-accent: hsl(210, 100%, 46.5%) !important;
+  --interactive-accent-hover: hsl(210, 100%, 49%) !important;
   --interactive-accent-hsl: 210, 100%, 44% !important;
   --interactive-hover: #f6f7f8 !important;
   --light: #f6f7f8 !important;
@@ -974,14 +1357,14 @@ html[saved-theme="dark"] body kbd {
   --line-width: 40rem !important;
   --line-width-adaptive: 40rem !important;
   --line-width-wide: calc(40rem + 12.5%) !important;
-  --link-color: rgb(0, 112, 224) !important;
-  --link-color-hover: rgb(0, 61, 122) !important;
-  --link-external-color: rgb(0, 112, 224) !important;
-  --link-external-color-hover: rgb(0, 61, 122) !important;
-  --link-unresolved-color: rgb(0, 112, 224) !important;
-  --link-unresolved-decoration-color: rgba(0, 112, 224, 0.3) !important;
+  --link-color: hsl(210, 100%, 44%) !important;
+  --link-color-hover: hsl(210, 100%, 24%) !important;
+  --link-external-color: hsl(210, 100%, 44%) !important;
+  --link-external-color-hover: hsl(210, 100%, 24%) !important;
+  --link-unresolved-color: hsl(210, 100%, 44%) !important;
+  --link-unresolved-decoration-color: hsla(210, 100%, 44%, 0.3) !important;
   --list-marker-color: hsl(0, -5%, 57%) !important;
-  --list-marker-color-collapsed: rgb(0, 112, 224) !important;
+  --list-marker-color-collapsed: hsl(210, 100%, 44%) !important;
   --list-marker-color-hover: hsl(0, -5%, 37%) !important;
   --max-col-width: 18em !important;
   --max-width: 90% !important;
@@ -1006,9 +1389,9 @@ html[saved-theme="dark"] body kbd {
   --nav-heading-color-collapsed-hover: hsl(0, -5%, 37%) !important;
   --nav-item-background-active: #e2e5e9 !important;
   --nav-item-background-hover: #e2e5e9 !important;
-  --nav-item-background-selected: rgba(0, 112, 224, 0.15) !important;
+  --nav-item-background-selected: hsla(210, 100%, 44%, 0.15) !important;
   --nav-item-color: hsl(0, -5%, 37%) !important;
-  --nav-item-color-highlighted: rgb(0, 112, 224) !important;
+  --nav-item-color-highlighted: hsl(210, 100%, 44%) !important;
   --nav-tag-color: hsl(0, -5%, 57%) !important;
   --nav-tag-color-active: hsl(0, -5%, 37%) !important;
   --nav-tag-color-hover: hsl(0, -5%, 37%) !important;
@@ -1017,7 +1400,7 @@ html[saved-theme="dark"] body kbd {
   --pill-border-color: #ebedf0 !important;
   --pill-color: hsl(0, -5%, 37%) !important;
   --pill-color-remove: hsl(0, -5%, 57%) !important;
-  --pill-color-remove-hover: rgb(0, 112, 224) !important;
+  --pill-color-remove-hover: hsl(210, 100%, 44%) !important;
   --pink: #da7dae !important;
   --purple: #A06FCA !important;
   --radius-l: 10px !important;
@@ -1026,7 +1409,7 @@ html[saved-theme="dark"] body kbd {
   --scrollbar-radius: 10px !important;
   --search-clear-button-color: hsl(0, -5%, 37%) !important;
   --search-icon-color: hsl(0, -5%, 37%) !important;
-  --secondary: rgb(0, 112, 224) !important;
+  --secondary: hsl(210, 100%, 44%) !important;
   --setting-items-background: #f6f7f8 !important;
   --setting-items-border-color: #ebedf0 !important;
   --setting-items-radius: 10px !important;
@@ -1050,40 +1433,40 @@ html[saved-theme="dark"] body kbd {
   --tab-outline-color: #ebedf0 !important;
   --tab-switcher-background: #f6f7f8 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #f6f7f8, transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px rgb(0, 112, 224) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(210, 100%, 44%) !important;
   --tab-text-color: hsl(0, -5%, 57%) !important;
   --tab-text-color-active: hsl(0, -5%, 37%) !important;
   --tab-text-color-focused: hsl(0, -5%, 37%) !important;
   --tab-text-color-focused-active: hsl(0, -5%, 37%) !important;
-  --tab-text-color-focused-highlighted: rgb(0, 112, 224) !important;
+  --tab-text-color-focused-highlighted: hsl(210, 100%, 44%) !important;
   --table-add-button-border-color: #ebedf0 !important;
   --table-border-color: #ebedf0 !important;
-  --table-drag-handle-background-active: rgb(0, 120, 240) !important;
+  --table-drag-handle-background-active: hsl(210, 100%, 46.5%) !important;
   --table-drag-handle-color: hsl(0, -5%, 57%) !important;
   --table-header-border-color: #ebedf0 !important;
-  --table-selection: rgba(0, 112, 224, 0.1) !important;
-  --table-selection-border-color: rgb(0, 120, 240) !important;
-  --tag-background: rgba(0, 112, 224, 0.2) !important;
-  --tag-background-color: rgba(0, 112, 224, 0.2) !important;
-  --tag-background-hover: rgba(0, 112, 224, 0.2) !important;
-  --tag-border-color: rgba(0, 112, 224, 0.15) !important;
-  --tag-border-color-hover: rgba(0, 112, 224, 0.15) !important;
-  --tag-color: rgb(0, 74, 148) !important;
-  --tag-color-hover: rgb(0, 112, 224) !important;
-  --tag-font-color-d: rgb(46, 150, 255) !important;
-  --tag-font-color-l: rgb(0, 74, 148) !important;
-  --tertiary: rgb(0, 61, 122) !important;
-  --text-accent: rgb(0, 112, 224) !important;
-  --text-accent-hover: rgb(0, 61, 122) !important;
+  --table-selection: hsla(210, 100%, 44%, 0.1) !important;
+  --table-selection-border-color: hsl(210, 100%, 46.5%) !important;
+  --tag-background: hsla(210, 100%, 44%, 20%) !important;
+  --tag-background-color: hsla(210, 100%, 44%, 20%) !important;
+  --tag-background-hover: hsla(210, 100%, 44%, 0.2) !important;
+  --tag-border-color: hsla(210, 100%, 44%, 0.15) !important;
+  --tag-border-color-hover: hsla(210, 100%, 44%, 0.15) !important;
+  --tag-color: hsl(210, 100%, 29%) !important;
+  --tag-color-hover: hsl(210, 100%, 44%) !important;
+  --tag-font-color-d: hsl(210, 100%, 59%) !important;
+  --tag-font-color-l: hsl(210, 100%, 29%) !important;
+  --tertiary: hsl(210, 100%, 24%) !important;
+  --text-accent: hsl(210, 100%, 44%) !important;
+  --text-accent-hover: hsl(210, 100%, 24%) !important;
   --text-error: #fb464c !important;
   --text-faint: hsl(0, -5%, 57%) !important;
-  --text-highlight-bg: rgba(0, 112, 224, 0.5) !important;
-  --text-highlight-bg-active: rgba(0, 112, 224, 0.7) !important;
+  --text-highlight-bg: hsla(210, 100%, 44%, 50%) !important;
+  --text-highlight-bg-active: hsla(210, 100%, 44%, 70%) !important;
   --text-muted: hsl(0, -5%, 37%) !important;
-  --text-selection: rgba(0, 112, 224, 0.2) !important;
+  --text-selection: hsla(210, 100%, 44%, 0.2) !important;
   --text-success: #6ea82c !important;
   --text-warning: #F39B35 !important;
-  --textHighlight: rgba(0, 112, 224, 0.5) !important;
+  --textHighlight: hsla(210, 100%, 44%, 50%) !important;
   --titleFont: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Inter, Ubuntu, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --titlebar-background: #f6f7f8 !important;
@@ -1315,6 +1698,131 @@ html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(145, 145, 145);
   text-decoration: line-through 1px rgb(145, 145, 145);
   text-decoration-color: rgb(145, 145, 145);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+  color: rgb(145, 145, 145);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
+  color: rgb(243, 155, 53);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
+  color: rgb(255, 218, 52);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(0, 112, 224);
+  content: " ";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
+  color: rgb(145, 145, 145);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
+  color: rgb(145, 145, 145);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
+  color: rgb(243, 155, 53);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
+  color: rgb(243, 155, 53);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
+  color: rgb(251, 70, 76);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
+  color: rgb(251, 70, 76);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
+  color: rgb(255, 218, 52);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
+  color: rgb(255, 218, 52);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
+  color: rgb(251, 70, 76);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
+  color: rgb(110, 168, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
+  color: rgb(110, 168, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"] {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
+  color: rgb(160, 111, 202);
 }`,
     callouts: `html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: 228, 55, 75;
@@ -1457,16 +1965,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   color: rgb(94, 94, 94);
   font-family: "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgb(94, 94, 94);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li a {
-  color: rgb(94, 94, 94);
-  font-family: "??", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Ubuntu, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(94, 94, 94);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
-  background-color: rgb(226, 229, 233);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(94, 94, 94);
