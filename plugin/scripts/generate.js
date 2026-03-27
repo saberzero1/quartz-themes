@@ -393,6 +393,94 @@ function svgToDataUri(svg) {
   return `url("data:image/svg+xml,${encoded}")`;
 }
 
+function normalizeSvgDataUriValue(value) {
+  if (!value || typeof value !== "string") return value;
+  const hasSvg = /<svg/i.test(value);
+  const hasData = /data:image\/svg\+xml/i.test(value);
+  const normalizeHeaders = (input) =>
+    input
+      .replace(
+        /data:image\/svg\+xml\s*;?\s*charset=[^,]+,/gi,
+        "data:image/svg+xml,",
+      )
+      .replace(/data:image\/svg\+xml\s*;?\s*utf8,/gi, "data:image/svg+xml,");
+  const encodeDataUriQuotes = (input) => input.replace(/"/g, "%22");
+  const normalizedData = hasData ? normalizeHeaders(value) : value;
+  if (hasData) {
+    const wrappedMatch = normalizedData.match(
+      /^(\s*)url\(\"([\s\S]*)\"\)(\s*)$/i,
+    );
+    if (wrappedMatch) {
+      const [, leading, content, trailing] = wrappedMatch;
+      if (/data:image\/svg\+xml/i.test(content)) {
+        if (/<svg/i.test(content)) {
+          const svgStart = content.search(/<svg/i);
+          return `${leading}${svgToDataUri(content.slice(svgStart))}${trailing}`;
+        }
+        const normalizedContent = encodeDataUriQuotes(
+          normalizeHeaders(content),
+        );
+        return `${leading}url("${normalizedContent}")${trailing}`;
+      }
+    }
+  }
+  const normalizeUrlValue = (input) => {
+    const normalizeContent = (content, fallbackMatch) => {
+      let normalized = content;
+      if (
+        (normalized.startsWith('"') && normalized.endsWith('"')) ||
+        (normalized.startsWith("'") && normalized.endsWith("'"))
+      ) {
+        normalized = normalized.slice(1, -1);
+      }
+      if (
+        !/<svg/i.test(normalized) &&
+        !/data:image\/svg\+xml/i.test(normalized)
+      ) {
+        return fallbackMatch;
+      }
+      const svgStart = normalized.search(/<svg/i);
+      if (svgStart !== -1) {
+        return svgToDataUri(normalized.slice(svgStart));
+      }
+      const headerNormalized = normalizeHeaders(normalized);
+      const quoteSafe = encodeDataUriQuotes(headerNormalized);
+      return `url("${quoteSafe}")`;
+    };
+
+    let result = input.replace(
+      /url\((['"])([\s\S]*?)\1\)/gi,
+      (match, _quote, content) => normalizeContent(content.trim(), match),
+    );
+
+    result = result.replace(/url\(([^)]*)\)/gi, (match, raw) => {
+      const content = raw.trim();
+      return normalizeContent(content, match);
+    });
+
+    return result;
+  };
+
+  if (/url\(/i.test(normalizedData)) {
+    const normalizedUrl = normalizeUrlValue(normalizedData);
+    if (normalizedUrl !== normalizedData) return normalizedUrl;
+  }
+
+  if (hasData) {
+    const sanitizedData = encodeDataUriQuotes(normalizedData);
+    if (/%3C/i.test(sanitizedData)) return sanitizedData;
+    if (hasSvg) {
+      const svgStart = sanitizedData.search(/<svg/i);
+      if (svgStart !== -1) {
+        return svgToDataUri(sanitizedData.slice(svgStart));
+      }
+    }
+    return sanitizedData;
+  }
+
+  return normalizedData;
+}
+
 function normalizeCalloutIconName(value) {
   if (!value) return null;
   const trimmed = value.trim();
@@ -472,6 +560,17 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
 
   const normalizeMaskImage = (value) => {
     if (!value || typeof value !== "string") return value;
+    const normalizedValue = normalizeSvgDataUriValue(value);
+    if (normalizedValue !== value && normalizedValue) {
+      if (
+        typeof normalizedValue === "string" &&
+        normalizedValue.includes("data:image/svg+xml") &&
+        !normalizedValue.trim().startsWith("url(")
+      ) {
+        return `url("${normalizedValue}")`;
+      }
+      return normalizedValue;
+    }
     const match = value.match(/url\((.*)\)/i);
     if (!match) return value;
     let content = match[1].trim();
@@ -522,7 +621,7 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
     const lines = [];
     for (const [prop, value] of Object.entries(props)) {
       if (!value || value === "none" || value === "normal") continue;
-      if (prop === "-webkit-mask-image") {
+      if (prop === "-webkit-mask-image" || prop === "mask-image") {
         const normalized = normalizeMaskImage(value);
         lines.push(`  mask-image: ${normalized};`);
         lines.push(`  -webkit-mask-image: ${normalized};`);
@@ -533,7 +632,9 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
           lines.push(`  -webkit-mask-repeat: no-repeat;`);
         }
       } else {
-        lines.push(`  ${prop}: ${value};`);
+        const normalized =
+          prop === "content" ? normalizeSvgDataUriValue(value) : value;
+        lines.push(`  ${prop}: ${normalized};`);
       }
     }
     if (lines.length > 0) {
@@ -564,7 +665,7 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap, warnings) {
   const bodyStyles = data.body ?? {};
   for (const [key, value] of Object.entries(bodyStyles)) {
     if (key.startsWith("--") && value && value !== "inherit") {
-      baseVars[key] = value;
+      baseVars[key] = normalizeSvgDataUriValue(value);
     }
   }
 
@@ -634,6 +735,7 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap, warnings) {
       ) {
         continue;
       }
+      const normalized = normalizeSvgDataUriValue(value);
       let selectorMap = aspectSelectors.get(aspect);
       if (!selectorMap) {
         selectorMap = new Map();
@@ -644,7 +746,7 @@ function buildModeCSS(data, mode, bothModes, config, aspectMap, warnings) {
         propMap = new Map();
         selectorMap.set(selector, propMap);
       }
-      propMap.set(prop, value);
+      propMap.set(prop, normalized);
     }
   });
 
