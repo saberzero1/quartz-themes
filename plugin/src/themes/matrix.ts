@@ -1321,7 +1321,7 @@ html body a.internal.tag-link::before {
 
 html body h1 {
   color: rgba(0, 0, 0, 0);
-  text-shadow: rgb(0, 255, 170) 0px 0px 7.65019px, rgba(0, 255, 65, 0.137) 0px 0px 3.85044px;
+  text-shadow: rgb(0, 255, 170) 0px 0px 7.67485px, rgba(0, 255, 65, 0.14) 0px 0px 3.90798px;
 }
 
 html body h2 {
@@ -1330,7 +1330,7 @@ html body h2 {
 
 html body h2.page-title, html h2.page-title a {
   color: rgba(0, 0, 0, 0);
-  text-shadow: rgb(0, 255, 170) 0px 0px 7.60043px, rgba(0, 255, 65, 0.133) 0px 0px 3.73435px;
+  text-shadow: rgb(0, 255, 170) 0px 0px 7.69981px, rgba(0, 255, 65, 0.14) 0px 0px 3.96622px;
 }
 
 html body h3 {
