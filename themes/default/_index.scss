@@ -2292,7 +2292,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(138, 92, 245) none 0px;
-    text-decoration: underline rgb(138, 92, 245);
+    text-decoration: underline;
     text-decoration-color: rgb(138, 92, 245);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2333,7 +2333,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(138, 92, 245) none 0px;
-    text-decoration: underline rgb(138, 92, 245);
+    text-decoration: underline;
     text-decoration-color: rgb(138, 92, 245);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2683,7 +2683,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(34, 34, 34) none 0px;
-    text-decoration: line-through rgb(34, 34, 34);
+    text-decoration: line-through;
     text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -2955,7 +2955,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(92, 92, 92);
-    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration: line-through;
     text-decoration-color: rgb(92, 92, 92);
   }
 
@@ -4102,7 +4102,7 @@ body {
   abbr {
     color: rgb(34, 34, 34);
     cursor: auto;
-    text-decoration: underline dotted rgb(34, 34, 34);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
@@ -5357,7 +5357,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(166, 138, 249) none 0px;
-      text-decoration: underline rgb(166, 138, 249);
+      text-decoration: underline;
       text-decoration-color: rgb(166, 138, 249);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -5398,7 +5398,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(166, 138, 249) none 0px;
-      text-decoration: underline rgb(166, 138, 249);
+      text-decoration: underline;
       text-decoration-color: rgb(166, 138, 249);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -5748,7 +5748,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(218, 218, 218) none 0px;
-      text-decoration: line-through rgb(218, 218, 218);
+      text-decoration: line-through;
       text-decoration-color: rgb(218, 218, 218);
       text-decoration-line: line-through;
       text-decoration-style: solid;
@@ -6020,7 +6020,7 @@ html[saved-theme="dark"] {
 
     .page article li:has(> input[type="checkbox"]:checked) {
       color: rgb(179, 179, 179);
-      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration: line-through;
       text-decoration-color: rgb(179, 179, 179);
     }
 
@@ -7172,7 +7172,7 @@ html[saved-theme="dark"] {
     abbr {
       color: rgb(218, 218, 218);
       cursor: auto;
-      text-decoration: underline dotted rgb(218, 218, 218);
+      text-decoration: underline dotted;
       text-decoration-style: dotted;
     }
 

@@ -5686,7 +5686,7 @@ body body.theme-dark .markdown-rendered video {
   filter: none;
   max-width: none;
   object-fit: contain;
-  border: 0px rgb(255, 255, 255);
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5703,7 +5703,7 @@ body body.theme-dark .markdown-rendered video {
 }
 body body.theme-dark .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(255, 255, 255);
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5743,8 +5743,8 @@ body body.theme-dark .markdown-embed {
   padding: 0px;
 }
 body body.theme-dark .file-embed {
-  background-color: rgb(0, 0, 0);
-  border-color: rgb(136, 136, 136);
+  background-color: rgb(36, 36, 36);
+  border-color: rgb(179, 179, 179);
   border-width: 0px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;

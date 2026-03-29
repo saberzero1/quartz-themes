@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "general.md",
+                "file": "theme-callouts/its-theme.ttrpg-wotc.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "general"
+              "title": "its-theme.ttrpg-wotc"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "general.md",
+                "file": "theme-callouts/its-theme.ttrpg-wotc.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of general"
+              "title": "Outline of its-theme.ttrpg-wotc"
             }
           }
         ],
@@ -194,7 +194,6 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-callouts/its-theme.ttrpg-wotc.md",
     "theme-checkboxes/upper.md",
     "theme-checkboxes/lower.md",
     "theme-checkboxes/special.md",
@@ -209,6 +208,7 @@
     "callouts.md",
     "headings.md",
     "general.md",
+    "theme-callouts/its-theme.ttrpg-wotc.md",
     "theme-callouts/its-theme.ttrpg-pathfinder-remastered.md",
     "theme-callouts/its-theme.ttrpg-pathfinder.md",
     "theme-callouts/its-theme.ttrpg-dnd.md",

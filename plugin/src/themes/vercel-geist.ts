@@ -500,14 +500,7 @@ html[saved-theme="dark"] body pre:has(> code) {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    images: `html[saved-theme="dark"] body audio {
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body figcaption {
+    images: `html[saved-theme="dark"] body figcaption {
   color: rgb(255, 255, 255);
 }
 
@@ -523,23 +516,8 @@ html[saved-theme="dark"] body img {
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body video {
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
 }`,
-    embeds: `html[saved-theme="dark"] body .file-embed {
-  background-color: rgb(0, 0, 0);
-  border-bottom-color: rgb(136, 136, 136);
-  border-left-color: rgb(136, 136, 136);
-  border-right-color: rgb(136, 136, 136);
-  border-top-color: rgb(136, 136, 136);
-}
-
-html[saved-theme="dark"] body .footnotes {
+    embeds: `html[saved-theme="dark"] body .footnotes {
   border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }

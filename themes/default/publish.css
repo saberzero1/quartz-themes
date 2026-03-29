@@ -2246,7 +2246,7 @@ body body.theme-light .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(138, 92, 245) none 0px;
-  text-decoration: underline rgb(138, 92, 245);
+  text-decoration: underline;
   text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2285,7 +2285,7 @@ body body.theme-light .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(138, 92, 245) none 0px;
-  text-decoration: underline rgb(138, 92, 245);
+  text-decoration: underline;
   text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2610,7 +2610,7 @@ body body.theme-light del {
     sans-serif;
   font-weight: 400;
   outline: rgb(34, 34, 34) none 0px;
-  text-decoration: line-through rgb(34, 34, 34);
+  text-decoration: line-through;
   text-decoration-color: rgb(34, 34, 34);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -2837,7 +2837,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: rgb(92, 92, 92);
-  text-decoration: line-through rgb(92, 92, 92);
+  text-decoration: line-through;
   text-decoration-color: rgb(92, 92, 92);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -3775,7 +3775,7 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: rgb(34, 34, 34);
   cursor: auto;
-  text-decoration: underline dotted rgb(34, 34, 34);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
@@ -4275,7 +4275,7 @@ body body.theme-dark .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(166, 138, 249) none 0px;
-  text-decoration: underline rgb(166, 138, 249);
+  text-decoration: underline;
   text-decoration-color: rgb(166, 138, 249);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4314,7 +4314,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(166, 138, 249) none 0px;
-  text-decoration: underline rgb(166, 138, 249);
+  text-decoration: underline;
   text-decoration-color: rgb(166, 138, 249);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4639,7 +4639,7 @@ body body.theme-dark del {
     sans-serif;
   font-weight: 400;
   outline: rgb(218, 218, 218) none 0px;
-  text-decoration: line-through rgb(218, 218, 218);
+  text-decoration: line-through;
   text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -4866,7 +4866,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgb(179, 179, 179);
-  text-decoration: line-through rgb(179, 179, 179);
+  text-decoration: line-through;
   text-decoration-color: rgb(179, 179, 179);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -5804,7 +5804,7 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(218, 218, 218);
   cursor: auto;
-  text-decoration: underline dotted rgb(218, 218, 218);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {

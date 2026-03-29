@@ -122,6 +122,7 @@ export const theme: ThemeData = {
             3.57143%,
             20.41667%) 65%, transparent)) !important;
   --bold-color: rgb(255, 120, 129) !important;
+  --bold-weight: 600 !important;
   --border-900: hsl(219, 10%, 29%) !important;
   --border-radius-activated-file-dark: 0px !important;
   --border-radius-activated-tab-header-dark: 6px !important;
@@ -139,7 +140,6 @@ export const theme: ThemeData = {
   --callout-success: 124, 211, 124;
   --callout-summary: 134, 223, 226;
   --callout-tip: 134, 223, 226;
-  --callout-title-weight: 600;
   --callout-todo: 137, 189, 244;
   --callout-warning: 251, 187, 131;
   --canvas-background: transparent !important;
@@ -297,7 +297,6 @@ export const theme: ThemeData = {
   --h6-size: 1.125em !important;
   --h6-weight: 575 !important;
   --heading-formatting: hsl(216, 12%, 44%) !important;
-  --heading-spacing: 2.5rem !important;
   --highlight: hsla(216, 12%, 40%, 0.25) !important;
   --hover-indicator-color: #0ba360 !important;
   --hr-color: hsla(216, 10%, 44.1%, 0.2) !important;
@@ -354,7 +353,6 @@ export const theme: ThemeData = {
   --metadata-border-color: hsla(216, 10%, 44.1%, 0.2) !important;
   --metadata-divider-color: hsla(216, 10%, 44.1%, 0.2) !important;
   --metadata-input-background-active: hsla(216, 12%, 40%, 0.25) !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-text-color: hsl(216, 24%, 84%) !important;
   --metadata-label-background-active: hsla(216, 12%, 40%, 0.25) !important;
   --metadata-label-text-color: hsl(216, 18%, 72%) !important;
@@ -437,7 +435,6 @@ export const theme: ThemeData = {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
         0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
         0px 15px 30px rgba(0, 0, 0, 0.3) !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: hsla(216, 10%, 44.1%, 0.25) !important;
   --slider-track-background: hsla(216, 10%, 44.1%, 0.2) !important;
   --status-bar-background: transparent !important;
@@ -476,7 +473,6 @@ export const theme: ThemeData = {
   --table-header-background-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E") !important;
   --table-header-border-color: hsla(216, 10%, 44.1%, 0.2) !important;
   --table-header-color: hsl(216, 24%, 84%) !important;
-  --table-header-weight: 600 !important;
   --table-selection: hsla(216,
         25%,
         49%, 0.1) !important;
@@ -543,7 +539,6 @@ export const theme: ThemeData = {
             4.62963%,
             17.01389%, 0.6) !important;
   --workspace-divider-color: hsla(216, 10%, 44.1%, 0.2) !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
