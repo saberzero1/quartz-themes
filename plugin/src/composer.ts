@@ -10,6 +10,7 @@ import { TEMPLATE_CSS } from "./templateCSS";
 import { resolveThemeId, loadTheme } from "./registry";
 import { generateCalloutIconCSS } from "./icons/callout-icons";
 import { generateCheckboxIconCSS } from "./icons/checkbox-icons";
+import { FONT_CSS } from "./fonts/generated-fonts";
 
 /** All aspect keys in the order they should appear in the CSS output. */
 const ASPECT_ORDER: AspectKey[] = [
@@ -83,9 +84,21 @@ export function composeCSS(options: ThemeOptions): string {
     parts.push("/* extras */\n" + baseTheme.extras);
   }
 
+  const fontCSS = baseTheme.meta.fonts
+    .map((name) => FONT_CSS[name])
+    .filter(Boolean)
+    .join("\n\n");
+
   const iconCSS = generateCalloutIconCSS() + "\n\n" + generateCheckboxIconCSS();
 
-  return iconCSS + "\n\n" + parts.join("\n") + "\n" + TEMPLATE_CSS;
+  return (
+    (fontCSS ? fontCSS + "\n\n" : "") +
+    iconCSS +
+    "\n\n" +
+    parts.join("\n") +
+    "\n" +
+    TEMPLATE_CSS
+  );
 }
 
 /**
