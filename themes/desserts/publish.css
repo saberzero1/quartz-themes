@@ -2333,7 +2333,7 @@ body body.theme-light .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: rgb(55, 38, 34) none 0px;
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2372,7 +2372,7 @@ body body.theme-light strong {
     sans-serif;
   font-weight: 600;
   outline: rgb(55, 38, 34) none 0px;
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2411,7 +2411,7 @@ body body.theme-light b {
     sans-serif;
   font-weight: 600;
   outline: rgb(55, 38, 34) none 0px;
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2450,7 +2450,7 @@ body body.theme-light em {
     sans-serif;
   font-weight: 400;
   outline: rgb(138, 104, 68) none 0px;
-  text-decoration: rgb(138, 104, 68);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(138, 104, 68);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2489,7 +2489,7 @@ body body.theme-light i {
     sans-serif;
   font-weight: 400;
   outline: rgb(138, 104, 68) none 0px;
-  text-decoration: rgb(138, 104, 68);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(138, 104, 68);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2528,7 +2528,7 @@ body body.theme-light .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: rgb(55, 38, 34) none 0px;
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(55, 38, 34);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2567,7 +2567,7 @@ body body.theme-light del {
     sans-serif;
   font-weight: 400;
   outline: rgb(55, 38, 34) none 0px;
-  text-decoration: line-through rgb(55, 38, 34);
+  text-decoration: line-through;
   text-decoration-color: rgb(55, 38, 34);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -2794,7 +2794,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: rgb(55, 38, 34);
-  text-decoration: line-through rgb(55, 38, 34);
+  text-decoration: line-through;
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -2890,7 +2890,7 @@ body body.theme-light .search-results > * {
     sans-serif;
   font-weight: 400;
   outline: rgb(55, 38, 34) none 0px;
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3745,97 +3745,97 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: rgb(55, 38, 34);
   cursor: auto;
-  text-decoration: underline dotted rgb(55, 38, 34);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(55, 38, 34);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -3941,7 +3941,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(86, 65, 52);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -3968,7 +3968,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(86, 65, 52);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -4008,7 +4008,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: rgb(55, 38, 34);
-  text-decoration: rgb(55, 38, 34);
 }
 body body.theme-light .nav-header {
   color: rgb(55, 38, 34);
@@ -4040,7 +4039,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: rgb(86, 65, 52);
-  text-decoration: rgb(86, 65, 52);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(86, 65, 52);
@@ -4362,7 +4360,7 @@ body body.theme-dark .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4401,7 +4399,7 @@ body body.theme-dark strong {
     sans-serif;
   font-weight: 600;
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4440,7 +4438,7 @@ body body.theme-dark b {
     sans-serif;
   font-weight: 600;
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4479,7 +4477,7 @@ body body.theme-dark em {
     sans-serif;
   font-weight: 400;
   outline: rgb(116, 89, 61) none 0px;
-  text-decoration: rgb(116, 89, 61);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(116, 89, 61);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4518,7 +4516,7 @@ body body.theme-dark i {
     sans-serif;
   font-weight: 400;
   outline: rgb(116, 89, 61) none 0px;
-  text-decoration: rgb(116, 89, 61);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(116, 89, 61);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4557,7 +4555,7 @@ body body.theme-dark .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(163, 165, 170);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4596,7 +4594,7 @@ body body.theme-dark del {
     sans-serif;
   font-weight: 400;
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: line-through rgb(163, 165, 170);
+  text-decoration: line-through;
   text-decoration-color: rgb(163, 165, 170);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -4823,7 +4821,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgb(163, 165, 170);
-  text-decoration: line-through rgb(163, 165, 170);
+  text-decoration: line-through;
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -4919,7 +4917,7 @@ body body.theme-dark .search-results > * {
     sans-serif;
   font-weight: 400;
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5774,97 +5772,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(163, 165, 170);
   cursor: auto;
-  text-decoration: underline dotted rgb(163, 165, 170);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(163, 165, 170);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -5970,7 +5968,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(86, 65, 52);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -5997,7 +5995,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(86, 65, 52);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -6037,7 +6035,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
 }
 body body.theme-dark .nav-header {
   color: rgb(163, 165, 170);
@@ -6069,7 +6066,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgb(86, 65, 52);
-  text-decoration: rgb(86, 65, 52);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(86, 65, 52);

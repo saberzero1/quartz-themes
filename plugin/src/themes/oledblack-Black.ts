@@ -110,42 +110,36 @@ html body div#quartz-root {
     typography: `html body .page article p > b, html b {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .page article p > em, html em {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .page article p > i, html i {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .page article p > strong, html strong {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .text-highlight {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body del {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: line-through rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }`,
     lists: `html body dd {
@@ -272,109 +266,91 @@ html body .transclude-inner {
 }`,
     checkboxes: `html body li.task-list-item[data-task='!'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -732,7 +708,6 @@ html body .search > .search-container > .search-space {
 html body .search > .search-container > .search-space > * {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -879,7 +854,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(255, 255, 255);
-  text-decoration: underline dotted rgb(255, 255, 255);
 }
 
 html body details {

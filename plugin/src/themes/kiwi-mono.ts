@@ -179,7 +179,6 @@ html[saved-theme="dark"] body div#quartz-root {
   color: rgb(170, 170, 170);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   outline: rgb(170, 170, 170) none 0px;
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
@@ -187,7 +186,6 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
   color: rgb(170, 170, 170);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   outline: rgb(170, 170, 170) none 0px;
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
@@ -195,7 +193,6 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(170, 170, 170);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   outline: rgb(170, 170, 170) none 0px;
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
@@ -203,7 +200,6 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
   color: rgb(170, 170, 170);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   outline: rgb(170, 170, 170) none 0px;
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
@@ -211,7 +207,6 @@ html[saved-theme="dark"] body .text-highlight {
   color: rgb(170, 170, 170);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   outline: rgb(170, 170, 170) none 0px;
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
@@ -219,25 +214,18 @@ html[saved-theme="dark"] body del {
   color: rgb(170, 170, 170);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   outline: rgb(170, 170, 170) none 0px;
-  text-decoration: line-through rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body p {
   color: rgb(119, 119, 119);
   outline: rgb(119, 119, 119) none 0px;
-  text-decoration: rgb(119, 119, 119);
   text-decoration-color: rgb(119, 119, 119);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(83, 223, 221);
   outline: rgb(83, 223, 221) none 0px;
-  text-decoration: rgb(83, 223, 221);
   text-decoration-color: rgb(83, 223, 221);
-}
-
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  text-decoration: rgb(166, 138, 249);
 }
 
 html[saved-theme="dark"] body a.internal.broken {
@@ -282,7 +270,6 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -443,7 +430,6 @@ html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(119, 119, 119);
-  text-decoration: line-through rgb(119, 119, 119);
   text-decoration-color: rgb(119, 119, 119);
 }
 
@@ -456,109 +442,91 @@ html[saved-theme="dark"] body input[type=checkbox] {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(170, 170, 170);
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
@@ -1088,7 +1056,6 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(170, 170, 170);
   outline: rgb(170, 170, 170) none 0px;
-  text-decoration: rgb(170, 170, 170);
   text-decoration-color: rgb(170, 170, 170);
 }
 
@@ -1221,12 +1188,10 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(119, 119, 119);
-  text-decoration: rgb(119, 119, 119);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(119, 119, 119);
-  text-decoration: rgb(119, 119, 119);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(119, 119, 119);
@@ -1246,7 +1211,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 
 html[saved-theme="dark"] body footer ul li a {
   color: rgb(119, 119, 119);
-  text-decoration: rgb(119, 119, 119);
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(170, 170, 170);
@@ -1262,7 +1226,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(119, 119, 119);
-  text-decoration: rgb(119, 119, 119);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1281,7 +1244,6 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(119, 119, 119);
-  text-decoration: rgb(119, 119, 119);
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -1343,7 +1305,6 @@ html[saved-theme="dark"] body .page-header h2.page-title {
 
 html[saved-theme="dark"] body abbr {
   color: rgb(170, 170, 170);
-  text-decoration: underline dotted rgb(170, 170, 170);
 }
 
 html[saved-theme="dark"] body details {
@@ -1568,7 +1529,6 @@ html[saved-theme="light"] body div#quartz-root {
   color: rgb(68, 68, 68);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   outline: rgb(68, 68, 68) none 0px;
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
@@ -1576,7 +1536,6 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
   color: rgb(68, 68, 68);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   outline: rgb(68, 68, 68) none 0px;
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
@@ -1584,7 +1543,6 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
   color: rgb(68, 68, 68);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   outline: rgb(68, 68, 68) none 0px;
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
@@ -1592,7 +1550,6 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
   color: rgb(68, 68, 68);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   outline: rgb(68, 68, 68) none 0px;
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
@@ -1600,7 +1557,6 @@ html[saved-theme="light"] body .text-highlight {
   color: rgb(68, 68, 68);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   outline: rgb(68, 68, 68) none 0px;
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
@@ -1608,25 +1564,18 @@ html[saved-theme="light"] body del {
   color: rgb(68, 68, 68);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
   outline: rgb(68, 68, 68) none 0px;
-  text-decoration: line-through rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body p {
   color: rgb(136, 136, 136);
   outline: rgb(136, 136, 136) none 0px;
-  text-decoration: rgb(136, 136, 136);
   text-decoration-color: rgb(136, 136, 136);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(0, 191, 188);
   outline: rgb(0, 191, 188) none 0px;
-  text-decoration: rgb(0, 191, 188);
   text-decoration-color: rgb(0, 191, 188);
-}
-
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  text-decoration: rgb(138, 92, 245);
 }
 
 html[saved-theme="light"] body a.internal.broken {
@@ -1671,7 +1620,6 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(187, 187, 187);
-  text-decoration: rgb(187, 187, 187);
 }
 
 html[saved-theme="light"] body blockquote {
@@ -1832,7 +1780,6 @@ html[saved-theme="light"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(136, 136, 136);
-  text-decoration: line-through rgb(136, 136, 136);
   text-decoration-color: rgb(136, 136, 136);
 }
 
@@ -1845,109 +1792,91 @@ html[saved-theme="light"] body input[type=checkbox] {
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(68, 68, 68);
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
@@ -2129,7 +2058,6 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(68, 68, 68);
   outline: rgb(68, 68, 68) none 0px;
-  text-decoration: rgb(68, 68, 68);
   text-decoration-color: rgb(68, 68, 68);
 }
 
@@ -2235,12 +2163,10 @@ html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(136, 136, 136);
-  text-decoration: rgb(136, 136, 136);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(136, 136, 136);
-  text-decoration: rgb(136, 136, 136);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(136, 136, 136);
@@ -2260,7 +2186,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 
 html[saved-theme="light"] body footer ul li a {
   color: rgb(136, 136, 136);
-  text-decoration: rgb(136, 136, 136);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(68, 68, 68);
@@ -2276,7 +2201,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(136, 136, 136);
-  text-decoration: rgb(136, 136, 136);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2295,7 +2219,6 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(136, 136, 136);
-  text-decoration: rgb(136, 136, 136);
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -2357,7 +2280,6 @@ html[saved-theme="light"] body .page-header h2.page-title {
 
 html[saved-theme="light"] body abbr {
   color: rgb(68, 68, 68);
-  text-decoration: underline dotted rgb(68, 68, 68);
 }
 
 html[saved-theme="light"] body details {

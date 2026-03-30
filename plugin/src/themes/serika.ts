@@ -136,7 +136,6 @@ html[saved-theme="dark"] body p {
   color: rgb(238, 205, 85);
   font-family: "??", "Roboto Mono *", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(238, 205, 85) none 0px;
-  text-decoration: underline rgb(238, 205, 85);
   text-decoration-color: rgb(238, 205, 85);
 }
 
@@ -144,7 +143,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   color: rgb(238, 205, 85);
   font-family: "??", "Roboto Mono *", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(238, 205, 85) none 0px;
-  text-decoration: underline rgb(238, 205, 85);
   text-decoration-color: rgb(238, 205, 85);
 }
 
@@ -632,7 +630,6 @@ html[saved-theme="light"] body p {
   color: rgb(232, 201, 48);
   font-family: "??", "Roboto Mono *", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(232, 201, 48) none 0px;
-  text-decoration: underline rgb(232, 201, 48);
   text-decoration-color: rgb(232, 201, 48);
 }
 
@@ -640,7 +637,6 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
   color: rgb(232, 201, 48);
   font-family: "??", "Roboto Mono *", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(232, 201, 48) none 0px;
-  text-decoration: underline rgb(232, 201, 48);
   text-decoration-color: rgb(232, 201, 48);
 }
 

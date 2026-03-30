@@ -1323,7 +1323,7 @@ body body.theme-dark .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(12, 182, 157) none 0px;
-  text-decoration: underline rgb(12, 182, 157);
+  text-decoration: underline;
   text-decoration-color: rgb(12, 182, 157);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1362,7 +1362,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(12, 182, 157) none 0px;
-  text-decoration: underline rgb(12, 182, 157);
+  text-decoration: underline;
   text-decoration-color: rgb(12, 182, 157);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1458,7 +1458,7 @@ body body.theme-dark .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: rgb(167, 171, 175) none 0px;
-  text-decoration: rgb(167, 171, 175);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(167, 171, 175);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1497,7 +1497,7 @@ body body.theme-dark strong {
     sans-serif;
   font-weight: 600;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 255, 255);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1536,7 +1536,7 @@ body body.theme-dark b {
     sans-serif;
   font-weight: 600;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 255, 255);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1653,7 +1653,7 @@ body body.theme-dark .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: rgb(218, 218, 218) none 0px;
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1692,7 +1692,7 @@ body body.theme-dark del {
     sans-serif;
   font-weight: 400;
   outline: rgb(218, 218, 218) none 0px;
-  text-decoration: line-through rgb(218, 218, 218);
+  text-decoration: line-through;
   text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -1924,7 +1924,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgb(167, 171, 175);
-  text-decoration: line-through rgb(167, 171, 175);
+  text-decoration: line-through;
   text-decoration-color: rgb(167, 171, 175);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -1952,7 +1952,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(102, 102, 102);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgb(26, 34, 41);
@@ -2872,7 +2872,7 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(218, 218, 218);
   cursor: auto;
-  text-decoration: underline dotted rgb(218, 218, 218);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
@@ -3073,7 +3073,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(167, 171, 175);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -3105,7 +3105,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(167, 171, 175);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -3150,7 +3150,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgb(167, 171, 175);
-  text-decoration: rgb(167, 171, 175);
 }
 body body.theme-dark .nav-header {
   color: rgb(218, 218, 218);
@@ -3187,7 +3186,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgb(167, 171, 175);
-  text-decoration: rgb(167, 171, 175);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(167, 171, 175);

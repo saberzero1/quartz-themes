@@ -2476,7 +2476,7 @@ body {
   a.external,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: oklch(0.45 0.1 292.488);
+    color: oklch(0.45 0.1 292.489);
     cursor: pointer;
     filter: none;
     backdrop-filter: none;
@@ -2496,9 +2496,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: oklch(0.45 0.1 292.488) none 0px;
-    text-decoration: underline oklch(0.45 0.1 292.488 / 0.25);
-    text-decoration-color: oklch(0.45 0.1 292.488 / 0.25);
+    outline: oklch(0.45 0.1 292.489) none 0px;
+    text-decoration: underline oklch(0.45 0.1 292.489 / 0.25);
+    text-decoration-color: oklch(0.45 0.1 292.489 / 0.25);
     text-decoration-line: underline;
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
@@ -2517,7 +2517,7 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: oklch(0.45 0.1 292.488);
+    color: oklch(0.45 0.1 292.489);
     cursor: pointer;
     filter: none;
     backdrop-filter: none;
@@ -2537,9 +2537,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: oklch(0.45 0.1 292.488) none 0px;
-    text-decoration: underline oklch(0.45 0.1 292.488 / 0.25);
-    text-decoration-color: oklch(0.45 0.1 292.488 / 0.25);
+    outline: oklch(0.45 0.1 292.489) none 0px;
+    text-decoration: underline oklch(0.45 0.1 292.489 / 0.25);
+    text-decoration-color: oklch(0.45 0.1 292.489 / 0.25);
     text-decoration-line: underline;
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
@@ -2557,7 +2557,7 @@ body {
 
   a.internal.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: oklch(0.45 0.1 292.488);
+    color: oklch(0.45 0.1 292.489);
     cursor: pointer;
     filter: none;
     backdrop-filter: none;
@@ -2577,9 +2577,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: oklch(0.45 0.1 292.488) none 0px;
-    text-decoration: oklch(0.45 0.1 292.488);
-    text-decoration-color: oklch(0.45 0.1 292.488);
+    outline: oklch(0.45 0.1 292.489) none 0px;
+    text-decoration: underline rgba(138, 92, 245, 0.3);
+    text-decoration-color: oklch(0.45 0.1 292.489);
     text-decoration-line: underline;
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
@@ -2635,7 +2635,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(92, 92, 92) none 0px;
-    text-decoration: rgb(92, 92, 92);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(92, 92, 92);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2839,7 +2839,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(34, 34, 34) none 0px;
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2888,7 +2888,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(34, 34, 34) none 0px;
-    text-decoration: line-through rgb(34, 34, 34);
+    text-decoration: line-through;
     text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -3160,7 +3160,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(34, 34, 34);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: line-through;
     text-decoration-color: rgb(34, 34, 34);
   }
 
@@ -3190,7 +3190,7 @@ body {
 
   .data-footnote-backref {
     color: rgb(171, 171, 171);
-    text-decoration: rgb(171, 171, 171);
+    text-decoration: underline rgb(138, 92, 245);
   }
 
   .search > .search-button {
@@ -3400,7 +3400,7 @@ body {
   }
 
   h1 {
-    color: oklch(0.48 0.2 292.488);
+    color: oklch(0.48 0.2 292.489);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3419,7 +3419,7 @@ body {
   }
 
   h2 {
-    color: oklch(0.48 0.2 352.488);
+    color: oklch(0.48 0.2 352.489);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3438,7 +3438,7 @@ body {
   }
 
   h3 {
-    color: oklch(0.48 0.2 52.4879);
+    color: oklch(0.48 0.2 52.4895);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3457,7 +3457,7 @@ body {
   }
 
   h4 {
-    color: oklch(0.48 0.2 112.488);
+    color: oklch(0.48 0.2 112.489);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3476,7 +3476,7 @@ body {
   }
 
   h5 {
-    color: oklch(0.48 0.2 172.488);
+    color: oklch(0.48 0.2 172.49);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3495,7 +3495,7 @@ body {
   }
 
   h6 {
-    color: oklch(0.48 0.2 232.488);
+    color: oklch(0.48 0.2 232.49);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -3598,7 +3598,7 @@ body {
 
   .callout {
     --callout-color: 8, 109, 221;
-    border: 1px solid oklch(0.65 0.189734 256.788 / 0.45);
+    border: 1px solid oklch(0.65 0.189745 256.787 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3638,7 +3638,7 @@ body {
     --callout-color: 8, 109, 221;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.189734 256.788 / 0.45);
+    border: 1px solid oklch(0.65 0.189745 256.787 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3653,7 +3653,7 @@ body {
     --callout-color: 0, 191, 188;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.124631 192.766 / 0.45);
+    border: 1px solid oklch(0.65 0.124634 192.763 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3668,7 +3668,7 @@ body {
     --callout-color: 8, 109, 221;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.189734 256.788 / 0.45);
+    border: 1px solid oklch(0.65 0.189745 256.787 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3683,7 +3683,7 @@ body {
     --callout-color: 8, 109, 221;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.189734 256.788 / 0.45);
+    border: 1px solid oklch(0.65 0.189745 256.787 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3698,7 +3698,7 @@ body {
     --callout-color: 0, 191, 188;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.124631 192.766 / 0.45);
+    border: 1px solid oklch(0.65 0.124634 192.763 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3713,7 +3713,7 @@ body {
     --callout-color: 8, 185, 78;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.19456 148.477 / 0.45);
+    border: 1px solid oklch(0.65 0.194562 148.477 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3728,7 +3728,7 @@ body {
     --callout-color: 236, 117, 0;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.175848 52.5476 / 0.45);
+    border: 1px solid oklch(0.65 0.175867 52.5446 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3743,7 +3743,7 @@ body {
     --callout-color: 236, 117, 0;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.175848 52.5476 / 0.45);
+    border: 1px solid oklch(0.65 0.175867 52.5446 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3758,7 +3758,7 @@ body {
     --callout-color: 233, 49, 71;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.216938 20.8401 / 0.45);
+    border: 1px solid oklch(0.65 0.216957 20.8417 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3773,7 +3773,7 @@ body {
     --callout-color: 233, 49, 71;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.216938 20.8401 / 0.45);
+    border: 1px solid oklch(0.65 0.216957 20.8417 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3788,7 +3788,7 @@ body {
     --callout-color: 233, 49, 71;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.216938 20.8401 / 0.45);
+    border: 1px solid oklch(0.65 0.216957 20.8417 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3803,7 +3803,7 @@ body {
     --callout-color: 120, 82, 238;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.221853 288.459 / 0.45);
+    border: 1px solid oklch(0.65 0.221884 288.456 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -3818,7 +3818,7 @@ body {
     --callout-color: 158, 158, 158;
     background-color: rgba(0, 0, 0, 0);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.65 0.0000347714 23.8628 / 0.45);
+    border: 1px solid oklch(0.65 0.0000347234 23.6829 / 0.45);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -4298,7 +4298,7 @@ body {
   abbr {
     color: rgb(34, 34, 34);
     cursor: auto;
-    text-decoration: underline dotted rgb(34, 34, 34);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
@@ -4578,7 +4578,6 @@ body {
 
   footer ul li a {
     color: rgb(34, 34, 34);
-    text-decoration: rgb(34, 34, 34);
   }
 
   .recent-notes > h3 {
@@ -4613,7 +4612,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: rgb(34, 34, 34);
-    text-decoration: rgb(34, 34, 34);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4656,7 +4654,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: rgb(34, 34, 34);
-    text-decoration: rgb(34, 34, 34);
   }
 
   li.section-li > .section .meta {
@@ -4696,8 +4693,8 @@ body {
 
   .breadcrumb-container {
     background-color: rgba(0, 0, 0, 0);
-    color: oklch(0.45 0.1 292.488);
-    border-color: oklch(0.45 0.1 292.488);
+    color: oklch(0.45 0.1 292.489);
+    border-color: oklch(0.45 0.1 292.489);
     border-width: 0px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -5532,7 +5529,7 @@ html[saved-theme="dark"] {
     a.external,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.8 0.05 292.488);
+      color: oklch(0.8 0.05 292.489);
       cursor: pointer;
       filter: none;
       backdrop-filter: none;
@@ -5552,9 +5549,9 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      outline: oklch(0.8 0.05 292.488) none 0px;
-      text-decoration: underline oklch(0.8 0.05 292.488 / 0.35);
-      text-decoration-color: oklch(0.8 0.05 292.488 / 0.35);
+      outline: oklch(0.8 0.05 292.489) none 0px;
+      text-decoration: underline oklch(0.8 0.05 292.489 / 0.35);
+      text-decoration-color: oklch(0.8 0.05 292.489 / 0.35);
       text-decoration-line: underline;
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
@@ -5573,7 +5570,7 @@ html[saved-theme="dark"] {
     a.internal,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.8 0.05 292.488);
+      color: oklch(0.8 0.05 292.489);
       cursor: pointer;
       filter: none;
       backdrop-filter: none;
@@ -5593,9 +5590,9 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      outline: oklch(0.8 0.05 292.488) none 0px;
-      text-decoration: underline oklch(0.8 0.05 292.488 / 0.35);
-      text-decoration-color: oklch(0.8 0.05 292.488 / 0.35);
+      outline: oklch(0.8 0.05 292.489) none 0px;
+      text-decoration: underline oklch(0.8 0.05 292.489 / 0.35);
+      text-decoration-color: oklch(0.8 0.05 292.489 / 0.35);
       text-decoration-line: underline;
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
@@ -5613,7 +5610,7 @@ html[saved-theme="dark"] {
 
     a.internal.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.8 0.05 292.488);
+      color: oklch(0.8 0.05 292.489);
       cursor: pointer;
       filter: none;
       backdrop-filter: none;
@@ -5633,9 +5630,9 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      outline: oklch(0.8 0.05 292.488) none 0px;
-      text-decoration: oklch(0.8 0.05 292.488);
-      text-decoration-color: oklch(0.8 0.05 292.488);
+      outline: oklch(0.8 0.05 292.489) none 0px;
+      text-decoration: underline rgba(138, 92, 245, 0.3);
+      text-decoration-color: oklch(0.8 0.05 292.489);
       text-decoration-line: underline;
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
@@ -5691,7 +5688,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(179, 179, 179) none 0px;
-      text-decoration: rgb(179, 179, 179);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(179, 179, 179);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5732,7 +5729,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 700;
       outline: rgb(217, 217, 217) none 0px;
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5773,7 +5770,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 700;
       outline: rgb(217, 217, 217) none 0px;
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5814,7 +5811,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(217, 217, 217) none 0px;
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5855,7 +5852,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(217, 217, 217) none 0px;
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5895,7 +5892,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(217, 217, 217) none 0px;
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(0, 0, 0);
       text-decoration-color: rgb(217, 217, 217);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5944,7 +5941,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(217, 217, 217) none 0px;
-      text-decoration: line-through rgb(217, 217, 217);
+      text-decoration: line-through;
       text-decoration-color: rgb(217, 217, 217);
       text-decoration-line: line-through;
       text-decoration-style: solid;
@@ -6216,7 +6213,7 @@ html[saved-theme="dark"] {
 
     .page article li:has(> input[type="checkbox"]:checked) {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: line-through;
       text-decoration-color: rgb(217, 217, 217);
     }
 
@@ -6246,7 +6243,7 @@ html[saved-theme="dark"] {
 
     .data-footnote-backref {
       color: rgb(102, 102, 102);
-      text-decoration: rgb(102, 102, 102);
+      text-decoration: underline rgb(166, 138, 249);
     }
 
     .search > .search-button {
@@ -6332,7 +6329,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(217, 217, 217) none 0px;
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -6461,7 +6458,7 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: oklch(0.8 0.08 292.488);
+      color: oklch(0.8 0.08 292.489);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -6480,7 +6477,7 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: oklch(0.8 0.08 352.488);
+      color: oklch(0.8 0.08 352.489);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -6499,7 +6496,7 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: oklch(0.8 0.08 52.4879);
+      color: oklch(0.8 0.08 52.4895);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -6518,7 +6515,7 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: oklch(0.8 0.08 112.488);
+      color: oklch(0.8 0.08 112.489);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -6537,7 +6534,7 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: oklch(0.8 0.08 172.488);
+      color: oklch(0.8 0.08 172.49);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -6556,7 +6553,7 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: oklch(0.8 0.08 232.488);
+      color: oklch(0.8 0.08 232.49);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -6659,7 +6656,7 @@ html[saved-theme="dark"] {
 
     .callout {
       --callout-color: 2, 122, 255;
-      border: 1px solid oklch(0.7 0.217558 257.504 / 0.35);
+      border: 1px solid oklch(0.7 0.217554 257.503 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6699,7 +6696,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.217558 257.504 / 0.35);
+      border: 1px solid oklch(0.7 0.217554 257.503 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6714,7 +6711,7 @@ html[saved-theme="dark"] {
       --callout-color: 83, 223, 221;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.118878 193.753 / 0.35);
+      border: 1px solid oklch(0.7 0.118893 193.752 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6729,7 +6726,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.217558 257.504 / 0.35);
+      border: 1px solid oklch(0.7 0.217554 257.503 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6744,7 +6741,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.217558 257.504 / 0.35);
+      border: 1px solid oklch(0.7 0.217554 257.503 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6759,7 +6756,7 @@ html[saved-theme="dark"] {
       --callout-color: 83, 223, 221;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.118878 193.753 / 0.35);
+      border: 1px solid oklch(0.7 0.118893 193.752 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6774,7 +6771,7 @@ html[saved-theme="dark"] {
       --callout-color: 68, 207, 110;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.180995 149.613 / 0.35);
+      border: 1px solid oklch(0.7 0.180999 149.614 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6789,7 +6786,7 @@ html[saved-theme="dark"] {
       --callout-color: 233, 151, 63;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.140751 64.0934 / 0.35);
+      border: 1px solid oklch(0.7 0.140765 64.0894 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6804,7 +6801,7 @@ html[saved-theme="dark"] {
       --callout-color: 233, 151, 63;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.140751 64.0934 / 0.35);
+      border: 1px solid oklch(0.7 0.140765 64.0894 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6819,7 +6816,7 @@ html[saved-theme="dark"] {
       --callout-color: 251, 70, 76;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.216867 23.8101 / 0.35);
+      border: 1px solid oklch(0.7 0.216875 23.8105 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6834,7 +6831,7 @@ html[saved-theme="dark"] {
       --callout-color: 251, 70, 76;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.216867 23.8101 / 0.35);
+      border: 1px solid oklch(0.7 0.216875 23.8105 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6849,7 +6846,7 @@ html[saved-theme="dark"] {
       --callout-color: 251, 70, 76;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.216867 23.8101 / 0.35);
+      border: 1px solid oklch(0.7 0.216875 23.8105 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6864,7 +6861,7 @@ html[saved-theme="dark"] {
       --callout-color: 168, 130, 255;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.179083 295.408 / 0.35);
+      border: 1px solid oklch(0.7 0.17906 295.405 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -6879,7 +6876,7 @@ html[saved-theme="dark"] {
       --callout-color: 158, 158, 158;
       background-color: rgba(0, 0, 0, 0);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.7 0.0000347714 23.8628 / 0.35);
+      border: 1px solid oklch(0.7 0.0000347234 23.6829 / 0.35);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
       border-bottom-left-radius: 7px;
@@ -7359,115 +7356,115 @@ html[saved-theme="dark"] {
     abbr {
       color: rgb(217, 217, 217);
       cursor: auto;
-      text-decoration: underline dotted rgb(217, 217, 217);
+      text-decoration: underline dotted;
       text-decoration-style: dotted;
     }
 
     li.task-list-item[data-task="-"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task=">"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="/"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="?"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="!"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="*"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="l"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="b"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="i"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="S"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="I"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="p"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="c"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="f"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="k"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="u"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="d"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
     li.task-list-item[data-task="w"] {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
     }
 
@@ -7575,7 +7572,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .explorer
@@ -7599,7 +7596,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .graph > .graph-outer > .global-graph-icon {
@@ -7642,7 +7639,6 @@ html[saved-theme="dark"] {
 
     footer ul li a {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
     }
 
     .recent-notes > h3 {
@@ -7677,7 +7673,6 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -7720,7 +7715,6 @@ html[saved-theme="dark"] {
 
     li.section-li > .section > .desc > h3 > a {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
     }
 
     li.section-li > .section .meta {
@@ -7760,8 +7754,8 @@ html[saved-theme="dark"] {
 
     .breadcrumb-container {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.8 0.05 292.488);
-      border-color: oklch(0.8 0.05 292.488);
+      color: oklch(0.8 0.05 292.489);
+      border-color: oklch(0.8 0.05 292.489);
       border-width: 0px;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;

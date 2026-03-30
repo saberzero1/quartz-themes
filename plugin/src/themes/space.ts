@@ -223,28 +223,24 @@ html body div#quartz-root {
     typography: `html body .page article p > b, html b {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body .page article p > em, html em {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body .page article p > i, html i {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body .page article p > strong, html strong {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
@@ -252,14 +248,12 @@ html body .text-highlight {
   background-color: rgb(219, 84, 97);
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body del {
   color: rgb(216, 215, 223);
   outline: rgb(216, 215, 223) none 0px;
-  text-decoration: line-through rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
@@ -270,7 +264,6 @@ html body p {
   color: rgb(255, 230, 153);
   font-family: "Bai Jamjuree";
   outline: rgb(255, 230, 153) none 0px;
-  text-decoration: underline rgb(255, 230, 153);
   text-decoration-color: rgb(255, 230, 153);
 }
 
@@ -278,7 +271,6 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 230, 153);
   font-family: "Bai Jamjuree";
   outline: rgb(255, 230, 153) none 0px;
-  text-decoration: underline rgb(255, 230, 153);
   text-decoration-color: rgb(255, 230, 153);
 }
 
@@ -318,7 +310,6 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(178, 178, 184);
-  text-decoration: rgb(178, 178, 184);
 }
 
 html body blockquote {
@@ -474,109 +465,91 @@ html body .transclude-inner {
 
 html body li.task-list-item[data-task='!'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(216, 215, 223);
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
@@ -940,7 +913,6 @@ html body .search > .search-container > .search-space > * {
   color: rgb(216, 215, 223);
   font-family: "Bai Jamjuree";
   outline: rgb(216, 215, 223) none 0px;
-  text-decoration: rgb(216, 215, 223);
   text-decoration-color: rgb(216, 215, 223);
 }
 
@@ -1148,7 +1120,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(216, 215, 223);
-  text-decoration: underline dotted rgb(216, 215, 223);
 }
 
 html body details {

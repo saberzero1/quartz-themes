@@ -202,28 +202,24 @@ html body div#quartz-root {
     typography: `html body .page article p > b, html b {
   color: rgb(63, 62, 60);
   outline: rgb(63, 62, 60) none 0px;
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body .page article p > em, html em {
   color: rgb(63, 62, 60);
   outline: rgb(63, 62, 60) none 0px;
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body .page article p > i, html i {
   color: rgb(63, 62, 60);
   outline: rgb(63, 62, 60) none 0px;
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body .page article p > strong, html strong {
   color: rgb(63, 62, 60);
   outline: rgb(63, 62, 60) none 0px;
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
@@ -231,14 +227,12 @@ html body .text-highlight {
   background-color: rgb(212, 219, 173);
   color: rgb(63, 62, 60);
   outline: rgb(63, 62, 60) none 0px;
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body del {
   color: rgb(63, 62, 60);
   outline: rgb(63, 62, 60) none 0px;
-  text-decoration: line-through rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
@@ -249,7 +243,6 @@ html body p {
   color: rgb(8, 185, 78);
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   outline: rgb(8, 185, 78) none 0px;
-  text-decoration: underline rgb(8, 185, 78);
   text-decoration-color: rgb(8, 185, 78);
   transition: background 0.3s, color 0.3s;
 }
@@ -258,7 +251,6 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(8, 185, 78);
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   outline: rgb(8, 185, 78) none 0px;
-  text-decoration: underline rgb(8, 185, 78);
   text-decoration-color: rgb(8, 185, 78);
 }
 
@@ -298,7 +290,6 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(8, 185, 78);
-  text-decoration: rgb(8, 185, 78);
 }
 
 html body blockquote {
@@ -445,109 +436,91 @@ html body .transclude-inner {
 
 html body li.task-list-item[data-task='!'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
@@ -907,7 +880,6 @@ html body .search > .search-container > .search-space > * {
   color: rgb(63, 62, 60);
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   outline: rgb(63, 62, 60) none 0px;
-  text-decoration: rgb(63, 62, 60);
   text-decoration-color: rgb(63, 62, 60);
 }
 
@@ -1034,13 +1006,11 @@ html body ::-webkit-scrollbar-track {
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(63, 62, 60);
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  text-decoration: rgb(63, 62, 60);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(63, 62, 60);
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-  text-decoration: rgb(63, 62, 60);
 }`,
     footer: `html body footer {
   background-color: rgb(246, 246, 244);
@@ -1051,7 +1021,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(63, 62, 60);
@@ -1068,7 +1037,6 @@ html body .recent-notes > ul.recent-ul > li {
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1089,7 +1057,6 @@ html body li.section-li > .section .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(63, 62, 60);
-  text-decoration: rgb(63, 62, 60);
 }
 
 html body ul.section-ul {
@@ -1127,7 +1094,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(63, 62, 60);
-  text-decoration: underline dotted rgb(63, 62, 60);
 }
 
 html body details {

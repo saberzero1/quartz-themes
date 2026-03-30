@@ -1535,7 +1535,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(166, 138, 249) none 0px;
-    text-decoration: underline rgb(166, 138, 249);
+    text-decoration: underline;
     text-decoration-color: rgb(166, 138, 249);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1577,7 +1577,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(166, 138, 249) none 0px;
-    text-decoration: rgb(166, 138, 249);
+    text-decoration: underline;
     text-decoration-color: rgb(166, 138, 249);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1675,7 +1675,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0.845 0.01 279.29) none 0px;
-    text-decoration: oklch(0.845 0.01 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.845 0.01 279.29);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1717,7 +1717,7 @@ body {
       sans-serif;
     font-weight: 700;
     outline: oklch(0.92 0.004 279.29) none 0px;
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1759,7 +1759,7 @@ body {
       sans-serif;
     font-weight: 700;
     outline: oklch(0.92 0.004 279.29) none 0px;
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1801,7 +1801,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0.92 0.004 279.29) none 0px;
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1843,7 +1843,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0.92 0.004 279.29) none 0px;
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1884,7 +1884,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0.12 0.009 279.29) none 0px;
-    text-decoration: oklch(0.12 0.009 279.29);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: oklch(0.12 0.009 279.29);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1934,7 +1934,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0.92 0.004 279.29) none 0px;
-    text-decoration: line-through oklch(0.92 0.004 279.29);
+    text-decoration: line-through;
     text-decoration-color: oklch(0.92 0.004 279.29);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -2207,7 +2207,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: oklch(0.485 0.039 279.29);
-    text-decoration: line-through oklch(0.485 0.039 279.29);
+    text-decoration: line-through;
     text-decoration-color: oklch(0.485 0.039 279.29);
   }
 
@@ -2238,7 +2238,7 @@ body {
 
   .data-footnote-backref {
     color: oklch(0.745 0.018 279.29);
-    text-decoration: oklch(0.745 0.018 279.29);
+    text-decoration: underline rgb(166, 138, 249);
   }
 
   .search > .search-button {
@@ -2325,7 +2325,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0.92 0.004 279.29) none 0px;
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2556,7 +2556,7 @@ body {
 
   .callout {
     --callout-color: oklch(48.5% 0.173 260.58);
-    border: 1px solid color(srgb 0.108101 0.34436 0.747299 / 0.6);
+    border: 1px solid color(srgb 0.108066 0.344328 0.747263 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2594,9 +2594,9 @@ body {
 
   .callout[data-callout="note"] {
     --callout-color: oklch(48.5% 0.173 260.58);
-    background-color: color(srgb 0.108101 0.34436 0.747299 / 0.2);
+    background-color: color(srgb 0.108066 0.344328 0.747263 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.108101 0.34436 0.747299 / 0.6);
+    border: 1px solid color(srgb 0.108066 0.344328 0.747263 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2609,9 +2609,9 @@ body {
 
   .callout[data-callout="abstract"] {
     --callout-color: oklch(48.5% 0.039 279.29);
-    background-color: color(srgb 0.352875 0.364769 0.459782 / 0.2);
+    background-color: color(srgb 0.352846 0.364726 0.459747 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.352875 0.364769 0.459782 / 0.6);
+    border: 1px solid color(srgb 0.352845 0.364726 0.459747 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2624,9 +2624,9 @@ body {
 
   .callout[data-callout="info"] {
     --callout-color: oklch(61.5% 0.028 279.29);
-    background-color: color(srgb 0.504627 0.514778 0.587433 / 0.2);
+    background-color: color(srgb 0.504597 0.514759 0.587372 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.504627 0.514778 0.587433 / 0.6);
+    border: 1px solid color(srgb 0.504597 0.514759 0.587372 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2639,9 +2639,9 @@ body {
 
   .callout[data-callout="todo"] {
     --callout-color: oklch(48.5% 0.173 260.58);
-    background-color: color(srgb 0.108101 0.34436 0.747299 / 0.2);
+    background-color: color(srgb 0.108066 0.344328 0.747263 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.108101 0.34436 0.747299 / 0.6);
+    border: 1px solid color(srgb 0.108066 0.344328 0.747263 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2654,9 +2654,9 @@ body {
 
   .callout[data-callout="tip"] {
     --callout-color: oklch(48.5% 0.106 161.65);
-    background-color: color(srgb 0.0116796 0.443005 0.296787 / 0.2);
+    background-color: color(srgb 0.0116796 0.442945 0.296735 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.0116796 0.443005 0.296787 / 0.6);
+    border: 1px solid color(srgb 0.0116796 0.442945 0.296735 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2669,9 +2669,9 @@ body {
 
   .callout[data-callout="success"] {
     --callout-color: oklch(48.5% 0.145 140.09);
-    background-color: color(srgb 0.153711 0.444687 0.073101 / 0.2);
+    background-color: color(srgb 0.153674 0.444627 0.0730724 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.153711 0.444687 0.073101 / 0.6);
+    border: 1px solid color(srgb 0.153674 0.444627 0.0730724 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2684,9 +2684,9 @@ body {
 
   .callout[data-callout="question"] {
     --callout-color: oklch(48.5% 0.134 46.85);
-    background-color: color(srgb 0.60054 0.253435 0.00368491 / 0.2);
+    background-color: color(srgb 0.600474 0.253404 0.00368491 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.60054 0.253435 0.00368491 / 0.6);
+    border: 1px solid color(srgb 0.600474 0.253404 0.00368491 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2699,9 +2699,9 @@ body {
 
   .callout[data-callout="warning"] {
     --callout-color: oklch(48.5% 0.134 46.85);
-    background-color: color(srgb 0.60054 0.253435 0.00368491 / 0.2);
+    background-color: color(srgb 0.600474 0.253404 0.00368491 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.60054 0.253435 0.00368491 / 0.6);
+    border: 1px solid color(srgb 0.600474 0.253404 0.00368491 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2714,9 +2714,9 @@ body {
 
   .callout[data-callout="danger"] {
     --callout-color: oklch(48.5% 0.193 13.65);
-    background-color: color(srgb 0.694901 0.0072342 0.239891 / 0.2);
+    background-color: color(srgb 0.694829 0.0072342 0.239863 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.6949 0.0072342 0.239891 / 0.6);
+    border: 1px solid color(srgb 0.694829 0.0072342 0.239863 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2729,9 +2729,9 @@ body {
 
   .callout[data-callout="failure"] {
     --callout-color: oklch(48.5% 0.193 13.65);
-    background-color: color(srgb 0.694901 0.0072342 0.239891 / 0.2);
+    background-color: color(srgb 0.694829 0.0072342 0.239863 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.6949 0.0072342 0.239891 / 0.6);
+    border: 1px solid color(srgb 0.694829 0.0072342 0.239863 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2744,9 +2744,9 @@ body {
 
   .callout[data-callout="bug"] {
     --callout-color: oklch(48.5% 0.193 13.65);
-    background-color: color(srgb 0.694901 0.0072342 0.239891 / 0.2);
+    background-color: color(srgb 0.694829 0.0072342 0.239863 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.6949 0.0072342 0.239891 / 0.6);
+    border: 1px solid color(srgb 0.694829 0.0072342 0.239863 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2759,9 +2759,9 @@ body {
 
   .callout[data-callout="example"] {
     --callout-color: oklch(48.5% 0.1 97.11);
-    background-color: color(srgb 0.435448 0.370228 0.000193895 / 0.2);
+    background-color: color(srgb 0.43539 0.370195 0.000193895 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.435448 0.370228 0.000193895 / 0.6);
+    border: 1px solid color(srgb 0.43539 0.370195 0.000193895 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -2774,9 +2774,9 @@ body {
 
   .callout[data-callout="quote"] {
     --callout-color: oklch(48.5% 0.039 279.29);
-    background-color: color(srgb 0.352875 0.364769 0.459782 / 0.2);
+    background-color: color(srgb 0.352846 0.364726 0.459747 / 0.2);
     mix-blend-mode: normal;
-    border: 1px solid color(srgb 0.352875 0.364769 0.459782 / 0.6);
+    border: 1px solid color(srgb 0.352845 0.364726 0.459747 / 0.6);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3270,115 +3270,115 @@ body {
   abbr {
     color: oklch(0.92 0.004 279.29);
     cursor: auto;
-    text-decoration: underline dotted oklch(0.92 0.004 279.29);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
   li.task-list-item[data-task="-"] {
     color: oklch(0.485 0.039 279.29);
-    text-decoration: line-through oklch(0.485 0.039 279.29);
+    text-decoration: line-through;
     text-decoration-color: oklch(0.485 0.039 279.29);
   }
 
   li.task-list-item[data-task=">"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="/"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="?"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="!"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="*"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="l"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="b"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="i"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="S"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="I"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="p"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="c"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="f"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="k"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="u"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="d"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
   li.task-list-item[data-task="w"] {
     color: oklch(0.92 0.004 279.29);
-    text-decoration: oklch(0.92 0.004 279.29);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: oklch(0.92 0.004 279.29);
   }
 
@@ -3488,7 +3488,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: oklch(0.845 0.01 279.29);
+    text-decoration: rgb(218, 218, 218);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -3509,7 +3509,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: oklch(0.845 0.01 279.29);
+    text-decoration: rgb(218, 218, 218);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -3552,7 +3552,6 @@ body {
 
   footer ul li a {
     color: oklch(0.845 0.01 279.29);
-    text-decoration: oklch(0.845 0.01 279.29);
   }
 
   .recent-notes > h3 {
@@ -3587,7 +3586,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: oklch(0.845 0.01 279.29);
-    text-decoration: oklch(0.845 0.01 279.29);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3630,7 +3628,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: oklch(0.845 0.01 279.29);
-    text-decoration: oklch(0.845 0.01 279.29);
   }
 
   li.section-li > .section .meta {

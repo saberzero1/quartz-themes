@@ -529,7 +529,6 @@ html[saved-theme="dark"] body p {
   color: rgb(115, 115, 115);
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(115, 115, 115) none 0px;
-  text-decoration: rgb(115, 115, 115);
   text-decoration-color: rgb(115, 115, 115);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
@@ -554,7 +553,7 @@ html[saved-theme="dark"] body a.internal.broken {
   color: rgba(230, 230, 230, 0.9);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgba(230, 230, 230, 0.9) none 0px;
-  text-decoration: underline 1px dashed rgba(230, 230, 230, 0.9);
+  text-decoration: underline 1px dashed;
   text-decoration-color: rgba(230, 230, 230, 0.9);
   text-decoration-style: dashed;
   text-decoration-thickness: 1px;
@@ -804,7 +803,6 @@ html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(115, 115, 115);
-  text-decoration: rgb(115, 115, 115);
   text-decoration-color: rgb(115, 115, 115);
 }
 
@@ -822,109 +820,91 @@ html[saved-theme="dark"] body input[type=checkbox] {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(251, 70, 76);
-  text-decoration: rgb(251, 70, 76);
   text-decoration-color: rgb(251, 70, 76);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
@@ -1630,7 +1610,6 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(212, 212, 212) none 0px;
-  text-decoration: rgb(212, 212, 212);
   text-decoration-color: rgb(212, 212, 212);
 }
 
@@ -1807,13 +1786,11 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  text-decoration: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  text-decoration: rgb(212, 212, 212);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(115, 115, 115);
@@ -1843,7 +1820,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 
 html[saved-theme="dark"] body footer ul li a {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(212, 212, 212);
@@ -1860,7 +1836,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1881,7 +1856,6 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(212, 212, 212);
-  text-decoration: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -1955,7 +1929,6 @@ html[saved-theme="dark"] body .page-header h2.page-title {
 
 html[saved-theme="dark"] body abbr {
   color: rgb(212, 212, 212);
-  text-decoration: underline dotted rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body details {
@@ -2531,7 +2504,6 @@ html[saved-theme="light"] body p {
   color: rgb(115, 115, 115);
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(115, 115, 115) none 0px;
-  text-decoration: rgb(115, 115, 115);
   text-decoration-color: rgb(115, 115, 115);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
@@ -2556,7 +2528,7 @@ html[saved-theme="light"] body a.internal.broken {
   color: rgba(26, 26, 26, 0.9);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgba(26, 26, 26, 0.9) none 0px;
-  text-decoration: underline 1px dashed rgba(26, 26, 26, 0.9);
+  text-decoration: underline 1px dashed;
   text-decoration-color: rgba(26, 26, 26, 0.9);
   text-decoration-style: dashed;
   text-decoration-thickness: 1px;
@@ -2806,7 +2778,6 @@ html[saved-theme="light"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(115, 115, 115);
-  text-decoration: rgb(115, 115, 115);
   text-decoration-color: rgb(115, 115, 115);
 }
 
@@ -2824,109 +2795,91 @@ html[saved-theme="light"] body input[type=checkbox] {
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(233, 49, 71);
-  text-decoration: rgb(233, 49, 71);
   text-decoration-color: rgb(233, 49, 71);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
@@ -3632,7 +3585,6 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(64, 64, 64) none 0px;
-  text-decoration: rgb(64, 64, 64);
   text-decoration-color: rgb(64, 64, 64);
 }
 
@@ -3809,13 +3761,11 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  text-decoration: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  text-decoration: rgb(64, 64, 64);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(115, 115, 115);
@@ -3845,7 +3795,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 
 html[saved-theme="light"] body footer ul li a {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(64, 64, 64);
@@ -3862,7 +3811,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3883,7 +3831,6 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(64, 64, 64);
-  text-decoration: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -3957,7 +3904,6 @@ html[saved-theme="light"] body .page-header h2.page-title {
 
 html[saved-theme="light"] body abbr {
   color: rgb(64, 64, 64);
-  text-decoration: underline dotted rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body details {

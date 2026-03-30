@@ -12450,7 +12450,7 @@ body {
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0.4014 0.0638 202.51) none 0px;
-    text-decoration: underline oklch(0.4014 0.0638 202.51);
+    text-decoration: underline;
     text-decoration-color: oklch(0.4014 0.0638 202.51);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -12481,7 +12481,7 @@ body {
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0.4014 0.0638 202.51) none 0px;
-    text-decoration: underline oklch(0.4014 0.0638 202.51);
+    text-decoration: underline;
     text-decoration-color: oklch(0.4014 0.0638 202.51);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -12557,7 +12557,7 @@ body {
       Manrope;
     font-weight: 400;
     outline: oklch(0.3 0 0) none 0px;
-    text-decoration: oklch(0.3 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0.3 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -12588,7 +12588,7 @@ body {
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 600;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -12619,7 +12619,7 @@ body {
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 600;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -12650,7 +12650,7 @@ body {
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -12681,7 +12681,7 @@ body {
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -12758,7 +12758,7 @@ body {
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: line-through oklch(0 0 0);
+    text-decoration: line-through;
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -13016,7 +13016,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: oklch(0.3 0 0);
-    text-decoration: line-through oklch(0.3 0 0);
+    text-decoration: line-through;
     text-decoration-color: oklch(0.3 0 0);
   }
 
@@ -13036,7 +13036,7 @@ body {
 
   .data-footnote-backref {
     color: oklch(0.6 0 0);
-    text-decoration: oklch(0.6 0 0);
+    text-decoration: underline rgb(138, 92, 245);
   }
 
   .search > .search-button {
@@ -13101,7 +13101,7 @@ body {
       "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -13335,7 +13335,7 @@ body {
 
   .callout {
     --callout-color: 0, 191, 111;
-    border: 0px solid oklch(0.706959 0.173724 155.295);
+    border: 0px solid oklch(0.706977 0.17372 155.298);
     border-left-color: rgb(0, 191, 111);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13376,7 +13376,7 @@ body {
     --callout-color: 0, 191, 111;
     background-color: rgba(0, 191, 111, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.706959 0.173724 155.295);
+    border: 0px solid oklch(0.706977 0.17372 155.298);
     border-left-color: rgb(0, 191, 111);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13392,7 +13392,7 @@ body {
     --callout-color: 91, 197, 219;
     background-color: rgba(91, 197, 219, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.769454 0.101799 213.329);
+    border: 0px solid oklch(0.769486 0.101807 213.336);
     border-left-color: rgb(91, 197, 219);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13408,7 +13408,7 @@ body {
     --callout-color: 0, 170, 199;
     background-color: rgba(0, 170, 199, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.67965 0.120454 215.668);
+    border: 0px solid oklch(0.679659 0.12046 215.674);
     border-left-color: rgb(0, 170, 199);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13424,7 +13424,7 @@ body {
     --callout-color: 0, 170, 199;
     background-color: rgba(0, 170, 199, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.67965 0.120454 215.668);
+    border: 0px solid oklch(0.679659 0.12046 215.674);
     border-left-color: rgb(0, 170, 199);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13440,7 +13440,7 @@ body {
     --callout-color: 34, 148, 1;
     background-color: rgba(34, 148, 1, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.58165 0.190605 140.918);
+    border: 0px solid oklch(0.581688 0.190619 140.918);
     border-left-color: rgb(34, 148, 1);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13456,7 +13456,7 @@ body {
     --callout-color: 0, 158, 76;
     background-color: rgba(0, 158, 76, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.611761 0.164617 150.979);
+    border: 0px solid oklch(0.611776 0.164621 150.979);
     border-left-color: rgb(0, 158, 76);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13472,7 +13472,7 @@ body {
     --callout-color: 160, 199, 92;
     background-color: rgba(160, 199, 92, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.778552 0.142252 126.135);
+    border: 0px solid oklch(0.778581 0.14226 126.137);
     border-left-color: rgb(160, 199, 92);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13488,7 +13488,7 @@ body {
     --callout-color: 255, 182, 26;
     background-color: rgba(255, 182, 26, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.823912 0.166913 78.6248);
+    border: 0px solid oklch(0.823918 0.166913 78.6263);
     border-left-color: rgb(255, 182, 26);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13504,7 +13504,7 @@ body {
     --callout-color: 241, 0, 34;
     background-color: rgba(241, 0, 34, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.603065 0.245145 26.0471);
+    border: 0px solid oklch(0.603113 0.245165 26.0478);
     border-left-color: rgb(241, 0, 34);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13520,7 +13520,7 @@ body {
     --callout-color: 161, 40, 100;
     background-color: rgba(161, 40, 100, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.486186 0.165241 354.996);
+    border: 0px solid oklch(0.486198 0.165246 354.992);
     border-left-color: rgb(161, 40, 100);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13536,7 +13536,7 @@ body {
     --callout-color: 164, 103, 80;
     background-color: rgba(164, 103, 80, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.574652 0.0862245 41.3449);
+    border: 0px solid oklch(0.574678 0.0862167 41.3581);
     border-left-color: rgb(164, 103, 80);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13552,7 +13552,7 @@ body {
     --callout-color: 125, 84, 178;
     background-color: rgba(125, 84, 178, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.533415 0.145739 301.819);
+    border: 0px solid oklch(0.533426 0.145746 301.824);
     border-left-color: rgb(125, 84, 178);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13568,7 +13568,7 @@ body {
     --callout-color: 161, 169, 173;
     background-color: rgba(161, 169, 173, 0.125);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.729631 0.0107511 229.015);
+    border: 0px solid oklch(0.729638 0.0107493 229.031);
     border-left-color: rgb(161, 169, 173);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -14000,115 +14000,115 @@ body {
   abbr {
     color: oklch(0 0 0);
     cursor: auto;
-    text-decoration: underline dotted oklch(0 0 0);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
   li.task-list-item[data-task="-"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task=">"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="/"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="?"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="!"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="*"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="l"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="b"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="i"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="S"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="I"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="p"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="c"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="f"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="k"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="u"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="d"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="w"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
@@ -14185,7 +14185,7 @@ body {
       Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
       Manrope;
     font-weight: 400;
-    text-decoration: oklch(0.3 0 0);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -14195,7 +14195,7 @@ body {
       Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
       Manrope;
     font-weight: 400;
-    text-decoration: oklch(0.3 0 0);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -14225,7 +14225,6 @@ body {
 
   footer ul li a {
     color: oklch(0.3 0 0);
-    text-decoration: oklch(0.3 0 0);
   }
 
   .recent-notes > h3 {
@@ -14249,7 +14248,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: oklch(0.3 0 0);
-    text-decoration: oklch(0.3 0 0);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -14281,7 +14279,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: oklch(0.3 0 0);
-    text-decoration: oklch(0.3 0 0);
   }
 
   li.section-li > .section .meta {
@@ -15135,7 +15132,7 @@ html[saved-theme="dark"] {
         "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.707 0.1737 155.3) none 0px;
-      text-decoration: underline oklch(0.707 0.1737 155.3);
+      text-decoration: underline;
       text-decoration-color: oklch(0.707 0.1737 155.3);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -15166,7 +15163,7 @@ html[saved-theme="dark"] {
         "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.707 0.1737 155.3) none 0px;
-      text-decoration: underline oklch(0.707 0.1737 155.3);
+      text-decoration: underline;
       text-decoration-color: oklch(0.707 0.1737 155.3);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -15242,7 +15239,7 @@ html[saved-theme="dark"] {
         Manrope;
       font-weight: 400;
       outline: oklch(0.68 0 0) none 0px;
-      text-decoration: oklch(0.68 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.68 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -15273,7 +15270,7 @@ html[saved-theme="dark"] {
         "DM Sans", "Inter 4.1", Manrope;
       font-weight: 600;
       outline: oklch(0.98 0 0) none 0px;
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -15304,7 +15301,7 @@ html[saved-theme="dark"] {
         "DM Sans", "Inter 4.1", Manrope;
       font-weight: 600;
       outline: oklch(0.98 0 0) none 0px;
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -15335,7 +15332,7 @@ html[saved-theme="dark"] {
         "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.98 0 0) none 0px;
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -15366,7 +15363,7 @@ html[saved-theme="dark"] {
         "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.98 0 0) none 0px;
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -15443,7 +15440,7 @@ html[saved-theme="dark"] {
         "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.98 0 0) none 0px;
-      text-decoration: line-through oklch(0.98 0 0);
+      text-decoration: line-through;
       text-decoration-color: oklch(0.98 0 0);
       text-decoration-line: line-through;
       text-decoration-style: solid;
@@ -15701,7 +15698,7 @@ html[saved-theme="dark"] {
 
     .page article li:has(> input[type="checkbox"]:checked) {
       color: oklch(0.68 0 0);
-      text-decoration: line-through oklch(0.68 0 0);
+      text-decoration: line-through;
       text-decoration-color: oklch(0.68 0 0);
     }
 
@@ -15721,7 +15718,7 @@ html[saved-theme="dark"] {
 
     .data-footnote-backref {
       color: oklch(0.48 0 0);
-      text-decoration: oklch(0.48 0 0);
+      text-decoration: underline rgb(166, 138, 249);
     }
 
     .search > .search-button {
@@ -15786,7 +15783,7 @@ html[saved-theme="dark"] {
         "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.98 0 0) none 0px;
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -16025,7 +16022,7 @@ html[saved-theme="dark"] {
 
     .callout {
       --callout-color: 0, 191, 111;
-      border: 0px solid oklch(0.706959 0.173724 155.295);
+      border: 0px solid oklch(0.706977 0.17372 155.298);
       border-left-color: rgb(0, 191, 111);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16066,7 +16063,7 @@ html[saved-theme="dark"] {
       --callout-color: 0, 191, 111;
       background-color: rgba(0, 191, 111, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.706959 0.173724 155.295);
+      border: 0px solid oklch(0.706977 0.17372 155.298);
       border-left-color: rgb(0, 191, 111);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16082,7 +16079,7 @@ html[saved-theme="dark"] {
       --callout-color: 91, 197, 219;
       background-color: rgba(91, 197, 219, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.769454 0.101799 213.329);
+      border: 0px solid oklch(0.769486 0.101807 213.336);
       border-left-color: rgb(91, 197, 219);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16098,7 +16095,7 @@ html[saved-theme="dark"] {
       --callout-color: 0, 170, 199;
       background-color: rgba(0, 170, 199, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.67965 0.120454 215.668);
+      border: 0px solid oklch(0.679659 0.12046 215.674);
       border-left-color: rgb(0, 170, 199);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16114,7 +16111,7 @@ html[saved-theme="dark"] {
       --callout-color: 0, 170, 199;
       background-color: rgba(0, 170, 199, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.67965 0.120454 215.668);
+      border: 0px solid oklch(0.679659 0.12046 215.674);
       border-left-color: rgb(0, 170, 199);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16130,7 +16127,7 @@ html[saved-theme="dark"] {
       --callout-color: 34, 148, 1;
       background-color: rgba(34, 148, 1, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.58165 0.190605 140.918);
+      border: 0px solid oklch(0.581688 0.190619 140.918);
       border-left-color: rgb(34, 148, 1);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16146,7 +16143,7 @@ html[saved-theme="dark"] {
       --callout-color: 0, 158, 76;
       background-color: rgba(0, 158, 76, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.611761 0.164617 150.979);
+      border: 0px solid oklch(0.611776 0.164621 150.979);
       border-left-color: rgb(0, 158, 76);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16162,7 +16159,7 @@ html[saved-theme="dark"] {
       --callout-color: 160, 199, 92;
       background-color: rgba(160, 199, 92, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.778552 0.142252 126.135);
+      border: 0px solid oklch(0.778581 0.14226 126.137);
       border-left-color: rgb(160, 199, 92);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16178,7 +16175,7 @@ html[saved-theme="dark"] {
       --callout-color: 255, 182, 26;
       background-color: rgba(255, 182, 26, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.823912 0.166913 78.6248);
+      border: 0px solid oklch(0.823918 0.166913 78.6263);
       border-left-color: rgb(255, 182, 26);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16194,7 +16191,7 @@ html[saved-theme="dark"] {
       --callout-color: 241, 0, 34;
       background-color: rgba(241, 0, 34, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.603065 0.245145 26.0471);
+      border: 0px solid oklch(0.603113 0.245165 26.0478);
       border-left-color: rgb(241, 0, 34);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16210,7 +16207,7 @@ html[saved-theme="dark"] {
       --callout-color: 161, 40, 100;
       background-color: rgba(161, 40, 100, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.486186 0.165241 354.996);
+      border: 0px solid oklch(0.486198 0.165246 354.992);
       border-left-color: rgb(161, 40, 100);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16226,7 +16223,7 @@ html[saved-theme="dark"] {
       --callout-color: 164, 103, 80;
       background-color: rgba(164, 103, 80, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.574652 0.0862245 41.3449);
+      border: 0px solid oklch(0.574678 0.0862167 41.3581);
       border-left-color: rgb(164, 103, 80);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16242,7 +16239,7 @@ html[saved-theme="dark"] {
       --callout-color: 125, 84, 178;
       background-color: rgba(125, 84, 178, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.533415 0.145739 301.819);
+      border: 0px solid oklch(0.533426 0.145746 301.824);
       border-left-color: rgb(125, 84, 178);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16258,7 +16255,7 @@ html[saved-theme="dark"] {
       --callout-color: 161, 169, 173;
       background-color: rgba(161, 169, 173, 0.125);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.729631 0.0107511 229.015);
+      border: 0px solid oklch(0.729638 0.0107493 229.031);
       border-left-color: rgb(161, 169, 173);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16690,115 +16687,115 @@ html[saved-theme="dark"] {
     abbr {
       color: oklch(0.98 0 0);
       cursor: auto;
-      text-decoration: underline dotted oklch(0.98 0 0);
+      text-decoration: underline dotted;
       text-decoration-style: dotted;
     }
 
     li.task-list-item[data-task="-"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task=">"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="/"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="?"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="!"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="*"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="l"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="b"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="i"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="S"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="I"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="p"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="c"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="f"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="k"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="u"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="d"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
     li.task-list-item[data-task="w"] {
       color: oklch(0.98 0 0);
-      text-decoration: oklch(0.98 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.98 0 0);
     }
 
@@ -16875,7 +16872,7 @@ html[saved-theme="dark"] {
         Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
         Manrope;
       font-weight: 400;
-      text-decoration: oklch(0.68 0 0);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .explorer
@@ -16888,7 +16885,7 @@ html[saved-theme="dark"] {
         Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
         Manrope;
       font-weight: 400;
-      text-decoration: oklch(0.68 0 0);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .graph > .graph-outer > .global-graph-icon {
@@ -16918,7 +16915,6 @@ html[saved-theme="dark"] {
 
     footer ul li a {
       color: oklch(0.68 0 0);
-      text-decoration: oklch(0.68 0 0);
     }
 
     .recent-notes > h3 {
@@ -16942,7 +16938,6 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
       color: oklch(0.68 0 0);
-      text-decoration: oklch(0.68 0 0);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -16974,7 +16969,6 @@ html[saved-theme="dark"] {
 
     li.section-li > .section > .desc > h3 > a {
       color: oklch(0.68 0 0);
-      text-decoration: oklch(0.68 0 0);
     }
 
     li.section-li > .section .meta {

@@ -687,12 +687,10 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(226, 224, 220);
-  text-decoration: rgb(226, 224, 220);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(226, 224, 220);
-  text-decoration: rgb(226, 224, 220);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(255, 255, 255);
@@ -710,7 +708,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(226, 224, 220);
-  text-decoration: rgb(226, 224, 220);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -722,7 +719,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(226, 224, 220);
-  text-decoration: rgb(226, 224, 220);
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(255, 255, 255);
@@ -1416,12 +1412,10 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(29, 29, 31);
-  text-decoration: rgb(29, 29, 31);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(29, 29, 31);
-  text-decoration: rgb(29, 29, 31);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(0, 0, 0);
@@ -1439,7 +1433,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(29, 29, 31);
-  text-decoration: rgb(29, 29, 31);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1451,7 +1444,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(29, 29, 31);
-  text-decoration: rgb(29, 29, 31);
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(0, 0, 0);

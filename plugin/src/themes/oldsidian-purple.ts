@@ -93,14 +93,12 @@ html body div#quartz-root {
     links: `html body a.external, html footer a {
   color: rgb(129, 76, 255);
   outline: rgb(129, 76, 255) none 0px;
-  text-decoration: underline rgb(129, 76, 255);
   text-decoration-color: rgb(129, 76, 255);
 }
 
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(129, 76, 255);
   outline: rgb(129, 76, 255) none 0px;
-  text-decoration: underline rgb(129, 76, 255);
   text-decoration-color: rgb(129, 76, 255);
 }
 

@@ -1451,7 +1451,7 @@ body body.theme-light .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: rgb(67, 75, 86) none 0px;
-  text-decoration: rgb(67, 75, 86);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(67, 75, 86);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1568,7 +1568,7 @@ body body.theme-light em {
     sans-serif;
   font-weight: 400;
   outline: rgb(117, 138, 82) none 0px;
-  text-decoration: rgb(117, 138, 82);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(117, 138, 82);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1607,7 +1607,7 @@ body body.theme-light i {
     sans-serif;
   font-weight: 400;
   outline: rgb(117, 138, 82) none 0px;
-  text-decoration: rgb(117, 138, 82);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(117, 138, 82);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1646,7 +1646,7 @@ body body.theme-light .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: rgb(34, 34, 34) none 0px;
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(34, 34, 34);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1685,7 +1685,7 @@ body body.theme-light del {
     sans-serif;
   font-weight: 400;
   outline: rgb(34, 34, 34) none 0px;
-  text-decoration: line-through rgb(34, 34, 34);
+  text-decoration: line-through;
   text-decoration-color: rgb(34, 34, 34);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -1912,7 +1912,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: rgb(67, 75, 86);
-  text-decoration: line-through rgb(67, 75, 86);
+  text-decoration: line-through;
   text-decoration-color: rgb(67, 75, 86);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -2850,7 +2850,7 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: rgb(34, 34, 34);
   cursor: auto;
-  text-decoration: underline dotted rgb(34, 34, 34);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
@@ -3046,7 +3046,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(32, 36, 48);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -3073,7 +3073,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(32, 36, 48);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -3113,7 +3113,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: rgb(67, 75, 86);
-  text-decoration: rgb(67, 75, 86);
 }
 body body.theme-light .nav-header {
   color: rgb(34, 34, 34);
@@ -3145,7 +3144,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: rgb(32, 36, 48);
-  text-decoration: rgb(32, 36, 48);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(32, 36, 48);

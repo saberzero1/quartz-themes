@@ -3281,7 +3281,7 @@ body body.theme-light .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(143, 188, 187) none 0px;
-  text-decoration: underline rgb(138, 92, 245);
+  text-decoration: underline;
   text-decoration-color: rgb(143, 188, 187);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -3320,7 +3320,7 @@ body body.theme-light .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(143, 188, 187) none 0px;
-  text-decoration: underline rgb(138, 92, 245);
+  text-decoration: underline;
   text-decoration-color: rgb(143, 188, 187);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -3411,7 +3411,7 @@ body body.theme-light .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: rgb(126, 141, 172) none 0px;
-  text-decoration: rgb(92, 92, 92);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(126, 141, 172);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3606,7 +3606,7 @@ body body.theme-light .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: rgb(76, 86, 106) none 0px;
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(76, 86, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3870,7 +3870,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: rgb(126, 141, 172);
-  text-decoration: line-through rgb(92, 92, 92);
+  text-decoration: line-through;
   text-decoration-color: rgb(126, 141, 172);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -3898,7 +3898,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: rgb(78, 91, 111);
-  text-decoration: rgb(171, 171, 171);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: rgba(208, 221, 239, 0.384);
@@ -4927,7 +4927,7 @@ body
     "Microsoft YaHei Light",
     sans-serif;
   font-weight: 700;
-  text-decoration: rgb(92, 92, 92);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -4954,7 +4954,7 @@ body
     "Microsoft YaHei Light",
     sans-serif;
   font-weight: 700;
-  text-decoration: rgb(92, 92, 92);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -4994,7 +4994,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: rgb(126, 141, 172);
-  text-decoration: rgb(92, 92, 92);
 }
 body body.theme-light .nav-header {
   color: rgb(76, 86, 106);
@@ -5026,7 +5025,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: rgb(126, 141, 172);
-  text-decoration: rgb(92, 92, 92);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(126, 141, 172);
@@ -5231,7 +5229,7 @@ body body.theme-dark .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(136, 192, 208) none 0px;
-  text-decoration: underline rgb(166, 138, 249);
+  text-decoration: underline;
   text-decoration-color: rgb(136, 192, 208);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -5270,7 +5268,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(136, 192, 208) none 0px;
-  text-decoration: underline rgb(166, 138, 249);
+  text-decoration: underline;
   text-decoration-color: rgb(136, 192, 208);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -5361,7 +5359,7 @@ body body.theme-dark .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: rgb(151, 161, 185) none 0px;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(151, 161, 185);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5556,7 +5554,7 @@ body body.theme-dark .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: rgb(236, 239, 244) none 0px;
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(236, 239, 244);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5820,7 +5818,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgb(88, 100, 119);
-  text-decoration: line-through rgb(179, 179, 179);
+  text-decoration: line-through;
   text-decoration-color: rgb(88, 100, 119);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -5848,7 +5846,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: rgb(78, 91, 111);
-  text-decoration: rgb(102, 102, 102);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgba(6, 8, 12, 0.376);
@@ -6877,7 +6875,7 @@ body
     "Microsoft YaHei Light",
     sans-serif;
   font-weight: 700;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -6904,7 +6902,7 @@ body
     "Microsoft YaHei Light",
     sans-serif;
   font-weight: 700;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -6944,7 +6942,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgb(151, 161, 185);
-  text-decoration: rgb(179, 179, 179);
 }
 body body.theme-dark .nav-header {
   color: rgb(236, 239, 244);
@@ -6976,7 +6973,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgb(151, 161, 185);
-  text-decoration: rgb(179, 179, 179);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(151, 161, 185);

@@ -356,14 +356,12 @@ html[saved-theme="dark"] body div#quartz-root {
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(98, 160, 234);
   outline: rgb(98, 160, 234) none 0px;
-  text-decoration: underline rgb(98, 160, 234);
   text-decoration-color: rgb(98, 160, 234);
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(98, 160, 234);
   outline: rgb(98, 160, 234) none 0px;
-  text-decoration: underline rgb(98, 160, 234);
   text-decoration-color: rgb(98, 160, 234);
 }
 
@@ -375,7 +373,6 @@ html[saved-theme="dark"] body a.internal.broken {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(53, 132, 228);
-  text-decoration: rgb(53, 132, 228);
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -1508,14 +1505,12 @@ html[saved-theme="light"] body div#quartz-root {
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(28, 113, 216);
   outline: rgb(28, 113, 216) none 0px;
-  text-decoration: underline rgb(28, 113, 216);
   text-decoration-color: rgb(28, 113, 216);
 }
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(28, 113, 216);
   outline: rgb(28, 113, 216) none 0px;
-  text-decoration: underline rgb(28, 113, 216);
   text-decoration-color: rgb(28, 113, 216);
 }
 
@@ -1527,7 +1522,6 @@ html[saved-theme="light"] body a.internal.broken {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(53, 132, 228);
-  text-decoration: rgb(53, 132, 228);
 }
 
 html[saved-theme="light"] body blockquote {

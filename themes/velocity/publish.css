@@ -3002,7 +3002,7 @@ body body.theme-light .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 420;
   outline: rgb(10, 124, 255) none 0px;
-  text-decoration: underline rgb(10, 124, 255);
+  text-decoration: underline;
   text-decoration-color: rgb(10, 124, 255);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -3053,7 +3053,7 @@ body body.theme-light .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 420;
   outline: rgb(10, 124, 255) none 0px;
-  text-decoration: rgb(10, 124, 255);
+  text-decoration: underline;
   text-decoration-color: rgb(10, 124, 255);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -3071,7 +3071,7 @@ body body.theme-light .markdown-rendered a.internal-link {
 }
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: oklch(63.7848% 0.198114 257.29deg / 0.7);
+  color: oklch(63.7864% 0.198104 257.288deg / 0.7);
   cursor: pointer;
   filter: none;
   backdrop-filter: none;
@@ -3103,7 +3103,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 420;
-  outline: oklch(63.7848% 0.198114 257.29deg / 0.7) none 0px;
+  outline: oklch(63.7864% 0.198104 257.288deg / 0.7) none 0px;
   text-decoration: rgba(10, 124, 255, 0.3);
   text-decoration-color: rgba(10, 124, 255, 0.3);
   text-decoration-line: underline;
@@ -3168,7 +3168,7 @@ body body.theme-light .markdown-rendered p {
     sans-serif;
   font-weight: 420;
   outline: oklch(46.5% 0.0105 281deg) none 0px;
-  text-decoration: oklch(46.5% 0.0105 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(46.5% 0.0105 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3219,7 +3219,7 @@ body body.theme-light strong {
     sans-serif;
   font-weight: 670;
   outline: oklch(24% 0.0005 281deg) none 0px;
-  text-decoration: oklch(24% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(24% 0.0005 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3270,7 +3270,7 @@ body body.theme-light b {
     sans-serif;
   font-weight: 670;
   outline: oklch(24% 0.0005 281deg) none 0px;
-  text-decoration: oklch(24% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(24% 0.0005 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3321,7 +3321,7 @@ body body.theme-light em {
     sans-serif;
   font-weight: 420;
   outline: oklch(30% 0.0005 281deg) none 0px;
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3372,7 +3372,7 @@ body body.theme-light i {
     sans-serif;
   font-weight: 420;
   outline: oklch(30% 0.0005 281deg) none 0px;
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3389,7 +3389,7 @@ body body.theme-light i {
   animation-play-state: running;
 }
 body body.theme-light .markdown-rendered mark {
-  background-color: oklch(90% 0.150343 81.1132deg / 0.33);
+  background-color: oklch(90% 0.150353 81.1033deg / 0.33);
   color: oklch(24% 0.0005 281deg);
   cursor: text;
   filter: none;
@@ -3423,7 +3423,7 @@ body body.theme-light .markdown-rendered mark {
     sans-serif;
   font-weight: 420;
   outline: oklch(24% 0.0005 281deg) none 0px;
-  text-decoration: oklch(24% 0.0005 281deg);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: oklch(24% 0.0005 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3474,7 +3474,7 @@ body body.theme-light del {
     sans-serif;
   font-weight: 420;
   outline: oklch(71.5% 0.0105 281deg) none 0px;
-  text-decoration: line-through oklch(71.5% 0.0105 281deg);
+  text-decoration: line-through;
   text-decoration-color: oklch(71.5% 0.0105 281deg);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -3714,7 +3714,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: oklch(71.5% 0.0105 281deg);
-  text-decoration: line-through oklch(71.5% 0.0105 281deg);
+  text-decoration: line-through;
   text-decoration-color: oklch(71.5% 0.0105 281deg);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -3754,7 +3754,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: oklch(71.5% 0.0105 281deg);
-  text-decoration: oklch(71.5% 0.0105 281deg);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: oklch(100% 0 0deg / 0.625);
@@ -3848,7 +3848,7 @@ body body.theme-light .search-results > * {
     sans-serif;
   font-weight: 420;
   outline: oklch(30% 0.0005 281deg) none 0px;
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4823,97 +4823,97 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: oklch(30% 0.0005 281deg);
   cursor: auto;
-  text-decoration: underline dotted oklch(30% 0.0005 281deg);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: oklch(71.5% 0.0105 281deg);
-  text-decoration: line-through oklch(71.5% 0.0105 281deg);
+  text-decoration: line-through;
   text-decoration-color: oklch(71.5% 0.0105 281deg);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: oklch(71.5% 0.0105 281deg);
-  text-decoration: line-through oklch(71.5% 0.0105 281deg);
+  text-decoration: line-through;
   text-decoration-color: oklch(71.5% 0.0105 281deg);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: oklch(30% 0.0005 281deg);
-  text-decoration: oklch(30% 0.0005 281deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(30% 0.0005 281deg);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -5055,7 +5055,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 490;
-  text-decoration: rgb(10, 124, 255);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -5094,7 +5094,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 490;
-  text-decoration: rgb(10, 124, 255);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -5144,7 +5144,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: oklch(46.5% 0.0105 281deg);
-  text-decoration: oklch(46.5% 0.0105 281deg);
 }
 body body.theme-light .nav-header {
   color: oklch(30% 0.0005 281deg);
@@ -5188,7 +5187,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: oklch(46.5% 0.0105 281deg);
-  text-decoration: oklch(46.5% 0.0105 281deg);
 }
 body body.theme-light .nav-file-title-content {
   color: oklch(46.5% 0.0105 281deg);
@@ -5408,7 +5406,7 @@ body body.theme-light .search-highlight {
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: oklab(74.4301% -0.0296486 -0.11765);
+  color: oklab(74.4327% -0.0296497 -0.117664);
   cursor: pointer;
   filter: none;
   backdrop-filter: none;
@@ -5440,9 +5438,9 @@ body body.theme-dark .markdown-rendered a.external-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 420;
-  outline: oklab(74.4301% -0.0296486 -0.11765) none 0px;
-  text-decoration: underline oklab(74.4301% -0.0296486 -0.11765);
-  text-decoration-color: oklab(74.4301% -0.0296486 -0.11765);
+  outline: oklab(74.4327% -0.0296497 -0.117664) none 0px;
+  text-decoration: underline;
+  text-decoration-color: oklab(74.4327% -0.0296497 -0.117664);
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.15s ease-in-out;
@@ -5459,7 +5457,7 @@ body body.theme-dark .markdown-rendered a.external-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: oklab(74.4301% -0.0296486 -0.11765);
+  color: oklab(74.4327% -0.0296497 -0.117664);
   cursor: pointer;
   filter: none;
   backdrop-filter: none;
@@ -5491,9 +5489,9 @@ body body.theme-dark .markdown-rendered a.internal-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 420;
-  outline: oklab(74.4301% -0.0296486 -0.11765) none 0px;
-  text-decoration: oklab(74.4301% -0.0296486 -0.11765);
-  text-decoration-color: oklab(74.4301% -0.0296486 -0.11765);
+  outline: oklab(74.4327% -0.0296497 -0.117664) none 0px;
+  text-decoration: underline;
+  text-decoration-color: oklab(74.4327% -0.0296497 -0.117664);
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.15s ease-in-out;
@@ -5510,7 +5508,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: oklch(74.4301% 0.121329 255.856deg / 0.75);
+  color: oklch(74.4327% 0.121342 255.857deg / 0.75);
   cursor: pointer;
   filter: none;
   backdrop-filter: none;
@@ -5542,7 +5540,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 420;
-  outline: oklch(74.4301% 0.121329 255.856deg / 0.75) none 0px;
+  outline: oklch(74.4327% 0.121342 255.857deg / 0.75) none 0px;
   text-decoration: rgba(27, 126, 238, 0.3);
   text-decoration-color: rgba(27, 126, 238, 0.3);
   text-decoration-line: underline;
@@ -5607,7 +5605,7 @@ body body.theme-dark .markdown-rendered p {
     sans-serif;
   font-weight: 420;
   outline: oklch(71.25% 0.00375 281deg) none 0px;
-  text-decoration: oklch(71.25% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(71.25% 0.00375 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5658,7 +5656,7 @@ body body.theme-dark strong {
     sans-serif;
   font-weight: 670;
   outline: oklch(93.25% 0 281deg) none 0px;
-  text-decoration: oklch(93.25% 0 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(93.25% 0 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5709,7 +5707,7 @@ body body.theme-dark b {
     sans-serif;
   font-weight: 670;
   outline: oklch(93.25% 0 281deg) none 0px;
-  text-decoration: oklch(93.25% 0 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(93.25% 0 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5760,7 +5758,7 @@ body body.theme-dark em {
     sans-serif;
   font-weight: 420;
   outline: oklch(85% 0.00375 281deg) none 0px;
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5811,7 +5809,7 @@ body body.theme-dark i {
     sans-serif;
   font-weight: 420;
   outline: oklch(85% 0.00375 281deg) none 0px;
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5828,7 +5826,7 @@ body body.theme-dark i {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: oklch(80% 0.1661 82.183deg / 0.33);
+  background-color: oklch(80% 0.166102 82.1813deg / 0.33);
   color: oklch(93.25% 0 281deg);
   cursor: text;
   filter: none;
@@ -5862,7 +5860,7 @@ body body.theme-dark .markdown-rendered mark {
     sans-serif;
   font-weight: 420;
   outline: oklch(93.25% 0 281deg) none 0px;
-  text-decoration: oklch(93.25% 0 281deg);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: oklch(93.25% 0 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5913,7 +5911,7 @@ body body.theme-dark del {
     sans-serif;
   font-weight: 420;
   outline: oklch(52.5% 0.0075 281deg) none 0px;
-  text-decoration: line-through oklch(52.5% 0.0075 281deg);
+  text-decoration: line-through;
   text-decoration-color: oklch(52.5% 0.0075 281deg);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -6006,7 +6004,7 @@ body body.theme-dark div.multi-select-pill {
     sans-serif;
   font-weight: 490;
   margin-inline-start: 0px;
-  border: 0px solid oklch(60.0473% 0.189593 255.849deg / 0.025);
+  border: 0px solid oklch(60.0515% 0.189615 255.85deg / 0.025);
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
@@ -6017,7 +6015,7 @@ body body.theme-dark div.multi-select-pill {
   border-end-end-radius: 0px;
 }
 body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
-  color: oklab(74.4301% -0.0296486 -0.11765);
+  color: oklab(74.4327% -0.0296497 -0.117664);
 }
 body body.theme-dark .markdown-rendered ul > li {
   color: oklch(85% 0.00375 281deg);
@@ -6153,7 +6151,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: oklch(52.5% 0.0075 281deg);
-  text-decoration: line-through oklch(52.5% 0.0075 281deg);
+  text-decoration: line-through;
   text-decoration-color: oklch(52.5% 0.0075 281deg);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -6193,7 +6191,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: oklch(52.5% 0.0075 281deg);
-  text-decoration: oklch(52.5% 0.0075 281deg);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: oklch(24% 0.00375 281deg / 0.375);
@@ -6286,7 +6284,7 @@ body body.theme-dark .search-results > * {
     sans-serif;
   font-weight: 420;
   outline: oklch(85% 0.00375 281deg) none 0px;
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -7261,97 +7259,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: oklch(85% 0.00375 281deg);
   cursor: auto;
-  text-decoration: underline dotted oklch(85% 0.00375 281deg);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: oklch(52.5% 0.0075 281deg);
-  text-decoration: line-through oklch(52.5% 0.0075 281deg);
+  text-decoration: line-through;
   text-decoration-color: oklch(52.5% 0.0075 281deg);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: oklch(52.5% 0.0075 281deg);
-  text-decoration: line-through oklch(52.5% 0.0075 281deg);
+  text-decoration: line-through;
   text-decoration-color: oklch(52.5% 0.0075 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: oklch(85% 0.00375 281deg);
-  text-decoration: oklch(85% 0.00375 281deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(85% 0.00375 281deg);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -7464,7 +7462,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: oklab(74.4301% -0.0296486 -0.11765);
+  color: oklab(74.4327% -0.0296497 -0.117664);
   cursor: default;
   font-family:
     Raveo,
@@ -7493,7 +7491,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 490;
-  text-decoration: oklab(74.4301% -0.0296486 -0.11765);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -7503,7 +7501,7 @@ body
   > .tree-item-children
   > .tree-item
   > .tree-item-self {
-  color: oklab(74.4301% -0.0296486 -0.11765);
+  color: oklab(74.4327% -0.0296497 -0.117664);
   cursor: default;
   font-family:
     Raveo,
@@ -7532,7 +7530,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 490;
-  text-decoration: oklab(74.4301% -0.0296486 -0.11765);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -7582,7 +7580,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: oklch(71.25% 0.00375 281deg);
-  text-decoration: oklch(71.25% 0.00375 281deg);
 }
 body body.theme-dark .nav-header {
   color: oklch(85% 0.00375 281deg);
@@ -7626,7 +7623,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: oklch(71.25% 0.00375 281deg);
-  text-decoration: oklch(71.25% 0.00375 281deg);
 }
 body body.theme-dark .nav-file-title-content {
   color: oklch(71.25% 0.00375 281deg);

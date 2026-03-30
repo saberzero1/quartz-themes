@@ -289,28 +289,24 @@ html body div#quartz-root {
     typography: `html body .page article p > b, html b {
   color: rgb(222, 175, 99);
   outline: rgb(222, 175, 99) none 0px;
-  text-decoration: rgb(222, 175, 99);
   text-decoration-color: rgb(222, 175, 99);
 }
 
 html body .page article p > em, html em {
   color: rgb(184, 186, 125);
   outline: rgb(184, 186, 125) none 0px;
-  text-decoration: rgb(184, 186, 125);
   text-decoration-color: rgb(184, 186, 125);
 }
 
 html body .page article p > i, html i {
   color: rgb(184, 186, 125);
   outline: rgb(184, 186, 125) none 0px;
-  text-decoration: rgb(184, 186, 125);
   text-decoration-color: rgb(184, 186, 125);
 }
 
 html body .page article p > strong, html strong {
   color: rgb(222, 175, 99);
   outline: rgb(222, 175, 99) none 0px;
-  text-decoration: rgb(222, 175, 99);
   text-decoration-color: rgb(222, 175, 99);
 }
 
@@ -319,14 +315,12 @@ html body .text-highlight {
   box-shadow: rgb(222, 175, 99) 0px -2px 0px 0px inset;
   color: rgb(208, 209, 210);
   outline: rgb(208, 209, 210) none 0px;
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body del {
   color: rgb(208, 209, 210);
   outline: rgb(208, 209, 210) none 0px;
-  text-decoration: line-through rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
@@ -334,7 +328,6 @@ html body p {
   color: rgb(141, 145, 150);
   font-family: Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(141, 145, 150) none 0px;
-  text-decoration: rgb(141, 145, 150);
   text-decoration-color: rgb(141, 145, 150);
 }`,
     links: `html body a.external, html footer a {
@@ -342,7 +335,6 @@ html body p {
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   outline: rgb(0, 175, 245) none 0px;
-  text-decoration: rgb(0, 175, 245);
   text-decoration-color: rgb(0, 175, 245);
 }
 
@@ -350,7 +342,6 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(228, 129, 192);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(228, 129, 192) none 0px;
-  text-decoration: rgb(228, 129, 192);
   text-decoration-color: rgb(228, 129, 192);
 }
 
@@ -358,7 +349,6 @@ html body a.internal.broken {
   color: rgb(228, 129, 192);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(228, 129, 192) none 0px;
-  text-decoration: rgb(228, 129, 192);
   text-decoration-color: rgb(228, 129, 192);
 }`,
     lists: `html body dd {
@@ -392,7 +382,6 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(228, 129, 192);
-  text-decoration: rgb(228, 129, 192);
 }
 
 html body blockquote {
@@ -555,7 +544,6 @@ html body .transclude-inner {
 }`,
     checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(141, 145, 150);
-  text-decoration: line-through rgb(141, 145, 150);
   text-decoration-color: rgb(141, 145, 150);
 }
 
@@ -573,109 +561,91 @@ html body input[type=checkbox] {
 
 html body li.task-list-item[data-task='!'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(208, 209, 210);
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
@@ -1048,7 +1018,6 @@ html body .search > .search-container > .search-space > * {
   color: rgb(208, 209, 210);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(208, 209, 210) none 0px;
-  text-decoration: rgb(208, 209, 210);
   text-decoration-color: rgb(208, 209, 210);
 }
 
@@ -1202,13 +1171,11 @@ html body ::-webkit-scrollbar-track {
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(208, 209, 210);
   font-family: Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: rgb(208, 209, 210);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(208, 209, 210);
   font-family: Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: rgb(208, 209, 210);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(141, 145, 150);
@@ -1229,7 +1196,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(141, 145, 150);
-  text-decoration: rgb(141, 145, 150);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(208, 209, 210);
@@ -1246,7 +1212,6 @@ html body .recent-notes > ul.recent-ul > li {
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(141, 145, 150);
-  text-decoration: rgb(141, 145, 150);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1267,7 +1232,6 @@ html body li.section-li > .section .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(141, 145, 150);
-  text-decoration: rgb(141, 145, 150);
 }
 
 html body ul.section-ul {
@@ -1337,7 +1301,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(208, 209, 210);
-  text-decoration: underline dotted rgb(208, 209, 210);
 }
 
 html body details {

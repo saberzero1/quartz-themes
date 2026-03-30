@@ -300,7 +300,6 @@ html body div#quartz-root {
     typography: `html body .page article p > b, html b {
   color: rgb(255, 253, 249);
   outline: rgb(255, 253, 249) none 0px;
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
@@ -308,7 +307,6 @@ html body .page article p > em, html em {
   color: rgb(255, 253, 249);
   font-weight: 500;
   outline: rgb(255, 253, 249) none 0px;
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
@@ -316,14 +314,12 @@ html body .page article p > i, html i {
   color: rgb(255, 253, 249);
   font-weight: 500;
   outline: rgb(255, 253, 249) none 0px;
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body .page article p > strong, html strong {
   color: rgb(255, 253, 249);
   outline: rgb(255, 253, 249) none 0px;
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
@@ -332,7 +328,6 @@ html body .text-highlight {
   color: rgb(255, 253, 249);
   font-weight: 500;
   outline: rgb(255, 253, 249) none 0px;
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
@@ -340,7 +335,6 @@ html body del {
   color: rgb(255, 253, 249);
   font-weight: 500;
   outline: rgb(255, 253, 249) none 0px;
-  text-decoration: line-through rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
@@ -348,14 +342,12 @@ html body p {
   color: rgb(111, 111, 111);
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
   outline: rgb(111, 111, 111) none 0px;
-  text-decoration: rgb(111, 111, 111);
   text-decoration-color: rgb(111, 111, 111);
 }`,
     links: `html body a.external, html footer a {
   color: rgb(61, 173, 219);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   outline: rgb(61, 173, 219) none 0px;
-  text-decoration: rgb(61, 173, 219);
   text-decoration-color: rgb(61, 173, 219);
 }
 
@@ -363,7 +355,6 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(61, 173, 219);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   outline: rgb(61, 173, 219) none 0px;
-  text-decoration: rgb(61, 173, 219);
   text-decoration-color: rgb(61, 173, 219);
 }
 
@@ -371,7 +362,6 @@ html body a.internal.broken {
   color: rgb(61, 173, 219);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   outline: rgb(61, 173, 219) none 0px;
-  text-decoration: rgb(61, 173, 219);
   text-decoration-color: rgb(61, 173, 219);
 }`,
     lists: `html body dd {
@@ -410,7 +400,6 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(61, 173, 219);
-  text-decoration: rgb(61, 173, 219);
 }
 
 html body blockquote {
@@ -589,7 +578,6 @@ html body .transclude-inner {
 }`,
     checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(111, 111, 111);
-  text-decoration: line-through rgb(111, 111, 111);
   text-decoration-color: rgb(111, 111, 111);
 }
 
@@ -606,109 +594,91 @@ html body input[type=checkbox] {
 
 html body li.task-list-item[data-task='!'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(255, 253, 249);
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
@@ -1073,7 +1043,6 @@ html body .search > .search-container > .search-space > * {
   color: rgb(255, 253, 249);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   outline: rgb(255, 253, 249) none 0px;
-  text-decoration: rgb(255, 253, 249);
   text-decoration-color: rgb(255, 253, 249);
 }
 
@@ -1205,13 +1174,11 @@ html body ::-webkit-scrollbar-track {
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(111, 111, 111);
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
-  text-decoration: rgb(111, 111, 111);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(111, 111, 111);
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
-  text-decoration: rgb(111, 111, 111);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(111, 111, 111);
@@ -1233,7 +1200,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(111, 111, 111);
-  text-decoration: rgb(111, 111, 111);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(255, 253, 249);
@@ -1250,7 +1216,6 @@ html body .recent-notes > ul.recent-ul > li {
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(111, 111, 111);
-  text-decoration: rgb(111, 111, 111);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1271,7 +1236,6 @@ html body li.section-li > .section .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(111, 111, 111);
-  text-decoration: rgb(111, 111, 111);
 }
 
 html body ul.section-ul {
@@ -1339,7 +1303,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(255, 253, 249);
-  text-decoration: underline dotted rgb(255, 253, 249);
 }
 
 html body details {

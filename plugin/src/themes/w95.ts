@@ -253,28 +253,24 @@ html body div#quartz-root {
     typography: `html body .page article p > b, html b {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
 html body .page article p > em, html em {
   color: rgb(52, 59, 88);
   outline: rgb(52, 59, 88) none 0px;
-  text-decoration: rgb(52, 59, 88);
   text-decoration-color: rgb(52, 59, 88);
 }
 
 html body .page article p > i, html i {
   color: rgb(52, 59, 88);
   outline: rgb(52, 59, 88) none 0px;
-  text-decoration: rgb(52, 59, 88);
   text-decoration-color: rgb(52, 59, 88);
 }
 
 html body .page article p > strong, html strong {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
@@ -284,14 +280,12 @@ html body .text-highlight {
     links: `html body a.external, html footer a {
   color: rgb(0, 0, 122);
   outline: rgb(0, 0, 122) none 0px;
-  text-decoration: underline rgb(0, 0, 122);
   text-decoration-color: rgb(0, 0, 122);
 }
 
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(0, 0, 122);
   outline: rgb(0, 0, 122) none 0px;
-  text-decoration: underline rgb(0, 0, 122);
   text-decoration-color: rgb(0, 0, 122);
 }
 
@@ -332,7 +326,6 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(79, 80, 87);
-  text-decoration: rgb(79, 80, 87);
 }`,
     tables: `html body td {
   border-bottom-color: rgb(112, 112, 112);

@@ -2270,7 +2270,7 @@ body body.theme-light .markdown-rendered a.external-link {
   font-family: "TT2020 Base", "??";
   font-weight: 400;
   outline: rgb(255, 134, 113) none 0px;
-  text-decoration: rgb(255, 134, 113);
+  text-decoration: underline;
   text-decoration-color: rgb(255, 134, 113);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2296,7 +2296,7 @@ body body.theme-light .markdown-rendered a.internal-link {
   font-family: "TT2020 Base", "??";
   font-weight: 400;
   outline: rgb(255, 134, 113) none 0px;
-  text-decoration: rgb(255, 134, 113);
+  text-decoration: underline;
   text-decoration-color: rgb(255, 134, 113);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2375,7 +2375,7 @@ body body.theme-light .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2415,7 +2415,7 @@ body body.theme-light strong {
     sans-serif;
   font-weight: 600;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2455,7 +2455,7 @@ body body.theme-light b {
     sans-serif;
   font-weight: 600;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2495,7 +2495,7 @@ body body.theme-light em {
     sans-serif;
   font-weight: 400;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2535,7 +2535,7 @@ body body.theme-light i {
     sans-serif;
   font-weight: 400;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2615,7 +2615,7 @@ body body.theme-light del {
     sans-serif;
   font-weight: 400;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: line-through rgb(0, 0, 0);
+  text-decoration: line-through;
   text-decoration-color: rgb(0, 0, 0);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -2843,7 +2843,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: rgb(0, 0, 0);
-  text-decoration: line-through rgb(0, 0, 0);
+  text-decoration: line-through;
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -2858,7 +2858,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: rgb(255, 255, 255);
@@ -2914,7 +2914,7 @@ body body.theme-light .search-results > * {
   font-family: "TT2020 Base", "??";
   font-weight: 400;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3641,97 +3641,97 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: rgb(0, 0, 0);
   cursor: auto;
-  text-decoration: underline dotted rgb(0, 0, 0);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(0, 0, 0);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -3840,7 +3840,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -3868,7 +3868,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(0, 0, 0);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -3909,7 +3909,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
 }
 body body.theme-light .nav-header {
   color: rgb(0, 0, 0);
@@ -3942,7 +3941,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(0, 0, 0);
@@ -4137,7 +4135,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   font-family: "TT2020 Base", "??";
   font-weight: 400;
   outline: rgb(255, 134, 113) none 0px;
-  text-decoration: rgb(255, 134, 113);
+  text-decoration: underline;
   text-decoration-color: rgb(255, 134, 113);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4163,7 +4161,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
   font-family: "TT2020 Base", "??";
   font-weight: 400;
   outline: rgb(255, 134, 113) none 0px;
-  text-decoration: rgb(255, 134, 113);
+  text-decoration: underline;
   text-decoration-color: rgb(255, 134, 113);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4242,7 +4240,7 @@ body body.theme-dark .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: rgb(255, 252, 244) none 0px;
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4282,7 +4280,7 @@ body body.theme-dark strong {
     sans-serif;
   font-weight: 600;
   outline: rgb(255, 252, 244) none 0px;
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4322,7 +4320,7 @@ body body.theme-dark b {
     sans-serif;
   font-weight: 600;
   outline: rgb(255, 252, 244) none 0px;
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4362,7 +4360,7 @@ body body.theme-dark em {
     sans-serif;
   font-weight: 400;
   outline: rgb(255, 252, 244) none 0px;
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4402,7 +4400,7 @@ body body.theme-dark i {
     sans-serif;
   font-weight: 400;
   outline: rgb(255, 252, 244) none 0px;
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4442,7 +4440,7 @@ body body.theme-dark .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: rgb(255, 252, 244) none 0px;
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(255, 252, 244);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4482,7 +4480,7 @@ body body.theme-dark del {
     sans-serif;
   font-weight: 400;
   outline: rgb(255, 252, 244) none 0px;
-  text-decoration: line-through rgb(255, 252, 244);
+  text-decoration: line-through;
   text-decoration-color: rgb(255, 252, 244);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -4710,7 +4708,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgb(255, 252, 244);
-  text-decoration: line-through rgb(255, 252, 244);
+  text-decoration: line-through;
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -4725,7 +4723,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgb(42, 42, 42);
@@ -4781,7 +4779,7 @@ body body.theme-dark .search-results > * {
   font-family: "TT2020 Base", "??";
   font-weight: 400;
   outline: rgb(255, 252, 244) none 0px;
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5508,97 +5506,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(255, 252, 244);
   cursor: auto;
-  text-decoration: underline dotted rgb(255, 252, 244);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(255, 252, 244);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -5707,7 +5705,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -5735,7 +5733,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(255, 252, 244);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -5776,7 +5774,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
 }
 body body.theme-dark .nav-header {
   color: rgb(255, 252, 244);
@@ -5809,7 +5806,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgb(255, 252, 244);
-  text-decoration: rgb(255, 252, 244);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(255, 252, 244);

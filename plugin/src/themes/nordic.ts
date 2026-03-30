@@ -398,7 +398,6 @@ html body div#quartz-root {
   color: color(srgb 0.27731 0.3465 0.41569);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
@@ -406,7 +405,6 @@ html body .page article p > em, html em {
   color: color(srgb 0.27731 0.3465 0.41569);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
@@ -414,7 +412,6 @@ html body .page article p > i, html i {
   color: color(srgb 0.27731 0.3465 0.41569);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
@@ -422,7 +419,6 @@ html body .page article p > strong, html strong {
   color: color(srgb 0.27731 0.3465 0.41569);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
@@ -431,7 +427,6 @@ html body .text-highlight {
   color: color(srgb 0.27731 0.3465 0.41569);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
@@ -439,21 +434,18 @@ html body del {
   color: color(srgb 0.27731 0.3465 0.41569);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: line-through color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body p {
   color: color(srgb 0.40336 0.504 0.60464);
   outline: color(srgb 0.40336 0.504 0.60464) none 0px;
-  text-decoration: color(srgb 0.40336 0.504 0.60464);
   text-decoration-color: color(srgb 0.40336 0.504 0.60464);
 }`,
     links: `html body a.external, html footer a {
   color: rgb(129, 161, 193);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(129, 161, 193) none 0px;
-  text-decoration: underline rgb(129, 161, 193);
   text-decoration-color: rgb(129, 161, 193);
 }
 
@@ -461,7 +453,6 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(129, 161, 193);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(129, 161, 193) none 0px;
-  text-decoration: underline rgb(129, 161, 193);
   text-decoration-color: rgb(129, 161, 193);
 }
 
@@ -503,7 +494,6 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(76, 86, 106);
-  text-decoration: rgb(76, 86, 106);
 }
 
 html body blockquote {
@@ -675,7 +665,6 @@ html body .katex-display > .katex > .katex-html {
 
 html body .page article li:has(>input[type=checkbox]:checked) {
   color: color(srgb 0.40336 0.504 0.60464);
-  text-decoration: line-through color(srgb 0.40336 0.504 0.60464);
   text-decoration-color: color(srgb 0.40336 0.504 0.60464);
 }
 
@@ -688,109 +677,91 @@ html body input[type=checkbox] {
 
 html body li.task-list-item[data-task='!'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }`,
     callouts: `html body .callout .callout-title {
@@ -1046,7 +1017,6 @@ html body .search > .search-container > .search-space > * {
   color: color(srgb 0.27731 0.3465 0.41569);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
@@ -1175,12 +1145,10 @@ html body ::-webkit-scrollbar-thumb {
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: color(srgb 0.40336 0.504 0.60464);
-  text-decoration: color(srgb 0.40336 0.504 0.60464);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: color(srgb 0.40336 0.504 0.60464);
-  text-decoration: color(srgb 0.40336 0.504 0.60464);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: color(srgb 0.40336 0.504 0.60464);
@@ -1200,7 +1168,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: color(srgb 0.40336 0.504 0.60464);
-  text-decoration: color(srgb 0.40336 0.504 0.60464);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: color(srgb 0.27731 0.3465 0.41569);
@@ -1216,7 +1183,6 @@ html body .recent-notes > ul.recent-ul > li {
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: color(srgb 0.40336 0.504 0.60464);
-  text-decoration: color(srgb 0.40336 0.504 0.60464);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1235,7 +1201,6 @@ html body li.section-li > .section .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: color(srgb 0.40336 0.504 0.60464);
-  text-decoration: color(srgb 0.40336 0.504 0.60464);
 }
 
 html body ul.section-ul {
@@ -1303,7 +1268,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: underline dotted color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body details {

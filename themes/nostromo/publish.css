@@ -1357,7 +1357,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 400;
   outline: rgb(156, 122, 153) none 0px;
-  text-decoration: underline rgb(156, 122, 153);
+  text-decoration: underline;
   text-decoration-color: rgb(156, 122, 153);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1383,7 +1383,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 400;
   outline: rgb(176, 108, 90) none 0px;
-  text-decoration: underline rgb(176, 108, 90);
+  text-decoration: underline;
   text-decoration-color: rgb(176, 108, 90);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1448,7 +1448,7 @@ body body.theme-dark .markdown-rendered p {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 400;
   outline: rgb(213, 196, 161) none 0px;
-  text-decoration: rgb(213, 196, 161);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(213, 196, 161);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1474,7 +1474,7 @@ body body.theme-dark strong {
   font-family: "Share Tech Mono", "Courier New", monospace;
   font-weight: 700;
   outline: rgb(232, 216, 163) none 0px;
-  text-decoration: rgb(232, 216, 163);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(232, 216, 163);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1500,7 +1500,7 @@ body body.theme-dark b {
   font-family: "Share Tech Mono", "Courier New", monospace;
   font-weight: 700;
   outline: rgb(232, 216, 163) none 0px;
-  text-decoration: rgb(232, 216, 163);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(232, 216, 163);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1526,7 +1526,7 @@ body body.theme-dark em {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 400;
   outline: rgb(194, 140, 92) none 0px;
-  text-decoration: rgb(194, 140, 92);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(194, 140, 92);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1552,7 +1552,7 @@ body body.theme-dark i {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 400;
   outline: rgb(194, 140, 92) none 0px;
-  text-decoration: rgb(194, 140, 92);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(194, 140, 92);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1578,7 +1578,7 @@ body body.theme-dark .markdown-rendered mark {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 400;
   outline: rgb(235, 219, 178) none 0px;
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(235, 219, 178);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1604,12 +1604,12 @@ body body.theme-dark del {
   font-family: "Share Tech Mono", "Courier New", monospace;
   font-weight: 400;
   outline: rgb(176, 108, 90) none 0px;
-  text-decoration: rgb(176, 108, 90);
+  text-decoration: line-through;
   text-decoration-color: rgb(176, 108, 90);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   transition: all;
-  transform: matrix(1, 0, 0, 1, 0.730515, 0);
+  transform: matrix(1, 0, 0, 1, 0.714581, 0);
   user-select: text;
   animation-name: glitch-flicker;
   animation-duration: 3s;
@@ -1817,7 +1817,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgb(213, 196, 161);
-  text-decoration: line-through rgb(213, 196, 161);
+  text-decoration: line-through;
   text-decoration-color: rgb(213, 196, 161);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -1832,7 +1832,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: rgb(189, 174, 147);
-  text-decoration: rgb(189, 174, 147);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgb(60, 56, 54);
@@ -1873,7 +1873,7 @@ body body.theme-dark .search-results > * {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 400;
   outline: rgb(235, 219, 178) none 0px;
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2576,97 +2576,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(235, 219, 178);
   cursor: auto;
-  text-decoration: underline dotted rgb(235, 219, 178);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(235, 219, 178);
-  text-decoration: rgb(235, 219, 178);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(235, 219, 178);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -2733,7 +2733,7 @@ body
   cursor: default;
   font-family: "Share Tech Mono", "Courier New", monospace;
   font-weight: 400;
-  text-decoration: rgb(213, 196, 161);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -2747,7 +2747,7 @@ body
   cursor: default;
   font-family: "Share Tech Mono", "Courier New", monospace;
   font-weight: 400;
-  text-decoration: rgb(213, 196, 161);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -2774,7 +2774,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgb(213, 196, 161);
-  text-decoration: rgb(213, 196, 161);
 }
 body body.theme-dark .nav-header {
   color: rgb(235, 219, 178);
@@ -2793,7 +2792,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgb(213, 196, 161);
-  text-decoration: rgb(213, 196, 161);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(213, 196, 161);

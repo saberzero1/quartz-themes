@@ -136,16 +136,7 @@ html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
-  text-decoration: rgb(166, 138, 249);
-}
-
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  text-decoration: rgb(166, 138, 249);
-}
-
-html[saved-theme="dark"] body a.internal.broken {
-  text-decoration: rgb(166, 138, 249);
+    links: `html[saved-theme="dark"] body a.internal.broken {
   text-decoration-color: rgb(166, 138, 249);
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
@@ -792,16 +783,7 @@ html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
-  text-decoration: rgb(138, 92, 245);
-}
-
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  text-decoration: rgb(138, 92, 245);
-}
-
-html[saved-theme="light"] body a.internal.broken {
-  text-decoration: rgb(138, 92, 245);
+    links: `html[saved-theme="light"] body a.internal.broken {
   text-decoration-color: rgb(138, 92, 245);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {

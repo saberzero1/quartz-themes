@@ -274,18 +274,9 @@ html[saved-theme="dark"] body div#quartz-root {
   background-color: rgba(250, 179, 135, 0.25);
   color: rgb(250, 179, 135);
   outline: rgb(250, 179, 135) none 0px;
-  text-decoration: rgb(250, 179, 135);
   text-decoration-color: rgb(250, 179, 135);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
-  text-decoration: rgb(166, 138, 249);
-}
-
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  text-decoration: rgb(166, 138, 249);
-}
-
-html[saved-theme="dark"] body a.internal.broken {
+    links: `html[saved-theme="dark"] body a.internal.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
@@ -440,7 +431,7 @@ html[saved-theme="dark"] body .transclude-inner {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(179, 179, 179);
-  text-decoration: line-through rgb(179, 179, 179);
+  text-decoration: line-through;
   text-decoration-color: rgb(179, 179, 179);
 }
 
@@ -1113,7 +1104,6 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 
 html[saved-theme="dark"] body footer ul li a {
   color: color(srgb 0.701961 0.701961 0.701961 / 0.8);
-  text-decoration: color(srgb 0.701961 0.701961 0.701961 / 0.8);
 }`,
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(179, 179, 179);
@@ -1380,18 +1370,9 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgba(255, 149, 0, 0.25);
   color: rgb(255, 149, 0);
   outline: rgb(255, 149, 0) none 0px;
-  text-decoration: rgb(255, 149, 0);
   text-decoration-color: rgb(255, 149, 0);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
-  text-decoration: rgb(138, 92, 245);
-}
-
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  text-decoration: rgb(138, 92, 245);
-}
-
-html[saved-theme="light"] body a.internal.broken {
+    links: `html[saved-theme="light"] body a.internal.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
@@ -1542,7 +1523,7 @@ html[saved-theme="light"] body .transclude-inner {
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(92, 92, 92);
-  text-decoration: line-through rgb(92, 92, 92);
+  text-decoration: line-through;
   text-decoration-color: rgb(92, 92, 92);
 }
 
@@ -1922,7 +1903,6 @@ html[saved-theme="light"] body hr {
 
 html[saved-theme="light"] body footer ul li a {
   color: color(srgb 0.360784 0.360784 0.360784 / 0.8);
-  text-decoration: color(srgb 0.360784 0.360784 0.360784 / 0.8);
 }`,
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(92, 92, 92);

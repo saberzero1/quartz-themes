@@ -299,7 +299,6 @@ html[saved-theme="dark"] body div#quartz-root {
   color: rgb(208, 66, 85);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(208, 66, 85) none 0px;
-  text-decoration: rgb(208, 66, 85);
   text-decoration-color: rgb(208, 66, 85);
 }
 
@@ -307,7 +306,6 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
-  text-decoration: rgb(112, 122, 250);
   text-decoration-color: rgb(112, 122, 250);
 }
 
@@ -315,7 +313,6 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
-  text-decoration: rgb(112, 122, 250);
   text-decoration-color: rgb(112, 122, 250);
 }
 
@@ -323,7 +320,6 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
   color: rgb(208, 66, 85);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(208, 66, 85) none 0px;
-  text-decoration: rgb(208, 66, 85);
   text-decoration-color: rgb(208, 66, 85);
 }
 
@@ -331,7 +327,6 @@ html[saved-theme="dark"] body .text-highlight {
   color: rgb(240, 240, 240);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(240, 240, 240) none 0px;
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
@@ -339,7 +334,6 @@ html[saved-theme="dark"] body del {
   color: rgb(240, 240, 240);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(240, 240, 240) none 0px;
-  text-decoration: line-through rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
@@ -347,14 +341,12 @@ html[saved-theme="dark"] body p {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
   outline: rgba(240, 240, 240, 0.7) none 0px;
-  text-decoration: rgba(240, 240, 240, 0.7);
   text-decoration-color: rgba(240, 240, 240, 0.7);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
-  text-decoration: underline rgb(112, 122, 250);
   text-decoration-color: rgb(112, 122, 250);
 }
 
@@ -362,7 +354,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
-  text-decoration: underline rgb(112, 122, 250);
   text-decoration-color: rgb(112, 122, 250);
 }
 
@@ -402,7 +393,6 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgba(240, 240, 240, 0.7);
-  text-decoration: rgba(240, 240, 240, 0.7);
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -545,7 +535,6 @@ html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgba(240, 240, 240, 0.7);
-  text-decoration: line-through rgba(240, 240, 240, 0.7);
   text-decoration-color: rgba(240, 240, 240, 0.7);
 }
 
@@ -558,109 +547,91 @@ html[saved-theme="dark"] body input[type=checkbox] {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
@@ -1065,7 +1036,6 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(240, 240, 240);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(240, 240, 240) none 0px;
-  text-decoration: rgb(240, 240, 240);
   text-decoration-color: rgb(240, 240, 240);
 }
 
@@ -1195,13 +1165,11 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
-  text-decoration: rgba(240, 240, 240, 0.7);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
-  text-decoration: rgba(240, 240, 240, 0.7);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(240, 240, 240, 0.7);
@@ -1222,7 +1190,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 
 html[saved-theme="dark"] body footer ul li a {
   color: rgba(240, 240, 240, 0.7);
-  text-decoration: rgba(240, 240, 240, 0.7);
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(240, 240, 240);
@@ -1239,7 +1206,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgba(240, 240, 240, 0.7);
-  text-decoration: rgba(240, 240, 240, 0.7);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1260,7 +1226,6 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgba(240, 240, 240, 0.7);
-  text-decoration: rgba(240, 240, 240, 0.7);
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -1330,7 +1295,6 @@ html[saved-theme="dark"] body .page-header h2.page-title {
 
 html[saved-theme="dark"] body abbr {
   color: rgb(240, 240, 240);
-  text-decoration: underline dotted rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body details {
@@ -1668,7 +1632,6 @@ html[saved-theme="light"] body div#quartz-root {
   color: rgb(240, 100, 119);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(240, 100, 119) none 0px;
-  text-decoration: rgb(240, 100, 119);
   text-decoration-color: rgb(240, 100, 119);
 }
 
@@ -1676,7 +1639,6 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
   color: rgb(124, 155, 255);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(124, 155, 255) none 0px;
-  text-decoration: rgb(124, 155, 255);
   text-decoration-color: rgb(124, 155, 255);
 }
 
@@ -1684,7 +1646,6 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
   color: rgb(124, 155, 255);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(124, 155, 255) none 0px;
-  text-decoration: rgb(124, 155, 255);
   text-decoration-color: rgb(124, 155, 255);
 }
 
@@ -1692,7 +1653,6 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
   color: rgb(240, 100, 119);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(240, 100, 119) none 0px;
-  text-decoration: rgb(240, 100, 119);
   text-decoration-color: rgb(240, 100, 119);
 }
 
@@ -1700,7 +1660,6 @@ html[saved-theme="light"] body .text-highlight {
   color: rgb(74, 52, 28);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(74, 52, 28) none 0px;
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
@@ -1708,7 +1667,6 @@ html[saved-theme="light"] body del {
   color: rgb(74, 52, 28);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(74, 52, 28) none 0px;
-  text-decoration: line-through rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
@@ -1716,14 +1674,12 @@ html[saved-theme="light"] body p {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
   outline: rgba(74, 52, 28, 0.9) none 0px;
-  text-decoration: rgba(74, 52, 28, 0.9);
   text-decoration-color: rgba(74, 52, 28, 0.9);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(233, 179, 92);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(233, 179, 92) none 0px;
-  text-decoration: underline rgb(233, 179, 92);
   text-decoration-color: rgb(233, 179, 92);
 }
 
@@ -1731,7 +1687,6 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
   color: rgb(233, 179, 92);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(233, 179, 92) none 0px;
-  text-decoration: underline rgb(233, 179, 92);
   text-decoration-color: rgb(233, 179, 92);
 }
 
@@ -1771,7 +1726,6 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgba(74, 52, 28, 0.9);
-  text-decoration: rgba(74, 52, 28, 0.9);
 }
 
 html[saved-theme="light"] body blockquote {
@@ -1914,7 +1868,6 @@ html[saved-theme="light"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgba(74, 52, 28, 0.9);
-  text-decoration: line-through rgba(74, 52, 28, 0.9);
   text-decoration-color: rgba(74, 52, 28, 0.9);
 }
 
@@ -1927,109 +1880,91 @@ html[saved-theme="light"] body input[type=checkbox] {
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
@@ -2434,7 +2369,6 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(74, 52, 28);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(74, 52, 28) none 0px;
-  text-decoration: rgb(74, 52, 28);
   text-decoration-color: rgb(74, 52, 28);
 }
 
@@ -2564,13 +2498,11 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
-  text-decoration: rgba(74, 52, 28, 0.9);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
-  text-decoration: rgba(74, 52, 28, 0.9);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(74, 52, 28, 0.9);
@@ -2591,7 +2523,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 
 html[saved-theme="light"] body footer ul li a {
   color: rgba(74, 52, 28, 0.9);
-  text-decoration: rgba(74, 52, 28, 0.9);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(74, 52, 28);
@@ -2608,7 +2539,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgba(74, 52, 28, 0.9);
-  text-decoration: rgba(74, 52, 28, 0.9);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2629,7 +2559,6 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgba(74, 52, 28, 0.9);
-  text-decoration: rgba(74, 52, 28, 0.9);
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -2699,7 +2628,6 @@ html[saved-theme="light"] body .page-header h2.page-title {
 
 html[saved-theme="light"] body abbr {
   color: rgb(74, 52, 28);
-  text-decoration: underline dotted rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body details {

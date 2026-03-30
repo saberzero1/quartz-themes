@@ -381,42 +381,36 @@ html body div#quartz-root {
     typography: `html body .page article p > b, html b {
   color: rgb(216, 191, 216);
   outline: rgb(216, 191, 216) none 0px;
-  text-decoration: rgb(216, 191, 216);
   text-decoration-color: rgb(216, 191, 216);
 }
 
 html body .page article p > em, html em {
   color: rgb(216, 191, 216);
   outline: rgb(216, 191, 216) none 0px;
-  text-decoration: rgb(216, 191, 216);
   text-decoration-color: rgb(216, 191, 216);
 }
 
 html body .page article p > i, html i {
   color: rgb(216, 191, 216);
   outline: rgb(216, 191, 216) none 0px;
-  text-decoration: rgb(216, 191, 216);
   text-decoration-color: rgb(216, 191, 216);
 }
 
 html body .page article p > strong, html strong {
   color: rgb(216, 191, 216);
   outline: rgb(216, 191, 216) none 0px;
-  text-decoration: rgb(216, 191, 216);
   text-decoration-color: rgb(216, 191, 216);
 }
 
 html body del {
   color: rgb(102, 102, 102);
   outline: rgb(102, 102, 102) none 0px;
-  text-decoration: line-through rgb(102, 102, 102);
   text-decoration-color: rgb(102, 102, 102);
 }
 
 html body p {
   color: rgb(102, 102, 102);
   outline: rgb(102, 102, 102) none 0px;
-  text-decoration: rgb(102, 102, 102);
   text-decoration-color: rgb(102, 102, 102);
 }`,
     blockquotes: `html body blockquote {
@@ -530,7 +524,6 @@ html body .transclude-inner {
 }`,
     checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(102, 102, 102);
-  text-decoration: line-through rgb(102, 102, 102);
   text-decoration-color: rgb(102, 102, 102);
 }
 
@@ -1118,12 +1111,10 @@ html body ::-webkit-scrollbar-track {
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(102, 102, 102);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(102, 102, 102);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(102, 102, 102);
@@ -1143,11 +1134,9 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(102, 102, 102);
 }`,
     recentNotes: `html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(102, 102, 102);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1159,7 +1148,6 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(102, 102, 102);
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgb(102, 102, 102);

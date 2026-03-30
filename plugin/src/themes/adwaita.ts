@@ -206,42 +206,36 @@ html[saved-theme="dark"] body div#quartz-root {
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .text-highlight {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body del {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: line-through rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -355,109 +349,91 @@ html[saved-theme="dark"] body .transclude-inner {
 }`,
     checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
@@ -468,7 +444,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -629,7 +604,6 @@ html[saved-theme="dark"] body .page-header h2.page-title {
 
 html[saved-theme="dark"] body abbr {
   color: rgb(255, 255, 255);
-  text-decoration: underline dotted rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body details {
@@ -869,42 +843,36 @@ html[saved-theme="light"] body div#quartz-root {
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgba(0, 0, 0, 0.8);
   outline: rgba(0, 0, 0, 0.8) none 0px;
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: rgba(0, 0, 0, 0.8);
   outline: rgba(0, 0, 0, 0.8) none 0px;
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: rgba(0, 0, 0, 0.8);
   outline: rgba(0, 0, 0, 0.8) none 0px;
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgba(0, 0, 0, 0.8);
   outline: rgba(0, 0, 0, 0.8) none 0px;
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body .text-highlight {
   color: rgba(0, 0, 0, 0.8);
   outline: rgba(0, 0, 0, 0.8) none 0px;
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body del {
   color: rgba(0, 0, 0, 0.8);
   outline: rgba(0, 0, 0, 0.8) none 0px;
-  text-decoration: line-through rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -1018,109 +986,91 @@ html[saved-theme="light"] body .transclude-inner {
 }`,
     checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
@@ -1131,7 +1081,6 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgba(0, 0, 0, 0.8);
   outline: rgba(0, 0, 0, 0.8) none 0px;
-  text-decoration: rgba(0, 0, 0, 0.8);
   text-decoration-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -1292,7 +1241,6 @@ html[saved-theme="light"] body .page-header h2.page-title {
 
 html[saved-theme="light"] body abbr {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: underline dotted rgba(0, 0, 0, 0.8);
 }
 
 html[saved-theme="light"] body details {

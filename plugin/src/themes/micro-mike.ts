@@ -860,48 +860,41 @@ html body div#quartz-root {
     typography: `html body .page article p > b, html b {
   color: rgb(163, 165, 170);
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body .page article p > em, html em {
   color: rgb(163, 165, 170);
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body .page article p > i, html i {
   color: rgb(163, 165, 170);
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body .page article p > strong, html strong {
   color: rgb(163, 165, 170);
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body .text-highlight {
   color: rgb(163, 165, 170);
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body del {
   color: rgb(163, 165, 170);
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: line-through rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }`,
     links: `html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
-  text-decoration: underline rgb(138, 92, 245);
   text-decoration-color: rgb(138, 92, 245);
 }`,
     lists: `html body dd {
@@ -935,7 +928,6 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(111, 116, 124);
-  text-decoration: rgb(111, 116, 124);
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(163, 165, 170);
@@ -1100,109 +1092,91 @@ html body .transclude-inner {
 
 html body li.task-list-item[data-task='!'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(163, 165, 170);
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
@@ -1467,7 +1441,6 @@ html body .search > .search-container > .search-space {
 html body .search > .search-container > .search-space > * {
   color: rgb(163, 165, 170);
   outline: rgb(163, 165, 170) none 0px;
-  text-decoration: rgb(163, 165, 170);
   text-decoration-color: rgb(163, 165, 170);
 }
 
@@ -1629,7 +1602,6 @@ html body ::-webkit-scrollbar-track {
   cursor: default;
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
-  text-decoration: rgb(179, 179, 179);
 }
 
 html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
@@ -1731,7 +1703,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(163, 165, 170);
-  text-decoration: underline dotted rgb(163, 165, 170);
 }
 
 html body details {

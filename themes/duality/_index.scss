@@ -2282,7 +2282,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(46, 125, 50) none 0px;
-    text-decoration: underline rgb(46, 125, 50);
+    text-decoration: underline;
     text-decoration-color: rgb(46, 125, 50);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2323,7 +2323,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(21, 101, 192) none 0px;
-    text-decoration: rgb(21, 101, 192);
+    text-decoration: underline;
     text-decoration-color: rgb(21, 101, 192);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2407,7 +2407,7 @@ body {
     font-family: "??";
     font-weight: 400;
     outline: rgb(104, 137, 224) none 0px;
-    text-decoration: rgb(104, 137, 224);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(104, 137, 224);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2448,7 +2448,7 @@ body {
       sans-serif;
     font-weight: 600;
     outline: rgb(21, 101, 192) none 0px;
-    text-decoration: rgb(21, 101, 192);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(21, 101, 192);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2489,7 +2489,7 @@ body {
       sans-serif;
     font-weight: 600;
     outline: rgb(21, 101, 192) none 0px;
-    text-decoration: rgb(21, 101, 192);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(21, 101, 192);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2530,7 +2530,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(106, 27, 154) none 0px;
-    text-decoration: rgb(106, 27, 154);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(106, 27, 154);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2571,7 +2571,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(106, 27, 154) none 0px;
-    text-decoration: rgb(106, 27, 154);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(106, 27, 154);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2611,7 +2611,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(58, 92, 160) none 0px;
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: rgb(58, 92, 160);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2660,7 +2660,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(58, 92, 160) none 0px;
-    text-decoration: line-through rgb(58, 92, 160);
+    text-decoration: line-through;
     text-decoration-color: rgb(58, 92, 160);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -2932,7 +2932,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(104, 137, 224);
-    text-decoration: line-through rgb(104, 137, 224);
+    text-decoration: line-through;
     text-decoration-color: rgb(104, 137, 224);
   }
 
@@ -2962,7 +2962,7 @@ body {
 
   .data-footnote-backref {
     color: rgb(120, 150, 240);
-    text-decoration: rgb(120, 150, 240);
+    text-decoration: underline rgb(138, 92, 245);
   }
 
   .search > .search-button {
@@ -3035,7 +3035,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(58, 92, 160) none 0px;
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4053,115 +4053,115 @@ body {
   abbr {
     color: rgb(58, 92, 160);
     cursor: auto;
-    text-decoration: underline dotted rgb(58, 92, 160);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
   li.task-list-item[data-task="-"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(58, 92, 160);
   }
 
@@ -4256,7 +4256,7 @@ body {
     cursor: default;
     font-family: "??";
     font-weight: 500;
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -4264,7 +4264,7 @@ body {
     cursor: default;
     font-family: "??";
     font-weight: 500;
-    text-decoration: rgb(58, 92, 160);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -4292,7 +4292,6 @@ body {
 
   footer ul li a {
     color: rgb(104, 137, 224);
-    text-decoration: rgb(104, 137, 224);
   }
 
   .recent-notes > h3 {
@@ -4314,7 +4313,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4344,7 +4342,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: rgb(58, 92, 160);
-    text-decoration: rgb(58, 92, 160);
   }
 
   li.section-li > .section .meta {
@@ -5231,7 +5228,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(255, 69, 0) none 0px;
-      text-decoration: underline rgb(255, 69, 0);
+      text-decoration: underline;
       text-decoration-color: rgb(255, 69, 0);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -5275,7 +5272,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(255, 69, 0) none 0px;
-      text-decoration: rgb(255, 69, 0);
+      text-decoration: underline;
       text-decoration-color: rgb(255, 69, 0);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -5362,7 +5359,7 @@ html[saved-theme="dark"] {
       font-family: "Times New Roman", Times, serif;
       font-weight: 400;
       outline: rgb(176, 163, 140) none 0px;
-      text-decoration: rgb(176, 163, 140);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(176, 163, 140);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5406,7 +5403,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 600;
       outline: rgb(212, 201, 181) none 0px;
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5450,7 +5447,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 600;
       outline: rgb(212, 201, 181) none 0px;
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5494,7 +5491,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(212, 201, 181) none 0px;
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5538,7 +5535,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(212, 201, 181) none 0px;
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5581,7 +5578,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(212, 201, 181) none 0px;
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(0, 0, 0);
       text-decoration-color: rgb(212, 201, 181);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5633,7 +5630,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(212, 201, 181) none 0px;
-      text-decoration: line-through rgb(212, 201, 181);
+      text-decoration: line-through;
       text-decoration-color: rgb(212, 201, 181);
       text-decoration-line: line-through;
       text-decoration-style: solid;
@@ -5908,7 +5905,7 @@ html[saved-theme="dark"] {
 
     .page article li:has(> input[type="checkbox"]:checked) {
       color: rgb(176, 163, 140);
-      text-decoration: line-through rgb(176, 163, 140);
+      text-decoration: line-through;
       text-decoration-color: rgb(176, 163, 140);
     }
 
@@ -5941,7 +5938,7 @@ html[saved-theme="dark"] {
 
     .data-footnote-backref {
       color: rgb(140, 129, 109);
-      text-decoration: rgb(140, 129, 109);
+      text-decoration: underline rgb(166, 138, 249);
     }
 
     .search > .search-button {
@@ -6017,7 +6014,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(212, 201, 181) none 0px;
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7089,115 +7086,115 @@ html[saved-theme="dark"] {
     abbr {
       color: rgb(212, 201, 181);
       cursor: auto;
-      text-decoration: underline dotted rgb(212, 201, 181);
+      text-decoration: underline dotted;
       text-decoration-style: dotted;
     }
 
     li.task-list-item[data-task="-"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task=">"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="/"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="?"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="!"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="*"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="l"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="b"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="i"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="S"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="I"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="p"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="c"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="f"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="k"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="u"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="d"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
     li.task-list-item[data-task="w"] {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 201, 181);
     }
 
@@ -7298,7 +7295,7 @@ html[saved-theme="dark"] {
       cursor: default;
       font-family: "Times New Roman", Times, serif;
       font-weight: 400;
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .explorer
@@ -7309,7 +7306,7 @@ html[saved-theme="dark"] {
       cursor: default;
       font-family: "Times New Roman", Times, serif;
       font-weight: 400;
-      text-decoration: rgb(212, 201, 181);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .graph > .graph-outer > .global-graph-icon {
@@ -7339,7 +7336,6 @@ html[saved-theme="dark"] {
 
     footer ul li a {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
     }
 
     .recent-notes > h3 {
@@ -7361,7 +7357,6 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -7391,7 +7386,6 @@ html[saved-theme="dark"] {
 
     li.section-li > .section > .desc > h3 > a {
       color: rgb(212, 201, 181);
-      text-decoration: rgb(212, 201, 181);
     }
 
     li.section-li > .section .meta {

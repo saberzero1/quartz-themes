@@ -222,7 +222,6 @@ html body div#quartz-root {
   background-color: rgb(122, 162, 247);
   color: rgb(122, 162, 247);
   outline: rgb(122, 162, 247) none 0px;
-  text-decoration: rgb(122, 162, 247);
   text-decoration-color: rgb(122, 162, 247);
 }
 
@@ -230,7 +229,6 @@ html body .page article p > em, html em {
   color: rgb(187, 154, 247);
   font-family: OperatorMonoSSmLig-Book, Rubik, Rubik, "Glow Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
   outline: rgb(187, 154, 247) none 0px;
-  text-decoration: rgb(187, 154, 247);
   text-decoration-color: rgb(187, 154, 247);
 }
 
@@ -238,7 +236,6 @@ html body .page article p > i, html i {
   color: rgb(187, 154, 247);
   font-family: OperatorMonoSSmLig-Book, Rubik, Rubik, "Glow Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
   outline: rgb(187, 154, 247) none 0px;
-  text-decoration: rgb(187, 154, 247);
   text-decoration-color: rgb(187, 154, 247);
 }
 
@@ -246,7 +243,6 @@ html body .page article p > strong, html strong {
   background-color: rgb(122, 162, 247);
   color: rgb(122, 162, 247);
   outline: rgb(122, 162, 247) none 0px;
-  text-decoration: rgb(122, 162, 247);
   text-decoration-color: rgb(122, 162, 247);
 }
 
@@ -254,14 +250,12 @@ html body .text-highlight {
   background-color: rgba(244, 86, 157, 0.25);
   color: rgb(190, 190, 190);
   outline: rgb(190, 190, 190) none 0px;
-  text-decoration: rgb(190, 190, 190);
   text-decoration-color: rgb(190, 190, 190);
 }
 
 html body del {
   color: rgb(190, 190, 190);
   outline: rgb(190, 190, 190) none 0px;
-  text-decoration: line-through rgb(190, 190, 190);
   text-decoration-color: rgb(190, 190, 190);
 }
 
@@ -271,7 +265,6 @@ html body p {
     links: `html body a.external, html footer a {
   color: rgb(190, 190, 190);
   outline: rgb(190, 190, 190) none 0px;
-  text-decoration: rgb(190, 190, 190);
   text-decoration-color: rgb(190, 190, 190);
   transition: background 0.35s ease-in-out;
 }
@@ -279,14 +272,12 @@ html body p {
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(15, 182, 214);
   outline: rgb(15, 182, 214) none 0px;
-  text-decoration: rgb(15, 182, 214);
   text-decoration-color: rgb(15, 182, 214);
 }
 
 html body a.internal.broken {
   color: rgb(15, 182, 214);
   outline: rgb(15, 182, 214) none 0px;
-  text-decoration: rgb(15, 182, 214);
   text-decoration-color: rgb(15, 182, 214);
 }`,
     lists: `html body dd {
@@ -320,7 +311,6 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(122, 162, 247);
-  text-decoration: rgb(122, 162, 247);
 }
 
 html body blockquote {
@@ -469,7 +459,6 @@ html body .transclude-inner {
 }`,
     checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
@@ -493,109 +482,109 @@ html body input[type=checkbox]:checked:after {
 
 html body li.task-list-item[data-task='!'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgba(14, 210, 247, 0.5);
-  text-decoration: line-through rgba(14, 210, 247, 0.5);
+  text-decoration: line-through;
   text-decoration-color: rgba(14, 210, 247, 0.5);
 }
 
@@ -958,7 +947,6 @@ html body .search > .search-container > .search-space {
 html body .search > .search-container > .search-space > * {
   color: rgb(190, 190, 190);
   outline: rgb(190, 190, 190) none 0px;
-  text-decoration: rgb(190, 190, 190);
   text-decoration-color: rgb(190, 190, 190);
 }
 
@@ -1094,7 +1082,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(122, 162, 247);
-  text-decoration: rgb(122, 162, 247);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(190, 190, 190);
@@ -1159,7 +1146,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(190, 190, 190);
-  text-decoration: underline dotted rgb(190, 190, 190);
 }
 
 html body details {

@@ -1575,7 +1575,7 @@ body body.theme-light .markdown-rendered a.external-link {
     "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
   font-weight: 400;
   outline: rgb(193, 94, 80) none 0px;
-  text-decoration: rgb(193, 94, 80);
+  text-decoration: underline;
   text-decoration-color: rgb(193, 94, 80);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1602,7 +1602,7 @@ body body.theme-light .markdown-rendered a.internal-link {
     "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
   font-weight: 400;
   outline: rgb(193, 94, 80) none 0px;
-  text-decoration: rgb(193, 94, 80);
+  text-decoration: underline;
   text-decoration-color: rgb(193, 94, 80);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1629,7 +1629,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
     "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
   font-weight: 400;
   outline: rgb(193, 94, 80) none 0px;
-  text-decoration: rgb(193, 94, 80);
+  text-decoration: underline rgba(138, 92, 245, 0.3);
   text-decoration-color: rgb(193, 94, 80);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1670,7 +1670,7 @@ body body.theme-light .markdown-rendered p {
     "Times New Roman";
   font-weight: 400;
   outline: rgb(130, 130, 130) none 0px;
-  text-decoration: rgb(130, 130, 130);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(130, 130, 130);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1709,7 +1709,7 @@ body body.theme-light strong {
     sans-serif;
   font-weight: 600;
   outline: rgb(39, 56, 75) none 0px;
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1748,7 +1748,7 @@ body body.theme-light b {
     sans-serif;
   font-weight: 600;
   outline: rgb(39, 56, 75) none 0px;
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1787,7 +1787,7 @@ body body.theme-light em {
     sans-serif;
   font-weight: 500;
   outline: rgb(39, 56, 75) none 0px;
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1826,7 +1826,7 @@ body body.theme-light i {
     sans-serif;
   font-weight: 500;
   outline: rgb(39, 56, 75) none 0px;
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1865,7 +1865,7 @@ body body.theme-light .markdown-rendered mark {
     sans-serif;
   font-weight: 500;
   outline: rgb(39, 56, 75) none 0px;
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(39, 56, 75);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1904,7 +1904,7 @@ body body.theme-light del {
     sans-serif;
   font-weight: 500;
   outline: rgb(39, 56, 75) none 0px;
-  text-decoration: line-through rgb(39, 56, 75);
+  text-decoration: line-through;
   text-decoration-color: rgb(39, 56, 75);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -2128,7 +2128,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: rgb(130, 130, 130);
-  text-decoration: line-through rgb(130, 130, 130);
+  text-decoration: line-through;
   text-decoration-color: rgb(130, 130, 130);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -2144,7 +2144,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: rgb(193, 94, 80);
-  text-decoration: rgb(193, 94, 80);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: rgb(254, 254, 254);
@@ -2189,7 +2189,7 @@ body body.theme-light .search-results > * {
     "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
   font-weight: 400;
   outline: rgb(39, 56, 75) none 0px;
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2931,97 +2931,97 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: rgb(39, 56, 75);
   cursor: auto;
-  text-decoration: underline dotted rgb(39, 56, 75);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(39, 56, 75);
-  text-decoration: rgb(39, 56, 75);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(39, 56, 75);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -3116,7 +3116,7 @@ body
     "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next",
     "Times New Roman";
   font-weight: 400;
-  text-decoration: rgb(130, 130, 130);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -3132,7 +3132,7 @@ body
     "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next",
     "Times New Roman";
   font-weight: 400;
-  text-decoration: rgb(130, 130, 130);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -3160,7 +3160,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: rgb(130, 130, 130);
-  text-decoration: rgb(130, 130, 130);
 }
 body body.theme-light .nav-header {
   color: rgb(39, 56, 75);
@@ -3181,7 +3180,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: rgb(130, 130, 130);
-  text-decoration: rgb(130, 130, 130);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(130, 130, 130);

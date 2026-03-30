@@ -244,7 +244,6 @@ html[saved-theme="dark"] body div#quartz-root {
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(159, 160, 164);
   outline: rgb(159, 160, 164) none 0px;
-  text-decoration: underline rgb(159, 160, 164);
   text-decoration-color: rgb(159, 160, 164);
   transition: opacity 0.15s ease-in-out;
 }
@@ -252,7 +251,6 @@ html[saved-theme="dark"] body div#quartz-root {
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(159, 160, 164);
   outline: rgb(159, 160, 164) none 0px;
-  text-decoration: underline rgb(159, 160, 164);
   text-decoration-color: rgb(159, 160, 164);
   transition: opacity 0.15s ease-in-out;
 }
@@ -1003,12 +1001,10 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgba(89, 89, 89, 0.518);
-  text-decoration: rgba(89, 89, 89, 0.518);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgba(89, 89, 89, 0.518);
-  text-decoration: rgba(89, 89, 89, 0.518);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 8px;
@@ -1027,7 +1023,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgba(89, 89, 89, 0.518);
-  text-decoration: rgba(89, 89, 89, 0.518);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1039,7 +1034,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgba(89, 89, 89, 0.518);
-  text-decoration: rgba(89, 89, 89, 0.518);
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-left-radius: 8px;
@@ -1325,7 +1319,6 @@ html[saved-theme="light"] body div#quartz-root {
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(95, 99, 105);
   outline: rgb(95, 99, 105) none 0px;
-  text-decoration: underline rgb(95, 99, 105);
   text-decoration-color: rgb(95, 99, 105);
   transition: opacity 0.15s ease-in-out;
 }
@@ -1333,7 +1326,6 @@ html[saved-theme="light"] body div#quartz-root {
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(95, 99, 105);
   outline: rgb(95, 99, 105) none 0px;
-  text-decoration: underline rgb(95, 99, 105);
   text-decoration-color: rgb(95, 99, 105);
   transition: opacity 0.15s ease-in-out;
 }
@@ -2092,12 +2084,10 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgba(37, 37, 37, 0.525);
-  text-decoration: rgba(37, 37, 37, 0.525);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgba(37, 37, 37, 0.525);
-  text-decoration: rgba(37, 37, 37, 0.525);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 8px;
@@ -2116,7 +2106,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgba(37, 37, 37, 0.525);
-  text-decoration: rgba(37, 37, 37, 0.525);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2128,7 +2117,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgba(37, 37, 37, 0.525);
-  text-decoration: rgba(37, 37, 37, 0.525);
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-left-radius: 8px;

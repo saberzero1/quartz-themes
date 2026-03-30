@@ -2371,7 +2371,7 @@ body body.theme-light .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: oklch(40% 0.15 70deg) none 0px;
-  text-decoration: underline oklch(40% 0.15 70deg);
+  text-decoration: underline;
   text-decoration-color: oklch(40% 0.15 70deg);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2410,7 +2410,7 @@ body body.theme-light .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: oklch(40% 0.15 70deg) none 0px;
-  text-decoration: underline oklch(40% 0.15 70deg);
+  text-decoration: underline;
   text-decoration-color: oklch(40% 0.15 70deg);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2501,7 +2501,7 @@ body body.theme-light .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: oklch(27.5% 0 0deg) none 0px;
-  text-decoration: oklch(27.5% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(27.5% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2540,7 +2540,7 @@ body body.theme-light strong {
     sans-serif;
   font-weight: 600;
   outline: oklch(0% 0 0deg) none 0px;
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2579,7 +2579,7 @@ body body.theme-light b {
     sans-serif;
   font-weight: 600;
   outline: oklch(0% 0 0deg) none 0px;
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2618,7 +2618,7 @@ body body.theme-light em {
     sans-serif;
   font-weight: 400;
   outline: oklch(0% 0 0deg) none 0px;
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2657,7 +2657,7 @@ body body.theme-light i {
     sans-serif;
   font-weight: 400;
   outline: oklch(0% 0 0deg) none 0px;
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2696,7 +2696,7 @@ body body.theme-light .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: oklch(0% 0 0deg) none 0px;
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: oklch(0% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2735,7 +2735,7 @@ body body.theme-light del {
     sans-serif;
   font-weight: 400;
   outline: oklch(0% 0 0deg) none 0px;
-  text-decoration: line-through oklch(0% 0 0deg);
+  text-decoration: line-through;
   text-decoration-color: oklch(0% 0 0deg);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -2962,7 +2962,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: oklch(27.5% 0 0deg);
-  text-decoration: line-through oklch(27.5% 0 0deg);
+  text-decoration: line-through;
   text-decoration-color: oklch(27.5% 0 0deg);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -2990,7 +2990,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: oklch(45% 0 0deg);
-  text-decoration: oklch(45% 0 0deg);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: oklch(100% 0 0deg);
@@ -3058,7 +3058,7 @@ body body.theme-light .search-results > * {
     sans-serif;
   font-weight: 400;
   outline: oklch(0% 0 0deg) none 0px;
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3900,97 +3900,97 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: oklch(0% 0 0deg);
   cursor: auto;
-  text-decoration: underline dotted oklch(0% 0 0deg);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: oklch(0% 0 0deg);
-  text-decoration: oklch(0% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: oklch(0% 0 0deg);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -4096,7 +4096,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: oklch(27.5% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -4123,7 +4123,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: oklch(27.5% 0 0deg);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -4163,7 +4163,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: oklch(27.5% 0 0deg);
-  text-decoration: oklch(27.5% 0 0deg);
 }
 body body.theme-light .nav-header {
   color: oklch(0% 0 0deg);
@@ -4195,7 +4194,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: oklch(27.5% 0 0deg);
-  text-decoration: oklch(27.5% 0 0deg);
 }
 body body.theme-light .nav-file-title-content {
   color: oklch(27.5% 0 0deg);
@@ -4400,7 +4398,7 @@ body body.theme-dark .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: oklch(90% 0.15 70deg) none 0px;
-  text-decoration: underline oklch(90% 0.15 70deg);
+  text-decoration: underline;
   text-decoration-color: oklch(90% 0.15 70deg);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4439,7 +4437,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: oklch(90% 0.15 70deg) none 0px;
-  text-decoration: underline oklch(90% 0.15 70deg);
+  text-decoration: underline;
   text-decoration-color: oklch(90% 0.15 70deg);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4530,7 +4528,7 @@ body body.theme-dark .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: oklch(77.5% 0 0deg) none 0px;
-  text-decoration: oklch(77.5% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(77.5% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4569,7 +4567,7 @@ body body.theme-dark strong {
     sans-serif;
   font-weight: 600;
   outline: oklch(100% 0 0deg) none 0px;
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4608,7 +4606,7 @@ body body.theme-dark b {
     sans-serif;
   font-weight: 600;
   outline: oklch(100% 0 0deg) none 0px;
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4647,7 +4645,7 @@ body body.theme-dark em {
     sans-serif;
   font-weight: 400;
   outline: oklch(100% 0 0deg) none 0px;
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4686,7 +4684,7 @@ body body.theme-dark i {
     sans-serif;
   font-weight: 400;
   outline: oklch(100% 0 0deg) none 0px;
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4725,7 +4723,7 @@ body body.theme-dark .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: oklch(100% 0 0deg) none 0px;
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: oklch(100% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4764,7 +4762,7 @@ body body.theme-dark del {
     sans-serif;
   font-weight: 400;
   outline: oklch(100% 0 0deg) none 0px;
-  text-decoration: line-through oklch(100% 0 0deg);
+  text-decoration: line-through;
   text-decoration-color: oklch(100% 0 0deg);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -4991,7 +4989,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: oklch(77.5% 0 0deg);
-  text-decoration: line-through oklch(77.5% 0 0deg);
+  text-decoration: line-through;
   text-decoration-color: oklch(77.5% 0 0deg);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -5019,7 +5017,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: oklch(58% 0 0deg);
-  text-decoration: oklch(58% 0 0deg);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgb(42, 42, 42);
@@ -5087,7 +5085,7 @@ body body.theme-dark .search-results > * {
     sans-serif;
   font-weight: 400;
   outline: oklch(100% 0 0deg) none 0px;
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5929,97 +5927,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: oklch(100% 0 0deg);
   cursor: auto;
-  text-decoration: underline dotted oklch(100% 0 0deg);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: oklch(100% 0 0deg);
-  text-decoration: oklch(100% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: oklch(100% 0 0deg);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -6125,7 +6123,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: oklch(77.5% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -6152,7 +6150,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: oklch(77.5% 0 0deg);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -6192,7 +6190,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: oklch(77.5% 0 0deg);
-  text-decoration: oklch(77.5% 0 0deg);
 }
 body body.theme-dark .nav-header {
   color: oklch(100% 0 0deg);
@@ -6224,7 +6221,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: oklch(77.5% 0 0deg);
-  text-decoration: oklch(77.5% 0 0deg);
 }
 body body.theme-dark .nav-file-title-content {
   color: oklch(77.5% 0 0deg);

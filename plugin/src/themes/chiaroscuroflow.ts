@@ -107,7 +107,6 @@ html[saved-theme="dark"] body div#quartz-root {
   color: rgb(255, 255, 255);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -115,7 +114,6 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
   color: rgb(255, 255, 255);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -123,7 +121,6 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(255, 255, 255);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -131,7 +128,6 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
   color: rgb(255, 255, 255);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -139,7 +135,6 @@ html[saved-theme="dark"] body .text-highlight {
   color: rgb(255, 255, 255);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -147,7 +142,6 @@ html[saved-theme="dark"] body del {
   color: rgb(255, 255, 255);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: line-through rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -299,109 +293,91 @@ html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -761,7 +737,6 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(255, 255, 255);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -947,7 +922,6 @@ html[saved-theme="dark"] body .page-header h2.page-title {
 
 html[saved-theme="dark"] body abbr {
   color: rgb(255, 255, 255);
-  text-decoration: underline dotted rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body details {
@@ -1087,7 +1061,6 @@ html[saved-theme="light"] body div#quartz-root {
   color: rgb(12, 9, 9);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(12, 9, 9) none 0px;
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
@@ -1095,7 +1068,6 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
   color: rgb(12, 9, 9);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(12, 9, 9) none 0px;
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
@@ -1103,7 +1075,6 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
   color: rgb(12, 9, 9);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(12, 9, 9) none 0px;
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
@@ -1111,7 +1082,6 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
   color: rgb(12, 9, 9);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(12, 9, 9) none 0px;
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
@@ -1119,7 +1089,6 @@ html[saved-theme="light"] body .text-highlight {
   color: rgb(12, 9, 9);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(12, 9, 9) none 0px;
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
@@ -1127,7 +1096,6 @@ html[saved-theme="light"] body del {
   color: rgb(12, 9, 9);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(12, 9, 9) none 0px;
-  text-decoration: line-through rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
@@ -1279,109 +1247,91 @@ html[saved-theme="light"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(12, 9, 9);
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
@@ -1741,7 +1691,6 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(12, 9, 9);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(12, 9, 9) none 0px;
-  text-decoration: rgb(12, 9, 9);
   text-decoration-color: rgb(12, 9, 9);
 }
 
@@ -1927,7 +1876,6 @@ html[saved-theme="light"] body .page-header h2.page-title {
 
 html[saved-theme="light"] body abbr {
   color: rgb(12, 9, 9);
-  text-decoration: underline dotted rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body details {

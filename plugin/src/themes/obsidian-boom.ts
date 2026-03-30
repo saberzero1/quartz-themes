@@ -22,7 +22,6 @@ html body {
     typography: `html body .page article p > b, html b {
   color: rgb(32, 43, 51);
   outline: rgb(32, 43, 51) none 0px;
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
@@ -30,7 +29,6 @@ html body .page article p > em, html em {
   color: rgb(32, 43, 51);
   font-weight: 500;
   outline: rgb(32, 43, 51) none 0px;
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
@@ -38,14 +36,12 @@ html body .page article p > i, html i {
   color: rgb(32, 43, 51);
   font-weight: 500;
   outline: rgb(32, 43, 51) none 0px;
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body .page article p > strong, html strong {
   color: rgb(32, 43, 51);
   outline: rgb(32, 43, 51) none 0px;
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
@@ -57,7 +53,6 @@ html body del {
   color: rgb(32, 43, 51);
   font-weight: 500;
   outline: rgb(32, 43, 51) none 0px;
-  text-decoration: line-through rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
@@ -67,14 +62,12 @@ html body p {
     links: `html body a.external, html footer a {
   color: rgb(16, 107, 163);
   outline: rgb(16, 107, 163) none 0px;
-  text-decoration: underline rgb(16, 107, 163);
   text-decoration-color: rgb(16, 107, 163);
 }
 
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(16, 107, 163);
   outline: rgb(16, 107, 163) none 0px;
-  text-decoration: rgb(16, 107, 163);
   text-decoration-color: rgb(16, 107, 163);
 }
 
@@ -101,7 +94,6 @@ html body ul > li {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(16, 107, 163);
-  text-decoration: rgb(16, 107, 163);
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(32, 43, 51);
@@ -176,116 +168,97 @@ html body .transclude-inner {
 }`,
     checkboxes: `html body li.task-list-item[data-task='!'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(32, 43, 51);
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }`,
     search: `html body .search > .search-container > .search-space > * {
   color: rgb(32, 43, 51);
   font-weight: 500;
   outline: rgb(32, 43, 51) none 0px;
-  text-decoration: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }
 
@@ -355,13 +328,11 @@ html body h6 {
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(92, 112, 128);
   font-weight: 700;
-  text-decoration: rgb(92, 112, 128);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(92, 112, 128);
   font-weight: 700;
-  text-decoration: rgb(92, 112, 128);
 }`,
     toc: `html body li.depth-0 {
   font-weight: 700;
@@ -372,7 +343,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(92, 112, 128);
-  text-decoration: rgb(92, 112, 128);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -384,7 +354,6 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(92, 112, 128);
-  text-decoration: rgb(92, 112, 128);
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(32, 43, 51);
@@ -400,7 +369,6 @@ html body .metadata {
 
 html body abbr {
   color: rgb(32, 43, 51);
-  text-decoration: underline dotted rgb(32, 43, 51);
 }
 
 html body details {

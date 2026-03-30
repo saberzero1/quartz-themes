@@ -1497,7 +1497,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(67, 75, 86) none 0px;
-    text-decoration: rgb(67, 75, 86);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(67, 75, 86);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1620,7 +1620,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(117, 138, 82) none 0px;
-    text-decoration: rgb(117, 138, 82);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(117, 138, 82);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1661,7 +1661,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(117, 138, 82) none 0px;
-    text-decoration: rgb(117, 138, 82);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(117, 138, 82);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1701,7 +1701,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(34, 34, 34) none 0px;
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1750,7 +1750,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(34, 34, 34) none 0px;
-    text-decoration: line-through rgb(34, 34, 34);
+    text-decoration: line-through;
     text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -2022,7 +2022,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(67, 75, 86);
-    text-decoration: line-through rgb(67, 75, 86);
+    text-decoration: line-through;
     text-decoration-color: rgb(67, 75, 86);
   }
 
@@ -3169,7 +3169,7 @@ body {
   abbr {
     color: rgb(34, 34, 34);
     cursor: auto;
-    text-decoration: underline dotted rgb(34, 34, 34);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
@@ -3385,7 +3385,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: rgb(32, 36, 48);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -3406,7 +3406,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: rgb(32, 36, 48);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -3449,7 +3449,6 @@ body {
 
   footer ul li a {
     color: rgb(67, 75, 86);
-    text-decoration: rgb(67, 75, 86);
   }
 
   .recent-notes > h3 {
@@ -3484,7 +3483,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: rgb(32, 36, 48);
-    text-decoration: rgb(32, 36, 48);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3527,7 +3525,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: rgb(32, 36, 48);
-    text-decoration: rgb(32, 36, 48);
   }
 
   li.section-li > .section .meta {

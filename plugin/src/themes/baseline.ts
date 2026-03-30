@@ -365,13 +365,11 @@ html[saved-theme="dark"] body p {
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(166, 138, 249);
   transition: opacity 0.16s ease-in-out;
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(166, 138, 249);
   transition: opacity 0.16s ease-in-out;
 }
 
@@ -532,7 +530,7 @@ html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(102, 102, 102);
-  text-decoration: line-through rgb(102, 102, 102);
+  text-decoration: line-through;
   text-decoration-color: rgb(102, 102, 102);
 }
 
@@ -1796,13 +1794,11 @@ html[saved-theme="light"] body p {
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(138, 92, 245);
   transition: opacity 0.16s ease-in-out;
 }
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-decoration: rgb(138, 92, 245);
   transition: opacity 0.16s ease-in-out;
 }
 
@@ -1963,7 +1959,7 @@ html[saved-theme="light"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(171, 171, 171);
-  text-decoration: line-through rgb(171, 171, 171);
+  text-decoration: line-through;
   text-decoration-color: rgb(171, 171, 171);
 }
 

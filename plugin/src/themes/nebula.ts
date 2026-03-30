@@ -150,7 +150,6 @@ html body div#quartz-root {
   color: rgba(255, 255, 255, 0.867);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   outline: rgba(255, 255, 255, 0.867) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
@@ -158,7 +157,6 @@ html body .page article p > em, html em {
   color: rgba(255, 255, 255, 0.867);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   outline: rgba(255, 255, 255, 0.867) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
@@ -166,7 +164,6 @@ html body .page article p > i, html i {
   color: rgba(255, 255, 255, 0.867);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   outline: rgba(255, 255, 255, 0.867) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
@@ -174,7 +171,6 @@ html body .page article p > strong, html strong {
   color: rgba(255, 255, 255, 0.867);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   outline: rgba(255, 255, 255, 0.867) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
@@ -183,7 +179,6 @@ html body .text-highlight {
   color: rgba(255, 255, 255, 0.867);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   outline: rgba(255, 255, 255, 0.867) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
@@ -191,7 +186,6 @@ html body del {
   color: rgba(255, 255, 255, 0.867);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   outline: rgba(255, 255, 255, 0.867) none 0px;
-  text-decoration: line-through rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
@@ -199,14 +193,12 @@ html body p {
   color: rgb(239, 209, 209);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   outline: rgb(239, 209, 209) none 0px;
-  text-decoration: rgb(239, 209, 209);
   text-decoration-color: rgb(239, 209, 209);
 }`,
     links: `html body a.external, html footer a {
   color: rgb(137, 192, 251);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   outline: rgb(137, 192, 251) none 0px;
-  text-decoration: rgb(137, 192, 251);
   text-decoration-color: rgb(137, 192, 251);
   transition: color 0.15s ease-out;
 }
@@ -215,7 +207,6 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(137, 192, 251);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   outline: rgb(137, 192, 251) none 0px;
-  text-decoration: rgb(137, 192, 251);
   text-decoration-color: rgb(137, 192, 251);
 }
 
@@ -223,7 +214,6 @@ html body a.internal.broken {
   color: rgb(137, 192, 251);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   outline: rgb(137, 192, 251) none 0px;
-  text-decoration: rgb(137, 192, 251);
   text-decoration-color: rgb(137, 192, 251);
 }`,
     lists: `html body dd {
@@ -262,7 +252,6 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(137, 192, 251);
-  text-decoration: rgb(137, 192, 251);
 }
 
 html body blockquote {
@@ -408,7 +397,6 @@ html body .katex-display > .katex > .katex-html {
 
 html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: line-through rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
@@ -425,109 +413,91 @@ html body input[type=checkbox] {
 
 html body li.task-list-item[data-task='!'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
@@ -887,7 +857,6 @@ html body .search > .search-container > .search-space > * {
   color: rgba(255, 255, 255, 0.867);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
   outline: rgba(255, 255, 255, 0.867) none 0px;
-  text-decoration: rgba(255, 255, 255, 0.867);
   text-decoration-color: rgba(255, 255, 255, 0.867);
 }
 
@@ -1021,13 +990,11 @@ html body ::-webkit-scrollbar-track {
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(255, 223, 223);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
-  text-decoration: rgb(255, 223, 223);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(255, 223, 223);
   font-family: Myuppy, Montserrat, Roboto, "Segoe Print", sans-serif;
-  text-decoration: rgb(255, 223, 223);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(239, 209, 209);
@@ -1044,7 +1011,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(239, 209, 209);
-  text-decoration: rgb(239, 209, 209);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgba(255, 255, 255, 0.867);
@@ -1061,7 +1027,6 @@ html body .recent-notes > ul.recent-ul > li {
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(255, 223, 223);
-  text-decoration: rgb(255, 223, 223);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1082,7 +1047,6 @@ html body li.section-li > .section .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(255, 223, 223);
-  text-decoration: rgb(255, 223, 223);
 }
 
 html body ul.section-ul {
@@ -1142,7 +1106,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgba(255, 255, 255, 0.867);
-  text-decoration: underline dotted rgba(255, 255, 255, 0.867);
 }
 
 html body details {

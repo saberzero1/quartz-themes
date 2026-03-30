@@ -111,7 +111,6 @@ html body div#quartz-root {
   color: rgb(150, 83, 157);
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(150, 83, 157) none 0px;
-  text-decoration: rgb(150, 83, 157);
   text-decoration-color: rgb(150, 83, 157);
 }
 
@@ -119,7 +118,6 @@ html body .page article p > em, html em {
   color: rgb(150, 83, 157);
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(150, 83, 157) none 0px;
-  text-decoration: rgb(150, 83, 157);
   text-decoration-color: rgb(150, 83, 157);
 }
 
@@ -127,7 +125,6 @@ html body .page article p > i, html i {
   color: rgb(150, 83, 157);
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(150, 83, 157) none 0px;
-  text-decoration: rgb(150, 83, 157);
   text-decoration-color: rgb(150, 83, 157);
 }
 
@@ -135,7 +132,6 @@ html body .page article p > strong, html strong {
   color: rgb(150, 83, 157);
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(150, 83, 157) none 0px;
-  text-decoration: rgb(150, 83, 157);
   text-decoration-color: rgb(150, 83, 157);
 }
 
@@ -147,7 +143,6 @@ html body del {
   color: rgb(18, 20, 33);
   font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(18, 20, 33) none 0px;
-  text-decoration: line-through rgb(18, 20, 33);
   text-decoration-color: rgb(18, 20, 33);
 }
 

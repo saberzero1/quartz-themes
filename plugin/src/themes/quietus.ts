@@ -56,14 +56,12 @@ html[saved-theme="dark"] body {
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(218, 218, 218);
   outline: rgb(218, 218, 218) none 0px;
-  text-decoration: underline rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(218, 218, 218);
   outline: rgb(218, 218, 218) none 0px;
-  text-decoration: underline rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
 }
 

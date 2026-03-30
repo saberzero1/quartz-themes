@@ -1307,7 +1307,7 @@ body body.theme-light .markdown-rendered a.external-link {
   font-family: 宋体, SimSun;
   font-weight: 400;
   outline: rgb(82, 115, 165) none 0px;
-  text-decoration: underline rgb(82, 115, 165);
+  text-decoration: underline;
   text-decoration-color: rgb(82, 115, 165);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1333,7 +1333,7 @@ body body.theme-light .markdown-rendered a.internal-link {
   font-family: 宋体, SimSun;
   font-weight: 400;
   outline: rgb(138, 92, 245) none 0px;
-  text-decoration: underline rgb(138, 92, 245);
+  text-decoration: underline;
   text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1398,7 +1398,7 @@ body body.theme-light .markdown-rendered p {
   font-family: "Times New Roman";
   font-weight: 400;
   outline: rgb(141, 156, 141) none 0px;
-  text-decoration: rgb(141, 156, 141);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(141, 156, 141);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1424,7 +1424,7 @@ body body.theme-light strong {
   font-family: 宋体, SimSun;
   font-weight: 600;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1450,7 +1450,7 @@ body body.theme-light b {
   font-family: 宋体, SimSun;
   font-weight: 600;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1476,7 +1476,7 @@ body body.theme-light em {
   font-family: 宋体, SimSun;
   font-weight: 400;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1502,7 +1502,7 @@ body body.theme-light i {
   font-family: 宋体, SimSun;
   font-weight: 400;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1528,7 +1528,7 @@ body body.theme-light .markdown-rendered mark {
   font-family: 宋体, SimSun;
   font-weight: 400;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1554,7 +1554,7 @@ body body.theme-light del {
   font-family: 宋体, SimSun;
   font-weight: 400;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: line-through rgb(111, 110, 106);
+  text-decoration: line-through;
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -1781,7 +1781,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: rgb(141, 156, 141);
-  text-decoration: line-through rgb(141, 156, 141);
+  text-decoration: line-through;
   text-decoration-color: rgb(141, 156, 141);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -1796,7 +1796,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: rgb(171, 171, 171);
-  text-decoration: rgb(171, 171, 171);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: rgb(255, 255, 255);
@@ -1838,7 +1838,7 @@ body body.theme-light .search-results > * {
   font-family: 宋体, SimSun;
   font-weight: 400;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2550,97 +2550,97 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: rgb(111, 110, 106);
   cursor: auto;
-  text-decoration: underline dotted rgb(111, 110, 106);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(111, 110, 106);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -2707,7 +2707,7 @@ body
   cursor: default;
   font-family: "Times New Roman";
   font-weight: 400;
-  text-decoration: rgb(98, 102, 102);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -2721,7 +2721,7 @@ body
   cursor: default;
   font-family: "Times New Roman";
   font-weight: 400;
-  text-decoration: rgb(98, 102, 102);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgb(163, 213, 170);
@@ -2748,7 +2748,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: rgb(141, 156, 141);
-  text-decoration: rgb(141, 156, 141);
 }
 body body.theme-light .nav-header {
   color: rgb(111, 110, 106);
@@ -2767,7 +2766,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: rgb(98, 102, 102);
-  text-decoration: rgb(98, 102, 102);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(98, 102, 102);

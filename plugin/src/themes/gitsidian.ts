@@ -20,18 +20,15 @@ html[saved-theme="dark"] body {
   color: rgb(3, 102, 214);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   outline: rgb(3, 102, 214) none 0px;
-  text-decoration: rgb(3, 102, 214);
   text-decoration-color: rgb(3, 102, 214);
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  text-decoration: rgb(166, 138, 249);
 }
 
 html[saved-theme="dark"] body a.internal.broken {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  text-decoration: rgb(166, 138, 249);
   text-decoration-color: rgb(166, 138, 249);
 }`,
     lists: `html[saved-theme="dark"] body dd {
@@ -61,7 +58,6 @@ html[saved-theme="dark"] body ul > li {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(3, 102, 214);
-  text-decoration: rgb(3, 102, 214);
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -165,116 +161,97 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }`,
     search: `html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(36, 41, 46);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   outline: rgb(36, 41, 46) none 0px;
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
@@ -353,7 +330,6 @@ html[saved-theme="dark"] body .metadata-properties {
 
 html[saved-theme="dark"] body abbr {
   color: rgb(36, 41, 46);
-  text-decoration: underline dotted rgb(36, 41, 46);
 }
 
 html[saved-theme="dark"] body details {
@@ -417,18 +393,15 @@ html[saved-theme="light"] body {
   color: rgb(3, 102, 214);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   outline: rgb(3, 102, 214) none 0px;
-  text-decoration: rgb(3, 102, 214);
   text-decoration-color: rgb(3, 102, 214);
 }
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  text-decoration: rgb(138, 92, 245);
 }
 
 html[saved-theme="light"] body a.internal.broken {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  text-decoration: rgb(138, 92, 245);
   text-decoration-color: rgb(138, 92, 245);
 }`,
     lists: `html[saved-theme="light"] body dd {
@@ -458,7 +431,6 @@ html[saved-theme="light"] body ul > li {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(3, 102, 214);
-  text-decoration: rgb(3, 102, 214);
 }
 
 html[saved-theme="light"] body blockquote {
@@ -562,116 +534,97 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(36, 41, 46);
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }`,
     search: `html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(36, 41, 46);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   outline: rgb(36, 41, 46) none 0px;
-  text-decoration: rgb(36, 41, 46);
   text-decoration-color: rgb(36, 41, 46);
 }
 
@@ -750,7 +703,6 @@ html[saved-theme="light"] body .metadata-properties {
 
 html[saved-theme="light"] body abbr {
   color: rgb(36, 41, 46);
-  text-decoration: underline dotted rgb(36, 41, 46);
 }
 
 html[saved-theme="light"] body details {

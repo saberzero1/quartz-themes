@@ -156,20 +156,6 @@
               "icon": "lucide-list",
               "title": "Outline of general"
             }
-          },
-          {
-            "id": "da348b50c9e179f2",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
           }
         ],
         "currentTab": 3
@@ -208,7 +194,6 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-callouts/its-theme.ttrpg-wotc.md",
     "theme-checkboxes/upper.md",
     "theme-checkboxes/lower.md",
     "theme-checkboxes/special.md",
@@ -223,17 +208,18 @@
     "callouts.md",
     "headings.md",
     "general.md",
-    "theme-callouts/its-theme.ttrpg-pathfinder-remastered.md",
-    "theme-callouts/its-theme.ttrpg-pathfinder.md",
-    "theme-callouts/its-theme.ttrpg-dnd.md",
-    "theme-callouts/its-theme.tangerine-dunes.md",
-    "theme-callouts/its-theme.school-days.md",
-    "theme-callouts/its-theme.rainbow.md",
-    "theme-callouts/its-theme.notion.md",
-    "theme-callouts/its-theme.nord.md",
-    "theme-callouts/its-theme.minimalist.md",
-    "theme-callouts/its-theme.its-dark.md",
-    "theme-callouts/its-theme.gray.md",
+    "theme-callouts/willemstad.md",
+    "theme-callouts/vortex.md",
+    "theme-callouts/velocity.md",
+    "theme-callouts/vauxhall.md",
+    "theme-callouts/universitario.md",
+    "theme-callouts/underwater.md",
+    "theme-callouts/ukiyo.md",
+    "theme-callouts/terraflow.md",
+    "theme-callouts/simple-color.md",
+    "theme-callouts/shiba-inu.md",
+    "theme-callouts/serenity.md",
+    "theme-callouts/sanctum-reborn.md",
     "theme-callouts",
     "theme-checkboxes",
     "theme-extras/its-theme/callouts/Image.png",

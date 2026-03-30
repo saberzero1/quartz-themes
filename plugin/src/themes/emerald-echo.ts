@@ -133,28 +133,24 @@ html[saved-theme="dark"] body div#quartz-root {
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(65, 180, 180);
   outline: rgb(65, 180, 180) none 0px;
-  text-decoration: rgb(65, 180, 180);
   text-decoration-color: rgb(65, 180, 180);
 }
 
 html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(216, 228, 58);
   outline: rgb(216, 228, 58) none 0px;
-  text-decoration: rgb(216, 228, 58);
   text-decoration-color: rgb(216, 228, 58);
 }
 
 html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(216, 228, 58);
   outline: rgb(216, 228, 58) none 0px;
-  text-decoration: rgb(216, 228, 58);
   text-decoration-color: rgb(216, 228, 58);
 }
 
 html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgb(65, 180, 180);
   outline: rgb(65, 180, 180) none 0px;
-  text-decoration: rgb(65, 180, 180);
   text-decoration-color: rgb(65, 180, 180);
 }
 
@@ -164,7 +160,7 @@ html[saved-theme="dark"] body .text-highlight {
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(82, 157, 82);
   outline: rgb(82, 157, 82) none 0px;
-  text-decoration: underline 1px rgb(82, 157, 82);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(82, 157, 82);
   text-decoration-thickness: 1px;
 }
@@ -172,7 +168,7 @@ html[saved-theme="dark"] body .text-highlight {
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(99, 190, 99);
   outline: rgb(99, 190, 99) none 0px;
-  text-decoration: underline 1px rgb(99, 190, 99);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(99, 190, 99);
   text-decoration-thickness: 1px;
 }
@@ -740,28 +736,24 @@ html[saved-theme="light"] body {
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(65, 180, 180);
   outline: rgb(65, 180, 180) none 0px;
-  text-decoration: rgb(65, 180, 180);
   text-decoration-color: rgb(65, 180, 180);
 }
 
 html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: rgb(124, 133, 8);
   outline: rgb(124, 133, 8) none 0px;
-  text-decoration: rgb(124, 133, 8);
   text-decoration-color: rgb(124, 133, 8);
 }
 
 html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: rgb(124, 133, 8);
   outline: rgb(124, 133, 8) none 0px;
-  text-decoration: rgb(124, 133, 8);
   text-decoration-color: rgb(124, 133, 8);
 }
 
 html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgb(65, 180, 180);
   outline: rgb(65, 180, 180) none 0px;
-  text-decoration: rgb(65, 180, 180);
   text-decoration-color: rgb(65, 180, 180);
 }
 
@@ -771,7 +763,7 @@ html[saved-theme="light"] body .text-highlight {
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(82, 157, 82);
   outline: rgb(82, 157, 82) none 0px;
-  text-decoration: underline 1px rgb(82, 157, 82);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(82, 157, 82);
   text-decoration-thickness: 1px;
 }
@@ -779,7 +771,7 @@ html[saved-theme="light"] body .text-highlight {
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(82, 157, 82);
   outline: rgb(82, 157, 82) none 0px;
-  text-decoration: underline 1px rgb(82, 157, 82);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(82, 157, 82);
   text-decoration-thickness: 1px;
 }

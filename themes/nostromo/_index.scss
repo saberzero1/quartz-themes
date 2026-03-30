@@ -1395,7 +1395,7 @@ body {
     font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 400;
     outline: rgb(156, 122, 153) none 0px;
-    text-decoration: underline rgb(156, 122, 153);
+    text-decoration: underline;
     text-decoration-color: rgb(156, 122, 153);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1423,7 +1423,7 @@ body {
     font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 400;
     outline: rgb(176, 108, 90) none 0px;
-    text-decoration: underline rgb(176, 108, 90);
+    text-decoration: underline;
     text-decoration-color: rgb(176, 108, 90);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1494,7 +1494,7 @@ body {
     font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 400;
     outline: rgb(213, 196, 161) none 0px;
-    text-decoration: rgb(213, 196, 161);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(213, 196, 161);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1522,7 +1522,7 @@ body {
     font-family: "Share Tech Mono", "Courier New", monospace;
     font-weight: 700;
     outline: rgb(232, 216, 163) none 0px;
-    text-decoration: rgb(232, 216, 163);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(232, 216, 163);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1550,7 +1550,7 @@ body {
     font-family: "Share Tech Mono", "Courier New", monospace;
     font-weight: 700;
     outline: rgb(232, 216, 163) none 0px;
-    text-decoration: rgb(232, 216, 163);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(232, 216, 163);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1578,7 +1578,7 @@ body {
     font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 400;
     outline: rgb(194, 140, 92) none 0px;
-    text-decoration: rgb(194, 140, 92);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(194, 140, 92);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1606,7 +1606,7 @@ body {
     font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 400;
     outline: rgb(194, 140, 92) none 0px;
-    text-decoration: rgb(194, 140, 92);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(194, 140, 92);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1633,7 +1633,7 @@ body {
     font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 400;
     outline: rgb(235, 219, 178) none 0px;
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: rgb(235, 219, 178);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1669,12 +1669,12 @@ body {
     font-family: "Share Tech Mono", "Courier New", monospace;
     font-weight: 400;
     outline: rgb(176, 108, 90) none 0px;
-    text-decoration: rgb(176, 108, 90);
+    text-decoration: line-through;
     text-decoration-color: rgb(176, 108, 90);
     text-decoration-line: line-through;
     text-decoration-style: solid;
     transition: all;
-    transform: matrix(1, 0, 0, 1, 0.730515, 0);
+    transform: matrix(1, 0, 0, 1, 0.714581, 0);
     user-select: text;
     animation-name: glitch-flicker;
     animation-duration: 3s;
@@ -1927,7 +1927,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(213, 196, 161);
-    text-decoration: line-through rgb(213, 196, 161);
+    text-decoration: line-through;
     text-decoration-color: rgb(213, 196, 161);
   }
 
@@ -1944,7 +1944,7 @@ body {
 
   .data-footnote-backref {
     color: rgb(189, 174, 147);
-    text-decoration: rgb(189, 174, 147);
+    text-decoration: underline rgb(166, 138, 249);
   }
 
   .search > .search-button {
@@ -2003,7 +2003,7 @@ body {
     font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-weight: 400;
     outline: rgb(235, 219, 178) none 0px;
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2882,115 +2882,115 @@ body {
   abbr {
     color: rgb(235, 219, 178);
     cursor: auto;
-    text-decoration: underline dotted rgb(235, 219, 178);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
   li.task-list-item[data-task="-"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(235, 219, 178);
-    text-decoration: rgb(235, 219, 178);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(235, 219, 178);
   }
 
@@ -3059,7 +3059,7 @@ body {
     cursor: default;
     font-family: "Share Tech Mono", "Courier New", monospace;
     font-weight: 400;
-    text-decoration: rgb(213, 196, 161);
+    text-decoration: rgb(218, 218, 218);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -3067,7 +3067,7 @@ body {
     cursor: default;
     font-family: "Share Tech Mono", "Courier New", monospace;
     font-weight: 400;
-    text-decoration: rgb(213, 196, 161);
+    text-decoration: rgb(218, 218, 218);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -3097,7 +3097,6 @@ body {
 
   footer ul li a {
     color: rgb(213, 196, 161);
-    text-decoration: rgb(213, 196, 161);
   }
 
   .recent-notes > h3 {
@@ -3119,7 +3118,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: rgb(213, 196, 161);
-    text-decoration: rgb(213, 196, 161);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3149,7 +3147,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: rgb(213, 196, 161);
-    text-decoration: rgb(213, 196, 161);
   }
 
   li.section-li > .section .meta {

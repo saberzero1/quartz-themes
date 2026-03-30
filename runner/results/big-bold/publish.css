@@ -3044,7 +3044,7 @@ body body.theme-light .markdown-rendered p {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
   outline: rgb(127, 127, 127) none 0px;
-  text-decoration: rgb(127, 127, 127);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(127, 127, 127);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3070,7 +3070,7 @@ body body.theme-light strong {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 600;
   outline: rgb(37, 37, 37) none 0px;
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3096,7 +3096,7 @@ body body.theme-light b {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 600;
   outline: rgb(37, 37, 37) none 0px;
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3122,7 +3122,7 @@ body body.theme-light em {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
   outline: rgb(37, 37, 37) none 0px;
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3148,7 +3148,7 @@ body body.theme-light i {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
   outline: rgb(37, 37, 37) none 0px;
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3176,7 +3176,7 @@ body body.theme-light .markdown-rendered mark {
     Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
   outline: rgb(37, 37, 37) none 0px;
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(37, 37, 37);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3202,7 +3202,7 @@ body body.theme-light del {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
   outline: rgb(37, 37, 37) none 0px;
-  text-decoration: line-through rgb(37, 37, 37);
+  text-decoration: line-through;
   text-decoration-color: rgb(37, 37, 37);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -3414,7 +3414,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: rgb(127, 127, 127);
-  text-decoration: rgb(127, 127, 127);
+  text-decoration: line-through;
   text-decoration-color: rgb(127, 127, 127);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -3429,7 +3429,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: rgb(135, 135, 135);
-  text-decoration: rgb(135, 135, 135);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: rgb(255, 255, 255);
@@ -3471,7 +3471,7 @@ body body.theme-light .search-results > * {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
   outline: rgb(37, 37, 37) none 0px;
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4182,97 +4182,97 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: rgb(37, 37, 37);
   cursor: auto;
-  text-decoration: underline dotted rgb(37, 37, 37);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(37, 37, 37);
-  text-decoration: rgb(37, 37, 37);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(37, 37, 37);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -4341,7 +4341,7 @@ body
     "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
     Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
-  text-decoration: rgb(127, 127, 127);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -4357,7 +4357,7 @@ body
     "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
     Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
-  text-decoration: rgb(127, 127, 127);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -4384,7 +4384,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: rgb(127, 127, 127);
-  text-decoration: rgb(127, 127, 127);
 }
 body body.theme-light .nav-header {
   color: rgb(37, 37, 37);
@@ -4403,7 +4402,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: rgb(127, 127, 127);
-  text-decoration: rgb(127, 127, 127);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(127, 127, 127);
@@ -4656,7 +4654,7 @@ body body.theme-dark .markdown-rendered p {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
   outline: rgb(154, 163, 183) none 0px;
-  text-decoration: rgb(154, 163, 183);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(154, 163, 183);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4682,7 +4680,7 @@ body body.theme-dark strong {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 600;
   outline: rgb(200, 212, 230) none 0px;
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4708,7 +4706,7 @@ body body.theme-dark b {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 600;
   outline: rgb(200, 212, 230) none 0px;
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4734,7 +4732,7 @@ body body.theme-dark em {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
   outline: rgb(200, 212, 230) none 0px;
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4760,7 +4758,7 @@ body body.theme-dark i {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
   outline: rgb(200, 212, 230) none 0px;
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4788,7 +4786,7 @@ body body.theme-dark .markdown-rendered mark {
     Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(255, 255, 255);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4814,7 +4812,7 @@ body body.theme-dark del {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
   outline: rgb(200, 212, 230) none 0px;
-  text-decoration: line-through rgb(200, 212, 230);
+  text-decoration: line-through;
   text-decoration-color: rgb(200, 212, 230);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -5025,7 +5023,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgb(154, 163, 183);
-  text-decoration: rgb(154, 163, 183);
+  text-decoration: line-through;
   text-decoration-color: rgb(154, 163, 183);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -5040,7 +5038,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: rgb(114, 125, 146);
-  text-decoration: rgb(114, 125, 146);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgb(41, 49, 61);
@@ -5082,7 +5080,7 @@ body body.theme-dark .search-results > * {
   font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
   outline: rgb(200, 212, 230) none 0px;
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5793,97 +5791,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(200, 212, 230);
   cursor: auto;
-  text-decoration: underline dotted rgb(200, 212, 230);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(200, 212, 230);
-  text-decoration: rgb(200, 212, 230);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(200, 212, 230);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -5952,7 +5950,7 @@ body
     "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
     Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
-  text-decoration: rgb(154, 163, 183);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -5968,7 +5966,7 @@ body
     "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
     Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   font-weight: 400;
-  text-decoration: rgb(154, 163, 183);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -5995,7 +5993,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgb(154, 163, 183);
-  text-decoration: rgb(154, 163, 183);
 }
 body body.theme-dark .nav-header {
   color: rgb(200, 212, 230);
@@ -6014,7 +6011,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgb(154, 163, 183);
-  text-decoration: rgb(154, 163, 183);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(154, 163, 183);

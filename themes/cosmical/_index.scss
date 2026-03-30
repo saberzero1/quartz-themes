@@ -2417,7 +2417,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0.4 0.15 70) none 0px;
-    text-decoration: underline oklch(0.4 0.15 70);
+    text-decoration: underline;
     text-decoration-color: oklch(0.4 0.15 70);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2458,7 +2458,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0.4 0.15 70) none 0px;
-    text-decoration: underline oklch(0.4 0.15 70);
+    text-decoration: underline;
     text-decoration-color: oklch(0.4 0.15 70);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2555,7 +2555,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0.275 0 0) none 0px;
-    text-decoration: oklch(0.275 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0.275 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2596,7 +2596,7 @@ body {
       sans-serif;
     font-weight: 600;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2637,7 +2637,7 @@ body {
       sans-serif;
     font-weight: 600;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2678,7 +2678,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2719,7 +2719,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2759,7 +2759,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2808,7 +2808,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: line-through oklch(0 0 0);
+    text-decoration: line-through;
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -3080,7 +3080,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: oklch(0.275 0 0);
-    text-decoration: line-through oklch(0.275 0 0);
+    text-decoration: line-through;
     text-decoration-color: oklch(0.275 0 0);
   }
 
@@ -3110,7 +3110,7 @@ body {
 
   .data-footnote-backref {
     color: oklch(0.45 0 0);
-    text-decoration: oklch(0.45 0 0);
+    text-decoration: underline rgb(138, 92, 245);
   }
 
   .search > .search-button {
@@ -3196,7 +3196,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4227,115 +4227,115 @@ body {
   abbr {
     color: oklch(0 0 0);
     cursor: auto;
-    text-decoration: underline dotted oklch(0 0 0);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
   li.task-list-item[data-task="-"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task=">"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="/"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="?"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="!"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="*"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="l"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="b"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="i"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="S"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="I"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="p"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="c"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="f"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="k"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="u"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="d"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
   li.task-list-item[data-task="w"] {
     color: oklch(0 0 0);
-    text-decoration: oklch(0 0 0);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0 0 0);
   }
 
@@ -4443,7 +4443,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: oklch(0.275 0 0);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -4464,7 +4464,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: oklch(0.275 0 0);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -4507,7 +4507,6 @@ body {
 
   footer ul li a {
     color: oklch(0.275 0 0);
-    text-decoration: oklch(0.275 0 0);
   }
 
   .recent-notes > h3 {
@@ -4542,7 +4541,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: oklch(0.275 0 0);
-    text-decoration: oklch(0.275 0 0);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4585,7 +4583,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: oklch(0.275 0 0);
-    text-decoration: oklch(0.275 0 0);
   }
 
   li.section-li > .section .meta {
@@ -5482,7 +5479,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: oklch(0.9 0.15 70) none 0px;
-      text-decoration: underline oklch(0.9 0.15 70);
+      text-decoration: underline;
       text-decoration-color: oklch(0.9 0.15 70);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -5523,7 +5520,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: oklch(0.9 0.15 70) none 0px;
-      text-decoration: underline oklch(0.9 0.15 70);
+      text-decoration: underline;
       text-decoration-color: oklch(0.9 0.15 70);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -5620,7 +5617,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: oklch(0.775 0 0) none 0px;
-      text-decoration: oklch(0.775 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.775 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5661,7 +5658,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 600;
       outline: oklch(1 0 0) none 0px;
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5702,7 +5699,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 600;
       outline: oklch(1 0 0) none 0px;
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5743,7 +5740,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: oklch(1 0 0) none 0px;
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5784,7 +5781,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: oklch(1 0 0) none 0px;
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5824,7 +5821,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: oklch(1 0 0) none 0px;
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(0, 0, 0);
       text-decoration-color: oklch(1 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5873,7 +5870,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: oklch(1 0 0) none 0px;
-      text-decoration: line-through oklch(1 0 0);
+      text-decoration: line-through;
       text-decoration-color: oklch(1 0 0);
       text-decoration-line: line-through;
       text-decoration-style: solid;
@@ -6145,7 +6142,7 @@ html[saved-theme="dark"] {
 
     .page article li:has(> input[type="checkbox"]:checked) {
       color: oklch(0.775 0 0);
-      text-decoration: line-through oklch(0.775 0 0);
+      text-decoration: line-through;
       text-decoration-color: oklch(0.775 0 0);
     }
 
@@ -6175,7 +6172,7 @@ html[saved-theme="dark"] {
 
     .data-footnote-backref {
       color: oklch(0.58 0 0);
-      text-decoration: oklch(0.58 0 0);
+      text-decoration: underline rgb(166, 138, 249);
     }
 
     .search > .search-button {
@@ -6261,7 +6258,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: oklch(1 0 0) none 0px;
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7297,115 +7294,115 @@ html[saved-theme="dark"] {
     abbr {
       color: oklch(1 0 0);
       cursor: auto;
-      text-decoration: underline dotted oklch(1 0 0);
+      text-decoration: underline dotted;
       text-decoration-style: dotted;
     }
 
     li.task-list-item[data-task="-"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task=">"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="/"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="?"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="!"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="*"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="l"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="b"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="i"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="S"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="I"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="p"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="c"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="f"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="k"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="u"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="d"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
     li.task-list-item[data-task="w"] {
       color: oklch(1 0 0);
-      text-decoration: oklch(1 0 0);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(1 0 0);
     }
 
@@ -7513,7 +7510,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      text-decoration: oklch(0.775 0 0);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .explorer
@@ -7537,7 +7534,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      text-decoration: oklch(0.775 0 0);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .graph > .graph-outer > .global-graph-icon {
@@ -7580,7 +7577,6 @@ html[saved-theme="dark"] {
 
     footer ul li a {
       color: oklch(0.775 0 0);
-      text-decoration: oklch(0.775 0 0);
     }
 
     .recent-notes > h3 {
@@ -7615,7 +7611,6 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
       color: oklch(0.775 0 0);
-      text-decoration: oklch(0.775 0 0);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -7658,7 +7653,6 @@ html[saved-theme="dark"] {
 
     li.section-li > .section > .desc > h3 > a {
       color: oklch(0.775 0 0);
-      text-decoration: oklch(0.775 0 0);
     }
 
     li.section-li > .section .meta {

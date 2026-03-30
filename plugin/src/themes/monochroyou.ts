@@ -135,7 +135,6 @@ html[saved-theme="dark"] body div#quartz-root {
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(184, 153, 255);
   outline: rgb(184, 153, 255) none 0px;
-  text-decoration: underline rgb(184, 153, 255);
   text-decoration-color: rgb(184, 153, 255);
 }`,
     tables: `html[saved-theme="dark"] body td {
@@ -737,12 +736,10 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 100px;
@@ -759,7 +756,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -771,7 +767,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-left-radius: 100px;
@@ -1004,7 +999,6 @@ html[saved-theme="light"] body div#quartz-root {
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(47, 0, 158);
   outline: rgb(47, 0, 158) none 0px;
-  text-decoration: underline rgb(47, 0, 158);
   text-decoration-color: rgb(47, 0, 158);
 }`,
     tables: `html[saved-theme="light"] body td {
@@ -1613,12 +1607,10 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 100px;
@@ -1635,7 +1627,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1647,7 +1638,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(0, 0, 0);
-  text-decoration: rgb(0, 0, 0);
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-left-radius: 100px;

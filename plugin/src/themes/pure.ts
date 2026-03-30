@@ -21,7 +21,6 @@ html[saved-theme="dark"] body {
   background-color: rgba(172, 232, 255, 0.39);
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }`,
     tables: `html[saved-theme="dark"] body table {
@@ -488,7 +487,6 @@ html[saved-theme="light"] body {
   background-color: rgba(172, 232, 255, 0.39);
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }`,
     tables: `html[saved-theme="light"] body table {

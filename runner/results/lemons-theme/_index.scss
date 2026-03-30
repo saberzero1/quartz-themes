@@ -1220,7 +1220,7 @@ body {
       monospace;
     font-weight: 400;
     outline: rgb(250, 206, 62) none 0px;
-    text-decoration: underline rgb(250, 206, 62);
+    text-decoration: underline;
     text-decoration-color: rgb(250, 206, 62);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1250,7 +1250,7 @@ body {
       monospace;
     font-weight: 400;
     outline: rgb(250, 206, 62) none 0px;
-    text-decoration: underline rgb(250, 206, 62);
+    text-decoration: underline;
     text-decoration-color: rgb(250, 206, 62);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1325,7 +1325,7 @@ body {
       monospace;
     font-weight: 400;
     outline: rgb(160, 160, 160) none 0px;
-    text-decoration: rgb(160, 160, 160);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(160, 160, 160);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1355,7 +1355,7 @@ body {
       monospace;
     font-weight: 600;
     outline: rgb(255, 255, 255) none 0px;
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1385,7 +1385,7 @@ body {
       monospace;
     font-weight: 600;
     outline: rgb(255, 255, 255) none 0px;
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1415,7 +1415,7 @@ body {
       monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1445,7 +1445,7 @@ body {
       monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1474,7 +1474,7 @@ body {
       monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: rgb(255, 255, 255);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1512,7 +1512,7 @@ body {
       monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
-    text-decoration: line-through rgb(255, 255, 255);
+    text-decoration: line-through;
     text-decoration-color: rgb(255, 255, 255);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -1772,7 +1772,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(160, 160, 160);
-    text-decoration: line-through rgb(160, 160, 160);
+    text-decoration: line-through;
     text-decoration-color: rgb(160, 160, 160);
   }
 
@@ -1791,7 +1791,7 @@ body {
 
   .data-footnote-backref {
     color: rgb(112, 112, 112);
-    text-decoration: rgb(112, 112, 112);
+    text-decoration: underline rgb(166, 138, 249);
   }
 
   .search > .search-button {
@@ -1855,7 +1855,7 @@ body {
       monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2754,115 +2754,115 @@ body {
   abbr {
     color: rgb(255, 255, 255);
     cursor: auto;
-    text-decoration: underline dotted rgb(255, 255, 255);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
   li.task-list-item[data-task="-"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(255, 255, 255);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(255, 255, 255);
   }
 
@@ -2937,7 +2937,7 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 400;
-    text-decoration: rgb(160, 160, 160);
+    text-decoration: rgb(218, 218, 218);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -2947,7 +2947,7 @@ body {
       Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
       monospace;
     font-weight: 400;
-    text-decoration: rgb(160, 160, 160);
+    text-decoration: rgb(218, 218, 218);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -2977,7 +2977,6 @@ body {
 
   footer ul li a {
     color: rgb(160, 160, 160);
-    text-decoration: rgb(160, 160, 160);
   }
 
   .recent-notes > h3 {
@@ -3001,7 +3000,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: rgb(160, 160, 160);
-    text-decoration: rgb(160, 160, 160);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3033,7 +3031,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: rgb(160, 160, 160);
-    text-decoration: rgb(160, 160, 160);
   }
 
   li.section-li > .section .meta {

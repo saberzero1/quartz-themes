@@ -170,7 +170,6 @@ html[saved-theme="dark"] body div#quartz-root {
   color: rgba(0, 0, 0, 0);
   font-weight: 700;
   outline: rgba(0, 0, 0, 0) none 0px;
-  text-decoration: rgba(0, 0, 0, 0);
   text-decoration-color: rgba(0, 0, 0, 0);
 }
 
@@ -178,7 +177,6 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
   color: color(srgb 0.586288 0.42472 0.96328);
   font-family: Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif;
   outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
-  text-decoration: color(srgb 0.586288 0.42472 0.96328);
   text-decoration-color: color(srgb 0.586288 0.42472 0.96328);
 }
 
@@ -186,7 +184,6 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: color(srgb 0.586288 0.42472 0.96328);
   font-family: Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif;
   outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
-  text-decoration: color(srgb 0.586288 0.42472 0.96328);
   text-decoration-color: color(srgb 0.586288 0.42472 0.96328);
 }
 
@@ -194,7 +191,6 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
   color: rgba(0, 0, 0, 0);
   font-weight: 700;
   outline: rgba(0, 0, 0, 0) none 0px;
-  text-decoration: rgba(0, 0, 0, 0);
   text-decoration-color: rgba(0, 0, 0, 0);
 }
 
@@ -207,7 +203,6 @@ html[saved-theme="dark"] body p {
   animation-name: unhoverFill;
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
   transition: background 0.35s ease-in-out;
 }
@@ -219,7 +214,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   color: rgb(255, 255, 255);
   font-weight: 700;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -230,7 +224,6 @@ html[saved-theme="dark"] body a.internal.broken {
   color: rgb(255, 255, 255);
   font-weight: 700;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }`,
     tables: `html[saved-theme="dark"] body td {
@@ -1035,7 +1028,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   color: rgba(0, 0, 0, 0);
   font-weight: 700;
   outline: rgba(0, 0, 0, 0) none 0px;
-  text-decoration: rgba(0, 0, 0, 0);
   text-decoration-color: rgba(0, 0, 0, 0);
 }
 
@@ -1043,7 +1035,6 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
   color: color(srgb 0.586288 0.42472 0.96328);
   font-family: Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif;
   outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
-  text-decoration: color(srgb 0.586288 0.42472 0.96328);
   text-decoration-color: color(srgb 0.586288 0.42472 0.96328);
 }
 
@@ -1051,7 +1042,6 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
   color: color(srgb 0.586288 0.42472 0.96328);
   font-family: Rubik, "Segoe UI", Roboto, Arial, sans-serif, sans-serif;
   outline: color(srgb 0.586288 0.42472 0.96328) none 0px;
-  text-decoration: color(srgb 0.586288 0.42472 0.96328);
   text-decoration-color: color(srgb 0.586288 0.42472 0.96328);
 }
 
@@ -1059,7 +1049,6 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
   color: rgba(0, 0, 0, 0);
   font-weight: 700;
   outline: rgba(0, 0, 0, 0) none 0px;
-  text-decoration: rgba(0, 0, 0, 0);
   text-decoration-color: rgba(0, 0, 0, 0);
 }
 
@@ -1072,7 +1061,6 @@ html[saved-theme="light"] body p {
   animation-name: unhoverFill;
   color: rgb(17, 17, 17);
   outline: rgb(17, 17, 17) none 0px;
-  text-decoration: rgb(17, 17, 17);
   text-decoration-color: rgb(17, 17, 17);
   transition: background 0.35s ease-in-out;
 }
@@ -1084,7 +1072,6 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
   color: rgb(17, 17, 17);
   font-weight: 700;
   outline: rgb(17, 17, 17) none 0px;
-  text-decoration: rgb(17, 17, 17);
   text-decoration-color: rgb(17, 17, 17);
 }
 
@@ -1095,7 +1082,6 @@ html[saved-theme="light"] body a.internal.broken {
   color: rgb(17, 17, 17);
   font-weight: 700;
   outline: rgb(17, 17, 17) none 0px;
-  text-decoration: rgb(17, 17, 17);
   text-decoration-color: rgb(17, 17, 17);
 }`,
     tables: `html[saved-theme="light"] body td {
