@@ -211,9 +211,23 @@ function transformCheckboxCSS(css: string, iconFonts: string[]): string {
     return base + "\n\n" + transformed;
   }
 
+  const nonAfterSelectors = new Set<string>();
+  const selectorPattern = /([^\n{}]+input\[type=["']?checkbox["']?\])\s*\{/g;
+  for (const match of css.matchAll(selectorPattern)) {
+    const sel = match[1]?.trim();
+    if (sel && !sel.includes("::after")) {
+      nonAfterSelectors.add(sel);
+    }
+  }
+
   let transformed = css.replace(
-    /(input\[type=["']?checkbox["']?\])::after/g,
-    "$1",
+    /([^\n{}]+input\[type=["']?checkbox["']?\])::after\s*\{[^}]*\}/g,
+    (block, baseSel) => {
+      if (nonAfterSelectors.has(baseSel.trim())) {
+        return "";
+      }
+      return block.replace("::after", "");
+    },
   );
 
   transformed = transformed.replace(/^\s*content:\s*""\s*;?\s*$/gm, "");
