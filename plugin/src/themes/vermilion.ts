@@ -192,21 +192,18 @@ html[saved-theme="dark"] body div#quartz-root {
   color: rgb(227, 66, 52);
   font-weight: 400;
   outline: rgb(227, 66, 52) none 0px;
-  text-decoration: rgb(227, 66, 52);
   text-decoration-color: rgb(227, 66, 52);
 }
 
 html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(144, 144, 144);
   outline: rgb(144, 144, 144) none 0px;
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(144, 144, 144);
   outline: rgb(144, 144, 144) none 0px;
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
@@ -214,35 +211,30 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
   color: rgb(227, 66, 52);
   font-weight: 400;
   outline: rgb(227, 66, 52) none 0px;
-  text-decoration: rgb(227, 66, 52);
   text-decoration-color: rgb(227, 66, 52);
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: oklab(0.612855 0.174666 0.0973952 / 0.3);
+  background-color: oklab(0.612904 0.174681 0.0974053 / 0.3);
   color: rgb(244, 246, 240);
   outline: rgb(244, 246, 240) none 0px;
-  text-decoration: rgb(244, 246, 240);
   text-decoration-color: rgb(244, 246, 240);
 }
 
 html[saved-theme="dark"] body del {
   color: rgb(144, 144, 144);
   outline: rgb(144, 144, 144) none 0px;
-  text-decoration: line-through rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(85, 144, 217);
   outline: rgb(85, 144, 217) none 0px;
-  text-decoration: underline rgb(85, 144, 217);
   text-decoration-color: rgb(85, 144, 217);
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(85, 144, 217);
   outline: rgb(85, 144, 217) none 0px;
-  text-decoration: underline rgb(85, 144, 217);
   text-decoration-color: rgb(85, 144, 217);
 }
 
@@ -280,7 +272,7 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(144, 144, 144);
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
-  background-color: oklab(0.653293 0.0000298917 0.0000130534 / 0.03);
+  background-color: oklab(0.653347 0.0000296831 0.0000130534 / 0.03);
   font-style: italic;
   padding-bottom: 16px;
   padding-top: 16px;
@@ -312,7 +304,7 @@ html[saved-theme="dark"] body th {
 }
 
 html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: oklab(0.653293 0.0000298917 0.0000130534 / 0.06);
+  background-color: oklab(0.653347 0.0000296831 0.0000130534 / 0.06);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -320,7 +312,7 @@ html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
 }
 
 html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: oklab(0.653293 0.0000298917 0.0000130534 / 0.06);
+  background-color: oklab(0.653347 0.0000296831 0.0000130534 / 0.06);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -329,7 +321,7 @@ html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-reh
 }
 
 html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: oklab(0.653293 0.0000298917 0.0000130534 / 0.06);
+  background-color: oklab(0.653347 0.0000296831 0.0000130534 / 0.06);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -337,7 +329,7 @@ html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> cod
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: oklab(0.653293 0.0000298917 0.0000130534 / 0.06);
+  background-color: oklab(0.653347 0.0000296831 0.0000130534 / 0.06);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -395,9 +387,8 @@ html[saved-theme="dark"] body .transclude-inner {
   border-top-color: rgb(144, 144, 144);
 }`,
     checkboxes: `html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: oklab(0.653293 0.0000298917 0.0000130534 / 0.6);
-  text-decoration: line-through oklab(0.653293 0.0000298917 0.0000130534 / 0.6);
-  text-decoration-color: oklab(0.653293 0.0000298917 0.0000130534 / 0.6);
+  color: oklab(0.653347 0.0000296831 0.0000130534 / 0.6);
+  text-decoration-color: oklab(0.653347 0.0000296831 0.0000130534 / 0.6);
 }
 
 html[saved-theme="dark"] body input[type=checkbox] {
@@ -409,109 +400,91 @@ html[saved-theme="dark"] body input[type=checkbox] {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
@@ -959,7 +932,6 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(144, 144, 144);
   outline: rgb(144, 144, 144) none 0px;
-  text-decoration: rgb(144, 144, 144);
   text-decoration-color: rgb(144, 144, 144);
 }
 
@@ -1002,7 +974,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
-  background-color: oklab(0.653293 0.0000298917 0.0000130534 / 0.08);
+  background-color: oklab(0.653347 0.0000296831 0.0000130534 / 0.08);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-top-left-radius: 4px;
@@ -1108,16 +1080,16 @@ html[saved-theme="dark"] body ul.section-ul {
   border-top-color: rgb(144, 144, 144);
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
-  border-bottom-color: oklab(0.612855 0.174666 0.0973952 / 0.7);
-  border-left-color: oklab(0.612855 0.174666 0.0973952 / 0.7);
-  border-right-color: oklab(0.612855 0.174666 0.0973952 / 0.7);
-  border-top-color: oklab(0.612855 0.174666 0.0973952 / 0.7);
-  color: oklab(0.612855 0.174666 0.0973952 / 0.7);
+  border-bottom-color: oklab(0.612904 0.174681 0.0974053 / 0.7);
+  border-left-color: oklab(0.612904 0.174681 0.0974053 / 0.7);
+  border-right-color: oklab(0.612904 0.174681 0.0974053 / 0.7);
+  border-top-color: oklab(0.612904 0.174681 0.0974053 / 0.7);
+  color: oklab(0.612904 0.174681 0.0974053 / 0.7);
 }
 
 html[saved-theme="dark"] body .darkmode svg {
-  color: oklab(0.612855 0.174666 0.0973952 / 0.7);
-  stroke: oklab(0.612855 0.174666 0.0973952 / 0.7);
+  color: oklab(0.612904 0.174681 0.0974053 / 0.7);
+  stroke: oklab(0.612904 0.174681 0.0974053 / 0.7);
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(144, 144, 144);
@@ -1128,7 +1100,7 @@ html[saved-theme="dark"] body .darkmode svg {
 }
 
 html[saved-theme="dark"] body .metadata {
-  background-color: oklab(0.653293 0.0000298917 0.0000130534 / 0.03);
+  background-color: oklab(0.653347 0.0000296831 0.0000130534 / 0.03);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -1150,7 +1122,6 @@ html[saved-theme="dark"] body .page-header h2.page-title {
 
 html[saved-theme="dark"] body abbr {
   color: rgb(144, 144, 144);
-  text-decoration: underline dotted rgb(144, 144, 144);
 }
 
 html[saved-theme="dark"] body details {

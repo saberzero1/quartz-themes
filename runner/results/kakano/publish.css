@@ -4589,7 +4589,7 @@ body body.theme-light .markdown-rendered a.external-link {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: rgb(138, 92, 245) none 0px;
-  text-decoration: underline 1px rgb(138, 92, 245);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4620,7 +4620,7 @@ body body.theme-light .markdown-rendered a.internal-link {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: rgb(138, 92, 245) none 0px;
-  text-decoration: underline 1px rgb(138, 92, 245);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4695,7 +4695,7 @@ body body.theme-light .markdown-rendered p {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: color(srgb 0.01485 0.039975 0.07515 / 0.7) none 0px;
-  text-decoration: color(srgb 0.01485 0.039975 0.07515 / 0.7);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515 / 0.7);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4725,7 +4725,7 @@ body body.theme-light strong {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 600;
   outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4755,7 +4755,7 @@ body body.theme-light b {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 600;
   outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4785,7 +4785,7 @@ body body.theme-light em {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4815,7 +4815,7 @@ body body.theme-light i {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4845,7 +4845,7 @@ body body.theme-light .markdown-rendered mark {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4875,7 +4875,7 @@ body body.theme-light del {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-  text-decoration: line-through color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: line-through;
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -5094,7 +5094,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: color(srgb 0.01485 0.039975 0.07515 / 0.7);
-  text-decoration: line-through color(srgb 0.01485 0.039975 0.07515 / 0.7);
+  text-decoration: line-through;
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515 / 0.7);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -5113,7 +5113,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: color(srgb 0.04455 0.119925 0.22545);
-  text-decoration: color(srgb 0.04455 0.119925 0.22545);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: color(srgb 0.1485 0.39975 0.7515 / 0.12);
@@ -5165,7 +5165,7 @@ body body.theme-light .search-results > * {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5904,97 +5904,97 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: color(srgb 0.01485 0.039975 0.07515);
   cursor: auto;
-  text-decoration: underline dotted color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: color(srgb 0.01485 0.039975 0.07515);
-  text-decoration: color(srgb 0.01485 0.039975 0.07515);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -6073,7 +6073,7 @@ body
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
-  text-decoration: color(srgb 0.04455 0.119925 0.22545);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -6091,7 +6091,7 @@ body
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
-  text-decoration: color(srgb 0.04455 0.119925 0.22545);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -6120,7 +6120,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: color(srgb 0.04455 0.119925 0.22545);
-  text-decoration: color(srgb 0.04455 0.119925 0.22545);
 }
 body body.theme-light .nav-header {
   color: color(srgb 0.01485 0.039975 0.07515);
@@ -6143,7 +6142,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: color(srgb 0.0297 0.07995 0.1503);
-  text-decoration: color(srgb 0.0297 0.07995 0.1503);
 }
 body body.theme-light .nav-file-title-content {
   color: color(srgb 0.0297 0.07995 0.1503);
@@ -6312,7 +6310,7 @@ body body.theme-dark .markdown-rendered a.external-link {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: rgb(166, 138, 249) none 0px;
-  text-decoration: underline 1px rgb(166, 138, 249);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(166, 138, 249);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -6343,7 +6341,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: rgb(166, 138, 249) none 0px;
-  text-decoration: underline 1px rgb(166, 138, 249);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(166, 138, 249);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -6418,7 +6416,7 @@ body body.theme-dark .markdown-rendered p {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: color(srgb 0.6594 0.7599 0.9006 / 0.7) none 0px;
-  text-decoration: color(srgb 0.6594 0.7599 0.9006 / 0.7);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006 / 0.7);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -6448,7 +6446,7 @@ body body.theme-dark strong {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 600;
   outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -6478,7 +6476,7 @@ body body.theme-dark b {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 600;
   outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -6508,7 +6506,7 @@ body body.theme-dark em {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -6538,7 +6536,7 @@ body body.theme-dark i {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -6568,7 +6566,7 @@ body body.theme-dark .markdown-rendered mark {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -6598,7 +6596,7 @@ body body.theme-dark del {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-  text-decoration: line-through color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: line-through;
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -6817,7 +6815,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: color(srgb 0.6594 0.7599 0.9006 / 0.7);
-  text-decoration: line-through color(srgb 0.6594 0.7599 0.9006 / 0.7);
+  text-decoration: line-through;
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006 / 0.7);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -6836,7 +6834,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: color(srgb 0.361375 0.549813 0.813625);
-  text-decoration: color(srgb 0.361375 0.549813 0.813625);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: color(srgb 0 0 0 / 0.06);
@@ -6888,7 +6886,7 @@ body body.theme-dark .search-results > * {
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -7627,97 +7625,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: color(srgb 0.6594 0.7599 0.9006);
   cursor: auto;
-  text-decoration: underline dotted color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -7796,7 +7794,7 @@ body
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
-  text-decoration: color(srgb 0.361375 0.549813 0.813625);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -7814,7 +7812,7 @@ body
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
-  text-decoration: color(srgb 0.361375 0.549813 0.813625);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -7843,7 +7841,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark .nav-header {
   color: color(srgb 0.6594 0.7599 0.9006);
@@ -7866,7 +7863,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: color(srgb 0.6594 0.7599 0.9006);
-  text-decoration: color(srgb 0.6594 0.7599 0.9006);
 }
 body body.theme-dark .nav-file-title-content {
   color: color(srgb 0.6594 0.7599 0.9006);

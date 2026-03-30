@@ -2869,7 +2869,7 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
     outline: rgb(138, 92, 245) none 0px;
-    text-decoration: underline rgb(138, 92, 245);
+    text-decoration: underline;
     text-decoration-color: rgb(138, 92, 245);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2897,7 +2897,7 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
     outline: rgb(138, 92, 245) none 0px;
-    text-decoration: underline rgb(138, 92, 245);
+    text-decoration: underline;
     text-decoration-color: rgb(138, 92, 245);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2968,7 +2968,7 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
     outline: color(srgb 0.300178 0.200444 0.532889 / 0.9) none 0px;
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2996,7 +2996,7 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-weight: 600;
     outline: color(srgb 0.432256 0.28864 0.76736) none 0px;
-    text-decoration: color(srgb 0.432256 0.28864 0.76736);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.432256 0.28864 0.76736);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3024,7 +3024,7 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-weight: 600;
     outline: color(srgb 0.432256 0.28864 0.76736) none 0px;
-    text-decoration: color(srgb 0.432256 0.28864 0.76736);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.432256 0.28864 0.76736);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3052,7 +3052,7 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
     outline: color(srgb 0.40524 0.2706 0.7194 / 0.8) none 0px;
-    text-decoration: color(srgb 0.40524 0.2706 0.7194 / 0.8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3080,7 +3080,7 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
     outline: color(srgb 0.40524 0.2706 0.7194 / 0.8) none 0px;
-    text-decoration: color(srgb 0.40524 0.2706 0.7194 / 0.8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3107,7 +3107,7 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
     outline: color(srgb 0.300178 0.200444 0.532889 / 0.9) none 0px;
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3143,7 +3143,7 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
     outline: color(srgb 0.300178 0.200444 0.532889 / 0.9) none 0px;
-    text-decoration: line-through color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: line-through;
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -3402,7 +3402,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: line-through color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: line-through;
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
@@ -3419,7 +3419,7 @@ body {
 
   .data-footnote-backref {
     color: rgb(138, 92, 245);
-    text-decoration: rgb(138, 92, 245);
+    text-decoration: underline rgb(138, 92, 245);
   }
 
   .search > .search-button {
@@ -3479,7 +3479,7 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
     outline: color(srgb 0.300178 0.200444 0.532889 / 0.9) none 0px;
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4369,116 +4369,115 @@ body {
   abbr {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
     cursor: auto;
-    text-decoration: underline dotted
-      color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
   li.task-list-item[data-task="-"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task=">"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="/"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="?"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="!"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="*"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="l"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="b"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="i"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="S"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="I"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="p"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="c"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="f"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="k"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="u"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="d"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.task-list-item[data-task="w"] {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
@@ -4547,7 +4546,7 @@ body {
     cursor: default;
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -4555,7 +4554,7 @@ body {
     cursor: default;
     font-family: "JetBrains Mono", monospace;
     font-weight: 400;
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -4585,7 +4584,6 @@ body {
 
   footer ul li a {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   .recent-notes > h3 {
@@ -4607,7 +4605,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4637,7 +4634,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-    text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   }
 
   li.section-li > .section .meta {
@@ -5482,7 +5478,7 @@ html[saved-theme="dark"] {
       font-family: "JetBrains Mono", monospace;
       font-weight: 400;
       outline: rgb(166, 138, 249) none 0px;
-      text-decoration: underline rgb(166, 138, 249);
+      text-decoration: underline;
       text-decoration-color: rgb(166, 138, 249);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -5510,7 +5506,7 @@ html[saved-theme="dark"] {
       font-family: "JetBrains Mono", monospace;
       font-weight: 400;
       outline: rgb(166, 138, 249) none 0px;
-      text-decoration: underline rgb(166, 138, 249);
+      text-decoration: underline;
       text-decoration-color: rgb(166, 138, 249);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -5581,7 +5577,7 @@ html[saved-theme="dark"] {
       font-family: "JetBrains Mono", monospace;
       font-weight: 400;
       outline: color(srgb 0.862096 0.80824 0.98776) none 0px;
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5609,7 +5605,7 @@ html[saved-theme="dark"] {
       font-family: "JetBrains Mono", monospace;
       font-weight: 600;
       outline: color(srgb 0.632256 0.48864 0.96736) none 0px;
-      text-decoration: color(srgb 0.632256 0.48864 0.96736);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.632256 0.48864 0.96736);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5637,7 +5633,7 @@ html[saved-theme="dark"] {
       font-family: "JetBrains Mono", monospace;
       font-weight: 600;
       outline: color(srgb 0.632256 0.48864 0.96736) none 0px;
-      text-decoration: color(srgb 0.632256 0.48864 0.96736);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.632256 0.48864 0.96736);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5665,7 +5661,7 @@ html[saved-theme="dark"] {
       font-family: "JetBrains Mono", monospace;
       font-weight: 400;
       outline: color(srgb 0.65524 0.5206 0.9694 / 0.8) none 0px;
-      text-decoration: color(srgb 0.65524 0.5206 0.9694 / 0.8);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5693,7 +5689,7 @@ html[saved-theme="dark"] {
       font-family: "JetBrains Mono", monospace;
       font-weight: 400;
       outline: color(srgb 0.65524 0.5206 0.9694 / 0.8) none 0px;
-      text-decoration: color(srgb 0.65524 0.5206 0.9694 / 0.8);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5720,7 +5716,7 @@ html[saved-theme="dark"] {
       font-family: "JetBrains Mono", monospace;
       font-weight: 400;
       outline: color(srgb 0.862096 0.80824 0.98776) none 0px;
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(0, 0, 0);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5756,7 +5752,7 @@ html[saved-theme="dark"] {
       font-family: "JetBrains Mono", monospace;
       font-weight: 400;
       outline: color(srgb 0.862096 0.80824 0.98776) none 0px;
-      text-decoration: line-through color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: line-through;
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
       text-decoration-line: line-through;
       text-decoration-style: solid;
@@ -6015,7 +6011,7 @@ html[saved-theme="dark"] {
 
     .page article li:has(> input[type="checkbox"]:checked) {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: line-through color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: line-through;
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
@@ -6032,7 +6028,7 @@ html[saved-theme="dark"] {
 
     .data-footnote-backref {
       color: rgb(138, 92, 245);
-      text-decoration: rgb(138, 92, 245);
+      text-decoration: underline rgb(166, 138, 249);
     }
 
     .search > .search-button {
@@ -6092,7 +6088,7 @@ html[saved-theme="dark"] {
       font-family: "JetBrains Mono", monospace;
       font-weight: 400;
       outline: color(srgb 0.862096 0.80824 0.98776) none 0px;
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -6987,115 +6983,115 @@ html[saved-theme="dark"] {
     abbr {
       color: color(srgb 0.862096 0.80824 0.98776);
       cursor: auto;
-      text-decoration: underline dotted color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: underline dotted;
       text-decoration-style: dotted;
     }
 
     li.task-list-item[data-task="-"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task=">"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="/"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="?"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="!"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="*"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="l"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="b"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="i"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="S"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="I"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="p"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="c"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="f"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="k"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="u"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="d"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.task-list-item[data-task="w"] {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
     }
 
@@ -7164,7 +7160,7 @@ html[saved-theme="dark"] {
       cursor: default;
       font-family: "JetBrains Mono", monospace;
       font-weight: 400;
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .explorer
@@ -7175,7 +7171,7 @@ html[saved-theme="dark"] {
       cursor: default;
       font-family: "JetBrains Mono", monospace;
       font-weight: 400;
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .graph > .graph-outer > .global-graph-icon {
@@ -7205,7 +7201,6 @@ html[saved-theme="dark"] {
 
     footer ul li a {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
     }
 
     .recent-notes > h3 {
@@ -7227,7 +7222,6 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -7257,7 +7251,6 @@ html[saved-theme="dark"] {
 
     li.section-li > .section > .desc > h3 > a {
       color: color(srgb 0.862096 0.80824 0.98776);
-      text-decoration: color(srgb 0.862096 0.80824 0.98776);
     }
 
     li.section-li > .section .meta {

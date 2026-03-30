@@ -1490,7 +1490,7 @@ body body.theme-dark .markdown-rendered p {
   font-family: "Fira Code", monospace;
   font-weight: 400;
   outline: rgb(179, 179, 179) none 0px;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(179, 179, 179);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1620,7 +1620,7 @@ body body.theme-dark .markdown-rendered mark {
   font-family: "Fira Code", monospace;
   font-weight: 400;
   outline: rgb(17, 17, 19) none 0px;
-  text-decoration: rgb(17, 17, 19);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(17, 17, 19);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1646,7 +1646,7 @@ body body.theme-dark del {
   font-family: "Fira Code", monospace;
   font-weight: 400;
   outline: rgb(218, 218, 218) none 0px;
-  text-decoration: line-through rgb(218, 218, 218);
+  text-decoration: line-through;
   text-decoration-color: rgb(218, 218, 218);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -1873,7 +1873,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgb(179, 179, 179);
-  text-decoration: line-through rgb(179, 179, 179);
+  text-decoration: line-through;
   text-decoration-color: rgb(179, 179, 179);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -2642,97 +2642,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(218, 231, 246);
   cursor: auto;
-  text-decoration: underline dotted rgb(218, 231, 246);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 231, 246);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -2799,7 +2799,7 @@ body
   cursor: default;
   font-family: "Fira Code", monospace;
   font-weight: 400;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -2813,7 +2813,7 @@ body
   cursor: default;
   font-family: "Fira Code", monospace;
   font-weight: 400;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -2840,7 +2840,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgb(134, 152, 172);
-  text-decoration: rgb(134, 152, 172);
 }
 body body.theme-dark .nav-header {
   color: rgb(218, 218, 218);
@@ -2859,7 +2858,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgb(134, 152, 172);
-  text-decoration: rgb(134, 152, 172);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(134, 152, 172);

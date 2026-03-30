@@ -189,55 +189,48 @@ html body div#quartz-root {
     typography: `html body .page article p > b, html b {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .page article p > em, html em {
   color: rgb(221, 221, 221);
   outline: rgb(221, 221, 221) none 0px;
-  text-decoration: rgb(221, 221, 221);
   text-decoration-color: rgb(221, 221, 221);
 }
 
 html body .page article p > i, html i {
   color: rgb(221, 221, 221);
   outline: rgb(221, 221, 221) none 0px;
-  text-decoration: rgb(221, 221, 221);
   text-decoration-color: rgb(221, 221, 221);
 }
 
 html body .page article p > strong, html strong {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html body .text-highlight {
   color: rgb(238, 238, 238);
   outline: rgb(238, 238, 238) none 0px;
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body del {
   color: rgb(238, 238, 238);
   outline: rgb(238, 238, 238) none 0px;
-  text-decoration: line-through rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body p {
   color: rgb(204, 204, 204);
   outline: rgb(204, 204, 204) none 0px;
-  text-decoration: rgb(204, 204, 204);
   text-decoration-color: rgb(204, 204, 204);
 }`,
     links: `html body a.external, html footer a {
   color: rgb(86, 130, 3);
   outline: rgb(86, 130, 3) none 0px;
-  text-decoration: underline 1px rgb(86, 130, 3);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(86, 130, 3);
   text-decoration-thickness: 1px;
 }
@@ -245,7 +238,7 @@ html body p {
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(172, 225, 175);
   outline: rgb(172, 225, 175) none 0px;
-  text-decoration: underline 1px rgb(172, 225, 175);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(172, 225, 175);
   text-decoration-thickness: 1px;
 }
@@ -287,7 +280,6 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(204, 204, 204);
-  text-decoration: rgb(204, 204, 204);
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(238, 238, 238);
@@ -398,7 +390,6 @@ html body .transclude-inner {
 }`,
     checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(204, 204, 204);
-  text-decoration: line-through rgb(204, 204, 204);
   text-decoration-color: rgb(204, 204, 204);
 }
 
@@ -411,109 +402,91 @@ html body input[type=checkbox] {
 
 html body li.task-list-item[data-task='!'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(238, 238, 238);
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
@@ -871,7 +844,6 @@ html body .search > .search-container > .search-space {
 html body .search > .search-container > .search-space > * {
   color: rgb(238, 238, 238);
   outline: rgb(238, 238, 238) none 0px;
-  text-decoration: rgb(238, 238, 238);
   text-decoration-color: rgb(238, 238, 238);
 }
 
@@ -980,13 +952,11 @@ html body ::-webkit-scrollbar-track {
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(204, 204, 204);
   font-weight: 500;
-  text-decoration: rgb(204, 204, 204);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(204, 204, 204);
   font-weight: 500;
-  text-decoration: rgb(204, 204, 204);
 }`,
     toc: `html body li.depth-0 {
   font-weight: 500;
@@ -1005,7 +975,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(204, 204, 204);
-  text-decoration: rgb(204, 204, 204);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(238, 238, 238);
@@ -1021,7 +990,6 @@ html body .recent-notes > ul.recent-ul > li {
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(204, 204, 204);
-  text-decoration: rgb(204, 204, 204);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1040,7 +1008,6 @@ html body li.section-li > .section .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(204, 204, 204);
-  text-decoration: rgb(204, 204, 204);
 }
 
 html body ul.section-ul {
@@ -1102,7 +1069,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(238, 238, 238);
-  text-decoration: underline dotted rgb(238, 238, 238);
 }
 
 html body details {

@@ -199,7 +199,6 @@ html[saved-theme="dark"] body div#quartz-root {
   color: color(srgb 0.632256 0.48864 0.96736);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.632256 0.48864 0.96736) none 0px;
-  text-decoration: color(srgb 0.632256 0.48864 0.96736);
   text-decoration-color: color(srgb 0.632256 0.48864 0.96736);
 }
 
@@ -207,7 +206,6 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
   color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.65524 0.5206 0.9694 / 0.8) none 0px;
-  text-decoration: color(srgb 0.65524 0.5206 0.9694 / 0.8);
   text-decoration-color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
 }
 
@@ -215,7 +213,6 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.65524 0.5206 0.9694 / 0.8) none 0px;
-  text-decoration: color(srgb 0.65524 0.5206 0.9694 / 0.8);
   text-decoration-color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
 }
 
@@ -223,7 +220,6 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
   color: color(srgb 0.632256 0.48864 0.96736);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.632256 0.48864 0.96736) none 0px;
-  text-decoration: color(srgb 0.632256 0.48864 0.96736);
   text-decoration-color: color(srgb 0.632256 0.48864 0.96736);
 }
 
@@ -232,7 +228,6 @@ html[saved-theme="dark"] body .text-highlight {
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.862096 0.80824 0.98776) none 0px;
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
@@ -240,7 +235,6 @@ html[saved-theme="dark"] body del {
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.862096 0.80824 0.98776) none 0px;
-  text-decoration: line-through color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
@@ -248,7 +242,6 @@ html[saved-theme="dark"] body p {
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.862096 0.80824 0.98776) none 0px;
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
@@ -301,7 +294,6 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(138, 92, 245);
-  text-decoration: rgb(138, 92, 245);
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -438,7 +430,6 @@ html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: line-through color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
@@ -455,109 +446,91 @@ html[saved-theme="dark"] body input[type=checkbox] {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
@@ -1129,7 +1102,6 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.862096 0.80824 0.98776) none 0px;
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }
 
@@ -1272,13 +1244,11 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
@@ -1295,7 +1265,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 
 html[saved-theme="dark"] body footer ul li a {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: color(srgb 0.862096 0.80824 0.98776);
@@ -1312,7 +1281,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1333,7 +1301,6 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -1399,7 +1366,6 @@ html[saved-theme="dark"] body .page-header h2.page-title {
 
 html[saved-theme="dark"] body abbr {
   color: color(srgb 0.862096 0.80824 0.98776);
-  text-decoration: underline dotted color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body details {
@@ -1644,7 +1610,6 @@ html[saved-theme="light"] body div#quartz-root {
   color: color(srgb 0.432256 0.28864 0.76736);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.432256 0.28864 0.76736) none 0px;
-  text-decoration: color(srgb 0.432256 0.28864 0.76736);
   text-decoration-color: color(srgb 0.432256 0.28864 0.76736);
 }
 
@@ -1652,7 +1617,6 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
   color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.40524 0.2706 0.7194 / 0.8) none 0px;
-  text-decoration: color(srgb 0.40524 0.2706 0.7194 / 0.8);
   text-decoration-color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
 }
 
@@ -1660,7 +1624,6 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
   color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.40524 0.2706 0.7194 / 0.8) none 0px;
-  text-decoration: color(srgb 0.40524 0.2706 0.7194 / 0.8);
   text-decoration-color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
 }
 
@@ -1668,7 +1631,6 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
   color: color(srgb 0.432256 0.28864 0.76736);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.432256 0.28864 0.76736) none 0px;
-  text-decoration: color(srgb 0.432256 0.28864 0.76736);
   text-decoration-color: color(srgb 0.432256 0.28864 0.76736);
 }
 
@@ -1677,7 +1639,6 @@ html[saved-theme="light"] body .text-highlight {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.300178 0.200444 0.532889 / 0.9) none 0px;
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
@@ -1685,7 +1646,6 @@ html[saved-theme="light"] body del {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.300178 0.200444 0.532889 / 0.9) none 0px;
-  text-decoration: line-through color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
@@ -1693,7 +1653,6 @@ html[saved-theme="light"] body p {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.300178 0.200444 0.532889 / 0.9) none 0px;
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
@@ -1746,7 +1705,6 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(138, 92, 245);
-  text-decoration: rgb(138, 92, 245);
 }
 
 html[saved-theme="light"] body blockquote {
@@ -1883,7 +1841,6 @@ html[saved-theme="light"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: line-through color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
@@ -1900,109 +1857,91 @@ html[saved-theme="light"] body input[type=checkbox] {
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
@@ -2574,7 +2513,6 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.300178 0.200444 0.532889 / 0.9) none 0px;
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
@@ -2717,13 +2655,11 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
@@ -2740,7 +2676,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 
 html[saved-theme="light"] body footer ul li a {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
@@ -2757,7 +2692,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2778,7 +2712,6 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -2844,7 +2777,6 @@ html[saved-theme="light"] body .page-header h2.page-title {
 
 html[saved-theme="light"] body abbr {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  text-decoration: underline dotted color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body details {

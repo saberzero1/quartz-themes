@@ -143,21 +143,18 @@ html[saved-theme="dark"] body {
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(255, 135, 135);
   outline: rgb(255, 135, 135) none 0px;
-  text-decoration: underline rgb(255, 135, 135);
   text-decoration-color: rgb(255, 135, 135);
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 135, 135);
   outline: rgb(255, 135, 135) none 0px;
-  text-decoration: rgb(255, 135, 135);
   text-decoration-color: rgb(255, 135, 135);
 }
 
 html[saved-theme="dark"] body a.internal.broken {
   color: rgb(218, 218, 218);
   outline: rgb(218, 218, 218) none 0px;
-  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(218, 218, 218);
 }`,
     tables: `html[saved-theme="dark"] body td {
@@ -595,21 +592,18 @@ html[saved-theme="light"] body div#quartz-root {
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(255, 135, 135);
   outline: rgb(255, 135, 135) none 0px;
-  text-decoration: underline rgb(255, 135, 135);
   text-decoration-color: rgb(255, 135, 135);
 }
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 135, 135);
   outline: rgb(255, 135, 135) none 0px;
-  text-decoration: rgb(255, 135, 135);
   text-decoration-color: rgb(255, 135, 135);
 }
 
 html[saved-theme="light"] body a.internal.broken {
   color: rgb(34, 34, 34);
   outline: rgb(34, 34, 34) none 0px;
-  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(34, 34, 34);
 }`,
     tables: `html[saved-theme="light"] body td {

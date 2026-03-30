@@ -2167,7 +2167,7 @@ body body.theme-light .markdown-rendered a.external-link {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(233, 179, 92) none 0px;
-  text-decoration: underline rgb(233, 179, 92);
+  text-decoration: underline;
   text-decoration-color: rgb(233, 179, 92);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2193,7 +2193,7 @@ body body.theme-light .markdown-rendered a.internal-link {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(233, 179, 92) none 0px;
-  text-decoration: underline rgb(233, 179, 92);
+  text-decoration: underline;
   text-decoration-color: rgb(233, 179, 92);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2258,7 +2258,7 @@ body body.theme-light .markdown-rendered p {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgba(74, 52, 28, 0.9) none 0px;
-  text-decoration: rgba(74, 52, 28, 0.9);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgba(74, 52, 28, 0.9);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2284,7 +2284,7 @@ body body.theme-light strong {
   font-family: "iA Writer Quattro S";
   font-weight: 600;
   outline: rgb(240, 100, 119) none 0px;
-  text-decoration: rgb(240, 100, 119);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(240, 100, 119);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2310,7 +2310,7 @@ body body.theme-light b {
   font-family: "iA Writer Quattro S";
   font-weight: 600;
   outline: rgb(240, 100, 119) none 0px;
-  text-decoration: rgb(240, 100, 119);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(240, 100, 119);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2336,7 +2336,7 @@ body body.theme-light em {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(124, 155, 255) none 0px;
-  text-decoration: rgb(124, 155, 255);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(124, 155, 255);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2362,7 +2362,7 @@ body body.theme-light i {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(124, 155, 255) none 0px;
-  text-decoration: rgb(124, 155, 255);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(124, 155, 255);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2388,7 +2388,7 @@ body body.theme-light .markdown-rendered mark {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(74, 52, 28) none 0px;
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(74, 52, 28);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2414,7 +2414,7 @@ body body.theme-light del {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(74, 52, 28) none 0px;
-  text-decoration: line-through rgb(74, 52, 28);
+  text-decoration: line-through;
   text-decoration-color: rgb(74, 52, 28);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -2625,7 +2625,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: rgba(74, 52, 28, 0.9);
-  text-decoration: line-through rgba(74, 52, 28, 0.9);
+  text-decoration: line-through;
   text-decoration-color: rgba(74, 52, 28, 0.9);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -2640,7 +2640,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: rgba(74, 52, 28, 0.9);
-  text-decoration: rgba(74, 52, 28, 0.9);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: rgb(241, 230, 214);
@@ -2682,7 +2682,7 @@ body body.theme-light .search-results > * {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(74, 52, 28) none 0px;
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3378,97 +3378,97 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: rgb(74, 52, 28);
   cursor: auto;
-  text-decoration: underline dotted rgb(74, 52, 28);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(74, 52, 28);
-  text-decoration: rgb(74, 52, 28);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(74, 52, 28);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -3535,7 +3535,7 @@ body
   cursor: default;
   font-family: "iA Writer Quattro S";
   font-weight: 400;
-  text-decoration: rgba(74, 52, 28, 0.9);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -3549,7 +3549,7 @@ body
   cursor: default;
   font-family: "iA Writer Quattro S";
   font-weight: 400;
-  text-decoration: rgba(74, 52, 28, 0.9);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -3576,7 +3576,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: rgba(74, 52, 28, 0.9);
-  text-decoration: rgba(74, 52, 28, 0.9);
 }
 body body.theme-light .nav-header {
   color: rgb(74, 52, 28);
@@ -3595,7 +3594,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: rgba(74, 52, 28, 0.9);
-  text-decoration: rgba(74, 52, 28, 0.9);
 }
 body body.theme-light .nav-file-title-content {
   color: rgba(74, 52, 28, 0.9);
@@ -3748,7 +3746,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(112, 122, 250) none 0px;
-  text-decoration: underline rgb(112, 122, 250);
+  text-decoration: underline;
   text-decoration-color: rgb(112, 122, 250);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -3774,7 +3772,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(112, 122, 250) none 0px;
-  text-decoration: underline rgb(112, 122, 250);
+  text-decoration: underline;
   text-decoration-color: rgb(112, 122, 250);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -3839,7 +3837,7 @@ body body.theme-dark .markdown-rendered p {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgba(240, 240, 240, 0.7) none 0px;
-  text-decoration: rgba(240, 240, 240, 0.7);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgba(240, 240, 240, 0.7);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3865,7 +3863,7 @@ body body.theme-dark strong {
   font-family: "iA Writer Quattro S";
   font-weight: 600;
   outline: rgb(208, 66, 85) none 0px;
-  text-decoration: rgb(208, 66, 85);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(208, 66, 85);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3891,7 +3889,7 @@ body body.theme-dark b {
   font-family: "iA Writer Quattro S";
   font-weight: 600;
   outline: rgb(208, 66, 85) none 0px;
-  text-decoration: rgb(208, 66, 85);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(208, 66, 85);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3917,7 +3915,7 @@ body body.theme-dark em {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(112, 122, 250) none 0px;
-  text-decoration: rgb(112, 122, 250);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(112, 122, 250);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3943,7 +3941,7 @@ body body.theme-dark i {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(112, 122, 250) none 0px;
-  text-decoration: rgb(112, 122, 250);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(112, 122, 250);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3969,7 +3967,7 @@ body body.theme-dark .markdown-rendered mark {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(240, 240, 240) none 0px;
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(240, 240, 240);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3995,7 +3993,7 @@ body body.theme-dark del {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(240, 240, 240) none 0px;
-  text-decoration: line-through rgb(240, 240, 240);
+  text-decoration: line-through;
   text-decoration-color: rgb(240, 240, 240);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -4206,7 +4204,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgba(240, 240, 240, 0.7);
-  text-decoration: line-through rgba(240, 240, 240, 0.7);
+  text-decoration: line-through;
   text-decoration-color: rgba(240, 240, 240, 0.7);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -4221,7 +4219,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: rgba(240, 240, 240, 0.7);
-  text-decoration: rgba(240, 240, 240, 0.7);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgb(18, 18, 18);
@@ -4263,7 +4261,7 @@ body body.theme-dark .search-results > * {
   font-family: "iA Writer Quattro S";
   font-weight: 400;
   outline: rgb(240, 240, 240) none 0px;
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4959,97 +4957,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(240, 240, 240);
   cursor: auto;
-  text-decoration: underline dotted rgb(240, 240, 240);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(240, 240, 240);
-  text-decoration: rgb(240, 240, 240);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(240, 240, 240);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -5116,7 +5114,7 @@ body
   cursor: default;
   font-family: "iA Writer Quattro S";
   font-weight: 400;
-  text-decoration: rgba(240, 240, 240, 0.7);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -5130,7 +5128,7 @@ body
   cursor: default;
   font-family: "iA Writer Quattro S";
   font-weight: 400;
-  text-decoration: rgba(240, 240, 240, 0.7);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -5157,7 +5155,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgba(240, 240, 240, 0.7);
-  text-decoration: rgba(240, 240, 240, 0.7);
 }
 body body.theme-dark .nav-header {
   color: rgb(240, 240, 240);
@@ -5176,7 +5173,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgba(240, 240, 240, 0.7);
-  text-decoration: rgba(240, 240, 240, 0.7);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgba(240, 240, 240, 0.7);

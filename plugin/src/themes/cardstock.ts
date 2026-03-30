@@ -298,7 +298,6 @@ html[saved-theme="dark"] body div#quartz-root {
   color: rgb(255, 255, 255);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -306,7 +305,6 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
   color: rgb(255, 255, 255);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -314,7 +312,6 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(255, 255, 255);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -322,7 +319,6 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
   color: rgb(255, 255, 255);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -331,7 +327,6 @@ html[saved-theme="dark"] body .text-highlight {
   color: rgb(255, 255, 255);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -339,21 +334,18 @@ html[saved-theme="dark"] body del {
   color: rgb(255, 255, 255);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: line-through rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body p {
   color: rgb(240, 234, 226);
   outline: rgb(240, 234, 226) none 0px;
-  text-decoration: rgb(240, 234, 226);
   text-decoration-color: rgb(240, 234, 226);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(201, 84, 84);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(201, 84, 84) none 0px;
-  text-decoration: underline rgb(201, 84, 84);
   text-decoration-color: rgb(201, 84, 84);
 }
 
@@ -361,7 +353,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   color: rgb(201, 84, 84);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(201, 84, 84) none 0px;
-  text-decoration: underline rgb(201, 84, 84);
   text-decoration-color: rgb(201, 84, 84);
 }
 
@@ -369,7 +360,7 @@ html[saved-theme="dark"] body a.internal.broken {
   color: rgb(240, 234, 226);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(240, 234, 226) none 0px;
-  text-decoration: underline rgb(240, 234, 226);
+  text-decoration: underline;
   text-decoration-color: rgb(240, 234, 226);
 }`,
     lists: `html[saved-theme="dark"] body dd {
@@ -411,7 +402,6 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(148, 148, 148);
-  text-decoration: rgb(148, 148, 148);
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -597,7 +587,6 @@ html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(240, 234, 226);
-  text-decoration: line-through rgb(240, 234, 226);
   text-decoration-color: rgb(240, 234, 226);
 }
 
@@ -610,109 +599,91 @@ html[saved-theme="dark"] body input[type=checkbox] {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -1076,7 +1047,6 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(255, 255, 255);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -1220,12 +1190,10 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(240, 234, 226);
-  text-decoration: rgb(240, 234, 226);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(240, 234, 226);
-  text-decoration: rgb(240, 234, 226);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(240, 234, 226);
@@ -1245,7 +1213,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 
 html[saved-theme="dark"] body footer ul li a {
   color: rgb(240, 234, 226);
-  text-decoration: rgb(240, 234, 226);
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(255, 255, 255);
@@ -1261,7 +1228,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(240, 234, 226);
-  text-decoration: rgb(240, 234, 226);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1280,7 +1246,6 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(240, 234, 226);
-  text-decoration: rgb(240, 234, 226);
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -1349,7 +1314,6 @@ html[saved-theme="dark"] body .page-header h2.page-title {
 
 html[saved-theme="dark"] body abbr {
   color: rgb(255, 255, 255);
-  text-decoration: underline dotted rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body details {
@@ -1657,7 +1621,6 @@ html[saved-theme="light"] body div#quartz-root {
   color: rgb(45, 44, 44);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(45, 44, 44) none 0px;
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
@@ -1665,7 +1628,6 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
   color: rgb(45, 44, 44);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(45, 44, 44) none 0px;
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
@@ -1673,7 +1635,6 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
   color: rgb(45, 44, 44);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(45, 44, 44) none 0px;
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
@@ -1681,7 +1642,6 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
   color: rgb(45, 44, 44);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(45, 44, 44) none 0px;
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
@@ -1690,7 +1650,6 @@ html[saved-theme="light"] body .text-highlight {
   color: rgb(45, 44, 44);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(45, 44, 44) none 0px;
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
@@ -1698,21 +1657,18 @@ html[saved-theme="light"] body del {
   color: rgb(45, 44, 44);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(45, 44, 44) none 0px;
-  text-decoration: line-through rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body p {
   color: rgb(148, 148, 148);
   outline: rgb(148, 148, 148) none 0px;
-  text-decoration: rgb(148, 148, 148);
   text-decoration-color: rgb(148, 148, 148);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(201, 84, 84);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(201, 84, 84) none 0px;
-  text-decoration: underline rgb(201, 84, 84);
   text-decoration-color: rgb(201, 84, 84);
 }
 
@@ -1720,7 +1676,6 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
   color: rgb(201, 84, 84);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(201, 84, 84) none 0px;
-  text-decoration: underline rgb(201, 84, 84);
   text-decoration-color: rgb(201, 84, 84);
 }
 
@@ -1728,7 +1683,7 @@ html[saved-theme="light"] body a.internal.broken {
   color: rgb(148, 148, 148);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(148, 148, 148) none 0px;
-  text-decoration: underline rgb(148, 148, 148);
+  text-decoration: underline;
   text-decoration-color: rgb(148, 148, 148);
 }`,
     lists: `html[saved-theme="light"] body dd {
@@ -1770,7 +1725,6 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(148, 148, 148);
-  text-decoration: rgb(148, 148, 148);
 }
 
 html[saved-theme="light"] body blockquote {
@@ -1956,7 +1910,6 @@ html[saved-theme="light"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(148, 148, 148);
-  text-decoration: line-through rgb(148, 148, 148);
   text-decoration-color: rgb(148, 148, 148);
 }
 
@@ -1969,109 +1922,91 @@ html[saved-theme="light"] body input[type=checkbox] {
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(45, 44, 44);
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
@@ -2086,7 +2021,6 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(45, 44, 44);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(45, 44, 44) none 0px;
-  text-decoration: rgb(45, 44, 44);
   text-decoration-color: rgb(45, 44, 44);
 }
 
@@ -2203,12 +2137,10 @@ html[saved-theme="light"] body hr {
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(148, 148, 148);
-  text-decoration: rgb(148, 148, 148);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(148, 148, 148);
-  text-decoration: rgb(148, 148, 148);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(148, 148, 148);
@@ -2228,7 +2160,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 
 html[saved-theme="light"] body footer ul li a {
   color: rgb(148, 148, 148);
-  text-decoration: rgb(148, 148, 148);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(45, 44, 44);
@@ -2244,7 +2175,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(148, 148, 148);
-  text-decoration: rgb(148, 148, 148);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2263,7 +2193,6 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(148, 148, 148);
-  text-decoration: rgb(148, 148, 148);
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -2332,7 +2261,6 @@ html[saved-theme="light"] body .page-header h2.page-title {
 
 html[saved-theme="light"] body abbr {
   color: rgb(45, 44, 44);
-  text-decoration: underline dotted rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body details {

@@ -3790,7 +3790,7 @@ body {
   }
 
   .page > div#quartz-body div.sidebar {
-    background-color: oklch(0.965295 0.0102493 none);
+    background-color: oklch(0.965356 0.0102416 none);
     color: rgb(8, 8, 8);
   }
 
@@ -3798,18 +3798,18 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: oklch(0.965295 0.0102493 none);
+    background-color: oklch(0.965356 0.0102416 none);
     color: rgb(8, 8, 8);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: oklch(0.965295 0.0102493 none);
+    background-color: oklch(0.965356 0.0102416 none);
     color: rgb(8, 8, 8);
-    border-left: 0px oklch(0.916692 0.00824529 none);
+    border-left: 0px oklch(0.916763 0.00824887 none);
   }
 
   .page > div#quartz-body div.sidebar.left {
-    border-right: 0px solid oklch(0.916692 0.00824529 none);
+    border-right: 0px solid oklch(0.916763 0.00824887 none);
   }
 
   a.external,
@@ -3836,7 +3836,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(92, 159, 228) none 0px;
-    text-decoration: underline rgb(92, 159, 228);
+    text-decoration: underline;
     text-decoration-color: rgb(92, 159, 228);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -3877,7 +3877,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(111, 73, 174) none 0px;
-    text-decoration: underline rgb(111, 73, 174);
+    text-decoration: underline;
     text-decoration-color: rgb(111, 73, 174);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -3953,7 +3953,7 @@ body {
 
   p {
     background-color: rgba(0, 0, 0, 0);
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
     cursor: auto;
     filter: none;
     backdrop-filter: none;
@@ -3973,9 +3973,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: oklch(0.295919 0.00924012 265.652 / 0.8) none 0px;
-    text-decoration: oklch(0.295919 0.00924012 265.652 / 0.8);
-    text-decoration-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    outline: oklch(0.29593 0.00924516 265.685 / 0.8) none 0px;
+    text-decoration: rgb(34, 34, 34);
+    text-decoration-color: oklch(0.29593 0.00924516 265.685 / 0.8);
     text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
@@ -4015,7 +4015,7 @@ body {
       sans-serif;
     font-weight: 600;
     outline: rgb(235, 83, 37) none 0px;
-    text-decoration: rgb(235, 83, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(235, 83, 37);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4056,7 +4056,7 @@ body {
       sans-serif;
     font-weight: 600;
     outline: rgb(235, 83, 37) none 0px;
-    text-decoration: rgb(235, 83, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(235, 83, 37);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4097,7 +4097,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(87, 112, 185) none 0px;
-    text-decoration: rgb(87, 112, 185);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(87, 112, 185);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4138,7 +4138,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(87, 112, 185) none 0px;
-    text-decoration: rgb(87, 112, 185);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(87, 112, 185);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4178,7 +4178,7 @@ body {
       sans-serif;
     font-weight: 525;
     outline: rgb(8, 8, 8) none 0px;
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: rgb(8, 8, 8);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4227,7 +4227,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(8, 8, 8) none 0px;
-    text-decoration: line-through rgb(8, 8, 8);
+    text-decoration: line-through;
     text-decoration-color: rgb(8, 8, 8);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -4300,8 +4300,8 @@ body {
   }
 
   hr {
-    border-color: rgb(128, 128, 128) oklch(0.916692 0.00824529 none)
-      oklch(0.916692 0.00824529 none);
+    border-color: rgb(128, 128, 128) oklch(0.916763 0.00824887 none)
+      oklch(0.916763 0.00824887 none);
     border-style: solid solid none none;
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -4331,7 +4331,7 @@ body {
     > li
     > .match-tag {
     align-items: normal;
-    background-color: oklch(0.636063 0.0886415 200.985 / 0.25);
+    background-color: oklch(0.636083 0.0886418 200.983 / 0.25);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -4427,8 +4427,8 @@ body {
 
   pre > code,
   pre:has(> code) {
-    background-color: oklch(0.965295 0.0102493 none);
-    border: 0px solid oklch(0.916692 0.00824529 none);
+    background-color: oklch(0.965356 0.0102416 none);
+    border: 0px solid oklch(0.916763 0.00824887 none);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -4444,8 +4444,8 @@ body {
   }
 
   pre:has(> code) {
-    background-color: oklch(0.965295 0.0102493 none);
-    border: 0px solid oklch(0.916692 0.00824529 none);
+    background-color: oklch(0.965356 0.0102416 none);
+    border: 0px solid oklch(0.916763 0.00824887 none);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -4499,9 +4499,9 @@ body {
   }
 
   .page article li:has(> input[type="checkbox"]:checked) {
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
-    text-decoration: line-through oklch(0.295919 0.00924012 265.652 / 0.8);
-    text-decoration-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
+    text-decoration: line-through;
+    text-decoration-color: oklch(0.29593 0.00924516 265.685 / 0.8);
   }
 
   blockquote {
@@ -4530,12 +4530,12 @@ body {
 
   .data-footnote-backref {
     color: rgba(111, 118, 133, 0.6);
-    text-decoration: rgba(111, 118, 133, 0.6);
+    text-decoration: underline rgb(138, 92, 245);
   }
 
   .search > .search-button {
     background-color: rgb(250, 247, 239);
-    border: 1px solid oklch(0.916692 0.00824529 none);
+    border: 1px solid oklch(0.916763 0.00824887 none);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4563,7 +4563,7 @@ body {
 
   .search > .search-container > .search-space {
     background-color: rgb(250, 247, 239);
-    border: 1px solid oklch(0.916692 0.00824529 none);
+    border: 1px solid oklch(0.916763 0.00824887 none);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -4580,8 +4580,8 @@ body {
 
   .search > .search-container > .search-space > input {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px inset oklch(0.559406 0.117288 268.214 / 0.8);
-    border-bottom: 1px solid oklch(0.965295 0.0102493 none);
+    border: 0px inset oklch(0.559434 0.117277 268.207 / 0.8);
+    border-bottom: 1px solid oklch(0.965356 0.0102416 none);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4616,7 +4616,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(8, 8, 8) none 0px;
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4635,7 +4635,7 @@ body {
 
   .search > .search-container > .search-space > .search-layout,
   .search > .search-container > .search-space > .search-layout.display-results {
-    border: 1px solid oklch(0.916692 0.00824529 none);
+    border: 1px solid oklch(0.916763 0.00824887 none);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -5259,7 +5259,7 @@ body {
   }
 
   tr {
-    background-color: oklch(0.916692 0.00824529 none);
+    background-color: oklch(0.916763 0.00824887 none);
     border: 0px rgba(111, 118, 133, 0.4);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -5387,7 +5387,7 @@ body {
   .transclude {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgb(8, 8, 8);
-    border-left: 2px solid oklch(0.559406 0.117288 268.214 / 0.8);
+    border-left: 2px solid oklch(0.559434 0.117277 268.207 / 0.8);
     border-right-width: 0px;
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -5402,7 +5402,7 @@ body {
   .transclude-inner {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgb(8, 8, 8);
-    border-left: 2px solid oklch(0.559406 0.117288 268.214 / 0.8);
+    border-left: 2px solid oklch(0.559434 0.117277 268.207 / 0.8);
     border-right-width: 0px;
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -5416,7 +5416,7 @@ body {
 
   .file-embed {
     background-color: rgb(237, 235, 229);
-    border-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    border-color: oklch(0.29593 0.00924516 265.685 / 0.8);
     border-width: 0px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -5428,7 +5428,7 @@ body {
 
   .metadata {
     background-color: rgba(0, 0, 0, 0);
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5443,7 +5443,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 0px solid oklch(0.916692 0.00824529 none);
+    border: 0px solid oklch(0.916763 0.00824887 none);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -5454,7 +5454,7 @@ body {
 
   .metadata-properties {
     background-color: rgba(0, 0, 0, 0);
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5469,7 +5469,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    border-color: oklch(0.29593 0.00924516 265.685 / 0.8);
     border-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -5584,7 +5584,7 @@ body {
   }
 
   kbd {
-    background-color: oklch(0.965295 0.0102493 none);
+    background-color: oklch(0.965356 0.0102416 none);
     box-shadow: none;
     color: rgb(8, 8, 8);
     font-family:
@@ -5647,115 +5647,115 @@ body {
   abbr {
     color: rgb(8, 8, 8);
     cursor: auto;
-    text-decoration: underline dotted rgb(8, 8, 8);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
   li.task-list-item[data-task="-"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(8, 8, 8);
-    text-decoration: rgb(8, 8, 8);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(8, 8, 8);
   }
 
@@ -5846,7 +5846,7 @@ body {
     .explorer-content
     li:has(> .folder-outer:not(.open))
     > .folder-container {
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -5863,11 +5863,11 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: oklch(0.295919 0.00924012 265.652 / 0.8);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
     cursor: default;
     font-family:
       ui-sans-serif,
@@ -5884,14 +5884,14 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: oklch(0.295919 0.00924012 265.652 / 0.8);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
     cursor: default;
-    border-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    border-color: oklch(0.29593 0.00924516 265.685 / 0.8);
     border-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -5901,7 +5901,7 @@ body {
 
   footer {
     background-color: rgba(0, 0, 0, 0);
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -5916,7 +5916,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 0px solid oklch(0.295919 0.00924012 265.652 / 0.8);
+    border: 0px solid oklch(0.29593 0.00924516 265.685 / 0.8);
     border-top-left-radius: 4px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -5924,8 +5924,7 @@ body {
   }
 
   footer ul li a {
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
-    text-decoration: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
   }
 
   .recent-notes > h3 {
@@ -5959,12 +5958,11 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
-    text-decoration: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6002,12 +6000,11 @@ body {
   }
 
   li.section-li > .section > .desc > h3 > a {
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
-    text-decoration: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
   }
 
   li.section-li > .section .meta {
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -6026,9 +6023,9 @@ body {
 
   .darkmode {
     background-color: rgba(0, 0, 0, 0);
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
     cursor: default;
-    border-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    border-color: oklch(0.29593 0.00924516 265.685 / 0.8);
     border-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -6037,14 +6034,14 @@ body {
   }
 
   .darkmode svg {
-    stroke: oklch(0.295919 0.00924012 265.652 / 0.8);
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    stroke: oklch(0.29593 0.00924516 265.685 / 0.8);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
   }
 
   .breadcrumb-container {
-    background-color: oklch(0.916692 0.00824529 none);
-    color: oklch(0.295919 0.00924012 265.652 / 0.8);
-    border-color: oklch(0.295919 0.00924012 265.652 / 0.8);
+    background-color: oklch(0.916763 0.00824887 none);
+    color: oklch(0.29593 0.00924516 265.685 / 0.8);
+    border-color: oklch(0.29593 0.00924516 265.685 / 0.8);
     border-width: 0px;
     border-top-left-radius: 16px;
     border-top-right-radius: 0px;
@@ -6121,7 +6118,7 @@ body {
   }
 
   .spacer {
-    background-color: oklch(0.965295 0.0102493 none);
+    background-color: oklch(0.965356 0.0102416 none);
   }
 
   ul.overflow {
@@ -6143,8 +6140,8 @@ body {
   }
 
   figure[data-rehype-pretty-code-figure] {
-    background-color: oklch(0.965295 0.0102493 none);
-    border: 0px solid oklch(0.916692 0.00824529 none);
+    background-color: oklch(0.965356 0.0102416 none);
+    border: 0px solid oklch(0.916763 0.00824887 none);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -6156,10 +6153,10 @@ body {
   }
 
   figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-    background-color: oklch(0.965295 0.0102493 none);
+    background-color: oklch(0.965356 0.0102416 none);
     color: rgb(8, 8, 8);
     font-family: monospace;
-    border: 0px solid oklch(0.916692 0.00824529 none);
+    border: 0px solid oklch(0.916763 0.00824887 none);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -6886,11 +6883,11 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.right {
       background-color: rgb(20, 22, 28);
       color: rgb(211, 213, 211);
-      border-left: 0px oklch(0.250462 0.0168347 269.108);
+      border-left: 0px oklch(0.25047 0.0168382 269.118);
     }
 
     .page > div#quartz-body div.sidebar.left {
-      border-right: 0px solid oklch(0.250462 0.0168347 269.108);
+      border-right: 0px solid oklch(0.25047 0.0168382 269.118);
     }
 
     a.external,
@@ -6917,7 +6914,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(90, 143, 205) none 0px;
-      text-decoration: underline rgb(90, 143, 205);
+      text-decoration: underline;
       text-decoration-color: rgb(90, 143, 205);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -6958,7 +6955,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(164, 97, 200) none 0px;
-      text-decoration: underline rgb(164, 97, 200);
+      text-decoration: underline;
       text-decoration-color: rgb(164, 97, 200);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -7034,7 +7031,7 @@ html[saved-theme="dark"] {
 
     p {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
       cursor: auto;
       filter: none;
       backdrop-filter: none;
@@ -7054,9 +7051,9 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      outline: oklch(0.756183 0.0113914 265.652 / 0.8) none 0px;
-      text-decoration: oklch(0.756183 0.0113914 265.652 / 0.8);
-      text-decoration-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      outline: oklch(0.756226 0.0113969 265.685 / 0.8) none 0px;
+      text-decoration: rgb(218, 218, 218);
+      text-decoration-color: oklch(0.756226 0.0113969 265.685 / 0.8);
       text-decoration-line: none;
       text-decoration-style: solid;
       transition: all;
@@ -7096,7 +7093,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 600;
       outline: rgb(192, 58, 71) none 0px;
-      text-decoration: rgb(192, 58, 71);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(192, 58, 71);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7137,7 +7134,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 600;
       outline: rgb(192, 58, 71) none 0px;
-      text-decoration: rgb(192, 58, 71);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(192, 58, 71);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7178,7 +7175,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(146, 168, 113) none 0px;
-      text-decoration: rgb(146, 168, 113);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(146, 168, 113);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7219,7 +7216,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(146, 168, 113) none 0px;
-      text-decoration: rgb(146, 168, 113);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(146, 168, 113);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7259,7 +7256,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 525;
       outline: rgb(211, 213, 211) none 0px;
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(0, 0, 0);
       text-decoration-color: rgb(211, 213, 211);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7308,7 +7305,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(211, 213, 211) none 0px;
-      text-decoration: line-through rgb(211, 213, 211);
+      text-decoration: line-through;
       text-decoration-color: rgb(211, 213, 211);
       text-decoration-line: line-through;
       text-decoration-style: solid;
@@ -7343,7 +7340,7 @@ html[saved-theme="dark"] {
       > .search-layout
       > .results-container
       .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-      background-color: oklch(0.250462 0.0168347 269.108);
+      background-color: oklch(0.25047 0.0168382 269.118);
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
       border-bottom-left-radius: 2px;
@@ -7367,7 +7364,7 @@ html[saved-theme="dark"] {
         ~ .result-card:focus,
         ~ .result-card:hover
       ) {
-      background-color: oklch(0.250462 0.0168347 269.108);
+      background-color: oklch(0.25047 0.0168382 269.118);
       border: 0px rgb(211, 213, 211);
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
@@ -7381,8 +7378,8 @@ html[saved-theme="dark"] {
     }
 
     hr {
-      border-color: rgb(128, 128, 128) oklch(0.250462 0.0168347 269.108)
-        oklch(0.250462 0.0168347 269.108);
+      border-color: rgb(128, 128, 128) oklch(0.25047 0.0168382 269.118)
+        oklch(0.25047 0.0168382 269.118);
       border-style: solid solid none none;
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -7412,7 +7409,7 @@ html[saved-theme="dark"] {
       > li
       > .match-tag {
       align-items: normal;
-      background-color: oklch(0.722344 0.107179 202.055 / 0.25);
+      background-color: oklch(0.722355 0.107178 202.06 / 0.25);
       display: flex;
       font-family:
         ui-sans-serif,
@@ -7509,7 +7506,7 @@ html[saved-theme="dark"] {
     pre > code,
     pre:has(> code) {
       background-color: rgb(20, 22, 28);
-      border: 0px solid oklch(0.250462 0.0168347 269.108);
+      border: 0px solid oklch(0.25047 0.0168382 269.118);
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
       border-bottom-left-radius: 2px;
@@ -7526,7 +7523,7 @@ html[saved-theme="dark"] {
 
     pre:has(> code) {
       background-color: rgb(20, 22, 28);
-      border: 0px solid oklch(0.250462 0.0168347 269.108);
+      border: 0px solid oklch(0.25047 0.0168382 269.118);
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
       border-bottom-left-radius: 2px;
@@ -7580,9 +7577,9 @@ html[saved-theme="dark"] {
     }
 
     .page article li:has(> input[type="checkbox"]:checked) {
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
-      text-decoration: line-through oklch(0.756183 0.0113914 265.652 / 0.8);
-      text-decoration-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
+      text-decoration: line-through;
+      text-decoration-color: oklch(0.756226 0.0113969 265.685 / 0.8);
     }
 
     blockquote {
@@ -7611,12 +7608,12 @@ html[saved-theme="dark"] {
 
     .data-footnote-backref {
       color: rgba(111, 118, 133, 0.6);
-      text-decoration: rgba(111, 118, 133, 0.6);
+      text-decoration: underline rgb(166, 138, 249);
     }
 
     .search > .search-button {
       background-color: rgb(25, 29, 40);
-      border: 1px solid oklch(0.250462 0.0168347 269.108);
+      border: 1px solid oklch(0.25047 0.0168382 269.118);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7644,7 +7641,7 @@ html[saved-theme="dark"] {
 
     .search > .search-container > .search-space {
       background-color: rgb(25, 29, 40);
-      border: 1px solid oklch(0.250462 0.0168347 269.108);
+      border: 1px solid oklch(0.25047 0.0168382 269.118);
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
       border-bottom-left-radius: 6px;
@@ -7661,7 +7658,7 @@ html[saved-theme="dark"] {
 
     .search > .search-container > .search-space > input {
       background-color: rgba(0, 0, 0, 0);
-      border: 0px inset oklch(0.865278 0.184795 137.418 / 0.8);
+      border: 0px inset oklch(0.86535 0.184813 137.419 / 0.8);
       border-bottom: 1px solid rgb(20, 22, 28);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7697,7 +7694,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(211, 213, 211) none 0px;
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7719,7 +7716,7 @@ html[saved-theme="dark"] {
       > .search-container
       > .search-space
       > .search-layout.display-results {
-      border: 1px solid oklch(0.250462 0.0168347 269.108);
+      border: 1px solid oklch(0.25047 0.0168382 269.118);
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
       border-bottom-left-radius: 6px;
@@ -7777,7 +7774,7 @@ html[saved-theme="dark"] {
       ) {
       color: rgb(211, 213, 211);
       font-weight: 400;
-      background-color: oklch(0.250462 0.0168347 269.108);
+      background-color: oklch(0.25047 0.0168382 269.118);
     }
 
     .search
@@ -8345,7 +8342,7 @@ html[saved-theme="dark"] {
     }
 
     tr {
-      background-color: oklch(0.250462 0.0168347 269.108);
+      background-color: oklch(0.25047 0.0168382 269.118);
       border: 0px rgba(111, 118, 133, 0.4);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8473,7 +8470,7 @@ html[saved-theme="dark"] {
     .transclude {
       background-color: rgba(0, 0, 0, 0);
       border-color: rgb(211, 213, 211);
-      border-left: 2px solid oklch(0.865278 0.184795 137.418 / 0.8);
+      border-left: 2px solid oklch(0.86535 0.184813 137.419 / 0.8);
       border-right-width: 0px;
       border-top-width: 0px;
       border-bottom-width: 0px;
@@ -8488,7 +8485,7 @@ html[saved-theme="dark"] {
     .transclude-inner {
       background-color: rgba(0, 0, 0, 0);
       border-color: rgb(211, 213, 211);
-      border-left: 2px solid oklch(0.865278 0.184795 137.418 / 0.8);
+      border-left: 2px solid oklch(0.86535 0.184813 137.419 / 0.8);
       border-right-width: 0px;
       border-top-width: 0px;
       border-bottom-width: 0px;
@@ -8502,7 +8499,7 @@ html[saved-theme="dark"] {
 
     .file-embed {
       background-color: rgb(36, 38, 44);
-      border-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      border-color: oklch(0.756226 0.0113969 265.685 / 0.8);
       border-width: 0px;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -8514,7 +8511,7 @@ html[saved-theme="dark"] {
 
     .metadata {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -8529,7 +8526,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border: 0px solid oklch(0.250462 0.0168347 269.108);
+      border: 0px solid oklch(0.25047 0.0168382 269.118);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8540,7 +8537,7 @@ html[saved-theme="dark"] {
 
     .metadata-properties {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -8555,7 +8552,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      border-color: oklch(0.756226 0.0113969 265.685 / 0.8);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8733,115 +8730,115 @@ html[saved-theme="dark"] {
     abbr {
       color: rgb(211, 213, 211);
       cursor: auto;
-      text-decoration: underline dotted rgb(211, 213, 211);
+      text-decoration: underline dotted;
       text-decoration-style: dotted;
     }
 
     li.task-list-item[data-task="-"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task=">"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="/"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="?"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="!"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="*"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="l"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="b"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="i"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="S"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="I"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="p"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="c"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="f"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="k"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="u"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="d"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
     li.task-list-item[data-task="w"] {
       color: rgb(211, 213, 211);
-      text-decoration: rgb(211, 213, 211);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(211, 213, 211);
     }
 
@@ -8932,7 +8929,7 @@ html[saved-theme="dark"] {
       .explorer-content
       li:has(> .folder-outer:not(.open))
       > .folder-container {
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
       cursor: default;
       font-family:
         ui-sans-serif,
@@ -8949,14 +8946,14 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      text-decoration: oklch(0.756183 0.0113914 265.652 / 0.8);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .explorer
       .explorer-content
       li:has(> .folder-outer.open)
       > .folder-container {
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
       cursor: default;
       font-family:
         ui-sans-serif,
@@ -8973,14 +8970,14 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      text-decoration: oklch(0.756183 0.0113914 265.652 / 0.8);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
       cursor: default;
-      border-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      border-color: oklch(0.756226 0.0113969 265.685 / 0.8);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8990,7 +8987,7 @@ html[saved-theme="dark"] {
 
     footer {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -9005,7 +9002,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border: 0px solid oklch(0.756183 0.0113914 265.652 / 0.8);
+      border: 0px solid oklch(0.756226 0.0113969 265.685 / 0.8);
       border-top-left-radius: 4px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9013,8 +9010,7 @@ html[saved-theme="dark"] {
     }
 
     footer ul li a {
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
-      text-decoration: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
     }
 
     .recent-notes > h3 {
@@ -9048,12 +9044,11 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
-      text-decoration: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -9091,12 +9086,11 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section > .desc > h3 > a {
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
-      text-decoration: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
     }
 
     li.section-li > .section .meta {
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -9115,9 +9109,9 @@ html[saved-theme="dark"] {
 
     .darkmode {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
       cursor: default;
-      border-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      border-color: oklch(0.756226 0.0113969 265.685 / 0.8);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9126,14 +9120,14 @@ html[saved-theme="dark"] {
     }
 
     .darkmode svg {
-      stroke: oklch(0.756183 0.0113914 265.652 / 0.8);
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      stroke: oklch(0.756226 0.0113969 265.685 / 0.8);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
     }
 
     .breadcrumb-container {
-      background-color: oklch(0.250462 0.0168347 269.108);
-      color: oklch(0.756183 0.0113914 265.652 / 0.8);
-      border-color: oklch(0.756183 0.0113914 265.652 / 0.8);
+      background-color: oklch(0.25047 0.0168382 269.118);
+      color: oklch(0.756226 0.0113969 265.685 / 0.8);
+      border-color: oklch(0.756226 0.0113969 265.685 / 0.8);
       border-width: 0px;
       border-top-left-radius: 16px;
       border-top-right-radius: 0px;
@@ -9210,7 +9204,7 @@ html[saved-theme="dark"] {
     }
 
     .spacer {
-      background-color: oklch(0.216323 0.017297 269.108);
+      background-color: oklch(0.216334 0.0172956 269.118);
     }
 
     ul.overflow {
@@ -9233,7 +9227,7 @@ html[saved-theme="dark"] {
 
     figure[data-rehype-pretty-code-figure] {
       background-color: rgb(20, 22, 28);
-      border: 0px solid oklch(0.250462 0.0168347 269.108);
+      border: 0px solid oklch(0.25047 0.0168382 269.118);
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
       border-bottom-left-radius: 2px;
@@ -9248,7 +9242,7 @@ html[saved-theme="dark"] {
       background-color: rgb(20, 22, 28);
       color: rgb(211, 213, 211);
       font-family: monospace;
-      border: 0px solid oklch(0.250462 0.0168347 269.108);
+      border: 0px solid oklch(0.25047 0.0168382 269.118);
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
       border-bottom-left-radius: 2px;

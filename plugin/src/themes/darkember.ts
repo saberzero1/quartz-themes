@@ -196,21 +196,18 @@ html[saved-theme="dark"] body div#quartz-root {
   color: rgb(241, 177, 37);
   font-weight: 900;
   outline: rgb(241, 177, 37) none 0px;
-  text-decoration: rgb(241, 177, 37);
   text-decoration-color: rgb(241, 177, 37);
 }
 
 html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(241, 177, 37);
   outline: rgb(241, 177, 37) none 0px;
-  text-decoration: rgb(241, 177, 37);
   text-decoration-color: rgb(241, 177, 37);
 }
 
 html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(241, 177, 37);
   outline: rgb(241, 177, 37) none 0px;
-  text-decoration: rgb(241, 177, 37);
   text-decoration-color: rgb(241, 177, 37);
 }
 
@@ -218,7 +215,6 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
   color: rgb(241, 177, 37);
   font-weight: 900;
   outline: rgb(241, 177, 37) none 0px;
-  text-decoration: rgb(241, 177, 37);
   text-decoration-color: rgb(241, 177, 37);
 }
 
@@ -226,27 +222,23 @@ html[saved-theme="dark"] body .text-highlight {
   background-color: rgb(233, 179, 95);
   color: rgb(201, 201, 201);
   outline: rgb(201, 201, 201) none 0px;
-  text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body del {
   color: rgb(201, 201, 201);
   outline: rgb(201, 201, 201) none 0px;
-  text-decoration: line-through rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(130, 210, 232);
   outline: rgb(130, 210, 232) none 0px;
-  text-decoration: underline rgb(130, 210, 232);
   text-decoration-color: rgb(130, 210, 232);
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 190, 0);
   outline: rgb(255, 190, 0) none 0px;
-  text-decoration: underline rgb(255, 190, 0);
   text-decoration-color: rgb(255, 190, 0);
 }
 
@@ -285,7 +277,6 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(255, 190, 0);
-  text-decoration: rgb(255, 190, 0);
 }`,
     tables: `html[saved-theme="dark"] body .table-container {
   border-bottom-color: rgb(201, 201, 201);
@@ -435,109 +426,109 @@ html[saved-theme="dark"] body .transclude-inner {
 }`,
     checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(201, 201, 201);
-  text-decoration: line-through rgb(201, 201, 201);
+  text-decoration: line-through;
   text-decoration-color: rgb(201, 201, 201);
 }
 
@@ -895,7 +886,6 @@ html[saved-theme="dark"] body .search > .search-container > .search-space {
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(201, 201, 201);
   outline: rgb(201, 201, 201) none 0px;
-  text-decoration: rgb(201, 201, 201);
   text-decoration-color: rgb(201, 201, 201);
 }
 
@@ -1046,7 +1036,6 @@ html[saved-theme="dark"] body .page-header h2.page-title {
 
 html[saved-theme="dark"] body abbr {
   color: rgb(201, 201, 201);
-  text-decoration: underline dotted rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body details {
@@ -1273,21 +1262,18 @@ html[saved-theme="light"] body div#quartz-root {
   color: rgb(214, 69, 69);
   font-weight: 900;
   outline: rgb(214, 69, 69) none 0px;
-  text-decoration: rgb(214, 69, 69);
   text-decoration-color: rgb(214, 69, 69);
 }
 
 html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: rgb(214, 69, 69);
   outline: rgb(214, 69, 69) none 0px;
-  text-decoration: rgb(214, 69, 69);
   text-decoration-color: rgb(214, 69, 69);
 }
 
 html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: rgb(214, 69, 69);
   outline: rgb(214, 69, 69) none 0px;
-  text-decoration: rgb(214, 69, 69);
   text-decoration-color: rgb(214, 69, 69);
 }
 
@@ -1295,7 +1281,6 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
   color: rgb(214, 69, 69);
   font-weight: 900;
   outline: rgb(214, 69, 69) none 0px;
-  text-decoration: rgb(214, 69, 69);
   text-decoration-color: rgb(214, 69, 69);
 }
 
@@ -1303,27 +1288,23 @@ html[saved-theme="light"] body .text-highlight {
   background-color: rgb(233, 179, 95);
   color: rgb(36, 36, 36);
   outline: rgb(36, 36, 36) none 0px;
-  text-decoration: rgb(36, 36, 36);
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body del {
   color: rgb(36, 36, 36);
   outline: rgb(36, 36, 36) none 0px;
-  text-decoration: line-through rgb(36, 36, 36);
   text-decoration-color: rgb(36, 36, 36);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(48, 122, 142);
   outline: rgb(48, 122, 142) none 0px;
-  text-decoration: underline rgb(48, 122, 142);
   text-decoration-color: rgb(48, 122, 142);
 }
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(224, 109, 15);
   outline: rgb(224, 109, 15) none 0px;
-  text-decoration: underline rgb(224, 109, 15);
   text-decoration-color: rgb(224, 109, 15);
 }
 
@@ -1362,7 +1343,6 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(224, 109, 15);
-  text-decoration: rgb(224, 109, 15);
 }`,
     tables: `html[saved-theme="light"] body .table-container {
   border-bottom-color: rgb(36, 36, 36);
@@ -1512,109 +1492,109 @@ html[saved-theme="light"] body .transclude-inner {
 }`,
     checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(36, 36, 36);
-  text-decoration: line-through rgb(36, 36, 36);
+  text-decoration: line-through;
   text-decoration-color: rgb(36, 36, 36);
 }
 
@@ -1972,7 +1952,6 @@ html[saved-theme="light"] body .search > .search-container > .search-space {
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(36, 36, 36);
   outline: rgb(36, 36, 36) none 0px;
-  text-decoration: rgb(36, 36, 36);
   text-decoration-color: rgb(36, 36, 36);
 }
 
@@ -2123,7 +2102,6 @@ html[saved-theme="light"] body .page-header h2.page-title {
 
 html[saved-theme="light"] body abbr {
   color: rgb(36, 36, 36);
-  text-decoration: underline dotted rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body details {

@@ -2500,7 +2500,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(0, 112, 224) none 0px;
-    text-decoration: underline rgb(0, 112, 224);
+    text-decoration: underline;
     text-decoration-color: rgb(0, 112, 224);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2548,7 +2548,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(0, 112, 224) none 0px;
-    text-decoration: underline rgb(0, 112, 224);
+    text-decoration: underline;
     text-decoration-color: rgb(0, 112, 224);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -2659,7 +2659,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(94, 94, 94) none 0px;
-    text-decoration: rgb(94, 94, 94);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(94, 94, 94);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2898,7 +2898,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(34, 34, 34) none 0px;
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2954,7 +2954,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(34, 34, 34) none 0px;
-    text-decoration: line-through rgb(34, 34, 34);
+    text-decoration: line-through;
     text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -3234,7 +3234,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(145, 145, 145);
-    text-decoration: line-through rgb(145, 145, 145);
+    text-decoration: line-through;
     text-decoration-color: rgb(145, 145, 145);
   }
 
@@ -3271,7 +3271,7 @@ body {
 
   .data-footnote-backref {
     color: rgb(145, 145, 145);
-    text-decoration: rgb(145, 145, 145);
+    text-decoration: underline rgb(138, 92, 245);
   }
 
   .search > .search-button {
@@ -4489,7 +4489,7 @@ body {
   abbr {
     color: rgb(34, 34, 34);
     cursor: auto;
-    text-decoration: underline dotted rgb(34, 34, 34);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
@@ -4726,7 +4726,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: rgb(94, 94, 94);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -4754,7 +4754,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: rgb(94, 94, 94);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -4804,7 +4804,6 @@ body {
 
   footer ul li a {
     color: rgb(94, 94, 94);
-    text-decoration: rgb(94, 94, 94);
   }
 
   .recent-notes > h3 {
@@ -4846,7 +4845,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: rgb(94, 94, 94);
-    text-decoration: rgb(94, 94, 94);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4896,7 +4894,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: rgb(94, 94, 94);
-    text-decoration: rgb(94, 94, 94);
   }
 
   li.section-li > .section .meta {
@@ -5957,7 +5954,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(0, 112, 224) none 0px;
-      text-decoration: underline rgb(0, 112, 224);
+      text-decoration: underline;
       text-decoration-color: rgb(0, 112, 224);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -6005,7 +6002,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(0, 112, 224) none 0px;
-      text-decoration: underline rgb(0, 112, 224);
+      text-decoration: underline;
       text-decoration-color: rgb(0, 112, 224);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -6116,7 +6113,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(217, 217, 217) none 0px;
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(217, 217, 217);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -6355,7 +6352,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(218, 218, 218) none 0px;
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: rgb(0, 0, 0);
       text-decoration-color: rgb(218, 218, 218);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -6411,7 +6408,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       outline: rgb(218, 218, 218) none 0px;
-      text-decoration: line-through rgb(218, 218, 218);
+      text-decoration: line-through;
       text-decoration-color: rgb(218, 218, 218);
       text-decoration-line: line-through;
       text-decoration-style: solid;
@@ -6691,7 +6688,7 @@ html[saved-theme="dark"] {
 
     .page article li:has(> input[type="checkbox"]:checked) {
       color: rgb(153, 153, 153);
-      text-decoration: line-through rgb(153, 153, 153);
+      text-decoration: line-through;
       text-decoration-color: rgb(153, 153, 153);
     }
 
@@ -6728,7 +6725,7 @@ html[saved-theme="dark"] {
 
     .data-footnote-backref {
       color: rgb(153, 153, 153);
-      text-decoration: rgb(153, 153, 153);
+      text-decoration: underline rgb(166, 138, 249);
     }
 
     .search > .search-button {
@@ -7951,7 +7948,7 @@ html[saved-theme="dark"] {
     abbr {
       color: rgb(218, 218, 218);
       cursor: auto;
-      text-decoration: underline dotted rgb(218, 218, 218);
+      text-decoration: underline dotted;
       text-decoration-style: dotted;
     }
 
@@ -8188,7 +8185,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .explorer
@@ -8219,7 +8216,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      text-decoration: rgb(217, 217, 217);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .graph > .graph-outer > .global-graph-icon {
@@ -8269,7 +8266,6 @@ html[saved-theme="dark"] {
 
     footer ul li a {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
     }
 
     .recent-notes > h3 {
@@ -8311,7 +8307,6 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -8361,7 +8356,6 @@ html[saved-theme="dark"] {
 
     li.section-li > .section > .desc > h3 > a {
       color: rgb(217, 217, 217);
-      text-decoration: rgb(217, 217, 217);
     }
 
     li.section-li > .section .meta {

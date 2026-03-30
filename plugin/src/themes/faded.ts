@@ -773,13 +773,11 @@ html body div#quartz-root {
   color: rgb(186, 186, 186);
   font-family: Cuprum;
   outline: rgb(186, 186, 186) none 0px;
-  text-decoration: rgb(186, 186, 186);
   text-decoration-color: rgb(186, 186, 186);
 }`,
     links: `html body a.external, html footer a {
   color: rgb(214, 186, 124);
   outline: rgb(214, 186, 124) none 0px;
-  text-decoration: underline rgb(214, 186, 124);
   text-decoration-color: rgb(214, 186, 124);
 }
 
@@ -788,7 +786,6 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   box-shadow: rgb(220, 221, 222) 0px 0px 0px 1px inset;
   color: rgb(220, 221, 222);
   outline: rgb(220, 221, 222) none 0px;
-  text-decoration: rgb(220, 221, 222);
   text-decoration-color: rgb(220, 221, 222);
 }
 
@@ -910,7 +907,6 @@ html body .transclude-inner {
 }`,
     checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(102, 102, 102);
   text-decoration-color: rgb(102, 102, 102);
 }
 
@@ -1221,13 +1217,11 @@ html body ::-webkit-scrollbar-track {
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(186, 186, 186);
   font-family: Cuprum;
-  text-decoration: rgb(186, 186, 186);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(186, 186, 186);
   font-family: Cuprum;
-  text-decoration: rgb(186, 186, 186);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(186, 186, 186);
@@ -1247,7 +1241,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(186, 186, 186);
-  text-decoration: rgb(186, 186, 186);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   font-family: Cuprum;
@@ -1255,7 +1248,6 @@ html body footer ul li a {
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(186, 186, 186);
-  text-decoration: rgb(186, 186, 186);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1269,7 +1261,6 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(186, 186, 186);
-  text-decoration: rgb(186, 186, 186);
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgb(186, 186, 186);

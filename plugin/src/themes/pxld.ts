@@ -120,7 +120,6 @@ html[saved-theme="dark"] body div#quartz-root {
   color: rgb(245, 247, 250);
   font-family: pixel_squareregular;
   outline: rgb(245, 247, 250) none 0px;
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
@@ -128,7 +127,6 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
   color: rgb(245, 247, 250);
   font-family: pixel_squareregular;
   outline: rgb(245, 247, 250) none 0px;
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
@@ -136,7 +134,6 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(245, 247, 250);
   font-family: pixel_squareregular;
   outline: rgb(245, 247, 250) none 0px;
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
@@ -144,7 +141,6 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
   color: rgb(245, 247, 250);
   font-family: pixel_squareregular;
   outline: rgb(245, 247, 250) none 0px;
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
@@ -152,7 +148,6 @@ html[saved-theme="dark"] body .text-highlight {
   color: rgb(245, 247, 250);
   font-family: pixel_squareregular;
   outline: rgb(245, 247, 250) none 0px;
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
@@ -160,7 +155,6 @@ html[saved-theme="dark"] body del {
   color: rgb(245, 247, 250);
   font-family: pixel_squareregular;
   outline: rgb(245, 247, 250) none 0px;
-  text-decoration: line-through rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
@@ -171,7 +165,6 @@ html[saved-theme="dark"] body p {
   color: rgb(197, 182, 252);
   font-family: pixel_squareregular;
   outline: rgb(197, 182, 252) none 0px;
-  text-decoration: underline rgb(197, 182, 252);
   text-decoration-color: rgb(197, 182, 252);
 }
 
@@ -179,7 +172,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   color: rgb(197, 182, 252);
   font-family: pixel_squareregular;
   outline: rgb(197, 182, 252) none 0px;
-  text-decoration: underline rgb(197, 182, 252);
   text-decoration-color: rgb(197, 182, 252);
 }
 
@@ -326,109 +318,91 @@ html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
@@ -789,7 +763,6 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(245, 247, 250);
   font-family: pixel_squareregular;
   outline: rgb(245, 247, 250) none 0px;
-  text-decoration: rgb(245, 247, 250);
   text-decoration-color: rgb(245, 247, 250);
 }
 
@@ -918,7 +891,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 
 html[saved-theme="dark"] body footer ul li a {
   color: rgb(245, 247, 250);
-  text-decoration: rgb(245, 247, 250);
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(245, 247, 250);
@@ -980,7 +952,6 @@ html[saved-theme="dark"] body .page-header h2.page-title {
 
 html[saved-theme="dark"] body abbr {
   color: rgb(245, 247, 250);
-  text-decoration: underline dotted rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body details {
@@ -1143,7 +1114,6 @@ html[saved-theme="light"] body div#quartz-root {
   color: rgb(8, 8, 8);
   font-family: pixel_squareregular;
   outline: rgb(8, 8, 8) none 0px;
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
@@ -1151,7 +1121,6 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
   color: rgb(8, 8, 8);
   font-family: pixel_squareregular;
   outline: rgb(8, 8, 8) none 0px;
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
@@ -1159,7 +1128,6 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
   color: rgb(8, 8, 8);
   font-family: pixel_squareregular;
   outline: rgb(8, 8, 8) none 0px;
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
@@ -1167,7 +1135,6 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
   color: rgb(8, 8, 8);
   font-family: pixel_squareregular;
   outline: rgb(8, 8, 8) none 0px;
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
@@ -1175,7 +1142,6 @@ html[saved-theme="light"] body .text-highlight {
   color: rgb(8, 8, 8);
   font-family: pixel_squareregular;
   outline: rgb(8, 8, 8) none 0px;
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
@@ -1183,7 +1149,6 @@ html[saved-theme="light"] body del {
   color: rgb(8, 8, 8);
   font-family: pixel_squareregular;
   outline: rgb(8, 8, 8) none 0px;
-  text-decoration: line-through rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
@@ -1194,7 +1159,6 @@ html[saved-theme="light"] body p {
   color: rgb(152, 115, 247);
   font-family: pixel_squareregular;
   outline: rgb(152, 115, 247) none 0px;
-  text-decoration: underline rgb(152, 115, 247);
   text-decoration-color: rgb(152, 115, 247);
 }
 
@@ -1202,7 +1166,6 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
   color: rgb(152, 115, 247);
   font-family: pixel_squareregular;
   outline: rgb(152, 115, 247) none 0px;
-  text-decoration: underline rgb(152, 115, 247);
   text-decoration-color: rgb(152, 115, 247);
 }
 
@@ -1332,109 +1295,91 @@ html[saved-theme="light"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
@@ -1795,7 +1740,6 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(8, 8, 8);
   font-family: pixel_squareregular;
   outline: rgb(8, 8, 8) none 0px;
-  text-decoration: rgb(8, 8, 8);
   text-decoration-color: rgb(8, 8, 8);
 }
 
@@ -1924,7 +1868,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 
 html[saved-theme="light"] body footer ul li a {
   color: rgb(8, 8, 8);
-  text-decoration: rgb(8, 8, 8);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: rgb(8, 8, 8);
@@ -1986,7 +1929,6 @@ html[saved-theme="light"] body .page-header h2.page-title {
 
 html[saved-theme="light"] body abbr {
   color: rgb(8, 8, 8);
-  text-decoration: underline dotted rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body details {

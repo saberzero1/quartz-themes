@@ -263,55 +263,47 @@ html body div#quartz-root {
     typography: `html body .page article p > b, html b {
   color: rgb(0, 255, 65);
   outline: rgb(0, 255, 65) none 0px;
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body .page article p > em, html em {
   color: rgb(0, 255, 65);
   outline: rgb(0, 255, 65) none 0px;
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body .page article p > i, html i {
   color: rgb(0, 255, 65);
   outline: rgb(0, 255, 65) none 0px;
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body .page article p > strong, html strong {
   color: rgb(0, 255, 65);
   outline: rgb(0, 255, 65) none 0px;
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body .text-highlight {
   color: rgb(0, 255, 65);
   outline: rgb(0, 255, 65) none 0px;
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body del {
   color: rgb(0, 255, 65);
   outline: rgb(0, 255, 65) none 0px;
-  text-decoration: line-through rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body p {
   color: rgb(122, 255, 224);
   outline: rgb(122, 255, 224) none 0px;
-  text-decoration: rgb(122, 255, 224);
   text-decoration-color: rgb(122, 255, 224);
 }`,
     links: `html body a.external, html footer a {
   color: rgb(0, 255, 156);
   outline: rgb(0, 255, 156) none 0px;
-  text-decoration: underline rgb(0, 255, 156);
   text-decoration-color: rgb(0, 255, 156);
   transition: color 0.12s, text-shadow 0.12s, background 0.12s;
 }
@@ -319,7 +311,6 @@ html body p {
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(0, 255, 156);
   outline: rgb(0, 255, 156) none 0px;
-  text-decoration: underline rgb(0, 255, 156);
   text-decoration-color: rgb(0, 255, 156);
 }
 
@@ -360,11 +351,10 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(37, 176, 123);
-  text-decoration: rgb(37, 176, 123);
 }
 
 html body blockquote {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   padding-bottom: 16px;
   padding-top: 16px;
 }`,
@@ -607,7 +597,6 @@ html body .transclude-inner {
 }`,
     checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(122, 255, 224);
-  text-decoration: line-through rgb(122, 255, 224);
   text-decoration-color: rgb(122, 255, 224);
 }
 
@@ -625,109 +614,91 @@ html body input[type=checkbox] {
 
 html body li.task-list-item[data-task='!'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
@@ -1082,7 +1053,7 @@ html body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 }
 
 html body .callout[data-callout="abstract"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(0, 255, 170);
@@ -1092,7 +1063,7 @@ html body .callout[data-callout="abstract"] {
 }
 
 html body .callout[data-callout="bug"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(0, 255, 170);
@@ -1102,7 +1073,7 @@ html body .callout[data-callout="bug"] {
 }
 
 html body .callout[data-callout="danger"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(0, 255, 170);
@@ -1112,7 +1083,7 @@ html body .callout[data-callout="danger"] {
 }
 
 html body .callout[data-callout="example"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(0, 255, 170);
@@ -1122,7 +1093,7 @@ html body .callout[data-callout="example"] {
 }
 
 html body .callout[data-callout="failure"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(255, 90, 90);
@@ -1132,7 +1103,7 @@ html body .callout[data-callout="failure"] {
 }
 
 html body .callout[data-callout="info"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(0, 255, 170);
@@ -1142,7 +1113,7 @@ html body .callout[data-callout="info"] {
 }
 
 html body .callout[data-callout="note"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(0, 255, 170);
@@ -1152,7 +1123,7 @@ html body .callout[data-callout="note"] {
 }
 
 html body .callout[data-callout="question"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(0, 255, 170);
@@ -1162,7 +1133,7 @@ html body .callout[data-callout="question"] {
 }
 
 html body .callout[data-callout="quote"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(0, 255, 170);
@@ -1172,7 +1143,7 @@ html body .callout[data-callout="quote"] {
 }
 
 html body .callout[data-callout="success"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(125, 255, 147);
@@ -1182,7 +1153,7 @@ html body .callout[data-callout="success"] {
 }
 
 html body .callout[data-callout="tip"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(0, 255, 170);
@@ -1192,7 +1163,7 @@ html body .callout[data-callout="tip"] {
 }
 
 html body .callout[data-callout="todo"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(0, 255, 170);
@@ -1202,7 +1173,7 @@ html body .callout[data-callout="todo"] {
 }
 
 html body .callout[data-callout="warning"] {
-  background-color: oklab(0.252046 -0.0438306 0.0183013);
+  background-color: oklab(0.252059 -0.043835 0.0183032);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
   border-left-color: rgb(255, 209, 102);
@@ -1239,7 +1210,6 @@ html body .search > .search-container > .search-space {
 html body .search > .search-container > .search-space > * {
   color: rgb(0, 255, 65);
   outline: rgb(0, 255, 65) none 0px;
-  text-decoration: rgb(0, 255, 65);
   text-decoration-color: rgb(0, 255, 65);
 }
 
@@ -1321,7 +1291,7 @@ html body a.internal.tag-link::before {
 
 html body h1 {
   color: rgba(0, 0, 0, 0);
-  text-shadow: rgb(0, 255, 170) 0px 0px 7.67485px, rgba(0, 255, 65, 0.14) 0px 0px 3.90798px;
+  text-shadow: rgb(0, 255, 170) 0px 0px 7.67481px, rgba(0, 255, 65, 0.14) 0px 0px 3.9079px;
 }
 
 html body h2 {
@@ -1330,7 +1300,7 @@ html body h2 {
 
 html body h2.page-title, html h2.page-title a {
   color: rgba(0, 0, 0, 0);
-  text-shadow: rgb(0, 255, 170) 0px 0px 7.69981px, rgba(0, 255, 65, 0.14) 0px 0px 3.96622px;
+  text-shadow: rgb(0, 255, 170) 0px 0px 7.69994px, rgba(0, 255, 65, 0.14) 0px 0px 3.96654px;
 }
 
 html body h3 {
@@ -1402,12 +1372,10 @@ html body ::-webkit-scrollbar-track {
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   background-color: rgb(10, 36, 24);
@@ -1436,7 +1404,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(37, 176, 123);
-  text-decoration: rgb(37, 176, 123);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(0, 255, 65);
@@ -1452,7 +1419,6 @@ html body .recent-notes > ul.recent-ul > li {
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1471,7 +1437,6 @@ html body li.section-li > .section .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(0, 255, 65);
-  text-decoration: rgb(0, 255, 65);
 }
 
 html body ul.section-ul {
@@ -1556,7 +1521,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(0, 255, 65);
-  text-decoration: underline dotted rgb(0, 255, 65);
 }
 
 html body details {

@@ -140,7 +140,6 @@ html[saved-theme="dark"] body div#quartz-root {
   color: rgb(209, 209, 209);
   font-weight: 700;
   outline: rgb(209, 209, 209) none 0px;
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
@@ -148,7 +147,6 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
   color: rgb(209, 209, 209);
   font-weight: 350;
   outline: rgb(209, 209, 209) none 0px;
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
@@ -156,7 +154,6 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(209, 209, 209);
   font-weight: 350;
   outline: rgb(209, 209, 209) none 0px;
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
@@ -164,7 +161,6 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
   color: rgb(209, 209, 209);
   font-weight: 700;
   outline: rgb(209, 209, 209) none 0px;
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
@@ -173,7 +169,6 @@ html[saved-theme="dark"] body .text-highlight {
   color: rgb(0, 0, 0);
   font-weight: 350;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
@@ -181,7 +176,6 @@ html[saved-theme="dark"] body del {
   color: rgb(209, 209, 209);
   font-weight: 350;
   outline: rgb(209, 209, 209) none 0px;
-  text-decoration: line-through rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
@@ -220,7 +214,6 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(138, 92, 245);
-  text-decoration: rgb(138, 92, 245);
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -334,109 +327,91 @@ html[saved-theme="dark"] body .transclude-inner {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(209, 209, 209);
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
@@ -922,7 +897,6 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: rgb(209, 209, 209);
   font-weight: 350;
   outline: rgb(209, 209, 209) none 0px;
-  text-decoration: rgb(209, 209, 209);
   text-decoration-color: rgb(209, 209, 209);
 }
 
@@ -1121,7 +1095,6 @@ html[saved-theme="dark"] body .navigation-progress {
 
 html[saved-theme="dark"] body abbr {
   color: rgb(209, 209, 209);
-  text-decoration: underline dotted rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body details {
@@ -1301,7 +1274,6 @@ html[saved-theme="light"] body div#quartz-root {
   color: rgb(25, 25, 25);
   font-weight: 700;
   outline: rgb(25, 25, 25) none 0px;
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
@@ -1309,7 +1281,6 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
   color: rgb(25, 25, 25);
   font-weight: 350;
   outline: rgb(25, 25, 25) none 0px;
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
@@ -1317,7 +1288,6 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
   color: rgb(25, 25, 25);
   font-weight: 350;
   outline: rgb(25, 25, 25) none 0px;
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
@@ -1325,7 +1295,6 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
   color: rgb(25, 25, 25);
   font-weight: 700;
   outline: rgb(25, 25, 25) none 0px;
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
@@ -1334,7 +1303,6 @@ html[saved-theme="light"] body .text-highlight {
   color: rgb(0, 0, 0);
   font-weight: 350;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
@@ -1342,7 +1310,6 @@ html[saved-theme="light"] body del {
   color: rgb(25, 25, 25);
   font-weight: 350;
   outline: rgb(25, 25, 25) none 0px;
-  text-decoration: line-through rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
@@ -1381,7 +1348,6 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(138, 92, 245);
-  text-decoration: rgb(138, 92, 245);
 }
 
 html[saved-theme="light"] body blockquote {
@@ -1497,109 +1463,91 @@ html[saved-theme="light"] body .transclude-inner {
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(25, 25, 25);
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
@@ -2089,7 +2037,6 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: rgb(25, 25, 25);
   font-weight: 350;
   outline: rgb(25, 25, 25) none 0px;
-  text-decoration: rgb(25, 25, 25);
   text-decoration-color: rgb(25, 25, 25);
 }
 
@@ -2295,7 +2242,6 @@ html[saved-theme="light"] body .navigation-progress {
 
 html[saved-theme="light"] body abbr {
   color: rgb(25, 25, 25);
-  text-decoration: underline dotted rgb(25, 25, 25);
 }
 
 html[saved-theme="light"] body details {

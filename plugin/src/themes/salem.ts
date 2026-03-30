@@ -199,14 +199,12 @@ html[saved-theme="dark"] body div#quartz-root {
     typography: `html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(172, 99, 99);
   outline: rgb(172, 99, 99) none 0px;
-  text-decoration: rgb(172, 99, 99);
   text-decoration-color: rgb(172, 99, 99);
 }
 
 html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(172, 99, 99);
   outline: rgb(172, 99, 99) none 0px;
-  text-decoration: rgb(172, 99, 99);
   text-decoration-color: rgb(172, 99, 99);
 }
 
@@ -215,27 +213,23 @@ html[saved-theme="dark"] body .text-highlight {
   color: rgb(68, 207, 110);
   font-weight: 500;
   outline: rgb(68, 207, 110) none 0px;
-  text-decoration: rgb(68, 207, 110);
   text-decoration-color: rgb(68, 207, 110);
 }
 
 html[saved-theme="dark"] body p {
   color: rgb(198, 193, 135);
   outline: rgb(198, 193, 135) none 0px;
-  text-decoration: rgb(198, 193, 135);
   text-decoration-color: rgb(198, 193, 135);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(209, 189, 143);
   outline: rgb(209, 189, 143) none 0px;
-  text-decoration: underline rgb(209, 189, 143);
   text-decoration-color: rgb(209, 189, 143);
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(209, 189, 143);
   outline: rgb(209, 189, 143) none 0px;
-  text-decoration: rgb(209, 189, 143);
   text-decoration-color: rgb(209, 189, 143);
 }
 
@@ -307,7 +301,6 @@ html[saved-theme="dark"] body .transclude-inner {
 }`,
     checkboxes: `html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgba(198, 193, 135, 0.45);
-  text-decoration: rgba(198, 193, 135, 0.45);
   text-decoration-color: rgba(198, 193, 135, 0.45);
 }
 
@@ -851,12 +844,10 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(198, 193, 135);
-  text-decoration: rgb(198, 193, 135);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(198, 193, 135);
-  text-decoration: rgb(198, 193, 135);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(198, 193, 135);
@@ -876,11 +867,9 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 
 html[saved-theme="dark"] body footer ul li a {
   color: rgb(198, 193, 135);
-  text-decoration: rgb(198, 193, 135);
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(198, 193, 135);
-  text-decoration: rgb(198, 193, 135);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -892,7 +881,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(198, 193, 135);
-  text-decoration: rgb(198, 193, 135);
 }`,
     darkmode: `html[saved-theme="dark"] body .darkmode {
   border-bottom-color: rgb(198, 193, 135);
@@ -1141,14 +1129,12 @@ html[saved-theme="light"] body div#quartz-root {
     typography: `html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: rgb(172, 99, 99);
   outline: rgb(172, 99, 99) none 0px;
-  text-decoration: rgb(172, 99, 99);
   text-decoration-color: rgb(172, 99, 99);
 }
 
 html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: rgb(172, 99, 99);
   outline: rgb(172, 99, 99) none 0px;
-  text-decoration: rgb(172, 99, 99);
   text-decoration-color: rgb(172, 99, 99);
 }
 
@@ -1157,27 +1143,23 @@ html[saved-theme="light"] body .text-highlight {
   color: rgb(8, 185, 78);
   font-weight: 500;
   outline: rgb(8, 185, 78) none 0px;
-  text-decoration: rgb(8, 185, 78);
   text-decoration-color: rgb(8, 185, 78);
 }
 
 html[saved-theme="light"] body p {
   color: rgb(110, 102, 3);
   outline: rgb(110, 102, 3) none 0px;
-  text-decoration: rgb(110, 102, 3);
   text-decoration-color: rgb(110, 102, 3);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(195, 174, 111);
   outline: rgb(195, 174, 111) none 0px;
-  text-decoration: underline rgb(195, 174, 111);
   text-decoration-color: rgb(195, 174, 111);
 }
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(195, 174, 111);
   outline: rgb(195, 174, 111) none 0px;
-  text-decoration: rgb(195, 174, 111);
   text-decoration-color: rgb(195, 174, 111);
 }
 
@@ -1249,7 +1231,6 @@ html[saved-theme="light"] body .transclude-inner {
 }`,
     checkboxes: `html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgba(110, 102, 3, 0.45);
-  text-decoration: rgba(110, 102, 3, 0.45);
   text-decoration-color: rgba(110, 102, 3, 0.45);
 }
 
@@ -1793,12 +1774,10 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(110, 102, 3);
-  text-decoration: rgb(110, 102, 3);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(110, 102, 3);
-  text-decoration: rgb(110, 102, 3);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(110, 102, 3);
@@ -1818,11 +1797,9 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 
 html[saved-theme="light"] body footer ul li a {
   color: rgb(110, 102, 3);
-  text-decoration: rgb(110, 102, 3);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(110, 102, 3);
-  text-decoration: rgb(110, 102, 3);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1834,7 +1811,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(110, 102, 3);
-  text-decoration: rgb(110, 102, 3);
 }`,
     darkmode: `html[saved-theme="light"] body .darkmode {
   border-bottom-color: rgb(110, 102, 3);

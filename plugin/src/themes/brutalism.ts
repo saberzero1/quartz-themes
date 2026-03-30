@@ -164,28 +164,24 @@ html body div#quartz-root {
     typography: `html body .page article p > b, html b {
   color: rgb(187, 154, 247);
   outline: rgb(187, 154, 247) none 0px;
-  text-decoration: rgb(187, 154, 247);
   text-decoration-color: rgb(187, 154, 247);
 }
 
 html body .page article p > em, html em {
   color: rgb(154, 165, 206);
   outline: rgb(154, 165, 206) none 0px;
-  text-decoration: rgb(154, 165, 206);
   text-decoration-color: rgb(154, 165, 206);
 }
 
 html body .page article p > i, html i {
   color: rgb(154, 165, 206);
   outline: rgb(154, 165, 206) none 0px;
-  text-decoration: rgb(154, 165, 206);
   text-decoration-color: rgb(154, 165, 206);
 }
 
 html body .page article p > strong, html strong {
   color: rgb(187, 154, 247);
   outline: rgb(187, 154, 247) none 0px;
-  text-decoration: rgb(187, 154, 247);
   text-decoration-color: rgb(187, 154, 247);
 }
 
@@ -194,7 +190,6 @@ html body .text-highlight {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgba(86, 95, 137, 0.533);
-  text-decoration: rgba(86, 95, 137, 0.533);
 }`,
     tables: `html body td {
   border-bottom-color: rgb(153, 153, 153);

@@ -1921,7 +1921,7 @@ body body.theme-light .markdown-rendered a.external-link {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(8, 185, 78) none 0px;
-  text-decoration: underline rgb(8, 185, 78);
+  text-decoration: underline;
   text-decoration-color: rgb(8, 185, 78);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1947,7 +1947,7 @@ body body.theme-light .markdown-rendered a.internal-link {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(8, 185, 78) none 0px;
-  text-decoration: underline rgb(8, 185, 78);
+  text-decoration: underline;
   text-decoration-color: rgb(8, 185, 78);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2012,7 +2012,7 @@ body body.theme-light .markdown-rendered p {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(8, 185, 78) none 0px;
-  text-decoration: rgb(8, 185, 78);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(8, 185, 78);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2038,7 +2038,7 @@ body body.theme-light strong {
   font-family: Courier, monospace;
   font-weight: 600;
   outline: rgb(7, 24, 33) none 0px;
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2064,7 +2064,7 @@ body body.theme-light b {
   font-family: Courier, monospace;
   font-weight: 600;
   outline: rgb(7, 24, 33) none 0px;
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2090,7 +2090,7 @@ body body.theme-light em {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(7, 24, 33) none 0px;
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2116,7 +2116,7 @@ body body.theme-light i {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(7, 24, 33) none 0px;
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2142,7 +2142,7 @@ body body.theme-light .markdown-rendered mark {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(7, 24, 33) none 0px;
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(7, 24, 33);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2168,7 +2168,7 @@ body body.theme-light del {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(7, 24, 33) none 0px;
-  text-decoration: line-through rgb(7, 24, 33);
+  text-decoration: line-through;
   text-decoration-color: rgb(7, 24, 33);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -2379,7 +2379,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: rgb(8, 185, 78);
-  text-decoration: line-through rgb(8, 185, 78);
+  text-decoration: line-through;
   text-decoration-color: rgb(8, 185, 78);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -2394,7 +2394,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: rgb(48, 104, 80);
-  text-decoration: rgb(48, 104, 80);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: rgb(224, 248, 207);
@@ -2436,7 +2436,7 @@ body body.theme-light .search-results > * {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(7, 24, 33) none 0px;
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3132,97 +3132,97 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: rgb(7, 24, 33);
   cursor: auto;
-  text-decoration: underline dotted rgb(7, 24, 33);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(7, 24, 33);
-  text-decoration: rgb(7, 24, 33);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(7, 24, 33);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -3289,7 +3289,7 @@ body
   cursor: default;
   font-family: Courier, monospace;
   font-weight: 400;
-  text-decoration: rgb(8, 185, 78);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -3303,7 +3303,7 @@ body
   cursor: default;
   font-family: Courier, monospace;
   font-weight: 400;
-  text-decoration: rgb(8, 185, 78);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -3330,7 +3330,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: rgb(8, 185, 78);
-  text-decoration: rgb(8, 185, 78);
 }
 body body.theme-light .nav-header {
   color: rgb(7, 24, 33);
@@ -3349,7 +3348,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: rgb(8, 185, 78);
-  text-decoration: rgb(8, 185, 78);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(8, 185, 78);
@@ -3502,7 +3500,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(68, 207, 110) none 0px;
-  text-decoration: underline rgb(68, 207, 110);
+  text-decoration: underline;
   text-decoration-color: rgb(68, 207, 110);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -3528,7 +3526,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(68, 207, 110) none 0px;
-  text-decoration: underline rgb(68, 207, 110);
+  text-decoration: underline;
   text-decoration-color: rgb(68, 207, 110);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -3593,7 +3591,7 @@ body body.theme-dark .markdown-rendered p {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(68, 207, 110) none 0px;
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3619,7 +3617,7 @@ body body.theme-dark strong {
   font-family: Courier, monospace;
   font-weight: 600;
   outline: rgb(68, 207, 110) none 0px;
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3645,7 +3643,7 @@ body body.theme-dark b {
   font-family: Courier, monospace;
   font-weight: 600;
   outline: rgb(68, 207, 110) none 0px;
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3671,7 +3669,7 @@ body body.theme-dark em {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(68, 207, 110) none 0px;
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3697,7 +3695,7 @@ body body.theme-dark i {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(68, 207, 110) none 0px;
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3723,7 +3721,7 @@ body body.theme-dark .markdown-rendered mark {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(68, 207, 110) none 0px;
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(68, 207, 110);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3749,7 +3747,7 @@ body body.theme-dark del {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(68, 207, 110) none 0px;
-  text-decoration: line-through rgb(68, 207, 110);
+  text-decoration: line-through;
   text-decoration-color: rgb(68, 207, 110);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -3960,7 +3958,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgb(68, 207, 110);
-  text-decoration: line-through rgb(68, 207, 110);
+  text-decoration: line-through;
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -3975,7 +3973,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: rgb(48, 104, 80);
-  text-decoration: rgb(48, 104, 80);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgb(7, 24, 33);
@@ -4017,7 +4015,7 @@ body body.theme-dark .search-results > * {
   font-family: Courier, monospace;
   font-weight: 400;
   outline: rgb(68, 207, 110) none 0px;
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4713,97 +4711,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(68, 207, 110);
   cursor: auto;
-  text-decoration: underline dotted rgb(68, 207, 110);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(68, 207, 110);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -4870,7 +4868,7 @@ body
   cursor: default;
   font-family: Courier, monospace;
   font-weight: 400;
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -4884,7 +4882,7 @@ body
   cursor: default;
   font-family: Courier, monospace;
   font-weight: 400;
-  text-decoration: rgb(68, 207, 110);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -4911,7 +4909,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
 }
 body body.theme-dark .nav-header {
   color: rgb(68, 207, 110);
@@ -4930,7 +4927,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgb(68, 207, 110);
-  text-decoration: rgb(68, 207, 110);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(68, 207, 110);

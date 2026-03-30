@@ -189,28 +189,24 @@ html[saved-theme="dark"] body div#quartz-root {
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
-  text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -219,7 +215,6 @@ html[saved-theme="dark"] body .text-highlight {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgba(86, 95, 137, 0.533);
-  text-decoration: rgba(86, 95, 137, 0.533);
 }`,
     tables: `html[saved-theme="dark"] body td {
   border-bottom-color: rgb(138, 92, 245);
@@ -1102,28 +1097,24 @@ html[saved-theme="light"] body div#quartz-root {
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
@@ -1132,7 +1123,6 @@ html[saved-theme="light"] body .text-highlight {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgba(150, 153, 163, 0.533);
-  text-decoration: rgba(150, 153, 163, 0.533);
 }`,
     tables: `html[saved-theme="light"] body td {
   border-bottom-color: rgb(152, 115, 247);

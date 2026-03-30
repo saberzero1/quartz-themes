@@ -4710,7 +4710,7 @@ body {
       "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
     font-weight: 400;
     outline: rgba(26, 26, 26, 0.9) none 0px;
-    text-decoration: underline 1px dashed rgba(26, 26, 26, 0.9);
+    text-decoration: underline 1px dashed;
     text-decoration-color: rgba(26, 26, 26, 0.9);
     text-decoration-line: underline;
     text-decoration-style: dashed;
@@ -4757,7 +4757,7 @@ body {
       "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
     font-weight: 400;
     outline: rgb(115, 115, 115) none 0px;
-    text-decoration: rgb(115, 115, 115);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(115, 115, 115);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -5208,7 +5208,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(115, 115, 115);
-    text-decoration: rgb(115, 115, 115);
+    text-decoration: line-through;
     text-decoration-color: rgb(115, 115, 115);
   }
 
@@ -5291,7 +5291,7 @@ body {
       "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
     font-weight: 400;
     outline: rgb(64, 64, 64) none 0px;
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -6196,115 +6196,115 @@ body {
   abbr {
     color: rgb(64, 64, 64);
     cursor: auto;
-    text-decoration: underline dotted rgb(64, 64, 64);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
   li.task-list-item[data-task="-"] {
     color: rgb(233, 49, 71);
-    text-decoration: rgb(233, 49, 71);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(233, 49, 71);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(64, 64, 64);
   }
 
@@ -6379,7 +6379,7 @@ body {
       "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
       "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -6389,7 +6389,7 @@ body {
       "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
       "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    text-decoration: rgb(64, 64, 64);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -6421,7 +6421,6 @@ body {
 
   footer ul li a {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
   }
 
   .recent-notes > h3 {
@@ -6445,7 +6444,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -6477,7 +6475,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: rgb(64, 64, 64);
-    text-decoration: rgb(64, 64, 64);
   }
 
   li.section-li > .section .meta {
@@ -7391,7 +7388,7 @@ html[saved-theme="dark"] {
         "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
       font-weight: 400;
       outline: rgba(230, 230, 230, 0.9) none 0px;
-      text-decoration: underline 1px dashed rgba(230, 230, 230, 0.9);
+      text-decoration: underline 1px dashed;
       text-decoration-color: rgba(230, 230, 230, 0.9);
       text-decoration-line: underline;
       text-decoration-style: dashed;
@@ -7438,7 +7435,7 @@ html[saved-theme="dark"] {
         "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
       font-weight: 400;
       outline: rgb(115, 115, 115) none 0px;
-      text-decoration: rgb(115, 115, 115);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(115, 115, 115);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7889,7 +7886,7 @@ html[saved-theme="dark"] {
 
     .page article li:has(> input[type="checkbox"]:checked) {
       color: rgb(115, 115, 115);
-      text-decoration: rgb(115, 115, 115);
+      text-decoration: line-through;
       text-decoration-color: rgb(115, 115, 115);
     }
 
@@ -7972,7 +7969,7 @@ html[saved-theme="dark"] {
         "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
       font-weight: 400;
       outline: rgb(212, 212, 212) none 0px;
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -8882,115 +8879,115 @@ html[saved-theme="dark"] {
     abbr {
       color: rgb(212, 212, 212);
       cursor: auto;
-      text-decoration: underline dotted rgb(212, 212, 212);
+      text-decoration: underline dotted;
       text-decoration-style: dotted;
     }
 
     li.task-list-item[data-task="-"] {
       color: rgb(251, 70, 76);
-      text-decoration: rgb(251, 70, 76);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(251, 70, 76);
     }
 
     li.task-list-item[data-task=">"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="/"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="?"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="!"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="*"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="l"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="b"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="i"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="S"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="I"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="p"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="c"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="f"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="k"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="u"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="d"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
     li.task-list-item[data-task="w"] {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(212, 212, 212);
     }
 
@@ -9065,7 +9062,7 @@ html[saved-theme="dark"] {
         "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
         "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
       font-weight: 400;
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .explorer
@@ -9078,7 +9075,7 @@ html[saved-theme="dark"] {
         "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue",
         "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
       font-weight: 400;
-      text-decoration: rgb(212, 212, 212);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .graph > .graph-outer > .global-graph-icon {
@@ -9110,7 +9107,6 @@ html[saved-theme="dark"] {
 
     footer ul li a {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
     }
 
     .recent-notes > h3 {
@@ -9134,7 +9130,6 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -9166,7 +9161,6 @@ html[saved-theme="dark"] {
 
     li.section-li > .section > .desc > h3 > a {
       color: rgb(212, 212, 212);
-      text-decoration: rgb(212, 212, 212);
     }
 
     li.section-li > .section .meta {

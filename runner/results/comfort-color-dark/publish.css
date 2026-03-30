@@ -1307,7 +1307,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   font-family: Avenir;
   font-weight: 400;
   outline: rgb(89, 162, 197) none 0px;
-  text-decoration: rgb(89, 162, 197);
+  text-decoration: underline;
   text-decoration-color: rgb(89, 162, 197);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1333,7 +1333,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
   font-family: Avenir;
   font-weight: 400;
   outline: rgb(89, 162, 197) none 0px;
-  text-decoration: rgb(89, 162, 197);
+  text-decoration: underline;
   text-decoration-color: rgb(89, 162, 197);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1359,7 +1359,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   font-family: Avenir;
   font-weight: 400;
   outline: rgb(89, 162, 197) none 0px;
-  text-decoration: rgb(89, 162, 197);
+  text-decoration: underline rgba(138, 92, 245, 0.3);
   text-decoration-color: rgb(89, 162, 197);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1398,7 +1398,7 @@ body body.theme-dark .markdown-rendered p {
   font-family: Avenir;
   font-weight: 400;
   outline: rgb(179, 179, 179) none 0px;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(179, 179, 179);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1437,7 +1437,7 @@ body body.theme-dark strong {
     sans-serif;
   font-weight: 700;
   outline: rgb(181, 199, 199) none 0px;
-  text-decoration: rgb(181, 199, 199);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(181, 199, 199);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1476,7 +1476,7 @@ body body.theme-dark b {
     sans-serif;
   font-weight: 700;
   outline: rgb(181, 199, 199) none 0px;
-  text-decoration: rgb(181, 199, 199);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(181, 199, 199);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1515,7 +1515,7 @@ body body.theme-dark em {
     sans-serif;
   font-weight: 400;
   outline: rgb(184, 206, 206) none 0px;
-  text-decoration: rgb(184, 206, 206);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(184, 206, 206);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1554,7 +1554,7 @@ body body.theme-dark i {
     sans-serif;
   font-weight: 400;
   outline: rgb(184, 206, 206) none 0px;
-  text-decoration: rgb(184, 206, 206);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(184, 206, 206);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1593,7 +1593,7 @@ body body.theme-dark .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: rgb(187, 192, 197) none 0px;
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(187, 192, 197);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1632,7 +1632,7 @@ body body.theme-dark del {
     sans-serif;
   font-weight: 400;
   outline: rgb(187, 192, 197) none 0px;
-  text-decoration: line-through rgb(187, 192, 197);
+  text-decoration: line-through;
   text-decoration-color: rgb(187, 192, 197);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -1860,7 +1860,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgb(179, 179, 179);
-  text-decoration: line-through rgb(179, 179, 179);
+  text-decoration: line-through;
   text-decoration-color: rgb(179, 179, 179);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -1875,7 +1875,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: rgb(89, 162, 197);
-  text-decoration: rgb(89, 162, 197);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgb(42, 42, 42);
@@ -1917,7 +1917,7 @@ body body.theme-dark .search-results > * {
   font-family: Avenir;
   font-weight: 400;
   outline: rgb(187, 192, 197) none 0px;
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2644,97 +2644,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(187, 192, 197);
   cursor: auto;
-  text-decoration: underline dotted rgb(187, 192, 197);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(187, 192, 197);
-  text-decoration: rgb(187, 192, 197);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 192, 197);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -2827,7 +2827,7 @@ body
   cursor: default;
   font-family: Avenir;
   font-weight: 400;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -2841,7 +2841,7 @@ body
   cursor: default;
   font-family: Avenir;
   font-weight: 400;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -2868,7 +2868,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgb(179, 179, 179);
-  text-decoration: rgb(179, 179, 179);
 }
 body body.theme-dark .nav-header {
   color: rgb(187, 192, 197);
@@ -2887,7 +2886,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgb(179, 179, 179);
-  text-decoration: rgb(179, 179, 179);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(179, 179, 179);

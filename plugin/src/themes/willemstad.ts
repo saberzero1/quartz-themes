@@ -789,7 +789,6 @@ html[saved-theme="dark"] body div#quartz-root {
   color: oklch(0.98 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.98 0 0) none 0px;
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
@@ -797,7 +796,6 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
   color: oklch(0.98 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.98 0 0) none 0px;
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
@@ -805,7 +803,6 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: oklch(0.98 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.98 0 0) none 0px;
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
@@ -813,7 +810,6 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
   color: oklch(0.98 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.98 0 0) none 0px;
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
@@ -823,7 +819,6 @@ html[saved-theme="dark"] body .text-highlight {
   color: rgb(0, 0, 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
@@ -831,7 +826,6 @@ html[saved-theme="dark"] body del {
   color: oklch(0.98 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.98 0 0) none 0px;
-  text-decoration: line-through oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
@@ -839,14 +833,12 @@ html[saved-theme="dark"] body p {
   color: oklch(0.68 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.68 0 0) none 0px;
-  text-decoration: oklch(0.68 0 0);
   text-decoration-color: oklch(0.68 0 0);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: oklch(0.707 0.1737 155.3);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.707 0.1737 155.3) none 0px;
-  text-decoration: underline oklch(0.707 0.1737 155.3);
   text-decoration-color: oklch(0.707 0.1737 155.3);
 }
 
@@ -854,7 +846,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   color: oklch(0.707 0.1737 155.3);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.707 0.1737 155.3) none 0px;
-  text-decoration: underline oklch(0.707 0.1737 155.3);
   text-decoration-color: oklch(0.707 0.1737 155.3);
 }
 
@@ -894,7 +885,6 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: oklch(0.48 0 0);
-  text-decoration: oklch(0.48 0 0);
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -1084,7 +1074,6 @@ html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: oklch(0.68 0 0);
-  text-decoration: line-through oklch(0.68 0 0);
   text-decoration-color: oklch(0.68 0 0);
 }
 
@@ -1102,109 +1091,91 @@ html[saved-theme="dark"] body input[type=checkbox] {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: oklch(0.98 0 0);
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
@@ -1745,12 +1716,12 @@ html[saved-theme="dark"] body .callout > .callout-content {
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --callout-color: 91, 197, 219;
   background-color: rgba(91, 197, 219, 0.125);
-  border-bottom-color: oklch(0.769454 0.101799 213.329);
+  border-bottom-color: oklch(0.769486 0.101807 213.336);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(91, 197, 219);
-  border-right-color: oklch(0.769454 0.101799 213.329);
-  border-top-color: oklch(0.769454 0.101799 213.329);
+  border-right-color: oklch(0.769486 0.101807 213.336);
+  border-top-color: oklch(0.769486 0.101807 213.336);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -1758,12 +1729,12 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: 164, 103, 80;
   background-color: rgba(164, 103, 80, 0.125);
-  border-bottom-color: oklch(0.574652 0.0862245 41.3449);
+  border-bottom-color: oklch(0.574678 0.0862167 41.3581);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(164, 103, 80);
-  border-right-color: oklch(0.574652 0.0862245 41.3449);
-  border-top-color: oklch(0.574652 0.0862245 41.3449);
+  border-right-color: oklch(0.574678 0.0862167 41.3581);
+  border-top-color: oklch(0.574678 0.0862167 41.3581);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -1771,12 +1742,12 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: 241, 0, 34;
   background-color: rgba(241, 0, 34, 0.125);
-  border-bottom-color: oklch(0.603065 0.245145 26.0471);
+  border-bottom-color: oklch(0.603113 0.245165 26.0478);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(241, 0, 34);
-  border-right-color: oklch(0.603065 0.245145 26.0471);
-  border-top-color: oklch(0.603065 0.245145 26.0471);
+  border-right-color: oklch(0.603113 0.245165 26.0478);
+  border-top-color: oklch(0.603113 0.245165 26.0478);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -1784,12 +1755,12 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
 html[saved-theme="dark"] body .callout[data-callout="example"] {
   --callout-color: 125, 84, 178;
   background-color: rgba(125, 84, 178, 0.125);
-  border-bottom-color: oklch(0.533415 0.145739 301.819);
+  border-bottom-color: oklch(0.533426 0.145746 301.824);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(125, 84, 178);
-  border-right-color: oklch(0.533415 0.145739 301.819);
-  border-top-color: oklch(0.533415 0.145739 301.819);
+  border-right-color: oklch(0.533426 0.145746 301.824);
+  border-top-color: oklch(0.533426 0.145746 301.824);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -1797,12 +1768,12 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --callout-color: 161, 40, 100;
   background-color: rgba(161, 40, 100, 0.125);
-  border-bottom-color: oklch(0.486186 0.165241 354.996);
+  border-bottom-color: oklch(0.486198 0.165246 354.992);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(161, 40, 100);
-  border-right-color: oklch(0.486186 0.165241 354.996);
-  border-top-color: oklch(0.486186 0.165241 354.996);
+  border-right-color: oklch(0.486198 0.165246 354.992);
+  border-top-color: oklch(0.486198 0.165246 354.992);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -1810,12 +1781,12 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
 html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: 0, 170, 199;
   background-color: rgba(0, 170, 199, 0.125);
-  border-bottom-color: oklch(0.67965 0.120454 215.668);
+  border-bottom-color: oklch(0.679659 0.12046 215.674);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(0, 170, 199);
-  border-right-color: oklch(0.67965 0.120454 215.668);
-  border-top-color: oklch(0.67965 0.120454 215.668);
+  border-right-color: oklch(0.679659 0.12046 215.674);
+  border-top-color: oklch(0.679659 0.12046 215.674);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -1823,12 +1794,12 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
 html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-color: 0, 191, 111;
   background-color: rgba(0, 191, 111, 0.125);
-  border-bottom-color: oklch(0.706959 0.173724 155.295);
+  border-bottom-color: oklch(0.706977 0.17372 155.298);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(0, 191, 111);
-  border-right-color: oklch(0.706959 0.173724 155.295);
-  border-top-color: oklch(0.706959 0.173724 155.295);
+  border-right-color: oklch(0.706977 0.17372 155.298);
+  border-top-color: oklch(0.706977 0.17372 155.298);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -1836,12 +1807,12 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
 html[saved-theme="dark"] body .callout[data-callout="question"] {
   --callout-color: 160, 199, 92;
   background-color: rgba(160, 199, 92, 0.125);
-  border-bottom-color: oklch(0.778552 0.142252 126.135);
+  border-bottom-color: oklch(0.778581 0.14226 126.137);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(160, 199, 92);
-  border-right-color: oklch(0.778552 0.142252 126.135);
-  border-top-color: oklch(0.778552 0.142252 126.135);
+  border-right-color: oklch(0.778581 0.14226 126.137);
+  border-top-color: oklch(0.778581 0.14226 126.137);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -1849,12 +1820,12 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --callout-color: 161, 169, 173;
   background-color: rgba(161, 169, 173, 0.125);
-  border-bottom-color: oklch(0.729631 0.0107511 229.015);
+  border-bottom-color: oklch(0.729638 0.0107493 229.031);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(161, 169, 173);
-  border-right-color: oklch(0.729631 0.0107511 229.015);
-  border-top-color: oklch(0.729631 0.0107511 229.015);
+  border-right-color: oklch(0.729638 0.0107493 229.031);
+  border-top-color: oklch(0.729638 0.0107493 229.031);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -1862,12 +1833,12 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
 html[saved-theme="dark"] body .callout[data-callout="success"] {
   --callout-color: 0, 158, 76;
   background-color: rgba(0, 158, 76, 0.125);
-  border-bottom-color: oklch(0.611761 0.164617 150.979);
+  border-bottom-color: oklch(0.611776 0.164621 150.979);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(0, 158, 76);
-  border-right-color: oklch(0.611761 0.164617 150.979);
-  border-top-color: oklch(0.611761 0.164617 150.979);
+  border-right-color: oklch(0.611776 0.164621 150.979);
+  border-top-color: oklch(0.611776 0.164621 150.979);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -1875,12 +1846,12 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --callout-color: 34, 148, 1;
   background-color: rgba(34, 148, 1, 0.125);
-  border-bottom-color: oklch(0.58165 0.190605 140.918);
+  border-bottom-color: oklch(0.581688 0.190619 140.918);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(34, 148, 1);
-  border-right-color: oklch(0.58165 0.190605 140.918);
-  border-top-color: oklch(0.58165 0.190605 140.918);
+  border-right-color: oklch(0.581688 0.190619 140.918);
+  border-top-color: oklch(0.581688 0.190619 140.918);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -1888,12 +1859,12 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --callout-color: 0, 170, 199;
   background-color: rgba(0, 170, 199, 0.125);
-  border-bottom-color: oklch(0.67965 0.120454 215.668);
+  border-bottom-color: oklch(0.679659 0.12046 215.674);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(0, 170, 199);
-  border-right-color: oklch(0.67965 0.120454 215.668);
-  border-top-color: oklch(0.67965 0.120454 215.668);
+  border-right-color: oklch(0.679659 0.12046 215.674);
+  border-top-color: oklch(0.679659 0.12046 215.674);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -1901,12 +1872,12 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-color: 255, 182, 26;
   background-color: rgba(255, 182, 26, 0.125);
-  border-bottom-color: oklch(0.823912 0.166913 78.6248);
+  border-bottom-color: oklch(0.823918 0.166913 78.6263);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(255, 182, 26);
-  border-right-color: oklch(0.823912 0.166913 78.6248);
-  border-top-color: oklch(0.823912 0.166913 78.6248);
+  border-right-color: oklch(0.823918 0.166913 78.6263);
+  border-top-color: oklch(0.823918 0.166913 78.6263);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }`,
@@ -1948,7 +1919,6 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   color: oklch(0.98 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.98 0 0) none 0px;
-  text-decoration: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
 }
 
@@ -2071,12 +2041,12 @@ html[saved-theme="dark"] body hr {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 0, 191, 111;
-  border-bottom-color: oklch(0.706959 0.173724 155.295);
+  border-bottom-color: oklch(0.706977 0.17372 155.298);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(0, 191, 111);
-  border-right-color: oklch(0.706959 0.173724 155.295);
-  border-top-color: oklch(0.706959 0.173724 155.295);
+  border-right-color: oklch(0.706977 0.17372 155.298);
+  border-top-color: oklch(0.706977 0.17372 155.298);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   padding-bottom: 0px;
@@ -2121,13 +2091,11 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: oklch(0.68 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
-  text-decoration: oklch(0.68 0 0);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: oklch(0.68 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
-  text-decoration: oklch(0.68 0 0);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: oklch(0.68 0 0);
@@ -2158,7 +2126,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 
 html[saved-theme="dark"] body footer ul li a {
   color: oklch(0.68 0 0);
-  text-decoration: oklch(0.68 0 0);
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: oklch(0.98 0 0);
@@ -2175,7 +2142,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: oklch(0.68 0 0);
-  text-decoration: oklch(0.68 0 0);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -2196,7 +2162,6 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: oklch(0.68 0 0);
-  text-decoration: oklch(0.68 0 0);
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -2283,7 +2248,6 @@ html[saved-theme="dark"] body .page-header h2.page-title {
 
 html[saved-theme="dark"] body abbr {
   color: oklch(0.98 0 0);
-  text-decoration: underline dotted oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body details {
@@ -3126,7 +3090,6 @@ html[saved-theme="light"] body div#quartz-root {
   color: oklch(0 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0 0 0) none 0px;
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
@@ -3134,7 +3097,6 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
   color: oklch(0 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0 0 0) none 0px;
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
@@ -3142,7 +3104,6 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
   color: oklch(0 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0 0 0) none 0px;
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
@@ -3150,7 +3111,6 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
   color: oklch(0 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0 0 0) none 0px;
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
@@ -3160,7 +3120,6 @@ html[saved-theme="light"] body .text-highlight {
   color: rgb(0, 0, 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
@@ -3168,7 +3127,6 @@ html[saved-theme="light"] body del {
   color: oklch(0 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0 0 0) none 0px;
-  text-decoration: line-through oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
@@ -3176,14 +3134,12 @@ html[saved-theme="light"] body p {
   color: oklch(0.3 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.3 0 0) none 0px;
-  text-decoration: oklch(0.3 0 0);
   text-decoration-color: oklch(0.3 0 0);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: oklch(0.4014 0.0638 202.51);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.4014 0.0638 202.51) none 0px;
-  text-decoration: underline oklch(0.4014 0.0638 202.51);
   text-decoration-color: oklch(0.4014 0.0638 202.51);
 }
 
@@ -3191,7 +3147,6 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
   color: oklch(0.4014 0.0638 202.51);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.4014 0.0638 202.51) none 0px;
-  text-decoration: underline oklch(0.4014 0.0638 202.51);
   text-decoration-color: oklch(0.4014 0.0638 202.51);
 }
 
@@ -3233,7 +3188,6 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: oklch(0.6 0 0);
-  text-decoration: oklch(0.6 0 0);
 }
 
 html[saved-theme="light"] body blockquote {
@@ -3423,7 +3377,6 @@ html[saved-theme="light"] body .katex-display > .katex > .katex-html {
 
 html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: oklch(0.3 0 0);
-  text-decoration: line-through oklch(0.3 0 0);
   text-decoration-color: oklch(0.3 0 0);
 }
 
@@ -3441,109 +3394,91 @@ html[saved-theme="light"] body input[type=checkbox] {
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='*'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='/'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='?'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='I'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='S'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='b'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='c'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='d'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='f'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='i'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='k'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='l'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='p'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='u'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: oklch(0 0 0);
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
@@ -4084,12 +4019,12 @@ html[saved-theme="light"] body .callout > .callout-content {
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --callout-color: 91, 197, 219;
   background-color: rgba(91, 197, 219, 0.125);
-  border-bottom-color: oklch(0.769454 0.101799 213.329);
+  border-bottom-color: oklch(0.769486 0.101807 213.336);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(91, 197, 219);
-  border-right-color: oklch(0.769454 0.101799 213.329);
-  border-top-color: oklch(0.769454 0.101799 213.329);
+  border-right-color: oklch(0.769486 0.101807 213.336);
+  border-top-color: oklch(0.769486 0.101807 213.336);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -4097,12 +4032,12 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
 html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: 164, 103, 80;
   background-color: rgba(164, 103, 80, 0.125);
-  border-bottom-color: oklch(0.574652 0.0862245 41.3449);
+  border-bottom-color: oklch(0.574678 0.0862167 41.3581);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(164, 103, 80);
-  border-right-color: oklch(0.574652 0.0862245 41.3449);
-  border-top-color: oklch(0.574652 0.0862245 41.3449);
+  border-right-color: oklch(0.574678 0.0862167 41.3581);
+  border-top-color: oklch(0.574678 0.0862167 41.3581);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -4110,12 +4045,12 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
 html[saved-theme="light"] body .callout[data-callout="danger"] {
   --callout-color: 241, 0, 34;
   background-color: rgba(241, 0, 34, 0.125);
-  border-bottom-color: oklch(0.603065 0.245145 26.0471);
+  border-bottom-color: oklch(0.603113 0.245165 26.0478);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(241, 0, 34);
-  border-right-color: oklch(0.603065 0.245145 26.0471);
-  border-top-color: oklch(0.603065 0.245145 26.0471);
+  border-right-color: oklch(0.603113 0.245165 26.0478);
+  border-top-color: oklch(0.603113 0.245165 26.0478);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -4123,12 +4058,12 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
 html[saved-theme="light"] body .callout[data-callout="example"] {
   --callout-color: 125, 84, 178;
   background-color: rgba(125, 84, 178, 0.125);
-  border-bottom-color: oklch(0.533415 0.145739 301.819);
+  border-bottom-color: oklch(0.533426 0.145746 301.824);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(125, 84, 178);
-  border-right-color: oklch(0.533415 0.145739 301.819);
-  border-top-color: oklch(0.533415 0.145739 301.819);
+  border-right-color: oklch(0.533426 0.145746 301.824);
+  border-top-color: oklch(0.533426 0.145746 301.824);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -4136,12 +4071,12 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
 html[saved-theme="light"] body .callout[data-callout="failure"] {
   --callout-color: 161, 40, 100;
   background-color: rgba(161, 40, 100, 0.125);
-  border-bottom-color: oklch(0.486186 0.165241 354.996);
+  border-bottom-color: oklch(0.486198 0.165246 354.992);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(161, 40, 100);
-  border-right-color: oklch(0.486186 0.165241 354.996);
-  border-top-color: oklch(0.486186 0.165241 354.996);
+  border-right-color: oklch(0.486198 0.165246 354.992);
+  border-top-color: oklch(0.486198 0.165246 354.992);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -4149,12 +4084,12 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
 html[saved-theme="light"] body .callout[data-callout="info"] {
   --callout-color: 0, 170, 199;
   background-color: rgba(0, 170, 199, 0.125);
-  border-bottom-color: oklch(0.67965 0.120454 215.668);
+  border-bottom-color: oklch(0.679659 0.12046 215.674);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(0, 170, 199);
-  border-right-color: oklch(0.67965 0.120454 215.668);
-  border-top-color: oklch(0.67965 0.120454 215.668);
+  border-right-color: oklch(0.679659 0.12046 215.674);
+  border-top-color: oklch(0.679659 0.12046 215.674);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -4162,12 +4097,12 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
 html[saved-theme="light"] body .callout[data-callout="note"] {
   --callout-color: 0, 191, 111;
   background-color: rgba(0, 191, 111, 0.125);
-  border-bottom-color: oklch(0.706959 0.173724 155.295);
+  border-bottom-color: oklch(0.706977 0.17372 155.298);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(0, 191, 111);
-  border-right-color: oklch(0.706959 0.173724 155.295);
-  border-top-color: oklch(0.706959 0.173724 155.295);
+  border-right-color: oklch(0.706977 0.17372 155.298);
+  border-top-color: oklch(0.706977 0.17372 155.298);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -4175,12 +4110,12 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
 html[saved-theme="light"] body .callout[data-callout="question"] {
   --callout-color: 160, 199, 92;
   background-color: rgba(160, 199, 92, 0.125);
-  border-bottom-color: oklch(0.778552 0.142252 126.135);
+  border-bottom-color: oklch(0.778581 0.14226 126.137);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(160, 199, 92);
-  border-right-color: oklch(0.778552 0.142252 126.135);
-  border-top-color: oklch(0.778552 0.142252 126.135);
+  border-right-color: oklch(0.778581 0.14226 126.137);
+  border-top-color: oklch(0.778581 0.14226 126.137);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -4188,12 +4123,12 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 html[saved-theme="light"] body .callout[data-callout="quote"] {
   --callout-color: 161, 169, 173;
   background-color: rgba(161, 169, 173, 0.125);
-  border-bottom-color: oklch(0.729631 0.0107511 229.015);
+  border-bottom-color: oklch(0.729638 0.0107493 229.031);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(161, 169, 173);
-  border-right-color: oklch(0.729631 0.0107511 229.015);
-  border-top-color: oklch(0.729631 0.0107511 229.015);
+  border-right-color: oklch(0.729638 0.0107493 229.031);
+  border-top-color: oklch(0.729638 0.0107493 229.031);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -4201,12 +4136,12 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
 html[saved-theme="light"] body .callout[data-callout="success"] {
   --callout-color: 0, 158, 76;
   background-color: rgba(0, 158, 76, 0.125);
-  border-bottom-color: oklch(0.611761 0.164617 150.979);
+  border-bottom-color: oklch(0.611776 0.164621 150.979);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(0, 158, 76);
-  border-right-color: oklch(0.611761 0.164617 150.979);
-  border-top-color: oklch(0.611761 0.164617 150.979);
+  border-right-color: oklch(0.611776 0.164621 150.979);
+  border-top-color: oklch(0.611776 0.164621 150.979);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -4214,12 +4149,12 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
 html[saved-theme="light"] body .callout[data-callout="tip"] {
   --callout-color: 34, 148, 1;
   background-color: rgba(34, 148, 1, 0.125);
-  border-bottom-color: oklch(0.58165 0.190605 140.918);
+  border-bottom-color: oklch(0.581688 0.190619 140.918);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(34, 148, 1);
-  border-right-color: oklch(0.58165 0.190605 140.918);
-  border-top-color: oklch(0.58165 0.190605 140.918);
+  border-right-color: oklch(0.581688 0.190619 140.918);
+  border-top-color: oklch(0.581688 0.190619 140.918);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -4227,12 +4162,12 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
 html[saved-theme="light"] body .callout[data-callout="todo"] {
   --callout-color: 0, 170, 199;
   background-color: rgba(0, 170, 199, 0.125);
-  border-bottom-color: oklch(0.67965 0.120454 215.668);
+  border-bottom-color: oklch(0.679659 0.12046 215.674);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(0, 170, 199);
-  border-right-color: oklch(0.67965 0.120454 215.668);
-  border-top-color: oklch(0.67965 0.120454 215.668);
+  border-right-color: oklch(0.679659 0.12046 215.674);
+  border-top-color: oklch(0.679659 0.12046 215.674);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -4240,12 +4175,12 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
 html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-color: 255, 182, 26;
   background-color: rgba(255, 182, 26, 0.125);
-  border-bottom-color: oklch(0.823912 0.166913 78.6248);
+  border-bottom-color: oklch(0.823918 0.166913 78.6263);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(255, 182, 26);
-  border-right-color: oklch(0.823912 0.166913 78.6248);
-  border-top-color: oklch(0.823912 0.166913 78.6248);
+  border-right-color: oklch(0.823918 0.166913 78.6263);
+  border-top-color: oklch(0.823918 0.166913 78.6263);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }`,
@@ -4287,7 +4222,6 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
   color: oklch(0 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0 0 0) none 0px;
-  text-decoration: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
 }
 
@@ -4415,12 +4349,12 @@ html[saved-theme="light"] body hr {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 0, 191, 111;
-  border-bottom-color: oklch(0.706959 0.173724 155.295);
+  border-bottom-color: oklch(0.706977 0.17372 155.298);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-left-color: rgb(0, 191, 111);
-  border-right-color: oklch(0.706959 0.173724 155.295);
-  border-top-color: oklch(0.706959 0.173724 155.295);
+  border-right-color: oklch(0.706977 0.17372 155.298);
+  border-top-color: oklch(0.706977 0.17372 155.298);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   padding-bottom: 0px;
@@ -4465,13 +4399,11 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: oklch(0.3 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
-  text-decoration: oklch(0.3 0 0);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: oklch(0.3 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
-  text-decoration: oklch(0.3 0 0);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: oklch(0.3 0 0);
@@ -4502,7 +4434,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 
 html[saved-theme="light"] body footer ul li a {
   color: oklch(0.3 0 0);
-  text-decoration: oklch(0.3 0 0);
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > h3 {
   color: oklch(0 0 0);
@@ -4519,7 +4450,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: oklch(0.3 0 0);
-  text-decoration: oklch(0.3 0 0);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4540,7 +4470,6 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: oklch(0.3 0 0);
-  text-decoration: oklch(0.3 0 0);
 }
 
 html[saved-theme="light"] body ul.section-ul {
@@ -4627,7 +4556,6 @@ html[saved-theme="light"] body .page-header h2.page-title {
 
 html[saved-theme="light"] body abbr {
   color: oklch(0 0 0);
-  text-decoration: underline dotted oklch(0 0 0);
 }
 
 html[saved-theme="light"] body details {

@@ -242,14 +242,12 @@ html body div#quartz-root {
     typography: `html body .page article p > em, html em {
   color: rgb(117, 138, 82);
   outline: rgb(117, 138, 82) none 0px;
-  text-decoration: rgb(117, 138, 82);
   text-decoration-color: rgb(117, 138, 82);
 }
 
 html body .page article p > i, html i {
   color: rgb(117, 138, 82);
   outline: rgb(117, 138, 82) none 0px;
-  text-decoration: rgb(117, 138, 82);
   text-decoration-color: rgb(117, 138, 82);
 }
 
@@ -260,7 +258,6 @@ html body .text-highlight {
 html body p {
   color: rgb(67, 75, 86);
   outline: rgb(67, 75, 86) none 0px;
-  text-decoration: rgb(67, 75, 86);
   text-decoration-color: rgb(67, 75, 86);
 }`,
     links: `html body a.external, html footer a {
@@ -368,7 +365,6 @@ html body pre:has(> code) {
 }`,
     checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(67, 75, 86);
-  text-decoration: line-through rgb(67, 75, 86);
   text-decoration-color: rgb(67, 75, 86);
 }
 
@@ -1119,12 +1115,10 @@ html body ::-webkit-scrollbar-track {
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(32, 36, 48);
-  text-decoration: rgb(32, 36, 48);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(32, 36, 48);
-  text-decoration: rgb(32, 36, 48);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(34, 34, 34);
@@ -1149,11 +1143,9 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(67, 75, 86);
-  text-decoration: rgb(67, 75, 86);
 }`,
     recentNotes: `html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(32, 36, 48);
-  text-decoration: rgb(32, 36, 48);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1165,7 +1157,6 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(32, 36, 48);
-  text-decoration: rgb(32, 36, 48);
 }`,
     darkmode: `html body .darkmode {
   border-bottom-color: rgb(34, 34, 34);

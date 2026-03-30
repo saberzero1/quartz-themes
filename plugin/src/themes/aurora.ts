@@ -227,7 +227,6 @@ html body div#quartz-root {
   background-color: rgb(135, 235, 253);
   color: rgb(135, 235, 253);
   outline: rgb(135, 235, 253) none 0px;
-  text-decoration: rgb(135, 235, 253);
   text-decoration-color: rgb(135, 235, 253);
 }
 
@@ -235,7 +234,6 @@ html body .page article p > em, html em {
   color: rgb(187, 154, 247);
   font-family: OperatorMonoSSmLig-Book, Rubik;
   outline: rgb(187, 154, 247) none 0px;
-  text-decoration: rgb(187, 154, 247);
   text-decoration-color: rgb(187, 154, 247);
 }
 
@@ -243,7 +241,6 @@ html body .page article p > i, html i {
   color: rgb(187, 154, 247);
   font-family: OperatorMonoSSmLig-Book, Rubik;
   outline: rgb(187, 154, 247) none 0px;
-  text-decoration: rgb(187, 154, 247);
   text-decoration-color: rgb(187, 154, 247);
 }
 
@@ -251,7 +248,6 @@ html body .page article p > strong, html strong {
   background-color: rgb(135, 235, 253);
   color: rgb(135, 235, 253);
   outline: rgb(135, 235, 253) none 0px;
-  text-decoration: rgb(135, 235, 253);
   text-decoration-color: rgb(135, 235, 253);
 }
 
@@ -259,14 +255,12 @@ html body .text-highlight {
   background-color: rgba(137, 60, 245, 0.55);
   color: rgb(204, 204, 204);
   outline: rgb(204, 204, 204) none 0px;
-  text-decoration: rgb(204, 204, 204);
   text-decoration-color: rgb(204, 204, 204);
 }
 
 html body del {
   color: rgb(204, 204, 204);
   outline: rgb(204, 204, 204) none 0px;
-  text-decoration: line-through rgb(204, 204, 204);
   text-decoration-color: rgb(204, 204, 204);
 }
 
@@ -276,7 +270,6 @@ html body p {
     links: `html body a.external, html footer a {
   color: rgb(204, 204, 204);
   outline: rgb(204, 204, 204) none 0px;
-  text-decoration: rgb(204, 204, 204);
   text-decoration-color: rgb(204, 204, 204);
   transition: background 0.35s ease-in-out;
 }
@@ -284,14 +277,12 @@ html body p {
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(137, 60, 245);
   outline: rgb(137, 60, 245) none 0px;
-  text-decoration: rgb(137, 60, 245);
   text-decoration-color: rgb(137, 60, 245);
 }
 
 html body a.internal.broken {
   color: rgb(137, 60, 245);
   outline: rgb(137, 60, 245) none 0px;
-  text-decoration: rgb(137, 60, 245);
   text-decoration-color: rgb(137, 60, 245);
 }`,
     lists: `html body dd {
@@ -325,7 +316,6 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgba(137, 60, 245, 0.847);
-  text-decoration: rgba(137, 60, 245, 0.847);
 }
 
 html body blockquote {
@@ -474,7 +464,6 @@ html body .transclude-inner {
 }`,
     checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
@@ -499,109 +488,109 @@ html body input[type=checkbox]:checked:after {
 
 html body li.task-list-item[data-task='!'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 
@@ -964,7 +953,6 @@ html body .search > .search-container > .search-space {
 html body .search > .search-container > .search-space > * {
   color: rgb(204, 204, 204);
   outline: rgb(204, 204, 204) none 0px;
-  text-decoration: rgb(204, 204, 204);
   text-decoration-color: rgb(204, 204, 204);
 }
 
@@ -1100,7 +1088,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: rgba(137, 60, 245, 0.55);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(204, 204, 204);
@@ -1165,7 +1152,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(204, 204, 204);
-  text-decoration: underline dotted rgb(204, 204, 204);
 }
 
 html body details {

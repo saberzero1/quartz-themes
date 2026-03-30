@@ -380,7 +380,6 @@ html[saved-theme="dark"] body p {
   color: rgb(255, 196, 0);
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
   outline: rgb(255, 196, 0) none 0px;
-  text-decoration: underline rgb(255, 196, 0);
   text-decoration-color: rgb(255, 196, 0);
 }
 
@@ -388,7 +387,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   color: rgb(255, 165, 0);
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
   outline: rgb(255, 165, 0) none 0px;
-  text-decoration: underline rgb(255, 165, 0);
   text-decoration-color: rgb(255, 165, 0);
 }
 
@@ -410,7 +408,6 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(179, 179, 179);
-  text-decoration: rgb(179, 179, 179);
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -1812,7 +1809,6 @@ html[saved-theme="light"] body p {
   color: rgb(255, 196, 0);
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
   outline: rgb(255, 196, 0) none 0px;
-  text-decoration: underline rgb(255, 196, 0);
   text-decoration-color: rgb(255, 196, 0);
 }
 
@@ -1820,7 +1816,6 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
   color: rgb(255, 165, 0);
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
   outline: rgb(255, 165, 0) none 0px;
-  text-decoration: underline rgb(255, 165, 0);
   text-decoration-color: rgb(255, 165, 0);
 }
 
@@ -1842,7 +1837,6 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(92, 92, 92);
-  text-decoration: rgb(92, 92, 92);
 }
 
 html[saved-theme="light"] body blockquote {

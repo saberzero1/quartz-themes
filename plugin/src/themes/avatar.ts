@@ -281,7 +281,6 @@ html body div#quartz-root {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 700;
   outline: rgb(52, 211, 153) none 0px;
-  text-decoration: rgb(52, 211, 153);
   text-decoration-color: rgb(52, 211, 153);
 }
 
@@ -289,7 +288,6 @@ html body .page article p > em, html em {
   color: rgb(129, 140, 248);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(129, 140, 248) none 0px;
-  text-decoration: rgb(129, 140, 248);
   text-decoration-color: rgb(129, 140, 248);
 }
 
@@ -297,7 +295,6 @@ html body .page article p > i, html i {
   color: rgb(129, 140, 248);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(129, 140, 248) none 0px;
-  text-decoration: rgb(129, 140, 248);
   text-decoration-color: rgb(129, 140, 248);
 }
 
@@ -306,7 +303,6 @@ html body .page article p > strong, html strong {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 700;
   outline: rgb(52, 211, 153) none 0px;
-  text-decoration: rgb(52, 211, 153);
   text-decoration-color: rgb(52, 211, 153);
 }
 
@@ -316,7 +312,6 @@ html body .text-highlight {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 500;
   outline: rgb(26, 26, 26) none 0px;
-  text-decoration: rgb(26, 26, 26);
   text-decoration-color: rgb(26, 26, 26);
 }
 
@@ -324,7 +319,6 @@ html body del {
   color: rgb(226, 232, 240);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(226, 232, 240) none 0px;
-  text-decoration: line-through rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
@@ -332,14 +326,12 @@ html body p {
   color: rgb(160, 174, 192);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(160, 174, 192) none 0px;
-  text-decoration: rgb(160, 174, 192);
   text-decoration-color: rgb(160, 174, 192);
 }`,
     links: `html body a.external, html footer a {
   color: rgb(251, 191, 36);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(251, 191, 36) none 0px;
-  text-decoration: underline rgb(251, 191, 36);
   text-decoration-color: rgb(251, 191, 36);
 }
 
@@ -347,7 +339,6 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(125, 211, 192);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(125, 211, 192) none 0px;
-  text-decoration: underline rgb(125, 211, 192);
   text-decoration-color: rgb(125, 211, 192);
 }
 
@@ -387,7 +378,6 @@ html body ul.overflow {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(113, 128, 150);
-  text-decoration: rgb(113, 128, 150);
 }
 
 html body blockquote {
@@ -577,7 +567,6 @@ html body .katex-display > .katex > .katex-html {
 
 html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(160, 174, 192);
-  text-decoration: line-through rgb(160, 174, 192);
   text-decoration-color: rgb(160, 174, 192);
 }
 
@@ -590,109 +579,91 @@ html body input[type=checkbox] {
 
 html body li.task-list-item[data-task='!'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(226, 232, 240);
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
@@ -1244,7 +1215,6 @@ html body .search > .search-container > .search-space > * {
   color: rgb(226, 232, 240);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   outline: rgb(226, 232, 240) none 0px;
-  text-decoration: rgb(226, 232, 240);
   text-decoration-color: rgb(226, 232, 240);
 }
 
@@ -1409,13 +1379,11 @@ html body ::-webkit-scrollbar-track {
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(160, 174, 192);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  text-decoration: rgb(160, 174, 192);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(160, 174, 192);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  text-decoration: rgb(160, 174, 192);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(125, 211, 192);
@@ -1443,7 +1411,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(251, 191, 36);
-  text-decoration: rgb(251, 191, 36);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(226, 232, 240);
@@ -1460,7 +1427,6 @@ html body .recent-notes > ul.recent-ul > li {
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(160, 174, 192);
-  text-decoration: rgb(160, 174, 192);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1481,7 +1447,6 @@ html body li.section-li > .section .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(160, 174, 192);
-  text-decoration: rgb(160, 174, 192);
 }
 
 html body ul.section-ul {
@@ -1556,7 +1521,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(226, 232, 240);
-  text-decoration: underline dotted rgb(226, 232, 240);
 }
 
 html body details {

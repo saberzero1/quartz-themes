@@ -4635,7 +4635,7 @@ body {
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: rgb(138, 92, 245) none 0px;
-    text-decoration: underline 1px rgb(138, 92, 245);
+    text-decoration: underline 1px;
     text-decoration-color: rgb(138, 92, 245);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -4668,7 +4668,7 @@ body {
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: rgb(138, 92, 245) none 0px;
-    text-decoration: underline 1px rgb(138, 92, 245);
+    text-decoration: underline 1px;
     text-decoration-color: rgb(138, 92, 245);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -4749,7 +4749,7 @@ body {
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: color(srgb 0.01485 0.039975 0.07515 / 0.7) none 0px;
-    text-decoration: color(srgb 0.01485 0.039975 0.07515 / 0.7);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515 / 0.7);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4781,7 +4781,7 @@ body {
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 600;
     outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4813,7 +4813,7 @@ body {
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 600;
     outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4845,7 +4845,7 @@ body {
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4877,7 +4877,7 @@ body {
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4908,7 +4908,7 @@ body {
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4948,7 +4948,7 @@ body {
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-    text-decoration: line-through color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: line-through;
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -5212,7 +5212,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: color(srgb 0.01485 0.039975 0.07515 / 0.7);
-    text-decoration: line-through color(srgb 0.01485 0.039975 0.07515 / 0.7);
+    text-decoration: line-through;
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515 / 0.7);
   }
 
@@ -5233,7 +5233,7 @@ body {
 
   .data-footnote-backref {
     color: color(srgb 0.04455 0.119925 0.22545);
-    text-decoration: color(srgb 0.04455 0.119925 0.22545);
+    text-decoration: underline rgb(138, 92, 245);
   }
 
   .search > .search-button {
@@ -5303,7 +5303,7 @@ body {
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: color(srgb 0.01485 0.039975 0.07515) none 0px;
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -6222,115 +6222,115 @@ body {
   abbr {
     color: color(srgb 0.01485 0.039975 0.07515);
     cursor: auto;
-    text-decoration: underline dotted color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
   li.task-list-item[data-task="-"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task=">"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="/"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="?"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="!"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="*"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="l"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="b"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="i"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="S"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="I"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="p"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="c"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="f"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="k"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="u"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="d"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
   li.task-list-item[data-task="w"] {
     color: color(srgb 0.01485 0.039975 0.07515);
-    text-decoration: color(srgb 0.01485 0.039975 0.07515);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: color(srgb 0.01485 0.039975 0.07515);
   }
 
@@ -6411,7 +6411,7 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 500;
-    text-decoration: color(srgb 0.04455 0.119925 0.22545);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -6423,7 +6423,7 @@ body {
       "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 500;
-    text-decoration: color(srgb 0.04455 0.119925 0.22545);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -6455,7 +6455,6 @@ body {
 
   footer ul li a {
     color: color(srgb 0.04455 0.119925 0.22545);
-    text-decoration: color(srgb 0.04455 0.119925 0.22545);
   }
 
   .recent-notes > h3 {
@@ -6481,7 +6480,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: color(srgb 0.0297 0.07995 0.1503);
-    text-decoration: color(srgb 0.0297 0.07995 0.1503);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -6515,7 +6513,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: color(srgb 0.0297 0.07995 0.1503);
-    text-decoration: color(srgb 0.0297 0.07995 0.1503);
   }
 
   li.section-li > .section .meta {
@@ -7376,7 +7373,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: rgb(166, 138, 249) none 0px;
-      text-decoration: underline 1px rgb(166, 138, 249);
+      text-decoration: underline 1px;
       text-decoration-color: rgb(166, 138, 249);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -7409,7 +7406,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: rgb(166, 138, 249) none 0px;
-      text-decoration: underline 1px rgb(166, 138, 249);
+      text-decoration: underline 1px;
       text-decoration-color: rgb(166, 138, 249);
       text-decoration-line: underline;
       text-decoration-style: solid;
@@ -7490,7 +7487,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: color(srgb 0.6594 0.7599 0.9006 / 0.7) none 0px;
-      text-decoration: color(srgb 0.6594 0.7599 0.9006 / 0.7);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006 / 0.7);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7522,7 +7519,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 600;
       outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7554,7 +7551,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 600;
       outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7586,7 +7583,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7618,7 +7615,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7649,7 +7646,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(0, 0, 0);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7689,7 +7686,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-      text-decoration: line-through color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: line-through;
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
       text-decoration-line: line-through;
       text-decoration-style: solid;
@@ -7953,7 +7950,7 @@ html[saved-theme="dark"] {
 
     .page article li:has(> input[type="checkbox"]:checked) {
       color: color(srgb 0.6594 0.7599 0.9006 / 0.7);
-      text-decoration: line-through color(srgb 0.6594 0.7599 0.9006 / 0.7);
+      text-decoration: line-through;
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006 / 0.7);
     }
 
@@ -7974,7 +7971,7 @@ html[saved-theme="dark"] {
 
     .data-footnote-backref {
       color: color(srgb 0.361375 0.549813 0.813625);
-      text-decoration: color(srgb 0.361375 0.549813 0.813625);
+      text-decoration: underline rgb(166, 138, 249);
     }
 
     .search > .search-button {
@@ -8044,7 +8041,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: color(srgb 0.6594 0.7599 0.9006) none 0px;
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -8968,115 +8965,115 @@ html[saved-theme="dark"] {
     abbr {
       color: color(srgb 0.6594 0.7599 0.9006);
       cursor: auto;
-      text-decoration: underline dotted color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: underline dotted;
       text-decoration-style: dotted;
     }
 
     li.task-list-item[data-task="-"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task=">"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="/"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="?"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="!"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="*"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="l"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="b"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="i"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="S"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="I"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="p"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="c"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="f"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="k"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="u"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="d"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.task-list-item[data-task="w"] {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: color(srgb 0.6594 0.7599 0.9006);
     }
 
@@ -9157,7 +9154,7 @@ html[saved-theme="dark"] {
         "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 500;
-      text-decoration: color(srgb 0.361375 0.549813 0.813625);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .explorer
@@ -9172,7 +9169,7 @@ html[saved-theme="dark"] {
         "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 500;
-      text-decoration: color(srgb 0.361375 0.549813 0.813625);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .graph > .graph-outer > .global-graph-icon {
@@ -9204,7 +9201,6 @@ html[saved-theme="dark"] {
 
     footer ul li a {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
     }
 
     .recent-notes > h3 {
@@ -9230,7 +9226,6 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -9264,7 +9259,6 @@ html[saved-theme="dark"] {
 
     li.section-li > .section > .desc > h3 > a {
       color: color(srgb 0.6594 0.7599 0.9006);
-      text-decoration: color(srgb 0.6594 0.7599 0.9006);
     }
 
     li.section-li > .section .meta {

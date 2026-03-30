@@ -55,35 +55,30 @@ html[saved-theme="dark"] body div#quartz-root {
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(237, 242, 247);
   outline: rgb(237, 242, 247) none 0px;
-  text-decoration: rgb(237, 242, 247);
   text-decoration-color: rgb(237, 242, 247);
 }
 
 html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
   color: rgb(237, 242, 247);
   outline: rgb(237, 242, 247) none 0px;
-  text-decoration: rgb(237, 242, 247);
   text-decoration-color: rgb(237, 242, 247);
 }
 
 html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(237, 242, 247);
   outline: rgb(237, 242, 247) none 0px;
-  text-decoration: rgb(237, 242, 247);
   text-decoration-color: rgb(237, 242, 247);
 }
 
 html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgb(237, 242, 247);
   outline: rgb(237, 242, 247) none 0px;
-  text-decoration: rgb(237, 242, 247);
   text-decoration-color: rgb(237, 242, 247);
 }
 
 html[saved-theme="dark"] body del {
   color: rgb(237, 242, 247);
   outline: rgb(237, 242, 247) none 0px;
-  text-decoration: line-through rgb(237, 242, 247);
   text-decoration-color: rgb(237, 242, 247);
 }
 
@@ -93,7 +88,7 @@ html[saved-theme="dark"] body p {
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(218, 218, 218);
   outline: rgb(218, 218, 218) none 0px;
-  text-decoration: underline 1px rgb(218, 218, 218);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(218, 218, 218);
   text-decoration-thickness: 1px;
   transition: 0.2s;
@@ -102,7 +97,7 @@ html[saved-theme="dark"] body p {
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(218, 218, 218);
   outline: rgb(218, 218, 218) none 0px;
-  text-decoration: underline 1px rgb(218, 218, 218);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(218, 218, 218);
   text-decoration-thickness: 1px;
 }
@@ -128,7 +123,7 @@ html[saved-theme="dark"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
   color: rgb(218, 218, 218);
-  text-decoration: underline 1px rgb(218, 218, 218);
+  text-decoration: underline 1px;
 }`,
     tables: `html[saved-theme="dark"] body .spacer {
   background-color: rgb(45, 55, 72);
@@ -241,13 +236,11 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(237, 242, 247);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  text-decoration: rgb(237, 242, 247);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(237, 242, 247);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  text-decoration: rgb(237, 242, 247);
 }`,
     footer: `html[saved-theme="dark"] body footer {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -267,7 +260,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(237, 242, 247);
-  text-decoration: rgb(237, 242, 247);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -288,7 +280,6 @@ html[saved-theme="dark"] body li.section-li > .section .meta {
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(237, 242, 247);
-  text-decoration: rgb(237, 242, 247);
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -359,35 +350,30 @@ html[saved-theme="light"] body div#quartz-root {
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
-  text-decoration: rgb(26, 32, 44);
   text-decoration-color: rgb(26, 32, 44);
 }
 
 html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
-  text-decoration: rgb(26, 32, 44);
   text-decoration-color: rgb(26, 32, 44);
 }
 
 html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
-  text-decoration: rgb(26, 32, 44);
   text-decoration-color: rgb(26, 32, 44);
 }
 
 html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
-  text-decoration: rgb(26, 32, 44);
   text-decoration-color: rgb(26, 32, 44);
 }
 
 html[saved-theme="light"] body del {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
-  text-decoration: line-through rgb(26, 32, 44);
   text-decoration-color: rgb(26, 32, 44);
 }
 
@@ -397,7 +383,7 @@ html[saved-theme="light"] body p {
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
-  text-decoration: underline 1px rgb(26, 32, 44);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(26, 32, 44);
   text-decoration-thickness: 1px;
   transition: 0.2s;
@@ -406,7 +392,7 @@ html[saved-theme="light"] body p {
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(26, 32, 44);
   outline: rgb(26, 32, 44) none 0px;
-  text-decoration: underline 1px rgb(26, 32, 44);
+  text-decoration: underline 1px;
   text-decoration-color: rgb(26, 32, 44);
   text-decoration-thickness: 1px;
 }
@@ -432,7 +418,7 @@ html[saved-theme="light"] body ul.overflow {
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
   color: rgb(26, 32, 44);
-  text-decoration: underline 1px rgb(26, 32, 44);
+  text-decoration: underline 1px;
 }`,
     tables: `html[saved-theme="light"] body .spacer {
   background-color: rgb(248, 249, 250);
@@ -518,13 +504,11 @@ html[saved-theme="light"] body .transclude-inner {
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(26, 32, 44);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  text-decoration: rgb(26, 32, 44);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(26, 32, 44);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  text-decoration: rgb(26, 32, 44);
 }`,
     footer: `html[saved-theme="light"] body footer {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -544,7 +528,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li {
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(26, 32, 44);
-  text-decoration: rgb(26, 32, 44);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -565,7 +548,6 @@ html[saved-theme="light"] body li.section-li > .section .meta {
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(26, 32, 44);
-  text-decoration: rgb(26, 32, 44);
 }
 
 html[saved-theme="light"] body ul.section-ul {

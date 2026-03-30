@@ -2306,7 +2306,7 @@ body body.theme-light .markdown-rendered a.external-link {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(200, 100, 100) none 0px;
-  text-decoration: underline rgb(200, 100, 100);
+  text-decoration: underline;
   text-decoration-color: rgb(200, 100, 100);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2332,7 +2332,7 @@ body body.theme-light .markdown-rendered a.internal-link {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(200, 100, 100) none 0px;
-  text-decoration: rgb(200, 100, 100);
+  text-decoration: underline;
   text-decoration-color: rgb(200, 100, 100);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2397,7 +2397,7 @@ body body.theme-light .markdown-rendered p {
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-weight: 400;
   outline: rgb(85, 85, 85) none 0px;
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2423,7 +2423,7 @@ body body.theme-light strong {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 600;
   outline: rgb(85, 85, 85) none 0px;
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2449,7 +2449,7 @@ body body.theme-light b {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 600;
   outline: rgb(85, 85, 85) none 0px;
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2475,7 +2475,7 @@ body body.theme-light em {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(85, 85, 85) none 0px;
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2501,7 +2501,7 @@ body body.theme-light i {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(85, 85, 85) none 0px;
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2527,7 +2527,7 @@ body body.theme-light .markdown-rendered mark {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(85, 85, 85) none 0px;
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(85, 85, 85);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2553,7 +2553,7 @@ body body.theme-light del {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(85, 85, 85) none 0px;
-  text-decoration: line-through rgb(85, 85, 85);
+  text-decoration: line-through;
   text-decoration-color: rgb(85, 85, 85);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -2766,7 +2766,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: rgb(85, 85, 85);
-  text-decoration: line-through rgb(85, 85, 85);
+  text-decoration: line-through;
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -2781,7 +2781,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: rgb(171, 171, 171);
-  text-decoration: rgb(171, 171, 171);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: rgb(255, 255, 255);
@@ -2823,7 +2823,7 @@ body body.theme-light .search-results > * {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(85, 85, 85) none 0px;
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3521,97 +3521,97 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: rgb(85, 85, 85);
   cursor: auto;
-  text-decoration: underline dotted rgb(85, 85, 85);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(85, 85, 85);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -3678,7 +3678,7 @@ body
   cursor: default;
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-weight: 400;
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -3692,7 +3692,7 @@ body
   cursor: default;
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-weight: 400;
-  text-decoration: rgb(85, 85, 85);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -3719,7 +3719,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
 }
 body body.theme-light .nav-header {
   color: rgb(85, 85, 85);
@@ -3738,7 +3737,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: rgb(85, 85, 85);
-  text-decoration: rgb(85, 85, 85);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(85, 85, 85);
@@ -3891,7 +3889,7 @@ body body.theme-dark .markdown-rendered a.external-link {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(200, 100, 100) none 0px;
-  text-decoration: underline rgb(200, 100, 100);
+  text-decoration: underline;
   text-decoration-color: rgb(200, 100, 100);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -3917,7 +3915,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(200, 100, 100) none 0px;
-  text-decoration: rgb(200, 100, 100);
+  text-decoration: underline;
   text-decoration-color: rgb(200, 100, 100);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -3982,7 +3980,7 @@ body body.theme-dark .markdown-rendered p {
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-weight: 400;
   outline: rgb(186, 189, 196) none 0px;
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4008,7 +4006,7 @@ body body.theme-dark strong {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 600;
   outline: rgb(186, 189, 196) none 0px;
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4034,7 +4032,7 @@ body body.theme-dark b {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 600;
   outline: rgb(186, 189, 196) none 0px;
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4060,7 +4058,7 @@ body body.theme-dark em {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(186, 189, 196) none 0px;
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4086,7 +4084,7 @@ body body.theme-dark i {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(186, 189, 196) none 0px;
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4112,7 +4110,7 @@ body body.theme-dark .markdown-rendered mark {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(241, 242, 243) none 0px;
-  text-decoration: rgb(241, 242, 243);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(241, 242, 243);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4138,7 +4136,7 @@ body body.theme-dark del {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(186, 189, 196) none 0px;
-  text-decoration: line-through rgb(186, 189, 196);
+  text-decoration: line-through;
   text-decoration-color: rgb(186, 189, 196);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -4351,7 +4349,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgb(186, 189, 196);
-  text-decoration: line-through rgb(186, 189, 196);
+  text-decoration: line-through;
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -4366,7 +4364,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: rgb(106, 111, 124);
-  text-decoration: rgb(106, 111, 124);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgb(63, 67, 74);
@@ -4408,7 +4406,7 @@ body body.theme-dark .search-results > * {
   font-family: "New York", Georgia, ui-serif, serif;
   font-weight: 400;
   outline: rgb(186, 189, 196) none 0px;
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5106,97 +5104,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(186, 189, 196);
   cursor: auto;
-  text-decoration: underline dotted rgb(186, 189, 196);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(186, 189, 196);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -5263,7 +5261,7 @@ body
   cursor: default;
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-weight: 400;
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -5277,7 +5275,7 @@ body
   cursor: default;
   font-family: "SF Pro", ui-sans-serif, sans-serif;
   font-weight: 400;
-  text-decoration: rgb(186, 189, 196);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -5304,7 +5302,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
 }
 body body.theme-dark .nav-header {
   color: rgb(186, 189, 196);
@@ -5323,7 +5320,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgb(186, 189, 196);
-  text-decoration: rgb(186, 189, 196);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(186, 189, 196);

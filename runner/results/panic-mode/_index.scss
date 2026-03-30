@@ -1601,7 +1601,7 @@ body {
       "Times New Roman";
     font-weight: 400;
     outline: rgb(70, 180, 211) none 0px;
-    text-decoration: rgb(70, 180, 211);
+    text-decoration: underline;
     text-decoration-color: rgb(70, 180, 211);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1631,7 +1631,7 @@ body {
       "Times New Roman";
     font-weight: 400;
     outline: rgb(70, 180, 211) none 0px;
-    text-decoration: rgb(70, 180, 211);
+    text-decoration: underline;
     text-decoration-color: rgb(70, 180, 211);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1660,7 +1660,7 @@ body {
       "Times New Roman";
     font-weight: 400;
     outline: rgb(70, 180, 211) none 0px;
-    text-decoration: rgb(70, 180, 211);
+    text-decoration: underline rgba(138, 92, 245, 0.3);
     text-decoration-color: rgb(70, 180, 211);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1706,7 +1706,7 @@ body {
       "Times New Roman";
     font-weight: 400;
     outline: rgb(161, 161, 161) none 0px;
-    text-decoration: rgb(161, 161, 161);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(161, 161, 161);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1747,7 +1747,7 @@ body {
       sans-serif;
     font-weight: 600;
     outline: rgb(246, 168, 42) none 0px;
-    text-decoration: rgb(246, 168, 42);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(246, 168, 42);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1788,7 +1788,7 @@ body {
       sans-serif;
     font-weight: 600;
     outline: rgb(246, 168, 42) none 0px;
-    text-decoration: rgb(246, 168, 42);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(246, 168, 42);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1829,7 +1829,7 @@ body {
       sans-serif;
     font-weight: 500;
     outline: rgb(224, 226, 213) none 0px;
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1870,7 +1870,7 @@ body {
       sans-serif;
     font-weight: 500;
     outline: rgb(224, 226, 213) none 0px;
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1910,7 +1910,7 @@ body {
       sans-serif;
     font-weight: 500;
     outline: rgb(224, 226, 213) none 0px;
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: rgb(224, 226, 213);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -1959,7 +1959,7 @@ body {
       sans-serif;
     font-weight: 500;
     outline: rgb(224, 226, 213) none 0px;
-    text-decoration: line-through rgb(224, 226, 213);
+    text-decoration: line-through;
     text-decoration-color: rgb(224, 226, 213);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -2228,7 +2228,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(161, 161, 161);
-    text-decoration: line-through rgb(161, 161, 161);
+    text-decoration: line-through;
     text-decoration-color: rgb(161, 161, 161);
   }
 
@@ -2247,7 +2247,7 @@ body {
 
   .data-footnote-backref {
     color: rgb(70, 180, 211);
-    text-decoration: rgb(70, 180, 211);
+    text-decoration: underline rgb(166, 138, 249);
   }
 
   .search > .search-button {
@@ -2311,7 +2311,7 @@ body {
       "Times New Roman";
     font-weight: 400;
     outline: rgb(224, 226, 213) none 0px;
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3234,115 +3234,115 @@ body {
   abbr {
     color: rgb(224, 226, 213);
     cursor: auto;
-    text-decoration: underline dotted rgb(224, 226, 213);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
   li.task-list-item[data-task="-"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(224, 226, 213);
-    text-decoration: rgb(224, 226, 213);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(224, 226, 213);
   }
 
@@ -3439,7 +3439,7 @@ body {
       "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next",
       "Times New Roman";
     font-weight: 400;
-    text-decoration: rgb(161, 161, 161);
+    text-decoration: rgb(218, 218, 218);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -3449,7 +3449,7 @@ body {
       "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next",
       "Times New Roman";
     font-weight: 400;
-    text-decoration: rgb(161, 161, 161);
+    text-decoration: rgb(218, 218, 218);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -3480,7 +3480,6 @@ body {
 
   footer ul li a {
     color: rgb(161, 161, 161);
-    text-decoration: rgb(161, 161, 161);
   }
 
   .recent-notes > h3 {
@@ -3504,7 +3503,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: rgb(161, 161, 161);
-    text-decoration: rgb(161, 161, 161);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3536,7 +3534,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: rgb(161, 161, 161);
-    text-decoration: rgb(161, 161, 161);
   }
 
   li.section-li > .section .meta {

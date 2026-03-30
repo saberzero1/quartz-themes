@@ -598,12 +598,10 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(221, 221, 221);
@@ -614,7 +612,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 }`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -626,7 +623,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -1256,12 +1252,10 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(130, 130, 130);
-  text-decoration: rgb(130, 130, 130);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(130, 130, 130);
-  text-decoration: rgb(130, 130, 130);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(82, 82, 82);
@@ -1275,7 +1269,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 }`,
     recentNotes: `html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(130, 130, 130);
-  text-decoration: rgb(130, 130, 130);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1287,7 +1280,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(130, 130, 130);
-  text-decoration: rgb(130, 130, 130);
 }
 
 html[saved-theme="light"] body ul.section-ul {

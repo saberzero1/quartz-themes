@@ -145,7 +145,6 @@ html[saved-theme="dark"] body p {
   color: rgb(127, 202, 230);
   font-family: "Alegreya SC", Spectral, serif;
   outline: rgb(127, 202, 230) none 0px;
-  text-decoration: rgb(127, 202, 230);
   text-decoration-color: rgb(127, 202, 230);
 }
 
@@ -153,7 +152,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   color: rgb(221, 211, 253);
   font-family: "Alegreya SC", Spectral, serif;
   outline: rgb(221, 211, 253) none 0px;
-  text-decoration: rgb(221, 211, 253);
   text-decoration-color: rgb(221, 211, 253);
 }
 
@@ -507,13 +505,11 @@ html[saved-theme="light"] body p {
   color: rgb(47, 155, 183);
   font-family: "Alegreya SC", Spectral, serif;
   outline: rgb(47, 155, 183) none 0px;
-  text-decoration: rgb(47, 155, 183);
   text-decoration-color: rgb(47, 155, 183);
 }
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   font-family: "Alegreya SC", Spectral, serif;
-  text-decoration: rgb(138, 92, 245);
 }
 
 html[saved-theme="light"] body a.internal.broken {

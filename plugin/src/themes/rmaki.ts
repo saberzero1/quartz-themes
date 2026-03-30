@@ -96,7 +96,6 @@ html body .text-highlight {
   color: rgb(17, 17, 19);
   font-family: "Fira Code", monospace;
   outline: rgb(17, 17, 19) none 0px;
-  text-decoration: rgb(17, 17, 19);
   text-decoration-color: rgb(17, 17, 19);
 }
 
@@ -180,109 +179,91 @@ html body .katex-display > .katex > .katex-html {
 
 html body li.task-list-item[data-task='!'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(218, 231, 246);
-  text-decoration: rgb(218, 231, 246);
   text-decoration-color: rgb(218, 231, 246);
 }`,
     search: `html body .search > .search-button {
@@ -350,7 +331,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(134, 152, 172);
-  text-decoration: rgb(134, 152, 172);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   font-family: "Fira Code", monospace;
@@ -358,7 +338,6 @@ html body footer ul li a {
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(134, 152, 172);
-  text-decoration: rgb(134, 152, 172);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -372,7 +351,6 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(134, 152, 172);
-  text-decoration: rgb(134, 152, 172);
 }`,
     misc: `html body .metadata {
   font-family: "Fira Code", monospace;
@@ -392,7 +370,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(218, 231, 246);
-  text-decoration: underline dotted rgb(218, 231, 246);
 }
 
 html body kbd {

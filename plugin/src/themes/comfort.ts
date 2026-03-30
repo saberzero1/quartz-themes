@@ -230,7 +230,6 @@ html body div#quartz-root {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
@@ -238,7 +237,6 @@ html body .page article p > em, html em {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
@@ -246,7 +244,6 @@ html body .page article p > i, html i {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
@@ -254,7 +251,6 @@ html body .page article p > strong, html strong {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
@@ -262,7 +258,6 @@ html body .text-highlight {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
@@ -270,7 +265,6 @@ html body del {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: line-through rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
@@ -278,14 +272,12 @@ html body p {
   color: rgb(141, 156, 141);
   font-family: "Times New Roman";
   outline: rgb(141, 156, 141) none 0px;
-  text-decoration: rgb(141, 156, 141);
   text-decoration-color: rgb(141, 156, 141);
 }`,
     links: `html body a.external, html footer a {
   color: rgb(82, 115, 165);
   font-family: 宋体, SimSun;
   outline: rgb(82, 115, 165) none 0px;
-  text-decoration: underline rgb(82, 115, 165);
   text-decoration-color: rgb(82, 115, 165);
 }
 
@@ -465,115 +457,96 @@ html body .katex-display > .katex > .katex-html {
 
 html body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(141, 156, 141);
-  text-decoration: line-through rgb(141, 156, 141);
   text-decoration-color: rgb(141, 156, 141);
 }
 
 html body li.task-list-item[data-task='!'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(111, 110, 106);
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
@@ -977,7 +950,6 @@ html body .search > .search-container > .search-space > * {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
   outline: rgb(111, 110, 106) none 0px;
-  text-decoration: rgb(111, 110, 106);
   text-decoration-color: rgb(111, 110, 106);
 }
 
@@ -1117,13 +1089,11 @@ html body ::-webkit-scrollbar-track {
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(98, 102, 102);
   font-family: "Times New Roman";
-  text-decoration: rgb(98, 102, 102);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(98, 102, 102);
   font-family: "Times New Roman";
-  text-decoration: rgb(98, 102, 102);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   background-color: rgb(163, 213, 170);
@@ -1146,7 +1116,6 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
 
 html body footer ul li a {
   color: rgb(141, 156, 141);
-  text-decoration: rgb(141, 156, 141);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(111, 110, 106);
@@ -1163,7 +1132,6 @@ html body .recent-notes > ul.recent-ul > li {
 
 html body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(98, 102, 102);
-  text-decoration: rgb(98, 102, 102);
 }
 
 html body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1184,7 +1152,6 @@ html body li.section-li > .section .meta {
 
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(98, 102, 102);
-  text-decoration: rgb(98, 102, 102);
 }
 
 html body ul.section-ul {
@@ -1249,7 +1216,6 @@ html body .page-header h2.page-title {
 
 html body abbr {
   color: rgb(111, 110, 106);
-  text-decoration: underline dotted rgb(111, 110, 106);
 }
 
 html body details {

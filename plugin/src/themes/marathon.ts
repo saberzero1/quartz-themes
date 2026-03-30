@@ -170,7 +170,6 @@ html[saved-theme="dark"] body .text-highlight {
   color: rgb(0, 0, 0);
   font-weight: 300;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
@@ -184,14 +183,12 @@ html[saved-theme="dark"] body p {
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
-  text-decoration: underline rgb(138, 92, 245);
   text-decoration-color: rgb(138, 92, 245);
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
-  text-decoration: underline rgb(138, 92, 245);
   text-decoration-color: rgb(138, 92, 245);
 }
 
@@ -1111,7 +1108,6 @@ html[saved-theme="light"] body .text-highlight {
   color: rgb(0, 0, 0);
   font-weight: 300;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 

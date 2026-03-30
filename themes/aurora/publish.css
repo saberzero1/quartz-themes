@@ -1425,7 +1425,7 @@ body body.theme-dark .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(204, 204, 204) none 0px;
-  text-decoration: rgb(204, 204, 204);
+  text-decoration: underline;
   text-decoration-color: rgb(204, 204, 204);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1464,7 +1464,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(137, 60, 245) none 0px;
-  text-decoration: rgb(137, 60, 245);
+  text-decoration: underline;
   text-decoration-color: rgb(137, 60, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1503,7 +1503,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
     sans-serif;
   font-weight: 400;
   outline: rgb(137, 60, 245) none 0px;
-  text-decoration: rgb(137, 60, 245);
+  text-decoration: underline rgba(138, 92, 245, 0.3);
   text-decoration-color: rgb(137, 60, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1567,7 +1567,7 @@ body body.theme-dark .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: rgb(179, 179, 179) none 0px;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(179, 179, 179);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1606,7 +1606,7 @@ body body.theme-dark strong {
     sans-serif;
   font-weight: 600;
   outline: rgb(135, 235, 253) none 0px;
-  text-decoration: rgb(135, 235, 253);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(135, 235, 253);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1645,7 +1645,7 @@ body body.theme-dark b {
     sans-serif;
   font-weight: 600;
   outline: rgb(135, 235, 253) none 0px;
-  text-decoration: rgb(135, 235, 253);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(135, 235, 253);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1671,7 +1671,7 @@ body body.theme-dark em {
   font-family: OperatorMonoSSmLig-Book, Rubik;
   font-weight: 400;
   outline: rgb(187, 154, 247) none 0px;
-  text-decoration: rgb(187, 154, 247);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 154, 247);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1697,7 +1697,7 @@ body body.theme-dark i {
   font-family: OperatorMonoSSmLig-Book, Rubik;
   font-weight: 400;
   outline: rgb(187, 154, 247) none 0px;
-  text-decoration: rgb(187, 154, 247);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(187, 154, 247);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1736,7 +1736,7 @@ body body.theme-dark .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: rgb(204, 204, 204) none 0px;
-  text-decoration: rgb(204, 204, 204);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(204, 204, 204);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1775,7 +1775,7 @@ body body.theme-dark del {
     sans-serif;
   font-weight: 400;
   outline: rgb(204, 204, 204) none 0px;
-  text-decoration: line-through rgb(204, 204, 204);
+  text-decoration: line-through;
   text-decoration-color: rgb(204, 204, 204);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -2013,7 +2013,7 @@ body
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark .markdown-rendered blockquote {
@@ -2041,7 +2041,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: rgba(137, 60, 245, 0.847);
-  text-decoration: rgba(137, 60, 245, 0.847);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgb(42, 42, 42);
@@ -2121,7 +2121,7 @@ body body.theme-dark .search-results > * {
     sans-serif;
   font-weight: 400;
   outline: rgb(204, 204, 204) none 0px;
-  text-decoration: rgb(204, 204, 204);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(204, 204, 204);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2975,97 +2975,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(204, 204, 204);
   cursor: auto;
-  text-decoration: underline dotted rgb(204, 204, 204);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: line-through rgba(137, 60, 245, 0.55);
+  text-decoration: line-through;
   text-decoration-color: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -3183,7 +3183,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -3222,7 +3222,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -3274,7 +3274,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgba(137, 60, 245, 0.55);
-  text-decoration: rgba(137, 60, 245, 0.55);
 }
 body body.theme-dark .nav-header {
   color: rgb(204, 204, 204);
@@ -3318,7 +3317,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgb(179, 179, 179);
-  text-decoration: rgb(179, 179, 179);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(179, 179, 179);

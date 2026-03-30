@@ -215,7 +215,6 @@ html[saved-theme="dark"] body p {
   color: rgb(3, 33, 99);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 33, 99) none 0px;
-  text-decoration: underline rgb(3, 33, 99);
   text-decoration-color: rgb(3, 33, 99);
 }
 
@@ -223,7 +222,6 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   color: rgb(3, 33, 99);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 33, 99) none 0px;
-  text-decoration: underline rgb(3, 33, 99);
   text-decoration-color: rgb(3, 33, 99);
 }
 
@@ -1457,7 +1455,6 @@ html[saved-theme="light"] body p {
   color: rgb(3, 30, 94);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 30, 94) none 0px;
-  text-decoration: underline rgb(3, 30, 94);
   text-decoration-color: rgb(3, 30, 94);
 }
 
@@ -1465,7 +1462,6 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
   color: rgb(3, 30, 94);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 30, 94) none 0px;
-  text-decoration: underline rgb(3, 30, 94);
   text-decoration-color: rgb(3, 30, 94);
 }
 

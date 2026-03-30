@@ -1584,7 +1584,7 @@ body body.theme-light .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(129, 161, 193) none 0px;
-  text-decoration: underline rgb(129, 161, 193);
+  text-decoration: underline;
   text-decoration-color: rgb(129, 161, 193);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1624,7 +1624,7 @@ body body.theme-light .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(129, 161, 193) none 0px;
-  text-decoration: underline rgb(129, 161, 193);
+  text-decoration: underline;
   text-decoration-color: rgb(129, 161, 193);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1716,7 +1716,7 @@ body body.theme-light .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: color(srgb 0.40336 0.504 0.60464) none 0px;
-  text-decoration: color(srgb 0.40336 0.504 0.60464);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.40336 0.504 0.60464);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1756,7 +1756,7 @@ body body.theme-light strong {
     sans-serif;
   font-weight: 600;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1796,7 +1796,7 @@ body body.theme-light b {
     sans-serif;
   font-weight: 600;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1836,7 +1836,7 @@ body body.theme-light em {
     sans-serif;
   font-weight: 400;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1876,7 +1876,7 @@ body body.theme-light i {
     sans-serif;
   font-weight: 400;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1916,7 +1916,7 @@ body body.theme-light .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -1956,7 +1956,7 @@ body body.theme-light del {
     sans-serif;
   font-weight: 400;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: line-through color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: line-through;
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -2183,7 +2183,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: color(srgb 0.40336 0.504 0.60464);
-  text-decoration: line-through color(srgb 0.40336 0.504 0.60464);
+  text-decoration: line-through;
   text-decoration-color: color(srgb 0.40336 0.504 0.60464);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -2212,7 +2212,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: rgb(76, 86, 106);
-  text-decoration: rgb(76, 86, 106);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: rgb(255, 255, 255);
@@ -2281,7 +2281,7 @@ body body.theme-light .search-results > * {
     sans-serif;
   font-weight: 400;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -3049,97 +3049,97 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: color(srgb 0.27731 0.3465 0.41569);
   cursor: auto;
-  text-decoration: underline dotted color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: color(srgb 0.27731 0.3465 0.41569);
-  text-decoration: color(srgb 0.27731 0.3465 0.41569);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -3247,7 +3247,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: color(srgb 0.40336 0.504 0.60464);
+  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -3274,7 +3274,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: color(srgb 0.40336 0.504 0.60464);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -3314,7 +3314,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: color(srgb 0.40336 0.504 0.60464);
-  text-decoration: color(srgb 0.40336 0.504 0.60464);
 }
 body body.theme-light .nav-header {
   color: color(srgb 0.27731 0.3465 0.41569);
@@ -3346,7 +3345,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: color(srgb 0.40336 0.504 0.60464);
-  text-decoration: color(srgb 0.40336 0.504 0.60464);
 }
 body body.theme-light .nav-file-title-content {
   color: color(srgb 0.40336 0.504 0.60464);

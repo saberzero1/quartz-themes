@@ -128,21 +128,18 @@ html body .page > div#quartz-body div.sidebar.right {
   color: rgb(197, 242, 239);
   font-weight: 800;
   outline: rgb(197, 242, 239) none 0px;
-  text-decoration: rgb(197, 242, 239);
   text-decoration-color: rgb(197, 242, 239);
 }
 
 html body .page article p > em, html em {
   color: rgb(184, 206, 206);
   outline: rgb(184, 206, 206) none 0px;
-  text-decoration: rgb(184, 206, 206);
   text-decoration-color: rgb(184, 206, 206);
 }
 
 html body .page article p > i, html i {
   color: rgb(184, 206, 206);
   outline: rgb(184, 206, 206) none 0px;
-  text-decoration: rgb(184, 206, 206);
   text-decoration-color: rgb(184, 206, 206);
 }
 
@@ -150,7 +147,6 @@ html body .page article p > strong, html strong {
   color: rgb(197, 242, 239);
   font-weight: 800;
   outline: rgb(197, 242, 239) none 0px;
-  text-decoration: rgb(197, 242, 239);
   text-decoration-color: rgb(197, 242, 239);
 }
 
@@ -161,27 +157,23 @@ html body .text-highlight {
 html body del {
   color: rgb(173, 172, 172);
   outline: rgb(173, 172, 172) none 0px;
-  text-decoration: line-through rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }`,
     links: `html body a.external, html footer a {
   color: rgb(147, 155, 213);
   outline: rgb(147, 155, 213) none 0px;
-  text-decoration: rgb(147, 155, 213);
   text-decoration-color: rgb(147, 155, 213);
 }
 
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(147, 155, 213);
   outline: rgb(147, 155, 213) none 0px;
-  text-decoration: rgb(147, 155, 213);
   text-decoration-color: rgb(147, 155, 213);
 }
 
 html body a.internal.broken {
   color: rgb(147, 155, 213);
   outline: rgb(147, 155, 213) none 0px;
-  text-decoration: rgb(147, 155, 213);
   text-decoration-color: rgb(147, 155, 213);
 }`,
     lists: `html body dd {
@@ -206,7 +198,6 @@ html body ul > li {
 }`,
     blockquotes: `html body .data-footnote-backref {
   color: rgb(147, 155, 213);
-  text-decoration: rgb(147, 155, 213);
 }`,
     tables: `html body .table-container {
   border-bottom-color: rgb(173, 172, 172);
@@ -386,109 +377,91 @@ html body .transclude-inner {
 
 html body li.task-list-item[data-task='!'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='*'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='-'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='/'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='>'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='?'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='I'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='S'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='b'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='c'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='d'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='f'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='i'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='k'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='l'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='p'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='u'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
 html body li.task-list-item[data-task='w'] {
   color: rgb(173, 172, 172);
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }`,
     callouts: `html body .callout[data-callout="info"] {
@@ -520,7 +493,6 @@ html body .callout[data-callout="warning"] {
 html body .search > .search-container > .search-space > * {
   color: rgb(173, 172, 172);
   outline: rgb(173, 172, 172) none 0px;
-  text-decoration: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }
 
@@ -603,12 +575,10 @@ html body hr {
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(133, 150, 121);
-  text-decoration: rgb(133, 150, 121);
 }
 
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(133, 150, 121);
-  text-decoration: rgb(133, 150, 121);
 }`,
     footer: `html body footer {
   border-bottom-color: rgba(240, 140, 58, 0.4);
@@ -636,7 +606,6 @@ html body .metadata {
 
 html body abbr {
   color: rgb(173, 172, 172);
-  text-decoration: underline dotted rgb(173, 172, 172);
 }
 
 html body details {

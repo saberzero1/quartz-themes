@@ -54,11 +54,7 @@ html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    links: `html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  text-decoration: rgb(166, 138, 249);
-}
-
-html[saved-theme="dark"] body a.internal.broken {
+    links: `html[saved-theme="dark"] body a.internal.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     code: `html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
@@ -114,7 +110,6 @@ html[saved-theme="dark"] body .transclude-inner {
 }`,
     checkboxes: `html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(85, 85, 85);
-  text-decoration: line-through rgb(85, 85, 85);
   text-decoration-color: rgb(85, 85, 85);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
@@ -269,11 +264,7 @@ html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    links: `html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  text-decoration: rgb(138, 92, 245);
-}
-
-html[saved-theme="light"] body a.internal.broken {
+    links: `html[saved-theme="light"] body a.internal.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     code: `html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
@@ -330,7 +321,6 @@ html[saved-theme="light"] body .transclude-inner {
 }`,
     checkboxes: `html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(189, 189, 189);
-  text-decoration: line-through rgb(189, 189, 189);
   text-decoration-color: rgb(189, 189, 189);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {

@@ -102,7 +102,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(200, 200, 200);
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
-  text-decoration: rgb(200, 200, 200);
   text-decoration-color: rgb(200, 200, 200);
 }
 
@@ -110,7 +109,6 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
   color: rgb(200, 200, 200);
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
-  text-decoration: rgb(200, 200, 200);
   text-decoration-color: rgb(200, 200, 200);
 }
 
@@ -118,7 +116,6 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   color: rgb(200, 200, 200);
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
-  text-decoration: rgb(200, 200, 200);
   text-decoration-color: rgb(200, 200, 200);
 }
 
@@ -126,7 +123,6 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
   color: rgb(200, 200, 200);
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
-  text-decoration: rgb(200, 200, 200);
   text-decoration-color: rgb(200, 200, 200);
 }
 
@@ -138,7 +134,6 @@ html[saved-theme="dark"] body del {
   color: rgb(200, 200, 200);
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(200, 200, 200) none 0px;
-  text-decoration: line-through rgb(200, 200, 200);
   text-decoration-color: rgb(200, 200, 200);
 }
 
@@ -498,14 +493,12 @@ html[saved-theme="dark"] body hr {
   color: rgb(155, 155, 155);
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: rgb(155, 155, 155);
 }
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(155, 155, 155);
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: rgb(155, 155, 155);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   cursor: pointer;
@@ -523,7 +516,6 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(155, 155, 155);
-  text-decoration: rgb(155, 155, 155);
 }
 
 html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -537,7 +529,6 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
 
 html[saved-theme="dark"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(155, 155, 155);
-  text-decoration: rgb(155, 155, 155);
 }
 
 html[saved-theme="dark"] body ul.section-ul {
@@ -572,7 +563,6 @@ html[saved-theme="dark"] body .page-header h2.page-title {
 
 html[saved-theme="dark"] body abbr {
   color: rgb(200, 200, 200);
-  text-decoration: underline dotted rgb(200, 200, 200);
 }
 
 html[saved-theme="dark"] body input[type=text] {
@@ -1024,14 +1014,12 @@ html[saved-theme="light"] body hr {
   color: rgb(114, 113, 109);
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: rgb(114, 113, 109);
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(114, 113, 109);
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: rgb(114, 113, 109);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   cursor: pointer;
@@ -1049,7 +1037,6 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
   color: rgb(114, 113, 109);
-  text-decoration: rgb(114, 113, 109);
 }
 
 html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .meta {
@@ -1063,7 +1050,6 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
 
 html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
   color: rgb(114, 113, 109);
-  text-decoration: rgb(114, 113, 109);
 }
 
 html[saved-theme="light"] body ul.section-ul {

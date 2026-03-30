@@ -165,14 +165,12 @@ html[saved-theme="dark"] body div#quartz-root {
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(19, 196, 163);
   outline: rgb(19, 196, 163) none 0px;
-  text-decoration: rgb(19, 196, 163);
   text-decoration-color: rgb(19, 196, 163);
 }
 
 html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
   color: rgb(19, 196, 163);
   outline: rgb(19, 196, 163) none 0px;
-  text-decoration: rgb(19, 196, 163);
   text-decoration-color: rgb(19, 196, 163);
 }
 
@@ -180,20 +178,17 @@ html[saved-theme="dark"] body .text-highlight {
   background-color: rgb(19, 196, 163);
   color: rgb(18, 16, 25);
   outline: rgb(18, 16, 25) none 0px;
-  text-decoration: rgb(18, 16, 25);
   text-decoration-color: rgb(18, 16, 25);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(19, 196, 163);
   outline: rgb(19, 196, 163) none 0px;
-  text-decoration: underline rgb(19, 196, 163);
   text-decoration-color: rgb(19, 196, 163);
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(19, 196, 163);
   outline: rgb(19, 196, 163) none 0px;
-  text-decoration: underline rgb(19, 196, 163);
   text-decoration-color: rgb(19, 196, 163);
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
@@ -261,7 +256,6 @@ html[saved-theme="dark"] body .transclude-inner {
 }`,
     checkboxes: `html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(124, 128, 155);
-  text-decoration: rgb(124, 128, 155);
   text-decoration-color: rgb(124, 128, 155);
 }
 
@@ -846,14 +840,12 @@ html[saved-theme="light"] body div#quartz-root {
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(47, 155, 86);
   outline: rgb(47, 155, 86) none 0px;
-  text-decoration: rgb(47, 155, 86);
   text-decoration-color: rgb(47, 155, 86);
 }
 
 html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
   color: rgb(47, 155, 86);
   outline: rgb(47, 155, 86) none 0px;
-  text-decoration: rgb(47, 155, 86);
   text-decoration-color: rgb(47, 155, 86);
 }
 
@@ -861,20 +853,17 @@ html[saved-theme="light"] body .text-highlight {
   background-color: rgb(63, 197, 112);
   color: rgb(18, 16, 25);
   outline: rgb(18, 16, 25) none 0px;
-  text-decoration: rgb(18, 16, 25);
   text-decoration-color: rgb(18, 16, 25);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(63, 197, 112);
   outline: rgb(63, 197, 112) none 0px;
-  text-decoration: underline rgb(63, 197, 112);
   text-decoration-color: rgb(63, 197, 112);
 }
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(63, 197, 112);
   outline: rgb(63, 197, 112) none 0px;
-  text-decoration: underline rgb(63, 197, 112);
   text-decoration-color: rgb(63, 197, 112);
 }
 
@@ -947,7 +936,6 @@ html[saved-theme="light"] body .transclude-inner {
 }`,
     checkboxes: `html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
   color: rgb(124, 128, 155);
-  text-decoration: rgb(124, 128, 155);
   text-decoration-color: rgb(124, 128, 155);
 }
 

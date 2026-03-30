@@ -1817,7 +1817,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(214, 186, 124) none 0px;
-    text-decoration: underline rgb(214, 186, 124);
+    text-decoration: underline;
     text-decoration-color: rgb(214, 186, 124);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1858,7 +1858,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(220, 221, 222) none 0px;
-    text-decoration: rgb(220, 221, 222);
+    text-decoration: underline;
     text-decoration-color: rgb(220, 221, 222);
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -1942,7 +1942,7 @@ body {
     font-family: Cuprum;
     font-weight: 400;
     outline: rgb(186, 186, 186) none 0px;
-    text-decoration: rgb(186, 186, 186);
+    text-decoration: rgb(218, 218, 218);
     text-decoration-color: rgb(186, 186, 186);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2146,7 +2146,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(218, 218, 218) none 0px;
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: rgb(218, 218, 218);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -2195,7 +2195,7 @@ body {
       sans-serif;
     font-weight: 400;
     outline: rgb(218, 218, 218) none 0px;
-    text-decoration: line-through rgb(218, 218, 218);
+    text-decoration: line-through;
     text-decoration-color: rgb(218, 218, 218);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -2467,7 +2467,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(102, 102, 102);
-    text-decoration: rgb(102, 102, 102);
+    text-decoration: line-through;
     text-decoration-color: rgb(102, 102, 102);
   }
 
@@ -2497,7 +2497,7 @@ body {
 
   .data-footnote-backref {
     color: rgb(102, 102, 102);
-    text-decoration: rgb(102, 102, 102);
+    text-decoration: underline rgb(166, 138, 249);
   }
 
   .search > .search-button {
@@ -3615,7 +3615,7 @@ body {
   abbr {
     color: rgb(218, 218, 218);
     cursor: auto;
-    text-decoration: underline dotted rgb(218, 218, 218);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
@@ -3818,7 +3818,7 @@ body {
     cursor: default;
     font-family: Cuprum;
     font-weight: 400;
-    text-decoration: rgb(186, 186, 186);
+    text-decoration: rgb(218, 218, 218);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -3826,7 +3826,7 @@ body {
     cursor: default;
     font-family: Cuprum;
     font-weight: 400;
-    text-decoration: rgb(186, 186, 186);
+    text-decoration: rgb(218, 218, 218);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -3856,7 +3856,6 @@ body {
 
   footer ul li a {
     color: rgb(186, 186, 186);
-    text-decoration: rgb(186, 186, 186);
   }
 
   .recent-notes > h3 {
@@ -3878,7 +3877,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: rgb(186, 186, 186);
-    text-decoration: rgb(186, 186, 186);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -3908,7 +3906,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: rgb(186, 186, 186);
-    text-decoration: rgb(186, 186, 186);
   }
 
   li.section-li > .section .meta {

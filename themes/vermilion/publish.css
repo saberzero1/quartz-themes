@@ -2256,7 +2256,7 @@ body body.theme-light .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(138, 92, 245) none 0px;
-  text-decoration: underline rgb(138, 92, 245);
+  text-decoration: underline;
   text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2295,7 +2295,7 @@ body body.theme-light .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(138, 92, 245) none 0px;
-  text-decoration: underline rgb(138, 92, 245);
+  text-decoration: underline;
   text-decoration-color: rgb(138, 92, 245);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -2386,7 +2386,7 @@ body body.theme-light .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: rgb(92, 92, 92) none 0px;
-  text-decoration: rgb(92, 92, 92);
+  text-decoration: rgb(34, 34, 34);
   text-decoration-color: rgb(92, 92, 92);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2581,7 +2581,7 @@ body body.theme-light .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: rgb(34, 34, 34) none 0px;
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(34, 34, 34);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -2620,7 +2620,7 @@ body body.theme-light del {
     sans-serif;
   font-weight: 400;
   outline: rgb(34, 34, 34) none 0px;
-  text-decoration: line-through rgb(34, 34, 34);
+  text-decoration: line-through;
   text-decoration-color: rgb(34, 34, 34);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -2847,7 +2847,7 @@ body
 }
 body body.theme-light ul > li.task-list-item[data-task="x"] {
   color: rgb(92, 92, 92);
-  text-decoration: line-through rgb(92, 92, 92);
+  text-decoration: line-through;
   text-decoration-color: rgb(92, 92, 92);
 }
 body body.theme-light .markdown-rendered blockquote {
@@ -2875,7 +2875,7 @@ body body.theme-light .markdown-rendered blockquote {
 }
 body body.theme-light .footnote-backref {
   color: rgb(171, 171, 171);
-  text-decoration: rgb(171, 171, 171);
+  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: rgb(255, 255, 255);
@@ -3785,7 +3785,7 @@ body body.theme-light sup {
 body body.theme-light abbr {
   color: rgb(34, 34, 34);
   cursor: auto;
-  text-decoration: underline dotted rgb(34, 34, 34);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-light li.task-list-item[data-task="-"] {
@@ -4006,7 +4006,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(92, 92, 92);
+  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -4046,7 +4046,6 @@ body body.theme-light .site-footer {
 }
 body body.theme-light .site-footer a {
   color: rgb(92, 92, 92);
-  text-decoration: rgb(92, 92, 92);
 }
 body body.theme-light .nav-header {
   color: rgb(34, 34, 34);
@@ -4078,7 +4077,6 @@ body body.theme-light .nav-files-container .tree-item {
 }
 body body.theme-light .nav-file-title {
   color: rgb(92, 92, 92);
-  text-decoration: rgb(92, 92, 92);
 }
 body body.theme-light .nav-file-title-content {
   color: rgb(92, 92, 92);
@@ -4283,7 +4281,7 @@ body body.theme-dark .markdown-rendered a.external-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(85, 144, 217) none 0px;
-  text-decoration: underline rgb(85, 144, 217);
+  text-decoration: underline;
   text-decoration-color: rgb(85, 144, 217);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4322,7 +4320,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
     sans-serif;
   font-weight: 400;
   outline: rgb(85, 144, 217) none 0px;
-  text-decoration: underline rgb(85, 144, 217);
+  text-decoration: underline;
   text-decoration-color: rgb(85, 144, 217);
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -4413,7 +4411,7 @@ body body.theme-dark .markdown-rendered p {
     sans-serif;
   font-weight: 400;
   outline: rgb(179, 179, 179) none 0px;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(179, 179, 179);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4452,7 +4450,7 @@ body body.theme-dark strong {
     sans-serif;
   font-weight: 400;
   outline: rgb(227, 66, 52) none 0px;
-  text-decoration: rgb(227, 66, 52);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(227, 66, 52);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4491,7 +4489,7 @@ body body.theme-dark b {
     sans-serif;
   font-weight: 400;
   outline: rgb(227, 66, 52) none 0px;
-  text-decoration: rgb(227, 66, 52);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(227, 66, 52);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4530,7 +4528,7 @@ body body.theme-dark em {
     sans-serif;
   font-weight: 400;
   outline: rgb(144, 144, 144) none 0px;
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4569,7 +4567,7 @@ body body.theme-dark i {
     sans-serif;
   font-weight: 400;
   outline: rgb(144, 144, 144) none 0px;
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4586,7 +4584,7 @@ body body.theme-dark i {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: oklab(61.2855% 0.174666 0.0973952 / 0.3);
+  background-color: oklab(61.2904% 0.174681 0.0974053 / 0.3);
   color: rgb(244, 246, 240);
   cursor: text;
   filter: none;
@@ -4608,7 +4606,7 @@ body body.theme-dark .markdown-rendered mark {
     sans-serif;
   font-weight: 400;
   outline: rgb(244, 246, 240) none 0px;
-  text-decoration: rgb(244, 246, 240);
+  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(244, 246, 240);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -4647,7 +4645,7 @@ body body.theme-dark del {
     sans-serif;
   font-weight: 400;
   outline: rgb(144, 144, 144) none 0px;
-  text-decoration: line-through rgb(144, 144, 144);
+  text-decoration: line-through;
   text-decoration-color: rgb(144, 144, 144);
   text-decoration-line: line-through;
   text-decoration-style: solid;
@@ -4709,7 +4707,7 @@ body body.theme-dark .markdown-rendered hr {
 }
 body body.theme-dark div.multi-select-pill {
   align-items: normal;
-  background-color: oklab(65.3293% 0.0000298917 0.0000130534 / 0.08);
+  background-color: oklab(65.3347% 0.0000296831 0.0000130534 / 0.08);
   display: flex;
   font-family:
     ui-sans-serif,
@@ -4797,7 +4795,7 @@ body body.theme-dark .markdown-rendered code {
   padding: 0px;
 }
 body body.theme-dark .markdown-rendered pre > code {
-  background-color: oklab(65.3293% 0.0000298917 0.0000130534 / 0.06);
+  background-color: oklab(65.3347% 0.0000296831 0.0000130534 / 0.06);
   border: 0px solid rgb(54, 54, 54);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -4814,7 +4812,7 @@ body body.theme-dark .markdown-rendered pre > code {
 }
 body body.theme-dark :not(pre) > code[class*="language-"],
 body body.theme-dark pre[class*="language-"] {
-  background-color: oklab(65.3293% 0.0000298917 0.0000130534 / 0.06);
+  background-color: oklab(65.3347% 0.0000296831 0.0000130534 / 0.06);
   border: 0px solid rgb(54, 54, 54);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -4873,12 +4871,12 @@ body
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-dark ul > li.task-list-item[data-task="x"] {
-  color: oklab(65.3293% 0.0000298917 0.0000130534 / 0.6);
-  text-decoration: line-through oklab(65.3293% 0.0000298917 0.0000130534 / 0.6);
-  text-decoration-color: oklab(65.3293% 0.0000298917 0.0000130534 / 0.6);
+  color: oklab(65.3347% 0.0000296831 0.0000130534 / 0.6);
+  text-decoration: line-through;
+  text-decoration-color: oklab(65.3347% 0.0000296831 0.0000130534 / 0.6);
 }
 body body.theme-dark .markdown-rendered blockquote {
-  background-color: oklab(65.3293% 0.0000298917 0.0000130534 / 0.03);
+  background-color: oklab(65.3347% 0.0000296831 0.0000130534 / 0.03);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -4902,7 +4900,7 @@ body body.theme-dark .markdown-rendered blockquote {
 }
 body body.theme-dark .footnote-backref {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(102, 102, 102);
+  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgb(42, 42, 42);
@@ -4970,7 +4968,7 @@ body body.theme-dark .search-results > * {
     sans-serif;
   font-weight: 400;
   outline: rgb(144, 144, 144) none 0px;
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
   text-decoration-line: none;
   text-decoration-style: solid;
@@ -5606,7 +5604,7 @@ body body.theme-dark .file-embed {
   padding: 8px;
 }
 body body.theme-dark .metadata-container {
-  background-color: oklab(65.3293% 0.0000298917 0.0000130534 / 0.03);
+  background-color: oklab(65.3347% 0.0000296831 0.0000130534 / 0.03);
   color: rgb(179, 179, 179);
   font-family:
     ui-sans-serif,
@@ -5812,97 +5810,97 @@ body body.theme-dark sup {
 body body.theme-dark abbr {
   color: rgb(144, 144, 144);
   cursor: auto;
-  text-decoration: underline dotted rgb(144, 144, 144);
+  text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(144, 144, 144);
-  text-decoration: rgb(144, 144, 144);
+  text-decoration: rgb(218, 218, 218);
   text-decoration-color: rgb(144, 144, 144);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -6008,7 +6006,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -6035,7 +6033,7 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(179, 179, 179);
+  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -6075,7 +6073,6 @@ body body.theme-dark .site-footer {
 }
 body body.theme-dark .site-footer a {
   color: rgb(179, 179, 179);
-  text-decoration: rgb(179, 179, 179);
 }
 body body.theme-dark .nav-header {
   color: rgb(144, 144, 144);
@@ -6107,7 +6104,6 @@ body body.theme-dark .nav-files-container .tree-item {
 }
 body body.theme-dark .nav-file-title {
   color: rgb(179, 179, 179);
-  text-decoration: rgb(179, 179, 179);
 }
 body body.theme-dark .nav-file-title-content {
   color: rgb(179, 179, 179);
@@ -6137,9 +6133,9 @@ body body.theme-dark .nav-files-container {
 }
 body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
-  color: oklab(61.2855% 0.174666 0.0973952 / 0.7);
+  color: oklab(61.2904% 0.174681 0.0974053 / 0.7);
   cursor: default;
-  border-color: oklab(61.2855% 0.174666 0.0973952 / 0.7);
+  border-color: oklab(61.2904% 0.174681 0.0974053 / 0.7);
   border-width: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -6147,8 +6143,8 @@ body body.theme-dark .site-body-left-column-site-theme-toggle {
   border-bottom-right-radius: 4px;
 }
 body body.theme-dark .site-body-left-column-site-theme-toggle svg {
-  stroke: oklab(61.2855% 0.174666 0.0973952 / 0.7);
-  color: oklab(61.2855% 0.174666 0.0973952 / 0.7);
+  stroke: oklab(61.2904% 0.174681 0.0974053 / 0.7);
+  color: oklab(61.2904% 0.174681 0.0974053 / 0.7);
 }
 body body.theme-dark .view-header-breadcrumb {
   background-color: rgba(0, 0, 0, 0);
@@ -6228,7 +6224,7 @@ body body.theme-dark .view-content {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark figure[data-rehype-pretty-code-figure] {
-  background-color: oklab(65.3293% 0.0000298917 0.0000130534 / 0.06);
+  background-color: oklab(65.3347% 0.0000296831 0.0000130534 / 0.06);
   border: 0px solid rgb(54, 54, 54);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -6243,7 +6239,7 @@ body
   body.theme-dark
   figure[data-rehype-pretty-code-figure]
   > [data-rehype-pretty-code-title] {
-  background-color: oklab(65.3293% 0.0000298917 0.0000130534 / 0.06);
+  background-color: oklab(65.3347% 0.0000296831 0.0000130534 / 0.06);
   color: rgb(144, 144, 144);
   font-family: monospace;
   border: 0px solid rgb(54, 54, 54);

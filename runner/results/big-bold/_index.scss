@@ -3096,7 +3096,7 @@ body {
     font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
     outline: rgb(127, 127, 127) none 0px;
-    text-decoration: rgb(127, 127, 127);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(127, 127, 127);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3124,7 +3124,7 @@ body {
     font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 600;
     outline: rgb(37, 37, 37) none 0px;
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3152,7 +3152,7 @@ body {
     font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 600;
     outline: rgb(37, 37, 37) none 0px;
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3180,7 +3180,7 @@ body {
     font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
     outline: rgb(37, 37, 37) none 0px;
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3208,7 +3208,7 @@ body {
     font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
     outline: rgb(37, 37, 37) none 0px;
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3237,7 +3237,7 @@ body {
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
     outline: rgb(37, 37, 37) none 0px;
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(0, 0, 0);
     text-decoration-color: rgb(37, 37, 37);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -3273,7 +3273,7 @@ body {
     font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
     outline: rgb(37, 37, 37) none 0px;
-    text-decoration: line-through rgb(37, 37, 37);
+    text-decoration: line-through;
     text-decoration-color: rgb(37, 37, 37);
     text-decoration-line: line-through;
     text-decoration-style: solid;
@@ -3530,7 +3530,7 @@ body {
 
   .page article li:has(> input[type="checkbox"]:checked) {
     color: rgb(127, 127, 127);
-    text-decoration: rgb(127, 127, 127);
+    text-decoration: line-through;
     text-decoration-color: rgb(127, 127, 127);
   }
 
@@ -3547,7 +3547,7 @@ body {
 
   .data-footnote-backref {
     color: rgb(135, 135, 135);
-    text-decoration: rgb(135, 135, 135);
+    text-decoration: underline rgb(138, 92, 245);
   }
 
   .search > .search-button {
@@ -3607,7 +3607,7 @@ body {
     font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
     outline: rgb(37, 37, 37) none 0px;
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
     text-decoration-line: none;
     text-decoration-style: solid;
@@ -4496,115 +4496,115 @@ body {
   abbr {
     color: rgb(37, 37, 37);
     cursor: auto;
-    text-decoration: underline dotted rgb(37, 37, 37);
+    text-decoration: underline dotted;
     text-decoration-style: dotted;
   }
 
   li.task-list-item[data-task="-"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(37, 37, 37);
-    text-decoration: rgb(37, 37, 37);
+    text-decoration: rgb(34, 34, 34);
     text-decoration-color: rgb(37, 37, 37);
   }
 
@@ -4675,7 +4675,7 @@ body {
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
-    text-decoration: rgb(127, 127, 127);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
@@ -4685,7 +4685,7 @@ body {
       "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
       Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
-    text-decoration: rgb(127, 127, 127);
+    text-decoration: rgb(34, 34, 34);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -4715,7 +4715,6 @@ body {
 
   footer ul li a {
     color: rgb(127, 127, 127);
-    text-decoration: rgb(127, 127, 127);
   }
 
   .recent-notes > h3 {
@@ -4737,7 +4736,6 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
     color: rgb(127, 127, 127);
-    text-decoration: rgb(127, 127, 127);
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
@@ -4767,7 +4765,6 @@ body {
 
   li.section-li > .section > .desc > h3 > a {
     color: rgb(127, 127, 127);
-    text-decoration: rgb(127, 127, 127);
   }
 
   li.section-li > .section .meta {
@@ -5720,7 +5717,7 @@ html[saved-theme="dark"] {
       font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
       outline: rgb(154, 163, 183) none 0px;
-      text-decoration: rgb(154, 163, 183);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(154, 163, 183);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5748,7 +5745,7 @@ html[saved-theme="dark"] {
       font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 600;
       outline: rgb(200, 212, 230) none 0px;
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5776,7 +5773,7 @@ html[saved-theme="dark"] {
       font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 600;
       outline: rgb(200, 212, 230) none 0px;
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5804,7 +5801,7 @@ html[saved-theme="dark"] {
       font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
       outline: rgb(200, 212, 230) none 0px;
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5832,7 +5829,7 @@ html[saved-theme="dark"] {
       font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
       outline: rgb(200, 212, 230) none 0px;
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5861,7 +5858,7 @@ html[saved-theme="dark"] {
         Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
       outline: rgb(255, 255, 255) none 0px;
-      text-decoration: rgb(255, 255, 255);
+      text-decoration: rgb(0, 0, 0);
       text-decoration-color: rgb(255, 255, 255);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -5897,7 +5894,7 @@ html[saved-theme="dark"] {
       font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
       outline: rgb(200, 212, 230) none 0px;
-      text-decoration: line-through rgb(200, 212, 230);
+      text-decoration: line-through;
       text-decoration-color: rgb(200, 212, 230);
       text-decoration-line: line-through;
       text-decoration-style: solid;
@@ -6153,7 +6150,7 @@ html[saved-theme="dark"] {
 
     .page article li:has(> input[type="checkbox"]:checked) {
       color: rgb(154, 163, 183);
-      text-decoration: rgb(154, 163, 183);
+      text-decoration: line-through;
       text-decoration-color: rgb(154, 163, 183);
     }
 
@@ -6170,7 +6167,7 @@ html[saved-theme="dark"] {
 
     .data-footnote-backref {
       color: rgb(114, 125, 146);
-      text-decoration: rgb(114, 125, 146);
+      text-decoration: underline rgb(166, 138, 249);
     }
 
     .search > .search-button {
@@ -6230,7 +6227,7 @@ html[saved-theme="dark"] {
       font-family: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
       outline: rgb(200, 212, 230) none 0px;
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
       text-decoration-line: none;
       text-decoration-style: solid;
@@ -7124,115 +7121,115 @@ html[saved-theme="dark"] {
     abbr {
       color: rgb(200, 212, 230);
       cursor: auto;
-      text-decoration: underline dotted rgb(200, 212, 230);
+      text-decoration: underline dotted;
       text-decoration-style: dotted;
     }
 
     li.task-list-item[data-task="-"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task=">"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="/"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="?"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="!"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="*"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="l"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="b"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="i"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="S"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="I"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="p"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="c"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="f"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="k"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="u"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="d"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
     li.task-list-item[data-task="w"] {
       color: rgb(200, 212, 230);
-      text-decoration: rgb(200, 212, 230);
+      text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(200, 212, 230);
     }
 
@@ -7303,7 +7300,7 @@ html[saved-theme="dark"] {
         "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
         Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
-      text-decoration: rgb(154, 163, 183);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .explorer
@@ -7316,7 +7313,7 @@ html[saved-theme="dark"] {
         "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
         Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
-      text-decoration: rgb(154, 163, 183);
+      text-decoration: rgb(218, 218, 218);
     }
 
     .graph > .graph-outer > .global-graph-icon {
@@ -7346,7 +7343,6 @@ html[saved-theme="dark"] {
 
     footer ul li a {
       color: rgb(154, 163, 183);
-      text-decoration: rgb(154, 163, 183);
     }
 
     .recent-notes > h3 {
@@ -7368,7 +7364,6 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .desc > h3 > a {
       color: rgb(154, 163, 183);
-      text-decoration: rgb(154, 163, 183);
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
@@ -7398,7 +7393,6 @@ html[saved-theme="dark"] {
 
     li.section-li > .section > .desc > h3 > a {
       color: rgb(154, 163, 183);
-      text-decoration: rgb(154, 163, 183);
     }
 
     li.section-li > .section .meta {

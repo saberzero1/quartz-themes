@@ -144,7 +144,6 @@ html[saved-theme="dark"] body .text-highlight {
   font-family: "??", Satoshi, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 700;
   outline: rgb(0, 0, 0) none 0px;
-  text-decoration: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
 }
 
@@ -178,7 +177,7 @@ html[saved-theme="dark"] body a.internal.broken {
 
 html[saved-theme="dark"] body table {
   font-family: "??", Satoshi, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  width: 186.297px;
+  width: 195.062px;
 }
 
 html[saved-theme="dark"] body thead {
@@ -859,7 +858,7 @@ html[saved-theme="light"] body a.internal.broken {
 
 html[saved-theme="light"] body table {
   font-family: "??", Satoshi, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  width: 186.297px;
+  width: 195.062px;
 }
 
 html[saved-theme="light"] body thead {

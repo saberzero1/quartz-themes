@@ -221,14 +221,12 @@ html body div#quartz-root {
     typography: `html body .page article p > em, html em {
   color: rgb(228, 212, 129);
   outline: rgb(228, 212, 129) none 0px;
-  text-decoration: rgb(228, 212, 129);
   text-decoration-color: rgb(228, 212, 129);
 }
 
 html body .page article p > i, html i {
   color: rgb(228, 212, 129);
   outline: rgb(228, 212, 129) none 0px;
-  text-decoration: rgb(228, 212, 129);
   text-decoration-color: rgb(228, 212, 129);
 }
 
@@ -239,20 +237,17 @@ html body .text-highlight {
 html body del {
   color: rgb(179, 179, 179);
   outline: rgb(179, 179, 179) none 0px;
-  text-decoration: line-through rgb(179, 179, 179);
   text-decoration-color: rgb(179, 179, 179);
 }`,
     links: `html body a.external, html footer a {
   color: rgb(132, 171, 63);
   outline: rgb(132, 171, 63) none 0px;
-  text-decoration: underline rgb(132, 171, 63);
   text-decoration-color: rgb(132, 171, 63);
 }
 
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(132, 171, 63);
   outline: rgb(132, 171, 63) none 0px;
-  text-decoration: underline rgb(132, 171, 63);
   text-decoration-color: rgb(132, 171, 63);
 }
 
