@@ -107,4 +107,13 @@ rebuild: drop ingest
 generate-callout-manifest:
   node ./extensions/generate-callout-manifest.mjs
 
+[group('testing')]
+update-quartz themeName="underwater":
+  git submodule update --init --remote runner/quartz
+  cd runner/quartz && npm i -D
+  cp ./quartz.config.yaml ./runner/quartz/quartz.config.yaml
+  cd runner/quartz && npx quartz plugin remove quartz-themes
+  cd runner/quartz && npx quartz plugin add ../../plugin --as quartz-themes
+  cd runner/quartz && npx quartz plugin config quartz-themes --set theme={{themeName}}
+
 everything-and-the-kitchen-sink: generate-callout-manifest cli-extract-baseline cli-extract-all-force drop prepare ingest compile generate-plugin convert format-non-generated
