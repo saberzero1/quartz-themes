@@ -9,7 +9,11 @@ import type { AspectCSS, AspectKey, ThemeData, ThemeOptions } from "./types";
 import { TEMPLATE_CSS } from "./templateCSS";
 import { resolveThemeId, loadTheme } from "./registry";
 import { generateCalloutIconCSS } from "./icons/callout-icons";
-import { generateCheckboxIconCSS } from "./icons/checkbox-icons";
+import {
+  generateCheckboxIconCSS,
+  generateCheckboxInputBaseCSS,
+  generateCheckboxPerCharCSS,
+} from "./icons/checkbox-icons";
 import { FONT_CSS } from "./fonts/generated-fonts";
 
 /** All aspect keys in the order they should appear in the CSS output. */
@@ -89,7 +93,19 @@ export function composeCSS(options: ThemeOptions): string {
     .filter(Boolean)
     .join("\n\n");
 
-  const iconCSS = generateCalloutIconCSS() + "\n\n" + generateCheckboxIconCSS();
+  const hasCheckboxes = includedAspects.includes("checkboxes");
+  const hasIconFonts = baseTheme.meta.fonts.some((f) => f.startsWith("icons/"));
+
+  let checkboxCSS = generateCheckboxIconCSS();
+  if (hasCheckboxes && !hasIconFonts) {
+    checkboxCSS +=
+      "\n\n" +
+      generateCheckboxInputBaseCSS() +
+      "\n\n" +
+      generateCheckboxPerCharCSS();
+  }
+
+  const iconCSS = generateCalloutIconCSS() + "\n\n" + checkboxCSS;
 
   return (
     (fontCSS ? fontCSS + "\n\n" : "") +
