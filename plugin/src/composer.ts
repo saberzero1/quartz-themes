@@ -144,11 +144,45 @@ function resolveIncludedAspects(
 }
 
 /**
- * Collect CSS for all included aspects in a given mode.
+ * Transform checkbox CSS for browser compatibility.
  *
- * For each aspect, check if there's an override theme; if so, load that
- * theme's CSS for this aspect. Otherwise use the base theme's CSS.
+ * Obsidian themes use `input[type="checkbox"]::after` for custom checkbox icons,
+ * but `::after` on `<input>` elements doesn't work in standard browsers.
+ * This rewrites those selectors to target `li::before` instead, and injects
+ * the icon font-family for rules that use font glyphs via `content:`.
  */
+function transformCheckboxCSSForIconFonts(
+  css: string,
+  iconFonts: string[],
+): string {
+  if (iconFonts.length === 0) return css;
+
+  const fontFamily = iconFonts.map((f) => f.replace(/^icons\//, ""))[0];
+
+  let transformed = css.replace(
+    /(li\.task-list-item\[data-task[^\]]*\])\s*input\[type=["']?checkbox["']?\]::after/g,
+    "$1::before",
+  );
+
+  if (fontFamily) {
+    transformed = transformed.replace(
+      /(::before\s*\{[^}]*content:\s*"[^"]*")/g,
+      `$1;\n  font-family: "${fontFamily}"`,
+    );
+  }
+
+  const base =
+    `li.task-list-item[data-task]::before {\n` +
+    `  display: inline-block;\n` +
+    `  vertical-align: middle;\n` +
+    `  width: 1em;\n` +
+    `  height: 1em;\n` +
+    `  margin-right: 0.25em;\n` +
+    `}`;
+
+  return base + "\n\n" + transformed;
+}
+
 function collectAspectCSS(
   mode: "dark" | "light",
   aspects: AspectKey[],
@@ -186,6 +220,12 @@ function collectAspectCSS(
     }
 
     if (css) {
+      if (aspect === "checkboxes") {
+        const iconFonts = baseTheme.meta.fonts.filter((f) =>
+          f.startsWith("icons/"),
+        );
+        css = transformCheckboxCSSForIconFonts(css, iconFonts);
+      }
       cssChunks.push(`/* aspect: ${aspect} */\n${css}`);
     }
   }
