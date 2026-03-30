@@ -172,7 +172,7 @@ function transformCheckboxCSSForIconFonts(
   }
 
   const base =
-    `li.task-list-item[data-task]::before {\n` +
+    `li.task-list-item.is-checked::before {\n` +
     `  content: "\\2713";\n` +
     `  display: inline-block;\n` +
     `  vertical-align: middle;\n` +
@@ -184,7 +184,7 @@ function transformCheckboxCSSForIconFonts(
     `  color: currentColor;\n` +
     (fontFamily ? `  font-family: "${fontFamily}";\n` : "") +
     `}\n\n` +
-    `li.task-list-item[data-task] input[type="checkbox"] {\n` +
+    `li.task-list-item.is-checked input[type="checkbox"] {\n` +
     `  mask-image: none !important;\n` +
     `  -webkit-mask-image: none !important;\n` +
     `  background-color: transparent !important;\n` +
