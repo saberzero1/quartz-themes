@@ -44,18 +44,6 @@ export function generateCheckboxInputBaseCSS(): string {
   );
 }
 
-export function generateCheckboxPerCharCSS(): string {
-  return Object.entries(CHECKBOX_ICON_URIS)
-    .map(
-      ([char, uri]) =>
-        `li.task-list-item[data-task="${char}"] input[type="checkbox"] {\n` +
-        `  mask-image: ${uri};\n` +
-        `  -webkit-mask-image: ${uri};\n` +
-        `}`,
-    )
-    .join("\n\n");
-}
-
 export function resolveCheckboxIcon(taskChar: string): string | undefined {
   return CHECKBOX_ICON_URIS[taskChar];
 }

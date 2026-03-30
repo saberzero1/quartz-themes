@@ -91,7 +91,11 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: #7f7f7f !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent 24px,
+    black 24px
+  ) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: #fcfcfc !important;
   --bases-table-row-border-width: 1px !important;
@@ -104,7 +108,15 @@
   --blockquote-border-color: hsl(177, 100%, 33%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent)) !important;
+  --blur-background: color-mix(
+      in srgb,
+      hsla(0, 0%, 100%, 100%) 65%,
+      transparent
+    )
+    linear-gradient(
+      hsla(0, 0%, 100%, 100%),
+      color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent)
+    ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -244,7 +256,8 @@
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover: 0 0 0 1px #9f9f9f66, inset 0 0 0 1px #9f9f9f66 !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px #9f9f9f66, inset 0 0 0 1px #9f9f9f66 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid hsl(177, 100%, 33%) !important;
@@ -256,7 +269,8 @@
   --file-header-background: hsla(0, 0%, 100%, 100%) !important;
   --file-header-background-focused: hsla(0, 0%, 100%, 100%) !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --file-header-font:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -269,17 +283,23 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-default:
+    "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-interface:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-mermaid:
+    "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-monospace: "DM Mono", monospace !important;
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -289,7 +309,8 @@
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-text:
+    "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -408,8 +429,14 @@
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #878787 !important;
   --input-radius: 5px !important;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent !important;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
   --interactive-accent: hsl(177, 100%, 33%) !important;
@@ -467,8 +494,14 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 14px !important;
-  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
+  --menu-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: #9f9f9f66 !important;
   --metadata-border-radius: 0 !important;
@@ -483,7 +516,8 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --metadata-input-font:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -492,7 +526,8 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --metadata-label-font:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #7f7f7f !important;
   --metadata-label-text-color-hover: #7f7f7f !important;
@@ -565,10 +600,12 @@
   --page-margin: 1px auto -8px !important;
   --pdf-background: hsla(0, 0%, 100%, 100%) !important;
   --pdf-page-background: hsla(0, 0%, 100%, 100%) !important;
-  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
   --pdf-sidebar-background: hsla(0, 0%, 100%, 100%) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
@@ -605,10 +642,26 @@
   --radius-m: 14px !important;
   --radius-s: 7px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent) linear-gradient(hsla(0, 0%, 100%, 100%), color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent)) !important;
+  --raised-background: color-mix(
+      in srgb,
+      hsla(0, 0%, 100%, 100%) 65%,
+      transparent
+    )
+    linear-gradient(
+      hsla(0, 0%, 100%, 100%),
+      color-mix(in srgb, hsla(0, 0%, 100%, 100%) 65%, transparent)
+    ) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
-  --raised-mask-background: linear-gradient(to bottom left, white, transparent, white) border-box no-repeat !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(
+      to bottom left,
+      white,
+      transparent,
+      white
+    )
+    border-box no-repeat !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
@@ -640,8 +693,12 @@
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 19px !important;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -714,7 +771,11 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: hsl(0, 0%, 96%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 96%), transparent) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    hsl(0, 0%, 96%),
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
@@ -828,17 +889,35 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
+  --raised-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
   --shadow-edges: 0 0 transparent !important;
-  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
   --inline-title-color: #252525 !important;
-  --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h2-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h3-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h4-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h5-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --inline-title-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --h1-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --h2-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --h3-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --h4-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --h5-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --h6-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --inline-title-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --button-background: hsl(183, 105%, 39%) !important;
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --embed-border-left: none !important;
@@ -870,15 +949,22 @@
   --h4-color-custom: #ac7aaa !important;
   --h5-color-custom: #c75f54 !important;
   --h6-color-custom: #d08344 !important;
-  --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --heading-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif !important;
+  --heading-font-2:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --heading-style: normal !important;
   --heading-variant: normal !important;
   --heading-weight: 700 !important;
   --highlight-text: #252525 !important;
   --icon-background: #fcfcfc !important;
   --icon-emoji: "Noto Color Emoji" !important;
-  --icon-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) inset, 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
+  --icon-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.028),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.042) inset,
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
   --img-align: auto !important;
   --img-bg-size: cover !important;
   --img-blur: 3px !important;
@@ -895,8 +981,11 @@
   --panel-child: #fdfdfd !important;
   --radius-x: 28px !important;
   --shadow-color: hsl(0, 0%, 96%) !important;
-  --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
-  --table-header-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --shadow-ui:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
+  --table-header-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --tile-field-padding: 5px !important;
   --tile-img-radius: 14px !important;
   --tile-padding: 8px !important;
@@ -991,7 +1080,11 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: hsl(220, 17%, 66%) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent 24px,
+    black 24px
+  ) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: hsl(218, 18%, 15%) !important;
   --bases-table-row-border-width: 1px !important;
@@ -1004,7 +1097,11 @@
   --blockquote-border-color: hsl(181, 100%, 35%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent)) !important;
+  --blur-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent)
+    linear-gradient(
+      hsl(218, 18%, 15%),
+      color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent)
+    ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -1144,7 +1241,8 @@
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover: 0 0 0 1px hsl(216, 20%, 20%), inset 0 0 0 1px hsl(216, 20%, 20%) !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px hsl(216, 20%, 20%), inset 0 0 0 1px hsl(216, 20%, 20%) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid hsl(181, 100%, 35%) !important;
@@ -1156,7 +1254,8 @@
   --file-header-background: hsla(216, 16%, 13%, 100%) !important;
   --file-header-background-focused: hsla(216, 16%, 13%, 100%) !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --file-header-font:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -1169,17 +1268,23 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default: "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-default:
+    "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-interface:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-mermaid:
+    "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-monospace: "DM Mono", monospace !important;
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -1189,7 +1294,8 @@
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --font-text:
+    "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1308,8 +1414,14 @@
   --input-padding: 4px 8px !important;
   --input-placeholder-color: hsl(219, 13%, 51%) !important;
   --input-radius: 5px !important;
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
   --interactive-accent: hsl(181, 100%, 35%) !important;
@@ -1367,8 +1479,14 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 14px !important;
-  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
+  --menu-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: hsl(216, 20%, 20%) !important;
   --metadata-border-radius: 0 !important;
@@ -1383,7 +1501,8 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --metadata-input-font:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -1392,7 +1511,8 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --metadata-label-font:
+    "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: hsl(220, 17%, 66%) !important;
   --metadata-label-text-color-hover: hsl(220, 17%, 66%) !important;
@@ -1505,9 +1625,15 @@
   --radius-m: 14px !important;
   --radius-s: 7px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent) linear-gradient(hsl(218, 18%, 15%), color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent)) !important;
+  --raised-background: color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent)
+    linear-gradient(
+      hsl(218, 18%, 15%),
+      color-mix(in srgb, hsl(218, 18%, 15%) 65%, transparent)
+    ) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
   --raised-mask-background: transparent !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
@@ -1540,8 +1666,12 @@
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 19px !important;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2) !important;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2) !important;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -1614,7 +1744,11 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: hsl(216, 19%, 16%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(216, 19%, 16%), transparent) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    hsl(216, 19%, 16%),
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
@@ -1729,13 +1863,27 @@
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --inline-title-color: #c8d4e6 !important;
-  --h1-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h2-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h3-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h4-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h5-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --h6-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --inline-title-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --h1-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --h2-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --h3-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --h4-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --h5-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --h6-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --inline-title-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --button-background: hsl(183, 105%, 39%) !important;
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4) !important;
   --embed-border-left: none !important;
@@ -1767,15 +1915,22 @@
   --h4-color-custom: #e66ab4 !important;
   --h5-color-custom: #ff4d3a !important;
   --h6-color-custom: #f69c00 !important;
-  --heading-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
-  --heading-font-2: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --heading-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif !important;
+  --heading-font-2:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --heading-style: normal !important;
   --heading-variant: normal !important;
   --heading-weight: 700 !important;
   --highlight-text: white !important;
   --icon-background: hsl(218, 18%, 15%) !important;
   --icon-emoji: "Noto Color Emoji" !important;
-  --icon-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) inset, 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
+  --icon-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.028),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.042) inset,
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
   --img-align: auto !important;
   --img-bg-size: cover !important;
   --img-blur: 3px !important;
@@ -1792,8 +1947,11 @@
   --panel-child: hsl(216, 17%, 14%) !important;
   --radius-x: 28px !important;
   --shadow-color: rgba(0, 0, 0, 0.2) !important;
-  --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
-  --table-header-font: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
+  --shadow-ui:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
+  --table-header-font:
+    "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+    Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif !important;
   --tile-field-padding: 5px !important;
   --tile-img-radius: 14px !important;
   --tile-padding: 8px !important;
@@ -1823,15 +1981,18 @@ html {
   font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkCY9_WamXgHlIbvw.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkCY9_WamXgHlIbvw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkAI9_WamXgHlIbvw.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkAI9_WamXgHlIbvw.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -1839,7 +2000,8 @@ html {
   font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkCI9_WamXgHlIbvw.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkCI9_WamXgHlIbvw.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -1847,47 +2009,64 @@ html {
   font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkB49_WamXgHlIbvw.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkB49_WamXgHlIbvw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkC49_WamXgHlIbvw.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkC49_WamXgHlIbvw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkCo9_WamXgHlIbvw.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkCo9_WamXgHlIbvw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkBI9_WamXgHlI.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v30/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkBI9_WamXgHlI.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV37NuzlojwUKaJO.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV37NuzlojwUKaJO.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVT7NuzlojwUKaJO.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVT7NuzlojwUKaJO.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -1895,7 +2074,8 @@ html {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVz7NuzlojwUKaJO.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVz7NuzlojwUKaJO.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -1903,56 +2083,80 @@ html {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVP7NuzlojwUKaJO.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVP7NuzlojwUKaJO.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV77NuzlojwUKaJO.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV77NuzlojwUKaJO.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7NuzlojwUKQ.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7NuzlojwUKQ.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Merriweather Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4VhOsHzRRXnKOrnx4.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4VhOsHzRRXnKOrnx4.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Merriweather Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4VhusHzRRXnKOrnx4.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4VhusHzRRXnKOrnx4.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Merriweather Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4Vh-sHzRRXnKOrnx4.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4Vh-sHzRRXnKOrnx4.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Merriweather Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4ViesHzRRXnKOr.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/merriweathersans/v26/2-cO9IRs1JiJN1FRAMjTN5zd9vgsFF_5asQTb6hZ2JKZou4ViesHzRRXnKOr.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -1960,8 +2164,10 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyscKpKrCzi0iNaA.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyscKpKrCzi0iNaA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
@@ -1969,7 +2175,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTw8cKpKrCzi0iNaA.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTw8cKpKrCzi0iNaA.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -1978,7 +2185,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTy8cKpKrCzi0iNaA.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTy8cKpKrCzi0iNaA.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -1987,8 +2195,10 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTxMcKpKrCzi0iNaA.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTxMcKpKrCzi0iNaA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
@@ -1996,8 +2206,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyMcKpKrCzi0iNaA.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyMcKpKrCzi0iNaA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
@@ -2005,8 +2219,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyccKpKrCzi0iNaA.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTyccKpKrCzi0iNaA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -2014,15 +2232,20 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTx8cKpKrCzi0i.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/notoserif/v28/ga6iaw1J5X9T9RW6j9bNVls-hfgvz8JcMofYTa32J4wsL2JAlAhZqFCTx8cKpKrCzi0i.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.0.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.0.woff2)
+    format("woff2");
   unicode-range: U+1F1E6-1F1FF;
 }
 
@@ -2030,87 +2253,180 @@ html {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.1.woff2) format("woff2");
-  unicode-range: U+200D, U+2620, U+26A7, U+FE0F, U+1F308, U+1F38C, U+1F3C1, U+1F3F3-1F3F4, U+1F6A9, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.1.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+2620, U+26A7, U+FE0F, U+1F308, U+1F38C, U+1F3C1, U+1F3F3-1F3F4,
+    U+1F6A9, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074,
+    U+E0077, U+E007F;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.2.woff2) format("woff2");
-  unicode-range: U+23, U+2A, U+30-39, U+A9, U+AE, U+200D, U+203C, U+2049, U+20E3, U+2122, U+2139, U+2194-2199, U+21A9-21AA, U+23CF, U+23E9-23EF, U+23F8-23FA, U+24C2, U+25AA-25AB, U+25B6, U+25C0, U+25FB-25FE, U+2611, U+2622-2623, U+2626, U+262A, U+262E-262F, U+2638, U+2640, U+2642, U+2648-2653, U+2660, U+2663, U+2665-2666, U+2668, U+267B, U+267E-267F, U+2695, U+269B-269C, U+26A0, U+26A7, U+26AA-26AB, U+26CE, U+26D4, U+2705, U+2714, U+2716, U+271D, U+2721, U+2733-2734, U+2747, U+274C, U+274E, U+2753-2755, U+2757, U+2764, U+2795-2797, U+27A1, U+27B0, U+27BF, U+2934-2935, U+2B05-2B07, U+2B1B-2B1C, U+2B55, U+3030, U+303D, U+3297, U+3299, U+FE0F, U+1F170-1F171, U+1F17E-1F17F, U+1F18E, U+1F191-1F19A, U+1F201-1F202, U+1F21A, U+1F22F, U+1F232-1F23A, U+1F250-1F251, U+1F310, U+1F3A6, U+1F3B5-1F3B6, U+1F3BC, U+1F3E7, U+1F441, U+1F499-1F49C, U+1F49F-1F4A0, U+1F4A2, U+1F4AC-1F4AD, U+1F4B1-1F4B2, U+1F4B9, U+1F4DB, U+1F4F2-1F4F6, U+1F500-1F50A, U+1F515, U+1F518-1F524, U+1F52F-1F53D, U+1F549, U+1F54E, U+1F5A4, U+1F5E8, U+1F5EF, U+1F6AB, U+1F6AD-1F6B1, U+1F6B3, U+1F6B7-1F6BC, U+1F6BE, U+1F6C2-1F6C5, U+1F6D0-1F6D1, U+1F6D7, U+1F6DC, U+1F7E0-1F7EB, U+1F7F0, U+1F90D-1F90E, U+1F9E1, U+1FA75-1FA77, U+1FAAF;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.2.woff2)
+    format("woff2");
+  unicode-range:
+    U+23, U+2A, U+30-39, U+A9, U+AE, U+200D, U+203C, U+2049, U+20E3, U+2122,
+    U+2139, U+2194-2199, U+21A9-21AA, U+23CF, U+23E9-23EF, U+23F8-23FA, U+24C2,
+    U+25AA-25AB, U+25B6, U+25C0, U+25FB-25FE, U+2611, U+2622-2623, U+2626,
+    U+262A, U+262E-262F, U+2638, U+2640, U+2642, U+2648-2653, U+2660, U+2663,
+    U+2665-2666, U+2668, U+267B, U+267E-267F, U+2695, U+269B-269C, U+26A0,
+    U+26A7, U+26AA-26AB, U+26CE, U+26D4, U+2705, U+2714, U+2716, U+271D, U+2721,
+    U+2733-2734, U+2747, U+274C, U+274E, U+2753-2755, U+2757, U+2764,
+    U+2795-2797, U+27A1, U+27B0, U+27BF, U+2934-2935, U+2B05-2B07, U+2B1B-2B1C,
+    U+2B55, U+3030, U+303D, U+3297, U+3299, U+FE0F, U+1F170-1F171,
+    U+1F17E-1F17F, U+1F18E, U+1F191-1F19A, U+1F201-1F202, U+1F21A, U+1F22F,
+    U+1F232-1F23A, U+1F250-1F251, U+1F310, U+1F3A6, U+1F3B5-1F3B6, U+1F3BC,
+    U+1F3E7, U+1F441, U+1F499-1F49C, U+1F49F-1F4A0, U+1F4A2, U+1F4AC-1F4AD,
+    U+1F4B1-1F4B2, U+1F4B9, U+1F4DB, U+1F4F2-1F4F6, U+1F500-1F50A, U+1F515,
+    U+1F518-1F524, U+1F52F-1F53D, U+1F549, U+1F54E, U+1F5A4, U+1F5E8, U+1F5EF,
+    U+1F6AB, U+1F6AD-1F6B1, U+1F6B3, U+1F6B7-1F6BC, U+1F6BE, U+1F6C2-1F6C5,
+    U+1F6D0-1F6D1, U+1F6D7, U+1F6DC, U+1F7E0-1F7EB, U+1F7F0, U+1F90D-1F90E,
+    U+1F9E1, U+1FA75-1FA77, U+1FAAF;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.3.woff2) format("woff2");
-  unicode-range: U+231A-231B, U+2328, U+23F0-23F3, U+2602, U+260E, U+2692, U+2694, U+2696-2697, U+2699, U+26B0-26B1, U+26CF, U+26D1, U+26D3, U+2702, U+2709, U+270F, U+2712, U+FE0F, U+1F302, U+1F321, U+1F392-1F393, U+1F3A9, U+1F3BD, U+1F3EE, U+1F3F7, U+1F3FA, U+1F451-1F462, U+1F484, U+1F489-1F48A, U+1F48C-1F48E, U+1F4A1, U+1F4A3, U+1F4B0, U+1F4B3-1F4B8, U+1F4BB-1F4DA, U+1F4DC-1F4F1, U+1F4FF, U+1F50B-1F514, U+1F516-1F517, U+1F526-1F529, U+1F52C-1F52E, U+1F550-1F567, U+1F56F-1F570, U+1F576, U+1F587, U+1F58A-1F58D, U+1F5A5, U+1F5A8, U+1F5B1-1F5B2, U+1F5C2-1F5C4, U+1F5D1-1F5D3, U+1F5DC-1F5DE, U+1F5E1, U+1F5F3, U+1F6AA, U+1F6AC, U+1F6BD, U+1F6BF, U+1F6C1, U+1F6CB, U+1F6CD-1F6CF, U+1F6D2, U+1F6E0-1F6E1, U+1F6F0, U+1F97B-1F97F, U+1F9AF, U+1F9BA, U+1F9E2-1F9E6, U+1F9EA-1F9EC, U+1F9EE-1F9F4, U+1F9F7-1F9FF, U+1FA71-1FA74, U+1FA79-1FA7B, U+1FA86, U+1FA91-1FA93, U+1FA96, U+1FA99-1FAA0, U+1FAA2-1FAA7, U+1FAAA-1FAAE;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.3.woff2)
+    format("woff2");
+  unicode-range:
+    U+231A-231B, U+2328, U+23F0-23F3, U+2602, U+260E, U+2692, U+2694,
+    U+2696-2697, U+2699, U+26B0-26B1, U+26CF, U+26D1, U+26D3, U+2702, U+2709,
+    U+270F, U+2712, U+FE0F, U+1F302, U+1F321, U+1F392-1F393, U+1F3A9, U+1F3BD,
+    U+1F3EE, U+1F3F7, U+1F3FA, U+1F451-1F462, U+1F484, U+1F489-1F48A,
+    U+1F48C-1F48E, U+1F4A1, U+1F4A3, U+1F4B0, U+1F4B3-1F4B8, U+1F4BB-1F4DA,
+    U+1F4DC-1F4F1, U+1F4FF, U+1F50B-1F514, U+1F516-1F517, U+1F526-1F529,
+    U+1F52C-1F52E, U+1F550-1F567, U+1F56F-1F570, U+1F576, U+1F587,
+    U+1F58A-1F58D, U+1F5A5, U+1F5A8, U+1F5B1-1F5B2, U+1F5C2-1F5C4,
+    U+1F5D1-1F5D3, U+1F5DC-1F5DE, U+1F5E1, U+1F5F3, U+1F6AA, U+1F6AC, U+1F6BD,
+    U+1F6BF, U+1F6C1, U+1F6CB, U+1F6CD-1F6CF, U+1F6D2, U+1F6E0-1F6E1, U+1F6F0,
+    U+1F97B-1F97F, U+1F9AF, U+1F9BA, U+1F9E2-1F9E6, U+1F9EA-1F9EC,
+    U+1F9EE-1F9F4, U+1F9F7-1F9FF, U+1FA71-1FA74, U+1FA79-1FA7B, U+1FA86,
+    U+1FA91-1FA93, U+1FA96, U+1FA99-1FAA0, U+1FAA2-1FAA7, U+1FAAA-1FAAE;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.4.woff2) format("woff2");
-  unicode-range: U+265F, U+26BD-26BE, U+26F3, U+26F8, U+FE0F, U+1F004, U+1F0CF, U+1F380-1F384, U+1F386-1F38B, U+1F38D-1F391, U+1F396-1F397, U+1F399-1F39B, U+1F39E-1F39F, U+1F3A3-1F3A5, U+1F3A7-1F3A9, U+1F3AB-1F3B4, U+1F3B7-1F3BB, U+1F3BD-1F3C0, U+1F3C5-1F3C6, U+1F3C8-1F3C9, U+1F3CF-1F3D3, U+1F3F8-1F3F9, U+1F47E, U+1F4E2, U+1F4F7-1F4FD, U+1F52B, U+1F579, U+1F58C-1F58D, U+1F5BC, U+1F6F7, U+1F6F9, U+1F6FC, U+1F93F, U+1F941, U+1F945, U+1F947-1F94F, U+1F9E7-1F9E9, U+1F9F5-1F9F6, U+1FA70-1FA71, U+1FA80-1FA81, U+1FA83-1FA85, U+1FA87-1FA88, U+1FA94-1FA95, U+1FA97-1FA98, U+1FAA1, U+1FAA9;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.4.woff2)
+    format("woff2");
+  unicode-range:
+    U+265F, U+26BD-26BE, U+26F3, U+26F8, U+FE0F, U+1F004, U+1F0CF,
+    U+1F380-1F384, U+1F386-1F38B, U+1F38D-1F391, U+1F396-1F397, U+1F399-1F39B,
+    U+1F39E-1F39F, U+1F3A3-1F3A5, U+1F3A7-1F3A9, U+1F3AB-1F3B4, U+1F3B7-1F3BB,
+    U+1F3BD-1F3C0, U+1F3C5-1F3C6, U+1F3C8-1F3C9, U+1F3CF-1F3D3, U+1F3F8-1F3F9,
+    U+1F47E, U+1F4E2, U+1F4F7-1F4FD, U+1F52B, U+1F579, U+1F58C-1F58D, U+1F5BC,
+    U+1F6F7, U+1F6F9, U+1F6FC, U+1F93F, U+1F941, U+1F945, U+1F947-1F94F,
+    U+1F9E7-1F9E9, U+1F9F5-1F9F6, U+1FA70-1FA71, U+1FA80-1FA81, U+1FA83-1FA85,
+    U+1FA87-1FA88, U+1FA94-1FA95, U+1FA97-1FA98, U+1FAA1, U+1FAA9;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.5.woff2) format("woff2");
-  unicode-range: U+2693, U+26E9-26EA, U+26F1-26F2, U+26F4-26F5, U+26FA, U+26FD, U+2708, U+FE0F, U+1F301, U+1F303, U+1F306-1F307, U+1F309, U+1F310, U+1F3A0-1F3A2, U+1F3AA, U+1F3CD-1F3CE, U+1F3D5, U+1F3D7-1F3DB, U+1F3DF-1F3E6, U+1F3E8-1F3ED, U+1F3EF-1F3F0, U+1F488, U+1F492, U+1F4BA, U+1F54B-1F54D, U+1F5FA-1F5FF, U+1F680-1F6A2, U+1F6A4-1F6A8, U+1F6B2, U+1F6D1, U+1F6D5-1F6D6, U+1F6DD-1F6DF, U+1F6E2-1F6E5, U+1F6E9, U+1F6EB-1F6EC, U+1F6F3-1F6F6, U+1F6F8, U+1F6FA-1F6FB, U+1F9BC-1F9BD, U+1F9ED, U+1F9F3, U+1FA7C;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.5.woff2)
+    format("woff2");
+  unicode-range:
+    U+2693, U+26E9-26EA, U+26F1-26F2, U+26F4-26F5, U+26FA, U+26FD, U+2708,
+    U+FE0F, U+1F301, U+1F303, U+1F306-1F307, U+1F309, U+1F310, U+1F3A0-1F3A2,
+    U+1F3AA, U+1F3CD-1F3CE, U+1F3D5, U+1F3D7-1F3DB, U+1F3DF-1F3E6,
+    U+1F3E8-1F3ED, U+1F3EF-1F3F0, U+1F488, U+1F492, U+1F4BA, U+1F54B-1F54D,
+    U+1F5FA-1F5FF, U+1F680-1F6A2, U+1F6A4-1F6A8, U+1F6B2, U+1F6D1,
+    U+1F6D5-1F6D6, U+1F6DD-1F6DF, U+1F6E2-1F6E5, U+1F6E9, U+1F6EB-1F6EC,
+    U+1F6F3-1F6F6, U+1F6F8, U+1F6FA-1F6FB, U+1F9BC-1F9BD, U+1F9ED, U+1F9F3,
+    U+1FA7C;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.6.woff2) format("woff2");
-  unicode-range: U+2615, U+FE0F, U+1F32D-1F330, U+1F336, U+1F33D, U+1F345-1F37F, U+1F382, U+1F52A, U+1F942-1F944, U+1F950-1F96F, U+1F99E, U+1F9AA, U+1F9C0-1F9CB, U+1FAD0-1FADB;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.6.woff2)
+    format("woff2");
+  unicode-range:
+    U+2615, U+FE0F, U+1F32D-1F330, U+1F336, U+1F33D, U+1F345-1F37F, U+1F382,
+    U+1F52A, U+1F942-1F944, U+1F950-1F96F, U+1F99E, U+1F9AA, U+1F9C0-1F9CB,
+    U+1FAD0-1FADB;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.7.woff2) format("woff2");
-  unicode-range: U+200D, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26A1, U+26C4-26C5, U+26C8, U+26F0, U+2728, U+2744, U+2B1B, U+2B50, U+FE0F, U+1F300, U+1F304-1F305, U+1F308, U+1F30A-1F30F, U+1F311-1F321, U+1F324-1F32C, U+1F331-1F335, U+1F337-1F33C, U+1F33E-1F344, U+1F3D4, U+1F3D6, U+1F3DC-1F3DE, U+1F3F5, U+1F400-1F43F, U+1F490, U+1F4A7, U+1F4AB, U+1F4AE, U+1F525, U+1F54A, U+1F573, U+1F577-1F578, U+1F648-1F64A, U+1F940, U+1F980-1F9AE, U+1F9BA, U+1FA90, U+1FAA8, U+1FAB0-1FABD, U+1FABF, U+1FACE-1FACF, U+1FAE7;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.7.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26A1, U+26C4-26C5,
+    U+26C8, U+26F0, U+2728, U+2744, U+2B1B, U+2B50, U+FE0F, U+1F300,
+    U+1F304-1F305, U+1F308, U+1F30A-1F30F, U+1F311-1F321, U+1F324-1F32C,
+    U+1F331-1F335, U+1F337-1F33C, U+1F33E-1F344, U+1F3D4, U+1F3D6,
+    U+1F3DC-1F3DE, U+1F3F5, U+1F400-1F43F, U+1F490, U+1F4A7, U+1F4AB, U+1F4AE,
+    U+1F525, U+1F54A, U+1F573, U+1F577-1F578, U+1F648-1F64A, U+1F940,
+    U+1F980-1F9AE, U+1F9BA, U+1FA90, U+1FAA8, U+1FAB0-1FABD, U+1FABF,
+    U+1FACE-1FACF, U+1FAE7;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.8.woff2) format("woff2");
-  unicode-range: U+200D, U+2640, U+2642, U+2695-2696, U+26F7, U+26F9, U+2708, U+2764, U+FE0F, U+1F33E, U+1F373, U+1F37C, U+1F384-1F385, U+1F393, U+1F3A4, U+1F3A8, U+1F3C2-1F3C4, U+1F3C7, U+1F3CA-1F3CC, U+1F3EB, U+1F3ED, U+1F3FB-1F3FF, U+1F466-1F478, U+1F47C, U+1F481-1F483, U+1F486-1F487, U+1F48B, U+1F48F, U+1F491, U+1F4BB-1F4BC, U+1F527, U+1F52C, U+1F574-1F575, U+1F57A, U+1F645-1F647, U+1F64B, U+1F64D-1F64E, U+1F680, U+1F692, U+1F6A3, U+1F6B4-1F6B6, U+1F6C0, U+1F6CC, U+1F91D, U+1F926, U+1F930-1F931, U+1F934-1F93A, U+1F93C-1F93E, U+1F977, U+1F9AF-1F9B3, U+1F9B8-1F9B9, U+1F9BC-1F9BD, U+1F9CC-1F9CF, U+1F9D1-1F9DF, U+1FA82, U+1FAC3-1FAC5;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.8.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+2640, U+2642, U+2695-2696, U+26F7, U+26F9, U+2708, U+2764, U+FE0F,
+    U+1F33E, U+1F373, U+1F37C, U+1F384-1F385, U+1F393, U+1F3A4, U+1F3A8,
+    U+1F3C2-1F3C4, U+1F3C7, U+1F3CA-1F3CC, U+1F3EB, U+1F3ED, U+1F3FB-1F3FF,
+    U+1F466-1F478, U+1F47C, U+1F481-1F483, U+1F486-1F487, U+1F48B, U+1F48F,
+    U+1F491, U+1F4BB-1F4BC, U+1F527, U+1F52C, U+1F574-1F575, U+1F57A,
+    U+1F645-1F647, U+1F64B, U+1F64D-1F64E, U+1F680, U+1F692, U+1F6A3,
+    U+1F6B4-1F6B6, U+1F6C0, U+1F6CC, U+1F91D, U+1F926, U+1F930-1F931,
+    U+1F934-1F93A, U+1F93C-1F93E, U+1F977, U+1F9AF-1F9B3, U+1F9B8-1F9B9,
+    U+1F9BC-1F9BD, U+1F9CC-1F9CF, U+1F9D1-1F9DF, U+1FA82, U+1FAC3-1FAC5;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.9.woff2) format("woff2");
-  unicode-range: U+200D, U+261D, U+2620, U+2639-263A, U+2665, U+270A-270D, U+2728, U+2763-2764, U+2B50, U+FE0F, U+1F31A-1F31F, U+1F32B, U+1F383, U+1F389, U+1F3FB-1F3FF, U+1F440-1F450, U+1F463-1F465, U+1F479-1F47B, U+1F47D-1F480, U+1F485, U+1F48B-1F48C, U+1F493-1F49F, U+1F4A4-1F4A6, U+1F4A8-1F4AB, U+1F4AF, U+1F525, U+1F573, U+1F590, U+1F595-1F596, U+1F5A4, U+1F5E3, U+1F600-1F644, U+1F648-1F64A, U+1F64C, U+1F64F, U+1F90C-1F925, U+1F927-1F92F, U+1F932-1F933, U+1F970-1F976, U+1F978-1F97A, U+1F9A0, U+1F9B4-1F9B7, U+1F9BB, U+1F9BE-1F9BF, U+1F9D0, U+1F9E0-1F9E1, U+1FA75-1FA79, U+1FAC0-1FAC2, U+1FAE0-1FAE6, U+1FAE8, U+1FAF0-1FAF8;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.9.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+261D, U+2620, U+2639-263A, U+2665, U+270A-270D, U+2728,
+    U+2763-2764, U+2B50, U+FE0F, U+1F31A-1F31F, U+1F32B, U+1F383, U+1F389,
+    U+1F3FB-1F3FF, U+1F440-1F450, U+1F463-1F465, U+1F479-1F47B, U+1F47D-1F480,
+    U+1F485, U+1F48B-1F48C, U+1F493-1F49F, U+1F4A4-1F4A6, U+1F4A8-1F4AB,
+    U+1F4AF, U+1F525, U+1F573, U+1F590, U+1F595-1F596, U+1F5A4, U+1F5E3,
+    U+1F600-1F644, U+1F648-1F64A, U+1F64C, U+1F64F, U+1F90C-1F925,
+    U+1F927-1F92F, U+1F932-1F933, U+1F970-1F976, U+1F978-1F97A, U+1F9A0,
+    U+1F9B4-1F9B7, U+1F9BB, U+1F9BE-1F9BF, U+1F9D0, U+1F9E0-1F9E1,
+    U+1FA75-1FA79, U+1FAC0-1FAC2, U+1FAE0-1FAE6, U+1FAE8, U+1FAF0-1FAF8;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.10.woff2) format("woff2");
-  unicode-range: U+200D, U+2194-2195, U+2640, U+2642, U+26D3, U+27A1, U+FE0F, U+1F344, U+1F34B, U+1F3C3, U+1F3FB-1F3FF, U+1F426, U+1F468-1F469, U+1F4A5, U+1F525, U+1F642, U+1F6B6, U+1F7E9, U+1F7EB, U+1F9AF, U+1F9BC-1F9BD, U+1F9CE, U+1F9D1-1F9D2;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.10.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+2194-2195, U+2640, U+2642, U+26D3, U+27A1, U+FE0F, U+1F344,
+    U+1F34B, U+1F3C3, U+1F3FB-1F3FF, U+1F426, U+1F468-1F469, U+1F4A5, U+1F525,
+    U+1F642, U+1F6B6, U+1F7E9, U+1F7EB, U+1F9AF, U+1F9BC-1F9BD, U+1F9CE,
+    U+1F9D1-1F9D2;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.11.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.11.woff2)
+    format("woff2");
   unicode-range: U+1FA89, U+1FA8F, U+1FABE, U+1FAC6, U+1FADC, U+1FADF, U+1FAE9;
 }
 body {
@@ -2121,7 +2437,8 @@ body {
   font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.0.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.0.woff2)
+    format("woff2");
   unicode-range: U+1F1E6-1F1FF;
 }
 
@@ -2129,87 +2446,180 @@ body {
   font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.1.woff2) format("woff2");
-  unicode-range: U+200D, U+2620, U+26A7, U+FE0F, U+1F308, U+1F38C, U+1F3C1, U+1F3F3-1F3F4, U+1F6A9, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.1.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+2620, U+26A7, U+FE0F, U+1F308, U+1F38C, U+1F3C1, U+1F3F3-1F3F4,
+    U+1F6A9, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074,
+    U+E0077, U+E007F;
 }
 
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.2.woff2) format("woff2");
-  unicode-range: U+23, U+2A, U+30-39, U+A9, U+AE, U+200D, U+203C, U+2049, U+20E3, U+2122, U+2139, U+2194-2199, U+21A9-21AA, U+23CF, U+23E9-23EF, U+23F8-23FA, U+24C2, U+25AA-25AB, U+25B6, U+25C0, U+25FB-25FE, U+2611, U+2622-2623, U+2626, U+262A, U+262E-262F, U+2638, U+2640, U+2642, U+2648-2653, U+2660, U+2663, U+2665-2666, U+2668, U+267B, U+267E-267F, U+2695, U+269B-269C, U+26A0, U+26A7, U+26AA-26AB, U+26CE, U+26D4, U+2705, U+2714, U+2716, U+271D, U+2721, U+2733-2734, U+2747, U+274C, U+274E, U+2753-2755, U+2757, U+2764, U+2795-2797, U+27A1, U+27B0, U+27BF, U+2934-2935, U+2B05-2B07, U+2B1B-2B1C, U+2B55, U+3030, U+303D, U+3297, U+3299, U+FE0F, U+1F170-1F171, U+1F17E-1F17F, U+1F18E, U+1F191-1F19A, U+1F201-1F202, U+1F21A, U+1F22F, U+1F232-1F23A, U+1F250-1F251, U+1F310, U+1F3A6, U+1F3B5-1F3B6, U+1F3BC, U+1F3E7, U+1F441, U+1F499-1F49C, U+1F49F-1F4A0, U+1F4A2, U+1F4AC-1F4AD, U+1F4B1-1F4B2, U+1F4B9, U+1F4DB, U+1F4F2-1F4F6, U+1F500-1F50A, U+1F515, U+1F518-1F524, U+1F52F-1F53D, U+1F549, U+1F54E, U+1F5A4, U+1F5E8, U+1F5EF, U+1F6AB, U+1F6AD-1F6B1, U+1F6B3, U+1F6B7-1F6BC, U+1F6BE, U+1F6C2-1F6C5, U+1F6D0-1F6D1, U+1F6D7, U+1F6DC, U+1F7E0-1F7EB, U+1F7F0, U+1F90D-1F90E, U+1F9E1, U+1FA75-1FA77, U+1FAAF;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.2.woff2)
+    format("woff2");
+  unicode-range:
+    U+23, U+2A, U+30-39, U+A9, U+AE, U+200D, U+203C, U+2049, U+20E3, U+2122,
+    U+2139, U+2194-2199, U+21A9-21AA, U+23CF, U+23E9-23EF, U+23F8-23FA, U+24C2,
+    U+25AA-25AB, U+25B6, U+25C0, U+25FB-25FE, U+2611, U+2622-2623, U+2626,
+    U+262A, U+262E-262F, U+2638, U+2640, U+2642, U+2648-2653, U+2660, U+2663,
+    U+2665-2666, U+2668, U+267B, U+267E-267F, U+2695, U+269B-269C, U+26A0,
+    U+26A7, U+26AA-26AB, U+26CE, U+26D4, U+2705, U+2714, U+2716, U+271D, U+2721,
+    U+2733-2734, U+2747, U+274C, U+274E, U+2753-2755, U+2757, U+2764,
+    U+2795-2797, U+27A1, U+27B0, U+27BF, U+2934-2935, U+2B05-2B07, U+2B1B-2B1C,
+    U+2B55, U+3030, U+303D, U+3297, U+3299, U+FE0F, U+1F170-1F171,
+    U+1F17E-1F17F, U+1F18E, U+1F191-1F19A, U+1F201-1F202, U+1F21A, U+1F22F,
+    U+1F232-1F23A, U+1F250-1F251, U+1F310, U+1F3A6, U+1F3B5-1F3B6, U+1F3BC,
+    U+1F3E7, U+1F441, U+1F499-1F49C, U+1F49F-1F4A0, U+1F4A2, U+1F4AC-1F4AD,
+    U+1F4B1-1F4B2, U+1F4B9, U+1F4DB, U+1F4F2-1F4F6, U+1F500-1F50A, U+1F515,
+    U+1F518-1F524, U+1F52F-1F53D, U+1F549, U+1F54E, U+1F5A4, U+1F5E8, U+1F5EF,
+    U+1F6AB, U+1F6AD-1F6B1, U+1F6B3, U+1F6B7-1F6BC, U+1F6BE, U+1F6C2-1F6C5,
+    U+1F6D0-1F6D1, U+1F6D7, U+1F6DC, U+1F7E0-1F7EB, U+1F7F0, U+1F90D-1F90E,
+    U+1F9E1, U+1FA75-1FA77, U+1FAAF;
 }
 
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.3.woff2) format("woff2");
-  unicode-range: U+231A-231B, U+2328, U+23F0-23F3, U+2602, U+260E, U+2692, U+2694, U+2696-2697, U+2699, U+26B0-26B1, U+26CF, U+26D1, U+26D3, U+2702, U+2709, U+270F, U+2712, U+FE0F, U+1F302, U+1F321, U+1F392-1F393, U+1F3A9, U+1F3BD, U+1F3EE, U+1F3F7, U+1F3FA, U+1F451-1F462, U+1F484, U+1F489-1F48A, U+1F48C-1F48E, U+1F4A1, U+1F4A3, U+1F4B0, U+1F4B3-1F4B8, U+1F4BB-1F4DA, U+1F4DC-1F4F1, U+1F4FF, U+1F50B-1F514, U+1F516-1F517, U+1F526-1F529, U+1F52C-1F52E, U+1F550-1F567, U+1F56F-1F570, U+1F576, U+1F587, U+1F58A-1F58D, U+1F5A5, U+1F5A8, U+1F5B1-1F5B2, U+1F5C2-1F5C4, U+1F5D1-1F5D3, U+1F5DC-1F5DE, U+1F5E1, U+1F5F3, U+1F6AA, U+1F6AC, U+1F6BD, U+1F6BF, U+1F6C1, U+1F6CB, U+1F6CD-1F6CF, U+1F6D2, U+1F6E0-1F6E1, U+1F6F0, U+1F97B-1F97F, U+1F9AF, U+1F9BA, U+1F9E2-1F9E6, U+1F9EA-1F9EC, U+1F9EE-1F9F4, U+1F9F7-1F9FF, U+1FA71-1FA74, U+1FA79-1FA7B, U+1FA86, U+1FA91-1FA93, U+1FA96, U+1FA99-1FAA0, U+1FAA2-1FAA7, U+1FAAA-1FAAE;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.3.woff2)
+    format("woff2");
+  unicode-range:
+    U+231A-231B, U+2328, U+23F0-23F3, U+2602, U+260E, U+2692, U+2694,
+    U+2696-2697, U+2699, U+26B0-26B1, U+26CF, U+26D1, U+26D3, U+2702, U+2709,
+    U+270F, U+2712, U+FE0F, U+1F302, U+1F321, U+1F392-1F393, U+1F3A9, U+1F3BD,
+    U+1F3EE, U+1F3F7, U+1F3FA, U+1F451-1F462, U+1F484, U+1F489-1F48A,
+    U+1F48C-1F48E, U+1F4A1, U+1F4A3, U+1F4B0, U+1F4B3-1F4B8, U+1F4BB-1F4DA,
+    U+1F4DC-1F4F1, U+1F4FF, U+1F50B-1F514, U+1F516-1F517, U+1F526-1F529,
+    U+1F52C-1F52E, U+1F550-1F567, U+1F56F-1F570, U+1F576, U+1F587,
+    U+1F58A-1F58D, U+1F5A5, U+1F5A8, U+1F5B1-1F5B2, U+1F5C2-1F5C4,
+    U+1F5D1-1F5D3, U+1F5DC-1F5DE, U+1F5E1, U+1F5F3, U+1F6AA, U+1F6AC, U+1F6BD,
+    U+1F6BF, U+1F6C1, U+1F6CB, U+1F6CD-1F6CF, U+1F6D2, U+1F6E0-1F6E1, U+1F6F0,
+    U+1F97B-1F97F, U+1F9AF, U+1F9BA, U+1F9E2-1F9E6, U+1F9EA-1F9EC,
+    U+1F9EE-1F9F4, U+1F9F7-1F9FF, U+1FA71-1FA74, U+1FA79-1FA7B, U+1FA86,
+    U+1FA91-1FA93, U+1FA96, U+1FA99-1FAA0, U+1FAA2-1FAA7, U+1FAAA-1FAAE;
 }
 
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.4.woff2) format("woff2");
-  unicode-range: U+265F, U+26BD-26BE, U+26F3, U+26F8, U+FE0F, U+1F004, U+1F0CF, U+1F380-1F384, U+1F386-1F38B, U+1F38D-1F391, U+1F396-1F397, U+1F399-1F39B, U+1F39E-1F39F, U+1F3A3-1F3A5, U+1F3A7-1F3A9, U+1F3AB-1F3B4, U+1F3B7-1F3BB, U+1F3BD-1F3C0, U+1F3C5-1F3C6, U+1F3C8-1F3C9, U+1F3CF-1F3D3, U+1F3F8-1F3F9, U+1F47E, U+1F4E2, U+1F4F7-1F4FD, U+1F52B, U+1F579, U+1F58C-1F58D, U+1F5BC, U+1F6F7, U+1F6F9, U+1F6FC, U+1F93F, U+1F941, U+1F945, U+1F947-1F94F, U+1F9E7-1F9E9, U+1F9F5-1F9F6, U+1FA70-1FA71, U+1FA80-1FA81, U+1FA83-1FA85, U+1FA87-1FA88, U+1FA94-1FA95, U+1FA97-1FA98, U+1FAA1, U+1FAA9;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.4.woff2)
+    format("woff2");
+  unicode-range:
+    U+265F, U+26BD-26BE, U+26F3, U+26F8, U+FE0F, U+1F004, U+1F0CF,
+    U+1F380-1F384, U+1F386-1F38B, U+1F38D-1F391, U+1F396-1F397, U+1F399-1F39B,
+    U+1F39E-1F39F, U+1F3A3-1F3A5, U+1F3A7-1F3A9, U+1F3AB-1F3B4, U+1F3B7-1F3BB,
+    U+1F3BD-1F3C0, U+1F3C5-1F3C6, U+1F3C8-1F3C9, U+1F3CF-1F3D3, U+1F3F8-1F3F9,
+    U+1F47E, U+1F4E2, U+1F4F7-1F4FD, U+1F52B, U+1F579, U+1F58C-1F58D, U+1F5BC,
+    U+1F6F7, U+1F6F9, U+1F6FC, U+1F93F, U+1F941, U+1F945, U+1F947-1F94F,
+    U+1F9E7-1F9E9, U+1F9F5-1F9F6, U+1FA70-1FA71, U+1FA80-1FA81, U+1FA83-1FA85,
+    U+1FA87-1FA88, U+1FA94-1FA95, U+1FA97-1FA98, U+1FAA1, U+1FAA9;
 }
 
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.5.woff2) format("woff2");
-  unicode-range: U+2693, U+26E9-26EA, U+26F1-26F2, U+26F4-26F5, U+26FA, U+26FD, U+2708, U+FE0F, U+1F301, U+1F303, U+1F306-1F307, U+1F309, U+1F310, U+1F3A0-1F3A2, U+1F3AA, U+1F3CD-1F3CE, U+1F3D5, U+1F3D7-1F3DB, U+1F3DF-1F3E6, U+1F3E8-1F3ED, U+1F3EF-1F3F0, U+1F488, U+1F492, U+1F4BA, U+1F54B-1F54D, U+1F5FA-1F5FF, U+1F680-1F6A2, U+1F6A4-1F6A8, U+1F6B2, U+1F6D1, U+1F6D5-1F6D6, U+1F6DD-1F6DF, U+1F6E2-1F6E5, U+1F6E9, U+1F6EB-1F6EC, U+1F6F3-1F6F6, U+1F6F8, U+1F6FA-1F6FB, U+1F9BC-1F9BD, U+1F9ED, U+1F9F3, U+1FA7C;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.5.woff2)
+    format("woff2");
+  unicode-range:
+    U+2693, U+26E9-26EA, U+26F1-26F2, U+26F4-26F5, U+26FA, U+26FD, U+2708,
+    U+FE0F, U+1F301, U+1F303, U+1F306-1F307, U+1F309, U+1F310, U+1F3A0-1F3A2,
+    U+1F3AA, U+1F3CD-1F3CE, U+1F3D5, U+1F3D7-1F3DB, U+1F3DF-1F3E6,
+    U+1F3E8-1F3ED, U+1F3EF-1F3F0, U+1F488, U+1F492, U+1F4BA, U+1F54B-1F54D,
+    U+1F5FA-1F5FF, U+1F680-1F6A2, U+1F6A4-1F6A8, U+1F6B2, U+1F6D1,
+    U+1F6D5-1F6D6, U+1F6DD-1F6DF, U+1F6E2-1F6E5, U+1F6E9, U+1F6EB-1F6EC,
+    U+1F6F3-1F6F6, U+1F6F8, U+1F6FA-1F6FB, U+1F9BC-1F9BD, U+1F9ED, U+1F9F3,
+    U+1FA7C;
 }
 
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.6.woff2) format("woff2");
-  unicode-range: U+2615, U+FE0F, U+1F32D-1F330, U+1F336, U+1F33D, U+1F345-1F37F, U+1F382, U+1F52A, U+1F942-1F944, U+1F950-1F96F, U+1F99E, U+1F9AA, U+1F9C0-1F9CB, U+1FAD0-1FADB;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.6.woff2)
+    format("woff2");
+  unicode-range:
+    U+2615, U+FE0F, U+1F32D-1F330, U+1F336, U+1F33D, U+1F345-1F37F, U+1F382,
+    U+1F52A, U+1F942-1F944, U+1F950-1F96F, U+1F99E, U+1F9AA, U+1F9C0-1F9CB,
+    U+1FAD0-1FADB;
 }
 
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.7.woff2) format("woff2");
-  unicode-range: U+200D, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26A1, U+26C4-26C5, U+26C8, U+26F0, U+2728, U+2744, U+2B1B, U+2B50, U+FE0F, U+1F300, U+1F304-1F305, U+1F308, U+1F30A-1F30F, U+1F311-1F321, U+1F324-1F32C, U+1F331-1F335, U+1F337-1F33C, U+1F33E-1F344, U+1F3D4, U+1F3D6, U+1F3DC-1F3DE, U+1F3F5, U+1F400-1F43F, U+1F490, U+1F4A7, U+1F4AB, U+1F4AE, U+1F525, U+1F54A, U+1F573, U+1F577-1F578, U+1F648-1F64A, U+1F940, U+1F980-1F9AE, U+1F9BA, U+1FA90, U+1FAA8, U+1FAB0-1FABD, U+1FABF, U+1FACE-1FACF, U+1FAE7;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.7.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26A1, U+26C4-26C5,
+    U+26C8, U+26F0, U+2728, U+2744, U+2B1B, U+2B50, U+FE0F, U+1F300,
+    U+1F304-1F305, U+1F308, U+1F30A-1F30F, U+1F311-1F321, U+1F324-1F32C,
+    U+1F331-1F335, U+1F337-1F33C, U+1F33E-1F344, U+1F3D4, U+1F3D6,
+    U+1F3DC-1F3DE, U+1F3F5, U+1F400-1F43F, U+1F490, U+1F4A7, U+1F4AB, U+1F4AE,
+    U+1F525, U+1F54A, U+1F573, U+1F577-1F578, U+1F648-1F64A, U+1F940,
+    U+1F980-1F9AE, U+1F9BA, U+1FA90, U+1FAA8, U+1FAB0-1FABD, U+1FABF,
+    U+1FACE-1FACF, U+1FAE7;
 }
 
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.8.woff2) format("woff2");
-  unicode-range: U+200D, U+2640, U+2642, U+2695-2696, U+26F7, U+26F9, U+2708, U+2764, U+FE0F, U+1F33E, U+1F373, U+1F37C, U+1F384-1F385, U+1F393, U+1F3A4, U+1F3A8, U+1F3C2-1F3C4, U+1F3C7, U+1F3CA-1F3CC, U+1F3EB, U+1F3ED, U+1F3FB-1F3FF, U+1F466-1F478, U+1F47C, U+1F481-1F483, U+1F486-1F487, U+1F48B, U+1F48F, U+1F491, U+1F4BB-1F4BC, U+1F527, U+1F52C, U+1F574-1F575, U+1F57A, U+1F645-1F647, U+1F64B, U+1F64D-1F64E, U+1F680, U+1F692, U+1F6A3, U+1F6B4-1F6B6, U+1F6C0, U+1F6CC, U+1F91D, U+1F926, U+1F930-1F931, U+1F934-1F93A, U+1F93C-1F93E, U+1F977, U+1F9AF-1F9B3, U+1F9B8-1F9B9, U+1F9BC-1F9BD, U+1F9CC-1F9CF, U+1F9D1-1F9DF, U+1FA82, U+1FAC3-1FAC5;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.8.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+2640, U+2642, U+2695-2696, U+26F7, U+26F9, U+2708, U+2764, U+FE0F,
+    U+1F33E, U+1F373, U+1F37C, U+1F384-1F385, U+1F393, U+1F3A4, U+1F3A8,
+    U+1F3C2-1F3C4, U+1F3C7, U+1F3CA-1F3CC, U+1F3EB, U+1F3ED, U+1F3FB-1F3FF,
+    U+1F466-1F478, U+1F47C, U+1F481-1F483, U+1F486-1F487, U+1F48B, U+1F48F,
+    U+1F491, U+1F4BB-1F4BC, U+1F527, U+1F52C, U+1F574-1F575, U+1F57A,
+    U+1F645-1F647, U+1F64B, U+1F64D-1F64E, U+1F680, U+1F692, U+1F6A3,
+    U+1F6B4-1F6B6, U+1F6C0, U+1F6CC, U+1F91D, U+1F926, U+1F930-1F931,
+    U+1F934-1F93A, U+1F93C-1F93E, U+1F977, U+1F9AF-1F9B3, U+1F9B8-1F9B9,
+    U+1F9BC-1F9BD, U+1F9CC-1F9CF, U+1F9D1-1F9DF, U+1FA82, U+1FAC3-1FAC5;
 }
 
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.9.woff2) format("woff2");
-  unicode-range: U+200D, U+261D, U+2620, U+2639-263A, U+2665, U+270A-270D, U+2728, U+2763-2764, U+2B50, U+FE0F, U+1F31A-1F31F, U+1F32B, U+1F383, U+1F389, U+1F3FB-1F3FF, U+1F440-1F450, U+1F463-1F465, U+1F479-1F47B, U+1F47D-1F480, U+1F485, U+1F48B-1F48C, U+1F493-1F49F, U+1F4A4-1F4A6, U+1F4A8-1F4AB, U+1F4AF, U+1F525, U+1F573, U+1F590, U+1F595-1F596, U+1F5A4, U+1F5E3, U+1F600-1F644, U+1F648-1F64A, U+1F64C, U+1F64F, U+1F90C-1F925, U+1F927-1F92F, U+1F932-1F933, U+1F970-1F976, U+1F978-1F97A, U+1F9A0, U+1F9B4-1F9B7, U+1F9BB, U+1F9BE-1F9BF, U+1F9D0, U+1F9E0-1F9E1, U+1FA75-1FA79, U+1FAC0-1FAC2, U+1FAE0-1FAE6, U+1FAE8, U+1FAF0-1FAF8;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.9.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+261D, U+2620, U+2639-263A, U+2665, U+270A-270D, U+2728,
+    U+2763-2764, U+2B50, U+FE0F, U+1F31A-1F31F, U+1F32B, U+1F383, U+1F389,
+    U+1F3FB-1F3FF, U+1F440-1F450, U+1F463-1F465, U+1F479-1F47B, U+1F47D-1F480,
+    U+1F485, U+1F48B-1F48C, U+1F493-1F49F, U+1F4A4-1F4A6, U+1F4A8-1F4AB,
+    U+1F4AF, U+1F525, U+1F573, U+1F590, U+1F595-1F596, U+1F5A4, U+1F5E3,
+    U+1F600-1F644, U+1F648-1F64A, U+1F64C, U+1F64F, U+1F90C-1F925,
+    U+1F927-1F92F, U+1F932-1F933, U+1F970-1F976, U+1F978-1F97A, U+1F9A0,
+    U+1F9B4-1F9B7, U+1F9BB, U+1F9BE-1F9BF, U+1F9D0, U+1F9E0-1F9E1,
+    U+1FA75-1FA79, U+1FAC0-1FAC2, U+1FAE0-1FAE6, U+1FAE8, U+1FAF0-1FAF8;
 }
 
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.10.woff2) format("woff2");
-  unicode-range: U+200D, U+2194-2195, U+2640, U+2642, U+26D3, U+27A1, U+FE0F, U+1F344, U+1F34B, U+1F3C3, U+1F3FB-1F3FF, U+1F426, U+1F468-1F469, U+1F4A5, U+1F525, U+1F642, U+1F6B6, U+1F7E9, U+1F7EB, U+1F9AF, U+1F9BC-1F9BD, U+1F9CE, U+1F9D1-1F9D2;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.10.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+2194-2195, U+2640, U+2642, U+26D3, U+27A1, U+FE0F, U+1F344,
+    U+1F34B, U+1F3C3, U+1F3FB-1F3FF, U+1F426, U+1F468-1F469, U+1F4A5, U+1F525,
+    U+1F642, U+1F6B6, U+1F7E9, U+1F7EB, U+1F9AF, U+1F9BC-1F9BD, U+1F9CE,
+    U+1F9D1-1F9D2;
 }
 
 @font-face {
   font-family: "Noto Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.11.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/notoemoji/v53/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0jwqS-FGJSsYRxHOpTV331nyNs0.11.woff2)
+    format("woff2");
   unicode-range: U+1FA89, U+1FA8F, U+1FABE, U+1FAC6, U+1FADC, U+1FADF, U+1FAE9;
 }
 
@@ -2218,8 +2628,10 @@ body {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXvlUlIfM0qh1d65g.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXvlUlIfM0qh1d65g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
@@ -2227,7 +2639,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXt1UlIfM0qh1d65g.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXt1UlIfM0qh1d65g.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2236,8 +2649,12 @@ body {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXvFUlIfM0qh1d65g.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXvFUlIfM0qh1d65g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
@@ -2245,8 +2662,12 @@ body {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXvVUlIfM0qh1d65g.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXvVUlIfM0qh1d65g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -2254,23 +2675,30 @@ body {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXs1UlIfM0qh1d.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/nunitosans/v15/pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilXs1UlIfM0qh1d.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2278,7 +2706,8 @@ body {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2286,48 +2715,70 @@ body {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthSQBK6PYK3EXw.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthSQBK6PYK3EXw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthqQBK6PYK0.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthqQBK6PYK0.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -2336,23 +2787,28 @@ body {
   font-display: swap;
   font-weight: 400;
   src:
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff") format("woff");
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
+      format("woff");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2360,32 +2816,46 @@ body {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Monaco";
@@ -2400,15 +2870,18 @@ body {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2416,7 +2889,8 @@ body {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2424,32 +2898,46 @@ body {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 body {
@@ -2497,7 +2985,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
     outline: rgb(37, 37, 37) none 0px;
     text-decoration: underline 1.5px rgba(159, 159, 159, 0.4);
@@ -2526,7 +3016,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
     outline: rgb(0, 176, 179) none 0px;
     text-decoration: underline 1.5px rgba(159, 159, 159, 0.4);
@@ -2554,7 +3046,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
     outline: rgb(135, 135, 135) none 0px;
     text-decoration: underline 1.5px rgb(222, 222, 222);
@@ -2738,7 +3232,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
     outline: rgb(37, 37, 37) none 0px;
     text-decoration: rgb(0, 0, 0);
@@ -2794,9 +3290,24 @@ body {
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(0, 0, 0, 0.067);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -2809,7 +3320,18 @@ body {
     color: rgb(37, 37, 37);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: rgba(0, 0, 0, 0.067);
     border: 0px rgb(37, 37, 37);
     border-top-left-radius: 7px;
@@ -2824,7 +3346,8 @@ body {
   }
 
   hr {
-    border-color: rgb(128, 128, 128) rgba(159, 159, 159, 0.4) rgba(159, 159, 159, 0.4);
+    border-color: rgb(128, 128, 128) rgba(159, 159, 159, 0.4)
+      rgba(159, 159, 159, 0.4);
     border-style: solid solid none none;
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -2844,7 +3367,15 @@ body {
   }
 
   a.internal.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: rgba(0, 176, 179, 0.1);
     display: flex;
@@ -3106,11 +3637,20 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: rgb(37, 37, 37);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card {
     border: 0px rgb(37, 37, 37);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -3122,63 +3662,128 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(37, 37, 37);
     font-weight: 400;
     background-color: rgba(0, 0, 0, 0.067);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: rgb(37, 37, 37);
   }
 
   h1 {
     color: rgb(37, 37, 37);
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     text-shadow: none;
   }
 
   h2 {
     color: rgb(37, 37, 37);
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     text-shadow: none;
   }
 
   h3 {
     color: rgb(37, 37, 37);
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     text-shadow: none;
   }
 
   h4 {
     color: rgb(37, 37, 37);
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     text-shadow: none;
   }
 
   h5 {
     color: rgb(37, 37, 37);
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     text-shadow: none;
   }
 
   h6 {
     color: rgb(37, 37, 37);
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     text-shadow: none;
   }
 
   h2.page-title,
   h2.page-title a {
     color: rgb(37, 37, 37);
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     text-shadow: none;
   }
 
@@ -3187,12 +3792,14 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3207,17 +3814,20 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3230,7 +3840,8 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(255, 255, 255);
   }
 
@@ -4054,10 +4665,15 @@ body {
     transition-timing-function: ease;
   }
 
-  .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+  .explorer
+    .explorer-content
+    li:has(> .folder-outer:not(.open))
+    > .folder-container {
     color: rgb(127, 127, 127);
     cursor: default;
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
     text-decoration: rgb(34, 34, 34);
   }
@@ -4065,7 +4681,9 @@ body {
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
     color: rgb(127, 127, 127);
     cursor: default;
-    font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+    font-family:
+      "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+      Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
     font-weight: 400;
     text-decoration: rgb(34, 34, 34);
   }
@@ -4988,7 +5606,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
       outline: rgb(200, 212, 230) none 0px;
       text-decoration: underline 1.5px rgb(41, 49, 61);
@@ -5017,7 +5637,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
       outline: rgb(0, 168, 160) none 0px;
       text-decoration: underline 1.5px rgb(41, 49, 61);
@@ -5045,7 +5667,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
       outline: rgb(114, 125, 146) none 0px;
       text-decoration: underline 1.5px rgb(56, 65, 82);
@@ -5229,7 +5853,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: rgb(0, 0, 0);
@@ -5285,9 +5911,24 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: rgba(255, 255, 255, 0.067);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
@@ -5300,7 +5941,18 @@ html[saved-theme="dark"] {
       color: rgb(200, 212, 230);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:has(
+        ~ .result-card.focus:not(
+            :has(~ .result-card:hover, ~ .result-card:focus)
+          ),
+        ~ .result-card:focus,
+        ~ .result-card:hover
+      ) {
       background-color: rgba(255, 255, 255, 0.067);
       border: 0px rgb(200, 212, 230);
       border-top-left-radius: 7px;
@@ -5335,7 +5987,15 @@ html[saved-theme="dark"] {
     }
 
     a.internal.tag-link,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card
+      > ul
+      > li
+      > .match-tag {
       align-items: normal;
       background-color: rgba(0, 176, 179, 0.1);
       display: flex;
@@ -5585,7 +6245,10 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search > .search-container > .search-space > .search-layout.display-results {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout.display-results {
       border: 1px solid rgb(64, 75, 94);
       border-top-left-radius: 19px;
       border-top-right-radius: 19px;
@@ -5597,11 +6260,20 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container {
       color: rgb(200, 212, 230);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card {
       border: 0px rgb(200, 212, 230);
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
@@ -5613,63 +6285,130 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(
+        :has(~ .result-card:hover, ~ .result-card:focus)
+      ) {
       color: rgb(200, 212, 230);
       font-weight: 400;
       background-color: rgba(255, 255, 255, 0.067);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-description {
       color: rgb(200, 212, 230);
     }
 
     h1 {
       color: rgb(200, 212, 230);
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       text-shadow: none;
     }
 
     h2 {
       color: rgb(200, 212, 230);
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       text-shadow: none;
     }
 
     h3 {
       color: rgb(200, 212, 230);
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       text-shadow: none;
     }
 
     h4 {
       color: rgb(200, 212, 230);
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       text-shadow: none;
     }
 
     h5 {
       color: rgb(200, 212, 230);
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       text-shadow: none;
     }
 
     h6 {
       color: rgb(200, 212, 230);
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       text-shadow: none;
     }
 
     h2.page-title,
     h2.page-title a {
       color: rgb(200, 212, 230);
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       text-shadow: none;
     }
 
@@ -5678,12 +6417,14 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(28, 32, 38) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(28, 32, 38) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(28, 32, 38);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(28, 32, 38) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(28, 32, 38) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(28, 32, 38);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -5698,17 +6439,20 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(28, 32, 38) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(28, 32, 38) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(28, 32, 38);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(28, 32, 38) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(28, 32, 38) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(28, 32, 38);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(28, 32, 38) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(28, 32, 38) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(28, 32, 38);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -5721,7 +6465,8 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(28, 32, 38) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(28, 32, 38) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(28, 32, 38);
     }
 
@@ -6545,18 +7290,28 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+    .explorer
+      .explorer-content
+      li:has(> .folder-outer:not(.open))
+      > .folder-container {
       color: rgb(154, 163, 183);
       cursor: default;
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
       text-decoration: rgb(218, 218, 218);
     }
 
-    .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    .explorer
+      .explorer-content
+      li:has(> .folder-outer.open)
+      > .folder-container {
       color: rgb(154, 163, 183);
       cursor: default;
-      font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+      font-family:
+        "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji",
+        Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
       font-weight: 400;
       text-decoration: rgb(218, 218, 218);
     }
@@ -7540,7 +8295,10 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }
