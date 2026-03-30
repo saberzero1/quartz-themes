@@ -1,13 +1,14 @@
 import { CHECKBOX_ICON_URIS } from "./generated.js";
 
 export function generateCheckboxIconCSS(): string {
-  // Only x/X get strikethrough — other custom checkboxes (!, ?, * etc.) keep normal text
+  // Override Quartz's `.page article li:has(> input:checked) { text-decoration: line-through }`
+  // which has specificity (0,3,3). We use `body .page article li...` for (0,3,4).
   const strikethrough =
-    `li.task-list-item.is-checked {\n` +
+    `body .page article li.task-list-item.is-checked {\n` +
     `  text-decoration: none;\n` +
     `}\n\n` +
-    `li.task-list-item[data-task="x"],\n` +
-    `li.task-list-item[data-task="X"] {\n` +
+    `body .page article li.task-list-item[data-task="x"],\n` +
+    `body .page article li.task-list-item[data-task="X"] {\n` +
     `  text-decoration: line-through;\n` +
     `  color: var(--text-faint, var(--gray, #b8b8b8));\n` +
     `}`;

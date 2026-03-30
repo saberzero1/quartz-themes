@@ -212,14 +212,21 @@ function transformCheckboxCSS(css: string, iconFonts: string[]): string {
   }
 
   const afterSuppressionSelectors: string[] = [];
+  const afterColorMap = new Map<string, string>();
 
   let transformed = css.replace(
     /([^\n{}]+input\[type=["']?checkbox["']?\])::after\s*\{([^}]*)\}/g,
-    (block, baseSel, _body) => {
+    (block, baseSel, body) => {
       if (nonAfterSelectors.has(baseSel.trim())) {
+        const colorMatch = body.match(/(?:^|;\s*)color:\s*([^;]+)/);
+        if (colorMatch) {
+          afterColorMap.set(baseSel.trim(), colorMatch[1].trim());
+        }
         return "";
       }
-      return block.replace("::after", "");
+      // No corresponding non-::after rule — this char has no custom icon.
+      // Drop entirely so the template's default checked checkbox renders.
+      return "";
     },
   );
 
@@ -247,6 +254,11 @@ function transformCheckboxCSS(css: string, iconFonts: string[]): string {
       let newBody = body;
       if (!body.includes("appearance:")) {
         newBody = body.trimEnd() + "\n" + injectedProps + "\n";
+      }
+
+      const extractedColor = afterColorMap.get(selector.trim());
+      if (extractedColor && !/(?:^|;\s*|\n\s*)color:/m.test(newBody)) {
+        newBody = newBody.trimEnd() + `\n  color: ${extractedColor};\n`;
       }
 
       return `${selector} {${newBody}}`;
