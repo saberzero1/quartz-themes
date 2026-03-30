@@ -20,26 +20,18 @@ export function generateCheckboxIconCSS(): string {
 
 export function generateCheckboxInputBaseCSS(): string {
   return (
+    `li.task-list-item.is-checked input[type="checkbox"]:checked::after,\n` +
+    `li.task-list-item.is-checked input[type="checkbox"]::after {\n` +
+    `  content: none;\n` +
+    `}\n\n` +
     `li.task-list-item.is-checked input[type="checkbox"] {\n` +
-    `  appearance: none;\n` +
-    `  -webkit-appearance: none;\n` +
-    `  width: 1em;\n` +
-    `  height: 1em;\n` +
-    `  display: inline-block;\n` +
-    `  vertical-align: middle;\n` +
-    `  background-color: currentColor;\n` +
+    `  background-color: var(--checkbox-marker-color, currentColor);\n` +
     `  mask-image: ${DEFAULT_CHECKBOX_ICON};\n` +
     `  -webkit-mask-image: ${DEFAULT_CHECKBOX_ICON};\n` +
     `  mask-size: contain;\n` +
     `  -webkit-mask-size: contain;\n` +
     `  mask-repeat: no-repeat;\n` +
     `  -webkit-mask-repeat: no-repeat;\n` +
-    `}\n\n` +
-    `li.task-list-item.is-checked {\n` +
-    `  color: inherit;\n` +
-    `}\n\n` +
-    `li.task-list-item.is-checked input[type="checkbox"] {\n` +
-    `  color: inherit;\n` +
     `}`
   );
 }
