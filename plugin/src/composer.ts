@@ -173,6 +173,7 @@ function transformCheckboxCSSForIconFonts(
 
   const base =
     `li.task-list-item[data-task]::before {\n` +
+    `  content: "";\n` +
     `  display: inline-block;\n` +
     `  vertical-align: middle;\n` +
     `  width: 1em;\n` +
