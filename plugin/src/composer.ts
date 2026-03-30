@@ -9,7 +9,10 @@ import type { AspectCSS, AspectKey, ThemeData, ThemeOptions } from "./types";
 import { TEMPLATE_CSS } from "./templateCSS";
 import { resolveThemeId, loadTheme } from "./registry";
 import { generateCalloutIconCSS } from "./icons/callout-icons";
-import { generateCheckboxIconCSS } from "./icons/checkbox-icons";
+import {
+  generateCheckboxIconCSS,
+  CHECKBOX_ICON_MAP,
+} from "./icons/checkbox-icons";
 import { FONT_CSS } from "./fonts/generated-fonts";
 
 /** All aspect keys in the order they should appear in the CSS output. */
@@ -181,7 +184,6 @@ function transformCheckboxCSSForIconFonts(
     `  text-align: center;\n` +
     `  line-height: 1;\n` +
     `  font-size: 1em;\n` +
-    `  background-color: currentColor;\n` +
     `  mask-size: contain;\n` +
     `  -webkit-mask-size: contain;\n` +
     `  mask-repeat: no-repeat;\n` +
@@ -201,7 +203,18 @@ function transformCheckboxCSSForIconFonts(
     `  overflow: hidden;\n` +
     `}`;
 
-  return base + "\n\n" + transformed;
+  const fallbacks = Object.entries(CHECKBOX_ICON_MAP)
+    .map(
+      ([char, uri]) =>
+        `li.task-list-item[data-task="${char}"]::before {\n` +
+        `  mask-image: ${uri};\n` +
+        `  -webkit-mask-image: ${uri};\n` +
+        `  background-color: currentColor;\n` +
+        `}`,
+    )
+    .join("\n\n");
+
+  return base + "\n\n" + fallbacks + "\n\n" + transformed;
 }
 
 function collectAspectCSS(
