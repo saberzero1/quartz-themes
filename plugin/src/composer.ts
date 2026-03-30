@@ -177,7 +177,20 @@ function transformCheckboxCSSForIconFonts(
     `  vertical-align: middle;\n` +
     `  width: 1em;\n` +
     `  height: 1em;\n` +
-    `  margin-right: 0.25em;\n` +
+    `  text-align: center;\n` +
+    `  line-height: 1;\n` +
+    `  font-size: 1em;\n` +
+    `}\n\n` +
+    `li.task-list-item[data-task] input[type="checkbox"] {\n` +
+    `  mask-image: none !important;\n` +
+    `  -webkit-mask-image: none !important;\n` +
+    `  background-color: transparent !important;\n` +
+    `  width: 0 !important;\n` +
+    `  height: 0 !important;\n` +
+    `  margin: 0 !important;\n` +
+    `  padding: 0 !important;\n` +
+    `  border: none !important;\n` +
+    `  overflow: hidden;\n` +
     `}`;
 
   return base + "\n\n" + transformed;
