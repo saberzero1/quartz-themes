@@ -31,7 +31,31 @@ export function generateCheckboxIconCSS(): string {
     )
     .join("\n\n");
 
-  return base + "\n\n" + perChar;
+  // Reset strikethrough for all custom checkboxes — only x/X should be struck through.
+  // In Quartz, all non-empty data-task items get is-checked, but only x/X are actual completions.
+  const strikethrough =
+    `li.task-list-item.is-checked {\n` +
+    `  text-decoration: none;\n` +
+    `  color: inherit;\n` +
+    `}\n\n` +
+    `li.task-list-item[data-task="x"],\n` +
+    `li.task-list-item[data-task="X"] {\n` +
+    `  text-decoration: line-through;\n` +
+    `  color: var(--text-faint, var(--gray, #b8b8b8));\n` +
+    `}`;
+
+  // Ensure checkbox icon color inherits from the li wrapper (theme CSS sets color on li[data-task="X"]).
+  // The input inherits color from the li, and background-color: currentColor in the base rule
+  // uses that inherited color for the mask-image icon.
+  const colorInherit =
+    `li.task-list-item[data-task] {\n` +
+    `  color: inherit;\n` +
+    `}\n\n` +
+    `li.task-list-item[data-task] input[type="checkbox"] {\n` +
+    `  color: inherit;\n` +
+    `}`;
+
+  return [base, colorInherit, strikethrough, perChar].join("\n\n");
 }
 
 export function resolveCheckboxIcon(taskChar: string): string | undefined {
