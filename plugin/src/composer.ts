@@ -9,10 +9,7 @@ import type { AspectCSS, AspectKey, ThemeData, ThemeOptions } from "./types";
 import { TEMPLATE_CSS } from "./templateCSS";
 import { resolveThemeId, loadTheme } from "./registry";
 import { generateCalloutIconCSS } from "./icons/callout-icons";
-import {
-  generateCheckboxIconCSS,
-  generateCheckboxInputBaseCSS,
-} from "./icons/checkbox-icons";
+import { generateCheckboxIconCSS } from "./icons/checkbox-icons";
 import { FONT_CSS } from "./fonts/generated-fonts";
 
 /** All aspect keys in the order they should appear in the CSS output. */
@@ -92,13 +89,7 @@ export function composeCSS(options: ThemeOptions): string {
     .filter(Boolean)
     .join("\n\n");
 
-  const hasCheckboxes = includedAspects.includes("checkboxes");
-  const hasIconFonts = baseTheme.meta.fonts.some((f) => f.startsWith("icons/"));
-
-  let checkboxCSS = generateCheckboxIconCSS();
-  if (hasCheckboxes && !hasIconFonts) {
-    checkboxCSS += "\n\n" + generateCheckboxInputBaseCSS();
-  }
+  const checkboxCSS = generateCheckboxIconCSS();
 
   const iconCSS = generateCalloutIconCSS() + "\n\n" + checkboxCSS;
 
@@ -220,9 +211,11 @@ function transformCheckboxCSS(css: string, iconFonts: string[]): string {
     }
   }
 
+  const afterSuppressionSelectors: string[] = [];
+
   let transformed = css.replace(
-    /([^\n{}]+input\[type=["']?checkbox["']?\])::after\s*\{[^}]*\}/g,
-    (block, baseSel) => {
+    /([^\n{}]+input\[type=["']?checkbox["']?\])::after\s*\{([^}]*)\}/g,
+    (block, baseSel, _body) => {
       if (nonAfterSelectors.has(baseSel.trim())) {
         return "";
       }
@@ -231,6 +224,41 @@ function transformCheckboxCSS(css: string, iconFonts: string[]): string {
   );
 
   transformed = transformed.replace(/^\s*content:\s*""\s*;?\s*$/gm, "");
+
+  transformed = transformed.replace(
+    /([^\n{}]+input\[type=["']?checkbox["']?\])\s*\{([^}]*)\}/g,
+    (block, selector, body) => {
+      if (!body.includes("mask-image")) {
+        return block;
+      }
+
+      afterSuppressionSelectors.push(selector.trim());
+
+      const injectedProps = [
+        "  appearance: none;",
+        "  -webkit-appearance: none;",
+        "  border: none;",
+        "  border-radius: 0px;",
+        "  background-color: currentColor;",
+        "  -webkit-mask-size: 100%;",
+        "  mask-size: 100%;",
+      ].join("\n");
+
+      let newBody = body;
+      if (!body.includes("appearance:")) {
+        newBody = body.trimEnd() + "\n" + injectedProps + "\n";
+      }
+
+      return `${selector} {${newBody}}`;
+    },
+  );
+
+  if (afterSuppressionSelectors.length > 0) {
+    const afterRules = afterSuppressionSelectors
+      .map((sel) => `${sel}::after { content: none; }`)
+      .join("\n");
+    transformed += "\n\n" + afterRules;
+  }
 
   return transformed;
 }
