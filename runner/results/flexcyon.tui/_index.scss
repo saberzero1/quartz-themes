@@ -12,12 +12,20 @@
   --bases-table-header-background: #faf7ef !important;
   --bases-table-header-background-hover: #edebe5 !important;
   --focus-ring-color: #0df !important;
-  --tab-container-background: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
+  --tab-container-background: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
   --table-border-color: #6f768566 !important;
   --text-accent: #5770b9 !important;
   --text-faint: #6f768599 !important;
   --text-normal: #080808 !important;
-  --titlebar-background: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
+  --titlebar-background: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
   --input-height: 30px !important;
   --accent-h: 225 !important;
   --accent-l: 53% !important;
@@ -32,8 +40,16 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: #dddcd6 !important;
-  --background-modifier-border: color-mix(in oklch, #edebe5, #dddcd6) !important;
-  --background-modifier-border-focus: color-mix(in oklch, #dddcd6, #d3d3ce) !important;
+  --background-modifier-border: color-mix(
+    in oklch,
+    #edebe5,
+    #dddcd6
+  ) !important;
+  --background-modifier-border-focus: color-mix(
+    in oklch,
+    #dddcd6,
+    #d3d3ce
+  ) !important;
   --background-modifier-border-hover: transparent !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
@@ -43,18 +59,30 @@
   --background-modifier-form-field: #faf7ef !important;
   --background-modifier-form-field-hover: #faf7ef !important;
   --background-modifier-hover: #edebe5 !important;
-  --background-modifier-message: color-mix(in oklch, #edebe5, #dddcd6) !important;
+  --background-modifier-message: color-mix(
+    in oklch,
+    #edebe5,
+    #dddcd6
+  ) !important;
   --background-modifier-success: #689523 !important;
   --background-modifier-success-rgb: rgb(104, 149, 35) !important;
   --background-primary: #faf7ef !important;
   --background-primary-alt: #edebe5 !important;
-  --background-secondary: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
+  --background-secondary: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
   --background-secondary-alt: #edebe5 !important;
   --bases-cards-background: #faf7ef !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
+  --bases-cards-cover-background: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: 4px !important;
@@ -64,7 +92,11 @@
   --bases-embed-border-radius: 2px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: color-mix(in oklch, #6f768599, #080808) !important;
+  --bases-group-heading-property-color: color-mix(
+    in oklch,
+    #6f768599,
+    #080808
+  ) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12.94424px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -79,8 +111,10 @@
   --bases-table-cell-background-selected: hsla(225, 41%, 53%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px color-mix(in oklch, #dddcd6, #d3d3ce) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px
+    color-mix(in oklch, #dddcd6, #d3d3ce) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px
+    color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -89,9 +123,17 @@
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: #edebe5 !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-color: color-mix(in oklch, #6f768599, #080808) !important;
+  --bases-table-header-color: color-mix(
+    in oklch,
+    #6f768599,
+    #080808
+  ) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent 24px,
+    black 24px
+  ) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: #faf7ef !important;
   --bases-table-row-border-width: 1px !important;
@@ -101,10 +143,15 @@
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
+  --blockquote-border-color: color-mix(
+    in oklch,
+    #5770b9 80%,
+    transparent 20%
+  ) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, #faf7ef 65%, transparent) linear-gradient(#faf7ef, color-mix(in srgb, #faf7ef 65%, transparent)) !important;
+  --blur-background: color-mix(in srgb, #faf7ef 65%, transparent)
+    linear-gradient(#faf7ef, color-mix(in srgb, #faf7ef 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -158,9 +205,17 @@
   --canvas-dot-pattern: color-mix(in oklch, #dddcd6, #d3d3ce) !important;
   --caret-color: #080808 !important;
   --checkbox-border-color: #5c9fe4 !important;
-  --checkbox-border-color-hover: color-mix(in oklch shorter hue, #6f49ae, #797876) !important;
+  --checkbox-border-color-hover: color-mix(
+    in oklch shorter hue,
+    #6f49ae,
+    #797876
+  ) !important;
   --checkbox-color: #6f49ae !important;
-  --checkbox-color-hover: color-mix(in oklch shorter hue, #6f49ae, #797876) !important;
+  --checkbox-color-hover: color-mix(
+    in oklch shorter hue,
+    #6f49ae,
+    #797876
+  ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #faf7ef !important;
   --checkbox-radius: 2px !important;
@@ -228,13 +283,25 @@
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: color-mix(in oklch, #edebe5, #dddcd6) !important;
-  --divider-color-hover: color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
+  --divider-color-hover: color-mix(
+    in oklch,
+    #5770b9 80%,
+    transparent 20%
+  ) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: #dddcd6 !important;
-  --drag-ghost-text-color: color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
-  --dropdown-background: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
+  --drag-ghost-text-color: color-mix(
+    in oklch,
+    #5770b9 80%,
+    transparent 20%
+  ) !important;
+  --dropdown-background: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
   --dropdown-background-blend-mode: hard-light !important;
   --dropdown-background-hover: #faf7ef !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
@@ -244,10 +311,13 @@
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover: 0 0 0 1px color-mix(in oklch, #edebe5, #dddcd6), inset 0 0 0 1px color-mix(in oklch, #edebe5, #dddcd6) !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px color-mix(in oklch, #edebe5, #dddcd6),
+    inset 0 0 0 1px color-mix(in oklch, #edebe5, #dddcd6) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
+  --embed-border-start: 2px solid
+    color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -256,7 +326,11 @@
   --file-header-background: #faf7ef !important;
   --file-header-background-focused: #faf7ef !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --file-header-font-size: 14.56227px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -269,17 +343,33 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-mermaid:
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
+  --font-monospace:
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -289,7 +379,10 @@
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -366,8 +459,16 @@
   --hr-color: #393e48 !important;
   --hr-thickness: 2px !important;
   --icon-color: color-mix(in oklch, #6f768599, #080808) !important;
-  --icon-color-active: color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
-  --icon-color-focused: color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
+  --icon-color-active: color-mix(
+    in oklch,
+    #5770b9 80%,
+    transparent 20%
+  ) !important;
+  --icon-color-focused: color-mix(
+    in oklch,
+    #5770b9 80%,
+    transparent 20%
+  ) !important;
   --icon-color-hover: color-mix(in oklch, #6f768599, #080808) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
@@ -408,15 +509,33 @@
   --input-padding: 8px 8px !important;
   --input-placeholder-color: #6f768599 !important;
   --input-radius: 0px !important;
-  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
-  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
+  --input-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent !important;
+  --input-shadow-hover:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
-  --interactive-accent-hover: color-mix(in oklch shorter hue, #5770b9 75%, transparent) !important;
+  --interactive-accent: color-mix(
+    in oklch,
+    #5770b9 80%,
+    transparent 20%
+  ) !important;
+  --interactive-accent-hover: color-mix(
+    in oklch shorter hue,
+    #5770b9 75%,
+    transparent
+  ) !important;
   --interactive-accent-hsl: 225, 41%, 53% !important;
   --interactive-hover: #faf7ef !important;
-  --interactive-normal: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
+  --interactive-normal: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -431,12 +550,20 @@
   --line-height-normal: 1.4 !important;
   --line-height-tight: 1.25 !important;
   --link-color: #6f49ae !important;
-  --link-color-hover: color-mix(in oklch shorter hue, #6f49ae, #797876) !important;
+  --link-color-hover: color-mix(
+    in oklch shorter hue,
+    #6f49ae,
+    #797876
+  ) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
   --link-external-color: #5c9fe4 !important;
-  --link-external-color-hover: color-mix(in oklch shorter hue, #5c9fe4, #797876) !important;
+  --link-external-color-hover: color-mix(
+    in oklch shorter hue,
+    #5c9fe4,
+    #797876
+  ) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
@@ -456,7 +583,11 @@
   --list-indent-source: 0 !important;
   --list-marker-color: #3b9ba1 !important;
   --list-marker-color-collapsed: #689523 !important;
-  --list-marker-color-hover: color-mix(in oklch shorter hue, #3b9ba1, #797876) !important;
+  --list-marker-color-hover: color-mix(
+    in oklch shorter hue,
+    #3b9ba1,
+    #797876
+  ) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
@@ -467,8 +598,14 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 4px !important;
-  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
+  --menu-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: color-mix(in oklch, #edebe5, #dddcd6) !important;
   --metadata-border-radius: 0 !important;
@@ -483,7 +620,11 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: #edebe5 !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -492,17 +633,26 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: #edebe5 !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #6f49ae !important;
-  --metadata-label-text-color-hover: color-mix(in oklch shorter hue, #6f49ae, #797876) !important;
+  --metadata-label-text-color-hover: color-mix(
+    in oklch shorter hue,
+    #6f49ae,
+    #797876
+  ) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: #edebe5 !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(in oklch, #dddcd6, #d3d3ce) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    color-mix(in oklch, #dddcd6, #d3d3ce) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px transparent !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
@@ -531,7 +681,11 @@
   --nav-collapse-icon-color-collapsed: #6f768599 !important;
   --nav-heading-color: #080808 !important;
   --nav-heading-color-collapsed: #6f768599 !important;
-  --nav-heading-color-collapsed-hover: color-mix(in oklch, #6f768599, #080808) !important;
+  --nav-heading-color-collapsed-hover: color-mix(
+    in oklch,
+    #6f768599,
+    #080808
+  ) !important;
   --nav-heading-color-hover: #080808 !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
@@ -543,7 +697,11 @@
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: color-mix(in oklch, #6f768599, #080808) !important;
-  --nav-item-color-active: color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
+  --nav-item-color-active: color-mix(
+    in oklch,
+    #5770b9 80%,
+    transparent 20%
+  ) !important;
   --nav-item-color-highlighted: #5770b9 !important;
   --nav-item-color-hover: #080808 !important;
   --nav-item-color-selected: #ed8126 !important;
@@ -565,10 +723,12 @@
   --page-margin: 1px auto -8px !important;
   --pdf-background: #faf7ef !important;
   --pdf-page-background: #faf7ef !important;
-  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
   --pdf-sidebar-background: #faf7ef !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
@@ -605,15 +765,28 @@
   --radius-m: 4px !important;
   --radius-s: 2px !important;
   --radius-xl: 8px !important;
-  --raised-background: color-mix(in srgb, #faf7ef 65%, transparent) linear-gradient(#faf7ef, color-mix(in srgb, #faf7ef 65%, transparent)) !important;
+  --raised-background: color-mix(in srgb, #faf7ef 65%, transparent)
+    linear-gradient(#faf7ef, color-mix(in srgb, #faf7ef 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
-  --raised-mask-background: linear-gradient(to bottom left, white, transparent, white) border-box no-repeat !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(
+      to bottom left,
+      white,
+      transparent,
+      white
+    )
+    border-box no-repeat !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
   --ribbon-background: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
-  --ribbon-background-collapsed: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
+  --ribbon-background-collapsed: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 48px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -636,12 +809,20 @@
   --setting-group-heading-size: 16.1803px !important;
   --setting-group-heading-weight: 600 !important;
   --setting-items-background: #fafafa !important;
-  --setting-items-border-color: color-mix(in oklch, #edebe5, #dddcd6) !important;
+  --setting-items-border-color: color-mix(
+    in oklch,
+    #edebe5,
+    #dddcd6
+  ) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 2px 0px !important;
   --setting-items-radius: 12px !important;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
+    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -674,7 +855,11 @@
   --slider-track-background: color-mix(in oklch, #edebe5, #dddcd6) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
+  --status-bar-background: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
   --status-bar-border-color: color-mix(in oklch, #edebe5, #dddcd6) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 13.753255px !important;
@@ -713,8 +898,16 @@
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, color-mix(in oklch, #faf7ef 70%, #edebe5 30%), transparent) !important;
+  --tab-switcher-background: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    color-mix(in oklch, #faf7ef 70%, #edebe5 30%),
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 8px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
@@ -727,7 +920,11 @@
   --tab-text-color-focused-highlighted: #5770b9 !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: color-mix(in oklch, #edebe5, #dddcd6) !important;
+  --table-add-button-border-color: color-mix(
+    in oklch,
+    #edebe5,
+    #dddcd6
+  ) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: #faf7ef !important;
   --table-border-width: 1px !important;
@@ -738,7 +935,11 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
+  --table-drag-handle-background-active: color-mix(
+    in oklch,
+    #5770b9 80%,
+    transparent 20%
+  ) !important;
   --table-drag-handle-color: #6f768599 !important;
   --table-drag-handle-color-active: #dddcd6 !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -755,18 +956,30 @@
   --table-row-last-border-width: 1px !important;
   --table-selection: hsla(225, 41%, 53%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
+  --table-selection-border-color: color-mix(
+    in oklch,
+    #5770b9 80%,
+    transparent 20%
+  ) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16.1803px !important;
   --table-white-space: break-spaces !important;
   --tag-background: color-mix(in oklch, #3b9ba1 25%, transparent) !important;
-  --tag-background-hover: color-mix(in oklch, color-mix(in oklch shorter hue, #3b9ba1, #797876) 25%, transparent) !important;
+  --tag-background-hover: color-mix(
+    in oklch,
+    color-mix(in oklch shorter hue, #3b9ba1, #797876) 25%,
+    transparent
+  ) !important;
   --tag-border-color: hsla(225, 41%, 53%, 0.15) !important;
   --tag-border-color-hover: hsla(225, 41%, 53%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: #3b9ba1 !important;
-  --tag-color-hover: color-mix(in oklch shorter hue, #3b9ba1, #797876) !important;
+  --tag-color-hover: color-mix(
+    in oklch shorter hue,
+    #3b9ba1,
+    #797876
+  ) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: underline !important;
@@ -776,20 +989,36 @@
   --tag-size: 0.875em !important;
   --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --text-error: #eb5325 !important;
-  --text-highlight-bg: color-mix(in oklch, #3b9ba1 22.5%, transparent) !important;
+  --text-highlight-bg: color-mix(
+    in oklch,
+    #3b9ba1 22.5%,
+    transparent
+  ) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: color-mix(in oklch, #6f768599, #080808) !important;
   --text-on-accent: #dddcd6 !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: color-mix(in oklch shorter hue, #d3d3ce 20%, transparent) !important;
+  --text-selection: color-mix(
+    in oklch shorter hue,
+    #d3d3ce 20%,
+    transparent
+  ) !important;
   --text-success: #689523 !important;
   --text-warning: #eb5325 !important;
-  --titlebar-background-focused: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
+  --titlebar-background-focused: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
   --titlebar-border-color: color-mix(in oklch, #edebe5, #dddcd6) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
   --titlebar-text-color: #6f768599 !important;
-  --titlebar-text-color-focused: color-mix(in oklch, #6f768599, #080808) !important;
+  --titlebar-text-color-focused: color-mix(
+    in oklch,
+    #6f768599,
+    #080808
+  ) !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -828,9 +1057,13 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
+  --raised-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
   --shadow-edges: 0 0 transparent !important;
-  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
   --h1-color: #5c9fe4 !important;
   --h2-color: #6f49ae !important;
   --h3-color: #3b9ba1 !important;
@@ -839,7 +1072,11 @@
   --h6-color: #e8c62a !important;
   --inline-title-color: #5c9fe4 !important;
   --table-header-background-hover: #faf7ef !important;
-  --vault-name-color: color-mix(in oklch, #5770b9 80%, transparent 20%) !important;
+  --vault-name-color: color-mix(
+    in oklch,
+    #5770b9 80%,
+    transparent 20%
+  ) !important;
   --bold-color: #eb5325 !important;
   --italic-color: #5770b9 !important;
   --bases-embed-padding: 4px !important;
@@ -847,119 +1084,347 @@
   --bases-cards-group-padding: 16px !important;
   --bases-no-img-str: "No image path could be found for this file" !important;
   --cm-font-size: 15.37127px !important;
-  --cm-panel-bg: color-mix(in srgb, color-mix(in oklch, #faf7ef 70%, #edebe5 30%) 55%, #edebe5 45%) !important;
+  --cm-panel-bg: color-mix(
+    in srgb,
+    color-mix(in oklch, #faf7ef 70%, #edebe5 30%) 55%,
+    #edebe5 45%
+  ) !important;
   --color-blue-cyan-mix: color-mix(in oklch, #5c9fe4, #3b9ba1) !important;
-  --color-blue-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #5c9fe4, #3b9ba1) 20%, transparent) !important;
+  --color-blue-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #3b9ba1) 20%,
+    transparent
+  ) !important;
   --color-blue-green-mix: color-mix(in oklch, #5c9fe4, #689523) !important;
-  --color-blue-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #5c9fe4, #689523) 20%, transparent) !important;
+  --color-blue-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #689523) 20%,
+    transparent
+  ) !important;
   --color-blue-orange-mix: color-mix(in oklch, #5c9fe4, #ed8126) !important;
-  --color-blue-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #5c9fe4, #ed8126) 20%, transparent) !important;
+  --color-blue-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #ed8126) 20%,
+    transparent
+  ) !important;
   --color-blue-pink-mix: color-mix(in oklch, #5c9fe4, #e389ca) !important;
-  --color-blue-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #5c9fe4, #e389ca) 20%, transparent) !important;
+  --color-blue-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #e389ca) 20%,
+    transparent
+  ) !important;
   --color-blue-purple-mix: color-mix(in oklch, #5c9fe4, #6f49ae) !important;
-  --color-blue-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #5c9fe4, #6f49ae) 20%, transparent) !important;
+  --color-blue-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #6f49ae) 20%,
+    transparent
+  ) !important;
   --color-blue-red-mix: color-mix(in oklch, #5c9fe4, #eb5325) !important;
-  --color-blue-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #5c9fe4, #eb5325) 20%, transparent) !important;
+  --color-blue-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #eb5325) 20%,
+    transparent
+  ) !important;
   --color-blue-yellow-mix: color-mix(in oklch, #5c9fe4, #e8c62a) !important;
-  --color-blue-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #5c9fe4, #e8c62a) 20%, transparent) !important;
+  --color-blue-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5c9fe4, #e8c62a) 20%,
+    transparent
+  ) !important;
   --color-cyan-blue-mix: color-mix(in oklch, #3b9ba1, #5c9fe4) !important;
-  --color-cyan-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #3b9ba1, #5c9fe4) 20%, transparent) !important;
+  --color-cyan-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3b9ba1, #5c9fe4) 20%,
+    transparent
+  ) !important;
   --color-cyan-green-mix: color-mix(in oklch, #3b9ba1, #689523) !important;
-  --color-cyan-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #3b9ba1, #689523) 20%, transparent) !important;
+  --color-cyan-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3b9ba1, #689523) 20%,
+    transparent
+  ) !important;
   --color-cyan-orange-mix: color-mix(in oklch, #3b9ba1, #ed8126) !important;
-  --color-cyan-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #3b9ba1, #ed8126) 20%, transparent) !important;
+  --color-cyan-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3b9ba1, #ed8126) 20%,
+    transparent
+  ) !important;
   --color-cyan-pink-mix: color-mix(in oklch, #3b9ba1, #e389ca) !important;
-  --color-cyan-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #3b9ba1, #e389ca) 20%, transparent) !important;
+  --color-cyan-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3b9ba1, #e389ca) 20%,
+    transparent
+  ) !important;
   --color-cyan-purple-mix: color-mix(in oklch, #3b9ba1, #6f49ae) !important;
-  --color-cyan-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #3b9ba1, #6f49ae) 20%, transparent) !important;
+  --color-cyan-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3b9ba1, #6f49ae) 20%,
+    transparent
+  ) !important;
   --color-cyan-red-mix: color-mix(in oklch, #3b9ba1, #eb5325) !important;
-  --color-cyan-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #3b9ba1, #eb5325) 20%, transparent) !important;
+  --color-cyan-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3b9ba1, #eb5325) 20%,
+    transparent
+  ) !important;
   --color-cyan-yellow-mix: color-mix(in oklch, #3b9ba1, #e8c62a) !important;
-  --color-cyan-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #3b9ba1, #e8c62a) 20%, transparent) !important;
+  --color-cyan-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3b9ba1, #e8c62a) 20%,
+    transparent
+  ) !important;
   --color-green-blue-mix: color-mix(in oklch, #689523, #5c9fe4) !important;
-  --color-green-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #689523, #5c9fe4) 20%, transparent) !important;
+  --color-green-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #689523, #5c9fe4) 20%,
+    transparent
+  ) !important;
   --color-green-cyan-mix: color-mix(in oklch, #689523, #3b9ba1) !important;
-  --color-green-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #689523, #3b9ba1) 20%, transparent) !important;
+  --color-green-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #689523, #3b9ba1) 20%,
+    transparent
+  ) !important;
   --color-green-orange-mix: color-mix(in oklch, #689523, #ed8126) !important;
-  --color-green-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #689523, #ed8126) 20%, transparent) !important;
+  --color-green-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #689523, #ed8126) 20%,
+    transparent
+  ) !important;
   --color-green-pink-mix: color-mix(in oklch, #689523, #e389ca) !important;
-  --color-green-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #689523, #e389ca) 20%, transparent) !important;
+  --color-green-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #689523, #e389ca) 20%,
+    transparent
+  ) !important;
   --color-green-purple-mix: color-mix(in oklch, #689523, #6f49ae) !important;
-  --color-green-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #689523, #6f49ae) 20%, transparent) !important;
+  --color-green-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #689523, #6f49ae) 20%,
+    transparent
+  ) !important;
   --color-green-red-mix: color-mix(in oklch, #689523, #eb5325) !important;
-  --color-green-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #689523, #eb5325) 20%, transparent) !important;
+  --color-green-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #689523, #eb5325) 20%,
+    transparent
+  ) !important;
   --color-green-yellow-mix: color-mix(in oklch, #689523, #e8c62a) !important;
-  --color-green-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #689523, #e8c62a) 20%, transparent) !important;
+  --color-green-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #689523, #e8c62a) 20%,
+    transparent
+  ) !important;
   --color-orange-blue-mix: color-mix(in oklch, #ed8126, #5c9fe4) !important;
-  --color-orange-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #ed8126, #5c9fe4) 20%, transparent) !important;
+  --color-orange-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #ed8126, #5c9fe4) 20%,
+    transparent
+  ) !important;
   --color-orange-cyan-mix: color-mix(in oklch, #ed8126, #3b9ba1) !important;
-  --color-orange-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #ed8126, #3b9ba1) 20%, transparent) !important;
+  --color-orange-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #ed8126, #3b9ba1) 20%,
+    transparent
+  ) !important;
   --color-orange-green-mix: color-mix(in oklch, #ed8126, #689523) !important;
-  --color-orange-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #ed8126, #689523) 20%, transparent) !important;
+  --color-orange-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #ed8126, #689523) 20%,
+    transparent
+  ) !important;
   --color-orange-pink-mix: color-mix(in oklch, #ed8126, #e389ca) !important;
-  --color-orange-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #ed8126, #e389ca) 20%, transparent) !important;
+  --color-orange-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #ed8126, #e389ca) 20%,
+    transparent
+  ) !important;
   --color-orange-purple-mix: color-mix(in oklch, #ed8126, #6f49ae) !important;
-  --color-orange-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #ed8126, #6f49ae) 20%, transparent) !important;
+  --color-orange-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #ed8126, #6f49ae) 20%,
+    transparent
+  ) !important;
   --color-orange-red-mix: color-mix(in oklch, #ed8126, #eb5325) !important;
-  --color-orange-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #ed8126, #eb5325) 20%, transparent) !important;
+  --color-orange-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #ed8126, #eb5325) 20%,
+    transparent
+  ) !important;
   --color-orange-yellow-mix: color-mix(in oklch, #ed8126, #e8c62a) !important;
-  --color-orange-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #ed8126, #e8c62a) 20%, transparent) !important;
+  --color-orange-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #ed8126, #e8c62a) 20%,
+    transparent
+  ) !important;
   --color-pink-blue-mix: color-mix(in oklch, #e389ca, #5c9fe4) !important;
-  --color-pink-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #e389ca, #5c9fe4) 20%, transparent) !important;
+  --color-pink-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e389ca, #5c9fe4) 20%,
+    transparent
+  ) !important;
   --color-pink-cyan-mix: color-mix(in oklch, #e389ca, #3b9ba1) !important;
-  --color-pink-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #e389ca, #3b9ba1) 20%, transparent) !important;
+  --color-pink-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e389ca, #3b9ba1) 20%,
+    transparent
+  ) !important;
   --color-pink-green-mix: color-mix(in oklch, #e389ca, #689523) !important;
-  --color-pink-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #e389ca, #689523) 20%, transparent) !important;
+  --color-pink-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e389ca, #689523) 20%,
+    transparent
+  ) !important;
   --color-pink-orange-mix: color-mix(in oklch, #e389ca, #ed8126) !important;
-  --color-pink-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #e389ca, #ed8126) 20%, transparent) !important;
+  --color-pink-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e389ca, #ed8126) 20%,
+    transparent
+  ) !important;
   --color-pink-purple-mix: color-mix(in oklch, #e389ca, #6f49ae) !important;
-  --color-pink-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #e389ca, #6f49ae) 20%, transparent) !important;
+  --color-pink-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e389ca, #6f49ae) 20%,
+    transparent
+  ) !important;
   --color-pink-red-mix: color-mix(in oklch, #e389ca, #eb5325) !important;
-  --color-pink-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #e389ca, #eb5325) 20%, transparent) !important;
+  --color-pink-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e389ca, #eb5325) 20%,
+    transparent
+  ) !important;
   --color-pink-yellow-mix: color-mix(in oklch, #e389ca, #e8c62a) !important;
-  --color-pink-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #e389ca, #e8c62a) 20%, transparent) !important;
+  --color-pink-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e389ca, #e8c62a) 20%,
+    transparent
+  ) !important;
   --color-purple-blue-mix: color-mix(in oklch, #6f49ae, #5c9fe4) !important;
-  --color-purple-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #6f49ae, #5c9fe4) 20%, transparent) !important;
+  --color-purple-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #6f49ae, #5c9fe4) 20%,
+    transparent
+  ) !important;
   --color-purple-cyan-mix: color-mix(in oklch, #6f49ae, #3b9ba1) !important;
-  --color-purple-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #6f49ae, #3b9ba1) 20%, transparent) !important;
+  --color-purple-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #6f49ae, #3b9ba1) 20%,
+    transparent
+  ) !important;
   --color-purple-green-mix: color-mix(in oklch, #6f49ae, #689523) !important;
-  --color-purple-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #6f49ae, #689523) 20%, transparent) !important;
+  --color-purple-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #6f49ae, #689523) 20%,
+    transparent
+  ) !important;
   --color-purple-orange-mix: color-mix(in oklch, #6f49ae, #ed8126) !important;
-  --color-purple-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #6f49ae, #ed8126) 20%, transparent) !important;
+  --color-purple-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #6f49ae, #ed8126) 20%,
+    transparent
+  ) !important;
   --color-purple-pink-mix: color-mix(in oklch, #6f49ae, #e389ca) !important;
-  --color-purple-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #6f49ae, #e389ca) 20%, transparent) !important;
+  --color-purple-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #6f49ae, #e389ca) 20%,
+    transparent
+  ) !important;
   --color-purple-red-mix: color-mix(in oklch, #6f49ae, #eb5325) !important;
-  --color-purple-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #6f49ae, #eb5325) 20%, transparent) !important;
+  --color-purple-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #6f49ae, #eb5325) 20%,
+    transparent
+  ) !important;
   --color-purple-yellow-mix: color-mix(in oklch, #6f49ae, #e8c62a) !important;
-  --color-purple-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #6f49ae, #e8c62a) 20%, transparent) !important;
+  --color-purple-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #6f49ae, #e8c62a) 20%,
+    transparent
+  ) !important;
   --color-red-blue-mix: color-mix(in oklch, #eb5325, #5c9fe4) !important;
-  --color-red-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #eb5325, #5c9fe4) 20%, transparent) !important;
+  --color-red-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #eb5325, #5c9fe4) 20%,
+    transparent
+  ) !important;
   --color-red-cyan-mix: color-mix(in oklch, #eb5325, #3b9ba1) !important;
-  --color-red-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #eb5325, #3b9ba1) 20%, transparent) !important;
+  --color-red-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #eb5325, #3b9ba1) 20%,
+    transparent
+  ) !important;
   --color-red-green-mix: color-mix(in oklch, #eb5325, #689523) !important;
-  --color-red-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #eb5325, #689523) 20%, transparent) !important;
+  --color-red-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #eb5325, #689523) 20%,
+    transparent
+  ) !important;
   --color-red-orange-mix: color-mix(in oklch, #eb5325, #ed8126) !important;
-  --color-red-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #eb5325, #ed8126) 20%, transparent) !important;
+  --color-red-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #eb5325, #ed8126) 20%,
+    transparent
+  ) !important;
   --color-red-pink-mix: color-mix(in oklch, #eb5325, #e389ca) !important;
-  --color-red-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #eb5325, #e389ca) 20%, transparent) !important;
+  --color-red-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #eb5325, #e389ca) 20%,
+    transparent
+  ) !important;
   --color-red-purple-mix: color-mix(in oklch, #eb5325, #6f49ae) !important;
-  --color-red-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #eb5325, #6f49ae) 20%, transparent) !important;
+  --color-red-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #eb5325, #6f49ae) 20%,
+    transparent
+  ) !important;
   --color-red-yellow-mix: color-mix(in oklch, #eb5325, #e8c62a) !important;
-  --color-red-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #eb5325, #e8c62a) 20%, transparent) !important;
+  --color-red-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #eb5325, #e8c62a) 20%,
+    transparent
+  ) !important;
   --color-yellow-blue-mix: color-mix(in oklch, #e8c62a, #5c9fe4) !important;
-  --color-yellow-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #e8c62a, #5c9fe4) 20%, transparent) !important;
+  --color-yellow-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e8c62a, #5c9fe4) 20%,
+    transparent
+  ) !important;
   --color-yellow-cyan-mix: color-mix(in oklch, #e8c62a, #3b9ba1) !important;
-  --color-yellow-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #e8c62a, #3b9ba1) 20%, transparent) !important;
+  --color-yellow-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e8c62a, #3b9ba1) 20%,
+    transparent
+  ) !important;
   --color-yellow-green-mix: color-mix(in oklch, #e8c62a, #689523) !important;
-  --color-yellow-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #e8c62a, #689523) 20%, transparent) !important;
+  --color-yellow-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e8c62a, #689523) 20%,
+    transparent
+  ) !important;
   --color-yellow-orange-mix: color-mix(in oklch, #e8c62a, #ed8126) !important;
-  --color-yellow-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #e8c62a, #ed8126) 20%, transparent) !important;
+  --color-yellow-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e8c62a, #ed8126) 20%,
+    transparent
+  ) !important;
   --color-yellow-pink-mix: color-mix(in oklch, #e8c62a, #e389ca) !important;
-  --color-yellow-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #e8c62a, #e389ca) 20%, transparent) !important;
+  --color-yellow-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e8c62a, #e389ca) 20%,
+    transparent
+  ) !important;
   --color-yellow-purple-mix: color-mix(in oklch, #e8c62a, #6f49ae) !important;
-  --color-yellow-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #e8c62a, #6f49ae) 20%, transparent) !important;
+  --color-yellow-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e8c62a, #6f49ae) 20%,
+    transparent
+  ) !important;
   --color-yellow-red-mix: color-mix(in oklch, #e8c62a, #eb5325) !important;
-  --color-yellow-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #e8c62a, #eb5325) 20%, transparent) !important;
+  --color-yellow-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #e8c62a, #eb5325) 20%,
+    transparent
+  ) !important;
   --dimmed: 0.55 !important;
   --expand: 110% !important;
   --flexcyon-accent: #5770b9 !important;
@@ -982,7 +1447,11 @@
   --flexcyon-ascii-max-width: 50rem !important;
   --flexcyon-ascii-scaling-factor: 1 !important;
   --flexcyon-base-01: #faf7ef !important;
-  --flexcyon-base-01-02-mix: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
+  --flexcyon-base-01-02-mix: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
   --flexcyon-base-02: #edebe5 !important;
   --flexcyon-base-02-03-mix: color-mix(in oklch, #edebe5, #dddcd6) !important;
   --flexcyon-base-03: #dddcd6 !important;
@@ -1051,8 +1520,16 @@
   --flexcyon-cyan: #3b9ba1 !important;
   --flexcyon-dataview-horizontal-padding: 8px !important;
   --flexcyon-default-ol-style: decimal !important;
-  --flexcyon-editor-bg-color: color-mix(in oklch, color-mix(in oklch, #faf7ef 70%, #edebe5 30%), #edebe5) !important;
-  --flexcyon-editor-bg-color-2: color-mix(in oklch, #edebe5, #dddcd6) !important;
+  --flexcyon-editor-bg-color: color-mix(
+    in oklch,
+    color-mix(in oklch, #faf7ef 70%, #edebe5 30%),
+    #edebe5
+  ) !important;
+  --flexcyon-editor-bg-color-2: color-mix(
+    in oklch,
+    #edebe5,
+    #dddcd6
+  ) !important;
   --flexcyon-editor-bg-rotation: 0deg !important;
   --flexcyon-editor-bg-width: 15px !important;
   --flexcyon-editor-dot-size: 2.5px !important;
@@ -1060,7 +1537,11 @@
   --flexcyon-editor-writing-indentation: 16px !important;
   --flexcyon-exp-dimmed-nav-size: 13.3623px !important;
   --flexcyon-external-link-color: #5c9fe4 !important;
-  --flexcyon-external-link-hover: color-mix(in oklch shorter hue, #5c9fe4, #797876) !important;
+  --flexcyon-external-link-hover: color-mix(
+    in oklch shorter hue,
+    #5c9fe4,
+    #797876
+  ) !important;
   --flexcyon-fc-dimmed-items-opacity: 0.89 !important;
   --flexcyon-h1-color: #5c9fe4 !important;
   --flexcyon-h2-color: #6f49ae !important;
@@ -1085,7 +1566,11 @@
   --flexcyon-l-spacing: 0px !important;
   --flexcyon-lime-green: #689523 !important;
   --flexcyon-link-color: #6f49ae !important;
-  --flexcyon-link-hover: color-mix(in oklch shorter hue, #6f49ae, #797876) !important;
+  --flexcyon-link-hover: color-mix(
+    in oklch shorter hue,
+    #6f49ae,
+    #797876
+  ) !important;
   --flexcyon-link-unresolved-color: #6f49ae !important;
   --flexcyon-media-embed-vertical-margin: 8px !important;
   --flexcyon-meta-container-padding-left: 14px !important;
@@ -1098,14 +1583,30 @@
   --flexcyon-modal-image-size: cover !important;
   --flexcyon-mode-view-header-title-horiz-padding: 12px !important;
   --flexcyon-mode-view-header-title-verti-padding: 4px !important;
-  --flexcyon-new-tab-bg-wrapper: linear-gradient(to right, #5770b9, #e389ca, #689523) !important;
-  --flexcyon-new-tab-font-group: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --flexcyon-new-tab-bg-wrapper: linear-gradient(
+    to right,
+    #5770b9,
+    #e389ca,
+    #689523
+  ) !important;
+  --flexcyon-new-tab-font-group:
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
   --flexcyon-omnisearch-body-margin-left: 1.45rem !important;
   --flexcyon-orange: #ed8126 !important;
   --flexcyon-os-detail-padding-l: 12px !important;
   --flexcyon-os-detail-padding-r: 24px !important;
-  --flexcyon-palette-cyan-hover: color-mix(in oklch shorter hue, #3b9ba1, #797876) !important;
-  --flexcyon-palette-lilac-hover: color-mix(in oklch shorter hue, #6f49ae, #797876) !important;
+  --flexcyon-palette-cyan-hover: color-mix(
+    in oklch shorter hue,
+    #3b9ba1,
+    #797876
+  ) !important;
+  --flexcyon-palette-lilac-hover: color-mix(
+    in oklch shorter hue,
+    #6f49ae,
+    #797876
+  ) !important;
   --flexcyon-pink: #e389ca !important;
   --flexcyon-purple-lilac: #6f49ae !important;
   --flexcyon-quote-credit: "bladeacer" !important;
@@ -1169,9 +1670,16 @@
   --oz-fta-folder-font-size: calc(16.1803px - 0.1rem) !important;
   --oz-fta-folder-pane-file-name-color: #080808 !important;
   --oz-fta-folder-panes-file-name-color: #080808 !important;
-  --r-background-color: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
+  --r-background-color: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
   --r-heading-color: #080808 !important;
-  --r-heading-font: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --r-heading-font:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --r-heading-margin: 16px 0px !important;
   --r-heading-text-transform: capitalize !important;
   --r-heading1-size: 1.81803em !important;
@@ -1179,10 +1687,17 @@
   --r-heading3-size: 1.41803em !important;
   --r-heading4-size: 1.21803em !important;
   --r-link-color: hsl(205 34.85% 58.3% / 87.5%) !important;
-  --r-main-font: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --r-main-font:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --r-main-font-size: max-content !important;
   --radius-x1: 8px !important;
-  --settings-background: color-mix(in oklch, #faf7ef 70%, #edebe5 30%) !important;
+  --settings-background: color-mix(
+    in oklch,
+    #faf7ef 70%,
+    #edebe5 30%
+  ) !important;
   --upsize: 103% !important;
   --w: tan(atan2(2538px, 1px)) !important;
 
@@ -1192,7 +1707,11 @@
   --bases-embed-border-color: color-mix(in oklch, #191d28, #24262c) !important;
   --bases-table-border-color: #6f768566 !important;
   --bases-table-header-background: #191d28 !important;
-  --bases-table-header-background-hover: color-mix(in oklch, #191d28, #24262c) !important;
+  --bases-table-header-background-hover: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
   --focus-ring-color: #0df !important;
   --tab-container-background: #14161c !important;
   --table-border-color: #6f768566 !important;
@@ -1214,18 +1733,38 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: #24262c !important;
-  --background-modifier-border: color-mix(in oklch, #191d28, #24262c) !important;
-  --background-modifier-border-focus: color-mix(in oklch, #24262c, #4d566b) !important;
+  --background-modifier-border: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
+  --background-modifier-border-focus: color-mix(
+    in oklch,
+    #24262c,
+    #4d566b
+  ) !important;
   --background-modifier-border-hover: transparent !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
   --background-modifier-error: rgb(rgb(192, 58, 71), 0.85) !important;
   --background-modifier-error-hover: #c03a47 !important;
   --background-modifier-error-rgb: rgb(192, 58, 71) !important;
-  --background-modifier-form-field: color-mix(in oklch, #191d28, #24262c) !important;
-  --background-modifier-form-field-hover: color-mix(in oklch, #191d28, #24262c) !important;
+  --background-modifier-form-field: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
+  --background-modifier-form-field-hover: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
   --background-modifier-hover: color-mix(in oklch, #191d28, #24262c) !important;
-  --background-modifier-message: color-mix(in oklch, #191d28, #24262c) !important;
+  --background-modifier-message: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
   --background-modifier-success: #a1c05c !important;
   --background-modifier-success-rgb: rgb(161, 192, 92) !important;
   --background-primary: #191d28 !important;
@@ -1246,7 +1785,11 @@
   --bases-embed-border-radius: 2px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
-  --bases-group-heading-property-color: color-mix(in oklch, #6f768599, #d3d5d3) !important;
+  --bases-group-heading-property-color: color-mix(
+    in oklch,
+    #6f768599,
+    #d3d5d3
+  ) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12.94424px !important;
   --bases-group-heading-property-weight: 400 !important;
@@ -1258,11 +1801,18 @@
   --bases-header-padding-start: 2px !important;
   --bases-table-cell-background-active: #191d28 !important;
   --bases-table-cell-background-disabled: #24262c !important;
-  --bases-table-cell-background-selected: hsla(105.5, 77.5%, 59.5%, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(
+    105.5,
+    77.5%,
+    59.5%,
+    0.1
+  ) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px color-mix(in oklch, #24262c, #4d566b) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px
+    color-mix(in oklch, #24262c, #4d566b) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px
+    color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -1271,22 +1821,46 @@
   --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: #24262c !important;
   --bases-table-group-gap: 10px !important;
-  --bases-table-header-color: color-mix(in oklch, #6f768599, #d3d5d3) !important;
+  --bases-table-header-color: color-mix(
+    in oklch,
+    #6f768599,
+    #d3d5d3
+  ) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent 24px,
+    black 24px
+  ) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: #191d28 !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
   --bases-table-summary-background: #191d28 !important;
-  --bases-table-summary-background-hover: color-mix(in oklch, #191d28, #24262c) !important;
+  --bases-table-summary-background-hover: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
+  --blockquote-border-color: color-mix(
+    in oklch,
+    hsl(102.5 79.05% 68.425%) 80%,
+    transparent 20%
+  ) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, color-mix(in oklch, #14161c, #191d28) 65%, transparent) linear-gradient(color-mix(in oklch, #14161c, #191d28), color-mix(in srgb, color-mix(in oklch, #14161c, #191d28) 65%, transparent)) !important;
+  --blur-background: color-mix(
+      in srgb,
+      color-mix(in oklch, #14161c, #191d28) 65%,
+      transparent
+    )
+    linear-gradient(
+      color-mix(in oklch, #14161c, #191d28),
+      color-mix(in srgb, color-mix(in oklch, #14161c, #191d28) 65%, transparent)
+    ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -1340,9 +1914,17 @@
   --canvas-dot-pattern: color-mix(in oklch, #24262c, #4d566b) !important;
   --caret-color: #d3d5d3 !important;
   --checkbox-border-color: #5a8fcd !important;
-  --checkbox-border-color-hover: color-mix(in oklch shorter hue, #a461c8, #898c93) !important;
+  --checkbox-border-color-hover: color-mix(
+    in oklch shorter hue,
+    #a461c8,
+    #898c93
+  ) !important;
   --checkbox-color: #a461c8 !important;
-  --checkbox-color-hover: color-mix(in oklch shorter hue, #a461c8, #898c93) !important;
+  --checkbox-color-hover: color-mix(
+    in oklch shorter hue,
+    #a461c8,
+    #898c93
+  ) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #191d28 !important;
   --checkbox-radius: 2px !important;
@@ -1410,12 +1992,20 @@
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: color-mix(in oklch, #191d28, #24262c) !important;
-  --divider-color-hover: color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
+  --divider-color-hover: color-mix(
+    in oklch,
+    hsl(102.5 79.05% 68.425%) 80%,
+    transparent 20%
+  ) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: #24262c !important;
-  --drag-ghost-text-color: color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
+  --drag-ghost-text-color: color-mix(
+    in oklch,
+    hsl(102.5 79.05% 68.425%) 80%,
+    transparent 20%
+  ) !important;
   --dropdown-background: color-mix(in oklch, #14161c, #191d28) !important;
   --dropdown-background-blend-mode: hard-light !important;
   --dropdown-background-hover: #191d28 !important;
@@ -1426,10 +2016,13 @@
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover: 0 0 0 1px color-mix(in oklch, #191d28, #24262c), inset 0 0 0 1px color-mix(in oklch, #191d28, #24262c) !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px color-mix(in oklch, #191d28, #24262c),
+    inset 0 0 0 1px color-mix(in oklch, #191d28, #24262c) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
+  --embed-border-start: 2px solid
+    color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -1438,7 +2031,11 @@
   --file-header-background: #191d28 !important;
   --file-header-background-focused: #191d28 !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --file-header-font:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --file-header-font-size: 14.56227px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -1451,17 +2048,33 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-default:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-interface:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-mermaid:
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
+  --font-monospace:
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -1471,7 +2084,10 @@
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-text:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1489,7 +2105,11 @@
   --footnote-id-color-no-occurrences: #6f768599 !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: transparent !important;
-  --footnote-input-background-active: color-mix(in oklch, #191d28, #24262c) !important;
+  --footnote-input-background-active: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
   --footnote-line-height: 1.4 !important;
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
@@ -1548,8 +2168,16 @@
   --hr-color: #393e48 !important;
   --hr-thickness: 2px !important;
   --icon-color: color-mix(in oklch, #6f768599, #d3d5d3) !important;
-  --icon-color-active: color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
-  --icon-color-focused: color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
+  --icon-color-active: color-mix(
+    in oklch,
+    hsl(102.5 79.05% 68.425%) 80%,
+    transparent 20%
+  ) !important;
+  --icon-color-focused: color-mix(
+    in oklch,
+    hsl(102.5 79.05% 68.425%) 80%,
+    transparent 20%
+  ) !important;
   --icon-color-hover: color-mix(in oklch, #6f768599, #d3d5d3) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
@@ -1590,12 +2218,26 @@
   --input-padding: 8px 8px !important;
   --input-placeholder-color: #6f768599 !important;
   --input-radius: 0px !important;
-  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
-  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --input-shadow:
+    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
+  --input-shadow-hover:
+    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
+    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
+    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
-  --interactive-accent-hover: color-mix(in oklch shorter hue, #92a871 75%, transparent) !important;
+  --interactive-accent: color-mix(
+    in oklch,
+    hsl(102.5 79.05% 68.425%) 80%,
+    transparent 20%
+  ) !important;
+  --interactive-accent-hover: color-mix(
+    in oklch shorter hue,
+    #92a871 75%,
+    transparent
+  ) !important;
   --interactive-accent-hsl: 105.5, 77.5%, 59.5% !important;
   --interactive-hover: #191d28 !important;
   --interactive-normal: color-mix(in oklch, #14161c, #191d28) !important;
@@ -1613,12 +2255,20 @@
   --line-height-normal: 1.4 !important;
   --line-height-tight: 1.25 !important;
   --link-color: #a461c8 !important;
-  --link-color-hover: color-mix(in oklch shorter hue, #a461c8, #898c93) !important;
+  --link-color-hover: color-mix(
+    in oklch shorter hue,
+    #a461c8,
+    #898c93
+  ) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
   --link-external-color: #5a8fcd !important;
-  --link-external-color-hover: color-mix(in oklch shorter hue, #5a8fcd, #898c93) !important;
+  --link-external-color-hover: color-mix(
+    in oklch shorter hue,
+    #5a8fcd,
+    #898c93
+  ) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
@@ -1638,7 +2288,11 @@
   --list-indent-source: 0 !important;
   --list-marker-color: #a461c8 !important;
   --list-marker-color-collapsed: #a1c05c !important;
-  --list-marker-color-hover: color-mix(in oklch shorter hue, #a461c8, #898c93) !important;
+  --list-marker-color-hover: color-mix(
+    in oklch shorter hue,
+    #a461c8,
+    #898c93
+  ) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
@@ -1649,8 +2303,14 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 4px !important;
-  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
-  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
+  --menu-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: color-mix(in oklch, #191d28, #24262c) !important;
   --metadata-border-radius: 0 !important;
@@ -1663,28 +2323,53 @@
   --metadata-divider-width: 0 !important;
   --metadata-gap: 3px !important;
   --metadata-input-background: transparent !important;
-  --metadata-input-background-active: color-mix(in oklch, #191d28, #24262c) !important;
+  --metadata-input-background-active: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: 4px 8px !important;
   --metadata-input-text-color: #d3d5d3 !important;
   --metadata-label-background: transparent !important;
-  --metadata-label-background-active: color-mix(in oklch, #191d28, #24262c) !important;
+  --metadata-label-background-active: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font:
+    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
+    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #a461c8 !important;
-  --metadata-label-text-color-hover: color-mix(in oklch shorter hue, #a461c8, #898c93) !important;
+  --metadata-label-text-color-hover: color-mix(
+    in oklch shorter hue,
+    #a461c8,
+    #898c93
+  ) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: 8px 0 !important;
   --metadata-property-background: transparent !important;
-  --metadata-property-background-active: color-mix(in oklch, #191d28, #24262c) !important;
+  --metadata-property-background-active: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px color-mix(in oklch, #24262c, #4d566b) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px
+    color-mix(in oklch, #24262c, #4d566b) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px transparent !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
@@ -1713,19 +2398,31 @@
   --nav-collapse-icon-color-collapsed: #6f768599 !important;
   --nav-heading-color: #d3d5d3 !important;
   --nav-heading-color-collapsed: #6f768599 !important;
-  --nav-heading-color-collapsed-hover: color-mix(in oklch, #6f768599, #d3d5d3) !important;
+  --nav-heading-color-collapsed-hover: color-mix(
+    in oklch,
+    #6f768599,
+    #d3d5d3
+  ) !important;
   --nav-heading-color-hover: #d3d5d3 !important;
   --nav-heading-weight: 500 !important;
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(255, 255, 255, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: color-mix(in oklch, #191d28, #24262c) !important;
+  --nav-item-background-active: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
   --nav-item-background-hover: color-mix(in oklch, #191d28, #24262c) !important;
   --nav-item-background-selected: #24262c !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: color-mix(in oklch, #6f768599, #d3d5d3) !important;
-  --nav-item-color-active: color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
+  --nav-item-color-active: color-mix(
+    in oklch,
+    hsl(102.5 79.05% 68.425%) 80%,
+    transparent 20%
+  ) !important;
   --nav-item-color-highlighted: hsl(102.5 79.05% 68.425%) !important;
   --nav-item-color-hover: #d3d5d3 !important;
   --nav-item-color-selected: #cc8449 !important;
@@ -1787,9 +2484,19 @@
   --radius-m: 4px !important;
   --radius-s: 2px !important;
   --radius-xl: 8px !important;
-  --raised-background: color-mix(in srgb, color-mix(in oklch, #14161c, #191d28) 65%, transparent) linear-gradient(color-mix(in oklch, #14161c, #191d28), color-mix(in srgb, color-mix(in oklch, #14161c, #191d28) 65%, transparent)) !important;
+  --raised-background: color-mix(
+      in srgb,
+      color-mix(in oklch, #14161c, #191d28) 65%,
+      transparent
+    )
+    linear-gradient(
+      color-mix(in oklch, #14161c, #191d28),
+      color-mix(in srgb, color-mix(in oklch, #14161c, #191d28) 65%, transparent)
+    ) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
   --raised-mask-background: transparent !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
@@ -1818,12 +2525,20 @@
   --setting-group-heading-size: 16.1803px !important;
   --setting-group-heading-weight: 600 !important;
   --setting-items-background: #242424 !important;
-  --setting-items-border-color: color-mix(in oklch, #191d28, #24262c) !important;
+  --setting-items-border-color: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 2px 0px !important;
   --setting-items-radius: 12px !important;
-  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2) !important;
-  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shadow-l:
+    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
+    0px 30px 90px rgba(0, 0, 0, 0.2) !important;
+  --shadow-s:
+    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
+    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -1896,7 +2611,11 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #14161c !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #14161c, transparent) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #14161c,
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 8px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
@@ -1909,7 +2628,11 @@
   --tab-text-color-focused-highlighted: hsl(102.5 79.05% 68.425%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: color-mix(in oklch, #191d28, #24262c) !important;
+  --table-add-button-border-color: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: #191d28 !important;
   --table-border-width: 1px !important;
@@ -1920,7 +2643,11 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
+  --table-drag-handle-background-active: color-mix(
+    in oklch,
+    hsl(102.5 79.05% 68.425%) 80%,
+    transparent 20%
+  ) !important;
   --table-drag-handle-color: #6f768599 !important;
   --table-drag-handle-color-active: #24262c !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -1937,18 +2664,30 @@
   --table-row-last-border-width: 1px !important;
   --table-selection: hsla(105.5, 77.5%, 59.5%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
+  --table-selection-border-color: color-mix(
+    in oklch,
+    hsl(102.5 79.05% 68.425%) 80%,
+    transparent 20%
+  ) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16.1803px !important;
   --table-white-space: break-spaces !important;
   --tag-background: color-mix(in oklch, #3cb9c2 25%, transparent) !important;
-  --tag-background-hover: color-mix(in oklch, color-mix(in oklch shorter hue, #3cb9c2, #898c93) 25%, transparent) !important;
+  --tag-background-hover: color-mix(
+    in oklch,
+    color-mix(in oklch shorter hue, #3cb9c2, #898c93) 25%,
+    transparent
+  ) !important;
   --tag-border-color: hsla(105.5, 77.5%, 59.5%, 0.15) !important;
   --tag-border-color-hover: hsla(105.5, 77.5%, 59.5%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: #3cb9c2 !important;
-  --tag-color-hover: color-mix(in oklch shorter hue, #3cb9c2, #898c93) !important;
+  --tag-color-hover: color-mix(
+    in oklch shorter hue,
+    #3cb9c2,
+    #898c93
+  ) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: underline !important;
@@ -1958,7 +2697,11 @@
   --tag-size: 0.875em !important;
   --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-error: #c03a47 !important;
-  --text-highlight-bg: color-mix(in oklch, #3cb9c2 22.5%, transparent) !important;
+  --text-highlight-bg: color-mix(
+    in oklch,
+    #3cb9c2 22.5%,
+    transparent
+  ) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: color-mix(in oklch, #6f768599, #d3d5d3) !important;
   --text-on-accent: #24262c !important;
@@ -1971,7 +2714,11 @@
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
   --titlebar-text-color: #6f768599 !important;
-  --titlebar-text-color-focused: color-mix(in oklch, #6f768599, #d3d5d3) !important;
+  --titlebar-text-color-focused: color-mix(
+    in oklch,
+    #6f768599,
+    #d3d5d3
+  ) !important;
   --titlebar-text-weight: 700 !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -2018,7 +2765,11 @@
   --h6-color: #c29e42 !important;
   --inline-title-color: #5a8fcd !important;
   --table-header-background-hover: #191d28 !important;
-  --vault-name-color: color-mix(in oklch, hsl(102.5 79.05% 68.425%) 80%, transparent 20%) !important;
+  --vault-name-color: color-mix(
+    in oklch,
+    hsl(102.5 79.05% 68.425%) 80%,
+    transparent 20%
+  ) !important;
   --bold-color: #c03a47 !important;
   --italic-color: #92a871 !important;
   --bases-embed-padding: 4px !important;
@@ -2028,117 +2779,341 @@
   --cm-font-size: 15.37127px !important;
   --cm-panel-bg: #14161c !important;
   --color-blue-cyan-mix: color-mix(in oklch, #5a8fcd, #3cb9c2) !important;
-  --color-blue-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #5a8fcd, #3cb9c2) 20%, transparent) !important;
+  --color-blue-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #3cb9c2) 20%,
+    transparent
+  ) !important;
   --color-blue-green-mix: color-mix(in oklch, #5a8fcd, #a1c05c) !important;
-  --color-blue-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #5a8fcd, #a1c05c) 20%, transparent) !important;
+  --color-blue-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #a1c05c) 20%,
+    transparent
+  ) !important;
   --color-blue-orange-mix: color-mix(in oklch, #5a8fcd, #cc8449) !important;
-  --color-blue-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #5a8fcd, #cc8449) 20%, transparent) !important;
+  --color-blue-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #cc8449) 20%,
+    transparent
+  ) !important;
   --color-blue-pink-mix: color-mix(in oklch, #5a8fcd, #d458a3) !important;
-  --color-blue-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #5a8fcd, #d458a3) 20%, transparent) !important;
+  --color-blue-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #d458a3) 20%,
+    transparent
+  ) !important;
   --color-blue-purple-mix: color-mix(in oklch, #5a8fcd, #a461c8) !important;
-  --color-blue-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #5a8fcd, #a461c8) 20%, transparent) !important;
+  --color-blue-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #a461c8) 20%,
+    transparent
+  ) !important;
   --color-blue-red-mix: color-mix(in oklch, #5a8fcd, #c03a47) !important;
-  --color-blue-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #5a8fcd, #c03a47) 20%, transparent) !important;
+  --color-blue-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #c03a47) 20%,
+    transparent
+  ) !important;
   --color-blue-yellow-mix: color-mix(in oklch, #5a8fcd, #c29e42) !important;
-  --color-blue-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #5a8fcd, #c29e42) 20%, transparent) !important;
+  --color-blue-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #5a8fcd, #c29e42) 20%,
+    transparent
+  ) !important;
   --color-cyan-blue-mix: color-mix(in oklch, #3cb9c2, #5a8fcd) !important;
-  --color-cyan-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #3cb9c2, #5a8fcd) 20%, transparent) !important;
+  --color-cyan-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3cb9c2, #5a8fcd) 20%,
+    transparent
+  ) !important;
   --color-cyan-green-mix: color-mix(in oklch, #3cb9c2, #a1c05c) !important;
-  --color-cyan-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #3cb9c2, #a1c05c) 20%, transparent) !important;
+  --color-cyan-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3cb9c2, #a1c05c) 20%,
+    transparent
+  ) !important;
   --color-cyan-orange-mix: color-mix(in oklch, #3cb9c2, #cc8449) !important;
-  --color-cyan-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #3cb9c2, #cc8449) 20%, transparent) !important;
+  --color-cyan-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3cb9c2, #cc8449) 20%,
+    transparent
+  ) !important;
   --color-cyan-pink-mix: color-mix(in oklch, #3cb9c2, #d458a3) !important;
-  --color-cyan-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #3cb9c2, #d458a3) 20%, transparent) !important;
+  --color-cyan-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3cb9c2, #d458a3) 20%,
+    transparent
+  ) !important;
   --color-cyan-purple-mix: color-mix(in oklch, #3cb9c2, #a461c8) !important;
-  --color-cyan-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #3cb9c2, #a461c8) 20%, transparent) !important;
+  --color-cyan-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3cb9c2, #a461c8) 20%,
+    transparent
+  ) !important;
   --color-cyan-red-mix: color-mix(in oklch, #3cb9c2, #c03a47) !important;
-  --color-cyan-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #3cb9c2, #c03a47) 20%, transparent) !important;
+  --color-cyan-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3cb9c2, #c03a47) 20%,
+    transparent
+  ) !important;
   --color-cyan-yellow-mix: color-mix(in oklch, #3cb9c2, #c29e42) !important;
-  --color-cyan-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #3cb9c2, #c29e42) 20%, transparent) !important;
+  --color-cyan-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #3cb9c2, #c29e42) 20%,
+    transparent
+  ) !important;
   --color-green-blue-mix: color-mix(in oklch, #a1c05c, #5a8fcd) !important;
-  --color-green-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #a1c05c, #5a8fcd) 20%, transparent) !important;
+  --color-green-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a1c05c, #5a8fcd) 20%,
+    transparent
+  ) !important;
   --color-green-cyan-mix: color-mix(in oklch, #a1c05c, #3cb9c2) !important;
-  --color-green-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #a1c05c, #3cb9c2) 20%, transparent) !important;
+  --color-green-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a1c05c, #3cb9c2) 20%,
+    transparent
+  ) !important;
   --color-green-orange-mix: color-mix(in oklch, #a1c05c, #cc8449) !important;
-  --color-green-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #a1c05c, #cc8449) 20%, transparent) !important;
+  --color-green-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a1c05c, #cc8449) 20%,
+    transparent
+  ) !important;
   --color-green-pink-mix: color-mix(in oklch, #a1c05c, #d458a3) !important;
-  --color-green-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #a1c05c, #d458a3) 20%, transparent) !important;
+  --color-green-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a1c05c, #d458a3) 20%,
+    transparent
+  ) !important;
   --color-green-purple-mix: color-mix(in oklch, #a1c05c, #a461c8) !important;
-  --color-green-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #a1c05c, #a461c8) 20%, transparent) !important;
+  --color-green-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a1c05c, #a461c8) 20%,
+    transparent
+  ) !important;
   --color-green-red-mix: color-mix(in oklch, #a1c05c, #c03a47) !important;
-  --color-green-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #a1c05c, #c03a47) 20%, transparent) !important;
+  --color-green-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a1c05c, #c03a47) 20%,
+    transparent
+  ) !important;
   --color-green-yellow-mix: color-mix(in oklch, #a1c05c, #c29e42) !important;
-  --color-green-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #a1c05c, #c29e42) 20%, transparent) !important;
+  --color-green-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a1c05c, #c29e42) 20%,
+    transparent
+  ) !important;
   --color-orange-blue-mix: color-mix(in oklch, #cc8449, #5a8fcd) !important;
-  --color-orange-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #cc8449, #5a8fcd) 20%, transparent) !important;
+  --color-orange-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #cc8449, #5a8fcd) 20%,
+    transparent
+  ) !important;
   --color-orange-cyan-mix: color-mix(in oklch, #cc8449, #3cb9c2) !important;
-  --color-orange-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #cc8449, #3cb9c2) 20%, transparent) !important;
+  --color-orange-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #cc8449, #3cb9c2) 20%,
+    transparent
+  ) !important;
   --color-orange-green-mix: color-mix(in oklch, #cc8449, #a1c05c) !important;
-  --color-orange-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #cc8449, #a1c05c) 20%, transparent) !important;
+  --color-orange-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #cc8449, #a1c05c) 20%,
+    transparent
+  ) !important;
   --color-orange-pink-mix: color-mix(in oklch, #cc8449, #d458a3) !important;
-  --color-orange-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #cc8449, #d458a3) 20%, transparent) !important;
+  --color-orange-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #cc8449, #d458a3) 20%,
+    transparent
+  ) !important;
   --color-orange-purple-mix: color-mix(in oklch, #cc8449, #a461c8) !important;
-  --color-orange-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #cc8449, #a461c8) 20%, transparent) !important;
+  --color-orange-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #cc8449, #a461c8) 20%,
+    transparent
+  ) !important;
   --color-orange-red-mix: color-mix(in oklch, #cc8449, #c03a47) !important;
-  --color-orange-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #cc8449, #c03a47) 20%, transparent) !important;
+  --color-orange-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #cc8449, #c03a47) 20%,
+    transparent
+  ) !important;
   --color-orange-yellow-mix: color-mix(in oklch, #cc8449, #c29e42) !important;
-  --color-orange-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #cc8449, #c29e42) 20%, transparent) !important;
+  --color-orange-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #cc8449, #c29e42) 20%,
+    transparent
+  ) !important;
   --color-pink-blue-mix: color-mix(in oklch, #d458a3, #5a8fcd) !important;
-  --color-pink-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #d458a3, #5a8fcd) 20%, transparent) !important;
+  --color-pink-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #d458a3, #5a8fcd) 20%,
+    transparent
+  ) !important;
   --color-pink-cyan-mix: color-mix(in oklch, #d458a3, #3cb9c2) !important;
-  --color-pink-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #d458a3, #3cb9c2) 20%, transparent) !important;
+  --color-pink-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #d458a3, #3cb9c2) 20%,
+    transparent
+  ) !important;
   --color-pink-green-mix: color-mix(in oklch, #d458a3, #a1c05c) !important;
-  --color-pink-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #d458a3, #a1c05c) 20%, transparent) !important;
+  --color-pink-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #d458a3, #a1c05c) 20%,
+    transparent
+  ) !important;
   --color-pink-orange-mix: color-mix(in oklch, #d458a3, #cc8449) !important;
-  --color-pink-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #d458a3, #cc8449) 20%, transparent) !important;
+  --color-pink-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #d458a3, #cc8449) 20%,
+    transparent
+  ) !important;
   --color-pink-purple-mix: color-mix(in oklch, #d458a3, #a461c8) !important;
-  --color-pink-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #d458a3, #a461c8) 20%, transparent) !important;
+  --color-pink-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #d458a3, #a461c8) 20%,
+    transparent
+  ) !important;
   --color-pink-red-mix: color-mix(in oklch, #d458a3, #c03a47) !important;
-  --color-pink-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #d458a3, #c03a47) 20%, transparent) !important;
+  --color-pink-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #d458a3, #c03a47) 20%,
+    transparent
+  ) !important;
   --color-pink-yellow-mix: color-mix(in oklch, #d458a3, #c29e42) !important;
-  --color-pink-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #d458a3, #c29e42) 20%, transparent) !important;
+  --color-pink-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #d458a3, #c29e42) 20%,
+    transparent
+  ) !important;
   --color-purple-blue-mix: color-mix(in oklch, #a461c8, #5a8fcd) !important;
-  --color-purple-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #a461c8, #5a8fcd) 20%, transparent) !important;
+  --color-purple-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a461c8, #5a8fcd) 20%,
+    transparent
+  ) !important;
   --color-purple-cyan-mix: color-mix(in oklch, #a461c8, #3cb9c2) !important;
-  --color-purple-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #a461c8, #3cb9c2) 20%, transparent) !important;
+  --color-purple-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a461c8, #3cb9c2) 20%,
+    transparent
+  ) !important;
   --color-purple-green-mix: color-mix(in oklch, #a461c8, #a1c05c) !important;
-  --color-purple-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #a461c8, #a1c05c) 20%, transparent) !important;
+  --color-purple-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a461c8, #a1c05c) 20%,
+    transparent
+  ) !important;
   --color-purple-orange-mix: color-mix(in oklch, #a461c8, #cc8449) !important;
-  --color-purple-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #a461c8, #cc8449) 20%, transparent) !important;
+  --color-purple-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a461c8, #cc8449) 20%,
+    transparent
+  ) !important;
   --color-purple-pink-mix: color-mix(in oklch, #a461c8, #d458a3) !important;
-  --color-purple-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #a461c8, #d458a3) 20%, transparent) !important;
+  --color-purple-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a461c8, #d458a3) 20%,
+    transparent
+  ) !important;
   --color-purple-red-mix: color-mix(in oklch, #a461c8, #c03a47) !important;
-  --color-purple-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #a461c8, #c03a47) 20%, transparent) !important;
+  --color-purple-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a461c8, #c03a47) 20%,
+    transparent
+  ) !important;
   --color-purple-yellow-mix: color-mix(in oklch, #a461c8, #c29e42) !important;
-  --color-purple-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #a461c8, #c29e42) 20%, transparent) !important;
+  --color-purple-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #a461c8, #c29e42) 20%,
+    transparent
+  ) !important;
   --color-red-blue-mix: color-mix(in oklch, #c03a47, #5a8fcd) !important;
-  --color-red-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #c03a47, #5a8fcd) 20%, transparent) !important;
+  --color-red-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c03a47, #5a8fcd) 20%,
+    transparent
+  ) !important;
   --color-red-cyan-mix: color-mix(in oklch, #c03a47, #3cb9c2) !important;
-  --color-red-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #c03a47, #3cb9c2) 20%, transparent) !important;
+  --color-red-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c03a47, #3cb9c2) 20%,
+    transparent
+  ) !important;
   --color-red-green-mix: color-mix(in oklch, #c03a47, #a1c05c) !important;
-  --color-red-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #c03a47, #a1c05c) 20%, transparent) !important;
+  --color-red-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c03a47, #a1c05c) 20%,
+    transparent
+  ) !important;
   --color-red-orange-mix: color-mix(in oklch, #c03a47, #cc8449) !important;
-  --color-red-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #c03a47, #cc8449) 20%, transparent) !important;
+  --color-red-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c03a47, #cc8449) 20%,
+    transparent
+  ) !important;
   --color-red-pink-mix: color-mix(in oklch, #c03a47, #d458a3) !important;
-  --color-red-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #c03a47, #d458a3) 20%, transparent) !important;
+  --color-red-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c03a47, #d458a3) 20%,
+    transparent
+  ) !important;
   --color-red-purple-mix: color-mix(in oklch, #c03a47, #a461c8) !important;
-  --color-red-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #c03a47, #a461c8) 20%, transparent) !important;
+  --color-red-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c03a47, #a461c8) 20%,
+    transparent
+  ) !important;
   --color-red-yellow-mix: color-mix(in oklch, #c03a47, #c29e42) !important;
-  --color-red-yellow-mix-bg: color-mix(in oklch, color-mix(in oklch, #c03a47, #c29e42) 20%, transparent) !important;
+  --color-red-yellow-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c03a47, #c29e42) 20%,
+    transparent
+  ) !important;
   --color-yellow-blue-mix: color-mix(in oklch, #c29e42, #5a8fcd) !important;
-  --color-yellow-blue-mix-bg: color-mix(in oklch, color-mix(in oklch, #c29e42, #5a8fcd) 20%, transparent) !important;
+  --color-yellow-blue-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c29e42, #5a8fcd) 20%,
+    transparent
+  ) !important;
   --color-yellow-cyan-mix: color-mix(in oklch, #c29e42, #3cb9c2) !important;
-  --color-yellow-cyan-mix-bg: color-mix(in oklch, color-mix(in oklch, #c29e42, #3cb9c2) 20%, transparent) !important;
+  --color-yellow-cyan-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c29e42, #3cb9c2) 20%,
+    transparent
+  ) !important;
   --color-yellow-green-mix: color-mix(in oklch, #c29e42, #a1c05c) !important;
-  --color-yellow-green-mix-bg: color-mix(in oklch, color-mix(in oklch, #c29e42, #a1c05c) 20%, transparent) !important;
+  --color-yellow-green-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c29e42, #a1c05c) 20%,
+    transparent
+  ) !important;
   --color-yellow-orange-mix: color-mix(in oklch, #c29e42, #cc8449) !important;
-  --color-yellow-orange-mix-bg: color-mix(in oklch, color-mix(in oklch, #c29e42, #cc8449) 20%, transparent) !important;
+  --color-yellow-orange-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c29e42, #cc8449) 20%,
+    transparent
+  ) !important;
   --color-yellow-pink-mix: color-mix(in oklch, #c29e42, #d458a3) !important;
-  --color-yellow-pink-mix-bg: color-mix(in oklch, color-mix(in oklch, #c29e42, #d458a3) 20%, transparent) !important;
+  --color-yellow-pink-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c29e42, #d458a3) 20%,
+    transparent
+  ) !important;
   --color-yellow-purple-mix: color-mix(in oklch, #c29e42, #a461c8) !important;
-  --color-yellow-purple-mix-bg: color-mix(in oklch, color-mix(in oklch, #c29e42, #a461c8) 20%, transparent) !important;
+  --color-yellow-purple-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c29e42, #a461c8) 20%,
+    transparent
+  ) !important;
   --color-yellow-red-mix: color-mix(in oklch, #c29e42, #c03a47) !important;
-  --color-yellow-red-mix-bg: color-mix(in oklch, color-mix(in oklch, #c29e42, #c03a47) 20%, transparent) !important;
+  --color-yellow-red-mix-bg: color-mix(
+    in oklch,
+    color-mix(in oklch, #c29e42, #c03a47) 20%,
+    transparent
+  ) !important;
   --dimmed: 0.55 !important;
   --expand: 110% !important;
   --flexcyon-accent: #92a871 !important;
@@ -2230,8 +3205,16 @@
   --flexcyon-cyan: #3cb9c2 !important;
   --flexcyon-dataview-horizontal-padding: 8px !important;
   --flexcyon-default-ol-style: decimal !important;
-  --flexcyon-editor-bg-color: color-mix(in oklch, color-mix(in oklch, #14161c, #191d28) 70%, #191d28 30%) !important;
-  --flexcyon-editor-bg-color-2: color-mix(in oklch, #191d28, #24262c) !important;
+  --flexcyon-editor-bg-color: color-mix(
+    in oklch,
+    color-mix(in oklch, #14161c, #191d28) 70%,
+    #191d28 30%
+  ) !important;
+  --flexcyon-editor-bg-color-2: color-mix(
+    in oklch,
+    #191d28,
+    #24262c
+  ) !important;
   --flexcyon-editor-bg-rotation: 0deg !important;
   --flexcyon-editor-bg-width: 15px !important;
   --flexcyon-editor-dot-size: 2.5px !important;
@@ -2239,7 +3222,11 @@
   --flexcyon-editor-writing-indentation: 16px !important;
   --flexcyon-exp-dimmed-nav-size: 13.3623px !important;
   --flexcyon-external-link-color: #5a8fcd !important;
-  --flexcyon-external-link-hover: color-mix(in oklch shorter hue, #5a8fcd, #898c93) !important;
+  --flexcyon-external-link-hover: color-mix(
+    in oklch shorter hue,
+    #5a8fcd,
+    #898c93
+  ) !important;
   --flexcyon-fc-dimmed-items-opacity: 0.89 !important;
   --flexcyon-h1-color: #5a8fcd !important;
   --flexcyon-h2-color: #a461c8 !important;
@@ -2264,7 +3251,11 @@
   --flexcyon-l-spacing: 0px !important;
   --flexcyon-lime-green: #a1c05c !important;
   --flexcyon-link-color: #a461c8 !important;
-  --flexcyon-link-hover: color-mix(in oklch shorter hue, #a461c8, #898c93) !important;
+  --flexcyon-link-hover: color-mix(
+    in oklch shorter hue,
+    #a461c8,
+    #898c93
+  ) !important;
   --flexcyon-link-unresolved-color: #a461c8 !important;
   --flexcyon-media-embed-vertical-margin: 8px !important;
   --flexcyon-meta-container-padding-left: 14px !important;
@@ -2277,14 +3268,30 @@
   --flexcyon-modal-image-size: cover !important;
   --flexcyon-mode-view-header-title-horiz-padding: 12px !important;
   --flexcyon-mode-view-header-title-verti-padding: 4px !important;
-  --flexcyon-new-tab-bg-wrapper: linear-gradient(to right, hsl(102.5 79.05% 68.425%), #5a8fcd, #3cb9c2) !important;
-  --flexcyon-new-tab-font-group: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --flexcyon-new-tab-bg-wrapper: linear-gradient(
+    to right,
+    hsl(102.5 79.05% 68.425%),
+    #5a8fcd,
+    #3cb9c2
+  ) !important;
+  --flexcyon-new-tab-font-group:
+    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
   --flexcyon-omnisearch-body-margin-left: 1.45rem !important;
   --flexcyon-orange: #cc8449 !important;
   --flexcyon-os-detail-padding-l: 12px !important;
   --flexcyon-os-detail-padding-r: 24px !important;
-  --flexcyon-palette-cyan-hover: color-mix(in oklch shorter hue, #3cb9c2, #898c93) !important;
-  --flexcyon-palette-lilac-hover: color-mix(in oklch shorter hue, #a461c8, #898c93) !important;
+  --flexcyon-palette-cyan-hover: color-mix(
+    in oklch shorter hue,
+    #3cb9c2,
+    #898c93
+  ) !important;
+  --flexcyon-palette-lilac-hover: color-mix(
+    in oklch shorter hue,
+    #a461c8,
+    #898c93
+  ) !important;
   --flexcyon-pink: #d458a3 !important;
   --flexcyon-purple-lilac: #a461c8 !important;
   --flexcyon-quote-credit: "bladeacer" !important;
@@ -2350,7 +3357,10 @@
   --oz-fta-folder-panes-file-name-color: #d3d5d3 !important;
   --r-background-color: color-mix(in oklch, #14161c, #191d28) !important;
   --r-heading-color: #d3d5d3 !important;
-  --r-heading-font: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --r-heading-font:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --r-heading-margin: 16px 0px !important;
   --r-heading-text-transform: capitalize !important;
   --r-heading1-size: 1.81803em !important;
@@ -2358,7 +3368,10 @@
   --r-heading3-size: 1.41803em !important;
   --r-heading4-size: 1.21803em !important;
   --r-link-color: hsl(85.5 65.875% 65.45% / 87.5%) !important;
-  --r-main-font: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --r-main-font:
+    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
+    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --r-main-font-size: max-content !important;
   --radius-x1: 8px !important;
   --settings-background: color-mix(in oklch, #14161c, #191d28) !important;
@@ -2389,22 +3402,26 @@ html {
   font-weight: 400;
   src:
     local("Avenir"),
-    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff")
+      format("woff");
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2412,7 +3429,8 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2420,47 +3438,64 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2468,7 +3503,8 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2476,32 +3512,46 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -2509,8 +3559,10 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
@@ -2518,7 +3570,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2527,7 +3580,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2536,8 +3590,10 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
@@ -2545,8 +3601,21 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A,
+    U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346,
+    U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6,
+    U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043,
+    U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C,
+    U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121,
+    U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2,
+    U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319,
+    U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1,
+    U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB,
+    U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE,
+    U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
 }
 
 @font-face {
@@ -2554,8 +3623,32 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4,
+    U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3,
+    U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF,
+    U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF,
+    U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0,
+    U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F,
+    U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315,
+    U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382,
+    U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6,
+    U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7,
+    U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444,
+    U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0,
+    U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA,
+    U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB,
+    U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513,
+    U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D,
+    U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC,
+    U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC,
+    U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887,
+    U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B,
+    U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C,
+    U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8,
+    U+1FB00-1FBFF;
 }
 
 @font-face {
@@ -2563,8 +3656,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
@@ -2572,8 +3669,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -2581,8 +3682,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -2591,23 +3696,28 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff") format("woff");
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
+      format("woff");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2615,32 +3725,46 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Monaco";
@@ -3120,9 +4244,24 @@ body {
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgb(237, 235, 229);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -3135,7 +4274,18 @@ body {
     color: rgb(8, 8, 8);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: rgb(237, 235, 229);
     border: 0px rgb(8, 8, 8);
     border-top-left-radius: 2px;
@@ -3150,7 +4300,8 @@ body {
   }
 
   hr {
-    border-color: rgb(128, 128, 128) oklch(0.916763 0.00824887 none) oklch(0.916763 0.00824887 none);
+    border-color: rgb(128, 128, 128) oklch(0.916763 0.00824887 none)
+      oklch(0.916763 0.00824887 none);
     border-style: solid solid none none;
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -3170,7 +4321,15 @@ body {
   }
 
   a.internal.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: oklch(0.636083 0.0886418 200.983 / 0.25);
     display: flex;
@@ -3259,7 +4418,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: rgb(8, 8, 8);
-    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+    font-family:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+      "Source Code Pro", monospace;
     padding: 0px;
   }
 
@@ -3484,11 +4646,20 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: rgb(8, 8, 8);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card {
     border: 0px rgb(8, 8, 8);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -3500,20 +4671,71 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(8, 8, 8);
     font-weight: 400;
     background-color: rgb(237, 235, 229);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: rgb(8, 8, 8);
   }
 
@@ -3656,12 +4878,14 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(250, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(250, 247, 239) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(250, 247, 239);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(250, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(250, 247, 239) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(250, 247, 239);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3676,17 +4900,20 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(250, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(250, 247, 239) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(250, 247, 239);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(250, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(250, 247, 239) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(250, 247, 239);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(250, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(250, 247, 239) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(250, 247, 239);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3699,7 +4926,8 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(250, 247, 239) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(250, 247, 239) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(250, 247, 239);
   }
 
@@ -4359,7 +5587,10 @@ body {
     background-color: oklch(0.965356 0.0102416 none);
     box-shadow: none;
     color: rgb(8, 8, 8);
-    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+    font-family:
+      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+      "Source Code Pro", monospace;
     font-size: 14px;
     border: 0px rgb(8, 8, 8);
     border-top-left-radius: 2px;
@@ -4611,7 +5842,10 @@ body {
     transition-timing-function: ease;
   }
 
-  .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+  .explorer
+    .explorer-content
+    li:has(> .folder-outer:not(.open))
+    > .folder-container {
     color: oklch(0.29593 0.00924516 265.685 / 0.8);
     cursor: default;
     font-family:
@@ -6088,9 +7322,24 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: oklch(0.25047 0.0168382 269.118);
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
@@ -6103,7 +7352,18 @@ html[saved-theme="dark"] {
       color: rgb(211, 213, 211);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:has(
+        ~ .result-card.focus:not(
+            :has(~ .result-card:hover, ~ .result-card:focus)
+          ),
+        ~ .result-card:focus,
+        ~ .result-card:hover
+      ) {
       background-color: oklch(0.25047 0.0168382 269.118);
       border: 0px rgb(211, 213, 211);
       border-top-left-radius: 2px;
@@ -6118,7 +7378,8 @@ html[saved-theme="dark"] {
     }
 
     hr {
-      border-color: rgb(128, 128, 128) oklch(0.25047 0.0168382 269.118) oklch(0.25047 0.0168382 269.118);
+      border-color: rgb(128, 128, 128) oklch(0.25047 0.0168382 269.118)
+        oklch(0.25047 0.0168382 269.118);
       border-style: solid solid none none;
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -6138,7 +7399,15 @@ html[saved-theme="dark"] {
     }
 
     a.internal.tag-link,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card
+      > ul
+      > li
+      > .match-tag {
       align-items: normal;
       background-color: oklch(0.722355 0.107178 202.06 / 0.25);
       display: flex;
@@ -6227,7 +7496,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       color: rgb(211, 213, 211);
-      font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+      font-family:
+        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+        "Source Code Pro", monospace;
       padding: 0px;
     }
 
@@ -6440,7 +7712,10 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search > .search-container > .search-space > .search-layout.display-results {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout.display-results {
       border: 1px solid oklch(0.25047 0.0168382 269.118);
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
@@ -6452,11 +7727,20 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container {
       color: rgb(211, 213, 211);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card {
       border: 0px rgb(211, 213, 211);
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
@@ -6468,20 +7752,73 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(
+        :has(~ .result-card:hover, ~ .result-card:focus)
+      ) {
       color: rgb(211, 213, 211);
       font-weight: 400;
       background-color: oklch(0.25047 0.0168382 269.118);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-description {
       color: rgb(211, 213, 211);
     }
 
@@ -6624,12 +7961,14 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(25, 29, 40) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(25, 29, 40) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(25, 29, 40);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(25, 29, 40) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(25, 29, 40) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(25, 29, 40);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6644,17 +7983,20 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(25, 29, 40) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(25, 29, 40) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(25, 29, 40);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(25, 29, 40) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(25, 29, 40) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(25, 29, 40);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(25, 29, 40) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(25, 29, 40) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(25, 29, 40);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6667,7 +8009,8 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(25, 29, 40) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(25, 29, 40) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(25, 29, 40);
     }
 
@@ -7327,7 +8670,10 @@ html[saved-theme="dark"] {
       background-color: rgb(20, 22, 28);
       box-shadow: none;
       color: rgb(211, 213, 211);
-      font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+      font-family:
+        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
+        "Source Code Pro", monospace;
       font-size: 14px;
       border: 0px rgb(211, 213, 211);
       border-top-left-radius: 2px;
@@ -7579,7 +8925,10 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+    .explorer
+      .explorer-content
+      li:has(> .folder-outer:not(.open))
+      > .folder-container {
       color: oklch(0.756226 0.0113969 265.685 / 0.8);
       cursor: default;
       font-family:
@@ -7600,7 +8949,10 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
     }
 
-    .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    .explorer
+      .explorer-content
+      li:has(> .folder-outer.open)
+      > .folder-container {
       color: oklch(0.756226 0.0113969 265.685 / 0.8);
       cursor: default;
       font-family:
@@ -8693,7 +10045,10 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }
