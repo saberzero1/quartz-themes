@@ -4,8 +4,9 @@ const DEFAULT_CHECKBOX_ICON =
   "url(\"data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E\")";
 
 export function generateCheckboxIconCSS(): string {
+  // Only style checked/custom checkboxes — unchecked (data-task=" ") keeps native appearance
   const base =
-    `li.task-list-item[data-task] input[type="checkbox"] {\n` +
+    `li.task-list-item.is-checked input[type="checkbox"] {\n` +
     `  appearance: none;\n` +
     `  -webkit-appearance: none;\n` +
     `  width: 1em;\n` +
@@ -31,8 +32,7 @@ export function generateCheckboxIconCSS(): string {
     )
     .join("\n\n");
 
-  // Reset strikethrough for all custom checkboxes — only x/X should be struck through.
-  // In Quartz, all non-empty data-task items get is-checked, but only x/X are actual completions.
+  // Only x/X get strikethrough — other custom checkboxes (!, ?, * etc.) keep normal text
   const strikethrough =
     `li.task-list-item.is-checked {\n` +
     `  text-decoration: none;\n` +
@@ -44,14 +44,11 @@ export function generateCheckboxIconCSS(): string {
     `  color: var(--text-faint, var(--gray, #b8b8b8));\n` +
     `}`;
 
-  // Ensure checkbox icon color inherits from the li wrapper (theme CSS sets color on li[data-task="X"]).
-  // The input inherits color from the li, and background-color: currentColor in the base rule
-  // uses that inherited color for the mask-image icon.
   const colorInherit =
-    `li.task-list-item[data-task] {\n` +
+    `li.task-list-item.is-checked {\n` +
     `  color: inherit;\n` +
     `}\n\n` +
-    `li.task-list-item[data-task] input[type="checkbox"] {\n` +
+    `li.task-list-item.is-checked input[type="checkbox"] {\n` +
     `  color: inherit;\n` +
     `}`;
 

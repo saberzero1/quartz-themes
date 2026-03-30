@@ -20,11 +20,11 @@ function mergeLonghandProperties(css, syntax = "scss") {
   }
 }
 
-async function formatWithPrettier(content, parser) {
+async function formatWithPrettier(content, parser, printWidth = 80) {
   try {
     return await prettier.format(content, {
       parser,
-      printWidth: 80,
+      printWidth,
       tabWidth: 2,
       useTabs: false,
       semi: true,
@@ -57,7 +57,7 @@ export default async function processCSS({
   }
 
   const [formattedScss, formattedCss] = await Promise.all([
-    formatWithPrettier(resultScss, "scss"),
+    formatWithPrettier(resultScss, "scss", 9999),
     formatWithPrettier(resultPublishCss, "css"),
   ]);
 
