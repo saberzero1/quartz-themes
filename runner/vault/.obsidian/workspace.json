@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theme-checkboxes/lower.md",
+                "file": "general.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "lower"
+              "title": "general"
             }
           }
         ]
@@ -148,27 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theme-checkboxes/lower.md",
+                "file": "general.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of lower"
-            }
-          },
-          {
-            "id": "61528d570f29d0f7",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "Outline of general"
             }
           }
         ],
@@ -208,13 +194,10 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-checkboxes/special.md",
+    "theme-callouts/underwater.md",
     "theme-checkboxes/upper.md",
     "theme-checkboxes/lower.md",
-    "general.md",
-    "headings.md",
-    "index.md",
-    "theme-callouts/underwater.md",
+    "theme-checkboxes/special.md",
     "theme-embeds/tooltips.md",
     "theme-embeds/note-embeds.md",
     "theme-embeds/frontmatter.md",
@@ -224,6 +207,8 @@
     "tables.md",
     "integrations.md",
     "callouts.md",
+    "headings.md",
+    "general.md",
     "theme-callouts/its-theme.ttrpg-wotc.md",
     "theme-callouts/its-theme.ttrpg-pathfinder-remastered.md",
     "theme-callouts/its-theme.ttrpg-pathfinder.md",
@@ -234,6 +219,7 @@
     "theme-callouts/its-theme.notion.md",
     "theme-callouts/its-theme.nord.md",
     "theme-callouts/its-theme.minimalist.md",
+    "theme-callouts/its-theme.its-dark.md",
     "theme-callouts",
     "theme-checkboxes",
     "theme-extras/its-theme/callouts/Image.png",

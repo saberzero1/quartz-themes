@@ -1417,7 +1417,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="check
 html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
   color: rgb(78, 91, 111);
   content: "\\ec03";
-  transform: scale(-1, 1);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
@@ -7382,5 +7381,10 @@ body blockquote.callout {
     }
   }
 }*/
+
+/* Fix: mirror < checkbox icon (lost during extraction) */
+li.task-list-item[data-task="<"]::before {
+  transform: scale(-1, 1);
+}
 `,
 };

@@ -238,7 +238,10 @@ function escapeTemplateLiteral(value) {
   return value
     .replace(/\\/g, "\\\\")
     .replace(/`/g, "\\`")
-    .replace(/\$\{/g, "\\${");
+    .replace(/\$\{/g, "\\${")
+    .replace(/[\uE000-\uF8FF]/g, (char) => {
+      return "\\\\" + char.charCodeAt(0).toString(16);
+    });
 }
 
 function toTemplateLiteral(value) {
