@@ -3348,7 +3348,7 @@ body body.theme-dark .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-dark .page-header .page-title {
-  color: rgb(12, 21, 32);
+  color: rgb(17, 26, 37);
   font-family:
     "Segoe UI",
     Arial,
@@ -3369,13 +3369,13 @@ body body.theme-dark .page-header .page-title {
     "Segoe UI Symbol",
     sans-serif;
   text-shadow:
-    rgb(127, 1, 254) 0px 0px 2px,
-    rgb(127, 1, 254) 0px 0px 2px,
-    rgb(255, 255, 255) 0px 0px 3px,
-    rgb(255, 255, 255) 0px 0px 3px,
-    rgb(255, 255, 255) 0px 0px 3px,
-    rgb(255, 255, 255) 0px 0px 3px,
-    rgb(255, 255, 255) 0px 0px 3px;
+    rgb(130, 6, 254) 0px 0px 2px,
+    rgb(130, 6, 254) 0px 0px 2px,
+    rgb(252, 250, 255) 0px 0px 3px,
+    rgb(252, 250, 255) 0px 0px 3px,
+    rgb(252, 250, 255) 0px 0px 3px,
+    rgb(252, 250, 255) 0px 0px 3px,
+    rgb(252, 250, 255) 0px 0px 3px;
 }
 body body.theme-dark .math-block {
   background-color: rgba(0, 0, 0, 0);

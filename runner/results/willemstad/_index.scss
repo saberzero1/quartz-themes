@@ -32,9 +32,7 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: oklch(
-    from oklch(40.14% 0.0638 202.51deg) l c h / 10%
-  ) !important;
+  --background-modifier-active-hover: oklch(from oklch(40.14% 0.0638 202.51deg) l c h / 10%) !important;
   --background-modifier-border: oklch(0.8 0 0) !important;
   --background-modifier-border-focus: oklch(0.6 0 0) !important;
   --background-modifier-border-hover: oklch(0.7 0 0) !important;
@@ -79,9 +77,7 @@
   --bases-header-padding-start: 2px !important;
   --bases-table-cell-background-active: oklch(1 0 0) !important;
   --bases-table-cell-background-disabled: oklch(0.98 0 0) !important;
-  --bases-table-cell-background-selected: oklch(
-    from oklch(40.14% 0.0638 202.51deg) l c h / 10%
-  ) !important;
+  --bases-table-cell-background-selected: oklch(from oklch(40.14% 0.0638 202.51deg) l c h / 10%) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px oklch(0.6 0 0) !important;
@@ -96,11 +92,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: oklch(0.3 0 0) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -113,11 +105,7 @@
   --blockquote-border-color: oklch(0.93 0 0) !important;
   --blockquote-border-thickness: 4px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, oklch(1 0 0) 65%, transparent)
-    linear-gradient(
-      oklch(1 0 0),
-      color-mix(in srgb, oklch(1 0 0) 65%, transparent)
-    ) !important;
+  --blur-background: color-mix(in srgb, oklch(1 0 0) 65%, transparent) linear-gradient(oklch(1 0 0), color-mix(in srgb, oklch(1 0 0) 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -257,8 +245,7 @@
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px oklch(0.8 0 0), inset 0 0 0 1px oklch(0.8 0 0) !important;
+  --embed-block-shadow-hover: 0 0 0 1px oklch(0.8 0 0), inset 0 0 0 1px oklch(0.8 0 0) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid oklch(70.7% 0.1737 155.3deg) !important;
@@ -270,9 +257,7 @@
   --file-header-background: oklch(1 0 0) !important;
   --file-header-background-focused: oklch(1 0 0) !important;
   --file-header-border: 0px !important;
-  --file-header-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+  --file-header-font: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -285,39 +270,27 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+  --font-interface: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope" !important;
   --font-monospace: "??", "DM Mono", "DM Mono" !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "DM Mono" !important;
   --font-normal: 400 !important;
-  --font-print:
-    "??", "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Arial" !important;
+  --font-print: "??", "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "??", "Manrope",
-    "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope",
-    "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
+  --font-text: "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
@@ -469,9 +442,7 @@
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
   --link-unresolved-color: oklch(40.14% 0.0638 202.51deg) !important;
-  --link-unresolved-decoration-color: oklch(
-    from oklch(70.7% 0.1737 155.3deg) l c h / 30%
-  ) !important;
+  --link-unresolved-decoration-color: oklch(from oklch(70.7% 0.1737 155.3deg) l c h / 30%) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
   --link-unresolved-opacity: 0.7 !important;
@@ -497,11 +468,7 @@
   --menu-corner-shape: round !important;
   --menu-padding: 4px !important;
   --menu-radius: 6px !important;
-  --menu-scroll-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.1) 48px
-  ) !important;
+  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
   --menu-shadow: none !important;
   --metadata-background: transparent !important;
   --metadata-border-color: oklch(0.8 0 0) !important;
@@ -517,9 +484,7 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+  --metadata-input-font: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -528,9 +493,7 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+  --metadata-label-font: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: oklch(0.3 0 0) !important;
   --metadata-label-text-color-hover: oklch(0.3 0 0) !important;
@@ -577,9 +540,7 @@
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(0, 0, 0, 0.067) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --nav-item-background-selected: oklch(
-    from oklch(40.14% 0.0638 202.51deg) l c h / 15%
-  ) !important;
+  --nav-item-background-selected: oklch(from oklch(40.14% 0.0638 202.51deg) l c h / 15%) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: oklch(0.3 0 0) !important;
@@ -605,12 +566,10 @@
   --page-margin: 1px auto -8px !important;
   --pdf-background: oklch(1 0 0) !important;
   --pdf-page-background: oklch(1 0 0) !important;
-  --pdf-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
   --pdf-sidebar-background: oklch(1 0 0) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
@@ -647,22 +606,10 @@
   --radius-m: 6px !important;
   --radius-s: 3px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, oklch(1 0 0) 65%, transparent)
-    linear-gradient(
-      oklch(1 0 0),
-      color-mix(in srgb, oklch(1 0 0) 65%, transparent)
-    ) !important;
+  --raised-background: color-mix(in srgb, oklch(1 0 0) 65%, transparent) linear-gradient(oklch(1 0 0), color-mix(in srgb, oklch(1 0 0) 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(white, white) border-box !important;
-  --raised-mask-background: linear-gradient(
-      to bottom left,
-      white,
-      transparent,
-      white
-    )
-    border-box no-repeat !important;
+  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(to bottom left, white, transparent, white) border-box no-repeat !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
@@ -768,11 +715,7 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: oklch(0.95 0 0) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    oklch(0.95 0 0),
-    transparent
-  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, oklch(0.95 0 0), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
@@ -781,12 +724,8 @@
   --tab-text-color-active: oklch(0.3 0 0) !important;
   --tab-text-color-focused: oklch(0.3 0 0) !important;
   --tab-text-color-focused-active: oklch(0.3 0 0) !important;
-  --tab-text-color-focused-active-current: oklch(
-    40.14% 0.0638 202.51deg
-  ) !important;
-  --tab-text-color-focused-highlighted: oklch(
-    40.14% 0.0638 202.51deg
-  ) !important;
+  --tab-text-color-focused-active-current: oklch(40.14% 0.0638 202.51deg) !important;
+  --tab-text-color-focused-highlighted: oklch(40.14% 0.0638 202.51deg) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: oklch(0.8 0 0) !important;
@@ -800,9 +739,7 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: oklch(
-    70.7% 0.1737 155.3deg
-  ) !important;
+  --table-drag-handle-background-active: oklch(70.7% 0.1737 155.3deg) !important;
   --table-drag-handle-color: oklch(0.6 0 0) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -817,27 +754,17 @@
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: oklch(
-    from oklch(40.14% 0.0638 202.51deg) l c h / 10%
-  ) !important;
+  --table-selection: oklch(from oklch(40.14% 0.0638 202.51deg) l c h / 10%) !important;
   --table-selection-blend-mode: normal !important;
   --table-selection-border-color: oklch(70.7% 0.1737 155.3deg) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: oklch(
-    from oklch(70.7% 0.1737 155.3deg) l c h / 10%
-  ) !important;
-  --tag-background-hover: oklch(
-    from oklch(70.7% 0.1737 155.3deg) l c h / 20%
-  ) !important;
-  --tag-border-color: oklch(
-    from oklch(70.7% 0.1737 155.3deg) l c h / 15%
-  ) !important;
-  --tag-border-color-hover: oklch(
-    from oklch(70.7% 0.1737 155.3deg) l c h / 15%
-  ) !important;
+  --tag-background: oklch(from oklch(70.7% 0.1737 155.3deg) l c h / 10%) !important;
+  --tag-background-hover: oklch(from oklch(70.7% 0.1737 155.3deg) l c h / 20%) !important;
+  --tag-border-color: oklch(from oklch(70.7% 0.1737 155.3deg) l c h / 15%) !important;
+  --tag-border-color-hover: oklch(from oklch(70.7% 0.1737 155.3deg) l c h / 15%) !important;
   --tag-border-width: 0px !important;
   --tag-color: oklch(40.14% 0.0638 202.51deg) !important;
   --tag-color-hover: oklch(40.14% 0.0638 202.51deg) !important;
@@ -902,17 +829,11 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
+  --raised-shadow: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
   --shadow-edges: 0 0 transparent !important;
-  --shadow-xs:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
+  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
   --default-font: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
-  --text-error-hover: oklch(
-    from #e93147 calc(l - 0.1) c calc(h + 4)
-  ) !important;
+  --text-error-hover: oklch(from #e93147 calc(l - 0.1) c calc(h + 4)) !important;
   --table-header-background-hover: rgba(0, 0, 0, 0.067) !important;
   --color-base-80: oklch(0.05 0 0) !important;
   --color-base-90: oklch(0.02 0 0) !important;
@@ -1099,44 +1020,24 @@
   --ch-color-base-l-l-90: 0.02 !important;
   --ch-color-base-l-l-95: 0.01 !important;
   --checkbox-margin-inline-end: 0.25em !important;
-  --col-background-activeline: oklch(
-    from oklch(0.5 0 0) l c h / calc(alpha - calc(1 - 0.25))
-  ) !important;
+  --col-background-activeline: oklch(from oklch(0.5 0 0) l c h / calc(alpha - calc(1 - 0.25))) !important;
   --col-base-alpha-alh: 0.25 !important;
   --col-base-bg-alh: oklch(0.5 0 0) !important;
   --col-frontmatter-atom: oklch(40.14% 0.0638 202.51deg) !important;
   --col-frontmatter-default: oklch(82.77% 0.1667 79.6deg) !important;
   --col-frontmatter-meta: oklch(70.7% 0.1737 155.3deg) !important;
   --col-frontmatter-number: oklch(82.77% 0.1667 79.6deg) !important;
-  --col-h1: oklch(
-    from oklch(40.14% 0.0638 202.51deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h1: oklch(from oklch(40.14% 0.0638 202.51deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h1-bg: oklch(40.14% 0.0638 202.51deg) !important;
-  --col-h2: oklch(
-    from oklch(70.7% 0.1737 155.3deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h2: oklch(from oklch(70.7% 0.1737 155.3deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h2-bg: oklch(70.7% 0.1737 155.3deg) !important;
-  --col-h3: oklch(
-    from oklch(82.77% 0.1667 79.6deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h3: oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h3-bg: oklch(82.77% 0.1667 79.6deg) !important;
-  --col-h4: oklch(
-    from oklch(40.14% 0.0638 202.51deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h4: oklch(from oklch(40.14% 0.0638 202.51deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h4-bg: oklch(40.14% 0.0638 202.51deg) !important;
-  --col-h5: oklch(
-    from oklch(70.7% 0.1737 155.3deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h5: oklch(from oklch(70.7% 0.1737 155.3deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h5-bg: oklch(70.7% 0.1737 155.3deg) !important;
-  --col-h6: oklch(
-    from oklch(82.77% 0.1667 79.6deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h6: oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h6-bg: oklch(82.77% 0.1667 79.6deg) !important;
   --col-highlight-0: hsl(46deg 100% 50%) !important;
   --col-highlight-0-org: hsl(60deg 100% 50%) !important;
@@ -1159,17 +1060,7 @@
   --color-table-head: oklch(0.95 0 0) !important;
   --color-table-head-hover: rgba(0, 0, 0, 0.067) !important;
   --color-table-odd: oklch(1 0 0) !important;
-  --cssc-banner-gradient-mask: linear-gradient(
-    to bottom,
-    black 0%,
-    black 50%,
-    oklch(0% 0 0deg / 80%) 75%,
-    oklch(0% 0 0deg / 50%) 80%,
-    oklch(0% 0 0deg / 30%) 85%,
-    oklch(0% 0 0deg / 15%) 90%,
-    oklch(0% 0 0deg / 8%) 95%,
-    transparent 100%
-  ) !important;
+  --cssc-banner-gradient-mask: linear-gradient(to bottom, black 0%, black 50%, oklch(0% 0 0deg / 80%) 75%, oklch(0% 0 0deg / 50%) 80%, oklch(0% 0 0deg / 30%) 85%, oklch(0% 0 0deg / 15%) 90%, oklch(0% 0 0deg / 8%) 95%, transparent 100%) !important;
   --cssc-banner-height: 200px !important;
   --cssc-banner-residual: 0px !important;
   --cssc-cornell-align-left: max(125px, 25%) !important;
@@ -1180,8 +1071,7 @@
   --cssc-cornell-text-align-last: right !important;
   --cssc-latex-font-reading: "MathJax Main", "MJXZERO", "MJXTEX" !important;
   --cssc-latex-font-size: 14pt !important;
-  --cssc-latex-font-source:
-    "DM Mono", "MathJax Main", "MJXZERO", "MJXTEX" !important;
+  --cssc-latex-font-source: "DM Mono", "MathJax Main", "MJXZERO", "MJXTEX" !important;
   --cssc-latex-text-indent: 0em !important;
   --distant-opacity: 0.2 !important;
   --elements-padding: 4px !important;
@@ -1407,18 +1297,14 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: oklch(
-    from oklch(40.14% 0.0638 202.51deg) l c h / 10%
-  ) !important;
+  --background-modifier-active-hover: oklch(from oklch(40.14% 0.0638 202.51deg) l c h / 10%) !important;
   --background-modifier-border: oklch(0.3 0 0) !important;
   --background-modifier-border-focus: oklch(0.48 0 0) !important;
   --background-modifier-border-hover: oklch(0.38 0 0) !important;
   --background-modifier-box-shadow: none !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
   --background-modifier-error: #fb464c !important;
-  --background-modifier-error-hover: oklch(
-    from #fb464c calc(l - 0.1) c calc(h + 4)
-  ) !important;
+  --background-modifier-error-hover: oklch(from #fb464c calc(l - 0.1) c calc(h + 4)) !important;
   --background-modifier-error-rgb: 251, 70, 76 !important;
   --background-modifier-form-field: oklch(0.15 0 0) !important;
   --background-modifier-form-field-hover: oklch(0.15 0 0) !important;
@@ -1471,11 +1357,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: oklch(0.68 0 0) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -1488,11 +1370,7 @@
   --blockquote-border-color: oklch(0.21 0 0) !important;
   --blockquote-border-thickness: 4px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, oklch(0.19 0 0) 65%, transparent)
-    linear-gradient(
-      oklch(0.19 0 0),
-      color-mix(in srgb, oklch(0.19 0 0) 65%, transparent)
-    ) !important;
+  --blur-background: color-mix(in srgb, oklch(0.19 0 0) 65%, transparent) linear-gradient(oklch(0.19 0 0), color-mix(in srgb, oklch(0.19 0 0) 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -1632,8 +1510,7 @@
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px oklch(0.3 0 0), inset 0 0 0 1px oklch(0.3 0 0) !important;
+  --embed-block-shadow-hover: 0 0 0 1px oklch(0.3 0 0), inset 0 0 0 1px oklch(0.3 0 0) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid oklch(40.14% 0.0638 202.51deg) !important;
@@ -1645,9 +1522,7 @@
   --file-header-background: oklch(0.13 0 0) !important;
   --file-header-background-focused: oklch(0.13 0 0) !important;
   --file-header-border: 0px !important;
-  --file-header-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+  --file-header-font: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -1660,39 +1535,27 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+  --font-interface: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "Manrope", "Inter 4.1", "DM Sans" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid: "Inter 4.1", "DM Sans", "Manrope" !important;
   --font-monospace: "??", "DM Mono", "DM Mono" !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "DM Mono" !important;
   --font-normal: 400 !important;
-  --font-print:
-    "??", "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Arial" !important;
+  --font-print: "??", "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "??", "Manrope",
-    "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope",
-    "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
+  --font-text: "??", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
@@ -1870,11 +1733,7 @@
   --menu-corner-shape: round !important;
   --menu-padding: 4px !important;
   --menu-radius: 6px !important;
-  --menu-scroll-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.1) 48px
-  ) !important;
+  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
   --menu-shadow: none !important;
   --metadata-background: transparent !important;
   --metadata-border-color: oklch(0.3 0 0) !important;
@@ -1890,9 +1749,7 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+  --metadata-input-font: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -1901,9 +1758,7 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans",
-    "Inter 4.1", "Manrope" !important;
+  --metadata-label-font: "??", "Manrope", "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: oklch(0.68 0 0) !important;
   --metadata-label-text-color-hover: oklch(0.68 0 0) !important;
@@ -2016,15 +1871,9 @@
   --radius-m: 6px !important;
   --radius-s: 3px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, oklch(0.19 0 0) 65%, transparent)
-    linear-gradient(
-      oklch(0.19 0 0),
-      color-mix(in srgb, oklch(0.19 0 0) 65%, transparent)
-    ) !important;
+  --raised-background: color-mix(in srgb, oklch(0.19 0 0) 65%, transparent) linear-gradient(oklch(0.19 0 0), color-mix(in srgb, oklch(0.19 0 0) 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(white, white) border-box !important;
+  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
   --raised-mask-background: transparent !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
@@ -2131,11 +1980,7 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: oklch(0.19 0 0) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    oklch(0.19 0 0),
-    transparent
-  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, oklch(0.19 0 0), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
@@ -2144,9 +1989,7 @@
   --tab-text-color-active: oklch(0.68 0 0) !important;
   --tab-text-color-focused: oklch(0.68 0 0) !important;
   --tab-text-color-focused-active: oklch(0.68 0 0) !important;
-  --tab-text-color-focused-active-current: oklch(
-    70.7% 0.1737 155.3deg
-  ) !important;
+  --tab-text-color-focused-active-current: oklch(70.7% 0.1737 155.3deg) !important;
   --tab-text-color-focused-highlighted: oklch(70.7% 0.1737 155.3deg) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
@@ -2161,9 +2004,7 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: oklch(
-    40.14% 0.0638 202.51deg
-  ) !important;
+  --table-drag-handle-background-active: oklch(40.14% 0.0638 202.51deg) !important;
   --table-drag-handle-color: oklch(0.48 0 0) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -2254,9 +2095,7 @@
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --default-font: "Inter 4.1", "DM Sans", "Inter 4.1", "Manrope" !important;
-  --text-error-hover: oklch(
-    from #fb464c calc(l - 0.1) c calc(h + 4)
-  ) !important;
+  --text-error-hover: oklch(from #fb464c calc(l - 0.1) c calc(h + 4)) !important;
   --table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
   --color-base-80: oklch(0.92 0 0) !important;
   --color-base-90: oklch(0.95 0 0) !important;
@@ -2506,44 +2345,24 @@
   --ch-color-base-l-l-90: 2% !important;
   --ch-color-base-l-l-95: 1% !important;
   --checkbox-margin-inline-end: 0.25em !important;
-  --col-background-activeline: oklch(
-    from oklch(0.58 0 0) l c h / calc(alpha - calc(1 - 0.25))
-  ) !important;
+  --col-background-activeline: oklch(from oklch(0.58 0 0) l c h / calc(alpha - calc(1 - 0.25))) !important;
   --col-base-alpha-alh: 0.25 !important;
   --col-base-bg-alh: oklch(0.58 0 0) !important;
   --col-frontmatter-atom: oklch(40.14% 0.0638 202.51deg) !important;
   --col-frontmatter-default: oklch(82.77% 0.1667 79.6deg) !important;
   --col-frontmatter-meta: oklch(70.7% 0.1737 155.3deg) !important;
   --col-frontmatter-number: oklch(82.77% 0.1667 79.6deg) !important;
-  --col-h1: oklch(
-    from oklch(40.14% 0.0638 202.51deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h1: oklch(from oklch(40.14% 0.0638 202.51deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h1-bg: oklch(40.14% 0.0638 202.51deg) !important;
-  --col-h2: oklch(
-    from oklch(70.7% 0.1737 155.3deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h2: oklch(from oklch(70.7% 0.1737 155.3deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h2-bg: oklch(70.7% 0.1737 155.3deg) !important;
-  --col-h3: oklch(
-    from oklch(82.77% 0.1667 79.6deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h3: oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h3-bg: oklch(82.77% 0.1667 79.6deg) !important;
-  --col-h4: oklch(
-    from oklch(40.14% 0.0638 202.51deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h4: oklch(from oklch(40.14% 0.0638 202.51deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h4-bg: oklch(40.14% 0.0638 202.51deg) !important;
-  --col-h5: oklch(
-    from oklch(70.7% 0.1737 155.3deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h5: oklch(from oklch(70.7% 0.1737 155.3deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h5-bg: oklch(70.7% 0.1737 155.3deg) !important;
-  --col-h6: oklch(
-    from oklch(82.77% 0.1667 79.6deg)
-      clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h
-  ) !important;
+  --col-h6: oklch(from oklch(82.77% 0.1667 79.6deg) clamp(0.3, (l / 0.7 - 1) * -infinity, 0.975) 0.03 h) !important;
   --col-h6-bg: oklch(82.77% 0.1667 79.6deg) !important;
   --col-highlight-0: hsl(46deg 100% 50%) !important;
   --col-highlight-0-org: hsl(60deg 100% 50%) !important;
@@ -2569,17 +2388,7 @@
   --color-table-head: oklch(0.19 0 0) !important;
   --color-table-head-hover: rgba(255, 255, 255, 0.067) !important;
   --color-table-odd: oklch(0.13 0 0) !important;
-  --cssc-banner-gradient-mask: linear-gradient(
-    to bottom,
-    black 0%,
-    black 50%,
-    oklch(0% 0 0deg / 80%) 75%,
-    oklch(0% 0 0deg / 50%) 80%,
-    oklch(0% 0 0deg / 30%) 85%,
-    oklch(0% 0 0deg / 15%) 90%,
-    oklch(0% 0 0deg / 8%) 95%,
-    transparent 100%
-  ) !important;
+  --cssc-banner-gradient-mask: linear-gradient(to bottom, black 0%, black 50%, oklch(0% 0 0deg / 80%) 75%, oklch(0% 0 0deg / 50%) 80%, oklch(0% 0 0deg / 30%) 85%, oklch(0% 0 0deg / 15%) 90%, oklch(0% 0 0deg / 8%) 95%, transparent 100%) !important;
   --cssc-banner-height: 200px !important;
   --cssc-banner-residual: 0px !important;
   --cssc-cornell-align-left: max(125px, 25%) !important;
@@ -2590,8 +2399,7 @@
   --cssc-cornell-text-align-last: right !important;
   --cssc-latex-font-reading: "MathJax Main", "MJXZERO", "MJXTEX" !important;
   --cssc-latex-font-size: 14pt !important;
-  --cssc-latex-font-source:
-    "DM Mono", "MathJax Main", "MJXZERO", "MJXTEX" !important;
+  --cssc-latex-font-source: "DM Mono", "MathJax Main", "MJXZERO", "MJXTEX" !important;
   --cssc-latex-text-indent: 0em !important;
   --distant-opacity: 0.2 !important;
   --elements-padding: 4px !important;
@@ -2745,102 +2553,71 @@ html {
   font-family: "Crimson Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MMJs-dtC4yJtEbtM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MMJs-dtC4yJtEbtM.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Crimson Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MMZs-dtC4yJtEbtM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MMZs-dtC4yJtEbtM.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Crimson Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MP5s-dtC4yJtE.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MP5s-dtC4yJtE.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthSQBK6PYK3EXw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthSQBK6PYK3EXw.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthqQBK6PYK0.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/dmmono/v14/aFTU7PB1QTsUX8KYthqQBK6PYK0.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxRR232RmYJp8I5zzw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxRR232RmYJp8I5zzw.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxRSW32RmYJp8I5.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxRSW32RmYJp8I5.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_P-bnTfc7AGraJwA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_P-bnTfc7AGraJwA.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_G-bnTfc7AGraJwA.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_G-bnTfc7AGraJwA.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2848,62 +2625,43 @@ html {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_B-bnTfc7AGraJwA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_B-bnTfc7AGraJwA.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_N-bnTfc7AGraJwA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_N-bnTfc7AGraJwA.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_M-bnTfc7AGraJwA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_M-bnTfc7AGraJwA.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_C-bnTfc7AGrY.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_C-bnTfc7AGrY.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "remixicon";
   src: url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.eot?t=1730118419915");
   src:
-    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.eot?t=1730118419915#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.woff2?t=1730118419915")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.woff?t=1730118419915")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.ttf?t=1730118419915")
-      format("truetype"),
-    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.svg?t=1730118419915#remixicon")
-      format("svg");
+    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.eot?t=1730118419915#iefix") format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.woff2?t=1730118419915") format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.woff?t=1730118419915") format("woff"),
+    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.ttf?t=1730118419915") format("truetype"),
+    url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.svg?t=1730118419915#remixicon") format("svg");
   font-display: swap;
 }
 
@@ -12035,10 +11793,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
@@ -12046,8 +11802,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -12056,8 +11811,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -12066,10 +11820,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
@@ -12077,21 +11829,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A,
-    U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346,
-    U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6,
-    U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043,
-    U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C,
-    U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121,
-    U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2,
-    U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319,
-    U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1,
-    U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB,
-    U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE,
-    U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
 }
 
 @font-face {
@@ -12099,32 +11838,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4,
-    U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3,
-    U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF,
-    U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF,
-    U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0,
-    U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F,
-    U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315,
-    U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382,
-    U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6,
-    U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7,
-    U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444,
-    U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0,
-    U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA,
-    U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB,
-    U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513,
-    U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D,
-    U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC,
-    U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC,
-    U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887,
-    U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B,
-    U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C,
-    U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8,
-    U+1FB00-1FBFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
 }
 
 @font-face {
@@ -12132,12 +11847,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
@@ -12145,12 +11856,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -12158,30 +11865,23 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -12189,8 +11889,7 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -12198,46 +11897,32 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -12246,28 +11931,23 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
-      format("woff");
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -12275,46 +11955,32 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Monaco";
@@ -12329,18 +11995,15 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -12348,8 +12011,7 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -12357,46 +12019,32 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 body {
@@ -12444,10 +12092,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0.4014 0.0638 202.51) none 0px;
     text-decoration: underline;
@@ -12475,10 +12120,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0.4014 0.0638 202.51) none 0px;
     text-decoration: underline;
@@ -12505,10 +12147,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0.4014 0.0638 202.51) none 0px;
     text-decoration: underline oklch(0.707 0.1737 155.3 / 0.3);
@@ -12552,9 +12191,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0.3 0 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -12582,10 +12219,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 600;
     outline: oklch(0 0 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -12613,10 +12247,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 600;
     outline: oklch(0 0 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -12644,10 +12275,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -12675,10 +12303,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -12713,10 +12338,7 @@ body {
       rgb(255, 195, 0) -3px 2px 0px 0px,
       rgb(255, 195, 0) 3px -2px 0px 0px,
       rgb(255, 195, 0) -3px -2px 0px 0px;
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: rgb(0, 0, 0) none 0px;
     text-decoration: rgb(0, 0, 0);
@@ -12752,10 +12374,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
     text-decoration: line-through;
@@ -12775,24 +12394,9 @@ body {
     animation-play-state: running;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(0, 0, 0, 0.067);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -12805,18 +12409,7 @@ body {
     color: oklch(0 0 0);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: rgba(0, 0, 0, 0.067);
     border: 0px oklch(0 0 0);
     border-top-left-radius: 3px;
@@ -12851,21 +12444,11 @@ body {
   }
 
   a.internal.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: oklch(0.707 0.1737 155.3 / 0.1);
     display: flex;
-    font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     margin-inline-start: 0px;
     border: 0px solid oklch(0.707 0.1737 155.3 / 0.15);
@@ -13022,10 +12605,7 @@ body {
 
   blockquote {
     background-color: oklch(0.98 0 0);
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-style: normal;
     padding-bottom: 4px;
     padding-top: 4px;
@@ -13051,9 +12631,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: oklch(0 0 0);
-    font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   }
 
   .search > .search-container > .search-space {
@@ -13095,10 +12673,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -13131,20 +12706,11 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: oklch(0 0 0);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
     border: 0px oklch(0 0 0);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13156,71 +12722,20 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: oklch(0 0 0);
     font-weight: 400;
     background-color: rgba(0, 0, 0, 0.067);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: oklch(0 0 0);
   }
 
@@ -13263,10 +12778,7 @@ body {
   h2.page-title,
   h2.page-title a {
     color: oklch(0 0 0);
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     text-shadow: none;
   }
 
@@ -13275,14 +12787,12 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: oklch(1 0 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: oklch(1 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: oklch(1 0 0);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: oklch(1 0 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: oklch(1 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: oklch(1 0 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -13297,20 +12807,17 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: oklch(1 0 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: oklch(1 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: oklch(1 0 0);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: oklch(1 0 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: oklch(1 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: oklch(1 0 0);
   }
 
   ::-webkit-scrollbar-track {
-    background: oklch(1 0 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: oklch(1 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: oklch(1 0 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -13323,8 +12830,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: oklch(1 0 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: oklch(1 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: oklch(1 0 0);
   }
 
@@ -13584,10 +13090,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-collapse: separate;
     color: oklch(0 0 0);
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     table-layout: auto;
     width: 194.844px;
     border: 0px rgb(128, 128, 128);
@@ -13724,10 +13227,7 @@ body {
 
   figcaption {
     color: oklch(0 0 0);
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-size: 16px;
     font-style: normal;
     text-align: start;
@@ -13816,10 +13316,7 @@ body {
   .metadata {
     background-color: oklch(0.98 0 0);
     color: oklch(0.3 0 0);
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     border: 0px solid oklch(0.8 0 0);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -13832,10 +13329,7 @@ body {
   .metadata-properties {
     background-color: rgba(0, 0, 0, 0);
     color: oklch(0.3 0 0);
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     border-color: oklch(0.3 0 0);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -13878,9 +13372,7 @@ body {
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
     color: oklch(0.3 0 0);
-    font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     border: 0px solid oklch(0.3 0 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -14117,17 +13609,11 @@ body {
     text-align: center;
     white-space-collapse: collapse;
     text-wrap-mode: wrap;
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   }
 
   .katex-display > .katex > .katex-html {
-    font-family:
-      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-      "DM Sans", "Inter 4.1", Manrope;
+    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   }
 
   .katex > .katex-html {
@@ -14175,15 +13661,10 @@ body {
     transition-timing-function: ease;
   }
 
-  .explorer
-    .explorer-content
-    li:has(> .folder-outer:not(.open))
-    > .folder-container {
+  .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
     color: oklch(0.3 0 0);
     cursor: default;
-    font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     text-decoration: rgb(34, 34, 34);
   }
@@ -14191,9 +13672,7 @@ body {
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
     color: oklch(0.3 0 0);
     cursor: default;
-    font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     text-decoration: rgb(34, 34, 34);
   }
@@ -14213,9 +13692,7 @@ body {
   footer {
     background-color: oklch(0.95 0 0);
     color: oklch(0.3 0 0);
-    font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     border: 1px solid oklch(0.8 0 0);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -14229,9 +13706,7 @@ body {
 
   .recent-notes > h3 {
     color: oklch(0 0 0);
-    font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
   }
 
@@ -14252,9 +13727,7 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .meta {
     color: oklch(0.3 0 0);
-    font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   }
 
   ul.section-ul {
@@ -14283,9 +13756,7 @@ body {
 
   li.section-li > .section .meta {
     color: oklch(0.3 0 0);
-    font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   }
 
   .darkmode {
@@ -14318,9 +13789,7 @@ body {
 
   .breadcrumb-element p {
     color: oklch(0.6 0 0);
-    font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   }
 
   .navigation-progress {
@@ -14329,9 +13798,7 @@ body {
 
   .page-header h2.page-title {
     color: oklch(0 0 0);
-    font-family:
-      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-      Manrope;
+    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   }
 
   .katex-display {
@@ -15126,10 +14593,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.707 0.1737 155.3) none 0px;
       text-decoration: underline;
@@ -15157,10 +14621,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.707 0.1737 155.3) none 0px;
       text-decoration: underline;
@@ -15187,10 +14648,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.707 0.1737 155.3) none 0px;
       text-decoration: underline rgba(138, 92, 245, 0.3);
@@ -15234,9 +14692,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-        Manrope;
+      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.68 0 0) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -15264,10 +14720,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 600;
       outline: oklch(0.98 0 0) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -15295,10 +14748,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 600;
       outline: oklch(0.98 0 0) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -15326,10 +14776,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.98 0 0) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -15357,10 +14804,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.98 0 0) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -15395,10 +14839,7 @@ html[saved-theme="dark"] {
         rgb(255, 195, 0) -3px 2px 0px 0px,
         rgb(255, 195, 0) 3px -2px 0px 0px,
         rgb(255, 195, 0) -3px -2px 0px 0px;
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: rgb(0, 0, 0) none 0px;
       text-decoration: rgb(0, 0, 0);
@@ -15434,10 +14875,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.98 0 0) none 0px;
       text-decoration: line-through;
@@ -15457,24 +14895,9 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: rgba(255, 255, 255, 0.067);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -15487,18 +14910,7 @@ html[saved-theme="dark"] {
       color: oklch(0.98 0 0);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:has(
-        ~ .result-card.focus:not(
-            :has(~ .result-card:hover, ~ .result-card:focus)
-          ),
-        ~ .result-card:focus,
-        ~ .result-card:hover
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
       background-color: rgba(255, 255, 255, 0.067);
       border: 0px oklch(0.98 0 0);
       border-top-left-radius: 3px;
@@ -15533,21 +14945,11 @@ html[saved-theme="dark"] {
     }
 
     a.internal.tag-link,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card
-      > ul
-      > li
-      > .match-tag {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: rgba(138, 92, 245, 0.1);
       display: flex;
-      font-family:
-        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-        Manrope;
+      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       margin-inline-start: 0px;
       border: 0px solid rgba(138, 92, 245, 0.15);
@@ -15704,10 +15106,7 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: oklch(0.17 0 0);
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-style: normal;
       padding-bottom: 4px;
       padding-top: 4px;
@@ -15733,9 +15132,7 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       color: oklch(0.98 0 0);
-      font-family:
-        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-        Manrope;
+      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     }
 
     .search > .search-container > .search-space {
@@ -15777,10 +15174,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.98 0 0) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -15801,10 +15195,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout.display-results {
+    .search > .search-container > .search-space > .search-layout.display-results {
       border: 0px solid oklch(0.38 0 0);
       border-top-left-radius: 9px;
       border-top-right-radius: 9px;
@@ -15816,20 +15207,11 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container {
+    .search > .search-container > .search-space > .search-layout > .results-container {
       color: oklch(0.98 0 0);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
       border: 0px oklch(0.98 0 0);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -15841,73 +15223,20 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(
-        :has(~ .result-card:hover, ~ .result-card:focus)
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: oklch(0.98 0 0);
       font-weight: 400;
       background-color: rgba(255, 255, 255, 0.067);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-description {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
       color: oklch(0.98 0 0);
     }
 
@@ -15950,10 +15279,7 @@ html[saved-theme="dark"] {
     h2.page-title,
     h2.page-title a {
       color: oklch(0.98 0 0);
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       text-shadow: none;
     }
 
@@ -15962,14 +15288,12 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: oklch(0.13 0 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: oklch(0.13 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: oklch(0.13 0 0);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: oklch(0.13 0 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: oklch(0.13 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: oklch(0.13 0 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -15984,20 +15308,17 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: oklch(0.13 0 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: oklch(0.13 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: oklch(0.13 0 0);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: oklch(0.13 0 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: oklch(0.13 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: oklch(0.13 0 0);
     }
 
     ::-webkit-scrollbar-track {
-      background: oklch(0.13 0 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: oklch(0.13 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: oklch(0.13 0 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -16010,8 +15331,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: oklch(0.13 0 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: oklch(0.13 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: oklch(0.13 0 0);
     }
 
@@ -16271,10 +15591,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       border-collapse: separate;
       color: oklch(0.98 0 0);
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       table-layout: auto;
       width: 194.844px;
       border: 0px rgb(128, 128, 128);
@@ -16411,10 +15728,7 @@ html[saved-theme="dark"] {
 
     figcaption {
       color: oklch(0.98 0 0);
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-size: 16px;
       font-style: normal;
       text-align: start;
@@ -16503,10 +15817,7 @@ html[saved-theme="dark"] {
     .metadata {
       background-color: oklch(0.17 0 0);
       color: oklch(0.68 0 0);
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       border: 0px solid oklch(0.3 0 0);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -16519,10 +15830,7 @@ html[saved-theme="dark"] {
     .metadata-properties {
       background-color: rgba(0, 0, 0, 0);
       color: oklch(0.68 0 0);
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       border-color: oklch(0.68 0 0);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -16565,9 +15873,7 @@ html[saved-theme="dark"] {
     input[type="text"] {
       background-color: rgba(0, 0, 0, 0);
       color: oklch(0.68 0 0);
-      font-family:
-        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-        Manrope;
+      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       border: 0px solid oklch(0.68 0 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -16804,17 +16110,11 @@ html[saved-theme="dark"] {
       text-align: center;
       white-space-collapse: collapse;
       text-wrap-mode: wrap;
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     }
 
     .katex-display > .katex > .katex-html {
-      font-family:
-        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
-        "DM Sans", "Inter 4.1", Manrope;
+      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     }
 
     .katex > .katex-html {
@@ -16862,28 +16162,18 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .explorer
-      .explorer-content
-      li:has(> .folder-outer:not(.open))
-      > .folder-container {
+    .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
       color: oklch(0.68 0 0);
       cursor: default;
-      font-family:
-        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-        Manrope;
+      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       text-decoration: rgb(218, 218, 218);
     }
 
-    .explorer
-      .explorer-content
-      li:has(> .folder-outer.open)
-      > .folder-container {
+    .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
       color: oklch(0.68 0 0);
       cursor: default;
-      font-family:
-        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-        Manrope;
+      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       text-decoration: rgb(218, 218, 218);
     }
@@ -16903,9 +16193,7 @@ html[saved-theme="dark"] {
     footer {
       background-color: oklch(0.19 0 0);
       color: oklch(0.68 0 0);
-      font-family:
-        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-        Manrope;
+      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       border: 1px solid oklch(0.3 0 0);
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
@@ -16919,9 +16207,7 @@ html[saved-theme="dark"] {
 
     .recent-notes > h3 {
       color: oklch(0.98 0 0);
-      font-family:
-        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-        Manrope;
+      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
     }
 
@@ -16942,9 +16228,7 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .meta {
       color: oklch(0.68 0 0);
-      font-family:
-        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-        Manrope;
+      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     }
 
     ul.section-ul {
@@ -16973,9 +16257,7 @@ html[saved-theme="dark"] {
 
     li.section-li > .section .meta {
       color: oklch(0.68 0 0);
-      font-family:
-        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-        Manrope;
+      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     }
 
     .darkmode {
@@ -17008,9 +16290,7 @@ html[saved-theme="dark"] {
 
     .breadcrumb-element p {
       color: oklch(0.48 0 0);
-      font-family:
-        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-        Manrope;
+      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     }
 
     .navigation-progress {
@@ -17019,9 +16299,7 @@ html[saved-theme="dark"] {
 
     .page-header h2.page-title {
       color: oklch(0.98 0 0);
-      font-family:
-        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
-        Manrope;
+      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
     }
 
     .katex-display {
@@ -17877,10 +17155,7 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

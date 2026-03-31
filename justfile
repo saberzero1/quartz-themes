@@ -108,7 +108,7 @@ generate-callout-manifest:
   node ./extensions/generate-callout-manifest.mjs
 
 [group('testing')]
-update-quartz themeName="its-theme":
+update-quartz themeName="underwater":
   git submodule update --init --remote runner/quartz
   cd runner/quartz && npm i -D
   cp ./quartz.config.yaml ./runner/quartz/quartz.config.yaml

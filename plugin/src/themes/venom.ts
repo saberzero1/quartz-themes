@@ -1176,9 +1176,9 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
-  color: rgb(12, 21, 32);
+  color: rgb(17, 26, 37);
   font-family: "??", "??", "Segoe UI", Arial, Tahoma, Helvetica, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-shadow: rgb(127, 1, 254) 0px 0px 2px, rgb(127, 1, 254) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 3px, rgb(255, 255, 255) 0px 0px 3px, rgb(255, 255, 255) 0px 0px 3px, rgb(255, 255, 255) 0px 0px 3px, rgb(255, 255, 255) 0px 0px 3px;
+  text-shadow: rgb(130, 6, 254) 0px 0px 2px, rgb(130, 6, 254) 0px 0px 2px, rgb(252, 250, 255) 0px 0px 3px, rgb(252, 250, 255) 0px 0px 3px, rgb(252, 250, 255) 0px 0px 3px, rgb(252, 250, 255) 0px 0px 3px, rgb(252, 250, 255) 0px 0px 3px;
 }
 
 html body abbr {
