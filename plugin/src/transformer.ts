@@ -6,7 +6,11 @@
  * :root.dark / :root.light CSS class toggles.
  */
 
-import type { QuartzTransformerPlugin } from "@quartz-community/types";
+import type {
+  QuartzTransformerPlugin,
+  JSResource,
+  CSSResource,
+} from "@quartz-community/types";
 import type { ThemeOptions } from "./types";
 import { composeCSS } from "./composer";
 
@@ -40,7 +44,33 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
 ) => {
   const options: ThemeOptions = { ...defaultOptions, ...userOptions };
 
-  const resolvedCSS = composeCSS(options);
+  const { css: resolvedCSS, effectiveMode } = composeCSS(options);
+
+  const isSingleMode = effectiveMode !== "both";
+
+  const cssResources: CSSResource[] = [];
+  const jsResources: JSResource[] = [];
+
+  if (resolvedCSS) {
+    cssResources.push({ content: resolvedCSS, inline: true });
+  }
+
+  if (isSingleMode) {
+    cssResources.push({
+      content:
+        `button.darkmode { display: none !important; }\n` +
+        `:root { color-scheme: ${effectiveMode}; }\n`,
+      inline: true,
+    });
+
+    jsResources.push({
+      loadTime: "beforeDOMReady",
+      contentType: "inline",
+      script:
+        `document.documentElement.setAttribute("saved-theme", "${effectiveMode}");\n` +
+        `localStorage.setItem("theme", "${effectiveMode}");`,
+    });
+  }
 
   return {
     name: "QuartzTheme",
@@ -48,11 +78,7 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
       return src;
     },
     externalResources() {
-      return {
-        css: resolvedCSS ? [{ content: resolvedCSS, inline: true }] : [],
-        js: [],
-        additionalHead: [],
-      };
+      return { css: cssResources, js: jsResources, additionalHead: [] };
     },
   };
 };
