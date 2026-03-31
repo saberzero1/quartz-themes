@@ -3689,3 +3689,8 @@ body blockquote.callout {
     }
   }
 }*/
+
+/* Fix: mirror < checkbox icon (lost during extraction) */
+li.task-list-item[data-task="<"]::before {
+  transform: scale(-1, 1);
+}
