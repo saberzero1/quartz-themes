@@ -75,7 +75,7 @@ export const theme: ThemeData = {
   --box-border-m: 3px solid #0e0f15 !important;
   --box-border-s: 1px solid #0e0f15 !important;
   --bttn: #2e4d3c !important;
-  --bullet: "" !important;
+  --bullet: "\\e802" !important;
   --bullet-font: "its" !important;
   --button-background: #2e4d3c !important;
   --button-background-hover: #587770 !important;
@@ -208,7 +208,7 @@ export const theme: ThemeData = {
   --file-header-left-color: #2e4d3c !important;
   --file-header-parent-font-weight: 600 !important;
   --file-header-right-color: #0e0f15 !important;
-  --file-icon: "" !important;
+  --file-icon: "\\e800" !important;
   --file-icon-color: #aacac9 !important;
   --file-icon-margin: 6px !important;
   --file-text-color: #dcdedd !important;
@@ -216,7 +216,7 @@ export const theme: ThemeData = {
   --flair-color: #dcdedd !important;
   --folder: #548b67 !important;
   --folder-font: "its" !important;
-  --folder-icon: "" !important;
+  --folder-icon: "\\e801" !important;
   --folder-icon-color: #548b67 !important;
   --folder-icon-open-color: #9a5f3b !important;
   --folder-open: #9a5f3b !important;
@@ -393,7 +393,7 @@ export const theme: ThemeData = {
   --hr-icon-color: #3eb281 !important;
   --hr-icon-font: "Material Icons Sharp" !important;
   --hr-icon-padding-x: 4px !important;
-  --hr-icon-symbol: "" !important;
+  --hr-icon-symbol: "\\e88c" !important;
   --hr-text-offset: 12px !important;
   --hr-width: auto !important;
   --hvr: rgba(66, 157, 104, 0.2) !important;
@@ -542,7 +542,7 @@ export const theme: ThemeData = {
   --metadata-sidebar-label-font-size: 14px !important;
   --metadata-title-align: center !important;
   --metadata-title-color: #aacac9 !important;
-  --metadata-title-icon: "" !important;
+  --metadata-title-icon: "\\e805" !important;
   --metadata-title-icon-font: "its" !important;
   --metadata-title-icon-padding: 5px !important;
   --metadata-title-size: 16px !important;
@@ -1322,7 +1322,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   color: rgb(62, 69, 82);
-  content: "";
+  content: "\\ec02";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
@@ -1345,12 +1345,12 @@ html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
   color: rgb(194, 42, 42);
-  content: "";
+  content: "\\ec08";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
   color: rgb(253, 175, 0);
-  content: "";
+  content: "\\ec05";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
@@ -1373,7 +1373,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkb
 
 html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
   color: rgb(230, 129, 63);
-  content: "";
+  content: "\\e900";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
@@ -1384,12 +1384,12 @@ html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
   color: rgb(84, 139, 103);
-  content: "";
+  content: "\\ec17";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
   color: rgb(136, 94, 233);
-  content: "";
+  content: "\\ec32";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
@@ -1412,12 +1412,13 @@ html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="chec
 
 html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
   color: rgb(248, 114, 181);
-  content: "";
+  content: "\\ec06";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
   color: rgb(78, 91, 111);
-  content: "";
+  content: "\\ec03";
+  transform: scale(-1, 1);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
@@ -1428,7 +1429,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
   color: rgb(220, 222, 221);
-  content: "";
+  content: "\\ec03";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
@@ -1439,7 +1440,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
   color: rgb(207, 67, 67);
-  content: "";
+  content: "\\ec33";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
@@ -1510,37 +1511,37 @@ html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
   color: rgb(79, 165, 79);
-  content: "";
+  content: "\\ec20";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
   color: rgb(230, 129, 63);
-  content: "";
+  content: "\\ec15";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
   color: rgb(136, 94, 233);
-  content: "";
+  content: "\\ec10";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
   color: rgb(149, 233, 238);
-  content: "";
+  content: "\\ec29";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
   color: rgb(207, 67, 67);
-  content: "";
+  content: "\\ec12";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
   color: rgb(82, 139, 212);
-  content: "";
+  content: "\\ec25";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
   color: rgb(92, 118, 153);
-  content: "";
+  content: "\\ec04";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
@@ -1551,17 +1552,17 @@ html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
   color: rgb(82, 139, 212);
-  content: "";
+  content: "\\ec18";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
   color: rgb(133, 91, 65);
-  content: "";
+  content: "\\e81e";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
   color: rgb(92, 118, 153);
-  content: "";
+  content: "\\ec28";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
@@ -1584,17 +1585,17 @@ html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
   color: rgb(248, 114, 181);
-  content: "";
+  content: "\\ec30";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
   color: rgb(231, 231, 171);
-  content: "";
+  content: "\\ec09";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
   color: rgb(82, 139, 212);
-  content: "";
+  content: "\\ec16";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
@@ -1629,7 +1630,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
   color: rgb(133, 91, 65);
-  content: "";
+  content: "\\ec21";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
@@ -1652,27 +1653,27 @@ html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
   color: rgb(133, 91, 65);
-  content: "";
+  content: "\\ec14";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
   color: rgb(230, 129, 63);
-  content: "";
+  content: "\\ec24";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
   color: rgb(186, 64, 64);
-  content: "";
+  content: "\\e805";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
   color: rgb(170, 179, 202);
-  content: "";
+  content: "\\ec19";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
   color: rgb(79, 165, 79);
-  content: "";
+  content: "\\ec11";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
@@ -1683,22 +1684,22 @@ html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
   color: rgb(170, 179, 202);
-  content: "";
+  content: "\\ec13";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
   color: rgb(249, 190, 123);
-  content: "";
+  content: "\\ec22";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
   color: rgb(170, 179, 202);
-  content: "";
+  content: "\\ec07";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
   color: rgb(62, 69, 82);
-  content: "";
+  content: "\\ec31";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
@@ -1709,12 +1710,12 @@ html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
   color: rgb(170, 179, 202);
-  content: "";
+  content: "\\ec27";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
   color: rgb(170, 179, 202);
-  content: "";
+  content: "\\ec26";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
@@ -1749,7 +1750,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
   color: rgb(79, 165, 79);
-  content: "";
+  content: "\\e813";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
@@ -1760,7 +1761,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
   color: rgb(97, 239, 201);
-  content: "";
+  content: "\\ec01";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
@@ -2383,7 +2384,7 @@ html[saved-theme="dark"] body sup {
   --box-border-m: 3px solid #cbe2d5 !important;
   --box-border-s: 1px solid #cbe2d5 !important;
   --bttn: #0e934c !important;
-  --bullet: "" !important;
+  --bullet: "\\e802" !important;
   --bullet-font: "its" !important;
   --button-background: #0e934c !important;
   --button-background-hover: #91c1ad !important;
@@ -2516,7 +2517,7 @@ html[saved-theme="dark"] body sup {
   --file-header-left-color: #5a8d71 !important;
   --file-header-parent-font-weight: 600 !important;
   --file-header-right-color: #dfefe6 !important;
-  --file-icon: "" !important;
+  --file-icon: "\\e800" !important;
   --file-icon-color: #91c1ad !important;
   --file-icon-margin: 6px !important;
   --file-text-color: #697580 !important;
@@ -2524,7 +2525,7 @@ html[saved-theme="dark"] body sup {
   --flair-color: #697580 !important;
   --folder: #64c9a3 !important;
   --folder-font: "its" !important;
-  --folder-icon: "" !important;
+  --folder-icon: "\\e801" !important;
   --folder-icon-color: #64c9a3 !important;
   --folder-icon-open-color: #cca04c !important;
   --folder-open: #cca04c !important;
@@ -2701,7 +2702,7 @@ html[saved-theme="dark"] body sup {
   --hr-icon-color: #0e934c !important;
   --hr-icon-font: "Material Icons Sharp" !important;
   --hr-icon-padding-x: 4px !important;
-  --hr-icon-symbol: "" !important;
+  --hr-icon-symbol: "\\e88c" !important;
   --hr-text-offset: 12px !important;
   --hr-width: auto !important;
   --hvr: rgba(66, 157, 104, 0.2) !important;
@@ -2851,7 +2852,7 @@ html[saved-theme="dark"] body sup {
   --metadata-sidebar-label-font-size: 14px !important;
   --metadata-title-align: center !important;
   --metadata-title-color: #52ad67 !important;
-  --metadata-title-icon: "" !important;
+  --metadata-title-icon: "\\e805" !important;
   --metadata-title-icon-font: "its" !important;
   --metadata-title-icon-padding: 5px !important;
   --metadata-title-size: 16px !important;
@@ -3629,7 +3630,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   color: rgb(203, 212, 235);
-  content: "";
+  content: "\\ec02";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
@@ -3652,12 +3653,12 @@ html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
   color: rgb(219, 1, 1);
-  content: "";
+  content: "\\ec08";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
   color: rgb(253, 175, 0);
-  content: "";
+  content: "\\ec05";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
@@ -3680,7 +3681,7 @@ html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="check
 
 html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
   color: rgb(251, 146, 76);
-  content: "";
+  content: "\\e900";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
@@ -3691,12 +3692,12 @@ html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
   color: rgb(121, 199, 142);
-  content: "";
+  content: "\\ec17";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
   color: rgb(182, 118, 255);
-  content: "";
+  content: "\\ec32";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
@@ -3719,12 +3720,13 @@ html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="che
 
 html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
   color: rgb(248, 114, 181);
-  content: "";
+  content: "\\ec06";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
   color: rgb(78, 91, 111);
-  content: "";
+  content: "\\ec03";
+  transform: scale(-1, 1);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
@@ -3735,7 +3737,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
   color: rgb(105, 117, 128);
-  content: "";
+  content: "\\ec03";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
@@ -3746,7 +3748,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
   color: rgb(214, 108, 108);
-  content: "";
+  content: "\\ec33";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
@@ -3817,37 +3819,37 @@ html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
   color: rgb(79, 165, 79);
-  content: "";
+  content: "\\ec20";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
   color: rgb(251, 146, 76);
-  content: "";
+  content: "\\ec15";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
   color: rgb(182, 118, 255);
-  content: "";
+  content: "\\ec10";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
   color: rgb(149, 217, 238);
-  content: "";
+  content: "\\ec29";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
   color: rgb(214, 108, 108);
-  content: "";
+  content: "\\ec12";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
   color: rgb(82, 139, 212);
-  content: "";
+  content: "\\ec25";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
   color: rgb(168, 177, 189);
-  content: "";
+  content: "\\ec04";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
@@ -3858,17 +3860,17 @@ html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
   color: rgb(82, 139, 212);
-  content: "";
+  content: "\\ec18";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
   color: rgb(161, 106, 73);
-  content: "";
+  content: "\\e81e";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
   color: rgb(168, 177, 189);
-  content: "";
+  content: "\\ec28";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
@@ -3891,17 +3893,17 @@ html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
   color: rgb(248, 114, 181);
-  content: "";
+  content: "\\ec30";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
   color: rgb(202, 199, 0);
-  content: "";
+  content: "\\ec09";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
   color: rgb(82, 139, 212);
-  content: "";
+  content: "\\ec16";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
@@ -3936,7 +3938,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
   color: rgb(161, 106, 73);
-  content: "";
+  content: "\\ec21";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
@@ -3959,27 +3961,27 @@ html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
   color: rgb(161, 106, 73);
-  content: "";
+  content: "\\ec14";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
   color: rgb(251, 146, 76);
-  content: "";
+  content: "\\ec24";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
   color: rgb(186, 64, 64);
-  content: "";
+  content: "\\e805";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
   color: rgb(159, 186, 223);
-  content: "";
+  content: "\\ec19";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
   color: rgb(79, 165, 79);
-  content: "";
+  content: "\\ec11";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
@@ -3990,22 +3992,22 @@ html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
   color: rgb(159, 186, 223);
-  content: "";
+  content: "\\ec13";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
   color: rgb(249, 190, 123);
-  content: "";
+  content: "\\ec22";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
   color: rgb(159, 186, 223);
-  content: "";
+  content: "\\ec07";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
   color: rgb(203, 212, 235);
-  content: "";
+  content: "\\ec31";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
@@ -4016,12 +4018,12 @@ html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
   color: rgb(159, 186, 223);
-  content: "";
+  content: "\\ec27";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
   color: rgb(159, 186, 223);
-  content: "";
+  content: "\\ec26";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
@@ -4056,7 +4058,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
   color: rgb(79, 165, 79);
-  content: "";
+  content: "\\e813";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
@@ -4067,7 +4069,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
   color: rgb(53, 190, 137);
-  content: "";
+  content: "\\ec01";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
