@@ -91,7 +91,11 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: #697580 !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent 24px,
+    black 24px
+  ) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: #c20a0a35 !important;
   --bases-table-row-border-width: 1px !important;
@@ -104,7 +108,8 @@
   --blockquote-border-color: #f6e3cd !important;
   --blockquote-border-thickness: 7px !important;
   --blockquote-font-style: "its-Bookerly", "Bookerly", Inter !important;
-  --blur-background: color-mix(in srgb, #fff9f0 65%, transparent) linear-gradient(#fff9f0, color-mix(in srgb, #fff9f0 65%, transparent)) !important;
+  --blur-background: color-mix(in srgb, #fff9f0 65%, transparent)
+    linear-gradient(#fff9f0, color-mix(in srgb, #fff9f0 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -279,11 +284,15 @@
   --font-medium: 500 !important;
   --font-mermaid: "its-Bookerly", "Bookerly", Inter !important;
   --font-monospace: "its-Fira Code", "Fira Code", Inter !important;
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "its-Bookerly", "Bookerly", Inter, "??", "??", "Arial" !important;
+  --font-print:
+    "its-Bookerly", "Bookerly", Inter, "??", "??", "Arial" !important;
   --font-print-override: "its-Bookerly", "Bookerly", Inter !important;
   --font-semibold: 600 !important;
   --font-small: 0.95em !important;
@@ -467,7 +476,11 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 0 !important;
-  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow: 2px 2px 0 #fbb4577e !important;
   --metadata-background: transparent !important;
   --metadata-border-color: #fbb4577e !important;
@@ -565,10 +578,12 @@
   --page-margin: 1px auto -8px !important;
   --pdf-background: #fff9f0 !important;
   --pdf-page-background: #fff9f0 !important;
-  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
   --pdf-sidebar-background: #fff9f0 !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
@@ -605,10 +620,19 @@
   --radius-m: 0 !important;
   --radius-s: 0 !important;
   --radius-xl: 0 !important;
-  --raised-background: color-mix(in srgb, #fff9f0 65%, transparent) linear-gradient(#fff9f0, color-mix(in srgb, #fff9f0 65%, transparent)) !important;
+  --raised-background: color-mix(in srgb, #fff9f0 65%, transparent)
+    linear-gradient(#fff9f0, color-mix(in srgb, #fff9f0 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
-  --raised-mask-background: linear-gradient(to bottom left, white, transparent, white) border-box no-repeat !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(
+      to bottom left,
+      white,
+      transparent,
+      white
+    )
+    border-box no-repeat !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
@@ -714,11 +738,16 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #fff6e4 !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #fff6e4, transparent) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #fff6e4,
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 3px 3px 0 #fbb4577e !important;
   --tab-switcher-preview-radius: 0 !important;
   --tab-switcher-preview-shadow: 2px 2px 0 #fbb4577e !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px #a35158, 5px 5px 0 #fbb4577e !important;
+  --tab-switcher-preview-shadow-active:
+    0 0 0 2px #a35158, 5px 5px 0 #fbb4577e !important;
   --tab-text-color: #e2b7a3 !important;
   --tab-text-color-active: #412f2f !important;
   --tab-text-color-focused: #e2b7a3 !important;
@@ -828,9 +857,13 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
+  --raised-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
   --shadow-edges: 0 0 transparent !important;
-  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
+  --shadow-xs:
+    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
+    0 0 transparent !important;
   --h1-color: #c14343 !important;
   --h2-color: sandybrown !important;
   --h3-color: #a11111 !important;
@@ -1017,61 +1050,109 @@
   --graph-lines: #c20a0a35 !important;
   --graph-node-hover-fill: #a35158 !important;
   --graph-node-hover-outline: #e5ebee !important;
-  --h1-border-left-color: linear-gradient(to left, #c93c3c, transparent) !important;
+  --h1-border-left-color: linear-gradient(
+    to left,
+    #c93c3c,
+    transparent
+  ) !important;
   --h1-border-line-color: #c93c3c !important;
   --h1-border-line-height: 4px !important;
   --h1-border-line-width: 100% !important;
-  --h1-border-right-color: linear-gradient(to right, #c93c3c, transparent) !important;
+  --h1-border-right-color: linear-gradient(
+    to right,
+    #c93c3c,
+    transparent
+  ) !important;
   --h1-border-width: 0 !important;
   --h1-padding: 0 !important;
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
-  --h2-border-left-color: linear-gradient(to left, sandybrown, transparent) !important;
+  --h2-border-left-color: linear-gradient(
+    to left,
+    sandybrown,
+    transparent
+  ) !important;
   --h2-border-line-color: sandybrown !important;
   --h2-border-line-height: 4px !important;
   --h2-border-line-width: 85% !important;
-  --h2-border-right-color: linear-gradient(to right, sandybrown, transparent) !important;
+  --h2-border-right-color: linear-gradient(
+    to right,
+    sandybrown,
+    transparent
+  ) !important;
   --h2-border-width: 0 !important;
   --h2-padding: 0 !important;
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
-  --h3-border-left-color: linear-gradient(to left, #a11111, transparent) !important;
+  --h3-border-left-color: linear-gradient(
+    to left,
+    #a11111,
+    transparent
+  ) !important;
   --h3-border-line-color: #a11111 !important;
   --h3-border-line-height: 4px !important;
   --h3-border-line-width: 65% !important;
-  --h3-border-right-color: linear-gradient(to right, #a11111, transparent) !important;
+  --h3-border-right-color: linear-gradient(
+    to right,
+    #a11111,
+    transparent
+  ) !important;
   --h3-border-width: 0 !important;
   --h3-padding: 0 !important;
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
-  --h4-border-left-color: linear-gradient(to left, #fbb4577e, transparent) !important;
+  --h4-border-left-color: linear-gradient(
+    to left,
+    #fbb4577e,
+    transparent
+  ) !important;
   --h4-border-line-color: #fbb4577e !important;
   --h4-border-line-height: 4px !important;
   --h4-border-line-width: 44% !important;
-  --h4-border-right-color: linear-gradient(to right, #fbb4577e, transparent) !important;
+  --h4-border-right-color: linear-gradient(
+    to right,
+    #fbb4577e,
+    transparent
+  ) !important;
   --h4-border-width: 0 !important;
   --h4-padding: 0 !important;
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
-  --h5-border-left-color: linear-gradient(to left, #fbb4577e, transparent) !important;
+  --h5-border-left-color: linear-gradient(
+    to left,
+    #fbb4577e,
+    transparent
+  ) !important;
   --h5-border-line-color: #fbb4577e !important;
   --h5-border-line-height: 4px !important;
   --h5-border-line-width: 25% !important;
-  --h5-border-right-color: linear-gradient(to right, #fbb4577e, transparent) !important;
+  --h5-border-right-color: linear-gradient(
+    to right,
+    #fbb4577e,
+    transparent
+  ) !important;
   --h5-border-width: 0 !important;
   --h5-padding: 0 !important;
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
-  --h6-border-left-color: linear-gradient(to left, #fbb4577e, transparent) !important;
+  --h6-border-left-color: linear-gradient(
+    to left,
+    #fbb4577e,
+    transparent
+  ) !important;
   --h6-border-line-color: #fbb4577e !important;
   --h6-border-line-height: 4px !important;
   --h6-border-line-width: 0 !important;
-  --h6-border-right-color: linear-gradient(to right, #fbb4577e, transparent) !important;
+  --h6-border-right-color: linear-gradient(
+    to right,
+    #fbb4577e,
+    transparent
+  ) !important;
   --h6-border-width: 0 !important;
   --h6-padding: 0 !important;
   --h6-shadow: transparent !important;
@@ -1269,7 +1350,8 @@
   --statblock-rule-color: #c75959 !important;
   --statblock-section-heading-border-color: #fbb4577e !important;
   --statblock-section-heading-border-size: 4px !important;
-  --statblock-section-heading-font: "its-Draconis", "Draconis", Inter !important;
+  --statblock-section-heading-font:
+    "its-Draconis", "Draconis", Inter !important;
   --statblock-section-heading-font-color: #8996a0 !important;
   --statblock-section-heading-font-size: 26px !important;
   --statblock-section-heading-font-variant: normal !important;
@@ -1324,7 +1406,8 @@
   --tooltip-color: #e5ebee !important;
   --icons: #d04e4e !important;
   --embed-h: #c93c3c !important;
-  --hr-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 100 7' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenoddclip-rule:evenoddstroke-linejoin:roundstroke-miterlimit:2'%3E%3Crect id='Artboard1' x='0' y='0' width='100' height='7' style='fill:none'/%3E%3Cpath d='M50,2.5L100,3.5L50,4L0,3.5L50,2.5Z' style='fill:rgb(200, 57, 57)'/%3E%3C/svg%3E") no-repeat center center !important;
+  --hr-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 100 7' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenoddclip-rule:evenoddstroke-linejoin:roundstroke-miterlimit:2'%3E%3Crect id='Artboard1' x='0' y='0' width='100' height='7' style='fill:none'/%3E%3Cpath d='M50,2.5L100,3.5L50,4L0,3.5L50,2.5Z' style='fill:rgb(200, 57, 57)'/%3E%3C/svg%3E")
+    no-repeat center center !important;
   --hr-image-height: 5px !important;
   --hr-image-width: 100% !important;
   --paper-edges: 0 0 60px #fbb4577e inset !important;
@@ -1418,7 +1501,11 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: #97a1b9 !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
+  --bases-table-header-sort-mask: linear-gradient(
+    to left,
+    transparent 24px,
+    black 24px
+  ) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: #7a141466 !important;
   --bases-table-row-border-width: 1px !important;
@@ -1431,7 +1518,8 @@
   --blockquote-border-color: #252c36 !important;
   --blockquote-border-thickness: 7px !important;
   --blockquote-font-style: "its-Bookerly", "Bookerly", Inter !important;
-  --blur-background: color-mix(in srgb, #0b0f13 65%, transparent) linear-gradient(#0b0f13, color-mix(in srgb, #0b0f13 65%, transparent)) !important;
+  --blur-background: color-mix(in srgb, #0b0f13 65%, transparent)
+    linear-gradient(#0b0f13, color-mix(in srgb, #0b0f13 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -1606,11 +1694,15 @@
   --font-medium: 500 !important;
   --font-mermaid: "its-Bookerly", "Bookerly", Inter !important;
   --font-monospace: "its-Fira Code", "Fira Code", Inter !important;
-  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-default:
+    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
+    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
+    "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
-  --font-print: "its-Bookerly", "Bookerly", Inter, "??", "??", "Arial" !important;
+  --font-print:
+    "its-Bookerly", "Bookerly", Inter, "??", "??", "Arial" !important;
   --font-print-override: "its-Bookerly", "Bookerly", Inter !important;
   --font-semibold: 600 !important;
   --font-small: 0.95em !important;
@@ -1794,7 +1886,11 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 0 !important;
-  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
+  --menu-scroll-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.1) 48px
+  ) !important;
   --menu-shadow: 2px 2px 0 #0000008c !important;
   --metadata-background: transparent !important;
   --metadata-border-color: #283345 !important;
@@ -1932,9 +2028,12 @@
   --radius-m: 0 !important;
   --radius-s: 0 !important;
   --radius-xl: 0 !important;
-  --raised-background: color-mix(in srgb, #0b0f13 65%, transparent) linear-gradient(#0b0f13, color-mix(in srgb, #0b0f13 65%, transparent)) !important;
+  --raised-background: color-mix(in srgb, #0b0f13 65%, transparent)
+    linear-gradient(#0b0f13, color-mix(in srgb, #0b0f13 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
+  --raised-mask:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(white, white) border-box !important;
   --raised-mask-background: transparent !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
@@ -2041,11 +2140,16 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #1a1e24 !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, #1a1e24, transparent) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    #1a1e24,
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 3px 3px 0 #0000008c !important;
   --tab-switcher-preview-radius: 0 !important;
   --tab-switcher-preview-shadow: 2px 2px 0 #0000008c !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px #c94d4d, 5px 5px 0 #0000008c !important;
+  --tab-switcher-preview-shadow-active:
+    0 0 0 2px #c94d4d, 5px 5px 0 #0000008c !important;
   --tab-text-color: #586477 !important;
   --tab-text-color-active: #bccad8 !important;
   --tab-text-color-focused: #586477 !important;
@@ -2341,61 +2445,109 @@
   --graph-lines: #7a141466 !important;
   --graph-node-hover-fill: #c94d4d !important;
   --graph-node-hover-outline: #e5ebee !important;
-  --h1-border-left-color: linear-gradient(to left, #c93c3c, transparent) !important;
+  --h1-border-left-color: linear-gradient(
+    to left,
+    #c93c3c,
+    transparent
+  ) !important;
   --h1-border-line-color: #c93c3c !important;
   --h1-border-line-height: 4px !important;
   --h1-border-line-width: 100% !important;
-  --h1-border-right-color: linear-gradient(to right, #c93c3c, transparent) !important;
+  --h1-border-right-color: linear-gradient(
+    to right,
+    #c93c3c,
+    transparent
+  ) !important;
   --h1-border-width: 0 !important;
   --h1-padding: 0 !important;
   --h1-shadow: transparent !important;
   --h1-text-align: start !important;
   --h2-background: transparent !important;
-  --h2-border-left-color: linear-gradient(to left, sandybrown, transparent) !important;
+  --h2-border-left-color: linear-gradient(
+    to left,
+    sandybrown,
+    transparent
+  ) !important;
   --h2-border-line-color: sandybrown !important;
   --h2-border-line-height: 4px !important;
   --h2-border-line-width: 85% !important;
-  --h2-border-right-color: linear-gradient(to right, sandybrown, transparent) !important;
+  --h2-border-right-color: linear-gradient(
+    to right,
+    sandybrown,
+    transparent
+  ) !important;
   --h2-border-width: 0 !important;
   --h2-padding: 0 !important;
   --h2-shadow: transparent !important;
   --h2-text-align: start !important;
   --h3-background: transparent !important;
-  --h3-border-left-color: linear-gradient(to left, #a11111, transparent) !important;
+  --h3-border-left-color: linear-gradient(
+    to left,
+    #a11111,
+    transparent
+  ) !important;
   --h3-border-line-color: #a11111 !important;
   --h3-border-line-height: 4px !important;
   --h3-border-line-width: 65% !important;
-  --h3-border-right-color: linear-gradient(to right, #a11111, transparent) !important;
+  --h3-border-right-color: linear-gradient(
+    to right,
+    #a11111,
+    transparent
+  ) !important;
   --h3-border-width: 0 !important;
   --h3-padding: 0 !important;
   --h3-shadow: transparent !important;
   --h3-text-align: start !important;
   --h4-background: transparent !important;
-  --h4-border-left-color: linear-gradient(to left, #283345, transparent) !important;
+  --h4-border-left-color: linear-gradient(
+    to left,
+    #283345,
+    transparent
+  ) !important;
   --h4-border-line-color: #283345 !important;
   --h4-border-line-height: 4px !important;
   --h4-border-line-width: 44% !important;
-  --h4-border-right-color: linear-gradient(to right, #283345, transparent) !important;
+  --h4-border-right-color: linear-gradient(
+    to right,
+    #283345,
+    transparent
+  ) !important;
   --h4-border-width: 0 !important;
   --h4-padding: 0 !important;
   --h4-shadow: transparent !important;
   --h4-text-align: start !important;
   --h5-background: transparent !important;
-  --h5-border-left-color: linear-gradient(to left, #283345, transparent) !important;
+  --h5-border-left-color: linear-gradient(
+    to left,
+    #283345,
+    transparent
+  ) !important;
   --h5-border-line-color: #283345 !important;
   --h5-border-line-height: 4px !important;
   --h5-border-line-width: 25% !important;
-  --h5-border-right-color: linear-gradient(to right, #283345, transparent) !important;
+  --h5-border-right-color: linear-gradient(
+    to right,
+    #283345,
+    transparent
+  ) !important;
   --h5-border-width: 0 !important;
   --h5-padding: 0 !important;
   --h5-shadow: transparent !important;
   --h5-text-align: start !important;
   --h6-background: transparent !important;
-  --h6-border-left-color: linear-gradient(to left, #283345, transparent) !important;
+  --h6-border-left-color: linear-gradient(
+    to left,
+    #283345,
+    transparent
+  ) !important;
   --h6-border-line-color: #283345 !important;
   --h6-border-line-height: 4px !important;
   --h6-border-line-width: 0 !important;
-  --h6-border-right-color: linear-gradient(to right, #283345, transparent) !important;
+  --h6-border-right-color: linear-gradient(
+    to right,
+    #283345,
+    transparent
+  ) !important;
   --h6-border-width: 0 !important;
   --h6-padding: 0 !important;
   --h6-shadow: transparent !important;
@@ -2593,7 +2745,8 @@
   --statblock-rule-color: #863737 !important;
   --statblock-section-heading-border-color: #283345 !important;
   --statblock-section-heading-border-size: 4px !important;
-  --statblock-section-heading-font: "its-Draconis", "Draconis", Inter !important;
+  --statblock-section-heading-font:
+    "its-Draconis", "Draconis", Inter !important;
   --statblock-section-heading-font-color: #63778f !important;
   --statblock-section-heading-font-size: 26px !important;
   --statblock-section-heading-font-variant: normal !important;
@@ -2647,7 +2800,8 @@
   --toggle-shadow: none !important;
   --tooltip-color: #e5ebee !important;
   --embed-h: #c93c3c !important;
-  --hr-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 100 7' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenoddclip-rule:evenoddstroke-linejoin:roundstroke-miterlimit:2'%3E%3Crect id='Artboard1' x='0' y='0' width='100' height='7' style='fill:none'/%3E%3Cpath d='M50,2.5L100,3.5L50,4L0,3.5L50,2.5Z' style='fill:rgb(146, 47, 47)'/%3E%3C/svg%3E") no-repeat center center !important;
+  --hr-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 100 7' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenoddclip-rule:evenoddstroke-linejoin:roundstroke-miterlimit:2'%3E%3Crect id='Artboard1' x='0' y='0' width='100' height='7' style='fill:none'/%3E%3Cpath d='M50,2.5L100,3.5L50,4L0,3.5L50,2.5Z' style='fill:rgb(146, 47, 47)'/%3E%3C/svg%3E")
+    no-repeat center center !important;
   --hr-image-height: 5px !important;
   --hr-image-width: 100% !important;
   --paper-edges: 0 0 60px #0000008c inset !important;
@@ -2694,7 +2848,8 @@ html {
   font-weight: 400;
   src:
     local("Bookerly"),
-    url("https://fonts.cdnfonts.com/s/67522/Bookerly Italic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/67522/Bookerly Italic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Bookerly";
@@ -2702,7 +2857,8 @@ html {
   font-weight: 400;
   src:
     local("Bookerly"),
-    url("https://fonts.cdnfonts.com/s/67522/Bookerly LCD Italic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/67522/Bookerly LCD Italic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Bookerly";
@@ -2718,7 +2874,8 @@ html {
   font-weight: 300;
   src:
     local("Bookerly"),
-    url("https://fonts.cdnfonts.com/s/67522/Bookerly LCD Light Italic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/67522/Bookerly LCD Light Italic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Bookerly";
@@ -2726,7 +2883,8 @@ html {
   font-weight: 300;
   src:
     local("Bookerly"),
-    url("https://fonts.cdnfonts.com/s/67522/Bookerly Light Italic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/67522/Bookerly Light Italic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Bookerly";
@@ -2742,7 +2900,8 @@ html {
   font-weight: 700;
   src:
     local("Bookerly"),
-    url("https://fonts.cdnfonts.com/s/67522/Bookerly Bold Italic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/67522/Bookerly Bold Italic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Bookerly Display";
@@ -2750,7 +2909,8 @@ html {
   font-weight: 400;
   src:
     local("Bookerly Display"),
-    url("https://fonts.cdnfonts.com/s/67522/Bookerly Display.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/67522/Bookerly Display.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Bookerly Display";
@@ -2758,7 +2918,8 @@ html {
   font-weight: 400;
   src:
     local("Bookerly Display"),
-    url("https://fonts.cdnfonts.com/s/67522/Bookerly Display Italic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/67522/Bookerly Display Italic.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Bookerly Display";
@@ -2766,7 +2927,8 @@ html {
   font-weight: 700;
   src:
     local("Bookerly Display"),
-    url("https://fonts.cdnfonts.com/s/67522/Bookerly Display Bold.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/67522/Bookerly Display Bold.woff")
+      format("woff");
 }
 @font-face {
   font-family: "Bookerly Display";
@@ -2774,22 +2936,26 @@ html {
   font-weight: 700;
   src:
     local("Bookerly Display"),
-    url("https://fonts.cdnfonts.com/s/67522/Bookerly Display Bold Italic.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/67522/Bookerly Display Bold Italic.woff")
+      format("woff");
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2797,7 +2963,8 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2805,47 +2972,64 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV37NuzlojwUKaJO.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV37NuzlojwUKaJO.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVT7NuzlojwUKaJO.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVT7NuzlojwUKaJO.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2853,7 +3037,8 @@ html {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVz7NuzlojwUKaJO.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVz7NuzlojwUKaJO.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2861,24 +3046,34 @@ html {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVP7NuzlojwUKaJO.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVP7NuzlojwUKaJO.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV77NuzlojwUKaJO.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJV77NuzlojwUKaJO.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7NuzlojwUKQ.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7NuzlojwUKQ.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -2887,23 +3082,28 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff") format("woff");
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
+      format("woff");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2911,32 +3111,46 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Monaco";
@@ -2951,15 +3165,18 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2967,7 +3184,8 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2975,32 +3193,46 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 body {
@@ -3343,9 +3575,24 @@ body {
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(182, 28, 28, 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3358,7 +3605,18 @@ body {
     color: rgb(65, 47, 47);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: rgba(182, 28, 28, 0.5);
     border: 0px rgb(65, 47, 47);
     border-top-left-radius: 0px;
@@ -3393,7 +3651,15 @@ body {
   }
 
   a.internal.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: rgb(205, 100, 94);
     display: flex;
@@ -3652,11 +3918,20 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: rgb(65, 47, 47);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card {
     border: 0px rgb(65, 47, 47);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3668,20 +3943,71 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(65, 47, 47);
     font-weight: 400;
     background-color: rgba(182, 28, 28, 0.5);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: rgb(65, 47, 47);
   }
 
@@ -3733,12 +4059,14 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(255, 249, 240) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(255, 249, 240) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(255, 249, 240);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(255, 249, 240) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(255, 249, 240) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(255, 249, 240);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3753,17 +4081,20 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 249, 240) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(255, 249, 240) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(255, 249, 240);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(255, 249, 240) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(255, 249, 240) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(255, 249, 240);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(255, 249, 240) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(255, 249, 240) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(255, 249, 240);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3776,7 +4107,8 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(255, 249, 240) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(255, 249, 240) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     background-color: rgb(255, 249, 240);
   }
 
@@ -4210,7 +4542,8 @@ body {
 
   .transclude {
     background-color: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0) rgb(65, 47, 47) rgba(0, 0, 0, 0) rgb(205, 100, 94);
+    border-color: rgba(0, 0, 0, 0) rgb(65, 47, 47) rgba(0, 0, 0, 0)
+      rgb(205, 100, 94);
     border-style: solid;
     border-width: 11px;
     border-top-left-radius: 0px;
@@ -4223,7 +4556,8 @@ body {
 
   .transclude-inner {
     background-color: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0) rgb(65, 47, 47) rgba(0, 0, 0, 0) rgb(205, 100, 94);
+    border-color: rgba(0, 0, 0, 0) rgb(65, 47, 47) rgba(0, 0, 0, 0)
+      rgb(205, 100, 94);
     border-style: solid;
     border-width: 11px;
     border-top-left-radius: 0px;
@@ -4594,7 +4928,10 @@ body {
     transition-timing-function: ease;
   }
 
-  .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+  .explorer
+    .explorer-content
+    li:has(> .folder-outer:not(.open))
+    > .folder-container {
     color: rgb(65, 47, 47);
     cursor: default;
     font-family: its-Bookerly, Bookerly, Inter;
@@ -5857,9 +6194,24 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: rgba(212, 47, 47, 0.4);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -5872,7 +6224,18 @@ html[saved-theme="dark"] {
       color: rgb(188, 202, 216);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:has(
+        ~ .result-card.focus:not(
+            :has(~ .result-card:hover, ~ .result-card:focus)
+          ),
+        ~ .result-card:focus,
+        ~ .result-card:hover
+      ) {
       background-color: rgba(212, 47, 47, 0.4);
       border: 0px rgb(188, 202, 216);
       border-top-left-radius: 0px;
@@ -5907,7 +6270,15 @@ html[saved-theme="dark"] {
     }
 
     a.internal.tag-link,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card
+      > ul
+      > li
+      > .match-tag {
       align-items: normal;
       background-color: rgb(101, 33, 33);
       display: flex;
@@ -6154,7 +6525,10 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search > .search-container > .search-space > .search-layout.display-results {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout.display-results {
       border: 3px solid rgba(0, 0, 0, 0.55);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6166,11 +6540,20 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container {
       color: rgb(188, 202, 216);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card {
       border: 0px rgb(188, 202, 216);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6182,20 +6565,73 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(
+        :has(~ .result-card:hover, ~ .result-card:focus)
+      ) {
       color: rgb(188, 202, 216);
       font-weight: 400;
       background-color: rgba(212, 47, 47, 0.4);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-description {
       color: rgb(188, 202, 216);
     }
 
@@ -6247,12 +6683,14 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(26, 30, 36);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(26, 30, 36);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6267,17 +6705,20 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(26, 30, 36);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(26, 30, 36);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(26, 30, 36);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6290,7 +6731,8 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       background-color: rgb(26, 30, 36);
     }
 
@@ -6724,7 +7166,8 @@ html[saved-theme="dark"] {
 
     .transclude {
       background-color: rgba(0, 0, 0, 0);
-      border-color: rgba(0, 0, 0, 0) rgb(188, 202, 216) rgba(0, 0, 0, 0) rgb(101, 33, 33);
+      border-color: rgba(0, 0, 0, 0) rgb(188, 202, 216) rgba(0, 0, 0, 0)
+        rgb(101, 33, 33);
       border-style: solid;
       border-width: 11px;
       border-top-left-radius: 0px;
@@ -6737,7 +7180,8 @@ html[saved-theme="dark"] {
 
     .transclude-inner {
       background-color: rgba(0, 0, 0, 0);
-      border-color: rgba(0, 0, 0, 0) rgb(188, 202, 216) rgba(0, 0, 0, 0) rgb(101, 33, 33);
+      border-color: rgba(0, 0, 0, 0) rgb(188, 202, 216) rgba(0, 0, 0, 0)
+        rgb(101, 33, 33);
       border-style: solid;
       border-width: 11px;
       border-top-left-radius: 0px;
@@ -7108,7 +7552,10 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+    .explorer
+      .explorer-content
+      li:has(> .folder-outer:not(.open))
+      > .folder-container {
       color: rgb(188, 202, 216);
       cursor: default;
       font-family: its-Bookerly, Bookerly, Inter;
@@ -7116,7 +7563,10 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
     }
 
-    .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    .explorer
+      .explorer-content
+      li:has(> .folder-outer.open)
+      > .folder-container {
       color: rgb(188, 202, 216);
       cursor: default;
       font-family: its-Bookerly, Bookerly, Inter;
@@ -8137,7 +8587,10 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }
@@ -8565,42 +9018,83 @@ blockquote.callout {
   }
 }
 
-body :not(.is-live-preview) .callout.callout.callout:is([data-callout-metadata~="p+l"], [data-callout-metadata~="left"]) {
+body
+  :not(.is-live-preview)
+  .callout.callout.callout:is(
+    [data-callout-metadata~="p+l"],
+    [data-callout-metadata~="left"]
+  ) {
   float: left;
   margin: unset;
   margin-right: 8px;
 }
 
-body :not(.is-live-preview) .callout.callout:is([data-callout-metadata~="p+r"], [data-callout-metadata~="right"]) {
+body
+  :not(.is-live-preview)
+  .callout.callout:is(
+    [data-callout-metadata~="p+r"],
+    [data-callout-metadata~="right"]
+  ) {
   float: right;
   margin: unset;
   margin-left: 8px;
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="ctr"], [data-callout-metadata~="center"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="ctr"],
+    [data-callout-metadata~="center"]
+  ) {
   display: block;
   margin: auto;
   float: unset;
 }
 
-body .callout.callout.callout.callout:is([data-callout-metadata~="no-t"], [data-callout-metadata~="no-title"]) > .callout-title {
+body
+  .callout.callout.callout.callout:is(
+    [data-callout-metadata~="no-t"],
+    [data-callout-metadata~="no-title"]
+  )
+  > .callout-title {
   display: none;
 }
 
-body .callout.callout.callout.callout:is([data-callout-metadata~="s-t"], [data-callout-metadata~="show-title"]) > .callout-title {
+body
+  .callout.callout.callout.callout:is(
+    [data-callout-metadata~="s-t"],
+    [data-callout-metadata~="show-title"]
+  )
+  > .callout-title {
   display: flex;
 }
 
-body .callout.callout.callout.callout:is([data-callout-metadata~="s-t"], [data-callout-metadata~="show-title"]) > .callout-content > p {
+body
+  .callout.callout.callout.callout:is(
+    [data-callout-metadata~="s-t"],
+    [data-callout-metadata~="show-title"]
+  )
+  > .callout-content
+  > p {
   margin-top: 0;
 }
 
-body .callout.callout.callout.callout:is([data-callout-metadata~="subtitle"], [data-callout-metadata~="subt"]) .callout-title {
+body
+  .callout.callout.callout.callout:is(
+    [data-callout-metadata~="subtitle"],
+    [data-callout-metadata~="subt"]
+  )
+  .callout-title {
   align-content: center;
   align-items: center;
 }
 
-body .callout.callout.callout.callout:is([data-callout-metadata~="subtitle"], [data-callout-metadata~="subt"]) .callout-title em {
+body
+  .callout.callout.callout.callout:is(
+    [data-callout-metadata~="subtitle"],
+    [data-callout-metadata~="subt"]
+  )
+  .callout-title
+  em {
   display: block;
   font-style: normal;
   font-size: var(--font-small);
@@ -8608,31 +9102,75 @@ body .callout.callout.callout.callout:is([data-callout-metadata~="subtitle"], [d
   font-weight: normal;
 }
 
-body .callout.callout.callout.callout:is([data-callout-metadata~="subtitle"], [data-callout-metadata~="subt"]) .callout-title em em {
+body
+  .callout.callout.callout.callout:is(
+    [data-callout-metadata~="subtitle"],
+    [data-callout-metadata~="subt"]
+  )
+  .callout-title
+  em
+  em {
   font-style: italic;
   display: inline-block;
 }
 
-body .callout.callout:is([data-callout-metadata~="no-i"], [data-callout-metadata~="no-icon"]) > .callout-title > .callout-icon {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="no-i"],
+    [data-callout-metadata~="no-icon"]
+  )
+  > .callout-title
+  > .callout-icon {
   width: 0;
   height: 0;
   --icon-size: 0;
 }
 
-body .callout:is([data-callout-metadata~="n-th"], [data-callout-metadata~="no-table-header"]) > .callout-content table {
+body
+  .callout:is(
+    [data-callout-metadata~="n-th"],
+    [data-callout-metadata~="no-table-header"]
+  )
+  > .callout-content
+  table {
   margin-bottom: 5px;
 }
 
-body .callout:is([data-callout-metadata~="n-th"], [data-callout-metadata~="no-table-header"]) > .callout-content table thead,
-body .callout:is([data-callout-metadata~="n-th"], [data-callout-metadata~="no-table-header"]) > .callout-content table th {
+body
+  .callout:is(
+    [data-callout-metadata~="n-th"],
+    [data-callout-metadata~="no-table-header"]
+  )
+  > .callout-content
+  table
+  thead,
+body
+  .callout:is(
+    [data-callout-metadata~="n-th"],
+    [data-callout-metadata~="no-table-header"]
+  )
+  > .callout-content
+  table
+  th {
   display: none;
 }
 
-body .callout:is([data-callout-metadata~="t-w"], [data-callout-metadata~="table-wide"]) table {
+body
+  .callout:is(
+    [data-callout-metadata~="t-w"],
+    [data-callout-metadata~="table-wide"]
+  )
+  table {
   width: 100%;
 }
 
-body .callout:is([data-callout-metadata~="t-w"], [data-callout-metadata~="table-wide"]) table td {
+body
+  .callout:is(
+    [data-callout-metadata~="t-w"],
+    [data-callout-metadata~="table-wide"]
+  )
+  table
+  td {
   width: calc(var(--tbl-w) / 2);
 }
 
@@ -8640,7 +9178,12 @@ body .callout[data-callout-metadata~="table-cell-top"] table td {
   vertical-align: top;
 }
 
-body .callout.callout:is([data-callout-metadata~="t-nmg"], [data-callout-metadata~="table-no-margin"]) table {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="t-nmg"],
+    [data-callout-metadata~="table-no-margin"]
+  )
+  table {
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -8657,12 +9200,18 @@ body .callout[data-callout-metadata~="collapse"] * {
   grid-gap: 0 !important;
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="nbrd"], [data-callout-metadata~="no-border"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="nbrd"],
+    [data-callout-metadata~="no-border"]
+  ) {
   border: 0;
 }
 
 body .callout.callout.callout[data-callout-metadata~="clean"],
-body .callout.callout.callout[data-callout-metadata~="clean"] > .callout-content {
+body
+  .callout.callout.callout[data-callout-metadata~="clean"]
+  > .callout-content {
   border: 0;
   box-shadow: none;
   --callout-color: transparent;
@@ -8670,7 +9219,10 @@ body .callout.callout.callout[data-callout-metadata~="clean"] > .callout-content
 }
 
 body .callout.callout.callout[data-callout-metadata~="clean"] .callout-content,
-body .callout.callout.callout[data-callout-metadata~="clean"] > .callout-content .callout-content {
+body
+  .callout.callout.callout[data-callout-metadata~="clean"]
+  > .callout-content
+  .callout-content {
   padding: 0;
 }
 
@@ -8683,11 +9235,13 @@ body .callout.callout.callout[data-callout-metadata~="block"] {
   float: unset;
 }
 
-body .callout.callout.callout[data-callout-metadata~="block"][data-callout-metadata~="right"] {
+body
+  .callout.callout.callout[data-callout-metadata~="block"][data-callout-metadata~="right"] {
   margin-left: auto;
 }
 
-body .callout.callout.callout[data-callout-metadata~="block"][data-callout-metadata~="left"] {
+body
+  .callout.callout.callout[data-callout-metadata~="block"][data-callout-metadata~="left"] {
   margin-right: auto;
 }
 
@@ -8695,7 +9249,13 @@ body .callout #vid {
   text-align: left;
 }
 
-body .callout:is([data-callout-metadata~="dim-hvr"], [data-callout-metadata~="dim-hover"], [data-callout-metadata~="dim-closed"].is-collapsed, [data-callout-metadata~="dim"]):not(:hover) {
+body
+  .callout:is(
+    [data-callout-metadata~="dim-hvr"],
+    [data-callout-metadata~="dim-hover"],
+    [data-callout-metadata~="dim-closed"].is-collapsed,
+    [data-callout-metadata~="dim"]
+  ):not(:hover) {
   filter: brightness(50%);
   transition: filter 300ms;
 }
@@ -8716,207 +9276,507 @@ body .callout.callout.callout {
   --callout-plain: transparent;
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-blue"], [data-callout-metadata~="c-blue"], [data-callout-metadata~="background-color-blue"], [data-callout-metadata~="bg-c-blue"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-blue"],
+    [data-callout-metadata~="c-blue"],
+    [data-callout-metadata~="background-color-blue"],
+    [data-callout-metadata~="bg-c-blue"]
+  ) {
   --callout-title: var(--callout-blue);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-blue"], [data-callout-metadata~="c-blue"], [data-callout-metadata~="background-color-blue"], [data-callout-metadata~="bg-c-blue"]) > .callout-title {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-blue"],
+    [data-callout-metadata~="c-blue"],
+    [data-callout-metadata~="background-color-blue"],
+    [data-callout-metadata~="bg-c-blue"]
+  )
+  > .callout-title {
   --callout-color: var(--callout-title);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-blue"], [data-callout-metadata~="bg-blue"], [data-callout-metadata~="background-color-blue"], [data-callout-metadata~="bg-c-blue"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-blue"],
+    [data-callout-metadata~="bg-blue"],
+    [data-callout-metadata~="background-color-blue"],
+    [data-callout-metadata~="bg-c-blue"]
+  ) {
   --callout-background: rgba(var(--callout-blue), var(--callout-color-opacity));
   background-color: var(--callout-background);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-color-blue"], [data-callout-metadata~="bg-c-blue"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-color-blue"],
+    [data-callout-metadata~="bg-c-blue"]
+  ) {
   --callout-color: var(--callout-blue);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-green"], [data-callout-metadata~="c-green"], [data-callout-metadata~="background-color-green"], [data-callout-metadata~="bg-c-green"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-green"],
+    [data-callout-metadata~="c-green"],
+    [data-callout-metadata~="background-color-green"],
+    [data-callout-metadata~="bg-c-green"]
+  ) {
   --callout-title: var(--callout-green);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-green"], [data-callout-metadata~="c-green"], [data-callout-metadata~="background-color-green"], [data-callout-metadata~="bg-c-green"]) > .callout-title {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-green"],
+    [data-callout-metadata~="c-green"],
+    [data-callout-metadata~="background-color-green"],
+    [data-callout-metadata~="bg-c-green"]
+  )
+  > .callout-title {
   --callout-color: var(--callout-title);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-green"], [data-callout-metadata~="bg-green"], [data-callout-metadata~="background-color-green"], [data-callout-metadata~="bg-c-green"]) {
-  --callout-background: rgba(var(--callout-green), var(--callout-color-opacity));
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-green"],
+    [data-callout-metadata~="bg-green"],
+    [data-callout-metadata~="background-color-green"],
+    [data-callout-metadata~="bg-c-green"]
+  ) {
+  --callout-background: rgba(
+    var(--callout-green),
+    var(--callout-color-opacity)
+  );
   background-color: var(--callout-background);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-color-green"], [data-callout-metadata~="bg-c-green"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-color-green"],
+    [data-callout-metadata~="bg-c-green"]
+  ) {
   --callout-color: var(--callout-green);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-orange"], [data-callout-metadata~="c-orange"], [data-callout-metadata~="background-color-orange"], [data-callout-metadata~="bg-c-orange"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-orange"],
+    [data-callout-metadata~="c-orange"],
+    [data-callout-metadata~="background-color-orange"],
+    [data-callout-metadata~="bg-c-orange"]
+  ) {
   --callout-title: var(--callout-orange);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-orange"], [data-callout-metadata~="c-orange"], [data-callout-metadata~="background-color-orange"], [data-callout-metadata~="bg-c-orange"]) > .callout-title {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-orange"],
+    [data-callout-metadata~="c-orange"],
+    [data-callout-metadata~="background-color-orange"],
+    [data-callout-metadata~="bg-c-orange"]
+  )
+  > .callout-title {
   --callout-color: var(--callout-title);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-orange"], [data-callout-metadata~="bg-orange"], [data-callout-metadata~="background-color-orange"], [data-callout-metadata~="bg-c-orange"]) {
-  --callout-background: rgba(var(--callout-orange), var(--callout-color-opacity));
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-orange"],
+    [data-callout-metadata~="bg-orange"],
+    [data-callout-metadata~="background-color-orange"],
+    [data-callout-metadata~="bg-c-orange"]
+  ) {
+  --callout-background: rgba(
+    var(--callout-orange),
+    var(--callout-color-opacity)
+  );
   background-color: var(--callout-background);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-color-orange"], [data-callout-metadata~="bg-c-orange"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-color-orange"],
+    [data-callout-metadata~="bg-c-orange"]
+  ) {
   --callout-color: var(--callout-orange);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-red"], [data-callout-metadata~="c-red"], [data-callout-metadata~="background-color-red"], [data-callout-metadata~="bg-c-red"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-red"],
+    [data-callout-metadata~="c-red"],
+    [data-callout-metadata~="background-color-red"],
+    [data-callout-metadata~="bg-c-red"]
+  ) {
   --callout-title: var(--callout-red);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-red"], [data-callout-metadata~="c-red"], [data-callout-metadata~="background-color-red"], [data-callout-metadata~="bg-c-red"]) > .callout-title {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-red"],
+    [data-callout-metadata~="c-red"],
+    [data-callout-metadata~="background-color-red"],
+    [data-callout-metadata~="bg-c-red"]
+  )
+  > .callout-title {
   --callout-color: var(--callout-title);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-red"], [data-callout-metadata~="bg-red"], [data-callout-metadata~="background-color-red"], [data-callout-metadata~="bg-c-red"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-red"],
+    [data-callout-metadata~="bg-red"],
+    [data-callout-metadata~="background-color-red"],
+    [data-callout-metadata~="bg-c-red"]
+  ) {
   --callout-background: rgba(var(--callout-red), var(--callout-color-opacity));
   background-color: var(--callout-background);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-color-red"], [data-callout-metadata~="bg-c-red"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-color-red"],
+    [data-callout-metadata~="bg-c-red"]
+  ) {
   --callout-color: var(--callout-red);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-purple"], [data-callout-metadata~="c-purple"], [data-callout-metadata~="background-color-purple"], [data-callout-metadata~="bg-c-purple"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-purple"],
+    [data-callout-metadata~="c-purple"],
+    [data-callout-metadata~="background-color-purple"],
+    [data-callout-metadata~="bg-c-purple"]
+  ) {
   --callout-title: var(--callout-purple);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-purple"], [data-callout-metadata~="c-purple"], [data-callout-metadata~="background-color-purple"], [data-callout-metadata~="bg-c-purple"]) > .callout-title {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-purple"],
+    [data-callout-metadata~="c-purple"],
+    [data-callout-metadata~="background-color-purple"],
+    [data-callout-metadata~="bg-c-purple"]
+  )
+  > .callout-title {
   --callout-color: var(--callout-title);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-purple"], [data-callout-metadata~="bg-purple"], [data-callout-metadata~="background-color-purple"], [data-callout-metadata~="bg-c-purple"]) {
-  --callout-background: rgba(var(--callout-purple), var(--callout-color-opacity));
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-purple"],
+    [data-callout-metadata~="bg-purple"],
+    [data-callout-metadata~="background-color-purple"],
+    [data-callout-metadata~="bg-c-purple"]
+  ) {
+  --callout-background: rgba(
+    var(--callout-purple),
+    var(--callout-color-opacity)
+  );
   background-color: var(--callout-background);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-color-purple"], [data-callout-metadata~="bg-c-purple"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-color-purple"],
+    [data-callout-metadata~="bg-c-purple"]
+  ) {
   --callout-color: var(--callout-purple);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-gray"], [data-callout-metadata~="c-gray"], [data-callout-metadata~="background-color-gray"], [data-callout-metadata~="bg-c-gray"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-gray"],
+    [data-callout-metadata~="c-gray"],
+    [data-callout-metadata~="background-color-gray"],
+    [data-callout-metadata~="bg-c-gray"]
+  ) {
   --callout-title: var(--callout-gray);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-gray"], [data-callout-metadata~="c-gray"], [data-callout-metadata~="background-color-gray"], [data-callout-metadata~="bg-c-gray"]) > .callout-title {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-gray"],
+    [data-callout-metadata~="c-gray"],
+    [data-callout-metadata~="background-color-gray"],
+    [data-callout-metadata~="bg-c-gray"]
+  )
+  > .callout-title {
   --callout-color: var(--callout-title);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-gray"], [data-callout-metadata~="bg-gray"], [data-callout-metadata~="background-color-gray"], [data-callout-metadata~="bg-c-gray"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-gray"],
+    [data-callout-metadata~="bg-gray"],
+    [data-callout-metadata~="background-color-gray"],
+    [data-callout-metadata~="bg-c-gray"]
+  ) {
   --callout-background: rgba(var(--callout-gray), var(--callout-color-opacity));
   background-color: var(--callout-background);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-color-gray"], [data-callout-metadata~="bg-c-gray"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-color-gray"],
+    [data-callout-metadata~="bg-c-gray"]
+  ) {
   --callout-color: var(--callout-gray);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-yellow"], [data-callout-metadata~="c-yellow"], [data-callout-metadata~="background-color-yellow"], [data-callout-metadata~="bg-c-yellow"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-yellow"],
+    [data-callout-metadata~="c-yellow"],
+    [data-callout-metadata~="background-color-yellow"],
+    [data-callout-metadata~="bg-c-yellow"]
+  ) {
   --callout-title: var(--callout-yellow);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-yellow"], [data-callout-metadata~="c-yellow"], [data-callout-metadata~="background-color-yellow"], [data-callout-metadata~="bg-c-yellow"]) > .callout-title {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-yellow"],
+    [data-callout-metadata~="c-yellow"],
+    [data-callout-metadata~="background-color-yellow"],
+    [data-callout-metadata~="bg-c-yellow"]
+  )
+  > .callout-title {
   --callout-color: var(--callout-title);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-yellow"], [data-callout-metadata~="bg-yellow"], [data-callout-metadata~="background-color-yellow"], [data-callout-metadata~="bg-c-yellow"]) {
-  --callout-background: rgba(var(--callout-yellow), var(--callout-color-opacity));
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-yellow"],
+    [data-callout-metadata~="bg-yellow"],
+    [data-callout-metadata~="background-color-yellow"],
+    [data-callout-metadata~="bg-c-yellow"]
+  ) {
+  --callout-background: rgba(
+    var(--callout-yellow),
+    var(--callout-color-opacity)
+  );
   background-color: var(--callout-background);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-color-yellow"], [data-callout-metadata~="bg-c-yellow"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-color-yellow"],
+    [data-callout-metadata~="bg-c-yellow"]
+  ) {
   --callout-color: var(--callout-yellow);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-pink"], [data-callout-metadata~="c-pink"], [data-callout-metadata~="background-color-pink"], [data-callout-metadata~="bg-c-pink"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-pink"],
+    [data-callout-metadata~="c-pink"],
+    [data-callout-metadata~="background-color-pink"],
+    [data-callout-metadata~="bg-c-pink"]
+  ) {
   --callout-title: var(--callout-pink);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-pink"], [data-callout-metadata~="c-pink"], [data-callout-metadata~="background-color-pink"], [data-callout-metadata~="bg-c-pink"]) > .callout-title {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-pink"],
+    [data-callout-metadata~="c-pink"],
+    [data-callout-metadata~="background-color-pink"],
+    [data-callout-metadata~="bg-c-pink"]
+  )
+  > .callout-title {
   --callout-color: var(--callout-title);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-pink"], [data-callout-metadata~="bg-pink"], [data-callout-metadata~="background-color-pink"], [data-callout-metadata~="bg-c-pink"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-pink"],
+    [data-callout-metadata~="bg-pink"],
+    [data-callout-metadata~="background-color-pink"],
+    [data-callout-metadata~="bg-c-pink"]
+  ) {
   --callout-background: rgba(var(--callout-pink), var(--callout-color-opacity));
   background-color: var(--callout-background);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-color-pink"], [data-callout-metadata~="bg-c-pink"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-color-pink"],
+    [data-callout-metadata~="bg-c-pink"]
+  ) {
   --callout-color: var(--callout-pink);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-brown"], [data-callout-metadata~="c-brown"], [data-callout-metadata~="background-color-brown"], [data-callout-metadata~="bg-c-brown"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-brown"],
+    [data-callout-metadata~="c-brown"],
+    [data-callout-metadata~="background-color-brown"],
+    [data-callout-metadata~="bg-c-brown"]
+  ) {
   --callout-title: var(--callout-brown);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-brown"], [data-callout-metadata~="c-brown"], [data-callout-metadata~="background-color-brown"], [data-callout-metadata~="bg-c-brown"]) > .callout-title {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-brown"],
+    [data-callout-metadata~="c-brown"],
+    [data-callout-metadata~="background-color-brown"],
+    [data-callout-metadata~="bg-c-brown"]
+  )
+  > .callout-title {
   --callout-color: var(--callout-title);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-brown"], [data-callout-metadata~="bg-brown"], [data-callout-metadata~="background-color-brown"], [data-callout-metadata~="bg-c-brown"]) {
-  --callout-background: rgba(var(--callout-brown), var(--callout-color-opacity));
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-brown"],
+    [data-callout-metadata~="bg-brown"],
+    [data-callout-metadata~="background-color-brown"],
+    [data-callout-metadata~="bg-c-brown"]
+  ) {
+  --callout-background: rgba(
+    var(--callout-brown),
+    var(--callout-color-opacity)
+  );
   background-color: var(--callout-background);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-color-brown"], [data-callout-metadata~="bg-c-brown"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-color-brown"],
+    [data-callout-metadata~="bg-c-brown"]
+  ) {
   --callout-color: var(--callout-brown);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-black"], [data-callout-metadata~="c-black"], [data-callout-metadata~="background-color-black"], [data-callout-metadata~="bg-c-black"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-black"],
+    [data-callout-metadata~="c-black"],
+    [data-callout-metadata~="background-color-black"],
+    [data-callout-metadata~="bg-c-black"]
+  ) {
   --callout-title: var(--callout-black);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-black"], [data-callout-metadata~="c-black"], [data-callout-metadata~="background-color-black"], [data-callout-metadata~="bg-c-black"]) > .callout-title {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-black"],
+    [data-callout-metadata~="c-black"],
+    [data-callout-metadata~="background-color-black"],
+    [data-callout-metadata~="bg-c-black"]
+  )
+  > .callout-title {
   --callout-color: var(--callout-title);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-black"], [data-callout-metadata~="bg-black"], [data-callout-metadata~="background-color-black"], [data-callout-metadata~="bg-c-black"]) {
-  --callout-background: rgba(var(--callout-black), var(--callout-color-opacity));
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-black"],
+    [data-callout-metadata~="bg-black"],
+    [data-callout-metadata~="background-color-black"],
+    [data-callout-metadata~="bg-c-black"]
+  ) {
+  --callout-background: rgba(
+    var(--callout-black),
+    var(--callout-color-opacity)
+  );
   background-color: var(--callout-background);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-color-black"], [data-callout-metadata~="bg-c-black"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-color-black"],
+    [data-callout-metadata~="bg-c-black"]
+  ) {
   --callout-color: var(--callout-black);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-white"], [data-callout-metadata~="c-white"], [data-callout-metadata~="background-color-white"], [data-callout-metadata~="bg-c-white"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-white"],
+    [data-callout-metadata~="c-white"],
+    [data-callout-metadata~="background-color-white"],
+    [data-callout-metadata~="bg-c-white"]
+  ) {
   --callout-title: var(--callout-white);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-white"], [data-callout-metadata~="c-white"], [data-callout-metadata~="background-color-white"], [data-callout-metadata~="bg-c-white"]) > .callout-title {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-white"],
+    [data-callout-metadata~="c-white"],
+    [data-callout-metadata~="background-color-white"],
+    [data-callout-metadata~="bg-c-white"]
+  )
+  > .callout-title {
   --callout-color: var(--callout-title);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-white"], [data-callout-metadata~="bg-white"], [data-callout-metadata~="background-color-white"], [data-callout-metadata~="bg-c-white"]) {
-  --callout-background: rgba(var(--callout-white), var(--callout-color-opacity));
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-white"],
+    [data-callout-metadata~="bg-white"],
+    [data-callout-metadata~="background-color-white"],
+    [data-callout-metadata~="bg-c-white"]
+  ) {
+  --callout-background: rgba(
+    var(--callout-white),
+    var(--callout-color-opacity)
+  );
   background-color: var(--callout-background);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-color-white"], [data-callout-metadata~="bg-c-white"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-color-white"],
+    [data-callout-metadata~="bg-c-white"]
+  ) {
   --callout-color: var(--callout-white);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-plain"], [data-callout-metadata~="c-plain"], [data-callout-metadata~="background-color-plain"], [data-callout-metadata~="bg-c-plain"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-plain"],
+    [data-callout-metadata~="c-plain"],
+    [data-callout-metadata~="background-color-plain"],
+    [data-callout-metadata~="bg-c-plain"]
+  ) {
   --callout-title: var(--callout-plain);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="color-plain"], [data-callout-metadata~="c-plain"], [data-callout-metadata~="background-color-plain"], [data-callout-metadata~="bg-c-plain"]) > .callout-title {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="color-plain"],
+    [data-callout-metadata~="c-plain"],
+    [data-callout-metadata~="background-color-plain"],
+    [data-callout-metadata~="bg-c-plain"]
+  )
+  > .callout-title {
   --callout-color: var(--callout-title);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-plain"], [data-callout-metadata~="bg-plain"], [data-callout-metadata~="background-color-plain"], [data-callout-metadata~="bg-c-plain"]) {
-  --callout-background: rgba(var(--callout-plain), var(--callout-color-opacity));
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-plain"],
+    [data-callout-metadata~="bg-plain"],
+    [data-callout-metadata~="background-color-plain"],
+    [data-callout-metadata~="bg-c-plain"]
+  ) {
+  --callout-background: rgba(
+    var(--callout-plain),
+    var(--callout-color-opacity)
+  );
   background-color: var(--callout-background);
 }
 
-body .callout.callout.callout:is([data-callout-metadata~="background-color-plain"], [data-callout-metadata~="bg-c-plain"]) {
+body
+  .callout.callout.callout:is(
+    [data-callout-metadata~="background-color-plain"],
+    [data-callout-metadata~="bg-c-plain"]
+  ) {
   --callout-color: var(--callout-plain);
 }
 
@@ -9018,47 +9878,96 @@ body .callout.callout[data-callout-metadata~="static"] {
   --callout-tall: 700px;
 }
 
-body .callout.callout:is([data-callout-metadata~="content-padding-small"], [data-callout-metadata~="c-p-sm"]) {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="content-padding-small"],
+    [data-callout-metadata~="c-p-sm"]
+  ) {
   --callout-content-padding: 6px;
 }
 
-body .callout.callout:is([data-callout-metadata~="content-padding-medium"], [data-callout-metadata~="c-p-med"]) {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="content-padding-medium"],
+    [data-callout-metadata~="c-p-med"]
+  ) {
   --callout-content-padding: 12px;
 }
 
-body .callout.callout:is([data-callout-metadata~="content-padding-large"], [data-callout-metadata~="c-p-lg"]) {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="content-padding-large"],
+    [data-callout-metadata~="c-p-lg"]
+  ) {
   --callout-content-padding: 24px;
 }
 
-body .callout.callout:is([data-callout-metadata~="txt-l"], [data-callout-metadata~="text-left"]) > .callout-content > * {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="txt-l"],
+    [data-callout-metadata~="text-left"]
+  )
+  > .callout-content
+  > * {
   text-align: left;
 }
 
-body .callout.callout:is([data-callout-metadata~="txt-r"], [data-callout-metadata~="text-right"]) > .callout-content {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="txt-r"],
+    [data-callout-metadata~="text-right"]
+  )
+  > .callout-content {
   text-align: right;
 }
 
-body .callout.callout:is([data-callout-metadata~="txt-c"], [data-callout-metadata~="text-center"]) > .callout-content {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="txt-c"],
+    [data-callout-metadata~="text-center"]
+  )
+  > .callout-content {
   text-align: center;
 }
 
-body .callout.callout:is([data-callout-metadata~="ttl-c"], [data-callout-metadata~="title-center"]) .callout-title {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="ttl-c"],
+    [data-callout-metadata~="title-center"]
+  )
+  .callout-title {
   justify-content: center;
 }
 
-body .callout.callout:is([data-callout-metadata~="ttl-c"], [data-callout-metadata~="title-center"]) .callout-title-inner {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="ttl-c"],
+    [data-callout-metadata~="title-center"]
+  )
+  .callout-title-inner {
   display: block;
   flex: unset;
 }
 
-body .callout.callout:is([data-callout-metadata~="text-small"], [data-callout-metadata~="txt-s"]) > .callout-content > * {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="text-small"],
+    [data-callout-metadata~="txt-s"]
+  )
+  > .callout-content
+  > * {
   --font-text-size: var(--font-smallest);
   --tag-size: var(--font-smallest);
   --table-text-size: var(--font-smallest);
   font-size: var(--font-text-size);
 }
 
-:is(.is-mobile:not(.is-tablet), .is-mobile .is-live-preview, .is-live-preview :not(.markdown-rendered)) .callout[data-callout~="infobox"]:not([data-callout-metadata~="mobile"]) {
+:is(
+    .is-mobile:not(.is-tablet),
+    .is-mobile .is-live-preview,
+    .is-live-preview :not(.markdown-rendered)
+  )
+  .callout[data-callout~="infobox"]:not([data-callout-metadata~="mobile"]) {
   float: unset !important;
   max-width: 100%;
   margin: 0 !important;
@@ -9091,11 +10000,16 @@ body .callout.callout[data-callout~="infobox"] > .callout-title {
   align-self: center;
 }
 
-body .callout.callout[data-callout~="infobox"] > .callout-title > .callout-icon {
+body
+  .callout.callout[data-callout~="infobox"]
+  > .callout-title
+  > .callout-icon {
   align-self: center;
 }
 
-body .callout.callout[data-callout~="infobox"]:not(.is-collapsed) > .callout-title {
+body
+  .callout.callout[data-callout~="infobox"]:not(.is-collapsed)
+  > .callout-title {
   padding: 0;
 }
 
@@ -9108,7 +10022,10 @@ body .callout.callout[data-callout~="infobox"].is-collapsed .callout-fold {
   border-radius: var(--radius-m);
 }
 
-body .callout.callout[data-callout~="infobox"] > .callout-title .callout-title-inner {
+body
+  .callout.callout[data-callout~="infobox"]
+  > .callout-title
+  .callout-title-inner {
   display: none;
 }
 
@@ -9116,45 +10033,109 @@ body .callout.callout[data-callout~="infobox"] > .callout-title .callout-icon {
   height: 0;
 }
 
-body .callout.callout[data-callout~="infobox"]:not([data-callout-metadata~="show-title"], [data-callout-metadata~="s-t"], [data-callout-metadata~="show-icon"], [data-callout-metadata~="s-i"]) > .callout-title .callout-icon > svg {
+body
+  .callout.callout[data-callout~="infobox"]:not(
+    [data-callout-metadata~="show-title"],
+    [data-callout-metadata~="s-t"],
+    [data-callout-metadata~="show-icon"],
+    [data-callout-metadata~="s-i"]
+  )
+  > .callout-title
+  .callout-icon
+  > svg {
   width: 0;
   height: 0;
 }
 
-body .callout.callout[data-callout~="infobox"]:not(:hover):not(.is-collapsed) > .callout-title {
+body
+  .callout.callout[data-callout~="infobox"]:not(:hover):not(.is-collapsed)
+  > .callout-title {
   background-color: transparent;
 }
 
-body .callout.callout[data-callout~="infobox"] > .callout-content > .callout[data-callout~="infobox"]:not([data-callout-metadata~="no-t"]):not(.is-collapsed) > .callout-title,
-body .callout.callout[data-callout~="infobox"]:is([data-callout-metadata~="show-title"], [data-callout-metadata~="s-t"]):not(.is-collapsed) > .callout-title {
+body
+  .callout.callout[data-callout~="infobox"]
+  > .callout-content
+  > .callout[data-callout~="infobox"]:not([data-callout-metadata~="no-t"]):not(
+    .is-collapsed
+  )
+  > .callout-title,
+body
+  .callout.callout[data-callout~="infobox"]:is(
+    [data-callout-metadata~="show-title"],
+    [data-callout-metadata~="s-t"]
+  ):not(.is-collapsed)
+  > .callout-title {
   display: flex;
   gap: 0;
 }
 
-body .callout.callout[data-callout~="infobox"] > .callout-content > .callout[data-callout~="infobox"]:not([data-callout-metadata~="no-t"]).is-collapsed > .callout-title,
-body .callout.callout[data-callout~="infobox"]:is([data-callout-metadata~="show-title"], [data-callout-metadata~="s-t"]).is-collapsed > .callout-title {
+body
+  .callout.callout[data-callout~="infobox"]
+  > .callout-content
+  > .callout[data-callout~="infobox"]:not(
+    [data-callout-metadata~="no-t"]
+  ).is-collapsed
+  > .callout-title,
+body
+  .callout.callout[data-callout~="infobox"]:is(
+    [data-callout-metadata~="show-title"],
+    [data-callout-metadata~="s-t"]
+  ).is-collapsed
+  > .callout-title {
   border: 1px solid var(--hr, var(--background-modifier-border));
   display: flex;
   align-items: center;
   align-content: center;
 }
 
-body .callout.callout[data-callout~="infobox"] > .callout-content > .callout[data-callout~="infobox"]:not([data-callout-metadata~="no-t"]) .callout-title .callout-title-inner,
-body .callout.callout[data-callout~="infobox"]:is([data-callout-metadata~="show-title"], [data-callout-metadata~="s-t"]) .callout-title .callout-title-inner {
+body
+  .callout.callout[data-callout~="infobox"]
+  > .callout-content
+  > .callout[data-callout~="infobox"]:not([data-callout-metadata~="no-t"])
+  .callout-title
+  .callout-title-inner,
+body
+  .callout.callout[data-callout~="infobox"]:is(
+    [data-callout-metadata~="show-title"],
+    [data-callout-metadata~="s-t"]
+  )
+  .callout-title
+  .callout-title-inner {
   display: unset;
   align-items: center;
   align-content: center;
   padding: 5px 10px;
 }
 
-body .callout.callout[data-callout~="infobox"] > .callout-content > .callout[data-callout~="infobox"]:not([data-callout-metadata~="no-t"]) .callout-fold,
-body .callout.callout[data-callout~="infobox"]:is([data-callout-metadata~="show-title"], [data-callout-metadata~="s-t"]) .callout-fold {
+body
+  .callout.callout[data-callout~="infobox"]
+  > .callout-content
+  > .callout[data-callout~="infobox"]:not([data-callout-metadata~="no-t"])
+  .callout-fold,
+body
+  .callout.callout[data-callout~="infobox"]:is(
+    [data-callout-metadata~="show-title"],
+    [data-callout-metadata~="s-t"]
+  )
+  .callout-fold {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-body .callout.callout[data-callout~="infobox"] > .callout-content > .callout[data-callout~="infobox"]:not([data-callout-metadata~="no-t"]).is-collapsed .callout-fold,
-body .callout.callout[data-callout~="infobox"]:is([data-callout-metadata~="show-title"], [data-callout-metadata~="s-t"]).is-collapsed .callout-fold {
+body
+  .callout.callout[data-callout~="infobox"]
+  > .callout-content
+  > .callout[data-callout~="infobox"]:not(
+    [data-callout-metadata~="no-t"]
+  ).is-collapsed
+  .callout-fold,
+body
+  .callout.callout[data-callout~="infobox"]:is(
+    [data-callout-metadata~="show-title"],
+    [data-callout-metadata~="s-t"]
+  ).is-collapsed
+  .callout-fold {
   border: 0;
 }
 
@@ -9180,7 +10161,10 @@ body .callout.callout[data-callout~="infobox"] :is(p, table) {
   margin: 0;
 }
 
-body .callout.callout[data-callout~="infobox"] .callout-content > :is(h1, h2, h3, h4, h5, h6) {
+body
+  .callout.callout[data-callout~="infobox"]
+  .callout-content
+  > :is(h1, h2, h3, h4, h5, h6) {
   font-size: 20px;
   text-align: center;
   margin: 0;
@@ -9197,28 +10181,42 @@ body .callout.callout[data-callout~="infobox"] img {
   text-align: center;
 }
 
-body .callout.callout[data-callout~="infobox"][data-callout-metadata][data-callout-metadata][data-callout-metadata~="left"] {
+body
+  .callout.callout[data-callout~="infobox"][data-callout-metadata][data-callout-metadata][data-callout-metadata~="left"] {
   --callout-margin: 0 5px 0 0;
 }
 
-body .callout.callout[data-callout~="infobox"] .callout-content > .callout[data-callout~="infobox"] {
+body
+  .callout.callout[data-callout~="infobox"]
+  .callout-content
+  > .callout[data-callout~="infobox"] {
   max-width: unset;
   float: unset;
   --callout-margin: 5px 0 0 0;
 }
 
-body .callout.callout[data-callout~="infobox"] .callout-content > .callout[data-callout~="infobox"] > .callout-title {
+body
+  .callout.callout[data-callout~="infobox"]
+  .callout-content
+  > .callout[data-callout~="infobox"]
+  > .callout-title {
   color: var(--text-normal);
   background: var(--outer-bar, var(--background-secondary));
   border: 1px solid var(--table, var(--background-modifier-border));
   border-bottom: none;
 }
 
-body .callout.callout[data-callout~="infobox"] .callout-content > .callout[data-callout~="infobox"]:not([data-callout-metadata~="no-t"]) > .callout-content {
+body
+  .callout.callout[data-callout~="infobox"]
+  .callout-content
+  > .callout[data-callout~="infobox"]:not([data-callout-metadata~="no-t"])
+  > .callout-content {
   border-top: none;
 }
 
-body .callout.callout[data-callout~="infobox"][data-callout-metadata~="wikipedia"] table {
+body
+  .callout.callout[data-callout~="infobox"][data-callout-metadata~="wikipedia"]
+  table {
   --table-header-color: var(--text, var(--text-normal));
   --table-header-background: transparent;
   --table-header-background-hover: var(--td, var(--table-background));
@@ -9229,21 +10227,35 @@ body .callout.callout[data-callout~="infobox"][data-callout-metadata~="wikipedia
   --table-header-border-color: transparent;
 }
 
-body .callout.callout[data-callout~="infobox"][data-callout-metadata~="wikipedia"] table tr:last-child {
+body
+  .callout.callout[data-callout~="infobox"][data-callout-metadata~="wikipedia"]
+  table
+  tr:last-child {
   margin-bottom: 2px;
 }
 
-body .callout.callout[data-callout~="infobox"][data-callout-metadata~="table-border"] {
+body
+  .callout.callout[data-callout~="infobox"][data-callout-metadata~="table-border"] {
   --table-border-color: var(--background-modifier-border);
 }
 
-body .callout.callout[data-callout~="infobox"][data-callout-metadata~="table-border"] th:first-child,
-body .callout.callout[data-callout~="infobox"][data-callout-metadata~="table-border"] tr td:first-child {
+body
+  .callout.callout[data-callout~="infobox"][data-callout-metadata~="table-border"]
+  th:first-child,
+body
+  .callout.callout[data-callout~="infobox"][data-callout-metadata~="table-border"]
+  tr
+  td:first-child {
   border-left-color: transparent;
 }
 
-body .callout.callout[data-callout~="infobox"][data-callout-metadata~="table-border"] th:last-child,
-body .callout.callout[data-callout~="infobox"][data-callout-metadata~="table-border"] tr td:last-child {
+body
+  .callout.callout[data-callout~="infobox"][data-callout-metadata~="table-border"]
+  th:last-child,
+body
+  .callout.callout[data-callout~="infobox"][data-callout-metadata~="table-border"]
+  tr
+  td:last-child {
   border-right-color: transparent;
 }
 
@@ -9253,15 +10265,18 @@ body .callout.callout[data-callout~="infobox"][data-callout-metadata~="table-bor
   }
 }
 
-.theme-light .callout[data-callout~="infobox"][data-callout-metadata~="wikipedia"] {
+.theme-light
+  .callout[data-callout~="infobox"][data-callout-metadata~="wikipedia"] {
   --th-text: var(--th);
 }
 
-.illusion.illusion .callout[data-callout~="infobox"].is-collapsed.is-collapsed[data-callout-metadata~="left"] {
+.illusion.illusion
+  .callout[data-callout~="infobox"].is-collapsed.is-collapsed[data-callout-metadata~="left"] {
   margin-left: -30px;
 }
 
-.illusion.illusion .callout[data-callout~="infobox"].is-collapsed.is-collapsed[data-callout-metadata~="right"] {
+.illusion.illusion
+  .callout[data-callout~="infobox"].is-collapsed.is-collapsed[data-callout-metadata~="right"] {
   margin-right: -30px;
 }
 
@@ -9351,52 +10366,65 @@ body .callout.callout[data-callout="statblocks"] table {
   width: unset;
 }
 
-body .callout.callout[data-callout="statblocks"][data-callout-metadata~="full"] {
+body
+  .callout.callout[data-callout="statblocks"][data-callout-metadata~="full"] {
   max-width: 100%;
 }
 
-body .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"] {
+body
+  .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"] {
   max-width: 100%;
   --columns: 2;
 }
 
-body .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="1"] {
+body
+  .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="1"] {
   --columns: 1;
 }
 
-body .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="2"] {
+body
+  .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="2"] {
   --columns: 2;
 }
 
-body .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="3"] {
+body
+  .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="3"] {
   --columns: 3;
 }
 
-body .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="4"] {
+body
+  .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="4"] {
   --columns: 4;
 }
 
-body .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="5"] {
+body
+  .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="5"] {
   --columns: 5;
 }
 
-body .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="6"] {
+body
+  .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="6"] {
   --columns: 6;
 }
 
-body .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="7"] {
+body
+  .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="7"] {
   --columns: 7;
 }
 
-body .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="8"] {
+body
+  .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="8"] {
   --columns: 8;
 }
 
-body .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="9"] {
+body
+  .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"][data-callout-metadata~="9"] {
   --columns: 9;
 }
 
-body .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"] > .callout-content {
+body
+  .callout.callout[data-callout="statblocks"][data-callout-metadata~="columns"]
+  > .callout-content {
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
   gap: 15px;
@@ -9441,14 +10469,20 @@ body .callout.callout[data-callout="grid"] .callout-content img[alt="wfull"] {
   max-height: unset;
 }
 
-body .callout.callout[data-callout="grid"][data-callout-metadata~="masonry"] .callout-content p {
+body
+  .callout.callout[data-callout="grid"][data-callout-metadata~="masonry"]
+  .callout-content
+  p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, auto));
   grid-gap: 0;
   margin: 1px 0 0;
 }
 
-body .callout.callout[data-callout="grid"][data-callout-metadata~="masonry"] .callout-content img {
+body
+  .callout.callout[data-callout="grid"][data-callout-metadata~="masonry"]
+  .callout-content
+  img {
   display: flex;
   flex: 1;
   align-self: stretch;
@@ -9469,39 +10503,57 @@ body .callout[data-callout~="cards"] {
   width: auto;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="1"] .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="1"]
+  .callout-content {
   --callout-cards-columns: 1;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="2"] .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="2"]
+  .callout-content {
   --callout-cards-columns: 2;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="3"] .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="3"]
+  .callout-content {
   --callout-cards-columns: 3;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="4"] .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="4"]
+  .callout-content {
   --callout-cards-columns: 4;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="5"] .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="5"]
+  .callout-content {
   --callout-cards-columns: 5;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="6"] .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="6"]
+  .callout-content {
   --callout-cards-columns: 6;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="7"] .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="7"]
+  .callout-content {
   --callout-cards-columns: 7;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="8"] .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="8"]
+  .callout-content {
   --callout-cards-columns: 8;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="9"] .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="9"]
+  .callout-content {
   --callout-cards-columns: 9;
 }
 
@@ -9524,7 +10576,12 @@ body .callout[data-callout~="cards"] p {
   padding: 0;
 }
 
-body .callout[data-callout~="cards"]:not([data-callout-metadata~="nstr"], [data-callout-metadata~="no-strong"]) strong {
+body
+  .callout[data-callout~="cards"]:not(
+    [data-callout-metadata~="nstr"],
+    [data-callout-metadata~="no-strong"]
+  )
+  strong {
   display: block;
   text-align: center;
   margin: auto;
@@ -9535,8 +10592,13 @@ body .callout[data-callout~="cards"] br {
   display: none;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="flex"] > .callout-content,
-body .callout[data-callout~="cards"][data-callout-metadata~="flex"] .dataview.table-view-table tbody {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="flex"]
+  > .callout-content,
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="flex"]
+  .dataview.table-view-table
+  tbody {
   gap: unset;
   grid-template-columns: none;
   display: flex;
@@ -9544,8 +10606,15 @@ body .callout[data-callout~="cards"][data-callout-metadata~="flex"] .dataview.ta
   flex-wrap: wrap;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="flex"] > .callout-content .callout,
-body .callout[data-callout~="cards"][data-callout-metadata~="flex"] .dataview.table-view-table tbody .callout {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="flex"]
+  > .callout-content
+  .callout,
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="flex"]
+  .dataview.table-view-table
+  tbody
+  .callout {
   flex: 1 1 250px;
   margin: var(--callout-cards-gap);
 }
@@ -9554,7 +10623,9 @@ body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] {
   --callout-content-padding: 0;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"]
+  .callout-content {
   display: unset;
   grid-template-columns: unset;
 }
@@ -9563,41 +10634,64 @@ body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] br {
   display: block;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] .block-language-dataview {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"]
+  .block-language-dataview {
   padding: 5px;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] .dataview.table-view-table {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"]
+  .dataview.table-view-table {
   display: grid;
   margin-block-start: 0;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] .dataview.table-view-table :is(td, tr) {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"]
+  .dataview.table-view-table
+  :is(td, tr) {
   border: 0;
   background: transparent;
   padding: 0;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] .dataview.table-view-table strong {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"]
+  .dataview.table-view-table
+  strong {
   background: transparent;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] .table-view-thead th {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"]
+  .table-view-thead
+  th {
   border: 0;
   background-color: transparent;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] .table-view-thead tr {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"]
+  .table-view-thead
+  tr {
   display: none;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] .dataview.table-view-table tbody {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"]
+  .dataview.table-view-table
+  tbody {
   display: grid;
   grid-template-columns: repeat(var(--callout-cards-columns), 1fr);
   grid-gap: calc(var(--callout-cards-gap) * 2);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] .dataview.table-view-table tbody tr {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"]
+  .dataview.table-view-table
+  tbody
+  tr {
   display: grid;
   align-content: flex-start;
   margin: 0;
@@ -9606,48 +10700,71 @@ body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] .datavie
   box-shadow: var(--shadow-ml, var(--input-shadow));
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="txt-c"] .dataview td {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="txt-c"]
+  .dataview
+  td {
   text-align: center;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"] img:not(.link-favicon) {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"]
+  img:not(.link-favicon) {
   width: 100%;
   object-fit: cover;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-micro"] img {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-micro"]
+  img {
   height: var(--micro);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-tiny"] img {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-tiny"]
+  img {
   height: var(--tiny);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-small"] img {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-small"]
+  img {
   height: var(--small);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-small-med"] img {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-small-med"]
+  img {
   height: var(--small-med);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-med-small"] img {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-med-small"]
+  img {
   height: var(--med-small);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-medium"] img {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-medium"]
+  img {
   height: var(--medium);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-med-tall"] img {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-med-tall"]
+  img {
   height: var(--med-tall);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-tall"] img {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dataview"][data-callout-metadata~="img-tall"]
+  img {
   height: var(--tall);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dvl"] .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dvl"]
+  .callout-content {
   display: block;
 }
 
@@ -9655,8 +10772,14 @@ body .callout[data-callout~="cards"][data-callout-metadata~="dvl"] br {
   display: unset;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dvl"] .block-language-dataviewjs .dataview-result-list-li,
-body .callout[data-callout~="cards"][data-callout-metadata~="dvl"] .list-view-ul li {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dvl"]
+  .block-language-dataviewjs
+  .dataview-result-list-li,
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dvl"]
+  .list-view-ul
+  li {
   padding: 10px;
   background-color: var(--outer-bar, var(--background-secondary));
   box-shadow: var(--shadow-s, var(--input-shadow));
@@ -9664,7 +10787,10 @@ body .callout[data-callout~="cards"][data-callout-metadata~="dvl"] .list-view-ul
   --list-indent: 0;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="dvl"] .dataview.list-view-ul li::before {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="dvl"]
+  .dataview.list-view-ul
+  li::before {
   --bullet: "";
 }
 
@@ -9676,12 +10802,19 @@ body .callout[data-callout~="cards"][data-callout-metadata~="list"] {
   --list-indent: 0;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="list"] > .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="list"]
+  > .callout-content {
   display: block;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="list"] ul li::before,
-body .callout[data-callout~="cards"][data-callout-metadata~="list"] .list-collapse-indicator {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="list"]
+  ul
+  li::before,
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="list"]
+  .list-collapse-indicator {
   display: none;
 }
 
@@ -9709,33 +10842,71 @@ body .callout[data-callout~="cards"][data-callout-metadata~="notion"] {
   --callout-content-padding: 15px;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"]:is([data-callout-metadata~="round"], [data-callout-metadata~="rounded"]) {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]:is(
+    [data-callout-metadata~="round"],
+    [data-callout-metadata~="rounded"]
+  ) {
   --callout-cards-notion-radius: 5px;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] .dataview.table-view-table tbody tr {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  .dataview.table-view-table
+  tbody
+  tr {
   padding: 0;
   box-shadow: var(--callout-cards-notion-shadow);
   border: 0;
   border-radius: var(--callout-cards-notion-radius);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] .dataview.table-view-table tbody tr td > :last-of-type {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  .dataview.table-view-table
+  tbody
+  tr
+  td
+  > :last-of-type {
   padding-bottom: 5px;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] .dataview.table-view-table tbody tr td > :first-child {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  .dataview.table-view-table
+  tbody
+  tr
+  td
+  > :first-child {
   padding-top: 5px;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] .dataview.table-view-table tbody tr td > ul,
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] .dataview.table-view-table tbody tr td > span:not(:has(strong, span)) {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  .dataview.table-view-table
+  tbody
+  tr
+  td
+  > ul,
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  .dataview.table-view-table
+  tbody
+  tr
+  td
+  > span:not(:has(strong, span)) {
   margin-left: var(--callout-cards-notion-padding);
   margin-right: var(--callout-cards-notion-padding);
   display: inline-block;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] .dataview.table-view-table tbody tr td:first-of-type strong::after {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  .dataview.table-view-table
+  tbody
+  tr
+  td:first-of-type
+  strong::after {
   content: "";
   display: block;
   height: 1px;
@@ -9743,56 +10914,106 @@ body .callout[data-callout~="cards"][data-callout-metadata~="notion"] .dataview.
   margin-top: 5px;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] .dataview.table-view-table tbody strong {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  .dataview.table-view-table
+  tbody
+  strong {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] .block-language-dataview {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  .block-language-dataview {
   margin: -25px 0;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] > .callout-content {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  > .callout-content {
   padding: calc(var(--callout-cards-notion-padding) / 2);
   gap: calc(var(--callout-cards-notion-padding) - 3px);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] > .callout-content > p {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  > .callout-content
+  > p {
   box-shadow: var(--callout-cards-notion-shadow);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] > .callout-content > p strong {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  > .callout-content
+  > p
+  strong {
   background-color: transparent;
   text-align: unset;
   padding: 0 var(--callout-cards-notion-padding);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] > .callout-content > p > :not(img, .internal-embed, strong, br) {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  > .callout-content
+  > p
+  > :not(img, .internal-embed, strong, br) {
   display: inline-block;
   padding-left: var(--callout-cards-notion-padding);
   padding-right: var(--callout-cards-notion-padding);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] > .callout-content > p,
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] > .callout-content > p img {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  > .callout-content
+  > p,
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  > .callout-content
+  > p
+  img {
   border-radius: var(--callout-cards-notion-radius);
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] > .callout-content > p > img:first-child,
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] > .callout-content > p > .internal-embed:first-child img {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  > .callout-content
+  > p
+  > img:first-child,
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  > .callout-content
+  > p
+  > .internal-embed:first-child
+  img {
   margin-bottom: 5px;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] > .callout-content > p:has(> :is(img, .internal-embed):first-child) {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  > .callout-content
+  > p:has(> :is(img, .internal-embed):first-child) {
   padding-bottom: 7px;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] > .callout-content > p > img:last-child,
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] > .callout-content > p > .internal-embed:last-child img {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  > .callout-content
+  > p
+  > img:last-child,
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  > .callout-content
+  > p
+  > .internal-embed:last-child
+  img {
   margin-top: 5px;
 }
 
-body .callout[data-callout~="cards"][data-callout-metadata~="notion"] > .callout-content > p:has(> :is(img, .internal-embed):last-child) {
+body
+  .callout[data-callout~="cards"][data-callout-metadata~="notion"]
+  > .callout-content
+  > p:has(> :is(img, .internal-embed):last-child) {
   padding-top: 7px;
 }
 
@@ -9827,7 +11048,12 @@ body .callout.callout[data-callout~="caption"] > .callout-content {
   overflow: hidden;
 }
 
-body .callout.callout[data-callout~="caption"] > .callout-content > p :is(.image-embed, img) + br {
+body
+  .callout.callout[data-callout~="caption"]
+  > .callout-content
+  > p
+  :is(.image-embed, img)
+  + br {
   display: none;
 }
 
@@ -9846,7 +11072,13 @@ body .callout.callout[data-callout~="caption"] p {
   color: var(--text-faint);
 }
 
-body .callout.callout[data-callout~="caption"]:is([data-callout-metadata~="sban"], [data-callout-metadata~="banner"]) .image-embed img {
+body
+  .callout.callout[data-callout~="caption"]:is(
+    [data-callout-metadata~="sban"],
+    [data-callout-metadata~="banner"]
+  )
+  .image-embed
+  img {
   width: 100%;
 }
 
@@ -9857,7 +11089,8 @@ body .callout.callout[data-callout="recite"] {
   --callout-padding: 5px 10px 10px 10px;
   border-style: solid;
   border-width: 11px;
-  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA8CAYAAADxJz2MAAAFWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgZXhpZjpQaXhlbFhEaW1lbnNpb249IjgwIgogICBleGlmOlBpeGVsWURpbWVuc2lvbj0iNjAiCiAgIGV4aWY6Q29sb3JTcGFjZT0iMSIKICAgdGlmZjpJbWFnZVdpZHRoPSI4MCIKICAgdGlmZjpJbWFnZUxlbmd0aD0iNjAiCiAgIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiCiAgIHRpZmY6WFJlc29sdXRpb249IjMwMC8xIgogICB0aWZmOllSZXNvbHV0aW9uPSIzMDAvMSIKICAgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIKICAgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIgogICB4bXA6TW9kaWZ5RGF0ZT0iMjAyMi0wMS0wMlQxNjowNTo0MS0wODowMCIKICAgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMi0wMS0wMlQxNjowNTo0MS0wODowMCI+CiAgIDxkYzp0aXRsZT4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+RCZhbXA7RCBCb3JkZXI8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzp0aXRsZT4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0icHJvZHVjZWQiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFmZmluaXR5IERlc2lnbmVyIDEuMTAuNCIKICAgICAgc3RFdnQ6d2hlbj0iMjAyMi0wMS0wMlQxNjowNTo0MS0wODowMCIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+SLcLyAAAAYFpQ0NQc1JHQiBJRUM2MTk2Ni0yLjEAACiRdZHPK0RRFMc/8xD50SiUhcVLWA35UWJjMZNfhcXMKIPNm2fejJo3Xu+NJFtlO0WJjV8L/gK2ylopIiVLWRMbpuc8o0Yy53bP/dzvPed077mgRNO66ZR3g5nJ2uHRoDoTm1Urn/Ch0EQdqqY71mRkJEpJe7+VaLHrTq9W6bh/rWYh4ejgqxIe0i07KzwmPLGStTzeEm7UU9qC8IlwwJYLCt94erzAzx4nC/zpsR0Nh0CpF1aTvzj+i/WUbQrLy2kz08v6z328l9QmMtMRWVtltuAQZpQgKuMME6KfHgbF99NJL12yo0R+93f+FEuSq4u3WMVmkSQpsgREXZbqCVkN0RMy0qx6/f/bV8fo6y1Urw1CxaPrvrZD5Sbkc677ceC6+UMoe4DzTDF/aR8G3kTPFbW2PfCvw+lFUYtvw9kGNN9bmq19S2UyFcOAl2Ooi0HDFVTPFXr2c87RHUTX5KsuYWcXOiTeP/8FK5Jny8RYHqYAAAAJcEhZcwAALiMAAC4jAXilP3YAAAG5SURBVHic7dyxSiNRFMbxv0OwEkvZfrEWleWAvbA+giB5ANtgcx/gFJK0+wAbwUdYV7bZRjiIirXYL1tbiajFXHV3Y5KBbIyTfL8yOQxfPu5kprkXKnCzRTfrVpmdBm7WdbPFKrNFhYt9As6BnVGD1cgOcJ5/+0CNfl+4WQG0AB80N8U+AiduloBOirh/bejVFehmH4AjYJ/ZLO9Jg7KDo9xJj54C3ewzcAlsjjdbrWwCl7mbvzyvLjebp7xdW28YrE6WgG9u1gFSiriFvALdbBk4QeVV0aL8b1wGKNysCVwA6xONVS/rwIWbNefc7GHSaeps6HugiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIyCzQTqURaafSiBpAE/gCLAwbThFzY0/0DlS8K2+A3SJFdIE14Gy8sabKGbCWIroFQIq4AjaA9kRj1UMb2MidvexYzzuw99zsB/CVcoe2vPgNNFPE9z8/7HmI5IEV4PiNgtXBMbDyb3nQ5ymcIn4BW8AecDfebO/aHWUHW7mTHn2PNMnnpLTd7CdwSHmOyiy5BrZTxOmgoaHvgfkCq8DBfwpWBwfA6rDyAB4BTjVxWZByO0gAAAAASUVORK5CYII=") 11;
+  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA8CAYAAADxJz2MAAAFWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgZXhpZjpQaXhlbFhEaW1lbnNpb249IjgwIgogICBleGlmOlBpeGVsWURpbWVuc2lvbj0iNjAiCiAgIGV4aWY6Q29sb3JTcGFjZT0iMSIKICAgdGlmZjpJbWFnZVdpZHRoPSI4MCIKICAgdGlmZjpJbWFnZUxlbmd0aD0iNjAiCiAgIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiCiAgIHRpZmY6WFJlc29sdXRpb249IjMwMC8xIgogICB0aWZmOllSZXNvbHV0aW9uPSIzMDAvMSIKICAgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIKICAgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIgogICB4bXA6TW9kaWZ5RGF0ZT0iMjAyMi0wMS0wMlQxNjowNTo0MS0wODowMCIKICAgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMi0wMS0wMlQxNjowNTo0MS0wODowMCI+CiAgIDxkYzp0aXRsZT4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+RCZhbXA7RCBCb3JkZXI8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzp0aXRsZT4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0icHJvZHVjZWQiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFmZmluaXR5IERlc2lnbmVyIDEuMTAuNCIKICAgICAgc3RFdnQ6d2hlbj0iMjAyMi0wMS0wMlQxNjowNTo0MS0wODowMCIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+SLcLyAAAAYFpQ0NQc1JHQiBJRUM2MTk2Ni0yLjEAACiRdZHPK0RRFMc/8xD50SiUhcVLWA35UWJjMZNfhcXMKIPNm2fejJo3Xu+NJFtlO0WJjV8L/gK2ylopIiVLWRMbpuc8o0Yy53bP/dzvPed077mgRNO66ZR3g5nJ2uHRoDoTm1Urn/Ch0EQdqqY71mRkJEpJe7+VaLHrTq9W6bh/rWYh4ejgqxIe0i07KzwmPLGStTzeEm7UU9qC8IlwwJYLCt94erzAzx4nC/zpsR0Nh0CpF1aTvzj+i/WUbQrLy2kz08v6z328l9QmMtMRWVtltuAQZpQgKuMME6KfHgbF99NJL12yo0R+93f+FEuSq4u3WMVmkSQpsgREXZbqCVkN0RMy0qx6/f/bV8fo6y1Urw1CxaPrvrZD5Sbkc677ceC6+UMoe4DzTDF/aR8G3kTPFbW2PfCvw+lFUYtvw9kGNN9bmq19S2UyFcOAl2Ooi0HDFVTPFXr2c87RHUTX5KsuYWcXOiTeP/8FK5Jny8RYHqYAAAAJcEhZcwAALiMAAC4jAXilP3YAAAG5SURBVHic7dyxSiNRFMbxv0OwEkvZfrEWleWAvbA+giB5ANtgcx/gFJK0+wAbwUdYV7bZRjiIirXYL1tbiajFXHV3Y5KBbIyTfL8yOQxfPu5kprkXKnCzRTfrVpmdBm7WdbPFKrNFhYt9As6BnVGD1cgOcJ5/+0CNfl+4WQG0AB80N8U+AiduloBOirh/bejVFehmH4AjYJ/ZLO9Jg7KDo9xJj54C3ewzcAlsjjdbrWwCl7mbvzyvLjebp7xdW28YrE6WgG9u1gFSiriFvALdbBk4QeVV0aL8b1wGKNysCVwA6xONVS/rwIWbNefc7GHSaeps6HugiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIyCzQTqURaafSiBpAE/gCLAwbThFzY0/0DlS8K2+A3SJFdIE14Gy8sabKGbCWIroFQIq4AjaA9kRj1UMb2MidvexYzzuw99zsB/CVcoe2vPgNNFPE9z8/7HmI5IEV4PiNgtXBMbDyb3nQ5ymcIn4BW8AecDfebO/aHWUHW7mTHn2PNMnnpLTd7CdwSHmOyiy5BrZTxOmgoaHvgfkCq8DBfwpWBwfA6rDyAB4BTjVxWZByO0gAAAAASUVORK5CYII=")
+    11;
   border-image-outset: 9px 0px;
   box-shadow: 0px 0px 10px var(--outline, var(--background-modifier-box-shadow));
   background: var(--note, var(--background-primary));
@@ -9871,7 +11104,11 @@ body .callout.callout[data-callout="recite"] .callout-title {
   justify-content: center;
 }
 
-body .callout.callout[data-callout="recite"][data-callout-metadata*="bg-"]:not([data-callout-metadata*="bg-c"]) .callout-title {
+body
+  .callout.callout[data-callout="recite"][data-callout-metadata*="bg-"]:not(
+    [data-callout-metadata*="bg-c"]
+  )
+  .callout-title {
   color: var(--text-normal);
 }
 
@@ -9896,7 +11133,12 @@ body .callout.callout[data-callout-metadata~="table"] .callout-content {
   box-shadow: none;
 }
 
-body .callout.callout[data-callout-metadata~="table"]:not([data-callout-metadata~="show-title"], [data-callout-metadata~="s-t"]) .callout-title {
+body
+  .callout.callout[data-callout-metadata~="table"]:not(
+    [data-callout-metadata~="show-title"],
+    [data-callout-metadata~="s-t"]
+  )
+  .callout-title {
   display: none;
 }
 
@@ -9911,31 +11153,80 @@ body .callout.callout[data-callout-metadata~="table"] table td {
   white-space: nowrap;
 }
 
-body .callout.callout:is([data-callout-metadata~="table-unwrap-column-1"], [data-callout-metadata~="tbl-u-1"]) table tr td:nth-child(1) {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="table-unwrap-column-1"],
+    [data-callout-metadata~="tbl-u-1"]
+  )
+  table
+  tr
+  td:nth-child(1) {
   --table-white-space: nowrap;
 }
 
-body .callout.callout:is([data-callout-metadata~="table-unwrap-column-2"], [data-callout-metadata~="tbl-u-2"]) table tr td:nth-child(2) {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="table-unwrap-column-2"],
+    [data-callout-metadata~="tbl-u-2"]
+  )
+  table
+  tr
+  td:nth-child(2) {
   --table-white-space: nowrap;
 }
 
-body .callout.callout:is([data-callout-metadata~="table-unwrap-column-3"], [data-callout-metadata~="tbl-u-3"]) table tr td:nth-child(3) {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="table-unwrap-column-3"],
+    [data-callout-metadata~="tbl-u-3"]
+  )
+  table
+  tr
+  td:nth-child(3) {
   --table-white-space: nowrap;
 }
 
-body .callout.callout:is([data-callout-metadata~="table-unwrap-column-4"], [data-callout-metadata~="tbl-u-4"]) table tr td:nth-child(4) {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="table-unwrap-column-4"],
+    [data-callout-metadata~="tbl-u-4"]
+  )
+  table
+  tr
+  td:nth-child(4) {
   --table-white-space: nowrap;
 }
 
-body .callout.callout:is([data-callout-metadata~="table-unwrap-column-5"], [data-callout-metadata~="tbl-u-5"]) table tr td:nth-child(5) {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="table-unwrap-column-5"],
+    [data-callout-metadata~="tbl-u-5"]
+  )
+  table
+  tr
+  td:nth-child(5) {
   --table-white-space: nowrap;
 }
 
-body .callout.callout:is([data-callout-metadata~="table-unwrap-column-6"], [data-callout-metadata~="tbl-u-6"]) table tr td:nth-child(6) {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="table-unwrap-column-6"],
+    [data-callout-metadata~="tbl-u-6"]
+  )
+  table
+  tr
+  td:nth-child(6) {
   --table-white-space: nowrap;
 }
 
-body .callout.callout:is([data-callout-metadata~="table-unwrap-column-7"], [data-callout-metadata~="tbl-u-7"]) table tr td:nth-child(7) {
+body
+  .callout.callout:is(
+    [data-callout-metadata~="table-unwrap-column-7"],
+    [data-callout-metadata~="tbl-u-7"]
+  )
+  table
+  tr
+  td:nth-child(7) {
   --table-white-space: nowrap;
 }
 
@@ -9962,40 +11253,63 @@ body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i] {
   --callout-shadow: 0px 0px 0px 1px var(--outline);
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i]:not([data-callout-metadata*="bg-"], [data-callout-metadata*="bg-c-"], [data-callout-metadata*="c-"], [data-callout-metadata*="color-"]) {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i]:not(
+    [data-callout-metadata*="bg-"],
+    [data-callout-metadata*="bg-c-"],
+    [data-callout-metadata*="c-"],
+    [data-callout-metadata*="color-"]
+  ) {
   --callout-color: 82, 139, 212;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i] .callout-title {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i]
+  .callout-title {
   background-color: transparent;
   justify-content: center;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i] .callout-title-inner {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i]
+  .callout-title-inner {
   flex: unset;
   color: rgb(var(--callout-color));
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i]:not([data-callout-metadata~="no-strong"], [data-callout-metadata~="no-str"]) {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i]:not(
+    [data-callout-metadata~="no-strong"],
+    [data-callout-metadata~="no-str"]
+  ) {
   --bold-color: rgb(var(--callout-color));
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i] .dataview.inline-field-key {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i]
+  .dataview.inline-field-key {
   background: rgb(var(--callout-color));
   color: var(--text-on-accent);
   font-weight: 900;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i] .dataview.inline-field-value {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i]
+  .dataview.inline-field-value {
   font-weight: unset;
   background: transparent;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i] table th {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i]
+  table
+  th {
   background-color: var(--aside-bg, rgba(var(--callout-color), 0.5));
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i] table {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i]
+  table {
   --tbl-td-h: 0;
   --tbl-td-w: 5px;
   white-space: nowrap;
@@ -10003,63 +11317,105 @@ body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i] tabl
   width: 100%;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i] .callout-content p:last-child {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i]
+  .callout-content
+  p:last-child {
   margin-bottom: 0;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i] .callout-content p:first-child {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i]
+  .callout-content
+  p:first-child {
   margin-top: 0;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i] .callout-content,
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i]
+  .callout-content,
 body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i] ul {
   margin: 0;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"] {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"] {
   background: var(--outer-bar, var(--background-secondary-alt));
   border: 0;
   text-align: center;
   padding: 0;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"]:is([data-callout-metadata*="bg-"], [data-callout-metadata*="bg-c-"], [data-callout-metadata*="c-"], [data-callout-metadata*="color-"]) {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"]:is(
+    [data-callout-metadata*="bg-"],
+    [data-callout-metadata*="bg-c-"],
+    [data-callout-metadata*="c-"],
+    [data-callout-metadata*="color-"]
+  ) {
   background: rgba(var(--callout-color), var(--callout-color-opacity));
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"].is-collapsible:not(.is-collapsed) {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"].is-collapsible:not(
+    .is-collapsed
+  ) {
   display: flex;
   flex-direction: row-reverse;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"]:not(.is-collapsible) .callout-title,
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"] .callout-title-inner,
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"]:not(.is-collapsed) .callout-icon {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"]:not(
+    .is-collapsible
+  )
+  .callout-title,
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"]
+  .callout-title-inner,
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"]:not(
+    .is-collapsed
+  )
+  .callout-icon {
   display: none;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"] .callout-fold {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"]
+  .callout-fold {
   display: flex;
   align-content: center;
   align-items: center;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"] .callout-fold svg {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"]
+  .callout-fold
+  svg {
   margin-bottom: unset;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"] .callout-content {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i][data-callout-metadata~="i-at"]
+  .callout-content {
   padding: 0px;
   margin: auto;
   overflow-y: hidden;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i]:is([data-callout-metadata~="tbl-cln"], [data-callout-metadata~="table-clean"]) table :is(td, tr, th) {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i]:is(
+    [data-callout-metadata~="tbl-cln"],
+    [data-callout-metadata~="table-clean"]
+  )
+  table
+  :is(td, tr, th) {
   background-color: transparent;
   border-color: transparent;
 }
 
-body:not(.callout-no-metadata) .callout.callout[data-callout~="Metadata" i][data-callout-metadata*="bg-"] {
+body:not(.callout-no-metadata)
+  .callout.callout[data-callout~="Metadata" i][data-callout-metadata*="bg-"] {
   --callout-border-color: var(--callout-background);
   border-color: var(--callout-border-color);
 }
@@ -10094,39 +11450,60 @@ body .callout[data-callout*="column"] > .callout-content {
   padding: 0;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="3"] .callout-content {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="3"]
+  .callout-content {
   --columns: 3;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="4"] .callout-content {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="4"]
+  .callout-content {
   --columns: 4;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="5"] .callout-content {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="5"]
+  .callout-content {
   --columns: 5;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="6"] .callout-content {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="6"]
+  .callout-content {
   --columns: 6;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="7"] .callout-content {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="7"]
+  .callout-content {
   --columns: 7;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="8"] .callout-content {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="8"]
+  .callout-content {
   --columns: 8;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="9"] .callout-content {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="9"]
+  .callout-content {
   --columns: 9;
 }
 
-body .callout[data-callout*="column"]:is([data-callout-metadata~="slim-margins"], [data-callout-metadata~="s-mg"]) > .callout-content {
+body
+  .callout[data-callout*="column"]:is(
+    [data-callout-metadata~="slim-margins"],
+    [data-callout-metadata~="s-mg"]
+  )
+  > .callout-content {
   --callout-column-gap: 2px;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="flex"] > .callout-content {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="flex"]
+  > .callout-content {
   gap: var(--callout-column-gap);
   grid-template-columns: none;
   display: flex;
@@ -10134,82 +11511,169 @@ body .callout[data-callout*="column"][data-callout-metadata~="flex"] > .callout-
   flex-wrap: wrap;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="flex"] > .callout-content .callout {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="flex"]
+  > .callout-content
+  .callout {
   flex: 1 1 calc(var(--file-line-width) / 2.5);
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="3"] > .callout-content .callout {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="3"]
+  > .callout-content
+  .callout {
   flex: 1 1 calc(var(--file-line-width) / 3.5);
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="resize"] .callout {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="resize"]
+  .callout {
   flex: 1 1 auto;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="resize"] .callout[data-callout-metadata~="wmicro"] {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="resize"]
+  .callout[data-callout-metadata~="wmicro"] {
   width: 5%;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="resize"] .callout[data-callout-metadata~="wtiny"] {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="resize"]
+  .callout[data-callout-metadata~="wtiny"] {
   width: 10%;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="resize"] .callout[data-callout-metadata~="wsmall"] {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="resize"]
+  .callout[data-callout-metadata~="wsmall"] {
   width: 20%;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="resize"] .callout[data-callout-metadata~="ws-med"] {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="resize"]
+  .callout[data-callout-metadata~="ws-med"] {
   width: 30%;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="resize"] .callout[data-callout-metadata~="wmed"] {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="flex"][data-callout-metadata~="resize"]
+  .callout[data-callout-metadata~="wmed"] {
   width: 40%;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="dataview"] > .callout-content {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="dataview"]
+  > .callout-content {
   grid-template-columns: unset;
   gap: unset;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="dataview"] > .callout-content .dataview.list-view-ul {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="dataview"]
+  > .callout-content
+  .dataview.list-view-ul {
   columns: var(--columns);
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="dataview"] > .callout-content .dataview li {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="dataview"]
+  > .callout-content
+  .dataview
+  li {
   break-inside: avoid;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="list-global"] .callout > .callout-content,
-body .callout[data-callout*="column"][data-callout-metadata~="list"] > .callout-content {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list-global"]
+  .callout
+  > .callout-content,
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list"]
+  > .callout-content {
   grid-template-columns: unset;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="list-global"] .callout > .callout-content ul,
-body .callout[data-callout*="column"][data-callout-metadata~="list-global"] .callout > .callout-content > ul,
-body .callout[data-callout*="column"][data-callout-metadata~="list"] > .callout-content ul,
-body .callout[data-callout*="column"][data-callout-metadata~="list"] > .callout-content > ul {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list-global"]
+  .callout
+  > .callout-content
+  ul,
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list-global"]
+  .callout
+  > .callout-content
+  > ul,
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list"]
+  > .callout-content
+  ul,
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list"]
+  > .callout-content
+  > ul {
   columns: var(--columns);
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="list-global"] .callout > .callout-content ul > li,
-body .callout[data-callout*="column"][data-callout-metadata~="list-global"] .callout > .callout-content > ul > li,
-body .callout[data-callout*="column"][data-callout-metadata~="list"] > .callout-content ul > li,
-body .callout[data-callout*="column"][data-callout-metadata~="list"] > .callout-content > ul > li {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list-global"]
+  .callout
+  > .callout-content
+  ul
+  > li,
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list-global"]
+  .callout
+  > .callout-content
+  > ul
+  > li,
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list"]
+  > .callout-content
+  ul
+  > li,
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list"]
+  > .callout-content
+  > ul
+  > li {
   break-inside: avoid;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="list-global"] .callout > .callout-content ul .list-bullet::after,
-body .callout[data-callout*="column"][data-callout-metadata~="list-global"] .callout > .callout-content > ul .list-bullet::after,
-body .callout[data-callout*="column"][data-callout-metadata~="list"] > .callout-content ul .list-bullet::after,
-body .callout[data-callout*="column"][data-callout-metadata~="list"] > .callout-content > ul .list-bullet::after {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list-global"]
+  .callout
+  > .callout-content
+  ul
+  .list-bullet::after,
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list-global"]
+  .callout
+  > .callout-content
+  > ul
+  .list-bullet::after,
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list"]
+  > .callout-content
+  ul
+  .list-bullet::after,
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list"]
+  > .callout-content
+  > ul
+  .list-bullet::after {
   position: relative;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="list-x"] > .callout-content {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list-x"]
+  > .callout-content {
   grid-template-columns: unset;
 }
 
-body .callout[data-callout*="column"][data-callout-metadata~="list-x"] > .callout-content > ul {
+body
+  .callout[data-callout*="column"][data-callout-metadata~="list-x"]
+  > .callout-content
+  > ul {
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
 }
@@ -10245,7 +11709,10 @@ body .callout.callout[data-callout~="kanban"] ul li::marker,
 body .callout.callout[data-callout~="kanban"] ul li::before,
 body .callout.callout[data-callout~="kanban"] .list-bullet,
 body .callout.callout[data-callout~="kanban"] ul::before,
-body .callout.callout[data-callout~="kanban"] :is(ul, ul ul) .list-collapse-indicator {
+body
+  .callout.callout[data-callout~="kanban"]
+  :is(ul, ul ul)
+  .list-collapse-indicator {
   list-style-type: none;
   color: transparent;
   display: none !important;
@@ -10286,11 +11753,19 @@ body .callout.callout[data-callout~="kanban"] ul ul li {
   background: var(--code-bg, var(--background-primary));
 }
 
-body .callout.callout[data-callout~="kanban"] ul ul li :is(img, .internal-embed) {
+body
+  .callout.callout[data-callout~="kanban"]
+  ul
+  ul
+  li
+  :is(img, .internal-embed) {
   margin-bottom: -6px;
 }
 
-body .callout.callout[data-callout~="kanban"] ul.contains-task-list .task-list-item-checkbox {
+body
+  .callout.callout[data-callout~="kanban"]
+  ul.contains-task-list
+  .task-list-item-checkbox {
   margin-inline-start: 0;
 }
 
@@ -10309,7 +11784,10 @@ body .callout.callout[data-callout~="timeline"] {
   --callout-content-padding: 10px;
   --callout-margin: 0;
   --timeline-shadow: var(--outline, var(--background-modifier-box-shadow));
-  --callout-content-background: var(--callout-background, rgb(var(--callout-color), 0.1));
+  --callout-content-background: var(
+    --callout-background,
+    rgb(var(--callout-color), 0.1)
+  );
   --timeline-border: rgb(var(--callout-title, var(--callout-color)));
   --micro: 50px;
   --tiny: 100px;
@@ -10357,8 +11835,12 @@ body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-l"] {
   z-index: 0;
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-l"] > .callout-title,
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-l"] > .callout-content {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-l"]
+  > .callout-title,
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-l"]
+  > .callout-content {
   box-shadow: -4px 4px 0 var(--timeline-shadow);
 }
 
@@ -10369,65 +11851,97 @@ body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-r"] {
   margin-left: var(--c-timeline);
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-r"] > .callout-title,
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-r"] > .callout-content {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-r"]
+  > .callout-title,
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-r"]
+  > .callout-content {
   box-shadow: 4px 4px 0 var(--timeline-shadow);
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-l"] > .callout-title {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-l"]
+  > .callout-title {
   flex-direction: row-reverse;
   text-align: right;
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-l"] > .callout-title .callout-icon {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-l"]
+  > .callout-title
+  .callout-icon {
   float: right;
   position: absolute;
   margin-right: -20px;
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-r"] > .callout-title .callout-icon {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-r"]
+  > .callout-title
+  .callout-icon {
   float: left;
   position: absolute;
   margin-left: -20px;
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-1"] .callout-title {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-1"]
+  .callout-title {
   margin-top: var(--micro);
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-2"] .callout-title {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-2"]
+  .callout-title {
   margin-top: var(--tiny);
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-3"] .callout-title {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-3"]
+  .callout-title {
   margin-top: var(--small);
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-4"] .callout-title {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-4"]
+  .callout-title {
   margin-top: var(--small-med);
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-5"] .callout-title {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-5"]
+  .callout-title {
   margin-top: var(--med-small);
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-6"] .callout-title {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-6"]
+  .callout-title {
   margin-top: var(--medium);
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-7"] .callout-title {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-7"]
+  .callout-title {
   margin-top: 350px;
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-8"] .callout-title {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-8"]
+  .callout-title {
   margin-top: var(--med-tall);
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-9"] .callout-title {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-9"]
+  .callout-title {
   margin-top: var(--tall);
 }
 
-body .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-10"] .callout-title {
+body
+  .callout.callout[data-callout~="timeline"][data-callout-metadata~="t-10"]
+  .callout-title {
   margin-top: 750px;
 }
 
@@ -10496,7 +12010,10 @@ body .callout[data-callout="checks"] ul.contains-task-list li p {
   margin-block-start: 0;
 }
 
-body .callout[data-callout="checks"] > .callout-content > ul:not(.contains-task-list) {
+body
+  .callout[data-callout="checks"]
+  > .callout-content
+  > ul:not(.contains-task-list) {
   padding-inline-start: 0;
 }
 
@@ -10506,7 +12023,11 @@ body .callout[data-callout="checks"] ul:not(.contains-task-list) li {
   margin-right: 10px;
 }
 
-body .callout[data-callout="checks"] ul:not(.contains-task-list) li > .list-bullet {
+body
+  .callout[data-callout="checks"]
+  ul:not(.contains-task-list)
+  li
+  > .list-bullet {
   display: none;
 }
 
@@ -10527,19 +12048,34 @@ body .callout[data-callout~="aside"] {
   max-width: 400px;
 }
 
-body .callout[data-callout~="aside"]:not([data-callout-metadata~="no-t"]) .callout-content {
+body
+  .callout[data-callout~="aside"]:not([data-callout-metadata~="no-t"])
+  .callout-content {
   padding: 5px 10px;
 }
 
-body .callout[data-callout~="aside"]:not([data-callout-metadata~="no-t"]) .callout-content p:first-child {
+body
+  .callout[data-callout~="aside"]:not([data-callout-metadata~="no-t"])
+  .callout-content
+  p:first-child {
   margin-top: 0;
 }
 
-body .callout[data-callout~="aside"]:not([data-callout-metadata~="show-title"], [data-callout-metadata~="s-t"]) .callout-title-inner {
+body
+  .callout[data-callout~="aside"]:not(
+    [data-callout-metadata~="show-title"],
+    [data-callout-metadata~="s-t"]
+  )
+  .callout-title-inner {
   display: none;
 }
 
-body .callout[data-callout~="aside"]:not([data-callout-metadata~="show-title"], [data-callout-metadata~="s-t"]) .callout-title {
+body
+  .callout[data-callout~="aside"]:not(
+    [data-callout-metadata~="show-title"],
+    [data-callout-metadata~="s-t"]
+  )
+  .callout-title {
   justify-content: space-between;
 }
 
@@ -10577,42 +12113,72 @@ body .callout[data-callout~="aside"][data-callout-metadata~="tufte"] {
   position: relative;
 }
 
-body .callout[data-callout~="aside"][data-callout-metadata~="tufte"]:not(.is-collapsed) {
+body
+  .callout[data-callout~="aside"][data-callout-metadata~="tufte"]:not(
+    .is-collapsed
+  ) {
   width: 400px;
   margin-right: -25.3em;
 }
 
-body .callout[data-callout~="aside"][data-callout-metadata~="tufte"] .callout-title {
+body
+  .callout[data-callout~="aside"][data-callout-metadata~="tufte"]
+  .callout-title {
   padding-top: 0;
 }
 
-body .callout[data-callout~="aside"][data-callout-metadata~="tufte"].is-collapsed .callout-title {
+body
+  .callout[data-callout~="aside"][data-callout-metadata~="tufte"].is-collapsed
+  .callout-title {
   justify-content: unset;
 }
 
-body .callout[data-callout~="aside"][data-callout-metadata~="tufte"].is-collapsed .callout-content {
+body
+  .callout[data-callout~="aside"][data-callout-metadata~="tufte"].is-collapsed
+  .callout-content {
   display: none;
 }
 
-body .callout.callout.callout[data-callout~="aside"]:is([data-callout-metadata~="left"], [data-callout-metadata~="p+l"]) {
+body
+  .callout.callout.callout[data-callout~="aside"]:is(
+    [data-callout-metadata~="left"],
+    [data-callout-metadata~="p+l"]
+  ) {
   margin-left: -1.6em;
 }
 
-body .callout.callout.callout[data-callout~="aside"]:is([data-callout-metadata~="left"], [data-callout-metadata~="p+l"]):not(.is-collapsed) {
+body
+  .callout.callout.callout[data-callout~="aside"]:is(
+    [data-callout-metadata~="left"],
+    [data-callout-metadata~="p+l"]
+  ):not(.is-collapsed) {
   margin-right: 10px;
 }
 
-body .callout.callout.callout[data-callout~="aside"]:is([data-callout-metadata~="left"], [data-callout-metadata~="p+l"])[data-callout-metadata~="tufte"]:not(.is-collapsed) {
+body
+  .callout.callout.callout[data-callout~="aside"]:is(
+    [data-callout-metadata~="left"],
+    [data-callout-metadata~="p+l"]
+  )[data-callout-metadata~="tufte"]:not(.is-collapsed) {
   margin: unset;
   margin-left: -25em !important;
 }
 
-body .callout.callout.callout[data-callout~="aside"]:is([data-callout-metadata~="left"], [data-callout-metadata~="p+l"])[data-callout-metadata~="tufte"]:not(.is-collapsed) .callout-title {
+body
+  .callout.callout.callout[data-callout~="aside"]:is(
+    [data-callout-metadata~="left"],
+    [data-callout-metadata~="p+l"]
+  )[data-callout-metadata~="tufte"]:not(.is-collapsed)
+  .callout-title {
   padding-top: 5px;
   flex-direction: row-reverse;
 }
 
-.is-mobile.is-mobile .callout[data-callout~="aside"]:is([data-callout-metadata~="left"], [data-callout-metadata~="p+l"]) {
+.is-mobile.is-mobile
+  .callout[data-callout~="aside"]:is(
+    [data-callout-metadata~="left"],
+    [data-callout-metadata~="p+l"]
+  ) {
   margin-left: 0;
 }
 
@@ -10624,7 +12190,8 @@ body .callout.callout.callout[data-callout~="aside"]:is([data-callout-metadata~=
   margin: 5px;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"] {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"] {
   --callout-icon: "";
   --callout-color: var(--color-accent);
   --callout-padding: 20px 30px;
@@ -10635,19 +12202,29 @@ body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callou
   box-shadow: var(--shadow-l);
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"] > .callout-content {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"]
+  > .callout-content {
   overflow: hidden;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"] > .callout-content p:first-child {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"]
+  > .callout-content
+  p:first-child {
   margin-block-start: 0;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"] > .callout-content p:last-child {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"]
+  > .callout-content
+  p:last-child {
   margin-block-end: 0;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"] > .callout-title {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"]
+  > .callout-title {
   background: transparent;
   text-align: right;
   padding-top: 5px;
@@ -10655,20 +12232,30 @@ body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callou
   justify-content: flex-end;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"] > .callout-title > .callout-fold {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"]
+  > .callout-title
+  > .callout-fold {
   padding-inline-end: 0;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"] > .callout-title > .callout-icon {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"]
+  > .callout-title
+  > .callout-icon {
   height: 0;
   width: 0;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"] > .callout-title > .callout-title-inner::before {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"]
+  > .callout-title
+  > .callout-title-inner::before {
   content: "~ ";
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"][data-callout-metadata~="author"] {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"][data-callout-metadata~="author"] {
   --callout-icon: "";
   --callout-color: var(--color-accent);
   --callout-padding: 20px 30px;
@@ -10679,24 +12266,36 @@ body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callou
   box-shadow: var(--shadow-l);
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"][data-callout-metadata~="author"] .callout-content {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"][data-callout-metadata~="author"]
+  .callout-content {
   overflow: hidden;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"][data-callout-metadata~="author"] .callout-content p:first-child {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"][data-callout-metadata~="author"]
+  .callout-content
+  p:first-child {
   margin-block-start: 0;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"][data-callout-metadata~="author"] .callout-content p:last-child {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"][data-callout-metadata~="author"]
+  .callout-content
+  p:last-child {
   margin-block-end: 0;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"][data-callout-metadata~="author"] .callout-icon {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"][data-callout-metadata~="author"]
+  .callout-icon {
   height: 0;
   width: 0;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"][data-callout-metadata~="author"] .callout-title {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"][data-callout-metadata~="author"]
+  .callout-title {
   background: transparent;
   text-align: right;
   padding-top: 5px;
@@ -10704,15 +12303,20 @@ body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callou
   display: block;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"][data-callout-metadata~="author"] .callout-title-inner::before {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"][data-callout-metadata~="author"]
+  .callout-title-inner::before {
   content: "~ ";
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"][data-callout-metadata~="mark"] {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"][data-callout-metadata~="mark"] {
   --callout-content-padding: 0 30px 0 0;
 }
 
-body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callout="quote"][data-callout-metadata~="mark"] .callout-content::before {
+body:not(.default-callout-quote, .callout-no-quote)
+  .callout.callout[data-callout="quote"][data-callout-metadata~="mark"]
+  .callout-content::before {
   display: block;
   float: right;
   content: "”";
@@ -10724,12 +12328,18 @@ body:not(.default-callout-quote, .callout-no-quote) .callout.callout[data-callou
   margin-top: 20px;
 }
 
-.published-container .callout.callout[data-callout="quote"][data-callout-metadata~="mark"] .callout-content::before {
+.published-container
+  .callout.callout[data-callout="quote"][data-callout-metadata~="mark"]
+  .callout-content::before {
   right: 65px;
 }
 
 body .callout-original .callout,
-body .callout:is([data-callout-metadata~="callout-original"], [data-callout-metadata~="co-o"]) {
+body
+  .callout:is(
+    [data-callout-metadata~="callout-original"],
+    [data-callout-metadata~="co-o"]
+  ) {
   --callout-padding: 0;
   --callout-title-padding: 10px 15px;
   --callout-content-padding: 5px 15px;
@@ -10742,12 +12352,21 @@ body .callout:is([data-callout-metadata~="callout-original"], [data-callout-meta
 }
 
 body .callout-original .callout .callout-title,
-body .callout:is([data-callout-metadata~="callout-original"], [data-callout-metadata~="co-o"]) .callout-title {
+body
+  .callout:is(
+    [data-callout-metadata~="callout-original"],
+    [data-callout-metadata~="co-o"]
+  )
+  .callout-title {
   background: rgba(var(--callout-color), 0.1);
 }
 
 body .callout-block .callout,
-body .callout:is([data-callout-metadata~="callout-block"], [data-callout-metadata~="co-block"]) {
+body
+  .callout:is(
+    [data-callout-metadata~="callout-block"],
+    [data-callout-metadata~="co-block"]
+  ) {
   --callout-padding: 0;
   --callout-content-padding: 0 10px;
   --callout-title-padding: 6px 10px;
@@ -10756,13 +12375,30 @@ body .callout:is([data-callout-metadata~="callout-block"], [data-callout-metadat
 }
 
 body .callout-block .callout .callout-title,
-body .callout:is([data-callout-metadata~="callout-block"], [data-callout-metadata~="co-block"]) .callout-title {
-  background-color: rgba(var(--callout-title-background, var(--callout-color)), 0.2);
+body
+  .callout:is(
+    [data-callout-metadata~="callout-block"],
+    [data-callout-metadata~="co-block"]
+  )
+  .callout-title {
+  background-color: rgba(
+    var(--callout-title-background, var(--callout-color)),
+    0.2
+  );
 }
 
-body .callout-block .callout.is-collapsible:not(.is-collapsed) > .callout-content,
-body .callout:is([data-callout-metadata~="callout-block"], [data-callout-metadata~="co-block"]).is-collapsible:not(.is-collapsed) > .callout-content {
-  border-bottom: 1px solid rgba(var(--callout-color), var(--callout-border-opacity));
+body
+  .callout-block
+  .callout.is-collapsible:not(.is-collapsed)
+  > .callout-content,
+body
+  .callout:is(
+    [data-callout-metadata~="callout-block"],
+    [data-callout-metadata~="co-block"]
+  ).is-collapsible:not(.is-collapsed)
+  > .callout-content {
+  border-bottom: 1px solid
+    rgba(var(--callout-color), var(--callout-border-opacity));
 }
 
 body .callout-alternate-line .callout,
@@ -10786,12 +12422,37 @@ body .callout.callout[data-callout-metadata~="alt-line"] .callout-fold {
 }
 
 body .callout-alternate-line .callout .callout-content.callout-content,
-body .callout.callout[data-callout-metadata~="alt-line"] .callout-content.callout-content {
+body
+  .callout.callout[data-callout-metadata~="alt-line"]
+  .callout-content.callout-content {
   border: 0;
   border-bottom: 1px solid rgba(var(--callout-color), 0.5);
 }
 
-body .callout-bordered .callout:not([data-callout-metadata~="callout-block"], [data-callout-metadata~="co-block"], [data-callout-metadata~="callout-original"], [data-callout-metadata~="co-o"], [data-callout-metadata~="alt-line"]):not([data-callout="aside"], [data-callout="blank"], [data-callout="captions"], [data-callout="cards"], [data-callout="checks"], [data-callout="column"], [data-callout="grid"], [data-callout="infobox"], [data-callout="kanban"], [data-callout="metadata"], [data-callout="quotes"], [data-callout="recite"], [data-callout="statblocks"], [data-callout="timeline"]),
+body
+  .callout-bordered
+  .callout:not(
+    [data-callout-metadata~="callout-block"],
+    [data-callout-metadata~="co-block"],
+    [data-callout-metadata~="callout-original"],
+    [data-callout-metadata~="co-o"],
+    [data-callout-metadata~="alt-line"]
+  ):not(
+    [data-callout="aside"],
+    [data-callout="blank"],
+    [data-callout="captions"],
+    [data-callout="cards"],
+    [data-callout="checks"],
+    [data-callout="column"],
+    [data-callout="grid"],
+    [data-callout="infobox"],
+    [data-callout="kanban"],
+    [data-callout="metadata"],
+    [data-callout="quotes"],
+    [data-callout="recite"],
+    [data-callout="statblocks"],
+    [data-callout="timeline"]
+  ),
 body .callout[data-callout-metadata~="callout-bordered"] {
   --callout-border-width: 2px;
   --callout-title-padding: 5px;
@@ -10799,18 +12460,48 @@ body .callout[data-callout-metadata~="callout-bordered"] {
   --callout-shadow: 0px 0px 0px 1px var(--outline);
 }
 
-body .callout-bordered .callout:not([data-callout-metadata~="callout-block"], [data-callout-metadata~="co-block"], [data-callout-metadata~="callout-original"], [data-callout-metadata~="co-o"], [data-callout-metadata~="alt-line"]):not([data-callout="aside"], [data-callout="blank"], [data-callout="captions"], [data-callout="cards"], [data-callout="checks"], [data-callout="column"], [data-callout="grid"], [data-callout="infobox"], [data-callout="kanban"], [data-callout="metadata"], [data-callout="quotes"], [data-callout="recite"], [data-callout="statblocks"], [data-callout="timeline"])[data-callout-metadata*="bg-"],
-body .callout[data-callout-metadata~="callout-bordered"][data-callout-metadata*="bg-"] {
+body
+  .callout-bordered
+  .callout:not(
+    [data-callout-metadata~="callout-block"],
+    [data-callout-metadata~="co-block"],
+    [data-callout-metadata~="callout-original"],
+    [data-callout-metadata~="co-o"],
+    [data-callout-metadata~="alt-line"]
+  ):not(
+    [data-callout="aside"],
+    [data-callout="blank"],
+    [data-callout="captions"],
+    [data-callout="cards"],
+    [data-callout="checks"],
+    [data-callout="column"],
+    [data-callout="grid"],
+    [data-callout="infobox"],
+    [data-callout="kanban"],
+    [data-callout="metadata"],
+    [data-callout="quotes"],
+    [data-callout="recite"],
+    [data-callout="statblocks"],
+    [data-callout="timeline"]
+  )[data-callout-metadata*="bg-"],
+body
+  .callout[data-callout-metadata~="callout-bordered"][data-callout-metadata*="bg-"] {
   --callout-border-color: var(--callout-background);
   border-color: var(--callout-border-color);
 }
 
 @media print {
-  .print.print .markdown-preview-view .callout:is([data-callout*="cards"], [data-callout*="column"]) .callout-content {
+  .print.print
+    .markdown-preview-view
+    .callout:is([data-callout*="cards"], [data-callout*="column"])
+    .callout-content {
     display: grid !important;
   }
 
-  .print.print .markdown-preview-view .callout:is([data-callout*="column"][data-callout-metadata*="flex"]) .callout-content {
+  .print.print
+    .markdown-preview-view
+    .callout:is([data-callout*="column"][data-callout-metadata*="flex"])
+    .callout-content {
     display: flex !important;
   }
 }
@@ -10830,14 +12521,35 @@ body .callout.callout.callout {
   --callout-margin: 1em 0;
 }
 
-body .callouts-outlined .callout.callout:is([data-callout="Metadata" i], [data-callout="Timeline" i], [data-callout="Recite" i], [data-callout="Columns" i], [data-callout="Infobox" i], [data-callout="Quote" i]) > .callout-title {
+body
+  .callouts-outlined
+  .callout.callout:is(
+    [data-callout="Metadata" i],
+    [data-callout="Timeline" i],
+    [data-callout="Recite" i],
+    [data-callout="Columns" i],
+    [data-callout="Infobox" i],
+    [data-callout="Quote" i]
+  )
+  > .callout-title {
   display: flex;
   margin: unset;
   padding: var(--callout-title-padding);
   width: unset;
 }
 
-body .callouts-outlined .callout.callout:is([data-callout="Metadata" i], [data-callout="Timeline" i], [data-callout="Recite" i], [data-callout="Columns" i], [data-callout="Infobox" i], [data-callout="Quote" i]) > .callout-title > .callout-icon {
+body
+  .callouts-outlined
+  .callout.callout:is(
+    [data-callout="Metadata" i],
+    [data-callout="Timeline" i],
+    [data-callout="Recite" i],
+    [data-callout="Columns" i],
+    [data-callout="Infobox" i],
+    [data-callout="Quote" i]
+  )
+  > .callout-title
+  > .callout-icon {
   position: relative;
 }
 
@@ -10845,12 +12557,26 @@ body .callout-infobox-table-borders .callout[data-callout~="infobox"] {
   --table-border-color: var(--background-modifier-border);
 }
 
-body .callout-infobox-table-borders .callout[data-callout~="infobox"] th:first-child,
-body .callout-infobox-table-borders .callout[data-callout~="infobox"] tr td:first-child {
+body
+  .callout-infobox-table-borders
+  .callout[data-callout~="infobox"]
+  th:first-child,
+body
+  .callout-infobox-table-borders
+  .callout[data-callout~="infobox"]
+  tr
+  td:first-child {
   border-left-color: transparent;
 }
 
-body .callout-infobox-table-borders .callout[data-callout~="infobox"] th:last-child,
-body .callout-infobox-table-borders .callout[data-callout~="infobox"] tr td:last-child {
+body
+  .callout-infobox-table-borders
+  .callout[data-callout~="infobox"]
+  th:last-child,
+body
+  .callout-infobox-table-borders
+  .callout[data-callout~="infobox"]
+  tr
+  td:last-child {
   border-right-color: transparent;
 }

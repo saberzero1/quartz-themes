@@ -232,15 +232,16 @@ function transformCheckboxCSS(css: string, iconFonts: string[]): string {
   let transformed = css.replace(
     /([^\n{}]+input\[type=["']?checkbox["']?\])::after\s*\{([^}]*)\}/g,
     (block, baseSel, body) => {
+      const colorMatch = body.match(/(?:^|;\s*|\n\s*)color:\s*([^;]+)/);
       if (nonAfterSelectors.has(baseSel.trim())) {
-        const colorMatch = body.match(/(?:^|;\s*)color:\s*([^;]+)/);
         if (colorMatch) {
           afterColorMap.set(baseSel.trim(), colorMatch[1].trim());
         }
         return "";
       }
-      // No corresponding non-::after rule — this char has no custom icon.
-      // Drop entirely so the template's default checked checkbox renders.
+      if (colorMatch && !body.includes("mask-image")) {
+        return `${baseSel.trim()} {\n  color: ${colorMatch[1].trim()};\n}`;
+      }
       return "";
     },
   );
