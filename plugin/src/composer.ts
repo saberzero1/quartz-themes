@@ -49,9 +49,17 @@ const ASPECT_ORDER: AspectKey[] = [
  * 3. For each included aspect, resolve the CSS source (base theme or override theme)
  * 4. Concatenate in correct order
  */
-export function composeCSS(options: ThemeOptions): string {
+export interface ComposedTheme {
+  css: string;
+  effectiveMode: "dark" | "light" | "both";
+}
+
+export function composeCSS(options: ThemeOptions): ComposedTheme {
   const baseThemeId = resolveThemeId(options.theme, options.variation);
   const baseTheme = loadTheme(baseThemeId);
+
+  // Resolve effective mode based on theme capabilities
+  const effectiveMode = resolveEffectiveMode(options.mode, baseTheme);
 
   // Determine which aspects to include
   const includedAspects = resolveIncludedAspects(options, baseTheme);
@@ -59,7 +67,7 @@ export function composeCSS(options: ThemeOptions): string {
   // Collect CSS for each mode
   const parts: string[] = [];
 
-  if (options.mode === "dark" || options.mode === "both") {
+  if (effectiveMode === "dark" || effectiveMode === "both") {
     const darkCSS = collectAspectCSS(
       "dark",
       includedAspects,
@@ -69,7 +77,7 @@ export function composeCSS(options: ThemeOptions): string {
     if (darkCSS) parts.push(darkCSS);
   }
 
-  if (options.mode === "light" || options.mode === "both") {
+  if (effectiveMode === "light" || effectiveMode === "both") {
     const lightCSS = collectAspectCSS(
       "light",
       includedAspects,
@@ -93,14 +101,44 @@ export function composeCSS(options: ThemeOptions): string {
 
   const iconCSS = generateCalloutIconCSS() + "\n\n" + checkboxCSS;
 
-  return (
+  const css =
     (fontCSS ? fontCSS + "\n\n" : "") +
     iconCSS +
     "\n\n" +
     parts.join("\n") +
     "\n" +
-    TEMPLATE_CSS
-  );
+    TEMPLATE_CSS;
+
+  return { css, effectiveMode };
+}
+
+function resolveEffectiveMode(
+  requestedMode: "dark" | "light" | "both",
+  theme: ThemeData,
+): "dark" | "light" | "both" {
+  const availableModes = theme.meta.modes;
+  const fallback: "dark" | "light" = availableModes[0] ?? "dark";
+
+  if (requestedMode === "both") {
+    if (availableModes.length === 1) {
+      console.warn(
+        `[QuartzTheme] Theme "${theme.meta.name}" only supports ${fallback} mode. ` +
+          `Defaulting to "${fallback}". Consider disabling Component.Darkmode() from your quartz.config.ts.`,
+      );
+      return fallback;
+    }
+    return "both";
+  }
+
+  if (!availableModes.includes(requestedMode)) {
+    console.warn(
+      `[QuartzTheme] Theme "${theme.meta.name}" does not support "${requestedMode}" mode ` +
+        `(available: ${availableModes.join(", ")}). Falling back to "${fallback}".`,
+    );
+    return fallback;
+  }
+
+  return requestedMode;
 }
 
 /**
