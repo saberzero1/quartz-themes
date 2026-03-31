@@ -162,44 +162,59 @@ function transformCheckboxCSS(css: string, iconFonts: string[]): string {
     : null;
 
   if (hasIconFont) {
+    const iconSelectors: string[] = [];
+
     let transformed = css.replace(
-      /(li\.task-list-item\[data-task[^\]]*\])\s*input\[type=["']?checkbox["']?\]::after/g,
-      "$1::before",
+      /([^\n{}]*li\.task-list-item\[data-task[^\]]*\])\s*input\[type=["']?checkbox["']?\]::after\s*\{([^}]*)\}/g,
+      (block, fullSelector, body) => {
+        const hasGlyph = /content:\s*"[^"]+"/i.test(body);
+        if (!hasGlyph) {
+          return "";
+        }
+        iconSelectors.push(fullSelector.trim());
+        return `${fullSelector.trim()}::before {${body}}`;
+      },
     );
 
-    if (fontFamily) {
-      transformed = transformed.replace(
-        /(::before\s*\{[^}]*content:\s*"[^"]*")/g,
-        `$1;\n  font-family: "${fontFamily}"`,
-      );
-    }
+    const beforeProps = [
+      "  display: inline-block",
+      "  vertical-align: middle",
+      "  width: var(--checkbox-size, 16px)",
+      "  height: var(--checkbox-size, 16px)",
+      "  margin-inline: -1.4rem 0.2rem",
+      "  text-align: center",
+      "  line-height: var(--checkbox-size, 16px)",
+      "  font-size: var(--checkbox-size, 16px)",
+      "  pointer-events: none",
+      fontFamily ? `  font-family: "${fontFamily}", system-ui, sans-serif` : "",
+    ]
+      .filter(Boolean)
+      .join(";\n");
 
-    const base =
-      `li.task-list-item.is-checked::before {\n` +
-      `  content: "\\2713";\n` +
-      `  display: inline-block;\n` +
-      `  vertical-align: middle;\n` +
-      `  width: 1em;\n` +
-      `  height: 1em;\n` +
-      `  text-align: center;\n` +
-      `  line-height: 1;\n` +
-      `  font-size: 1em;\n` +
-      `  color: currentColor;\n` +
-      (fontFamily ? `  font-family: "${fontFamily}";\n` : "") +
-      `}\n\n` +
-      `li.task-list-item.is-checked input[type="checkbox"] {\n` +
-      `  mask-image: none !important;\n` +
-      `  -webkit-mask-image: none !important;\n` +
-      `  background-color: transparent !important;\n` +
-      `  width: 0 !important;\n` +
-      `  height: 0 !important;\n` +
-      `  margin: 0 !important;\n` +
-      `  padding: 0 !important;\n` +
-      `  border: none !important;\n` +
-      `  overflow: hidden;\n` +
-      `}`;
+    transformed = transformed.replace(
+      /(::before\s*\{[^}]*content:\s*"[^"]*")/g,
+      `$1;\n${beforeProps}`,
+    );
 
-    return base + "\n\n" + transformed;
+    const uniqueSelectors = [...new Set(iconSelectors)];
+    const inputHiding = uniqueSelectors
+      .map(
+        (sel) =>
+          `${sel} input[type="checkbox"] {\n` +
+          `  mask-image: none !important;\n` +
+          `  -webkit-mask-image: none !important;\n` +
+          `  background-color: transparent !important;\n` +
+          `  width: 0 !important;\n` +
+          `  height: 0 !important;\n` +
+          `  margin: 0 !important;\n` +
+          `  padding: 0 !important;\n` +
+          `  border: none !important;\n` +
+          `  overflow: hidden;\n` +
+          `}`,
+      )
+      .join("\n\n");
+
+    return transformed + "\n\n" + inputHiding;
   }
 
   const nonAfterSelectors = new Set<string>();

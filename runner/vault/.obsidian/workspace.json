@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "general.md",
+                "file": "theme-checkboxes/lower.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "general"
+              "title": "lower"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "general.md",
+                "file": "theme-checkboxes/lower.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of general"
+              "title": "Outline of lower"
             }
           },
           {
@@ -208,13 +208,13 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
+    "theme-checkboxes/special.md",
     "theme-checkboxes/upper.md",
+    "theme-checkboxes/lower.md",
     "general.md",
     "headings.md",
     "index.md",
     "theme-callouts/underwater.md",
-    "theme-checkboxes/lower.md",
-    "theme-checkboxes/special.md",
     "theme-embeds/tooltips.md",
     "theme-embeds/note-embeds.md",
     "theme-embeds/frontmatter.md",
