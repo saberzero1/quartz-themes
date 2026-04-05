@@ -116,4 +116,18 @@ update-quartz themeName="its-theme":
   cd runner/quartz && npx quartz plugin add ../../plugin --as quartz-themes
   cd runner/quartz && npx quartz plugin config quartz-themes --set theme={{themeName}}
 
+[group('testing')]
+upgrade-quartz themeName="its-theme":
+  cd runner/quartz && npm i -D
+  cp ./quartz.config.yaml ./runner/quartz/quartz.config.yaml
+  cd runner/quartz && npx quartz upgrade
+  cd runner/quartz && npx quartz plugin install --latest
+
+[group('testing')]
+test-quartz themeName="its-theme":
+  cd runner/quartz && npx quartz plugin remove quartz-themes
+  cd runner/quartz && npx quartz plugin add ../../plugin --as quartz-themes
+  cd runner/quartz && npx quartz plugin config quartz-themes --set theme={{themeName}}
+  cd runner/quartz && npx quartz build -d ../vault --serve
+
 everything-and-the-kitchen-sink: generate-callout-manifest cli-extract-baseline cli-extract-all-force drop prepare ingest compile generate-plugin convert format-non-generated
