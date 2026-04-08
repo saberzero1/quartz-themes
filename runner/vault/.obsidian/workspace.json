@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "callouts.md",
+                "file": "theme-code/syntax-samples.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "callouts"
+              "title": "syntax-samples"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "callouts.md",
+                "file": "theme-code/syntax-samples.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of callouts"
+              "title": "Outline of syntax-samples"
             }
           }
         ],
@@ -194,12 +194,12 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-code/syntax-samples.md",
     "theme-bases/bases-cards.md",
     "theme-bases/bases-list.md",
     "theme-bases/bases-table.md",
     "theme-canvas/test-canvas.canvas",
     "theme-properties/note-properties.md",
+    "theme-code/syntax-samples.md",
     "theme-checkboxes/upper.md",
     "theme-checkboxes/lower.md",
     "theme-checkboxes/special.md",
@@ -214,12 +214,12 @@
     "callouts.md",
     "headings.md",
     "general.md",
-    "theme-callouts/willemstad.md",
-    "theme-callouts/vortex.md",
-    "theme-callouts/velocity.md",
-    "theme-callouts/vauxhall.md",
-    "theme-callouts/universitario.md",
-    "theme-callouts/underwater.md",
+    "theme-callouts/terraflow.md",
+    "theme-callouts/its-theme.ttrpg-wotc.md",
+    "theme-callouts/its-theme.ttrpg-pathfinder-remastered.md",
+    "theme-callouts/its-theme.ttrpg-pathfinder.md",
+    "theme-callouts/its-theme.ttrpg-dnd.md",
+    "theme-callouts/its-theme.tangerine-dunes.md",
     "theme-bases",
     "theme-canvas",
     "theme-properties",

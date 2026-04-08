@@ -1191,6 +1191,11 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"] {
   border-left-color: rgb(137, 189, 244);
   border-right-color: rgb(137, 189, 244);
   border-top-color: rgb(137, 189, 244);
+  color: rgb(137, 189, 244);
+}
+
+html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(137, 189, 244);
 }
 
 html body .callout[data-callout="abstract"] {

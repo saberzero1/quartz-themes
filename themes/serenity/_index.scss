@@ -147,7 +147,7 @@
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-bug: 213, 57, 132;
-  --callout-content-background: hsl(0, 0%, 97.2%);
+  --callout-content-background: 248, 248, 248;
   --callout-content-padding: 10px;
   --callout-default: 8, 109, 221;
   --callout-error: 244, 87, 87;
@@ -1148,7 +1148,7 @@
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-bug: 250, 153, 205;
-  --callout-content-background: hsl(0, 0%, 10%);
+  --callout-content-background: 26, 26, 26;
   --callout-content-padding: 10px;
   --callout-default: 2, 122, 255;
   --callout-error: 251, 70, 76;
@@ -3767,6 +3767,7 @@ body {
   }
 
   .callout .callout-title {
+    color: rgb(121, 117, 147);
     gap: 15.68px;
     border: 0px rgb(121, 117, 147);
     border-top-left-radius: 5px;
@@ -3781,6 +3782,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
+    color: rgb(121, 117, 147);
     font-weight: 400;
   }
 
@@ -7438,6 +7440,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title {
+      color: rgb(144, 140, 170);
       gap: 15.68px;
       border: 0px rgb(144, 140, 170);
       border-top-left-radius: 5px;
@@ -7452,6 +7455,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
+      color: rgb(144, 140, 170);
       font-weight: 400;
     }
 
@@ -10254,293 +10258,1141 @@ blockquote.callout {
     color: var(--color);
   }
   &[data-callout] {
-    --color: rgb(var(--callout-info)) !important;
+    --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="note"] {
-    --color: rgb(var(--callout-default)) !important;
+    --color: rgb(var(--callout-default, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-default, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-default, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="abstract"] {
-    --color: rgb(var(--callout-summary)) !important;
+    --color: rgb(var(--callout-summary, 83, 223, 221)) !important;
+    --border: rgba(var(--callout-summary, 83, 223, 221), 0.267) !important;
+    --bg: rgba(var(--callout-summary, 83, 223, 221), 0.063) !important;
   }
   &[data-callout="info"] {
-    --color: rgb(var(--callout-info)) !important;
+    --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="todo"] {
-    --color: rgb(var(--callout-todo)) !important;
+    --color: rgb(var(--callout-todo, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-todo, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-todo, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="tip"] {
-    --color: rgb(var(--callout-tip)) !important;
+    --color: rgb(var(--callout-tip, 83, 223, 221)) !important;
+    --border: rgba(var(--callout-tip, 83, 223, 221), 0.267) !important;
+    --bg: rgba(var(--callout-tip, 83, 223, 221), 0.063) !important;
   }
   &[data-callout="success"] {
-    --color: rgb(var(--callout-success)) !important;
+    --color: rgb(var(--callout-success, 68, 207, 110)) !important;
+    --border: rgba(var(--callout-success, 68, 207, 110), 0.267) !important;
+    --bg: rgba(var(--callout-success, 68, 207, 110), 0.063) !important;
   }
   &[data-callout="question"] {
-    --color: rgb(var(--callout-question)) !important;
+    --color: rgb(var(--callout-question, 233, 151, 63)) !important;
+    --border: rgba(var(--callout-question, 233, 151, 63), 0.267) !important;
+    --bg: rgba(var(--callout-question, 233, 151, 63), 0.063) !important;
   }
   &[data-callout="warning"] {
-    --color: rgb(var(--callout-warning)) !important;
+    --color: rgb(var(--callout-warning, 233, 151, 63)) !important;
+    --border: rgba(var(--callout-warning, 233, 151, 63), 0.267) !important;
+    --bg: rgba(var(--callout-warning, 233, 151, 63), 0.063) !important;
   }
   &[data-callout="failure"] {
-    --color: rgb(var(--callout-fail)) !important;
+    --color: rgb(var(--callout-fail, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-fail, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-fail, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="danger"] {
-    --color: rgb(var(--callout-bug)) !important;
+    --color: rgb(var(--callout-error, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-error, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-error, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="bug"] {
-    --color: rgb(var(--callout-bug)) !important;
+    --color: rgb(var(--callout-bug, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-bug, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-bug, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="example"] {
-    --color: rgb(var(--callout-example)) !important;
+    --color: rgb(var(--callout-example, 168, 130, 255)) !important;
+    --border: rgba(var(--callout-example, 168, 130, 255), 0.267) !important;
+    --bg: rgba(var(--callout-example, 168, 130, 255), 0.063) !important;
   }
   &[data-callout="quote"] {
-    --color: rgb(var(--callout-quote)) !important;
+    --color: rgb(var(--callout-quote, 158, 158, 158)) !important;
+    --border: rgba(var(--callout-quote, 158, 158, 158), 0.267) !important;
+    --bg: rgba(var(--callout-quote, 158, 158, 158), 0.063) !important;
   }
 
   &[data-callout="a"] {
-    --color: rgb(var(--callout-a)) !important;
+    --color: rgb(
+      var(--callout-a, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-a, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-a, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="activity"] {
-    --color: rgb(var(--callout-activity)) !important;
+    --color: rgb(
+      var(--callout-activity, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-activity, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-activity, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="add"] {
-    --color: rgb(var(--callout-add)) !important;
+    --color: rgb(
+      var(--callout-add, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-add, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-add, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="arrow"] {
-    --color: rgb(var(--callout-arrow)) !important;
+    --color: rgb(
+      var(--callout-arrow, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-arrow, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-arrow, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="b"] {
-    --color: rgb(var(--callout-b)) !important;
+    --color: rgb(
+      var(--callout-b, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-b, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-b, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="beats"] {
-    --color: rgb(var(--callout-beats)) !important;
+    --color: rgb(
+      var(--callout-beats, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-beats, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-beats, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="bookmark"] {
-    --color: rgb(var(--callout-bookmark)) !important;
+    --color: rgb(
+      var(--callout-bookmark, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-bookmark, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-bookmark, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="c"] {
-    --color: rgb(var(--callout-c)) !important;
+    --color: rgb(
+      var(--callout-c, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-c, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-c, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="cake"] {
-    --color: rgb(var(--callout-cake)) !important;
+    --color: rgb(
+      var(--callout-cake, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-cake, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-cake, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="calendar"] {
-    --color: rgb(var(--callout-calendar)) !important;
+    --color: rgb(
+      var(--callout-calendar, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-calendar, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-calendar, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="cancel"] {
-    --color: rgb(var(--callout-cancel)) !important;
+    --color: rgb(
+      var(--callout-cancel, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-cancel, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-cancel, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="cancelled"] {
-    --color: rgb(var(--callout-cancelled)) !important;
+    --color: rgb(
+      var(--callout-cancelled, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-cancelled, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-cancelled, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="close"] {
-    --color: rgb(var(--callout-close)) !important;
+    --color: rgb(
+      var(--callout-close, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-close, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-close, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="comment"] {
-    --color: rgb(var(--callout-comment)) !important;
+    --color: rgb(
+      var(--callout-comment, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-comment, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-comment, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="cons"] {
-    --color: rgb(var(--callout-cons)) !important;
+    --color: rgb(
+      var(--callout-cons, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-cons, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-cons, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="d"] {
-    --color: rgb(var(--callout-d)) !important;
+    --color: rgb(
+      var(--callout-d, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-d, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-d, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="down"] {
-    --color: rgb(var(--callout-down)) !important;
+    --color: rgb(
+      var(--callout-down, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-down, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-down, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="download"] {
-    --color: rgb(var(--callout-download)) !important;
+    --color: rgb(
+      var(--callout-download, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-download, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-download, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="e"] {
-    --color: rgb(var(--callout-e)) !important;
+    --color: rgb(
+      var(--callout-e, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-e, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-e, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="event"] {
-    --color: rgb(var(--callout-event)) !important;
+    --color: rgb(
+      var(--callout-event, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-event, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-event, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="eye"] {
-    --color: rgb(var(--callout-eye)) !important;
+    --color: rgb(
+      var(--callout-eye, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-eye, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-eye, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="forwarded"] {
-    --color: rgb(var(--callout-forwarded)) !important;
+    --color: rgb(
+      var(--callout-forwarded, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-forwarded, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-forwarded, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="g"] {
-    --color: rgb(var(--callout-g)) !important;
+    --color: rgb(
+      var(--callout-g, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-g, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-g, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="game"] {
-    --color: rgb(var(--callout-game)) !important;
+    --color: rgb(
+      var(--callout-game, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-game, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-game, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="h"] {
-    --color: rgb(var(--callout-h)) !important;
+    --color: rgb(
+      var(--callout-h, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-h, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-h, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="handshake"] {
-    --color: rgb(var(--callout-handshake)) !important;
+    --color: rgb(
+      var(--callout-handshake, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-handshake, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-handshake, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="heart"] {
-    --color: rgb(var(--callout-heart)) !important;
+    --color: rgb(
+      var(--callout-heart, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-heart, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-heart, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="home"] {
-    --color: rgb(var(--callout-home)) !important;
+    --color: rgb(
+      var(--callout-home, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-home, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-home, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="i"] {
-    --color: rgb(var(--callout-i)) !important;
+    --color: rgb(
+      var(--callout-i, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-i, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-i, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="idea"] {
-    --color: rgb(var(--callout-idea)) !important;
+    --color: rgb(
+      var(--callout-idea, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-idea, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-idea, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="incomplete"] {
-    --color: rgb(var(--callout-incomplete)) !important;
+    --color: rgb(
+      var(--callout-incomplete, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-incomplete, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-incomplete, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="j"] {
-    --color: rgb(var(--callout-j)) !important;
+    --color: rgb(
+      var(--callout-j, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-j, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-j, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="junk"] {
-    --color: rgb(var(--callout-junk)) !important;
+    --color: rgb(
+      var(--callout-junk, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-junk, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-junk, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="k"] {
-    --color: rgb(var(--callout-k)) !important;
+    --color: rgb(
+      var(--callout-k, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-k, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-k, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="key"] {
-    --color: rgb(var(--callout-key)) !important;
+    --color: rgb(
+      var(--callout-key, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-key, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-key, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="l"] {
-    --color: rgb(var(--callout-l)) !important;
+    --color: rgb(
+      var(--callout-l, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-l, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-l, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="like"] {
-    --color: rgb(var(--callout-like)) !important;
+    --color: rgb(
+      var(--callout-like, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-like, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-like, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="link"] {
-    --color: rgb(var(--callout-link)) !important;
+    --color: rgb(
+      var(--callout-link, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-link, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-link, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="location"] {
-    --color: rgb(var(--callout-location)) !important;
+    --color: rgb(
+      var(--callout-location, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-location, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-location, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="love"] {
-    --color: rgb(var(--callout-love)) !important;
+    --color: rgb(
+      var(--callout-love, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-love, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-love, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="m"] {
-    --color: rgb(var(--callout-m)) !important;
+    --color: rgb(
+      var(--callout-m, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-m, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-m, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="map"] {
-    --color: rgb(var(--callout-map)) !important;
+    --color: rgb(
+      var(--callout-map, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-map, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-map, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="memo"] {
-    --color: rgb(var(--callout-memo)) !important;
+    --color: rgb(
+      var(--callout-memo, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-memo, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-memo, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="money"] {
-    --color: rgb(var(--callout-money)) !important;
+    --color: rgb(
+      var(--callout-money, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-money, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-money, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="music"] {
-    --color: rgb(var(--callout-music)) !important;
+    --color: rgb(
+      var(--callout-music, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-music, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-music, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="n"] {
-    --color: rgb(var(--callout-n)) !important;
+    --color: rgb(
+      var(--callout-n, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-n, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-n, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="nav"] {
-    --color: rgb(var(--callout-nav)) !important;
+    --color: rgb(
+      var(--callout-nav, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-nav, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-nav, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="navigation"] {
-    --color: rgb(var(--callout-navigation)) !important;
+    --color: rgb(
+      var(--callout-navigation, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-navigation, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-navigation, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="next"] {
-    --color: rgb(var(--callout-next)) !important;
+    --color: rgb(
+      var(--callout-next, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-next, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-next, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="no"] {
-    --color: rgb(var(--callout-no)) !important;
+    --color: rgb(
+      var(--callout-no, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-no, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-no, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="o"] {
-    --color: rgb(var(--callout-o)) !important;
+    --color: rgb(
+      var(--callout-o, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-o, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-o, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="open"] {
-    --color: rgb(var(--callout-open)) !important;
+    --color: rgb(
+      var(--callout-open, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-open, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-open, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="p"] {
-    --color: rgb(var(--callout-p)) !important;
+    --color: rgb(
+      var(--callout-p, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-p, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-p, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="party"] {
-    --color: rgb(var(--callout-party)) !important;
+    --color: rgb(
+      var(--callout-party, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-party, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-party, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="person"] {
-    --color: rgb(var(--callout-person)) !important;
+    --color: rgb(
+      var(--callout-person, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-person, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-person, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="plus"] {
-    --color: rgb(var(--callout-plus)) !important;
+    --color: rgb(
+      var(--callout-plus, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-plus, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-plus, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="prize"] {
-    --color: rgb(var(--callout-prize)) !important;
+    --color: rgb(
+      var(--callout-prize, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-prize, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-prize, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="pros"] {
-    --color: rgb(var(--callout-pros)) !important;
+    --color: rgb(
+      var(--callout-pros, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-pros, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-pros, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="pulse"] {
-    --color: rgb(var(--callout-pulse)) !important;
+    --color: rgb(
+      var(--callout-pulse, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-pulse, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-pulse, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="q"] {
-    --color: rgb(var(--callout-q)) !important;
+    --color: rgb(
+      var(--callout-q, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-q, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-q, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="quick"] {
-    --color: rgb(var(--callout-quick)) !important;
+    --color: rgb(
+      var(--callout-quick, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-quick, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-quick, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="r"] {
-    --color: rgb(var(--callout-r)) !important;
+    --color: rgb(
+      var(--callout-r, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-r, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-r, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="report"] {
-    --color: rgb(var(--callout-report)) !important;
+    --color: rgb(
+      var(--callout-report, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-report, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-report, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="s"] {
-    --color: rgb(var(--callout-s)) !important;
+    --color: rgb(
+      var(--callout-s, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-s, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-s, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="save"] {
-    --color: rgb(var(--callout-save)) !important;
+    --color: rgb(
+      var(--callout-save, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-save, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-save, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="savings"] {
-    --color: rgb(var(--callout-savings)) !important;
+    --color: rgb(
+      var(--callout-savings, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-savings, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-savings, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="scheduling"] {
-    --color: rgb(var(--callout-scheduling)) !important;
+    --color: rgb(
+      var(--callout-scheduling, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-scheduling, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-scheduling, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="secret"] {
-    --color: rgb(var(--callout-secret)) !important;
+    --color: rgb(
+      var(--callout-secret, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-secret, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-secret, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="star"] {
-    --color: rgb(var(--callout-star)) !important;
+    --color: rgb(
+      var(--callout-star, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-star, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-star, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="t"] {
-    --color: rgb(var(--callout-t)) !important;
+    --color: rgb(
+      var(--callout-t, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-t, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-t, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="trash"] {
-    --color: rgb(var(--callout-trash)) !important;
+    --color: rgb(
+      var(--callout-trash, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-trash, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-trash, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="u"] {
-    --color: rgb(var(--callout-u)) !important;
+    --color: rgb(
+      var(--callout-u, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-u, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-u, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="unlock"] {
-    --color: rgb(var(--callout-unlock)) !important;
+    --color: rgb(
+      var(--callout-unlock, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-unlock, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-unlock, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="up"] {
-    --color: rgb(var(--callout-up)) !important;
+    --color: rgb(
+      var(--callout-up, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-up, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-up, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="user"] {
-    --color: rgb(var(--callout-user)) !important;
+    --color: rgb(
+      var(--callout-user, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-user, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-user, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="v"] {
-    --color: rgb(var(--callout-v)) !important;
+    --color: rgb(
+      var(--callout-v, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-v, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-v, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="visibility"] {
-    --color: rgb(var(--callout-visibility)) !important;
+    --color: rgb(
+      var(--callout-visibility, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-visibility, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-visibility, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="w"] {
-    --color: rgb(var(--callout-w)) !important;
+    --color: rgb(
+      var(--callout-w, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-w, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-w, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="win"] {
-    --color: rgb(var(--callout-win)) !important;
+    --color: rgb(
+      var(--callout-win, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-win, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-win, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="y"] {
-    --color: rgb(var(--callout-y)) !important;
+    --color: rgb(
+      var(--callout-y, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-y, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-y, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="yes"] {
-    --color: rgb(var(--callout-yes)) !important;
+    --color: rgb(
+      var(--callout-yes, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-yes, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-yes, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="zap"] {
-    --color: rgb(var(--callout-zap)) !important;
+    --color: rgb(
+      var(--callout-zap, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-zap, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-zap, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
 }
 

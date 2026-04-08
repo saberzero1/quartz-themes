@@ -827,10 +827,15 @@ html body li.task-list-item[data-task='w'] {
   border-left-color: rgb(97, 153, 191);
   border-right-color: rgb(97, 153, 191);
   border-top-color: rgb(97, 153, 191);
+  color: rgb(97, 153, 191);
   padding-bottom: 6px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 6px;
+}
+
+html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(97, 153, 191);
 }
 
 html body .callout > .callout-content {

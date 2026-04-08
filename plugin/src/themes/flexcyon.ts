@@ -144,6 +144,7 @@ export const theme: ThemeData = {
     #191D28
   ) 65%, transparent)) !important;
   --bold-color: #C03A47 !important;
+  --bold-weight: 600 !important;
   --button-radius: 0px !important;
   --callout-bug: rgb(192, 58, 71);
   --callout-default: 90, 143, 205;
@@ -159,6 +160,7 @@ export const theme: ThemeData = {
   --callout-success: rgb(161, 192, 92);
   --callout-summary: rgb(60, 185, 194);
   --callout-tip: rgb(60, 185, 194);
+  --callout-title-weight: 600;
   --callout-todo: 90, 143, 205;
   --callout-warning: rgb(204, 132, 73);
   --canvas-background: #191D28 !important;
@@ -1283,6 +1285,7 @@ export const theme: ThemeData = {
   --h6-size: 1.01803em !important;
   --h6-weight: 575 !important;
   --heading-formatting: #6F768599 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: color-mix(
     in oklch,
     #3CB9C2 22.5%,
@@ -1366,6 +1369,7 @@ export const theme: ThemeData = {
   --link-unresolved-color: #A461C8 !important;
   --link-unresolved-decoration-color: #A461C8 !important;
   --link-unresolved-decoration-style: dashed !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: #A461C8 !important;
   --list-marker-color-collapsed: #A1C05C !important;
   --list-marker-color-hover: color-mix(
@@ -1391,6 +1395,7 @@ export const theme: ThemeData = {
     #191D28,
     #24262C
   ) !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #D3D5D3 !important;
   --metadata-label-background-active: color-mix(
     in oklch,
@@ -1577,6 +1582,7 @@ export const theme: ThemeData = {
     #14161C,
     #191D28
   ) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: transparent !important;
   --slider-track-background: color-mix(
     in oklch,
@@ -1669,6 +1675,7 @@ export const theme: ThemeData = {
   --table-header-border-color: #6F768566 !important;
   --table-header-color: #D3D5D3 !important;
   --table-header-size: large !important;
+  --table-header-weight: 600 !important;
   --table-line-height: 1.25 !important;
   --table-row-alt-background-hover: #191D28 !important;
   --table-row-background-hover: #191D28 !important;
@@ -1759,6 +1766,7 @@ export const theme: ThemeData = {
   --vault-profile-color-hover: #D3D5D3 !important;
   --vault-profile-font-size: 14.56227px !important;
   --w: tan(atan2(2538px, 1px)) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -2269,10 +2277,15 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(25, 29, 40);
   border-right-color: rgb(25, 29, 40);
   border-top-color: rgb(25, 29, 40);
+  color: rgb(25, 29, 40);
   padding-bottom: 4px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 4px;
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(25, 29, 40);
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -2419,6 +2432,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   border-bottom-color: rgb(90, 143, 205);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -2499,6 +2513,10 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(25, 29, 40);
@@ -3002,6 +3020,7 @@ html[saved-theme="dark"] body ul.tags > li {
   ) !important;
   --blur-background: color-mix(in srgb, #FAF7EF 65%, transparent) linear-gradient(#FAF7EF, color-mix(in srgb, #FAF7EF 65%, transparent)) !important;
   --bold-color: #EB5325 !important;
+  --bold-weight: 600 !important;
   --button-radius: 0px !important;
   --callout-bug: rgb(235, 83, 37);
   --callout-default: 92, 159, 228;
@@ -3017,6 +3036,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-success: rgb(104, 149, 35);
   --callout-summary: rgb(59, 155, 161);
   --callout-tip: rgb(59, 155, 161);
+  --callout-title-weight: 600;
   --callout-todo: 92, 159, 228;
   --callout-warning: rgb(237, 129, 38);
   --canvas-background: #FAF7EF !important;
@@ -4127,6 +4147,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --h6-size: 1.01803em !important;
   --h6-weight: 575 !important;
   --heading-formatting: #6F768599 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: color-mix(
     in oklch,
     #3B9BA1 22.5%,
@@ -4205,6 +4226,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --link-unresolved-color: #6F49AE !important;
   --link-unresolved-decoration-color: #6F49AE !important;
   --link-unresolved-decoration-style: dashed !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: #3B9BA1 !important;
   --list-marker-color-collapsed: #689523 !important;
   --list-marker-color-hover: color-mix(
@@ -4230,6 +4252,7 @@ html[saved-theme="dark"] body ul.tags > li {
     #DDDCD6
   ) !important;
   --metadata-input-background-active: #EDEBE5 !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #080808 !important;
   --metadata-label-background-active: #EDEBE5 !important;
   --metadata-label-text-color: #6F49AE !important;
@@ -4374,6 +4397,7 @@ html[saved-theme="dark"] body ul.tags > li {
     #FAF7EF 70%,
     #EDEBE5 30%
   ) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: transparent !important;
   --slider-track-background: color-mix(
     in oklch,
@@ -4467,6 +4491,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --table-header-border-color: #6F768566 !important;
   --table-header-color: #080808 !important;
   --table-header-size: large !important;
+  --table-header-weight: 600 !important;
   --table-line-height: 1.25 !important;
   --table-row-alt-background-hover: #FAF7EF !important;
   --table-row-background-hover: #FAF7EF !important;
@@ -4552,6 +4577,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color-hover: #080808 !important;
   --vault-profile-font-size: 14.56227px !important;
   --w: tan(atan2(2538px, 1px)) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -5062,10 +5088,15 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(250, 247, 239);
   border-right-color: rgb(250, 247, 239);
   border-top-color: rgb(250, 247, 239);
+  color: rgb(250, 247, 239);
   padding-bottom: 4px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 4px;
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(250, 247, 239);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
@@ -5212,6 +5243,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   border-bottom-color: rgb(92, 159, 228);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -5292,6 +5324,10 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(250, 247, 239);

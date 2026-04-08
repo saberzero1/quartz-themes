@@ -66,6 +66,7 @@ export const theme: ThemeData = {
   --callout-summary: oklch(48.5% 0.039 279.29);
   --callout-tip: oklch(48.5% 0.106 161.65);
   --callout-title-color: oklch(61.5% 0.176 260.58);
+  --callout-title-weight: 600;
   --callout-todo: oklch(48.5% 0.173 260.58);
   --callout-warning: oklch(48.5% 0.134 46.85);
   --canvas-background: oklch(13.5% 0.01 279.29) !important;
@@ -99,6 +100,9 @@ export const theme: ThemeData = {
   --code-radius: 8px !important;
   --codeFont: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: oklch(74.5% 0.018 279.29) !important;
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --dark: oklch(92% 0.004 279.29) !important;
   --darkgray: oklch(92% 0.004 279.29) !important;
   --divider-color: oklch(25.5% 0.021 279.29) !important;
@@ -120,6 +124,7 @@ export const theme: ThemeData = {
   --footnote-id-color: oklch(84.5% 0.01 279.29) !important;
   --footnote-id-color-no-occurrences: oklch(74.5% 0.018 279.29) !important;
   --graph-node: oklch(84.5% 0.01 279.29) !important;
+  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
   --graph-node-unresolved: oklch(74.5% 0.018 279.29) !important;
   --graph-text: oklch(92% 0.004 279.29) !important;
   --gray: rgb(90, 93, 117) !important;
@@ -170,10 +175,12 @@ export const theme: ThemeData = {
   --h6-weight: 650 !important;
   --headerFont: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: oklch(74.5% 0.018 279.29) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: oklch(84.5% 0.174 97.11) !important;
   --highlight-text-color: oklch(12% 0.009 279.29) !important;
   --hr-color: oklch(25.5% 0.021 279.29) !important;
   --icon-color: oklch(61.5% 0.028 279.29) !important;
+  --icon-color-active: hsl(255, 89.76%, 75.9%) !important;
   --icon-color-focused: oklch(92% 0.004 279.29) !important;
   --icon-color-hover: oklch(84.5% 0.01 279.29) !important;
   --inline-title-color: oklch(61.5% 0.17 288) !important;
@@ -183,19 +190,28 @@ export const theme: ThemeData = {
   --input-date-separator: oklch(74.5% 0.018 279.29) !important;
   --input-font-weight: 600 !important;
   --input-placeholder-color: oklch(74.5% 0.018 279.29) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-hover: oklch(35.5% 0.029 279.29) !important;
   --interactive-normal: oklch(25.5% 0.021 279.29) !important;
   --light: oklch(13.5% 0.01 279.29) !important;
   --lightgray: oklch(18% 0.014 279.29) !important;
+  --link-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-color-hover: hsl(253, 92.4%, 85.14%) !important;
   --link-decoration: none !important;
+  --link-external-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%) !important;
+  --link-unresolved-color: hsl(255, 89.76%, 75.9%) !important;
+  --list-indent: 2.25em !important;
   --list-indent-source: 0px !important;
   --list-marker-color: oklch(74.5% 0.018 279.29) !important;
+  --list-marker-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
   --list-marker-color-hover: oklch(84.5% 0.01 279.29) !important;
   --list-padding-inline-start: 0px !important;
   --menu-background: oklch(18% 0.014 279.29) !important;
   --menu-border-color: oklch(35.5% 0.029 279.29) !important;
   --metadata-border-color: oklch(25.5% 0.021 279.29) !important;
   --metadata-divider-color: oklch(25.5% 0.021 279.29) !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: oklch(92% 0.004 279.29) !important;
   --metadata-label-text-color: oklch(84.5% 0.01 279.29) !important;
   --metadata-label-text-color-hover: oklch(84.5% 0.01 279.29) !important;
@@ -213,6 +229,7 @@ export const theme: ThemeData = {
   --nav-item-background-hover: oklch(25.5% 0.021 279.29) !important;
   --nav-item-color: oklch(84.5% 0.01 279.29) !important;
   --nav-item-color-active: oklch(92% 0.004 279.29) !important;
+  --nav-item-color-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --nav-item-color-hover: oklch(92% 0.004 279.29) !important;
   --nav-item-color-selected: oklch(92% 0.004 279.29) !important;
   --nav-tag-color: oklch(74.5% 0.018 279.29) !important;
@@ -243,6 +260,7 @@ export const theme: ThemeData = {
   --pill-color: oklch(84.5% 0.01 279.29) !important;
   --pill-color-hover: oklch(92% 0.004 279.29) !important;
   --pill-color-remove: oklch(74.5% 0.018 279.29) !important;
+  --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --pink: rgb(242, 66, 255) !important;
   --pink-100: oklch(25.5% 0.119 324.98) !important;
   --pink-200: oklch(35.5% 0.165 324.98) !important;
@@ -308,10 +326,12 @@ export const theme: ThemeData = {
   --search-clear-button-color: oklch(84.5% 0.01 279.29) !important;
   --search-icon-color: oklch(84.5% 0.01 279.29) !important;
   --search-result-background: oklch(13.5% 0.01 279.29) !important;
+  --secondary: hsl(255, 89.76%, 75.9%) !important;
   --semibold-modifier: 200 !important;
   --setting-group-heading-color: oklch(92% 0.004 279.29) !important;
   --setting-items-background: oklch(25.5% 0.021 279.29) !important;
   --setting-items-border-color: oklch(25.5% 0.021 279.29) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: oklch(35.5% 0.029 279.29) !important;
   --slider-track-background: oklch(25.5% 0.021 279.29) !important;
   --status-bar-background: oklch(18% 0.014 279.29) !important;
@@ -331,6 +351,7 @@ export const theme: ThemeData = {
   --tab-text-color-focused: oklch(84.5% 0.01 279.29) !important;
   --tab-text-color-focused-active: oklch(84.5% 0.01 279.29) !important;
   --tab-text-color-focused-active-current: oklch(92% 0.004 279.29) !important;
+  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --table-add-button-border-color: oklch(25.5% 0.021 279.29) !important;
   --table-border-color: oklch(25.5% 0.021 279.29) !important;
   --table-drag-handle-color: oklch(74.5% 0.018 279.29) !important;
@@ -340,6 +361,10 @@ export const theme: ThemeData = {
   --table-header-weight: 700 !important;
   --tag-background: oklch(35.5% 0.127 260.58) !important;
   --tag-color: oklch(84.5% 0.06 260.58) !important;
+  --tag-color-hover: hsl(255, 89.76%, 75.9%) !important;
+  --tertiary: hsl(253, 92.4%, 85.14%) !important;
+  --text-accent: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-error: oklch(61.5% 0.245 13.65) !important;
   --text-faint: oklch(74.5% 0.018 279.29) !important;
   --text-highlight-bg: oklch(84.5% 0.174 97.11) !important;
@@ -358,6 +383,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: oklch(92% 0.004 279.29) !important;
   --vault-profile-color: oklch(92% 0.004 279.29) !important;
   --vault-profile-color-hover: oklch(92% 0.004 279.29) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --yellow: rgb(242, 208, 3) !important;
   --yellow-100: oklch(25.5% 0.052 97.11) !important;
   --yellow-200: oklch(35.5% 0.072 97.11) !important;
@@ -1017,7 +1043,12 @@ html body li.task-list-item[data-task="w"] input[type="checkbox"] {
   border-left-color: oklch(0.615 0.176 260.58);
   border-right-color: oklch(0.615 0.176 260.58);
   border-top-color: oklch(0.615 0.176 260.58);
+  color: oklch(0.615 0.176 260.58);
   gap: 6px;
+}
+
+html body .callout .callout-title > .callout-title-inner > p {
+  color: oklch(0.615 0.176 260.58);
 }
 
 html body .callout[data-callout="abstract"] {
@@ -1239,6 +1270,10 @@ html body .callout[data-callout="warning"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
+}
+
+html body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html body .search > .search-button {
   background-color: oklch(0.12 0.009 279.29);

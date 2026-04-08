@@ -895,6 +895,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-right-style: solid;
   border-top-color: rgb(67, 133, 190);
   border-top-style: solid;
+  color: rgb(67, 133, 190);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(67, 133, 190);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {

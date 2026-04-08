@@ -689,11 +689,16 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-top-color: rgb(76, 175, 80);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  color: rgb(76, 175, 80);
   gap: 8px;
   padding-bottom: 8px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 8px;
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: color(srgb 0.465098 0.736863 0.476078);
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -1786,11 +1791,16 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-top-color: rgb(76, 175, 80);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  color: rgb(76, 175, 80);
   gap: 8px;
   padding-bottom: 8px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 8px;
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: color(srgb 0.248627 0.520392 0.259608);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {

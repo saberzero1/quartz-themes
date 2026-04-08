@@ -857,9 +857,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(115, 208, 255);
   border-right-color: rgb(115, 208, 255);
   border-top-color: rgb(115, 208, 255);
+  color: rgb(115, 208, 255);
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(115, 208, 255);
   font-weight: 500;
 }
 
@@ -2191,9 +2193,11 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(57, 158, 230);
   border-right-color: rgb(57, 158, 230);
   border-top-color: rgb(57, 158, 230);
+  color: rgb(57, 158, 230);
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(57, 158, 230);
   font-weight: 500;
 }
 

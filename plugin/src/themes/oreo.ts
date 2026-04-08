@@ -596,6 +596,9 @@ html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="check
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
 }`,
+    callouts: `html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(255, 255, 255);
+}`,
     search: `html[saved-theme="dark"] body .search > .search-container > .search-space {
   background-color: rgb(0, 0, 0);
   border-bottom-color: rgb(68, 68, 68);
@@ -1346,6 +1349,9 @@ html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}`,
+    callouts: `html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(0, 0, 0);
 }`,
     search: `html[saved-theme="light"] body .search > .search-container > .search-space {
   border-bottom-color: rgb(204, 204, 204);

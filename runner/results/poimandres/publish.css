@@ -513,26 +513,26 @@ body.theme-dark {
   --callout-blend-mode: lighten;
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: #d1889a;
+  --callout-bug: 209, 136, 154;
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: #c5d0e6;
-  --callout-error: #c06075;
-  --callout-example: #d2a5c4;
-  --callout-fail: #c06075;
-  --callout-important: #7bbfb0;
-  --callout-info: #c5d0e6;
+  --callout-default: 197, 208, 230;
+  --callout-error: 192, 96, 117;
+  --callout-example: 210, 165, 196;
+  --callout-fail: 192, 96, 117;
+  --callout-important: 123, 191, 176;
+  --callout-info: 197, 208, 230;
   --callout-padding: 12px 12px 12px 24px;
-  --callout-question: #dcb583;
-  --callout-quote: #b8bfc9;
+  --callout-question: 220, 181, 131;
+  --callout-quote: 184, 191, 201;
   --callout-radius: 4px;
-  --callout-success: #5db3be;
-  --callout-summary: #84bfcf;
-  --callout-tip: #84bfcf;
+  --callout-success: 93, 179, 190;
+  --callout-summary: 132, 191, 207;
+  --callout-tip: 132, 191, 207;
   --callout-title-padding: 0;
   --callout-title-weight: 600;
-  --callout-todo: #84bfcf;
-  --callout-warning: #f2a070;
+  --callout-todo: 132, 191, 207;
+  --callout-warning: 242, 160, 112;
   --canvas-background: #1b1d23 !important;
   --canvas-card-label-color: #7da0b3 !important;
   --canvas-color: 126, 126, 126 !important;
@@ -2248,6 +2248,7 @@ body body.theme-dark .callout[data-callout="note"] {
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  color: rgb(228, 231, 234);
   gap: 4px;
   border: 0px rgb(228, 231, 234);
   border-top-left-radius: 0px;
@@ -2261,6 +2262,7 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
+  color: rgb(228, 231, 234);
   font-weight: 600;
 }
 body body.theme-dark .callout > .callout-content {
@@ -3370,91 +3372,91 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-default));
+  stroke: rgb(var(--callout-default, 2, 122, 255));
 }
 body
   .callout[data-callout="abstract"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-summary));
+  stroke: rgb(var(--callout-summary, 83, 223, 221));
 }
 body
   .callout[data-callout="info"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-info));
+  stroke: rgb(var(--callout-info, 2, 122, 255));
 }
 body
   .callout[data-callout="todo"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-todo));
+  stroke: rgb(var(--callout-todo, 2, 122, 255));
 }
 body
   .callout[data-callout="tip"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-tip));
+  stroke: rgb(var(--callout-tip, 83, 223, 221));
 }
 body
   .callout[data-callout="success"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-success));
+  stroke: rgb(var(--callout-success, 68, 207, 110));
 }
 body
   .callout[data-callout="question"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-question));
+  stroke: rgb(var(--callout-question, 233, 151, 63));
 }
 body
   .callout[data-callout="warning"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-warning));
+  stroke: rgb(var(--callout-warning, 233, 151, 63));
 }
 body
   .callout[data-callout="failure"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-fail));
+  stroke: rgb(var(--callout-fail, 251, 70, 76));
 }
 body
   .callout[data-callout="danger"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-error, 251, 70, 76));
 }
 body
   .callout[data-callout="bug"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-bug, 251, 70, 76));
 }
 body
   .callout[data-callout="example"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-example));
+  stroke: rgb(var(--callout-example, 168, 130, 255));
 }
 body
   .callout[data-callout="quote"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-quote));
+  stroke: rgb(var(--callout-quote, 158, 158, 158));
 }
 body pre > code,
 body .markdown-rendered pre > code {

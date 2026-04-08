@@ -147,22 +147,22 @@
   --callout-content-background: transparent;
   --callout-content-padding: 0;
   --callout-default: 8, 109, 221;
-  --callout-error: #ffebee;
+  --callout-error: 255, 235, 238;
   --callout-example: 120, 82, 238;
   --callout-fail: 233, 49, 71;
   --callout-important: 0, 191, 188;
-  --callout-info: #e3f2fd;
+  --callout-info: 227, 242, 253;
   --callout-padding: 12px 12px 12px 24px;
   --callout-question: 236, 117, 0;
   --callout-quote: 158, 158, 158;
   --callout-radius: 4px;
-  --callout-success: #e8f5e8;
+  --callout-success: 232, 245, 232;
   --callout-summary: 0, 191, 188;
-  --callout-tip: #f3e5f5;
+  --callout-tip: 243, 229, 245;
   --callout-title-padding: 0;
   --callout-title-weight: 600;
   --callout-todo: 8, 109, 221;
-  --callout-warning: #fff3e0;
+  --callout-warning: 255, 243, 224;
   --canvas-background: #ffffff !important;
   --canvas-card-label-color: #9aa0a6 !important;
   --canvas-color: 192, 192, 192 !important;
@@ -892,7 +892,7 @@
   --border-color: #dadce0 !important;
   --line-height: 1.6 !important;
   --tag-text: #1565c0 !important;
-  --callout-note: #f5f5f5;
+  --callout-note: 245, 245, 245;
   --background-primary-rgb: 255, 255, 255 !important;
   --table-row-even: #fafafa !important;
   --table-row-odd: #ffffff !important;
@@ -906,18 +906,18 @@
   --select-color: #ffffff !important;
   --background-opacity: 0.8 !important;
   --border-color-focus: #9aa0a6 !important;
-  --callout-error-border: #f44336;
-  --callout-error-text: #c62828;
-  --callout-info-border: #2196f3;
-  --callout-info-text: #0d47a1;
-  --callout-note-border: #757575;
-  --callout-note-text: #424242;
-  --callout-success-border: #4caf50;
-  --callout-success-text: #2e7d32;
-  --callout-tip-border: #9c27b0;
-  --callout-tip-text: #6a1b9a;
-  --callout-warning-border: #ff9800;
-  --callout-warning-text: #e65100;
+  --callout-error-border: 244, 67, 54;
+  --callout-error-text: 198, 40, 40;
+  --callout-info-border: 33, 150, 243;
+  --callout-info-text: 13, 71, 161;
+  --callout-note-border: 117, 117, 117;
+  --callout-note-text: 66, 66, 66;
+  --callout-success-border: 76, 175, 80;
+  --callout-success-text: 46, 125, 50;
+  --callout-tip-border: 156, 39, 176;
+  --callout-tip-text: 106, 27, 154;
+  --callout-warning-border: 255, 152, 0;
+  --callout-warning-text: 230, 81, 0;
   --font-size: 16px !important;
   --highlight-blue: #bbdefb !important;
   --highlight-green: #c8e6c9 !important;
@@ -1072,22 +1072,22 @@
   --callout-content-background: transparent;
   --callout-content-padding: 0;
   --callout-default: 95, 158, 160;
-  --callout-error: #2d1b1b;
+  --callout-error: 45, 27, 27;
   --callout-example: 147, 112, 219;
   --callout-fail: 205, 145, 158;
   --callout-important: 95, 158, 160;
-  --callout-info: #1a2332;
+  --callout-info: 26, 35, 50;
   --callout-padding: 12px 12px 12px 24px;
   --callout-question: 205, 133, 63;
   --callout-quote: 158, 158, 158;
   --callout-radius: 4px;
-  --callout-success: #1b2d1b;
+  --callout-success: 27, 45, 27;
   --callout-summary: 95, 158, 160;
-  --callout-tip: #2d1b2d;
+  --callout-tip: 45, 27, 45;
   --callout-title-padding: 0;
   --callout-title-weight: 600;
   --callout-todo: 95, 158, 160;
-  --callout-warning: #2d2416;
+  --callout-warning: 45, 36, 22;
   --canvas-background: rgba(10, 10, 10, 0.8) !important;
   --canvas-card-label-color: #a0a0a0 !important;
   --canvas-color: 126, 126, 126 !important;
@@ -1805,7 +1805,7 @@
   --border-color: #404040 !important;
   --line-height: 1.6 !important;
   --tag-text: #90caf9 !important;
-  --callout-note: #1f1f1f;
+  --callout-note: 31, 31, 31;
   --background-primary-rgb: 10, 10, 10 !important;
   --table-row-even: #151515 !important;
   --table-row-odd: #0a0a0a !important;
@@ -1819,18 +1819,18 @@
   --select-color: rgba(0, 0, 0, 0.8) !important;
   --background-opacity: 0.8 !important;
   --border-color-focus: #707070 !important;
-  --callout-error-border: #ef5350;
-  --callout-error-text: #ffcdd2;
-  --callout-info-border: #64b5f6;
-  --callout-info-text: #90caf9;
-  --callout-note-border: #9e9e9e;
-  --callout-note-text: #e0e0e0;
-  --callout-success-border: #66bb6a;
-  --callout-success-text: #c8e6c9;
-  --callout-tip-border: #ba68c8;
-  --callout-tip-text: #e1bee7;
-  --callout-warning-border: #ffb74d;
-  --callout-warning-text: #ffcc02;
+  --callout-error-border: 239, 83, 80;
+  --callout-error-text: 255, 205, 210;
+  --callout-info-border: 100, 181, 246;
+  --callout-info-text: 144, 202, 249;
+  --callout-note-border: 158, 158, 158;
+  --callout-note-text: 224, 224, 224;
+  --callout-success-border: 102, 187, 106;
+  --callout-success-text: 200, 230, 201;
+  --callout-tip-border: 186, 104, 200;
+  --callout-tip-text: 225, 190, 231;
+  --callout-warning-border: 255, 183, 77;
+  --callout-warning-text: 255, 204, 2;
   --font-size: 16px !important;
   --highlight-blue: #1a1a4a !important;
   --highlight-green: #1a4a1a !important;
@@ -3229,6 +3229,7 @@ body {
   }
 
   .callout .callout-title {
+    color: rgb(8, 109, 221);
     gap: 4px;
     border: 0px rgb(8, 109, 221);
     border-top-left-radius: 0px;
@@ -3243,6 +3244,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
+    color: rgb(8, 109, 221);
     font-weight: 600;
   }
 
@@ -5935,6 +5937,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title {
+      color: rgb(95, 158, 160);
       gap: 4px;
       border: 0px rgb(95, 158, 160);
       border-top-left-radius: 0px;
@@ -5949,6 +5952,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
+      color: rgb(95, 158, 160);
       font-weight: 600;
     }
 
@@ -8163,46 +8167,74 @@ blockquote.callout {
     color: var(--color);
   }
   &[data-callout] {
-    --color: rgb(var(--callout-info)) !important;
+    --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="note"] {
-    --color: rgb(var(--callout-default)) !important;
+    --color: rgb(var(--callout-default, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-default, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-default, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="abstract"] {
-    --color: rgb(var(--callout-summary)) !important;
+    --color: rgb(var(--callout-summary, 83, 223, 221)) !important;
+    --border: rgba(var(--callout-summary, 83, 223, 221), 0.267) !important;
+    --bg: rgba(var(--callout-summary, 83, 223, 221), 0.063) !important;
   }
   &[data-callout="info"] {
-    --color: rgb(var(--callout-info)) !important;
+    --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="todo"] {
-    --color: rgb(var(--callout-todo)) !important;
+    --color: rgb(var(--callout-todo, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-todo, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-todo, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="tip"] {
-    --color: rgb(var(--callout-tip)) !important;
+    --color: rgb(var(--callout-tip, 83, 223, 221)) !important;
+    --border: rgba(var(--callout-tip, 83, 223, 221), 0.267) !important;
+    --bg: rgba(var(--callout-tip, 83, 223, 221), 0.063) !important;
   }
   &[data-callout="success"] {
-    --color: rgb(var(--callout-success)) !important;
+    --color: rgb(var(--callout-success, 68, 207, 110)) !important;
+    --border: rgba(var(--callout-success, 68, 207, 110), 0.267) !important;
+    --bg: rgba(var(--callout-success, 68, 207, 110), 0.063) !important;
   }
   &[data-callout="question"] {
-    --color: rgb(var(--callout-question)) !important;
+    --color: rgb(var(--callout-question, 233, 151, 63)) !important;
+    --border: rgba(var(--callout-question, 233, 151, 63), 0.267) !important;
+    --bg: rgba(var(--callout-question, 233, 151, 63), 0.063) !important;
   }
   &[data-callout="warning"] {
-    --color: rgb(var(--callout-warning)) !important;
+    --color: rgb(var(--callout-warning, 233, 151, 63)) !important;
+    --border: rgba(var(--callout-warning, 233, 151, 63), 0.267) !important;
+    --bg: rgba(var(--callout-warning, 233, 151, 63), 0.063) !important;
   }
   &[data-callout="failure"] {
-    --color: rgb(var(--callout-fail)) !important;
+    --color: rgb(var(--callout-fail, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-fail, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-fail, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="danger"] {
-    --color: rgb(var(--callout-bug)) !important;
+    --color: rgb(var(--callout-error, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-error, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-error, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="bug"] {
-    --color: rgb(var(--callout-bug)) !important;
+    --color: rgb(var(--callout-bug, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-bug, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-bug, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="example"] {
-    --color: rgb(var(--callout-example)) !important;
+    --color: rgb(var(--callout-example, 168, 130, 255)) !important;
+    --border: rgba(var(--callout-example, 168, 130, 255), 0.267) !important;
+    --bg: rgba(var(--callout-example, 168, 130, 255), 0.063) !important;
   }
   &[data-callout="quote"] {
-    --color: rgb(var(--callout-quote)) !important;
+    --color: rgb(var(--callout-quote, 158, 158, 158)) !important;
+    --border: rgba(var(--callout-quote, 158, 158, 158), 0.267) !important;
+    --bg: rgba(var(--callout-quote, 158, 158, 158), 0.063) !important;
   }
 }
 

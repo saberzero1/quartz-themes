@@ -939,6 +939,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-left-color: rgba(147, 183, 245, 0.4);
   border-right-color: rgba(147, 183, 245, 0.4);
   border-top-color: rgba(147, 183, 245, 0.4);
+  color: rgb(147, 183, 245);
   padding-bottom: 8px;
   padding-left: 8px;
   padding-right: 8px;
@@ -946,6 +947,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(147, 183, 245);
   font-weight: 400;
 }
 
@@ -2421,6 +2423,7 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: rgba(71, 143, 238, 0.4);
   border-right-color: rgba(71, 143, 238, 0.4);
   border-top-color: rgba(71, 143, 238, 0.4);
+  color: rgb(71, 143, 238);
   padding-bottom: 8px;
   padding-left: 8px;
   padding-right: 8px;
@@ -2428,6 +2431,7 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(71, 143, 238);
   font-weight: 400;
 }
 

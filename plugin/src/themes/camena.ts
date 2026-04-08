@@ -50,6 +50,7 @@ export const theme: ThemeData = {
   --blue-h: 210 !important;
   --blur-background: color-mix(in srgb, hsl(258, 29.33333%, 15%) 65%, transparent) linear-gradient(hsl(258, 29.33333%, 15%), color-mix(in srgb, hsl(258, 29.33333%, 15%) 65%, transparent)) !important;
   --bodyFont: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bold-weight: 600 !important;
   --callout-bug: from hsl(5, 88%, 66%) r g b;
   --callout-color: from hsl(258, 88%, 66%) r g b;
   --callout-default: from hsl(210, 88%, 66%) r g b;
@@ -63,6 +64,7 @@ export const theme: ThemeData = {
   --callout-success: from hsl(100, 88%, 66%) r g b;
   --callout-summary: from hsl(185, 88%, 66%) r g b;
   --callout-tip: from hsl(185, 88%, 66%) r g b;
+  --callout-title-weight: 600;
   --callout-todo: from hsl(210, 88%, 66%) r g b;
   --callout-warning: from hsl(25, 88%, 66%) r g b;
   --canvas-background: hsl(258, 29.33333%, 10%) !important;
@@ -97,6 +99,9 @@ export const theme: ThemeData = {
   --code-value: hsl(270, 88%, 66%) !important;
   --codeFont: ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: hsl(258, 29.33333%, 35%) !important;
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-base-00: hsl(258, 29.33333%, 10%) !important;
   --color-base-05: hsl(258, 29.33333%, 15%) !important;
   --color-base-10: hsl(258, 29.33333%, 20%) !important;
@@ -161,6 +166,7 @@ export const theme: ThemeData = {
   --graph-line: hsl(258, 29.33333%, 35%) !important;
   --graph-node: hsl(5, 88%, 66%) !important;
   --graph-node-attachment: hsl(210, 88%, 66%) !important;
+  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
   --graph-node-tag: hsl(50, 88%, 66%) !important;
   --graph-node-unresolved: rgba(from hsl(5, 88%, 66%) r g b / 0.8) !important;
   --graph-text: hsl(258, 29.33333%, 80%) !important;
@@ -184,6 +190,7 @@ export const theme: ThemeData = {
   --hr-color: hsl(258, 88%, 66%) !important;
   --hr-thickness: 0.1rem !important;
   --icon-color: hsl(258, 29.33333%, 50%) !important;
+  --icon-color-active: hsl(255, 89.76%, 75.9%) !important;
   --icon-color-focused: hsl(258, 29.33333%, 60%) !important;
   --icon-color-hover: hsl(258, 29.33333%, 50%) !important;
   --indentation-guide-color: rgba(255, 255, 255 / 0.12) !important;
@@ -192,6 +199,7 @@ export const theme: ThemeData = {
   --inline-title-size: 2.488em !important;
   --input-date-separator: hsl(258, 29.33333%, 35%) !important;
   --input-placeholder-color: hsl(258, 29.33333%, 35%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-hover: hsl(258, 29.33333%, 25%) !important;
   --interactive-normal: hsl(258, 29.33333%, 15%) !important;
   --light: hsl(258, 29.33333%, 10%) !important;
@@ -205,7 +213,9 @@ export const theme: ThemeData = {
   --link-external-decoration: none !important;
   --link-unresolved-color: hsl(258, 88%, 66%) !important;
   --link-unresolved-decoration-color: rgba(from hsl(258, 88%, 66%) r g b / 0.3) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: hsl(258, 29.33333%, 50%) !important;
+  --list-marker-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
   --list-marker-color-hover: hsl(258, 29.33333%, 50%) !important;
   --menu-background: hsl(258, 29.33333%, 15%) !important;
   --menu-border-color: hsl(258, 29.33333%, 40%) !important;
@@ -214,6 +224,7 @@ export const theme: ThemeData = {
   --metadata-input-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
   --metadata-input-font: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875rem !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: hsl(258, 29.33333%, 80%) !important;
   --metadata-label-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
   --metadata-label-font: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -236,6 +247,7 @@ export const theme: ThemeData = {
   --nav-item-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
   --nav-item-color: hsl(258, 29.33333%, 50%) !important;
   --nav-item-color-active: hsl(258, 29.33333%, 60%) !important;
+  --nav-item-color-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --nav-item-color-hover: hsl(258, 29.33333%, 80%) !important;
   --nav-item-color-selected: hsl(258, 29.33333%, 80%) !important;
   --nav-tag-color: hsl(258, 29.33333%, 35%) !important;
@@ -254,6 +266,7 @@ export const theme: ThemeData = {
   --pill-color: hsl(258, 29.33333%, 50%) !important;
   --pill-color-hover: hsl(258, 29.33333%, 80%) !important;
   --pill-color-remove: hsl(258, 29.33333%, 35%) !important;
+  --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --pink-h: 320 !important;
   --prompt-background: hsl(258, 29.33333%, 10%) !important;
   --prompt-border-color: hsl(258, 29.33333%, 45%) !important;
@@ -268,9 +281,11 @@ export const theme: ThemeData = {
   --search-clear-button-color: hsl(258, 29.33333%, 50%) !important;
   --search-icon-color: hsl(258, 29.33333%, 50%) !important;
   --search-result-background: hsl(258, 29.33333%, 10%) !important;
+  --secondary: hsl(255, 89.76%, 75.9%) !important;
   --setting-group-heading-color: hsl(258, 29.33333%, 80%) !important;
   --setting-items-background: hsl(258, 29.33333%, 20%) !important;
   --setting-items-border-color: hsl(258, 29.33333%, 35%) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: hsl(258, 29.33333%, 40%) !important;
   --slider-track-background: hsl(258, 29.33333%, 35%) !important;
   --status-bar-background: hsl(258, 29.33333%, 15%) !important;
@@ -298,6 +313,7 @@ export const theme: ThemeData = {
   --tab-text-color-focused: hsl(258, 29.33333%, 50%) !important;
   --tab-text-color-focused-active: hsl(258, 29.33333%, 50%) !important;
   --tab-text-color-focused-active-current: hsl(258, 29.33333%, 60%) !important;
+  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --table-add-button-border-color: hsl(258, 29.33333%, 35%) !important;
   --table-add-button-border-width: 0.1rem !important;
   --table-border-color: hsl(258, 88%, 66%) !important;
@@ -310,11 +326,17 @@ export const theme: ThemeData = {
   --table-header-border-color: hsl(258, 88%, 66%) !important;
   --table-header-border-width: 0.1rem !important;
   --table-header-color: hsl(258, 29.33333%, 10%) !important;
+  --table-header-weight: 600 !important;
   --table-row-alt-background: rgba(from hsl(258, 88%, 66%) r g b / 0.15) !important;
   --table-row-alt-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.3) !important;
   --table-row-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.15) !important;
   --table-row-last-border-width: 0.1rem !important;
+  --tag-color: hsl(255, 89.76%, 75.9%) !important;
+  --tag-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --tag-size: 0.875rem !important;
+  --tertiary: hsl(253, 92.4%, 85.14%) !important;
+  --text-accent: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-error: hsl(5, 88%, 66%) !important;
   --text-faint: hsl(258, 29.33333%, 35%) !important;
   --text-highlight-bg: rgba(from hsl(258, 88%, 66%) r g b / 0.25) !important;
@@ -333,6 +355,7 @@ export const theme: ThemeData = {
   --vault-profile-color: hsl(258, 29.33333%, 60%) !important;
   --vault-profile-color-hover: hsl(258, 29.33333%, 60%) !important;
   --workspace-background-translucent: rgba(0, 0, 0 / 0.6) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --yellow-h: 50 !important;
   --quartz-icon-color: currentColor !important;
 }
@@ -830,6 +853,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-left-color: color(srgb 0.3608 0.66 0.9592);
   border-right-color: color(srgb 0.3608 0.66 0.9592);
   border-top-color: color(srgb 0.3608 0.66 0.9592);
+  color: color(srgb 0.3608 0.66 0.9592);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: color(srgb 0.3608 0.66 0.9592);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -905,6 +933,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-color: from hsl(258, 88%, 66%) r g b;
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.25);
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.25);
@@ -946,6 +975,10 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-left-color: color(srgb 0.9592 0.610133 0.3608 / 0.25);
   border-right-color: color(srgb 0.9592 0.610133 0.3608 / 0.25);
   border-top-color: color(srgb 0.9592 0.610133 0.3608 / 0.25);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(45, 36, 66);
@@ -1346,6 +1379,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-cell-background-active: hsl(258, 29.33333%, 98%) !important;
   --bases-table-cell-background-disabled: hsl(258, 29.33333%, 90%) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(258, 29.33333%, 65%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(257, 88.88%, 70.95%) !important;
   --bases-table-font-size: 0.875rem !important;
   --bases-table-group-background: hsl(258, 29.33333%, 90%) !important;
   --bases-table-header-background: hsl(258, 29.33333%, 98%) !important;
@@ -1354,9 +1388,11 @@ html[saved-theme="dark"] body ul.tags > li {
   --bases-table-row-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.1) !important;
   --bases-table-summary-background: hsl(258, 29.33333%, 98%) !important;
   --bases-table-summary-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
+  --blockquote-border-color: hsl(257, 88.88%, 70.95%) !important;
   --blue-h: 210 !important;
   --blur-background: color-mix(in srgb, hsl(258, 29.33333%, 98%) 65%, transparent) linear-gradient(hsl(258, 29.33333%, 98%), color-mix(in srgb, hsl(258, 29.33333%, 98%) 65%, transparent)) !important;
   --bodyFont: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bold-weight: 600 !important;
   --callout-bug: from hsl(5, 88%, 66%) r g b;
   --callout-color: from hsl(258, 88%, 66%) r g b;
   --callout-default: from hsl(210, 88%, 66%) r g b;
@@ -1370,6 +1406,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-success: from hsl(100, 88%, 66%) r g b;
   --callout-summary: from hsl(185, 88%, 66%) r g b;
   --callout-tip: from hsl(185, 88%, 66%) r g b;
+  --callout-title-weight: 600;
   --callout-todo: from hsl(210, 88%, 66%) r g b;
   --callout-warning: from hsl(25, 88%, 66%) r g b;
   --canvas-background: hsl(258, 29.33333%, 98%) !important;
@@ -1404,6 +1441,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --code-value: hsl(270, 88%, 66%) !important;
   --codeFont: ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: hsl(258, 29.33333%, 75%) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --color-base-00: hsl(258, 29.33333%, 98%) !important;
   --color-base-05: hsl(258, 29.33333%, 95%) !important;
   --color-base-10: hsl(258, 29.33333%, 90%) !important;
@@ -1438,9 +1477,11 @@ html[saved-theme="dark"] body ul.tags > li {
   --dark: hsl(258, 29.33333%, 20%) !important;
   --darkgray: hsl(258, 29.33333%, 20%) !important;
   --divider-color: hsl(258, 29.33333%, 75%) !important;
+  --divider-color-hover: hsl(257, 88.88%, 70.95%) !important;
   --dropdown-background: hsl(258, 29.33333%, 98%) !important;
   --dropdown-background-hover: hsl(258, 29.33333%, 90%) !important;
   --embed-block-shadow-hover: 0 0 0 1px hsl(258, 29.33333%, 75%), inset 0 0 0 1px hsl(258, 29.33333%, 75%) !important;
+  --embed-border-start: 2px solid hsl(257, 88.88%, 70.95%) !important;
   --embed-max-height: 80vh !important;
   --embed-padding: 0 !important;
   --file-header-background: hsl(258, 29.33333%, 98%) !important;
@@ -1499,6 +1540,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --inline-title-size: 2.488em !important;
   --input-date-separator: hsl(258, 29.33333%, 75%) !important;
   --input-placeholder-color: hsl(258, 29.33333%, 75%) !important;
+  --interactive-accent: hsl(257, 88.88%, 70.95%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-hover: hsl(258, 29.33333%, 90%) !important;
   --interactive-normal: hsl(258, 29.33333%, 98%) !important;
   --light: hsl(258, 29.33333%, 98%) !important;
@@ -1509,6 +1552,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --link-external-color-hover: hsl(258, 88%, 66%) !important;
   --link-external-decoration: none !important;
   --link-unresolved-decoration-color: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: hsl(258, 29.33333%, 60%) !important;
   --list-marker-color-hover: hsl(258, 29.33333%, 60%) !important;
   --menu-background: hsl(258, 29.33333%, 95%) !important;
@@ -1518,6 +1562,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --metadata-input-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
   --metadata-input-font: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875rem !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: hsl(258, 29.33333%, 20%) !important;
   --metadata-label-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
   --metadata-label-font: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -1570,9 +1615,11 @@ html[saved-theme="dark"] body ul.tags > li {
   --search-clear-button-color: hsl(258, 29.33333%, 60%) !important;
   --search-icon-color: hsl(258, 29.33333%, 60%) !important;
   --search-result-background: hsl(258, 29.33333%, 98%) !important;
+  --secondary: hsl(257, 88.88%, 70.95%) !important;
   --setting-group-heading-color: hsl(258, 29.33333%, 20%) !important;
   --setting-items-background: hsl(258, 29.33333%, 90%) !important;
   --setting-items-border-color: hsl(258, 29.33333%, 75%) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: hsl(258, 29.33333%, 70%) !important;
   --slider-track-background: hsl(258, 29.33333%, 75%) !important;
   --status-bar-background: hsl(258, 29.33333%, 95%) !important;
@@ -1606,17 +1653,22 @@ html[saved-theme="dark"] body ul.tags > li {
   --table-border-width: 0.1rem !important;
   --table-column-first-border-width: 0.1rem !important;
   --table-column-last-border-width: 0.1rem !important;
+  --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%) !important;
   --table-drag-handle-color: hsl(258, 29.33333%, 75%) !important;
   --table-header-background: hsl(258, 88%, 66%) !important;
   --table-header-background-hover: hsl(258, 88%, 66%) !important;
   --table-header-border-color: hsl(258, 88%, 66%) !important;
   --table-header-border-width: 0.1rem !important;
   --table-header-color: hsl(258, 29.33333%, 98%) !important;
+  --table-header-weight: 600 !important;
   --table-row-alt-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1) !important;
   --table-row-alt-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
   --table-row-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.1) !important;
   --table-row-last-border-width: 0.1rem !important;
+  --table-selection-border-color: hsl(257, 88.88%, 70.95%) !important;
   --tag-size: 0.875rem !important;
+  --tertiary: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --text-error: hsl(5, 88%, 66%) !important;
   --text-faint: hsl(258, 29.33333%, 75%) !important;
   --text-highlight-bg: rgba(from hsl(258, 88%, 66%) r g b / 0.25) !important;
@@ -1635,6 +1687,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: hsl(258, 29.33333%, 40%) !important;
   --vault-profile-color-hover: hsl(258, 29.33333%, 40%) !important;
   --workspace-background-translucent: rgba(255, 255, 255 / 0.6) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --yellow-h: 50 !important;
   --quartz-icon-color: currentColor !important;
 }
@@ -2125,6 +2178,11 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: color(srgb 0.3608 0.66 0.9592);
   border-right-color: color(srgb 0.3608 0.66 0.9592);
   border-top-color: color(srgb 0.3608 0.66 0.9592);
+  color: color(srgb 0.3608 0.66 0.9592);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: color(srgb 0.3608 0.66 0.9592);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
@@ -2200,6 +2258,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-color: from hsl(258, 88%, 66%) r g b;
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.1);
   border-bottom-color: color(srgb 0.54032 0.3608 0.9592 / 0.25);
   border-left-color: color(srgb 0.54032 0.3608 0.9592 / 0.25);
@@ -2241,6 +2300,10 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-left-color: color(srgb 0.9592 0.610133 0.3608 / 0.25);
   border-right-color: color(srgb 0.9592 0.610133 0.3608 / 0.25);
   border-top-color: color(srgb 0.9592 0.610133 0.3608 / 0.25);
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(249, 248, 251);

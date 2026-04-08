@@ -750,11 +750,16 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(232, 232, 232);
   border-right-color: rgb(232, 232, 232);
   border-top-color: rgb(232, 232, 232);
+  color: rgb(232, 232, 232);
   gap: 8px;
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 4px;
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(232, 232, 232);
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {

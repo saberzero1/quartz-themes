@@ -40,6 +40,7 @@ import {
   dark as defaultDark,
   light as defaultLight,
 } from "./default-styles.js";
+import normalizeColorToRgbTriplet from "../../extensions/packages/normalize-color-to-rgb-triplet.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -842,13 +843,13 @@ function buildCSSStrings(themeData) {
   const customCalloutQuartzEntries = customCalloutTypes
     .map(
       (type) =>
-        `    &[data-callout="${type}"] {\n      --color: rgb(var(--callout-${type})) !important;\n    }`,
+        `    &[data-callout="${type}"] {\n      --color: rgb(var(--callout-${type}, var(--callout-default, 2, 122, 255))) !important;\n      --border: rgba(var(--callout-${type}, var(--callout-default, 2, 122, 255)), 0.267) !important;\n      --bg: rgba(var(--callout-${type}, var(--callout-default, 2, 122, 255)), 0.063) !important;\n    }`,
     )
     .join("\n");
   const customCalloutPublishEntries = customCalloutTypes
     .map(
       (type) =>
-        `  .callout[data-callout="${type}"] > .callout-title > .callout-icon > svg.svg-icon {\n    stroke: rgb(var(--callout-${type}));\n  }`,
+        `  .callout[data-callout="${type}"] > .callout-title > .callout-icon > svg.svg-icon {\n    stroke: rgb(var(--callout-${type}, var(--callout-default, 2, 122, 255)));\n  }`,
     )
     .join("\n");
 
@@ -927,7 +928,11 @@ function buildCSSStrings(themeData) {
 
   if (Object.keys(bodyVariables.dark).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.dark)) {
-      const normalized = normalizeSvgDataUriValue(value);
+      let normalized = normalizeSvgDataUriValue(value);
+      if (key.startsWith("--callout-")) {
+        const triplet = normalizeColorToRgbTriplet(normalized);
+        if (triplet) normalized = triplet;
+      }
       // For Publish: include all variables
       bodyVarsStringDarkPublish += `  ${key}: ${normalized}${
         key.startsWith("--callout-") ? "" : " !important"
@@ -944,7 +949,11 @@ function buildCSSStrings(themeData) {
 
   if (Object.keys(bodyVariables.light).length > 0) {
     for (const [key, value] of Object.entries(bodyVariables.light)) {
-      const normalized = normalizeSvgDataUriValue(value);
+      let normalized = normalizeSvgDataUriValue(value);
+      if (key.startsWith("--callout-")) {
+        const triplet = normalizeColorToRgbTriplet(normalized);
+        if (triplet) normalized = triplet;
+      }
       // For Publish: include all variables
       bodyVarsStringLightPublish += `  ${key}: ${normalized}${
         key.startsWith("--callout-") ? "" : " !important"
@@ -1527,46 +1536,74 @@ ${calloutIconDark}
       color: var(--color);
     }
     &[data-callout] {
-      --color: rgb(var(--callout-info)) !important;
+      --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+      --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+      --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
     }
     &[data-callout="note"] {
-      --color: rgb(var(--callout-default)) !important;
+      --color: rgb(var(--callout-default, 2, 122, 255)) !important;
+      --border: rgba(var(--callout-default, 2, 122, 255), 0.267) !important;
+      --bg: rgba(var(--callout-default, 2, 122, 255), 0.063) !important;
     }
     &[data-callout="abstract"] {
-      --color: rgb(var(--callout-summary)) !important;
+      --color: rgb(var(--callout-summary, 83, 223, 221)) !important;
+      --border: rgba(var(--callout-summary, 83, 223, 221), 0.267) !important;
+      --bg: rgba(var(--callout-summary, 83, 223, 221), 0.063) !important;
     }
     &[data-callout="info"] {
-      --color: rgb(var(--callout-info)) !important;
+      --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+      --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+      --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
     }
     &[data-callout="todo"] {
-      --color: rgb(var(--callout-todo)) !important;
+      --color: rgb(var(--callout-todo, 2, 122, 255)) !important;
+      --border: rgba(var(--callout-todo, 2, 122, 255), 0.267) !important;
+      --bg: rgba(var(--callout-todo, 2, 122, 255), 0.063) !important;
     }
     &[data-callout="tip"] {
-      --color: rgb(var(--callout-tip)) !important;
+      --color: rgb(var(--callout-tip, 83, 223, 221)) !important;
+      --border: rgba(var(--callout-tip, 83, 223, 221), 0.267) !important;
+      --bg: rgba(var(--callout-tip, 83, 223, 221), 0.063) !important;
     }
     &[data-callout="success"] {
-      --color: rgb(var(--callout-success)) !important;
+      --color: rgb(var(--callout-success, 68, 207, 110)) !important;
+      --border: rgba(var(--callout-success, 68, 207, 110), 0.267) !important;
+      --bg: rgba(var(--callout-success, 68, 207, 110), 0.063) !important;
     }
     &[data-callout="question"] {
-      --color: rgb(var(--callout-question)) !important;
+      --color: rgb(var(--callout-question, 233, 151, 63)) !important;
+      --border: rgba(var(--callout-question, 233, 151, 63), 0.267) !important;
+      --bg: rgba(var(--callout-question, 233, 151, 63), 0.063) !important;
     }
     &[data-callout="warning"] {
-      --color: rgb(var(--callout-warning)) !important;
+      --color: rgb(var(--callout-warning, 233, 151, 63)) !important;
+      --border: rgba(var(--callout-warning, 233, 151, 63), 0.267) !important;
+      --bg: rgba(var(--callout-warning, 233, 151, 63), 0.063) !important;
     }
     &[data-callout="failure"] {
-      --color: rgb(var(--callout-fail)) !important;
+      --color: rgb(var(--callout-fail, 251, 70, 76)) !important;
+      --border: rgba(var(--callout-fail, 251, 70, 76), 0.267) !important;
+      --bg: rgba(var(--callout-fail, 251, 70, 76), 0.063) !important;
     }
     &[data-callout="danger"] {
-      --color: rgb(var(--callout-bug)) !important;
+      --color: rgb(var(--callout-error, 251, 70, 76)) !important;
+      --border: rgba(var(--callout-error, 251, 70, 76), 0.267) !important;
+      --bg: rgba(var(--callout-error, 251, 70, 76), 0.063) !important;
     }
     &[data-callout="bug"] {
-      --color: rgb(var(--callout-bug)) !important;
+      --color: rgb(var(--callout-bug, 251, 70, 76)) !important;
+      --border: rgba(var(--callout-bug, 251, 70, 76), 0.267) !important;
+      --bg: rgba(var(--callout-bug, 251, 70, 76), 0.063) !important;
     }
     &[data-callout="example"] {
-      --color: rgb(var(--callout-example)) !important;
+      --color: rgb(var(--callout-example, 168, 130, 255)) !important;
+      --border: rgba(var(--callout-example, 168, 130, 255), 0.267) !important;
+      --bg: rgba(var(--callout-example, 168, 130, 255), 0.063) !important;
     }
     &[data-callout="quote"] {
-      --color: rgb(var(--callout-quote)) !important;
+      --color: rgb(var(--callout-quote, 158, 158, 158)) !important;
+      --border: rgba(var(--callout-quote, 158, 158, 158), 0.267) !important;
+      --bg: rgba(var(--callout-quote, 158, 158, 158), 0.063) !important;
     }
 ${customCalloutQuartzEntries ? "\n" + customCalloutQuartzEntries + "\n" : ""}  }
 
@@ -1724,43 +1761,43 @@ ${bodyVarsStringDarkPublish}}
 
   resultPublishScss += `
   .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-default));
+    stroke: rgb(var(--callout-default, 2, 122, 255));
   }
   .callout[data-callout="abstract"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-summary));
+    stroke: rgb(var(--callout-summary, 83, 223, 221));
   }
   .callout[data-callout="info"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-info));
+    stroke: rgb(var(--callout-info, 2, 122, 255));
   }
   .callout[data-callout="todo"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-todo));
+    stroke: rgb(var(--callout-todo, 2, 122, 255));
   }
   .callout[data-callout="tip"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-tip));
+    stroke: rgb(var(--callout-tip, 83, 223, 221));
   }
   .callout[data-callout="success"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-success));
+    stroke: rgb(var(--callout-success, 68, 207, 110));
   }
   .callout[data-callout="question"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-question));
+    stroke: rgb(var(--callout-question, 233, 151, 63));
   }
   .callout[data-callout="warning"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-warning));
+    stroke: rgb(var(--callout-warning, 233, 151, 63));
   }
   .callout[data-callout="failure"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-fail));
+    stroke: rgb(var(--callout-fail, 251, 70, 76));
   }
   .callout[data-callout="danger"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-bug));
+    stroke: rgb(var(--callout-error, 251, 70, 76));
   }
   .callout[data-callout="bug"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-bug));
+    stroke: rgb(var(--callout-bug, 251, 70, 76));
   }
   .callout[data-callout="example"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-example));
+    stroke: rgb(var(--callout-example, 168, 130, 255));
   }
   .callout[data-callout="quote"] > .callout-title > .callout-icon > svg.svg-icon {
-    stroke: rgb(var(--callout-quote));
+    stroke: rgb(var(--callout-quote, 158, 158, 158));
   }
 ${customCalloutPublishEntries ? "\n" + customCalloutPublishEntries + "\n" : ""}
   pre > code,

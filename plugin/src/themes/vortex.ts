@@ -325,6 +325,11 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-left-color: rgb(50, 150, 255);
   border-right-color: rgb(50, 150, 255);
   border-top-color: rgb(50, 150, 255);
+  color: rgb(50, 150, 255);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(50, 150, 255);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -876,6 +881,11 @@ html[saved-theme="light"] body pre:has(> code) {
   border-left-color: rgb(50, 150, 255);
   border-right-color: rgb(50, 150, 255);
   border-top-color: rgb(50, 150, 255);
+  color: rgb(50, 150, 255);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(50, 150, 255);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {

@@ -38,10 +38,14 @@ export const theme: ThemeData = {
   --canvas-card-label-color: hsl(258, 88%, 66%) !important;
   --canvas-dot-pattern: rgb(70, 70, 70) !important;
   --checkbox-border-color: hsl(258, 88%, 66%) !important;
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --checkbox-marker-color: rgb(33, 33, 33) !important;
   --code-background: rgb(33, 33, 33) !important;
   --code-comment: hsl(258, 88%, 66%) !important;
   --collapse-icon-color: hsl(258, 88%, 66%) !important;
+  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-base-00: rgb(33, 33, 33) !important;
   --color-base-50: hsl(258, 88%, 66%) !important;
   --colored-accent-1: hsl(258, 88%, 66%) !important;
@@ -56,17 +60,28 @@ export const theme: ThemeData = {
   --file-header-background: rgb(33, 33, 33) !important;
   --file-header-background-focused: rgb(33, 33, 33) !important;
   --footnote-id-color-no-occurrences: hsl(258, 88%, 66%) !important;
+  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
   --graph-node-unresolved: hsl(258, 88%, 66%) !important;
   --gray: hsl(258, 88%, 66%) !important;
   --heading-formatting: hsl(258, 88%, 66%) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight-1: rgba(255, 255, 255, 0.075) !important;
   --highlight-2: rgba(255, 255, 255, 0.075) !important;
+  --icon-color-active: hsl(255, 89.76%, 75.9%) !important;
   --input-date-separator: hsl(258, 88%, 66%) !important;
   --input-placeholder-color: hsl(258, 88%, 66%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --italic-color: rgb(97, 97, 97) !important;
   --light: rgb(33, 33, 33) !important;
   --lightgray: hsl(258, 0.98%, 12%) !important;
+  --link-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-color-hover: hsl(253, 92.4%, 85.14%) !important;
+  --link-external-color: hsl(255, 89.76%, 75.9%) !important;
+  --link-external-color-hover: hsl(253, 92.4%, 85.14%) !important;
+  --link-unresolved-color: hsl(255, 89.76%, 75.9%) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: hsl(258, 88%, 66%) !important;
+  --list-marker-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
   --main-color: white !important;
   --main-color-05: rgba(255, 255, 255, 0.116) !important;
   --main-color-2: rgb(224, 224, 224) !important;
@@ -74,15 +89,18 @@ export const theme: ThemeData = {
   --main-color-inverted-2: rgb(44, 44, 44) !important;
   --menu-background: hsl(258, 0.98%, 12%) !important;
   --menu-radius: 1em !important;
+  --metadata-input-height: 28px !important;
   --modal-background: rgb(33, 33, 33) !important;
   --nav-collapse-icon-color: hsl(258, 88%, 66%) !important;
   --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
   --nav-heading-color-collapsed: hsl(258, 88%, 66%) !important;
+  --nav-item-color-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --nav-tag-color: hsl(258, 88%, 66%) !important;
   --pdf-background: rgb(33, 33, 33) !important;
   --pdf-page-background: rgb(33, 33, 33) !important;
   --pdf-sidebar-background: rgb(33, 33, 33) !important;
   --pill-color-remove: hsl(258, 88%, 66%) !important;
+  --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --popover-height: 1250px !important;
   --popover-width: 1050px !important;
   --prompt-background: rgb(33, 33, 33) !important;
@@ -90,10 +108,12 @@ export const theme: ThemeData = {
   --ribbon-background: hsl(258, 0.98%, 12%) !important;
   --ribbon-background-collapsed: rgb(33, 33, 33) !important;
   --search-result-background: rgb(33, 33, 33) !important;
+  --secondary: hsl(255, 89.76%, 75.9%) !important;
   --shadow-1: hsla(258, 88%, 5%, .5) !important;
   --shadow-2: hsla(258, 0%, 6.6%, .4) !important;
   --shadow-3: rgba(0, 0, 0, 0.26) !important;
   --shadow-4: hsla(258, 44.1%, -10%, .5) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --status-bar-background: hsl(258, 0.98%, 12%) !important;
   --status-bar-border-color: rgba(105, 105, 105, 0.441) !important;
   --status-bar-radius: 1em 0 0 0 !important;
@@ -104,12 +124,19 @@ export const theme: ThemeData = {
   --tab-switcher-background: hsl(258, 0.98%, 12%) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 0.98%, 12%), transparent) !important;
   --tab-text-color: hsl(258, 88%, 66%) !important;
+  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --table-drag-handle-color: hsl(258, 88%, 66%) !important;
   --table-header-weight: 700 !important;
+  --tag-color: hsl(255, 89.76%, 75.9%) !important;
+  --tag-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --tc: rgb(194, 194, 194) !important;
+  --tertiary: hsl(253, 92.4%, 85.14%) !important;
+  --text-accent: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-color-inverted: rgb(223, 223, 223) !important;
   --text-faint: hsl(258, 88%, 66%) !important;
   --titlebar-background: hsl(258, 0.98%, 12%) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -467,11 +494,13 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-left-color: rgba(138, 92, 245, 0.5);
   border-right-color: rgba(138, 92, 245, 0.5);
   border-top-color: rgba(138, 92, 245, 0.5);
+  color: rgb(223, 223, 223);
   padding-bottom: 3.12px;
   padding-top: 6.24px;
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(223, 223, 223);
   font-weight: 700;
 }
 
@@ -483,6 +512,7 @@ html[saved-theme="dark"] body .callout > .callout-content {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+  --callout-color: 83, 223, 221;
   background-color: rgba(0, 176, 255, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -491,6 +521,7 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
+  --callout-color: 251, 70, 76;
   background-color: rgba(255, 6, 93, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -499,6 +530,7 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
+  --callout-color: 251, 70, 76;
   background-color: rgba(255, 82, 82, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -507,6 +539,7 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
+  --callout-color: 168, 130, 255;
   background-color: rgba(124, 77, 255, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -515,6 +548,7 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
+  --callout-color: 251, 70, 76;
   background-color: rgba(255, 82, 82, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -523,6 +557,7 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
+  --callout-color: 2, 122, 255;
   background-color: rgba(0, 184, 212, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -531,6 +566,7 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
+  --callout-color: 2, 122, 255;
   background-color: rgba(68, 138, 255, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -539,6 +575,7 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
+  --callout-color: 233, 151, 63;
   background-color: rgba(255, 160, 0, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -547,6 +584,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   border-top-left-radius: 16px;
@@ -554,6 +592,7 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
+  --callout-color: 68, 207, 110;
   background-color: rgba(0, 200, 83, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -562,6 +601,7 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
+  --callout-color: 83, 223, 221;
   background-color: rgba(0, 191, 165, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -570,6 +610,7 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
+  --callout-color: 2, 122, 255;
   background-color: rgba(0, 184, 212, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -578,11 +619,16 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
+  --callout-color: 233, 151, 63;
   background-color: rgba(255, 145, 0, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-container > .search-space {
   background-color: rgb(33, 33, 33);
@@ -664,6 +710,7 @@ html[saved-theme="dark"] body hr {
   border-right-style: dashed;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
+  --callout-color: 2, 122, 255;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   border-top-left-radius: 16px;
@@ -842,10 +889,13 @@ html[saved-theme="dark"] body sup {
   --canvas-dot-pattern: rgb(197, 197, 197) !important;
   --checkbox-border-color: hsl(258, 88%, 66%) !important;
   --checkbox-color: hsl(258, 88%, 66%) !important;
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --checkbox-marker-color: hsl(258, 0.5%, 96%) !important;
   --code-background: rgb(234, 234, 234) !important;
   --code-comment: hsl(258, 88%, 66%) !important;
   --collapse-icon-color: hsl(258, 88%, 66%) !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --color-base-00: hsl(0, 0%, 98%) !important;
   --color-base-50: hsl(258, 88%, 66%) !important;
   --colored-accent-1: hsl(258, 88%, 66%) !important;
@@ -867,15 +917,20 @@ html[saved-theme="dark"] body sup {
   --graph-node-unresolved: hsl(258, 88%, 66%) !important;
   --gray: hsl(258, 88%, 66%) !important;
   --heading-formatting: hsl(258, 88%, 66%) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight-1: rgba(0, 0, 0, 0.056) !important;
   --highlight-2: rgba(214, 214, 214, 0.308) !important;
   --input-date-separator: hsl(258, 88%, 66%) !important;
   --input-placeholder-color: hsl(258, 88%, 66%) !important;
   --interactive-accent: hsl(258, 88%, 66%) !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-normal: hsl(0, 0%, 98%) !important;
   --italic-color: rgb(154, 154, 154) !important;
   --light: hsl(258, 0.5%, 96%) !important;
   --lightgray: rgb(255, 255, 255) !important;
+  --link-color-hover: hsl(255, 89.76%, 75.9%) !important;
+  --link-external-color-hover: hsl(255, 89.76%, 75.9%) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: hsl(258, 88%, 66%) !important;
   --main-color: black !important;
   --main-color-05: rgba(0, 0, 0, 0.116) !important;
@@ -884,6 +939,7 @@ html[saved-theme="dark"] body sup {
   --main-color-inverted-2: rgb(252, 252, 252) !important;
   --menu-background: rgb(255, 255, 255) !important;
   --menu-radius: 1em !important;
+  --metadata-input-height: 28px !important;
   --modal-background: hsl(258, 0.5%, 96%) !important;
   --nav-collapse-icon-color: hsl(258, 88%, 66%) !important;
   --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
@@ -906,6 +962,7 @@ html[saved-theme="dark"] body sup {
   --shadow-2: rgba(0, 0, 0, 0.257) !important;
   --shadow-3: rgba(0, 0, 0, 0.08) !important;
   --shadow-4: hsla(258, 44.1%, 79%, .2) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --status-bar-background: rgb(255, 255, 255) !important;
   --status-bar-border-color: rgba(200, 200, 200, 0.441) !important;
   --status-bar-radius: 1em 0 0 0 !important;
@@ -921,9 +978,12 @@ html[saved-theme="dark"] body sup {
   --table-header-weight: 700 !important;
   --table-selection-border-color: hsl(258, 88%, 66%) !important;
   --tc: rgb(67, 67, 67) !important;
+  --tertiary: hsl(255, 89.76%, 75.9%) !important;
+  --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --text-color-inverted: black !important;
   --text-faint: hsl(258, 88%, 66%) !important;
   --titlebar-background: rgb(255, 255, 255) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1287,11 +1347,13 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: rgba(138, 92, 245, 0.5);
   border-right-color: rgba(138, 92, 245, 0.5);
   border-top-color: rgba(138, 92, 245, 0.5);
+  color: rgb(0, 0, 0);
   padding-bottom: 3.12px;
   padding-top: 6.24px;
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(0, 0, 0);
   font-weight: 700;
 }
 
@@ -1303,6 +1365,7 @@ html[saved-theme="light"] body .callout > .callout-content {
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
+  --callout-color: 0, 191, 188;
   background-color: rgba(0, 176, 255, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1311,6 +1374,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
+  --callout-color: 233, 49, 71;
   background-color: rgba(255, 6, 93, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1319,6 +1383,7 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
+  --callout-color: 233, 49, 71;
   background-color: rgba(255, 82, 82, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1327,6 +1392,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
+  --callout-color: 120, 82, 238;
   background-color: rgba(124, 77, 255, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1335,6 +1401,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
+  --callout-color: 233, 49, 71;
   background-color: rgba(255, 82, 82, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1343,6 +1410,7 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
+  --callout-color: 8, 109, 221;
   background-color: rgba(0, 184, 212, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1351,6 +1419,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
+  --callout-color: 8, 109, 221;
   background-color: rgba(68, 138, 255, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1359,6 +1428,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
+  --callout-color: 236, 117, 0;
   background-color: rgba(255, 160, 0, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1367,6 +1437,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   border-top-left-radius: 16px;
@@ -1374,6 +1445,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
+  --callout-color: 8, 185, 78;
   background-color: rgba(0, 200, 83, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1382,6 +1454,7 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
+  --callout-color: 0, 191, 188;
   background-color: rgba(0, 191, 165, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1390,6 +1463,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
+  --callout-color: 8, 109, 221;
   background-color: rgba(0, 184, 212, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1398,11 +1472,16 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
+  --callout-color: 236, 117, 0;
   background-color: rgba(255, 145, 0, 0.1);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(250, 250, 250);
@@ -1488,6 +1567,7 @@ html[saved-theme="light"] body hr {
   border-right-style: dashed;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
+  --callout-color: 8, 109, 221;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   border-top-left-radius: 16px;

@@ -1015,9 +1015,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="check
   border-left-color: rgb(235, 111, 146);
   border-right-color: rgb(235, 111, 146);
   border-top-color: rgb(235, 111, 146);
+  color: rgb(235, 111, 146);
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(235, 111, 146);
   font-weight: 400;
 }
 
@@ -2598,9 +2600,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="chec
   border-left-color: rgb(180, 99, 122);
   border-right-color: rgb(180, 99, 122);
   border-top-color: rgb(180, 99, 122);
+  color: rgb(180, 99, 122);
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(180, 99, 122);
   font-weight: 400;
 }
 

@@ -874,10 +874,15 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-top-color: rgba(255, 255, 255, 0.067);
   border-top-style: solid;
   border-top-width: 1px;
+  color: rgb(0, 105, 224);
   padding-bottom: 3.2px;
   padding-left: 6.4px;
   padding-right: 6.4px;
   padding-top: 3.2px;
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(216, 220, 227);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -2062,10 +2067,15 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-top-color: rgba(0, 0, 0, 0.067);
   border-top-style: solid;
   border-top-width: 1px;
+  color: rgb(0, 105, 224);
   padding-bottom: 3.2px;
   padding-left: 6.4px;
   padding-right: 6.4px;
   padding-top: 3.2px;
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(34, 34, 34);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {

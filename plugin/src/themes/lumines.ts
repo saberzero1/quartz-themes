@@ -824,7 +824,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(245, 245, 245);
   text-decoration-color: rgb(245, 245, 245);
 }`,
-    callouts: `html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+    callouts: `html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(51, 155, 240);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   background-color: rgba(61, 201, 219, 0.1);
   border-bottom-color: rgba(61, 201, 219, 0.25);
   border-bottom-left-radius: 8px;
@@ -2209,7 +2213,11 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(36, 36, 36);
   text-decoration-color: rgb(36, 36, 36);
 }`,
-    callouts: `html[saved-theme="light"] body .callout[data-callout="abstract"] {
+    callouts: `html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(51, 155, 240);
+}
+
+html[saved-theme="light"] body .callout[data-callout="abstract"] {
   background-color: rgba(61, 201, 219, 0.1);
   border-bottom-color: rgba(61, 201, 219, 0.25);
   border-bottom-left-radius: 8px;

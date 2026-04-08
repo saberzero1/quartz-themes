@@ -101,7 +101,7 @@
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 2px !important;
   --bases-table-container-border-width: 1px !important;
-  --bases-table-font-size: 0.688em !important;
+  --bases-table-font-size: 1em !important;
   --bases-table-group-background: #fcf5e4 !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: hsl(0, 0%, 35%) !important;
@@ -1049,7 +1049,7 @@
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 2px !important;
   --bases-table-container-border-width: 1px !important;
-  --bases-table-font-size: 0.688em !important;
+  --bases-table-font-size: 1em !important;
   --bases-table-group-background: #202020 !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: hsl(0, 0%, 60%) !important;
@@ -3199,6 +3199,7 @@ body {
   }
 
   .callout .callout-title {
+    color: rgb(8, 109, 221);
     gap: 4px;
     border: 0px rgb(8, 109, 221);
     border-top-left-radius: 0px;
@@ -3213,6 +3214,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
+    color: rgb(8, 109, 221);
     font-weight: 600;
   }
 
@@ -4497,10 +4499,10 @@ body {
     background-color: rgba(138, 92, 245, 0.1);
     color: rgb(81, 157, 92);
     border: 0px solid rgba(138, 92, 245, 0.15);
-    border-top-left-radius: 15.147px;
-    border-top-right-radius: 15.147px;
-    border-bottom-left-radius: 15.147px;
-    border-bottom-right-radius: 15.147px;
+    border-top-left-radius: 22.016px;
+    border-top-right-radius: 22.016px;
+    border-bottom-left-radius: 22.016px;
+    border-bottom-right-radius: 22.016px;
   }
 
   li.task-list-item input[type="checkbox"] {
@@ -6108,6 +6110,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title {
+      color: rgb(2, 122, 255);
       gap: 4px;
       border: 0px rgb(2, 122, 255);
       border-top-left-radius: 0px;
@@ -6122,6 +6125,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
+      color: rgb(2, 122, 255);
       font-weight: 600;
     }
 
@@ -7409,10 +7413,10 @@ html[saved-theme="dark"] {
       background-color: rgba(138, 92, 245, 0.1);
       color: rgb(166, 138, 249);
       border: 0px solid rgba(138, 92, 245, 0.15);
-      border-top-left-radius: 15.147px;
-      border-top-right-radius: 15.147px;
-      border-bottom-left-radius: 15.147px;
-      border-bottom-right-radius: 15.147px;
+      border-top-left-radius: 22.016px;
+      border-top-right-radius: 22.016px;
+      border-bottom-left-radius: 22.016px;
+      border-bottom-right-radius: 22.016px;
     }
 
     li.task-list-item input[type="checkbox"] {
@@ -8497,46 +8501,74 @@ blockquote.callout {
     color: var(--color);
   }
   &[data-callout] {
-    --color: rgb(var(--callout-info)) !important;
+    --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="note"] {
-    --color: rgb(var(--callout-default)) !important;
+    --color: rgb(var(--callout-default, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-default, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-default, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="abstract"] {
-    --color: rgb(var(--callout-summary)) !important;
+    --color: rgb(var(--callout-summary, 83, 223, 221)) !important;
+    --border: rgba(var(--callout-summary, 83, 223, 221), 0.267) !important;
+    --bg: rgba(var(--callout-summary, 83, 223, 221), 0.063) !important;
   }
   &[data-callout="info"] {
-    --color: rgb(var(--callout-info)) !important;
+    --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="todo"] {
-    --color: rgb(var(--callout-todo)) !important;
+    --color: rgb(var(--callout-todo, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-todo, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-todo, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="tip"] {
-    --color: rgb(var(--callout-tip)) !important;
+    --color: rgb(var(--callout-tip, 83, 223, 221)) !important;
+    --border: rgba(var(--callout-tip, 83, 223, 221), 0.267) !important;
+    --bg: rgba(var(--callout-tip, 83, 223, 221), 0.063) !important;
   }
   &[data-callout="success"] {
-    --color: rgb(var(--callout-success)) !important;
+    --color: rgb(var(--callout-success, 68, 207, 110)) !important;
+    --border: rgba(var(--callout-success, 68, 207, 110), 0.267) !important;
+    --bg: rgba(var(--callout-success, 68, 207, 110), 0.063) !important;
   }
   &[data-callout="question"] {
-    --color: rgb(var(--callout-question)) !important;
+    --color: rgb(var(--callout-question, 233, 151, 63)) !important;
+    --border: rgba(var(--callout-question, 233, 151, 63), 0.267) !important;
+    --bg: rgba(var(--callout-question, 233, 151, 63), 0.063) !important;
   }
   &[data-callout="warning"] {
-    --color: rgb(var(--callout-warning)) !important;
+    --color: rgb(var(--callout-warning, 233, 151, 63)) !important;
+    --border: rgba(var(--callout-warning, 233, 151, 63), 0.267) !important;
+    --bg: rgba(var(--callout-warning, 233, 151, 63), 0.063) !important;
   }
   &[data-callout="failure"] {
-    --color: rgb(var(--callout-fail)) !important;
+    --color: rgb(var(--callout-fail, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-fail, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-fail, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="danger"] {
-    --color: rgb(var(--callout-bug)) !important;
+    --color: rgb(var(--callout-error, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-error, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-error, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="bug"] {
-    --color: rgb(var(--callout-bug)) !important;
+    --color: rgb(var(--callout-bug, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-bug, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-bug, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="example"] {
-    --color: rgb(var(--callout-example)) !important;
+    --color: rgb(var(--callout-example, 168, 130, 255)) !important;
+    --border: rgba(var(--callout-example, 168, 130, 255), 0.267) !important;
+    --bg: rgba(var(--callout-example, 168, 130, 255), 0.063) !important;
   }
   &[data-callout="quote"] {
-    --color: rgb(var(--callout-quote)) !important;
+    --color: rgb(var(--callout-quote, 158, 158, 158)) !important;
+    --border: rgba(var(--callout-quote, 158, 158, 158), 0.267) !important;
+    --bg: rgba(var(--callout-quote, 158, 158, 158), 0.063) !important;
   }
 }
 

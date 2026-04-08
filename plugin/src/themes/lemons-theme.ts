@@ -1050,10 +1050,15 @@ html body li.task-list-item[data-task='w'] {
   border-top-color: rgb(83, 82, 237);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  color: rgb(83, 82, 237);
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 12px;
   padding-top: 12px;
+}
+
+html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(83, 82, 237);
 }
 
 html body .callout > .callout-content {

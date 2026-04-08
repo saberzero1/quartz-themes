@@ -517,26 +517,26 @@ body.theme-light {
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.7;
   --callout-border-width: 1px;
-  --callout-bug: #c62828;
+  --callout-bug: 198, 40, 40;
   --callout-content-background: transparent;
   --callout-content-padding: 8px;
-  --callout-default: #1565c0;
-  --callout-error: #c62828;
-  --callout-example: #6a1b9a;
-  --callout-fail: #f57c00;
-  --callout-important: #ad1457;
-  --callout-info: #00838f;
+  --callout-default: 21, 101, 192;
+  --callout-error: 198, 40, 40;
+  --callout-example: 106, 27, 154;
+  --callout-fail: 245, 124, 0;
+  --callout-important: 173, 20, 87;
+  --callout-info: 0, 131, 143;
   --callout-padding: 12px;
-  --callout-question: #fbc02d;
-  --callout-quote: #6a1b9a;
+  --callout-question: 251, 192, 45;
+  --callout-quote: 106, 27, 154;
   --callout-radius: 8px;
-  --callout-success: #2e7d32;
-  --callout-summary: #1565c0;
-  --callout-tip: #2e7d32;
+  --callout-success: 46, 125, 50;
+  --callout-summary: 21, 101, 192;
+  --callout-tip: 46, 125, 50;
   --callout-title-padding: 0;
   --callout-title-weight: 600;
-  --callout-todo: #f57c00;
-  --callout-warning: #fbc02d;
+  --callout-todo: 245, 124, 0;
+  --callout-warning: 251, 192, 45;
   --canvas-background: linear-gradient(to bottom, #f5f8ff, #e8eeff) !important;
   --canvas-card-label-color: #7896f0 !important;
   --canvas-color: 192, 192, 192 !important;
@@ -1293,7 +1293,7 @@ body.theme-light {
   --table-text-color: #3a5ca0 !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 600 !important;
-  --callout-title-color: hsl(40, 60%, 80%);
+  --callout-title-color: 235, 214, 173;
   --callout-title-size: 1.2em;
   --callout-background: linear-gradient(to bottom, #e8eeff, #f5f8ff);
 }
@@ -1436,7 +1436,7 @@ body.theme-dark {
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-bug: 251, 70, 76;
-  --callout-content-background: #2a2a2a;
+  --callout-content-background: 42, 42, 42;
   --callout-content-padding: 0;
   --callout-default: 2, 122, 255;
   --callout-error: 251, 70, 76;
@@ -2189,9 +2189,9 @@ body.theme-dark {
   --h5-color: #b0a38c !important;
   --h6-color: #b0a38c !important;
   --inline-title-color: #ff4500 !important;
-  --callout-border-color: #4a2c2a;
-  --callout-title-color: #ff4500;
-  --callout-background: #2a2a2a;
+  --callout-border-color: 74, 44, 42;
+  --callout-title-color: 255, 69, 0;
+  --callout-background: 42, 42, 42;
 }
 
 body {
@@ -3099,6 +3099,7 @@ body body.theme-light .callout[data-callout="note"] {
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
+  color: rgb(58, 92, 160);
   gap: 4px;
   border: 0px rgb(58, 92, 160);
   border-top-left-radius: 0px;
@@ -3112,6 +3113,7 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
+  color: rgb(235, 214, 173);
   font-weight: 600;
 }
 body body.theme-light .callout > .callout-content {
@@ -5089,6 +5091,7 @@ body body.theme-dark .callout[data-callout="note"] {
   background-color: rgba(2, 122, 255, 0.1);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  color: rgb(2, 122, 255);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5102,6 +5105,7 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
+  color: rgb(255, 69, 0);
   font-weight: 600;
 }
 body body.theme-dark .callout > .callout-content {
@@ -6173,91 +6177,91 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-default));
+  stroke: rgb(var(--callout-default, 2, 122, 255));
 }
 body
   .callout[data-callout="abstract"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-summary));
+  stroke: rgb(var(--callout-summary, 83, 223, 221));
 }
 body
   .callout[data-callout="info"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-info));
+  stroke: rgb(var(--callout-info, 2, 122, 255));
 }
 body
   .callout[data-callout="todo"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-todo));
+  stroke: rgb(var(--callout-todo, 2, 122, 255));
 }
 body
   .callout[data-callout="tip"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-tip));
+  stroke: rgb(var(--callout-tip, 83, 223, 221));
 }
 body
   .callout[data-callout="success"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-success));
+  stroke: rgb(var(--callout-success, 68, 207, 110));
 }
 body
   .callout[data-callout="question"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-question));
+  stroke: rgb(var(--callout-question, 233, 151, 63));
 }
 body
   .callout[data-callout="warning"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-warning));
+  stroke: rgb(var(--callout-warning, 233, 151, 63));
 }
 body
   .callout[data-callout="failure"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-fail));
+  stroke: rgb(var(--callout-fail, 251, 70, 76));
 }
 body
   .callout[data-callout="danger"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-error, 251, 70, 76));
 }
 body
   .callout[data-callout="bug"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-bug, 251, 70, 76));
 }
 body
   .callout[data-callout="example"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-example));
+  stroke: rgb(var(--callout-example, 168, 130, 255));
 }
 body
   .callout[data-callout="quote"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-quote));
+  stroke: rgb(var(--callout-quote, 158, 158, 158));
 }
 body pre > code,
 body .markdown-rendered pre > code {

@@ -28,6 +28,8 @@ export const theme: ThemeData = {
   --bases-table-summary-background: #1a1b26 !important;
   --bases-table-summary-background-hover: #292e42 !important;
   --blockquote-border-color: #7aa2f7 !important;
+  --bold-weight: 600 !important;
+  --callout-title-weight: 600;
   --canvas-background: #1a1b26 !important;
   --canvas-card-label-color: #565f89 !important;
   --caret-color: #c0caf5 !important;
@@ -50,6 +52,8 @@ export const theme: ThemeData = {
   --code-string: #9ece6a !important;
   --collapse-icon-color: #565f89 !important;
   --collapse-icon-color-collapsed: #7aa2f7 !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --dark: #c0caf5 !important;
   --darkgray: #c0caf5 !important;
   --divider-color: #292e42 !important;
@@ -69,6 +73,7 @@ export const theme: ThemeData = {
   --graph-text: #c0caf5 !important;
   --gray: #a9b1d6 !important;
   --heading-formatting: #565f89 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: #292e42 !important;
   --hr-color: #292e42 !important;
   --icon-color: #a9b1d6 !important;
@@ -89,6 +94,7 @@ export const theme: ThemeData = {
   --link-external-color: #7aa2f7 !important;
   --link-external-color-hover: #7dcfff !important;
   --link-unresolved-color: #7aa2f7 !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: #565f89 !important;
   --list-marker-color-collapsed: #7aa2f7 !important;
   --list-marker-color-hover: #a9b1d6 !important;
@@ -96,6 +102,7 @@ export const theme: ThemeData = {
   --metadata-border-color: #292e42 !important;
   --metadata-divider-color: #292e42 !important;
   --metadata-input-background-active: #292e42 !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #c0caf5 !important;
   --metadata-label-background-active: #292e42 !important;
   --metadata-label-text-color: #a9b1d6 !important;
@@ -138,6 +145,7 @@ export const theme: ThemeData = {
   --secondary: #7aa2f7 !important;
   --setting-group-heading-color: #c0caf5 !important;
   --setting-items-border-color: #292e42 !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-track-background: #292e42 !important;
   --status-bar-background: #16161e !important;
   --status-bar-border-color: #292e42 !important;
@@ -160,6 +168,7 @@ export const theme: ThemeData = {
   --table-drag-handle-color: #565f89 !important;
   --table-header-border-color: #292e42 !important;
   --table-header-color: #c0caf5 !important;
+  --table-header-weight: 600 !important;
   --table-selection-border-color: #7aa2f7 !important;
   --tag-color: #7aa2f7 !important;
   --tag-color-hover: #7aa2f7 !important;
@@ -181,6 +190,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: #c0caf5 !important;
   --vault-profile-color: #c0caf5 !important;
   --vault-profile-color-hover: #c0caf5 !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -600,6 +610,61 @@ html body li.task-list-item[data-task='w'] {
   color: rgb(192, 202, 245);
   text-decoration-color: rgb(192, 202, 245);
 }`,
+    callouts: `html body .callout[data-callout="abstract"] {
+  --callout-color: 83, 223, 221;
+}
+
+html body .callout[data-callout="bug"] {
+  --callout-color: 251, 70, 76;
+}
+
+html body .callout[data-callout="danger"] {
+  --callout-color: 251, 70, 76;
+}
+
+html body .callout[data-callout="example"] {
+  --callout-color: 168, 130, 255;
+}
+
+html body .callout[data-callout="failure"] {
+  --callout-color: 251, 70, 76;
+}
+
+html body .callout[data-callout="info"] {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="note"] {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="question"] {
+  --callout-color: 233, 151, 63;
+}
+
+html body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
+}
+
+html body .callout[data-callout="success"] {
+  --callout-color: 68, 207, 110;
+}
+
+html body .callout[data-callout="tip"] {
+  --callout-color: 83, 223, 221;
+}
+
+html body .callout[data-callout="todo"] {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="warning"] {
+  --callout-color: 233, 151, 63;
+}
+
+html body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}`,
     search: `html body .search > .search-button {
   border-bottom-color: rgb(41, 46, 66);
   border-left-color: rgb(41, 46, 66);
@@ -696,7 +761,11 @@ html body hr {
   border-left-color: rgb(41, 46, 66);
   border-right-color: rgb(41, 46, 66);
 }`,
-    scrollbars: `html body ::-webkit-scrollbar {
+    scrollbars: `html body .callout {
+  --callout-color: 2, 122, 255;
+}
+
+html body ::-webkit-scrollbar {
   background: rgb(26, 27, 38) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(26, 27, 38);
 }

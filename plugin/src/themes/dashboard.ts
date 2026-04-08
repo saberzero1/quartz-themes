@@ -412,6 +412,11 @@ html body pre:has(> code) {
   border-left-color: rgb(172, 183, 167);
   border-right-color: rgb(172, 183, 167);
   border-top-color: rgb(172, 183, 167);
+  color: rgb(172, 183, 167);
+}
+
+html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(172, 183, 167);
 }
 
 html body .callout[data-callout="abstract"] {

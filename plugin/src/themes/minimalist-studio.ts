@@ -107,6 +107,10 @@ html[saved-theme="dark"] body pre:has(> code) {
   gap: 8px;
 }
 
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(218, 218, 218);
+}
+
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --callout-color: 0, 191, 188;
   background-color: rgba(0, 191, 188, 0.1);
@@ -310,6 +314,10 @@ html[saved-theme="light"] body pre:has(> code) {
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   gap: 8px;
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(34, 34, 34);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {

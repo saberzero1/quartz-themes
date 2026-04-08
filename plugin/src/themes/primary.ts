@@ -1638,6 +1638,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(200, 175, 155);
   border-right-color: rgb(200, 175, 155);
   border-top-color: rgb(200, 175, 155);
+  color: rgb(200, 175, 155);
   gap: 8px;
   padding-bottom: 12px;
   padding-left: 16px;
@@ -1646,6 +1647,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(215, 192, 163);
   font-weight: 650;
 }
 
@@ -3904,6 +3906,7 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(200, 175, 155);
   border-right-color: rgb(200, 175, 155);
   border-top-color: rgb(200, 175, 155);
+  color: rgb(200, 175, 155);
   gap: 8px;
   padding-bottom: 12px;
   padding-left: 16px;
@@ -3912,6 +3915,7 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(89, 62, 34);
   font-weight: 650;
 }
 

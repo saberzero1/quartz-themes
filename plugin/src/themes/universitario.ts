@@ -479,10 +479,15 @@ html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(100, 255, 255);
   border-right-color: rgb(100, 255, 255);
   border-top-color: rgb(100, 255, 255);
+  color: rgb(100, 255, 255);
   padding-bottom: 2px;
   padding-left: 2px;
   padding-right: 2px;
   padding-top: 2px;
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(100, 255, 255);
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -1446,10 +1451,15 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   padding-bottom: 2px;
   padding-left: 2px;
   padding-right: 2px;
   padding-top: 2px;
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {

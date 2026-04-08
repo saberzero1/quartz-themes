@@ -1,21 +1,58 @@
+@use "sass:map";
 @use "./overrides.scss";
 
-/* Callouts */
-$callout-types:
-  "note", "abstract", "info", "todo", "tip", "success", "question", "warning",
-  "failure", "danger", "bug", "example", "quote";
+/* Callouts
+ *
+ * Maps Obsidian --callout-* CSS variables to Quartz --color/--border/--bg.
+ *
+ * IMPORTANT: Some callout type names do NOT match their Obsidian variable names:
+ *   note     → --callout-default    (NOT --callout-note)
+ *   abstract → --callout-summary    (NOT --callout-abstract)
+ *   failure  → --callout-fail       (NOT --callout-failure)
+ *   danger   → --callout-error      (NOT --callout-danger)
+ *
+ * These mismatched types are handled in overrides.scss.
+ * The loop below handles only the types whose names match directly.
+ */
+
+/* Callout type → Obsidian variable name (direct matches only) */
+$callout-direct-types: (
+  "info": "--callout-info",
+  "todo": "--callout-todo",
+  "tip": "--callout-tip",
+  "success": "--callout-success",
+  "question": "--callout-question",
+  "warning": "--callout-warning",
+  "bug": "--callout-bug",
+  "example": "--callout-example",
+  "quote": "--callout-quote",
+);
+
+/* Default RGB fallback values (Obsidian defaults) */
+$callout-fallbacks: (
+  "info": "2, 122, 255",
+  "todo": "2, 122, 255",
+  "tip": "83, 223, 221",
+  "success": "68, 207, 110",
+  "question": "233, 151, 63",
+  "warning": "233, 151, 63",
+  "bug": "251, 70, 76",
+  "example": "168, 130, 255",
+  "quote": "158, 158, 158",
+);
 
 :root[saved-theme="dark"],
 html[saved-theme="dark"],
 :root[saved-theme="light"],
 html[saved-theme="light"] {
   .callout {
-    @each $type in $callout-types {
+    @each $type, $var in $callout-direct-types {
+      $fb: map.get($callout-fallbacks, $type);
       &[data-callout="#{$type}"] {
-        --color-rgb: var(#{"--callout-#{$type}"});
-        --color: rgb(var(#{"--callout-#{$type}"}));
-        --border: rgba(var(#{"--callout-#{$type}"}), 0.267);
-        --bg: rgba(var(#{"--callout-#{$type}"}), 0.063);
+        --color-rgb: var(#{$var}, #{$fb});
+        --color: rgb(var(#{$var}, #{$fb}));
+        --border: rgba(var(#{$var}, #{$fb}), 0.267);
+        --bg: rgba(var(#{$var}, #{$fb}), 0.063);
       }
     }
   }

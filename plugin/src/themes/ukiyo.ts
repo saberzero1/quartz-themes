@@ -2003,10 +2003,15 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(2, 95, 200);
   border-right-color: rgb(2, 95, 200);
   border-top-color: rgb(2, 95, 200);
+  color: rgb(2, 95, 200);
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 4px;
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(2, 95, 200);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {

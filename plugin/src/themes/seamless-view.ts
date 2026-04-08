@@ -366,6 +366,11 @@ html body .transclude {
   border-left-color: rgb(116, 185, 241);
   border-right-color: rgb(116, 185, 241);
   border-top-color: rgb(116, 185, 241);
+  color: rgb(116, 185, 241);
+}
+
+html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(116, 185, 241);
 }
 
 html body .callout[data-callout="abstract"] {

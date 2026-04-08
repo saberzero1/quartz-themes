@@ -895,6 +895,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-left-color: rgba(255, 255, 255, 0.9);
   border-right-color: rgba(255, 255, 255, 0.9);
   border-top-color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -2424,6 +2429,11 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: rgba(55, 53, 47, 0.9);
   border-right-color: rgba(55, 53, 47, 0.9);
   border-top-color: rgba(55, 53, 47, 0.9);
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgba(55, 53, 47, 0.9);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {

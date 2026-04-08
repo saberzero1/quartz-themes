@@ -945,11 +945,13 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"] {
   border-top-color: rgb(199, 199, 199);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  color: rgb(199, 199, 199);
   padding-left: 5px;
   padding-right: 5px;
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(20, 20, 20);
   font-weight: 700;
 }
 

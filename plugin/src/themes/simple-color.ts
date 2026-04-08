@@ -143,6 +143,11 @@ html body .katex-display > .katex > .katex-html {
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(255, 255, 255);
 }`,
     search: `html body .search > .search-container > .search-space {
   background-color: rgb(0, 0, 0);

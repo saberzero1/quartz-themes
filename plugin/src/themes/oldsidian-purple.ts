@@ -157,6 +157,10 @@ html body .transclude {
   padding-top: 8px;
 }
 
+html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(220, 221, 222);
+}
+
 html body .callout > .callout-content {
   background-color: rgb(22, 22, 22);
   padding-bottom: 8px;

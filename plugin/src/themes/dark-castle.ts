@@ -969,6 +969,11 @@ html body li.task-list-item[data-task='w'] {
   border-left-color: rgb(112, 153, 219);
   border-right-color: rgb(112, 153, 219);
   border-top-color: rgb(112, 153, 219);
+  color: rgb(112, 153, 219);
+}
+
+html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(112, 153, 219);
 }
 
 html body .callout[data-callout="abstract"] {

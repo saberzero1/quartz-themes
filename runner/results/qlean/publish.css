@@ -3233,55 +3233,55 @@ body.theme-light {
   --accent-color-light-lightness-default: 68% !important;
   --accent-color-light-saturation-default: 80% !important;
   --background-color-glass: rgba(255, 255, 255, 0.8) !important;
-  --callout-attention-bg-color: rgb(255, 240, 229);
-  --callout-attention-text-color: #f97316;
-  --callout-bug-bg-color: rgb(255, 232, 234);
-  --callout-bug-text-color: #ef4444;
-  --callout-caution-bg-color: rgb(255, 240, 229);
-  --callout-caution-text-color: #f97316;
-  --callout-check-bg-color: rgb(232, 248, 234);
-  --callout-check-text-color: #22c55e;
-  --callout-cite-bg-color: rgb(244, 244, 244);
-  --callout-cite-text-color: #171717;
-  --callout-danger-bg-color: rgb(255, 232, 234);
-  --callout-danger-text-color: #ef4444;
+  --callout-attention-bg-color: 255, 240, 229;
+  --callout-attention-text-color: 249, 115, 22;
+  --callout-bug-bg-color: 255, 232, 234;
+  --callout-bug-text-color: 239, 68, 68;
+  --callout-caution-bg-color: 255, 240, 229;
+  --callout-caution-text-color: 249, 115, 22;
+  --callout-check-bg-color: 232, 248, 234;
+  --callout-check-text-color: 34, 197, 94;
+  --callout-cite-bg-color: 244, 244, 244;
+  --callout-cite-text-color: 23, 23, 23;
+  --callout-danger-bg-color: 255, 232, 234;
+  --callout-danger-text-color: 239, 68, 68;
   --callout-dogs-ear-size: 2em;
-  --callout-done-bg-color: rgb(232, 248, 234);
-  --callout-done-text-color: #22c55e;
-  --callout-error-bg-color: rgb(255, 232, 234);
-  --callout-error-text-color: #ef4444;
-  --callout-example-bg-color: rgb(239, 235, 254);
-  --callout-example-text-color: #8b5cf6;
-  --callout-fail-bg-color: rgb(255, 232, 234);
-  --callout-fail-text-color: #ef4444;
-  --callout-failure-bg-color: rgb(255, 232, 234);
-  --callout-failure-text-color: #ef4444;
-  --callout-faq-bg-color: rgb(255, 240, 229);
-  --callout-faq-text-color: #eab308;
-  --callout-help-bg-color: rgb(255, 240, 229);
-  --callout-help-text-color: #eab308;
-  --callout-hint-bg-color: rgb(232, 248, 248);
-  --callout-hint-text-color: #0ea5e9;
-  --callout-important-bg-color: rgb(232, 248, 248);
-  --callout-important-text-color: #0ea5e9;
-  --callout-info-bg-color: rgb(228, 238, 253);
-  --callout-info-text-color: #171717;
-  --callout-missing-bg-color: rgb(255, 232, 234);
-  --callout-missing-text-color: #ef4444;
-  --callout-note--text-color: #171717;
-  --callout-note-bg-color: rgb(228, 238, 253);
-  --callout-question-bg-color: rgb(255, 240, 229);
-  --callout-question-text-color: #eab308;
-  --callout-quote-bg-color: rgb(244, 244, 244);
-  --callout-quote-text-color: #171717;
-  --callout-success-bg-color: rgb(232, 248, 234);
-  --callout-success-text-color: #22c55e;
-  --callout-tip-bg-color: rgb(232, 248, 248);
-  --callout-tip-text-color: #0ea5e9;
-  --callout-todo-bg-color: rgb(228, 238, 253);
-  --callout-todo-text-color: #0ea5e9;
-  --callout-warning-bg-color: rgb(255, 240, 229);
-  --callout-warning-text-color: #f97316;
+  --callout-done-bg-color: 232, 248, 234;
+  --callout-done-text-color: 34, 197, 94;
+  --callout-error-bg-color: 255, 232, 234;
+  --callout-error-text-color: 239, 68, 68;
+  --callout-example-bg-color: 239, 235, 254;
+  --callout-example-text-color: 139, 92, 246;
+  --callout-fail-bg-color: 255, 232, 234;
+  --callout-fail-text-color: 239, 68, 68;
+  --callout-failure-bg-color: 255, 232, 234;
+  --callout-failure-text-color: 239, 68, 68;
+  --callout-faq-bg-color: 255, 240, 229;
+  --callout-faq-text-color: 234, 179, 8;
+  --callout-help-bg-color: 255, 240, 229;
+  --callout-help-text-color: 234, 179, 8;
+  --callout-hint-bg-color: 232, 248, 248;
+  --callout-hint-text-color: 14, 165, 233;
+  --callout-important-bg-color: 232, 248, 248;
+  --callout-important-text-color: 14, 165, 233;
+  --callout-info-bg-color: 228, 238, 253;
+  --callout-info-text-color: 23, 23, 23;
+  --callout-missing-bg-color: 255, 232, 234;
+  --callout-missing-text-color: 239, 68, 68;
+  --callout-note--text-color: 23, 23, 23;
+  --callout-note-bg-color: 228, 238, 253;
+  --callout-question-bg-color: 255, 240, 229;
+  --callout-question-text-color: 234, 179, 8;
+  --callout-quote-bg-color: 244, 244, 244;
+  --callout-quote-text-color: 23, 23, 23;
+  --callout-success-bg-color: 232, 248, 234;
+  --callout-success-text-color: 34, 197, 94;
+  --callout-tip-bg-color: 232, 248, 248;
+  --callout-tip-text-color: 14, 165, 233;
+  --callout-todo-bg-color: 228, 238, 253;
+  --callout-todo-text-color: 14, 165, 233;
+  --callout-warning-bg-color: 255, 240, 229;
+  --callout-warning-text-color: 249, 115, 22;
   --checkbox-checked-color: hsla(0, 0%, 10%) !important;
   --checkbox-unchecked-color-hover: hsla(0, 0%, 10%, 0.5) !important;
   --checklist-decoration-color: #404040 !important;
@@ -4353,55 +4353,55 @@ body.theme-dark {
   --accent-color-light-lightness-default: 68% !important;
   --accent-color-light-saturation-default: 80% !important;
   --background-color-glass: rgba(0, 0, 0, 0.8) !important;
-  --callout-attention-bg-color: rgb(47, 36, 25);
-  --callout-attention-text-color: #f97316;
-  --callout-bug-bg-color: rgb(50, 26, 26);
-  --callout-bug-text-color: #ef4444;
-  --callout-caution-bg-color: rgb(47, 36, 25);
-  --callout-caution-text-color: #f97316;
-  --callout-check-bg-color: rgb(26, 43, 30);
-  --callout-check-text-color: #22c55e;
-  --callout-cite-bg-color: rgb(36, 36, 36);
-  --callout-cite-text-color: #f5f5f5;
-  --callout-danger-bg-color: rgb(50, 26, 26);
-  --callout-danger-text-color: #ef4444;
+  --callout-attention-bg-color: 47, 36, 25;
+  --callout-attention-text-color: 249, 115, 22;
+  --callout-bug-bg-color: 50, 26, 26;
+  --callout-bug-text-color: 239, 68, 68;
+  --callout-caution-bg-color: 47, 36, 25;
+  --callout-caution-text-color: 249, 115, 22;
+  --callout-check-bg-color: 26, 43, 30;
+  --callout-check-text-color: 34, 197, 94;
+  --callout-cite-bg-color: 36, 36, 36;
+  --callout-cite-text-color: 245, 245, 245;
+  --callout-danger-bg-color: 50, 26, 26;
+  --callout-danger-text-color: 239, 68, 68;
   --callout-dogs-ear-size: 2em;
-  --callout-done-bg-color: rgb(26, 43, 30);
-  --callout-done-text-color: #22c55e;
-  --callout-error-bg-color: rgb(50, 26, 26);
-  --callout-error-text-color: #ef4444;
-  --callout-example-bg-color: rgb(38, 32, 48);
-  --callout-example-text-color: #8b5cf6;
-  --callout-fail-bg-color: rgb(50, 26, 26);
-  --callout-fail-text-color: #ef4444;
-  --callout-failure-bg-color: rgb(50, 26, 26);
-  --callout-failure-text-color: #ef4444;
-  --callout-faq-bg-color: rgb(47, 36, 25);
-  --callout-faq-text-color: #eab308;
-  --callout-help-bg-color: rgb(47, 36, 25);
-  --callout-help-text-color: #eab308;
-  --callout-hint-bg-color: rgb(30, 44, 44);
-  --callout-hint-text-color: #0ea5e9;
-  --callout-important-bg-color: rgb(30, 44, 44);
-  --callout-important-text-color: #0ea5e9;
-  --callout-info-bg-color: rgb(20, 32, 49);
-  --callout-info-text-color: #f5f5f5;
-  --callout-missing-bg-color: rgb(50, 26, 26);
-  --callout-missing-text-color: #ef4444;
-  --callout-note--text-color: #f5f5f5;
-  --callout-note-bg-color: rgb(20, 32, 49);
-  --callout-question-bg-color: rgb(47, 36, 25);
-  --callout-question-text-color: #eab308;
-  --callout-quote-bg-color: rgb(36, 36, 36);
-  --callout-quote-text-color: #f5f5f5;
-  --callout-success-bg-color: rgb(26, 43, 30);
-  --callout-success-text-color: #22c55e;
-  --callout-tip-bg-color: rgb(30, 44, 44);
-  --callout-tip-text-color: #0ea5e9;
-  --callout-todo-bg-color: rgb(20, 32, 49);
-  --callout-todo-text-color: #0ea5e9;
-  --callout-warning-bg-color: rgb(47, 36, 25);
-  --callout-warning-text-color: #f97316;
+  --callout-done-bg-color: 26, 43, 30;
+  --callout-done-text-color: 34, 197, 94;
+  --callout-error-bg-color: 50, 26, 26;
+  --callout-error-text-color: 239, 68, 68;
+  --callout-example-bg-color: 38, 32, 48;
+  --callout-example-text-color: 139, 92, 246;
+  --callout-fail-bg-color: 50, 26, 26;
+  --callout-fail-text-color: 239, 68, 68;
+  --callout-failure-bg-color: 50, 26, 26;
+  --callout-failure-text-color: 239, 68, 68;
+  --callout-faq-bg-color: 47, 36, 25;
+  --callout-faq-text-color: 234, 179, 8;
+  --callout-help-bg-color: 47, 36, 25;
+  --callout-help-text-color: 234, 179, 8;
+  --callout-hint-bg-color: 30, 44, 44;
+  --callout-hint-text-color: 14, 165, 233;
+  --callout-important-bg-color: 30, 44, 44;
+  --callout-important-text-color: 14, 165, 233;
+  --callout-info-bg-color: 20, 32, 49;
+  --callout-info-text-color: 245, 245, 245;
+  --callout-missing-bg-color: 50, 26, 26;
+  --callout-missing-text-color: 239, 68, 68;
+  --callout-note--text-color: 245, 245, 245;
+  --callout-note-bg-color: 20, 32, 49;
+  --callout-question-bg-color: 47, 36, 25;
+  --callout-question-text-color: 234, 179, 8;
+  --callout-quote-bg-color: 36, 36, 36;
+  --callout-quote-text-color: 245, 245, 245;
+  --callout-success-bg-color: 26, 43, 30;
+  --callout-success-text-color: 34, 197, 94;
+  --callout-tip-bg-color: 30, 44, 44;
+  --callout-tip-text-color: 14, 165, 233;
+  --callout-todo-bg-color: 20, 32, 49;
+  --callout-todo-text-color: 14, 165, 233;
+  --callout-warning-bg-color: 47, 36, 25;
+  --callout-warning-text-color: 249, 115, 22;
   --checkbox-checked-color: hsla(0, 0%, 90%) !important;
   --checkbox-unchecked-color-hover: hsla(0, 0%, 90%, 0.5) !important;
   --checklist-decoration-color: #d4d4d4 !important;
@@ -5289,6 +5289,7 @@ body body.theme-light .callout[data-callout="note"] {
   background-color: color(srgb 0.894118 0.933333 0.992157 / 0.8);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
+  color: rgb(64, 64, 64);
   gap: 4px;
   border: 0px rgb(64, 64, 64);
   border-top-left-radius: 0px;
@@ -5302,6 +5303,7 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
+  color: rgb(64, 64, 64);
   font-weight: 600;
 }
 body body.theme-light .callout > .callout-content {
@@ -6956,6 +6958,7 @@ body body.theme-dark .callout[data-callout="note"] {
   background-color: color(srgb 0.0784314 0.12549 0.192157 / 0.8);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  color: rgb(212, 212, 212);
   gap: 4px;
   border: 0px rgb(212, 212, 212);
   border-top-left-radius: 0px;
@@ -6969,6 +6972,7 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
+  color: rgb(212, 212, 212);
   font-weight: 600;
 }
 body body.theme-dark .callout > .callout-content {
@@ -7930,91 +7934,91 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-default));
+  stroke: rgb(var(--callout-default, 2, 122, 255));
 }
 body
   .callout[data-callout="abstract"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-summary));
+  stroke: rgb(var(--callout-summary, 83, 223, 221));
 }
 body
   .callout[data-callout="info"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-info));
+  stroke: rgb(var(--callout-info, 2, 122, 255));
 }
 body
   .callout[data-callout="todo"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-todo));
+  stroke: rgb(var(--callout-todo, 2, 122, 255));
 }
 body
   .callout[data-callout="tip"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-tip));
+  stroke: rgb(var(--callout-tip, 83, 223, 221));
 }
 body
   .callout[data-callout="success"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-success));
+  stroke: rgb(var(--callout-success, 68, 207, 110));
 }
 body
   .callout[data-callout="question"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-question));
+  stroke: rgb(var(--callout-question, 233, 151, 63));
 }
 body
   .callout[data-callout="warning"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-warning));
+  stroke: rgb(var(--callout-warning, 233, 151, 63));
 }
 body
   .callout[data-callout="failure"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-fail));
+  stroke: rgb(var(--callout-fail, 251, 70, 76));
 }
 body
   .callout[data-callout="danger"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-error, 251, 70, 76));
 }
 body
   .callout[data-callout="bug"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-bug, 251, 70, 76));
 }
 body
   .callout[data-callout="example"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-example));
+  stroke: rgb(var(--callout-example, 168, 130, 255));
 }
 body
   .callout[data-callout="quote"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-quote));
+  stroke: rgb(var(--callout-quote, 158, 158, 158));
 }
 body pre > code,
 body .markdown-rendered pre > code {

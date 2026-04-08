@@ -460,10 +460,15 @@ html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(154, 153, 150);
   border-right-color: rgb(154, 153, 150);
   border-top-color: rgb(154, 153, 150);
+  color: rgb(154, 153, 150);
   padding-bottom: 12px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 12px;
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(154, 153, 150);
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -1293,10 +1298,15 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(94, 92, 100);
   border-right-color: rgb(94, 92, 100);
   border-top-color: rgb(94, 92, 100);
+  color: rgb(94, 92, 100);
   padding-bottom: 12px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 12px;
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(94, 92, 100);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {

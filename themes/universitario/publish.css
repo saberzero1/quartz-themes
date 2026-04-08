@@ -3203,6 +3203,7 @@ body body.theme-light .callout[data-callout="note"] {
   background-color: rgba(20, 120, 200, 0.15);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
+  color: rgb(0, 0, 0);
   gap: 4px;
   border: 0px rgb(0, 0, 0);
   border-top-left-radius: 0px;
@@ -3216,6 +3217,7 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   padding: 2px;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
+  color: rgb(0, 0, 0);
   font-weight: 600;
 }
 body body.theme-light .callout > .callout-content {
@@ -5228,6 +5230,7 @@ body body.theme-dark .callout[data-callout="note"] {
   background-color: rgba(255, 130, 255, 0.1);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  color: rgb(100, 255, 255);
   gap: 4px;
   border: 0px rgb(100, 255, 255);
   border-top-left-radius: 0px;
@@ -5241,6 +5244,7 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   padding: 2px;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
+  color: rgb(100, 255, 255);
   font-weight: 600;
 }
 body body.theme-dark .callout > .callout-content {
@@ -6346,161 +6350,161 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-default));
+  stroke: rgb(var(--callout-default, 2, 122, 255));
 }
 body
   .callout[data-callout="abstract"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-summary));
+  stroke: rgb(var(--callout-summary, 83, 223, 221));
 }
 body
   .callout[data-callout="info"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-info));
+  stroke: rgb(var(--callout-info, 2, 122, 255));
 }
 body
   .callout[data-callout="todo"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-todo));
+  stroke: rgb(var(--callout-todo, 2, 122, 255));
 }
 body
   .callout[data-callout="tip"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-tip));
+  stroke: rgb(var(--callout-tip, 83, 223, 221));
 }
 body
   .callout[data-callout="success"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-success));
+  stroke: rgb(var(--callout-success, 68, 207, 110));
 }
 body
   .callout[data-callout="question"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-question));
+  stroke: rgb(var(--callout-question, 233, 151, 63));
 }
 body
   .callout[data-callout="warning"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-warning));
+  stroke: rgb(var(--callout-warning, 233, 151, 63));
 }
 body
   .callout[data-callout="failure"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-fail));
+  stroke: rgb(var(--callout-fail, 251, 70, 76));
 }
 body
   .callout[data-callout="danger"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-error, 251, 70, 76));
 }
 body
   .callout[data-callout="bug"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-bug, 251, 70, 76));
 }
 body
   .callout[data-callout="example"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-example));
+  stroke: rgb(var(--callout-example, 168, 130, 255));
 }
 body
   .callout[data-callout="quote"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-quote));
+  stroke: rgb(var(--callout-quote, 158, 158, 158));
 }
 body
   .callout[data-callout="anki"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-anki));
+  stroke: rgb(var(--callout-anki, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="author"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-author));
+  stroke: rgb(var(--callout-author, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="con"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-con));
+  stroke: rgb(var(--callout-con, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="exactas"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-exactas));
+  stroke: rgb(var(--callout-exactas, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="humanidades"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-humanidades));
+  stroke: rgb(var(--callout-humanidades, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="idea"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-idea));
+  stroke: rgb(var(--callout-idea, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="multi-column"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-multi-column));
+  stroke: rgb(var(--callout-multi-column, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="naturales"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-naturales));
+  stroke: rgb(var(--callout-naturales, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="pro"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-pro));
+  stroke: rgb(var(--callout-pro, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="related"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-related));
+  stroke: rgb(var(--callout-related, var(--callout-default, 2, 122, 255)));
 }
 body pre > code,
 body .markdown-rendered pre > code {

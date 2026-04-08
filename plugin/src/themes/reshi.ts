@@ -1029,6 +1029,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(145, 168, 110);
   border-right-color: rgb(145, 168, 110);
   border-top-color: rgb(145, 168, 110);
+  color: rgb(145, 168, 110);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(145, 168, 110);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -2728,6 +2733,11 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(89, 109, 58);
   border-right-color: rgb(89, 109, 58);
   border-top-color: rgb(89, 109, 58);
+  color: rgb(89, 109, 58);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(89, 109, 58);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {

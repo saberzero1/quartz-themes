@@ -708,9 +708,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(112, 200, 214);
   border-right-color: rgb(112, 200, 214);
   border-top-color: rgb(112, 200, 214);
+  color: rgb(112, 200, 214);
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(112, 200, 214);
   font-weight: 400;
 }
 
@@ -1937,9 +1939,11 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(112, 200, 214);
   border-right-color: rgb(112, 200, 214);
   border-top-color: rgb(112, 200, 214);
+  color: rgb(112, 200, 214);
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(112, 200, 214);
   font-weight: 400;
 }
 

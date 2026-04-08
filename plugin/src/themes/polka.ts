@@ -63,6 +63,7 @@ export const theme: ThemeData = {
   --blockquote-border-color: hsl(189, 100%, 49%) !important;
   --blur-background: color-mix(in srgb, rgb(10, 18, 30) 65%, transparent) linear-gradient(rgb(10, 18, 30), color-mix(in srgb, rgb(10, 18, 30) 65%, transparent)) !important;
   --bodyFont: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
+  --bold-weight: 600 !important;
   --button-radius: 2px !important;
   --button-shadow: hsl(221, 16.65%, 85%, 0.6) !important;
   --button-shadow-hover: rgba(255, 255, 255, 0.67) !important;
@@ -79,6 +80,7 @@ export const theme: ThemeData = {
   --callout-success: rgb(0, 190, 0);
   --callout-summary: rgb(250, 247, 245);
   --callout-tip: rgb(255, 220, 120);
+  --callout-title-weight: 600;
   --callout-todo: rgb(0, 130, 255);
   --callout-warning: rgb(220, 210, 0);
   --canvas-background: hsl(221, 33.3%, 12.9%) !important;
@@ -181,6 +183,7 @@ export const theme: ThemeData = {
   --h6-line-height: 1.25em !important;
   --headerFont: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --heading-formatting: rgb(250, 247, 245) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: hsl(189, 110%, 63.9%) !important;
   --hr-color: rgba(250, 247, 245, 0.1) !important;
   --hr-thickness: 1px !important;
@@ -225,6 +228,7 @@ export const theme: ThemeData = {
   --metadata-divider-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --metadata-input-background-active: hsla(221, 16.65%, 85%, 0.05) !important;
   --metadata-input-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: rgb(250, 247, 245) !important;
   --metadata-label-background-active: hsla(221, 16.65%, 85%, 0.05) !important;
   --metadata-label-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
@@ -296,6 +300,7 @@ export const theme: ThemeData = {
   --setting-items-background: rgb(10, 18, 30) !important;
   --setting-items-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --setting-items-radius: 6px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --slider-track-background: hsla(221, 16.65%, 85%, 0.1) !important;
   --ss-border-radius: 0.1px !important;
@@ -346,6 +351,7 @@ export const theme: ThemeData = {
   --table-header-border-color: rgb(250, 247, 245) !important;
   --table-header-color: rgb(250, 247, 245) !important;
   --table-header-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
+  --table-header-weight: 600 !important;
   --table-selection: hsla(189, 100%, 49%, 0.1) !important;
   --table-selection-border-color: hsl(189, 100%, 49%) !important;
   --tag-background: hsla(189, 100%, 49%, 0.1) !important;
@@ -380,6 +386,7 @@ export const theme: ThemeData = {
   --vault-profile-color: rgb(250, 247, 245) !important;
   --vault-profile-color-hover: rgb(250, 247, 245) !important;
   --vault-profile-font-size: 14px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -866,6 +873,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(250, 247, 245);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -1625,6 +1637,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --blockquote-border-color: hsl(0, 75%, 52%) !important;
   --blur-background: color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent) linear-gradient(hsl(0, 39.2%, 99.3%), color-mix(in srgb, hsl(0, 39.2%, 99.3%) 65%, transparent)) !important;
   --bodyFont: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
+  --bold-weight: 600 !important;
   --button-radius: 2px !important;
   --button-shadow: hsl(0, 19.6%, 15%, 0.6) !important;
   --button-shadow-hover: rgba(0, 0, 0, 0.67) !important;
@@ -1641,6 +1654,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-success: rgb(0, 180, 0);
   --callout-summary: rgb(0, 0, 0);
   --callout-tip: rgb(240, 195, 0);
+  --callout-title-weight: 600;
   --callout-todo: rgb(0, 130, 235);
   --callout-warning: rgb(240, 150, 0);
   --canvas-background: hsl(0, 39.2%, 99.3%) !important;
@@ -1743,6 +1757,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --h6-line-height: 1.25em !important;
   --headerFont: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
   --heading-formatting: rgb(0, 0, 0) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: hsl(0, 82.5%, 67.2%) !important;
   --hr-color: rgba(0, 0, 0, 0.4) !important;
   --hr-thickness: 1px !important;
@@ -1787,6 +1802,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --metadata-divider-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --metadata-input-background-active: hsla(0, 19.6%, 15%, 0.05) !important;
   --metadata-input-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: rgb(0, 0, 0) !important;
   --metadata-label-background-active: hsla(0, 19.6%, 15%, 0.05) !important;
   --metadata-label-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif, Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
@@ -1856,6 +1872,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-items-background: hsl(0, 34.3%, 97.3%) !important;
   --setting-items-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --setting-items-radius: 6px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --slider-track-background: hsla(0, 19.6%, 15%, 0.1) !important;
   --ss-border-radius: 0.1px !important;
@@ -1906,6 +1923,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --table-header-border-color: rgb(0, 0, 0) !important;
   --table-header-color: rgb(0, 0, 0) !important;
   --table-header-font: Franklin Gothic Book, Rubik, Helvetica Neue, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif !important;
+  --table-header-weight: 600 !important;
   --table-selection: hsla(0, 75%, 52%, 0.1) !important;
   --table-selection-border-color: hsl(0, 75%, 52%) !important;
   --tag-background: hsla(0, 75%, 52%, 0.1) !important;
@@ -1940,6 +1958,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: rgb(0, 0, 0) !important;
   --vault-profile-color-hover: rgb(0, 0, 0) !important;
   --vault-profile-font-size: 14px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -2426,6 +2445,11 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {

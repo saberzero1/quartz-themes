@@ -561,10 +561,15 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-top-color: rgb(240, 240, 255);
   border-top-style: solid;
   border-top-width: 2px;
+  color: rgb(240, 240, 255);
   padding-bottom: 2%;
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 2%;
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(240, 240, 255);
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {
@@ -1627,10 +1632,15 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-top-color: rgb(20, 20, 20);
   border-top-style: solid;
   border-top-width: 2px;
+  color: rgb(20, 20, 20);
   padding-bottom: 2%;
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 2%;
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(20, 20, 20);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {

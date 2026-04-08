@@ -1289,10 +1289,15 @@ html body li.task-list-item[data-task="w"] input[type="checkbox"] {
   border-top-right-radius: 2px;
   border-top-style: solid;
   border-top-width: 2px;
+  color: rgb(255, 84, 84);
   padding-bottom: 6px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 6px;
+}
+
+html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(255, 84, 84);
 }
 
 html body .callout > .callout-content {

@@ -4093,6 +4093,7 @@ body body.theme-light .callout[data-callout="note"] {
   background-color: rgba(8, 109, 221, 0.1);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
+  color: rgb(76, 86, 106);
   gap: 4px;
   border: 0px rgb(76, 86, 106);
   border-top-left-radius: 0px;
@@ -4106,6 +4107,7 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
+  color: rgb(76, 86, 106);
   font-weight: 900;
 }
 body body.theme-light .callout > .callout-content {
@@ -6045,6 +6047,7 @@ body body.theme-dark .callout[data-callout="note"] {
   background-color: rgba(2, 122, 255, 0.1);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  color: rgb(236, 239, 244);
   gap: 4px;
   border: 0px rgb(236, 239, 244);
   border-top-left-radius: 0px;
@@ -6058,6 +6061,7 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
+  color: rgb(236, 239, 244);
   font-weight: 900;
 }
 body body.theme-dark .callout > .callout-content {
@@ -7167,210 +7171,210 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-default));
+  stroke: rgb(var(--callout-default, 2, 122, 255));
 }
 body
   .callout[data-callout="abstract"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-summary));
+  stroke: rgb(var(--callout-summary, 83, 223, 221));
 }
 body
   .callout[data-callout="info"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-info));
+  stroke: rgb(var(--callout-info, 2, 122, 255));
 }
 body
   .callout[data-callout="todo"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-todo));
+  stroke: rgb(var(--callout-todo, 2, 122, 255));
 }
 body
   .callout[data-callout="tip"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-tip));
+  stroke: rgb(var(--callout-tip, 83, 223, 221));
 }
 body
   .callout[data-callout="success"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-success));
+  stroke: rgb(var(--callout-success, 68, 207, 110));
 }
 body
   .callout[data-callout="question"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-question));
+  stroke: rgb(var(--callout-question, 233, 151, 63));
 }
 body
   .callout[data-callout="warning"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-warning));
+  stroke: rgb(var(--callout-warning, 233, 151, 63));
 }
 body
   .callout[data-callout="failure"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-fail));
+  stroke: rgb(var(--callout-fail, 251, 70, 76));
 }
 body
   .callout[data-callout="danger"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-error, 251, 70, 76));
 }
 body
   .callout[data-callout="bug"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-bug, 251, 70, 76));
 }
 body
   .callout[data-callout="example"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-example));
+  stroke: rgb(var(--callout-example, 168, 130, 255));
 }
 body
   .callout[data-callout="quote"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-quote));
+  stroke: rgb(var(--callout-quote, 158, 158, 158));
 }
 body
   .callout[data-callout="aside"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-aside));
+  stroke: rgb(var(--callout-aside, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="blank"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-blank));
+  stroke: rgb(var(--callout-blank, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="caption"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-caption));
+  stroke: rgb(var(--callout-caption, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="captions"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-captions));
+  stroke: rgb(var(--callout-captions, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="cards"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-cards));
+  stroke: rgb(var(--callout-cards, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="checks"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-checks));
+  stroke: rgb(var(--callout-checks, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="column"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-column));
+  stroke: rgb(var(--callout-column, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="columns"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-columns));
+  stroke: rgb(var(--callout-columns, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="grid"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-grid));
+  stroke: rgb(var(--callout-grid, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="infobox"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-infobox));
+  stroke: rgb(var(--callout-infobox, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="kanban"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-kanban));
+  stroke: rgb(var(--callout-kanban, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="kith"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-kith));
+  stroke: rgb(var(--callout-kith, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="metadata"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-metadata));
+  stroke: rgb(var(--callout-metadata, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="quotes"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-quotes));
+  stroke: rgb(var(--callout-quotes, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="recite"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-recite));
+  stroke: rgb(var(--callout-recite, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="statblocks"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-statblocks));
+  stroke: rgb(var(--callout-statblocks, var(--callout-default, 2, 122, 255)));
 }
 body
   .callout[data-callout="timeline"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-timeline));
+  stroke: rgb(var(--callout-timeline, var(--callout-default, 2, 122, 255)));
 }
 body pre > code,
 body .markdown-rendered pre > code {

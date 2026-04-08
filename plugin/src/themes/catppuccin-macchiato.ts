@@ -61,7 +61,6 @@ export const theme: ThemeData = {
     roboto,
     inter,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --bold-weight: 600 !important;
   --callout-border-opacity: 0.2;
   --callout-border-width: 0.25px;
   --callout-bug: 237, 135, 150;
@@ -77,6 +76,7 @@ export const theme: ThemeData = {
   --callout-success: 166, 218, 149;
   --callout-summary: 125, 196, 228;
   --callout-tip: 125, 196, 228;
+  --callout-title-weight: 600;
   --callout-todo: 138, 173, 244;
   --callout-warning: 245, 169, 127;
   --canvas-background: rgb(36, 39, 58) !important;
@@ -301,6 +301,7 @@ export const theme: ThemeData = {
     inter,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: rgb(73, 77, 100) !important;
+  --heading-spacing: 2.5rem !important;
   --hex-blue: #8aadf4 !important;
   --hex-green: #a6da95 !important;
   --hex-lavender: #b7bdf8 !important;
@@ -364,6 +365,7 @@ export const theme: ThemeData = {
     roboto,
     inter,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: rgb(202, 211, 245) !important;
   --metadata-label-background-active: rgb(202, 211, 245, 7.5%) !important;
   --metadata-label-font: "Nunito Sans",
@@ -551,6 +553,7 @@ export const theme: ThemeData = {
   --vault-profile-color: rgb(202, 211, 245) !important;
   --vault-profile-color-hover: rgb(202, 211, 245) !important;
   --workspace-background-translucent: rgb(24, 25, 38, 60%) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1149,6 +1152,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="check
   border-left-color: rgb(138, 173, 244);
   border-right-color: rgb(138, 173, 244);
   border-top-color: rgb(138, 173, 244);
+  color: rgb(138, 173, 244);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(138, 173, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -1256,6 +1264,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   border-bottom-color: rgba(158, 158, 158, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(158, 158, 158, 0.6);
@@ -1316,6 +1325,10 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-right-width: 1px;
   border-top-color: rgba(245, 169, 127, 0.6);
   border-top-width: 1px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgba(24, 25, 38, 0.3);
@@ -1757,7 +1770,6 @@ html[saved-theme="dark"] body ul.tags > li {
     roboto,
     inter,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --bold-weight: 600 !important;
   --callout-border-opacity: 0.2;
   --callout-border-width: 0.25px;
   --callout-bug: 210, 15, 57;
@@ -1773,6 +1785,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-success: 64, 160, 43;
   --callout-summary: 32, 159, 181;
   --callout-tip: 32, 159, 181;
+  --callout-title-weight: 600;
   --callout-todo: 30, 102, 245;
   --callout-warning: 254, 100, 11;
   --canvas-background: rgb(239, 241, 245) !important;
@@ -1997,6 +2010,7 @@ html[saved-theme="dark"] body ul.tags > li {
     inter,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: rgb(188, 192, 204) !important;
+  --heading-spacing: 2.5rem !important;
   --hex-blue: #1e66f5 !important;
   --hex-green: #40a02b !important;
   --hex-lavender: #7287fd !important;
@@ -2060,6 +2074,7 @@ html[saved-theme="dark"] body ul.tags > li {
     roboto,
     inter,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: rgb(76, 79, 105) !important;
   --metadata-label-background-active: rgb(76, 79, 105, 7.5%) !important;
   --metadata-label-font: "Nunito Sans",
@@ -2247,6 +2262,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: rgb(76, 79, 105) !important;
   --vault-profile-color-hover: rgb(76, 79, 105) !important;
   --workspace-background-translucent: rgb(220, 224, 232, 60%) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -2845,6 +2861,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="chec
   border-left-color: rgb(30, 102, 245);
   border-right-color: rgb(30, 102, 245);
   border-top-color: rgb(30, 102, 245);
+  color: rgb(30, 102, 245);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(30, 102, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
@@ -2952,6 +2973,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   border-bottom-color: rgba(158, 158, 158, 0.6);
   border-bottom-width: 1px;
   border-left-color: rgba(158, 158, 158, 0.6);
@@ -3012,6 +3034,10 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-right-width: 1px;
   border-top-color: rgba(254, 100, 11, 0.6);
   border-top-width: 1px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgba(220, 224, 232, 0.3);

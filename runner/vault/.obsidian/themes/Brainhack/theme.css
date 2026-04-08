@@ -114,6 +114,25 @@ settings:
                 label: Variant 1
                 value: cv1
     -
+        id: Canvas
+        title: Canvas
+        type: heading
+        collapsed: ture
+        level: 2
+    - 
+        id: Node Colors
+        title: Node Colors
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+            - 
+                label: default Nodes
+                value: default
+            - 
+                label: Colored Nodes
+                value: nc
+    -
         id: Colors
         title: Colors
         type: heading
@@ -1066,8 +1085,6 @@ body.bv1 .blockquote {
     box-shadow: none !important;
     padding-left: .8em;
     padding-right: .8em !important;
-    padding-top: .8em;
-    padding-bottom: .8em !important;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -1305,7 +1322,6 @@ body.hv2
 body.hv2
 .markdown-rendered h1 {
     color: var(--main-color-2);
-    display:list-item;
     border-bottom: .1em solid var(--tc);
 }
 /* heading mark link color correction */
@@ -1381,8 +1397,7 @@ body.hv2
 body.hv2
 .markdown-rendered h2 {
     color: var(--main-color-2);
-    display:list-item;
-    border-bottom: .1em dashed var(--tc);
+    border-bottom: .1em solid var(--tc);
 }
 
 /*H3*/
@@ -1447,8 +1462,7 @@ body.hv2
 body.hv2
 .markdown-rendered h3 {
     color: var(--main-color-2);
-    display:list-item;
-    border-bottom: .1em dotted var(--tc);
+    border-bottom: .1em solid var(--tc);
 }
 /*DYNAMIC HEADING SPACING ADJUST*/
 div.el-h1 {
@@ -1685,3 +1699,6 @@ body.status-bar-hover .status-bar{
 }
 
 
+body.nc .markdown-embed-content .node-insert-event {
+    background: var(--canvas-color) !important;
+}

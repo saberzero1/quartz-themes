@@ -46,6 +46,7 @@ export const theme: ThemeData = {
   --blur-background: color-mix(in srgb, rgba(0, 0, 0, 0.8) 65%, transparent) linear-gradient(rgba(0, 0, 0, 0.8), color-mix(in srgb, rgba(0, 0, 0, 0.8) 65%, transparent)) !important;
   --blur-intensity: 20px !important;
   --bodyFont: 'EB Garamond', Georgia, serif !important;
+  --bold-weight: 600 !important;
   --border-color: #404040 !important;
   --border-color-focus: #707070 !important;
   --border-color-hover: #505050 !important;
@@ -73,6 +74,7 @@ export const theme: ThemeData = {
   --callout-tip: #2d1b2d;
   --callout-tip-border: #ba68c8;
   --callout-tip-text: #e1bee7;
+  --callout-title-weight: 600;
   --callout-todo: 95, 158, 160;
   --callout-warning: #2d2416;
   --callout-warning-border: #ffb74d;
@@ -105,6 +107,8 @@ export const theme: ThemeData = {
   --codeFont: 'Courier New', monospace !important;
   --collapse-icon-color: #a0a0a0 !important;
   --collapse-icon-color-collapsed: #cc99ff !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-blue-rgb: 95, 158, 160 !important;
   --color-cyan-rgb: 95, 158, 160 !important;
   --color-green-rgb: 143, 188, 143 !important;
@@ -148,6 +152,7 @@ export const theme: ThemeData = {
   --h6-color: #cd853f !important;
   --headerFont: 'EB Garamond', Georgia, serif !important;
   --heading-formatting: #a0a0a0 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight-blue: #1a1a4a !important;
   --highlight-green: #1a4a1a !important;
   --highlight-pink: #4a1a4a !important;
@@ -176,6 +181,7 @@ export const theme: ThemeData = {
   --link-external-color: #cc99ff !important;
   --link-external-color-hover: #cc99ff !important;
   --link-unresolved-color: #cc99ff !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: #a0a0a0 !important;
   --list-marker-color-collapsed: #cc99ff !important;
   --list-marker-color-hover: #d0d0d0 !important;
@@ -183,6 +189,7 @@ export const theme: ThemeData = {
   --metadata-border-color: #404040 !important;
   --metadata-divider-color: #404040 !important;
   --metadata-input-font: 'EB Garamond', Georgia, serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #ffffff !important;
   --metadata-label-font: 'EB Garamond', Georgia, serif !important;
   --metadata-label-text-color: #d0d0d0 !important;
@@ -233,6 +240,7 @@ export const theme: ThemeData = {
   --setting-items-background: rgba(15, 15, 15, 0.8) !important;
   --setting-items-border-color: #404040 !important;
   --setting-items-radius: 10.08px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-track-background: #404040 !important;
   --status-bar-background: rgba(18, 18, 18, 0.8) !important;
   --status-bar-border-color: #303030 !important;
@@ -259,6 +267,7 @@ export const theme: ThemeData = {
   --table-header-background: #1f1f1f !important;
   --table-header-border-color: #404040 !important;
   --table-header-color: #ffffff !important;
+  --table-header-weight: 600 !important;
   --table-row-even: #151515 !important;
   --table-row-odd: #0a0a0a !important;
   --table-selection-border-color: #ffd700 !important;
@@ -285,6 +294,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: #ffffff !important;
   --vault-profile-color: #ffffff !important;
   --vault-profile-color-hover: #ffffff !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -797,6 +807,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(95, 158, 160);
   border-right-color: rgb(95, 158, 160);
   border-top-color: rgb(95, 158, 160);
+  color: rgb(95, 158, 160);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(95, 158, 160);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -936,6 +951,7 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   background-color: rgba(18, 18, 18, 0.7);
   border-bottom-color: rgb(42, 42, 42);
   border-bottom-left-radius: 10.08px;
@@ -1017,6 +1033,10 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-left-radius: 10.08px;
   border-top-right-radius: 10.08px;
   border-top-width: 1px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgba(10, 10, 10, 0.8);
@@ -1448,6 +1468,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --blockquote-border-color: #1a73e8 !important;
   --blur-intensity: 20px !important;
   --bodyFont: 'EB Garamond', Georgia, serif !important;
+  --bold-weight: 600 !important;
   --border-color: #dadce0 !important;
   --border-color-focus: #9aa0a6 !important;
   --border-color-hover: #bdc1c6 !important;
@@ -1468,6 +1489,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-tip: #f3e5f5;
   --callout-tip-border: #9c27b0;
   --callout-tip-text: #6a1b9a;
+  --callout-title-weight: 600;
   --callout-warning: #fff3e0;
   --callout-warning-border: #ff9800;
   --callout-warning-text: #e65100;
@@ -1491,6 +1513,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --codeFont: 'Courier New', monospace !important;
   --collapse-icon-color: #9aa0a6 !important;
   --collapse-icon-color-collapsed: #cc99ff !important;
+  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
+  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --dark: #202124 !important;
   --darkgray: #202124 !important;
   --divider-color: #e8eaed !important;
@@ -1524,6 +1548,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --h6-color: #696969 !important;
   --headerFont: 'EB Garamond', Georgia, serif !important;
   --heading-formatting: #9aa0a6 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight-blue: #bbdefb !important;
   --highlight-green: #c8e6c9 !important;
   --highlight-pink: #f8bbd9 !important;
@@ -1552,6 +1577,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --link-external-color: #cc99ff !important;
   --link-external-color-hover: #99c2ff !important;
   --link-unresolved-color: #cc99ff !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: #9aa0a6 !important;
   --list-marker-color-collapsed: #cc99ff !important;
   --list-marker-color-hover: #5f6368 !important;
@@ -1559,6 +1585,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --metadata-border-color: #dadce0 !important;
   --metadata-divider-color: #dadce0 !important;
   --metadata-input-font: 'EB Garamond', Georgia, serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #202124 !important;
   --metadata-label-font: 'EB Garamond', Georgia, serif !important;
   --metadata-label-text-color: #5f6368 !important;
@@ -1599,6 +1626,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-items-background: #f8f9fa !important;
   --setting-items-border-color: #dadce0 !important;
   --setting-items-radius: 10.08px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-track-background: #dadce0 !important;
   --status-bar-background: #f1f3f4 !important;
   --status-bar-border-color: #e8eaed !important;
@@ -1621,6 +1649,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --table-drag-handle-color-active: #ffffff !important;
   --table-header-background: #f5f5f5 !important;
   --table-header-color: #202124 !important;
+  --table-header-weight: 600 !important;
   --table-row-even: #fafafa !important;
   --table-row-odd: #ffffff !important;
   --table-selection-border-color: #1a73e8 !important;
@@ -1647,6 +1676,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --titlebar-text-color-focused: #202124 !important;
   --vault-profile-color: #202124 !important;
   --vault-profile-color-hover: #202124 !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -2137,6 +2167,7 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   text-decoration-color: rgb(32, 33, 36);
 }`,
     callouts: `html[saved-theme="light"] body .callout[data-callout="abstract"] {
+  --callout-color: 0, 191, 188;
   background-color: rgb(245, 245, 245);
   border-bottom-color: color(srgb 0.666667 0.91634 0.912418 / 0.75);
   border-bottom-left-radius: 10.08px;
@@ -2153,6 +2184,7 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
+  --callout-color: 233, 49, 71;
   background-color: rgb(255, 255, 255);
   border-bottom-color: color(srgb 0.971242 0.730719 0.759477 / 0.75);
   border-bottom-left-radius: 10.08px;
@@ -2182,6 +2214,7 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
+  --callout-color: 120, 82, 238;
   background-color: rgb(255, 255, 255);
   border-bottom-color: color(srgb 0.823529 0.773856 0.977778 / 0.75);
   border-bottom-left-radius: 10.08px;
@@ -2198,6 +2231,7 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
+  --callout-color: 233, 49, 71;
   background-color: rgb(255, 255, 255);
   border-bottom-color: color(srgb 0.971242 0.730719 0.759477 / 0.75);
   border-bottom-left-radius: 10.08px;
@@ -2227,6 +2261,7 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
+  --callout-color: 8, 109, 221;
   background-color: rgb(245, 245, 245);
   border-bottom-color: color(srgb 0.677124 0.80915 0.955556 / 0.75);
   border-bottom-left-radius: 10.08px;
@@ -2243,6 +2278,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
+  --callout-color: 236, 117, 0;
   background-color: rgb(255, 255, 255);
   border-bottom-color: color(srgb 0.975163 0.819608 0.666667 / 0.75);
   border-bottom-left-radius: 10.08px;
@@ -2259,6 +2295,7 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   background-color: rgb(255, 255, 255);
   border-bottom-color: color(srgb 0.873203 0.873203 0.873203 / 0.75);
   border-bottom-left-radius: 10.08px;
@@ -2301,6 +2338,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
+  --callout-color: 8, 109, 221;
   background-color: rgb(255, 255, 255);
   border-bottom-color: color(srgb 0.677124 0.80915 0.955556 / 0.75);
   border-bottom-left-radius: 10.08px;
@@ -2327,6 +2365,10 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-color: rgb(230, 81, 0);
   border-top-left-radius: 10.08px;
   border-top-right-radius: 10.08px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(248, 249, 250);
@@ -2465,6 +2507,7 @@ html[saved-theme="light"] body hr {
   border-right-color: rgb(232, 234, 237);
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
+  --callout-color: 8, 109, 221;
   border-bottom-color: color(srgb 0.677124 0.80915 0.955556 / 0.75);
   border-bottom-left-radius: 10.08px;
   border-bottom-right-radius: 10.08px;

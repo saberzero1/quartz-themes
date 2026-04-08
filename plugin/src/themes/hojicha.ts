@@ -488,7 +488,11 @@ html body li.task-list-item[data-task='w'] {
   color: rgb(173, 172, 172);
   text-decoration-color: rgb(173, 172, 172);
 }`,
-    callouts: `html body .callout[data-callout="info"] {
+    callouts: `html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="info"] {
   background-color: rgba(240, 140, 58, 0.4);
 }
 

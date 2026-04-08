@@ -45,202 +45,64 @@ export const theme: ThemeData = {
 html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
-}
-
-html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="dark"] body .bases-table thead th {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(54, 54, 54);
-  color: rgb(218, 218, 218);
-  font-weight: 600;
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(218, 218, 218);
-  border-radius: 0px;
-  border-width: 0px;
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(218, 218, 218);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(218, 218, 218);
-  border-width: 0px;
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(38, 38, 38);
-  border-color: rgb(218, 218, 218);
-  box-shadow: rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(179, 179, 179);
-  font-weight: 400;
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(179, 179, 179);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(138, 92, 245, 0.1);
-  border-radius: 28px;
-  color: rgb(166, 138, 249);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(179, 179, 179);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
-  cursor: grab;
+    callouts: `html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+  --callout-color: 83, 223, 221;
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
-  cursor: grab;
+html[saved-theme="dark"] body .callout[data-callout="bug"] {
+  --callout-color: 251, 70, 76;
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
-  cursor: grab;
+html[saved-theme="dark"] body .callout[data-callout="danger"] {
+  --callout-color: 251, 70, 76;
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
-  cursor: grab;
+html[saved-theme="dark"] body .callout[data-callout="example"] {
+  --callout-color: 168, 130, 255;
 }
 
-html[saved-theme="dark"] body .text-highlight {
-  cursor: grab;
+html[saved-theme="dark"] body .callout[data-callout="failure"] {
+  --callout-color: 251, 70, 76;
 }
 
-html[saved-theme="dark"] body del {
-  cursor: grab;
+html[saved-theme="dark"] body .callout[data-callout="info"] {
+  --callout-color: 2, 122, 255;
 }
 
-html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(102, 102, 102);
-  border-radius: 4px;
-  border-width: 1px;
+html[saved-theme="dark"] body .callout[data-callout="note"] {
+  --callout-color: 2, 122, 255;
 }
 
-html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(138, 92, 245);
-  border-color: rgb(138, 92, 245);
+html[saved-theme="dark"] body .callout[data-callout="question"] {
+  --callout-color: 233, 151, 63;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="success"] {
+  --callout-color: 68, 207, 110;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="tip"] {
+  --callout-color: 83, 223, 221;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="todo"] {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="warning"] {
+  --callout-color: 233, 151, 63;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
-    embeds: `html[saved-theme="dark"] body .transclude-inner {
-  border-left-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-}`,
-    checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='?'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='I'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='S'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='b'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='c'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='d'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='f'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='i'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='k'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='l'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='p'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
-  text-decoration: none;
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
-  text-decoration: none;
-}`,
-    explorer: `html[saved-theme="dark"] body .explorer .folder-outer > ul {
-  border-left-color: rgba(255, 255, 255, 0.12);
-  border-left-style: solid;
-  border-left-width: 1px;
-}`,
-    toc: `html[saved-theme="dark"] body details.toc summary::marker {
-  color: rgb(218, 218, 218);
-}`,
-    misc: `html[saved-theme="dark"] body ul.tags > li {
-  background-color: rgba(138, 92, 245, 0.1);
-  border-bottom-color: rgba(138, 92, 245, 0.15);
-  border-bottom-left-radius: 24.5px;
-  border-bottom-right-radius: 24.5px;
-  border-bottom-style: solid;
-  border-bottom-width: 0px;
-  border-left-color: rgba(138, 92, 245, 0.15);
-  border-left-style: solid;
-  border-left-width: 0px;
-  border-right-color: rgba(138, 92, 245, 0.15);
-  border-right-style: solid;
-  border-right-width: 0px;
-  border-top-color: rgba(138, 92, 245, 0.15);
-  border-top-left-radius: 24.5px;
-  border-top-right-radius: 24.5px;
-  border-top-style: solid;
-  border-top-width: 0px;
-  color: rgb(166, 138, 249);
+    scrollbars: `html[saved-theme="dark"] body .callout {
+  --callout-color: 2, 122, 255;
 }`,
   },
   light: {
@@ -276,202 +138,64 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
 html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
-}
-
-html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="light"] body .bases-table thead th {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(224, 224, 224);
-  color: rgb(34, 34, 34);
-  font-weight: 600;
-}
-
-html[saved-theme="light"] body .canvas-node {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(34, 34, 34);
-  border-radius: 0px;
-  border-width: 0px;
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(34, 34, 34);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(34, 34, 34);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(34, 34, 34);
-  border-width: 0px;
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(255, 255, 255);
-  border-color: rgb(34, 34, 34);
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(92, 92, 92);
-  font-weight: 400;
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(92, 92, 92);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(138, 92, 245, 0.1);
-  border-radius: 28px;
-  color: rgb(138, 92, 245);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(92, 92, 92);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
-  cursor: grab;
+    callouts: `html[saved-theme="light"] body .callout[data-callout="abstract"] {
+  --callout-color: 0, 191, 188;
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
-  cursor: grab;
+html[saved-theme="light"] body .callout[data-callout="bug"] {
+  --callout-color: 233, 49, 71;
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
-  cursor: grab;
+html[saved-theme="light"] body .callout[data-callout="danger"] {
+  --callout-color: 233, 49, 71;
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
-  cursor: grab;
+html[saved-theme="light"] body .callout[data-callout="example"] {
+  --callout-color: 120, 82, 238;
 }
 
-html[saved-theme="light"] body .text-highlight {
-  cursor: grab;
+html[saved-theme="light"] body .callout[data-callout="failure"] {
+  --callout-color: 233, 49, 71;
 }
 
-html[saved-theme="light"] body del {
-  cursor: grab;
+html[saved-theme="light"] body .callout[data-callout="info"] {
+  --callout-color: 8, 109, 221;
 }
 
-html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(171, 171, 171);
-  border-radius: 4px;
-  border-width: 1px;
+html[saved-theme="light"] body .callout[data-callout="note"] {
+  --callout-color: 8, 109, 221;
 }
 
-html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
-  background-color: rgb(152, 115, 247);
-  border-color: rgb(152, 115, 247);
+html[saved-theme="light"] body .callout[data-callout="question"] {
+  --callout-color: 236, 117, 0;
+}
+
+html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
+}
+
+html[saved-theme="light"] body .callout[data-callout="success"] {
+  --callout-color: 8, 185, 78;
+}
+
+html[saved-theme="light"] body .callout[data-callout="tip"] {
+  --callout-color: 0, 191, 188;
+}
+
+html[saved-theme="light"] body .callout[data-callout="todo"] {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="warning"] {
+  --callout-color: 236, 117, 0;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
-    embeds: `html[saved-theme="light"] body .transclude-inner {
-  border-left-color: rgb(34, 34, 34);
-  border-left-width: 0px;
-}`,
-    checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task='!'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='*'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='-'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='/'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='>'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='?'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='I'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='S'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='b'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='c'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='d'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='f'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='i'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='k'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='l'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='p'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='u'] {
-  text-decoration: none;
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task='w'] {
-  text-decoration: none;
-}`,
-    explorer: `html[saved-theme="light"] body .explorer .folder-outer > ul {
-  border-left-color: rgba(0, 0, 0, 0.12);
-  border-left-style: solid;
-  border-left-width: 1px;
-}`,
-    toc: `html[saved-theme="light"] body details.toc summary::marker {
-  color: rgb(34, 34, 34);
-}`,
-    misc: `html[saved-theme="light"] body ul.tags > li {
-  background-color: rgba(138, 92, 245, 0.1);
-  border-bottom-color: rgba(138, 92, 245, 0.15);
-  border-bottom-left-radius: 24.5px;
-  border-bottom-right-radius: 24.5px;
-  border-bottom-style: solid;
-  border-bottom-width: 0px;
-  border-left-color: rgba(138, 92, 245, 0.15);
-  border-left-style: solid;
-  border-left-width: 0px;
-  border-right-color: rgba(138, 92, 245, 0.15);
-  border-right-style: solid;
-  border-right-width: 0px;
-  border-top-color: rgba(138, 92, 245, 0.15);
-  border-top-left-radius: 24.5px;
-  border-top-right-radius: 24.5px;
-  border-top-style: solid;
-  border-top-width: 0px;
-  color: rgb(138, 92, 245);
+    scrollbars: `html[saved-theme="light"] body .callout {
+  --callout-color: 8, 109, 221;
 }`,
   },
 };

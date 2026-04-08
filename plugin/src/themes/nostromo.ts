@@ -806,10 +806,15 @@ html body li.task-list-item[data-task='w'] {
   border-left-color: rgb(232, 216, 163);
   border-right-color: rgb(232, 216, 163);
   border-top-color: rgb(232, 216, 163);
+  color: rgb(232, 216, 163);
   padding-bottom: 12px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 12px;
+}
+
+html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(232, 216, 163);
 }
 
 html body .callout > .callout-content {

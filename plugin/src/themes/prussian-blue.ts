@@ -44,6 +44,7 @@ export const theme: ThemeData = {
   --callout-info: #2F459C;
   --callout-summary: #2F459C;
   --callout-tip: #2F459C;
+  --callout-title-weight: 600;
   --callout-todo: #2F459C;
   --canvas-background: #0f1116 !important;
   --canvas-card-label-color: #889ef9 !important;
@@ -138,6 +139,7 @@ export const theme: ThemeData = {
   --h5-color: #122886 !important;
   --h6-color: #122886 !important;
   --heading-formatting: #889ef9 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: #122886 !important;
   --hr-color: #393939 !important;
   --icon-color: #122886 !important;
@@ -168,6 +170,7 @@ export const theme: ThemeData = {
   --link-unresolved-color: #889ef9 !important;
   --link-unresolved-decoration-color: hsla(228, 54%, 40%, 0.3) !important;
   --link-url: #4e72ff !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: #889ef9 !important;
   --list-marker-color-collapsed: #2F459C !important;
   --list-marker-color-hover: #122886 !important;
@@ -178,6 +181,7 @@ export const theme: ThemeData = {
   --mermaid-seqnum: #0f1116 !important;
   --metadata-border-color: #393939 !important;
   --metadata-divider-color: #393939 !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #ebebfb !important;
   --metadata-label-text-color: #122886 !important;
   --metadata-label-text-color-hover: #122886 !important;
@@ -222,6 +226,7 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #ebebfb !important;
   --setting-items-background: #0f1116 !important;
   --setting-items-border-color: #393939 !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-track-background: #393939 !important;
   --status-bar-background: #0f1116 !important;
   --status-bar-border-color: #393939 !important;
@@ -256,6 +261,7 @@ export const theme: ThemeData = {
   --table-header-background-hover: #4568fc !important;
   --table-header-border-color: #393939 !important;
   --table-header-color: #ebebfb !important;
+  --table-header-weight: 600 !important;
   --table-row-background-hover: #2F459C !important;
   --table-row-even-background: #000716 !important;
   --table-row-odd-background: #393939 !important;
@@ -296,6 +302,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: #2F459C !important;
   --vault-profile-color: #ebebfb !important;
   --vault-profile-color-hover: #ebebfb !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --yellow: #FCC200 !important;
   --quartz-icon-color: currentColor !important;
 }
@@ -784,6 +791,11 @@ html body li.task-list-item[data-task='w'] {
   border-left-color: rgb(235, 235, 251);
   border-right-color: rgb(235, 235, 251);
   border-top-color: rgb(235, 235, 251);
+  color: rgb(235, 235, 251);
+}
+
+html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(235, 235, 251);
 }
 
 html body .callout[data-callout="abstract"] {
@@ -793,6 +805,22 @@ html body .callout[data-callout="abstract"] {
   border-left-color: rgb(235, 235, 251);
   border-right-color: rgb(235, 235, 251);
   border-top-color: rgb(235, 235, 251);
+}
+
+html body .callout[data-callout="bug"] {
+  --callout-color: 251, 70, 76;
+}
+
+html body .callout[data-callout="danger"] {
+  --callout-color: 251, 70, 76;
+}
+
+html body .callout[data-callout="example"] {
+  --callout-color: 168, 130, 255;
+}
+
+html body .callout[data-callout="failure"] {
+  --callout-color: 251, 70, 76;
 }
 
 html body .callout[data-callout="info"] {
@@ -813,6 +841,18 @@ html body .callout[data-callout="note"] {
   border-top-color: rgb(235, 235, 251);
 }
 
+html body .callout[data-callout="question"] {
+  --callout-color: 233, 151, 63;
+}
+
+html body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
+}
+
+html body .callout[data-callout="success"] {
+  --callout-color: 68, 207, 110;
+}
+
 html body .callout[data-callout="tip"] {
   --callout-color: #2F459C;
   background-color: rgba(0, 0, 0, 0);
@@ -829,6 +869,14 @@ html body .callout[data-callout="todo"] {
   border-left-color: rgb(235, 235, 251);
   border-right-color: rgb(235, 235, 251);
   border-top-color: rgb(235, 235, 251);
+}
+
+html body .callout[data-callout="warning"] {
+  --callout-color: 233, 151, 63;
+}
+
+html body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html body .search > .search-button {
   border-bottom-color: rgb(57, 57, 57);

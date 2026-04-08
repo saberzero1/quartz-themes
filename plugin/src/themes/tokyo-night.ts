@@ -71,6 +71,7 @@ export const theme: ThemeData = {
   --blur-background: color-mix(in srgb, rgb(22, 22, 30) 65%, transparent) linear-gradient(rgb(22, 22, 30), color-mix(in srgb, rgb(22, 22, 30) 65%, transparent)) !important;
   --bodyFont: "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-color: rgb(125, 207, 255) !important;
+  --bold-weight: 600 !important;
   --border-width: 2px !important;
   --callout-bug: 255, 117, 127;
   --callout-default: 122, 162, 247;
@@ -84,6 +85,7 @@ export const theme: ThemeData = {
   --callout-success: 26, 188, 156;
   --callout-summary: 125, 207, 255;
   --callout-tip: 125, 207, 255;
+  --callout-title-weight: 600;
   --callout-todo: 125, 207, 255;
   --callout-warning: 255, 158, 100;
   --canvas-background: rgb(26, 27, 38) !important;
@@ -186,6 +188,7 @@ export const theme: ThemeData = {
   --h6-color: rgb(187, 154, 247) !important;
   --headerFont: "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: rgb(86, 95, 137) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: rgba(255, 158, 100, 0.25) !important;
   --hr-color: rgb(41, 46, 66) !important;
   --icon-color: rgb(169, 177, 214) !important;
@@ -217,6 +220,7 @@ export const theme: ThemeData = {
   --link-external-filter: invert(35%) sepia(28%) saturate(681%) hue-rotate(192deg) brightness(94%) contrast(85%) !important;
   --link-unresolved-color: rgb(187, 154, 247) !important;
   --link-unresolved-decoration-color: hsla(202, 100%, 75%, 0.3) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: rgb(86, 95, 137) !important;
   --list-marker-color-collapsed: rgb(187, 154, 247) !important;
   --list-marker-color-hover: rgb(169, 177, 214) !important;
@@ -233,6 +237,7 @@ export const theme: ThemeData = {
   --metadata-divider-color: rgb(41, 46, 66) !important;
   --metadata-input-background-active: rgb(41, 46, 66) !important;
   --metadata-input-font: "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: rgb(192, 202, 245) !important;
   --metadata-label-background-active: rgb(41, 46, 66) !important;
   --metadata-label-font: "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -302,6 +307,7 @@ export const theme: ThemeData = {
   --setting-group-heading-color: rgb(192, 202, 245) !important;
   --setting-items-background: rgb(26, 27, 38) !important;
   --setting-items-border-color: rgb(41, 46, 66) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: rgb(41, 46, 66) !important;
   --slider-thumb-border-width: 2px !important;
   --slider-track-background: rgb(41, 46, 66) !important;
@@ -340,6 +346,7 @@ export const theme: ThemeData = {
   --table-header-background-hover: rgb(18, 18, 24) !important;
   --table-header-border-color: rgb(41, 46, 66) !important;
   --table-header-color: rgb(192, 202, 245) !important;
+  --table-header-weight: 600 !important;
   --table-selection: hsla(202, 100%, 75%, 0.1) !important;
   --table-selection-border-color: hsl(202, 100%, 75%) !important;
   --table-width: 88cqw !important;
@@ -377,6 +384,7 @@ export const theme: ThemeData = {
   --unknown: #ffffff !important;
   --vault-profile-color: rgb(192, 202, 245) !important;
   --vault-profile-color-hover: rgb(192, 202, 245) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --yellow: rgb(224, 175, 104) !important;
   --yellow_x: 224, 175, 104 !important;
   --quartz-icon-color: currentColor !important;
@@ -986,6 +994,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
   border-left-color: rgb(122, 162, 247);
   border-right-color: rgb(122, 162, 247);
   border-top-color: rgb(122, 162, 247);
+  color: rgb(122, 162, 247);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(122, 162, 247);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -1103,6 +1116,10 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-left-color: rgba(255, 158, 100, 0.25);
   border-right-color: rgba(255, 158, 100, 0.25);
   border-top-color: rgba(255, 158, 100, 0.25);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(22, 22, 30);
@@ -1537,6 +1554,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --blur-background: color-mix(in srgb, rgb(213, 214, 219) 65%, transparent) linear-gradient(rgb(213, 214, 219), color-mix(in srgb, rgb(213, 214, 219) 65%, transparent)) !important;
   --bodyFont: "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --bold-color: rgb(15, 75, 110) !important;
+  --bold-weight: 600 !important;
   --border-width: 2px !important;
   --callout-bug: 140, 67, 81;
   --callout-default: 52, 84, 138;
@@ -1550,6 +1568,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-success: 22, 103, 117;
   --callout-summary: 15, 75, 110;
   --callout-tip: 15, 75, 110;
+  --callout-title-weight: 600;
   --callout-todo: 15, 75, 110;
   --callout-warning: 150, 80, 39;
   --canvas-background: rgb(213, 214, 219) !important;
@@ -1652,6 +1671,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --h6-color: rgb(90, 74, 120) !important;
   --headerFont: "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: rgb(150, 153, 163) !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: rgba(150, 80, 39, 0.25) !important;
   --hr-color: rgb(220, 222, 226) !important;
   --icon-color: rgb(39, 46, 75) !important;
@@ -1683,6 +1703,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --link-external-filter: invert(62%) sepia(9%) saturate(266%) hue-rotate(189deg) brightness(97%) contrast(88%) !important;
   --link-unresolved-color: rgb(90, 74, 120) !important;
   --link-unresolved-decoration-color: hsla(202, 86%, 43%, 0.3) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: rgb(150, 153, 163) !important;
   --list-marker-color-collapsed: rgb(90, 74, 120) !important;
   --list-marker-color-hover: rgb(39, 46, 75) !important;
@@ -1699,6 +1720,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --metadata-divider-color: rgb(220, 222, 226) !important;
   --metadata-input-background-active: rgb(220, 222, 226) !important;
   --metadata-input-font: "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: rgb(52, 59, 88) !important;
   --metadata-label-background-active: rgb(220, 222, 226) !important;
   --metadata-label-font: "JetBrains Mono", monospace, "Inter", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -1766,6 +1788,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-group-heading-color: rgb(52, 59, 88) !important;
   --setting-items-background: rgb(213, 214, 219) !important;
   --setting-items-border-color: rgb(220, 222, 226) !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: rgb(220, 222, 226) !important;
   --slider-thumb-border-width: 2px !important;
   --slider-track-background: rgb(220, 222, 226) !important;
@@ -1804,6 +1827,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --table-header-background-hover: rgb(188, 189, 194) !important;
   --table-header-border-color: rgb(220, 222, 226) !important;
   --table-header-color: rgb(52, 59, 88) !important;
+  --table-header-weight: 600 !important;
   --table-selection: hsla(202, 86%, 43%, 0.1) !important;
   --table-selection-border-color: hsl(202, 86%, 43%) !important;
   --table-width: 88cqw !important;
@@ -1841,6 +1865,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --unknown: #000000 !important;
   --vault-profile-color: rgb(52, 59, 88) !important;
   --vault-profile-color-hover: rgb(52, 59, 88) !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --yellow: rgb(143, 94, 21) !important;
   --yellow_x: 143, 94, 21 !important;
   --quartz-icon-color: currentColor !important;
@@ -2450,6 +2475,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
   border-left-color: rgb(52, 84, 138);
   border-right-color: rgb(52, 84, 138);
   border-top-color: rgb(52, 84, 138);
+  color: rgb(52, 84, 138);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(52, 84, 138);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
@@ -2567,6 +2597,10 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-left-color: rgba(150, 80, 39, 0.25);
   border-right-color: rgba(150, 80, 39, 0.25);
   border-top-color: rgba(150, 80, 39, 0.25);
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(203, 204, 209);

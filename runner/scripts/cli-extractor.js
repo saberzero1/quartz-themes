@@ -564,15 +564,28 @@ function generateFullExtractionScript(selectors) {
 
     const allVarNames = discoverCssVarNames();
 
-    function getAllCssVars(style, baseline) {
+    // CSS custom properties that should always be preserved on callout
+    // elements, even when they match the html/body baseline. These are
+    // per-element overrides in Obsidian that getComputedStyle returns
+    // as inherited values indistinguishable from the :root definition.
+    const CALLOUT_PRESERVE_VARS = new Set([
+      "--callout-color",
+      "--callout-icon",
+    ]);
+
+    function getAllCssVars(style, baseline, selector) {
       const vars = {};
+      const isCallout = selector && selector.includes(".callout");
       for (const prop of allVarNames) {
         const val = style.getPropertyValue(prop);
         if (val && val.trim()) {
           const trimmed = val.trim();
           // If a baseline is provided, only include vars that differ from it
+          // Exception: always preserve callout-critical vars on callout elements
           if (baseline && baseline[prop] !== undefined && baseline[prop] === trimmed) {
-            continue;
+            if (!(isCallout && CALLOUT_PRESERVE_VARS.has(prop))) {
+              continue;
+            }
           }
           vars[prop] = trimmed;
         }
@@ -648,7 +661,7 @@ function generateFullExtractionScript(selectors) {
         if (!el) continue;
 
         const style = window.getComputedStyle(el);
-        const extracted = { ...getAllCssVars(style, cssVarBaseline), ...getStandardProps(style) };
+        const extracted = { ...getAllCssVars(style, cssVarBaseline, selector), ...getStandardProps(style) };
 
         if (Object.keys(extracted).length > 0) {
           results[selector] = { ...results[selector], ...extracted };
@@ -891,6 +904,8 @@ function saveBaseline(mode, data) {
   );
 }
 
+const CALLOUT_PRESERVE_PROPS = new Set(["--callout-color", "--callout-icon"]);
+
 function deduplicateAgainstBaseline(themeData, baseline) {
   if (!baseline) return themeData;
 
@@ -899,9 +914,12 @@ function deduplicateAgainstBaseline(themeData, baseline) {
   for (const [selector, styles] of Object.entries(themeData)) {
     const baselineStyles = baseline[selector] || {};
     const uniqueStyles = {};
+    const isCallout = selector.includes(".callout");
 
     for (const [prop, value] of Object.entries(styles)) {
       if (baselineStyles[prop] !== value) {
+        uniqueStyles[prop] = value;
+      } else if (isCallout && CALLOUT_PRESERVE_PROPS.has(prop)) {
         uniqueStyles[prop] = value;
       }
     }

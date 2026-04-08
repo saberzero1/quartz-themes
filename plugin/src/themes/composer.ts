@@ -923,6 +923,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="check
   border-left-color: rgb(123, 175, 222);
   border-right-color: rgb(123, 175, 222);
   border-top-color: rgb(123, 175, 222);
+  color: rgb(123, 175, 222);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(123, 175, 222);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -2426,6 +2431,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="chec
   border-left-color: rgb(95, 164, 218);
   border-right-color: rgb(95, 164, 218);
   border-top-color: rgb(95, 164, 218);
+  color: rgb(95, 164, 218);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(95, 164, 218);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {

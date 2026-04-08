@@ -417,6 +417,7 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-left-color: rgb(68, 138, 255);
   border-right-color: rgb(68, 138, 255);
   border-top-color: rgb(68, 138, 255);
+  color: rgb(68, 138, 255);
   padding-bottom: 11.2px;
   padding-left: 11.2px;
   padding-right: 8px;
@@ -424,6 +425,7 @@ html[saved-theme="dark"] body input[type=checkbox] {
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(218, 218, 218);
   font-weight: 700;
 }
 
@@ -1601,6 +1603,7 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(68, 138, 255);
   border-right-color: rgb(68, 138, 255);
   border-top-color: rgb(68, 138, 255);
+  color: rgb(68, 138, 255);
   padding-bottom: 11.2px;
   padding-left: 11.2px;
   padding-right: 8px;
@@ -1608,6 +1611,7 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(46, 51, 56);
   font-weight: 700;
 }
 

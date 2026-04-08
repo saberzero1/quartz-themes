@@ -35,16 +35,19 @@ export const theme: ThemeData = {
   --bases-table-summary-background: #1c1c1c !important;
   --bases-table-summary-background-hover: rgba(255, 255, 255, 0.05) !important;
   --bodyFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --bold-weight: 600 !important;
   --button-radius: 6px !important;
   --callout-background: #2a2a2a;
   --callout-border-color: #4a2c2a;
   --callout-content-background: #2a2a2a;
   --callout-title-color: #ff4500;
+  --callout-title-weight: 600;
   --canvas-background: #1c1c1c !important;
   --canvas-card-label-color: #8c816d !important;
   --caret-color: #d4c9b5 !important;
   --checkbox-border-color: #8c816d !important;
   --checkbox-border-color-hover: #b0a38c !important;
+  --checkbox-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --checkbox-marker-color: #1c1c1c !important;
   --checklist-done-color: #b0a38c !important;
   --code-background: #2a2a2a !important;
@@ -58,6 +61,8 @@ export const theme: ThemeData = {
   --codeFont: "Courier New", Courier, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --collapse-icon-color: #8c816d !important;
   --collapse-icon-color-collapsed: #ff4500 !important;
+  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
+  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --dark: #d4c9b5 !important;
   --darkgray: #d4c9b5 !important;
   --dialog-max-height: 75vh !important;
@@ -101,6 +106,7 @@ export const theme: ThemeData = {
   --h6-size: 0.9em !important;
   --headerFont: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: #8c816d !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: rgba(255, 69, 0, 0.9) !important;
   --hr-color: #4a2c2a !important;
   --icon-color: #b0a38c !important;
@@ -111,6 +117,7 @@ export const theme: ThemeData = {
   --inline-title-size: 2em !important;
   --input-date-separator: #8c816d !important;
   --input-placeholder-color: #8c816d !important;
+  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --light: #1c1c1c !important;
   --lightgray: #151515 !important;
   --link-color: #ff4500 !important;
@@ -121,6 +128,7 @@ export const theme: ThemeData = {
   --link-unresolved-color: #ff6666 !important;
   --link-unresolved-decoration-color: #ff6666 !important;
   --link-unresolved-decoration-style: dashed !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: #8c816d !important;
   --list-marker-color-collapsed: #ff4500 !important;
   --list-marker-color-hover: #b0a38c !important;
@@ -130,6 +138,7 @@ export const theme: ThemeData = {
   --metadata-divider-color: #4a2c2a !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.05) !important;
   --metadata-input-font: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #d4c9b5 !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.05) !important;
   --metadata-label-font: "Times New Roman", Times, serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -182,6 +191,7 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #d4c9b5 !important;
   --setting-items-background: #2a2a2a !important;
   --setting-items-border-color: #4a2c2a !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: #663b38 !important;
   --slider-track-background: #4a2c2a !important;
   --status-bar-background: #151515 !important;
@@ -208,6 +218,7 @@ export const theme: ThemeData = {
   --table-drag-handle-color-active: #000000 !important;
   --table-header-border-color: #4a2c2a !important;
   --table-header-color: #d4c9b5 !important;
+  --table-header-weight: 600 !important;
   --tag-color: #ff4500 !important;
   --tag-color-hover: #ff4500 !important;
   --tertiary: #ff6347 !important;
@@ -228,6 +239,7 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: #d4c9b5 !important;
   --vault-profile-color: #d4c9b5 !important;
   --vault-profile-color-hover: #d4c9b5 !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -656,8 +668,68 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(212, 201, 181);
   text-decoration-color: rgb(212, 201, 181);
 }`,
-    callouts: `html[saved-theme="dark"] body .callout > .callout-content {
+    callouts: `html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(255, 69, 0);
+}
+
+html[saved-theme="dark"] body .callout > .callout-content {
   background-color: rgb(42, 42, 42);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+  --callout-color: 83, 223, 221;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="bug"] {
+  --callout-color: 251, 70, 76;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="danger"] {
+  --callout-color: 251, 70, 76;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="example"] {
+  --callout-color: 168, 130, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="failure"] {
+  --callout-color: 251, 70, 76;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="info"] {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="question"] {
+  --callout-color: 233, 151, 63;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="success"] {
+  --callout-color: 68, 207, 110;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="tip"] {
+  --callout-color: 83, 223, 221;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="todo"] {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="warning"] {
+  --callout-color: 233, 151, 63;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   border-bottom-color: rgb(74, 44, 42);
@@ -768,7 +840,11 @@ html[saved-theme="dark"] body hr {
   border-left-color: rgb(74, 44, 42);
   border-right-color: rgb(74, 44, 42);
 }`,
-    scrollbars: `html[saved-theme="dark"] body ::-webkit-scrollbar {
+    scrollbars: `html[saved-theme="dark"] body .callout {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body ::-webkit-scrollbar {
   background: rgb(28, 28, 28) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(28, 28, 28);
 }
@@ -1052,7 +1128,6 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-tip: #2e7d32;
   --callout-title-color: hsl(40, 60%, 80%);
   --callout-title-size: 1.2em;
-  --callout-title-weight: 600;
   --callout-todo: #f57c00;
   --callout-warning: #fbc02d;
   --canvas-background: linear-gradient(to bottom, #f5f8ff, #e8eeff) !important;
@@ -1197,6 +1272,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --link-unresolved-decoration-color: hsla(40, 60%, 80%, 0.3) !important;
   --link-unresolved-decoration-style: wavy !important;
   --link-unresolved-opacity: 0.8 !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: #7896f0 !important;
   --list-marker-color-collapsed: hsl(40, 60%, 80%) !important;
   --list-marker-color-hover: #6889e0 !important;
@@ -1204,6 +1280,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --menu-border-color: #88a3ff !important;
   --metadata-border-color: #a8bdff !important;
   --metadata-divider-color: #a8bdff !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #3a5ca0 !important;
   --metadata-label-text-color: #6889e0 !important;
   --metadata-label-text-color-hover: #6889e0 !important;
@@ -1308,6 +1385,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --table-header-background: #e8eeff !important;
   --table-header-border-color: #a8bdff !important;
   --table-header-color: #3a5ca0 !important;
+  --table-header-weight: 600 !important;
   --table-row-alt-background: #e8eeff !important;
   --table-row-alt-background-hover: #f5f8ff !important;
   --table-selection: hsla(40, 60%, 80%, 0.1) !important;
@@ -1349,6 +1427,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --vault-profile-color: #6889e0 !important;
   --vault-profile-color-hover: hsl(40, 60%, 80%) !important;
   --vault-profile-font-size: 15px !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1801,6 +1880,11 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   border-left-color: rgb(58, 92, 160);
   border-right-color: rgb(58, 92, 160);
   border-top-color: rgb(58, 92, 160);
+  color: rgb(58, 92, 160);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(235, 214, 173);
 }
 
 html[saved-theme="light"] body .callout > .callout-content {
@@ -2029,6 +2113,10 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-top-width: 1px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(245, 248, 255);

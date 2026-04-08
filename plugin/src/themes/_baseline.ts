@@ -1859,6 +1859,7 @@ html[saved-theme="dark"] body ul > li.task-list-item {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
+  color: rgb(2, 122, 255);
   gap: 4px;
   padding-bottom: 0px;
   padding-left: 0px;
@@ -1867,6 +1868,7 @@ html[saved-theme="dark"] body ul > li.task-list-item {
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(2, 122, 255);
   font-weight: 600;
 }
 
@@ -4716,6 +4718,7 @@ html[saved-theme="light"] body ul > li.task-list-item {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 0px;
+  color: rgb(8, 109, 221);
   gap: 4px;
   padding-bottom: 0px;
   padding-left: 0px;
@@ -4724,6 +4727,7 @@ html[saved-theme="light"] body ul > li.task-list-item {
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(8, 109, 221);
   font-weight: 600;
 }
 

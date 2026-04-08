@@ -714,9 +714,11 @@ html body li.task-list-item[data-task='w'] {
   border-left-color: rgb(76, 94, 117);
   border-right-color: rgb(76, 94, 117);
   border-top-color: rgb(76, 94, 117);
+  color: rgb(76, 94, 117);
 }
 
 html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(76, 94, 117);
   font-weight: 200;
 }
 

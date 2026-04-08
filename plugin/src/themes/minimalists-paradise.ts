@@ -399,6 +399,11 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-left-color: rgb(138, 92, 245);
   border-right-color: rgb(138, 92, 245);
   border-top-color: rgb(138, 92, 245);
+  color: rgb(138, 92, 245);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(138, 92, 245);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -1159,6 +1164,11 @@ html[saved-theme="light"] body .transclude {
   border-left-color: rgb(138, 92, 245);
   border-right-color: rgb(138, 92, 245);
   border-top-color: rgb(138, 92, 245);
+  color: rgb(138, 92, 245);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(138, 92, 245);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {

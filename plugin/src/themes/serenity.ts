@@ -1202,6 +1202,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="check
   border-top-color: rgb(144, 140, 170);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  color: rgb(144, 140, 170);
   gap: 15.68px;
   padding-bottom: 5px;
   padding-left: 10px;
@@ -1210,6 +1211,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(144, 140, 170);
   font-weight: 400;
 }
 
@@ -3079,6 +3081,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="chec
   border-top-color: rgb(121, 117, 147);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  color: rgb(121, 117, 147);
   gap: 15.68px;
   padding-bottom: 5px;
   padding-left: 10px;
@@ -3087,6 +3090,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(121, 117, 147);
   font-weight: 400;
 }
 

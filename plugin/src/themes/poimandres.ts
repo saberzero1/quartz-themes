@@ -62,6 +62,7 @@ export const theme: ThemeData = {
   --blue0: #c5d0e6 !important;
   --blur-background: color-mix(in srgb, #14161a 65%, transparent) linear-gradient(#14161a, color-mix(in srgb, #14161a 65%, transparent)) !important;
   --bold-color: #84bfcf !important;
+  --bold-weight: 600 !important;
   --border-width: 2px !important;
   --button-radius: 4px !important;
   --callout-bug: #d1889a;
@@ -76,6 +77,7 @@ export const theme: ThemeData = {
   --callout-success: #5db3be;
   --callout-summary: #84bfcf;
   --callout-tip: #84bfcf;
+  --callout-title-weight: 600;
   --callout-todo: #84bfcf;
   --callout-warning: #f2a070;
   --canvas-background: #1b1d23 !important;
@@ -170,6 +172,7 @@ export const theme: ThemeData = {
   --h5-color: #c5d0e6 !important;
   --h6-color: #dcb583 !important;
   --heading-formatting: #7da0b3 !important;
+  --heading-spacing: 2.5rem !important;
   --highlight: #f2a070 !important;
   --hr-color: #25272e !important;
   --icon-color: #b8bfc9 !important;
@@ -202,6 +205,7 @@ export const theme: ThemeData = {
   --link-external-color-hover: #84bfcf !important;
   --link-unresolved-color: #d2a5c4 !important;
   --link-unresolved-decoration-color: hsla(210, 40%, 50%, 0.3) !important;
+  --list-indent: 2.25em !important;
   --list-marker-color: #7da0b3 !important;
   --list-marker-color-collapsed: #d2a5c4 !important;
   --list-marker-color-hover: #b8bfc9 !important;
@@ -216,6 +220,7 @@ export const theme: ThemeData = {
   --metadata-border-color: #25272e !important;
   --metadata-divider-color: #25272e !important;
   --metadata-input-background-active: 40% !important;
+  --metadata-input-height: 28px !important;
   --metadata-input-text-color: #e4e7ea !important;
   --metadata-label-background-active: 40% !important;
   --metadata-label-text-color: #b8bfc9 !important;
@@ -283,6 +288,7 @@ export const theme: ThemeData = {
   --setting-items-background: #1b1d23 !important;
   --setting-items-border-color: #25272e !important;
   --setting-items-radius: 4px !important;
+  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: #25272e !important;
   --slider-thumb-border-width: 2px !important;
   --slider-thumb-radius: 4px !important;
@@ -318,6 +324,7 @@ export const theme: ThemeData = {
   --table-header-background-hover: #14161a !important;
   --table-header-border-color: #25272e !important;
   --table-header-color: #e4e7ea !important;
+  --table-header-weight: 600 !important;
   --table-row-alt-background: #14161a !important;
   --table-row-background-hover: #14161a !important;
   --table-selection: hsla(210, 40%, 50%, 0.1) !important;
@@ -354,6 +361,7 @@ export const theme: ThemeData = {
   --unknown: #ffffff !important;
   --vault-profile-color: #e4e7ea !important;
   --vault-profile-color-hover: #e4e7ea !important;
+  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --yellow: #dcb583 !important;
   --quartz-icon-color: currentColor !important;
 }
@@ -805,6 +813,11 @@ html body li.task-list-item[data-task='w'] {
   border-left-color: rgb(228, 231, 234);
   border-right-color: rgb(228, 231, 234);
   border-top-color: rgb(228, 231, 234);
+  color: rgb(228, 231, 234);
+}
+
+html body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(228, 231, 234);
 }
 
 html body .callout[data-callout="abstract"] {
@@ -922,6 +935,10 @@ html body .callout[data-callout="warning"] {
   border-left-color: rgb(228, 231, 234);
   border-right-color: rgb(228, 231, 234);
   border-top-color: rgb(228, 231, 234);
+}
+
+html body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }`,
     search: `html body .search > .search-button {
   background-color: rgb(20, 22, 26);
