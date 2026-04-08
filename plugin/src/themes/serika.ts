@@ -104,6 +104,11 @@ export const theme: ThemeData = {
 html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(232, 201, 48, 0.1);
+  color: rgb(238, 205, 85);
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   font-family: "??", "Roboto Mono *", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -127,6 +132,15 @@ html[saved-theme="dark"] body .text-highlight {
 
 html[saved-theme="dark"] body del {
   font-family: "??", "Roboto Mono *", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
+  border-radius: 0px;
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(232, 201, 48);
+  border-color: rgb(232, 201, 48);
 }
 
 html[saved-theme="dark"] body p {
@@ -206,10 +220,6 @@ html[saved-theme="dark"] body pre:has(> code) {
 }
 
 html[saved-theme="dark"] body .transclude {
-  border-left-color: rgb(232, 201, 48);
-}
-
-html[saved-theme="dark"] body .transclude-inner {
   border-left-color: rgb(232, 201, 48);
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
@@ -494,6 +504,15 @@ html[saved-theme="dark"] body kbd {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   font-family: "??", "Roboto Mono *", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+}
+
+html[saved-theme="dark"] body ul.tags > li {
+  background-color: rgba(232, 201, 48, 0.1);
+  border-bottom-color: rgba(232, 201, 48, 0.15);
+  border-left-color: rgba(232, 201, 48, 0.15);
+  border-right-color: rgba(232, 201, 48, 0.15);
+  border-top-color: rgba(232, 201, 48, 0.15);
+  color: rgb(238, 205, 85);
 }`,
   },
   light: {
@@ -598,6 +617,11 @@ html[saved-theme="dark"] body kbd {
 html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(232, 201, 48, 0.1);
+  color: rgb(232, 201, 48);
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   font-family: "??", "Roboto Mono *", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -621,6 +645,15 @@ html[saved-theme="light"] body .text-highlight {
 
 html[saved-theme="light"] body del {
   font-family: "??", "Roboto Mono *", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
+  border-radius: 0px;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(235, 204, 67);
+  border-color: rgb(235, 204, 67);
 }
 
 html[saved-theme="light"] body p {
@@ -700,10 +733,6 @@ html[saved-theme="light"] body pre:has(> code) {
 }
 
 html[saved-theme="light"] body .transclude {
-  border-left-color: rgb(235, 204, 67);
-}
-
-html[saved-theme="light"] body .transclude-inner {
   border-left-color: rgb(235, 204, 67);
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
@@ -988,6 +1017,15 @@ html[saved-theme="light"] body kbd {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   font-family: "??", "Roboto Mono *", monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+}
+
+html[saved-theme="light"] body ul.tags > li {
+  background-color: rgba(232, 201, 48, 0.1);
+  border-bottom-color: rgba(232, 201, 48, 0.15);
+  border-left-color: rgba(232, 201, 48, 0.15);
+  border-right-color: rgba(232, 201, 48, 0.15);
+  border-top-color: rgba(232, 201, 48, 0.15);
+  color: rgb(232, 201, 48);
 }`,
   },
 };

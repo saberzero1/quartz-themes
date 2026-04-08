@@ -617,8 +617,9 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
   for (const [selector, props] of grouped.entries()) {
     const taskMatch = selector.match(/data-task=\"([^\"]*)\"/);
     if (!taskMatch) continue;
-    const taskChar = escapeAttrValue(taskMatch[1]);
     const isPseudo = selector.includes("::after");
+    if (isPseudo) continue;
+    const taskChar = escapeAttrValue(taskMatch[1]);
     const quartzBase = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]`;
     const quartzSelector = isPseudo ? `${quartzBase}::after` : quartzBase;
     const lines = [];

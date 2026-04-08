@@ -1666,1062 +1666,1061 @@ body.theme-dark,
   }
 }
 /* #endregion */
-/* #region Typography */
-/* #region   Reading and Live Preview modes */
-body {
-  --theme-value-headingScaleFactor: 1.2;
-  --blockquote-border-thickness: 0.25em;
-  /* Use the system font by default for both text and interface, unless user has chosen something else.  */
-  --font-default: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-monospace-default: ui-monospace, Menlo, SFMono-Regular, Consolas,
-    "Roboto Mono", "Source Code Pro", monospace;
-  --font-text-theme: var(--font-default);
-  --font-interface-theme: var(--font-default);
-  --font-monospace-theme: var(--font-monospace-default);
-  --h1-size: calc(var(--theme-value-headingScaleFactor) * var(--h2-size));
-  --h2-size: calc(var(--theme-value-headingScaleFactor) * var(--h3-size));
-  --h3-size: calc(var(--theme-value-headingScaleFactor) * var(--h4-size));
-  --h4-size: calc(var(--theme-value-headingScaleFactor) * var(--h5-size));
-  --h5-size: calc(var(--theme-value-headingScaleFactor) * var(--h6-size));
-  --h6-size: var(--font-text-size);
-  /* Heading weights increase inversely with size, to maintain distinction from body text */
-  --h1-weight: 100;
-  --h2-weight: 200;
-  --h3-weight: 300;
-  --h4-weight: 400;
-  --h5-weight: 500;
-  --h6-weight: 500;
-  /* Inline title isn't huge, but has Greater weight */
-  --inline-title-size: var(--h3-size);
-  --inline-title-weight: var(--h4-weight);
-  --inline-title-line-height: var(--line-height-normal);
-  --inline-title-style: normal;
-  --inline-title-variant: normal;
-  --inline-title-font: inherit;
-  --inline-title-color: inherit;
+/* #region Typography for user's content - src/typography_content.css */
+  /* #region Fonts */
+    body {
+      /* Use the system font by default for both text and interface, unless user has chosen something else.  */
+      --font-default: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      --font-monospace-default: ui-monospace, Menlo, SFMono-Regular, Consolas,
+        "Roboto Mono", "Source Code Pro", monospace;
+      --font-text-theme: var(--font-default);
+      /* TODO: move interface font elsewhere, and scope this indpendently i.e. not just on body */
+      --font-interface-theme: var(--font-default);
+      --font-monospace-theme: var(--font-monospace-default);
+    }
 
-  --line-height-normal: 1.6;
-  --link-decoration-thickness: 1px;
-  --link-unresolved-decoration-style: dashed;
-  --h1-line-height: var(--line-height-normal);
-  --h2-line-height: var(--line-height-normal);
-  --h3-line-height: var(--line-height-normal);
-  --h4-line-height: var(--line-height-normal);
-  --h5-line-height: var(--line-height-normal);
-  --h6-line-height: var(--line-height-normal);
+    /* Source mode uses monospace font */
+    .markdown-source-view:not(.is-live-preview) .cm-scroller {
+      font-family: var(--font-monospace);
+    }
 
-  /* Hanging punctuation isn't supported in Electron yet (Dec 2023), but here for when it is. */
-  hanging-punctuation: first allow-end last;
+    /* Apply a different font for headings if set in Style Settings */
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header,
+    .markdown-source-view.is-live-preview .HyperMD-list-line .cm-header,
+    .markdown-rendered h1,
+    .markdown-rendered h2,
+    .markdown-rendered h3,
+    .markdown-rendered h4,
+    .markdown-rendered h5,
+    .markdown-rendered h6 {
+      font-family: var(--theme-setting-headingFont), var(--font-text-theme);
+    }
+  /* #endregion */
+  /* #region Body text */
+  body {
+    --line-height-normal: 1.6;
+    --link-decoration-thickness: 1px;
+    --link-unresolved-decoration-style: dashed;
 
-  ::spelling-error {
-    text-decoration: wavy var(--color-red) underline from-font;
-  }
-}
 
-body.theme-setting-headingScaleFactor1point067 {
-  --theme-value-headingScaleFactor: 1.067;
-}
-body.theme-setting-headingScaleFactor1point125 {
-  --theme-value-headingScaleFactor: 1.125;
-}
-body.theme-setting-headingScaleFactor1point2 {
-  --theme-value-headingScaleFactor: 1.2;
-}
-body.theme-setting-headingScaleFactor1point25 {
-  --theme-value-headingScaleFactor: 1.25;
-}
-body.theme-setting-headingScaleFactor1point333 {
-  --theme-value-headingScaleFactor: 1.333;
-}
-body.theme-setting-headingScaleFactor1point414 {
-  --theme-value-headingScaleFactor: 1.414;
-}
-body.theme-setting-headingScaleFactor1point5 {
-  --theme-value-headingScaleFactor: 1.5;
-}
-body.theme-setting-headingScaleFactor1point618 {
-  --theme-value-headingScaleFactor: 1.618;
-}
-/* More compact typography to fit more on small screens */
-.is-phone {
-  --theme-value-headingScaleFactorPhone: 1.2;
-  --h1-size: calc(var(--theme-value-headingScaleFactorPhone) * var(--h2-size));
-  --h2-size: calc(var(--theme-value-headingScaleFactorPhone) * var(--h3-size));
-  --h3-size: calc(var(--theme-value-headingScaleFactorPhone) * var(--h4-size));
-  --h4-size: calc(var(--theme-value-headingScaleFactorPhone) * var(--h5-size));
-  --h5-size: calc(var(--theme-value-headingScaleFactorPhone) * var(--h6-size));
-  --line-height-normal: 1.5;
-}
-body.is-phone.theme-setting-headingScaleFactorPhone1point067 {
-  --theme-value-headingScaleFactorPhone: 1.067;
-}
-body.is-phone.theme-setting-headingScaleFactorPhone1point125 {
-  --theme-value-headingScaleFactorPhone: 1.125;
-}
-body.is-phone.theme-setting-headingScaleFactorPhone1point2 {
-  --theme-value-headingScaleFactorPhone: 1.2;
-}
-body.is-phone.theme-setting-headingScaleFactorPhone1point25 {
-  --theme-value-headingScaleFactorPhone: 1.25;
-}
-body.is-phone.theme-setting-headingScaleFactorPhone1point333 {
-  --theme-value-headingScaleFactorPhone: 1.333;
-}
-body.is-phone.theme-setting-headingScaleFactorPhone1point414 {
-  --theme-value-headingScaleFactorPhone: 1.414;
-}
-body.is-phone.theme-setting-headingScaleFactorPhone1point5 {
-  --theme-value-headingScaleFactorPhone: 1.5;
-}
-body.is-phone.theme-setting-headingScaleFactorPhone1point618 {
-  --theme-value-headingScaleFactorPhone: 1.618;
-}
-/* Smaller font size for markdown documents in sidebar */
-.mod-sidedock {
-  --h1-size: calc(var(--theme-value-headingScaleFactor) * var(--h2-size));
-  --h2-size: calc(var(--theme-value-headingScaleFactor) * var(--h3-size));
-  --h3-size: calc(var(--theme-value-headingScaleFactor) * var(--h4-size));
-  --h4-size: calc(var(--theme-value-headingScaleFactor) * var(--h5-size));
-  --h5-size: calc(var(--theme-value-headingScaleFactor) * var(--h6-size));
-  --h6-size: calc(
-    var(--theme-value-sidebarFontScalingFactor) * var(--font-text-size)
-  );
-}
-
-.HyperMD-header-1, .inline-title h1, .HyperMD-list-line .cm-header-1, .markdown-rendered h1,
-.HyperMD-header-2, .inline-title h2, .HyperMD-list-line .cm-header-2, .markdown-rendered h2,
-.HyperMD-header-3, .inline-title h3, .HyperMD-list-line .cm-header-3, .markdown-rendered h3,
-.HyperMD-header-4, .inline-title h4, .HyperMD-list-line .cm-header-4, .markdown-rendered h4,
-.HyperMD-header-5, .inline-title h5, .HyperMD-list-line .cm-header-5, .markdown-rendered h5,
-.HyperMD-header-6, .inline-title h6, .HyperMD-list-line .cm-header-6, .markdown-rendered h6 {
-  letter-spacing: 0;
-}
-.markdown-rendered
-  div:has(> :is(p, pre, table, ul, ol))
-  + div
-  > :is(h1, h2, h3, h4, h5, h6) {
-  margin-top: 0;
-}
-
-.markdown-source-view .cm-line.HyperMD-header,
-.markdown-source-view.is-live-preview .cm-line.HyperMD-header,
-.markdown-source-view.is-live-preview .HyperMD-list-line .cm-header,
-.markdown-rendered h1,
-.markdown-rendered h2,
-.markdown-rendered h3,
-.markdown-rendered h4,
-.markdown-rendered h5,
-.markdown-rendered h6 {
-  font-family: var(--theme-setting-headingFont), var(--font-text-theme);
-}
-
-/* Space before headings... */
-.markdown-source-view .cm-line.HyperMD-header,
-.markdown-source-view.is-live-preview .cm-line.HyperMD-header,
-.markdown-rendered h1,
-.markdown-rendered h2,
-.markdown-rendered h3,
-.markdown-rendered h4,
-.markdown-rendered h5,
-.markdown-rendered h6 {
-  padding: var(--heading-spacing) 0 0 0;
-  margin: 0;
-}
-/* ...except when they immediately follow another heading */
-.markdown-source-view
-  :is(
-    .cm-line.HyperMD-header-1,
-    .cm-line.HyperMD-header-2,
-    .cm-line.HyperMD-header-3,
-    .cm-line.HyperMD-header-4,
-    .cm-line.HyperMD-header-5,
-    .cm-line.HyperMD-header-6
-  )
-  + :is(
-    .cm-line.HyperMD-header-1,
-    .cm-line.HyperMD-header-2,
-    .cm-line.HyperMD-header-3,
-    .cm-line.HyperMD-header-4,
-    .cm-line.HyperMD-header-5,
-    .cm-line.HyperMD-header-6
-  ) {
-  /* Using padding as margin has an !important applied elsewhere */
-  padding-top: 0;
-}
-.markdown-rendered
-  :is(
-    .markdown-preview-section > div:has(h1),
-    .markdown-preview-section > div:has(h2),
-    .markdown-preview-section > div:has(h3),
-    .markdown-preview-section > div:has(h4),
-    .markdown-preview-section > div:has(h5),
-    .markdown-preview-section > div:has(h6)
-  )
-  + :is(
-    .markdown-preview-section > div:has(h1),
-    .markdown-preview-section > div:has(h2),
-    .markdown-preview-section > div:has(h3),
-    .markdown-preview-section > div:has(h4),
-    .markdown-preview-section > div:has(h5),
-    .markdown-preview-section > div:has(h6)
-  )
-  :is(h1, h2, h3, h4, h5, h6) {
-  padding-top: 0;
-}
-/* ...or they're first on the page */
-.markdown-source-view .cm-line.HyperMD-header:first-child,
-.markdown-rendered .mod-header + div > h1 {
-  padding-top: 0;
-}
-
-/* Markdown formatting shown while editing e.g. ### for headings */
-.cm-formatting.cm-formatting-header {
-  color: var(--theme-color-textMeta);
-  font-size: var(--font-ui-smaller) !important;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-.markdown-source-view .HyperMD-quote,
-.callout {
-  font-weight: 300;
-}
-
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-  /* Matched to --callout-padding */
-  padding: 0 1.5em;
-}
-
-.markdown-source-view.mod-cm6 hr,
-.markdown-rendered hr {
-  display: flex;
-  align-items: center;
-  border: none;
-  border-top: var(--hr-thickness) solid;
-  border-color: var(--hr-color);
-  margin: 2em 0;
-}
-.cm-s-obsidian .cm-inline-code:not(.cm-formatting),
-.markdown-rendered code {
-  padding: 0.25em 0.5em;
-}
-
-/* #region     Lists */
-li.is-collapsed .list-bullet:after,
-.is-collapsed ~ .cm-formatting-list .list-bullet:after {
-  box-shadow: none;
-}
-@media (hover: hover) {
-  li.is-collapsed .list-collapse-indicator:hover ~ .list-bullet:after,
-  li.is-collapsed .cm-fold-indicator:hover ~ .list-bullet:after,
-  .list-collapse-indicator:hover.is-collapsed ~ .list-bullet:after,
-  .cm-fold-indicator:hover.is-collapsed ~ .list-bullet:after,
-  li.is-collapsed
-    .list-collapse-indicator:hover
-    ~ .cm-formatting-list
-    .list-bullet:after,
-  li.is-collapsed
-    .cm-fold-indicator:hover
-    ~ .cm-formatting-list
-    .list-bullet:after,
-  .list-collapse-indicator:hover.is-collapsed
-    ~ .cm-formatting-list
-    .list-bullet:after,
-  .cm-fold-indicator:hover.is-collapsed
-    ~ .cm-formatting-list
-    .list-bullet:after {
-    background-color: var(--list-marker-color-collapsed);
-    box-shadow: none;
+    /* Hanging punctuation isn't supported in Electron yet (Dec 2023), but here for when it is. */
+    hanging-punctuation: first allow-end last;
   }
 
-  .list-collapse-indicator:hover ~ .list-bullet:after,
-  .cm-fold-indicator:hover ~ .list-bullet:after,
-  .list-collapse-indicator:hover ~ .cm-formatting-list .list-bullet:after,
-  .cm-fold-indicator:hover ~ .cm-formatting-list .list-bullet:after {
-    box-shadow: none;
-  }
-}
-/* #endregion */
-/* #region     Collapse indicators */
-/* Appearance consistent with navigation controls */
-.collapse-indicator,
-.list-collapse-indicator {
-  background-color: var(--background-primary);
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: var(--theme-length-collapseIndicatorSize);
-  height: var(--theme-length-collapseIndicatorSize);
-  border: none;
-  color: var(--theme-color-control);
-  flex-wrap: wrap;
-}
-@media (hover: hover) {
-  .collapse-indicator:hover,
-  .cm-fold-indicator:hover .collapse-indicator,
-  .list-collapse-indicator:hover,
-  .view-content .cm-fold-indicator:hover svg.svg-icon,
-  .view-content .list-collapse-indicator:hover svg.svg-icon,
-  .view-content .collapse-indicator:hover svg.svg-icon {
-    color: var(--theme-color-controlTextHover);
-    background-color: var(--theme-color-navigationButtonBgHover);
-  }
-}
-.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
-  height: var(--theme-length-collapseIndicatorSize);
-  top: 50%;
-  margin-top: calc(-0.5 * var(--theme-length-collapseIndicatorSize));
-  padding: 0;
-}
-.markdown-source-view.mod-cm6.is-live-preview
-  .cm-line:not(.HyperMD-task-line)
-  .cm-fold-indicator
-  .collapse-indicator {
-  margin-inline-end: 1.75rem;
-  padding-inline-end: 0;
-  transform: translateX(1.25rem);
-}
-.markdown-preview-view h1,
-.markdown-preview-view h2,
-.markdown-preview-view h3,
-.markdown-preview-view h4,
-.markdown-preview-view h5,
-.markdown-preview-view h6 {
-  position: relative;
-}
-.markdown-preview-view .heading-collapse-indicator {
-  margin-inline-start: -2rem;
-  top: auto;
-}
-.markdown-preview-view h1 .heading-collapse-indicator {
-  bottom: 0.5em;
-}
-.markdown-preview-view h2 .heading-collapse-indicator {
-  bottom: 0.45em;
-}
-.markdown-preview-view h3 .heading-collapse-indicator {
-  bottom: 0.4em;
-}
-.markdown-preview-view h4 .heading-collapse-indicator {
-  bottom: 0.3em;
-}
-.markdown-preview-view h5 .heading-collapse-indicator {
-  bottom: 0.2em;
-}
-.markdown-preview-view h6 .heading-collapse-indicator {
-  bottom: 0.1em;
-}
-.markdown-rendered .list-collapse-indicator {
-  padding-inline-end: 0;
-}
-/* #endregion */
-/* #region     Links */
-.markdown-source-view.is-live-preview .is-unresolved .cm-link,
-.markdown-reading-view h1 a {
-  --text-decoration-color: var(--link-color);
-  --text-decoration-style: dashed;
-}
-.markdown-source-view .cm-link .cm-underline,
-.markdown-source-view .cm-hmd-internal-link .cm-underline,
-.markdown-reading-view h1 a,
-.markdown-reading-view h2 a,
-.markdown-reading-view h3 a,
-.markdown-reading-view h4 a,
-.markdown-reading-view h5 a,
-.markdown-reading-view h6 a {
-  text-underline-offset: 0.125em;
-}
-@media (hover: hover) {
-  .markdown-source-view.is-live-preview span.cm-link:hover,
-  .markdown-source-view.is-live-preview
-    span.cm-hmd-internal-link:hover:has(.cm-underline) {
-    /* Don't add double underline */
-    text-decoration: none;
-  }
-}
-.markdown-source-view.is-live-preview .cm-line.HyperMD-header-1 .cm-link,
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-1
-  .cm-hmd-internal-link,
-.markdown-reading-view h1 a {
-  --link-decoration-thickness: max(calc(var(--h1-weight) / 400 * 1px), 1px);
-}
-.markdown-source-view.is-live-preview .cm-line.HyperMD-header-2 .cm-link,
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-2
-  .cm-hmd-internal-link,
-.markdown-reading-view h2 a {
-  --link-decoration-thickness: max(calc(var(--h2-weight) / 400 * 1px), 1px);
-}
-.markdown-source-view.is-live-preview .cm-line.HyperMD-header-3 .cm-link,
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-3
-  .cm-hmd-internal-link,
-.markdown-reading-view h3 a {
-  --link-decoration-thickness: max(calc(var(--h3-weight) / 400 * 1px), 1px);
-}
-.markdown-source-view.is-live-preview .cm-line.HyperMD-header-4 .cm-link,
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-4
-  .cm-hmd-internal-link,
-.markdown-reading-view h4 a {
-  --link-decoration-thickness: max(calc(var(--h4-weight) / 400 * 1px), 1px);
-}
-.markdown-source-view.is-live-preview .cm-line.HyperMD-header-5 .cm-link,
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-5
-  .cm-hmd-internal-link,
-.markdown-reading-view h5 a {
-  --link-decoration-thickness: max(calc(var(--h5-weight) / 400 * 1px), 1px);
-}
-.markdown-source-view.is-live-preview .cm-line.HyperMD-header-6 .cm-link,
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-6
-  .cm-hmd-internal-link,
-.markdown-reading-view h6 a {
-  --link-decoration-thickness: max(calc(var(--h6-weight) / 400 * 1px), 1px);
-}
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-1
-  .is-unresolved
-  .cm-link,
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-1
-  .cm-hmd-internal-link
-  .is-unresolved,
-.markdown-reading-view h1 a.is-unresolved {
-  --link-decoration-thickness: max(calc(var(--h1-weight) / 200 * 2px), 1px);
-}
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-2
-  .is-unresolved
-  .cm-link,
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-2
-  .cm-hmd-internal-link
-  .is-unresolved,
-.markdown-reading-view h2 a.is-unresolved {
-  --link-decoration-thickness: max(calc(var(--h2-weight) / 400 * 2px), 1px);
-}
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-3
-  .is-unresolved
-  .cm-link,
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-3
-  .cm-hmd-internal-link
-  .is-unresolved,
-.markdown-reading-view h3 a.is-unresolved {
-  --link-decoration-thickness: max(calc(var(--h3-weight) / 400 * 2px), 1px);
-}
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-4
-  .is-unresolved
-  .cm-link,
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-4
-  .cm-hmd-internal-link
-  .is-unresolved,
-.markdown-reading-view h4 a.is-unresolved {
-  --link-decoration-thickness: max(calc(var(--h4-weight) / 400 * 2px), 1px);
-}
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-5
-  .is-unresolved
-  .cm-link,
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-5
-  .cm-hmd-internal-link
-  .is-unresolved,
-.markdown-reading-view h5 a.is-unresolved {
-  --link-decoration-thickness: max(calc(var(--h5-weight) / 400 * 2px), 1px);
-}
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-6
-  .is-unresolved
-  .cm-link,
-.markdown-source-view.is-live-preview
-  .cm-line.HyperMD-header-6
-  .cm-hmd-internal-link
-  .is-unresolved,
-.markdown-reading-view h6 a.is-unresolved {
-  --link-decoration-thickness: max(calc(var(--h6-weight) / 400 * 2px), 1px);
-}
+  /* #endregion */
+  /* #region Headings */
+    body {
+      /* Headings are scaled according to a scale factor, which can be change with Style Settings */
+      --theme-value-headingScaleFactor: 1.2; /* Default value if Style Setting snot used */
+      --h1-size: calc(var(--theme-value-headingScaleFactor) * var(--h2-size));
+      --h2-size: calc(var(--theme-value-headingScaleFactor) * var(--h3-size));
+      --h3-size: calc(var(--theme-value-headingScaleFactor) * var(--h4-size));
+      --h4-size: calc(var(--theme-value-headingScaleFactor) * var(--h5-size));
+      --h5-size: calc(var(--theme-value-headingScaleFactor) * var(--h6-size));
+      --h6-size: var(--font-text-size);
 
-/* #endregion */
-/* #region     Tables */
+      /* Heading weights increase inversely with size, to maintain distinction from body text */
+      --h1-weight: 100;
+      --h2-weight: 200;
+      --h3-weight: 300;
+      --h4-weight: 400;
+      --h5-weight: 500;
+      --h6-weight: 500;
 
-.markdown-rendered th,
-.markdown-rendered table:not(.calendar) thead tr > th:nth-child(2n + 2) {
-  background: var(--theme-color-tableHeaderBg);
-}
-.cm-html-embed td,
-.markdown-rendered td,
-.cm-html-embed th,
-.markdown-rendered th {
-  padding: 0.375em 0.75em;
-}
+      --h1-line-height: var(--line-height-normal);
+      --h2-line-height: var(--line-height-normal);
+      --h3-line-height: var(--line-height-normal);
+      --h4-line-height: var(--line-height-normal);
+      --h5-line-height: var(--line-height-normal);
+      --h6-line-height: var(--line-height-normal);
+    }
+    body.theme-setting-headingScaleFactor1point067 {
+      --theme-value-headingScaleFactor: 1.067;
+    }
+    body.theme-setting-headingScaleFactor1point125 {
+      --theme-value-headingScaleFactor: 1.125;
+    }
+    body.theme-setting-headingScaleFactor1point2 {
+      --theme-value-headingScaleFactor: 1.2;
+    }
+    body.theme-setting-headingScaleFactor1point25 {
+      --theme-value-headingScaleFactor: 1.25;
+    }
+    body.theme-setting-headingScaleFactor1point333 {
+      --theme-value-headingScaleFactor: 1.333;
+    }
+    body.theme-setting-headingScaleFactor1point414 {
+      --theme-value-headingScaleFactor: 1.414;
+    }
+    body.theme-setting-headingScaleFactor1point5 {
+      --theme-value-headingScaleFactor: 1.5;
+    }
+    body.theme-setting-headingScaleFactor1point618 {
+      --theme-value-headingScaleFactor: 1.618;
+    }
 
-.is-mobile
-  .cm-table-widget
+  /* Space before headings... */
+  .markdown-source-view .cm-line.HyperMD-header,
+  .markdown-source-view.is-live-preview .cm-line.HyperMD-header,
+  .markdown-rendered h1,
+  .markdown-rendered h2,
+  .markdown-rendered h3,
+  .markdown-rendered h4,
+  .markdown-rendered h5,
+  .markdown-rendered h6 {
+    padding: var(--heading-spacing) 0 0 0;
+    margin: 0;
+  }
+  /* ...except when they immediately follow another heading */
+  .markdown-source-view
+    :is(
+      .cm-line.HyperMD-header-1,
+      .cm-line.HyperMD-header-2,
+      .cm-line.HyperMD-header-3,
+      .cm-line.HyperMD-header-4,
+      .cm-line.HyperMD-header-5,
+      .cm-line.HyperMD-header-6
+    )
+    + :is(
+      .cm-line.HyperMD-header-1,
+      .cm-line.HyperMD-header-2,
+      .cm-line.HyperMD-header-3,
+      .cm-line.HyperMD-header-4,
+      .cm-line.HyperMD-header-5,
+      .cm-line.HyperMD-header-6
+    ) {
+    /* Using padding as margin has an !important applied elsewhere */
+    padding-top: 0;
+  }
   .markdown-rendered
-  table:not(.calendar)
-  thead
-  tr
-  > th:last-child {
-  /* Make room for the edit button to not overlap. */
-  padding-inline-end: 2em;
-}
-.is-mobile .markdown-source-view .cm-table-widget .edit-block-button {
-  top: 0;
-  right: 0;
-}
-/* #endregion */
-/* #region     Embeds */
-.markdown-embed .markdown-embed-content,
-.bases-embed,
-.pdf-embed,
-.media-embed,
-.internal-query {
-  background-color: var(--embed-background);
-  border-bottom: var(--embed-border-bottom);
-  border-inline-start: var(--embed-border-left);
-  border-radius: var(--radius-m);
-  border-inline-end: var(--embed-border-right);
-  border-top: var(--embed-border-top);
-  margin: 0;
-}
-/* I'm treating images as a special case, because they don't have any controls and a colored surround would often be distracting. */
-.internal-embed.image-embed {
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  margin: 0;
-}
-
-.markdown-embed .embed-title {
-  font-size: var(--font-ui-small);
-  font-weight: var(--nav-item-weight-hover);
-  color: var(--background-modifier-hover);
-  margin: 0 2rem 0 0;
-  align-items: center;
-  display: none;
-}
-
-body.theme-setting-embeddedNoteTitleVisibilityHide .embed-title {
-  display: none;
-}
-body.theme-setting-embeddedNoteTitleVisibilityShow
-  .internal-embed:has(.embed-title:not(:empty)) {
-  padding-top: 0.5rem;
-}
-body.theme-setting-embeddedNoteTitleVisibilityShow .embed-title {
-  display: flex;
-}
-@media (hover: hover) {
-  body.theme-setting-embeddedNoteTitleVisibilityHover
-    .internal-embed:has(.embed-title:not(:empty)) {
-    padding-top: 1.5rem;
+    :is(
+      .markdown-preview-section > div:has(h1),
+      .markdown-preview-section > div:has(h2),
+      .markdown-preview-section > div:has(h3),
+      .markdown-preview-section > div:has(h4),
+      .markdown-preview-section > div:has(h5),
+      .markdown-preview-section > div:has(h6)
+    )
+    + :is(
+      .markdown-preview-section > div:has(h1),
+      .markdown-preview-section > div:has(h2),
+      .markdown-preview-section > div:has(h3),
+      .markdown-preview-section > div:has(h4),
+      .markdown-preview-section > div:has(h5),
+      .markdown-preview-section > div:has(h6)
+    )
+    :is(h1, h2, h3, h4, h5, h6) {
+    padding-top: 0;
   }
-  body.theme-setting-embeddedNoteTitleVisibilityHover
-    .internal-embed:has(.embed-title:not(:empty)):hover
-    .embed-title {
+  /* ...or they're first on the page */
+  .markdown-source-view .cm-line.HyperMD-header:first-child,
+  .markdown-rendered .mod-header + div > h1 {
+    padding-top: 0;
+  }
+  /* #endregion */
+  /* #region Headings - phone */
+    /* More compact typography to fit more on small screens */
+    .is-phone {
+      --theme-value-headingScaleFactorPhone: 1.2;
+      --h1-size: calc(var(--theme-value-headingScaleFactorPhone) * var(--h2-size));
+      --h2-size: calc(var(--theme-value-headingScaleFactorPhone) * var(--h3-size));
+      --h3-size: calc(var(--theme-value-headingScaleFactorPhone) * var(--h4-size));
+      --h4-size: calc(var(--theme-value-headingScaleFactorPhone) * var(--h5-size));
+      --h5-size: calc(var(--theme-value-headingScaleFactorPhone) * var(--h6-size));
+      --line-height-normal: 1.5;
+    }
+    body.is-phone.theme-setting-headingScaleFactorPhone1point067 {
+      --theme-value-headingScaleFactorPhone: 1.067;
+    }
+    body.is-phone.theme-setting-headingScaleFactorPhone1point125 {
+      --theme-value-headingScaleFactorPhone: 1.125;
+    }
+    body.is-phone.theme-setting-headingScaleFactorPhone1point2 {
+      --theme-value-headingScaleFactorPhone: 1.2;
+    }
+    body.is-phone.theme-setting-headingScaleFactorPhone1point25 {
+      --theme-value-headingScaleFactorPhone: 1.25;
+    }
+    body.is-phone.theme-setting-headingScaleFactorPhone1point333 {
+      --theme-value-headingScaleFactorPhone: 1.333;
+    }
+    body.is-phone.theme-setting-headingScaleFactorPhone1point414 {
+      --theme-value-headingScaleFactorPhone: 1.414;
+    }
+    body.is-phone.theme-setting-headingScaleFactorPhone1point5 {
+      --theme-value-headingScaleFactorPhone: 1.5;
+    }
+    body.is-phone.theme-setting-headingScaleFactorPhone1point618 {
+      --theme-value-headingScaleFactorPhone: 1.618;
+    }
+  /* #endregion */
+  /* #region Headings - sidedock */
+    /* Smaller font size for markdown documents in sidebar */
+    .mod-sidedock {
+      --h1-size: calc(var(--theme-value-headingScaleFactor) * var(--h2-size));
+      --h2-size: calc(var(--theme-value-headingScaleFactor) * var(--h3-size));
+      --h3-size: calc(var(--theme-value-headingScaleFactor) * var(--h4-size));
+      --h4-size: calc(var(--theme-value-headingScaleFactor) * var(--h5-size));
+      --h5-size: calc(var(--theme-value-headingScaleFactor) * var(--h6-size));
+      --h6-size: calc(
+        var(--theme-value-sidebarFontScalingFactor) * var(--font-text-size)
+      );
+    }
+  /* #endregion */
+  /* #region Inline title */
+    body {
+      /* Inline title isn't huge, but has greater weight than headings */
+      --inline-title-size: var(--h3-size);
+      --inline-title-weight: var(--h4-weight);
+      --inline-title-line-height: var(--line-height-normal);
+      --inline-title-style: normal;
+      --inline-title-variant: normal;
+      --inline-title-font: inherit;
+      --inline-title-color: inherit;
+    }
+  /* #endregion */
+  /* #region Links */
+    .markdown-source-view.is-live-preview .is-unresolved .cm-link,
+    .markdown-reading-view h1 a {
+      --text-decoration-color: var(--link-color);
+      --text-decoration-style: dashed;
+    }
+    .markdown-source-view .cm-link .cm-underline,
+    .markdown-source-view .cm-hmd-internal-link .cm-underline,
+    .markdown-reading-view h1 a,
+    .markdown-reading-view h2 a,
+    .markdown-reading-view h3 a,
+    .markdown-reading-view h4 a,
+    .markdown-reading-view h5 a,
+    .markdown-reading-view h6 a {
+      text-underline-offset: 0.125em;
+    }
+    @media (hover: hover) {
+      .markdown-source-view.is-live-preview span.cm-link:hover,
+      .markdown-source-view.is-live-preview
+        span.cm-hmd-internal-link:hover:has(.cm-underline) {
+        /* Don't add double underline */
+        text-decoration: none;
+      }
+    }
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header-1 .cm-link,
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-1
+      .cm-hmd-internal-link,
+    .markdown-reading-view h1 a {
+      --link-decoration-thickness: max(calc(var(--h1-weight) / 400 * 1px), 1px);
+    }
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header-2 .cm-link,
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-2
+      .cm-hmd-internal-link,
+    .markdown-reading-view h2 a {
+      --link-decoration-thickness: max(calc(var(--h2-weight) / 400 * 1px), 1px);
+    }
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header-3 .cm-link,
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-3
+      .cm-hmd-internal-link,
+    .markdown-reading-view h3 a {
+      --link-decoration-thickness: max(calc(var(--h3-weight) / 400 * 1px), 1px);
+    }
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header-4 .cm-link,
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-4
+      .cm-hmd-internal-link,
+    .markdown-reading-view h4 a {
+      --link-decoration-thickness: max(calc(var(--h4-weight) / 400 * 1px), 1px);
+    }
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header-5 .cm-link,
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-5
+      .cm-hmd-internal-link,
+    .markdown-reading-view h5 a {
+      --link-decoration-thickness: max(calc(var(--h5-weight) / 400 * 1px), 1px);
+    }
+    .markdown-source-view.is-live-preview .cm-line.HyperMD-header-6 .cm-link,
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-6
+      .cm-hmd-internal-link,
+    .markdown-reading-view h6 a {
+      --link-decoration-thickness: max(calc(var(--h6-weight) / 400 * 1px), 1px);
+    }
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-1
+      .is-unresolved
+      .cm-link,
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-1
+      .cm-hmd-internal-link
+      .is-unresolved,
+    .markdown-reading-view h1 a.is-unresolved {
+      --link-decoration-thickness: max(calc(var(--h1-weight) / 200 * 2px), 1px);
+    }
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-2
+      .is-unresolved
+      .cm-link,
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-2
+      .cm-hmd-internal-link
+      .is-unresolved,
+    .markdown-reading-view h2 a.is-unresolved {
+      --link-decoration-thickness: max(calc(var(--h2-weight) / 400 * 2px), 1px);
+    }
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-3
+      .is-unresolved
+      .cm-link,
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-3
+      .cm-hmd-internal-link
+      .is-unresolved,
+    .markdown-reading-view h3 a.is-unresolved {
+      --link-decoration-thickness: max(calc(var(--h3-weight) / 400 * 2px), 1px);
+    }
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-4
+      .is-unresolved
+      .cm-link,
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-4
+      .cm-hmd-internal-link
+      .is-unresolved,
+    .markdown-reading-view h4 a.is-unresolved {
+      --link-decoration-thickness: max(calc(var(--h4-weight) / 400 * 2px), 1px);
+    }
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-5
+      .is-unresolved
+      .cm-link,
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-5
+      .cm-hmd-internal-link
+      .is-unresolved,
+    .markdown-reading-view h5 a.is-unresolved {
+      --link-decoration-thickness: max(calc(var(--h5-weight) / 400 * 2px), 1px);
+    }
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-6
+      .is-unresolved
+      .cm-link,
+    .markdown-source-view.is-live-preview
+      .cm-line.HyperMD-header-6
+      .cm-hmd-internal-link
+      .is-unresolved,
+    .markdown-reading-view h6 a.is-unresolved {
+      --link-decoration-thickness: max(calc(var(--h6-weight) / 400 * 2px), 1px);
+    }
+
+  /* #endregion */
+  /* #region Tables */
+
+  .markdown-rendered th,
+  .markdown-rendered table:not(.calendar) thead tr > th:nth-child(2n + 2) {
+    background: var(--theme-color-tableHeaderBg);
+  }
+  .cm-html-embed td,
+  .markdown-rendered td,
+  .cm-html-embed th,
+  .markdown-rendered th {
+    padding: 0.375em 0.75em;
+  }
+
+  .is-mobile
+    .cm-table-widget
+    .markdown-rendered
+    table:not(.calendar)
+    thead
+    tr
+    > th:last-child {
+    /* Make room for the edit button to not overlap. */
+    padding-inline-end: 2em;
+  }
+  .is-mobile .markdown-source-view .cm-table-widget .edit-block-button {
+    top: 0;
+    right: 0;
+  }
+  /* #endregion */
+  /* #region Blocks and Callouts */
+  .callout {
+    /* Embeds and dataviews would normally have a background colour, but we skip it inside a callout because it can look messy. */
+    --embed-background: transparent;
     display: flex;
-    position: absolute;
-    top: 0.5rem;
-    left: 1rem;
+    flex-direction: column;
+    gap: 0.75em;
   }
-}
-.markdown-embed .markdown-embed-content {
-  height: fit-content;
-  max-height: var(--embed-max-height);
-  overflow: auto;
-}
-.markdown-source-view.mod-cm6
-  .cm-content
-  > .markdown-embed[contenteditable="false"]:has(.markdown-embed-link) {
-  position: relative;
-}
-.markdown-embed-link {
-  position: absolute;
-  top: 0;
-  right: auto;
-  left: calc(100% + 0.25em);
-}
-.file-embed-link {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-/* #region       Image positioning and styling */
-
-/* We'll sometimes have images inside columns, so we'd like them to fit into the available space. */
-.markdown-source-view.mod-cm6 .cm-content > img,
-.markdown-source-view.mod-cm6 .cm-content .image-embed img,
-.markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img {
-  max-width: 100%;
-}
-body.theme-setting-enableImageAdjustmentWithAltText {
-  /* Center images */
-  .markdown-source-view.mod-cm6 .cm-content > img[alt~=center],
-  .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=center] img,
-  .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img[alt~=center] {
-    display: block;
-    margin: 0 auto !important;
+  .callout .callout-title {
+    margin-inline-start: -0.5em;
   }
-  .markdown-preview-view img[alt~=center] {
-    display: block;
-    margin: 0 auto;
+  .callout.is-collapsible .callout-title {
+    cursor: pointer;
   }
-  /* Float images left/right */
-  /* Unfortunately, floats make live preview mode confused about how to assign line numbers. Left/right floating only applies to reading view */
-  .markdown-preview-view img[alt~=right] {
-    margin: 0 0 1em 1em !important;
-    float: right;
-  }
-  .markdown-preview-view img[alt~=left] {
-    margin: 0 1em 1em 0 !important;
-    float: left;
-  }
-
-  /* Round corners of images */
-  .markdown-source-view.mod-cm6 .cm-content > img[alt~=round],
-  .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=round] img,
-  .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img[alt~=round],
-  .markdown-preview-view img[alt~=round],
-  .markdown-preview-view .image-embed[alt~=round] img {
-    border-radius: 0.5em;
-  }
-  .markdown-source-view.mod-cm6 .cm-content > img[alt~=circle],
-  .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=circle] img,
-  .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img[alt~=circle],
-  .markdown-preview-view img[alt~=circle],
-  .markdown-preview-view .image-embed[alt~=circle] img {
-    border-radius: var(--theme-length-fullBorderRadius);
-  }
-}
-body.theme-setting-centerImages {
-  .markdown-source-view.mod-cm6 .cm-content > img,
-  .markdown-source-view.mod-cm6 .cm-content .image-embed img,
-  .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img {
-    display: block;
-    margin: 0 auto !important;
-  }
-  .markdown-preview-view img {
-    display: block;
-    margin: 0 auto;
-  }
-}
-/* #endregion */
-/* Audio embed */
-/* Not technically an embed, but when we've opened an audio file directly in fiule navigation we ant to see the same controls. */
-.video-container > audio {
-  background-color: var(--embed-background);
-  border-bottom: var(--embed-border-bottom);
-  border-inline-start: var(--embed-border-left);
-  border-radius: var(--radius-m);
-  border-inline-end: var(--embed-border-right);
-  border-top: var(--embed-border-top);
-  margin: 0;
-}
-.markdown-source-view.mod-cm6 .cm-content > .media-embed:has(> audio) {
-  display: flex;
-}
-audio::-webkit-media-controls-enclosure {
-  border: none;
-  background: transparent;
-  padding: 0;
-  border-radius: 0;
-  max-height: none;
-  line-height: 0;
-}
-audio::-webkit-media-controls-panel {
-  background: transparent;
-  border: none;
-  padding: 0.25rem;
-  border-radius: var(--radius-m);
-}
-
-/* Video embed */
-/* Not technically an embed, but when we've opened an audio file directly in fiule navigation we ant to see the same controls. */
-.cm-html-embed > video,
-.markdown-reading-view video {
-  background-color: var(--embed-background);
-  border-bottom: var(--embed-border-bottom);
-  border-inline-start: var(--embed-border-left);
-  border-radius: var(--radius-m);
-  border-inline-end: var(--embed-border-right);
-  border-top: var(--embed-border-top);
-  margin: 0;
-}
-
-/* Markdown embed e.g. embedded note */
-.markdown-embed {
-  padding: var(--embed-padding);
-}
-.markdown-embed .markdown-rendered .mod-header {
-  margin-bottom: 0;
-}
-
-/* PDF embed */
-.pdf-toolbar {
-  background-color: transparent;
-  border-bottom: none;
-  padding: 0.25em 2.25em 0.25em 0.25em;
-}
-.pdf-container {
-  background-color: var(--pdf-background);
-  margin: 0 0.25em 0.25em 0.25em;
-  border-bottom-left-radius: 0.3em;
-  border-bottom-right-radius: 0.3em;
-}
-.markdown-source-view.mod-cm6 .pdf-embed .edit-block-button {
-  background: transparent;
-  top: 0.25em;
-}
-
-/* Query embed */
-.internal-query .search-result-container {
-  padding: 0 1em 1em 1em;
-  max-height: 800px;
-  overflow: auto;
-  border: none;
-  background-color: var(--background-secondary);
-  background-color: transparent;
-  border-radius: 0;
-}
-.internal-query .internal-query-header {
-  padding: 0.5em 0 0.5em 1em;
-  color: var(--text-normal);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-@media (hover: hover) {
-  .markdown-source-view.mod-cm6
-    .cm-embed-block:not(.cm-table-widget):has(> .internal-query):hover {
-    box-shadow: none;
-  }
-}
-
-/* Iframe embed */
-.markdown-source-view iframe,
-.markdown-reading-view iframe {
-  background-color: var(--embed-background);
-  border-bottom: var(--embed-border-bottom);
-  border-inline-start: var(--embed-border-left);
-  border-radius: var(--radius-m);
-  border-inline-end: var(--embed-border-right);
-  border-top: var(--embed-border-top);
-  height: 20em;
-  width: 100%;
-}
-/* #endregion */
-/* #region     Blocks and Callouts */
-.callout {
-  /* Embeds and dataviews would normally have a background colour, but we skip it inside a callout because it can look messy. */
-  --embed-background: transparent;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75em;
-}
-.callout .callout-title {
-  margin-inline-start: -0.5em;
-}
-.callout.is-collapsible .callout-title {
-  cursor: pointer;
-}
-.callout .callout-content {
-  margin-top: 0;
-  padding-top: 0;
-
-  & p:first-child {
+  .callout .callout-content {
     margin-top: 0;
+    padding-top: 0;
+
+    & p:first-child {
+      margin-top: 0;
+    }
+
+    & p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media (hover: hover) {
+    .callout.is-collapsible .callout-title:hover {
+      text-decoration: underline;
+    }
   }
 
-  & p:last-child {
-    margin-bottom: 0;
+  .markdown-source-view.mod-cm6 .edit-block-button,
+  .markdown-source-view .code-block-flair {
+    top: 0.25em;
+    right: 0.25em;
   }
-}
-@media (hover: hover) {
-  .callout.is-collapsible .callout-title:hover {
-    text-decoration: underline;
+  .markdown-source-view.mod-cm6 .code-block-flair {
+    width: auto;
+    min-width: 2em;
+    text-wrap: nowrap;
   }
-}
+  body:not(.is-mobile) {
+    .cm-content .cm-embed-block[contenteditable="false"]:has(.edit-block-button) {
+      position: relative;
+    }
+    /* Move edit controls to the sidebar outside the block */
+    .cm-content .cm-embed-block .edit-block-button,
+    .cm-content .bases-embed .edit-block-button,
+    .markdown-source-view.mod-cm6 .code-block-flair {
+      top: 0;
+      right: auto;
+      left: 100%;
+    }
+    .markdown-source-view.mod-cm6.is-readable-line-width
+      .cm-content
+      .cm-embed-block
+      .edit-block-button,
+      .markdown-source-view.mod-cm6.is-readable-line-width
+      .cm-content
+      .bases-embed
+      .edit-block-button,
+    .markdown-source-view.mod-cm6.is-readable-line-width
+      .markdown-source-view.mod-cm6
+      .code-block-flair {
+      left: calc(100% + 0.5em);
+    }
+  }
 
-.markdown-source-view.mod-cm6 .edit-block-button,
-.markdown-source-view .code-block-flair {
-  top: 0.25em;
-  right: 0.25em;
-}
-.markdown-source-view.mod-cm6 .code-block-flair {
-  width: auto;
-  min-width: 2em;
-  text-wrap: nowrap;
-}
-body:not(.is-mobile) {
-  .cm-content .cm-embed-block[contenteditable="false"]:has(.edit-block-button) {
+  .markdown-source-view.is-live-preview span.cm-blockid {
+    background: transparent;
+    border-radius: var(--radius-s);
+    border: solid 1px var(--theme-color-blockId);
+    color: var(--theme-color-blockId);
+    line-height: 1.25em;
+    padding: 0 0.25em;
+    margin-top: 0;
+    vertical-align: baseline;
+  }
+  /* #endregion */
+  /* #region Lists */
+    .list-bullet:after {
+      border: solid 1px var(--list-marker-color);
+    }
+    body.theme-setting-differentiateBulletLevels {
+      .markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after,
+      .markdown-preview-view .el-ul > ul > li > .list-bullet:after {
+        background-color: var(--list-marker-color);
+      }
+      .markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet:after,
+      .markdown-preview-view .el-ul > ul > li > ul > li > .list-bullet:after {
+        background-color: transparent;
+      }
+      .markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after,
+      .markdown-preview-view
+        .el-ul
+        > ul
+        > li
+        > ul
+        > li
+        > ul
+        > li
+        > .list-bullet:after {
+        border-radius: 0;
+        background-color: var(--list-marker-color);
+      }
+      .markdown-source-view.mod-cm6 .HyperMD-list-line-4 .list-bullet:after,
+      .markdown-preview-view
+        .el-ul
+        > ul
+        > li
+        > ul
+        > li
+        > ul
+        > li
+        > ul
+        > li
+        > .list-bullet:after {
+        border-radius: 0;
+        background-color: transparent;
+      }
+    }
+
+  /* #endregion */
+  /* #region Diagrams */
+    .mermaid {
+      --theme-color-mermaidBorder: black;
+      text-align: center;
+    }
+    .mermaid svg[aria-roledescription="pie"] .pieCircle,
+    .mermaid svg[aria-roledescription="pie"] .legend rect {
+      stroke: var(--theme-color-mermaidBorder) !important;
+    }
+    .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(1),
+    .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(1) rect {
+      fill: var(--color-red) !important;
+    }
+    .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(2),
+    .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(2) rect {
+      fill: var(--color-cyan) !important;
+    }
+    .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(3),
+    .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(3) rect {
+      fill: var(--color-orange) !important;
+    }
+    .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(4),
+    .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(4) rect {
+      fill: var(--color-blue) !important;
+    }
+    .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(5),
+    .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(5) rect {
+      fill: var(--color-yellow) !important;
+    }
+    .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(6),
+    .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(6) rect {
+      fill: var(--color-purple) !important;
+    }
+    .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(7),
+    .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(7) rect {
+      fill: var(--color-green) !important;
+    }
+    .mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(8),
+    .mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(8) rect {
+      fill: var(--color-pink) !important;
+    }
+  /* #endregion */
+  /* #region  Other typography */
+    ::spelling-error {
+      text-decoration: wavy var(--color-red) underline from-font;
+    }
+
+    /* Horizontal rule */
+    .markdown-source-view.mod-cm6 hr,
+    .markdown-rendered hr {
+      display: flex;
+      align-items: center;
+      border: none;
+      border-top: var(--hr-thickness) solid;
+      border-color: var(--hr-color);
+      margin: 2em 0;
+    }
+  /* #endregion */
+  /* #region Callouts */
+    .markdown-source-view .HyperMD-quote,
+    .callout {
+      font-weight: 300;
+    }
+  /* #endregion */
+  /* #region Code */
+    /* Inline code */
+    .cm-s-obsidian .cm-inline-code:not(.cm-formatting),
+    .markdown-rendered code {
+      padding: 0.25em 0.5em;
+    }
+
+    /* Code blocks */
+      .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock:not(.HyperMD-list-line){
+        /* Matched to --callout-padding */
+        padding-inline-start: 1.5em;
+        padding-inline-end: 1.5em;
+      }
+      body.theme-setting-codeBlockLineNumbers {
+        .markdown-source-view.mod-cm6 {
+          .cm-line.HyperMD-codeblock-begin
+            + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end) {
+            counter-reset: codeLineCount 0;
+          }
+          .cm-line.HyperMD-codeblock-begin + .cm-line.HyperMD-codeblock,
+          .cm-line.HyperMD-codeblock
+            + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end) {
+            counter-increment: codeLineCount 1;
+            position: relative;
+            padding-inline-start: 1em;
+          }
+          .cm-line.HyperMD-codeblock-begin + .cm-line.HyperMD-codeblock:before,
+          .cm-line.HyperMD-codeblock
+            + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end):before {
+            content: counter(codeLineCount, decimal) " ";
+            text-align: right;
+            width: 3em;
+            margin-inline-end: 1em;
+            align-items: flex-end;
+            justify-content: flex-end;
+            opacity: 0.25;
+            font-size: 0.8em;
+          }
+        }
+      }
+
+    /* #endregion */
+  /* #region Invalid frontmatter */
+    .cm-line:has(.cm-hmd-frontmatter .is-invalid) {
+      background-color: rgba(var(--callout-error), 0.1);
+    }
+    .metadata-error-container {
+      background: none;
+      padding: 0;
+      border-radius: 0;
+    }
+  /* #endregion */
+  /* #region   Markdown Checkboxes */
+    .markdown-source-view.mod-cm6 .task-list-label .task-list-item-checkbox {
+      border-radius: 0.33em;
+      border-radius: var(--checkbox-radius);
+      border-color: var(--theme-color-controlContentArea);
+      /* Needs room at left for collapse indicator */
+      margin-inline-start: 1em;
+      margin-inline-end: 0.25em;
+    }
+    @media (hover: hover) {
+      .markdown-source-view.mod-cm6 .task-list-label .task-list-item-checkbox:hover {
+        border-color: var(--theme-color-controlContentArea);
+        background-color: var(--theme-color-controlContentAreaHover);
+      }
+    }
+  /* #endregion */
+  /* #region     Footnotes */
+    .cm-s-obsidian span.cm-footref.cm-inline-footnote.cm-formatting-inline-footnote,
+    .cm-s-obsidian span.cm-footref.cm-hmd-barelink.cm-formatting,
+    .cm-s-obsidian span.cm-formatting-image,
+    .cm-s-obsidian span.cm-formatting-link-string,
+    .cm-s-obsidian span.cm-formatting-link {
+      color: var(--link-color);
+    }
+    .cm-s-obsidian span.cm-footref.cm-hmd-barelink,
+    .cm-s-obsidian span.cm-blockid {
+      color: var(--link-color);
+    }
+    .cm-s-obsidian .cm-line.HyperMD-footnote span.cm-hmd-footnote,
+    .cm-s-obsidian .cm-line.HyperMD-footnote span.cm-hmd-footnote .cm-underline {
+      color: var(--link-color);
+    }
+  /* #endregion */
+/* #endregion */
+/* #region Typography for markup and controls associated with user's text - src/typography_meta.css */
+  /* Markdown formatting shown while editing e.g. ### for headings */
+  .cm-formatting.cm-formatting-header {
+    color: var(--theme-color-textMeta);
+    font-weight: normal;
+    vertical-align: middle;
+  }
+
+  /* Line numbers */
+  .markdown-source-view.mod-cm6 .cm-gutters {
+    color: var(--theme-color-lineNumbers) !important;
+  }
+
+  /* Highlight active line setting */
+  body.theme-setting-highlightActiveLine {
+    .markdown-source-view.mod-cm6 {
+      .cm-active:not(.HyperMD-codeblock) {
+        background-color: var(--theme-color-activeLineHighlight);
+        border-radius: var(--theme-length-radiusXS);
+      }
+    }
+  }
+
+  /* #region     Collapse indicators */
+  /* TODO: re-do collapse indicators */
+  /* Appearance consistent with navigation controls */
+  /* .collapse-indicator,
+  .list-collapse-indicator {
+    background-color: var(--background-primary);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: var(--theme-length-collapseIndicatorSize);
+    height: var(--theme-length-collapseIndicatorSize);
+    border: none;
+    color: var(--theme-color-control);
+    flex-wrap: wrap;
+  }
+  @media (hover: hover) {
+    .collapse-indicator:hover,
+    .cm-fold-indicator:hover .collapse-indicator,
+    .list-collapse-indicator:hover,
+    .view-content .cm-fold-indicator:hover svg.svg-icon,
+    .view-content .list-collapse-indicator:hover svg.svg-icon,
+    .view-content .collapse-indicator:hover svg.svg-icon {
+      color: var(--theme-color-controlTextHover);
+      background-color: var(--theme-color-navigationButtonBgHover);
+    }
+  }
+  .markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
+    height: var(--theme-length-collapseIndicatorSize);
+    top: 50%;
+    margin-top: calc(-0.5 * var(--theme-length-collapseIndicatorSize));
+    padding: 0;
+  }
+  .markdown-source-view.mod-cm6.is-live-preview
+    .cm-line:not(.HyperMD-task-line)
+    .cm-fold-indicator
+    .collapse-indicator {
+    margin-inline-end: 1.75rem;
+    padding-inline-end: 0;
+    transform: translateX(1.25rem);
+  }
+  .markdown-preview-view h1,
+  .markdown-preview-view h2,
+  .markdown-preview-view h3,
+  .markdown-preview-view h4,
+  .markdown-preview-view h5,
+  .markdown-preview-view h6 {
     position: relative;
   }
-  /* Move edit controls to the sidebar outside the block */
-  .cm-content .cm-embed-block .edit-block-button,
-  .cm-content .bases-embed .edit-block-button,
-  .markdown-source-view.mod-cm6 .code-block-flair {
-    top: 0;
-    right: auto;
-    left: 100%;
+  .markdown-preview-view .heading-collapse-indicator {
+    margin-inline-start: -2rem;
+    top: auto;
   }
-  .markdown-source-view.mod-cm6.is-readable-line-width
-    .cm-content
-    .cm-embed-block
-    .edit-block-button,
-    .markdown-source-view.mod-cm6.is-readable-line-width
-    .cm-content
-    .bases-embed
-    .edit-block-button,
-  .markdown-source-view.mod-cm6.is-readable-line-width
+  .markdown-preview-view h1 .heading-collapse-indicator {
+    bottom: 0.5em;
+  }
+  .markdown-preview-view h2 .heading-collapse-indicator {
+    bottom: 0.45em;
+  }
+  .markdown-preview-view h3 .heading-collapse-indicator {
+    bottom: 0.4em;
+  }
+  .markdown-preview-view h4 .heading-collapse-indicator {
+    bottom: 0.3em;
+  }
+  .markdown-preview-view h5 .heading-collapse-indicator {
+    bottom: 0.2em;
+  }
+  .markdown-preview-view h6 .heading-collapse-indicator {
+    bottom: 0.1em;
+  }
+  .markdown-rendered .list-collapse-indicator {
+    padding-inline-end: 0;
+  }
+  li.is-collapsed .list-bullet:after,
+  .is-collapsed ~ .cm-formatting-list .list-bullet:after {
+    box-shadow: none;
+  }
+  @media (hover: hover) {
+    /* li.is-collapsed .list-collapse-indicator:hover ~ .list-bullet:after,
+    li.is-collapsed .cm-fold-indicator:hover ~ .list-bullet:after,
+    .list-collapse-indicator:hover.is-collapsed ~ .list-bullet:after,
+    .cm-fold-indicator:hover.is-collapsed ~ .list-bullet:after,
+    li.is-collapsed
+      .list-collapse-indicator:hover
+      ~ .cm-formatting-list
+      .list-bullet:after,
+    li.is-collapsed
+      .cm-fold-indicator:hover
+      ~ .cm-formatting-list
+      .list-bullet:after,
+    .list-collapse-indicator:hover.is-collapsed
+      ~ .cm-formatting-list
+      .list-bullet:after,
+    .cm-fold-indicator:hover.is-collapsed
+      ~ .cm-formatting-list
+      .list-bullet:after {
+      background-color: var(--list-marker-color-collapsed);
+      box-shadow: none;
+    }
+
+    .list-collapse-indicator:hover ~ .list-bullet:after,
+    .cm-fold-indicator:hover ~ .list-bullet:after,
+    .list-collapse-indicator:hover ~ .cm-formatting-list .list-bullet:after,
+    .cm-fold-indicator:hover ~ .cm-formatting-list .list-bullet:after {
+      box-shadow: none;
+    }
+  } */
+  /* #endregion */
+
+  /* #region     Embeds */
+    .markdown-embed,
+    .bases-embed,
+    .pdf-embed,
+    .media-embed,
+    .internal-query {
+      background-color: var(--embed-background);
+      border-bottom: var(--embed-border-bottom);
+      border-inline-start: var(--embed-border-left);
+      border-radius: var(--radius-m);
+      border-inline-end: var(--embed-border-right);
+      border-top: var(--embed-border-top);
+      margin: 0;
+    }
+    /* I'm treating images as a special case, because they don't have any controls and a colored surround would often be distracting. */
+    .internal-embed.image-embed {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      margin: 0;
+    }
+
+    .markdown-embed .embed-title {
+      font-size: var(--font-ui-small);
+      font-weight: var(--nav-item-weight-hover);
+      color: var(--background-modifier-hover);
+      margin: 0 2rem 0 0;
+      align-items: center;
+      display: none;
+    }
+
+    body.theme-setting-embeddedNoteTitleVisibilityHide .embed-title {
+      display: none;
+    }
+    body.theme-setting-embeddedNoteTitleVisibilityShow
+      .internal-embed:has(.embed-title:not(:empty)) {
+      padding-top: 0.5rem;
+    }
+    body.theme-setting-embeddedNoteTitleVisibilityShow .embed-title {
+      display: flex;
+    }
+    @media (hover: hover) {
+      body.theme-setting-embeddedNoteTitleVisibilityHover
+        .internal-embed:has(.embed-title:not(:empty)) {
+        padding-top: 1.5rem;
+      }
+      body.theme-setting-embeddedNoteTitleVisibilityHover
+        .internal-embed:has(.embed-title:not(:empty)):hover
+        .embed-title {
+        display: flex;
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+      }
+    }
+    .markdown-embed .markdown-embed-content {
+      height: fit-content;
+      max-height: var(--embed-max-height);
+      overflow: auto;
+    }
     .markdown-source-view.mod-cm6
-    .code-block-flair {
-    left: calc(100% + 0.5em);
-  }
-}
-
-.markdown-source-view.is-live-preview span.cm-blockid {
-  background: transparent;
-  border-radius: var(--radius-s);
-  border: solid 1px var(--theme-color-blockId);
-  color: var(--theme-color-blockId);
-  line-height: 1.25em;
-  padding: 0 0.25em;
-  margin-top: 0;
-  vertical-align: baseline;
-}
-/* #endregion */
-
-/********** Diagrams **********/
-.mermaid {
-  --theme-color-mermaidBorder: black;
-  text-align: center;
-}
-.mermaid svg[aria-roledescription="pie"] .pieCircle,
-.mermaid svg[aria-roledescription="pie"] .legend rect {
-  stroke: var(--theme-color-mermaidBorder) !important;
-}
-.mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(1),
-.mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(1) rect {
-  fill: var(--color-red) !important;
-}
-.mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(2),
-.mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(2) rect {
-  fill: var(--color-cyan) !important;
-}
-.mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(3),
-.mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(3) rect {
-  fill: var(--color-orange) !important;
-}
-.mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(4),
-.mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(4) rect {
-  fill: var(--color-blue) !important;
-}
-.mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(5),
-.mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(5) rect {
-  fill: var(--color-yellow) !important;
-}
-.mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(6),
-.mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(6) rect {
-  fill: var(--color-purple) !important;
-}
-.mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(7),
-.mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(7) rect {
-  fill: var(--color-green) !important;
-}
-.mermaid svg[aria-roledescription="pie"] .pieCircle:nth-of-type(8),
-.mermaid svg[aria-roledescription="pie"] .legend:nth-of-type(8) rect {
-  fill: var(--color-pink) !important;
-}
-/* #endregion */
-/* #region   Source and Live Preview modes */
-/* #region     Codeblocks */
-body.theme-setting-codeBlockLineNumbers {
-  .markdown-source-view.mod-cm6 {
-    .cm-line.HyperMD-codeblock-begin
-      + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end) {
-      counter-reset: codeLineCount 0;
-    }
-    .cm-line.HyperMD-codeblock-begin + .cm-line.HyperMD-codeblock,
-    .cm-line.HyperMD-codeblock
-      + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end) {
-      counter-increment: codeLineCount 1;
+      .cm-content
+      > .markdown-embed[contenteditable="false"]:has(.markdown-embed-link) {
       position: relative;
-      padding-inline-start: 1em;
     }
-    .cm-line.HyperMD-codeblock-begin + .cm-line.HyperMD-codeblock:before,
-    .cm-line.HyperMD-codeblock
-      + .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-end):before {
-      content: counter(codeLineCount, decimal) " ";
-      text-align: right;
-      width: 3em;
-      margin-inline-end: 1em;
-      align-items: flex-end;
-      justify-content: flex-end;
-      opacity: 0.25;
-      font-size: 0.8em;
+    .markdown-embed-link {
+      position: absolute;
+      top: 0;
+      right: auto;
+      left: calc(100% + 0.25em);
     }
-  }
-}
-/* #endregion */
-body.theme-setting-highlightActiveLine {
-  .markdown-source-view.mod-cm6 {
-    .cm-active:not(.HyperMD-codeblock) {
-      background-color: var(--theme-color-activeLineHighlight);
-      border-radius: var(--theme-length-radiusXS);
+    .file-embed-link {
+      position: absolute;
+      top: 0;
+      right: 0;
     }
-  }
-}
-/* #region     Line numbers */
-.markdown-source-view.mod-cm6 .cm-gutters {
-  color: var(--theme-color-lineNumbers) !important;
-}
+    /* #region       Image positioning and styling */
 
-body:not(.is-mobile) {
-  .markdown-source-view {
-    .cm-gutters {
-      margin-inline-end: 0;
+    /* We'll sometimes have images inside columns, so we'd like them to fit into the available space. */
+    .markdown-source-view.mod-cm6 .cm-content > img,
+    .markdown-source-view.mod-cm6 .cm-content .image-embed img,
+    .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img {
+      max-width: 100%;
     }
-    .cm-editor .cm-gutter {
-      margin-inline-start: -3em;
-    }
-    .cm-editor .cm-lineNumbers .cm-gutterElement {
-      min-width: 2em;
-    }
-  }
-}
-/* #endregion */
-/* #endregion */
-/* #region   Source mode */
-.markdown-source-view:not(.is-live-preview) .cm-scroller {
-  font-family: var(--font-monospace);
-}
-/* #endregion */
-/* #region   Live Preview mode */
-.cm-line:has(.cm-hmd-frontmatter .is-invalid) {
-  background-color: rgba(var(--callout-error), 0.1);
-}
-.ͼ1 .cm-lineWrapping,
-.markdown-reading-view {
-  text-wrap: pretty;
-}
-/* #region     Lists */
-.list-bullet:after {
-  border: solid 1px var(--list-marker-color);
-}
-body.theme-setting-differentiateBulletLevels {
-  .markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after,
-  .markdown-preview-view .el-ul > ul > li > .list-bullet:after {
-    background-color: var(--list-marker-color);
-  }
-  .markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet:after,
-  .markdown-preview-view .el-ul > ul > li > ul > li > .list-bullet:after {
-    background-color: transparent;
-  }
-  .markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after,
-  .markdown-preview-view
-    .el-ul
-    > ul
-    > li
-    > ul
-    > li
-    > ul
-    > li
-    > .list-bullet:after {
-    border-radius: 0;
-    background-color: var(--list-marker-color);
-  }
-  .markdown-source-view.mod-cm6 .HyperMD-list-line-4 .list-bullet:after,
-  .markdown-preview-view
-    .el-ul
-    > ul
-    > li
-    > ul
-    > li
-    > ul
-    > li
-    > ul
-    > li
-    > .list-bullet:after {
-    border-radius: 0;
-    background-color: transparent;
-  }
-}
-/* #endregion */
-/* #region     Footnotes */
-.cm-s-obsidian span.cm-footref.cm-inline-footnote.cm-formatting-inline-footnote,
-.cm-s-obsidian span.cm-footref.cm-hmd-barelink.cm-formatting,
-.cm-s-obsidian span.cm-formatting-image,
-.cm-s-obsidian span.cm-formatting-link-string,
-.cm-s-obsidian span.cm-formatting-link {
-  color: var(--link-color);
-}
-.cm-s-obsidian span.cm-footref.cm-hmd-barelink,
-.cm-s-obsidian span.cm-blockid {
-  color: var(--link-color);
-}
-.cm-s-obsidian .cm-line.HyperMD-footnote span.cm-hmd-footnote,
-.cm-s-obsidian .cm-line.HyperMD-footnote span.cm-hmd-footnote .cm-underline {
-  color: var(--link-color);
-}
-/* #endregion */
-/* #endregion */
-/* #region   Reading view */
-.metadata-error-container {
-  background: none;
-  padding: 0;
-  border-radius: 0;
-}
-/* #endregion */
-/* #region   Obsidian UI */
-body {
-  --font-ui-smaller: 0.7rem;
-  --font-ui-small: 0.8rem;
-  --font-ui-medium: 1rem;
-  --font-ui-large: 1.125rem;
-  --line-height-normal: 1.5;
-  --line-height-tight: 1.3;
-}
-/* Standard size for settings headings */
-.modal.mod-settings .setting-item-heading,
-.modal.mod-settings h2,
-.modal.mod-settings h3,
-.modal.mod-settings h4,
-summary.excalidraw-setting-h1 {
-  padding: 0;
-  margin: 1em 0 0.5rem 0;
-  font-size: var(--font-ui-large);
-  font-weight: var(--font-semibold);
+    body.theme-setting-enableImageAdjustmentWithAltText {
+      /* Center images */
+      .markdown-source-view.mod-cm6 .cm-content > img[alt~=center],
+      .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=center] img,
+      .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img[alt~=center] {
+        display: block;
+        margin: 0 auto !important;
+      }
+      .markdown-preview-view img[alt~=center] {
+        display: block;
+        margin: 0 auto;
+      }
+      /* Float images left/right */
+      /* Unfortunately, floats make live preview mode confused about how to assign line numbers. Left/right floating only applies to reading view */
+      .markdown-preview-view img[alt~=right] {
+        margin: 0 0 1em 1em !important;
+        float: right;
+      }
+      .markdown-preview-view img[alt~=left] {
+        margin: 0 1em 1em 0 !important;
+        float: left;
+      }
 
-  .setting-item-name {
-    font-size: inherit;
-  }
-}
+      /* Round corners of images */
+      .markdown-source-view.mod-cm6 .cm-content > img[alt~=round],
+      .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=round] img,
+      .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img[alt~=round],
+      .markdown-preview-view img[alt~=round],
+      .markdown-preview-view .image-embed[alt~=round] img {
+        border-radius: 0.5em;
+      }
+      .markdown-source-view.mod-cm6 .cm-content > img[alt~=circle],
+      .markdown-source-view.mod-cm6 .cm-content .image-embed[alt~=circle] img,
+      .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img[alt~=circle],
+      .markdown-preview-view img[alt~=circle],
+      .markdown-preview-view .image-embed[alt~=circle] img {
+        border-radius: var(--theme-length-fullBorderRadius);
+      }
+    }
+    body.theme-setting-centerImages {
+      .markdown-source-view.mod-cm6 .cm-content > img,
+      .markdown-source-view.mod-cm6 .cm-content .image-embed img,
+      .markdown-source-view.mod-cm6 .cm-content > .cm-line .cm-html-embed img {
+        display: block;
+        margin: 0 auto !important;
+      }
+      .markdown-preview-view img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    /* #endregion */
+    /* Audio embed */
+    /* Not technically an embed, but when we've opened an audio file directly in fiule navigation we ant to see the same controls. */
+    .video-container > audio {
+      background-color: var(--embed-background);
+      border-bottom: var(--embed-border-bottom);
+      border-inline-start: var(--embed-border-left);
+      border-radius: var(--radius-m);
+      border-inline-end: var(--embed-border-right);
+      border-top: var(--embed-border-top);
+      margin: 0;
+    }
+    .markdown-source-view.mod-cm6 .cm-content > .media-embed:has(> audio) {
+      display: flex;
+    }
+    audio::-webkit-media-controls-enclosure {
+      border: none;
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      max-height: none;
+      line-height: 0;
+    }
+    audio::-webkit-media-controls-panel {
+      background: transparent;
+      border: none;
+      padding: 0.25rem;
+      border-radius: var(--radius-m);
+    }
+
+    /* Video embed */
+    /* Not technically an embed, but when we've opened an audio file directly in fiule navigation we ant to see the same controls. */
+    .cm-html-embed > video,
+    .markdown-reading-view video {
+      background-color: var(--embed-background);
+      border-bottom: var(--embed-border-bottom);
+      border-inline-start: var(--embed-border-left);
+      border-radius: var(--radius-m);
+      border-inline-end: var(--embed-border-right);
+      border-top: var(--embed-border-top);
+      margin: 0;
+    }
+
+    /* Markdown embed e.g. embedded note */
+    .markdown-embed .markdown-rendered .mod-header {
+      margin-bottom: 0;
+    }
+
+    /* PDF embed */
+    .pdf-toolbar {
+      background-color: transparent;
+      border-bottom: none;
+      padding: 0.25em 2.25em 0.25em 0.25em;
+    }
+    .pdf-container {
+      background-color: var(--pdf-background);
+      margin: 0 0.25em 0.25em 0.25em;
+      border-bottom-left-radius: 0.3em;
+      border-bottom-right-radius: 0.3em;
+    }
+    .markdown-source-view.mod-cm6 .pdf-embed .edit-block-button {
+      background: transparent;
+      top: 0.25em;
+    }
+
+    /* Query embed */
+    .internal-query .search-result-container {
+      padding: 0 1em 1em 1em;
+      max-height: 800px;
+      overflow: auto;
+      border: none;
+      background-color: var(--background-secondary);
+      background-color: transparent;
+      border-radius: 0;
+    }
+    .internal-query .internal-query-header {
+      padding: 0.5em 0 0.5em 1em;
+      color: var(--text-normal);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    @media (hover: hover) {
+      .markdown-source-view.mod-cm6
+        .cm-embed-block:not(.cm-table-widget):has(> .internal-query):hover {
+        box-shadow: none;
+      }
+    }
+
+    /* Iframe embed */
+    .markdown-source-view iframe,
+    .markdown-reading-view iframe {
+      background-color: var(--embed-background);
+      border-bottom: var(--embed-border-bottom);
+      border-inline-start: var(--embed-border-left);
+      border-radius: var(--radius-m);
+      border-inline-end: var(--embed-border-right);
+      border-top: var(--embed-border-top);
+      height: 20em;
+      width: 100%;
+    }
+  /* #endregion */
+
 /* #endregion */
-/* #region   Markdown Checkboxes */
-.markdown-source-view.mod-cm6 .task-list-item-checkbox {
-  border-radius: 0.33em;
-  border-radius: var(--checkbox-radius);
-  border-color: var(--theme-color-controlContentArea);
-  /* Needs room at left for collapse indicator */
-  margin-inline-start: 1em;
-  margin-inline-end: 0.25em;
-}
-@media (hover: hover) {
-  .markdown-source-view.mod-cm6 .task-list-item-checkbox:hover {
-    border-color: var(--theme-color-controlContentArea);
-    background-color: var(--theme-color-controlContentAreaHover);
-  }
-}
-/* #endregion */
+/* #region Typography for Obsidian UI - src/typography_ui.css */
+  /* #region  Fonts */
+    body {
+      /* Use the system font by default for both text and interface, unless user has chosen something else.  */
+      --font-default: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      --font-interface-theme: var(--font-default);
+      --font-ui-smaller: 0.7rem;
+      --font-ui-small: 0.8rem;
+      --font-ui-medium: 1rem;
+      --font-ui-large: 1.125rem;
+      --line-height-normal: 1.5;
+      --line-height-tight: 1.3;
+    }
+  /* #endregion */
+  /* #region  Headings - Settings */
+    /* Standard size for settings headings */
+    .modal.mod-settings .setting-item-heading,
+    .modal.mod-settings h2,
+    .modal.mod-settings h3,
+    .modal.mod-settings h4,
+    summary.excalidraw-setting-h1 {
+      padding: 0;
+      margin: 1em 0 0.5rem 0;
+      font-size: var(--font-ui-large);
+      font-weight: var(--font-semibold);
+
+      .setting-item-name {
+        font-size: inherit;
+      }
+    }
+  /* #endregion */
+
 /* #endregion */
 
 /* #region Alternative Checkboxes */
@@ -4389,6 +4388,148 @@ body.mod-windows {
 /* #region   Linux window frame styles */
 .mod-linux {
 }
+/* #endregion */
+/* #region Content area - src/workspace/content_area.css */
+  /* #region Order of items in content area */
+
+    .inline-title {
+      order: 0;
+    }
+    .mod-root .metadata-container,
+    .setting-properties-position-above
+      .mod-root
+      .is-live-preview
+      .metadata-container {
+      order: 1;
+    }
+    .setting-properties-position-below
+      .mod-root
+      .is-live-preview
+      .metadata-container {
+      margin-top: 1em;
+      order: 3;
+    }
+    .setting-properties-position-below
+      .mod-root
+      .is-live-preview
+      .embedded-backlinks {
+      padding: 0 2rem 0.5rem 2rem;
+    }
+    body:not(.setting-properties-position-below)
+      .mod-root
+      .is-live-preview
+      .embedded-backlinks {
+      margin-top: 1em;
+    }
+    .cm-contentContainer {
+      order: 2;
+    }
+    .embedded-backlinks {
+      order: 3;
+    }
+
+
+  /* #endregion */
+  /* #region Header  */
+    .view-header {
+      height: auto; /* Don't use --header-height */
+      justify-content: space-between;
+      padding: 0.5em;
+    }
+    .view-header.is-highlighted:after {
+      background-color: var(--theme-color-baseTransparent50);
+    }
+    .view-header-title-container {
+      display: none;
+    }
+    .show-inline-title .view-header-title-container {
+      display: flex;
+    }
+    .view-header-title {
+      display: none;
+    }
+    .show-inline-title.is-focused .workspace-leaf.mod-active .view-header-title {
+      /* Use the "Display Inline Title" setting to show/hide the title in the header. */
+      display: block;
+    }
+
+    @media (hover: hover) {
+      .view-header-title-parent .view-header-breadcrumb:hover {
+        background: transparent;
+        cursor: auto;
+      }
+    }
+  /* #endregion */
+  /* #region Content */
+    /* Reset containers so that metadata properties can go full width */
+    .view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
+      padding: 0;
+    }
+    .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer,
+    .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+      max-width: none;
+      width: 100%;
+    }
+
+    .cm-contentContainer {
+      justify-content: center;
+      /* Allow space at left and right when note is narrow */
+      padding: 1rem calc( var(--input-width) + 0.5rem);
+    }
+
+    /* Override inline styles — Obsidian injects a large padding-bottom on these
+      as inline styles; zero it out so the page ends where content ends */
+    .cm-content {
+      padding-bottom: 0 !important;
+    }
+    .markdown-preview-sizer {
+
+      padding-bottom: 0 !important;
+    }
+
+
+    /* TODO: restore readable line width */
+
+    /* #region Inline title (i.e. filename) */
+    .inline-title {
+      width: 100%;
+      margin: 0 auto;
+      max-width: var(--file-line-width);
+      padding: 0 2rem;
+      text-align: center;
+    }
+  .view-header-title-container {
+    display: none;
+  }
+  .show-inline-title .view-header-title-container {
+    display: flex;
+  }
+  /* #endregion */
+  /* #endregion  */
+  /* #region Note metadata containers */
+    .mod-root .metadata-container,
+    .embedded-backlinks {
+      animation: 0.5s 1 alternate fadein;
+      background-color: var(--metadata-property-background);
+      border-radius: 0;
+      border: 0;
+      font-family: var(--font-interface);
+      margin: 0;
+      padding: 0.5rem 2rem;
+      transform: none;
+      width: 100%;
+
+      &.mod-error {
+        background-color: rgba(var(--callout-error), 0.1);
+      }
+    }
+    body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
+      width: calc(100% + 4rem);
+      margin: 0;
+    }
+  /* #endregion */
 /* #endregion */
 
 /* #region Shared UI Elements */
@@ -6113,205 +6254,6 @@ body.theme-setting-enableIconsInSettings {
   border-radius: 0;
 }
 
-/* #endregion */
-/* #region   Content area */
-
-/* Allow metadata properties to go full width */
-.view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
-  padding: 0;
-}
-.markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer,
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  max-width: none;
-  width: 100%;
-}
-.markdown-reading-view .mod-footer {
-  margin: 1em 0 0 0;
-}
-.markdown-reading-view .markdown-rendered {
-  padding: 0;
-}
-
-.markdown-source-view .cm-contentContainer {
-  padding: 1rem 2rem;
-}
-
-.mod-sidedock .markdown-source-view .cm-contentContainer {
-  padding: 0 0;
-}
-
-
-.markdown-source-view.is-live-preview.mod-cm6.is-readable-line-width .cm-content {
-  width: 100%;
-  max-width: 100%;
-
-  > div:not(.cm-table-widget) {
-    box-sizing: border-box;
-    padding-inline: max(1rem, calc((100% - var(--file-line-width)) / 2));
-  }
-
-  > .cm-table-widget {
-    padding-inline: 0;
-
-    > .table-wrapper {
-      box-sizing: border-box;
-      margin: 0 auto;
-      max-width: var(--file-line-width);
-    }
-  }
-}
-
-
-.markdown-preview-view .markdown-preview-sizer {
-  > div:not(.el-table) {
-    box-sizing: border-box;
-    padding-inline: max(2rem, calc((100% - var(--file-line-width)) / 2));
-  }
-  > .el-table {
-    padding-inline: 0;
-
-    > table {
-      margin: 0 auto;
-      max-width: var(--file-line-width);
-    }
-  }
-
-  > div.mod-header,
-  > div.mod-footer {
-    margin: 0;
-    max-width: none;
-    padding: 0;
-  }
-}
-
-/* Allow tables to extend into the left and right margins */
-.theme-setting-wideTables {
-  .markdown-source-view.is-live-preview.mod-cm6.is-readable-line-width .cm-content {
-    > .cm-table-widget > .table-wrapper {
-      max-width: 100%;
-    }
-  }
-  .markdown-preview-view .markdown-preview-sizer {
-    > .el-table > table {
-      max-width: 100%;
-    }
-  }
-}
-
-.markdown-rendered .mod-header {
-  margin-bottom: 3rem;
-}
-.is-phone .markdown-rendered .mod-header {
-  margin-bottom: 0;
-}
-/* Override inline styles — Obsidian injects a large padding-bottom on these
-   as inline styles; zero it out so the page ends where content ends */
-.cm-content {
-  padding-bottom: 0 !important;
-}
-.markdown-preview-sizer {
-  padding-bottom: 0 !important;
-}
-
-/* Order in content area */
-.inline-title {
-  order: 0;
-}
-.mod-root .metadata-container,
-.setting-properties-position-above
-  .mod-root
-  .is-live-preview
-  .metadata-container {
-  order: 1;
-}
-.setting-properties-position-below
-  .mod-root
-  .is-live-preview
-  .metadata-container {
-  margin-top: 1em;
-  order: 3;
-}
-.setting-properties-position-below
-  .mod-root
-  .is-live-preview
-  .embedded-backlinks {
-  padding: 0 2rem 0.5rem 2rem;
-}
-body:not(.setting-properties-position-below)
-  .mod-root
-  .is-live-preview
-  .embedded-backlinks {
-  margin-top: 1em;
-}
-.cm-contentContainer {
-  order: 2;
-}
-.embedded-backlinks {
-  order: 3;
-}
-
-/* Consistent styles for inline metadata sections */
-.mod-root .metadata-container,
-.embedded-backlinks {
-  animation: 0.5s 1 alternate fadein;
-  background-color: var(--metadata-property-background);
-  border-radius: 0;
-  border: 0;
-  font-family: var(--font-interface);
-  margin: 0;
-  padding: 0.5rem 2rem;
-  transform: none;
-  width: 100%;
-
-  &.mod-error {
-    background-color: rgba(var(--callout-error), 0.1);
-  }
-}
-body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
-  width: calc(100% + 4rem);
-  margin: 0;
-}
-
-/* Tab content header */
-.view-header {
-  height: auto; /* Don't use --header-height */
-  justify-content: space-between;
-  padding: 0.5em;
-}
-.view-header.is-highlighted:after {
-  background-color: var(--theme-color-baseTransparent50);
-}
-
-/* Inline title (i.e. filename) */
-.inline-title {
-  width: 100%;
-  margin: 0 auto;
-  max-width: var(--file-line-width);
-  padding: 0 2rem;
-  text-align: center;
-}
-.view-header-title-container {
-  display: none;
-}
-.show-inline-title .view-header-title-container {
-  display: flex;
-}
-.view-header-title {
-  display: none;
-}
-.show-inline-title.is-focused .workspace-leaf.mod-active .view-header-title {
-  /* Use the "Display Inline Title" setting to show/hide the title in the header. */
-  display: block;
-}
-
-@media (hover: hover) {
-  .view-header-title-parent .view-header-breadcrumb:hover {
-    background: transparent;
-    cursor: auto;
-  }
-}
 /* #endregion */
 /* #region   Properties */
 .workspace > .workspace-split:not(.mod-root) .metadata-container {

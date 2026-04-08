@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"node-text-1","type":"text","x":0,"y":0,"width":300,"height":200,"text":"# Text Node\n\nThis is a text node for theme extraction testing."},
+		{"id":"node-text-2","type":"text","x":400,"y":0,"width":300,"height":200,"text":"## Second Node\n\nAnother text node with different content."},
+		{"id":"node-file-1","type":"file","x":0,"y":300,"width":300,"height":200,"file":"general.md"},
+		{"id":"node-link-1","type":"link","x":400,"y":300,"width":300,"height":200,"url":"https://example.com"},
+		{"id":"node-group-1","type":"group","x":-50,"y":-50,"width":800,"height":600,"label":"Test Group"}
+	],
+	"edges":[
+		{"id":"edge-1","fromNode":"node-text-1","toNode":"node-text-2","fromSide":"right","toSide":"left","label":"connects to"},
+		{"id":"edge-2","fromNode":"node-text-1","toNode":"node-file-1","fromSide":"bottom","toSide":"top"}
+	]
+}

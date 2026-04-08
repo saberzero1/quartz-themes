@@ -213,6 +213,22 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
+html[saved-theme="dark"] body .bases-table thead th {
+  background-color: rgb(85, 85, 85);
+  border-color: rgb(85, 85, 85);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(85, 85, 85);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(138, 92, 245);
+}
+
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(85, 85, 85);
 }
@@ -225,6 +241,22 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="dark"] body footer {
+  opacity: 0;
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
+  background-color: rgb(55, 141, 255);
+  border-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  border-width: 0px;
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(138, 92, 245);
@@ -357,17 +389,8 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body .transclude {
   padding-bottom: 16px;
-}
-
-html[saved-theme="dark"] body .transclude-inner {
-  padding-bottom: 16px;
 }`,
-    checkboxes: `html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(218, 218, 218);
-  text-decoration-color: rgb(218, 218, 218);
-}
-
-html[saved-theme="dark"] body input[type=checkbox] {
+    checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -469,6 +492,11 @@ html[saved-theme="dark"] body hr {
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(255, 255, 255);
   font-weight: 700;
+}
+
+html[saved-theme="dark"] body .explorer .folder-outer > ul {
+  border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
   font-weight: 700;
@@ -507,6 +535,10 @@ html[saved-theme="dark"] body kbd {
   border-right-color: rgb(179, 179, 179);
   border-top-color: rgb(179, 179, 179);
   color: rgb(179, 179, 179);
+}
+
+html[saved-theme="dark"] body ul.tags > li {
+  color: rgb(138, 92, 245);
 }`,
   },
   light: {
@@ -704,6 +736,21 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
+html[saved-theme="light"] body .bases-table thead th {
+  background-color: rgb(189, 189, 189);
+  border-color: rgb(189, 189, 189);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(189, 189, 189);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(189, 189, 189);
 }
@@ -716,6 +763,22 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body footer {
+  opacity: 0;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
+  background-color: rgb(0, 128, 255);
+  border-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  border-width: 0px;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
 }`,
     links: `html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   text-decoration: underline dotted;
@@ -838,17 +901,8 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body .transclude {
   padding-bottom: 16px;
-}
-
-html[saved-theme="light"] body .transclude-inner {
-  padding-bottom: 16px;
 }`,
-    checkboxes: `html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
-}
-
-html[saved-theme="light"] body input[type=checkbox] {
+    checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -954,6 +1008,11 @@ html[saved-theme="light"] body hr {
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(34, 34, 34);
   font-weight: 700;
+}
+
+html[saved-theme="light"] body .explorer .folder-outer > ul {
+  border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
   font-weight: 700;

@@ -225,6 +225,52 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgba(255, 255, 255, 0.87);
 }
 
+html body .bases-table thead th {
+  border-color: rgb(50, 50, 50);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+html body .canvas-node {
+  border-color: rgba(255, 255, 255, 0.87);
+}
+
+html body .canvas-node-content {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+html body .canvas-node-file {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+html body .canvas-node-group {
+  border-color: rgba(255, 255, 255, 0.87);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(30, 30, 30);
+  border-color: rgba(255, 255, 255, 0.87);
+}
+
+html body .note-properties {
+  border-color: rgb(50, 50, 50);
+}
+
+html body .note-properties-key {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+html body .note-properties-row {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+html body .note-properties-tags {
+  color: rgb(46, 219, 110);
+}
+
+html body .note-properties-value {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(30, 30, 30);
   color: rgba(255, 255, 255, 0.87);
@@ -278,6 +324,20 @@ html body del {
   color: rgba(255, 255, 255, 0.87);
   outline: rgba(255, 255, 255, 0.87) none 0px;
   text-decoration-color: rgba(255, 255, 255, 0.87);
+}
+
+html body h1.article-title {
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 10.4px;
+}
+
+html body li.task-list-item input[type="checkbox"] {
+  border-color: rgba(255, 255, 255, 0.38);
+}
+
+html body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(46, 219, 110);
+  border-color: rgb(46, 219, 110);
 }
 
 html body p {
@@ -466,16 +526,11 @@ html body .transclude {
 
 html body .transclude-inner {
   border-bottom-color: rgba(255, 255, 255, 0.87);
-  border-left-color: rgb(46, 219, 110);
+  border-left-color: rgba(255, 255, 255, 0.87);
   border-right-color: rgba(255, 255, 255, 0.87);
   border-top-color: rgba(255, 255, 255, 0.87);
 }`,
-    checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration-color: rgba(255, 255, 255, 0.6);
-}
-
-html body input[type=checkbox] {
+    checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgba(255, 255, 255, 0.6);
   border-left-color: rgba(255, 255, 255, 0.6);
   border-right-color: rgba(255, 255, 255, 0.6);
@@ -744,6 +799,9 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
   color: rgba(255, 255, 255, 0.6);
   font-family: system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }`,
+    toc: `html body details.toc summary::marker {
+  color: rgba(255, 255, 255, 0.87);
+}`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgba(255, 255, 255, 0.6);
   border-left-color: rgba(255, 255, 255, 0.6);
@@ -921,6 +979,15 @@ html body summary {
 
 html body sup {
   color: rgba(255, 255, 255, 0.87);
+}
+
+html body ul.tags > li {
+  background-color: rgb(45, 45, 45);
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  color: rgba(255, 255, 255, 0.6);
 }`,
   },
   light: {},

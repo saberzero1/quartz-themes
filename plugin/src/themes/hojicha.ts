@@ -113,6 +113,23 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   background-color: rgb(22, 22, 22);
 }
 
+html body .bases-table thead th {
+  border-color: rgba(240, 140, 58, 0.4);
+  font-weight: 800;
+}
+
+html body .canvas-node-file {
+  color: rgb(173, 172, 172);
+}
+
+html body .note-properties {
+  border-color: rgba(240, 140, 58, 0.4);
+}
+
+html body .note-properties-tags {
+  border-radius: 26.25px;
+}
+
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(22, 22, 22);
 }
@@ -158,6 +175,15 @@ html body del {
   color: rgb(173, 172, 172);
   outline: rgb(173, 172, 172) none 0px;
   text-decoration-color: rgb(173, 172, 172);
+}
+
+html body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(105, 105, 105);
+}
+
+html body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(139, 171, 133);
+  border-color: rgb(139, 171, 133);
 }`,
     links: `html body a.external, html footer a {
   color: rgb(147, 155, 213);
@@ -361,10 +387,8 @@ html body .transclude {
 }
 
 html body .transclude-inner {
-  border-bottom-color: rgb(173, 172, 172);
-  border-left-color: rgb(139, 171, 133);
-  border-right-color: rgb(173, 172, 172);
-  border-top-color: rgb(173, 172, 172);
+  margin-left: 10px;
+  margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }`,
@@ -580,6 +604,9 @@ html body hr {
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(133, 150, 121);
 }`,
+    toc: `html body details.toc summary::marker {
+  color: rgb(173, 172, 172);
+}`,
     footer: `html body footer {
   border-bottom-color: rgba(240, 140, 58, 0.4);
   border-left-color: rgba(240, 140, 58, 0.4);
@@ -648,6 +675,14 @@ html body summary {
 html body sup {
   color: rgb(173, 172, 172);
   font-size: 12.5px;
+}
+
+html body ul.tags > li {
+  border-bottom-left-radius: 22.9688px;
+  border-bottom-right-radius: 22.9688px;
+  border-top-left-radius: 22.9688px;
+  border-top-right-radius: 22.9688px;
+  color: rgb(147, 155, 213);
 }`,
   },
   light: {},

@@ -23,6 +23,24 @@
   --text-normal: rgb(245, 245, 245) !important;
   --titlebar-background: rgb(0, 53, 107) !important;
   --input-height: 30px !important;
+  --input-border-width: 2px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 4px !important;
+  --background-modifier-border: rgb(255, 239, 0) !important;
+  --background-modifier-form-field: #2a2a2a !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: rgb(255, 239, 0) !important;
+  --pill-border-color-hover: #3f3f3f !important;
+  --pill-border-width: 2px !important;
+  --pill-color: rgb(245, 245, 245) !important;
+  --pill-color-hover: rgb(245, 245, 245) !important;
+  --pill-color-remove: rgb(245, 245, 245) !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 2px 0 !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -36,7 +54,6 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: rgb(255, 239, 0) !important;
   --background-modifier-border-focus: rgb(255, 239, 0) !important;
   --background-modifier-border-hover: #3f3f3f !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -44,7 +61,6 @@
   --background-modifier-error: #fb464c !important;
   --background-modifier-error-hover: #fb464c !important;
   --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field: #2a2a2a !important;
   --background-modifier-form-field-hover: #2a2a2a !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -78,7 +94,6 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 2px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -422,8 +437,6 @@
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -443,15 +456,12 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 2px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: rgb(245, 245, 245) !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgb(245, 245, 245) !important;
-  --input-radius: 4px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -638,19 +648,9 @@
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px rgb(255, 239, 0) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: rgb(255, 239, 0) !important;
-  --pill-border-color-hover: #3f3f3f !important;
-  --pill-border-width: 2px !important;
-  --pill-color: rgb(245, 245, 245) !important;
-  --pill-color-hover: rgb(245, 245, 245) !important;
-  --pill-color-remove: rgb(245, 245, 245) !important;
   --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -984,6 +984,24 @@
   --yale-blue: rgb(0, 53, 107) !important;
 
   --quartz-icon-color: currentColor;
+}
+
+body {
+  --qt-code-atom: rgb(245, 245, 245);
+  --qt-code-comment: rgb(219, 215, 210);
+  --qt-code-function: rgb(245, 245, 245);
+  --qt-code-header: rgb(255, 239, 0);
+  --qt-code-keyword: rgb(237, 41, 57);
+  --qt-code-number: rgb(128, 0, 255);
+  --qt-code-operator: rgb(255, 239, 0);
+  --qt-code-property: rgb(0, 127, 255);
+  --qt-code-string: rgb(11, 218, 81);
+  --qt-code-string: rgb(11, 218, 81);
+  --qt-code-variable: rgb(83, 223, 221);
+  --qt-code-variable-2: rgb(83, 223, 221);
+  --qt-code-default: rgb(245, 245, 245);
+  --qt-code-background: color(srgb 0 0.207843 0.419608 / 0.3);
+  --qt-code-border-color: rgb(245, 245, 245);
 }
 
 .darkmode {
@@ -1602,7 +1620,7 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(100, 149, 237);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -1643,7 +1661,7 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(100, 149, 237);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -1684,7 +1702,7 @@ body {
   em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(248, 131, 121);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -1725,7 +1743,7 @@ body {
   i {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(248, 131, 121);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -1765,7 +1783,7 @@ body {
   .text-highlight {
     background-color: rgb(255, 255, 0);
     color: rgb(0, 0, 0);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -1783,10 +1801,10 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 700;
-    outline: rgb(17, 17, 17) none 0px;
+    font-weight: 400;
+    outline: rgb(245, 245, 245) none 0px;
     text-decoration: rgb(0, 0, 0);
-    text-decoration-color: rgb(17, 17, 17);
+    text-decoration-color: rgb(245, 245, 245);
     text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
@@ -1814,7 +1832,7 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(245, 245, 245);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2102,12 +2120,6 @@ body {
     width: auto;
     display: list-item;
     background-color: rgba(0, 0, 0, 0);
-  }
-
-  .page article li:has(> input[type="checkbox"]:checked) {
-    color: rgb(245, 245, 245);
-    text-decoration: line-through;
-    text-decoration-color: rgb(245, 245, 245);
   }
 
   blockquote {
@@ -2895,7 +2907,7 @@ body {
     filter: none;
     max-width: none;
     object-fit: fill;
-    border: 0px rgb(245, 245, 245);
+    border: 0px rgb(255, 239, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3007,7 +3019,7 @@ body {
 
   .transclude-inner {
     background-color: rgba(0, 0, 0, 0);
-    border: 2px solid rgb(128, 0, 255);
+    border: 0px solid rgb(245, 245, 245);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3255,109 +3267,109 @@ body {
 
   li.task-list-item[data-task="-"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(245, 245, 245);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(245, 245, 245);
   }
 
@@ -3489,6 +3501,92 @@ body {
     text-decoration: rgb(218, 218, 218);
   }
 
+  .explorer .folder-outer > ul {
+    border-left: 2px solid rgb(128, 0, 255);
+  }
+
+  .explorer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .bases-table {
+    border-color: rgb(255, 239, 0);
+  }
+
+  .bases-table thead th {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(245, 245, 245);
+    font-weight: 400;
+    border-color: rgb(245, 245, 245) rgb(255, 239, 0) rgb(255, 239, 0)
+      rgb(245, 245, 245);
+  }
+
+  .bases-table tbody tr:nth-child(even) {
+    background-color: color(srgb 0 0.115033 0.247495 / 0.9);
+  }
+
+  .canvas-node {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(245, 245, 245);
+    border-radius: 0px;
+    border-width: 0px;
+  }
+
+  .canvas-node-content {
+    color: rgb(245, 245, 245);
+  }
+
+  .canvas-node-file {
+    color: rgb(245, 245, 245);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .canvas-sidebar {
+    background-color: color(srgb 0 0.098452 0.198762);
+    border-color: rgb(245, 245, 245);
+    box-shadow:
+      rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset,
+      rgba(0, 0, 0, 0.15) 0px 2px 4px 0px,
+      rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px,
+      rgba(0, 0, 0, 0.2) 0px 1px 2px 0px,
+      rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  }
+
+  .canvas-node-group {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(245, 245, 245);
+    border-width: 0px;
+  }
+
+  .note-properties {
+    background-color: rgb(0, 33, 71);
+    border-color: rgb(255, 239, 0);
+    border-radius: 4px;
+  }
+
+  .note-properties-key {
+    color: rgb(245, 245, 245);
+    font-weight: 400;
+  }
+
+  .note-properties-value {
+    color: rgb(245, 245, 245);
+  }
+
+  .note-properties-tags {
+    background-color: color(srgb 0 0.498039 1 / 0.4);
+    color: rgb(255, 239, 0);
+    border-radius: 4px;
+  }
+
+  .note-properties-row {
+    border-color: rgb(245, 245, 245);
+  }
+
+  details.toc summary::marker {
+    color: rgb(245, 245, 245);
+  }
+
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgb(244, 196, 48);
     color: rgb(17, 17, 17);
@@ -3525,6 +3623,7 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    opacity: 1;
   }
 
   footer ul li a {
@@ -3792,6 +3891,34 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+  }
+
+  ul.tags > li {
+    background-color: color(srgb 0 0.498039 1 / 0.4);
+    color: rgb(255, 239, 0);
+    border: 0px solid rgba(138, 92, 245, 0.15);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  li.task-list-item input[type="checkbox"] {
+    border-color: rgb(237, 41, 57);
+    border-radius: 50%;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  li.task-list-item input[type="checkbox"]:checked {
+    background-color: rgb(11, 218, 81);
+    border-color: rgb(11, 218, 81);
+  }
+
+  h1.article-title {
+    color: rgb(245, 245, 245);
+    font-size: 19.5px;
+    font-weight: 700;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -4772,51 +4899,75 @@ button.toc-header .fold,
 
 figure[data-rehype-pretty-code-figure] pre,
 pre {
-  background-color: var(--code-background);
+  background-color: var(--qt-code-background, var(--code-background));
   white-space: pre;
 
   & > code {
     overflow-x: auto;
 
-    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
-      color: var(--code-value) !important;
+    span[class*="qt-code-keyword"] {
+      color: var(--qt-code-keyword, var(--code-keyword)) !important;
     }
-    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
-      color: var(--code-function) !important;
+    span[class*="qt-code-string"] {
+      color: var(--qt-code-string, var(--code-string)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
-      color: var(--code-string) !important;
+    span[class*="qt-code-comment"] {
+      color: var(--qt-code-comment, var(--code-comment)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
-      color: var(--code-property) !important;
+    span[class*="qt-code-function"] {
+      color: var(--qt-code-function, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
-      color: var(--code-normal) !important;
+    span[class*="qt-code-number"] {
+      color: var(--qt-code-number, var(--code-value)) !important;
     }
-    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
-      color: var(--code-punctuation) !important;
+    span[class*="qt-code-operator"] {
+      color: var(--qt-code-operator, var(--code-operator)) !important;
     }
-    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-property"] {
+      color: var(--qt-code-property, var(--code-property)) !important;
     }
-    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-variable"] {
+      color: var(--qt-code-variable, var(--code-normal)) !important;
     }
-    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
-      color: var(--code-tag) !important;
+    span[class*="qt-code-tag"] {
+      color: var(--qt-code-tag, var(--code-tag)) !important;
     }
-    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
-      color: var(--code-important) !important;
+    span[class*="qt-code-attribute"] {
+      color: var(--qt-code-attribute, var(--code-important)) !important;
     }
-    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-      color: var(--text-operator) !important;
+    span[class*="qt-code-type"] {
+      color: var(--qt-code-type, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
-      color: var(--code-keyword) !important;
+    span[class*="qt-code-builtin"] {
+      color: var(--qt-code-builtin, var(--code-function)) !important;
+    }
+    span[class*="qt-code-atom"] {
+      color: var(--qt-code-atom, var(--code-value)) !important;
+    }
+    span[class*="qt-code-meta"] {
+      color: var(--qt-code-meta, var(--code-comment)) !important;
+    }
+    span[class*="qt-code-qualifier"] {
+      color: var(--qt-code-qualifier, var(--code-property)) !important;
+    }
+    span[class*="qt-code-punctuation"] {
+      color: var(--qt-code-punctuation, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-bracket"] {
+      color: var(--qt-code-bracket, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-header"] {
+      color: var(--qt-code-header, var(--code-tag)) !important;
+    }
+    span[class*="qt-code-link"] {
+      color: var(--qt-code-link, var(--code-string)) !important;
+    }
+    span[class*="qt-code-error"] {
+      color: var(--qt-code-error, var(--code-important)) !important;
     }
 
     background-color: transparent;
-    color: var(--code-normal);
+    color: var(--qt-code-default, var(--code-normal));
   }
 }
 

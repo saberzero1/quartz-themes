@@ -40,6 +40,30 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(237, 242, 247);
 }
 
+html[saved-theme="dark"] body .bases-table thead th {
+  background-color: rgb(45, 55, 72);
+}
+
+html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(237, 242, 247);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(237, 242, 247);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  background-color: rgb(45, 55, 72);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(237, 242, 247);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  border-color: rgb(237, 242, 247);
+}
+
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   color: rgb(237, 242, 247);
 }
@@ -52,37 +76,7 @@ html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(26, 32, 44);
   color: rgb(237, 242, 247);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
-  color: rgb(237, 242, 247);
-  outline: rgb(237, 242, 247) none 0px;
-  text-decoration-color: rgb(237, 242, 247);
-}
-
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
-  color: rgb(237, 242, 247);
-  outline: rgb(237, 242, 247) none 0px;
-  text-decoration-color: rgb(237, 242, 247);
-}
-
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
-  color: rgb(237, 242, 247);
-  outline: rgb(237, 242, 247) none 0px;
-  text-decoration-color: rgb(237, 242, 247);
-}
-
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
-  color: rgb(237, 242, 247);
-  outline: rgb(237, 242, 247) none 0px;
-  text-decoration-color: rgb(237, 242, 247);
-}
-
-html[saved-theme="dark"] body del {
-  color: rgb(237, 242, 247);
-  outline: rgb(237, 242, 247) none 0px;
-  text-decoration-color: rgb(237, 242, 247);
-}
-
-html[saved-theme="dark"] body p {
+    typography: `html[saved-theme="dark"] body p {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
@@ -194,6 +188,7 @@ html[saved-theme="dark"] body video {
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(237, 242, 247);
+  border-left-color: rgb(237, 242, 247);
   border-right-color: rgb(237, 242, 247);
   border-top-color: rgb(237, 242, 247);
 }`,
@@ -336,6 +331,30 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(26, 32, 44);
 }
 
+html[saved-theme="light"] body .bases-table thead th {
+  background-color: rgb(248, 249, 250);
+}
+
+html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(26, 32, 44);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgb(26, 32, 44);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  background-color: rgb(248, 249, 250);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(26, 32, 44);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  border-color: rgb(26, 32, 44);
+}
+
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   color: rgb(26, 32, 44);
 }
@@ -347,37 +366,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   color: rgb(26, 32, 44);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
-  color: rgb(26, 32, 44);
-  outline: rgb(26, 32, 44) none 0px;
-  text-decoration-color: rgb(26, 32, 44);
-}
-
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
-  color: rgb(26, 32, 44);
-  outline: rgb(26, 32, 44) none 0px;
-  text-decoration-color: rgb(26, 32, 44);
-}
-
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
-  color: rgb(26, 32, 44);
-  outline: rgb(26, 32, 44) none 0px;
-  text-decoration-color: rgb(26, 32, 44);
-}
-
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
-  color: rgb(26, 32, 44);
-  outline: rgb(26, 32, 44) none 0px;
-  text-decoration-color: rgb(26, 32, 44);
-}
-
-html[saved-theme="light"] body del {
-  color: rgb(26, 32, 44);
-  outline: rgb(26, 32, 44) none 0px;
-  text-decoration-color: rgb(26, 32, 44);
-}
-
-html[saved-theme="light"] body p {
+    typography: `html[saved-theme="light"] body p {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
@@ -489,6 +478,7 @@ html[saved-theme="light"] body video {
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(26, 32, 44);
+  border-left-color: rgb(26, 32, 44);
   border-right-color: rgb(26, 32, 44);
   border-top-color: rgb(26, 32, 44);
 }`,

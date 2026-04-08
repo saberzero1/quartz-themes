@@ -135,6 +135,50 @@ export const theme: ThemeData = {
 html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
+}
+
+html[saved-theme="dark"] body .bases-table {
+  border-color: rgb(128, 128, 128) rgb(128, 128, 128) rgb(54, 54, 54);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  font-weight: 400;
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  box-shadow: rgb(54, 54, 54) 0px 0px 0px 1px;
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+}`,
+    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+  cursor: text;
+}
+
+html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+  cursor: text;
+}
+
+html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+  cursor: text;
+}
+
+html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+  cursor: text;
+}
+
+html[saved-theme="dark"] body .text-highlight {
+  cursor: text;
+}
+
+html[saved-theme="dark"] body del {
+  cursor: text;
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
+  border-radius: 11.2px;
 }`,
     links: `html[saved-theme="dark"] body a.internal.broken {
   text-decoration-color: rgb(166, 138, 249);
@@ -281,21 +325,13 @@ html[saved-theme="dark"] body img {
 }
 
 html[saved-theme="dark"] body .transclude-inner {
-  border-bottom-color: rgb(54, 54, 54);
   border-bottom-left-radius: 11.2px;
   border-bottom-right-radius: 11.2px;
   border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-left-color: rgb(54, 54, 54);
-  border-left-width: 1px;
-  border-right-color: rgb(54, 54, 54);
   border-right-style: solid;
-  border-right-width: 1px;
-  border-top-color: rgb(54, 54, 54);
   border-top-left-radius: 11.2px;
   border-top-right-radius: 11.2px;
   border-top-style: solid;
-  border-top-width: 1px;
   padding-bottom: 7px;
   padding-right: 7px;
   padding-top: 15px;
@@ -566,6 +602,10 @@ html[saved-theme="dark"] body hr {
   padding-right: 10px;
   padding-top: 0px;
 }`,
+    explorer: `html[saved-theme="dark"] body .explorer .folder-outer > ul {
+  border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+}`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 11.5px;
   border-bottom-right-radius: 11.5px;
@@ -652,6 +692,19 @@ html[saved-theme="dark"] body kbd {
 
 html[saved-theme="dark"] body sup {
   font-size: 14.5833px;
+}
+
+html[saved-theme="dark"] body ul.tags > li {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(251, 70, 76);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(251, 70, 76);
+  border-right-color: rgb(251, 70, 76);
+  border-top-color: rgb(251, 70, 76);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: rgb(251, 70, 76);
 }`,
   },
   light: {
@@ -782,6 +835,50 @@ html[saved-theme="dark"] body sup {
 html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
+}
+
+html[saved-theme="light"] body .bases-table {
+  border-color: rgb(128, 128, 128) rgb(128, 128, 128) rgb(224, 224, 224);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  font-weight: 400;
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  box-shadow: rgb(224, 224, 224) 0px 0px 0px 1px;
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+}`,
+    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+  cursor: text;
+}
+
+html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+  cursor: text;
+}
+
+html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+  cursor: text;
+}
+
+html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+  cursor: text;
+}
+
+html[saved-theme="light"] body .text-highlight {
+  cursor: text;
+}
+
+html[saved-theme="light"] body del {
+  cursor: text;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
+  border-radius: 11.2px;
 }`,
     links: `html[saved-theme="light"] body a.internal.broken {
   text-decoration-color: rgb(138, 92, 245);
@@ -928,21 +1025,13 @@ html[saved-theme="light"] body img {
 }
 
 html[saved-theme="light"] body .transclude-inner {
-  border-bottom-color: rgb(224, 224, 224);
   border-bottom-left-radius: 11.2px;
   border-bottom-right-radius: 11.2px;
   border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-left-color: rgb(224, 224, 224);
-  border-left-width: 1px;
-  border-right-color: rgb(224, 224, 224);
   border-right-style: solid;
-  border-right-width: 1px;
-  border-top-color: rgb(224, 224, 224);
   border-top-left-radius: 11.2px;
   border-top-right-radius: 11.2px;
   border-top-style: solid;
-  border-top-width: 1px;
   padding-bottom: 7px;
   padding-right: 7px;
   padding-top: 15px;
@@ -1213,6 +1302,10 @@ html[saved-theme="light"] body hr {
   padding-right: 10px;
   padding-top: 0px;
 }`,
+    explorer: `html[saved-theme="light"] body .explorer .folder-outer > ul {
+  border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
+}`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 11.5px;
   border-bottom-right-radius: 11.5px;
@@ -1299,6 +1392,19 @@ html[saved-theme="light"] body kbd {
 
 html[saved-theme="light"] body sup {
   font-size: 14.5833px;
+}
+
+html[saved-theme="light"] body ul.tags > li {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(233, 49, 71);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(233, 49, 71);
+  border-right-color: rgb(233, 49, 71);
+  border-top-color: rgb(233, 49, 71);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: rgb(233, 49, 71);
 }`,
   },
 };

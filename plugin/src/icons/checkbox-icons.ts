@@ -1,19 +1,32 @@
 import { CHECKBOX_ICON_URIS } from "./generated.js";
 
 export function generateCheckboxIconCSS(): string {
-  // Override Quartz's `.page article li:has(> input:checked) { text-decoration: line-through }`
-  // which has specificity (0,3,3). We use `body .page article li...` for (0,3,4).
-  const strikethrough =
-    `body .page article li.task-list-item.is-checked {\n` +
+  // Specificity (0,3,4) override — exclude x/X which keep strikethrough
+  const resetChecked =
+    `body .page article li:has(> input[type="checkbox"]:checked):not([data-task="x"]):not([data-task="X"]) {\n` +
     `  text-decoration: none;\n` +
+    `  color: inherit;\n` +
     `}\n\n` +
-    `body .page article li.task-list-item[data-task="x"],\n` +
-    `body .page article li.task-list-item[data-task="X"] {\n` +
-    `  text-decoration: line-through;\n` +
-    `  color: var(--text-faint, var(--gray, #b8b8b8));\n` +
+    `body .page article li.task-list-item.is-checked:not([data-task="x"]):not([data-task="X"]) {\n` +
+    `  text-decoration: none;\n` +
+    `  color: inherit;\n` +
     `}`;
 
-  return strikethrough;
+  const checkedTaskStyle =
+    `\n\nbody .page article li.task-list-item[data-task="x"],\n` +
+    `body .page article li.task-list-item[data-task="X"] {\n` +
+    `  text-decoration: line-through;\n` +
+    `  text-decoration-color: var(--checkbox-color, var(--secondary));\n` +
+    `  color: var(--checkbox-color, var(--secondary));\n` +
+    `}`;
+
+  const bgReset =
+    `\n\nbody .page article input[type="checkbox"]:not(:checked),\n` +
+    `body .page article li.task-list-item[data-task=" "] input[type="checkbox"]{\n` +
+    `  background-color: transparent !important;\n` +
+    `}`;
+
+  return resetChecked + checkedTaskStyle + bgReset;
 }
 
 export function resolveCheckboxIcon(taskChar: string): string | undefined {

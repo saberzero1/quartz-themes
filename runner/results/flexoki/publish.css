@@ -389,6 +389,24 @@ body.theme-light {
   --text-normal: #100f0f !important;
   --titlebar-background: #f2f0e5 !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: #e6e4d9 !important;
+  --background-modifier-form-field: #fffcf0 !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: #e6e4d9 !important;
+  --pill-border-color-hover: #dad8ce !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #6f6e69 !important;
+  --pill-color-hover: #100f0f !important;
+  --pill-color-remove: #b7b5ac !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 175 !important;
   --accent-l: 33% !important;
   --accent-s: 57% !important;
@@ -402,7 +420,6 @@ body.theme-light {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(175, 57%, 33%, 0.1) !important;
-  --background-modifier-border: #e6e4d9 !important;
   --background-modifier-border-focus: #cecdc3 !important;
   --background-modifier-border-hover: #dad8ce !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -410,7 +427,6 @@ body.theme-light {
   --background-modifier-error: #af3029 !important;
   --background-modifier-error-hover: #af3029 !important;
   --background-modifier-error-rgb: 175, 48, 41 !important;
-  --background-modifier-form-field: #fffcf0 !important;
   --background-modifier-form-field-hover: #fffcf0 !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -440,7 +456,6 @@ body.theme-light {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -777,8 +792,6 @@ body.theme-light {
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -798,15 +811,12 @@ body.theme-light {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: #b7b5ac !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #b7b5ac !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -991,19 +1001,9 @@ body.theme-light {
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: #e6e4d9 !important;
-  --pill-border-color-hover: #dad8ce !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #6f6e69 !important;
-  --pill-color-hover: #100f0f !important;
-  --pill-color-remove: #b7b5ac !important;
   --pill-color-remove-hover: hsl(175, 57%, 33%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -1288,6 +1288,24 @@ body.theme-dark {
   --text-normal: #cecdc3 !important;
   --titlebar-background: #1c1b1a !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: #282726 !important;
+  --background-modifier-form-field: #282726 !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: #282726 !important;
+  --pill-border-color-hover: #343331 !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #878580 !important;
+  --pill-color-hover: #cecdc3 !important;
+  --pill-color-remove: #575653 !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 175 !important;
   --accent-l: 33% !important;
   --accent-s: 57% !important;
@@ -1301,7 +1319,6 @@ body.theme-dark {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(175, 57%, 33%, 0.1) !important;
-  --background-modifier-border: #282726 !important;
   --background-modifier-border-focus: #403e3c !important;
   --background-modifier-border-hover: #343331 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -1309,7 +1326,6 @@ body.theme-dark {
   --background-modifier-error: #d14d41 !important;
   --background-modifier-error-hover: #d14d41 !important;
   --background-modifier-error-rgb: 209, 77, 65 !important;
-  --background-modifier-form-field: #282726 !important;
   --background-modifier-form-field-hover: #282726 !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -1339,7 +1355,6 @@ body.theme-dark {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -1676,8 +1691,6 @@ body.theme-dark {
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -1697,15 +1710,12 @@ body.theme-dark {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: #575653 !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #575653 !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -1888,19 +1898,9 @@ body.theme-dark {
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px #282726 !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: #282726 !important;
-  --pill-border-color-hover: #343331 !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #878580 !important;
-  --pill-color-hover: #cecdc3 !important;
-  --pill-color-remove: #575653 !important;
   --pill-color-remove-hover: hsl(172, 58.14%, 37.95%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -2350,7 +2350,7 @@ body body.theme-light .markdown-rendered p {
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(16, 15, 15);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2389,7 +2389,7 @@ body body.theme-light strong {
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(16, 15, 15);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2428,7 +2428,7 @@ body body.theme-light b {
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(16, 15, 15);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2467,7 +2467,7 @@ body body.theme-light em {
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(16, 15, 15);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2506,7 +2506,7 @@ body body.theme-light i {
 body body.theme-light .markdown-rendered mark {
   background-color: rgba(255, 208, 0, 0.4);
   color: rgb(16, 15, 15);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2545,7 +2545,7 @@ body body.theme-light .markdown-rendered mark {
 body body.theme-light del {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(16, 15, 15);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2789,11 +2789,6 @@ body
   width: auto;
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-light ul > li.task-list-item[data-task="x"] {
-  color: rgb(111, 110, 105);
-  text-decoration: line-through;
-  text-decoration-color: rgb(111, 110, 105);
 }
 body body.theme-light .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -3500,11 +3495,9 @@ body body.theme-light .internal-embed {
 }
 body body.theme-light .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
+  border-left: solid;
+  border-width: 0px;
   border-color: rgb(16, 15, 15);
-  border-left: 2px solid rgb(38, 143, 132);
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3735,92 +3728,92 @@ body body.theme-light abbr {
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(16, 15, 15);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(16, 15, 15);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -4192,6 +4185,15 @@ body body.theme-light pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .tag {
+  background-color: rgba(36, 132, 124, 0.1);
+  color: rgb(36, 132, 124);
+  border: 0px solid rgba(36, 132, 124, 0.15);
+  border-top-left-radius: 24.5px;
+  border-top-right-radius: 24.5px;
+  border-bottom-left-radius: 24.5px;
+  border-bottom-right-radius: 24.5px;
+}
 body body.theme-light .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
@@ -4377,7 +4379,7 @@ body body.theme-dark .markdown-rendered p {
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(206, 205, 195);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4416,7 +4418,7 @@ body body.theme-dark strong {
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(206, 205, 195);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4455,7 +4457,7 @@ body body.theme-dark b {
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(206, 205, 195);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4494,7 +4496,7 @@ body body.theme-dark em {
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(206, 205, 195);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4533,7 +4535,7 @@ body body.theme-dark i {
 body body.theme-dark .markdown-rendered mark {
   background-color: rgba(255, 208, 0, 0.4);
   color: rgb(206, 205, 195);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4572,7 +4574,7 @@ body body.theme-dark .markdown-rendered mark {
 body body.theme-dark del {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(206, 205, 195);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4816,11 +4818,6 @@ body
   width: auto;
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-dark ul > li.task-list-item[data-task="x"] {
-  color: rgb(135, 133, 128);
-  text-decoration: line-through;
-  text-decoration-color: rgb(135, 133, 128);
 }
 body body.theme-dark .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -5527,11 +5524,9 @@ body body.theme-dark .internal-embed {
 }
 body body.theme-dark .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
+  border-left: solid;
+  border-width: 0px;
   border-color: rgb(206, 205, 195);
-  border-left: 2px solid rgb(36, 132, 124);
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5762,92 +5757,92 @@ body body.theme-dark abbr {
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(206, 205, 195);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(206, 205, 195);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -6218,6 +6213,15 @@ body body.theme-dark pre > code [data-highlighted-chars] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .tag {
+  background-color: rgba(36, 132, 124, 0.1);
+  color: rgb(41, 153, 138);
+  border: 0px solid rgba(36, 132, 124, 0.15);
+  border-top-left-radius: 24.5px;
+  border-top-right-radius: 24.5px;
+  border-bottom-left-radius: 24.5px;
+  border-bottom-right-radius: 24.5px;
 }
 body body.theme-dark .search-highlight {
   background-color: rgb(255, 255, 0);

@@ -74,6 +74,20 @@ html body {
   color: var(--text-normal) !important;
 }
 
+html body .bases-table {
+  border-color: rgb(218, 218, 218);
+}
+
+html body .bases-table thead th {
+  background-color: rgb(41, 44, 62);
+  border-color: rgb(255, 184, 108);
+  color: rgb(255, 184, 108);
+}
+
+html body .note-properties {
+  border-color: rgb(179, 179, 179);
+}
+
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(21, 22, 31);
 }
@@ -87,42 +101,59 @@ html body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(128, 128, 128);
 }`,
     typography: `html body .page article p > b, html b {
-  color: rgb(192, 205, 243);
+  color: rgb(235, 239, 247);
   filter: drop-shadow(rgb(192, 205, 243) 0px 0px 3px);
-  outline: rgb(192, 205, 243) none 0px;
-  text-decoration-color: rgb(192, 205, 243);
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  outline: rgb(235, 239, 247) none 0px;
+  text-decoration-color: rgb(235, 239, 247);
 }
 
 html body .page article p > em, html em {
   color: rgb(192, 205, 243);
-  font-weight: 500;
+  font-family: Inter, sans-serif;
   outline: rgb(192, 205, 243) none 0px;
   text-decoration-color: rgb(192, 205, 243);
 }
 
 html body .page article p > i, html i {
   color: rgb(192, 205, 243);
-  font-weight: 500;
+  font-family: Inter, sans-serif;
   outline: rgb(192, 205, 243) none 0px;
   text-decoration-color: rgb(192, 205, 243);
 }
 
 html body .page article p > strong, html strong {
-  color: rgb(192, 205, 243);
+  color: rgb(235, 239, 247);
   filter: drop-shadow(rgb(192, 205, 243) 0px 0px 3px);
-  outline: rgb(192, 205, 243) none 0px;
-  text-decoration-color: rgb(192, 205, 243);
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  outline: rgb(235, 239, 247) none 0px;
+  text-decoration-color: rgb(235, 239, 247);
 }
 
 html body .text-highlight {
-  font-weight: 500;
+  font-family: Inter, sans-serif;
 }
 
 html body del {
   color: rgb(192, 205, 243);
-  font-weight: 500;
+  font-family: Inter, sans-serif;
   outline: rgb(192, 205, 243) none 0px;
   text-decoration-color: rgb(192, 205, 243);
+}
+
+html body h1.article-title {
+  color: rgb(173, 185, 219);
+}
+
+html body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(255, 255, 255);
+  border-width: 0px;
+}
+
+html body li.task-list-item input[type="checkbox"]:checked {
+  border-color: rgb(255, 255, 255);
 }`,
     links: `html body a.external, html footer a {
   color: rgb(111, 161, 255);
@@ -330,21 +361,8 @@ html body video {
   border-left-width: 0px;
   border-right-color: rgb(192, 205, 243);
   border-top-color: rgb(192, 205, 243);
-}
-
-html body .transclude-inner {
-  border-bottom-color: rgb(192, 205, 243);
-  border-left-color: rgb(192, 205, 243);
-  border-left-width: 0px;
-  border-right-color: rgb(192, 205, 243);
-  border-top-color: rgb(192, 205, 243);
 }`,
-    checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(192, 205, 243);
-  text-decoration-color: rgb(192, 205, 243);
-}
-
-html body input[type=checkbox] {
+    checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -636,6 +654,11 @@ html body hr {
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(173, 185, 219);
   font-family: Inter, sans-serif;
+}
+
+html body .explorer .folder-outer > ul {
+  border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   cursor: pointer;
@@ -718,6 +741,14 @@ html body sub {
 
 html body sup {
   color: rgb(192, 205, 243);
+}
+
+html body ul.tags > li {
+  border-bottom-color: rgb(111, 161, 255);
+  border-left-color: rgb(111, 161, 255);
+  border-right-color: rgb(111, 161, 255);
+  border-top-color: rgb(111, 161, 255);
+  color: rgb(111, 161, 255);
 }`,
   },
   light: {},

@@ -192,6 +192,30 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(255, 255, 255);
 }
 
+html[saved-theme="dark"] body .bases-table thead th {
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  border-color: rgb(255, 255, 255);
+}
+
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   color: rgb(255, 255, 255);
 }
@@ -237,6 +261,11 @@ html[saved-theme="dark"] body del {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
 }
 
 html[saved-theme="dark"] body p {
@@ -344,6 +373,7 @@ html[saved-theme="dark"] body .transclude {
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }`,
@@ -530,6 +560,9 @@ html[saved-theme="dark"] body h6 {
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: "??", Cantarell, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}`,
+    toc: `html[saved-theme="dark"] body details.toc summary::marker {
+  color: rgb(255, 255, 255);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(146, 146, 146);
@@ -829,6 +862,30 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgba(0, 0, 0, 0.8);
 }
 
+html[saved-theme="light"] body .bases-table thead th {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+html[saved-theme="light"] body .canvas-node {
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   color: rgba(0, 0, 0, 0.8);
 }
@@ -874,6 +931,11 @@ html[saved-theme="light"] body del {
   color: rgba(0, 0, 0, 0.8);
   outline: rgba(0, 0, 0, 0.8) none 0px;
   text-decoration-color: rgba(0, 0, 0, 0.8);
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
 }
 
 html[saved-theme="light"] body p {
@@ -981,6 +1043,7 @@ html[saved-theme="light"] body .transclude {
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgba(0, 0, 0, 0.8);
+  border-left-color: rgba(0, 0, 0, 0.8);
   border-right-color: rgba(0, 0, 0, 0.8);
   border-top-color: rgba(0, 0, 0, 0.8);
 }`,
@@ -1167,6 +1230,9 @@ html[saved-theme="light"] body h6 {
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: "??", Cantarell, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}`,
+    toc: `html[saved-theme="light"] body details.toc summary::marker {
+  color: rgba(0, 0, 0, 0.8);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(147, 147, 147);

@@ -58,6 +58,9 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgba(0, 0, 0, 0);
 }`,
+    typography: `html body h1.article-title {
+  font-size: 38px;
+}`,
     callouts: `html body .callout[data-callout="abstract"] {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;

@@ -18,6 +18,9 @@ html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
+    explorer: `html[saved-theme="dark"] body .explorer .folder-outer > ul {
+  border-left-width: 0px;
+}`,
   },
   light: {
     base: `:root:root {
@@ -29,6 +32,9 @@ html[saved-theme="dark"] body {
 html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
+}`,
+    explorer: `html[saved-theme="light"] body .explorer .folder-outer > ul {
+  border-left-width: 0px;
 }`,
   },
 };

@@ -311,6 +311,52 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(0, 0, 0);
 }
 
+html body .bases-table thead th {
+  border-color: rgb(179, 179, 179);
+  color: rgb(0, 0, 0);
+}
+
+html body .canvas-node {
+  border-color: rgb(0, 0, 0);
+}
+
+html body .canvas-node-content {
+  color: rgb(0, 0, 0);
+}
+
+html body .canvas-node-file {
+  color: rgb(0, 0, 0);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(0, 0, 0);
+}
+
+html body .canvas-sidebar {
+  border-color: rgb(0, 0, 0);
+}
+
+html body .note-properties {
+  border-color: rgb(179, 179, 179);
+}
+
+html body .note-properties-key {
+  color: rgb(77, 77, 77);
+}
+
+html body .note-properties-row {
+  border-color: rgb(77, 77, 77);
+}
+
+html body .note-properties-tags {
+  background-color: rgba(102, 102, 102, 0.1);
+  color: rgb(102, 102, 102);
+}
+
+html body .note-properties-value {
+  color: rgb(77, 77, 77);
+}
+
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(242, 242, 242);
   color: rgb(0, 0, 0);
@@ -364,6 +410,19 @@ html body del {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
+}
+
+html body h1.article-title {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(102, 102, 102);
+}
+
+html body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(102, 102, 102);
+  border-color: rgb(102, 102, 102);
 }
 
 html body p {
@@ -555,16 +614,11 @@ html body .transclude {
 
 html body .transclude-inner {
   border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(77, 77, 77);
+  border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
 }`,
-    checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(77, 77, 77);
-  text-decoration-color: rgb(77, 77, 77);
-}
-
-html body input[type=checkbox] {
+    checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgb(102, 102, 102);
   border-left-color: rgb(102, 102, 102);
   border-right-color: rgb(102, 102, 102);
@@ -784,6 +838,9 @@ html body hr {
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(77, 77, 77);
 }`,
+    toc: `html body details.toc summary::marker {
+  color: rgb(0, 0, 0);
+}`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(77, 77, 77);
   border-left-color: rgb(77, 77, 77);
@@ -943,6 +1000,15 @@ html body summary {
 
 html body sup {
   color: rgb(0, 0, 0);
+}
+
+html body ul.tags > li {
+  background-color: rgba(102, 102, 102, 0.1);
+  border-bottom-color: rgba(102, 102, 102, 0.15);
+  border-left-color: rgba(102, 102, 102, 0.15);
+  border-right-color: rgba(102, 102, 102, 0.15);
+  border-top-color: rgba(102, 102, 102, 0.15);
+  color: rgb(102, 102, 102);
 }`,
   },
 };

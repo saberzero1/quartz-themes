@@ -368,6 +368,56 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(205, 209, 223);
 }
 
+html body .bases-table thead th {
+  border-color: rgb(59, 63, 86);
+  color: rgb(205, 209, 223);
+}
+
+html body .canvas-node {
+  border-color: rgb(205, 209, 223);
+}
+
+html body .canvas-node-content {
+  color: rgb(205, 209, 223);
+}
+
+html body .canvas-node-file {
+  color: rgb(205, 209, 223);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(205, 209, 223);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(38, 43, 59);
+  border-color: rgb(205, 209, 223);
+}
+
+html body .note-properties {
+  background-color: rgb(38, 43, 59);
+  border-color: rgb(59, 63, 86) rgb(59, 63, 86) rgb(59, 63, 86) rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+html body .note-properties-key {
+  color: rgb(136, 144, 166);
+}
+
+html body .note-properties-row {
+  border-color: rgb(136, 144, 166);
+}
+
+html body .note-properties-tags {
+  background-color: rgb(38, 43, 59);
+  border-radius: 14px;
+  color: rgb(255, 255, 255);
+}
+
+html body .note-properties-value {
+  color: rgb(136, 144, 166);
+}
+
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(38, 43, 59);
   color: rgb(205, 209, 223);
@@ -429,6 +479,20 @@ html body del {
   text-decoration-color: rgb(205, 209, 223);
 }
 
+html body h1.article-title {
+  color: rgb(205, 209, 223);
+}
+
+html body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(95, 105, 128);
+  border-radius: 20px;
+}
+
+html body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
 html body p {
   color: rgb(136, 144, 166);
   font-family: "??", "Avenir Next", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -468,7 +532,7 @@ html body dt {
 }
 
 html body ol > li {
-  color: rgb(136, 144, 166);
+  color: rgb(205, 209, 223);
 }
 
 html body ol.overflow {
@@ -479,7 +543,7 @@ html body ol.overflow {
 }
 
 html body ul > li {
-  color: rgb(136, 144, 166);
+  color: rgb(205, 209, 223);
 }
 
 html body ul.overflow {
@@ -666,7 +730,7 @@ html body .transclude {
 
 html body .transclude-inner {
   border-bottom-color: rgb(205, 209, 223);
-  border-left-color: rgb(255, 255, 255);
+  border-left-color: rgb(205, 209, 223);
   border-right-color: rgb(205, 209, 223);
   border-top-color: rgb(205, 209, 223);
 }`,
@@ -676,11 +740,6 @@ html body .transclude-inner {
 
 html body .katex-display > .katex > .katex-html {
   font-family: "??", Bookerly, "Source Han Serif", "Noto Serif JP", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(255, 255, 255);
-  text-decoration-color: rgb(255, 255, 255);
 }
 
 html body input[type=checkbox] {
@@ -1233,6 +1292,9 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
   color: rgb(136, 144, 166);
   font-family: "??", "Avenir Next", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
+    toc: `html body details.toc summary::marker {
+  color: rgb(205, 209, 223);
+}`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(136, 144, 166);
   border-bottom-left-radius: 20px;
@@ -1426,6 +1488,23 @@ html body summary {
 
 html body sup {
   color: rgb(205, 209, 223);
+}
+
+html body ul.tags > li {
+  background-color: rgb(38, 43, 59);
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+  border-bottom-left-radius: 12.25px;
+  border-bottom-right-radius: 12.25px;
+  border-bottom-width: 1px;
+  border-left-color: rgba(255, 255, 255, 0.15);
+  border-left-width: 1px;
+  border-right-color: rgba(255, 255, 255, 0.15);
+  border-right-width: 1px;
+  border-top-color: rgba(255, 255, 255, 0.15);
+  border-top-left-radius: 12.25px;
+  border-top-right-radius: 12.25px;
+  border-top-width: 1px;
+  color: rgb(255, 255, 255);
 }`,
   },
   light: {},

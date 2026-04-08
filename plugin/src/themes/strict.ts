@@ -120,6 +120,18 @@ html body {
   color: var(--text-normal) !important;
 }
 
+html body .bases-table thead th {
+  border-color: rgb(64, 64, 64);
+}
+
+html body .note-properties {
+  border-color: rgb(64, 64, 64);
+}
+
+html body .note-properties-tags {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(64, 64, 64);
 }
@@ -129,6 +141,10 @@ html body .page > div#quartz-body div.sidebar.right {
 }`,
     typography: `html body .text-highlight {
   background-color: rgb(0, 102, 0);
+}
+
+html body li.task-list-item input[type="checkbox"] {
+  border-radius: 0px;
 }`,
     tables: `html body table {
   margin-top: 0px;
@@ -227,6 +243,13 @@ html body pre:has(> code) {
 
 html body figure {
   text-align: justify;
+}
+
+html body img {
+  border-bottom-color: rgb(0, 187, 0);
+  border-left-color: rgb(0, 187, 0);
+  border-right-color: rgb(0, 187, 0);
+  border-top-color: rgb(0, 187, 0);
 }`,
     embeds: `html body .file-embed {
   border-bottom-left-radius: 0px;
@@ -482,6 +505,14 @@ html body kbd {
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 1.6px;
+}
+
+html body ul.tags > li {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
 }`,
   },
   light: {},

@@ -376,6 +376,56 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: color(srgb 0.27731 0.3465 0.41569);
 }
 
+html body .bases-table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+html body .bases-table thead th {
+  border-color: rgba(0, 0, 0, 0.5);
+  color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body .canvas-node {
+  border-color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body .canvas-node-content {
+  color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body .canvas-node-file {
+  color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body .canvas-node-group {
+  border-color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body .canvas-sidebar {
+  border-color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body .note-properties {
+  border-color: rgb(229, 233, 240);
+}
+
+html body .note-properties-key {
+  color: color(srgb 0.40336 0.504 0.60464);
+}
+
+html body .note-properties-row {
+  border-color: color(srgb 0.40336 0.504 0.60464);
+}
+
+html body .note-properties-tags {
+  background-color: rgba(129, 161, 193, 0.1);
+  color: rgb(129, 161, 193);
+}
+
+html body .note-properties-value {
+  color: color(srgb 0.40336 0.504 0.60464);
+}
+
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(236, 239, 244);
   color: color(srgb 0.27731 0.3465 0.41569);
@@ -435,6 +485,19 @@ html body del {
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body h1.article-title {
+  color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(76, 86, 106);
+}
+
+html body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(144, 174, 201);
+  border-color: rgb(144, 174, 201);
 }
 
 html body p {
@@ -617,10 +680,10 @@ html body figure {
 }
 
 html body img {
-  border-bottom-color: color(srgb 0.27731 0.3465 0.41569);
-  border-left-color: color(srgb 0.27731 0.3465 0.41569);
-  border-right-color: color(srgb 0.27731 0.3465 0.41569);
-  border-top-color: color(srgb 0.27731 0.3465 0.41569);
+  border-bottom-color: rgb(129, 161, 193);
+  border-left-color: rgb(129, 161, 193);
+  border-right-color: rgb(129, 161, 193);
+  border-top-color: rgb(129, 161, 193);
 }
 
 html body video {
@@ -651,7 +714,7 @@ html body .transclude {
 
 html body .transclude-inner {
   border-bottom-color: color(srgb 0.27731 0.3465 0.41569);
-  border-left-color: rgb(144, 174, 201);
+  border-left-color: color(srgb 0.27731 0.3465 0.41569);
   border-right-color: color(srgb 0.27731 0.3465 0.41569);
   border-top-color: color(srgb 0.27731 0.3465 0.41569);
 }`,
@@ -661,11 +724,6 @@ html body .transclude-inner {
 
 html body .katex-display > .katex > .katex-html {
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html body .page article li:has(>input[type=checkbox]:checked) {
-  color: color(srgb 0.40336 0.504 0.60464);
-  text-decoration-color: color(srgb 0.40336 0.504 0.60464);
 }
 
 html body input[type=checkbox] {
@@ -1150,6 +1208,9 @@ html body ::-webkit-scrollbar-thumb {
 html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: color(srgb 0.40336 0.504 0.60464);
 }`,
+    toc: `html body details.toc summary::marker {
+  color: color(srgb 0.27731 0.3465 0.41569);
+}`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: color(srgb 0.40336 0.504 0.60464);
   border-left-color: color(srgb 0.40336 0.504 0.60464);
@@ -1311,6 +1372,15 @@ html body summary {
 
 html body sup {
   color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body ul.tags > li {
+  background-color: rgba(129, 161, 193, 0.1);
+  border-bottom-color: rgba(129, 161, 193, 0.15);
+  border-left-color: rgba(129, 161, 193, 0.15);
+  border-right-color: rgba(129, 161, 193, 0.15);
+  border-top-color: rgba(129, 161, 193, 0.15);
+  color: rgb(129, 161, 193);
 }`,
   },
 };

@@ -18,6 +18,14 @@ export const theme: ThemeData = {
 html body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
+}
+
+html body .canvas-node-file {
+  color: rgb(32, 43, 51);
+}
+
+html body .note-properties-key {
+  font-weight: 500;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(32, 43, 51);
@@ -46,6 +54,7 @@ html body .page article p > strong, html strong {
 }
 
 html body .text-highlight {
+  background-color: rgba(0, 231, 255, 0.29);
   font-weight: 500;
 }
 
@@ -54,6 +63,11 @@ html body del {
   font-weight: 500;
   outline: rgb(32, 43, 51) none 0px;
   text-decoration-color: rgb(32, 43, 51);
+}
+
+html body h1.article-title {
+  font-size: 28px;
+  font-weight: 500;
 }
 
 html body p {
@@ -156,12 +170,6 @@ html body video {
 }
 
 html body .transclude {
-  border-bottom-color: rgb(32, 43, 51);
-  border-right-color: rgb(32, 43, 51);
-  border-top-color: rgb(32, 43, 51);
-}
-
-html body .transclude-inner {
   border-bottom-color: rgb(32, 43, 51);
   border-right-color: rgb(32, 43, 51);
   border-top-color: rgb(32, 43, 51);
@@ -334,7 +342,11 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
   color: rgb(92, 112, 128);
   font-weight: 700;
 }`,
-    toc: `html body li.depth-0 {
+    toc: `html body details.toc summary::marker {
+  color: rgb(32, 43, 51);
+}
+
+html body li.depth-0 {
   font-weight: 700;
 }`,
     recentNotes: `html body .recent-notes > h3 {
@@ -396,6 +408,10 @@ html body summary {
 
 html body sup {
   color: rgb(32, 43, 51);
+}
+
+html body ul.tags > li {
+  color: rgb(16, 107, 163);
 }`,
   },
 };

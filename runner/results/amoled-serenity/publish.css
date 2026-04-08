@@ -473,6 +473,24 @@ body.theme-dark {
   --text-normal: #ffffff !important;
   --titlebar-background: #0e0e0e !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: #333333 !important;
+  --background-modifier-form-field: #262626 !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: #333333 !important;
+  --pill-border-color-hover: #363636 !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #bbbbbb !important;
+  --pill-color-hover: #ffffff !important;
+  --pill-color-remove: #666666 !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -486,7 +504,6 @@ body.theme-dark {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: #333333 !important;
   --background-modifier-border-focus: #4a4a4a !important;
   --background-modifier-border-hover: #363636 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -494,7 +511,6 @@ body.theme-dark {
   --background-modifier-error: #fb464c !important;
   --background-modifier-error-hover: #fb464c !important;
   --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field: #262626 !important;
   --background-modifier-form-field-hover: #262626 !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -524,7 +540,6 @@ body.theme-dark {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -857,8 +872,6 @@ body.theme-dark {
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -878,15 +891,12 @@ body.theme-dark {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: #666666 !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #666666 !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -1069,19 +1079,9 @@ body.theme-dark {
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px #333333 !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: #333333 !important;
-  --pill-border-color-hover: #363636 !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #bbbbbb !important;
-  --pill-color-hover: #ffffff !important;
-  --pill-color-remove: #666666 !important;
   --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -1645,8 +1645,8 @@ body body.theme-dark .markdown-rendered p {
 }
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(221, 221, 221);
-  cursor: text;
+  color: rgb(255, 255, 255);
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1666,9 +1666,9 @@ body body.theme-dark strong {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 600;
-  outline: rgb(221, 221, 221) none 0px;
+  outline: rgb(255, 255, 255) none 0px;
   text-decoration: rgb(218, 218, 218);
-  text-decoration-color: rgb(221, 221, 221);
+  text-decoration-color: rgb(255, 255, 255);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
@@ -1685,8 +1685,8 @@ body body.theme-dark strong {
 }
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(221, 221, 221);
-  cursor: text;
+  color: rgb(255, 255, 255);
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1706,9 +1706,9 @@ body body.theme-dark b {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 600;
-  outline: rgb(221, 221, 221) none 0px;
+  outline: rgb(255, 255, 255) none 0px;
   text-decoration: rgb(218, 218, 218);
-  text-decoration-color: rgb(221, 221, 221);
+  text-decoration-color: rgb(255, 255, 255);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
@@ -1725,8 +1725,8 @@ body body.theme-dark b {
 }
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(221, 221, 221);
-  cursor: text;
+  color: rgb(255, 255, 255);
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1746,9 +1746,9 @@ body body.theme-dark em {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(221, 221, 221) none 0px;
+  outline: rgb(255, 255, 255) none 0px;
   text-decoration: rgb(218, 218, 218);
-  text-decoration-color: rgb(221, 221, 221);
+  text-decoration-color: rgb(255, 255, 255);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
@@ -1765,8 +1765,8 @@ body body.theme-dark em {
 }
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(221, 221, 221);
-  cursor: text;
+  color: rgb(255, 255, 255);
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1786,9 +1786,9 @@ body body.theme-dark i {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(221, 221, 221) none 0px;
+  outline: rgb(255, 255, 255) none 0px;
   text-decoration: rgb(218, 218, 218);
-  text-decoration-color: rgb(221, 221, 221);
+  text-decoration-color: rgb(255, 255, 255);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
@@ -1806,7 +1806,7 @@ body body.theme-dark i {
 body body.theme-dark .markdown-rendered mark {
   background-color: rgba(255, 208, 0, 0.4);
   color: rgb(255, 255, 255);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1845,8 +1845,8 @@ body body.theme-dark .markdown-rendered mark {
 }
 body body.theme-dark del {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(221, 221, 221);
-  cursor: text;
+  color: rgb(255, 255, 255);
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1866,9 +1866,9 @@ body body.theme-dark del {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(221, 221, 221) none 0px;
+  outline: rgb(255, 255, 255) none 0px;
   text-decoration: line-through;
-  text-decoration-color: rgb(221, 221, 221);
+  text-decoration-color: rgb(255, 255, 255);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   transition: all;
@@ -2091,11 +2091,6 @@ body
   width: auto;
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-dark ul > li.task-list-item[data-task="x"] {
-  color: rgb(187, 187, 187);
-  text-decoration: line-through;
-  text-decoration-color: rgb(187, 187, 187);
 }
 body body.theme-dark .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -2617,7 +2612,7 @@ body body.theme-dark .markdown-rendered img {
   filter: none;
   max-width: none;
   object-fit: fill;
-  border: 0px rgb(221, 221, 221);
+  border: 0px rgb(191, 97, 106);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2728,11 +2723,9 @@ body body.theme-dark .internal-embed {
 }
 body body.theme-dark .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
+  border-left: solid;
+  border-width: 0px;
   border-color: rgb(221, 221, 221);
-  border-left: 2px solid rgb(138, 92, 245);
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2965,92 +2958,92 @@ body body.theme-dark abbr {
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(255, 255, 255);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(255, 255, 255);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -3397,6 +3390,15 @@ body body.theme-dark pre > code [data-highlighted-chars] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .tag {
+  background-color: rgba(138, 92, 245, 0.1);
+  color: rgb(166, 138, 249);
+  border: 0px solid rgba(138, 92, 245, 0.15);
+  border-top-left-radius: 24.5px;
+  border-top-right-radius: 24.5px;
+  border-bottom-left-radius: 24.5px;
+  border-bottom-right-radius: 24.5px;
 }
 body body.theme-dark .search-highlight {
   background-color: rgb(255, 255, 0);

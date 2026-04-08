@@ -124,6 +124,39 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   background-color: rgba(0, 0, 0, 0);
 }
 
+html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgba(245, 245, 245, 0.15) rgba(245, 245, 245, 0.15) rgb(218, 218, 218);
+}
+
+html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgba(28, 28, 28, 0.1);
+  border-color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgba(245, 245, 245, 0.15);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  border-radius: 27.6px;
+}
+
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -288,10 +321,10 @@ html[saved-theme="dark"] body figure {
 }
 
 html[saved-theme="dark"] body img {
-  border-bottom-color: rgb(240, 240, 240);
-  border-left-color: rgb(240, 240, 240);
-  border-right-color: rgb(240, 240, 240);
-  border-top-color: rgb(240, 240, 240);
+  border-bottom-color: rgb(231, 77, 71);
+  border-left-color: rgb(231, 77, 71);
+  border-right-color: rgb(231, 77, 71);
+  border-top-color: rgb(231, 77, 71);
 }
 
 html[saved-theme="dark"] body video {
@@ -323,11 +356,9 @@ html[saved-theme="dark"] body .transclude {
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(240, 240, 240);
-  border-left-color: rgba(245, 245, 245, 0.2);
-  border-left-width: 1px;
+  border-left-color: rgb(240, 240, 240);
   border-right-color: rgb(240, 240, 240);
   border-top-color: rgb(240, 240, 240);
-  margin-left: 3px;
 }`,
     checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(240, 240, 240);
@@ -586,6 +617,13 @@ html[saved-theme="dark"] body hr {
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgba(210, 210, 210, 0.8);
+}
+
+html[saved-theme="dark"] body .explorer .folder-outer > ul {
+  border-left-color: rgba(245, 245, 245, 0.1);
+}`,
+    toc: `html[saved-theme="dark"] body details.toc summary::marker {
+  color: rgb(240, 240, 240);
 }`,
     footer: `html[saved-theme="dark"] body footer {
   background-color: rgba(28, 28, 28, 0.7);
@@ -790,6 +828,39 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   background-color: rgba(0, 0, 0, 0);
 }
 
+html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgba(28, 28, 28, 0.09) rgba(28, 28, 28, 0.09) rgb(34, 34, 34);
+}
+
+html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgba(248, 248, 248, 0.1);
+  border-color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgba(28, 28, 28, 0.09);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  border-radius: 27.6px;
+}
+
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -954,10 +1025,10 @@ html[saved-theme="light"] body figure {
 }
 
 html[saved-theme="light"] body img {
-  border-bottom-color: rgb(8, 8, 8);
-  border-left-color: rgb(8, 8, 8);
-  border-right-color: rgb(8, 8, 8);
-  border-top-color: rgb(8, 8, 8);
+  border-bottom-color: rgb(231, 77, 71);
+  border-left-color: rgb(231, 77, 71);
+  border-right-color: rgb(231, 77, 71);
+  border-top-color: rgb(231, 77, 71);
 }
 
 html[saved-theme="light"] body video {
@@ -989,11 +1060,9 @@ html[saved-theme="light"] body .transclude {
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(8, 8, 8);
-  border-left-color: rgba(28, 28, 28, 0.2);
-  border-left-width: 1px;
+  border-left-color: rgb(8, 8, 8);
   border-right-color: rgb(8, 8, 8);
   border-top-color: rgb(8, 8, 8);
-  margin-left: 3px;
 }`,
     checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(8, 8, 8);
@@ -1252,6 +1321,13 @@ html[saved-theme="light"] body hr {
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgba(20, 20, 20, 0.8);
+}
+
+html[saved-theme="light"] body .explorer .folder-outer > ul {
+  border-left-color: rgba(28, 28, 28, 0.05);
+}`,
+    toc: `html[saved-theme="light"] body details.toc summary::marker {
+  color: rgb(8, 8, 8);
 }`,
     footer: `html[saved-theme="light"] body footer {
   background-color: rgba(248, 248, 248, 0.6);

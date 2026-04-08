@@ -19,6 +19,24 @@
   --text-normal: hsl(27, 35%, 32%) !important;
   --titlebar-background: #333 !important;
   --input-height: 30px !important;
+  --input-border-width: 1.5px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: hsl(27, 35%, 81%) !important;
+  --background-modifier-form-field: hsl(27, 35%, 94%) !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: hsl(27, 50%, 50%) !important;
+  --pill-border-color: hsl(27, 35%, 81%) !important;
+  --pill-border-color-hover: hsl(27, 50%, 70%) !important;
+  --pill-border-width: 1.5px !important;
+  --pill-color: hsl(27, 35%, 48%) !important;
+  --pill-color-hover: hsl(27, 50%, 95%) !important;
+  --pill-color-remove: hsl(27, 50%, 70%) !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1.5px 0 !important;
   --accent-h: 27 !important;
   --accent-l: 70% !important;
   --accent-s: 50% !important;
@@ -32,7 +50,6 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsl(27, 50%, 50%) !important;
-  --background-modifier-border: hsl(27, 35%, 81%) !important;
   --background-modifier-border-focus: hsl(27, 35%, 32%) !important;
   --background-modifier-border-hover: hsl(27, 50%, 70%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -40,7 +57,6 @@
   --background-modifier-error: #e93147 !important;
   --background-modifier-error-hover: #e93147 !important;
   --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field: hsl(27, 35%, 94%) !important;
   --background-modifier-form-field-hover: hsl(27, 35%, 94%) !important;
   --background-modifier-hover: hsl(27, 50%, 50%) !important;
   --background-modifier-message: hsl(27, 50%, 50%) !important;
@@ -70,7 +86,6 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1.5px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -410,8 +425,6 @@
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -431,15 +444,12 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 400 !important;
-  --input-border-width: 1.5px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: hsl(27, 35%, 68%) !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: grey !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -624,19 +634,9 @@
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: hsl(27, 50%, 50%) !important;
-  --pill-border-color: hsl(27, 35%, 81%) !important;
-  --pill-border-color-hover: hsl(27, 50%, 70%) !important;
-  --pill-border-width: 1.5px !important;
-  --pill-color: hsl(27, 35%, 48%) !important;
-  --pill-color-hover: hsl(27, 50%, 95%) !important;
-  --pill-color-remove: hsl(27, 50%, 70%) !important;
   --pill-color-remove-hover: hsl(27, 50%, 95%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -1093,6 +1093,24 @@
   --text-normal: hsl(40, 90%, 80%) !important;
   --titlebar-background: #333 !important;
   --input-height: 30px !important;
+  --input-border-width: 1.5px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: hsl(40, 25%, 22%) !important;
+  --background-modifier-form-field: hsl(40, 25%, 10%) !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: hsl(40, 90%, 60%) !important;
+  --pill-border-color: hsl(40, 25%, 22%) !important;
+  --pill-border-color-hover: hsl(40, 90%, 40%) !important;
+  --pill-border-width: 1.5px !important;
+  --pill-color: hsl(40, 25%, 48%) !important;
+  --pill-color-hover: hsl(40, 100%, 07%) !important;
+  --pill-color-remove: hsl(40, 90%, 40%) !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1.5px 0 !important;
   --accent-h: 40 !important;
   --accent-l: 40% !important;
   --accent-s: 90% !important;
@@ -1106,7 +1124,6 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsl(40, 90%, 60%) !important;
-  --background-modifier-border: hsl(40, 25%, 22%) !important;
   --background-modifier-border-focus: hsl(40, 25%, 28%) !important;
   --background-modifier-border-hover: hsl(40, 90%, 40%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -1114,7 +1131,6 @@
   --background-modifier-error: #fb464c !important;
   --background-modifier-error-hover: #fb464c !important;
   --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field: hsl(40, 25%, 10%) !important;
   --background-modifier-form-field-hover: hsl(40, 25%, 10%) !important;
   --background-modifier-hover: hsl(40, 90%, 60%) !important;
   --background-modifier-message: hsl(40, 90%, 60%) !important;
@@ -1144,7 +1160,6 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1.5px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -1481,8 +1496,6 @@
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -1502,15 +1515,12 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 400 !important;
-  --input-border-width: 1.5px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: hsl(40, 25%, 40%) !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: grey !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -1693,19 +1703,9 @@
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px hsl(40, 25%, 22%) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: hsl(40, 90%, 60%) !important;
-  --pill-border-color: hsl(40, 25%, 22%) !important;
-  --pill-border-color-hover: hsl(40, 90%, 40%) !important;
-  --pill-border-width: 1.5px !important;
-  --pill-color: hsl(40, 25%, 48%) !important;
-  --pill-color-hover: hsl(40, 100%, 07%) !important;
-  --pill-color-remove: hsl(40, 90%, 40%) !important;
   --pill-color-remove-hover: hsl(40, 100%, 07%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -2132,6 +2132,41 @@
   --stabilo-violet-foncé: hsl(330, 68%, 51%) !important;
 
   --quartz-icon-color: currentColor;
+}
+
+html[saved-theme="light"] body {
+  --qt-code-atom: rgb(110, 79, 53);
+  --qt-code-comment: rgb(202, 171, 145);
+  --qt-code-function: rgb(110, 79, 53);
+  --qt-code-header: rgb(110, 79, 53);
+  --qt-code-keyword: rgb(213, 57, 132);
+  --qt-code-number: rgb(120, 82, 238);
+  --qt-code-operator: rgb(110, 79, 53);
+  --qt-code-property: rgb(224, 172, 0);
+  --qt-code-string: rgb(83, 132, 172);
+  --qt-code-string: rgb(83, 132, 172);
+  --qt-code-variable: rgb(0, 191, 188);
+  --qt-code-variable-2: rgb(0, 191, 188);
+  --qt-code-default: rgb(110, 79, 53);
+  --qt-code-background: rgb(247, 242, 238);
+  --qt-code-border-color: rgb(110, 79, 53);
+}
+html[saved-theme="dark"] body {
+  --qt-code-atom: rgb(250, 219, 158);
+  --qt-code-comment: rgb(128, 111, 77);
+  --qt-code-function: rgb(250, 219, 158);
+  --qt-code-header: rgb(250, 219, 158);
+  --qt-code-keyword: rgb(250, 153, 205);
+  --qt-code-number: rgb(168, 130, 255);
+  --qt-code-operator: rgb(250, 219, 158);
+  --qt-code-property: rgb(224, 222, 113);
+  --qt-code-string: rgb(117, 158, 240);
+  --qt-code-string: rgb(117, 158, 240);
+  --qt-code-variable: rgb(83, 223, 221);
+  --qt-code-variable-2: rgb(83, 223, 221);
+  --qt-code-default: rgb(250, 219, 158);
+  --qt-code-background: rgb(38, 33, 23);
+  --qt-code-border-color: rgb(250, 219, 158);
 }
 
 html {
@@ -2793,7 +2828,7 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(110, 79, 53);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2834,7 +2869,7 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(110, 79, 53);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2875,7 +2910,7 @@ body {
   em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(110, 79, 53);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2916,7 +2951,7 @@ body {
   i {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(110, 79, 53);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2956,7 +2991,7 @@ body {
   .text-highlight {
     background-color: rgb(255, 255, 0);
     color: rgb(0, 0, 0);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -3005,7 +3040,7 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(110, 79, 53);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -3293,12 +3328,6 @@ body {
     width: auto;
     display: list-item;
     background-color: rgba(0, 0, 0, 0);
-  }
-
-  .page article li:has(> input[type="checkbox"]:checked) {
-    color: rgb(202, 171, 145);
-    text-decoration: line-through;
-    text-decoration-color: rgb(202, 171, 145);
   }
 
   blockquote {
@@ -4192,7 +4221,7 @@ body {
     border-top-color: rgb(110, 79, 53);
     border-bottom-color: rgb(110, 79, 53);
     border-left: 0px solid rgb(110, 79, 53);
-    border-right: 1px dotted rgb(110, 79, 53);
+    border-right: 0px dotted rgb(110, 79, 53);
     border-top-width: 0px;
     border-bottom-width: 0px;
     border-top-left-radius: 0px;
@@ -4442,109 +4471,109 @@ body {
 
   li.task-list-item[data-task="-"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(110, 79, 53);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(110, 79, 53);
   }
 
@@ -4676,6 +4705,91 @@ body {
     text-decoration: rgb(34, 34, 34);
   }
 
+  .explorer .folder-outer > ul {
+    border-left: 1px solid rgb(202, 171, 145);
+  }
+
+  .explorer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .bases-table {
+    border-color: rgb(128, 128, 128);
+  }
+
+  .bases-table thead th {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(110, 79, 53);
+    font-weight: 600;
+    border-color: rgb(110, 79, 53);
+  }
+
+  .bases-table tbody tr:nth-child(even) {
+    background-color: rgb(247, 242, 238);
+  }
+
+  .canvas-node {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(110, 79, 53);
+    border-radius: 0px;
+    border-width: 0px;
+  }
+
+  .canvas-node-content {
+    color: rgb(110, 79, 53);
+  }
+
+  .canvas-node-file {
+    color: rgb(110, 79, 53);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .canvas-sidebar {
+    background-color: rgb(245, 239, 234);
+    border-color: rgb(110, 79, 53);
+    box-shadow:
+      rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset,
+      rgba(0, 0, 0, 0.05) 0px 2px 3px 0px,
+      rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px,
+      rgba(0, 0, 0, 0.04) 0px 1px 2px 0px,
+      rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  }
+
+  .canvas-node-group {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(110, 79, 53);
+    border-width: 0px;
+  }
+
+  .note-properties {
+    background-color: rgb(245, 239, 234);
+    border-color: rgb(224, 205, 190);
+    border-radius: 7px;
+  }
+
+  .note-properties-key {
+    color: rgb(165, 118, 80);
+    font-weight: 400;
+  }
+
+  .note-properties-value {
+    color: rgb(165, 118, 80);
+  }
+
+  .note-properties-tags {
+    background-color: rgb(217, 175, 140);
+    color: rgb(250, 244, 240);
+    border-radius: 27.7333px;
+  }
+
+  .note-properties-row {
+    border-color: rgb(165, 118, 80);
+  }
+
+  details.toc summary::marker {
+    color: rgb(110, 79, 53);
+  }
+
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(191, 121, 64);
@@ -4710,6 +4824,7 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+    opacity: 1;
   }
 
   footer ul li a {
@@ -4977,6 +5092,34 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+  }
+
+  ul.tags > li {
+    background-color: rgb(217, 175, 140);
+    color: rgb(250, 244, 240);
+    border: 0px solid rgba(217, 175, 140, 0.15);
+    border-top-left-radius: 24.5px;
+    border-top-right-radius: 24.5px;
+    border-bottom-left-radius: 24.5px;
+    border-bottom-right-radius: 24.5px;
+  }
+
+  li.task-list-item input[type="checkbox"] {
+    border-color: rgb(110, 79, 53);
+    border-radius: 4.8px;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  li.task-list-item input[type="checkbox"]:checked {
+    background-color: rgb(110, 79, 53);
+    border-color: rgb(110, 79, 53);
+  }
+
+  h1.article-title {
+    color: rgb(110, 79, 53);
+    font-size: 13.8667px;
+    font-weight: 400;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -5845,7 +5988,7 @@ html[saved-theme="dark"] {
     strong {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(250, 219, 158);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5886,7 +6029,7 @@ html[saved-theme="dark"] {
     b {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(250, 219, 158);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5927,7 +6070,7 @@ html[saved-theme="dark"] {
     em {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(250, 219, 158);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5968,7 +6111,7 @@ html[saved-theme="dark"] {
     i {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(250, 219, 158);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -6008,7 +6151,7 @@ html[saved-theme="dark"] {
     .text-highlight {
       background-color: rgb(255, 255, 0);
       color: rgb(0, 0, 0);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -6057,7 +6200,7 @@ html[saved-theme="dark"] {
     del {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(250, 219, 158);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -6345,12 +6488,6 @@ html[saved-theme="dark"] {
       width: auto;
       display: list-item;
       background-color: rgba(0, 0, 0, 0);
-    }
-
-    .page article li:has(> input[type="checkbox"]:checked) {
-      color: rgb(128, 111, 77);
-      text-decoration: line-through;
-      text-decoration-color: rgb(128, 111, 77);
     }
 
     blockquote {
@@ -7249,7 +7386,7 @@ html[saved-theme="dark"] {
       border-top-color: rgb(250, 219, 158);
       border-bottom-color: rgb(250, 219, 158);
       border-left: 0px solid rgb(250, 219, 158);
-      border-right: 1px dotted rgb(250, 219, 158);
+      border-right: 0px dotted rgb(250, 219, 158);
       border-top-width: 0px;
       border-bottom-width: 0px;
       border-top-left-radius: 0px;
@@ -7499,109 +7636,109 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="-"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task=">"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="/"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="?"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="!"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="*"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="l"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="b"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="i"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="S"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="I"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="p"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="c"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="f"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="k"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="u"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="d"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
     li.task-list-item[data-task="w"] {
       color: rgb(250, 219, 158);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(250, 219, 158);
     }
 
@@ -7736,6 +7873,91 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
     }
 
+    .explorer .folder-outer > ul {
+      border-left: 1px solid rgb(128, 111, 77);
+    }
+
+    .explorer {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .bases-table {
+      border-color: rgb(128, 128, 128);
+    }
+
+    .bases-table thead th {
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(250, 219, 158);
+      font-weight: 600;
+      border-color: rgb(64, 55, 38);
+    }
+
+    .bases-table tbody tr:nth-child(even) {
+      background-color: rgb(38, 33, 23);
+    }
+
+    .canvas-node {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(250, 219, 158);
+      border-radius: 0px;
+      border-width: 0px;
+    }
+
+    .canvas-node-content {
+      color: rgb(250, 219, 158);
+    }
+
+    .canvas-node-file {
+      color: rgb(250, 219, 158);
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .canvas-sidebar {
+      background-color: rgb(45, 39, 27);
+      border-color: rgb(250, 219, 158);
+      box-shadow:
+        rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset,
+        rgba(0, 0, 0, 0.15) 0px 2px 4px 0px,
+        rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px,
+        rgba(0, 0, 0, 0.2) 0px 1px 2px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    }
+
+    .canvas-node-group {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(250, 219, 158);
+      border-width: 0px;
+    }
+
+    .note-properties {
+      background-color: rgb(32, 28, 19);
+      border-color: rgb(70, 61, 42);
+      border-radius: 7px;
+    }
+
+    .note-properties-key {
+      color: rgb(153, 133, 92);
+      font-weight: 400;
+    }
+
+    .note-properties-value {
+      color: rgb(153, 133, 92);
+    }
+
+    .note-properties-tags {
+      background-color: rgb(194, 133, 10);
+      color: rgb(36, 24, 0);
+      border-radius: 27.7333px;
+    }
+
+    .note-properties-row {
+      border-color: rgb(153, 133, 92);
+    }
+
+    details.toc summary::marker {
+      color: rgb(250, 219, 158);
+    }
+
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(245, 184, 61);
@@ -7770,6 +7992,7 @@ html[saved-theme="dark"] {
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
+      opacity: 1;
     }
 
     footer ul li a {
@@ -8037,6 +8260,34 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+    }
+
+    ul.tags > li {
+      background-color: rgb(194, 133, 10);
+      color: rgb(36, 24, 0);
+      border: 0px solid rgba(194, 133, 10, 0.15);
+      border-top-left-radius: 24.5px;
+      border-top-right-radius: 24.5px;
+      border-bottom-left-radius: 24.5px;
+      border-bottom-right-radius: 24.5px;
+    }
+
+    li.task-list-item input[type="checkbox"] {
+      border-color: rgb(250, 219, 158);
+      border-radius: 4.8px;
+      border-width: 1px;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    li.task-list-item input[type="checkbox"]:checked {
+      background-color: rgb(250, 219, 158);
+      border-color: rgb(250, 219, 158);
+    }
+
+    h1.article-title {
+      color: rgb(250, 219, 158);
+      font-size: 13.8667px;
+      font-weight: 400;
     }
   }
 }
@@ -9020,51 +9271,75 @@ button.toc-header .fold,
 
 figure[data-rehype-pretty-code-figure] pre,
 pre {
-  background-color: var(--code-background);
+  background-color: var(--qt-code-background, var(--code-background));
   white-space: pre;
 
   & > code {
     overflow-x: auto;
 
-    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
-      color: var(--code-value) !important;
+    span[class*="qt-code-keyword"] {
+      color: var(--qt-code-keyword, var(--code-keyword)) !important;
     }
-    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
-      color: var(--code-function) !important;
+    span[class*="qt-code-string"] {
+      color: var(--qt-code-string, var(--code-string)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
-      color: var(--code-string) !important;
+    span[class*="qt-code-comment"] {
+      color: var(--qt-code-comment, var(--code-comment)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
-      color: var(--code-property) !important;
+    span[class*="qt-code-function"] {
+      color: var(--qt-code-function, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
-      color: var(--code-normal) !important;
+    span[class*="qt-code-number"] {
+      color: var(--qt-code-number, var(--code-value)) !important;
     }
-    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
-      color: var(--code-punctuation) !important;
+    span[class*="qt-code-operator"] {
+      color: var(--qt-code-operator, var(--code-operator)) !important;
     }
-    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-property"] {
+      color: var(--qt-code-property, var(--code-property)) !important;
     }
-    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-variable"] {
+      color: var(--qt-code-variable, var(--code-normal)) !important;
     }
-    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
-      color: var(--code-tag) !important;
+    span[class*="qt-code-tag"] {
+      color: var(--qt-code-tag, var(--code-tag)) !important;
     }
-    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
-      color: var(--code-important) !important;
+    span[class*="qt-code-attribute"] {
+      color: var(--qt-code-attribute, var(--code-important)) !important;
     }
-    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-      color: var(--text-operator) !important;
+    span[class*="qt-code-type"] {
+      color: var(--qt-code-type, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
-      color: var(--code-keyword) !important;
+    span[class*="qt-code-builtin"] {
+      color: var(--qt-code-builtin, var(--code-function)) !important;
+    }
+    span[class*="qt-code-atom"] {
+      color: var(--qt-code-atom, var(--code-value)) !important;
+    }
+    span[class*="qt-code-meta"] {
+      color: var(--qt-code-meta, var(--code-comment)) !important;
+    }
+    span[class*="qt-code-qualifier"] {
+      color: var(--qt-code-qualifier, var(--code-property)) !important;
+    }
+    span[class*="qt-code-punctuation"] {
+      color: var(--qt-code-punctuation, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-bracket"] {
+      color: var(--qt-code-bracket, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-header"] {
+      color: var(--qt-code-header, var(--code-tag)) !important;
+    }
+    span[class*="qt-code-link"] {
+      color: var(--qt-code-link, var(--code-string)) !important;
+    }
+    span[class*="qt-code-error"] {
+      color: var(--qt-code-error, var(--code-important)) !important;
     }
 
     background-color: transparent;
-    color: var(--code-normal);
+    color: var(--qt-code-default, var(--code-normal));
   }
 }
 

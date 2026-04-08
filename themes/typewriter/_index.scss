@@ -19,6 +19,24 @@
   --text-normal: hsl(0, 0%, 15%) !important;
   --titlebar-background: hsl(42, 34%, 84%) !important;
   --input-height: 32px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: hsl(0, 0%, 90%) !important;
+  --background-modifier-form-field: hsl(0, 0%, 102%) !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: hsl(0, 0%, 90%) !important;
+  --pill-border-color-hover: hsl(0, 0%, 84%) !important;
+  --pill-border-width: 1px !important;
+  --pill-color: hsl(0, 0%, 35%) !important;
+  --pill-color-hover: hsl(0, 0%, 15%) !important;
+  --pill-color-remove: hsl(0, 0%, 62%) !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -32,7 +50,6 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: hsl(0, 0%, 90%) !important;
   --background-modifier-border-focus: hsl(0, 0%, 76%) !important;
   --background-modifier-border-hover: hsl(0, 0%, 84%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -40,7 +57,6 @@
   --background-modifier-error: #e93147 !important;
   --background-modifier-error-hover: #e93147 !important;
   --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field: hsl(0, 0%, 102%) !important;
   --background-modifier-form-field-hover: hsl(0, 0%, 102%) !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -70,7 +86,6 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.688em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -406,8 +421,6 @@
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -427,15 +440,12 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 600 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: hsl(0, 0%, 62%) !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: hsl(0, 0%, 62%) !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -620,19 +630,9 @@
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: hsl(0, 0%, 90%) !important;
-  --pill-border-color-hover: hsl(0, 0%, 84%) !important;
-  --pill-border-width: 1px !important;
-  --pill-color: hsl(0, 0%, 35%) !important;
-  --pill-color-hover: hsl(0, 0%, 15%) !important;
-  --pill-color-remove: hsl(0, 0%, 62%) !important;
   --pill-color-remove-hover: hsl(129, 31.9%, 46.7%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -967,6 +967,24 @@
   --text-normal: rgb(197, 184, 161) !important;
   --titlebar-background: hsl(30, 11.5%, 20.4%) !important;
   --input-height: 32px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: #333 !important;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3) !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: #333 !important;
+  --pill-border-color-hover: rgb(94, 94, 94) !important;
+  --pill-border-width: 1px !important;
+  --pill-color: hsl(0, 0%, 60%) !important;
+  --pill-color-hover: rgb(197, 184, 161) !important;
+  --pill-color-remove: hsl(0, 0%, 62%) !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -980,7 +998,6 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: #333 !important;
   --background-modifier-border-focus: hsl(0, 0%, 36%) !important;
   --background-modifier-border-hover: rgb(94, 94, 94) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -988,7 +1005,6 @@
   --background-modifier-error: #3d0000 !important;
   --background-modifier-error-hover: #470000 !important;
   --background-modifier-error-rgb: 61, 0, 0 !important;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-form-field-hover: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -1018,7 +1034,6 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.688em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -1350,8 +1365,6 @@
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -1371,15 +1384,12 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 600 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: hsl(0, 0%, 62%) !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: hsl(0, 0%, 62%) !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -1562,19 +1572,9 @@
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px #333 !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: #333 !important;
-  --pill-border-color-hover: rgb(94, 94, 94) !important;
-  --pill-border-width: 1px !important;
-  --pill-color: hsl(0, 0%, 60%) !important;
-  --pill-color-hover: rgb(197, 184, 161) !important;
-  --pill-color-remove: hsl(0, 0%, 62%) !important;
   --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -1876,6 +1876,41 @@
   --theme-accent-s: 31.9% !important;
 
   --quartz-icon-color: currentColor;
+}
+
+html[saved-theme="light"] body {
+  --qt-code-atom: rgb(108, 153, 187);
+  --qt-code-comment: rgb(158, 158, 158);
+  --qt-code-function: rgb(108, 153, 187);
+  --qt-code-header: rgb(38, 38, 38);
+  --qt-code-keyword: rgb(213, 57, 132);
+  --qt-code-number: rgb(120, 82, 238);
+  --qt-code-operator: rgb(233, 49, 71);
+  --qt-code-property: rgb(224, 172, 0);
+  --qt-code-string: rgb(8, 185, 78);
+  --qt-code-string: rgb(8, 185, 78);
+  --qt-code-variable: rgb(0, 191, 188);
+  --qt-code-variable-2: rgb(0, 191, 188);
+  --qt-code-default: rgb(108, 153, 187);
+  --qt-code-background: rgb(238, 232, 213);
+  --qt-code-border-color: rgb(230, 230, 230);
+}
+html[saved-theme="dark"] body {
+  --qt-code-atom: rgb(108, 153, 187);
+  --qt-code-comment: rgb(158, 158, 158);
+  --qt-code-function: rgb(108, 153, 187);
+  --qt-code-header: rgb(197, 184, 161);
+  --qt-code-keyword: rgb(250, 153, 205);
+  --qt-code-number: rgb(168, 130, 255);
+  --qt-code-operator: rgb(251, 70, 76);
+  --qt-code-property: rgb(224, 222, 113);
+  --qt-code-string: rgb(68, 207, 110);
+  --qt-code-string: rgb(68, 207, 110);
+  --qt-code-variable: rgb(83, 223, 221);
+  --qt-code-variable-2: rgb(83, 223, 221);
+  --qt-code-default: rgb(108, 153, 187);
+  --qt-code-background: rgb(32, 32, 32);
+  --qt-code-border-color: rgb(51, 51, 51);
 }
 
 html {
@@ -2410,25 +2445,11 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(38, 38, 38);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "iA Writer Quattro S",
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "iA Writer Quattro S";
     font-weight: 600;
     outline: rgb(38, 38, 38) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -2452,25 +2473,11 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(38, 38, 38);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "iA Writer Quattro S",
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "iA Writer Quattro S";
     font-weight: 600;
     outline: rgb(38, 38, 38) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -2494,25 +2501,11 @@ body {
   em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(38, 38, 38);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "iA Writer Quattro S",
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "iA Writer Quattro S";
     font-weight: 400;
     outline: rgb(38, 38, 38) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -2536,25 +2529,11 @@ body {
   i {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(38, 38, 38);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "iA Writer Quattro S",
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "iA Writer Quattro S";
     font-weight: 400;
     outline: rgb(38, 38, 38) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -2577,25 +2556,11 @@ body {
   .text-highlight {
     background-color: rgb(255, 255, 0);
     color: rgb(0, 0, 0);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "iA Writer Quattro S",
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "iA Writer Quattro S";
     font-weight: 400;
     outline: rgb(38, 38, 38) none 0px;
     text-decoration: rgb(0, 0, 0);
@@ -2627,25 +2592,11 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(38, 38, 38);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "iA Writer Quattro S",
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "iA Writer Quattro S";
     font-weight: 400;
     outline: rgb(38, 38, 38) none 0px;
     text-decoration: line-through;
@@ -2914,12 +2865,6 @@ body {
     width: auto;
     display: list-item;
     background-color: rgba(0, 0, 0, 0);
-  }
-
-  .page article li:has(> input[type="checkbox"]:checked) {
-    color: rgb(89, 89, 89);
-    text-decoration: line-through;
-    text-decoration-color: rgb(89, 89, 89);
   }
 
   blockquote {
@@ -3691,11 +3636,9 @@ body {
 
   .transclude-inner {
     background-color: rgba(0, 0, 0, 0);
+    border-left: solid;
+    border-width: 0px;
     border-color: rgb(38, 38, 38);
-    border-left: 2px solid rgb(109, 180, 120);
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3915,109 +3858,109 @@ body {
 
   li.task-list-item[data-task="-"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(38, 38, 38);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(38, 38, 38);
   }
 
@@ -4153,6 +4096,91 @@ body {
     text-decoration: rgb(34, 34, 34);
   }
 
+  .explorer .folder-outer > ul {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .explorer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .bases-table {
+    border-color: rgb(128, 128, 128);
+  }
+
+  .bases-table thead th {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(38, 38, 38);
+    font-weight: 600;
+    border-color: rgb(230, 230, 230);
+  }
+
+  .bases-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .canvas-node {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(38, 38, 38);
+    border-radius: 0px;
+    border-width: 0px;
+  }
+
+  .canvas-node-content {
+    color: rgb(38, 38, 38);
+  }
+
+  .canvas-node-file {
+    color: rgb(38, 38, 38);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .canvas-sidebar {
+    background-color: rgb(252, 245, 228);
+    border-color: rgb(38, 38, 38);
+    box-shadow:
+      rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset,
+      rgba(0, 0, 0, 0.05) 0px 2px 3px 0px,
+      rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px,
+      rgba(0, 0, 0, 0.04) 0px 1px 2px 0px,
+      rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  }
+
+  .canvas-node-group {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(38, 38, 38);
+    border-width: 0px;
+  }
+
+  .note-properties {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(230, 230, 230);
+    border-radius: 0px;
+  }
+
+  .note-properties-key {
+    color: rgb(89, 89, 89);
+    font-weight: 400;
+  }
+
+  .note-properties-value {
+    color: rgb(89, 89, 89);
+  }
+
+  .note-properties-tags {
+    background-color: rgba(138, 92, 245, 0.1);
+    color: rgb(81, 157, 92);
+    border-radius: 26.016px;
+  }
+
+  .note-properties-row {
+    border-color: rgb(89, 89, 89);
+  }
+
+  details.toc summary::marker {
+    color: rgb(38, 38, 38);
+  }
+
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(89, 89, 89);
@@ -4190,6 +4218,7 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    opacity: 1;
   }
 
   footer ul li a {
@@ -4462,6 +4491,34 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+  }
+
+  ul.tags > li {
+    background-color: rgba(138, 92, 245, 0.1);
+    color: rgb(81, 157, 92);
+    border: 0px solid rgba(138, 92, 245, 0.15);
+    border-top-left-radius: 15.147px;
+    border-top-right-radius: 15.147px;
+    border-bottom-left-radius: 15.147px;
+    border-bottom-right-radius: 15.147px;
+  }
+
+  li.task-list-item input[type="checkbox"] {
+    border-color: rgb(158, 158, 158);
+    border-radius: 2px;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  li.task-list-item input[type="checkbox"]:checked {
+    background-color: rgb(109, 180, 120);
+    border-color: rgb(109, 180, 120);
+  }
+
+  h1.article-title {
+    color: rgb(38, 38, 38);
+    font-size: 13px;
+    font-weight: 400;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -5292,25 +5349,11 @@ html[saved-theme="dark"] {
     strong {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(197, 184, 161);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "iA Writer Quattro S",
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
+      font-family: "iA Writer Quattro S";
       font-weight: 600;
       outline: rgb(197, 184, 161) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5334,25 +5377,11 @@ html[saved-theme="dark"] {
     b {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(197, 184, 161);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "iA Writer Quattro S",
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
+      font-family: "iA Writer Quattro S";
       font-weight: 600;
       outline: rgb(197, 184, 161) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5376,25 +5405,11 @@ html[saved-theme="dark"] {
     em {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(197, 184, 161);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "iA Writer Quattro S",
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
+      font-family: "iA Writer Quattro S";
       font-weight: 400;
       outline: rgb(197, 184, 161) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5418,25 +5433,11 @@ html[saved-theme="dark"] {
     i {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(197, 184, 161);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "iA Writer Quattro S",
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
+      font-family: "iA Writer Quattro S";
       font-weight: 400;
       outline: rgb(197, 184, 161) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5459,25 +5460,11 @@ html[saved-theme="dark"] {
     .text-highlight {
       background-color: rgb(255, 255, 0);
       color: rgb(0, 0, 0);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "iA Writer Quattro S",
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
+      font-family: "iA Writer Quattro S";
       font-weight: 400;
       outline: rgb(197, 184, 161) none 0px;
       text-decoration: rgb(0, 0, 0);
@@ -5509,25 +5496,11 @@ html[saved-theme="dark"] {
     del {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(197, 184, 161);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "iA Writer Quattro S",
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
+      font-family: "iA Writer Quattro S";
       font-weight: 400;
       outline: rgb(197, 184, 161) none 0px;
       text-decoration: line-through;
@@ -5796,12 +5769,6 @@ html[saved-theme="dark"] {
       width: auto;
       display: list-item;
       background-color: rgba(0, 0, 0, 0);
-    }
-
-    .page article li:has(> input[type="checkbox"]:checked) {
-      color: rgb(153, 153, 153);
-      text-decoration: line-through;
-      text-decoration-color: rgb(153, 153, 153);
     }
 
     blockquote {
@@ -6578,11 +6545,9 @@ html[saved-theme="dark"] {
 
     .transclude-inner {
       background-color: rgba(0, 0, 0, 0);
+      border-left: solid;
+      border-width: 0px;
       border-color: rgb(197, 184, 161);
-      border-left: 2px solid rgb(109, 180, 120);
-      border-right-width: 0px;
-      border-top-width: 0px;
-      border-bottom-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6802,109 +6767,109 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="-"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task=">"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="/"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="?"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="!"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="*"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="l"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="b"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="i"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="S"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="I"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="p"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="c"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="f"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="k"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="u"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="d"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
     li.task-list-item[data-task="w"] {
       color: rgb(197, 184, 161);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(197, 184, 161);
     }
 
@@ -7043,6 +7008,91 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
     }
 
+    .explorer .folder-outer > ul {
+      border-left: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .explorer {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .bases-table {
+      border-color: rgb(128, 128, 128);
+    }
+
+    .bases-table thead th {
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(197, 184, 161);
+      font-weight: 600;
+      border-color: rgb(51, 51, 51);
+    }
+
+    .bases-table tbody tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .canvas-node {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(197, 184, 161);
+      border-radius: 0px;
+      border-width: 0px;
+    }
+
+    .canvas-node-content {
+      color: rgb(197, 184, 161);
+    }
+
+    .canvas-node-file {
+      color: rgb(197, 184, 161);
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .canvas-sidebar {
+      background-color: rgb(58, 52, 46);
+      border-color: rgb(197, 184, 161);
+      box-shadow:
+        rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset,
+        rgba(0, 0, 0, 0.15) 0px 2px 4px 0px,
+        rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px,
+        rgba(0, 0, 0, 0.2) 0px 1px 2px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    }
+
+    .canvas-node-group {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(197, 184, 161);
+      border-width: 0px;
+    }
+
+    .note-properties {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(51, 51, 51);
+      border-radius: 0px;
+    }
+
+    .note-properties-key {
+      color: rgb(153, 153, 153);
+      font-weight: 400;
+    }
+
+    .note-properties-value {
+      color: rgb(153, 153, 153);
+    }
+
+    .note-properties-tags {
+      background-color: rgba(138, 92, 245, 0.1);
+      color: rgb(166, 138, 249);
+      border-radius: 26.016px;
+    }
+
+    .note-properties-row {
+      border-color: rgb(153, 153, 153);
+    }
+
+    details.toc summary::marker {
+      color: rgb(197, 184, 161);
+    }
+
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(153, 153, 153);
@@ -7080,6 +7130,7 @@ html[saved-theme="dark"] {
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
+      opacity: 1;
     }
 
     footer ul li a {
@@ -7352,6 +7403,34 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+    }
+
+    ul.tags > li {
+      background-color: rgba(138, 92, 245, 0.1);
+      color: rgb(166, 138, 249);
+      border: 0px solid rgba(138, 92, 245, 0.15);
+      border-top-left-radius: 15.147px;
+      border-top-right-radius: 15.147px;
+      border-bottom-left-radius: 15.147px;
+      border-bottom-right-radius: 15.147px;
+    }
+
+    li.task-list-item input[type="checkbox"] {
+      border-color: rgb(158, 158, 158);
+      border-radius: 2px;
+      border-width: 1px;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    li.task-list-item input[type="checkbox"]:checked {
+      background-color: rgb(109, 180, 120);
+      border-color: rgb(109, 180, 120);
+    }
+
+    h1.article-title {
+      color: rgb(197, 184, 161);
+      font-size: 13px;
+      font-weight: 400;
     }
   }
 }
@@ -8335,51 +8414,75 @@ button.toc-header .fold,
 
 figure[data-rehype-pretty-code-figure] pre,
 pre {
-  background-color: var(--code-background);
+  background-color: var(--qt-code-background, var(--code-background));
   white-space: pre;
 
   & > code {
     overflow-x: auto;
 
-    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
-      color: var(--code-value) !important;
+    span[class*="qt-code-keyword"] {
+      color: var(--qt-code-keyword, var(--code-keyword)) !important;
     }
-    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
-      color: var(--code-function) !important;
+    span[class*="qt-code-string"] {
+      color: var(--qt-code-string, var(--code-string)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
-      color: var(--code-string) !important;
+    span[class*="qt-code-comment"] {
+      color: var(--qt-code-comment, var(--code-comment)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
-      color: var(--code-property) !important;
+    span[class*="qt-code-function"] {
+      color: var(--qt-code-function, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
-      color: var(--code-normal) !important;
+    span[class*="qt-code-number"] {
+      color: var(--qt-code-number, var(--code-value)) !important;
     }
-    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
-      color: var(--code-punctuation) !important;
+    span[class*="qt-code-operator"] {
+      color: var(--qt-code-operator, var(--code-operator)) !important;
     }
-    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-property"] {
+      color: var(--qt-code-property, var(--code-property)) !important;
     }
-    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-variable"] {
+      color: var(--qt-code-variable, var(--code-normal)) !important;
     }
-    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
-      color: var(--code-tag) !important;
+    span[class*="qt-code-tag"] {
+      color: var(--qt-code-tag, var(--code-tag)) !important;
     }
-    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
-      color: var(--code-important) !important;
+    span[class*="qt-code-attribute"] {
+      color: var(--qt-code-attribute, var(--code-important)) !important;
     }
-    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-      color: var(--text-operator) !important;
+    span[class*="qt-code-type"] {
+      color: var(--qt-code-type, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
-      color: var(--code-keyword) !important;
+    span[class*="qt-code-builtin"] {
+      color: var(--qt-code-builtin, var(--code-function)) !important;
+    }
+    span[class*="qt-code-atom"] {
+      color: var(--qt-code-atom, var(--code-value)) !important;
+    }
+    span[class*="qt-code-meta"] {
+      color: var(--qt-code-meta, var(--code-comment)) !important;
+    }
+    span[class*="qt-code-qualifier"] {
+      color: var(--qt-code-qualifier, var(--code-property)) !important;
+    }
+    span[class*="qt-code-punctuation"] {
+      color: var(--qt-code-punctuation, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-bracket"] {
+      color: var(--qt-code-bracket, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-header"] {
+      color: var(--qt-code-header, var(--code-tag)) !important;
+    }
+    span[class*="qt-code-link"] {
+      color: var(--qt-code-link, var(--code-string)) !important;
+    }
+    span[class*="qt-code-error"] {
+      color: var(--qt-code-error, var(--code-important)) !important;
     }
 
     background-color: transparent;
-    color: var(--code-normal);
+    color: var(--qt-code-default, var(--code-normal));
   }
 }
 

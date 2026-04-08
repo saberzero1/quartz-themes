@@ -758,6 +758,33 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   background-color: rgb(26, 30, 36);
 }
 
+html body .bases-table thead th {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(20, 23, 27);
+}
+
+html body .note-properties-key {
+  color: rgb(186, 186, 186);
+}
+
+html body .note-properties-row {
+  border-color: rgb(186, 186, 186);
+}
+
+html body .note-properties-tags {
+  background-color: rgb(20, 23, 27);
+  border-radius: 4px;
+  color: rgb(173, 57, 57);
+}
+
+html body .note-properties-value {
+  color: rgb(186, 186, 186);
+}
+
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(20, 23, 27);
 }
@@ -769,7 +796,12 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(26, 30, 36);
 }`,
-    typography: `html body p {
+    typography: `html body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+html body p {
   color: rgb(186, 186, 186);
   font-family: Cuprum;
   outline: rgb(186, 186, 186) none 0px;
@@ -900,17 +932,8 @@ html body pre:has(> code) {
 
 html body .transclude {
   border-left-color: rgb(214, 186, 124);
-}
-
-html body .transclude-inner {
-  border-left-color: rgb(214, 186, 124);
 }`,
-    checkboxes: `html body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(102, 102, 102);
-  text-decoration-color: rgb(102, 102, 102);
-}
-
-html body input[type=checkbox] {
+    checkboxes: `html body input[type=checkbox] {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 200px;
   border-bottom-right-radius: 200px;
@@ -1318,6 +1341,19 @@ html body kbd {
   border-right-color: rgb(214, 186, 124);
   border-top-color: rgb(214, 186, 124);
   color: rgb(214, 186, 124);
+}
+
+html body ul.tags > li {
+  background-color: rgb(20, 23, 27);
+  border-bottom-color: rgba(139, 108, 239, 0.15);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left-color: rgba(139, 108, 239, 0.15);
+  border-right-color: rgba(139, 108, 239, 0.15);
+  border-top-color: rgba(139, 108, 239, 0.15);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: rgb(173, 57, 57);
 }`,
   },
   light: {},

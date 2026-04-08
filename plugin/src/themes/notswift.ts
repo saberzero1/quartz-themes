@@ -372,6 +372,51 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(228, 228, 228);
 }
 
+html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(41, 26, 77);
+  color: rgb(228, 228, 228);
+}
+
+html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(228, 228, 228);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(228, 228, 228);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  border-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(30, 30, 30);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(149, 149, 149);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(149, 149, 149);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  border-radius: 4px;
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(149, 149, 149);
+}
+
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   color: rgb(228, 228, 228);
 }
@@ -429,6 +474,21 @@ html[saved-theme="dark"] body del {
   font-family: "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   outline: rgb(228, 228, 228) none 0px;
   text-decoration-color: rgb(228, 228, 228);
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(30, 30, 30);
+  font-size: 10px;
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(70, 69, 69);
+  border-radius: 50%;
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(96, 88, 82);
+  border-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body p {
@@ -653,12 +713,8 @@ html[saved-theme="dark"] body .transclude {
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(228, 228, 228);
   border-left-color: rgb(228, 228, 228);
-  border-left-width: 0px;
   border-right-color: rgb(228, 228, 228);
   border-top-color: rgb(228, 228, 228);
-  padding-bottom: 6px;
-  padding-left: 10px;
-  padding-top: 6px;
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -666,11 +722,6 @@ html[saved-theme="dark"] body .transclude-inner {
 
 html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
   font-family: "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-}
-
-html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(184, 178, 177);
-  text-decoration-color: rgb(184, 178, 177);
 }
 
 html[saved-theme="dark"] body input[type=checkbox] {
@@ -1167,6 +1218,9 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(149, 149, 149);
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+}`,
+    toc: `html[saved-theme="dark"] body details.toc summary::marker {
+  color: rgb(228, 228, 228);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(149, 149, 149);
@@ -1716,6 +1770,51 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(76, 73, 73);
 }
 
+html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(234, 226, 253);
+  color: rgb(138, 92, 245);
+}
+
+html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(76, 73, 73);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgb(76, 73, 73);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(76, 73, 73);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(76, 73, 73);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  border-color: rgb(76, 73, 73);
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(216, 210, 210);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(110, 105, 102);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(110, 105, 102);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  border-radius: 4px;
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(110, 105, 102);
+}
+
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(240, 232, 230);
   color: rgb(76, 73, 73);
@@ -1775,6 +1874,21 @@ html[saved-theme="light"] body del {
   font-family: "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   outline: rgb(76, 73, 73) none 0px;
   text-decoration-color: rgb(76, 73, 73);
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(70, 69, 69);
+  border-radius: 50%;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(223, 217, 215);
+  border-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body p {
@@ -1994,12 +2108,8 @@ html[saved-theme="light"] body .transclude {
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(76, 73, 73);
   border-left-color: rgb(76, 73, 73);
-  border-left-width: 0px;
   border-right-color: rgb(76, 73, 73);
   border-top-color: rgb(76, 73, 73);
-  padding-bottom: 6px;
-  padding-left: 10px;
-  padding-top: 6px;
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
@@ -2007,11 +2117,6 @@ html[saved-theme="light"] body .transclude-inner {
 
 html[saved-theme="light"] body .katex-display > .katex > .katex-html {
   font-family: "??", SFPro-Regular, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-}
-
-html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(184, 178, 177);
-  text-decoration-color: rgb(184, 178, 177);
 }
 
 html[saved-theme="light"] body input[type=checkbox] {
@@ -2507,6 +2612,9 @@ html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(110, 105, 102);
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+}`,
+    toc: `html[saved-theme="light"] body details.toc summary::marker {
+  color: rgb(76, 73, 73);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(110, 105, 102);

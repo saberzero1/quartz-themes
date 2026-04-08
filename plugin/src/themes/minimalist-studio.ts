@@ -102,15 +102,6 @@ html[saved-theme="dark"] body pre:has(> code) {
     embeds: `html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(218, 218, 218);
   border-left-width: 0px;
-}
-
-html[saved-theme="dark"] body .transclude-inner {
-  border-left-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-}`,
-    checkboxes: `html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(85, 85, 85);
-  text-decoration-color: rgb(85, 85, 85);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   gap: 8px;
@@ -243,6 +234,9 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-right-radius: 8px;
   padding-left: 20px;
 }`,
+    explorer: `html[saved-theme="dark"] body .explorer .folder-outer > ul {
+  border-left-style: dashed;
+}`,
   },
   light: {
     base: `:root:root {
@@ -313,15 +307,6 @@ html[saved-theme="light"] body pre:has(> code) {
     embeds: `html[saved-theme="light"] body .transclude {
   border-left-color: rgb(34, 34, 34);
   border-left-width: 0px;
-}
-
-html[saved-theme="light"] body .transclude-inner {
-  border-left-color: rgb(34, 34, 34);
-  border-left-width: 0px;
-}`,
-    checkboxes: `html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(189, 189, 189);
-  text-decoration-color: rgb(189, 189, 189);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   gap: 8px;
@@ -423,6 +408,9 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   padding-left: 20px;
+}`,
+    explorer: `html[saved-theme="light"] body .explorer .folder-outer > ul {
+  border-left-style: dashed;
 }`,
   },
 };

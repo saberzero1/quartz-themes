@@ -700,13 +700,6 @@ export const config = [
       "-webkit-mask-image",
     ],
   },
-  {
-    obsidianSelector: `li.is-checked.task-list-item[data-line=\"1\"][data-task=\"x\"]`,
-    publishSelector: `ul > li.task-list-item[data-task="x"]`,
-    quartzSelector: ".page article li:has(>input[type=checkbox]:checked)",
-    pseudoElement: "",
-    properties: ["color", "text-decoration", "text-decoration-color"],
-  },
   // blockquote
   {
     obsidianSelector: `blockquote`,
@@ -820,6 +813,32 @@ export const config = [
       ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description",
     pseudoElement: "",
     properties: ["color"],
+  },
+  // search: backdrop filter
+  {
+    obsidianSelector: `.search-view-container`,
+    publishSelector: null,
+    quartzSelector: ".search > .search-container",
+    pseudoElement: "",
+    properties: ["backdrop-filter", "-webkit-backdrop-filter"],
+  },
+  // search: highlight
+  {
+    obsidianSelector: `.search-result-file-matched-text`,
+    publishSelector: null,
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout .highlight",
+    pseudoElement: "",
+    properties: ["background-color", "border-radius"],
+  },
+  // search: preview panel
+  {
+    obsidianSelector: `.search-result-file-match`,
+    publishSelector: null,
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout > .preview-container",
+    pseudoElement: "",
+    properties: ["color", "background-color", "font-weight"],
   },
   {
     obsidianSelector: `h1[data-heading=\"This is a heading 1\"]`,
@@ -1057,7 +1076,7 @@ export const config = [
     pseudoElement: "",
     properties: [
       "--callout-color",
-      //"--callout-icon",
+      "--callout-icon",
       //"background-color",
       //"border-style",
       //"border-color",
@@ -1825,6 +1844,189 @@ export const config = [
       "text-decoration",
     ],
   },
+  // explorer: collapse icon
+  {
+    obsidianSelector: `.nav-folder-collapse-indicator.collapse-icon svg.svg-icon`,
+    publishSelector: null,
+    quartzSelector: ".explorer .folder-icon",
+    pseudoElement: "",
+    properties: ["color", "stroke", "fill", "opacity"],
+  },
+  // explorer: indent guide
+  {
+    obsidianSelector: `.tree-item-children`,
+    publishSelector: null,
+    quartzSelector: ".explorer .folder-outer > ul",
+    pseudoElement: "",
+    properties: ["border-left-color", "border-left-width", "border-left-style"],
+  },
+  // explorer: container background
+  {
+    obsidianSelector: `.nav-files-container`,
+    publishSelector: null,
+    quartzSelector: ".explorer",
+    pseudoElement: "",
+    properties: ["background-color"],
+  },
+  // === BASES ===
+  {
+    obsidianSelector: `table`,
+    publishSelector: null,
+    quartzSelector: ".bases-table",
+    pseudoElement: "",
+    properties: ["border-color"],
+  },
+  {
+    obsidianSelector: `thead th`,
+    publishSelector: null,
+    quartzSelector: ".bases-table thead th",
+    pseudoElement: "",
+    properties: ["background-color", "color", "font-weight", "border-color"],
+  },
+  {
+    obsidianSelector: `tbody tr`,
+    publishSelector: null,
+    quartzSelector: ".bases-table tbody tr:nth-child(even)",
+    pseudoElement: "",
+    properties: ["background-color"],
+  },
+  {
+    obsidianSelector: `.search-result-file-match`,
+    publishSelector: null,
+    quartzSelector: ".bases-card",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "border-color",
+      "border-radius",
+      "box-shadow",
+    ],
+  },
+  {
+    obsidianSelector: `.search-result-file-title`,
+    publishSelector: null,
+    quartzSelector: ".bases-card-title",
+    pseudoElement: "",
+    properties: ["color", "font-weight"],
+  },
+  {
+    obsidianSelector: `.workspace-tab-header-tab.is-active`,
+    publishSelector: null,
+    quartzSelector: ".bases-view-tabs button.active",
+    pseudoElement: "",
+    properties: ["color", "background-color"],
+  },
+  {
+    obsidianSelector: `.workspace-tab-header-tab`,
+    publishSelector: null,
+    quartzSelector: ".bases-view-tabs button",
+    pseudoElement: "",
+    properties: ["color", "background-color", "border-color"],
+  },
+  // === CANVAS ===
+  {
+    obsidianSelector: `.canvas-node`,
+    publishSelector: null,
+    quartzSelector: ".canvas-node",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "border-color",
+      "border-radius",
+      "border-width",
+      "box-shadow",
+    ],
+  },
+  {
+    obsidianSelector: `.canvas-node-content`,
+    publishSelector: null,
+    quartzSelector: ".canvas-node-content",
+    pseudoElement: "",
+    properties: ["color"],
+  },
+  {
+    obsidianSelector: `.canvas-node-container .markdown-rendered`,
+    publishSelector: null,
+    quartzSelector: ".canvas-node-file",
+    pseudoElement: "",
+    properties: ["color", "background-color"],
+  },
+  {
+    obsidianSelector: `.canvas-edge-label`,
+    publishSelector: null,
+    quartzSelector: ".canvas-edge-label",
+    pseudoElement: "",
+    properties: ["color", "background-color"],
+  },
+  {
+    obsidianSelector: `.canvas-control-group button`,
+    publishSelector: null,
+    quartzSelector: ".canvas-controls button",
+    pseudoElement: "",
+    properties: ["background-color", "border-color", "color"],
+  },
+  {
+    obsidianSelector: `.canvas-card-menu`,
+    publishSelector: null,
+    quartzSelector: ".canvas-sidebar",
+    pseudoElement: "",
+    properties: ["background-color", "border-color", "box-shadow"],
+  },
+  {
+    obsidianSelector: `.canvas-node-group`,
+    publishSelector: null,
+    quartzSelector: ".canvas-node-group",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "border-color",
+      "border-style",
+      "border-width",
+    ],
+  },
+  // === NOTE PROPERTIES ===
+  {
+    obsidianSelector: `.metadata-container`,
+    publishSelector: null,
+    quartzSelector: ".note-properties",
+    pseudoElement: "",
+    properties: ["background-color", "border-color", "border-radius"],
+  },
+  {
+    obsidianSelector: `.metadata-property-key`,
+    publishSelector: null,
+    quartzSelector: ".note-properties-key",
+    pseudoElement: "",
+    properties: ["color", "font-weight"],
+  },
+  {
+    obsidianSelector: `.metadata-property-value`,
+    publishSelector: null,
+    quartzSelector: ".note-properties-value",
+    pseudoElement: "",
+    properties: ["color"],
+  },
+  {
+    obsidianSelector: `.metadata-property-value a`,
+    publishSelector: null,
+    quartzSelector: ".note-properties-link",
+    pseudoElement: "",
+    properties: ["color", "text-decoration"],
+  },
+  {
+    obsidianSelector: `.multi-select-pill`,
+    publishSelector: null,
+    quartzSelector: ".note-properties-tags",
+    pseudoElement: "",
+    properties: ["background-color", "color", "border-radius"],
+  },
+  {
+    obsidianSelector: `.metadata-container .metadata-property`,
+    publishSelector: null,
+    quartzSelector: ".note-properties-row",
+    pseudoElement: "",
+    properties: ["border-color"],
+  },
   // === TABLE OF CONTENTS ===
   {
     obsidianSelector: `.outline-view-outer .outline-view`,
@@ -1866,6 +2068,30 @@ export const config = [
     quartzSelector: "ul.toc-content.overflow > li > a:hover",
     pseudoElement: "",
     properties: ["color", "text-decoration"],
+  },
+  // TOC: active section indicator
+  {
+    obsidianSelector: `.outline-view-outer .tree-item-self.is-active`,
+    publishSelector: null,
+    quartzSelector: "ul.toc-content.overflow > li > a.in-view",
+    pseudoElement: "",
+    properties: ["color", "opacity", "font-weight"],
+  },
+  // TOC: fold icon
+  {
+    obsidianSelector: `.outline-view-outer .tree-item-icon`,
+    publishSelector: null,
+    quartzSelector: ".toc .fold",
+    pseudoElement: "",
+    properties: ["color", "opacity"],
+  },
+  // TOC: summary marker
+  {
+    obsidianSelector: `details summary`,
+    publishSelector: null,
+    quartzSelector: "details.toc summary::marker",
+    pseudoElement: "::marker",
+    properties: ["color"],
   },
   // === GRAPH COMPONENT ===
   {
@@ -2234,5 +2460,46 @@ export const config = [
     quartzSelector: ".page article p > strong",
     pseudoElement: "",
     properties: ["color", "font-weight"],
+  },
+  // === MINOR GAPS ===
+  {
+    obsidianSelector: `input[type="checkbox"]`,
+    publishSelector: null,
+    quartzSelector: 'li.task-list-item input[type="checkbox"]',
+    pseudoElement: "",
+    properties: [
+      "border-color",
+      "border-radius",
+      "border-width",
+      "background-color",
+    ],
+  },
+  {
+    obsidianSelector: `input[type="checkbox"]:checked`,
+    publishSelector: null,
+    quartzSelector: 'li.task-list-item input[type="checkbox"]:checked',
+    pseudoElement: "",
+    properties: ["background-color", "border-color"],
+  },
+  {
+    obsidianSelector: `.status-bar`,
+    publishSelector: null,
+    quartzSelector: "footer",
+    pseudoElement: "",
+    properties: ["opacity"],
+  },
+  {
+    obsidianSelector: `.frontmatter-container`,
+    publishSelector: null,
+    quartzSelector: ".content-meta",
+    pseudoElement: "",
+    properties: ["color", "font-size"],
+  },
+  {
+    obsidianSelector: `.view-header-title`,
+    publishSelector: null,
+    quartzSelector: "h1.article-title",
+    pseudoElement: "",
+    properties: ["color", "font-size", "font-weight", "text-decoration"],
   },
 ];

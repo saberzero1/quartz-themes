@@ -32,6 +32,14 @@ export const theme: ThemeData = {
 html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
+}
+
+html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
+  background-color: rgb(30, 30, 30);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(218, 218, 218);
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(166, 138, 249);
@@ -132,6 +140,14 @@ html[saved-theme="light"] body {
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(250, 250, 250);
+}
+
+html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(34, 34, 34);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {

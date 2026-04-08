@@ -83,6 +83,30 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(187, 187, 187);
 }
 
+html body .bases-table thead th {
+  color: rgb(187, 187, 187);
+}
+
+html body .canvas-node {
+  border-color: rgb(187, 187, 187);
+}
+
+html body .canvas-node-content {
+  color: rgb(187, 187, 187);
+}
+
+html body .canvas-node-file {
+  color: rgb(187, 187, 187);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(187, 187, 187);
+}
+
+html body .canvas-sidebar {
+  border-color: rgb(187, 187, 187);
+}
+
 html body .page > div#quartz-body div.sidebar {
   color: rgb(187, 187, 187);
 }
@@ -121,6 +145,7 @@ html body .page article p > strong, html strong {
 }
 
 html body .text-highlight {
+  background-color: rgba(0, 0, 0, 0);
   color: rgb(187, 187, 187);
   outline: rgb(187, 187, 187) none 0px;
   text-decoration-color: rgb(187, 187, 187);
@@ -130,6 +155,14 @@ html body del {
   color: rgb(187, 187, 187);
   outline: rgb(187, 187, 187) none 0px;
   text-decoration-color: rgb(187, 187, 187);
+}
+
+html body h1.article-title {
+  color: rgb(187, 187, 187);
+}
+
+html body li.task-list-item input[type="checkbox"] {
+  border-radius: 0px;
 }`,
     lists: `html body dd {
   color: rgb(187, 187, 187);
@@ -274,6 +307,7 @@ html body .transclude {
 
 html body .transclude-inner {
   border-bottom-color: rgb(187, 187, 187);
+  border-left-color: rgb(187, 187, 187);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
 }`,
@@ -579,6 +613,9 @@ html body ::-webkit-scrollbar-thumb {
   border-left-color: rgb(187, 187, 187);
   border-right-color: rgb(187, 187, 187);
   border-top-color: rgb(187, 187, 187);
+}`,
+    toc: `html body details.toc summary::marker {
+  color: rgb(187, 187, 187);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 0px;

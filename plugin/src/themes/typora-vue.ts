@@ -122,6 +122,35 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(238, 238, 238);
 }
 
+html[saved-theme="dark"] body .bases-table thead th {
+  color: rgb(238, 238, 238);
+}
+
+html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(238, 238, 238);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(238, 238, 238);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(238, 238, 238);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(238, 238, 238);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  border-color: rgb(238, 238, 238);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(66, 184, 131, 0.1);
+  color: rgb(90, 197, 144);
+}
+
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   color: rgb(238, 238, 238);
 }
@@ -167,6 +196,15 @@ html[saved-theme="dark"] body del {
   color: rgb(238, 238, 238);
   outline: rgb(238, 238, 238) none 0px;
   text-decoration-color: rgb(238, 238, 238);
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(238, 238, 238);
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(66, 184, 131);
+  border-color: rgb(66, 184, 131);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(90, 197, 144);
@@ -347,7 +385,7 @@ html[saved-theme="dark"] body .transclude {
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(238, 238, 238);
-  border-left-color: rgb(66, 184, 131);
+  border-left-color: rgb(238, 238, 238);
   border-right-color: rgb(238, 238, 238);
   border-top-color: rgb(238, 238, 238);
 }`,
@@ -535,6 +573,9 @@ html[saved-theme="dark"] body h6 {
   border-right-color: rgb(238, 238, 238);
   border-top-color: rgb(238, 238, 238);
 }`,
+    toc: `html[saved-theme="dark"] body details.toc summary::marker {
+  color: rgb(238, 238, 238);
+}`,
     recentNotes: `html[saved-theme="dark"] body .recent-notes > h3 {
   color: rgb(238, 238, 238);
 }
@@ -608,6 +649,15 @@ html[saved-theme="dark"] body summary {
 
 html[saved-theme="dark"] body sup {
   color: rgb(238, 238, 238);
+}
+
+html[saved-theme="dark"] body ul.tags > li {
+  background-color: rgba(66, 184, 131, 0.1);
+  border-bottom-color: rgba(66, 184, 131, 0.15);
+  border-left-color: rgba(66, 184, 131, 0.15);
+  border-right-color: rgba(66, 184, 131, 0.15);
+  border-top-color: rgba(66, 184, 131, 0.15);
+  color: rgb(90, 197, 144);
 }`,
   },
   light: {
@@ -735,6 +785,35 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(52, 73, 94);
 }
 
+html[saved-theme="light"] body .bases-table thead th {
+  color: rgb(52, 73, 94);
+}
+
+html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(52, 73, 94);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgb(52, 73, 94);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(52, 73, 94);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(52, 73, 94);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  border-color: rgb(52, 73, 94);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(66, 184, 131, 0.1);
+  color: rgb(66, 184, 131);
+}
+
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(255, 255, 255);
   color: rgb(52, 73, 94);
@@ -782,6 +861,15 @@ html[saved-theme="light"] body del {
   color: rgb(52, 73, 94);
   outline: rgb(52, 73, 94) none 0px;
   text-decoration-color: rgb(52, 73, 94);
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(52, 73, 94);
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(77, 192, 138);
+  border-color: rgb(77, 192, 138);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
   color: rgb(66, 184, 131);
@@ -962,7 +1050,7 @@ html[saved-theme="light"] body .transclude {
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(52, 73, 94);
-  border-left-color: rgb(77, 192, 138);
+  border-left-color: rgb(52, 73, 94);
   border-right-color: rgb(52, 73, 94);
   border-top-color: rgb(52, 73, 94);
 }`,
@@ -1151,6 +1239,9 @@ html[saved-theme="light"] body h6 {
   border-right-color: rgb(52, 73, 94);
   border-top-color: rgb(52, 73, 94);
 }`,
+    toc: `html[saved-theme="light"] body details.toc summary::marker {
+  color: rgb(52, 73, 94);
+}`,
     footer: `html[saved-theme="light"] body footer {
   background-color: rgb(255, 255, 255);
 }`,
@@ -1231,6 +1322,15 @@ html[saved-theme="light"] body summary {
 
 html[saved-theme="light"] body sup {
   color: rgb(52, 73, 94);
+}
+
+html[saved-theme="light"] body ul.tags > li {
+  background-color: rgba(66, 184, 131, 0.1);
+  border-bottom-color: rgba(66, 184, 131, 0.15);
+  border-left-color: rgba(66, 184, 131, 0.15);
+  border-right-color: rgba(66, 184, 131, 0.15);
+  border-top-color: rgba(66, 184, 131, 0.15);
+  color: rgb(66, 184, 131);
 }`,
   },
 };

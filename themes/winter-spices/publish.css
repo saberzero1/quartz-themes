@@ -388,6 +388,24 @@ body.theme-light {
   --text-normal: #666666 !important;
   --titlebar-background: #4b2139 !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 0px !important;
+  --background-modifier-border: #a48783 !important;
+  --background-modifier-form-field: #fcfef3 !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: #a48783 !important;
+  --pill-border-color-hover: #202430 !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #c1aeac !important;
+  --pill-color-hover: #666666 !important;
+  --pill-color-remove: #a48783 !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -401,7 +419,6 @@ body.theme-light {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: #a48783 !important;
   --background-modifier-border-focus: #202430 !important;
   --background-modifier-border-hover: #202430 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -409,7 +426,6 @@ body.theme-light {
   --background-modifier-error: #e93147 !important;
   --background-modifier-error-hover: #e93147 !important;
   --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field: #fcfef3 !important;
   --background-modifier-form-field-hover: #fcfef3 !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -439,7 +455,6 @@ body.theme-light {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -776,8 +791,6 @@ body.theme-light {
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -797,15 +810,12 @@ body.theme-light {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: #a48783 !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #a48783 !important;
-  --input-radius: 0px !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -990,19 +1000,9 @@ body.theme-light {
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: #a48783 !important;
-  --pill-border-color-hover: #202430 !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #c1aeac !important;
-  --pill-color-hover: #666666 !important;
-  --pill-color-remove: #a48783 !important;
   --pill-color-remove-hover: #527a98 !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -1470,7 +1470,7 @@ body body.theme-light .markdown-rendered p {
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(102, 102, 102);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1509,7 +1509,7 @@ body body.theme-light strong {
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(102, 102, 102);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1548,7 +1548,7 @@ body body.theme-light b {
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(102, 102, 102);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1587,7 +1587,7 @@ body body.theme-light em {
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(102, 102, 102);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1626,7 +1626,7 @@ body body.theme-light i {
 body body.theme-light .markdown-rendered mark {
   background-color: rgba(255, 208, 0, 0.4);
   color: rgb(102, 102, 102);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1665,7 +1665,7 @@ body body.theme-light .markdown-rendered mark {
 body body.theme-light del {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(102, 102, 102);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1909,11 +1909,6 @@ body
   width: auto;
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-light ul > li.task-list-item[data-task="x"] {
-  color: rgb(193, 174, 172);
-  text-decoration: line-through;
-  text-decoration-color: rgb(193, 174, 172);
 }
 body body.theme-light .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -2542,11 +2537,9 @@ body body.theme-light .internal-embed {
 }
 body body.theme-light .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
+  border-left: solid;
+  border-width: 0px;
   border-color: rgb(102, 102, 102);
-  border-left: 2px solid rgb(152, 115, 247);
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2777,92 +2770,92 @@ body body.theme-light abbr {
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(102, 102, 102);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(102, 102, 102);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -3194,6 +3187,15 @@ body body.theme-light pre > code [data-highlighted-chars] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .tag {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(164, 135, 131);
+  border: 0px solid rgba(138, 92, 245, 0.15);
+  border-top-left-radius: 24.5px;
+  border-top-right-radius: 24.5px;
+  border-bottom-left-radius: 24.5px;
+  border-bottom-right-radius: 24.5px;
 }
 body body.theme-light .search-highlight {
   background-color: rgb(255, 255, 0);

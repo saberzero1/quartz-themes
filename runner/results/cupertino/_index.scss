@@ -27,6 +27,32 @@
   --text-normal: #333338 !important;
   --titlebar-background: transparent !important;
   --input-height: 32px !important;
+  --input-border-width: 0 !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 9px !important;
+  --background-modifier-border: color-mix(
+    in srgb,
+    #ebebed,
+    #333338 15%
+  ) !important;
+  --background-modifier-form-field: color-mix(
+    in srgb,
+    #ebebed,
+    #333338 10%
+  ) !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 2px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
+  --pill-border-color-hover: #deddda !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #5c5c60 !important;
+  --pill-color-hover: #333338 !important;
+  --pill-color-remove: #858587 !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -40,11 +66,6 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: color-mix(
-    in srgb,
-    #ebebed,
-    #333338 15%
-  ) !important;
   --background-modifier-border-focus: #c0bfbc !important;
   --background-modifier-border-hover: #deddda !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -52,11 +73,6 @@
   --background-modifier-error: rgb(237, 51, 59) !important;
   --background-modifier-error-hover: rgb(237, 51, 59) !important;
   --background-modifier-error-rgb: 237, 51, 59 !important;
-  --background-modifier-form-field: color-mix(
-    in srgb,
-    #ebebed,
-    #333338 10%
-  ) !important;
   --background-modifier-form-field-hover: color-mix(
     in srgb,
     #ebebed,
@@ -90,7 +106,6 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -433,8 +448,6 @@
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 2px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -454,15 +467,12 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 0 !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: superellipse(1.1) !important;
   --input-date-separator: #858587 !important;
   --input-font-weight: 700 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #858587 !important;
-  --input-radius: 9px !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
   --inset-end: right !important;
@@ -583,8 +593,8 @@
   --metadata-sidebar-input-font-size: 11px !important;
   --metadata-sidebar-label-font-size: 11px !important;
   --modal-background: #fafafb !important;
-  --modal-border-color: #c0bfbc !important;
-  --modal-border-width: 0px !important;
+  --modal-border-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
+  --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
   --modal-height: 85vh !important;
@@ -641,19 +651,9 @@
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
-  --pill-border-color-hover: #deddda !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #5c5c60 !important;
-  --pill-color-hover: #333338 !important;
-  --pill-color-remove: #858587 !important;
   --pill-color-remove-hover: hsl(258, 88%, 66%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -666,8 +666,8 @@
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
   --prompt-background: #fff !important;
-  --prompt-border-color: #c0bfbc !important;
-  --prompt-border-width: 0px !important;
+  --prompt-border-color: color-mix(in srgb, #ebebed, #333338 15%) !important;
+  --prompt-border-width: 1px !important;
   --prompt-input-height: 64px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
@@ -945,6 +945,7 @@
   --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
+  --banner-image-radius: 9px !important;
   --banner-mobile-offset: 0px !important;
   --block-width-max: calc(100cqw - 64px) !important;
   --block-width-offset: -32px !important;
@@ -965,7 +966,7 @@
   --embed-background: #fff !important;
   --font-ui-modifier: 0px !important;
   --hover-sidedock-delay: 160ms !important;
-  --hover-sidedock-trigger-area: 1px !important;
+  --hover-sidedock-trigger-area: 4px !important;
   --hover-sidedock-width: 320px !important;
   --icon-size-modifier: 0px !important;
   --icon-stroke-modifier: 1 !important;
@@ -1022,6 +1023,32 @@
   --text-normal: #fff !important;
   --titlebar-background: transparent !important;
   --input-height: 32px !important;
+  --input-border-width: 0 !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 9px !important;
+  --background-modifier-border: color-mix(
+    in srgb,
+    #2e2e32,
+    #fff 15%
+  ) !important;
+  --background-modifier-form-field: color-mix(
+    in srgb,
+    #2e2e32,
+    #fff 10%
+  ) !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 2px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
+  --pill-border-color-hover: #6b6970 !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #d2d2d2 !important;
+  --pill-color-hover: #fff !important;
+  --pill-color-remove: #99999b !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -1035,11 +1062,6 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: color-mix(
-    in srgb,
-    #2e2e32,
-    #fff 15%
-  ) !important;
   --background-modifier-border-focus: #77767b !important;
   --background-modifier-border-hover: #6b6970 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -1047,11 +1069,6 @@
   --background-modifier-error: rgb(224, 27, 36) !important;
   --background-modifier-error-hover: rgb(224, 27, 36) !important;
   --background-modifier-error-rgb: 224, 27, 36 !important;
-  --background-modifier-form-field: color-mix(
-    in srgb,
-    #2e2e32,
-    #fff 10%
-  ) !important;
   --background-modifier-form-field-hover: color-mix(
     in srgb,
     #2e2e32,
@@ -1085,7 +1102,6 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -1431,8 +1447,6 @@
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 2px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -1452,15 +1466,12 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 0 !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: superellipse(1.1) !important;
   --input-date-separator: #99999b !important;
   --input-font-weight: 700 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #99999b !important;
-  --input-radius: 9px !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
   --inset-end: right !important;
@@ -1581,8 +1592,8 @@
   --metadata-sidebar-input-font-size: 11px !important;
   --metadata-sidebar-label-font-size: 11px !important;
   --modal-background: #222226 !important;
-  --modal-border-color: #77767b !important;
-  --modal-border-width: 0px !important;
+  --modal-border-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
+  --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
   --modal-height: 85vh !important;
@@ -1637,19 +1648,9 @@
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px color-mix(in srgb, #2e2e32, #fff 15%) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
-  --pill-border-color-hover: #6b6970 !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #d2d2d2 !important;
-  --pill-color-hover: #fff !important;
-  --pill-color-remove: #99999b !important;
   --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -1662,8 +1663,8 @@
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
   --prompt-background: #1d1d20 !important;
-  --prompt-border-color: #77767b !important;
-  --prompt-border-width: 0px !important;
+  --prompt-border-color: color-mix(in srgb, #2e2e32, #fff 15%) !important;
+  --prompt-border-width: 1px !important;
   --prompt-input-height: 64px !important;
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
@@ -1930,6 +1931,7 @@
   --banner-image-height-s: 240px !important;
   --banner-image-inset: 8px !important;
   --banner-image-object-fit: cover !important;
+  --banner-image-radius: 9px !important;
   --banner-mobile-offset: 0px !important;
   --block-width-max: calc(100cqw - 64px) !important;
   --block-width-offset: -32px !important;
@@ -1950,7 +1952,7 @@
   --embed-background: #2e2e32 !important;
   --font-ui-modifier: 0px !important;
   --hover-sidedock-delay: 160ms !important;
-  --hover-sidedock-trigger-area: 1px !important;
+  --hover-sidedock-trigger-area: 4px !important;
   --hover-sidedock-width: 320px !important;
   --icon-size-modifier: 0px !important;
   --icon-stroke-modifier: 1 !important;
@@ -1995,6 +1997,41 @@
   --slider-track-background-hover: rgb(from #fff r g b / 20%) !important;
 
   --quartz-icon-color: currentColor;
+}
+
+html[saved-theme="light"] body {
+  --qt-code-atom: rgb(56, 58, 66);
+  --qt-code-comment: rgb(182, 185, 197);
+  --qt-code-function: rgb(56, 58, 66);
+  --qt-code-header: rgb(51, 51, 56);
+  --qt-code-keyword: rgb(228, 87, 73);
+  --qt-code-number: rgb(166, 38, 164);
+  --qt-code-operator: rgb(237, 51, 59);
+  --qt-code-property: rgb(183, 107, 2);
+  --qt-code-string: rgb(13, 151, 179);
+  --qt-code-string: rgb(13, 151, 179);
+  --qt-code-variable: rgb(98, 175, 239);
+  --qt-code-variable-2: rgb(98, 175, 239);
+  --qt-code-default: rgb(56, 58, 66);
+  --qt-code-background: rgb(243, 243, 245);
+  --qt-code-border-color: color(srgb 0.813333 0.813333 0.822941);
+}
+html[saved-theme="dark"] body {
+  --qt-code-atom: rgb(171, 178, 191);
+  --qt-code-comment: rgb(92, 99, 112);
+  --qt-code-function: rgb(171, 178, 191);
+  --qt-code-header: rgb(255, 255, 255);
+  --qt-code-keyword: rgb(225, 109, 118);
+  --qt-code-number: rgb(198, 120, 222);
+  --qt-code-operator: rgb(224, 27, 36);
+  --qt-code-property: rgb(209, 154, 102);
+  --qt-code-string: rgb(88, 182, 194);
+  --qt-code-string: rgb(88, 182, 194);
+  --qt-code-variable: rgb(98, 175, 239);
+  --qt-code-variable-2: rgb(98, 175, 239);
+  --qt-code-default: rgb(171, 178, 191);
+  --qt-code-background: rgb(46, 46, 50);
+  --qt-code-border-color: color(srgb 0.303333 0.303333 0.316667);
 }
 
 html {
@@ -2691,7 +2728,7 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(51, 51, 56);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2734,7 +2771,7 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(51, 51, 56);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2777,7 +2814,7 @@ body {
   em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(51, 51, 56);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2820,7 +2857,7 @@ body {
   i {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(51, 51, 56);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2862,7 +2899,7 @@ body {
   .text-highlight {
     background-color: rgb(255, 255, 0);
     color: rgb(0, 0, 0);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2913,7 +2950,7 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(51, 51, 56);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -3205,12 +3242,6 @@ body {
     width: auto;
     display: list-item;
     background-color: rgba(0, 0, 0, 0);
-  }
-
-  .page article li:has(> input[type="checkbox"]:checked) {
-    color: rgb(92, 92, 96);
-    text-decoration: line-through;
-    text-decoration-color: rgb(92, 92, 96);
   }
 
   blockquote {
@@ -4138,15 +4169,13 @@ body {
 
   .transclude-inner {
     background-color: rgb(255, 255, 255);
+    border-left: solid;
+    border-width: 0px;
     border-color: rgb(51, 51, 56);
-    border-left: 2px solid rgb(154, 153, 150);
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
     border-top-left-radius: 0px;
-    border-top-right-radius: 9px;
+    border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 9px;
+    border-bottom-right-radius: 0px;
     margin: 0px;
     padding: 0px;
   }
@@ -4416,103 +4445,103 @@ body {
 
   li.task-list-item[data-task=">"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(51, 51, 56);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(51, 51, 56);
   }
 
@@ -4652,6 +4681,92 @@ body {
     text-decoration: rgb(34, 34, 34);
   }
 
+  .explorer .folder-outer > ul {
+    border-left: 0px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .explorer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .bases-table {
+    border-color: rgb(128, 128, 128);
+  }
+
+  .bases-table thead th {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(51, 51, 56);
+    font-weight: 700;
+    border-color: rgba(0, 0, 0, 0) rgb(51, 51, 56) rgba(0, 0, 0, 0)
+      rgba(0, 0, 0, 0);
+  }
+
+  .bases-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .canvas-node {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(51, 51, 56);
+    border-radius: 0px;
+    border-width: 0px;
+  }
+
+  .canvas-node-content {
+    color: rgb(51, 51, 56);
+  }
+
+  .canvas-node-file {
+    color: rgb(51, 51, 56);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .canvas-sidebar {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(51, 51, 56);
+    box-shadow:
+      rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset,
+      rgba(0, 0, 0, 0.05) 0px 2px 3px 0px,
+      rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px,
+      rgba(0, 0, 0, 0.04) 0px 1px 2px 0px,
+      rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  }
+
+  .canvas-node-group {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(51, 51, 56);
+    border-width: 0px;
+  }
+
+  .note-properties {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: color(srgb 0.813333 0.813333 0.822941);
+    border-radius: 0px;
+  }
+
+  .note-properties-key {
+    color: rgb(92, 92, 96);
+    font-weight: 400;
+  }
+
+  .note-properties-value {
+    color: rgb(92, 92, 96);
+  }
+
+  .note-properties-tags {
+    background-color: rgba(138, 92, 245, 0.1);
+    color: rgb(138, 92, 245);
+    border-radius: 8px;
+  }
+
+  .note-properties-row {
+    border-color: rgb(92, 92, 96);
+  }
+
+  details.toc summary::marker {
+    color: rgb(51, 51, 56);
+  }
+
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(92, 92, 96);
@@ -4688,6 +4803,7 @@ body {
     border-top-right-radius: 1380px;
     border-bottom-left-radius: 1380px;
     border-bottom-right-radius: 1380px;
+    opacity: 1;
   }
 
   footer ul li a {
@@ -4965,6 +5081,34 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+  }
+
+  ul.tags > li {
+    background-color: rgba(138, 92, 245, 0.1);
+    color: rgb(138, 92, 245);
+    border: 0px solid rgba(138, 92, 245, 0.15);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  li.task-list-item input[type="checkbox"] {
+    border-color: rgb(133, 133, 135);
+    border-radius: 100px;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  li.task-list-item input[type="checkbox"]:checked {
+    background-color: rgb(152, 115, 247);
+    border-color: rgb(0, 0, 0);
+  }
+
+  h1.article-title {
+    color: rgb(51, 51, 56);
+    font-size: 11px;
+    font-weight: 500;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -5841,7 +5985,7 @@ html[saved-theme="dark"] {
     strong {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(255, 255, 255);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5884,7 +6028,7 @@ html[saved-theme="dark"] {
     b {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(255, 255, 255);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5927,7 +6071,7 @@ html[saved-theme="dark"] {
     em {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(255, 255, 255);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5970,7 +6114,7 @@ html[saved-theme="dark"] {
     i {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(255, 255, 255);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -6012,7 +6156,7 @@ html[saved-theme="dark"] {
     .text-highlight {
       background-color: rgb(255, 255, 0);
       color: rgb(0, 0, 0);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -6063,7 +6207,7 @@ html[saved-theme="dark"] {
     del {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(255, 255, 255);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -6355,12 +6499,6 @@ html[saved-theme="dark"] {
       width: auto;
       display: list-item;
       background-color: rgba(0, 0, 0, 0);
-    }
-
-    .page article li:has(> input[type="checkbox"]:checked) {
-      color: rgb(210, 210, 210);
-      text-decoration: line-through;
-      text-decoration-color: rgb(210, 210, 210);
     }
 
     blockquote {
@@ -7293,15 +7431,13 @@ html[saved-theme="dark"] {
 
     .transclude-inner {
       background-color: rgb(46, 46, 50);
+      border-left: solid;
+      border-width: 0px;
       border-color: rgb(255, 255, 255);
-      border-left: 2px solid rgb(154, 153, 150);
-      border-right-width: 0px;
-      border-top-width: 0px;
-      border-bottom-width: 0px;
       border-top-left-radius: 0px;
-      border-top-right-radius: 9px;
+      border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 9px;
+      border-bottom-right-radius: 0px;
       margin: 0px;
       padding: 0px;
     }
@@ -7571,103 +7707,103 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task=">"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="/"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="?"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="!"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="*"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="l"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="b"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="i"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="S"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="I"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="p"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="c"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="f"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="k"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="u"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="d"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
     li.task-list-item[data-task="w"] {
       color: rgb(255, 255, 255);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(255, 255, 255);
     }
 
@@ -7810,6 +7946,92 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
     }
 
+    .explorer .folder-outer > ul {
+      border-left: 0px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .explorer {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .bases-table {
+      border-color: rgb(128, 128, 128);
+    }
+
+    .bases-table thead th {
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(255, 255, 255);
+      font-weight: 700;
+      border-color: rgba(0, 0, 0, 0) rgb(255, 255, 255) rgba(0, 0, 0, 0)
+        rgba(0, 0, 0, 0);
+    }
+
+    .bases-table tbody tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .canvas-node {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(255, 255, 255);
+      border-radius: 0px;
+      border-width: 0px;
+    }
+
+    .canvas-node-content {
+      color: rgb(255, 255, 255);
+    }
+
+    .canvas-node-file {
+      color: rgb(255, 255, 255);
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .canvas-sidebar {
+      background-color: rgb(46, 46, 50);
+      border-color: rgb(255, 255, 255);
+      box-shadow:
+        rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset,
+        rgba(0, 0, 0, 0.15) 0px 2px 4px 0px,
+        rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px,
+        rgba(0, 0, 0, 0.2) 0px 1px 2px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    }
+
+    .canvas-node-group {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(255, 255, 255);
+      border-width: 0px;
+    }
+
+    .note-properties {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: color(srgb 0.303333 0.303333 0.316667);
+      border-radius: 0px;
+    }
+
+    .note-properties-key {
+      color: rgb(210, 210, 210);
+      font-weight: 400;
+    }
+
+    .note-properties-value {
+      color: rgb(210, 210, 210);
+    }
+
+    .note-properties-tags {
+      background-color: rgba(138, 92, 245, 0.1);
+      color: rgb(166, 138, 249);
+      border-radius: 8px;
+    }
+
+    .note-properties-row {
+      border-color: rgb(210, 210, 210);
+    }
+
+    details.toc summary::marker {
+      color: rgb(255, 255, 255);
+    }
+
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(210, 210, 210);
@@ -7846,6 +8068,7 @@ html[saved-theme="dark"] {
       border-top-right-radius: 1380px;
       border-bottom-left-radius: 1380px;
       border-bottom-right-radius: 1380px;
+      opacity: 1;
     }
 
     footer ul li a {
@@ -8123,6 +8346,34 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+    }
+
+    ul.tags > li {
+      background-color: rgba(138, 92, 245, 0.1);
+      color: rgb(166, 138, 249);
+      border: 0px solid rgba(138, 92, 245, 0.15);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    li.task-list-item input[type="checkbox"] {
+      border-color: rgb(153, 153, 155);
+      border-radius: 100px;
+      border-width: 1px;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    li.task-list-item input[type="checkbox"]:checked {
+      background-color: rgb(138, 92, 245);
+      border-color: rgb(255, 255, 255);
+    }
+
+    h1.article-title {
+      color: rgb(255, 255, 255);
+      font-size: 11px;
+      font-weight: 500;
     }
   }
 }
@@ -9106,51 +9357,75 @@ button.toc-header .fold,
 
 figure[data-rehype-pretty-code-figure] pre,
 pre {
-  background-color: var(--code-background);
+  background-color: var(--qt-code-background, var(--code-background));
   white-space: pre;
 
   & > code {
     overflow-x: auto;
 
-    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
-      color: var(--code-value) !important;
+    span[class*="qt-code-keyword"] {
+      color: var(--qt-code-keyword, var(--code-keyword)) !important;
     }
-    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
-      color: var(--code-function) !important;
+    span[class*="qt-code-string"] {
+      color: var(--qt-code-string, var(--code-string)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
-      color: var(--code-string) !important;
+    span[class*="qt-code-comment"] {
+      color: var(--qt-code-comment, var(--code-comment)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
-      color: var(--code-property) !important;
+    span[class*="qt-code-function"] {
+      color: var(--qt-code-function, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
-      color: var(--code-normal) !important;
+    span[class*="qt-code-number"] {
+      color: var(--qt-code-number, var(--code-value)) !important;
     }
-    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
-      color: var(--code-punctuation) !important;
+    span[class*="qt-code-operator"] {
+      color: var(--qt-code-operator, var(--code-operator)) !important;
     }
-    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-property"] {
+      color: var(--qt-code-property, var(--code-property)) !important;
     }
-    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-variable"] {
+      color: var(--qt-code-variable, var(--code-normal)) !important;
     }
-    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
-      color: var(--code-tag) !important;
+    span[class*="qt-code-tag"] {
+      color: var(--qt-code-tag, var(--code-tag)) !important;
     }
-    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
-      color: var(--code-important) !important;
+    span[class*="qt-code-attribute"] {
+      color: var(--qt-code-attribute, var(--code-important)) !important;
     }
-    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-      color: var(--text-operator) !important;
+    span[class*="qt-code-type"] {
+      color: var(--qt-code-type, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
-      color: var(--code-keyword) !important;
+    span[class*="qt-code-builtin"] {
+      color: var(--qt-code-builtin, var(--code-function)) !important;
+    }
+    span[class*="qt-code-atom"] {
+      color: var(--qt-code-atom, var(--code-value)) !important;
+    }
+    span[class*="qt-code-meta"] {
+      color: var(--qt-code-meta, var(--code-comment)) !important;
+    }
+    span[class*="qt-code-qualifier"] {
+      color: var(--qt-code-qualifier, var(--code-property)) !important;
+    }
+    span[class*="qt-code-punctuation"] {
+      color: var(--qt-code-punctuation, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-bracket"] {
+      color: var(--qt-code-bracket, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-header"] {
+      color: var(--qt-code-header, var(--code-tag)) !important;
+    }
+    span[class*="qt-code-link"] {
+      color: var(--qt-code-link, var(--code-string)) !important;
+    }
+    span[class*="qt-code-error"] {
+      color: var(--qt-code-error, var(--code-important)) !important;
     }
 
     background-color: transparent;
-    color: var(--code-normal);
+    color: var(--qt-code-default, var(--code-normal));
   }
 }
 

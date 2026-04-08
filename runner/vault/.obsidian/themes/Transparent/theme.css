@@ -201,7 +201,7 @@ body {
   --divider-width: 0px;
   --divider-color: var(--tr);
   --background-modifier-border: var(--tr);
-
+  --input-radius: 5px;
   --input-border-width: 1px;
   --scrollbar-width: 10px;
 
@@ -1117,6 +1117,10 @@ hr {
 /* Specifically for the image background */
 div.suggestion-bg {
   transition: opacity 3s ease-in-out;
+}
+
+.metadata-property-icon {
+  padding: var(--size-4-1) 5px;
 }
 
 /* ===================== settings open animation ===================== */

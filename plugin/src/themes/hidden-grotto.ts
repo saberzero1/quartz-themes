@@ -541,6 +541,51 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(245, 240, 235);
 }
 
+html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(245, 240, 235);
+  color: rgb(245, 240, 235);
+}
+
+html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(245, 240, 235);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(245, 240, 235);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(245, 240, 235);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(245, 240, 235);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(42, 42, 60);
+  border-color: rgb(245, 240, 235);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(231, 220, 208);
+  font-weight: 500;
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(231, 220, 208);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgb(245, 240, 235);
+  border-radius: 0px;
+  color: rgb(50, 50, 72);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(231, 220, 208);
+}
+
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(42, 42, 60);
   color: rgb(245, 240, 235);
@@ -607,6 +652,20 @@ html[saved-theme="dark"] body del {
   font-weight: 500;
   outline: rgb(245, 240, 235) none 0px;
   text-decoration-color: rgb(245, 240, 235);
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(245, 240, 235);
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(245, 240, 235);
+  border-radius: 0px;
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(235, 115, 71);
+  border-color: rgb(245, 240, 235);
 }
 
 html[saved-theme="dark"] body p {
@@ -874,16 +933,11 @@ html[saved-theme="dark"] body .transclude {
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(245, 240, 235);
   border-bottom-style: solid;
-  border-bottom-width: 1px;
   border-left-color: rgb(245, 240, 235);
-  border-left-width: 1px;
   border-right-color: rgb(245, 240, 235);
   border-right-style: solid;
-  border-right-width: 1px;
   border-top-color: rgb(245, 240, 235);
   border-top-style: solid;
-  border-top-width: 1px;
-  padding-bottom: 16px;
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: Quicksand;
@@ -891,11 +945,6 @@ html[saved-theme="dark"] body .transclude-inner {
 
 html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
   font-family: Quicksand;
-}
-
-html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(231, 220, 208);
-  text-decoration-color: rgb(231, 220, 208);
 }
 
 html[saved-theme="dark"] body input[type=checkbox] {
@@ -1463,7 +1512,11 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   font-family: Quicksand;
   font-weight: 500;
 }`,
-    toc: `html[saved-theme="dark"] body li.depth-0 {
+    toc: `html[saved-theme="dark"] body details.toc summary::marker {
+  color: rgb(245, 240, 235);
+}
+
+html[saved-theme="dark"] body li.depth-0 {
   font-weight: 500;
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
@@ -1656,6 +1709,23 @@ html[saved-theme="dark"] body summary {
 
 html[saved-theme="dark"] body sup {
   color: rgb(245, 240, 235);
+}
+
+html[saved-theme="dark"] body ul.tags > li {
+  background-color: rgb(245, 240, 235);
+  border-bottom-color: rgb(245, 240, 235);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 1px;
+  border-left-color: rgb(245, 240, 235);
+  border-left-width: 1px;
+  border-right-color: rgb(245, 240, 235);
+  border-right-width: 1px;
+  border-top-color: rgb(245, 240, 235);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 1px;
+  color: rgb(50, 50, 72);
 }`,
   },
   light: {
@@ -2192,6 +2262,51 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(50, 50, 72);
 }
 
+html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(50, 50, 72);
+  color: rgb(50, 50, 72);
+}
+
+html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(50, 50, 72);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgb(50, 50, 72);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(50, 50, 72);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(50, 50, 72);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(245, 240, 235);
+  border-color: rgb(50, 50, 72);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(75, 75, 108);
+  font-weight: 500;
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(75, 75, 108);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgb(50, 50, 72);
+  border-radius: 0px;
+  color: rgb(245, 240, 235);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(75, 75, 108);
+}
+
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(238, 230, 221);
   color: rgb(50, 50, 72);
@@ -2258,6 +2373,20 @@ html[saved-theme="light"] body del {
   font-weight: 500;
   outline: rgb(50, 50, 72) none 0px;
   text-decoration-color: rgb(50, 50, 72);
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(50, 50, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(50, 50, 72);
+  border-radius: 0px;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(235, 115, 71);
+  border-color: rgb(50, 50, 72);
 }
 
 html[saved-theme="light"] body p {
@@ -2478,10 +2607,10 @@ html[saved-theme="light"] body figure {
 }
 
 html[saved-theme="light"] body img {
-  border-bottom-color: rgb(50, 50, 72);
-  border-left-color: rgb(50, 50, 72);
-  border-right-color: rgb(50, 50, 72);
-  border-top-color: rgb(50, 50, 72);
+  border-bottom-color: rgb(245, 240, 235);
+  border-left-color: rgb(245, 240, 235);
+  border-right-color: rgb(245, 240, 235);
+  border-top-color: rgb(245, 240, 235);
 }
 
 html[saved-theme="light"] body video {
@@ -2525,16 +2654,11 @@ html[saved-theme="light"] body .transclude {
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(50, 50, 72);
   border-bottom-style: solid;
-  border-bottom-width: 1px;
   border-left-color: rgb(50, 50, 72);
-  border-left-width: 1px;
   border-right-color: rgb(50, 50, 72);
   border-right-style: solid;
-  border-right-width: 1px;
   border-top-color: rgb(50, 50, 72);
   border-top-style: solid;
-  border-top-width: 1px;
-  padding-bottom: 16px;
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: Quicksand;
@@ -2542,11 +2666,6 @@ html[saved-theme="light"] body .transclude-inner {
 
 html[saved-theme="light"] body .katex-display > .katex > .katex-html {
   font-family: Quicksand;
-}
-
-html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(75, 75, 108);
-  text-decoration-color: rgb(75, 75, 108);
 }
 
 html[saved-theme="light"] body input[type=checkbox] {
@@ -3114,7 +3233,11 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   font-family: Quicksand;
   font-weight: 500;
 }`,
-    toc: `html[saved-theme="light"] body li.depth-0 {
+    toc: `html[saved-theme="light"] body details.toc summary::marker {
+  color: rgb(50, 50, 72);
+}
+
+html[saved-theme="light"] body li.depth-0 {
   font-weight: 500;
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
@@ -3307,6 +3430,23 @@ html[saved-theme="light"] body summary {
 
 html[saved-theme="light"] body sup {
   color: rgb(50, 50, 72);
+}
+
+html[saved-theme="light"] body ul.tags > li {
+  background-color: rgb(50, 50, 72);
+  border-bottom-color: rgb(50, 50, 72);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 1px;
+  border-left-color: rgb(50, 50, 72);
+  border-left-width: 1px;
+  border-right-color: rgb(50, 50, 72);
+  border-right-width: 1px;
+  border-top-color: rgb(50, 50, 72);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 1px;
+  color: rgb(245, 240, 235);
 }`,
   },
 };

@@ -300,7 +300,7 @@ function transformCheckboxCSS(css: string, iconFonts: string[]): string {
         "  -webkit-appearance: none;",
         "  border: none;",
         "  border-radius: 0px;",
-        "  background-color: currentColor;",
+        "  background-color: currentColor !important;",
         "  -webkit-mask-size: 100%;",
         "  mask-size: 100%;",
       ].join("\n");

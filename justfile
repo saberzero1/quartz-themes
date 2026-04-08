@@ -38,6 +38,10 @@ extract-baseline: build
 compile:
   node ./runner/scripts/compile.js
 
+[group('cli-extract'), doc('Compile a single theme')]
+cli-compile-theme themeName:
+  node ./runner/scripts/compile.js "{{themeName}}"
+
 [group('extract')]
 convert:
   bun ./convert.js
@@ -47,6 +51,11 @@ extract-full: build compile convert format-non-generated
 
 [group('extract')]
 recompile: compile convert
+
+[group('cli-extract'), doc('Recompile a single theme')]
+cli-recompile-theme themeName:
+  node ./runner/scripts/compile.js "{{themeName}}"
+  bun ./convert.js
 
 [group('plugin')]
 generate-plugin:

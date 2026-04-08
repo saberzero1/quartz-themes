@@ -56,7 +56,29 @@ let mode;
 
 initializeDb();
 
-const themeCollection = getThemeCollection();
+const singleThemeArg = process.argv[2] || null;
+const fullThemeCollection = getThemeCollection();
+const themeCollection = singleThemeArg
+  ? fullThemeCollection.filter((m) => {
+      const key = `${sanitize(m.name.split(".")[0])}${m.name.includes(".") ? `.${sanitize(m.name.split(".").slice(1).join("."))}` : ""}`;
+      return (
+        key === singleThemeArg ||
+        m.name === singleThemeArg ||
+        sanitize(m.name) === singleThemeArg ||
+        m.name.toLowerCase() === singleThemeArg.toLowerCase()
+      );
+    })
+  : fullThemeCollection;
+
+if (singleThemeArg) {
+  if (themeCollection.length === 0) {
+    console.error(`Theme "${singleThemeArg}" not found in theme collection.`);
+    process.exit(1);
+  }
+  console.log(
+    `Single-theme mode: compiling ${themeCollection.length} theme(s) matching "${singleThemeArg}"`,
+  );
+}
 
 const neededSelectors = new Set(["body"]);
 config.forEach((mapping) => {
@@ -346,6 +368,82 @@ function normalizeCalloutIconName(value) {
   return stripped;
 }
 
+const CM_TO_QT_TOKEN = {
+  keyword: "keyword",
+  string: "string",
+  "string-2": "string",
+  comment: "comment",
+  number: "number",
+  operator: "operator",
+  property: "property",
+  variable: "variable",
+  "variable-2": "variable-2",
+  "variable-3": "variable-3",
+  tag: "tag",
+  attribute: "attribute",
+  type: "type",
+  builtin: "builtin",
+  def: "function",
+  atom: "atom",
+  qualifier: "qualifier",
+  meta: "meta",
+  header: "header",
+  bracket: "bracket",
+  punctuation: "punctuation",
+  link: "link",
+  error: "error",
+};
+
+function buildCodeTokenCSS(codeTokens, hasDark, hasLight) {
+  if (!codeTokens) return "";
+  const darkTokens = codeTokens.dark;
+  const lightTokens = codeTokens.light;
+  if (!darkTokens && !lightTokens) return "";
+
+  const buildVarsBlock = (tokens) => {
+    if (!tokens) return "";
+    const lines = [];
+    for (const [cmToken, props] of Object.entries(tokens)) {
+      if (cmToken.startsWith("_")) continue;
+      const qtToken = CM_TO_QT_TOKEN[cmToken];
+      if (!qtToken || !props.color) continue;
+      lines.push(`  --qt-code-${qtToken}: ${props.color};`);
+    }
+    if (tokens._codeBlock?.color) {
+      lines.push(`  --qt-code-default: ${tokens._codeBlock.color};`);
+    }
+    if (tokens._preBlock?.backgroundColor) {
+      lines.push(
+        `  --qt-code-background: ${tokens._preBlock.backgroundColor};`,
+      );
+    }
+    if (tokens._preBlock?.borderColor) {
+      lines.push(`  --qt-code-border-color: ${tokens._preBlock.borderColor};`);
+    }
+    if (tokens._lineNumber?.color) {
+      lines.push(`  --qt-code-line-number: ${tokens._lineNumber.color};`);
+    }
+    return lines.join("\n");
+  };
+
+  let css = "";
+
+  if (hasDark && hasLight) {
+    const lightVars = buildVarsBlock(lightTokens);
+    const darkVars = buildVarsBlock(darkTokens);
+    if (lightVars) css += `html[saved-theme="light"] body {\n${lightVars}\n}\n`;
+    if (darkVars) css += `html[saved-theme="dark"] body {\n${darkVars}\n}\n`;
+  } else if (hasDark) {
+    const darkVars = buildVarsBlock(darkTokens);
+    if (darkVars) css += `body {\n${darkVars}\n}\n`;
+  } else if (hasLight) {
+    const lightVars = buildVarsBlock(lightTokens);
+    if (lightVars) css += `body {\n${lightVars}\n}\n`;
+  }
+
+  return css;
+}
+
 function toPascalCase(value) {
   return value
     .split(/[^a-zA-Z0-9]/)
@@ -503,6 +601,19 @@ themeCollection.forEach((manifest) => {
     console.log(`Finished processing theme: ${themeName} (${mode})`);
   });
 
+  const codeTokens = { dark: null, light: null };
+  for (const m of manifest.modes) {
+    const tokenFile = join(
+      `./runner/results/${themeName}`,
+      `${m}-code-tokens.json`,
+    );
+    if (existsSync(tokenFile)) {
+      try {
+        codeTokens[m] = JSON.parse(readFileSync(tokenFile, "utf-8"));
+      } catch {}
+    }
+  }
+
   themeDataList.push({
     manifest,
     themeName,
@@ -510,6 +621,7 @@ themeCollection.forEach((manifest) => {
     publishMappings,
     bodyVariables,
     checkboxIcons,
+    codeTokens,
   });
 });
 
@@ -719,6 +831,7 @@ function buildCSSStrings(themeData) {
     publishMappings,
     bodyVariables,
     checkboxIcons,
+    codeTokens,
   } = themeData;
   const darkData = quartzMappings.dark || null;
   const lightData = quartzMappings.light || null;
@@ -879,6 +992,7 @@ ${bodyVarsStringDarkQuartz}
           : "";
 
   const checkboxIconCSS = generateCheckboxIconCSS(checkboxIcons);
+  const codeTokenCSS = buildCodeTokenCSS(codeTokens, !!darkData, !!lightData);
   const calloutWarnings = new Set();
   const calloutIconLight = buildCalloutIconCSS(
     extractCalloutIconMap(dataLight, calloutWarnings),
@@ -935,6 +1049,8 @@ ${bodyVarsStringDarkQuartz}
 }
 
 ${colorSchemeSection}
+
+${codeTokenCSS}
 
 ${
   lightData && darkData
@@ -1368,51 +1484,35 @@ ${calloutIconDark}
 
   figure[data-rehype-pretty-code-figure] pre,
   pre {
-    background-color: var(--code-background);
+    background-color: var(--qt-code-background, var(--code-background));
     white-space: pre;
 
     & > code {
       overflow-x: auto;
 
-      span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
-        color: var(--code-value) !important;
-      }
-      span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
-        color: var(--code-function) !important;
-      }
-      span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
-        color: var(--code-string) !important;
-      }
-      span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
-        color: var(--code-property) !important;
-      }
-      span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
-        color: var(--code-normal) !important;
-      }
-      span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
-        color: var(--code-punctuation) !important;
-      }
-      span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
-        color: var(--code-comment) !important;
-      }
-      span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
-        color: var(--code-comment) !important;
-      }
-      span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
-        color: var(--code-tag) !important;
-      }
-      span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
-        color: var(--code-important) !important;
-      }
-      span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-        color: var(--text-operator) !important;
-      }
-      span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
-        color: var(--code-keyword) !important;
-      }
+      span[class*="qt-code-keyword"] { color: var(--qt-code-keyword, var(--code-keyword)) !important; }
+      span[class*="qt-code-string"] { color: var(--qt-code-string, var(--code-string)) !important; }
+      span[class*="qt-code-comment"] { color: var(--qt-code-comment, var(--code-comment)) !important; }
+      span[class*="qt-code-function"] { color: var(--qt-code-function, var(--code-function)) !important; }
+      span[class*="qt-code-number"] { color: var(--qt-code-number, var(--code-value)) !important; }
+      span[class*="qt-code-operator"] { color: var(--qt-code-operator, var(--code-operator)) !important; }
+      span[class*="qt-code-property"] { color: var(--qt-code-property, var(--code-property)) !important; }
+      span[class*="qt-code-variable"] { color: var(--qt-code-variable, var(--code-normal)) !important; }
+      span[class*="qt-code-tag"] { color: var(--qt-code-tag, var(--code-tag)) !important; }
+      span[class*="qt-code-attribute"] { color: var(--qt-code-attribute, var(--code-important)) !important; }
+      span[class*="qt-code-type"] { color: var(--qt-code-type, var(--code-function)) !important; }
+      span[class*="qt-code-builtin"] { color: var(--qt-code-builtin, var(--code-function)) !important; }
+      span[class*="qt-code-atom"] { color: var(--qt-code-atom, var(--code-value)) !important; }
+      span[class*="qt-code-meta"] { color: var(--qt-code-meta, var(--code-comment)) !important; }
+      span[class*="qt-code-qualifier"] { color: var(--qt-code-qualifier, var(--code-property)) !important; }
+      span[class*="qt-code-punctuation"] { color: var(--qt-code-punctuation, var(--code-punctuation)) !important; }
+      span[class*="qt-code-bracket"] { color: var(--qt-code-bracket, var(--code-punctuation)) !important; }
+      span[class*="qt-code-header"] { color: var(--qt-code-header, var(--code-tag)) !important; }
+      span[class*="qt-code-link"] { color: var(--qt-code-link, var(--code-string)) !important; }
+      span[class*="qt-code-error"] { color: var(--qt-code-error, var(--code-important)) !important; }
 
-      background-color: transparent; 
-      color: var(--code-normal);
+      background-color: transparent;
+      color: var(--qt-code-default, var(--code-normal));
     }
   }
 
