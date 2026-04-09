@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "glass-robo",
     modes: ["dark"],
     variations: [],
-    fonts: ["figtree", "jetbrains-mono"],
+    fonts: ["figtree","jetbrains-mono"],
   },
   dark: {
     base: `:root:root {
@@ -1494,5 +1494,6 @@ html body ul.tags > li {
   color: rgb(54, 163, 114);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

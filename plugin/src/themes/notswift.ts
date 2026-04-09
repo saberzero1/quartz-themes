@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "notswift",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["roboto", "sf-mono", "sf-pro-display"],
+    fonts: ["roboto","sf-mono","sf-pro-display"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "obsidianite",
     modes: ["dark"],
     variations: [],
-    fonts: ["rubik", "space-mono"],
+    fonts: ["rubik","space-mono"],
   },
   dark: {
     base: `:root:root {
@@ -1005,5 +1005,6 @@ html body ul.tags > li {
   color: rgb(15, 182, 214);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

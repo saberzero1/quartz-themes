@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "rose-red", modes: ["dark"], variations: [], fonts: ["hack"] },
+  meta: {
+    name: "rose-red",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["hack"],
+  },
   dark: {
     base: `:root:root {
   --accent-h: 135 !important;
@@ -1082,5 +1087,6 @@ html body ul.tags > li {
   color: rgb(80, 250, 123);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

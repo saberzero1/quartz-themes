@@ -1,8 +1,14 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "comfort", modes: ["light"], variations: [], fonts: [] },
-  dark: {},
+  meta: {
+    name: "comfort",
+    modes: ["light"],
+    variations: [],
+    fonts: [],
+  },
+  dark: {
+  },
   light: {
     base: `:root:root {
   --aqua: #89bace !important;

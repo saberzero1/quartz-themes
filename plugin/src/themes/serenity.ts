@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "serenity",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["ia-writer-duo", "ia-writer-mono", "ia-writer-quattro-s"],
+    fonts: ["ia-writer-duo","ia-writer-mono","ia-writer-quattro-s"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
@@ -924,6 +924,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(102, 107, 255);
+  content: " ";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"] {
@@ -2983,6 +2988,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(129, 151, 233);
+  content: " ";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"] {

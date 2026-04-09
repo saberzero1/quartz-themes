@@ -1972,5 +1972,6 @@ html body ul.tags > li {
   color: rgb(84, 39, 231);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

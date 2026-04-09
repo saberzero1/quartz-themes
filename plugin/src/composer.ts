@@ -277,7 +277,10 @@ function transformCheckboxCSS(css: string, iconFonts: string[]): string {
         }
         return "";
       }
-      if (colorMatch && !body.includes("mask-image")) {
+      if (body.includes("mask-image")) {
+        return `${baseSel.trim()} {${body}}`;
+      }
+      if (colorMatch) {
         return `${baseSel.trim()} {\n  color: ${colorMatch[1].trim()};\n}`;
       }
       return "";
@@ -295,15 +298,23 @@ function transformCheckboxCSS(css: string, iconFonts: string[]): string {
 
       afterSuppressionSelectors.push(selector.trim());
 
+      const hasBackgroundColor = /(?:^|;\s*|\n\s*)background-color\s*:/.test(
+        body,
+      );
+
       const injectedProps = [
         "  appearance: none;",
         "  -webkit-appearance: none;",
         "  border: none;",
         "  border-radius: 0px;",
-        "  background-color: currentColor !important;",
+        hasBackgroundColor
+          ? null
+          : "  background-color: currentColor !important;",
         "  -webkit-mask-size: 100%;",
         "  mask-size: 100%;",
-      ].join("\n");
+      ]
+        .filter((line): line is string => line !== null)
+        .join("\n");
 
       let newBody = body;
       if (!body.includes("appearance:")) {

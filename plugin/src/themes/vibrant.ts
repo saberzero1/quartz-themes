@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "vibrant", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "vibrant",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --accent-color-borders: #FFFFFF !important;
@@ -1038,5 +1043,6 @@ html body sup {
   color: rgb(255, 255, 255);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

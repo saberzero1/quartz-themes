@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "nobb", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "nobb",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --bases-cards-radius: 0px !important;
@@ -800,5 +805,6 @@ html body sup {
   color: rgb(187, 187, 187);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

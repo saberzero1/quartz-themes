@@ -7,7 +7,8 @@ export const theme: ThemeData = {
     variations: [],
     fonts: ["noto-serif-kr"],
   },
-  dark: {},
+  dark: {
+  },
   light: {
     base: `:root:root {
   --accent: #96539d !important;

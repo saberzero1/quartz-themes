@@ -3,18 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "brutalist",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: [
-      "ai-writer-duo",
-      "ai-writer-quattro",
-      "ai-writer-mono",
-      "libre-baskerville",
-      "literata",
-      "marcellus",
-      "montserrat",
-      "sen",
-    ],
+    fonts: ["ai-writer-duo","ai-writer-quattro","ai-writer-mono","libre-baskerville","literata","marcellus","montserrat","sen"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

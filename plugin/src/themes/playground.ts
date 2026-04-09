@@ -1645,5 +1645,6 @@ html body ul.tags > li {
   color: oklch(0.845 0.06 260.58);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

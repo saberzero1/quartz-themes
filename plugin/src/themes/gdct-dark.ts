@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "gdct-dark",
     modes: ["dark"],
     variations: [],
-    fonts: ["ia-writer-quattro-s", "monaco"],
+    fonts: ["ia-writer-quattro-s","monaco"],
   },
   dark: {
     base: `:root:root {
@@ -1196,5 +1196,6 @@ html body ul.tags > li {
   color: rgb(49, 48, 48);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

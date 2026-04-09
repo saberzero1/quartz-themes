@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "dracula-lyt",
     modes: ["dark"],
     variations: [],
-    fonts: ["monaco", "sf-mono"],
+    fonts: ["monaco","sf-mono"],
   },
   dark: {
     base: `:root:root {
@@ -1451,5 +1451,6 @@ html body ul.tags > li {
   color: rgb(189, 147, 249);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

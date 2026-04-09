@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "suddha",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["monaco", "roboto"],
+    fonts: ["monaco","roboto"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

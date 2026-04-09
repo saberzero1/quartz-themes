@@ -3,15 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "chime",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: [
-      "archivo",
-      "arima",
-      "ibm-plex-sans",
-      "linux-libertine",
-      "icons/noto-sans-symbols-2",
-    ],
+    fonts: ["archivo","arima","ibm-plex-sans","linux-libertine","icons/noto-sans-symbols-2"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

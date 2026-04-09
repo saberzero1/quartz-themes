@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "yue",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["jetbrains-mono", "roboto"],
+    fonts: ["jetbrains-mono","roboto"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
@@ -609,6 +609,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(0, 112, 224);
+  content: " ";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
@@ -1640,6 +1645,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(0, 112, 224);
+  content: " ";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"] {

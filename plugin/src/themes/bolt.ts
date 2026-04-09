@@ -3,7 +3,7 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "bolt",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
     fonts: ["formular"],
   },
@@ -844,7 +844,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   text-decoration-color: rgb(224, 227, 226);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -854,7 +854,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -864,7 +864,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -874,7 +874,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -884,7 +884,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -894,7 +894,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -904,7 +904,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -914,7 +914,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -924,7 +924,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -934,7 +934,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -944,7 +944,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkb
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -954,7 +954,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -964,7 +964,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -974,7 +974,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -984,7 +984,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -994,7 +994,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1004,7 +1004,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1014,7 +1014,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="chec
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1024,7 +1024,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1034,7 +1034,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1044,7 +1044,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1054,7 +1054,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1064,7 +1064,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1074,7 +1074,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1084,7 +1084,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1094,7 +1094,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1104,7 +1104,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1114,7 +1114,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1124,7 +1124,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1134,7 +1134,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1144,7 +1144,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1154,7 +1154,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1164,7 +1164,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1174,7 +1174,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1184,7 +1184,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1194,7 +1194,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1204,7 +1204,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1214,7 +1214,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1224,7 +1224,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1234,7 +1234,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1244,7 +1244,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1254,7 +1254,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1264,7 +1264,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1274,7 +1274,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1284,7 +1284,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1294,7 +1294,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1304,7 +1304,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1314,7 +1314,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1324,7 +1324,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1334,7 +1334,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1344,7 +1344,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1354,7 +1354,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1364,7 +1364,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1374,7 +1374,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1384,7 +1384,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1394,7 +1394,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1404,7 +1404,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1414,7 +1414,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1424,7 +1424,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1434,7 +1434,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1444,7 +1444,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1454,7 +1454,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1464,7 +1464,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1474,7 +1474,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1484,7 +1484,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1494,7 +1494,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1504,7 +1504,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1514,7 +1514,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1524,7 +1524,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1534,7 +1534,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1544,7 +1544,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1554,7 +1554,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1564,7 +1564,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1574,7 +1574,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1584,7 +1584,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1594,7 +1594,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1604,7 +1604,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1614,7 +1614,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1624,7 +1624,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1634,7 +1634,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1644,7 +1644,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1654,7 +1654,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1664,7 +1664,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1674,7 +1674,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1684,7 +1684,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -1694,7 +1694,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="check
   background-color: rgb(13, 26, 26);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"] {
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3165,7 +3165,7 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   text-decoration-color: rgb(25, 28, 28);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3175,7 +3175,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3185,7 +3185,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3195,7 +3195,7 @@ html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3205,7 +3205,7 @@ html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3215,7 +3215,7 @@ html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3225,7 +3225,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3235,7 +3235,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3245,7 +3245,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3255,7 +3255,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3265,7 +3265,7 @@ html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="check
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3275,7 +3275,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3285,7 +3285,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3295,7 +3295,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3305,7 +3305,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3315,7 +3315,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3325,7 +3325,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3335,7 +3335,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="che
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3345,7 +3345,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3355,7 +3355,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3365,7 +3365,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3375,7 +3375,7 @@ html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3385,7 +3385,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3395,7 +3395,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3405,7 +3405,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3415,7 +3415,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3425,7 +3425,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3435,7 +3435,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3445,7 +3445,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3455,7 +3455,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3465,7 +3465,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3475,7 +3475,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3485,7 +3485,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3495,7 +3495,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3505,7 +3505,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3515,7 +3515,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3525,7 +3525,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3535,7 +3535,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3545,7 +3545,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3555,7 +3555,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3565,7 +3565,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3575,7 +3575,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3585,7 +3585,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3595,7 +3595,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3605,7 +3605,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3615,7 +3615,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3625,7 +3625,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3635,7 +3635,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3645,7 +3645,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3655,7 +3655,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3665,7 +3665,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3675,7 +3675,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3685,7 +3685,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3695,7 +3695,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3705,7 +3705,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3715,7 +3715,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3725,7 +3725,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3735,7 +3735,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3745,7 +3745,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3755,7 +3755,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3765,7 +3765,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3775,7 +3775,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3785,7 +3785,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3795,7 +3795,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3805,7 +3805,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3815,7 +3815,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3825,7 +3825,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3835,7 +3835,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3845,7 +3845,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3855,7 +3855,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3865,7 +3865,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3875,7 +3875,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3885,7 +3885,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3895,7 +3895,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3905,7 +3905,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3915,7 +3915,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3925,7 +3925,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3935,7 +3935,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3945,7 +3945,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3955,7 +3955,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3965,7 +3965,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3975,7 +3975,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3985,7 +3985,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -3995,7 +3995,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -4005,7 +4005,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;
@@ -4015,7 +4015,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="chec
   background-color: rgb(253, 252, 250);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"] {
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 viewBox=\\%220 0 21 21\\%22%3E%3Cpath fill=\\%22currentColor\\%22 d=\\%22m9.55 18l-5.7-5.7l1.425-1.425L9.55 15.15l9.175-9.175L20.15 7.4L9.55 18Z\\%22%2F%3E%3C%2Fsvg%3E");
   mask-size: contain;

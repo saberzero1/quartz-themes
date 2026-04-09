@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "matrix", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "matrix",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --accent-h: 140 !important;
@@ -1386,7 +1391,8 @@ html body ul.tags > li {
   color: rgb(0, 255, 65);
 }`,
   },
-  light: {},
+  light: {
+  },
   extras: `/* Matrix digital rain overlay */
 .workspace::before {
   content: "";

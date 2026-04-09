@@ -461,5 +461,6 @@ html body kbd {
   background-color: rgb(17, 17, 17);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

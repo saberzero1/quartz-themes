@@ -7,7 +7,8 @@ export const theme: ThemeData = {
     variations: [],
     fonts: ["noto-sans"],
   },
-  dark: {},
+  dark: {
+  },
   light: {
     base: `:root:root {
   --background-modifier-active-hover: hsla(258,

@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "wyrd",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["architects-daughter", "neucha", "space-mono"],
+    fonts: ["architects-daughter","neucha","space-mono"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

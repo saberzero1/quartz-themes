@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "synthwave", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "synthwave",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: #372b3d !important;
@@ -997,5 +1002,6 @@ html body ul.tags > li {
   color: rgb(249, 126, 114);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

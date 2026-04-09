@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "royal-velvet",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["fira-sans", "fira-code"],
+    fonts: ["fira-sans","fira-code"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

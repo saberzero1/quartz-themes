@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "obsidian_ia",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["ia-writer-mono", "ia-writer-quattro"],
+    fonts: ["ia-writer-mono","ia-writer-quattro"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "purple-aurora", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "purple-aurora",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: #364ca7 !important;
@@ -1002,5 +1007,6 @@ html body ul.tags > li {
   color: rgb(88, 142, 199);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

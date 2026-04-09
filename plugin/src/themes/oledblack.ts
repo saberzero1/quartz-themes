@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "oledblack", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "oledblack",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --quartz-icon-color: currentColor !important;
@@ -514,5 +519,6 @@ html body sup {
   color: rgb(255, 255, 255);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

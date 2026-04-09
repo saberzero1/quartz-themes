@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "cocoa", modes: ["dark"], variations: [], fonts: ["palatino"] },
+  meta: {
+    name: "cocoa",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["palatino"],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: #372622 !important;
@@ -1377,5 +1382,6 @@ html body ul.tags > li {
   color: rgb(116, 89, 61);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "hulk", modes: ["dark"], variations: [], fonts: ["monaco"] },
+  meta: {
+    name: "hulk",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["monaco"],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: rgba(146, 161, 161, 0.5) !important;
@@ -994,5 +999,6 @@ html body ul.tags > li {
   color: rgb(97, 109, 109);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

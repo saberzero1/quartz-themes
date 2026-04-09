@@ -5,9 +5,10 @@ export const theme: ThemeData = {
     name: "mint-breeze",
     modes: ["light"],
     variations: [],
-    fonts: ["noto-sans-old-persian", "noto-serif-kr"],
+    fonts: ["noto-sans-old-persian","noto-serif-kr"],
   },
-  dark: {},
+  dark: {
+  },
   light: {
     base: `:root:root {
   --accent: #42b38d !important;

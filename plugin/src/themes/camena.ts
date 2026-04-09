@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "camena",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["avenir", "cascadia-code"],
+    fonts: ["avenir","cascadia-code"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

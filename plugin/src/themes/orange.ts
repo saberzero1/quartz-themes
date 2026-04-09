@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "orange", modes: ["dark", "light"], variations: [], fonts: [] },
+  meta: {
+    name: "orange",
+    modes: ["dark","light"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --accent-h: 30 !important;

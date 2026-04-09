@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "sea-glass",
     modes: ["dark"],
     variations: [],
-    fonts: ["euclid-circular-a", "hack"],
+    fonts: ["euclid-circular-a","hack"],
   },
   dark: {
     base: `:root:root {
@@ -1087,5 +1087,6 @@ html body ul.tags > li {
   color: rgb(145, 246, 151);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

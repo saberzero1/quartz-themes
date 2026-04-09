@@ -3,7 +3,7 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "vortex",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
     fonts: ["rubik"],
   },
@@ -319,6 +319,11 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-left-color: color(srgb 0.678224 0.55256 0.97144);
   border-right-color: color(srgb 0.678224 0.55256 0.97144);
   border-top-color: color(srgb 0.678224 0.55256 0.97144);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(138, 92, 245);
+  content: " ";
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgb(50, 150, 255);
@@ -990,6 +995,11 @@ html[saved-theme="light"] body pre:has(> code) {
   border-left-color: color(srgb 0.678224 0.55256 0.97144);
   border-right-color: color(srgb 0.678224 0.55256 0.97144);
   border-top-color: color(srgb 0.678224 0.55256 0.97144);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(138, 92, 245);
+  content: " ";
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   border-bottom-color: rgb(50, 150, 255);

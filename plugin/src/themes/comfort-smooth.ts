@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "comfort-smooth", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "comfort-smooth",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: #92a1a17a !important;
@@ -1034,5 +1039,6 @@ html body ul.tags > li {
   color: rgb(187, 192, 197);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

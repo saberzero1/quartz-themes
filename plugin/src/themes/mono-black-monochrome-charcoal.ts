@@ -961,5 +961,6 @@ html body sup {
   color: rgb(203, 203, 203);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

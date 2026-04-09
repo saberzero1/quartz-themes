@@ -1,8 +1,14 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "sparkling-day", modes: ["light"], variations: [], fonts: [] },
-  dark: {},
+  meta: {
+    name: "sparkling-day",
+    modes: ["light"],
+    variations: [],
+    fonts: [],
+  },
+  dark: {
+  },
   light: {
     base: `:root:root {
   --anti-flash-white: #EBEBEB !important;

@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "wy-console",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["audiowide", "dotgothic16"],
+    fonts: ["audiowide","dotgothic16"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

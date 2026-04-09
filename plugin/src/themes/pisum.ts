@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "pisum", modes: ["dark"], variations: [], fonts: ["monaco"] },
+  meta: {
+    name: "pisum",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["monaco"],
+  },
   dark: {
     base: `:root:root {
   --background-accent: #fff !important;
@@ -1135,5 +1140,6 @@ html body ul.tags > li {
   color: rgb(131, 165, 152);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

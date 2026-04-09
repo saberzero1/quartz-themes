@@ -3,11 +3,12 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "fusion",
-    modes: ["light", "light"],
+    modes: ["light","light"],
     variations: [],
     fonts: [],
   },
-  dark: {},
+  dark: {
+  },
   light: {
     base: `:root:root {
   --accent-h: 228 !important;

@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "pink-topaz",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["lucida-handwriting", "monaco"],
+    fonts: ["lucida-handwriting","monaco"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

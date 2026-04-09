@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "ion", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "ion",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: transparent !important;
@@ -1184,5 +1189,6 @@ html body ul.tags > li {
   color: rgb(203, 183, 250);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "vanilla-amoled", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "vanilla-amoled",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: #333 !important;
@@ -938,5 +943,6 @@ html body sup {
   color: rgb(255, 255, 255);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

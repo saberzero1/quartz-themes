@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "sqdthone",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["cascadia-code", "source-sans-pro"],
+    fonts: ["cascadia-code","source-sans-pro"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

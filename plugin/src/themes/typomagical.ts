@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "typomagical",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["alegreya", "amiri", "bitter", "playfair-display", "spectral"],
+    fonts: ["alegreya","amiri","bitter","playfair-display","spectral"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

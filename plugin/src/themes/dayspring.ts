@@ -5,9 +5,10 @@ export const theme: ThemeData = {
     name: "dayspring",
     modes: ["light"],
     variations: [],
-    fonts: ["crimson-pro", "figtree"],
+    fonts: ["crimson-pro","figtree"],
   },
-  dark: {},
+  dark: {
+  },
   light: {
     base: `:root:root {
   --accent-h: 80 !important;

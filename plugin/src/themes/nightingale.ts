@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "nightingale",
     modes: ["dark"],
     variations: [],
-    fonts: ["inconsolata", "noto-sans"],
+    fonts: ["inconsolata","noto-sans"],
   },
   dark: {
     base: `:root:root {
@@ -1155,5 +1155,6 @@ html body ul.tags > li {
   color: rgba(184, 71, 255, 0.8);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

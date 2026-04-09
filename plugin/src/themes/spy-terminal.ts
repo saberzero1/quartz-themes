@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "spy-terminal",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["sf-mono", "roboto-mono"],
+    fonts: ["sf-mono","roboto-mono"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

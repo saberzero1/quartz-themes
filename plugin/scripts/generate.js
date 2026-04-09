@@ -621,9 +621,17 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
     const hasMaskImage =
       typeof props["mask-image"] === "string" ||
       typeof props["-webkit-mask-image"] === "string";
-    if (!hasMaskImage) continue;
+    const contentValue = props["content"];
+    const hasContent =
+      typeof contentValue === "string" &&
+      contentValue !== "none" &&
+      contentValue !== "normal" &&
+      contentValue !== '""' &&
+      contentValue !== "''";
+    if (!hasMaskImage && !hasContent) continue;
     const taskChar = escapeAttrValue(taskMatch[1]);
-    const quartzSelector = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]`;
+    const pseudoSuffix = selector.includes("::after") ? "::after" : "";
+    const quartzSelector = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]${pseudoSuffix}`;
     const lines = [];
     for (const [prop, value] of Object.entries(props)) {
       if (!value || value === "none" || value === "normal") continue;

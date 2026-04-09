@@ -3,15 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "shimmering-focus",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: [
-      "ia-writer-quattro-s",
-      "eb-garamond",
-      "optima",
-      "recursive",
-      "icons/material-icons",
-    ],
+    fonts: ["ia-writer-quattro-s","eb-garamond","optima","recursive","icons/material-icons"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

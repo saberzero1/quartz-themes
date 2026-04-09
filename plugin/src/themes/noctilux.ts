@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "noctilux", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "noctilux",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: #333 !important;
@@ -1033,5 +1038,6 @@ html body ul.tags > li {
   color: rgb(88, 166, 255);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

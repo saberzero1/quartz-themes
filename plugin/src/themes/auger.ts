@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "auger", modes: ["dark", "light"], variations: [], fonts: [] },
+  meta: {
+    name: "auger",
+    modes: ["dark","light"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --accent-h: 175 !important;

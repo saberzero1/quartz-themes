@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "flatcap", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "flatcap",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --active-line-bg: rgba(255, 255, 255, 0.04) !important;
@@ -1295,5 +1300,6 @@ html body ul.tags > li {
   color: rgb(136, 192, 208);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

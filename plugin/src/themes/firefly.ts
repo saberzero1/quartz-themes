@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "firefly", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "firefly",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --color-editor-title-h1: #ff6fcd !important;
@@ -821,5 +826,6 @@ html body ul.tags > li {
   color: rgb(111, 161, 255);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

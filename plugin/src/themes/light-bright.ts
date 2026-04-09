@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "light-bright",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["lato", "roboto", "work-sans"],
+    fonts: ["lato","roboto","work-sans"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

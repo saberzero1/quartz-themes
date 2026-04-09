@@ -5,9 +5,10 @@ export const theme: ThemeData = {
     name: "wiselight",
     modes: ["light"],
     variations: [],
-    fonts: ["karla", "open-sans"],
+    fonts: ["karla","open-sans"],
   },
-  dark: {},
+  dark: {
+  },
   light: {
     base: `:root:root {
   --background-modifier-border: #ddd !important;

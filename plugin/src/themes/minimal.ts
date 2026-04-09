@@ -3,7 +3,7 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "minimal",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
     fonts: ["roboto"],
   },
@@ -954,6 +954,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(121, 146, 160);
+  content: " ";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
@@ -2554,6 +2559,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(124, 149, 162);
+  content: " ";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"] {

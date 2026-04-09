@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "hojicha", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "hojicha",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: rgba(240, 140, 58, 0.4) !important;
@@ -783,5 +788,6 @@ html body ul.tags > li {
   color: rgb(147, 155, 213);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

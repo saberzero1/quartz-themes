@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "lyt-mode",
     modes: ["dark"],
     variations: [],
-    fonts: ["dm-mono", "dm-sans", "fira-code"],
+    fonts: ["dm-mono","dm-sans","fira-code"],
   },
   dark: {
     base: `:root:root {
@@ -2047,5 +2047,6 @@ html body ul.tags > li {
   color: rgb(114, 213, 165);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

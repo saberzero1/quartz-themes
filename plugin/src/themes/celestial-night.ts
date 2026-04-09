@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "celestial-night",
     modes: ["dark"],
     variations: [],
-    fonts: ["bookerly", "hatolie", "merienda"],
+    fonts: ["bookerly","hatolie","merienda"],
   },
   dark: {
     base: `:root:root {
@@ -1569,5 +1569,6 @@ html body ul.tags > li {
   color: rgb(255, 255, 255);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

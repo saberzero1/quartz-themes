@@ -1,8 +1,14 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "obsidian-boom", modes: ["light"], variations: [], fonts: [] },
-  dark: {},
+  meta: {
+    name: "obsidian-boom",
+    modes: ["light"],
+    variations: [],
+    fonts: [],
+  },
+  dark: {
+  },
   light: {
     base: `:root:root {
   --brackets-color: #a7b6c2 !important;

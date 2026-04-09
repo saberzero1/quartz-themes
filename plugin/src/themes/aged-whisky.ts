@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "aged-whisky", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "aged-whisky",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: #090909 !important;
@@ -1339,5 +1344,6 @@ html body ul.tags > li {
   color: rgb(171, 174, 174);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

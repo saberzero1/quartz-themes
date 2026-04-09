@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "catppuccin.macchiato",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["nunito-sans", "vollkorn"],
+    fonts: ["nunito-sans","vollkorn"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
@@ -1035,6 +1035,10 @@ html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  content: " ";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
@@ -2793,6 +2797,10 @@ html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  content: " ";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"] {

@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "simple-color", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "simple-color",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --background-primary: black !important;
@@ -355,5 +360,6 @@ html body .navigation-progress {
   background-color: rgb(0, 0, 0);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

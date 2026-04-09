@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "kurokula",
     modes: ["dark"],
     variations: [],
-    fonts: ["atkinson-hyperlegible", "jetbrains-mono"],
+    fonts: ["atkinson-hyperlegible","jetbrains-mono"],
   },
   dark: {
     base: `:root:root {
@@ -1498,5 +1498,6 @@ html body ul.tags > li {
   color: rgb(221, 208, 196);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

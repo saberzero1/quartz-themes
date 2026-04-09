@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "vercel-geist",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["geist", "geist-mono"],
+    fonts: ["geist","geist-mono"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

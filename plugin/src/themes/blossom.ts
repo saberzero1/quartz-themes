@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "blossom", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "blossom",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --accent-glow: rgba(255, 5, 141, 0.4) !important;
@@ -950,5 +955,6 @@ html body sup {
   color: rgb(236, 236, 236);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

@@ -1,8 +1,14 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "dashboard", modes: ["light"], variations: [], fonts: [] },
-  dark: {},
+  meta: {
+    name: "dashboard",
+    modes: ["light"],
+    variations: [],
+    fonts: [],
+  },
+  dark: {
+  },
   light: {
     base: `:root:root {
   --background-modifier-border: #acb7a7 !important;

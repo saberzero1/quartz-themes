@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "modern-genz-vibedose",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["jost", "satoshi", "syne", "jetbrains-mono"],
+    fonts: ["jost","satoshi","syne","jetbrains-mono"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

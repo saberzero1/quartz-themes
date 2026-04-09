@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "true-black", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "true-black",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --accent-h: 219 !important;
@@ -1121,5 +1126,6 @@ html body ul.tags > li {
   color: rgb(229, 192, 123);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

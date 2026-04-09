@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "avatar",
     modes: ["dark"],
     variations: [],
-    fonts: ["jetbrains-mono", "kalam"],
+    fonts: ["jetbrains-mono","kalam"],
   },
   dark: {
     base: `:root:root {
@@ -1384,5 +1384,6 @@ html body ul.tags > li {
   color: rgb(251, 191, 36);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

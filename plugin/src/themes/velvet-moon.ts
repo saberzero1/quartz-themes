@@ -674,5 +674,6 @@ html body progress {
   border-top-color: rgb(222, 224, 237);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

@@ -3,7 +3,7 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "neo",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
     fonts: ["jetbrains-mono"],
   },
@@ -895,6 +895,12 @@ html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="check
   -webkit-mask-repeat: no-repeat;
 }
 
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(138, 117, 240);
+  color: rgba(0, 0, 0, 0);
+  content: " ";
+}
+
 html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
   mask-image: url("data:image/svg+xml,<?xml%20version=%221.0%22%20encoding=%22UTF-8%22?%3E%3Csvg%20id=%22svg0%22%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1{fill:none}%3C/style%3E%3C/defs%3E%3Crect%20class=%22cls-1%22%20width=%2216%22%20height=%2216%22/%3E%3Cpath%20d=%22M2.75,15.5H13.25c.83,0,1.5-.67,1.5-1.5V3.5c0-.83-.67-1.5-1.5-1.5h-1.5V.5h-1.5v1.5H5.75V.5h-1.5v1.5h-1.5c-.83,0-1.5,.67-1.5,1.5V14c0,.83,.67,1.5,1.5,1.5Zm0-11.25H13.25v1.5H2.75v-1.5Z%22/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,<?xml%20version=%221.0%22%20encoding=%22UTF-8%22?%3E%3Csvg%20id=%22svg0%22%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1{fill:none}%3C/style%3E%3C/defs%3E%3Crect%20class=%22cls-1%22%20width=%2216%22%20height=%2216%22/%3E%3Cpath%20d=%22M2.75,15.5H13.25c.83,0,1.5-.67,1.5-1.5V3.5c0-.83-.67-1.5-1.5-1.5h-1.5V.5h-1.5v1.5H5.75V.5h-1.5v1.5h-1.5c-.83,0-1.5,.67-1.5,1.5V14c0,.83,.67,1.5,1.5,1.5Zm0-11.25H13.25v1.5H2.75v-1.5Z%22/%3E%3C/svg%3E");
@@ -911,6 +917,31 @@ html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(138, 117, 240);
+  content: " ";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(138, 117, 240);
+  content: " ";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(138, 117, 240);
+  content: " ";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(138, 117, 240);
+  content: " ";
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(138, 117, 240);
+  content: " ";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"] {
@@ -2556,6 +2587,12 @@ html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="chec
   -webkit-mask-repeat: no-repeat;
 }
 
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(157, 140, 242);
+  color: rgba(0, 0, 0, 0);
+  content: " ";
+}
+
 html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
   mask-image: url("data:image/svg+xml,<?xml%20version=%221.0%22%20encoding=%22UTF-8%22?%3E%3Csvg%20id=%22svg0%22%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1{fill:none}%3C/style%3E%3C/defs%3E%3Crect%20class=%22cls-1%22%20width=%2216%22%20height=%2216%22/%3E%3Cpath%20d=%22M2.75,15.5H13.25c.83,0,1.5-.67,1.5-1.5V3.5c0-.83-.67-1.5-1.5-1.5h-1.5V.5h-1.5v1.5H5.75V.5h-1.5v1.5h-1.5c-.83,0-1.5,.67-1.5,1.5V14c0,.83,.67,1.5,1.5,1.5Zm0-11.25H13.25v1.5H2.75v-1.5Z%22/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,<?xml%20version=%221.0%22%20encoding=%22UTF-8%22?%3E%3Csvg%20id=%22svg0%22%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1{fill:none}%3C/style%3E%3C/defs%3E%3Crect%20class=%22cls-1%22%20width=%2216%22%20height=%2216%22/%3E%3Cpath%20d=%22M2.75,15.5H13.25c.83,0,1.5-.67,1.5-1.5V3.5c0-.83-.67-1.5-1.5-1.5h-1.5V.5h-1.5v1.5H5.75V.5h-1.5v1.5h-1.5c-.83,0-1.5,.67-1.5,1.5V14c0,.83,.67,1.5,1.5,1.5Zm0-11.25H13.25v1.5H2.75v-1.5Z%22/%3E%3C/svg%3E");
@@ -2572,6 +2609,31 @@ html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
+  background-color: rgb(157, 140, 242);
+  content: " ";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
+  background-color: rgb(157, 140, 242);
+  content: " ";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
+  background-color: rgb(157, 140, 242);
+  content: " ";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
+  background-color: rgb(157, 140, 242);
+  content: " ";
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
+  background-color: rgb(157, 140, 242);
+  content: " ";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"] {

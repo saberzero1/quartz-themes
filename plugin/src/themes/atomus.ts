@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "atomus", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "atomus",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --accent-d: 55% !important;
@@ -1157,5 +1162,6 @@ html body ul.tags > li {
   color: rgb(229, 192, 123);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

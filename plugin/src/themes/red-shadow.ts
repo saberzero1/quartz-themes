@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "red-shadow",
     modes: ["dark"],
     variations: [],
-    fonts: ["fira-code", "montserrat"],
+    fonts: ["fira-code","montserrat"],
   },
   dark: {
     base: `:root:root {
@@ -1032,5 +1032,6 @@ html body ul.tags > li {
   color: rgb(178, 34, 34);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "ursa", modes: ["dark", "light"], variations: [], fonts: [] },
+  meta: {
+    name: "ursa",
+    modes: ["dark","light"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --background-modifier-border: #92a1a17a !important;

@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "ravenloft",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["literata", "open-sans", "ruslan-display", "vollkorn"],
+    fonts: ["literata","open-sans","ruslan-display","vollkorn"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

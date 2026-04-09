@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "tokyo-night-storm",
     modes: ["dark"],
     variations: [],
-    fonts: ["anonymous-pro", "jetbrains-mono"],
+    fonts: ["anonymous-pro","jetbrains-mono"],
   },
   dark: {
     base: `:root:root {
@@ -1276,5 +1276,6 @@ html body ul.tags > li {
   color: rgb(187, 154, 247);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

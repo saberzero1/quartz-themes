@@ -5,9 +5,10 @@ export const theme: ThemeData = {
     name: "al-dente",
     modes: ["light"],
     variations: [],
-    fonts: ["nunito-sans", "courier-prime", "bitter"],
+    fonts: ["nunito-sans","courier-prime","bitter"],
   },
-  dark: {},
+  dark: {
+  },
   light: {
     base: `:root:root {
   --background-nav: #f6f6f4 !important;

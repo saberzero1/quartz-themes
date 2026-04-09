@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "mammoth", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "mammoth",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: #333 !important;
@@ -1036,5 +1041,6 @@ html body ul.tags > li {
   color: rgb(10, 209, 237);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

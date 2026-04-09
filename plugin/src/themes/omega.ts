@@ -1,7 +1,12 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "omega", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "omega",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   dark: {
     base: `:root:root {
   --azure: rgb(0, 127, 255) !important;
@@ -1379,5 +1384,6 @@ html body ul.tags > li {
   color: rgb(255, 239, 0);
 }`,
   },
-  light: {},
+  light: {
+  },
 };

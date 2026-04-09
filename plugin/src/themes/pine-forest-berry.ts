@@ -3,7 +3,7 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "pine-forest-berry",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
     fonts: ["inconsolata"],
   },
@@ -701,6 +701,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(117, 158, 147);
+  content: " ";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
@@ -1946,6 +1951,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(117, 158, 147);
+  content: " ";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"] {

@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "obsidianotion",
-    modes: ["dark", "light"],
+    modes: ["dark","light"],
     variations: [],
-    fonts: ["fira-code", "ia-writer-quattro", "ibm-plex-sans"],
+    fonts: ["fira-code","ia-writer-quattro","ibm-plex-sans"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
@@ -252,6 +252,11 @@ html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(138, 92, 245);
+  content: " ";
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
@@ -842,6 +847,11 @@ html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
+  background-color: rgb(138, 92, 245);
+  content: " ";
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
