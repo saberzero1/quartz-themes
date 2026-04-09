@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "charcoal",
     modes: ["dark"],
     variations: [],
-    fonts: ["ia-writer-quattro-s","monaco","source-sans-pro"],
+    fonts: ["ia-writer-quattro-s", "monaco", "source-sans-pro"],
   },
   dark: {
     base: `:root:root {
@@ -1194,6 +1194,5 @@ html body ul.tags > li {
   color: rgb(149, 149, 149);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

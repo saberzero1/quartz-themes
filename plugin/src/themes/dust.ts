@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "dust",
     modes: ["dark"],
     variations: [],
-    fonts: ["icons/material-icons","fira-code"],
+    fonts: ["icons/material-icons", "fira-code"],
   },
   dark: {
     base: `:root:root {
@@ -1169,6 +1169,5 @@ html body ul.tags > li {
   color: rgb(229, 192, 123);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

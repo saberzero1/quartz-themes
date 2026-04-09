@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "jotter",
-    modes: ["dark","light"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "jotter", modes: ["dark", "light"], variations: [], fonts: [] },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --accent: 92, 124, 255 !important;

@@ -1,14 +1,8 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "ink",
-    modes: ["light"],
-    variations: [],
-    fonts: [],
-  },
-  dark: {
-  },
+  meta: { name: "ink", modes: ["light"], variations: [], fonts: [] },
+  dark: {},
   light: {
     base: `:root:root {
   --accent-h: 0deg !important;

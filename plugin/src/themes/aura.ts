@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "aura",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
-    fonts: ["ia-writer-mono","ia-writer-duo","ia-writer-quattro-s","monaco"],
+    fonts: ["ia-writer-mono", "ia-writer-duo", "ia-writer-quattro-s", "monaco"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

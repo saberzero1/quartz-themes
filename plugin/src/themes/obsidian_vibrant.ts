@@ -1039,6 +1039,5 @@ html body sup {
   color: rgb(255, 255, 255);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

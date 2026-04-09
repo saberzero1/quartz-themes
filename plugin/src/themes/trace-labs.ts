@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "trace-labs",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "trace-labs", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --accent-h: 212 !important;
@@ -1249,6 +1244,5 @@ html body ul.tags > li {
   color: rgb(67, 155, 255);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "evilred",
-    modes: ["dark"],
-    variations: [],
-    fonts: ["hack"],
-  },
+  meta: { name: "evilred", modes: ["dark"], variations: [], fonts: ["hack"] },
   dark: {
     base: `:root:root {
   --Editor-table-border-radius: 5px !important;
@@ -1143,6 +1138,5 @@ html body ul.tags > li {
   color: rgb(181, 5, 5);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

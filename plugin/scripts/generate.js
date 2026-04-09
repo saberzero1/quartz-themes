@@ -616,7 +616,9 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
 
   const blocks = [];
   for (const [selector, props] of grouped.entries()) {
-    const taskMatch = selector.match(/data-task=\"([^\"]*)\"/);
+    const taskMatch = selector.match(
+      /^input\[data-task="([\s\S]*?)"\](?:::after)?$/,
+    );
     if (!taskMatch) continue;
     const hasMaskImage =
       typeof props["mask-image"] === "string" ||
@@ -628,7 +630,13 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
       contentValue !== "normal" &&
       contentValue !== '""' &&
       contentValue !== "''";
-    if (!hasMaskImage && !hasContent) continue;
+    const colorValue = props["color"];
+    const hasColor =
+      typeof colorValue === "string" &&
+      colorValue !== "none" &&
+      colorValue !== "normal" &&
+      colorValue !== "inherit";
+    if (!hasMaskImage && !hasContent && !hasColor) continue;
     const taskChar = escapeAttrValue(taskMatch[1]);
     const pseudoSuffix = selector.includes("::after") ? "::after" : "";
     const quartzSelector = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]${pseudoSuffix}`;

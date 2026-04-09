@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "pure",
-    modes: ["dark","light"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "pure", modes: ["dark", "light"], variations: [], fonts: [] },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --collapse-icon-color: #b3b3b3 !important;
@@ -88,7 +83,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="check
   content: "✓";
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="dark"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   color: rgb(30, 30, 30);
   content: "✓";
 }
@@ -664,7 +659,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="chec
   content: "✓";
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="light"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   color: rgb(255, 255, 255);
   content: "✓";
 }

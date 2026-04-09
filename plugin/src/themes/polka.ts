@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "polka",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
-    fonts: ["rubik","ibm-plex-mono"],
+    fonts: ["rubik", "ibm-plex-mono"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

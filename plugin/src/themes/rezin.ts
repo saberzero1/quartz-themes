@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "rezin",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "rezin", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-primary: #181824 !important;
@@ -733,6 +728,5 @@ html body ul.tags > li {
   color: rgb(190, 166, 58);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

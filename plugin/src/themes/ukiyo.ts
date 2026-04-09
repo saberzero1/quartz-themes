@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "ukiyo",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
-    fonts: ["cmu-typewriter-text","jetbrains-mono"],
+    fonts: ["cmu-typewriter-text", "jetbrains-mono"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

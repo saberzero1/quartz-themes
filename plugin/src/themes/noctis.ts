@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "noctis",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "noctis", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-modifier-active-hover: #0e6671 !important;
@@ -1110,6 +1105,5 @@ html body ul.tags > li {
   color: rgb(223, 118, 155);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

@@ -5,10 +5,9 @@ export const theme: ThemeData = {
     name: "handwriting-kalam",
     modes: ["light"],
     variations: [],
-    fonts: ["courier-prime","kalam"],
+    fonts: ["courier-prime", "kalam"],
   },
-  dark: {
-  },
+  dark: {},
   light: {
     base: `:root:root {
   --quartz-icon-color: currentColor !important;

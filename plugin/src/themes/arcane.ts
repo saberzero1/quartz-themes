@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "arcane",
-    modes: ["dark"],
-    variations: [],
-    fonts: ["roboto"],
-  },
+  meta: { name: "arcane", modes: ["dark"], variations: [], fonts: ["roboto"] },
   dark: {
     base: `:root:root {
   --accent-h: 254 !important;
@@ -1166,6 +1161,5 @@ html body ul.tags > li {
   color: rgb(101, 230, 168);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

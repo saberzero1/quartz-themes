@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "dark-moss",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "dark-moss", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --altblue: #0087ff !important;
@@ -1041,6 +1036,5 @@ html body ul.tags > li {
   color: rgb(88, 166, 255);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

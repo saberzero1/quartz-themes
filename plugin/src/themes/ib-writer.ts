@@ -3,7 +3,7 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "ib-writer",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
     fonts: ["ia-writer-quattro"],
   },

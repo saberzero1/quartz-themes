@@ -3,7 +3,7 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "flexcyon",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
     fonts: [],
   },
@@ -2290,7 +2290,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="check
   content: "‘";
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="dark"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   color: rgb(161, 192, 92);
   content: "“";
 }
@@ -5230,7 +5230,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="chec
   content: "‘";
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="light"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   color: rgb(104, 149, 35);
   content: "“";
 }

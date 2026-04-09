@@ -1082,6 +1082,5 @@ html body ul.tags > li {
   color: rgb(133, 218, 204);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

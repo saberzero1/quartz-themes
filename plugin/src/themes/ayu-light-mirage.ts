@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "ayu-light-mirage",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
-    fonts: ["lora","monaspace-neon"],
+    fonts: ["lora", "monaspace-neon"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

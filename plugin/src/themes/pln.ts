@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "pln",
-    modes: ["dark","light"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "pln", modes: ["dark", "light"], variations: [], fonts: [] },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --accent-dark-hsl-h: 210 !important;

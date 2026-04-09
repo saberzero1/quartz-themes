@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "amoled-serenity",
     modes: ["dark"],
     variations: [],
-    fonts: ["bricolage-grotesque","roboto","montserrat"],
+    fonts: ["bricolage-grotesque", "roboto", "montserrat"],
   },
   dark: {
     base: `:root:root {
@@ -1084,6 +1084,5 @@ html body sup {
   color: rgb(255, 255, 255);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

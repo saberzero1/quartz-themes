@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "nostromo",
     modes: ["dark"],
     variations: [],
-    fonts: ["share-tech-mono","vt323"],
+    fonts: ["share-tech-mono", "vt323"],
   },
   dark: {
     base: `:root:root {
@@ -854,7 +854,7 @@ html body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
   content: "▓";
 }
 
-html body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   background-color: rgb(29, 32, 33);
   color: rgb(232, 216, 163);
   content: "▓";
@@ -2056,8 +2056,7 @@ html body ul.tags > li {
   color: rgb(122, 143, 113);
 }`,
   },
-  light: {
-  },
+  light: {},
   extras: `/* Scanlines overlay for authentic CRT effect */
 body::before {
   content: "";

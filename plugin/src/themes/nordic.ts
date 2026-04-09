@@ -5,10 +5,9 @@ export const theme: ThemeData = {
     name: "nordic",
     modes: ["light"],
     variations: [],
-    fonts: ["deadhead-script","gentium-book-basic","norwester"],
+    fonts: ["deadhead-script", "gentium-book-basic", "norwester"],
   },
-  dark: {
-  },
+  dark: {},
   light: {
     base: `:root:root {
   --accent-color: hsl(210, 34%, 63%) !important;

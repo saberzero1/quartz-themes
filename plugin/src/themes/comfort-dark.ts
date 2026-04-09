@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "comfort-dark",
     modes: ["dark"],
     variations: [],
-    fonts: ["iosevka-web","jetbrains-mono"],
+    fonts: ["iosevka-web", "jetbrains-mono"],
   },
   dark: {
     base: `:root:root {
@@ -1015,6 +1015,5 @@ html body ul.tags > li {
   color: rgb(187, 192, 197);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

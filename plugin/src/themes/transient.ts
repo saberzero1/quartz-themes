@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "transient",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "transient", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-modifier-border: #191926 !important;
@@ -357,6 +352,5 @@ html body kbd {
   background-color: rgba(34, 34, 51, 0.2);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

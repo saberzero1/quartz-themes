@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "panic-mode",
     modes: ["dark"],
     variations: [],
-    fonts: ["ia-writer-quattro-s","monaco"],
+    fonts: ["ia-writer-quattro-s", "monaco"],
   },
   dark: {
     base: `:root:root {
@@ -1195,6 +1195,5 @@ html body ul.tags > li {
   color: rgb(224, 226, 213);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "dracula-slim",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "dracula-slim", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-primary: #282a36 !important;
@@ -726,6 +721,5 @@ html body sup {
   color: rgb(248, 248, 242);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

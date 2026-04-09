@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "ayu-mirage",
     modes: ["dark"],
     variations: [],
-    fonts: ["ia-writer-quattro-s","monaco","source-sans-pro"],
+    fonts: ["ia-writer-quattro-s", "monaco", "source-sans-pro"],
   },
   dark: {
     base: `:root:root {
@@ -1195,6 +1195,5 @@ html body ul.tags > li {
   color: rgb(234, 235, 235);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

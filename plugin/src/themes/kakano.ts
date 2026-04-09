@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "kakano",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
-    fonts: ["roboto","sf-mono"],
+    fonts: ["roboto", "sf-mono"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
@@ -5108,6 +5108,10 @@ html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
   color: rgb(255, 255, 255);
 }`,
     callouts: `html[saved-theme="light"] body .callout[data-callout="abstract"] {

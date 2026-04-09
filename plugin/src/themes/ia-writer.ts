@@ -3,7 +3,7 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "ia-writer",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
     fonts: ["ia-writer-duo"],
   },
@@ -571,7 +571,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="check
   content: "[x]";
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="dark"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   color: rgb(112, 112, 112);
   content: "[x]";
 }
@@ -1920,7 +1920,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="chec
   content: "[x]";
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="light"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   color: rgb(181, 179, 177);
   content: "[x]";
 }

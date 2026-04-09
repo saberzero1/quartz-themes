@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "venom",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "venom", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --altblue: #0087ff !important;
@@ -1062,8 +1057,7 @@ html body ul.tags > li {
   color: rgb(177, 61, 76);
 }`,
   },
-  light: {
-  },
+  light: {},
   extras: `/* Fade-in effect */
 @keyframes fadein {
   from {

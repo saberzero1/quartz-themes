@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "strict",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "strict", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-modifier-border: #404040 !important;
@@ -590,6 +585,5 @@ html body ul.tags > li {
   border-top-right-radius: 28px;
 }`,
   },
-  light: {
-  },
+  light: {},
 };

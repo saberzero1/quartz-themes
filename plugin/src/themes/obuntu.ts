@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "obuntu",
-    modes: ["dark","light"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "obuntu", modes: ["dark", "light"], variations: [], fonts: [] },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --accent-mild: #e6b64f !important;

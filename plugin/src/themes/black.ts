@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "black",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "black", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-primary: #000 !important;
@@ -223,6 +218,5 @@ html body ::-webkit-scrollbar-track {
   background-color: rgb(0, 0, 0);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

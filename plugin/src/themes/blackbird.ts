@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "blackbird",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "blackbird", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-primary: #000000 !important;
@@ -861,6 +856,5 @@ html body ul.tags > li {
   color: rgb(0, 236, 216);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

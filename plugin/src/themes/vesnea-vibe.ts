@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "vesnea-vibe",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
-    fonts: ["josefin-sans","work-sans"],
+    fonts: ["josefin-sans", "work-sans"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "covert",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "covert", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --accent-h: 354 !important;
@@ -1303,6 +1298,5 @@ html body ul.tags > li {
   color: rgb(76, 86, 106);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

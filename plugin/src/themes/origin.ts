@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "origin",
-    modes: ["dark","light"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "origin", modes: ["dark", "light"], variations: [], fonts: [] },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --background-modifier-cover: rgba(0, 0, 0, 0.78) !important;

@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "bossidian",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "bossidian", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-primary: #22292c !important;
@@ -835,6 +830,5 @@ html body ul.tags > li {
   color: rgb(47, 170, 230);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

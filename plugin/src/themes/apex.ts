@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "apex",
-    modes: ["dark","light"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "apex", modes: ["dark", "light"], variations: [], fonts: [] },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --background-primary: transparent !important;
@@ -545,7 +540,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="check
   content: "[x]";
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="dark"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   color: rgb(60, 152, 60);
   content: "[x]";
 }
@@ -1872,7 +1867,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="chec
   content: "[x]";
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="light"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   color: rgb(60, 152, 60);
   content: "[x]";
 }

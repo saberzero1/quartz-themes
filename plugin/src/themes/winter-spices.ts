@@ -7,8 +7,7 @@ export const theme: ThemeData = {
     variations: [],
     fonts: ["myriad-apple"],
   },
-  dark: {
-  },
+  dark: {},
   light: {
     base: `:root:root {
   --background-modifier-border: #A48783 !important;

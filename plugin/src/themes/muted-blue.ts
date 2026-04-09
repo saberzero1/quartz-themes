@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "muted-blue",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "muted-blue", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-modifier-border: #0f111a !important;
@@ -914,6 +909,5 @@ html body sup {
   color: rgb(166, 172, 205);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

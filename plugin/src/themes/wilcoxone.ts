@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "wilcoxone",
     modes: ["dark"],
     variations: [],
-    fonts: ["lato","fira-code"],
+    fonts: ["lato", "fira-code"],
   },
   dark: {
     base: `:root:root {
@@ -1136,6 +1136,5 @@ html body ul.tags > li {
   color: rgb(149, 178, 176);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

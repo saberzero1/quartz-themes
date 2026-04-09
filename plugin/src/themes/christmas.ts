@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "christmas",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "christmas", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-accent: #b5aa29 !important;
@@ -985,8 +980,7 @@ html body ul.tags > li {
   color: rgb(242, 242, 242);
 }`,
   },
-  light: {
-  },
+  light: {},
   extras: `/* Falling snow */
 body:before,
 body:after,

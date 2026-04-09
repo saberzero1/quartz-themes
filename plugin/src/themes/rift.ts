@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "rift",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "rift", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --accent-h: 160 !important;
@@ -1171,6 +1166,5 @@ html body ul.tags > li {
   color: rgb(94, 154, 132);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

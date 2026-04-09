@@ -1,14 +1,8 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "parfait",
-    modes: ["light"],
-    variations: [],
-    fonts: [],
-  },
-  dark: {
-  },
+  meta: { name: "parfait", modes: ["light"], variations: [], fonts: [] },
+  dark: {},
   light: {
     base: `:root:root {
   --background-modifier-border: #E6D8C5 !important;

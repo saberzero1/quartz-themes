@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "space",
     modes: ["dark"],
     variations: [],
-    fonts: ["bai-jamjuree","orbitron","unbounded"],
+    fonts: ["bai-jamjuree", "orbitron", "unbounded"],
   },
   dark: {
     base: `:root:root {
@@ -987,6 +987,5 @@ html body ul.tags > li {
   color: rgb(255, 230, 153);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

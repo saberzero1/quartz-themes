@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "dekurai",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "dekurai", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --accent-h: 160 !important;
@@ -738,6 +733,5 @@ html body ul.tags > li {
   color: rgb(10, 209, 235);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

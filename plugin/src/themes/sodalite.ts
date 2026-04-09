@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "sodalite",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "sodalite", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --callout-padding: 18px;
@@ -286,6 +281,5 @@ html body .page-header h2.page-title {
   font-family: "Futura Md BT", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }`,
   },
-  light: {
-  },
+  light: {},
 };

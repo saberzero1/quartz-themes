@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "aura-dark",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "aura-dark", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-modifier-border: #61ffca !important;
@@ -344,6 +339,5 @@ html body kbd {
   background-color: rgb(17, 15, 24);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

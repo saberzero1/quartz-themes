@@ -1,14 +1,8 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "w95",
-    modes: ["light"],
-    variations: [],
-    fonts: [],
-  },
-  dark: {
-  },
+  meta: { name: "w95", modes: ["light"], variations: [], fonts: [] },
+  dark: {},
   light: {
     base: `:root:root {
   --accent-1: #FFFFFF !important;

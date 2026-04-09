@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "seamless-view",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "seamless-view", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --accent-h: 85 !important;
@@ -628,6 +623,5 @@ html body ul.tags > li {
   color: rgb(132, 171, 63);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

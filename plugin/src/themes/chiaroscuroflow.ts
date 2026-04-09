@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "chiaroscuroflow",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
-    fonts: ["manrope","nunito-sans"],
+    fonts: ["manrope", "nunito-sans"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

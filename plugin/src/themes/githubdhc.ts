@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "githubdhc",
     modes: ["dark"],
     variations: [],
-    fonts: ["fira-code","noto-sans"],
+    fonts: ["fira-code", "noto-sans"],
   },
   dark: {
     base: `:root:root {
@@ -1491,6 +1491,5 @@ html body ul.tags > li {
   color: rgb(113, 183, 255);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

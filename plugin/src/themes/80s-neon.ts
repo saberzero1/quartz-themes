@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "80s-neon",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "80s-neon", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --accent-1: #FF00FF !important;
@@ -1012,8 +1007,7 @@ html body ul.tags > li {
   color: rgb(255, 0, 255);
 }`,
   },
-  light: {
-  },
+  light: {},
   extras: `body {
   position: relative;
 }

@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "base2tone",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "base2tone", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --D0-rgb: 207,136,74 !important;
@@ -1032,6 +1027,5 @@ html body ul.tags > li {
   color: rgb(248, 177, 114);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

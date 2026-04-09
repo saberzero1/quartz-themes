@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "powered-by-lancer",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
-    fonts: ["arimo","anonymous-pro"],
+    fonts: ["arimo", "anonymous-pro"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

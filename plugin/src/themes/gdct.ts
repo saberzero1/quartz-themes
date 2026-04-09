@@ -5,10 +5,9 @@ export const theme: ThemeData = {
     name: "gdct",
     modes: ["light"],
     variations: [],
-    fonts: ["ia-writer-quattro-s","monaco"],
+    fonts: ["ia-writer-quattro-s", "monaco"],
   },
-  dark: {
-  },
+  dark: {},
   light: {
     base: `:root:root {
   --background-accent: rgba(0, 0, 0, 0.04) !important;

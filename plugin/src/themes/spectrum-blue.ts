@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "spectrum-blue",
     modes: ["dark"],
     variations: [],
-    fonts: ["jetbrains-mono","roboto"],
+    fonts: ["jetbrains-mono", "roboto"],
   },
   dark: {
     base: `:root:root {
@@ -821,6 +821,5 @@ html body sup {
   color: rgb(237, 237, 237);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

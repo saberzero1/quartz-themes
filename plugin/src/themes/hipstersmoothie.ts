@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "hipstersmoothie",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "hipstersmoothie", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-modifier-border: #3c383b !important;
@@ -1134,6 +1129,5 @@ html body ul.tags > li {
   color: rgb(255, 237, 247);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

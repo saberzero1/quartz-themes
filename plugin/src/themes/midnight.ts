@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "midnight",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "midnight", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.15) !important;
@@ -976,6 +971,5 @@ html body ul.tags > li {
   border-top-right-radius: 6.125px;
 }`,
   },
-  light: {
-  },
+  light: {},
 };

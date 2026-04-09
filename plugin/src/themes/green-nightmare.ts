@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "green-nightmare",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "green-nightmare", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-primary: #000000 !important;
@@ -951,6 +946,5 @@ html body ul.tags > li {
   color: rgb(116, 195, 101);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

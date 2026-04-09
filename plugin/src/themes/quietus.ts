@@ -3,7 +3,7 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "quietus",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
     fonts: [],
   },
@@ -165,7 +165,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="check
   background-color: rgb(218, 218, 218);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="dark"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='10'%3E%3Cpath fill='black' fill-rule='evenodd' d='M10.28.22a.75.75 0 0 1 .073 1.058l-5.5 6.5a.75.75 0 0 1-1.13.02L1.22 5.28a.75.75 0 1 1 1.06-1.06L4.3 6.19l4.95-5.85A.75.75 0 0 1 10.28.22Z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='10'%3E%3Cpath fill='black' fill-rule='evenodd' d='M10.28.22a.75.75 0 0 1 .073 1.058l-5.5 6.5a.75.75 0 0 1-1.13.02L1.22 5.28a.75.75 0 1 1 1.06-1.06L4.3 6.19l4.95-5.85A.75.75 0 0 1 10.28.22Z'/%3E%3C/svg%3E");
   mask-size: contain;
@@ -1179,7 +1179,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="chec
   background-color: rgb(34, 34, 34);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="light"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='10'%3E%3Cpath fill='black' fill-rule='evenodd' d='M10.28.22a.75.75 0 0 1 .073 1.058l-5.5 6.5a.75.75 0 0 1-1.13.02L1.22 5.28a.75.75 0 1 1 1.06-1.06L4.3 6.19l4.95-5.85A.75.75 0 0 1 10.28.22Z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='10'%3E%3Cpath fill='black' fill-rule='evenodd' d='M10.28.22a.75.75 0 0 1 .073 1.058l-5.5 6.5a.75.75 0 0 1-1.13.02L1.22 5.28a.75.75 0 1 1 1.06-1.06L4.3 6.19l4.95-5.85A.75.75 0 0 1 10.28.22Z'/%3E%3C/svg%3E");
   mask-size: contain;

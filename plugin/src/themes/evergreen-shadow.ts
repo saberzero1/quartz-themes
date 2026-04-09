@@ -5,7 +5,7 @@ export const theme: ThemeData = {
     name: "evergreen-shadow",
     modes: ["dark"],
     variations: [],
-    fonts: ["noto-sans-old-persian","noto-serif-kr"],
+    fonts: ["noto-sans-old-persian", "noto-serif-kr"],
   },
   dark: {
     base: `:root:root {
@@ -674,6 +674,5 @@ html body progress {
   border-top-color: rgb(223, 236, 232);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

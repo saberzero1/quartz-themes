@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "tomorrow",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "tomorrow", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --background-modifier-error: #CC6666 !important;
@@ -912,6 +907,5 @@ html body sup {
   color: rgb(197, 200, 198);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

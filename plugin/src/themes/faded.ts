@@ -1,12 +1,7 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: {
-    name: "faded",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  meta: { name: "faded", modes: ["dark"], variations: [], fonts: [] },
   dark: {
     base: `:root:root {
   --Blue-Accent-1: #2799ad !important;
@@ -1430,6 +1425,5 @@ html body ul.tags > li {
   color: rgb(173, 57, 57);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

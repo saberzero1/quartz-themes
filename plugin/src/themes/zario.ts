@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "zario",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
-    fonts: ["jetbrains-mono","roboto"],
+    fonts: ["jetbrains-mono", "roboto"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

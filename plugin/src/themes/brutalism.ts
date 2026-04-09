@@ -483,6 +483,5 @@ html body kbd {
   background-color: rgb(26, 27, 38);
 }`,
   },
-  light: {
-  },
+  light: {},
 };

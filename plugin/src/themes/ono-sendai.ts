@@ -3,9 +3,9 @@ import type { ThemeData } from "../types.js";
 export const theme: ThemeData = {
   meta: {
     name: "ono-sendai",
-    modes: ["dark","light"],
+    modes: ["dark", "light"],
     variations: [],
-    fonts: ["cairo","fira-code"],
+    fonts: ["cairo", "fira-code"],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
