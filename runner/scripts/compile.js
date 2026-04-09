@@ -484,7 +484,7 @@ function extractCalloutIconMap(dataSet, warnings) {
   const iconMap = {};
   if (!dataSet) return iconMap;
   for (const [selector, props] of Object.entries(dataSet)) {
-    const match = selector.match(/callout\[data-callout="([^"]+)"\]/);
+    const match = selector.match(/\[data-callout="([^"]+)"\]/);
     if (!match) continue;
     const calloutType = match[1];
     const iconValue = props["--callout-icon"];

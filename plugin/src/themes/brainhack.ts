@@ -38,14 +38,10 @@ export const theme: ThemeData = {
   --canvas-card-label-color: hsl(258, 88%, 66%) !important;
   --canvas-dot-pattern: rgb(70, 70, 70) !important;
   --checkbox-border-color: hsl(258, 88%, 66%) !important;
-  --checkbox-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --checkbox-marker-color: rgb(33, 33, 33) !important;
   --code-background: rgb(33, 33, 33) !important;
   --code-comment: hsl(258, 88%, 66%) !important;
   --collapse-icon-color: hsl(258, 88%, 66%) !important;
-  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
-  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
-  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --color-base-00: rgb(33, 33, 33) !important;
   --color-base-50: hsl(258, 88%, 66%) !important;
   --colored-accent-1: hsl(258, 88%, 66%) !important;
@@ -60,28 +56,17 @@ export const theme: ThemeData = {
   --file-header-background: rgb(33, 33, 33) !important;
   --file-header-background-focused: rgb(33, 33, 33) !important;
   --footnote-id-color-no-occurrences: hsl(258, 88%, 66%) !important;
-  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
   --graph-node-unresolved: hsl(258, 88%, 66%) !important;
   --gray: hsl(258, 88%, 66%) !important;
   --heading-formatting: hsl(258, 88%, 66%) !important;
-  --heading-spacing: 2.5rem !important;
   --highlight-1: rgba(255, 255, 255, 0.075) !important;
   --highlight-2: rgba(255, 255, 255, 0.075) !important;
-  --icon-color-active: hsl(255, 89.76%, 75.9%) !important;
   --input-date-separator: hsl(258, 88%, 66%) !important;
   --input-placeholder-color: hsl(258, 88%, 66%) !important;
-  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --italic-color: rgb(97, 97, 97) !important;
   --light: rgb(33, 33, 33) !important;
   --lightgray: hsl(258, 0.98%, 12%) !important;
-  --link-color: hsl(255, 89.76%, 75.9%) !important;
-  --link-color-hover: hsl(253, 92.4%, 85.14%) !important;
-  --link-external-color: hsl(255, 89.76%, 75.9%) !important;
-  --link-external-color-hover: hsl(253, 92.4%, 85.14%) !important;
-  --link-unresolved-color: hsl(255, 89.76%, 75.9%) !important;
-  --list-indent: 2.25em !important;
   --list-marker-color: hsl(258, 88%, 66%) !important;
-  --list-marker-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
   --main-color: white !important;
   --main-color-05: rgba(255, 255, 255, 0.116) !important;
   --main-color-2: rgb(224, 224, 224) !important;
@@ -89,18 +74,15 @@ export const theme: ThemeData = {
   --main-color-inverted-2: rgb(44, 44, 44) !important;
   --menu-background: hsl(258, 0.98%, 12%) !important;
   --menu-radius: 1em !important;
-  --metadata-input-height: 28px !important;
   --modal-background: rgb(33, 33, 33) !important;
   --nav-collapse-icon-color: hsl(258, 88%, 66%) !important;
   --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
   --nav-heading-color-collapsed: hsl(258, 88%, 66%) !important;
-  --nav-item-color-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --nav-tag-color: hsl(258, 88%, 66%) !important;
   --pdf-background: rgb(33, 33, 33) !important;
   --pdf-page-background: rgb(33, 33, 33) !important;
   --pdf-sidebar-background: rgb(33, 33, 33) !important;
   --pill-color-remove: hsl(258, 88%, 66%) !important;
-  --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --popover-height: 1250px !important;
   --popover-width: 1050px !important;
   --prompt-background: rgb(33, 33, 33) !important;
@@ -108,12 +90,10 @@ export const theme: ThemeData = {
   --ribbon-background: hsl(258, 0.98%, 12%) !important;
   --ribbon-background-collapsed: rgb(33, 33, 33) !important;
   --search-result-background: rgb(33, 33, 33) !important;
-  --secondary: hsl(255, 89.76%, 75.9%) !important;
   --shadow-1: hsla(258, 88%, 5%, .5) !important;
   --shadow-2: hsla(258, 0%, 6.6%, .4) !important;
   --shadow-3: rgba(0, 0, 0, 0.26) !important;
   --shadow-4: hsla(258, 44.1%, -10%, .5) !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --status-bar-background: hsl(258, 0.98%, 12%) !important;
   --status-bar-border-color: rgba(105, 105, 105, 0.441) !important;
   --status-bar-radius: 1em 0 0 0 !important;
@@ -124,19 +104,12 @@ export const theme: ThemeData = {
   --tab-switcher-background: hsl(258, 0.98%, 12%) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 0.98%, 12%), transparent) !important;
   --tab-text-color: hsl(258, 88%, 66%) !important;
-  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --table-drag-handle-color: hsl(258, 88%, 66%) !important;
   --table-header-weight: 700 !important;
-  --tag-color: hsl(255, 89.76%, 75.9%) !important;
-  --tag-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --tc: rgb(194, 194, 194) !important;
-  --tertiary: hsl(253, 92.4%, 85.14%) !important;
-  --text-accent: hsl(255, 89.76%, 75.9%) !important;
-  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-color-inverted: rgb(223, 223, 223) !important;
   --text-faint: hsl(258, 88%, 66%) !important;
   --titlebar-background: hsl(258, 0.98%, 12%) !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -627,8 +600,64 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-right-radius: 16px;
 }
 
-html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3Cpath d='M12 11h4'/%3E%3Cpath d='M12 16h4'/%3E%3Cpath d='M8 11h.01'/%3E%3Cpath d='M8 16h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="brainhack"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="bug"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20v-9'/%3E%3Cpath d='M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z'/%3E%3Cpath d='M14.12 3.88 16 2'/%3E%3Cpath d='M21 21a4 4 0 0 0-3.81-4'/%3E%3Cpath d='M21 5a4 4 0 0 1-3.55 3.97'/%3E%3Cpath d='M22 13h-4'/%3E%3Cpath d='M3 21a4 4 0 0 1 3.81-4'/%3E%3Cpath d='M3 5a4 4 0 0 0 3.55 3.97'/%3E%3Cpath d='M6 13H2'/%3E%3Cpath d='m8 2 1.88 1.88'/%3E%3Cpath d='M9 7.13V6a3 3 0 1 1 6 0v1.13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="danger"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="example"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 5h.01'/%3E%3Cpath d='M3 12h.01'/%3E%3Cpath d='M3 19h.01'/%3E%3Cpath d='M8 5h13'/%3E%3Cpath d='M8 12h13'/%3E%3Cpath d='M8 19h13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="failure"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18'/%3E%3Cpath d='m6 6 12 12'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="info"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="question"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="success"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="tip"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="todo"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="warning"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-container > .search-space {
   background-color: rgb(33, 33, 33);
@@ -889,13 +918,10 @@ html[saved-theme="dark"] body sup {
   --canvas-dot-pattern: rgb(197, 197, 197) !important;
   --checkbox-border-color: hsl(258, 88%, 66%) !important;
   --checkbox-color: hsl(258, 88%, 66%) !important;
-  --checkbox-color-hover: hsl(255, 89.76%, 75.9%) !important;
   --checkbox-marker-color: hsl(258, 0.5%, 96%) !important;
   --code-background: rgb(234, 234, 234) !important;
   --code-comment: hsl(258, 88%, 66%) !important;
   --collapse-icon-color: hsl(258, 88%, 66%) !important;
-  --color-accent-1: hsl(257, 88.88%, 70.95%) !important;
-  --color-accent-2: hsl(255, 89.76%, 75.9%) !important;
   --color-base-00: hsl(0, 0%, 98%) !important;
   --color-base-50: hsl(258, 88%, 66%) !important;
   --colored-accent-1: hsl(258, 88%, 66%) !important;
@@ -917,20 +943,15 @@ html[saved-theme="dark"] body sup {
   --graph-node-unresolved: hsl(258, 88%, 66%) !important;
   --gray: hsl(258, 88%, 66%) !important;
   --heading-formatting: hsl(258, 88%, 66%) !important;
-  --heading-spacing: 2.5rem !important;
   --highlight-1: rgba(0, 0, 0, 0.056) !important;
   --highlight-2: rgba(214, 214, 214, 0.308) !important;
   --input-date-separator: hsl(258, 88%, 66%) !important;
   --input-placeholder-color: hsl(258, 88%, 66%) !important;
   --interactive-accent: hsl(258, 88%, 66%) !important;
-  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-normal: hsl(0, 0%, 98%) !important;
   --italic-color: rgb(154, 154, 154) !important;
   --light: hsl(258, 0.5%, 96%) !important;
   --lightgray: rgb(255, 255, 255) !important;
-  --link-color-hover: hsl(255, 89.76%, 75.9%) !important;
-  --link-external-color-hover: hsl(255, 89.76%, 75.9%) !important;
-  --list-indent: 2.25em !important;
   --list-marker-color: hsl(258, 88%, 66%) !important;
   --main-color: black !important;
   --main-color-05: rgba(0, 0, 0, 0.116) !important;
@@ -939,7 +960,6 @@ html[saved-theme="dark"] body sup {
   --main-color-inverted-2: rgb(252, 252, 252) !important;
   --menu-background: rgb(255, 255, 255) !important;
   --menu-radius: 1em !important;
-  --metadata-input-height: 28px !important;
   --modal-background: hsl(258, 0.5%, 96%) !important;
   --nav-collapse-icon-color: hsl(258, 88%, 66%) !important;
   --nav-collapse-icon-color-collapsed: hsl(258, 88%, 66%) !important;
@@ -962,7 +982,6 @@ html[saved-theme="dark"] body sup {
   --shadow-2: rgba(0, 0, 0, 0.257) !important;
   --shadow-3: rgba(0, 0, 0, 0.08) !important;
   --shadow-4: hsla(258, 44.1%, 79%, .2) !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --status-bar-background: rgb(255, 255, 255) !important;
   --status-bar-border-color: rgba(200, 200, 200, 0.441) !important;
   --status-bar-radius: 1em 0 0 0 !important;
@@ -978,12 +997,9 @@ html[saved-theme="dark"] body sup {
   --table-header-weight: 700 !important;
   --table-selection-border-color: hsl(258, 88%, 66%) !important;
   --tc: rgb(67, 67, 67) !important;
-  --tertiary: hsl(255, 89.76%, 75.9%) !important;
-  --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --text-color-inverted: black !important;
   --text-faint: hsl(258, 88%, 66%) !important;
   --titlebar-background: rgb(255, 255, 255) !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -1480,8 +1496,64 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-right-radius: 16px;
 }
 
-html[saved-theme="light"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+html[saved-theme="light"] body .callout[data-callout="note"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="abstract"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3Cpath d='M12 11h4'/%3E%3Cpath d='M12 16h4'/%3E%3Cpath d='M8 11h.01'/%3E%3Cpath d='M8 16h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="brainhack"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="bug"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20v-9'/%3E%3Cpath d='M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z'/%3E%3Cpath d='M14.12 3.88 16 2'/%3E%3Cpath d='M21 21a4 4 0 0 0-3.81-4'/%3E%3Cpath d='M21 5a4 4 0 0 1-3.55 3.97'/%3E%3Cpath d='M22 13h-4'/%3E%3Cpath d='M3 21a4 4 0 0 1 3.81-4'/%3E%3Cpath d='M3 5a4 4 0 0 0 3.55 3.97'/%3E%3Cpath d='M6 13H2'/%3E%3Cpath d='m8 2 1.88 1.88'/%3E%3Cpath d='M9 7.13V6a3 3 0 1 1 6 0v1.13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="danger"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="example"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 5h.01'/%3E%3Cpath d='M3 12h.01'/%3E%3Cpath d='M3 19h.01'/%3E%3Cpath d='M8 5h13'/%3E%3Cpath d='M8 12h13'/%3E%3Cpath d='M8 19h13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="failure"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18'/%3E%3Cpath d='m6 6 12 12'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="info"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="question"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="success"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="tip"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="todo"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="warning"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(250, 250, 250);

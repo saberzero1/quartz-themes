@@ -2672,7 +2672,7 @@
           },
           {
             "tag": "div",
-            "classes": ["tree-item", "nav-folder", "is-collapsed"],
+            "classes": ["tree-item", "nav-folder"],
             "attrs": {},
             "styles": {
               "color": "rgb(163, 165, 170)",
@@ -2681,7 +2681,7 @@
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
-            "childCount": 1,
+            "childCount": 2,
             "children": [
               {
                 "tag": "div",
@@ -2706,11 +2706,7 @@
                 "children": [
                   {
                     "tag": "div",
-                    "classes": [
-                      "tree-item-icon",
-                      "collapse-icon",
-                      "is-collapsed"
-                    ],
+                    "classes": ["tree-item-icon", "collapse-icon"],
                     "attrs": {},
                     "styles": {
                       "color": "rgb(179, 179, 179)",
@@ -2775,6 +2771,90 @@
                     },
                     "childCount": 0,
                     "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "classes": ["tree-item-children", "nav-folder-children"],
+                "attrs": {},
+                "styles": {
+                  "color": "rgb(163, 165, 170)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(163, 165, 170) rgb(163, 165, 170) rgb(163, 165, 170) rgba(255, 255, 255, 0.094)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 2,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": [],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(163, 165, 170)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(163, 165, 170)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 0,
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(163, 165, 170)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(163, 165, 170)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-properties/note-properties.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(179, 179, 179)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(179, 179, 179)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }

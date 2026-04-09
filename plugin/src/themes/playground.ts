@@ -66,7 +66,6 @@ export const theme: ThemeData = {
   --callout-summary: oklch(48.5% 0.039 279.29);
   --callout-tip: oklch(48.5% 0.106 161.65);
   --callout-title-color: oklch(61.5% 0.176 260.58);
-  --callout-title-weight: 600;
   --callout-todo: oklch(48.5% 0.173 260.58);
   --callout-warning: oklch(48.5% 0.134 46.85);
   --canvas-background: oklch(13.5% 0.01 279.29) !important;
@@ -100,9 +99,6 @@ export const theme: ThemeData = {
   --code-radius: 8px !important;
   --codeFont: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --collapse-icon-color: oklch(74.5% 0.018 279.29) !important;
-  --collapse-icon-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
-  --color-accent-1: hsl(255, 89.76%, 75.9%) !important;
-  --color-accent-2: hsl(253, 92.4%, 85.14%) !important;
   --dark: oklch(92% 0.004 279.29) !important;
   --darkgray: oklch(92% 0.004 279.29) !important;
   --divider-color: oklch(25.5% 0.021 279.29) !important;
@@ -124,7 +120,6 @@ export const theme: ThemeData = {
   --footnote-id-color: oklch(84.5% 0.01 279.29) !important;
   --footnote-id-color-no-occurrences: oklch(74.5% 0.018 279.29) !important;
   --graph-node: oklch(84.5% 0.01 279.29) !important;
-  --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
   --graph-node-unresolved: oklch(74.5% 0.018 279.29) !important;
   --graph-text: oklch(92% 0.004 279.29) !important;
   --gray: rgb(90, 93, 117) !important;
@@ -175,12 +170,10 @@ export const theme: ThemeData = {
   --h6-weight: 650 !important;
   --headerFont: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --heading-formatting: oklch(74.5% 0.018 279.29) !important;
-  --heading-spacing: 2.5rem !important;
   --highlight: oklch(84.5% 0.174 97.11) !important;
   --highlight-text-color: oklch(12% 0.009 279.29) !important;
   --hr-color: oklch(25.5% 0.021 279.29) !important;
   --icon-color: oklch(61.5% 0.028 279.29) !important;
-  --icon-color-active: hsl(255, 89.76%, 75.9%) !important;
   --icon-color-focused: oklch(92% 0.004 279.29) !important;
   --icon-color-hover: oklch(84.5% 0.01 279.29) !important;
   --inline-title-color: oklch(61.5% 0.17 288) !important;
@@ -190,28 +183,19 @@ export const theme: ThemeData = {
   --input-date-separator: oklch(74.5% 0.018 279.29) !important;
   --input-font-weight: 600 !important;
   --input-placeholder-color: oklch(74.5% 0.018 279.29) !important;
-  --interactive-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --interactive-hover: oklch(35.5% 0.029 279.29) !important;
   --interactive-normal: oklch(25.5% 0.021 279.29) !important;
   --light: oklch(13.5% 0.01 279.29) !important;
   --lightgray: oklch(18% 0.014 279.29) !important;
-  --link-color: hsl(255, 89.76%, 75.9%) !important;
-  --link-color-hover: hsl(253, 92.4%, 85.14%) !important;
   --link-decoration: none !important;
-  --link-external-color: hsl(255, 89.76%, 75.9%) !important;
-  --link-external-color-hover: hsl(253, 92.4%, 85.14%) !important;
-  --link-unresolved-color: hsl(255, 89.76%, 75.9%) !important;
-  --list-indent: 2.25em !important;
   --list-indent-source: 0px !important;
   --list-marker-color: oklch(74.5% 0.018 279.29) !important;
-  --list-marker-color-collapsed: hsl(255, 89.76%, 75.9%) !important;
   --list-marker-color-hover: oklch(84.5% 0.01 279.29) !important;
   --list-padding-inline-start: 0px !important;
   --menu-background: oklch(18% 0.014 279.29) !important;
   --menu-border-color: oklch(35.5% 0.029 279.29) !important;
   --metadata-border-color: oklch(25.5% 0.021 279.29) !important;
   --metadata-divider-color: oklch(25.5% 0.021 279.29) !important;
-  --metadata-input-height: 28px !important;
   --metadata-input-text-color: oklch(92% 0.004 279.29) !important;
   --metadata-label-text-color: oklch(84.5% 0.01 279.29) !important;
   --metadata-label-text-color-hover: oklch(84.5% 0.01 279.29) !important;
@@ -229,7 +213,6 @@ export const theme: ThemeData = {
   --nav-item-background-hover: oklch(25.5% 0.021 279.29) !important;
   --nav-item-color: oklch(84.5% 0.01 279.29) !important;
   --nav-item-color-active: oklch(92% 0.004 279.29) !important;
-  --nav-item-color-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --nav-item-color-hover: oklch(92% 0.004 279.29) !important;
   --nav-item-color-selected: oklch(92% 0.004 279.29) !important;
   --nav-tag-color: oklch(74.5% 0.018 279.29) !important;
@@ -260,7 +243,6 @@ export const theme: ThemeData = {
   --pill-color: oklch(84.5% 0.01 279.29) !important;
   --pill-color-hover: oklch(92% 0.004 279.29) !important;
   --pill-color-remove: oklch(74.5% 0.018 279.29) !important;
-  --pill-color-remove-hover: hsl(255, 89.76%, 75.9%) !important;
   --pink: rgb(242, 66, 255) !important;
   --pink-100: oklch(25.5% 0.119 324.98) !important;
   --pink-200: oklch(35.5% 0.165 324.98) !important;
@@ -326,12 +308,10 @@ export const theme: ThemeData = {
   --search-clear-button-color: oklch(84.5% 0.01 279.29) !important;
   --search-icon-color: oklch(84.5% 0.01 279.29) !important;
   --search-result-background: oklch(13.5% 0.01 279.29) !important;
-  --secondary: hsl(255, 89.76%, 75.9%) !important;
   --semibold-modifier: 200 !important;
   --setting-group-heading-color: oklch(92% 0.004 279.29) !important;
   --setting-items-background: oklch(25.5% 0.021 279.29) !important;
   --setting-items-border-color: oklch(25.5% 0.021 279.29) !important;
-  --sidebar-markdown-font-size: 14.4px !important;
   --slider-thumb-border-color: oklch(35.5% 0.029 279.29) !important;
   --slider-track-background: oklch(25.5% 0.021 279.29) !important;
   --status-bar-background: oklch(18% 0.014 279.29) !important;
@@ -351,7 +331,6 @@ export const theme: ThemeData = {
   --tab-text-color-focused: oklch(84.5% 0.01 279.29) !important;
   --tab-text-color-focused-active: oklch(84.5% 0.01 279.29) !important;
   --tab-text-color-focused-active-current: oklch(92% 0.004 279.29) !important;
-  --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%) !important;
   --table-add-button-border-color: oklch(25.5% 0.021 279.29) !important;
   --table-border-color: oklch(25.5% 0.021 279.29) !important;
   --table-drag-handle-color: oklch(74.5% 0.018 279.29) !important;
@@ -361,10 +340,6 @@ export const theme: ThemeData = {
   --table-header-weight: 700 !important;
   --tag-background: oklch(35.5% 0.127 260.58) !important;
   --tag-color: oklch(84.5% 0.06 260.58) !important;
-  --tag-color-hover: hsl(255, 89.76%, 75.9%) !important;
-  --tertiary: hsl(253, 92.4%, 85.14%) !important;
-  --text-accent: hsl(255, 89.76%, 75.9%) !important;
-  --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-error: oklch(61.5% 0.245 13.65) !important;
   --text-faint: oklch(74.5% 0.018 279.29) !important;
   --text-highlight-bg: oklch(84.5% 0.174 97.11) !important;
@@ -383,7 +358,6 @@ export const theme: ThemeData = {
   --titlebar-text-color-focused: oklch(92% 0.004 279.29) !important;
   --vault-profile-color: oklch(92% 0.004 279.29) !important;
   --vault-profile-color-hover: oklch(92% 0.004 279.29) !important;
-  --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --yellow: rgb(242, 208, 3) !important;
   --yellow-100: oklch(25.5% 0.052 97.11) !important;
   --yellow-200: oklch(35.5% 0.072 97.11) !important;
@@ -1272,8 +1246,60 @@ html body .callout[data-callout="warning"] {
   border-top-width: 1px;
 }
 
-html body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+html body .callout[data-callout="note"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="abstract"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3Cpath d='M12 11h4'/%3E%3Cpath d='M12 16h4'/%3E%3Cpath d='M8 11h.01'/%3E%3Cpath d='M8 16h.01'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="bug"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20v-9'/%3E%3Cpath d='M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z'/%3E%3Cpath d='M14.12 3.88 16 2'/%3E%3Cpath d='M21 21a4 4 0 0 0-3.81-4'/%3E%3Cpath d='M21 5a4 4 0 0 1-3.55 3.97'/%3E%3Cpath d='M22 13h-4'/%3E%3Cpath d='M3 21a4 4 0 0 1 3.81-4'/%3E%3Cpath d='M3 5a4 4 0 0 0 3.55 3.97'/%3E%3Cpath d='M6 13H2'/%3E%3Cpath d='m8 2 1.88 1.88'/%3E%3Cpath d='M9 7.13V6a3 3 0 1 1 6 0v1.13'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="danger"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="example"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 5h.01'/%3E%3Cpath d='M3 12h.01'/%3E%3Cpath d='M3 19h.01'/%3E%3Cpath d='M8 5h13'/%3E%3Cpath d='M8 12h13'/%3E%3Cpath d='M8 19h13'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="failure"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18'/%3E%3Cpath d='m6 6 12 12'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="info"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="question"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="quote"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="success"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="tip"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="todo"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
+}
+
+html body .callout[data-callout="warning"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html body .search > .search-button {
   background-color: oklch(0.12 0.009 279.29);
