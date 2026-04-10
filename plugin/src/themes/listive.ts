@@ -227,6 +227,31 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   background-color: rgb(47, 49, 55);
 }
 
+html[saved-theme="dark"] body .bases-table {
+  border-color: rgb(0, 0, 0) rgb(128, 128, 128);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(88, 83, 80);
+  font-weight: 700;
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(63, 67, 74);
+}
+
+html[saved-theme="dark"] body .note-properties {
+  background-color: rgb(49, 52, 58);
+  border-color: rgb(88, 83, 80);
+  border-radius: 8px;
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(234, 151, 123, 0.7);
+  border-radius: 8.4px;
+  color: rgb(17, 17, 17);
+}
+
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(47, 49, 55);
 }
@@ -276,6 +301,10 @@ html[saved-theme="dark"] body .text-highlight {
 
 html[saved-theme="dark"] body del {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  font-size: 12px;
 }
 
 html[saved-theme="dark"] body p {
@@ -401,6 +430,13 @@ html[saved-theme="dark"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="dark"] body figcaption {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="dark"] body img {
+  border-bottom-color: rgb(224, 228, 235);
+  border-left-color: rgb(224, 228, 235);
+  border-right-color: rgb(224, 228, 235);
+  border-top-color: rgb(224, 228, 235);
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: rgb(26, 26, 26);
@@ -413,9 +449,8 @@ html[saved-theme="dark"] body .transclude {
 }
 
 html[saved-theme="dark"] body .transclude-inner {
-  padding-bottom: 3.2px;
-  padding-left: 8px;
-  padding-right: 8px;
+  margin-bottom: 7px;
+  margin-top: 7px;
 }`,
     checkboxes: `html[saved-theme="dark"] body .katex-display > .katex {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -431,10 +466,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   text-decoration-color: rgb(102, 102, 102);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
 html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"] {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
@@ -446,18 +477,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   color: rgb(102, 102, 102);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"] {
@@ -473,25 +492,9 @@ html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="check
   color: rgb(233, 151, 63);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="dark"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   color: rgb(158, 158, 158);
   content: "❝";
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"] {
@@ -507,26 +510,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="check
   color: rgb(224, 222, 113);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
 html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
   mask-image: url("data:image/svg+xml,<?xml%20version=%221.0%22%20encoding=%22UTF-8%22?%3E%3Csvg%20id=%22svg0%22%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1{fill:none}%3C/style%3E%3C/defs%3E%3Crect%20class=%22cls-1%22%20width=%2216%22%20height=%2216%22/%3E%3Cpath%20d=%22M2.75,15.5H13.25c.83,0,1.5-.67,1.5-1.5V3.5c0-.83-.67-1.5-1.5-1.5h-1.5V.5h-1.5v1.5H5.75V.5h-1.5v1.5h-1.5c-.83,0-1.5,.67-1.5,1.5V14c0,.83,.67,1.5,1.5,1.5Zm0-11.25H13.25v1.5H2.75v-1.5Z%22/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,<?xml%20version=%221.0%22%20encoding=%22UTF-8%22?%3E%3Csvg%20id=%22svg0%22%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1{fill:none}%3C/style%3E%3C/defs%3E%3Crect%20class=%22cls-1%22%20width=%2216%22%20height=%2216%22/%3E%3Cpath%20d=%22M2.75,15.5H13.25c.83,0,1.5-.67,1.5-1.5V3.5c0-.83-.67-1.5-1.5-1.5h-1.5V.5h-1.5v1.5H5.75V.5h-1.5v1.5h-1.5c-.83,0-1.5,.67-1.5,1.5V14c0,.83,.67,1.5,1.5,1.5Zm0-11.25H13.25v1.5H2.75v-1.5Z%22/%3E%3C/svg%3E");
@@ -540,10 +523,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="check
   color: rgb(102, 102, 102);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
 html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"] {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E");
@@ -555,122 +534,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
   color: rgb(102, 102, 102);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"] {
@@ -699,141 +562,9 @@ html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="check
   color: rgb(224, 222, 113);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
 html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
   color: rgb(158, 158, 158);
   content: "🕮";
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
-  background-color: rgb(54, 57, 63);
 }`,
     callouts: `html[saved-theme="dark"] body .callout > .callout-content {
   padding-bottom: 4px;
@@ -841,59 +572,136 @@ html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="check
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+  --callout-color: 83, 223, 221;
   background-color: rgba(83, 223, 221, 0.18);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
+  --callout-color: 251, 70, 76;
   background-color: rgba(251, 70, 76, 0.18);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
+  --callout-color: 251, 70, 76;
   background-color: rgba(251, 70, 76, 0.18);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
+  --callout-color: 168, 130, 255;
   background-color: rgba(168, 130, 255, 0.18);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
+  --callout-color: 251, 70, 76;
   background-color: rgba(251, 70, 76, 0.18);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
+  --callout-color: 2, 122, 255;
   background-color: rgba(2, 122, 255, 0.18);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
+  --callout-color: 2, 122, 255;
   background-color: rgba(2, 122, 255, 0.18);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
+  --callout-color: 233, 151, 63;
   background-color: rgba(233, 151, 63, 0.18);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   background-color: rgba(158, 158, 158, 0.18);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
+  --callout-color: 68, 207, 110;
   background-color: rgba(68, 207, 110, 0.18);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
+  --callout-color: 83, 223, 221;
   background-color: rgba(83, 223, 221, 0.18);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
+  --callout-color: 2, 122, 255;
   background-color: rgba(2, 122, 255, 0.18);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
+  --callout-color: 233, 151, 63;
   background-color: rgba(233, 151, 63, 0.18);
 }
 
-html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 21h8'/%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z'/%3E%3Cpath d='M14 2v5a1 1 0 0 0 1 1h5'/%3E%3Cpath d='M10 9H8'/%3E%3Cpath d='M16 13H8'/%3E%3Cpath d='M16 17H8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="bug"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20v-9'/%3E%3Cpath d='M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z'/%3E%3Cpath d='M14.12 3.88 16 2'/%3E%3Cpath d='M21 21a4 4 0 0 0-3.81-4'/%3E%3Cpath d='M21 5a4 4 0 0 1-3.55 3.97'/%3E%3Cpath d='M22 13h-4'/%3E%3Cpath d='M3 21a4 4 0 0 1 3.81-4'/%3E%3Cpath d='M3 5a4 4 0 0 0 3.55 3.97'/%3E%3Cpath d='M6 13H2'/%3E%3Cpath d='m8 2 1.88 1.88'/%3E%3Cpath d='M9 7.13V6a3 3 0 1 1 6 0v1.13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="caption"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 21h8'/%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="danger"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="example"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 5h.01'/%3E%3Cpath d='M3 12h.01'/%3E%3Cpath d='M3 19h.01'/%3E%3Cpath d='M8 5h13'/%3E%3Cpath d='M8 12h13'/%3E%3Cpath d='M8 19h13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="failure"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18'/%3E%3Cpath d='m6 6 12 12'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="info"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="latest"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.268 21a2 2 0 0 0 3.464 0'/%3E%3Cpath d='M22 8c0-2.3-.8-4.3-2-6'/%3E%3Cpath d='M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326'/%3E%3Cpath d='M4 2C2.8 3.7 2 5.7 2 8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 21h8'/%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="question"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="success"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 7 17l-5-5'/%3E%3Cpath d='m22 10-7.5 7.5L13 16'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="tip"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="todo"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.801 10A10 10 0 1 1 17 3.335'/%3E%3Cpath d='m9 11 3 3L22 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="update"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.268 21a2 2 0 0 0 3.464 0'/%3E%3Cpath d='M22 8c0-2.3-.8-4.3-2-6'/%3E%3Cpath d='M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326'/%3E%3Cpath d='M4 2C2.8 3.7 2 5.7 2 8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="warning"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(26, 26, 26);
@@ -971,6 +779,7 @@ html[saved-theme="dark"] body hr {
   border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
+  --callout-color: 2, 122, 255;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
@@ -1011,6 +820,10 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: "??", "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="dark"] body .explorer .folder-outer > ul {
+  border-left-color: rgb(88, 83, 80);
 }`,
     footer: `html[saved-theme="dark"] body footer {
   background-color: rgb(63, 67, 74);
@@ -1066,6 +879,15 @@ html[saved-theme="dark"] body input[type=text] {
 
 html[saved-theme="dark"] body kbd {
   background-color: rgb(26, 26, 26);
+}
+
+html[saved-theme="dark"] body ul.tags > li {
+  background-color: rgba(234, 151, 123, 0.7);
+  border-bottom-left-radius: 7.2px;
+  border-bottom-right-radius: 7.2px;
+  border-top-left-radius: 7.2px;
+  border-top-right-radius: 7.2px;
+  color: rgb(17, 17, 17);
 }`,
   },
   light: {
@@ -1327,6 +1149,43 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   background-color: rgb(211, 214, 222);
 }
 
+html[saved-theme="light"] body .bases-table {
+  border-color: rgb(0, 0, 0) rgb(128, 128, 128);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(173, 167, 164);
+  font-weight: 700;
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(231, 234, 238);
+}
+
+html[saved-theme="light"] body .note-properties {
+  background-color: rgb(199, 204, 214);
+  border-color: rgb(173, 167, 164);
+  border-radius: 8px;
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(26, 26, 26);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(26, 26, 26);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(234, 151, 123, 0.7);
+  border-radius: 8.4px;
+  color: rgb(17, 17, 17);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(26, 26, 26);
+}
+
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(211, 214, 222);
 }
@@ -1375,6 +1234,14 @@ html[saved-theme="light"] body .text-highlight {
 
 html[saved-theme="light"] body del {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  font-size: 12px;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(128, 128, 128);
 }
 
 html[saved-theme="light"] body p {
@@ -1503,6 +1370,13 @@ html[saved-theme="light"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="light"] body figcaption {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="light"] body img {
+  border-bottom-color: rgb(60, 73, 93);
+  border-left-color: rgb(60, 73, 93);
+  border-right-color: rgb(60, 73, 93);
+  border-top-color: rgb(60, 73, 93);
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   border-bottom-color: rgb(26, 26, 26);
@@ -1518,9 +1392,8 @@ html[saved-theme="light"] body .transclude {
 }
 
 html[saved-theme="light"] body .transclude-inner {
-  padding-bottom: 3.2px;
-  padding-left: 8px;
-  padding-right: 8px;
+  margin-bottom: 7px;
+  margin-top: 7px;
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1528,11 +1401,6 @@ html[saved-theme="light"] body .transclude-inner {
 
 html[saved-theme="light"] body .katex-display > .katex > .katex-html {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(26, 26, 26);
-  text-decoration-color: rgb(26, 26, 26);
 }
 
 html[saved-theme="light"] body input[type=checkbox] {
@@ -1548,10 +1416,6 @@ html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   text-decoration-color: rgb(128, 128, 128);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
 html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"] {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
@@ -1563,18 +1427,6 @@ html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   color: rgb(128, 128, 128);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"] {
@@ -1590,25 +1442,9 @@ html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="chec
   color: rgb(236, 117, 0);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="light"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   color: rgb(158, 158, 158);
   content: "❝";
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"] {
@@ -1624,26 +1460,6 @@ html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="chec
   color: rgb(224, 172, 0);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
 html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
   mask-image: url("data:image/svg+xml,<?xml%20version=%221.0%22%20encoding=%22UTF-8%22?%3E%3Csvg%20id=%22svg0%22%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1{fill:none}%3C/style%3E%3C/defs%3E%3Crect%20class=%22cls-1%22%20width=%2216%22%20height=%2216%22/%3E%3Cpath%20d=%22M2.75,15.5H13.25c.83,0,1.5-.67,1.5-1.5V3.5c0-.83-.67-1.5-1.5-1.5h-1.5V.5h-1.5v1.5H5.75V.5h-1.5v1.5h-1.5c-.83,0-1.5,.67-1.5,1.5V14c0,.83,.67,1.5,1.5,1.5Zm0-11.25H13.25v1.5H2.75v-1.5Z%22/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,<?xml%20version=%221.0%22%20encoding=%22UTF-8%22?%3E%3Csvg%20id=%22svg0%22%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2016%2016%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1{fill:none}%3C/style%3E%3C/defs%3E%3Crect%20class=%22cls-1%22%20width=%2216%22%20height=%2216%22/%3E%3Cpath%20d=%22M2.75,15.5H13.25c.83,0,1.5-.67,1.5-1.5V3.5c0-.83-.67-1.5-1.5-1.5h-1.5V.5h-1.5v1.5H5.75V.5h-1.5v1.5h-1.5c-.83,0-1.5,.67-1.5,1.5V14c0,.83,.67,1.5,1.5,1.5Zm0-11.25H13.25v1.5H2.75v-1.5Z%22/%3E%3C/svg%3E");
@@ -1657,10 +1473,6 @@ html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="chec
   color: rgb(128, 128, 128);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
 html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"] {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E");
@@ -1672,122 +1484,6 @@ html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
   color: rgb(128, 128, 128);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"] {
@@ -1816,141 +1512,9 @@ html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="chec
   color: rgb(224, 172, 0);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
 html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
   color: rgb(158, 158, 158);
   content: "🕮";
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
-  background-color: rgb(231, 234, 238);
 }`,
     callouts: `html[saved-theme="light"] body .callout > .callout-content {
   padding-bottom: 4px;
@@ -1958,59 +1522,136 @@ html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="chec
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
+  --callout-color: 0, 191, 188;
   background-color: rgba(0, 191, 188, 0.18);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
+  --callout-color: 233, 49, 71;
   background-color: rgba(233, 49, 71, 0.18);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
+  --callout-color: 233, 49, 71;
   background-color: rgba(233, 49, 71, 0.18);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
+  --callout-color: 120, 82, 238;
   background-color: rgba(120, 82, 238, 0.18);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
+  --callout-color: 233, 49, 71;
   background-color: rgba(233, 49, 71, 0.18);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
+  --callout-color: 8, 109, 221;
   background-color: rgba(8, 109, 221, 0.18);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
+  --callout-color: 8, 109, 221;
   background-color: rgba(8, 109, 221, 0.18);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
+  --callout-color: 236, 117, 0;
   background-color: rgba(236, 117, 0, 0.18);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
   background-color: rgba(158, 158, 158, 0.18);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
+  --callout-color: 8, 185, 78;
   background-color: rgba(8, 185, 78, 0.18);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
+  --callout-color: 0, 191, 188;
   background-color: rgba(0, 191, 188, 0.18);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
+  --callout-color: 8, 109, 221;
   background-color: rgba(8, 109, 221, 0.18);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
+  --callout-color: 236, 117, 0;
   background-color: rgba(236, 117, 0, 0.18);
 }
 
-html[saved-theme="light"] body .callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon {
+html[saved-theme="light"] body .callout[data-callout="note"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 21h8'/%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="abstract"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z'/%3E%3Cpath d='M14 2v5a1 1 0 0 0 1 1h5'/%3E%3Cpath d='M10 9H8'/%3E%3Cpath d='M16 13H8'/%3E%3Cpath d='M16 17H8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="bug"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20v-9'/%3E%3Cpath d='M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z'/%3E%3Cpath d='M14.12 3.88 16 2'/%3E%3Cpath d='M21 21a4 4 0 0 0-3.81-4'/%3E%3Cpath d='M21 5a4 4 0 0 1-3.55 3.97'/%3E%3Cpath d='M22 13h-4'/%3E%3Cpath d='M3 21a4 4 0 0 1 3.81-4'/%3E%3Cpath d='M3 5a4 4 0 0 0 3.55 3.97'/%3E%3Cpath d='M6 13H2'/%3E%3Cpath d='m8 2 1.88 1.88'/%3E%3Cpath d='M9 7.13V6a3 3 0 1 1 6 0v1.13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="caption"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 21h8'/%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="danger"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="example"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 5h.01'/%3E%3Cpath d='M3 12h.01'/%3E%3Cpath d='M3 19h.01'/%3E%3Cpath d='M8 5h13'/%3E%3Cpath d='M8 12h13'/%3E%3Cpath d='M8 19h13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="failure"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18'/%3E%3Cpath d='m6 6 12 12'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="info"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="latest"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.268 21a2 2 0 0 0 3.464 0'/%3E%3Cpath d='M22 8c0-2.3-.8-4.3-2-6'/%3E%3Cpath d='M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326'/%3E%3Cpath d='M4 2C2.8 3.7 2 5.7 2 8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 21h8'/%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="question"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="success"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 7 17l-5-5'/%3E%3Cpath d='m22 10-7.5 7.5L13 16'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="tip"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="todo"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.801 10A10 10 0 1 1 17 3.335'/%3E%3Cpath d='m9 11 3 3L22 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="update"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.268 21a2 2 0 0 0 3.464 0'/%3E%3Cpath d='M22 8c0-2.3-.8-4.3-2-6'/%3E%3Cpath d='M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326'/%3E%3Cpath d='M4 2C2.8 3.7 2 5.7 2 8'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="warning"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(250, 250, 250);
@@ -2088,6 +1729,7 @@ html[saved-theme="light"] body hr {
   border-right-width: 0px;
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
+  --callout-color: 8, 109, 221;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
@@ -2130,6 +1772,10 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(26, 26, 26);
   font-family: "??", "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="light"] body .explorer .folder-outer > ul {
+  border-left-color: rgb(173, 167, 164);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(26, 26, 26);
@@ -2235,6 +1881,15 @@ html[saved-theme="light"] body input[type=text] {
   border-top-color: rgb(26, 26, 26);
   color: rgb(26, 26, 26);
   font-family: "??", "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="light"] body ul.tags > li {
+  background-color: rgba(234, 151, 123, 0.7);
+  border-bottom-left-radius: 7.2px;
+  border-bottom-right-radius: 7.2px;
+  border-top-left-radius: 7.2px;
+  border-top-right-radius: 7.2px;
+  color: rgb(17, 17, 17);
 }`,
   },
 };

@@ -1,0 +1,111 @@
+/* Callout overrides — provides Obsidian default fallback values and fixes
+ * variable name mismatches between callout type names and Obsidian's
+ * --callout-* variable naming convention.
+ *
+ * Obsidian variable naming:
+ *   note     → --callout-default
+ *   abstract → --callout-summary
+ *   failure  → --callout-fail
+ *   danger   → --callout-error
+ *
+ * All other types map directly: --callout-{type}
+ */
+
+/* ── Light mode defaults ── */
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  --callout-blend-mode: darken;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-radius: 4px;
+  --callout-title-color: inherit;
+  --callout-title-padding: 0;
+  --callout-title-size: inherit;
+
+  /* Obsidian default callout color palette (RGB triplets) */
+  --callout-default: 2, 122, 255;
+  --callout-bug: 251, 70, 76;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-question: 233, 151, 63;
+  --callout-quote: 158, 158, 158;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+}
+
+/* ── Dark mode defaults ── */
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  --callout-blend-mode: normal;
+  --callout-border-opacity: 0.25;
+  --callout-border-width: 0px;
+  --callout-content-background: transparent;
+  --callout-content-padding: 0;
+  --callout-radius: 4px;
+  --callout-title-color: inherit;
+  --callout-title-padding: 0;
+  --callout-title-size: inherit;
+
+  /* Obsidian default callout color palette (RGB triplets) */
+  --callout-default: 2, 122, 255;
+  --callout-bug: 251, 70, 76;
+  --callout-error: 251, 70, 76;
+  --callout-example: 168, 130, 255;
+  --callout-fail: 251, 70, 76;
+  --callout-important: 83, 223, 221;
+  --callout-info: 2, 122, 255;
+  --callout-question: 233, 151, 63;
+  --callout-quote: 158, 158, 158;
+  --callout-success: 68, 207, 110;
+  --callout-summary: 83, 223, 221;
+  --callout-tip: 83, 223, 221;
+  --callout-todo: 2, 122, 255;
+  --callout-warning: 233, 151, 63;
+}
+
+/* ── Name-mismatch overrides ──
+ * Map callout types whose names don't match their Obsidian variable names.
+ * These selectors use the correct Obsidian variable with an RGB fallback.
+ */
+:root[saved-theme="dark"],
+html[saved-theme="dark"],
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  .callout {
+    &[data-callout="note"] {
+      --color-rgb: var(--callout-default, 2, 122, 255);
+      --color: rgb(var(--callout-default, 2, 122, 255));
+      --border: rgba(var(--callout-default, 2, 122, 255), 0.267);
+      --bg: rgba(var(--callout-default, 2, 122, 255), 0.063);
+    }
+
+    &[data-callout="abstract"] {
+      --color-rgb: var(--callout-summary, 83, 223, 221);
+      --color: rgb(var(--callout-summary, 83, 223, 221));
+      --border: rgba(var(--callout-summary, 83, 223, 221), 0.267);
+      --bg: rgba(var(--callout-summary, 83, 223, 221), 0.063);
+    }
+
+    &[data-callout="failure"] {
+      --color-rgb: var(--callout-fail, 251, 70, 76);
+      --color: rgb(var(--callout-fail, 251, 70, 76));
+      --border: rgba(var(--callout-fail, 251, 70, 76), 0.267);
+      --bg: rgba(var(--callout-fail, 251, 70, 76), 0.063);
+    }
+
+    &[data-callout="danger"] {
+      --color-rgb: var(--callout-error, 251, 70, 76);
+      --color: rgb(var(--callout-error, 251, 70, 76));
+      --border: rgba(var(--callout-error, 251, 70, 76), 0.267);
+      --bg: rgba(var(--callout-error, 251, 70, 76), 0.063);
+    }
+  }
+}

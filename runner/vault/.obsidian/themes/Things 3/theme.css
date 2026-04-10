@@ -1,7 +1,7 @@
 /*──────────────────────────────────────
 Things 3 Theme for Obsidian
-Version 2.6.11
-@paralloid, 2026-01-22
+Version 2.6.14
+@paralloid, 2026-04-02
 ───────────────────────────────────────*/
 
 /* @settings
@@ -34,7 +34,7 @@ settings:
         id: button-close-left
         title: Tab close button on the left
         type: class-toggle
-        default: false
+        default: true
 */
 
 @charset "UTF-8";
@@ -46,8 +46,9 @@ body {
     --tab-radius-active: 12px 12px 0px 0px;
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.04);
     --interactive-accent: #67acff;
+    --code-function: #cd8c00;
     --color-yellow-rgb: rgb(255, 213, 0);
-    --color-yellow: #ffd500 !important;
+    --color-yellow: #fdd31b !important;
     --color-red: #f83366 !important;
     --color-red-trans: rgba(255, 83, 131, 0.3);
     --color-cyan-rgb: rgb(84, 173, 164);
@@ -78,9 +79,13 @@ body {
     --interactive-normal: var(--background-secondary) !important;
     --input-shadow: none !important;
     --input-shadow-hover: none !important;
+    --link-color: var(--text-accent);
+    --link-color-hover: var(--text-accent-hover);
+    --link-decoration: none;
+    --link-decoration-hover: none;
     --radius-s: 10px;
     --radius-m: 18px;
-    --radius-l: 26px;
+    --radius-l: 28px;
     --clickable-icon-radius: var(--radius-l);
     --modal-background: color-mix(in srgb, var(--background-secondary-alt) 95%, transparent);
     --metadata-divider-color: var(--background-secondary);
@@ -144,6 +149,7 @@ body.is-translucent .workspace-tab-header-container {
     --mobile-glass-border: color-mix(in srgb, rgb(255,255,255) 15%, transparent);
     --pill-background: rgb(50,50,50);
     --properties-background: rgb(35,35,35);
+    --prompt-input-background: #474747;
     --selected-item: #286bbd;
     --tag-color: #f1f1f1;
     --text-extreme: #ffffff;
@@ -164,8 +170,8 @@ body.is-mobile.theme-dark {
     --background-secondary: #1b2026;
     --background-secondary-alt: #2c3138;
     --titlebar-background: var(--background-primary);
-    --menu-background: #313b4a;
-    --prompt-background: #313b4a;
+    --menu-background: #272d33;
+    --prompt-background: #272d33;
     --mobile-sidebar-background: var(--background-secondary) !important;
     --div-color: rgba(60, 60, 60, 0.9);
     --background-modifier-border: rgba(0, 0, 0, 0.2);
@@ -238,6 +244,7 @@ body.is-tablet.theme-dark.tablet-full-black {
     --mobile-glass-border: color-mix(in srgb, rgb(255,255,255) 80%, transparent);
     --pill-background: rgb(237,237,237);
     --properties-background: var(--background-secondary);
+    --prompt-input-background: #dee0e5;
     --selected-item: #c3d8ff;
     --tag-color: #1e7d58;
     --text-extreme: #000000;
@@ -255,6 +262,10 @@ body.is-mobile.theme-light {
 
 body:not(.is-mobile).theme-light {
     --menu-background: #3f4347;
+}
+
+.vertical-tab-content {
+    background-color: var(--background-secondary-alt);
 }
 
 /* ANIMATIONS */
@@ -399,7 +410,7 @@ body.button-close-left .workspace-tab-header-inner-close-button {
     order: -1;
 }
 
-body.button-close-left:not(.is-mobile) .workspace-tab-header-inner-close-button {
+body:not(.is-mobile) .workspace-tab-header-inner-close-button {
     background-color: transparent;
     padding: 0px;
     scale:70%;
@@ -432,10 +443,11 @@ body:not(.is-mobile) body.button-close-left .workspace-tab-header-inner-close-bu
     padding-inline-start: 4px;
 }
 
-.workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-close-button {
+/* body:not(.button-close-left) .workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-close-button,
+body:not(.button-close-left) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
     pointer-events: all;
     animation: fade-in 0.4s
-}
+} */
 
 body.button-close-left .workspace-tabs:not(.mod-stacked) .workspace-tab-header:hover .workspace-tab-header-inner-close-button,
 body.button-close-left .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
@@ -451,8 +463,9 @@ body.button-close-left .workspace-tab-header-inner-title {
 }
 
 body.is-focused.theme-light .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active {
-    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
     color: var(--text-extreme);
+    transition: box-shadow 0.15s ease-out;
 }
 
 .workspace-tab-header-container .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
@@ -462,6 +475,7 @@ body.is-focused.theme-light .workspace-split.mod-vertical.mod-root .workspace-ta
 body.is-focused.theme-dark .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active {
     box-shadow: 0 0px 12px rgba(0, 0, 0, 0.3);
     color: var(--text-extreme);
+    transition: box-shadow 0.15s ease-out;
 }
 
 body.is-mobile .modal-header {
@@ -1069,8 +1083,8 @@ body:not(.is-mobile) input.prompt-input:focus-visible,
 body:not(.is-mobile) input.prompt-input {
     height: 34px;
     padding: 4px 18px;
-    margin: 8px;
-    background-color: rgba(128,128,128,0.3);
+    margin: 8px 9px 8px 9px;
+    background-color: var(--prompt-input-background);
     border-radius: var(--radius-l);
 }
 
@@ -1286,50 +1300,6 @@ body.is-phone {
 
 body.is-mobile .empty-state-action {
     background: transparent;
-}
-
-/* Link Enhancements */
-.internal-link,
-.external-link,
-.cm-link,
-.cm-url,
-.cm-s-obsidian span.cm-hmd-internal-link,
-.cm-s-obsidian span.cm-hmd-external-link,
-.cm-s-obsidian .cm-link,
-.cm-s-obsidian a {
-    color: var(--accent-color) !important;
-    text-decoration: none !important;
-    caret-color: var(--accent-color) !important;
-}
-
-.external-link {
-    color: var(--link-external-color);
-    text-decoration-line: var(--link-external-decoration);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: 0.625em;
-    padding-inline-end: 0.95em;
-    background-position-y: 0.3em;
-    cursor: pointer;
-    filter: var(--link-external-filter);
-    transition: opacity 0.25s ease-in-out;
-}
-
-a:hover, 
-.internal-link:hover, 
-.external-link:hover, 
-.cm-link:hover, 
-.cm-url:hover,
-.cm-s-obsidian span.cm-hmd-internal-link:hover,
-.cm-s-obsidian span.cm-hmd-external-link:hover {
-    text-decoration: none !important;
-}
-
-a:focus, 
-.internal-link:focus, 
-.external-link:focus {
-    outline: none !important;
-    text-decoration: none !important;
 }
 
 .theme-dark ::selection {
@@ -1703,11 +1673,39 @@ body.dataview-no-wrap .table-view-table > tbody > tr > td  {
     word-break: normal;
 }
 
+/* Liquid Glass Stuff */
+
+body {
+    --liquid-shadow-light: 
+        inset 1.5px 1.5px 1px 0 rgba(255, 255, 255, 0.7),
+        inset -1.5px -1.5px 1px 0 rgba(255, 255, 255, 0.5),
+        0 3px 14px rgba(0, 0, 0, 0.09);
+
+    --liquid-shadow-dark: 
+        inset 1.25px 1px 0.5px -0.5px rgba(180, 180, 180, 0.1),
+        inset -1.25px -1px 0.5px -0.5px rgba(180, 180, 180, 0.1),
+        0 3px 14px rgba(0, 0, 0, 0.03);
+}
+
+.theme-light { --glass-edge: var(--liquid-shadow-light); }
+.theme-dark  { --glass-edge: var(--liquid-shadow-dark); }
+
+.status-bar,
+.is-mobile .mobile-navbar,
+.input-button,
+.mod-raised,
+.document-replace-input,
+.pdf-page-input,
+.search-input-container input {
+    border: none !important;
+    box-shadow: var(--glass-edge) !important;
+}
+
 /* =========================
    Liquid glass centered status bar
    ========================= */
 
-body {
+/* body {
   --statusbar-glass-bg: color-mix(in srgb, var(--background-primary) 35%, transparent);
   --statusbar-glass-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -1718,11 +1716,12 @@ body {
 
 .theme-dark {
     --statusbar-glass-border: rgba(100,100,100,0.1);
-}
+}*/
 
 .status-bar {
     position: fixed;
-    right: 46%;
+    left: 50%;
+    transform: translatex(-50%);
     bottom: 10px;
     width: fit-content;
     max-width: min(60rem, 90vw);
@@ -1732,11 +1731,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: var(--statusbar-glass-bg);
-    backdrop-filter: blur(2px) saturate(160%);
-    -webkit-backdrop-filter: blur(2px) saturate(160%);
-    border: 1.25px solid var(--statusbar-glass-border);
-    box-shadow: var(--statusbar-glass-shadow);
+    background: var(--background-secondary-alt);
     z-index: var(--layer-status-bar);
     white-space: nowrap;
     overflow: hidden;
@@ -1803,15 +1798,9 @@ body.is-tablet .workspace-tab-header-container {
     border: 2px solid var(--statusbar-glass-border);
 }
 
-.mobile-full-black.theme-dark .mod-raised {
-    /* background-color: #262b31 !important; */
-    background-color: rgba(38,43,49,0.7) !important;
-    background-image: none;
-}
 
 .theme-dark .mod-raised {
-    /* background-color: #303a47 !important; */
-    background-color: rgba(48,58,71,0.8) !important;
+    background-color: rgba(48,58,71,0.95) !important;
     background-image: none;
 }
 

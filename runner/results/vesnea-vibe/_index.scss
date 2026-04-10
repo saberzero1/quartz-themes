@@ -19,6 +19,24 @@
   --text-normal: hsl(248, 31%, 20%) !important;
   --titlebar-background: hsl(252, 38%, 95%) !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 4px !important;
+  --background-modifier-border: #c6b0cf !important;
+  --background-modifier-form-field: hsl(0, 50%, 99%) !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: #c6b0cf !important;
+  --pill-border-color-hover: hsl(281, 24%, 70%) !important;
+  --pill-border-width: 1px !important;
+  --pill-color: hsl(251, 29%, 55%) !important;
+  --pill-color-hover: hsl(248, 31%, 20%) !important;
+  --pill-color-remove: hsl(275, 24%, 55%) !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 333 !important;
   --accent-l: 78% !important;
   --accent-s: 77% !important;
@@ -32,7 +50,6 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(333, 77%, 78%, 0.1) !important;
-  --background-modifier-border: #c6b0cf !important;
   --background-modifier-border-focus: hsl(281, 24%, 60%) !important;
   --background-modifier-border-hover: hsl(281, 24%, 70%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -40,7 +57,6 @@
   --background-modifier-error: #e93147 !important;
   --background-modifier-error-hover: #e93147 !important;
   --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field: hsl(0, 50%, 99%) !important;
   --background-modifier-form-field-hover: hsl(0, 50%, 99%) !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -70,7 +86,6 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -91,11 +106,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: hsl(251, 29%, 55%) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -108,11 +119,7 @@
   --blockquote-border-color: hsl(332, 77.77%, 83.85%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, hsl(0, 60%, 99%) 65%, transparent)
-    linear-gradient(
-      hsl(0, 60%, 99%),
-      color-mix(in srgb, hsl(0, 60%, 99%) 65%, transparent)
-    ) !important;
+  --blur-background: color-mix(in srgb, hsl(0, 60%, 99%) 65%, transparent) linear-gradient(hsl(0, 60%, 99%), color-mix(in srgb, hsl(0, 60%, 99%) 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -252,8 +259,7 @@
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px #c6b0cf, inset 0 0 0 1px #c6b0cf !important;
+  --embed-block-shadow-hover: 0 0 0 1px #c6b0cf, inset 0 0 0 1px #c6b0cf !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid hsl(332, 77.77%, 83.85%) !important;
@@ -265,11 +271,7 @@
   --file-header-background: hsl(0, 60%, 99%) !important;
   --file-header-background-focused: hsl(0, 60%, 99%) !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -282,34 +284,17 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-interface: "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: Work Sans, sans-serif !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    "??", Josefin Sans, sans-serif, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-mermaid: "??", Josefin Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -319,11 +304,7 @@
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", Josefin Sans, sans-serif, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-text: "??", Josefin Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: Josefin Sans, sans-serif !important;
@@ -412,8 +393,6 @@
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -433,22 +412,14 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: hsl(275, 24%, 55%) !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: hsl(275, 24%, 55%) !important;
-  --input-radius: 4px !important;
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03),
-    0 0 0 0 transparent, 0 4px 6px color-mix(in srgb, #c6b0cf 50%, transparent) !important;
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 0 0 0 transparent, 0 4px 6px color-mix(in srgb, #c6b0cf 50%, transparent) !important;
   --inset-end: right !important;
   --inset-start: left !important;
   --interactive-accent: hsl(332, 77.77%, 83.85%) !important;
@@ -506,14 +477,8 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 6px !important;
-  --menu-scroll-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.1) 48px
-  ) !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 30px 90px color-mix(in srgb, #c6b0cf 50%, transparent) !important;
+  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 30px 90px color-mix(in srgb, #c6b0cf 50%, transparent) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: #c6b0cf !important;
   --metadata-border-radius: 0 !important;
@@ -528,11 +493,7 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -541,11 +502,7 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: hsl(251, 29%, 55%) !important;
   --metadata-label-text-color-hover: hsl(251, 29%, 55%) !important;
@@ -618,26 +575,14 @@
   --page-margin: 1px auto -8px !important;
   --pdf-background: hsl(0, 60%, 99%) !important;
   --pdf-page-background: hsl(0, 60%, 99%) !important;
-  --pdf-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
   --pdf-sidebar-background: hsl(0, 60%, 99%) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: #c6b0cf !important;
-  --pill-border-color-hover: hsl(281, 24%, 70%) !important;
-  --pill-border-width: 1px !important;
-  --pill-color: hsl(251, 29%, 55%) !important;
-  --pill-color-hover: hsl(248, 31%, 20%) !important;
-  --pill-color-remove: hsl(275, 24%, 55%) !important;
   --pill-color-remove-hover: hsl(333, 77%, 78%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -660,22 +605,10 @@
   --radius-m: 6px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, hsl(0, 60%, 99%) 65%, transparent)
-    linear-gradient(
-      hsl(0, 60%, 99%),
-      color-mix(in srgb, hsl(0, 60%, 99%) 65%, transparent)
-    ) !important;
+  --raised-background: color-mix(in srgb, hsl(0, 60%, 99%) 65%, transparent) linear-gradient(hsl(0, 60%, 99%), color-mix(in srgb, hsl(0, 60%, 99%) 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(white, white) border-box !important;
-  --raised-mask-background: linear-gradient(
-      to bottom left,
-      white,
-      transparent,
-      white
-    )
-    border-box no-repeat !important;
+  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(to bottom left, white, transparent, white) border-box no-repeat !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
@@ -707,12 +640,8 @@
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 8px !important;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px color-mix(in srgb, #c6b0cf 50%, transparent) !important;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 30px 90px color-mix(in srgb, #c6b0cf 50%, transparent) !important;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px color-mix(in srgb, #c6b0cf 50%, transparent) !important;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 30px 90px color-mix(in srgb, #c6b0cf 50%, transparent) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -785,11 +714,7 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: hsl(252, 38%, 95%) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    hsl(252, 38%, 95%),
-    transparent
-  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(252, 38%, 95%), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
@@ -817,11 +742,7 @@
   --table-drag-handle-color: hsl(275, 24%, 55%) !important;
   --table-drag-handle-color-active: #2c233d !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: color-mix(
-    in srgb,
-    hsl(333, 77%, 78%) 20%,
-    transparent
-  ) !important;
+  --table-header-background: color-mix(in srgb, hsl(333, 77%, 78%) 20%, transparent) !important;
   --table-header-border-color: #c6b0cf !important;
   --table-header-border-width: 1px !important;
   --table-header-color: hsl(248, 31%, 20%) !important;
@@ -907,18 +828,10 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
+  --raised-shadow: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
   --shadow-edges: 0 0 transparent !important;
-  --shadow-xs:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
-  --table-header-background-hover: color-mix(
-    in srgb,
-    hsl(333, 77%, 78%) 60%,
-    transparent
-  ) !important;
+  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
+  --table-header-background-hover: color-mix(in srgb, hsl(333, 77%, 78%) 60%, transparent) !important;
   --bold-color: #d62d64 !important;
   --italic-color: hsl(from #87d1f3 h s calc(l - 20)) !important;
   --attribute-aether: #f4df7e !important;
@@ -985,28 +898,36 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --bases-embed-border-color: hsl(
-    from #181621 h calc(s + 3) calc(l + 4)
-  ) !important;
-  --bases-table-border-color: color-mix(
-    in srgb,
-    hsl(333, 77%, 78%) 40%,
-    transparent
-  ) !important;
+  --bases-embed-border-color: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
+  --bases-table-border-color: color-mix(in srgb, hsl(333, 77%, 78%) 40%, transparent) !important;
   --bases-table-header-background: #2c233d !important;
   --bases-table-header-background-hover: rgba(255, 255, 255, 0.067) !important;
   --focus-ring-color: #0df !important;
   --tab-container-background: #181621 !important;
-  --table-border-color: color-mix(
-    in srgb,
-    hsl(333, 77%, 78%) 40%,
-    transparent
-  ) !important;
+  --table-border-color: color-mix(in srgb, hsl(333, 77%, 78%) 40%, transparent) !important;
   --text-accent: hsl(330, 78.54%, 89.7%) !important;
   --text-faint: #c6b0cf !important;
   --text-normal: #f9e8ec !important;
   --titlebar-background: #181621 !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 4px !important;
+  --background-modifier-border: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
+  --background-modifier-form-field: hsl(from #181621 h s calc(l - 3)) !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
+  --pill-border-color-hover: color-mix(in srgb, #2c233d 30%, #181621 70%) !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #fdc4d3 !important;
+  --pill-color-hover: #f9e8ec !important;
+  --pill-color-remove: #c6b0cf !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 333 !important;
   --accent-l: 78% !important;
   --accent-s: 77% !important;
@@ -1020,26 +941,14 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(333, 77%, 78%, 0.1) !important;
-  --background-modifier-border: hsl(
-    from #181621 h calc(s + 3) calc(l + 4)
-  ) !important;
   --background-modifier-border-focus: #f29cc2 !important;
-  --background-modifier-border-hover: color-mix(
-    in srgb,
-    #2c233d 30%,
-    #181621 70%
-  ) !important;
+  --background-modifier-border-hover: color-mix(in srgb, #2c233d 30%, #181621 70%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
   --background-modifier-error: #fb464c !important;
   --background-modifier-error-hover: #fb464c !important;
   --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field: hsl(
-    from #181621 h s calc(l - 3)
-  ) !important;
-  --background-modifier-form-field-hover: hsl(
-    from #181621 h s calc(l - 3)
-  ) !important;
+  --background-modifier-form-field-hover: hsl(from #181621 h s calc(l - 3)) !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: #44cf6e !important;
@@ -1047,9 +956,7 @@
   --background-primary: #2c233d !important;
   --background-primary-alt: hsl(from #2c233d h s calc(l - 10)) !important;
   --background-secondary: #181621 !important;
-  --background-secondary-alt: hsl(
-    from #181621 h calc(s + 3) calc(l + 4)
-  ) !important;
+  --background-secondary-alt: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
   --bases-cards-background: #2c233d !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
@@ -1060,8 +967,7 @@
   --bases-cards-radius: 6px !important;
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
-  --bases-cards-shadow-hover: 0 0 0 1px
-    color-mix(in srgb, #2c233d 30%, #181621 70%) !important;
+  --bases-cards-shadow-hover: 0 0 0 1px color-mix(in srgb, #2c233d 30%, #181621 70%) !important;
   --bases-embed-border-radius: 4px !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
@@ -1071,14 +977,11 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
   --bases-table-cell-background-active: #2c233d !important;
-  --bases-table-cell-background-disabled: hsl(
-    from #2c233d h s calc(l - 10)
-  ) !important;
+  --bases-table-cell-background-disabled: hsl(from #2c233d h s calc(l - 10)) !important;
   --bases-table-cell-background-selected: hsla(333, 77%, 78%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
@@ -1094,11 +997,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: #fdc4d3 !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -1111,19 +1010,7 @@
   --blockquote-border-color: hsl(333, 77%, 78%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(
-      in srgb,
-      hsl(from #181621 h calc(s + 3) calc(l + 4)) 65%,
-      transparent
-    )
-    linear-gradient(
-      hsl(from #181621 h calc(s + 3) calc(l + 4)),
-      color-mix(
-        in srgb,
-        hsl(from #181621 h calc(s + 3) calc(l + 4)) 65%,
-        transparent
-      )
-    ) !important;
+  --blur-background: color-mix(in srgb, hsl(from #181621 h calc(s + 3) calc(l + 4)) 65%, transparent) linear-gradient(hsl(from #181621 h calc(s + 3) calc(l + 4)), color-mix(in srgb, hsl(from #181621 h calc(s + 3) calc(l + 4)) 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -1255,11 +1142,7 @@
   --drag-ghost-text-color: #fff !important;
   --dropdown-background: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
   --dropdown-background-blend-mode: hard-light !important;
-  --dropdown-background-hover: color-mix(
-    in srgb,
-    #2c233d 30%,
-    #181621 70%
-  ) !important;
+  --dropdown-background-hover: color-mix(in srgb, #2c233d 30%, #181621 70%) !important;
   --dropdown-background-position: right 0.5em top 50%, 0 0 !important;
   --dropdown-background-size: 1em auto, 100% !important;
   --dropdown-icon-inset: 0.5em !important;
@@ -1267,9 +1150,7 @@
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px hsl(from #181621 h calc(s + 3) calc(l + 4)),
-    inset 0 0 0 1px hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
+  --embed-block-shadow-hover: 0 0 0 1px hsl(from #181621 h calc(s + 3) calc(l + 4)), inset 0 0 0 1px hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid hsl(333, 77%, 78%) !important;
@@ -1281,11 +1162,7 @@
   --file-header-background: #2c233d !important;
   --file-header-background-focused: #2c233d !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -1298,34 +1175,17 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-interface: "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: Work Sans, sans-serif !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    "??", Josefin Sans, sans-serif, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-mermaid: "??", Josefin Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -1335,11 +1195,7 @@
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", Josefin Sans, sans-serif, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-text: "??", Josefin Sans, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: Josefin Sans, sans-serif !important;
@@ -1349,9 +1205,7 @@
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
   --font-weight: 400 !important;
-  --footnote-divider-color: hsl(
-    from #181621 h calc(s + 3) calc(l + 4)
-  ) !important;
+  --footnote-divider-color: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
   --footnote-divider-color-active: transparent !important;
   --footnote-divider-width: 1px !important;
   --footnote-gap: 4px !important;
@@ -1430,8 +1284,6 @@
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -1451,22 +1303,14 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: #c6b0cf !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #c6b0cf !important;
-  --input-radius: 4px !important;
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 4px 6px color-mix(in srgb, hsl(333, 77%, 78%) 50%, transparent) !important;
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 4px 6px color-mix(in srgb, hsl(333, 77%, 78%) 50%, transparent) !important;
   --inset-end: right !important;
   --inset-start: left !important;
   --interactive-accent: hsl(333, 77%, 78%) !important;
@@ -1524,25 +1368,15 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 6px !important;
-  --menu-scroll-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.1) 48px
-  ) !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 0px 60px color-mix(in srgb, hsl(333, 77%, 78%) 50%, transparent) !important;
+  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 0px 60px color-mix(in srgb, hsl(333, 77%, 78%) 50%, transparent) !important;
   --metadata-background: transparent !important;
-  --metadata-border-color: hsl(
-    from #181621 h calc(s + 3) calc(l + 4)
-  ) !important;
+  --metadata-border-color: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
-  --metadata-divider-color: hsl(
-    from #181621 h calc(s + 3) calc(l + 4)
-  ) !important;
+  --metadata-divider-color: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -1550,11 +1384,7 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -1563,11 +1393,7 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: "??", Work Sans, sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #fdc4d3 !important;
   --metadata-label-text-color-hover: #fdc4d3 !important;
@@ -1578,8 +1404,7 @@
   --metadata-property-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
   --metadata-property-box-shadow-focus: 0 0 0 2px #f29cc2 !important;
-  --metadata-property-box-shadow-hover: 0 0 0 1px
-    color-mix(in srgb, #2c233d 30%, #181621 70%) !important;
+  --metadata-property-box-shadow-hover: 0 0 0 1px color-mix(in srgb, #2c233d 30%, #181621 70%) !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
   --metadata-property-corner-shape-hover: round !important;
@@ -1590,11 +1415,7 @@
   --metadata-sidebar-input-font-size: 13px !important;
   --metadata-sidebar-label-font-size: 13px !important;
   --modal-background: #2c233d !important;
-  --modal-border-color: color-mix(
-    in srgb,
-    hsl(333, 77%, 78%) 20%,
-    transparent
-  ) !important;
+  --modal-border-color: color-mix(in srgb, hsl(333, 77%, 78%) 20%, transparent) !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
   --modal-header-height: auto !important;
@@ -1650,23 +1471,9 @@
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
-  --pill-border-color-hover: color-mix(
-    in srgb,
-    #2c233d 30%,
-    #181621 70%
-  ) !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #fdc4d3 !important;
-  --pill-color-hover: #f9e8ec !important;
-  --pill-color-remove: #c6b0cf !important;
   --pill-color-remove-hover: hsl(330, 78.54%, 89.7%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -1689,23 +1496,9 @@
   --radius-m: 6px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(
-      in srgb,
-      hsl(from #181621 h calc(s + 3) calc(l + 4)) 65%,
-      transparent
-    )
-    linear-gradient(
-      hsl(from #181621 h calc(s + 3) calc(l + 4)),
-      color-mix(
-        in srgb,
-        hsl(from #181621 h calc(s + 3) calc(l + 4)) 65%,
-        transparent
-      )
-    ) !important;
+  --raised-background: color-mix(in srgb, hsl(from #181621 h calc(s + 3) calc(l + 4)) 65%, transparent) linear-gradient(hsl(from #181621 h calc(s + 3) calc(l + 4)), color-mix(in srgb, hsl(from #181621 h calc(s + 3) calc(l + 4)) 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(white, white) border-box !important;
+  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
   --raised-mask-background: transparent !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
@@ -1734,18 +1527,12 @@
   --setting-group-heading-size: 15px !important;
   --setting-group-heading-weight: 600 !important;
   --setting-items-background: hsl(from #2c233d h s calc(l - 10)) !important;
-  --setting-items-border-color: hsl(
-    from #181621 h calc(s + 3) calc(l + 4)
-  ) !important;
+  --setting-items-border-color: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 8px !important;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px color-mix(in srgb, hsl(333, 77%, 78%) 50%, transparent) !important;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 0px 60px color-mix(in srgb, hsl(333, 77%, 78%) 50%, transparent) !important;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px color-mix(in srgb, hsl(333, 77%, 78%) 50%, transparent) !important;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 0px 60px color-mix(in srgb, hsl(333, 77%, 78%) 50%, transparent) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -1769,25 +1556,17 @@
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
-  --slider-thumb-border-color: color-mix(
-    in srgb,
-    #2c233d 30%,
-    #181621 70%
-  ) !important;
+  --slider-thumb-border-color: color-mix(in srgb, #2c233d 30%, #181621 70%) !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
   --slider-thumb-radius: 4px !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
-  --slider-track-background: hsl(
-    from #181621 h calc(s + 3) calc(l + 4)
-  ) !important;
+  --slider-track-background: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: #181621 !important;
-  --status-bar-border-color: hsl(
-    from #181621 h calc(s + 3) calc(l + 4)
-  ) !important;
+  --status-bar-border-color: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
   --status-bar-border-width: 1px 0 0 1px !important;
   --status-bar-font-size: 12px !important;
   --status-bar-position: fixed !important;
@@ -1826,11 +1605,7 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #181621 !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    #181621,
-    transparent
-  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, #181621, transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
@@ -1843,9 +1618,7 @@
   --tab-text-color-focused-highlighted: hsl(330, 78.54%, 89.7%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
-  --table-add-button-border-color: hsl(
-    from #181621 h calc(s + 3) calc(l + 4)
-  ) !important;
+  --table-add-button-border-color: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
   --table-add-button-border-width: 1px !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
@@ -1860,16 +1633,8 @@
   --table-drag-handle-color: #c6b0cf !important;
   --table-drag-handle-color-active: #2c233d !important;
   --table-drop-indicator-half-width: 2px !important;
-  --table-header-background: color-mix(
-    in srgb,
-    hsl(333, 77%, 78%) 20%,
-    transparent
-  ) !important;
-  --table-header-border-color: color-mix(
-    in srgb,
-    hsl(333, 77%, 78%) 40%,
-    transparent
-  ) !important;
+  --table-header-background: color-mix(in srgb, hsl(333, 77%, 78%) 20%, transparent) !important;
+  --table-header-border-color: color-mix(in srgb, hsl(333, 77%, 78%) 40%, transparent) !important;
   --table-header-border-width: 1px !important;
   --table-header-color: #f9e8ec !important;
   --table-header-size: 16px !important;
@@ -1902,9 +1667,7 @@
   --tag-size: 0.875em !important;
   --text-accent-hover: hsl(328, 80.85%, 100.62%) !important;
   --text-error: #fb464c !important;
-  --text-highlight-bg: hsl(
-    from #ce36be calc(h + 20) calc(s - 10) l / 0.85
-  ) !important;
+  --text-highlight-bg: hsl(from #ce36be calc(h + 20) calc(s - 10) l / 0.85) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: #fdc4d3 !important;
   --text-on-accent: #2c233d !important;
@@ -1912,12 +1675,8 @@
   --text-selection: hsla(333, 77%, 78%, 0.33) !important;
   --text-success: #44cf6e !important;
   --text-warning: #e9973f !important;
-  --titlebar-background-focused: hsl(
-    from #181621 h calc(s + 3) calc(l + 4)
-  ) !important;
-  --titlebar-border-color: hsl(
-    from #181621 h calc(s + 3) calc(l + 4)
-  ) !important;
+  --titlebar-background-focused: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
+  --titlebar-border-color: hsl(from #181621 h calc(s + 3) calc(l + 4)) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
   --titlebar-text-color: #fdc4d3 !important;
@@ -1960,11 +1719,7 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --table-header-background-hover: color-mix(
-    in srgb,
-    hsl(333, 77%, 78%) 60%,
-    transparent
-  ) !important;
+  --table-header-background-hover: color-mix(in srgb, hsl(333, 77%, 78%) 60%, transparent) !important;
   --bold-color: #f29cc2 !important;
   --italic-color: #fdc4d3 !important;
   --attribute-aether: #f4df7e !important;
@@ -2031,6 +1786,41 @@
   --quartz-icon-color: currentColor;
 }
 
+html[saved-theme="light"] body {
+  --qt-code-atom: rgb(39, 35, 67);
+  --qt-code-comment: rgb(145, 113, 168);
+  --qt-code-function: rgb(39, 35, 67);
+  --qt-code-header: rgb(39, 35, 67);
+  --qt-code-keyword: rgb(213, 57, 132);
+  --qt-code-number: rgb(120, 82, 238);
+  --qt-code-operator: rgb(233, 49, 71);
+  --qt-code-property: rgb(224, 172, 0);
+  --qt-code-string: rgb(8, 185, 78);
+  --qt-code-string: rgb(8, 185, 78);
+  --qt-code-variable: rgb(0, 191, 188);
+  --qt-code-variable-2: rgb(0, 191, 188);
+  --qt-code-default: rgb(39, 35, 67);
+  --qt-code-background: rgb(243, 239, 245);
+  --qt-code-border-color: rgb(198, 176, 207);
+}
+html[saved-theme="dark"] body {
+  --qt-code-atom: rgb(249, 232, 236);
+  --qt-code-comment: rgb(198, 176, 207);
+  --qt-code-function: rgb(249, 232, 236);
+  --qt-code-header: rgb(249, 232, 236);
+  --qt-code-keyword: rgb(250, 153, 205);
+  --qt-code-number: rgb(168, 130, 255);
+  --qt-code-operator: rgb(251, 70, 76);
+  --qt-code-property: rgb(224, 222, 113);
+  --qt-code-string: rgb(68, 207, 110);
+  --qt-code-string: rgb(68, 207, 110);
+  --qt-code-variable: rgb(83, 223, 221);
+  --qt-code-variable-2: rgb(83, 223, 221);
+  --qt-code-default: rgb(249, 232, 236);
+  --qt-code-background: color(srgb 0.0808824 0.0643382 0.112132);
+  --qt-code-border-color: color(srgb 0.126204 0.113839 0.181847);
+}
+
 html {
   &[saved-theme="light"] {
     color-scheme: light;
@@ -2050,72 +1840,48 @@ html {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v34/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMlhKSbpUVzEEaq2.woff)
-    format("woff");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v34/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMlhKSbpUVzEEaq2.woff) format("woff");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v34/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMhhKSbpUVzEEaq2.woff)
-    format("woff");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v34/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMhhKSbpUVzEEaq2.woff) format("woff");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v34/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMZhKSbpUVzEEQ.woff)
-    format("woff");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v34/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMZhKSbpUVzEEQ.woff) format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBiAJpo3ZKyHaQfhf.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBiAJpo3ZKyHaQfhf.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBiEJpo3ZKyHaQfhf.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBiEJpo3ZKyHaQfhf.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8Jpo3ZKyHaQQ.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8Jpo3ZKyHaQQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -2123,10 +1889,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
@@ -2134,8 +1898,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2144,8 +1907,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2154,10 +1916,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
@@ -2165,21 +1925,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A,
-    U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346,
-    U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6,
-    U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043,
-    U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C,
-    U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121,
-    U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2,
-    U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319,
-    U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1,
-    U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB,
-    U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE,
-    U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
 }
 
 @font-face {
@@ -2187,32 +1934,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4,
-    U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3,
-    U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF,
-    U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF,
-    U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0,
-    U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F,
-    U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315,
-    U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382,
-    U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6,
-    U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7,
-    U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444,
-    U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0,
-    U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA,
-    U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB,
-    U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513,
-    U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D,
-    U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC,
-    U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC,
-    U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887,
-    U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B,
-    U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C,
-    U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8,
-    U+1FB00-1FBFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
 }
 
 @font-face {
@@ -2220,12 +1943,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
@@ -2233,12 +1952,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -2246,30 +1961,23 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2277,8 +1985,7 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2286,46 +1993,32 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -2334,28 +2027,23 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
-      format("woff");
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2363,46 +2051,32 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Monaco";
@@ -2417,18 +2091,15 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2436,8 +2107,7 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2445,46 +2115,32 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 body {
@@ -2715,7 +2371,7 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(214, 45, 100);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2758,7 +2414,7 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(214, 45, 100);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2801,7 +2457,7 @@ body {
   em {
     background-color: rgba(0, 0, 0, 0);
     color: color(srgb 0.165775 0.680214 0.916578);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2844,7 +2500,7 @@ body {
   i {
     background-color: rgba(0, 0, 0, 0);
     color: color(srgb 0.165775 0.680214 0.916578);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2886,7 +2542,7 @@ body {
   .text-highlight {
     background-color: rgb(255, 255, 0);
     color: rgb(0, 0, 0);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2937,7 +2593,7 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: color(srgb 0.46735 0.4195 0.6805 / 0.6);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2976,24 +2632,9 @@ body {
     animation-play-state: running;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(0, 0, 0, 0.067);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3006,18 +2647,7 @@ body {
     color: rgb(39, 35, 67);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: rgba(0, 0, 0, 0.067);
     border: 0px rgb(39, 35, 67);
     border-top-left-radius: 4px;
@@ -3052,15 +2682,7 @@ body {
   }
 
   a.internal.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: rgba(242, 156, 195, 0.1);
     display: flex;
@@ -3151,10 +2773,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: rgb(39, 35, 67);
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
     padding: 0px;
   }
 
@@ -3229,12 +2848,6 @@ body {
     width: auto;
     display: list-item;
     background-color: rgba(0, 0, 0, 0);
-  }
-
-  .page article li:has(> input[type="checkbox"]:checked) {
-    color: rgb(112, 187, 116);
-    text-decoration: line-through;
-    text-decoration-color: rgb(112, 187, 116);
   }
 
   blockquote {
@@ -3385,20 +2998,11 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(39, 35, 67);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
     border: 0px rgb(39, 35, 67);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3410,71 +3014,20 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(39, 35, 67);
     font-weight: 400;
     background-color: rgba(0, 0, 0, 0.067);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: rgb(39, 35, 67);
   }
 
@@ -3631,14 +3184,12 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(254, 251, 251) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(254, 251, 251) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(254, 251, 251);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(254, 251, 251) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(254, 251, 251) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(254, 251, 251);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3653,20 +3204,17 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(254, 251, 251) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(254, 251, 251) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(254, 251, 251);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(254, 251, 251) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(254, 251, 251) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(254, 251, 251);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(254, 251, 251) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(254, 251, 251) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(254, 251, 251);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3679,8 +3227,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(254, 251, 251) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(254, 251, 251) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(254, 251, 251);
   }
 
@@ -3705,6 +3252,7 @@ body {
   }
 
   .callout .callout-title {
+    color: rgb(8, 109, 221);
     gap: 4px;
     border: 0px rgb(8, 109, 221);
     border-top-left-radius: 0px;
@@ -3719,6 +3267,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
+    color: rgb(8, 109, 221);
     font-weight: 700;
   }
 
@@ -4158,11 +3707,9 @@ body {
 
   .transclude-inner {
     background-color: rgba(0, 0, 0, 0);
+    border-left: solid;
+    border-width: 0px;
     border-color: rgb(39, 35, 67);
-    border-left: 2px solid rgb(246, 182, 212);
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4350,10 +3897,7 @@ body {
     background-color: rgb(243, 239, 245);
     box-shadow: none;
     color: rgb(39, 35, 67);
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
     font-size: 14px;
     border: 0px rgb(39, 35, 67);
     border-top-left-radius: 4px;
@@ -4416,109 +3960,109 @@ body {
 
   li.task-list-item[data-task="-"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(39, 35, 67);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(39, 35, 67);
   }
 
@@ -4609,10 +4153,7 @@ body {
     transition-timing-function: ease;
   }
 
-  .explorer
-    .explorer-content
-    li:has(> .folder-outer:not(.open))
-    > .folder-container {
+  .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
     color: rgb(119, 107, 174);
     cursor: default;
     font-family:
@@ -4658,6 +4199,91 @@ body {
     text-decoration: rgb(34, 34, 34);
   }
 
+  .explorer .folder-outer > ul {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .explorer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .bases-table {
+    border-color: rgb(128, 128, 128);
+  }
+
+  .bases-table thead th {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(39, 35, 67);
+    font-weight: 700;
+    border-color: rgb(198, 176, 207);
+  }
+
+  .bases-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .canvas-node {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(39, 35, 67);
+    border-radius: 0px;
+    border-width: 0px;
+  }
+
+  .canvas-node-content {
+    color: rgb(39, 35, 67);
+  }
+
+  .canvas-node-file {
+    color: rgb(39, 35, 67);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .canvas-sidebar {
+    background-color: rgb(254, 251, 251);
+    border-color: rgb(39, 35, 67);
+    box-shadow:
+      rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset,
+      rgba(0, 0, 0, 0.05) 0px 2px 3px 0px,
+      rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px,
+      rgba(0, 0, 0, 0.04) 0px 1px 2px 0px,
+      rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  }
+
+  .canvas-node-group {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(39, 35, 67);
+    border-width: 0px;
+  }
+
+  .note-properties {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(198, 176, 207);
+    border-radius: 0px;
+  }
+
+  .note-properties-key {
+    color: rgb(119, 107, 174);
+    font-weight: 400;
+  }
+
+  .note-properties-value {
+    color: rgb(119, 107, 174);
+  }
+
+  .note-properties-tags {
+    background-color: rgba(242, 156, 195, 0.1);
+    color: rgb(242, 156, 195);
+    border-radius: 28px;
+  }
+
+  .note-properties-row {
+    border-color: rgb(119, 107, 174);
+  }
+
+  details.toc summary::marker {
+    color: rgb(39, 35, 67);
+  }
+
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(119, 107, 174);
@@ -4696,6 +4322,7 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    opacity: 1;
   }
 
   footer ul li a {
@@ -4973,6 +4600,34 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+  }
+
+  ul.tags > li {
+    background-color: rgba(242, 156, 195, 0.1);
+    color: rgb(242, 156, 195);
+    border: 0px solid rgba(242, 156, 195, 0.15);
+    border-top-left-radius: 24.5px;
+    border-top-right-radius: 24.5px;
+    border-bottom-left-radius: 24.5px;
+    border-bottom-right-radius: 24.5px;
+  }
+
+  li.task-list-item input[type="checkbox"] {
+    border-color: rgb(206, 54, 190);
+    border-radius: 4px;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  li.task-list-item input[type="checkbox"]:checked {
+    background-color: rgb(112, 187, 116);
+    border-color: rgb(112, 187, 116);
+  }
+
+  h1.article-title {
+    color: rgb(39, 35, 67);
+    font-size: 13px;
+    font-weight: 400;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -5849,7 +5504,7 @@ html[saved-theme="dark"] {
     strong {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(242, 156, 194);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5892,7 +5547,7 @@ html[saved-theme="dark"] {
     b {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(242, 156, 194);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5935,7 +5590,7 @@ html[saved-theme="dark"] {
     em {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(253, 196, 211);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5978,7 +5633,7 @@ html[saved-theme="dark"] {
     i {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(253, 196, 211);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -6020,7 +5675,7 @@ html[saved-theme="dark"] {
     .text-highlight {
       background-color: rgb(255, 255, 0);
       color: rgb(0, 0, 0);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -6071,7 +5726,7 @@ html[saved-theme="dark"] {
     del {
       background-color: rgba(0, 0, 0, 0);
       color: color(srgb 0.992157 0.768627 0.827451 / 0.6);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -6110,24 +5765,9 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: rgba(255, 255, 255, 0.067);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6140,18 +5780,7 @@ html[saved-theme="dark"] {
       color: rgb(249, 232, 236);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:has(
-        ~ .result-card.focus:not(
-            :has(~ .result-card:hover, ~ .result-card:focus)
-          ),
-        ~ .result-card:focus,
-        ~ .result-card:hover
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
       background-color: rgba(255, 255, 255, 0.067);
       border: 0px rgb(249, 232, 236);
       border-top-left-radius: 4px;
@@ -6166,8 +5795,7 @@ html[saved-theme="dark"] {
     }
 
     hr {
-      border-color: rgb(128, 128, 128) color(srgb 0.126204 0.113839 0.181847)
-        color(srgb 0.126204 0.113839 0.181847);
+      border-color: rgb(128, 128, 128) color(srgb 0.126204 0.113839 0.181847) color(srgb 0.126204 0.113839 0.181847);
       border-style: solid solid none none;
       border-width: 0px 1px 0px 0px;
       border-top-left-radius: 0px;
@@ -6187,15 +5815,7 @@ html[saved-theme="dark"] {
     }
 
     a.internal.tag-link,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card
-      > ul
-      > li
-      > .match-tag {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: rgba(242, 156, 195, 0.1);
       display: flex;
@@ -6233,7 +5853,7 @@ html[saved-theme="dark"] {
     }
 
     ul > li {
-      color: color(srgb 0.944282 0.475326 0.894918);
+      color: rgb(249, 232, 236);
       text-align: start;
     }
 
@@ -6254,7 +5874,7 @@ html[saved-theme="dark"] {
     }
 
     ol > li {
-      color: color(srgb 0.944282 0.475326 0.894918);
+      color: rgb(249, 232, 236);
       text-align: start;
     }
 
@@ -6286,10 +5906,7 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       color: rgb(249, 232, 236);
-      font-family:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-        "Source Code Pro", monospace;
+      font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
       padding: 0px;
     }
 
@@ -6364,12 +5981,6 @@ html[saved-theme="dark"] {
       width: auto;
       display: list-item;
       background-color: rgba(0, 0, 0, 0);
-    }
-
-    .page article li:has(> input[type="checkbox"]:checked) {
-      color: rgb(112, 187, 116);
-      text-decoration: line-through;
-      text-decoration-color: rgb(112, 187, 116);
     }
 
     blockquote {
@@ -6508,10 +6119,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout.display-results {
+    .search > .search-container > .search-space > .search-layout.display-results {
       border: 1px solid rgb(242, 156, 194);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -6523,20 +6131,11 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container {
+    .search > .search-container > .search-space > .search-layout > .results-container {
       color: rgb(249, 232, 236);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
       border: 0px rgb(249, 232, 236);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6548,73 +6147,20 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(
-        :has(~ .result-card:hover, ~ .result-card:focus)
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(249, 232, 236);
       font-weight: 400;
       background-color: rgba(255, 255, 255, 0.067);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-description {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
       color: rgb(249, 232, 236);
     }
 
@@ -6771,14 +6317,12 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(44, 35, 61) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(44, 35, 61) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(44, 35, 61);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(44, 35, 61) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(44, 35, 61) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(44, 35, 61);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6793,20 +6337,17 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(44, 35, 61) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(44, 35, 61) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(44, 35, 61);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(44, 35, 61) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(44, 35, 61) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(44, 35, 61);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(44, 35, 61) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(44, 35, 61) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(44, 35, 61);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6819,8 +6360,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(44, 35, 61) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(44, 35, 61) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(44, 35, 61);
     }
 
@@ -6845,6 +6385,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title {
+      color: rgb(2, 122, 255);
       gap: 4px;
       border: 0px rgb(2, 122, 255);
       border-top-left-radius: 0px;
@@ -6859,6 +6400,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
+      color: rgb(2, 122, 255);
       font-weight: 700;
     }
 
@@ -7298,11 +6840,9 @@ html[saved-theme="dark"] {
 
     .transclude-inner {
       background-color: rgba(0, 0, 0, 0);
+      border-left: solid;
+      border-width: 0px;
       border-color: rgb(249, 232, 236);
-      border-left: 2px solid rgb(242, 156, 195);
-      border-right-width: 0px;
-      border-top-width: 0px;
-      border-bottom-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7490,10 +7030,7 @@ html[saved-theme="dark"] {
       background-color: color(srgb 0.0808824 0.0643382 0.112132);
       box-shadow: none;
       color: rgb(249, 232, 236);
-      font-family:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-        "Source Code Pro", monospace;
+      font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
       font-size: 14px;
       border: 0px rgb(249, 232, 236);
       border-top-left-radius: 4px;
@@ -7556,109 +7093,109 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="-"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task=">"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="/"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="?"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="!"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="*"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="l"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="b"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="i"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="S"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="I"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="p"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="c"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="f"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="k"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="u"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="d"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
     li.task-list-item[data-task="w"] {
       color: color(srgb 0.944282 0.475326 0.894918);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: color(srgb 0.944282 0.475326 0.894918);
     }
 
@@ -7749,10 +7286,7 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .explorer
-      .explorer-content
-      li:has(> .folder-outer:not(.open))
-      > .folder-container {
+    .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
       color: rgb(253, 196, 211);
       cursor: default;
       font-family:
@@ -7775,10 +7309,7 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
     }
 
-    .explorer
-      .explorer-content
-      li:has(> .folder-outer.open)
-      > .folder-container {
+    .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
       color: rgb(253, 196, 211);
       cursor: default;
       font-family:
@@ -7799,6 +7330,91 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       text-decoration: rgb(218, 218, 218);
+    }
+
+    .explorer .folder-outer > ul {
+      border-left: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .explorer {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .bases-table {
+      border-color: rgb(128, 128, 128);
+    }
+
+    .bases-table thead th {
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(249, 232, 236);
+      font-weight: 700;
+      border-color: color(srgb 0.9494 0.6106 0.76306 / 0.4);
+    }
+
+    .bases-table tbody tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .canvas-node {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(249, 232, 236);
+      border-radius: 0px;
+      border-width: 0px;
+    }
+
+    .canvas-node-content {
+      color: rgb(249, 232, 236);
+    }
+
+    .canvas-node-file {
+      color: rgb(249, 232, 236);
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .canvas-sidebar {
+      background-color: rgb(24, 22, 33);
+      border-color: rgb(249, 232, 236);
+      box-shadow:
+        rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset,
+        rgba(0, 0, 0, 0.15) 0px 2px 4px 0px,
+        rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px,
+        rgba(0, 0, 0, 0.2) 0px 1px 2px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    }
+
+    .canvas-node-group {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(249, 232, 236);
+      border-width: 0px;
+    }
+
+    .note-properties {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: color(srgb 0.126204 0.113839 0.181847);
+      border-radius: 0px;
+    }
+
+    .note-properties-key {
+      color: rgb(253, 196, 211);
+      font-weight: 400;
+    }
+
+    .note-properties-value {
+      color: rgb(253, 196, 211);
+    }
+
+    .note-properties-tags {
+      background-color: rgba(242, 156, 195, 0.1);
+      color: rgb(249, 208, 229);
+      border-radius: 28px;
+    }
+
+    .note-properties-row {
+      border-color: rgb(253, 196, 211);
+    }
+
+    details.toc summary::marker {
+      color: rgb(249, 232, 236);
     }
 
     .graph > .graph-outer > .global-graph-icon {
@@ -7839,6 +7455,7 @@ html[saved-theme="dark"] {
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
+      opacity: 1;
     }
 
     footer ul li a {
@@ -8116,6 +7733,34 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+    }
+
+    ul.tags > li {
+      background-color: rgba(242, 156, 195, 0.1);
+      color: rgb(249, 208, 229);
+      border: 0px solid rgba(242, 156, 195, 0.15);
+      border-top-left-radius: 24.5px;
+      border-top-right-radius: 24.5px;
+      border-bottom-left-radius: 24.5px;
+      border-bottom-right-radius: 24.5px;
+    }
+
+    li.task-list-item input[type="checkbox"] {
+      border-color: rgb(206, 54, 190);
+      border-radius: 4px;
+      border-width: 1px;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    li.task-list-item input[type="checkbox"]:checked {
+      background-color: rgb(112, 187, 116);
+      border-color: rgb(112, 187, 116);
+    }
+
+    h1.article-title {
+      color: rgb(249, 232, 236);
+      font-size: 13px;
+      font-weight: 400;
     }
   }
 }
@@ -8870,10 +8515,7 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }
@@ -9099,51 +8741,75 @@ button.toc-header .fold,
 
 figure[data-rehype-pretty-code-figure] pre,
 pre {
-  background-color: var(--code-background);
+  background-color: var(--qt-code-background, var(--code-background));
   white-space: pre;
 
   & > code {
     overflow-x: auto;
 
-    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
-      color: var(--code-value) !important;
+    span[class*="qt-code-keyword"] {
+      color: var(--qt-code-keyword, var(--code-keyword)) !important;
     }
-    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
-      color: var(--code-function) !important;
+    span[class*="qt-code-string"] {
+      color: var(--qt-code-string, var(--code-string)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
-      color: var(--code-string) !important;
+    span[class*="qt-code-comment"] {
+      color: var(--qt-code-comment, var(--code-comment)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
-      color: var(--code-property) !important;
+    span[class*="qt-code-function"] {
+      color: var(--qt-code-function, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
-      color: var(--code-normal) !important;
+    span[class*="qt-code-number"] {
+      color: var(--qt-code-number, var(--code-value)) !important;
     }
-    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
-      color: var(--code-punctuation) !important;
+    span[class*="qt-code-operator"] {
+      color: var(--qt-code-operator, var(--code-operator)) !important;
     }
-    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-property"] {
+      color: var(--qt-code-property, var(--code-property)) !important;
     }
-    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-variable"] {
+      color: var(--qt-code-variable, var(--code-normal)) !important;
     }
-    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
-      color: var(--code-tag) !important;
+    span[class*="qt-code-tag"] {
+      color: var(--qt-code-tag, var(--code-tag)) !important;
     }
-    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
-      color: var(--code-important) !important;
+    span[class*="qt-code-attribute"] {
+      color: var(--qt-code-attribute, var(--code-important)) !important;
     }
-    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-      color: var(--text-operator) !important;
+    span[class*="qt-code-type"] {
+      color: var(--qt-code-type, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
-      color: var(--code-keyword) !important;
+    span[class*="qt-code-builtin"] {
+      color: var(--qt-code-builtin, var(--code-function)) !important;
+    }
+    span[class*="qt-code-atom"] {
+      color: var(--qt-code-atom, var(--code-value)) !important;
+    }
+    span[class*="qt-code-meta"] {
+      color: var(--qt-code-meta, var(--code-comment)) !important;
+    }
+    span[class*="qt-code-qualifier"] {
+      color: var(--qt-code-qualifier, var(--code-property)) !important;
+    }
+    span[class*="qt-code-punctuation"] {
+      color: var(--qt-code-punctuation, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-bracket"] {
+      color: var(--qt-code-bracket, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-header"] {
+      color: var(--qt-code-header, var(--code-tag)) !important;
+    }
+    span[class*="qt-code-link"] {
+      color: var(--qt-code-link, var(--code-string)) !important;
+    }
+    span[class*="qt-code-error"] {
+      color: var(--qt-code-error, var(--code-important)) !important;
     }
 
     background-color: transparent;
-    color: var(--code-normal);
+    color: var(--qt-code-default, var(--code-normal));
   }
 }
 
@@ -9158,46 +8824,74 @@ blockquote.callout {
     color: var(--color);
   }
   &[data-callout] {
-    --color: rgb(var(--callout-info)) !important;
+    --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="note"] {
-    --color: rgb(var(--callout-default)) !important;
+    --color: rgb(var(--callout-default, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-default, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-default, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="abstract"] {
-    --color: rgb(var(--callout-summary)) !important;
+    --color: rgb(var(--callout-summary, 83, 223, 221)) !important;
+    --border: rgba(var(--callout-summary, 83, 223, 221), 0.267) !important;
+    --bg: rgba(var(--callout-summary, 83, 223, 221), 0.063) !important;
   }
   &[data-callout="info"] {
-    --color: rgb(var(--callout-info)) !important;
+    --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="todo"] {
-    --color: rgb(var(--callout-todo)) !important;
+    --color: rgb(var(--callout-todo, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-todo, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-todo, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="tip"] {
-    --color: rgb(var(--callout-tip)) !important;
+    --color: rgb(var(--callout-tip, 83, 223, 221)) !important;
+    --border: rgba(var(--callout-tip, 83, 223, 221), 0.267) !important;
+    --bg: rgba(var(--callout-tip, 83, 223, 221), 0.063) !important;
   }
   &[data-callout="success"] {
-    --color: rgb(var(--callout-success)) !important;
+    --color: rgb(var(--callout-success, 68, 207, 110)) !important;
+    --border: rgba(var(--callout-success, 68, 207, 110), 0.267) !important;
+    --bg: rgba(var(--callout-success, 68, 207, 110), 0.063) !important;
   }
   &[data-callout="question"] {
-    --color: rgb(var(--callout-question)) !important;
+    --color: rgb(var(--callout-question, 233, 151, 63)) !important;
+    --border: rgba(var(--callout-question, 233, 151, 63), 0.267) !important;
+    --bg: rgba(var(--callout-question, 233, 151, 63), 0.063) !important;
   }
   &[data-callout="warning"] {
-    --color: rgb(var(--callout-warning)) !important;
+    --color: rgb(var(--callout-warning, 233, 151, 63)) !important;
+    --border: rgba(var(--callout-warning, 233, 151, 63), 0.267) !important;
+    --bg: rgba(var(--callout-warning, 233, 151, 63), 0.063) !important;
   }
   &[data-callout="failure"] {
-    --color: rgb(var(--callout-fail)) !important;
+    --color: rgb(var(--callout-fail, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-fail, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-fail, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="danger"] {
-    --color: rgb(var(--callout-bug)) !important;
+    --color: rgb(var(--callout-error, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-error, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-error, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="bug"] {
-    --color: rgb(var(--callout-bug)) !important;
+    --color: rgb(var(--callout-bug, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-bug, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-bug, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="example"] {
-    --color: rgb(var(--callout-example)) !important;
+    --color: rgb(var(--callout-example, 168, 130, 255)) !important;
+    --border: rgba(var(--callout-example, 168, 130, 255), 0.267) !important;
+    --bg: rgba(var(--callout-example, 168, 130, 255), 0.063) !important;
   }
   &[data-callout="quote"] {
-    --color: rgb(var(--callout-quote)) !important;
+    --color: rgb(var(--callout-quote, 158, 158, 158)) !important;
+    --border: rgba(var(--callout-quote, 158, 158, 158), 0.267) !important;
+    --bg: rgba(var(--callout-quote, 158, 158, 158), 0.063) !important;
   }
 }
 

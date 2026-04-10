@@ -1,0 +1,256 @@
+- generic [ref=e3]:
+    - generic [ref=e4]:
+        - heading "Quartz 5" [level=2] [ref=e5]:
+            - link "Quartz 5" [ref=e6] [cursor=pointer]:
+                - /url: ..
+        - generic [ref=e7]:
+            - button "Search" [ref=e10] [cursor=pointer]:
+                - img "Search" [ref=e11]
+                - paragraph [ref=e15]: Search
+            - button [ref=e17] [cursor=pointer]
+            - button [ref=e19] [cursor=pointer]
+        - generic [ref=e20]:
+            - button "Explorer" [expanded] [ref=e21] [cursor=pointer]:
+                - heading "Explorer" [level=2] [ref=e22]
+                - img [ref=e23]
+            - group [ref=e24]:
+                - list [ref=e25]:
+                    - listitem [ref=e26]
+                    - listitem [ref=e27]:
+                        - generic [ref=e28]:
+                            - img [ref=e29] [cursor=pointer]
+                            - link "folder" [ref=e31] [cursor=pointer]:
+                                - /url: /folder/
+                                - generic [ref=e32]: folder
+                    - listitem [ref=e33]:
+                        - generic [ref=e34]:
+                            - img [ref=e35] [cursor=pointer]
+                            - link "theme-bases" [ref=e37] [cursor=pointer]:
+                                - /url: /theme-bases/
+                                - generic [ref=e38]: theme-bases
+                    - listitem [ref=e39]:
+                        - generic [ref=e40]:
+                            - img [ref=e41] [cursor=pointer]
+                            - link "theme-callouts" [ref=e43] [cursor=pointer]:
+                                - /url: /theme-callouts/
+                                - generic [ref=e44]: theme-callouts
+                    - listitem [ref=e45]:
+                        - generic [ref=e46]:
+                            - img [ref=e47] [cursor=pointer]
+                            - link "theme-canvas" [ref=e49] [cursor=pointer]:
+                                - /url: /theme-canvas/
+                                - generic [ref=e50]: theme-canvas
+                    - listitem [ref=e51]:
+                        - generic [ref=e52]:
+                            - img [ref=e53] [cursor=pointer]
+                            - link "theme-checkboxes" [ref=e55] [cursor=pointer]:
+                                - /url: /theme-checkboxes/
+                                - generic [ref=e56]: theme-checkboxes
+                        - list [ref=e58]:
+                            - listitem [ref=e59]:
+                                - link "lower" [ref=e60] [cursor=pointer]:
+                                    - /url: /theme-checkboxes/lower
+                            - listitem [ref=e61]:
+                                - link "special" [ref=e62] [cursor=pointer]:
+                                    - /url: /theme-checkboxes/special
+                            - listitem [ref=e63]:
+                                - link "upper" [ref=e64] [cursor=pointer]:
+                                    - /url: /theme-checkboxes/upper
+                    - listitem [ref=e65]:
+                        - generic [ref=e66]:
+                            - img [ref=e67] [cursor=pointer]
+                            - link "theme-code" [ref=e69] [cursor=pointer]:
+                                - /url: /theme-code/
+                                - generic [ref=e70]: theme-code
+                    - listitem [ref=e71]:
+                        - generic [ref=e72]:
+                            - img [ref=e73] [cursor=pointer]
+                            - link "theme-embeds" [ref=e75] [cursor=pointer]:
+                                - /url: /theme-embeds/
+                                - generic [ref=e76]: theme-embeds
+                    - listitem [ref=e77]:
+                        - generic [ref=e78]:
+                            - img [ref=e79] [cursor=pointer]
+                            - link "theme-extras" [ref=e81] [cursor=pointer]:
+                                - /url: /theme-extras/
+                                - generic [ref=e82]: theme-extras
+                    - listitem [ref=e83]:
+                        - generic [ref=e84]:
+                            - img [ref=e85] [cursor=pointer]
+                            - link "theme-properties" [ref=e87] [cursor=pointer]:
+                                - /url: /theme-properties/
+                                - generic [ref=e88]: theme-properties
+                    - listitem [ref=e89]:
+                        - link "backlinks" [ref=e90] [cursor=pointer]:
+                            - /url: /backlinks
+                    - listitem [ref=e91]:
+                        - link "callouts" [ref=e92] [cursor=pointer]:
+                            - /url: /callouts
+                    - listitem [ref=e93]:
+                        - link "embeds" [ref=e94] [cursor=pointer]:
+                            - /url: /embeds
+                    - listitem [ref=e95]:
+                        - link "general" [ref=e96] [cursor=pointer]:
+                            - /url: /general
+                    - listitem [ref=e97]:
+                        - link "headings" [ref=e98] [cursor=pointer]:
+                            - /url: /headings
+                    - listitem [ref=e99]:
+                        - link "integrations" [ref=e100] [cursor=pointer]:
+                            - /url: /integrations
+                    - listitem [ref=e101]:
+                        - link "media" [ref=e102] [cursor=pointer]:
+                            - /url: /media
+                    - listitem [ref=e103]:
+                        - link "specimen" [ref=e104] [cursor=pointer]:
+                            - /url: /specimen
+                    - listitem [ref=e105]:
+                        - link "tables" [ref=e106] [cursor=pointer]:
+                            - /url: /tables
+    - generic [ref=e107]:
+        - generic [ref=e109]:
+            - navigation "breadcrumbs" [ref=e110]:
+                - generic [ref=e111]:
+                    - link "Home" [ref=e112] [cursor=pointer]:
+                        - /url: ../
+                    - paragraph [ref=e113]: ❯
+                - generic [ref=e114]:
+                    - link "theme-checkboxes" [ref=e115] [cursor=pointer]:
+                        - /url: ../theme-checkboxes/
+                    - paragraph [ref=e116]: ❯
+                - link "special" [ref=e118] [cursor=pointer]:
+                    - /url: ""
+            - heading "special" [level=1] [ref=e119]
+            - paragraph [ref=e120]:
+                - time [ref=e121]: Dec 04, 2025,
+                - text: 1 min read
+        - article [ref=e122]:
+            - list [ref=e123]:
+                - listitem [ref=e124]:
+                    - checkbox [ref=e125]
+                    - text: empty
+                - listitem [ref=e126]:
+                    - checkbox [ref=e127]
+                    - text: unchecked
+                - listitem [ref=e128]:
+                    - checkbox [checked] [ref=e129]
+                    - text: checked
+                - listitem [ref=e130]:
+                    - checkbox [checked] [ref=e131]
+                    - text: forward slash
+                - listitem [ref=e132]:
+                    - checkbox [checked] [ref=e133]
+                    - text: underscore
+                - listitem [ref=e134]:
+                    - checkbox [checked] [ref=e135]
+                    - text: star
+                - listitem [ref=e136]:
+                    - checkbox [checked] [ref=e137]
+                    - text: plus sign
+                - listitem [ref=e138]:
+                    - checkbox [checked] [ref=e139]
+                    - text: minus sign
+                - listitem [ref=e140]:
+                    - checkbox [checked] [ref=e141]
+                    - text: equal sign
+                - listitem [ref=e142]:
+                    - checkbox [checked] [ref=e143]
+                    - text: ampersand
+                - listitem [ref=e144]:
+                    - checkbox [checked] [ref=e145]
+                    - text: at sign
+                - listitem [ref=e146]:
+                    - checkbox [checked] [ref=e147]
+                    - text: dollar sign
+                - listitem [ref=e148]:
+                    - checkbox [checked] [ref=e149]
+                    - text: single quote
+                - listitem [ref=e150]:
+                    - checkbox [checked] [ref=e151]
+                    - text: double quote
+                - listitem [ref=e152]:
+                    - checkbox [checked] [ref=e153]
+                    - text: colon
+                - listitem [ref=e154]:
+                    - checkbox [checked] [ref=e155]
+                    - text: semicolon
+                - listitem [ref=e156]:
+                    - checkbox [checked] [ref=e157]
+                    - text: pipe
+                - listitem [ref=e158]:
+                    - checkbox [checked] [ref=e159]
+                    - text: question mark
+                - listitem [ref=e160]:
+                    - checkbox [checked] [ref=e161]
+                    - text: exclaimation mark
+                - listitem [ref=e162]:
+                    - checkbox [checked] [ref=e163]
+                    - text: tilde
+                - listitem [ref=e164]:
+                    - checkbox [checked] [ref=e165]
+                    - text: backtick
+                - listitem [ref=e166]:
+                    - checkbox [checked] [ref=e167]
+                    - text: hashtag
+                - listitem [ref=e168]:
+                    - checkbox [checked] [ref=e169]
+                    - text: period
+                - listitem [ref=e170]:
+                    - checkbox [checked] [ref=e171]
+                    - text: comma
+                - listitem [ref=e172]:
+                    - checkbox [checked] [ref=e173]
+                    - text: less than sign
+                - listitem [ref=e174]:
+                    - checkbox [checked] [ref=e175]
+                    - text: greater than sign
+                - listitem [ref=e176]:
+                    - checkbox [checked] [ref=e177]
+                    - text: percent sign
+                - listitem [ref=e178]:
+                    - checkbox [checked] [ref=e179]
+                    - text: one
+                - listitem [ref=e180]:
+                    - checkbox [checked] [ref=e181]
+                    - text: two
+                - listitem [ref=e182]:
+                    - checkbox [checked] [ref=e183]
+                    - text: three
+                - listitem [ref=e184]:
+                    - checkbox [checked] [ref=e185]
+                    - text: four
+                - listitem [ref=e186]:
+                    - checkbox [checked] [ref=e187]
+                    - text: five
+                - listitem [ref=e188]:
+                    - checkbox [checked] [ref=e189]
+                    - text: six
+                - listitem [ref=e190]:
+                    - checkbox [checked] [ref=e191]
+                    - text: seven
+                - listitem [ref=e192]:
+                    - checkbox [checked] [ref=e193]
+                    - text: eight
+                - listitem [ref=e194]:
+                    - checkbox [checked] [ref=e195]
+                    - text: nine
+                - listitem [ref=e196]:
+                    - checkbox [checked] [ref=e197]
+                    - text: zero
+        - separator [ref=e198]
+    - generic [ref=e200]:
+        - heading "Graph View" [level=3] [ref=e201]
+        - button "Global Graph" [ref=e205] [cursor=pointer]
+    - contentinfo [ref=e206]:
+        - paragraph [ref=e207]:
+            - text: Created with
+            - link "Quartz" [ref=e208] [cursor=pointer]:
+                - /url: https://quartz.jzhao.xyz/
+            - text: © 2026
+        - list [ref=e209]:
+            - listitem [ref=e210]:
+                - link "GitHub" [ref=e211] [cursor=pointer]:
+                    - /url: https://github.com/jackyzha0/quartz
+            - listitem [ref=e212]:
+                - link "Discord Community" [ref=e213] [cursor=pointer]:
+                    - /url: https://discord.gg/cRFFHYye7t

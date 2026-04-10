@@ -181,30 +181,6 @@ body {
   --grotto-light-2: hsl(40, 16%, 76%);
   --grotto-accent: hsl(310, 16%, 50%);
 }
-.preset-krookodile {
-  --grotto-accent-h: 0;
-  --grotto-accent-s: 24%;
-  --grotto-accent-l: 48%;
-  --grotto-dark-0: hsl(0, 24%, 20%);
-  --grotto-dark-1: hsl(0, 24%, 28%);
-  --grotto-dark-2: hsl(0, 24%, 36%);
-  --grotto-light-0: hsl(0, 12%, 82%);
-  --grotto-light-1: hsl(0, 12%, 86%);
-  --grotto-light-2: hsl(0, 12%, 76%);
-  --grotto-accent: hsl(0, 24%, 48%);
-}
-.preset-larvesta {
-  --grotto-accent-h: 12;
-  --grotto-accent-s: 56%;
-  --grotto-accent-l: 50%;
-  --grotto-dark-0: hsl(36, 44%, 25%);
-  --grotto-dark-1: hsl(36, 44%, 30%);
-  --grotto-dark-2: hsl(36, 44%, 36%);
-  --grotto-light-0: hsl(36, 16%, 84%);
-  --grotto-light-1: hsl(36, 16%, 90%);
-  --grotto-light-2: hsl(36, 16%, 80%);
-  --grotto-accent: hsl(12, 56%, 50%);
-}
 .preset-manectric {
   --grotto-accent-h: 48;
   --grotto-accent-s: 52%;
@@ -369,18 +345,6 @@ body {
   --grotto-light-1: hsl(20, 10%, 80%);
   --grotto-light-2: hsl(20, 10%, 70%);
   --grotto-accent: hsl(40, 40%, 50%);
-}
-.preset-volcarona {
-  --grotto-accent-h: 20;
-  --grotto-accent-s: 64%;
-  --grotto-accent-l: 54%;
-  --grotto-dark-0: hsl(190, 40%, 24%);
-  --grotto-dark-1: hsl(190, 30%, 32%);
-  --grotto-dark-2: hsl(190, 16%, 24%);
-  --grotto-light-0: hsl(165, 20%, 90%);
-  --grotto-light-1: hsl(165, 20%, 96%);
-  --grotto-light-2: hsl(165, 10%, 84%);
-  --grotto-accent: hsl(20, 56%, 56%);
 }
 
 /* UI variables */
@@ -3053,9 +3017,6 @@ settings:
                 label: Hisuian Typhlosion
                 value: preset-hisuian-typhlosion
             -
-                label: Krookodile
-                value: preset-krookodile
-            -
                 label: Manectric
                 value: preset-manectric
             -
@@ -3085,9 +3046,6 @@ settings:
             -
                 label: Ursaluna
                 value: preset-ursaluna
-            -
-                label: Volcarona
-                value: preset-volcarona
 */
 
 /* @settings

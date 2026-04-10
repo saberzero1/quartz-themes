@@ -76,6 +76,11 @@ html body del {
   outline: rgb(255, 255, 255) none 0px;
   text-decoration: line-through rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
+}
+
+html body h1.article-title {
+  color: rgb(255, 255, 255);
+  text-decoration: rgb(255, 255, 255);
 }`,
     lists: `html body dd {
   color: rgb(255, 255, 255);

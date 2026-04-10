@@ -541,13 +541,14 @@ function resolveCalloutIconUri(value) {
 function buildCalloutIconCSS(data, warnings, baseSelector, htmlSelector) {
   const lines = [];
   for (const [selector, props] of Object.entries(data)) {
-    if (!selector.includes("callout[data-callout=")) continue;
+    if (!selector.includes("[data-callout=")) continue;
     const iconValue = props["--callout-icon"];
     const resolved = resolveCalloutIconUri(iconValue);
     if (resolved.uri) {
-      const scoped = selector.includes("&")
-        ? selector.replaceAll("&", baseSelector)
-        : `${baseSelector} ${selector}`;
+      const typeMatch = selector.match(/data-callout="([^"]+)"/);
+      if (!typeMatch) continue;
+      const quartzSelector = `.callout[data-callout="${typeMatch[1]}"]`;
+      const scoped = `${baseSelector} ${quartzSelector}`;
       const htmlScoped = `${htmlSelector} ${scoped}`;
       lines.push(`${htmlScoped} {\n  --callout-icon: ${resolved.uri};\n}`);
     } else if (iconValue) {
@@ -615,12 +616,30 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
 
   const blocks = [];
   for (const [selector, props] of grouped.entries()) {
-    const taskMatch = selector.match(/data-task=\"([^\"]*)\"/);
+    const taskMatch = selector.match(
+      /^input\[data-task="([\s\S]*?)"\](?:::after)?$/,
+    );
     if (!taskMatch) continue;
+    const hasMaskImage =
+      typeof props["mask-image"] === "string" ||
+      typeof props["-webkit-mask-image"] === "string";
+    const contentValue = props["content"];
+    const hasContent =
+      typeof contentValue === "string" &&
+      contentValue !== "none" &&
+      contentValue !== "normal" &&
+      contentValue !== '""' &&
+      contentValue !== "''";
+    const colorValue = props["color"];
+    const hasColor =
+      typeof colorValue === "string" &&
+      colorValue !== "none" &&
+      colorValue !== "normal" &&
+      colorValue !== "inherit";
+    if (!hasMaskImage && !hasContent && !hasColor) continue;
     const taskChar = escapeAttrValue(taskMatch[1]);
-    const isPseudo = selector.includes("::after");
-    const quartzBase = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]`;
-    const quartzSelector = isPseudo ? `${quartzBase}::after` : quartzBase;
+    const pseudoSuffix = selector.includes("::after") ? "::after" : "";
+    const quartzSelector = `${baseSelector} li.task-list-item[data-task=\"${taskChar}\"] input[type=\"checkbox\"]${pseudoSuffix}`;
     const lines = [];
     for (const [prop, value] of Object.entries(props)) {
       if (!value || value === "none" || value === "normal") continue;
@@ -628,12 +647,10 @@ function buildCheckboxIconCSS(data, baseSelector, htmlSelector) {
         const normalized = normalizeMaskImage(value);
         lines.push(`  mask-image: ${normalized};`);
         lines.push(`  -webkit-mask-image: ${normalized};`);
-        if (!isPseudo) {
-          lines.push(`  mask-size: contain;`);
-          lines.push(`  -webkit-mask-size: contain;`);
-          lines.push(`  mask-repeat: no-repeat;`);
-          lines.push(`  -webkit-mask-repeat: no-repeat;`);
-        }
+        lines.push(`  mask-size: contain;`);
+        lines.push(`  -webkit-mask-size: contain;`);
+        lines.push(`  mask-repeat: no-repeat;`);
+        lines.push(`  -webkit-mask-repeat: no-repeat;`);
       } else {
         const normalized =
           prop === "content" ? normalizeSvgDataUriValue(value) : value;

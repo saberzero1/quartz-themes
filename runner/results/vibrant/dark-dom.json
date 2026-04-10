@@ -1,0 +1,2040 @@
+{
+  "codeBlock": {
+    "tag": "code",
+    "classes": ["language-yaml", "is-loaded"],
+    "attrs": {},
+    "styles": {
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(68, 68, 68)",
+      "borderColor": "rgb(255, 255, 255)",
+      "fill": "rgb(0, 0, 0)",
+      "stroke": "none"
+    },
+    "childCount": 2,
+    "children": [
+      {
+        "tag": "span",
+        "classes": ["token", "key", "atrule"],
+        "attrs": {},
+        "styles": {
+          "color": "rgb(224, 222, 113)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(224, 222, 113)",
+          "fill": "rgb(0, 0, 0)",
+          "stroke": "none"
+        },
+        "childCount": 0,
+        "children": []
+      },
+      {
+        "tag": "span",
+        "classes": ["token", "punctuation"],
+        "attrs": {},
+        "styles": {
+          "color": "rgb(179, 179, 179)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(179, 179, 179)",
+          "fill": "rgb(0, 0, 0)",
+          "stroke": "none"
+        },
+        "childCount": 0,
+        "children": []
+      }
+    ]
+  },
+  "fileExplorer": {
+    "tag": "div",
+    "classes": ["nav-files-container", "node-insert-event"],
+    "attrs": {},
+    "styles": {
+      "color": "rgb(34, 34, 34)",
+      "backgroundColor": "rgb(34, 34, 34)",
+      "borderColor": "rgb(34, 34, 34)",
+      "fill": "rgb(0, 0, 0)",
+      "stroke": "none"
+    },
+    "childCount": 1,
+    "children": [
+      {
+        "tag": "div",
+        "classes": [],
+        "attrs": {},
+        "styles": {
+          "color": "rgb(34, 34, 34)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(34, 34, 34)",
+          "fill": "rgb(0, 0, 0)",
+          "stroke": "none"
+        },
+        "childCount": 4,
+        "children": [
+          {
+            "tag": "div",
+            "classes": [],
+            "attrs": {},
+            "styles": {
+              "color": "rgb(34, 34, 34)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgb(34, 34, 34)",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none"
+            },
+            "childCount": 0,
+            "children": []
+          },
+          {
+            "tag": "div",
+            "classes": ["tree-item", "nav-folder"],
+            "attrs": {},
+            "styles": {
+              "color": "rgb(34, 34, 34)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgb(34, 34, 34)",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none"
+            },
+            "childCount": 2,
+            "children": [
+              {
+                "tag": "div",
+                "classes": [
+                  "tree-item-self",
+                  "nav-folder-title",
+                  "is-clickable",
+                  "mod-collapsible"
+                ],
+                "attrs": { "data-path": "folder", "draggable": "true" },
+                "styles": {
+                  "color": "rgb(179, 179, 179)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(179, 179, 179)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 2,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item-icon", "collapse-icon"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(179, 179, 179)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(179, 179, 179)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "svg",
+                        "classes": ["svg-icon", "right-triangle"],
+                        "attrs": {
+                          "xmlns": "http://www.w3.org/2000/svg",
+                          "width": "24",
+                          "height": "24",
+                          "viewBox": "0 0 24 24",
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-width": "2",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        },
+                        "styles": {
+                          "color": "rgb(255, 255, 0)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(255, 255, 0)",
+                          "fill": "none",
+                          "stroke": "rgb(255, 255, 255)"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "path",
+                            "classes": [],
+                            "attrs": { "d": "M3 8L12 17L21 8" },
+                            "styles": {
+                              "color": "rgb(255, 255, 0)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 0)",
+                              "fill": "none",
+                              "stroke": "rgb(255, 255, 255)"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item-inner", "nav-folder-title-content"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(255, 255, 255)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(255, 255, 255)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 0,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "classes": ["tree-item-children", "nav-folder-children"],
+                "attrs": {},
+                "styles": {
+                  "color": "rgb(34, 34, 34)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(34, 34, 34) rgb(34, 34, 34) rgb(34, 34, 34) rgba(255, 255, 255, 0.12)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 4,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": [],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 0,
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-folder"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-folder-title",
+                          "is-clickable",
+                          "mod-collapsible"
+                        ],
+                        "attrs": {
+                          "data-path": "folder/collapsed",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item-icon", "collapse-icon"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(179, 179, 179)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(179, 179, 179)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-folder-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-children",
+                          "nav-folder-children"
+                        ],
+                        "attrs": {},
+                        "styles": {
+                          "color": "rgb(34, 34, 34)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(34, 34, 34) rgb(34, 34, 34) rgb(34, 34, 34) rgba(255, 255, 255, 0.12)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(34, 34, 34)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(34, 34, 34)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item", "nav-file"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(34, 34, 34)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(34, 34, 34)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-folder"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-folder-title",
+                          "is-clickable",
+                          "mod-collapsible"
+                        ],
+                        "attrs": {
+                          "data-path": "folder/nested",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item-icon", "collapse-icon"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(179, 179, 179)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(179, 179, 179)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-folder-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-children",
+                          "nav-folder-children"
+                        ],
+                        "attrs": {},
+                        "styles": {
+                          "color": "rgb(34, 34, 34)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(34, 34, 34) rgb(34, 34, 34) rgb(34, 34, 34) rgba(255, 255, 255, 0.12)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 2,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(34, 34, 34)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(34, 34, 34)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          },
+                          {
+                            "tag": "div",
+                            "classes": ["tree-item", "nav-file"],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(34, 34, 34)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(34, 34, 34)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 1,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "folder/note.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "classes": ["tree-item", "nav-folder"],
+            "attrs": {},
+            "styles": {
+              "color": "rgb(34, 34, 34)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgb(34, 34, 34)",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none"
+            },
+            "childCount": 2,
+            "children": [
+              {
+                "tag": "div",
+                "classes": [
+                  "tree-item-self",
+                  "nav-folder-title",
+                  "is-clickable",
+                  "mod-collapsible"
+                ],
+                "attrs": { "data-path": "theme-bases", "draggable": "true" },
+                "styles": {
+                  "color": "rgb(179, 179, 179)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(179, 179, 179)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 2,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item-icon", "collapse-icon"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(179, 179, 179)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(179, 179, 179)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "svg",
+                        "classes": ["svg-icon", "right-triangle"],
+                        "attrs": {
+                          "xmlns": "http://www.w3.org/2000/svg",
+                          "width": "24",
+                          "height": "24",
+                          "viewBox": "0 0 24 24",
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-width": "2",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        },
+                        "styles": {
+                          "color": "rgb(255, 255, 0)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(255, 255, 0)",
+                          "fill": "none",
+                          "stroke": "rgb(255, 255, 255)"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "path",
+                            "classes": [],
+                            "attrs": { "d": "M3 8L12 17L21 8" },
+                            "styles": {
+                              "color": "rgb(255, 255, 0)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 0)",
+                              "fill": "none",
+                              "stroke": "rgb(255, 255, 255)"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item-inner", "nav-folder-title-content"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(255, 255, 255)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(255, 255, 255)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 0,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "classes": ["tree-item-children", "nav-folder-children"],
+                "attrs": {},
+                "styles": {
+                  "color": "rgb(34, 34, 34)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(34, 34, 34) rgb(34, 34, 34) rgb(34, 34, 34) rgba(255, 255, 255, 0.12)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 4,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": [],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 0,
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-bases/bases-cards.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-bases/bases-list.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-bases/bases-table.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "classes": ["tree-item", "nav-folder"],
+            "attrs": {},
+            "styles": {
+              "color": "rgb(34, 34, 34)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgb(34, 34, 34)",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none"
+            },
+            "childCount": 2,
+            "children": [
+              {
+                "tag": "div",
+                "classes": [
+                  "tree-item-self",
+                  "nav-folder-title",
+                  "is-clickable",
+                  "mod-collapsible"
+                ],
+                "attrs": { "data-path": "theme-callouts", "draggable": "true" },
+                "styles": {
+                  "color": "rgb(179, 179, 179)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(179, 179, 179)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 2,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item-icon", "collapse-icon"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(179, 179, 179)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(179, 179, 179)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "svg",
+                        "classes": ["svg-icon", "right-triangle"],
+                        "attrs": {
+                          "xmlns": "http://www.w3.org/2000/svg",
+                          "width": "24",
+                          "height": "24",
+                          "viewBox": "0 0 24 24",
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-width": "2",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        },
+                        "styles": {
+                          "color": "rgb(255, 255, 0)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(255, 255, 0)",
+                          "fill": "none",
+                          "stroke": "rgb(255, 255, 255)"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "path",
+                            "classes": [],
+                            "attrs": { "d": "M3 8L12 17L21 8" },
+                            "styles": {
+                              "color": "rgb(255, 255, 0)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 0)",
+                              "fill": "none",
+                              "stroke": "rgb(255, 255, 255)"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item-inner", "nav-folder-title-content"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(255, 255, 255)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(255, 255, 255)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 0,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "classes": ["tree-item-children", "nav-folder-children"],
+                "attrs": {},
+                "styles": {
+                  "color": "rgb(34, 34, 34)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(34, 34, 34) rgb(34, 34, 34) rgb(34, 34, 34) rgba(255, 255, 255, 0.12)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 23,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": [],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 0,
+                    "children": []
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-callouts/adrenaline.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-callouts/agate.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-callouts/anuppuccin.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-callouts/aura.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-callouts/base16-default-dark.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-callouts/baseline.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-callouts/blue-topaz.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-callouts/borealis.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["tree-item", "nav-file"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(34, 34, 34)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": [
+                          "tree-item-self",
+                          "nav-file-title",
+                          "tappable",
+                          "is-clickable"
+                        ],
+                        "attrs": {
+                          "data-path": "theme-callouts/brainhack.md",
+                          "draggable": "true"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "div",
+                            "classes": [
+                              "tree-item-inner",
+                              "nav-file-title-content"
+                            ],
+                            "attrs": {},
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "rgb(0, 0, 0)",
+                              "stroke": "none"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "search": {
+    "tag": "div",
+    "classes": ["search-input-container", "global-search-input-container"],
+    "attrs": {},
+    "styles": {
+      "color": "rgb(34, 34, 34)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "borderColor": "rgb(34, 34, 34)",
+      "fill": "rgb(0, 0, 0)",
+      "stroke": "none"
+    },
+    "childCount": 3,
+    "children": [
+      {
+        "tag": "input",
+        "classes": [],
+        "attrs": {
+          "enterkeyhint": "search",
+          "type": "search",
+          "spellcheck": "false",
+          "placeholder": "Search..."
+        },
+        "styles": {
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgb(34, 34, 34)",
+          "borderColor": "rgb(255, 255, 255)",
+          "fill": "rgb(0, 0, 0)",
+          "stroke": "none"
+        },
+        "childCount": 0,
+        "children": []
+      },
+      {
+        "tag": "div",
+        "classes": ["search-input-clear-button"],
+        "attrs": { "aria-label": "Clear search" },
+        "styles": {
+          "color": "rgb(179, 179, 179)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(179, 179, 179)",
+          "fill": "rgb(0, 0, 0)",
+          "stroke": "none"
+        },
+        "childCount": 0,
+        "children": []
+      },
+      {
+        "tag": "div",
+        "classes": ["input-right-decorator", "clickable-icon"],
+        "attrs": { "aria-label": "Match case" },
+        "styles": {
+          "color": "rgb(255, 255, 255)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(255, 255, 255)",
+          "fill": "rgb(0, 0, 0)",
+          "stroke": "none"
+        },
+        "childCount": 1,
+        "children": [
+          {
+            "tag": "svg",
+            "classes": ["svg-icon", "uppercase-lowercase-a"],
+            "attrs": {
+              "xmlns": "http://www.w3.org/2000/svg",
+              "width": "24",
+              "height": "24",
+              "viewBox": "0 0 24 24",
+              "fill": "none",
+              "stroke": "currentColor",
+              "stroke-width": "2",
+              "stroke-linecap": "round",
+              "stroke-linejoin": "round"
+            },
+            "styles": {
+              "color": "rgb(255, 255, 255)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgb(255, 255, 255)",
+              "fill": "none",
+              "stroke": "rgb(255, 255, 255)"
+            },
+            "childCount": 5,
+            "children": [
+              {
+                "tag": "path",
+                "classes": [],
+                "attrs": { "d": "M10.5 14L4.5 14" },
+                "styles": {
+                  "color": "rgb(255, 255, 255)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(255, 255, 255)",
+                  "fill": "none",
+                  "stroke": "rgb(255, 255, 255)"
+                },
+                "childCount": 0,
+                "children": []
+              },
+              {
+                "tag": "path",
+                "classes": [],
+                "attrs": { "d": "M12.5 18L7.5 6" },
+                "styles": {
+                  "color": "rgb(255, 255, 255)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(255, 255, 255)",
+                  "fill": "none",
+                  "stroke": "rgb(255, 255, 255)"
+                },
+                "childCount": 0,
+                "children": []
+              },
+              {
+                "tag": "path",
+                "classes": [],
+                "attrs": { "d": "M3 18L7.5 6" },
+                "styles": {
+                  "color": "rgb(255, 255, 255)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(255, 255, 255)",
+                  "fill": "none",
+                  "stroke": "rgb(255, 255, 255)"
+                },
+                "childCount": 0,
+                "children": []
+              },
+              {
+                "tag": "path",
+                "classes": [],
+                "attrs": {
+                  "d": "M15.9526 10.8322C15.9526 10.8322 16.6259 10 18.3832 10C20.1406 9.99999 20.9986 11.0587 20.9986 11.9682V16.7018C20.9986 17.1624 21.2815 17.7461 21.7151 18"
+                },
+                "styles": {
+                  "color": "rgb(255, 255, 255)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(255, 255, 255)",
+                  "fill": "none",
+                  "stroke": "rgb(255, 255, 255)"
+                },
+                "childCount": 0,
+                "children": []
+              },
+              {
+                "tag": "path",
+                "classes": [],
+                "attrs": {
+                  "d": "M20.7151 13.5C18.7151 13.5 15.7151 14.2837 15.7151 16C15.7151 17.7163 17.5908 18.2909 18.7151 18C19.5635 17.7804 20.5265 17.3116 20.889 16.6199"
+                },
+                "styles": {
+                  "color": "rgb(255, 255, 255)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(255, 255, 255)",
+                  "fill": "none",
+                  "stroke": "rgb(255, 255, 255)"
+                },
+                "childCount": 0,
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "tag": "div",
+    "classes": ["metadata-container"],
+    "attrs": { "tabindex": "-1", "data-property-count": "1" },
+    "styles": {
+      "color": "rgb(179, 179, 179)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "borderColor": "rgb(54, 54, 54)",
+      "fill": "rgb(0, 0, 0)",
+      "stroke": "none"
+    },
+    "childCount": 3,
+    "children": [
+      {
+        "tag": "div",
+        "classes": ["metadata-error-container"],
+        "attrs": {},
+        "styles": {
+          "color": "rgb(179, 179, 179)",
+          "backgroundColor": "rgba(251, 70, 76, 0.1)",
+          "borderColor": "rgb(179, 179, 179)",
+          "fill": "rgb(0, 0, 0)",
+          "stroke": "none"
+        },
+        "childCount": 0,
+        "children": []
+      },
+      {
+        "tag": "div",
+        "classes": ["metadata-properties-heading"],
+        "attrs": { "tabindex": "0" },
+        "styles": {
+          "color": "rgb(179, 179, 179)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(179, 179, 179)",
+          "fill": "rgb(0, 0, 0)",
+          "stroke": "none"
+        },
+        "childCount": 2,
+        "children": [
+          {
+            "tag": "div",
+            "classes": ["collapse-indicator", "collapse-icon"],
+            "attrs": {},
+            "styles": {
+              "color": "rgb(179, 179, 179)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgb(179, 179, 179)",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none"
+            },
+            "childCount": 1,
+            "children": [
+              {
+                "tag": "svg",
+                "classes": ["svg-icon", "right-triangle"],
+                "attrs": {
+                  "xmlns": "http://www.w3.org/2000/svg",
+                  "width": "24",
+                  "height": "24",
+                  "viewBox": "0 0 24 24",
+                  "fill": "none",
+                  "stroke": "currentColor",
+                  "stroke-width": "2",
+                  "stroke-linecap": "round",
+                  "stroke-linejoin": "round"
+                },
+                "styles": {
+                  "color": "rgb(255, 255, 0)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(255, 255, 0)",
+                  "fill": "none",
+                  "stroke": "rgb(255, 255, 255)"
+                },
+                "childCount": 1,
+                "children": [
+                  {
+                    "tag": "path",
+                    "classes": [],
+                    "attrs": { "d": "M3 8L12 17L21 8" },
+                    "styles": {
+                      "color": "rgb(255, 255, 0)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(255, 255, 0)",
+                      "fill": "none",
+                      "stroke": "rgb(255, 255, 255)"
+                    },
+                    "childCount": 0,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "classes": ["metadata-properties-title"],
+            "attrs": {},
+            "styles": {
+              "color": "rgb(255, 255, 255)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgb(255, 255, 255)",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none"
+            },
+            "childCount": 0,
+            "children": []
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "classes": ["metadata-content"],
+        "attrs": {},
+        "styles": {
+          "color": "rgb(179, 179, 179)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(179, 179, 179)",
+          "fill": "rgb(0, 0, 0)",
+          "stroke": "none"
+        },
+        "childCount": 2,
+        "children": [
+          {
+            "tag": "div",
+            "classes": ["metadata-properties"],
+            "attrs": {},
+            "styles": {
+              "color": "rgb(179, 179, 179)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgb(51, 51, 51)",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none"
+            },
+            "childCount": 1,
+            "children": [
+              {
+                "tag": "div",
+                "classes": ["metadata-property"],
+                "attrs": { "tabindex": "0", "data-property-key": "cssclass" },
+                "styles": {
+                  "color": "rgb(179, 179, 179)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(34, 34, 34)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 3,
+                "children": [
+                  {
+                    "tag": "div",
+                    "classes": ["metadata-property-key"],
+                    "attrs": {},
+                    "styles": {
+                      "color": "rgb(179, 179, 179)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(179, 179, 179) rgb(179, 179, 179) rgb(54, 54, 54)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "span",
+                        "classes": ["metadata-property-icon"],
+                        "attrs": { "aria-disabled": "false" },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(179, 179, 179)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 1,
+                        "children": [
+                          {
+                            "tag": "svg",
+                            "classes": ["svg-icon", "lucide-text"],
+                            "attrs": {
+                              "xmlns": "http://www.w3.org/2000/svg",
+                              "width": "24",
+                              "height": "24",
+                              "viewBox": "0 0 24 24",
+                              "fill": "none",
+                              "stroke": "currentColor",
+                              "stroke-width": "2",
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round"
+                            },
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "none",
+                              "stroke": "rgb(255, 255, 255)"
+                            },
+                            "childCount": 3,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "input",
+                        "classes": ["metadata-property-key-input"],
+                        "attrs": {
+                          "autocapitalize": "none",
+                          "enterkeyhint": "next",
+                          "type": "text",
+                          "aria-label": "cssclass"
+                        },
+                        "styles": {
+                          "color": "rgb(179, 179, 179)",
+                          "backgroundColor": "rgb(34, 34, 34)",
+                          "borderColor": "rgb(255, 255, 255)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": ["metadata-property-value"],
+                    "attrs": { "data-property-type": "text" },
+                    "styles": {
+                      "color": "rgb(179, 179, 179)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(179, 179, 179) rgb(179, 179, 179) rgb(54, 54, 54)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "classes": ["metadata-input-longtext"],
+                        "attrs": {
+                          "placeholder": "Empty",
+                          "contenteditable": "true",
+                          "spellcheck": "false",
+                          "tabindex": "0"
+                        },
+                        "styles": {
+                          "color": "rgb(255, 255, 255)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(255, 255, 255)",
+                          "fill": "rgb(0, 0, 0)",
+                          "stroke": "none"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "classes": [
+                      "clickable-icon",
+                      "metadata-property-warning-icon"
+                    ],
+                    "attrs": { "aria-label": "Type mismatch, expected Text" },
+                    "styles": {
+                      "color": "rgb(255, 255, 255)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(255, 255, 255)",
+                      "fill": "rgb(0, 0, 0)",
+                      "stroke": "none"
+                    },
+                    "childCount": 1,
+                    "children": [
+                      {
+                        "tag": "svg",
+                        "classes": ["svg-icon", "lucide-alert-triangle"],
+                        "attrs": {
+                          "xmlns": "http://www.w3.org/2000/svg",
+                          "width": "24",
+                          "height": "24",
+                          "viewBox": "0 0 24 24",
+                          "fill": "none",
+                          "stroke": "currentColor",
+                          "stroke-width": "2",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        },
+                        "styles": {
+                          "color": "rgb(255, 255, 255)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(255, 255, 255)",
+                          "fill": "none",
+                          "stroke": "rgb(255, 255, 255)"
+                        },
+                        "childCount": 3,
+                        "children": [
+                          {
+                            "tag": "path",
+                            "classes": [],
+                            "attrs": {
+                              "d": "m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+                            },
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "none",
+                              "stroke": "rgb(255, 255, 255)"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          },
+                          {
+                            "tag": "path",
+                            "classes": [],
+                            "attrs": { "d": "M12 9v4" },
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "none",
+                              "stroke": "rgb(255, 255, 255)"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          },
+                          {
+                            "tag": "path",
+                            "classes": [],
+                            "attrs": { "d": "M12 17h.01" },
+                            "styles": {
+                              "color": "rgb(255, 255, 255)",
+                              "backgroundColor": "rgba(0, 0, 0, 0)",
+                              "borderColor": "rgb(255, 255, 255)",
+                              "fill": "none",
+                              "stroke": "rgb(255, 255, 255)"
+                            },
+                            "childCount": 0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "classes": ["metadata-add-button", "text-icon-button"],
+            "attrs": { "tabindex": "0" },
+            "styles": {
+              "color": "rgb(179, 179, 179)",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "borderColor": "rgb(179, 179, 179)",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none"
+            },
+            "childCount": 2,
+            "children": [
+              {
+                "tag": "span",
+                "classes": ["text-button-icon"],
+                "attrs": {},
+                "styles": {
+                  "color": "rgb(179, 179, 179)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(179, 179, 179)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 1,
+                "children": [
+                  {
+                    "tag": "svg",
+                    "classes": ["svg-icon", "lucide-plus"],
+                    "attrs": {
+                      "xmlns": "http://www.w3.org/2000/svg",
+                      "width": "24",
+                      "height": "24",
+                      "viewBox": "0 0 24 24",
+                      "fill": "none",
+                      "stroke": "currentColor",
+                      "stroke-width": "2",
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round"
+                    },
+                    "styles": {
+                      "color": "rgb(255, 255, 255)",
+                      "backgroundColor": "rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(255, 255, 255)",
+                      "fill": "none",
+                      "stroke": "rgb(255, 255, 255)"
+                    },
+                    "childCount": 2,
+                    "children": [
+                      {
+                        "tag": "path",
+                        "classes": [],
+                        "attrs": { "d": "M5 12h14" },
+                        "styles": {
+                          "color": "rgb(255, 255, 255)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(255, 255, 255)",
+                          "fill": "none",
+                          "stroke": "rgb(255, 255, 255)"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      },
+                      {
+                        "tag": "path",
+                        "classes": [],
+                        "attrs": { "d": "M12 5v14" },
+                        "styles": {
+                          "color": "rgb(255, 255, 255)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(255, 255, 255)",
+                          "fill": "none",
+                          "stroke": "rgb(255, 255, 255)"
+                        },
+                        "childCount": 0,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "span",
+                "classes": ["text-button-label"],
+                "attrs": {},
+                "styles": {
+                  "color": "rgb(179, 179, 179)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(179, 179, 179)",
+                  "fill": "rgb(0, 0, 0)",
+                  "stroke": "none"
+                },
+                "childCount": 0,
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -390,6 +390,24 @@ body.theme-light {
   --text-normal: #2f2f2f !important;
   --titlebar-background: #ffffff !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: rgb(230, 230, 230) !important;
+  --background-modifier-form-field: #ffffff !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: rgb(230, 230, 230) !important;
+  --pill-border-color-hover: #d4d4d4 !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #999999 !important;
+  --pill-color-hover: #2f2f2f !important;
+  --pill-color-remove: #949494 !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 45 !important;
   --accent-l: 50% !important;
   --accent-s: 100% !important;
@@ -403,7 +421,6 @@ body.theme-light {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(45, 100%, 50%, 0.1) !important;
-  --background-modifier-border: rgb(230, 230, 230) !important;
   --background-modifier-border-focus: hsla(0, 0%, 79%) !important;
   --background-modifier-border-hover: #d4d4d4 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -411,7 +428,6 @@ body.theme-light {
   --background-modifier-error: #dc5328 !important;
   --background-modifier-error-hover: #dc5328 !important;
   --background-modifier-error-rgb: 255, 85, 64 !important;
-  --background-modifier-form-field: #ffffff !important;
   --background-modifier-form-field-hover: #ffffff !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -441,7 +457,6 @@ body.theme-light {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -778,8 +793,6 @@ body.theme-light {
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -799,15 +812,12 @@ body.theme-light {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: #949494 !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #949494 !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -992,19 +1002,9 @@ body.theme-light {
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: rgb(230, 230, 230) !important;
-  --pill-border-color-hover: #d4d4d4 !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #999999 !important;
-  --pill-color-hover: #2f2f2f !important;
-  --pill-color-remove: #949494 !important;
   --pill-color-remove-hover: hsl(45, 100%, 50%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -1277,7 +1277,7 @@ body.theme-light {
   --inline-title-color: #2f2f2f !important;
   --bold-color: #2aa7ee !important;
   --italic-color: #5dd400 !important;
-  --callout-title-color: #2f2f2f;
+  --callout-title-color: 47, 47, 47;
   --workspace-background: linear-gradient(
     0deg,
     rgb(255, 248, 153),
@@ -1508,7 +1508,7 @@ body body.theme-light .markdown-rendered p {
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(42, 167, 238);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1548,7 +1548,7 @@ body body.theme-light strong {
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(42, 167, 238);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1588,7 +1588,7 @@ body body.theme-light b {
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(93, 212, 0);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1628,7 +1628,7 @@ body body.theme-light em {
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(93, 212, 0);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1668,7 +1668,7 @@ body body.theme-light i {
 body body.theme-light .markdown-rendered mark {
   background-color: rgba(255, 208, 0, 0.4);
   color: rgb(47, 47, 47);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1708,7 +1708,7 @@ body body.theme-light .markdown-rendered mark {
 body body.theme-light del {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(47, 47, 47);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -1954,11 +1954,6 @@ body
   width: auto;
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-light ul > li.task-list-item[data-task="x"] {
-  color: rgb(153, 153, 153);
-  text-decoration: line-through;
-  text-decoration-color: rgb(153, 153, 153);
 }
 body body.theme-light .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -2269,6 +2264,7 @@ body body.theme-light .callout[data-callout="note"] {
   background-color: rgba(236, 217, 27, 0.22);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
+  color: rgb(47, 47, 47);
   gap: 4px;
   border: 0px rgb(47, 47, 47);
   border-top-left-radius: 0px;
@@ -2282,6 +2278,7 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
+  color: rgb(47, 47, 47);
   font-weight: 600;
 }
 body body.theme-light .callout > .callout-content {
@@ -2676,11 +2673,9 @@ body body.theme-light .internal-embed {
 }
 body body.theme-light .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
+  border-left: solid;
+  border-width: 0px;
   border-color: rgb(47, 47, 47);
-  border-left: 2px solid rgb(255, 192, 19);
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2914,92 +2909,92 @@ body body.theme-light abbr {
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(47, 47, 47);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(47, 47, 47);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -3383,6 +3378,15 @@ body body.theme-light pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .tag {
+  background-color: rgba(187, 114, 214, 0.25);
+  color: rgb(187, 114, 214);
+  border: 0px solid rgba(255, 191, 0, 0.15);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 body body.theme-light .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
@@ -3401,91 +3405,91 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-default));
+  stroke: rgb(var(--callout-default, 2, 122, 255));
 }
 body
   .callout[data-callout="abstract"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-summary));
+  stroke: rgb(var(--callout-summary, 83, 223, 221));
 }
 body
   .callout[data-callout="info"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-info));
+  stroke: rgb(var(--callout-info, 2, 122, 255));
 }
 body
   .callout[data-callout="todo"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-todo));
+  stroke: rgb(var(--callout-todo, 2, 122, 255));
 }
 body
   .callout[data-callout="tip"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-tip));
+  stroke: rgb(var(--callout-tip, 83, 223, 221));
 }
 body
   .callout[data-callout="success"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-success));
+  stroke: rgb(var(--callout-success, 68, 207, 110));
 }
 body
   .callout[data-callout="question"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-question));
+  stroke: rgb(var(--callout-question, 233, 151, 63));
 }
 body
   .callout[data-callout="warning"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-warning));
+  stroke: rgb(var(--callout-warning, 233, 151, 63));
 }
 body
   .callout[data-callout="failure"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-fail));
+  stroke: rgb(var(--callout-fail, 251, 70, 76));
 }
 body
   .callout[data-callout="danger"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-error, 251, 70, 76));
 }
 body
   .callout[data-callout="bug"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-bug, 251, 70, 76));
 }
 body
   .callout[data-callout="example"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-example));
+  stroke: rgb(var(--callout-example, 168, 130, 255));
 }
 body
   .callout[data-callout="quote"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-quote));
+  stroke: rgb(var(--callout-quote, 158, 158, 158));
 }
 body pre > code,
 body .markdown-rendered pre > code {

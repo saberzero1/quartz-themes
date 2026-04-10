@@ -19,6 +19,24 @@
   --text-normal: #ffffff !important;
   --titlebar-background: #383838 !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: #404040 !important;
+  --background-modifier-form-field: #383838 !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: #404040 !important;
+  --pill-border-color-hover: #707070 !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #a0a0a0 !important;
+  --pill-color-hover: #ffffff !important;
+  --pill-color-remove: #707070 !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 46deg !important;
   --accent-l: 65% !important;
   --accent-s: 95% !important;
@@ -32,7 +50,6 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(46deg, 95%, 65%, 0.15) !important;
-  --background-modifier-border: #404040 !important;
   --background-modifier-border-focus: #707070 !important;
   --background-modifier-border-hover: #707070 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -40,7 +57,6 @@
   --background-modifier-error: #ff6b81 !important;
   --background-modifier-error-hover: #ff6b81 !important;
   --background-modifier-error-rgb: 255, 107, 129 !important;
-  --background-modifier-form-field: #383838 !important;
   --background-modifier-form-field-hover: #383838 !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.075) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -70,7 +86,6 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -91,11 +106,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: #a0a0a0 !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -108,8 +119,7 @@
   --blockquote-border-color: hsl(46deg, 95%, 65%) !important;
   --blockquote-border-thickness: 0px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, #404040 65%, transparent)
-    linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent)) !important;
+  --blur-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -261,8 +271,7 @@
   --file-header-background: #202020 !important;
   --file-header-background-focused: #202020 !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --file-header-font: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -275,22 +284,17 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-default: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-interface: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
-  --font-monospace:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
-  --font-monospace-default:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-mermaid: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-monospace-default: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -300,8 +304,7 @@
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-text: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -390,8 +393,6 @@
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -411,15 +412,12 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: #707070 !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #707070 !important;
-  --input-radius: 5px !important;
   --input-shadow: 0 0 0 0 transparent !important;
   --input-shadow-hover: 0 0 0 0 transparent !important;
   --inset-end: right !important;
@@ -479,14 +477,8 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
-  --menu-scroll-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.1) 48px
-  ) !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
-    0px 15px 30px rgba(0, 0, 0, 0.15) !important;
+  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1), 0px 15px 30px rgba(0, 0, 0, 0.15) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: #404040 !important;
   --metadata-border-radius: 0 !important;
@@ -501,8 +493,7 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.075) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --metadata-input-font: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -511,8 +502,7 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.075) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --metadata-label-font: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #a0a0a0 !important;
   --metadata-label-text-color-hover: #a0a0a0 !important;
@@ -590,19 +580,9 @@
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px #404040 !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: #404040 !important;
-  --pill-border-color-hover: #707070 !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #a0a0a0 !important;
-  --pill-color-hover: #ffffff !important;
-  --pill-color-remove: #707070 !important;
   --pill-color-remove-hover: hsl(46deg, 95%, 61.2%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -625,12 +605,9 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, #404040 65%, transparent)
-    linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent)) !important;
+  --raised-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(white, white) border-box !important;
+  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
   --raised-mask-background: transparent !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
@@ -663,12 +640,8 @@
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 12px !important;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.05), 0px 6.3px 24.7px rgba(0, 0, 0, 0.1),
-    0px 30px 90px rgba(0, 0, 0, 0.15) !important;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
-    0px 15px 30px rgba(0, 0, 0, 0.15) !important;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.05), 0px 6.3px 24.7px rgba(0, 0, 0, 0.1), 0px 30px 90px rgba(0, 0, 0, 0.15) !important;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1), 0px 15px 30px rgba(0, 0, 0, 0.15) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -741,11 +714,7 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #303030 !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    #303030,
-    transparent
-  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, #303030, transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
@@ -866,74 +835,33 @@
   --color-base-15: #2b2b2b !important;
   --lt-file-icon-color: #707070 !important;
   --lt-canvas-hover-color: 112, 112, 112 !important;
-  --lt-gradient-gay: linear-gradient(
-    to right,
-    rgb(7, 141, 111),
-    rgb(152, 202, 153),
-    rgb(255, 255, 255) 45%,
-    rgb(255, 255, 255),
-    rgb(255, 255, 255) 55%,
-    rgb(205, 208, 234),
-    rgb(123, 173, 226) 70%,
-    rgb(69, 76, 189),
-    rgb(63, 26, 121)
-  ) !important;
-  --lt-gradient-lesbian: linear-gradient(
-    to right,
-    rgb(213, 44, 0),
-    rgb(226, 150, 136),
-    rgb(255, 255, 255) 45%,
-    rgb(255, 255, 255),
-    rgb(255, 255, 255) 55%,
-    rgb(210, 127, 164),
-    rgb(162, 2, 98)
-  ) !important;
-  --lt-gradient-non-bin: linear-gradient(
-    to right,
-    rgb(253, 219, 0),
-    rgb(238, 212, 143),
-    rgb(255, 255, 255) 30%,
-    rgb(255, 255, 255),
-    rgb(255, 255, 255) 36%,
-    rgb(212, 181, 222),
-    rgb(156, 92, 212),
-    rgb(88, 50, 96),
-    rgb(0, 0, 0)
-  ) !important;
-  --lt-gradient-pride: linear-gradient(
-    to right,
-    rgb(237, 34, 36),
-    rgb(243, 91, 34),
-    rgb(249, 150, 33),
-    rgb(245, 193, 30),
-    rgb(241, 235, 27) 27%,
-    rgb(241, 235, 27),
-    rgb(241, 235, 27) 33%,
-    rgb(99, 199, 32),
-    rgb(12, 155, 73),
-    rgb(33, 135, 141),
-    rgb(57, 84, 165),
-    rgb(97, 55, 155),
-    rgb(147, 40, 142)
-  ) !important;
-  --lt-gradient-trans: linear-gradient(
-    to right,
-    rgb(85, 205, 252),
-    rgb(179, 157, 233),
-    rgb(247, 168, 184),
-    rgb(246, 216, 221),
-    rgb(255, 255, 255) 45%,
-    rgb(255, 255, 255),
-    rgb(255, 255, 255) 55%,
-    rgb(246, 216, 221),
-    rgb(247, 168, 184),
-    rgb(179, 157, 233),
-    rgb(85, 205, 252)
-  ) !important;
+  --lt-gradient-gay: linear-gradient(to right, rgb(7, 141, 111), rgb(152, 202, 153), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(205, 208, 234), rgb(123, 173, 226) 70%, rgb(69, 76, 189), rgb(63, 26, 121)) !important;
+  --lt-gradient-lesbian: linear-gradient(to right, rgb(213, 44, 0), rgb(226, 150, 136), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(210, 127, 164), rgb(162, 2, 98)) !important;
+  --lt-gradient-non-bin: linear-gradient(to right, rgb(253, 219, 0), rgb(238, 212, 143), rgb(255, 255, 255) 30%, rgb(255, 255, 255), rgb(255, 255, 255) 36%, rgb(212, 181, 222), rgb(156, 92, 212), rgb(88, 50, 96), rgb(0, 0, 0)) !important;
+  --lt-gradient-pride: linear-gradient(to right, rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 27%, rgb(241, 235, 27), rgb(241, 235, 27) 33%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142)) !important;
+  --lt-gradient-trans: linear-gradient(to right, rgb(85, 205, 252), rgb(179, 157, 233), rgb(247, 168, 184), rgb(246, 216, 221), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(246, 216, 221), rgb(247, 168, 184), rgb(179, 157, 233), rgb(85, 205, 252)) !important;
   --lt-list-bullet-height: 2px !important;
   --lt-list-bullet-width: 6px !important;
 
   --quartz-icon-color: currentColor;
+}
+
+body {
+  --qt-code-atom: rgb(255, 255, 255);
+  --qt-code-comment: rgb(112, 112, 112);
+  --qt-code-function: rgb(255, 255, 255);
+  --qt-code-header: rgb(255, 255, 255);
+  --qt-code-keyword: rgb(250, 153, 205);
+  --qt-code-number: rgb(168, 130, 255);
+  --qt-code-operator: rgb(255, 107, 129);
+  --qt-code-property: rgb(251, 211, 81);
+  --qt-code-string: rgb(123, 237, 159);
+  --qt-code-string: rgb(123, 237, 159);
+  --qt-code-variable: rgb(112, 161, 255);
+  --qt-code-variable-2: rgb(112, 161, 255);
+  --qt-code-default: rgb(255, 255, 255);
+  --qt-code-background: rgb(40, 40, 40);
+  --qt-code-border-color: rgb(64, 64, 64);
 }
 
 .darkmode {
@@ -953,26 +881,22 @@ html {
   font-weight: 400;
   src:
     local("Avenir"),
-    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff")
-      format("woff");
+    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff") format("woff");
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -980,8 +904,7 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -989,64 +912,47 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -1054,8 +960,7 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -1063,64 +968,47 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -1128,46 +1016,32 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 body {
@@ -1215,9 +1089,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(250, 206, 62) none 0px;
     text-decoration: underline;
@@ -1245,9 +1117,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(250, 206, 62) none 0px;
     text-decoration: underline;
@@ -1274,9 +1144,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(250, 206, 62) none 0px;
     text-decoration: underline rgba(251, 211, 81, 0.3);
@@ -1320,9 +1188,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(160, 160, 160) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -1346,13 +1212,11 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 600;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -1376,13 +1240,11 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 600;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -1406,13 +1268,11 @@ body {
   em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -1436,13 +1296,11 @@ body {
   i {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -1465,13 +1323,11 @@ body {
   .text-highlight {
     background-color: rgb(255, 255, 0);
     color: rgb(0, 0, 0);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(0, 0, 0);
@@ -1503,13 +1359,11 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: line-through;
@@ -1529,24 +1383,9 @@ body {
     animation-play-state: running;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(255, 255, 255, 0.075);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1559,18 +1398,7 @@ body {
     color: rgb(250, 206, 62);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: rgba(255, 255, 255, 0.075);
     border: 0px rgb(250, 206, 62);
     border-top-left-radius: 4px;
@@ -1605,21 +1433,11 @@ body {
   }
 
   a.internal.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: rgba(251, 211, 81, 0.1);
     display: flex;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     margin-inline-start: 0px;
     border: 0px solid rgba(251, 211, 81, 0.15);
@@ -1691,9 +1509,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     padding: 0px;
   }
 
@@ -1770,17 +1586,9 @@ body {
     background-color: rgba(0, 0, 0, 0);
   }
 
-  .page article li:has(> input[type="checkbox"]:checked) {
-    color: rgb(160, 160, 160);
-    text-decoration: line-through;
-    text-decoration-color: rgb(160, 160, 160);
-  }
-
   blockquote {
     background-color: rgba(158, 158, 158, 0.1);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-style: normal;
     padding-bottom: 12px;
     padding-top: 12px;
@@ -1806,9 +1614,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .search > .search-container > .search-space {
@@ -1850,9 +1656,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -1885,20 +1689,11 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(250, 206, 62);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
     border: 0px rgb(250, 206, 62);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1910,128 +1705,63 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(250, 206, 62);
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.075);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: rgb(250, 206, 62);
   }
 
   h1 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
   h2 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
   h3 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
   h4 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
   h5 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
   h6 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
   h2.page-title,
   h2.page-title a {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
@@ -2040,14 +1770,12 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(32, 32, 32);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(32, 32, 32);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2062,20 +1790,17 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(32, 32, 32);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(32, 32, 32);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(32, 32, 32);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2088,8 +1813,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(32, 32, 32);
   }
 
@@ -2114,6 +1838,7 @@ body {
   }
 
   .callout .callout-title {
+    color: rgb(83, 82, 237);
     gap: 4px;
     border: 0px rgb(83, 82, 237);
     border-top-left-radius: 8px;
@@ -2128,6 +1853,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
+    color: rgb(83, 82, 237);
     font-weight: 600;
   }
 
@@ -2335,9 +2061,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-collapse: separate;
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     table-layout: auto;
     width: 246.422px;
     border: 0px rgb(128, 128, 128);
@@ -2475,9 +2199,7 @@ body {
 
   figcaption {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 16px;
     font-style: normal;
     text-align: start;
@@ -2542,11 +2264,9 @@ body {
 
   .transclude-inner {
     background-color: rgba(0, 0, 0, 0);
+    border-left: solid;
+    border-width: 0px;
     border-color: rgb(255, 255, 255);
-    border-left: 2px solid rgb(251, 211, 81);
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2570,9 +2290,7 @@ body {
   .metadata {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px solid rgb(64, 64, 64);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2585,9 +2303,7 @@ body {
   .metadata-properties {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border-color: rgb(160, 160, 160);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -2630,9 +2346,7 @@ body {
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px solid rgb(160, 160, 160);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2695,9 +2409,7 @@ body {
     background-color: rgb(40, 40, 40);
     box-shadow: none;
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 14px;
     border: 0px rgb(255, 255, 255);
     border-top-left-radius: 4px;
@@ -2760,109 +2472,109 @@ body {
 
   li.task-list-item[data-task="-"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(255, 255, 255);
-    text-decoration: rgb(218, 218, 218);
+    text-decoration: none;
     text-decoration-color: rgb(255, 255, 255);
   }
 
@@ -2871,15 +2583,11 @@ body {
     text-align: center;
     white-space-collapse: collapse;
     text-wrap-mode: wrap;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .katex-display > .katex > .katex-html {
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .katex > .katex-html {
@@ -2927,15 +2635,10 @@ body {
     transition-timing-function: ease;
   }
 
-  .explorer
-    .explorer-content
-    li:has(> .folder-outer:not(.open))
-    > .folder-container {
+  .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
     color: rgb(160, 160, 160);
     cursor: default;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     text-decoration: rgb(218, 218, 218);
   }
@@ -2943,11 +2646,89 @@ body {
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
     color: rgb(160, 160, 160);
     cursor: default;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     text-decoration: rgb(218, 218, 218);
+  }
+
+  .explorer .folder-outer > ul {
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .explorer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .bases-table {
+    border-color: rgb(128, 128, 128);
+  }
+
+  .bases-table thead th {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-color: rgb(255, 255, 255);
+  }
+
+  .bases-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .canvas-node {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    border-width: 0px;
+  }
+
+  .canvas-node-content {
+    color: rgb(255, 255, 255);
+  }
+
+  .canvas-node-file {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .canvas-sidebar {
+    background-color: rgb(48, 48, 48);
+    border-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  }
+
+  .canvas-node-group {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(255, 255, 255);
+    border-width: 0px;
+  }
+
+  .note-properties {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(64, 64, 64);
+    border-radius: 0px;
+  }
+
+  .note-properties-key {
+    color: rgb(160, 160, 160);
+    font-weight: 400;
+  }
+
+  .note-properties-value {
+    color: rgb(160, 160, 160);
+  }
+
+  .note-properties-tags {
+    background-color: rgba(251, 211, 81, 0.1);
+    color: rgb(250, 206, 62);
+    border-radius: 28px;
+  }
+
+  .note-properties-row {
+    border-color: rgb(160, 160, 160);
+  }
+
+  details.toc summary::marker {
+    color: rgb(255, 255, 255);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -2965,14 +2746,13 @@ body {
   footer {
     background-color: rgb(56, 56, 56);
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px solid rgb(64, 64, 64);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    opacity: 1;
   }
 
   footer ul li a {
@@ -2981,9 +2761,7 @@ body {
 
   .recent-notes > h3 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
   }
 
@@ -3004,9 +2782,7 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .meta {
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   ul.section-ul {
@@ -3035,9 +2811,7 @@ body {
 
   li.section-li > .section .meta {
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .darkmode {
@@ -3070,9 +2844,7 @@ body {
 
   .breadcrumb-element p {
     color: rgb(112, 112, 112);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .navigation-progress {
@@ -3081,9 +2853,7 @@ body {
 
   .page-header h2.page-title {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .katex-display {
@@ -3185,6 +2955,34 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+  }
+
+  ul.tags > li {
+    background-color: rgba(251, 211, 81, 0.1);
+    color: rgb(250, 206, 62);
+    border: 0px solid rgba(251, 211, 81, 0.15);
+    border-top-left-radius: 24.5px;
+    border-top-right-radius: 24.5px;
+    border-bottom-left-radius: 24.5px;
+    border-bottom-right-radius: 24.5px;
+  }
+
+  li.task-list-item input[type="checkbox"] {
+    border-color: rgb(112, 112, 112);
+    border-radius: 4px;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  li.task-list-item input[type="checkbox"]:checked {
+    background-color: rgb(251, 211, 81);
+    border-color: rgb(251, 211, 81);
+  }
+
+  h1.article-title {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 400;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -3936,10 +3734,7 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }
@@ -4165,51 +3960,75 @@ button.toc-header .fold,
 
 figure[data-rehype-pretty-code-figure] pre,
 pre {
-  background-color: var(--code-background);
+  background-color: var(--qt-code-background, var(--code-background));
   white-space: pre;
 
   & > code {
     overflow-x: auto;
 
-    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
-      color: var(--code-value) !important;
+    span[class*="qt-code-keyword"] {
+      color: var(--qt-code-keyword, var(--code-keyword)) !important;
     }
-    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
-      color: var(--code-function) !important;
+    span[class*="qt-code-string"] {
+      color: var(--qt-code-string, var(--code-string)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
-      color: var(--code-string) !important;
+    span[class*="qt-code-comment"] {
+      color: var(--qt-code-comment, var(--code-comment)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
-      color: var(--code-property) !important;
+    span[class*="qt-code-function"] {
+      color: var(--qt-code-function, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
-      color: var(--code-normal) !important;
+    span[class*="qt-code-number"] {
+      color: var(--qt-code-number, var(--code-value)) !important;
     }
-    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
-      color: var(--code-punctuation) !important;
+    span[class*="qt-code-operator"] {
+      color: var(--qt-code-operator, var(--code-operator)) !important;
     }
-    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-property"] {
+      color: var(--qt-code-property, var(--code-property)) !important;
     }
-    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-variable"] {
+      color: var(--qt-code-variable, var(--code-normal)) !important;
     }
-    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
-      color: var(--code-tag) !important;
+    span[class*="qt-code-tag"] {
+      color: var(--qt-code-tag, var(--code-tag)) !important;
     }
-    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
-      color: var(--code-important) !important;
+    span[class*="qt-code-attribute"] {
+      color: var(--qt-code-attribute, var(--code-important)) !important;
     }
-    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-      color: var(--text-operator) !important;
+    span[class*="qt-code-type"] {
+      color: var(--qt-code-type, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
-      color: var(--code-keyword) !important;
+    span[class*="qt-code-builtin"] {
+      color: var(--qt-code-builtin, var(--code-function)) !important;
+    }
+    span[class*="qt-code-atom"] {
+      color: var(--qt-code-atom, var(--code-value)) !important;
+    }
+    span[class*="qt-code-meta"] {
+      color: var(--qt-code-meta, var(--code-comment)) !important;
+    }
+    span[class*="qt-code-qualifier"] {
+      color: var(--qt-code-qualifier, var(--code-property)) !important;
+    }
+    span[class*="qt-code-punctuation"] {
+      color: var(--qt-code-punctuation, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-bracket"] {
+      color: var(--qt-code-bracket, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-header"] {
+      color: var(--qt-code-header, var(--code-tag)) !important;
+    }
+    span[class*="qt-code-link"] {
+      color: var(--qt-code-link, var(--code-string)) !important;
+    }
+    span[class*="qt-code-error"] {
+      color: var(--qt-code-error, var(--code-important)) !important;
     }
 
     background-color: transparent;
-    color: var(--code-normal);
+    color: var(--qt-code-default, var(--code-normal));
   }
 }
 
@@ -4224,46 +4043,74 @@ blockquote.callout {
     color: var(--color);
   }
   &[data-callout] {
-    --color: rgb(var(--callout-info)) !important;
+    --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="note"] {
-    --color: rgb(var(--callout-default)) !important;
+    --color: rgb(var(--callout-default, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-default, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-default, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="abstract"] {
-    --color: rgb(var(--callout-summary)) !important;
+    --color: rgb(var(--callout-summary, 83, 223, 221)) !important;
+    --border: rgba(var(--callout-summary, 83, 223, 221), 0.267) !important;
+    --bg: rgba(var(--callout-summary, 83, 223, 221), 0.063) !important;
   }
   &[data-callout="info"] {
-    --color: rgb(var(--callout-info)) !important;
+    --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="todo"] {
-    --color: rgb(var(--callout-todo)) !important;
+    --color: rgb(var(--callout-todo, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-todo, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-todo, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="tip"] {
-    --color: rgb(var(--callout-tip)) !important;
+    --color: rgb(var(--callout-tip, 83, 223, 221)) !important;
+    --border: rgba(var(--callout-tip, 83, 223, 221), 0.267) !important;
+    --bg: rgba(var(--callout-tip, 83, 223, 221), 0.063) !important;
   }
   &[data-callout="success"] {
-    --color: rgb(var(--callout-success)) !important;
+    --color: rgb(var(--callout-success, 68, 207, 110)) !important;
+    --border: rgba(var(--callout-success, 68, 207, 110), 0.267) !important;
+    --bg: rgba(var(--callout-success, 68, 207, 110), 0.063) !important;
   }
   &[data-callout="question"] {
-    --color: rgb(var(--callout-question)) !important;
+    --color: rgb(var(--callout-question, 233, 151, 63)) !important;
+    --border: rgba(var(--callout-question, 233, 151, 63), 0.267) !important;
+    --bg: rgba(var(--callout-question, 233, 151, 63), 0.063) !important;
   }
   &[data-callout="warning"] {
-    --color: rgb(var(--callout-warning)) !important;
+    --color: rgb(var(--callout-warning, 233, 151, 63)) !important;
+    --border: rgba(var(--callout-warning, 233, 151, 63), 0.267) !important;
+    --bg: rgba(var(--callout-warning, 233, 151, 63), 0.063) !important;
   }
   &[data-callout="failure"] {
-    --color: rgb(var(--callout-fail)) !important;
+    --color: rgb(var(--callout-fail, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-fail, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-fail, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="danger"] {
-    --color: rgb(var(--callout-bug)) !important;
+    --color: rgb(var(--callout-error, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-error, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-error, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="bug"] {
-    --color: rgb(var(--callout-bug)) !important;
+    --color: rgb(var(--callout-bug, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-bug, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-bug, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="example"] {
-    --color: rgb(var(--callout-example)) !important;
+    --color: rgb(var(--callout-example, 168, 130, 255)) !important;
+    --border: rgba(var(--callout-example, 168, 130, 255), 0.267) !important;
+    --bg: rgba(var(--callout-example, 168, 130, 255), 0.063) !important;
   }
   &[data-callout="quote"] {
-    --color: rgb(var(--callout-quote)) !important;
+    --color: rgb(var(--callout-quote, 158, 158, 158)) !important;
+    --border: rgba(var(--callout-quote, 158, 158, 158), 0.267) !important;
+    --bg: rgba(var(--callout-quote, 158, 158, 158), 0.063) !important;
   }
 }
 

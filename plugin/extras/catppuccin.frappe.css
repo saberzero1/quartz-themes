@@ -1,0 +1,34 @@
+/* Fix: rotate greater-than sign */
+li.task-list-item[data-task=">"] > input {
+  transform: rotate(90deg);
+}
+
+html[saved-theme="dark"]
+  body
+  li.task-list-item
+  input[type="checkbox"]:not(:checked) {
+  background-color: transparent;
+}
+
+html[saved-theme="light"]
+  body
+  li.task-list-item
+  input[type="checkbox"]:not(:checked) {
+  background-color: transparent;
+}
+
+html[saved-theme="dark"]
+  body
+  li.task-list-item[data-task=" "]
+  input[type="checkbox"]:checked {
+  background-color: transparent;
+  border-color: var(--checkbox-color);
+}
+
+html[saved-theme="light"]
+  body
+  li.task-list-item[data-task=" "]
+  input[type="checkbox"]:checked {
+  background-color: transparent;
+  border-color: var(--checkbox-color);
+}

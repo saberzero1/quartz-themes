@@ -66,6 +66,12 @@ const EXTRACTION_FILES = [
   "theme-checkboxes/special.md",
   "theme-checkboxes/lower.md",
   "theme-checkboxes/upper.md",
+  "theme-code/syntax-samples.md",
+  "theme-properties/note-properties.md",
+  "theme-canvas/test-canvas.canvas",
+  "theme-bases/bases-table.md",
+  "theme-bases/bases-list.md",
+  "theme-bases/bases-cards.md",
 ];
 
 const STYLE_PROPERTIES = [
@@ -558,15 +564,28 @@ function generateFullExtractionScript(selectors) {
 
     const allVarNames = discoverCssVarNames();
 
-    function getAllCssVars(style, baseline) {
+    // CSS custom properties that should always be preserved on callout
+    // elements, even when they match the html/body baseline. These are
+    // per-element overrides in Obsidian that getComputedStyle returns
+    // as inherited values indistinguishable from the :root definition.
+    const CALLOUT_PRESERVE_VARS = new Set([
+      "--callout-color",
+      "--callout-icon",
+    ]);
+
+    function getAllCssVars(style, baseline, selector) {
       const vars = {};
+      const isCallout = selector && selector.includes(".callout");
       for (const prop of allVarNames) {
         const val = style.getPropertyValue(prop);
         if (val && val.trim()) {
           const trimmed = val.trim();
           // If a baseline is provided, only include vars that differ from it
+          // Exception: always preserve callout-critical vars on callout elements
           if (baseline && baseline[prop] !== undefined && baseline[prop] === trimmed) {
-            continue;
+            if (!(isCallout && CALLOUT_PRESERVE_VARS.has(prop))) {
+              continue;
+            }
           }
           vars[prop] = trimmed;
         }
@@ -642,7 +661,7 @@ function generateFullExtractionScript(selectors) {
         if (!el) continue;
 
         const style = window.getComputedStyle(el);
-        const extracted = { ...getAllCssVars(style, cssVarBaseline), ...getStandardProps(style) };
+        const extracted = { ...getAllCssVars(style, cssVarBaseline, selector), ...getStandardProps(style) };
 
         if (Object.keys(extracted).length > 0) {
           results[selector] = { ...results[selector], ...extracted };
@@ -661,6 +680,18 @@ function generateFullExtractionScript(selectors) {
       const task = li.getAttribute("data-task");
       if (!task || seenTasks.has(task)) continue;
       seenTasks.add(task);
+
+      const liSelector = 'li.task-list-item[data-task="' + task + '"]';
+      const liStyle = window.getComputedStyle(li);
+      const liColor = liStyle.getPropertyValue("color");
+      const liTextDec = liStyle.getPropertyValue("text-decoration");
+      const liTextDecLine = liStyle.getPropertyValue("text-decoration-line");
+      if (liColor || liTextDec || liTextDecLine) {
+        if (!results[liSelector]) results[liSelector] = {};
+        if (liColor) results[liSelector]["color"] = liColor;
+        if (liTextDec) results[liSelector]["text-decoration"] = liTextDec;
+        if (liTextDecLine) results[liSelector]["text-decoration-line"] = liTextDecLine;
+      }
 
       const input = li.querySelector('input[type="checkbox"]');
       if (!input) continue;
@@ -873,6 +904,8 @@ function saveBaseline(mode, data) {
   );
 }
 
+const CALLOUT_PRESERVE_PROPS = new Set(["--callout-color", "--callout-icon"]);
+
 function deduplicateAgainstBaseline(themeData, baseline) {
   if (!baseline) return themeData;
 
@@ -881,9 +914,12 @@ function deduplicateAgainstBaseline(themeData, baseline) {
   for (const [selector, styles] of Object.entries(themeData)) {
     const baselineStyles = baseline[selector] || {};
     const uniqueStyles = {};
+    const isCallout = selector.includes(".callout");
 
     for (const [prop, value] of Object.entries(styles)) {
       if (baselineStyles[prop] !== value) {
+        uniqueStyles[prop] = value;
+      } else if (isCallout && CALLOUT_PRESERVE_PROPS.has(prop)) {
         uniqueStyles[prop] = value;
       }
     }
@@ -1037,6 +1073,147 @@ async function extractBaseline(cli, selectors) {
   return results;
 }
 
+async function extractDOMStructure(cli) {
+  try {
+    const domData = await cli.eval(`
+      (() => {
+        const DOM_TARGETS = {
+          calloutNote: '.callout[data-callout="note"]',
+          calloutWarning: '.callout[data-callout="warning"]',
+          codeBlock: 'pre code',
+          fileExplorer: '.nav-files-container',
+          checkbox: '.task-list-item',
+          search: '.search-input-container',
+          toc: '.outline-view-outer',
+          metadata: '.metadata-container',
+        };
+
+        function serialize(el, depth) {
+          if (!el || depth > 6) return null;
+          const computed = window.getComputedStyle(el);
+          return {
+            tag: el.tagName.toLowerCase(),
+            classes: Array.from(el.classList),
+            attrs: Object.fromEntries(
+              Array.from(el.attributes)
+                .filter(a => a.name !== "class" && a.name !== "style")
+                .map(a => [a.name, a.value])
+            ),
+            styles: {
+              color: computed.color,
+              backgroundColor: computed.backgroundColor,
+              borderColor: computed.borderColor,
+              fill: computed.fill,
+              stroke: computed.stroke,
+            },
+            childCount: el.childElementCount,
+            children: Array.from(el.children)
+              .slice(0, 10)
+              .map(c => serialize(c, depth + 1))
+              .filter(Boolean),
+          };
+        }
+
+        const results = {};
+        for (const [key, sel] of Object.entries(DOM_TARGETS)) {
+          const el = document.querySelector(sel);
+          if (el) results[key] = serialize(el, 0);
+        }
+        return results;
+      })();
+    `);
+
+    if (domData && typeof domData === "object") {
+      const count = Object.keys(domData).length;
+      console.log(`    DOM structure: ${count} components captured`);
+      return domData;
+    }
+  } catch (error) {
+    console.warn(`    DOM structure: extraction failed: ${error.message}`);
+  }
+  return null;
+}
+
+async function extractCodeTokenColors(cli) {
+  try {
+    await cli.openFile("theme-code/syntax-samples.md");
+    await cli.waitForReady({
+      timeout: 5000,
+      interval: 300,
+      label: "syntax-samples",
+    });
+    // Allow time for CodeMirror to render syntax highlighting
+    await cli.sleep(1000);
+
+    const tokenColors = await cli.eval(`
+      (() => {
+        const TOKEN_CLASSES = [
+          "cm-keyword", "cm-string", "cm-string-2", "cm-comment",
+          "cm-number", "cm-operator", "cm-property", "cm-variable",
+          "cm-variable-2", "cm-variable-3", "cm-tag", "cm-attribute",
+          "cm-type", "cm-builtin", "cm-def", "cm-atom", "cm-qualifier",
+          "cm-meta", "cm-header", "cm-hr", "cm-link", "cm-error",
+          "cm-bracket", "cm-punctuation",
+        ];
+
+        const results = {};
+        for (const cls of TOKEN_CLASSES) {
+          const el = document.querySelector("." + cls);
+          if (!el) continue;
+          const computed = window.getComputedStyle(el);
+          const tokenName = cls.replace("cm-", "");
+          results[tokenName] = {
+            color: computed.color,
+            fontStyle: computed.fontStyle,
+            fontWeight: computed.fontWeight,
+            textDecoration: computed.textDecorationLine || computed.textDecoration,
+          };
+        }
+
+        // Also extract code block background/foreground from the editor or preview
+        const codeBlock = document.querySelector("pre code") || document.querySelector(".cm-editor .cm-content");
+        if (codeBlock) {
+          const computed = window.getComputedStyle(codeBlock);
+          results["_codeBlock"] = {
+            color: computed.color,
+            backgroundColor: computed.backgroundColor,
+          };
+        }
+        const preBlock = document.querySelector("pre") || document.querySelector(".cm-editor");
+        if (preBlock) {
+          const computed = window.getComputedStyle(preBlock);
+          results["_preBlock"] = {
+            backgroundColor: computed.backgroundColor,
+            borderColor: computed.borderColor,
+          };
+        }
+
+        // Extract line number color
+        const lineNumber = document.querySelector(".cm-lineNumbers .cm-gutterElement")
+          || document.querySelector(".cm-gutters");
+        if (lineNumber) {
+          const computed = window.getComputedStyle(lineNumber);
+          results["_lineNumber"] = {
+            color: computed.color,
+            backgroundColor: computed.backgroundColor,
+          };
+        }
+
+        return results;
+      })();
+    `);
+
+    if (tokenColors && typeof tokenColors === "object") {
+      const count = Object.keys(tokenColors).length;
+      console.log(`    syntax tokens: ${count} token types extracted`);
+      return tokenColors;
+    }
+  } catch (error) {
+    console.warn(`    syntax tokens: extraction failed: ${error.message}`);
+  }
+  return null;
+}
+
 async function extractThemeStyles(cli, themeName, baseline, manifest = {}) {
   const folderName = resolveThemeFolderName(themeName);
   const isVariation = folderName !== themeName;
@@ -1058,6 +1235,8 @@ async function extractThemeStyles(cli, themeName, baseline, manifest = {}) {
   );
 
   const results = { dark: null, light: null };
+  const codeTokens = { dark: null, light: null };
+  const domStructure = { dark: null, light: null };
   const selectors = buildSelectors();
 
   // Look up custom callout types for this theme from the manifest.
@@ -1100,6 +1279,10 @@ async function extractThemeStyles(cli, themeName, baseline, manifest = {}) {
     const modeBaseline = baseline ? baseline[mode] : null;
     results[mode] = deduplicateAgainstBaseline(rawResults, modeBaseline);
 
+    // Extract syntax highlighting token colors for this mode
+    codeTokens[mode] = await extractCodeTokenColors(cli);
+    domStructure[mode] = await extractDOMStructure(cli);
+
     const rawCount = Object.keys(rawResults).length;
     const dedupedCount = Object.keys(results[mode]).length;
     console.log(
@@ -1109,7 +1292,7 @@ async function extractThemeStyles(cli, themeName, baseline, manifest = {}) {
 
   resetVaultConfig();
 
-  return results;
+  return { styles: results, codeTokens, domStructure };
 }
 
 function sortObjectDeep(obj) {
@@ -1129,7 +1312,7 @@ function sortObjectDeep(obj) {
     }, {});
 }
 
-function saveResults(themeName, results) {
+function saveResults(themeName, results, codeTokens, domStructure) {
   const themeDir = join(RESULTS_DIR, getResultDirName(themeName));
   mkdirSync(themeDir, { recursive: true });
 
@@ -1149,6 +1332,44 @@ function saveResults(themeName, results) {
       JSON.stringify(sortedLight, null, 2),
     );
     console.log(`  Saved: ${themeDir}/light.json`);
+  }
+
+  if (codeTokens) {
+    if (codeTokens.dark && Object.keys(codeTokens.dark).length > 0) {
+      const sorted = sortObjectDeep(codeTokens.dark);
+      writeFileSync(
+        join(themeDir, "dark-code-tokens.json"),
+        JSON.stringify(sorted, null, 2),
+      );
+      console.log(`  Saved: ${themeDir}/dark-code-tokens.json`);
+    }
+
+    if (codeTokens.light && Object.keys(codeTokens.light).length > 0) {
+      const sorted = sortObjectDeep(codeTokens.light);
+      writeFileSync(
+        join(themeDir, "light-code-tokens.json"),
+        JSON.stringify(sorted, null, 2),
+      );
+      console.log(`  Saved: ${themeDir}/light-code-tokens.json`);
+    }
+  }
+
+  if (domStructure) {
+    if (domStructure.dark && Object.keys(domStructure.dark).length > 0) {
+      writeFileSync(
+        join(themeDir, "dark-dom.json"),
+        JSON.stringify(domStructure.dark, null, 2),
+      );
+      console.log(`  Saved: ${themeDir}/dark-dom.json`);
+    }
+
+    if (domStructure.light && Object.keys(domStructure.light).length > 0) {
+      writeFileSync(
+        join(themeDir, "light-dom.json"),
+        JSON.stringify(domStructure.light, null, 2),
+      );
+      console.log(`  Saved: ${themeDir}/light-dom.json`);
+    }
   }
 }
 
@@ -1193,10 +1414,14 @@ async function extractSingleTheme(cli, themeName, hashCache, baseline) {
 
   try {
     const startTime = Date.now();
-    const results = await extractThemeStyles(cli, themeName, baseline);
+    const {
+      styles: results,
+      codeTokens,
+      domStructure,
+    } = await extractThemeStyles(cli, themeName, baseline);
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
 
-    saveResults(themeName, results);
+    saveResults(themeName, results, codeTokens, domStructure);
 
     const currentHash = getThemeHash(themeName, manifest);
     if (currentHash) {

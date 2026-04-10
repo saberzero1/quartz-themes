@@ -3691,3 +3691,19 @@ body blockquote.callout {
 li.task-list-item[data-task="<"]::before {
   transform: scale(-1, 1);
 }
+
+:root[saved-theme="dark"]
+  body
+  li.task-list-item
+  input[type="checkbox"]:checked {
+  background-color: var(--checkbox-color);
+  border-color: var(--checkbox-color);
+}
+
+:root[saved-theme="light"]
+  body
+  li.task-list-item
+  input[type="checkbox"]:checked {
+  background-color: var(--checkbox-color);
+  border-color: var(--checkbox-color);
+}

@@ -684,6 +684,20 @@
 .popover.hover-editor {
   border: 1px ridge rgba(209, 209, 209, 0.5);
 }
+.popover-titlebar {
+  background-color: #181818 !important;
+}
+.popover-title {
+  visibility: hidden;
+}
+.popover-action,
+.popover-header-icon {
+  color: var(--text-muted) !important;
+}
+.popover-content {
+  font-size: var(--font-text-size);
+}
+
 /* TOC */
 .workspace-leaf-content[data-type='outline'] .clickable-icon.nav-action-button {
   width: auto !important;
@@ -2002,4 +2016,207 @@ mark {
 }
 .bases-calendar-container .bases-calendar-event-title {
   color: var(--text-normal) !important;
+}
+
+/* BASES BOARD */
+.board-board-wrapper {
+  padding: 12px;
+  gap: 0;
+}
+/* Column headers — no fill, just bottom line */
+.board-column-header {
+  border-radius: 0;
+  border-bottom: 1px solid #484848;
+  background: transparent;
+  padding: 6px 8px;
+  font-size: 0.72em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.board-header-chip {
+  border-radius: 0;
+  padding: 0 4px;
+  background: transparent;
+}
+.board-header-color-circle {
+  display: none;
+}
+/* Row headers — tight, uppercase, bottom line */
+.board-row-header-bar {
+  padding: 6px 0;
+  border-bottom: 1px solid #484848;
+  margin-bottom: 10px;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.board-row-title {
+  font-size: 1em;
+}
+/* Cells — no background, no border */
+.board-cell {
+  border-radius: 0;
+  background: transparent;
+  padding: 4px 4px;
+}
+/* Cards — no fill, just bottom line (table row style) */
+.board-card {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #303030;
+  border-left: 2px solid transparent;
+  background: transparent;
+  padding: 5px 8px;
+  margin-bottom: 0;
+  box-shadow: none;
+}
+.board-card:hover {
+  background: #1e1e1e;
+  border-bottom-color: #484848;
+}
+/* Colored cards — left accent only */
+.board-card.has-plugin-color-border {
+  border-left-width: 2px;
+}
+/* Card ID badge */
+.card-id {
+  letter-spacing: 0.06em;
+}
+.card-id:hover {
+  opacity: 1;
+  color: #7cafc2;
+}
+/* Card title */
+.board-card .file-name {
+  font-size: var(--font-ui-small);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+/* New note button — invisible until hover on cell */
+.board-new-note-button {
+  border-radius: 0;
+  border: 1px dashed transparent;
+  background: transparent;
+  color: transparent;
+  font-size: 0.65em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  margin-top: 2px;
+  opacity: 0;
+  transition:
+    opacity 0.15s,
+    border-color 0.15s,
+    color 0.15s;
+}
+.board-cell:hover .board-new-note-button,
+.board-new-note-button:hover {
+  border-color: #383838;
+  color: #585858;
+  opacity: 1;
+}
+.board-new-note-button:hover {
+  border-color: #7cafc2;
+  color: #7cafc2;
+  background: transparent;
+}
+/* Drop indicators */
+.board-item-drop-target-top {
+  border-top: 2px solid #7cafc2 !important;
+}
+.board-item-drop-target-bottom {
+  border-bottom: 2px solid #7cafc2 !important;
+}
+/* Restore metadata padding inside board cards (overrides global --metadata-padding: 0) */
+.board-card {
+  --metadata-padding: 2px 0;
+}
+.board-card .multi-select-container {
+  padding: 0 4px !important;
+}
+.board-card .multi-select-input {
+  padding-left: 2px !important;
+}
+
+/* BASES CHARTS */
+/* Map --color-accent (used by plugin) to the theme's interactive accent */
+.theme-dark {
+  --bases-charts-accent: var(--interactive-accent);
+}
+
+/* ECharts tooltip outer container (inline styles need !important to override).
+   ECharts injects the tooltip as a div wrapping .bases-chart-tooltip content,
+   using its light-mode color palette (neutral05 bg, neutral30 border). */
+.theme-dark div:has(> .bases-chart-tooltip) {
+  background-color: #202020 !important;
+  border-color: #383838 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Tooltip inner container */
+.theme-dark .bases-chart-tooltip {
+  color: var(--text-normal);
+}
+
+/* Replace hardcoded #999 secondary text with theme muted color */
+.theme-dark .bases-chart-tooltip-value,
+.theme-dark .bases-chart-tooltip-file-value {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+/* Replace hardcoded rgba(128,128,128,0.2) divider */
+.theme-dark .bases-chart-tooltip-divider {
+  background: #383838;
+}
+
+/* Replace hardcoded rgba(128,128,128,0.15) hover */
+.theme-dark .bases-chart-tooltip-file:hover {
+  background: #282828;
+}
+/* META BIND */
+.mb-button-group {
+  --mb-border-radius: 0;
+  gap: 0;
+
+  & > .mb-button {
+    & > .mb-button-inner {
+      border-radius: 3px;
+      background: transparent;
+      border: 1px solid #383838;
+      box-shadow: none;
+      color: var(--text-muted);
+      font-size: var(--font-ui-small);
+      transition:
+        background 0.1s ease,
+        border-color 0.1s ease,
+        color 0.1s ease;
+
+      &:hover,
+      &:focus {
+        background: transparent !important;
+        border-color: #484848 !important;
+        color: #f8f8f8 !important;
+        box-shadow: inset 2px 0 0 #7cafc2 !important;
+      }
+
+      &:active {
+        background: transparent !important;
+        border-color: #585858 !important;
+        color: #ffffff !important;
+        box-shadow: inset 2px 0 0 #86c1b9 !important;
+      }
+    }
+
+    /* collapse adjacent borders */
+    &:not(:first-child) > .mb-button-inner {
+      border-left: none;
+    }
+
+    /* single button — full border intact */
+    &:last-child:first-child > .mb-button-inner {
+      border-radius: 3px;
+      border: 1px solid #383838;
+    }
+  }
 }

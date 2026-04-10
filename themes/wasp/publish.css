@@ -389,6 +389,24 @@ body.theme-light {
   --text-normal: #1a2023 !important;
   --titlebar-background: #c4c4c4 !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: #d49335 !important;
+  --background-modifier-form-field: #ffffff !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: #d49335 !important;
+  --pill-border-color-hover: #d4d4d4 !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #5c5c5c !important;
+  --pill-color-hover: #1a2023 !important;
+  --pill-color-remove: #dedede !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -402,7 +420,6 @@ body.theme-light {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: #d49335 !important;
   --background-modifier-border-focus: #bdbdbd !important;
   --background-modifier-border-hover: #d4d4d4 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -410,7 +427,6 @@ body.theme-light {
   --background-modifier-error: #e93147 !important;
   --background-modifier-error-hover: #e93147 !important;
   --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field: #ffffff !important;
   --background-modifier-form-field-hover: #ffffff !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -440,7 +456,6 @@ body.theme-light {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -777,8 +792,6 @@ body.theme-light {
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -798,15 +811,12 @@ body.theme-light {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: #dedede !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #dedede !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -991,19 +1001,9 @@ body.theme-light {
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: #d49335 !important;
-  --pill-border-color-hover: #d4d4d4 !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #5c5c5c !important;
-  --pill-color-hover: #1a2023 !important;
-  --pill-color-remove: #dedede !important;
   --pill-color-remove-hover: #961327 !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -1302,6 +1302,24 @@ body.theme-dark {
   --text-normal: #faf2d6 !important;
   --titlebar-background: #191919 !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: #f8c537 !important;
+  --background-modifier-form-field: #2a2a2a !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: #f8c537 !important;
+  --pill-border-color-hover: #3f3f3f !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #b3b3b3 !important;
+  --pill-color-hover: #faf2d6 !important;
+  --pill-color-remove: #bdae93 !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -1315,7 +1333,6 @@ body.theme-dark {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: #f8c537 !important;
   --background-modifier-border-focus: #555555 !important;
   --background-modifier-border-hover: #3f3f3f !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -1323,7 +1340,6 @@ body.theme-dark {
   --background-modifier-error: #fb464c !important;
   --background-modifier-error-hover: #fb464c !important;
   --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field: #2a2a2a !important;
   --background-modifier-form-field-hover: #2a2a2a !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -1353,7 +1369,6 @@ body.theme-dark {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -1690,8 +1705,6 @@ body.theme-dark {
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -1711,15 +1724,12 @@ body.theme-dark {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: #bdae93 !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #bdae93 !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -1902,19 +1912,9 @@ body.theme-dark {
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px #f8c537 !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: #f8c537 !important;
-  --pill-border-color-hover: #3f3f3f !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #b3b3b3 !important;
-  --pill-color-hover: #faf2d6 !important;
-  --pill-color-remove: #bdae93 !important;
   --pill-color-remove-hover: #f8c537 !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -2383,7 +2383,7 @@ body body.theme-light .markdown-rendered p {
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(26, 32, 35);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2422,7 +2422,7 @@ body body.theme-light strong {
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(26, 32, 35);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2461,7 +2461,7 @@ body body.theme-light b {
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(26, 32, 35);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2500,7 +2500,7 @@ body body.theme-light em {
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(26, 32, 35);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2539,7 +2539,7 @@ body body.theme-light i {
 body body.theme-light .markdown-rendered mark {
   background-color: rgba(255, 208, 0, 0.4);
   color: rgb(26, 32, 35);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2578,7 +2578,7 @@ body body.theme-light .markdown-rendered mark {
 body body.theme-light del {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(26, 32, 35);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2822,11 +2822,6 @@ body
   width: auto;
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-light ul > li.task-list-item[data-task="x"] {
-  color: rgb(92, 92, 92);
-  text-decoration: line-through;
-  text-decoration-color: rgb(92, 92, 92);
 }
 body body.theme-light .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -3128,6 +3123,7 @@ body body.theme-light .callout[data-callout="note"] {
   background-color: rgba(8, 109, 221, 0.1);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
+  color: rgb(8, 109, 221);
   gap: 4px;
   border: 0px rgb(8, 109, 221);
   border-top-left-radius: 0px;
@@ -3141,6 +3137,7 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
+  color: rgb(8, 109, 221);
   font-weight: 600;
 }
 body body.theme-light .callout > .callout-content {
@@ -3533,11 +3530,9 @@ body body.theme-light .internal-embed {
 }
 body body.theme-light .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
+  border-left: solid;
+  border-width: 0px;
   border-color: rgb(26, 32, 35);
-  border-left: 2px solid rgb(248, 197, 55);
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3768,92 +3763,92 @@ body body.theme-light abbr {
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(26, 32, 35);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(26, 32, 35);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -4225,6 +4220,15 @@ body body.theme-light pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .tag {
+  background-color: rgba(138, 92, 245, 0.1);
+  color: rgb(150, 19, 39);
+  border: 0px solid rgba(138, 92, 245, 0.15);
+  border-top-left-radius: 24.5px;
+  border-top-right-radius: 24.5px;
+  border-bottom-left-radius: 24.5px;
+  border-bottom-right-radius: 24.5px;
+}
 body body.theme-light .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
@@ -4410,7 +4414,7 @@ body body.theme-dark .markdown-rendered p {
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(250, 242, 214);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4449,7 +4453,7 @@ body body.theme-dark strong {
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(250, 242, 214);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4488,7 +4492,7 @@ body body.theme-dark b {
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(250, 242, 214);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4527,7 +4531,7 @@ body body.theme-dark em {
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(250, 242, 214);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4566,7 +4570,7 @@ body body.theme-dark i {
 body body.theme-dark .markdown-rendered mark {
   background-color: rgb(100, 2, 17);
   color: rgb(250, 242, 214);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4605,7 +4609,7 @@ body body.theme-dark .markdown-rendered mark {
 body body.theme-dark del {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(250, 242, 214);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4849,11 +4853,6 @@ body
   width: auto;
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-dark ul > li.task-list-item[data-task="x"] {
-  color: rgb(179, 179, 179);
-  text-decoration: line-through;
-  text-decoration-color: rgb(179, 179, 179);
 }
 body body.theme-dark .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -5155,6 +5154,7 @@ body body.theme-dark .callout[data-callout="note"] {
   background-color: rgba(2, 122, 255, 0.1);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  color: rgb(2, 122, 255);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5168,6 +5168,7 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
+  color: rgb(2, 122, 255);
   font-weight: 600;
 }
 body body.theme-dark .callout > .callout-content {
@@ -5560,11 +5561,9 @@ body body.theme-dark .internal-embed {
 }
 body body.theme-dark .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
+  border-left: solid;
+  border-width: 0px;
   border-color: rgb(250, 242, 214);
-  border-left: 2px solid rgb(248, 197, 55);
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5795,92 +5794,92 @@ body body.theme-dark abbr {
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(250, 242, 214);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(250, 242, 214);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -6252,6 +6251,15 @@ body body.theme-dark pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-dark .tag {
+  background-color: rgba(138, 92, 245, 0.1);
+  color: rgb(248, 197, 55);
+  border: 0px solid rgba(138, 92, 245, 0.15);
+  border-top-left-radius: 24.5px;
+  border-top-right-radius: 24.5px;
+  border-bottom-left-radius: 24.5px;
+  border-bottom-right-radius: 24.5px;
+}
 body body.theme-dark .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
@@ -6270,91 +6278,91 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-default));
+  stroke: rgb(var(--callout-default, 2, 122, 255));
 }
 body
   .callout[data-callout="abstract"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-summary));
+  stroke: rgb(var(--callout-summary, 83, 223, 221));
 }
 body
   .callout[data-callout="info"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-info));
+  stroke: rgb(var(--callout-info, 2, 122, 255));
 }
 body
   .callout[data-callout="todo"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-todo));
+  stroke: rgb(var(--callout-todo, 2, 122, 255));
 }
 body
   .callout[data-callout="tip"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-tip));
+  stroke: rgb(var(--callout-tip, 83, 223, 221));
 }
 body
   .callout[data-callout="success"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-success));
+  stroke: rgb(var(--callout-success, 68, 207, 110));
 }
 body
   .callout[data-callout="question"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-question));
+  stroke: rgb(var(--callout-question, 233, 151, 63));
 }
 body
   .callout[data-callout="warning"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-warning));
+  stroke: rgb(var(--callout-warning, 233, 151, 63));
 }
 body
   .callout[data-callout="failure"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-fail));
+  stroke: rgb(var(--callout-fail, 251, 70, 76));
 }
 body
   .callout[data-callout="danger"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-error, 251, 70, 76));
 }
 body
   .callout[data-callout="bug"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-bug, 251, 70, 76));
 }
 body
   .callout[data-callout="example"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-example));
+  stroke: rgb(var(--callout-example, 168, 130, 255));
 }
 body
   .callout[data-callout="quote"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-quote));
+  stroke: rgb(var(--callout-quote, 158, 158, 158));
 }
 body pre > code,
 body .markdown-rendered pre > code {
