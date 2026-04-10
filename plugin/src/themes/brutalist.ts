@@ -37,7 +37,7 @@ export const theme: ThemeData = {
   --bases-embed-border-color: transparent !important;
   --bases-embed-border-radius: 0 !important;
   --bases-group-heading-property-color: #B3B3B3 !important;
-  --bases-table-border-color: #c0c0c0 !important;
+  --bases-table-border-color: #a0a0a0 !important;
   --bases-table-cell-background-active: #3c3c3c !important;
   --bases-table-cell-background-disabled: #323232 !important;
   --bases-table-cell-background-selected: hsla(0, 0%, 75%, 0.1) !important;
@@ -48,7 +48,7 @@ export const theme: ThemeData = {
   --bases-table-header-background: #3c3c3c !important;
   --bases-table-header-color: #B3B3B3 !important;
   --bases-table-summary-background: #3c3c3c !important;
-  --bases-text-color: #C5C5C5 !important;
+  --bases-text-color: #a0a0a0 !important;
   --blockquote-border-color: #cdcdcd !important;
   --blur-background: color-mix(in srgb, #323232 65%, transparent) linear-gradient(#323232, color-mix(in srgb, #323232 65%, transparent)) !important;
   --body-font-color-dark: #a0a0a0 !important;
@@ -60,7 +60,7 @@ export const theme: ThemeData = {
   --button-text-dynamic: #a0a0a0 !important;
   --button-text-hover-dynamic: #ffffff !important;
   --calendar-dot-bg: #feb43f !important;
-  --calendar-header-color: #d0d0d0 !important;
+  --calendar-header-color: #B3B3B3 !important;
   --calendar-today-color: #feb43f !important;
   --callout-abstract: 109, 163, 174;
   --callout-border-width: 1px;
@@ -73,15 +73,15 @@ export const theme: ThemeData = {
   --callout-tip: 122, 163, 125;
   --callout-warning: 212, 163, 85;
   --canvas-background: #3c3c3c !important;
-  --canvas-card-label-color: #858585 !important;
+  --canvas-card-label-color: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --canvas-controls-radius: 0 !important;
   --canvas-node-border-color: #c0c0c0 !important;
   --caret-color: #a0a0a0 !important;
-  --checkbox-border-color: #858585 !important;
+  --checkbox-border-color: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --checkbox-border-color-hover: #B3B3B3 !important;
   --checkbox-border-width: 1px !important;
   --checkbox-color: #cdcdcd !important;
-  --checkbox-color-hover: #ffffff !important;
+  --checkbox-color-hover: color-mix(in srgb, #B3B3B3, white 40%) !important;
   --checkbox-marker-color: #3c3c3c !important;
   --checkbox-radius: 0 !important;
   --checklist-done-color: #B3B3B3 !important;
@@ -93,7 +93,7 @@ export const theme: ThemeData = {
   --code-punctuation: #B3B3B3 !important;
   --code-radius: 0px !important;
   --codeFont: 'Noto Sans Mono', monospace !important;
-  --collapse-icon-color: #858585 !important;
+  --collapse-icon-color: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --collapse-icon-color-collapsed: #cdcdcd !important;
   --color-accent: hsl(0, 0%, 75%) !important;
   --color-accent-1: hsl(-3, 0%, 86.25%) !important;
@@ -114,8 +114,8 @@ export const theme: ThemeData = {
   --dashboard-gap: 4px !important;
   --divider-color: transparent !important;
   --divider-color-hover: #cdcdcd !important;
-  --drag-bg: color-mix(in srgb, #00526E, transparent 85%) !important;
-  --drag-border: dashed #00526E !important;
+  --drag-bg: #000000 !important;
+  --drag-border: none !important;
   --drag-border-width: 3px !important;
   --dropdown-background: #323232 !important;
   --editor-width: 600px !important;
@@ -126,9 +126,6 @@ export const theme: ThemeData = {
   --file-header-font: 'Marcellus', serif !important;
   --flair-background: #323232 !important;
   --flair-color: #a0a0a0 !important;
-  --font-colour-dark-grey-33: #333333 !important;
-  --font-colour-light-grey-70: #707070 !important;
-  --font-colour-light-grey-bd: #BDBDBD !important;
   --font-default: 'Marcellus', serif !important;
   --font-interface: 'Marcellus', serif !important;
   --font-interface-override: 'Marcellus', serif !important;
@@ -143,13 +140,13 @@ export const theme: ThemeData = {
   --font-ui: 'Marcellus', serif !important;
   --footnote-divider-color: transparent !important;
   --footnote-id-color: #B3B3B3 !important;
-  --footnote-id-color-no-occurrences: #858585 !important;
+  --footnote-id-color-no-occurrences: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --footnote-line-height: 1.6 !important;
   --footnote-radius: 0 !important;
-  --graph-line: #B3B3B3 !important;
+  --graph-line: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --graph-node: #B3B3B3 !important;
   --graph-node-focused: #cdcdcd !important;
-  --graph-node-unresolved: #858585 !important;
+  --graph-node-unresolved: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --graph-text: #a0a0a0 !important;
   --gray: #B3B3B3 !important;
   --h1-color: #cdcdcd !important;
@@ -161,30 +158,30 @@ export const theme: ThemeData = {
   --h6-color: #cdcdcd !important;
   --h6-line-height: 1.6 !important;
   --headerFont: 'Lora', serif !important;
-  --heading-formatting: #858585 !important;
+  --heading-formatting: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --heading-spacing: 1.5em !important;
-  --highlight: color-mix(in srgb, #0066FF, transparent 80%) !important;
+  --highlight: color-mix(in srgb, #495ca1, transparent 55%) !important;
   --hr-color: transparent !important;
   --icon-color: #B3B3B3 !important;
   --icon-color-active: #cdcdcd !important;
   --icon-color-focused: #a0a0a0 !important;
-  --icon-color-hover: #cdcdcd !important;
+  --icon-color-hover: color-mix(in srgb, #B3B3B3, white 40%) !important;
   --icon-size: 20px !important;
-  --indentation-guide-color: #cdcdcd !important;
-  --indentation-guide-color-active: #cdcdcd !important;
+  --indentation-guide-color: color-mix(in srgb, #B3B3B3, transparent 10%) !important;
+  --indentation-guide-color-active: #B3B3B3 !important;
   --inline-title-align: center !important;
   --inline-title-color: #cdcdcd !important;
   --inline-title-size: 3em !important;
   --input-bg-std: #000000 !important;
   --input-border: transparent !important;
   --input-border-width: 0px !important;
-  --input-date-separator: #858585 !important;
-  --input-placeholder-color: #858585 !important;
+  --input-date-separator: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
+  --input-placeholder-color: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --input-radius: 0 !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
   --interactive-accent: #cdcdcd !important;
-  --interactive-accent-hover: #ffffff !important;
+  --interactive-accent-hover: color-mix(in srgb, #B3B3B3, white 40%) !important;
   --interactive-accent-hsl: 0, 0%, 75% !important;
   --interactive-normal: #323232 !important;
   --light: #3c3c3c !important;
@@ -193,15 +190,16 @@ export const theme: ThemeData = {
   --line-height: 1.6 !important;
   --line-height-normal: 1.6 !important;
   --link-color: #e2e2e2 !important;
-  --link-color-hover: #ffffff !important;
+  --link-color-hover: color-mix(in srgb, #B3B3B3, white 40%) !important;
   --link-external-color: #e2e2e2 !important;
-  --link-external-color-hover: #ffffff !important;
+  --link-external-color-hover: color-mix(in srgb, #B3B3B3, white 40%) !important;
   --link-unresolved-color: #cdcdcd !important;
   --link-unresolved-decoration-color: hsla(0, 0%, 75%, 0.3) !important;
-  --list-marker-color: #cdcdcd !important;
+  --list-marker-color: color-mix(in srgb, #a0a0a0, white 25%) !important;
   --list-marker-color-collapsed: #cdcdcd !important;
   --list-marker-color-hover: #B3B3B3 !important;
   --menu-background: #323232 !important;
+  --menu-custom-bg: #262626 !important;
   --menu-radius: 0 !important;
   --menu-shadow: none !important;
   --metadata-border-color: transparent !important;
@@ -217,26 +215,27 @@ export const theme: ThemeData = {
   --mobile-drawer-bg: #3c3c3c !important;
   --mobile-drawer-color-dark: #3c3c3c !important;
   --mobile-drawer-color-light: #323232 !important;
-  --mobile-navbar-border-color-dark: #6a6a6a !important;
+  --mobile-navbar-border-color-dark: #323232 !important;
+  --mobile-navbar-border-color-light: #323232 !important;
   --mobile-navbar-border-style-dark: solid !important;
   --mobile-navbar-border-style-light: solid !important;
   --mobile-navbar-border-width-dark: 0px !important;
   --mobile-navbar-border-width-light: 0px !important;
-  --mobile-navbar-color-dark: #3c3c3c !important;
-  --mobile-navbar-color-light: #3c3c3c !important;
+  --mobile-navbar-color-dark: #323232 !important;
+  --mobile-navbar-color-light: #323232 !important;
   --mobile-navbar-opacity-dark: 0.7 !important;
   --mobile-navbar-opacity-light: 0.7 !important;
   --mobile-navbar-radius: 20px !important;
   --modal-background: #323232 !important;
   --modal-radius: 0 !important;
-  --nav-collapse-icon-color: #858585 !important;
-  --nav-collapse-icon-color-collapsed: #858585 !important;
+  --nav-collapse-icon-color: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
+  --nav-collapse-icon-color-collapsed: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --nav-guide-border-width: 1px !important;
   --nav-heading-color: #a0a0a0 !important;
-  --nav-heading-color-collapsed: #858585 !important;
+  --nav-heading-color-collapsed: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --nav-heading-color-collapsed-hover: #B3B3B3 !important;
   --nav-heading-color-hover: #a0a0a0 !important;
-  --nav-indentation-guide-color: #cdcdcd !important;
+  --nav-indentation-guide-color: color-mix(in srgb, #B3B3B3, transparent 10%) !important;
   --nav-item-background-selected: hsla(0, 0%, 75%, 0.15) !important;
   --nav-item-color: #B3B3B3 !important;
   --nav-item-color-active: #a0a0a0 !important;
@@ -244,7 +243,7 @@ export const theme: ThemeData = {
   --nav-item-color-hover: #a0a0a0 !important;
   --nav-item-color-selected: #a0a0a0 !important;
   --nav-item-radius: 0 !important;
-  --nav-tag-color: #858585 !important;
+  --nav-tag-color: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --nav-tag-color-active: #B3B3B3 !important;
   --nav-tag-color-hover: #B3B3B3 !important;
   --nav-tag-radius: 0 !important;
@@ -258,11 +257,11 @@ export const theme: ThemeData = {
   --pill-border-color: transparent !important;
   --pill-color: #B3B3B3 !important;
   --pill-color-hover: #a0a0a0 !important;
-  --pill-color-remove: #858585 !important;
+  --pill-color-remove: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --pill-color-remove-hover: #cdcdcd !important;
   --prompt-background: #323232 !important;
   --prompt-border-radius: 0 !important;
-  --quote-opening-modifier: #c0c0c0 !important;
+  --quote-opening-modifier: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --radius-l: 0 !important;
   --radius-m: 0 !important;
   --radius-s: 0 !important;
@@ -273,7 +272,6 @@ export const theme: ThemeData = {
   --scrollbar-active-thumb-bg: color-mix(in srgb, #B3B3B3, transparent 80%) !important;
   --scrollbar-radius: 0px !important;
   --scrollbar-thumb-bg: color-mix(in srgb, #B3B3B3, transparent 85%) !important;
-  --scrollbar-track-bg: #3c3c3c !important;
   --search-clear-button-color: #B3B3B3 !important;
   --search-icon-color: #B3B3B3 !important;
   --search-result-background: #3c3c3c !important;
@@ -287,25 +285,27 @@ export const theme: ThemeData = {
   --settings-border-width: 0px !important;
   --settings-icon-fill: #B3B3B3 !important;
   --shadow-checkbox-inset: inset 0 0 0 2px #3c3c3c !important;
-  --shadow-floating-card: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25)) !important;
+  --shadow-floating-card: none !important;
   --shadow-focus-inset: inset 0 0 0 1px #a0a0a0 !important;
   --shadow-focus-ring: 0 0 0 2px #cdcdcd !important;
-  --shadow-navbar-separator-dark: inset 0 -0.5px 0 0 rgba(255, 255, 255, 0.1) !important;
-  --shadow-navbar-separator-light: inset 0 -0.5px 0 0 rgba(0, 0, 0, 0.1) !important;
   --shadow-s: none !important;
   --slider-track-background: #ffffff !important;
+  --status-bar-active-bg: #798ccf !important;
   --status-bar-background: #323232 !important;
   --status-bar-border-color: transparent !important;
   --status-bar-radius: 0 !important;
   --status-bar-text-color: #B3B3B3 !important;
   --suggestion-background: #3c3c3c !important;
   --suggestion-item-border-radius: 0 !important;
-  --suggestion-radius: 4px !important;
+  --suggestion-radius: 0 !important;
+  --surface-highlight: #262626 !important;
+  --surface-highlight-dark: #262626 !important;
+  --surface-highlight-light: #d6d6d6 !important;
   --tab-active-bg-sidebar: color-mix(in srgb, #ffffff, transparent 95%) !important;
   --tab-background-active: #3c3c3c !important;
   --tab-container-background: #323232 !important;
   --tab-curve: 0 !important;
-  --tab-hover-bg-doc: #000000 !important;
+  --tab-hover-bg-doc: #262626 !important;
   --tab-hover-bg-ui: color-mix(in srgb, #B3B3B3, transparent 90%) !important;
   --tab-hover-text-ui: #B3B3B3 !important;
   --tab-outline-color: transparent !important;
@@ -315,18 +315,18 @@ export const theme: ThemeData = {
   --tab-switcher-menubar-background: linear-gradient(to top, #323232, transparent) !important;
   --tab-switcher-preview-radius: 0 !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 75%) !important;
-  --tab-text-color: #858585 !important;
+  --tab-text-color: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --tab-text-color-active: #B3B3B3 !important;
   --tab-text-color-focused: #B3B3B3 !important;
   --tab-text-color-focused-active: #B3B3B3 !important;
   --tab-text-color-focused-active-current: #a0a0a0 !important;
   --tab-text-color-focused-highlighted: #cdcdcd !important;
   --table-add-button-border-color: transparent !important;
-  --table-border-color: #c0c0c0 !important;
+  --table-border-color: #a0a0a0 !important;
   --table-drag-handle-background-active: #cdcdcd !important;
-  --table-drag-handle-color: #858585 !important;
+  --table-drag-handle-color: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --table-drag-handle-color-active: #323232 !important;
-  --table-header-border-color: #c0c0c0 !important;
+  --table-header-border-color: #a0a0a0 !important;
   --table-header-color: #a0a0a0 !important;
   --table-selection: hsla(0, 0%, 75%, 0.1) !important;
   --table-selection-border-color: #cdcdcd !important;
@@ -335,26 +335,27 @@ export const theme: ThemeData = {
   --tag-background-hover: #000000 !important;
   --tag-border-color: #cdcdcd !important;
   --tag-border-color-hover: hsla(0, 0%, 75%, 0.15) !important;
-  --tag-color: #cdcdcd !important;
+  --tag-color: #a0a0a0 !important;
   --tag-color-hover: #cdcdcd !important;
   --tag-radius: 0 !important;
-  --tertiary: #ffffff !important;
+  --tertiary: color-mix(in srgb, #B3B3B3, white 40%) !important;
   --text-accent: #cdcdcd !important;
-  --text-accent-hover: #ffffff !important;
+  --text-accent-hover: color-mix(in srgb, #B3B3B3, white 40%) !important;
   --text-align-mode: left !important;
-  --text-faint: #858585 !important;
-  --text-highlight-bg: color-mix(in srgb, #0066FF, transparent 80%) !important;
+  --text-faint: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
+  --text-highlight-bg: color-mix(in srgb, #495ca1, transparent 55%) !important;
   --text-muted: #B3B3B3 !important;
   --text-normal: #a0a0a0 !important;
   --text-on-accent: #323232 !important;
-  --text-selection: #00526E !important;
-  --textHighlight: color-mix(in srgb, #0066FF, transparent 80%) !important;
+  --text-selection: rgba(200, 200, 200, 0.15) !important;
+  --textHighlight: color-mix(in srgb, #495ca1, transparent 55%) !important;
   --titleFont: 'Lora', serif !important;
   --titlebar-background: #323232 !important;
   --titlebar-background-focused: #323232 !important;
   --titlebar-border-color: transparent !important;
   --titlebar-text-color: #B3B3B3 !important;
   --titlebar-text-color-focused: #a0a0a0 !important;
+  --toggle-on-color: #5f6a93 !important;
   --toggle-thumb-radius: 50% !important;
   --toggle-track-radius: 0 !important;
   --ui-font-color-dark: #B3B3B3 !important;
@@ -362,7 +363,7 @@ export const theme: ThemeData = {
   --vault-profile-color: #a0a0a0 !important;
   --vault-profile-color-hover: #a0a0a0 !important;
   --vertical-tab-active-color: #B3B3B3 !important;
-  --vertical-tab-header-color: #E0E0E0 !important;
+  --vertical-tab-header-color: #B3B3B3 !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -378,6 +379,42 @@ html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme=
 
 html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slug] .page > div#quartz-body, html[saved-theme="dark"] .page > div#quartz-body div.center, html[saved-theme="dark"] .page > div#quartz-body footer {
   background-color: rgb(60, 60, 60);
+  color: rgb(160, 160, 160);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(160, 160, 160);
+  color: rgb(160, 160, 160);
+}
+
+html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(192, 192, 192);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(160, 160, 160);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(160, 160, 160);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(192, 192, 192);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(50, 50, 50);
+  border-color: rgb(160, 160, 160);
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(179, 179, 179);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: color(srgb 0.803922 0.803922 0.803922 / 0.2);
+  border-radius: 0px;
   color: rgb(160, 160, 160);
 }
 
@@ -429,7 +466,7 @@ html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"]
 }
 
 html[saved-theme="dark"] body .text-highlight {
-  background-color: color(srgb 0 0.4 1 / 0.2);
+  background-color: color(srgb 0.286275 0.360784 0.631373 / 0.45);
   color: rgb(160, 160, 160);
   font-family: Lora, serif;
   outline: rgb(160, 160, 160) none 0px;
@@ -441,6 +478,20 @@ html[saved-theme="dark"] body del {
   font-family: Lora, serif;
   outline: rgb(160, 160, 160) none 0px;
   text-decoration-color: rgb(160, 160, 160);
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(179, 179, 179);
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(205, 205, 205);
+  border-radius: 0px;
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(205, 205, 205);
+  border-color: rgb(205, 205, 205);
 }
 
 html[saved-theme="dark"] body p {
@@ -497,7 +548,7 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(160, 160, 160);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: rgb(133, 133, 133);
+  color: color(srgb 0.701961 0.701961 0.701961 / 0.7);
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -519,22 +570,21 @@ html[saved-theme="dark"] body table {
 }
 
 html[saved-theme="dark"] body td {
-  border-bottom-color: rgb(192, 192, 192);
-  border-left-color: rgb(192, 192, 192);
-  border-right-color: rgb(192, 192, 192);
-  border-top-color: rgb(192, 192, 192);
+  border-bottom-color: rgb(160, 160, 160);
+  border-left-color: rgb(160, 160, 160);
+  border-right-color: rgb(160, 160, 160);
+  border-top-color: rgb(160, 160, 160);
   color: rgb(160, 160, 160);
 }
 
 html[saved-theme="dark"] body th {
-  border-bottom-color: rgb(192, 192, 192);
-  border-left-color: rgb(192, 192, 192);
-  border-right-color: rgb(192, 192, 192);
-  border-top-color: rgb(192, 192, 192);
+  border-bottom-color: rgb(160, 160, 160);
+  border-left-color: rgb(160, 160, 160);
+  border-right-color: rgb(160, 160, 160);
+  border-top-color: rgb(160, 160, 160);
   color: rgb(160, 160, 160);
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgb(50, 50, 50);
   border-bottom-color: rgb(160, 160, 160);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -650,7 +700,7 @@ html[saved-theme="dark"] body .transclude {
 
 html[saved-theme="dark"] body .transclude-inner {
   border-bottom-color: rgb(160, 160, 160);
-  border-left-color: rgb(205, 205, 205);
+  border-left-color: rgb(160, 160, 160);
   border-right-color: rgb(160, 160, 160);
   border-top-color: rgb(160, 160, 160);
 }`,
@@ -761,356 +811,17 @@ html[saved-theme="dark"] body li.task-list-item[data-task='u'] {
 html[saved-theme="dark"] body li.task-list-item[data-task='w'] {
   color: rgb(160, 160, 160);
   text-decoration-color: rgb(160, 160, 160);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
-  background-color: rgb(60, 60, 60);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgb(192, 192, 192);
   border-left-color: rgb(192, 192, 192);
   border-right-color: rgb(192, 192, 192);
   border-top-color: rgb(192, 192, 192);
+  color: rgb(192, 192, 192);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(192, 192, 192);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -1332,6 +1043,66 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3Cpath d='M12 11h4'/%3E%3Cpath d='M12 16h4'/%3E%3Cpath d='M8 11h.01'/%3E%3Cpath d='M8 16h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="banner"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="bug"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20v-9'/%3E%3Cpath d='M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z'/%3E%3Cpath d='M14.12 3.88 16 2'/%3E%3Cpath d='M21 21a4 4 0 0 0-3.81-4'/%3E%3Cpath d='M21 5a4 4 0 0 1-3.55 3.97'/%3E%3Cpath d='M22 13h-4'/%3E%3Cpath d='M3 21a4 4 0 0 1 3.81-4'/%3E%3Cpath d='M3 5a4 4 0 0 0 3.55 3.97'/%3E%3Cpath d='M6 13H2'/%3E%3Cpath d='m8 2 1.88 1.88'/%3E%3Cpath d='M9 7.13V6a3 3 0 1 1 6 0v1.13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="danger"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="example"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 5h.01'/%3E%3Cpath d='M3 12h.01'/%3E%3Cpath d='M3 19h.01'/%3E%3Cpath d='M8 5h13'/%3E%3Cpath d='M8 12h13'/%3E%3Cpath d='M8 19h13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="failure"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18'/%3E%3Cpath d='m6 6 12 12'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="info"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="question"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="success"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="tip"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="todo"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="warning"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(0, 0, 0);
@@ -1442,41 +1213,41 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
 }
 
 html[saved-theme="dark"] body a.internal.tag-link::before {
-  color: rgb(205, 205, 205);
+  color: rgb(160, 160, 160);
 }
 
 html[saved-theme="dark"] body h1 {
-  color: rgb(205, 205, 205);
+  color: rgb(179, 179, 179);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body h2 {
-  color: rgb(205, 205, 205);
+  color: rgb(179, 179, 179);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body h2.page-title, html[saved-theme="dark"] h2.page-title a {
-  color: rgb(205, 205, 205);
+  color: rgb(179, 179, 179);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body h3 {
-  color: rgb(205, 205, 205);
+  color: rgb(179, 179, 179);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body h4 {
-  color: rgb(205, 205, 205);
+  color: rgb(179, 179, 179);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body h5 {
-  color: rgb(205, 205, 205);
+  color: rgb(179, 179, 179);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body h6 {
-  color: rgb(205, 205, 205);
+  color: rgb(179, 179, 179);
   font-family: Marcellus, serif;
 }
 
@@ -1540,6 +1311,13 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   font-family: Marcellus, serif;
+}
+
+html[saved-theme="dark"] body .explorer .folder-outer > ul {
+  border-left-color: color(srgb 0.701961 0.701961 0.701961 / 0.9);
+}`,
+    toc: `html[saved-theme="dark"] body details.toc summary::marker {
+  color: rgb(160, 160, 160);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 0px;
@@ -1549,14 +1327,13 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
 }`,
     footer: `html[saved-theme="dark"] body footer {
   background-color: rgb(50, 50, 50);
-  border-bottom-color: rgb(205, 205, 205);
-  border-left-color: rgb(205, 205, 205);
+  border-bottom-color: rgb(179, 179, 179);
+  border-left-color: rgb(179, 179, 179);
   border-left-width: 0px;
-  border-right-color: rgb(205, 205, 205);
-  border-top-color: rgb(205, 205, 205);
+  border-right-color: rgb(179, 179, 179);
+  border-top-color: rgb(179, 179, 179);
   border-top-left-radius: 0px;
   border-top-width: 0px;
-  color: rgb(205, 205, 205);
   font-family: Marcellus, serif;
 }
 
@@ -1612,7 +1389,7 @@ html[saved-theme="dark"] body ul.section-ul {
 }
 
 html[saved-theme="dark"] body .breadcrumb-element p {
-  color: rgb(133, 133, 133);
+  color: color(srgb 0.701961 0.701961 0.701961 / 0.7);
   font-family: Marcellus, serif;
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
@@ -1624,20 +1401,14 @@ html[saved-theme="dark"] body .breadcrumb-element p {
 }
 
 html[saved-theme="dark"] body .metadata {
-  border-bottom-color: rgba(0, 0, 0, 0);
-  border-left-color: rgba(0, 0, 0, 0);
-  border-right-color: rgba(0, 0, 0, 0);
-  border-top-color: rgba(0, 0, 0, 0);
-  color: rgb(205, 205, 205);
+  border-bottom-color: rgb(179, 179, 179);
+  border-left-color: rgb(179, 179, 179);
+  border-right-color: rgb(179, 179, 179);
+  border-top-color: rgb(179, 179, 179);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="dark"] body .metadata-properties {
-  border-bottom-color: rgb(205, 205, 205);
-  border-left-color: rgb(205, 205, 205);
-  border-right-color: rgb(205, 205, 205);
-  border-top-color: rgb(205, 205, 205);
-  color: rgb(205, 205, 205);
   font-family: Marcellus, serif;
 }
 
@@ -1646,7 +1417,7 @@ html[saved-theme="dark"] body .navigation-progress {
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
-  color: rgb(205, 205, 205);
+  color: rgb(179, 179, 179);
   font-family: Marcellus, serif;
 }
 
@@ -1662,10 +1433,10 @@ html[saved-theme="dark"] body details {
 }
 
 html[saved-theme="dark"] body input[type=text] {
-  border-bottom-color: rgba(0, 0, 0, 0);
-  border-left-color: rgba(0, 0, 0, 0);
-  border-right-color: rgba(0, 0, 0, 0);
-  border-top-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(160, 160, 160);
+  border-left-color: rgb(160, 160, 160);
+  border-right-color: rgb(160, 160, 160);
+  border-top-color: rgb(160, 160, 160);
   color: rgb(160, 160, 160);
   font-family: Marcellus, serif;
 }
@@ -1701,6 +1472,19 @@ html[saved-theme="dark"] body summary {
 
 html[saved-theme="dark"] body sup {
   color: rgb(160, 160, 160);
+}
+
+html[saved-theme="dark"] body ul.tags > li {
+  background-color: color(srgb 0.803922 0.803922 0.803922 / 0.2);
+  border-bottom-color: rgb(205, 205, 205);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(205, 205, 205);
+  border-right-color: rgb(205, 205, 205);
+  border-top-color: rgb(205, 205, 205);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: rgb(160, 160, 160);
 }`,
   },
   light: {
@@ -1724,7 +1508,7 @@ html[saved-theme="dark"] body sup {
   --bases-embed-border-color: transparent !important;
   --bases-embed-border-radius: 0 !important;
   --bases-group-heading-property-color: #222222 !important;
-  --bases-table-border-color: #232323 !important;
+  --bases-table-border-color: #000000 !important;
   --bases-table-cell-background-active: #C5C5C5 !important;
   --bases-table-cell-background-disabled: #B0B0B0 !important;
   --bases-table-cell-background-selected: hsla(0, 0%, 28%, 0.1) !important;
@@ -1747,7 +1531,7 @@ html[saved-theme="dark"] body sup {
   --button-text-dynamic: #000000 !important;
   --button-text-hover-dynamic: #000000 !important;
   --calendar-dot-bg: #d10000 !important;
-  --calendar-header-color: #111111 !important;
+  --calendar-header-color: #222222 !important;
   --calendar-today-color: #d10000 !important;
   --callout-abstract: 88, 139, 150;
   --callout-border-width: 1px;
@@ -1760,15 +1544,15 @@ html[saved-theme="dark"] body sup {
   --callout-tip: 99, 138, 102;
   --callout-warning: 191, 140, 59;
   --canvas-background: #C5C5C5 !important;
-  --canvas-card-label-color: #7e7e7e !important;
+  --canvas-card-label-color: color-mix(in srgb, #222222, transparent 30%) !important;
   --canvas-color-arrow: #000000 !important;
   --canvas-color-edge: #000000 !important;
   --canvas-controls-radius: 0 !important;
-  --canvas-dot-pattern: color-mix(in srgb, #505050, transparent 70%) !important;
-  --canvas-ink-light: #505050 !important;
+  --canvas-dot-pattern: color-mix(in srgb, #222222, transparent 70%) !important;
+  --canvas-ink-light: #222222 !important;
   --canvas-node-border-color: #232323 !important;
   --caret-color: #000000 !important;
-  --checkbox-border-color: #7e7e7e !important;
+  --checkbox-border-color: color-mix(in srgb, #222222, transparent 30%) !important;
   --checkbox-border-color-hover: #222222 !important;
   --checkbox-border-width: 1px !important;
   --checkbox-color: #000000 !important;
@@ -1784,7 +1568,7 @@ html[saved-theme="dark"] body sup {
   --code-punctuation: #222222 !important;
   --code-radius: 0px !important;
   --codeFont: 'Noto Sans Mono', monospace !important;
-  --collapse-icon-color: #7e7e7e !important;
+  --collapse-icon-color: color-mix(in srgb, #222222, transparent 30%) !important;
   --collapse-icon-color-collapsed: #000000 !important;
   --color-accent: hsl(0, 0%, 28%) !important;
   --color-accent-1: hsl(-1, 0%, 30.1%) !important;
@@ -1805,8 +1589,8 @@ html[saved-theme="dark"] body sup {
   --dashboard-gap: 4px !important;
   --divider-color: transparent !important;
   --divider-color-hover: #000000 !important;
-  --drag-bg: color-mix(in srgb, #7a9f79, transparent 85%) !important;
-  --drag-border: dashed #7a9f79 !important;
+  --drag-bg: #ffffff !important;
+  --drag-border: none !important;
   --drag-border-width: 3px !important;
   --dropdown-background: #B0B0B0 !important;
   --editor-width: 600px !important;
@@ -1817,9 +1601,6 @@ html[saved-theme="dark"] body sup {
   --file-header-font: 'Marcellus', serif !important;
   --flair-background: #B0B0B0 !important;
   --flair-color: #000000 !important;
-  --font-colour-dark-grey-33: #333333 !important;
-  --font-colour-light-grey-70: #707070 !important;
-  --font-colour-light-grey-bd: #BDBDBD !important;
   --font-default: 'Marcellus', serif !important;
   --font-interface: 'Marcellus', serif !important;
   --font-interface-override: 'Marcellus', serif !important;
@@ -1834,13 +1615,13 @@ html[saved-theme="dark"] body sup {
   --font-ui: 'Marcellus', serif !important;
   --footnote-divider-color: transparent !important;
   --footnote-id-color: #222222 !important;
-  --footnote-id-color-no-occurrences: #7e7e7e !important;
+  --footnote-id-color-no-occurrences: color-mix(in srgb, #222222, transparent 30%) !important;
   --footnote-line-height: 1.6 !important;
   --footnote-radius: 0 !important;
-  --graph-line: #222222 !important;
-  --graph-node: #000000 !important;
+  --graph-line: color-mix(in srgb, #222222, transparent 30%) !important;
+  --graph-node: #222222 !important;
   --graph-node-focused: #000000 !important;
-  --graph-node-unresolved: #7e7e7e !important;
+  --graph-node-unresolved: color-mix(in srgb, #222222, transparent 30%) !important;
   --graph-text: #000000 !important;
   --gray: #222222 !important;
   --h1-color: #000000 !important;
@@ -1852,9 +1633,9 @@ html[saved-theme="dark"] body sup {
   --h6-color: #000000 !important;
   --h6-line-height: 1.6 !important;
   --headerFont: 'Lora', serif !important;
-  --heading-formatting: #7e7e7e !important;
+  --heading-formatting: color-mix(in srgb, #222222, transparent 30%) !important;
   --heading-spacing: 1.5em !important;
-  --highlight: #94b293 !important;
+  --highlight: color-mix(in srgb, #ff7700, transparent 55%) !important;
   --hr-color: transparent !important;
   --icon-color: #222222 !important;
   --icon-color-active: #000000 !important;
@@ -1869,8 +1650,8 @@ html[saved-theme="dark"] body sup {
   --input-bg-std: #cdcdcd !important;
   --input-border: transparent !important;
   --input-border-width: 0px !important;
-  --input-date-separator: #7e7e7e !important;
-  --input-placeholder-color: #7e7e7e !important;
+  --input-date-separator: color-mix(in srgb, #222222, transparent 30%) !important;
+  --input-placeholder-color: color-mix(in srgb, #222222, transparent 30%) !important;
   --input-radius: 0 !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
@@ -1893,6 +1674,7 @@ html[saved-theme="dark"] body sup {
   --list-marker-color-collapsed: #000000 !important;
   --list-marker-color-hover: #222222 !important;
   --menu-background: #B0B0B0 !important;
+  --menu-custom-bg: #d6d6d6 !important;
   --menu-radius: 0 !important;
   --menu-shadow: none !important;
   --metadata-border-color: transparent !important;
@@ -1908,23 +1690,24 @@ html[saved-theme="dark"] body sup {
   --mobile-drawer-bg: #B0B0B0 !important;
   --mobile-drawer-color-dark: #C5C5C5 !important;
   --mobile-drawer-color-light: #B0B0B0 !important;
-  --mobile-navbar-border-color-light: #000000 !important;
+  --mobile-navbar-border-color-dark: #B0B0B0 !important;
+  --mobile-navbar-border-color-light: #B0B0B0 !important;
   --mobile-navbar-border-style-dark: solid !important;
   --mobile-navbar-border-style-light: solid !important;
   --mobile-navbar-border-width-dark: 0px !important;
   --mobile-navbar-border-width-light: 0px !important;
-  --mobile-navbar-color-dark: #C5C5C5 !important;
-  --mobile-navbar-color-light: #C5C5C5 !important;
+  --mobile-navbar-color-dark: #B0B0B0 !important;
+  --mobile-navbar-color-light: #B0B0B0 !important;
   --mobile-navbar-opacity-dark: 0.7 !important;
   --mobile-navbar-opacity-light: 0.7 !important;
   --mobile-navbar-radius: 20px !important;
   --modal-background: #B0B0B0 !important;
   --modal-radius: 0 !important;
-  --nav-collapse-icon-color: #7e7e7e !important;
-  --nav-collapse-icon-color-collapsed: #7e7e7e !important;
+  --nav-collapse-icon-color: color-mix(in srgb, #222222, transparent 30%) !important;
+  --nav-collapse-icon-color-collapsed: color-mix(in srgb, #222222, transparent 30%) !important;
   --nav-guide-border-width: 1px !important;
   --nav-heading-color: #000000 !important;
-  --nav-heading-color-collapsed: #7e7e7e !important;
+  --nav-heading-color-collapsed: color-mix(in srgb, #222222, transparent 30%) !important;
   --nav-heading-color-collapsed-hover: #222222 !important;
   --nav-heading-color-hover: #000000 !important;
   --nav-indentation-guide-color: #000000 !important;
@@ -1935,7 +1718,7 @@ html[saved-theme="dark"] body sup {
   --nav-item-color-hover: #000000 !important;
   --nav-item-color-selected: #000000 !important;
   --nav-item-radius: 0 !important;
-  --nav-tag-color: #7e7e7e !important;
+  --nav-tag-color: color-mix(in srgb, #222222, transparent 30%) !important;
   --nav-tag-color-active: #222222 !important;
   --nav-tag-color-hover: #222222 !important;
   --nav-tag-radius: 0 !important;
@@ -1947,11 +1730,11 @@ html[saved-theme="dark"] body sup {
   --pill-border-color: transparent !important;
   --pill-color: #222222 !important;
   --pill-color-hover: #000000 !important;
-  --pill-color-remove: #7e7e7e !important;
+  --pill-color-remove: color-mix(in srgb, #222222, transparent 30%) !important;
   --pill-color-remove-hover: #000000 !important;
   --prompt-background: #B0B0B0 !important;
   --prompt-border-radius: 0 !important;
-  --quote-opening-modifier: #232323 !important;
+  --quote-opening-modifier: color-mix(in srgb, #222222, transparent 30%) !important;
   --radius-l: 0 !important;
   --radius-m: 0 !important;
   --radius-s: 0 !important;
@@ -1962,7 +1745,6 @@ html[saved-theme="dark"] body sup {
   --scrollbar-active-thumb-bg: color-mix(in srgb, #222222, transparent 80%) !important;
   --scrollbar-radius: 0px !important;
   --scrollbar-thumb-bg: color-mix(in srgb, #222222, transparent 85%) !important;
-  --scrollbar-track-bg: #C5C5C5 !important;
   --search-clear-button-color: #222222 !important;
   --search-icon-color: #222222 !important;
   --search-result-background: #C5C5C5 !important;
@@ -1976,27 +1758,29 @@ html[saved-theme="dark"] body sup {
   --settings-border-width: 0px !important;
   --settings-icon-fill: #222222 !important;
   --shadow-checkbox-inset: inset 0 0 0 2px #C5C5C5 !important;
-  --shadow-floating-card: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25)) !important;
+  --shadow-floating-card: none !important;
   --shadow-focus-inset: inset 0 0 0 1px #000000 !important;
   --shadow-focus-ring: 0 0 0 2px #000000 !important;
-  --shadow-navbar-separator-dark: inset 0 -0.5px 0 0 rgba(255, 255, 255, 0.1) !important;
-  --shadow-navbar-separator-light: inset 0 -0.5px 0 0 rgba(0, 0, 0, 0.1) !important;
   --shadow-s: none !important;
   --slider-track-background: #ffffff !important;
+  --status-bar-active-bg: #ff7700 !important;
   --status-bar-background: #B0B0B0 !important;
   --status-bar-border-color: transparent !important;
   --status-bar-radius: 0 !important;
   --status-bar-text-color: #222222 !important;
   --suggestion-background: #C5C5C5 !important;
   --suggestion-item-border-radius: 0 !important;
-  --suggestion-radius: 4px !important;
+  --suggestion-radius: 0 !important;
+  --surface-highlight: #d6d6d6 !important;
+  --surface-highlight-dark: #262626 !important;
+  --surface-highlight-light: #d6d6d6 !important;
   --tab-active-bg-sidebar: color-mix(in srgb, #FFFFFF, transparent 60%) !important;
   --tab-background-active: #C5C5C5 !important;
   --tab-container-background: #B0B0B0 !important;
   --tab-curve: 0 !important;
-  --tab-hover-bg-doc: #dfdfdf !important;
+  --tab-hover-bg-doc: #d6d6d6 !important;
   --tab-hover-bg-ui: color-mix(in srgb, #222222, transparent 90%) !important;
-  --tab-hover-text-ui: #000000 !important;
+  --tab-hover-text-ui: #222222 !important;
   --tab-outline-color: transparent !important;
   --tab-radius: 0 !important;
   --tab-radius-active: 0 !important;
@@ -2004,18 +1788,18 @@ html[saved-theme="dark"] body sup {
   --tab-switcher-menubar-background: linear-gradient(to top, #B0B0B0, transparent) !important;
   --tab-switcher-preview-radius: 0 !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(0, 0%, 28%) !important;
-  --tab-text-color: #7e7e7e !important;
+  --tab-text-color: color-mix(in srgb, #222222, transparent 30%) !important;
   --tab-text-color-active: #222222 !important;
   --tab-text-color-focused: #222222 !important;
   --tab-text-color-focused-active: #222222 !important;
   --tab-text-color-focused-active-current: #000000 !important;
   --tab-text-color-focused-highlighted: #000000 !important;
   --table-add-button-border-color: transparent !important;
-  --table-border-color: #232323 !important;
+  --table-border-color: #000000 !important;
   --table-drag-handle-background-active: #000000 !important;
-  --table-drag-handle-color: #7e7e7e !important;
+  --table-drag-handle-color: color-mix(in srgb, #222222, transparent 30%) !important;
   --table-drag-handle-color-active: #ffffff !important;
-  --table-header-border-color: #232323 !important;
+  --table-header-border-color: #000000 !important;
   --table-header-color: #000000 !important;
   --table-selection: hsla(0, 0%, 28%, 0.1) !important;
   --table-selection-border-color: #000000 !important;
@@ -2031,27 +1815,28 @@ html[saved-theme="dark"] body sup {
   --text-accent: #000000 !important;
   --text-accent-hover: #000000 !important;
   --text-align-mode: left !important;
-  --text-faint: #7e7e7e !important;
-  --text-highlight-bg: #94b293 !important;
+  --text-faint: color-mix(in srgb, #222222, transparent 30%) !important;
+  --text-highlight-bg: color-mix(in srgb, #ff7700, transparent 55%) !important;
   --text-muted: #222222 !important;
   --text-normal: #000000 !important;
   --text-on-accent: #ffffff !important;
-  --text-selection: #7a9f79 !important;
-  --textHighlight: #94b293 !important;
+  --text-selection: rgba(120, 120, 120, 0.2) !important;
+  --textHighlight: color-mix(in srgb, #ff7700, transparent 55%) !important;
   --titleFont: 'Lora', serif !important;
   --titlebar-background: #B0B0B0 !important;
   --titlebar-background-focused: #B0B0B0 !important;
   --titlebar-border-color: transparent !important;
   --titlebar-text-color: #222222 !important;
   --titlebar-text-color-focused: #000000 !important;
+  --toggle-on-color: #ff7700 !important;
   --toggle-thumb-radius: 50% !important;
   --toggle-track-radius: 0 !important;
   --ui-font-color-dark: #B3B3B3 !important;
   --ui-font-color-light: #222222 !important;
   --vault-profile-color: #000000 !important;
   --vault-profile-color-hover: #000000 !important;
-  --vertical-tab-active-color: #000000 !important;
-  --vertical-tab-header-color: #000000 !important;
+  --vertical-tab-active-color: #222222 !important;
+  --vertical-tab-header-color: #222222 !important;
   --quartz-icon-color: currentColor !important;
 }
 
@@ -2068,6 +1853,54 @@ html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme
 html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
   background-color: rgb(197, 197, 197);
   color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(35, 35, 35);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(35, 35, 35);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(197, 197, 197);
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(34, 34, 34);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(34, 34, 34);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(34, 34, 34);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: color(srgb 0.133333 0.133333 0.133333 / 0.1);
+  border-radius: 0px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(34, 34, 34);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
@@ -2118,7 +1951,7 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
 }
 
 html[saved-theme="light"] body .text-highlight {
-  background-color: rgb(148, 178, 147);
+  background-color: color(srgb 1 0.466667 0 / 0.45);
   color: rgb(0, 0, 0);
   font-family: Lora, serif;
   outline: rgb(0, 0, 0) none 0px;
@@ -2130,6 +1963,20 @@ html[saved-theme="light"] body del {
   font-family: Lora, serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body h1.article-title {
+  font-weight: 700;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(0, 0, 0);
+  border-radius: 0px;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body p {
@@ -2189,7 +2036,7 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(0, 0, 0);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: rgb(126, 126, 126);
+  color: color(srgb 0.133333 0.133333 0.133333 / 0.7);
 }
 
 html[saved-theme="light"] body blockquote {
@@ -2211,22 +2058,21 @@ html[saved-theme="light"] body table {
 }
 
 html[saved-theme="light"] body td {
-  border-bottom-color: rgb(35, 35, 35);
-  border-left-color: rgb(35, 35, 35);
-  border-right-color: rgb(35, 35, 35);
-  border-top-color: rgb(35, 35, 35);
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body th {
-  border-bottom-color: rgb(35, 35, 35);
-  border-left-color: rgb(35, 35, 35);
-  border-right-color: rgb(35, 35, 35);
-  border-top-color: rgb(35, 35, 35);
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgb(176, 176, 176);
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -2358,11 +2204,6 @@ html[saved-theme="light"] body .katex-display > .katex > .katex-html {
   font-family: Lora, serif;
 }
 
-html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(34, 34, 34);
-  text-decoration-color: rgb(34, 34, 34);
-}
-
 html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 0px;
@@ -2462,356 +2303,17 @@ html[saved-theme="light"] body li.task-list-item[data-task='u'] {
 html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   color: rgb(0, 0, 0);
   text-decoration-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="A"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="b"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="B"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="c"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="C"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="d"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="D"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="e"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="E"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="f"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="F"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="g"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="G"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="h"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="H"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="L"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="m"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="O"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="p"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="P"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="q"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="Q"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="r"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="s"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="t"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="T"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="W"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
-  background-color: rgb(197, 197, 197);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   border-bottom-color: rgb(35, 35, 35);
   border-left-color: rgb(35, 35, 35);
   border-right-color: rgb(35, 35, 35);
   border-top-color: rgb(35, 35, 35);
+  color: rgb(35, 35, 35);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(35, 35, 35);
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
@@ -3033,6 +2535,66 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="abstract"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3Cpath d='M12 11h4'/%3E%3Cpath d='M12 16h4'/%3E%3Cpath d='M8 11h.01'/%3E%3Cpath d='M8 16h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="banner"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="bug"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20v-9'/%3E%3Cpath d='M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z'/%3E%3Cpath d='M14.12 3.88 16 2'/%3E%3Cpath d='M21 21a4 4 0 0 0-3.81-4'/%3E%3Cpath d='M21 5a4 4 0 0 1-3.55 3.97'/%3E%3Cpath d='M22 13h-4'/%3E%3Cpath d='M3 21a4 4 0 0 1 3.81-4'/%3E%3Cpath d='M3 5a4 4 0 0 0 3.55 3.97'/%3E%3Cpath d='M6 13H2'/%3E%3Cpath d='m8 2 1.88 1.88'/%3E%3Cpath d='M9 7.13V6a3 3 0 1 1 6 0v1.13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="danger"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="example"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 5h.01'/%3E%3Cpath d='M3 12h.01'/%3E%3Cpath d='M3 19h.01'/%3E%3Cpath d='M8 5h13'/%3E%3Cpath d='M8 12h13'/%3E%3Cpath d='M8 19h13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="failure"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18'/%3E%3Cpath d='m6 6 12 12'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="info"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="question"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="success"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="tip"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="todo"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="warning"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   background-color: rgb(205, 205, 205);
@@ -3143,41 +2705,34 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
 }
 
 html[saved-theme="light"] body a.internal.tag-link::before {
-  color: rgb(51, 51, 51);
+  color: rgb(34, 34, 34);
 }
 
 html[saved-theme="light"] body h1 {
-  color: rgb(0, 0, 0);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body h2 {
-  color: rgb(0, 0, 0);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body h2.page-title, html[saved-theme="light"] h2.page-title a {
-  color: rgb(0, 0, 0);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body h3 {
-  color: rgb(0, 0, 0);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body h4 {
-  color: rgb(0, 0, 0);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body h5 {
-  color: rgb(0, 0, 0);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body h6 {
-  color: rgb(0, 0, 0);
   font-family: Marcellus, serif;
 }
 
@@ -3243,6 +2798,13 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(34, 34, 34);
   font-family: Marcellus, serif;
+}
+
+html[saved-theme="light"] body .explorer .folder-outer > ul {
+  border-left-color: rgb(0, 0, 0);
+}`,
+    toc: `html[saved-theme="light"] body details.toc summary::marker {
+  color: rgb(0, 0, 0);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(34, 34, 34);
@@ -3257,14 +2819,14 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
 }`,
     footer: `html[saved-theme="light"] body footer {
   background-color: rgb(176, 176, 176);
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
+  border-bottom-color: rgb(34, 34, 34);
+  border-left-color: rgb(34, 34, 34);
   border-left-width: 0px;
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
+  border-right-color: rgb(34, 34, 34);
+  border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-width: 0px;
-  color: rgb(0, 0, 0);
+  color: rgb(34, 34, 34);
   font-family: Marcellus, serif;
 }
 
@@ -3343,7 +2905,7 @@ html[saved-theme="light"] body .darkmode svg {
 }
 
 html[saved-theme="light"] body .breadcrumb-element p {
-  color: rgb(126, 126, 126);
+  color: color(srgb 0.133333 0.133333 0.133333 / 0.7);
   font-family: Marcellus, serif;
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
@@ -3355,20 +2917,20 @@ html[saved-theme="light"] body .breadcrumb-element p {
 }
 
 html[saved-theme="light"] body .metadata {
-  border-bottom-color: rgba(0, 0, 0, 0);
-  border-left-color: rgba(0, 0, 0, 0);
-  border-right-color: rgba(0, 0, 0, 0);
-  border-top-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  border-bottom-color: rgb(34, 34, 34);
+  border-left-color: rgb(34, 34, 34);
+  border-right-color: rgb(34, 34, 34);
+  border-top-color: rgb(34, 34, 34);
+  color: rgb(34, 34, 34);
   font-family: Marcellus, serif;
 }
 
 html[saved-theme="light"] body .metadata-properties {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  border-bottom-color: rgb(34, 34, 34);
+  border-left-color: rgb(34, 34, 34);
+  border-right-color: rgb(34, 34, 34);
+  border-top-color: rgb(34, 34, 34);
+  color: rgb(34, 34, 34);
   font-family: Marcellus, serif;
 }
 
@@ -3377,7 +2939,6 @@ html[saved-theme="light"] body .navigation-progress {
 }
 
 html[saved-theme="light"] body .page-header h2.page-title {
-  color: rgb(0, 0, 0);
   font-family: Marcellus, serif;
 }
 
@@ -3393,10 +2954,10 @@ html[saved-theme="light"] body details {
 }
 
 html[saved-theme="light"] body input[type=text] {
-  border-bottom-color: rgba(0, 0, 0, 0);
-  border-left-color: rgba(0, 0, 0, 0);
-  border-right-color: rgba(0, 0, 0, 0);
-  border-top-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   font-family: Marcellus, serif;
 }
@@ -3431,6 +2992,19 @@ html[saved-theme="light"] body summary {
 }
 
 html[saved-theme="light"] body sup {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body ul.tags > li {
+  background-color: color(srgb 0.133333 0.133333 0.133333 / 0.1);
+  border-bottom-color: rgb(0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   color: rgb(0, 0, 0);
 }`,
   },

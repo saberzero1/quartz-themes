@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theme-checkboxes/upper.md",
+                "file": "theme-checkboxes/special.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "upper"
+              "title": "special"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theme-checkboxes/upper.md",
+                "file": "theme-checkboxes/special.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of upper"
+              "title": "Outline of special"
             }
           }
         ],
@@ -194,8 +194,15 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-checkboxes/lower.md",
+    "theme-checkboxes/upper.md",
     "theme-checkboxes/special.md",
+    "theme-checkboxes/lower.md",
+    "theme-code/syntax-samples.md",
+    "theme-bases/bases-cards.md",
+    "theme-bases/bases-list.md",
+    "theme-bases/bases-table.md",
+    "theme-canvas/test-canvas.canvas",
+    "theme-properties/note-properties.md",
     "theme-embeds/tooltips.md",
     "theme-embeds/note-embeds.md",
     "theme-embeds/frontmatter.md",
@@ -207,29 +214,22 @@
     "callouts.md",
     "headings.md",
     "general.md",
-    "theme-checkboxes/upper.md",
     "theme-callouts/willemstad.md",
     "theme-callouts/vortex.md",
     "theme-callouts/velocity.md",
     "theme-callouts/vauxhall.md",
     "theme-callouts/universitario.md",
     "theme-callouts/underwater.md",
-    "theme-callouts/ukiyo.md",
-    "theme-callouts/terraflow.md",
-    "theme-callouts/simple-color.md",
-    "theme-callouts/shiba-inu.md",
-    "theme-callouts/serenity.md",
-    "theme-callouts/sanctum-reborn.md",
+    "theme-bases",
+    "theme-canvas",
+    "theme-properties",
+    "theme-code",
     "theme-callouts",
     "theme-checkboxes",
     "theme-extras/its-theme/callouts/Image.png",
     "theme-extras/its-theme/callouts",
     "theme-extras/its-theme",
     "theme-extras",
-    "extras/its-theme/callouts",
-    "extras/its-theme",
-    "extras",
-    "per-theme",
-    "folder/collapsed"
+    "extras/its-theme/callouts"
   ]
 }

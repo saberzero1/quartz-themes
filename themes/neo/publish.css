@@ -444,6 +444,24 @@ body.theme-light {
   --text-normal: hsl(230, 11%, 15%) !important;
   --titlebar-background: hsl(230, 25%, 96%) !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: hsl(230, 20%, 86%) !important;
+  --background-modifier-form-field: rgba(255, 255, 255, 0.5) !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: hsl(230, 20%, 86%) !important;
+  --pill-border-color-hover: hsl(230, 15%, 78%) !important;
+  --pill-border-width: 1px !important;
+  --pill-color: hsl(230, 10%, 19%) !important;
+  --pill-color-hover: hsl(230, 11%, 15%) !important;
+  --pill-color-remove: hsl(230, 10%, 62%) !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 250 !important;
   --accent-l: 75% !important;
   --accent-s: 80% !important;
@@ -457,7 +475,6 @@ body.theme-light {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(250, 80%, 75%, 0.1) !important;
-  --background-modifier-border: hsl(230, 20%, 86%) !important;
   --background-modifier-border-focus: hsl(230, 10%, 62%) !important;
   --background-modifier-border-hover: hsl(230, 15%, 78%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -465,7 +482,6 @@ body.theme-light {
   --background-modifier-error: rgb(250, 55, 62) !important;
   --background-modifier-error-hover: rgb(250, 55, 62) !important;
   --background-modifier-error-rgb: 250, 55, 62 !important;
-  --background-modifier-form-field: rgba(255, 255, 255, 0.5) !important;
   --background-modifier-form-field-hover: rgba(255, 255, 255, 0.5) !important;
   --background-modifier-hover: hsla(230, 40%, 90%, 0.8) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -495,7 +511,6 @@ body.theme-light {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -846,8 +861,6 @@ body.theme-light {
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -867,15 +880,12 @@ body.theme-light {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: hsl(230, 10%, 62%) !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: hsl(230, 10%, 62%) !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -1062,19 +1072,9 @@ body.theme-light {
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: hsl(230, 20%, 86%) !important;
-  --pill-border-color-hover: hsl(230, 15%, 78%) !important;
-  --pill-border-width: 1px !important;
-  --pill-color: hsl(230, 10%, 19%) !important;
-  --pill-color-hover: hsl(230, 11%, 15%) !important;
-  --pill-color-remove: hsl(230, 10%, 62%) !important;
   --pill-color-remove-hover: hsl(250, 85%, 65%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -1410,6 +1410,24 @@ body.theme-dark {
   --text-normal: hsl(230, 4%, 75%) !important;
   --titlebar-background: hsl(230, 12%, 12%) !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: hsl(230, 10%, 19%) !important;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.2) !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: hsl(230, 10%, 19%) !important;
+  --pill-border-color-hover: hsl(230, 8%, 25%) !important;
+  --pill-border-width: 1px !important;
+  --pill-color: hsl(230, 5%, 65%) !important;
+  --pill-color-hover: hsl(230, 4%, 75%) !important;
+  --pill-color-remove: hsl(230, 7%, 35%) !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 250 !important;
   --accent-l: 75% !important;
   --accent-s: 80% !important;
@@ -1423,7 +1441,6 @@ body.theme-dark {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(250, 80%, 70%, 0.1) !important;
-  --background-modifier-border: hsl(230, 10%, 19%) !important;
   --background-modifier-border-focus: hsl(230, 7%, 35%) !important;
   --background-modifier-border-hover: hsl(230, 8%, 25%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -1431,7 +1448,6 @@ body.theme-dark {
   --background-modifier-error: rgb(219 75 75) !important;
   --background-modifier-error-hover: rgb(219 75 75) !important;
   --background-modifier-error-rgb: 219, 75, 75 !important;
-  --background-modifier-form-field: rgba(0, 0, 0, 0.2) !important;
   --background-modifier-form-field-hover: rgba(0, 0, 0, 0.2) !important;
   --background-modifier-hover: hsla(230, 50%, 80%, 0.05) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -1461,7 +1477,6 @@ body.theme-dark {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -1812,8 +1827,6 @@ body.theme-dark {
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -1833,15 +1846,12 @@ body.theme-dark {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: hsl(230, 7%, 35%) !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: hsl(230, 7%, 35%) !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -2026,19 +2036,9 @@ body.theme-dark {
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px hsl(230, 10%, 19%) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: hsl(230, 10%, 19%) !important;
-  --pill-border-color-hover: hsl(230, 8%, 25%) !important;
-  --pill-border-width: 1px !important;
-  --pill-color: hsl(230, 5%, 65%) !important;
-  --pill-color-hover: hsl(230, 4%, 75%) !important;
-  --pill-color-remove: hsl(230, 7%, 35%) !important;
   --pill-color-remove-hover: hsl(250, 85%, 75%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -2562,7 +2562,7 @@ body body.theme-light .markdown-rendered p {
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(27, 28, 34);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2607,7 +2607,7 @@ body body.theme-light strong {
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(27, 28, 34);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2652,7 +2652,7 @@ body body.theme-light b {
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(34, 35, 42);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2697,7 +2697,7 @@ body body.theme-light em {
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(34, 35, 42);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2742,7 +2742,7 @@ body body.theme-light i {
 body body.theme-light .markdown-rendered mark {
   background-color: rgb(212, 215, 226);
   color: rgb(34, 35, 42);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2787,7 +2787,7 @@ body body.theme-light .markdown-rendered mark {
 body body.theme-light del {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(34, 35, 42);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -3044,11 +3044,6 @@ body
   width: auto;
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-light ul > li.task-list-item[data-task="x"] {
-  color: rgb(148, 152, 168);
-  text-decoration: line-through;
-  text-decoration-color: rgb(148, 152, 168);
 }
 body body.theme-light .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -3404,6 +3399,7 @@ body body.theme-light .callout[data-callout="note"] {
   background-color: rgba(111, 85, 241, 0.07);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
+  color: rgb(111, 85, 241);
   gap: 8px;
   border: 0px rgb(111, 85, 241);
   border-top-left-radius: 0px;
@@ -3417,6 +3413,7 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
+  color: rgb(111, 85, 241);
   font-weight: 600;
 }
 body body.theme-light .callout > .callout-content {
@@ -3705,7 +3702,7 @@ body body.theme-light .markdown-rendered img {
   filter: none;
   max-width: none;
   object-fit: fill;
-  border: 0px rgb(34, 35, 42);
+  border: 0px rgb(159, 146, 221);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3821,11 +3818,9 @@ body body.theme-light .internal-embed {
 }
 body body.theme-light .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
+  border-left: solid;
+  border-width: 0px;
   border-color: rgb(34, 35, 42);
-  border-left: 2px solid rgb(157, 140, 242);
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4080,87 +4075,87 @@ body body.theme-light li.task-list-item[data-task="-"] {
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(34, 35, 42);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(34, 35, 42);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -4585,6 +4580,15 @@ body body.theme-light pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .tag {
+  background-color: rgba(157, 140, 242, 0.1);
+  color: rgb(115, 90, 242);
+  border: 0px solid rgba(157, 140, 242, 0.15);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
 body body.theme-light .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
@@ -4794,7 +4798,7 @@ body body.theme-dark .markdown-rendered p {
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(208, 208, 210);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4839,7 +4843,7 @@ body body.theme-dark strong {
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(208, 208, 210);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4884,7 +4888,7 @@ body body.theme-dark b {
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(189, 190, 194);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4929,7 +4933,7 @@ body body.theme-dark em {
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(189, 190, 194);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4974,7 +4978,7 @@ body body.theme-dark i {
 body body.theme-dark .markdown-rendered mark {
   background-color: rgb(59, 60, 69);
   color: rgb(189, 190, 194);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -5019,7 +5023,7 @@ body body.theme-dark .markdown-rendered mark {
 body body.theme-dark del {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(189, 190, 194);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -5276,11 +5280,6 @@ body
   width: auto;
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-dark ul > li.task-list-item[data-task="x"] {
-  color: rgb(83, 85, 95);
-  text-decoration: line-through;
-  text-decoration-color: rgb(83, 85, 95);
 }
 body body.theme-dark .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -5636,6 +5635,7 @@ body body.theme-dark .callout[data-callout="note"] {
   background-color: rgba(149, 128, 255, 0.07);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  color: rgb(149, 128, 255);
   gap: 8px;
   border: 0px rgb(149, 128, 255);
   border-top-left-radius: 0px;
@@ -5649,6 +5649,7 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
+  color: rgb(149, 128, 255);
   font-weight: 600;
 }
 body body.theme-dark .callout > .callout-content {
@@ -5937,7 +5938,7 @@ body body.theme-dark .markdown-rendered img {
   filter: none;
   max-width: none;
   object-fit: fill;
-  border: 0px rgb(189, 190, 194);
+  border: 0px rgb(159, 146, 221);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6053,11 +6054,9 @@ body body.theme-dark .internal-embed {
 }
 body body.theme-dark .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
+  border-left: solid;
+  border-width: 0px;
   border-color: rgb(189, 190, 194);
-  border-left: 2px solid rgb(138, 117, 240);
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6312,87 +6311,87 @@ body body.theme-dark li.task-list-item[data-task="-"] {
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(189, 190, 194);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(189, 190, 194);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -6817,6 +6816,15 @@ body body.theme-dark pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-dark .tag {
+  background-color: rgba(138, 117, 240, 0.1);
+  color: rgb(155, 137, 245);
+  border: 0px solid rgba(138, 117, 240, 0.15);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
 body body.theme-dark .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
@@ -6835,91 +6843,91 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-default));
+  stroke: rgb(var(--callout-default, 2, 122, 255));
 }
 body
   .callout[data-callout="abstract"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-summary));
+  stroke: rgb(var(--callout-summary, 83, 223, 221));
 }
 body
   .callout[data-callout="info"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-info));
+  stroke: rgb(var(--callout-info, 2, 122, 255));
 }
 body
   .callout[data-callout="todo"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-todo));
+  stroke: rgb(var(--callout-todo, 2, 122, 255));
 }
 body
   .callout[data-callout="tip"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-tip));
+  stroke: rgb(var(--callout-tip, 83, 223, 221));
 }
 body
   .callout[data-callout="success"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-success));
+  stroke: rgb(var(--callout-success, 68, 207, 110));
 }
 body
   .callout[data-callout="question"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-question));
+  stroke: rgb(var(--callout-question, 233, 151, 63));
 }
 body
   .callout[data-callout="warning"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-warning));
+  stroke: rgb(var(--callout-warning, 233, 151, 63));
 }
 body
   .callout[data-callout="failure"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-fail));
+  stroke: rgb(var(--callout-fail, 251, 70, 76));
 }
 body
   .callout[data-callout="danger"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-error, 251, 70, 76));
 }
 body
   .callout[data-callout="bug"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-bug, 251, 70, 76));
 }
 body
   .callout[data-callout="example"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-example));
+  stroke: rgb(var(--callout-example, 168, 130, 255));
 }
 body
   .callout[data-callout="quote"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-quote));
+  stroke: rgb(var(--callout-quote, 158, 158, 158));
 }
 body pre > code,
 body .markdown-rendered pre > code {

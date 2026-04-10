@@ -393,6 +393,24 @@ body.theme-light {
     #f5f8ff
   ) !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: #a8bdff !important;
+  --background-modifier-form-field: #f5f8ff !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: #dbe4ff !important;
+  --pill-background-hover: #c8d7ff !important;
+  --pill-border-color: #a8bdff !important;
+  --pill-border-color-hover: #88a3ff !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #3a5ca0 !important;
+  --pill-color-hover: hsl(40, 60%, 80%) !important;
+  --pill-color-remove: #7896f0 !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 40 !important;
   --accent-l: 80% !important;
   --accent-s: 60% !important;
@@ -406,7 +424,6 @@ body.theme-light {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: #a8bdff !important;
   --background-modifier-border-focus: hsl(40, 60%, 80%) !important;
   --background-modifier-border-hover: #88a3ff !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -414,7 +431,6 @@ body.theme-light {
   --background-modifier-error: rgba(198, 40, 40, 0.2) !important;
   --background-modifier-error-hover: #c62828 !important;
   --background-modifier-error-rgb: 198, 40, 40 !important;
-  --background-modifier-form-field: #f5f8ff !important;
   --background-modifier-form-field-hover: #f5f8ff !important;
   --background-modifier-hover: rgba(0, 0, 0, 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -444,7 +460,6 @@ body.theme-light {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -502,26 +517,26 @@ body.theme-light {
   --callout-blend-mode: darken;
   --callout-border-opacity: 0.7;
   --callout-border-width: 1px;
-  --callout-bug: #c62828;
+  --callout-bug: 198, 40, 40;
   --callout-content-background: transparent;
   --callout-content-padding: 8px;
-  --callout-default: #1565c0;
-  --callout-error: #c62828;
-  --callout-example: #6a1b9a;
-  --callout-fail: #f57c00;
-  --callout-important: #ad1457;
-  --callout-info: #00838f;
+  --callout-default: 21, 101, 192;
+  --callout-error: 198, 40, 40;
+  --callout-example: 106, 27, 154;
+  --callout-fail: 245, 124, 0;
+  --callout-important: 173, 20, 87;
+  --callout-info: 0, 131, 143;
   --callout-padding: 12px;
-  --callout-question: #fbc02d;
-  --callout-quote: #6a1b9a;
+  --callout-question: 251, 192, 45;
+  --callout-quote: 106, 27, 154;
   --callout-radius: 8px;
-  --callout-success: #2e7d32;
-  --callout-summary: #1565c0;
-  --callout-tip: #2e7d32;
+  --callout-success: 46, 125, 50;
+  --callout-summary: 21, 101, 192;
+  --callout-tip: 46, 125, 50;
   --callout-title-padding: 0;
   --callout-title-weight: 600;
-  --callout-todo: #f57c00;
-  --callout-warning: #fbc02d;
+  --callout-todo: 245, 124, 0;
+  --callout-warning: 251, 192, 45;
   --canvas-background: linear-gradient(to bottom, #f5f8ff, #e8eeff) !important;
   --canvas-card-label-color: #7896f0 !important;
   --canvas-color: 192, 192, 192 !important;
@@ -781,8 +796,6 @@ body.theme-light {
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -802,15 +815,12 @@ body.theme-light {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: #7896f0 !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #7896f0 !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -995,19 +1005,9 @@ body.theme-light {
   --pdf-thumbnail-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: #dbe4ff !important;
-  --pill-background-hover: #c8d7ff !important;
-  --pill-border-color: #a8bdff !important;
-  --pill-border-color-hover: #88a3ff !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #3a5ca0 !important;
-  --pill-color-hover: hsl(40, 60%, 80%) !important;
-  --pill-color-remove: #7896f0 !important;
   --pill-color-remove-hover: hsl(40, 60%, 80%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 4px !important;
@@ -1293,7 +1293,7 @@ body.theme-light {
   --table-text-color: #3a5ca0 !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 600 !important;
-  --callout-title-color: hsl(40, 60%, 80%);
+  --callout-title-color: 235, 214, 173;
   --callout-title-size: 1.2em;
   --callout-background: linear-gradient(to bottom, #e8eeff, #f5f8ff);
 }
@@ -1311,6 +1311,24 @@ body.theme-dark {
   --text-normal: #d4c9b5 !important;
   --titlebar-background: #151515 !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: #4a2c2a !important;
+  --background-modifier-form-field: #2a2a2a !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: #4a2c2a !important;
+  --pill-border-color-hover: #663b38 !important;
+  --pill-border-width: 1px !important;
+  --pill-color: #b0a38c !important;
+  --pill-color-hover: #d4c9b5 !important;
+  --pill-color-remove: #8c816d !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -1324,7 +1342,6 @@ body.theme-dark {
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: rgba(255, 255, 255, 0.1) !important;
-  --background-modifier-border: #4a2c2a !important;
   --background-modifier-border-focus: #663b38 !important;
   --background-modifier-border-hover: #663b38 !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -1332,7 +1349,6 @@ body.theme-dark {
   --background-modifier-error: #fb464c !important;
   --background-modifier-error-hover: #fb464c !important;
   --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field: #2a2a2a !important;
   --background-modifier-form-field-hover: #2a2a2a !important;
   --background-modifier-hover: rgba(255, 255, 255, 0.05) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -1362,7 +1378,6 @@ body.theme-dark {
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -1421,7 +1436,7 @@ body.theme-dark {
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
   --callout-bug: 251, 70, 76;
-  --callout-content-background: #2a2a2a;
+  --callout-content-background: 42, 42, 42;
   --callout-content-padding: 0;
   --callout-default: 2, 122, 255;
   --callout-error: 251, 70, 76;
@@ -1701,8 +1716,6 @@ body.theme-dark {
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -1722,15 +1735,12 @@ body.theme-dark {
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: #8c816d !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: #8c816d !important;
-  --input-radius: 5px !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -1913,19 +1923,9 @@ body.theme-dark {
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px #4a2c2a !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: #4a2c2a !important;
-  --pill-border-color-hover: #663b38 !important;
-  --pill-border-width: 1px !important;
-  --pill-color: #b0a38c !important;
-  --pill-color-hover: #d4c9b5 !important;
-  --pill-color-remove: #8c816d !important;
   --pill-color-remove-hover: #ff4500 !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -2189,9 +2189,9 @@ body.theme-dark {
   --h5-color: #b0a38c !important;
   --h6-color: #b0a38c !important;
   --inline-title-color: #ff4500 !important;
-  --callout-border-color: #4a2c2a;
-  --callout-title-color: #ff4500;
-  --callout-background: #2a2a2a;
+  --callout-border-color: 74, 44, 42;
+  --callout-title-color: 255, 69, 0;
+  --callout-background: 42, 42, 42;
 }
 
 body {
@@ -2372,7 +2372,7 @@ body body.theme-light .markdown-rendered p {
 body body.theme-light strong {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(21, 101, 192);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2411,7 +2411,7 @@ body body.theme-light strong {
 body body.theme-light b {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(21, 101, 192);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2450,7 +2450,7 @@ body body.theme-light b {
 body body.theme-light em {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(106, 27, 154);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2489,7 +2489,7 @@ body body.theme-light em {
 body body.theme-light i {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(106, 27, 154);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2528,7 +2528,7 @@ body body.theme-light i {
 body body.theme-light .markdown-rendered mark {
   background-color: rgba(251, 192, 45, 0.5);
   color: rgb(58, 92, 160);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2567,7 +2567,7 @@ body body.theme-light .markdown-rendered mark {
 body body.theme-light del {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(58, 92, 160);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -2811,11 +2811,6 @@ body
   width: auto;
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-light ul > li.task-list-item[data-task="x"] {
-  color: rgb(104, 137, 224);
-  text-decoration: line-through;
-  text-decoration-color: rgb(104, 137, 224);
 }
 body body.theme-light .markdown-rendered blockquote {
   background-color: rgb(245, 248, 255);
@@ -3104,6 +3099,7 @@ body body.theme-light .callout[data-callout="note"] {
   background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
+  color: rgb(58, 92, 160);
   gap: 4px;
   border: 0px rgb(58, 92, 160);
   border-top-left-radius: 0px;
@@ -3117,6 +3113,7 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
+  color: rgb(235, 214, 173);
   font-weight: 600;
 }
 body body.theme-light .callout > .callout-content {
@@ -3399,7 +3396,7 @@ body body.theme-light .markdown-rendered img {
   filter: none;
   max-width: none;
   object-fit: fill;
-  border: 0px rgb(58, 92, 160);
+  border: 0px rgb(106, 27, 154);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3509,11 +3506,9 @@ body body.theme-light .internal-embed {
 }
 body body.theme-light .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
+  border-left: solid;
+  border-width: 0px;
   border-color: rgb(58, 92, 160);
-  border-left: 2px solid rgb(235, 214, 173);
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3744,92 +3739,92 @@ body body.theme-light abbr {
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="?"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="!"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="*"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="l"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="b"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="i"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="S"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="I"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="p"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="c"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="f"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="k"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="u"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="d"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light li.task-list-item[data-task="w"] {
   color: rgb(58, 92, 160);
-  text-decoration: rgb(34, 34, 34);
+  text-decoration: none;
   text-decoration-color: rgb(58, 92, 160);
 }
 body body.theme-light .math-block > mjx-container.MathJax {
@@ -4134,6 +4129,15 @@ body body.theme-light pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .tag {
+  background-color: rgb(219, 228, 255);
+  color: rgb(58, 92, 160);
+  border: 0px solid rgb(168, 189, 255);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
 body body.theme-light .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
@@ -4315,7 +4319,7 @@ body body.theme-dark .markdown-rendered p {
 body body.theme-dark strong {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(212, 201, 181);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4357,7 +4361,7 @@ body body.theme-dark strong {
 body body.theme-dark b {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(212, 201, 181);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4399,7 +4403,7 @@ body body.theme-dark b {
 body body.theme-dark em {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(212, 201, 181);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4441,7 +4445,7 @@ body body.theme-dark em {
 body body.theme-dark i {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(212, 201, 181);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4483,7 +4487,7 @@ body body.theme-dark i {
 body body.theme-dark .markdown-rendered mark {
   background-color: rgba(255, 69, 0, 0.9);
   color: rgb(212, 201, 181);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4525,7 +4529,7 @@ body body.theme-dark .markdown-rendered mark {
 body body.theme-dark del {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(212, 201, 181);
-  cursor: text;
+  cursor: grab;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -4775,11 +4779,6 @@ body
   width: auto;
   display: list-item;
   background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-dark ul > li.task-list-item[data-task="x"] {
-  color: rgb(176, 163, 140);
-  text-decoration: line-through;
-  text-decoration-color: rgb(176, 163, 140);
 }
 body body.theme-dark .markdown-rendered blockquote {
   background-color: rgba(0, 0, 0, 0);
@@ -5092,6 +5091,7 @@ body body.theme-dark .callout[data-callout="note"] {
   background-color: rgba(2, 122, 255, 0.1);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  color: rgb(2, 122, 255);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
   border-top-left-radius: 0px;
@@ -5105,6 +5105,7 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   padding: 0px;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
+  color: rgb(255, 69, 0);
   font-weight: 600;
 }
 body body.theme-dark .callout > .callout-content {
@@ -5390,7 +5391,7 @@ body body.theme-dark .markdown-rendered img {
   filter: none;
   max-width: none;
   object-fit: fill;
-  border: 0px rgb(212, 201, 181);
+  border: 0px rgb(255, 69, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5503,11 +5504,9 @@ body body.theme-dark .internal-embed {
 }
 body body.theme-dark .markdown-embed {
   background-color: rgba(0, 0, 0, 0);
+  border-left: solid;
+  border-width: 0px;
   border-color: rgb(212, 201, 181);
-  border-left: 2px solid rgb(138, 92, 245);
-  border-right-width: 0px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5747,92 +5746,92 @@ body body.theme-dark abbr {
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
   color: rgb(212, 201, 181);
-  text-decoration: rgb(218, 218, 218);
+  text-decoration: none;
   text-decoration-color: rgb(212, 201, 181);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
@@ -6151,6 +6150,15 @@ body body.theme-dark pre > code [data-highlighted-chars] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-dark .tag {
+  background-color: rgba(138, 92, 245, 0.1);
+  color: rgb(255, 69, 0);
+  border: 0px solid rgba(138, 92, 245, 0.15);
+  border-top-left-radius: 24.5px;
+  border-top-right-radius: 24.5px;
+  border-bottom-left-radius: 24.5px;
+  border-bottom-right-radius: 24.5px;
+}
 body body.theme-dark .search-highlight {
   background-color: rgb(255, 255, 0);
   color: rgb(0, 0, 0);
@@ -6169,91 +6177,91 @@ body
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-default));
+  stroke: rgb(var(--callout-default, 2, 122, 255));
 }
 body
   .callout[data-callout="abstract"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-summary));
+  stroke: rgb(var(--callout-summary, 83, 223, 221));
 }
 body
   .callout[data-callout="info"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-info));
+  stroke: rgb(var(--callout-info, 2, 122, 255));
 }
 body
   .callout[data-callout="todo"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-todo));
+  stroke: rgb(var(--callout-todo, 2, 122, 255));
 }
 body
   .callout[data-callout="tip"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-tip));
+  stroke: rgb(var(--callout-tip, 83, 223, 221));
 }
 body
   .callout[data-callout="success"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-success));
+  stroke: rgb(var(--callout-success, 68, 207, 110));
 }
 body
   .callout[data-callout="question"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-question));
+  stroke: rgb(var(--callout-question, 233, 151, 63));
 }
 body
   .callout[data-callout="warning"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-warning));
+  stroke: rgb(var(--callout-warning, 233, 151, 63));
 }
 body
   .callout[data-callout="failure"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-fail));
+  stroke: rgb(var(--callout-fail, 251, 70, 76));
 }
 body
   .callout[data-callout="danger"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-error, 251, 70, 76));
 }
 body
   .callout[data-callout="bug"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-bug));
+  stroke: rgb(var(--callout-bug, 251, 70, 76));
 }
 body
   .callout[data-callout="example"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-example));
+  stroke: rgb(var(--callout-example, 168, 130, 255));
 }
 body
   .callout[data-callout="quote"]
   > .callout-title
   > .callout-icon
   > svg.svg-icon {
-  stroke: rgb(var(--callout-quote));
+  stroke: rgb(var(--callout-quote, 158, 158, 158));
 }
 body pre > code,
 body .markdown-rendered pre > code {

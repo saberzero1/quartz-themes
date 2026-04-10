@@ -539,6 +539,36 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   background-color: rgb(0, 34, 72);
 }
 
+html[saved-theme="dark"] body .bases-table {
+  border-color: rgb(0, 72, 130);
+}
+
+html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
+  background-color: rgb(0, 34, 72);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  background-color: rgb(0, 72, 130);
+  border-color: rgb(225, 225, 225) rgb(0, 72, 130) rgb(225, 225, 225) rgb(225, 225, 225);
+  color: rgb(225, 225, 225);
+  font-weight: 700;
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(0, 17, 34);
+}
+
+html[saved-theme="dark"] body .note-properties {
+  background-color: rgba(0, 127, 255, 0.063);
+  border-color: rgba(0, 127, 255, 0.125) rgba(0, 0, 0, 0);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(139, 108, 239, 0.1);
+  border-radius: 14.928px;
+  color: rgb(171, 154, 245);
+}
+
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(0, 17, 34);
 }
@@ -557,6 +587,20 @@ html[saved-theme="dark"] body div#quartz-root {
 }`,
     typography: `html[saved-theme="dark"] body .text-highlight {
   background-color: rgba(255, 255, 0, 0.533);
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(0, 114, 211);
+}
+
+html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(0, 169, 221);
@@ -696,49 +740,29 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-right-color: rgba(0, 127, 255, 0.22);
   border-top-color: rgba(0, 127, 255, 0.22);
 }`,
+    images: `html[saved-theme="dark"] body img {
+  border-bottom-color: rgb(0, 163, 255);
+  border-left-color: rgb(0, 163, 255);
+  border-right-color: rgb(0, 163, 255);
+  border-top-color: rgb(0, 163, 255);
+}`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: rgb(33, 33, 33);
 }
 
 html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(139, 108, 239);
-}
-
-html[saved-theme="dark"] body .transclude-inner {
-  border-left-color: rgb(139, 108, 239);
 }`,
-    checkboxes: `html[saved-theme="dark"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(0, 207, 72);
-  text-decoration: underline;
-  text-decoration-color: rgb(0, 207, 72);
-}
-
-html[saved-theme="dark"] body input[type=checkbox] {
+    checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(0, 114, 211);
   border-left-color: rgb(0, 114, 211);
   border-right-color: rgb(0, 114, 211);
   border-top-color: rgb(0, 114, 211);
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
 html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   background-color: rgb(241, 53, 53);
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m96.9 209h318c0.264 0 0.476 0.154 0.476 0.345v92.4c0 0.191-0.212 0.345-0.476 0.345h-318c-0.264 0-0.476-0.154-0.476-0.345v-92.4c0-0.191 0.212-0.345 0.476-0.345z' fill='%23a30000' stroke-dashoffset='211' stroke-linecap='round' stroke-width='20'/%3E%3C/svg%3E");
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
@@ -749,20 +773,8 @@ html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="check
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cpath d='m256 21a235 235 0 0 0-235 235 235 235 0 0 0 235 235 235 235 0 0 0 235-235 235 235 0 0 0-235-235zm0.273 69.1c23.3 0 44.7 4.25 64.2 12.7 19.5 8.18 34.9 19.8 46.3 34.9 11.3 14.8 17 31.3 17 49.6 0 12.3-2.36 23.3-7.08 33.1-4.72 9.44-10.4 17.5-17 24.1-6.3 6.3-15 14-26 23.1-11.3 9.13-19.8 16.7-25.5 22.7s-9.6 12.9-11.8 20.8c-2.2 8.5-6.45 12.7-12.7 12.7h-57.6c-3.46 0-6.45-1.26-8.97-3.78-2.52-2.52-3.78-5.51-3.78-8.97 0-11 2.36-20.9 7.08-29.7 5.04-8.81 10.9-16.4 17.5-22.7 6.61-6.61 15.4-14.3 26.4-23.1 11.6-9.13 20.3-16.7 26-22.7 5.67-6.3 8.5-13.1 8.5-20.3 0-9.13-3.62-16.2-10.9-21.2-6.92-5.35-17.5-8.03-31.6-8.03-10.7 0-19.2 1.42-25.5 4.25-5.98 2.52-10.4 5.51-13.2 8.97s-5.67 7.87-8.5 13.2c-1.89 4.72-3.93 8.34-6.14 10.9-2.2 2.2-5.51 3.3-9.92 3.3h-57.6c-2.83 0-5.35-0.943-7.55-2.83-1.89-1.89-2.83-4.41-2.83-7.55 0.315-15.4 5.82-31.2 16.5-47.2 11-16.1 26.3-29.4 45.8-40.1 19.8-10.7 42.8-16.1 68.9-16.1zm-31.2 262h59.5c3.46 0 6.45 1.26 8.97 3.78s3.78 5.51 3.78 8.97v47.7c0 3.46-1.26 6.45-3.78 8.97-2.52 2.52-5.51 3.78-8.97 3.78h-59.5c-3.46 0-6.45-1.26-8.97-3.78-2.52-2.52-3.78-5.51-3.78-8.97v-47.7c0-3.46 1.26-6.45 3.78-8.97s5.51-3.78 8.97-3.78z' fill='%23ffa300' stroke-dashoffset='211' stroke-linecap='round' stroke-linejoin='round' stroke-width='9.98'/%3E%3C/svg%3E");
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="dark"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m185 89.2-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.26 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167zm206 0-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.25 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167z' color='%23000000' fill='%23828282' stroke-width='1px'/%3E%3C/svg%3E");
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
@@ -773,52 +785,12 @@ html[saved-theme="dark"] body li.task-list-item[data-task="/"] input[type="check
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m251 12.6c-28.8-5.53-39.7 19.7-38.7 43.6-10.9 21.3-37.4 32-60.5 31.5-21.3-6.79-42.7-36.9-63.3-8.33-23.5 14.9-32.4 45.2-6.55 62.6 11 22.3-1.02 49.4-16.4 66.6-15.7 15.8-53.5 0.874-52.4 33.5-2.96 21.6-2.45 59.8 29.2 55 28.9 0.315 42.7 32.2 45.5 56.8 3.43 24.1-37.6 40.1-13.9 63.3 13.1 17.4 40.7 44.6 59.7 19.1 20.5-20.5 52.9-7.78 72.4 7.64 20.2 13.5 1.27 52 32.1 54.2 20.5 2.15 59.2 6.38 58.6-23.9-2.82-30.1 28.6-46.3 54-50 25.2-7.34 39.3 35.5 63.4 15.8 17.4-13 48.3-40.3 23-60.8-21.8-20.6-8.97-54.3 7.26-74 14.9-18.9 55.2-1.47 54.3-35.4 2.96-21.6 2.45-59.8-29.2-55-28.9-0.313-42.7-32.2-45.5-56.8-3.43-24.1 37.6-40.1 13.9-63.3-13.1-17.4-40.7-44.6-59.7-19.1-20.5 20.5-52.9 7.78-72.4-7.64-20.2-13.5-1.27-51.9-32-54.2-7.51-1.32-15.2-1.38-22.8-1.28zm4.84 165c46.1-1.39 85.9 44 78.2 89.6-4.76 46.2-55.8 79.5-100 65.3-45.9-11.5-71.3-68.4-49.3-110 12.7-26.9 41.4-44.8 71.1-44.6z' color='%23000000' fill='%2300b3b3'/%3E%3C/svg%3E");
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
 html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cg stroke-dashoffset='211' stroke-linecap='round'%3E%3Cpath d='m68.1 110h376c1.33 19.4 0.19 39.8 0.571 59.6-0.395 7.2 0.781 15-0.571 21.9h-376c-1.33-19.4-0.19-39.8-0.571-59.6 0.393-7.18-0.778-15.1 0.571-21.9z' fill='%230082ff' stroke-width='28.2' /%3E%3Cpath d='m68.1 191h376c1.33 19.4 0.19 39.8 0.571 59.6v216c-19.4 1.33-39.8 0.19-59.6 0.571h-317c-1.33-19.4-0.19-39.8-0.571-59.6v-216z' fill='%2368c0e1' stroke-width='51.9' /%3E%3Cpath d='m147 44.2c11.1 0.4 23-0.788 33.7 0.571v55.9c-10.8 1.33-22.5 0.19-33.7 0.571-1.33-18.4-0.19-37.7-0.571-56.5z' fill='%230082ff' stroke-width='29.7' /%3E%3Cpath d='m340 44.2c11.1 0.4 23-0.788 33.7 0.571v55.9c-10.8 1.33-22.5 0.19-33.7 0.571-1.33-18.4-0.19-37.7-0.571-56.5z' fill='%230082ff' stroke-width='29.7' /%3E%3Cpath d='m116 212c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6zm97.7 0c-1.43 3.85-0.119 9.01-0.572 13.3 0.381 19.8-0.761 40.2 0.572 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.761-40.2-0.572-59.6zm95.7 0c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6zm-193 82.8c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6zm97.7 0c-1.43 3.85-0.119 9.01-0.572 13.3 0.381 19.8-0.761 40.2 0.572 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.761-40.2-0.572-59.6zm95.7 0c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6z' fill='%23b9e2f1' stroke-width='28.2' /%3E%3C/g%3E%3C/svg%3E");
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
 html[saved-theme="dark"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cg stroke-dashoffset='211' stroke-linecap='round'%3E%3Cpath d='m68.1 110h376c1.33 19.4 0.19 39.8 0.571 59.6-0.395 7.2 0.781 15-0.571 21.9h-376c-1.33-19.4-0.19-39.8-0.571-59.6 0.393-7.18-0.778-15.1 0.571-21.9z' color='%23000000' fill='%230082ff' stroke-width='28.2' /%3E%3Cpath d='m68.1 191h376c1.33 19.4 0.19 39.8 0.571 59.6v216c-19.4 1.33-39.8 0.19-59.6 0.571h-317c-1.33-19.4-0.19-39.8-0.571-59.6v-216z' color='%23000000' fill='%2368c0e1' stroke-width='51.9' /%3E%3Cpath d='m340 44.2c11.1 0.4 23-0.788 33.7 0.571v55.9c-10.8 1.33-22.5 0.19-33.7 0.571-1.33-18.4-0.19-37.7-0.571-56.5zm-193 0c11.1 0.4 23-0.788 33.7 0.571v55.9c-10.8 1.33-22.5 0.19-33.7 0.571-1.33-18.4-0.19-37.7-0.571-56.5z' fill='%230082ff' /%3E%3Cpath d='m116 212c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6zm97.7 0c-1.43 3.85-0.119 9.01-0.572 13.3 0.381 19.8-0.761 40.2 0.572 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.761-40.2-0.572-59.6zm95.7 0c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6zm-193 82.8c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6zm97.7 0c-1.43 3.85-0.119 9.01-0.572 13.3 0.381 19.8-0.761 40.2 0.572 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.761-40.2-0.572-59.6zm95.7 0c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6z' color='%23000000' fill='%23b9e2f1' stroke-width='28.2' /%3E%3C/g%3E%3Cpath d='m14.3 254 289-1.57 1.48-108 191 175-197 152v-104h-285z' fill='%23f14848'/%3E%3C/svg%3E");
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
@@ -831,30 +803,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task="2"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m94.9 469v-426l322 201z' fill='%230082ff'/%3E%3C/svg%3E");
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
@@ -929,20 +877,8 @@ html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="check
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cpath d='m173 331c-6.86-46.4-39-83.5-55.8-126-5.82-25.3-4.61-52-1.14-77.6 14.5-52.5 60.9-96.8 117-105 52.5-9.38 111 6.13 146 47.4 20.1 23.5 35.9 52.5 34.3 83.9 0.467 24.9 2.6 51.7-12.5 73.4-22.9 39.4-51.3 81-48.6 128-3.91 2.97-13.6 0.334-19.7 1.23h-156c-1.02-8.36-2.04-16.7-3.05-25.1z' fill='%23ffc300' stroke-width='4.85'/%3E%3Cpath d='m143 170c2.18-35.2 20.5-68.7 45.9-93.4 19.5-14.5 42.6-27.1 67.5-29.2 20.9 15.9-17 31.5-31.9 36-32.1 14.7-53.3 46.8-56.2 80.9 5.59 17.4-26 38.4-25.1 11.4l-0.0926-2.67z' fill='%23ffff00' fill-opacity='.492' stroke-width='6.57'/%3E%3Cpath d='m241 497c-16.7-3.43-56.3-21.9-40.9-40.6 33.9-4.44 68.5-1.85 103-2.15 15.4-3.65 38.6 6.63 19.6 21.5-15.5 18.6-39.6 22.8-62.7 23.5-6.3-0.234-12.6-1.05-18.8-2.26z' fill='%23ffc300' stroke-width='5.18'/%3E%3Cpath d='m173 413c61.1 0.239 122-0.479 183 0.36 13 7.12 11.4 37.2-6.7 35.2-59.6-0.239-119 0.479-179-0.36-11.5-6.19-11.7-31.7 2.08-35.2zm0-44.2c61.1 0.239 122-0.479 183 0.36 13 7.12 11.4 37.2-6.7 35.2-59.6-0.239-119 0.479-179-0.36-11.5-6.19-11.7-31.7 2.08-35.2z' fill='%23ffc300' stroke-dashoffset='211' stroke-linecap='round' stroke-linejoin='round' stroke-width='7.65'/%3E%3C/svg%3E");
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
 html[saved-theme="dark"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffd700' stroke='%2348484882' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4a6.5 6.5 0 1 0-4-4Z'/%3E%3Ccircle cx='16.5' cy='7.5' r='.5'/%3E%3C/svg%3E");
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
@@ -963,10 +899,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task="M"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cg transform='matrix(.808 .76 -.732 .838 237 -150)'%3E%3Crect x='227' y='340' width='58.5' height='151' rx='26' ry='31.8' fill='%23979797'/%3E%3Cpath d='m181 43.1c-18.8 0-34 18-34 40.4v16.8c0 21.6 14.1 39.1 32.1 40.3-2.31 11.3-3.93 28.7-4.21 48.2l-0.629 44.1h-33.4c-29 0-52.3 23-52.3 51.6v21.4c0 28.6 23.3 51.6 52.3 51.6h230c29 0 52.3-23 52.3-51.6v-21.4c0-28.6-23.3-51.6-52.3-51.6h-33.7l0.568-39.9c0.314-22.1-1.16-41.4-3.64-52.5 17.2-2.03 30.6-19.2 30.6-40.2v-16.8c0-22.4-15.2-40.4-34-40.4z' fill='%23f13535' stroke-dashoffset='211' stroke-linecap='round' stroke-linejoin='round' stroke-width='9.75'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
@@ -1025,14 +957,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task="U"] input[type="check
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m256 291c-129 9e-5 -233 46.2-235 113-0.586 24.3-3.96 43.7-2.94 58.7-1.35 26.1 3.49 38.6 32.6 38.6h412c29.1 0 33.9-12.4 32.6-38.6 1.02-15-2.36-34.4-2.94-58.7-1.61-66.5-106-113-235-113-0.313 1.5e-4 -0.622 0.01-0.935 0.0102-0.313-6.9e-4 -0.621-0.0101-0.935-0.0102zm118-143a118 118 0 0 1-118 118 118 118 0 0 1-118-118 118 118 0 0 1 118-118 118 118 0 0 1 118 118z' fill='%230072d3' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
-html[saved-theme="dark"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
 html[saved-theme="dark"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23a300a3' stroke='%23bf00ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8'/%3E%3Cpath d='M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1'/%3E%3Cpath d='M2 21h20'/%3E%3Cpath d='M7 8v2'/%3E%3Cpath d='M12 8v2'/%3E%3Cpath d='M17 8v2'/%3E%3Cpath d='M7 4h.01'/%3E%3Cpath d='M12 4h.01'/%3E%3Cpath d='M17 4h.01'/%3E%3C/svg%3E");
 }
@@ -1047,28 +971,205 @@ html[saved-theme="dark"] body li.task-list-item[data-task="x"] input[type="check
 
 html[saved-theme="dark"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cpath d='m45.9 241 167 151 249-309' fill='none' stroke='%23008200' stroke-width='88'/%3E%3C/svg%3E");
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
-}
-
-html[saved-theme="dark"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
-  background-color: rgb(0, 34, 72);
 }`,
     callouts: `html[saved-theme="dark"] body .callout .callout-title {
   border-bottom-color: rgb(0, 136, 255);
   border-left-color: rgb(0, 136, 255);
   border-right-color: rgb(0, 136, 255);
   border-top-color: rgb(0, 136, 255);
+  color: rgb(0, 136, 255);
+}
+
+html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(241, 241, 241);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+  --callout-color: 83, 223, 221;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="bug"] {
+  --callout-color: 251, 70, 76;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="danger"] {
+  --callout-color: 251, 70, 76;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="example"] {
+  --callout-color: 168, 130, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="failure"] {
+  --callout-color: 251, 70, 76;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="info"] {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="question"] {
+  --callout-color: 233, 151, 63;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="success"] {
+  --callout-color: 68, 207, 110;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="tip"] {
+  --callout-color: 83, 223, 221;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="todo"] {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="warning"] {
+  --callout-color: 233, 151, 63;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3Cpath d='M12 11h4'/%3E%3Cpath d='M12 16h4'/%3E%3Cpath d='M8 11h.01'/%3E%3Cpath d='M8 16h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="b-blue"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="b-green"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="b-orange"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="b-pink"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="b-purple"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="b-red"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="b-yellow"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="book"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 7v14'/%3E%3Cpath d='M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="bug"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20v-9'/%3E%3Cpath d='M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z'/%3E%3Cpath d='M14.12 3.88 16 2'/%3E%3Cpath d='M21 21a4 4 0 0 0-3.81-4'/%3E%3Cpath d='M21 5a4 4 0 0 1-3.55 3.97'/%3E%3Cpath d='M22 13h-4'/%3E%3Cpath d='M3 21a4 4 0 0 1 3.81-4'/%3E%3Cpath d='M3 5a4 4 0 0 0 3.55 3.97'/%3E%3Cpath d='M6 13H2'/%3E%3Cpath d='m8 2 1.88 1.88'/%3E%3Cpath d='M9 7.13V6a3 3 0 1 1 6 0v1.13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="clip"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="comment"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="con"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z'/%3E%3Cpath d='M17 14V2'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="cons"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z'/%3E%3Cpath d='M17 14V2'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="danger"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="example"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 5h.01'/%3E%3Cpath d='M3 12h.01'/%3E%3Cpath d='M3 19h.01'/%3E%3Cpath d='M8 5h13'/%3E%3Cpath d='M8 12h13'/%3E%3Cpath d='M8 19h13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="failure"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18'/%3E%3Cpath d='m6 6 12 12'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="fc-group"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m16 6 4 14'/%3E%3Cpath d='M12 6v14'/%3E%3Cpath d='M8 8v12'/%3E%3Cpath d='M4 4v16'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="fc"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="g-black"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z' fill='%2300a3ffcf' stroke='none' stroke-width='0'/%3E%3Cpath d='m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z' fill='currentColor' stroke='none' stroke-width='0'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="g-black"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z' fill='%2300a3ffcf' stroke='none' stroke-width='0'/%3E%3Cpath d='m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z' fill='currentColor' stroke='none' stroke-width='0'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="g-gray"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z' fill='%2300a3ffcf' stroke='none' stroke-width='0'/%3E%3Cpath d='m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z' fill='currentColor' stroke='none' stroke-width='0'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="g-gray"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z' fill='%2300a3ffcf' stroke='none' stroke-width='0'/%3E%3Cpath d='m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z' fill='currentColor' stroke='none' stroke-width='0'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="g-white"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z' fill='%2300a3ffcf' stroke='none' stroke-width='0'/%3E%3Cpath d='m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z' fill='currentColor' stroke='none' stroke-width='0'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="g-white"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z' fill='%2300a3ffcf' stroke='none' stroke-width='0'/%3E%3Cpath d='m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z' fill='currentColor' stroke='none' stroke-width='0'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="info"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="question"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="quote"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="success"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="tip"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="todo"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="dark"] body .callout[data-callout="warning"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="dark"] body .search > .search-button {
   background-color: rgb(0, 24, 54);
@@ -1183,7 +1284,11 @@ html[saved-theme="dark"] body hr {
   border-left-color: rgba(0, 127, 255, 0.063);
   border-right-color: rgba(0, 127, 255, 0.063);
 }`,
-    scrollbars: `html[saved-theme="dark"] body ::-webkit-scrollbar {
+    scrollbars: `html[saved-theme="dark"] body .callout {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body ::-webkit-scrollbar {
   background: rgb(0, 34, 72) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(0, 34, 72);
 }
@@ -1218,6 +1323,10 @@ html[saved-theme="dark"] body ::-webkit-scrollbar-track {
 
 html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
   color: rgb(218, 218, 218);
+}
+
+html[saved-theme="dark"] body .explorer .folder-outer > ul {
+  border-left-color: rgba(0, 127, 255, 0.498);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-color: rgb(83, 130, 211);
@@ -1352,6 +1461,23 @@ html[saved-theme="dark"] body kbd {
   border-right-color: rgb(241, 241, 241);
   border-top-color: rgb(241, 241, 241);
   color: rgb(241, 241, 241);
+}
+
+html[saved-theme="dark"] body ul.tags > li {
+  background-color: rgba(139, 108, 239, 0.1);
+  border-bottom-color: rgba(0, 114, 211, 0.247);
+  border-bottom-left-radius: 13.062px;
+  border-bottom-right-radius: 13.062px;
+  border-bottom-width: 1px;
+  border-left-color: rgba(0, 114, 211, 0.247);
+  border-left-width: 1px;
+  border-right-color: rgba(0, 114, 211, 0.247);
+  border-right-width: 1px;
+  border-top-color: rgba(0, 114, 211, 0.247);
+  border-top-left-radius: 13.062px;
+  border-top-right-radius: 13.062px;
+  border-top-width: 1px;
+  color: rgb(171, 154, 245);
 }`,
   },
   light: {
@@ -1914,6 +2040,65 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(0, 0, 0);
 }
 
+html[saved-theme="light"] body .bases-table {
+  border-color: rgb(0, 72, 130);
+}
+
+html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
+  background-color: rgb(232, 239, 255);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  background-color: rgb(0, 72, 130);
+  border-color: rgb(225, 225, 225) rgb(0, 72, 130) rgb(225, 225, 225) rgb(225, 225, 225);
+  color: rgb(225, 225, 225);
+  font-weight: 700;
+}
+
+html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgba(0, 127, 255, 0.157);
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .note-properties {
+  background-color: rgba(0, 127, 255, 0.063);
+  border-color: rgba(0, 127, 255, 0.125) rgba(0, 0, 0, 0);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(53, 53, 53);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(53, 53, 53);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(139, 108, 239, 0.1);
+  border-radius: 14.928px;
+  color: rgb(139, 108, 239);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(53, 53, 53);
+}
+
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(209, 223, 255);
   color: rgb(0, 0, 0);
@@ -1968,6 +2153,21 @@ html[saved-theme="light"] body del {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
+  border-color: rgb(0, 114, 211);
+}
+
+html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
 }
 
 html[saved-theme="light"] body p {
@@ -2171,10 +2371,10 @@ html[saved-theme="light"] body figure {
 }
 
 html[saved-theme="light"] body img {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
+  border-bottom-color: rgb(0, 114, 211);
+  border-left-color: rgb(0, 114, 211);
+  border-right-color: rgb(0, 114, 211);
+  border-top-color: rgb(0, 114, 211);
 }
 
 html[saved-theme="light"] body video {
@@ -2205,17 +2405,11 @@ html[saved-theme="light"] body .transclude {
 
 html[saved-theme="light"] body .transclude-inner {
   border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(155, 131, 242);
+  border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
 }`,
-    checkboxes: `html[saved-theme="light"] body .page article li:has(>input[type=checkbox]:checked) {
-  color: rgb(0, 207, 72);
-  text-decoration: underline;
-  text-decoration-color: rgb(0, 207, 72);
-}
-
-html[saved-theme="light"] body input[type=checkbox] {
+    checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(0, 114, 211);
   border-left-color: rgb(0, 114, 211);
   border-right-color: rgb(0, 114, 211);
@@ -2312,26 +2506,10 @@ html[saved-theme="light"] body li.task-list-item[data-task='w'] {
   text-decoration-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="_"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
 html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   background-color: rgb(241, 53, 53);
   color: rgb(255, 255, 255);
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m96.9 209h318c0.264 0 0.476 0.154 0.476 0.345v92.4c0 0.191-0.212 0.345-0.476 0.345h-318c-0.264 0-0.476-0.154-0.476-0.345v-92.4c0-0.191 0.212-0.345 0.476-0.345z' fill='%23a30000' stroke-dashoffset='211' stroke-linecap='round' stroke-width='20'/%3E%3C/svg%3E");
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=","] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=";"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=":"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
@@ -2342,20 +2520,8 @@ html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="chec
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cpath d='m256 21a235 235 0 0 0-235 235 235 235 0 0 0 235 235 235 235 0 0 0 235-235 235 235 0 0 0-235-235zm0.273 69.1c23.3 0 44.7 4.25 64.2 12.7 19.5 8.18 34.9 19.8 46.3 34.9 11.3 14.8 17 31.3 17 49.6 0 12.3-2.36 23.3-7.08 33.1-4.72 9.44-10.4 17.5-17 24.1-6.3 6.3-15 14-26 23.1-11.3 9.13-19.8 16.7-25.5 22.7s-9.6 12.9-11.8 20.8c-2.2 8.5-6.45 12.7-12.7 12.7h-57.6c-3.46 0-6.45-1.26-8.97-3.78-2.52-2.52-3.78-5.51-3.78-8.97 0-11 2.36-20.9 7.08-29.7 5.04-8.81 10.9-16.4 17.5-22.7 6.61-6.61 15.4-14.3 26.4-23.1 11.6-9.13 20.3-16.7 26-22.7 5.67-6.3 8.5-13.1 8.5-20.3 0-9.13-3.62-16.2-10.9-21.2-6.92-5.35-17.5-8.03-31.6-8.03-10.7 0-19.2 1.42-25.5 4.25-5.98 2.52-10.4 5.51-13.2 8.97s-5.67 7.87-8.5 13.2c-1.89 4.72-3.93 8.34-6.14 10.9-2.2 2.2-5.51 3.3-9.92 3.3h-57.6c-2.83 0-5.35-0.943-7.55-2.83-1.89-1.89-2.83-4.41-2.83-7.55 0.315-15.4 5.82-31.2 16.5-47.2 11-16.1 26.3-29.4 45.8-40.1 19.8-10.7 42.8-16.1 68.9-16.1zm-31.2 262h59.5c3.46 0 6.45 1.26 8.97 3.78s3.78 5.51 3.78 8.97v47.7c0 3.46-1.26 6.45-3.78 8.97-2.52 2.52-5.51 3.78-8.97 3.78h-59.5c-3.46 0-6.45-1.26-8.97-3.78-2.52-2.52-3.78-5.51-3.78-8.97v-47.7c0-3.46 1.26-6.45 3.78-8.97s5.51-3.78 8.97-3.78z' fill='%23ffa300' stroke-dashoffset='211' stroke-linecap='round' stroke-linejoin='round' stroke-width='9.98'/%3E%3C/svg%3E");
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="'"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task=""] input[type="checkbox"]::after {
+html[saved-theme="light"] body li.task-list-item[data-task="\\""] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m185 89.2-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.26 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167zm206 0-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.25 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167z' color='%23000000' fill='%23828282' stroke-width='1px'/%3E%3C/svg%3E");
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="@"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="*"] input[type="checkbox"]::after {
@@ -2366,52 +2532,12 @@ html[saved-theme="light"] body li.task-list-item[data-task="/"] input[type="chec
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m251 12.6c-28.8-5.53-39.7 19.7-38.7 43.6-10.9 21.3-37.4 32-60.5 31.5-21.3-6.79-42.7-36.9-63.3-8.33-23.5 14.9-32.4 45.2-6.55 62.6 11 22.3-1.02 49.4-16.4 66.6-15.7 15.8-53.5 0.874-52.4 33.5-2.96 21.6-2.45 59.8 29.2 55 28.9 0.315 42.7 32.2 45.5 56.8 3.43 24.1-37.6 40.1-13.9 63.3 13.1 17.4 40.7 44.6 59.7 19.1 20.5-20.5 52.9-7.78 72.4 7.64 20.2 13.5 1.27 52 32.1 54.2 20.5 2.15 59.2 6.38 58.6-23.9-2.82-30.1 28.6-46.3 54-50 25.2-7.34 39.3 35.5 63.4 15.8 17.4-13 48.3-40.3 23-60.8-21.8-20.6-8.97-54.3 7.26-74 14.9-18.9 55.2-1.47 54.3-35.4 2.96-21.6 2.45-59.8-29.2-55-28.9-0.313-42.7-32.2-45.5-56.8-3.43-24.1 37.6-40.1 13.9-63.3-13.1-17.4-40.7-44.6-59.7-19.1-20.5 20.5-52.9 7.78-72.4-7.64-20.2-13.5-1.27-51.9-32-54.2-7.51-1.32-15.2-1.38-22.8-1.28zm4.84 165c46.1-1.39 85.9 44 78.2 89.6-4.76 46.2-55.8 79.5-100 65.3-45.9-11.5-71.3-68.4-49.3-110 12.7-26.9 41.4-44.8 71.1-44.6z' color='%23000000' fill='%2300b3b3'/%3E%3C/svg%3E");
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="&"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="#"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="%"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="\`"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
 html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cg stroke-dashoffset='211' stroke-linecap='round'%3E%3Cpath d='m68.1 110h376c1.33 19.4 0.19 39.8 0.571 59.6-0.395 7.2 0.781 15-0.571 21.9h-376c-1.33-19.4-0.19-39.8-0.571-59.6 0.393-7.18-0.778-15.1 0.571-21.9z' fill='%230082ff' stroke-width='28.2' /%3E%3Cpath d='m68.1 191h376c1.33 19.4 0.19 39.8 0.571 59.6v216c-19.4 1.33-39.8 0.19-59.6 0.571h-317c-1.33-19.4-0.19-39.8-0.571-59.6v-216z' fill='%2368c0e1' stroke-width='51.9' /%3E%3Cpath d='m147 44.2c11.1 0.4 23-0.788 33.7 0.571v55.9c-10.8 1.33-22.5 0.19-33.7 0.571-1.33-18.4-0.19-37.7-0.571-56.5z' fill='%230082ff' stroke-width='29.7' /%3E%3Cpath d='m340 44.2c11.1 0.4 23-0.788 33.7 0.571v55.9c-10.8 1.33-22.5 0.19-33.7 0.571-1.33-18.4-0.19-37.7-0.571-56.5z' fill='%230082ff' stroke-width='29.7' /%3E%3Cpath d='m116 212c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6zm97.7 0c-1.43 3.85-0.119 9.01-0.572 13.3 0.381 19.8-0.761 40.2 0.572 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.761-40.2-0.572-59.6zm95.7 0c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6zm-193 82.8c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6zm97.7 0c-1.43 3.85-0.119 9.01-0.572 13.3 0.381 19.8-0.761 40.2 0.572 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.761-40.2-0.572-59.6zm95.7 0c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6z' fill='%23b9e2f1' stroke-width='28.2' /%3E%3C/g%3E%3C/svg%3E");
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="="] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
 html[saved-theme="light"] body li.task-list-item[data-task=">"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cg stroke-dashoffset='211' stroke-linecap='round'%3E%3Cpath d='m68.1 110h376c1.33 19.4 0.19 39.8 0.571 59.6-0.395 7.2 0.781 15-0.571 21.9h-376c-1.33-19.4-0.19-39.8-0.571-59.6 0.393-7.18-0.778-15.1 0.571-21.9z' color='%23000000' fill='%230082ff' stroke-width='28.2' /%3E%3Cpath d='m68.1 191h376c1.33 19.4 0.19 39.8 0.571 59.6v216c-19.4 1.33-39.8 0.19-59.6 0.571h-317c-1.33-19.4-0.19-39.8-0.571-59.6v-216z' color='%23000000' fill='%2368c0e1' stroke-width='51.9' /%3E%3Cpath d='m340 44.2c11.1 0.4 23-0.788 33.7 0.571v55.9c-10.8 1.33-22.5 0.19-33.7 0.571-1.33-18.4-0.19-37.7-0.571-56.5zm-193 0c11.1 0.4 23-0.788 33.7 0.571v55.9c-10.8 1.33-22.5 0.19-33.7 0.571-1.33-18.4-0.19-37.7-0.571-56.5z' fill='%230082ff' /%3E%3Cpath d='m116 212c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6zm97.7 0c-1.43 3.85-0.119 9.01-0.572 13.3 0.381 19.8-0.761 40.2 0.572 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.761-40.2-0.572-59.6zm95.7 0c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6zm-193 82.8c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6zm97.7 0c-1.43 3.85-0.119 9.01-0.572 13.3 0.381 19.8-0.761 40.2 0.572 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.761-40.2-0.572-59.6zm95.7 0c-1.43 3.85-0.117 9.01-0.57 13.3 0.381 19.8-0.763 40.2 0.57 59.6h77.7c10.1 3.26 7.13-6.98 7.38-13.3-0.381-19.8 0.763-40.2-0.57-59.6z' color='%23000000' fill='%23b9e2f1' stroke-width='28.2' /%3E%3C/g%3E%3Cpath d='m14.3 254 289-1.57 1.48-108 191 175-197 152v-104h-285z' fill='%23f14848'/%3E%3C/svg%3E");
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="|"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="~"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="$"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="0"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="1"] input[type="checkbox"]::after {
@@ -2424,30 +2550,6 @@ html[saved-theme="light"] body li.task-list-item[data-task="2"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="3"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m94.9 469v-426l322 201z' fill='%230082ff'/%3E%3C/svg%3E");
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="4"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="5"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="6"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="7"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="8"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="9"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="a"] input[type="checkbox"]::after {
@@ -2522,20 +2624,8 @@ html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="chec
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cpath d='m173 331c-6.86-46.4-39-83.5-55.8-126-5.82-25.3-4.61-52-1.14-77.6 14.5-52.5 60.9-96.8 117-105 52.5-9.38 111 6.13 146 47.4 20.1 23.5 35.9 52.5 34.3 83.9 0.467 24.9 2.6 51.7-12.5 73.4-22.9 39.4-51.3 81-48.6 128-3.91 2.97-13.6 0.334-19.7 1.23h-156c-1.02-8.36-2.04-16.7-3.05-25.1z' fill='%23ffc300' stroke-width='4.85'/%3E%3Cpath d='m143 170c2.18-35.2 20.5-68.7 45.9-93.4 19.5-14.5 42.6-27.1 67.5-29.2 20.9 15.9-17 31.5-31.9 36-32.1 14.7-53.3 46.8-56.2 80.9 5.59 17.4-26 38.4-25.1 11.4l-0.0926-2.67z' fill='%23ffff00' fill-opacity='.492' stroke-width='6.57'/%3E%3Cpath d='m241 497c-16.7-3.43-56.3-21.9-40.9-40.6 33.9-4.44 68.5-1.85 103-2.15 15.4-3.65 38.6 6.63 19.6 21.5-15.5 18.6-39.6 22.8-62.7 23.5-6.3-0.234-12.6-1.05-18.8-2.26z' fill='%23ffc300' stroke-width='5.18'/%3E%3Cpath d='m173 413c61.1 0.239 122-0.479 183 0.36 13 7.12 11.4 37.2-6.7 35.2-59.6-0.239-119 0.479-179-0.36-11.5-6.19-11.7-31.7 2.08-35.2zm0-44.2c61.1 0.239 122-0.479 183 0.36 13 7.12 11.4 37.2-6.7 35.2-59.6-0.239-119 0.479-179-0.36-11.5-6.19-11.7-31.7 2.08-35.2z' fill='%23ffc300' stroke-dashoffset='211' stroke-linecap='round' stroke-linejoin='round' stroke-width='7.65'/%3E%3C/svg%3E");
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="j"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="J"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
 html[saved-theme="light"] body li.task-list-item[data-task="k"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffd700' stroke='%2348484882' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4a6.5 6.5 0 1 0-4-4Z'/%3E%3Ccircle cx='16.5' cy='7.5' r='.5'/%3E%3C/svg%3E");
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="K"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="l"] input[type="checkbox"]::after {
@@ -2556,10 +2646,6 @@ html[saved-theme="light"] body li.task-list-item[data-task="M"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="n"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cg transform='matrix(.808 .76 -.732 .838 237 -150)'%3E%3Crect x='227' y='340' width='58.5' height='151' rx='26' ry='31.8' fill='%23979797'/%3E%3Cpath d='m181 43.1c-18.8 0-34 18-34 40.4v16.8c0 21.6 14.1 39.1 32.1 40.3-2.31 11.3-3.93 28.7-4.21 48.2l-0.629 44.1h-33.4c-29 0-52.3 23-52.3 51.6v21.4c0 28.6 23.3 51.6 52.3 51.6h230c29 0 52.3-23 52.3-51.6v-21.4c0-28.6-23.3-51.6-52.3-51.6h-33.7l0.568-39.9c0.314-22.1-1.16-41.4-3.64-52.5 17.2-2.03 30.6-19.2 30.6-40.2v-16.8c0-22.4-15.2-40.4-34-40.4z' fill='%23f13535' stroke-dashoffset='211' stroke-linecap='round' stroke-linejoin='round' stroke-width='9.75'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="N"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="o"] input[type="checkbox"]::after {
@@ -2618,14 +2704,6 @@ html[saved-theme="light"] body li.task-list-item[data-task="U"] input[type="chec
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m256 291c-129 9e-5 -233 46.2-235 113-0.586 24.3-3.96 43.7-2.94 58.7-1.35 26.1 3.49 38.6 32.6 38.6h412c29.1 0 33.9-12.4 32.6-38.6 1.02-15-2.36-34.4-2.94-58.7-1.61-66.5-106-113-235-113-0.313 1.5e-4 -0.622 0.01-0.935 0.0102-0.313-6.9e-4 -0.621-0.0101-0.935-0.0102zm118-143a118 118 0 0 1-118 118 118 118 0 0 1-118-118 118 118 0 0 1 118-118 118 118 0 0 1 118 118z' fill='%230072d3' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
-html[saved-theme="light"] body li.task-list-item[data-task="v"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="V"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
 html[saved-theme="light"] body li.task-list-item[data-task="w"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23a300a3' stroke='%23bf00ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8'/%3E%3Cpath d='M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1'/%3E%3Cpath d='M2 21h20'/%3E%3Cpath d='M7 8v2'/%3E%3Cpath d='M12 8v2'/%3E%3Cpath d='M17 8v2'/%3E%3Cpath d='M7 4h.01'/%3E%3Cpath d='M12 4h.01'/%3E%3Cpath d='M17 4h.01'/%3E%3C/svg%3E");
 }
@@ -2640,28 +2718,205 @@ html[saved-theme="light"] body li.task-list-item[data-task="x"] input[type="chec
 
 html[saved-theme="light"] body li.task-list-item[data-task="X"] input[type="checkbox"]::after {
   content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cpath d='m45.9 241 167 151 249-309' fill='none' stroke='%23008200' stroke-width='88'/%3E%3C/svg%3E");
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="y"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="Y"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="z"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
-}
-
-html[saved-theme="light"] body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
-  background-color: rgb(232, 239, 255);
 }`,
     callouts: `html[saved-theme="light"] body .callout .callout-title {
   border-bottom-color: rgb(0, 136, 255);
   border-left-color: rgb(0, 136, 255);
   border-right-color: rgb(0, 136, 255);
   border-top-color: rgb(0, 136, 255);
+  color: rgb(0, 136, 255);
+}
+
+html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > p {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="abstract"] {
+  --callout-color: 0, 191, 188;
+}
+
+html[saved-theme="light"] body .callout[data-callout="bug"] {
+  --callout-color: 233, 49, 71;
+}
+
+html[saved-theme="light"] body .callout[data-callout="danger"] {
+  --callout-color: 233, 49, 71;
+}
+
+html[saved-theme="light"] body .callout[data-callout="example"] {
+  --callout-color: 120, 82, 238;
+}
+
+html[saved-theme="light"] body .callout[data-callout="failure"] {
+  --callout-color: 233, 49, 71;
+}
+
+html[saved-theme="light"] body .callout[data-callout="info"] {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="question"] {
+  --callout-color: 236, 117, 0;
+}
+
+html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-color: 158, 158, 158;
+}
+
+html[saved-theme="light"] body .callout[data-callout="success"] {
+  --callout-color: 8, 185, 78;
+}
+
+html[saved-theme="light"] body .callout[data-callout="tip"] {
+  --callout-color: 0, 191, 188;
+}
+
+html[saved-theme="light"] body .callout[data-callout="todo"] {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="warning"] {
+  --callout-color: 236, 117, 0;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="abstract"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='8' height='4' x='8' y='2' rx='1' ry='1'/%3E%3Cpath d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/%3E%3Cpath d='M12 11h4'/%3E%3Cpath d='M12 16h4'/%3E%3Cpath d='M8 11h.01'/%3E%3Cpath d='M8 16h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="b-blue"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="b-green"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="b-orange"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="b-pink"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="b-purple"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="b-red"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="b-yellow"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='currentColor' fill-rule='evenodd'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="book"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 7v14'/%3E%3Cpath d='M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="bug"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20v-9'/%3E%3Cpath d='M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z'/%3E%3Cpath d='M14.12 3.88 16 2'/%3E%3Cpath d='M21 21a4 4 0 0 0-3.81-4'/%3E%3Cpath d='M21 5a4 4 0 0 1-3.55 3.97'/%3E%3Cpath d='M22 13h-4'/%3E%3Cpath d='M3 21a4 4 0 0 1 3.81-4'/%3E%3Cpath d='M3 5a4 4 0 0 0 3.55 3.97'/%3E%3Cpath d='M6 13H2'/%3E%3Cpath d='m8 2 1.88 1.88'/%3E%3Cpath d='M9 7.13V6a3 3 0 1 1 6 0v1.13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="clip"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="comment"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="con"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z'/%3E%3Cpath d='M17 14V2'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="cons"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z'/%3E%3Cpath d='M17 14V2'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="danger"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="example"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 5h.01'/%3E%3Cpath d='M3 12h.01'/%3E%3Cpath d='M3 19h.01'/%3E%3Cpath d='M8 5h13'/%3E%3Cpath d='M8 12h13'/%3E%3Cpath d='M8 19h13'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="failure"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6 6 18'/%3E%3Cpath d='m6 6 12 12'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="fc-group"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m16 6 4 14'/%3E%3Cpath d='M12 6v14'/%3E%3Cpath d='M8 8v12'/%3E%3Cpath d='M4 4v16'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="fc"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="g-black"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z' fill='%2300a3ffcf' stroke='none' stroke-width='0'/%3E%3Cpath d='m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z' fill='currentColor' stroke='none' stroke-width='0'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="g-black"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z' fill='%2300a3ffcf' stroke='none' stroke-width='0'/%3E%3Cpath d='m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z' fill='currentColor' stroke='none' stroke-width='0'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="g-gray"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z' fill='%2300a3ffcf' stroke='none' stroke-width='0'/%3E%3Cpath d='m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z' fill='currentColor' stroke='none' stroke-width='0'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="g-gray"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z' fill='%2300a3ffcf' stroke='none' stroke-width='0'/%3E%3Cpath d='m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z' fill='currentColor' stroke='none' stroke-width='0'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="g-white"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z' fill='%2300a3ffcf' stroke='none' stroke-width='0'/%3E%3Cpath d='m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z' fill='currentColor' stroke='none' stroke-width='0'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="g-white"] {
+  --callout-icon: url("data:image/svg+xml,'%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m304 45c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm-245 240c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142zm245 0c-12 0-22 10-22 23v140c0 13 10 23 22 23h142c12 0 22-10 22-23v-140c0-13-10-23-22-23h-142z' fill='%2300a3ffcf' stroke='none' stroke-width='0'/%3E%3Cpath d='m61 47h142c12 0 22 10 22 23v140c0 13-10 23-22 23h-142c-12 0-22-10-22-23v-140c0-13 10-23 22-23z' fill='currentColor' stroke='none' stroke-width='0'/%3E%3C/svg%3E'");
+}
+
+html[saved-theme="light"] body .callout[data-callout="info"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="question"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="quote"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="success"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="tip"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="todo"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
+}
+
+html[saved-theme="light"] body .callout[data-callout="warning"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/%3E%3Cpath d='M12 9v4'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
 }`,
     search: `html[saved-theme="light"] body .search > .search-button {
   border-bottom-color: rgba(0, 127, 255, 0.22);
@@ -2803,7 +3058,11 @@ html[saved-theme="light"] body hr {
   border-left-color: rgba(0, 127, 255, 0.063);
   border-right-color: rgba(0, 127, 255, 0.063);
 }`,
-    scrollbars: `html[saved-theme="light"] body ::-webkit-scrollbar {
+    scrollbars: `html[saved-theme="light"] body .callout {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body ::-webkit-scrollbar {
   background: rgb(232, 239, 255) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgb(232, 239, 255);
 }
@@ -2841,6 +3100,13 @@ html[saved-theme="light"] body ::-webkit-scrollbar-track {
 }
 
 html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .explorer .folder-outer > ul {
+  border-left-color: rgba(0, 127, 255, 0.498);
+}`,
+    toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(0, 0, 0);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
@@ -3036,6 +3302,23 @@ html[saved-theme="light"] body summary {
 
 html[saved-theme="light"] body sup {
   color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body ul.tags > li {
+  background-color: rgba(139, 108, 239, 0.1);
+  border-bottom-color: rgba(0, 114, 211, 0.247);
+  border-bottom-left-radius: 13.062px;
+  border-bottom-right-radius: 13.062px;
+  border-bottom-width: 1px;
+  border-left-color: rgba(0, 114, 211, 0.247);
+  border-left-width: 1px;
+  border-right-color: rgba(0, 114, 211, 0.247);
+  border-right-width: 1px;
+  border-top-color: rgba(0, 114, 211, 0.247);
+  border-top-left-radius: 13.062px;
+  border-top-right-radius: 13.062px;
+  border-top-width: 1px;
+  color: rgb(139, 108, 239);
 }`,
   },
   extras: `/* Warm screen overlay */

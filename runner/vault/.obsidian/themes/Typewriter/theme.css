@@ -82,11 +82,11 @@ body {
   --base-d: 15%; /* base lightness for dark mode. 0 is black */
   --base-l: 96%; /* base lightness for light mode. 100 is white */
 
-  /* rgb: 81, 157, 92 */
-  --theme-accent-h: 129;
-  --theme-accent-s: 31.9%;
-  --theme-accent-l: 46.7%;
-  --theme-accent-d: 46.7%;
+  /* Get accent from Style settings, defaults to rgb: 81, 157, 92 for both dark and light themes */
+  --theme-accent-h: var(--theme-accent-sel-h, 129);
+  --theme-accent-s: var(--theme-accent-sel-s, 31.9%);
+  --theme-accent-l: var(--theme-accent-sel-l, 46.7%);
+  --theme-accent-d: var(--theme-accent-sel-d, 46.7%);
 
   /* WIP - working with relative HSL values
   --theme-accent-h: calc(var(--accent-h) - 125);
@@ -295,6 +295,7 @@ body {
   --font-monospace: var(--font-monospace-override), var(--font-monospace-theme), var(--font-monospace-default);
   font-variant-emoji: unicode !important; /* emoji will override numbers and special characters */
   --metadata-input-font-size: var(--font-small);
+  --bases-table-font-size: var(--font-normal-size);
 
   --font-normal-size: 1em;
   --font-small: 0.813em;
@@ -385,6 +386,12 @@ body {
 .active-line-highlight .markdown-source-view.mod-cm6 .cm-active.cm-line {
   background: var(--background-secondary);
   border-radius: 8px;
+}
+
+/* NUMBERED LISTS IN CALLOUTS */
+.markdown-preview-view .callout ol,
+.markdown-source-view.mod-cm6 .callout ol{
+  padding-inline-start: 0.5em; /* prova 2.0–2.6em */
 }
 
 /* SIDEBAR NOTES */
@@ -591,6 +598,18 @@ settings:
         title: Highlight the active line
         type: class-toggle
         default: on
+    -
+        id: theme-accent-sel
+        title: Theme accent
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        alt-format:
+            -
+                id: theme-accent-sel
+                format: hsl-split
+        default-light: '#519D5C'
+        default-dark: '#519D5C'
 
 */
 

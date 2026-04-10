@@ -19,6 +19,24 @@
   --text-normal: rgb(74, 52, 28) !important;
   --titlebar-background: rgb(238, 231, 221) !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: rgb(233, 223, 209) !important;
+  --background-modifier-form-field: rgb(241, 230, 214) !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: rgb(233, 223, 209) !important;
+  --pill-border-color-hover: rgb(233, 223, 209) !important;
+  --pill-border-width: 1px !important;
+  --pill-color: rgba(74, 52, 28, 0.9) !important;
+  --pill-color-hover: rgb(74, 52, 28) !important;
+  --pill-color-remove: rgba(74, 52, 28, 0.9) !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -32,7 +50,6 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: rgb(233, 223, 209) !important;
   --background-modifier-border-focus: #bdbdbd !important;
   --background-modifier-border-hover: rgb(233, 223, 209) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
@@ -40,7 +57,6 @@
   --background-modifier-error: #e93147 !important;
   --background-modifier-error-hover: #e93147 !important;
   --background-modifier-error-rgb: 233, 49, 71 !important;
-  --background-modifier-form-field: rgb(241, 230, 214) !important;
   --background-modifier-form-field-hover: rgb(241, 230, 214) !important;
   --background-modifier-hover: rgba(241, 230, 214, 0.7) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -70,7 +86,6 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -91,11 +106,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: rgba(74, 52, 28, 0.9) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -108,11 +119,7 @@
   --blockquote-border-color: rgb(233, 179, 92) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, rgb(247, 243, 238) 65%, transparent)
-    linear-gradient(
-      rgb(247, 243, 238),
-      color-mix(in srgb, rgb(247, 243, 238) 65%, transparent)
-    ) !important;
+  --blur-background: color-mix(in srgb, rgb(247, 243, 238) 65%, transparent) linear-gradient(rgb(247, 243, 238), color-mix(in srgb, rgb(247, 243, 238) 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -252,8 +259,7 @@
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px rgb(233, 223, 209), inset 0 0 0 1px rgb(233, 223, 209) !important;
+  --embed-block-shadow-hover: 0 0 0 1px rgb(233, 223, 209), inset 0 0 0 1px rgb(233, 223, 209) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid rgb(233, 179, 92) !important;
@@ -288,10 +294,7 @@
   --font-medium: 500 !important;
   --font-mermaid: "??", "??", "iA Writer Quattro S" !important;
   --font-monospace: "iA Writer Mono S" !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -390,8 +393,6 @@
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -411,23 +412,14 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: rgba(74, 52, 28, 0.9) !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgba(74, 52, 28, 0.9) !important;
-  --input-radius: 5px !important;
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
   --interactive-accent: rgb(233, 179, 92) !important;
@@ -485,14 +477,8 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
-  --menu-scroll-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.1) 48px
-  ) !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: rgb(233, 223, 209) !important;
   --metadata-border-radius: 0 !important;
@@ -589,26 +575,14 @@
   --page-margin: 1px auto -8px !important;
   --pdf-background: rgb(247, 243, 238) !important;
   --pdf-page-background: rgb(247, 243, 238) !important;
-  --pdf-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
   --pdf-sidebar-background: rgb(247, 243, 238) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: rgb(233, 223, 209) !important;
-  --pill-border-color-hover: rgb(233, 223, 209) !important;
-  --pill-border-width: 1px !important;
-  --pill-color: rgba(74, 52, 28, 0.9) !important;
-  --pill-color-hover: rgb(74, 52, 28) !important;
-  --pill-color-remove: rgba(74, 52, 28, 0.9) !important;
   --pill-color-remove-hover: rgb(233, 179, 92) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -631,22 +605,10 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, rgb(247, 243, 238) 65%, transparent)
-    linear-gradient(
-      rgb(247, 243, 238),
-      color-mix(in srgb, rgb(247, 243, 238) 65%, transparent)
-    ) !important;
+  --raised-background: color-mix(in srgb, rgb(247, 243, 238) 65%, transparent) linear-gradient(rgb(247, 243, 238), color-mix(in srgb, rgb(247, 243, 238) 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(white, white) border-box !important;
-  --raised-mask-background: linear-gradient(
-      to bottom left,
-      white,
-      transparent,
-      white
-    )
-    border-box no-repeat !important;
+  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(to bottom left, white, transparent, white) border-box no-repeat !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
@@ -678,12 +640,8 @@
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 12px !important;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 15px 30px rgba(0, 0, 0, 0.1) !important;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -756,11 +714,7 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: rgb(238, 231, 221) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    rgb(238, 231, 221),
-    transparent
-  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(238, 231, 221), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
@@ -874,13 +828,9 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
+  --raised-shadow: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
   --shadow-edges: 0 0 transparent !important;
-  --shadow-xs:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
+  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
   --h1-color: rgb(240, 100, 119) !important;
   --h2-color: rgb(245, 146, 75) !important;
   --h3-color: rgb(233, 179, 92) !important;
@@ -941,6 +891,24 @@
   --text-normal: rgb(240, 240, 240) !important;
   --titlebar-background: rgb(20, 20, 20) !important;
   --input-height: 30px !important;
+  --input-border-width: 1px !important;
+  --input-border-width-focus: 2px !important;
+  --input-radius: 5px !important;
+  --background-modifier-border: rgb(50, 50, 50) !important;
+  --background-modifier-form-field: rgb(18, 18, 18) !important;
+  --icon-size: 18px !important;
+  --icon-stroke: 1.75px !important;
+  --pill-background: transparent !important;
+  --pill-background-hover: transparent !important;
+  --pill-border-color: rgb(50, 50, 50) !important;
+  --pill-border-color-hover: rgb(50, 50, 50) !important;
+  --pill-border-width: 1px !important;
+  --pill-color: rgba(240, 240, 240, 0.7) !important;
+  --pill-color-hover: rgb(240, 240, 240) !important;
+  --pill-color-remove: rgba(240, 240, 240, 0.7) !important;
+  --pill-focus-left-adjust: -4px !important;
+  --pill-focus-width: calc(100% + 6px) !important;
+  --bases-header-border-width: 0 0 1px 0 !important;
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
@@ -954,7 +922,6 @@
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
   --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1) !important;
-  --background-modifier-border: rgb(50, 50, 50) !important;
   --background-modifier-border-focus: #555555 !important;
   --background-modifier-border-hover: rgb(50, 50, 50) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -962,7 +929,6 @@
   --background-modifier-error: #fb464c !important;
   --background-modifier-error-hover: #fb464c !important;
   --background-modifier-error-rgb: 251, 70, 76 !important;
-  --background-modifier-form-field: rgb(18, 18, 18) !important;
   --background-modifier-form-field-hover: rgb(18, 18, 18) !important;
   --background-modifier-hover: rgba(18, 18, 18, 0.7) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
@@ -992,7 +958,6 @@
   --bases-group-heading-property-weight: 400 !important;
   --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
-  --bases-header-border-width: 0 0 1px 0 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
@@ -1013,11 +978,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: rgba(240, 240, 240, 0.7) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -1030,11 +991,7 @@
   --blockquote-border-color: rgb(112, 122, 250) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, rgb(18, 18, 18) 65%, transparent)
-    linear-gradient(
-      rgb(18, 18, 18),
-      color-mix(in srgb, rgb(18, 18, 18) 65%, transparent)
-    ) !important;
+  --blur-background: color-mix(in srgb, rgb(18, 18, 18) 65%, transparent) linear-gradient(rgb(18, 18, 18), color-mix(in srgb, rgb(18, 18, 18) 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -1174,8 +1131,7 @@
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px rgb(50, 50, 50), inset 0 0 0 1px rgb(50, 50, 50) !important;
+  --embed-block-shadow-hover: 0 0 0 1px rgb(50, 50, 50), inset 0 0 0 1px rgb(50, 50, 50) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
   --embed-border-start: 2px solid rgb(112, 122, 250) !important;
@@ -1210,10 +1166,7 @@
   --font-medium: 500 !important;
   --font-mermaid: "??", "??", "iA Writer Quattro S" !important;
   --font-monospace: "iA Writer Mono S" !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -1312,8 +1265,6 @@
   --icon-opacity-hover: 1 !important;
   --icon-s: 16px !important;
   --icon-s-stroke-width: 2px !important;
-  --icon-size: 18px !important;
-  --icon-stroke: 1.75px !important;
   --icon-xl: 32px !important;
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
@@ -1333,23 +1284,14 @@
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
   --inline-title-weight: 700 !important;
-  --input-border-width: 1px !important;
-  --input-border-width-focus: 2px !important;
   --input-corner-shape: round !important;
   --input-date-separator: rgba(240, 240, 240, 0.7) !important;
   --input-font-weight: 400 !important;
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgba(240, 240, 240, 0.7) !important;
-  --input-radius: 5px !important;
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
   --interactive-accent: rgb(112, 122, 250) !important;
@@ -1407,14 +1349,8 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
-  --menu-scroll-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.1) 48px
-  ) !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: rgb(50, 50, 50) !important;
   --metadata-border-radius: 0 !important;
@@ -1516,19 +1452,9 @@
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px rgb(50, 50, 50) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-background: transparent !important;
-  --pill-background-hover: transparent !important;
-  --pill-border-color: rgb(50, 50, 50) !important;
-  --pill-border-color-hover: rgb(50, 50, 50) !important;
-  --pill-border-width: 1px !important;
-  --pill-color: rgba(240, 240, 240, 0.7) !important;
-  --pill-color-hover: rgb(240, 240, 240) !important;
-  --pill-color-remove: rgba(240, 240, 240, 0.7) !important;
   --pill-color-remove-hover: rgb(112, 122, 250) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
-  --pill-focus-left-adjust: -4px !important;
-  --pill-focus-width: calc(100% + 6px) !important;
   --pill-padding-x: 0.65em !important;
   --pill-padding-y: 0.25em !important;
   --pill-radius: 2em !important;
@@ -1551,15 +1477,9 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, rgb(18, 18, 18) 65%, transparent)
-    linear-gradient(
-      rgb(18, 18, 18),
-      color-mix(in srgb, rgb(18, 18, 18) 65%, transparent)
-    ) !important;
+  --raised-background: color-mix(in srgb, rgb(18, 18, 18) 65%, transparent) linear-gradient(rgb(18, 18, 18), color-mix(in srgb, rgb(18, 18, 18) 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(white, white) border-box !important;
+  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
   --raised-mask-background: transparent !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
@@ -1592,12 +1512,8 @@
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 12px !important;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2) !important;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2) !important;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -1670,11 +1586,7 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: rgb(20, 20, 20) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    rgb(20, 20, 20),
-    transparent
-  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(20, 20, 20), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
@@ -1836,6 +1748,41 @@
   --quartz-icon-color: currentColor;
 }
 
+html[saved-theme="light"] body {
+  --qt-code-atom: rgb(74, 52, 28);
+  --qt-code-comment: rgba(74, 52, 28, 0.9);
+  --qt-code-function: rgb(74, 52, 28);
+  --qt-code-header: rgb(240, 100, 119);
+  --qt-code-keyword: rgb(213, 57, 132);
+  --qt-code-number: rgb(120, 82, 238);
+  --qt-code-operator: rgb(233, 49, 71);
+  --qt-code-property: rgb(224, 172, 0);
+  --qt-code-string: rgb(8, 185, 78);
+  --qt-code-string: rgb(8, 185, 78);
+  --qt-code-variable: rgb(0, 191, 188);
+  --qt-code-variable-2: rgb(0, 191, 188);
+  --qt-code-default: rgb(74, 52, 28);
+  --qt-code-background: rgb(250, 238, 225);
+  --qt-code-border-color: rgb(233, 223, 209);
+}
+html[saved-theme="dark"] body {
+  --qt-code-atom: rgb(240, 240, 240);
+  --qt-code-comment: rgba(240, 240, 240, 0.7);
+  --qt-code-function: rgb(240, 240, 240);
+  --qt-code-header: rgb(208, 66, 85);
+  --qt-code-keyword: rgb(250, 153, 205);
+  --qt-code-number: rgb(168, 130, 255);
+  --qt-code-operator: rgb(251, 70, 76);
+  --qt-code-property: rgb(224, 222, 113);
+  --qt-code-string: rgb(68, 207, 110);
+  --qt-code-string: rgb(68, 207, 110);
+  --qt-code-variable: rgb(83, 223, 221);
+  --qt-code-variable-2: rgb(83, 223, 221);
+  --qt-code-default: rgb(240, 240, 240);
+  --qt-code-background: rgb(27, 27, 27);
+  --qt-code-border-color: rgb(50, 50, 50);
+}
+
 html {
   &[saved-theme="light"] {
     color-scheme: light;
@@ -1857,10 +1804,8 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff)
-      format("woff");
+    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff2) format("woff2"),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff) format("woff");
 }
 
 @font-face {
@@ -1869,10 +1814,8 @@ html {
   font-display: swap;
   font-weight: 700;
   src:
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff)
-      format("woff");
+    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff2) format("woff2"),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff) format("woff");
 }
 
 @font-face {
@@ -1881,10 +1824,8 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-400-italic.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-400-italic.woff)
-      format("woff");
+    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-400-italic.woff2) format("woff2"),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-400-italic.woff) format("woff");
 }
 
 @font-face {
@@ -1893,10 +1834,8 @@ html {
   font-display: swap;
   font-weight: 700;
   src:
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-700-italic.woff2)
-      format("woff2"),
-    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-700-italic.woff)
-      format("woff");
+    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-700-italic.woff2) format("woff2"),
+    url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-duo@latest/latin-700-italic.woff) format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
@@ -1904,8 +1843,7 @@ html {
   font-weight: 400;
   src:
     local("iA Writer Quattro S"),
-    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSRegular.woff")
-      format("woff");
+    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSRegular.woff") format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
@@ -1913,8 +1851,7 @@ html {
   font-weight: 400;
   src:
     local("iA Writer Quattro S"),
-    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBold.woff")
-      format("woff");
+    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBold.woff") format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
@@ -1922,8 +1859,7 @@ html {
   font-weight: 400;
   src:
     local("iA Writer Quattro S"),
-    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBoldItalic.woff")
-      format("woff");
+    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSBoldItalic.woff") format("woff");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
@@ -1931,8 +1867,7 @@ html {
   font-weight: 400;
   src:
     local("iA Writer Quattro S"),
-    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSItalic.woff")
-      format("woff");
+    url("https://fonts.cdnfonts.com/s/63136/iAWriterQuattroSItalic.woff") format("woff");
 }
 @font-face {
   font-family: "Monaco";
@@ -1949,28 +1884,23 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
-      format("woff");
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -1978,64 +1908,47 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2043,8 +1956,7 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2052,82 +1964,55 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFUkU1dYPFkZVOA6w.woff2)
-    format("woff2");
-  unicode-range:
-    U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1,
-    U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF,
-    U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4,
-    U+10EFC-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24,
-    U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47,
-    U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59,
-    U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A,
-    U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89,
-    U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFUkU1dYPFkZVOA6w.woff2) format("woff2");
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4, U+10EFC-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
 }
 
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWkU1dYPFkZVOA6w.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWkU1dYPFkZVOA6w.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFU0U1dYPFkZVOA6w.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFU0U1dYPFkZVOA6w.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2135,34 +2020,24 @@ html {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFVUU1dYPFkZVOA6w.woff2)
-    format("woff2");
-  unicode-range:
-    U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFVUU1dYPFkZVOA6w.woff2) format("woff2");
+  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
 }
 
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWUU1dYPFkZVOA6w.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWUU1dYPFkZVOA6w.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0U1dYPFkZVO.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0U1dYPFkZVO.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 body {
@@ -2333,7 +2208,7 @@ body {
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(240, 100, 119);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2361,7 +2236,7 @@ body {
   b {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(240, 100, 119);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2389,7 +2264,7 @@ body {
   em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(124, 155, 255);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2417,7 +2292,7 @@ body {
   i {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(124, 155, 255);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2444,7 +2319,7 @@ body {
   .text-highlight {
     background-color: rgb(255, 255, 0);
     color: rgb(0, 0, 0);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2480,7 +2355,7 @@ body {
   del {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(74, 52, 28);
-    cursor: text;
+    cursor: grab;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
@@ -2504,24 +2379,9 @@ body {
     animation-play-state: running;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(241, 230, 214, 0.7);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2534,18 +2394,7 @@ body {
     color: rgb(74, 52, 28);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: rgba(241, 230, 214, 0.7);
     border: 0px rgb(74, 52, 28);
     border-top-left-radius: 4px;
@@ -2580,15 +2429,7 @@ body {
   }
 
   a.internal.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: rgba(138, 92, 245, 0.1);
     display: flex;
@@ -2741,12 +2582,6 @@ body {
     background-color: rgba(0, 0, 0, 0);
   }
 
-  .page article li:has(> input[type="checkbox"]:checked) {
-    color: rgba(74, 52, 28, 0.9);
-    text-decoration: line-through;
-    text-decoration-color: rgba(74, 52, 28, 0.9);
-  }
-
   blockquote {
     background-color: rgba(0, 0, 0, 0);
     font-family: "iA Writer Quattro S";
@@ -2850,20 +2685,11 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(74, 52, 28);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
     border: 0px rgb(74, 52, 28);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2875,71 +2701,20 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(74, 52, 28);
     font-weight: 400;
     background-color: rgba(241, 230, 214, 0.7);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: rgb(74, 52, 28);
   }
 
@@ -2991,14 +2766,12 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(247, 243, 238);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(247, 243, 238);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3013,20 +2786,17 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(247, 243, 238);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(247, 243, 238);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(247, 243, 238);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3039,8 +2809,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(247, 243, 238) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(247, 243, 238);
   }
 
@@ -3065,6 +2834,7 @@ body {
   }
 
   .callout .callout-title {
+    color: rgb(8, 109, 221);
     gap: 4px;
     border: 0px rgb(8, 109, 221);
     border-top-left-radius: 0px;
@@ -3079,6 +2849,7 @@ body {
   }
 
   .callout .callout-title > .callout-title-inner > p {
+    color: rgb(8, 109, 221);
     font-weight: 600;
   }
 
@@ -3385,7 +3156,7 @@ body {
     filter: none;
     max-width: none;
     object-fit: fill;
-    border: 0px rgb(74, 52, 28);
+    border: 0px rgb(240, 100, 119);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3488,11 +3259,9 @@ body {
 
   .transclude-inner {
     background-color: rgba(0, 0, 0, 0);
+    border-left: solid;
+    border-width: 0px;
     border-color: rgb(74, 52, 28);
-    border-left: 2px solid rgb(233, 179, 92);
-    border-right-width: 0px;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3698,109 +3467,109 @@ body {
 
   li.task-list-item[data-task="-"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task=">"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="/"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="?"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="!"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="*"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="l"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="b"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="i"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="S"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="I"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="p"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="c"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="f"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="k"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="u"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="d"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
   li.task-list-item[data-task="w"] {
     color: rgb(74, 52, 28);
-    text-decoration: rgb(34, 34, 34);
+    text-decoration: none;
     text-decoration-color: rgb(74, 52, 28);
   }
 
@@ -3861,10 +3630,7 @@ body {
     transition-timing-function: ease;
   }
 
-  .explorer
-    .explorer-content
-    li:has(> .folder-outer:not(.open))
-    > .folder-container {
+  .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
     color: rgba(74, 52, 28, 0.9);
     cursor: default;
     font-family: "iA Writer Quattro S";
@@ -3878,6 +3644,91 @@ body {
     font-family: "iA Writer Quattro S";
     font-weight: 400;
     text-decoration: rgb(34, 34, 34);
+  }
+
+  .explorer .folder-outer > ul {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .explorer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .bases-table {
+    border-color: rgb(128, 128, 128);
+  }
+
+  .bases-table thead th {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(74, 52, 28);
+    font-weight: 600;
+    border-color: rgb(233, 223, 209);
+  }
+
+  .bases-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .canvas-node {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(74, 52, 28);
+    border-radius: 0px;
+    border-width: 0px;
+  }
+
+  .canvas-node-content {
+    color: rgb(74, 52, 28);
+  }
+
+  .canvas-node-file {
+    color: rgb(74, 52, 28);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .canvas-sidebar {
+    background-color: rgb(247, 243, 238);
+    border-color: rgb(74, 52, 28);
+    box-shadow:
+      rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset,
+      rgba(0, 0, 0, 0.05) 0px 2px 3px 0px,
+      rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px,
+      rgba(0, 0, 0, 0.04) 0px 1px 2px 0px,
+      rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  }
+
+  .canvas-node-group {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(74, 52, 28);
+    border-width: 0px;
+  }
+
+  .note-properties {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(233, 223, 209);
+    border-radius: 0px;
+  }
+
+  .note-properties-key {
+    color: rgba(74, 52, 28, 0.9);
+    font-weight: 400;
+  }
+
+  .note-properties-value {
+    color: rgba(74, 52, 28, 0.9);
+  }
+
+  .note-properties-tags {
+    background-color: rgba(138, 92, 245, 0.1);
+    color: rgb(233, 179, 92);
+    border-radius: 28px;
+  }
+
+  .note-properties-row {
+    border-color: rgba(74, 52, 28, 0.9);
+  }
+
+  details.toc summary::marker {
+    color: rgb(74, 52, 28);
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -3903,6 +3754,7 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    opacity: 1;
   }
 
   footer ul li a {
@@ -4105,6 +3957,34 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+  }
+
+  ul.tags > li {
+    background-color: rgba(138, 92, 245, 0.1);
+    color: rgb(233, 179, 92);
+    border: 0px solid rgba(138, 92, 245, 0.15);
+    border-top-left-radius: 24.5px;
+    border-top-right-radius: 24.5px;
+    border-bottom-left-radius: 24.5px;
+    border-bottom-right-radius: 24.5px;
+  }
+
+  li.task-list-item input[type="checkbox"] {
+    border-color: rgba(74, 52, 28, 0.9);
+    border-radius: 4px;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  li.task-list-item input[type="checkbox"]:checked {
+    background-color: rgb(233, 179, 92);
+    border-color: rgb(233, 179, 92);
+  }
+
+  h1.article-title {
+    color: rgb(74, 52, 28);
+    font-size: 13px;
+    font-weight: 400;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -4921,7 +4801,7 @@ html[saved-theme="dark"] {
     strong {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(208, 66, 85);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -4949,7 +4829,7 @@ html[saved-theme="dark"] {
     b {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(208, 66, 85);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -4977,7 +4857,7 @@ html[saved-theme="dark"] {
     em {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(112, 122, 250);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5005,7 +4885,7 @@ html[saved-theme="dark"] {
     i {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(112, 122, 250);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5032,7 +4912,7 @@ html[saved-theme="dark"] {
     .text-highlight {
       background-color: rgb(255, 255, 0);
       color: rgb(0, 0, 0);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5068,7 +4948,7 @@ html[saved-theme="dark"] {
     del {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(240, 240, 240);
-      cursor: text;
+      cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
@@ -5092,24 +4972,9 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: rgba(18, 18, 18, 0.7);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -5122,18 +4987,7 @@ html[saved-theme="dark"] {
       color: rgb(240, 240, 240);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:has(
-        ~ .result-card.focus:not(
-            :has(~ .result-card:hover, ~ .result-card:focus)
-          ),
-        ~ .result-card:focus,
-        ~ .result-card:hover
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
       background-color: rgba(18, 18, 18, 0.7);
       border: 0px rgb(240, 240, 240);
       border-top-left-radius: 4px;
@@ -5168,15 +5022,7 @@ html[saved-theme="dark"] {
     }
 
     a.internal.tag-link,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card
-      > ul
-      > li
-      > .match-tag {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: rgba(138, 92, 245, 0.1);
       display: flex;
@@ -5329,12 +5175,6 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
     }
 
-    .page article li:has(> input[type="checkbox"]:checked) {
-      color: rgba(240, 240, 240, 0.7);
-      text-decoration: line-through;
-      text-decoration-color: rgba(240, 240, 240, 0.7);
-    }
-
     blockquote {
       background-color: rgba(0, 0, 0, 0);
       font-family: "iA Writer Quattro S";
@@ -5426,10 +5266,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout.display-results {
+    .search > .search-container > .search-space > .search-layout.display-results {
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -5441,20 +5278,11 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container {
+    .search > .search-container > .search-space > .search-layout > .results-container {
       color: rgb(240, 240, 240);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
       border: 0px rgb(240, 240, 240);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -5466,73 +5294,20 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(
-        :has(~ .result-card:hover, ~ .result-card:focus)
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(240, 240, 240);
       font-weight: 400;
       background-color: rgba(18, 18, 18, 0.7);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-description {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
       color: rgb(240, 240, 240);
     }
 
@@ -5584,14 +5359,12 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(25, 25, 25);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(25, 25, 25);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -5606,20 +5379,17 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(25, 25, 25);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(25, 25, 25);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(25, 25, 25);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -5632,8 +5402,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(25, 25, 25) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(25, 25, 25);
     }
 
@@ -5658,6 +5427,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title {
+      color: rgb(2, 122, 255);
       gap: 4px;
       border: 0px rgb(2, 122, 255);
       border-top-left-radius: 0px;
@@ -5672,6 +5442,7 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title > .callout-title-inner > p {
+      color: rgb(2, 122, 255);
       font-weight: 600;
     }
 
@@ -5978,7 +5749,7 @@ html[saved-theme="dark"] {
       filter: none;
       max-width: none;
       object-fit: fill;
-      border: 0px rgb(240, 240, 240);
+      border: 0px rgb(208, 66, 85);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6081,11 +5852,9 @@ html[saved-theme="dark"] {
 
     .transclude-inner {
       background-color: rgba(0, 0, 0, 0);
+      border-left: solid;
+      border-width: 0px;
       border-color: rgb(240, 240, 240);
-      border-left: 2px solid rgb(112, 122, 250);
-      border-right-width: 0px;
-      border-top-width: 0px;
-      border-bottom-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6291,109 +6060,109 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="-"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task=">"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="/"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="?"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="!"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="*"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="l"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="b"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="i"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="S"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="I"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="p"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="c"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="f"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="k"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="u"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="d"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
     li.task-list-item[data-task="w"] {
       color: rgb(240, 240, 240);
-      text-decoration: rgb(218, 218, 218);
+      text-decoration: none;
       text-decoration-color: rgb(240, 240, 240);
     }
 
@@ -6454,10 +6223,7 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .explorer
-      .explorer-content
-      li:has(> .folder-outer:not(.open))
-      > .folder-container {
+    .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
       color: rgba(240, 240, 240, 0.7);
       cursor: default;
       font-family: "iA Writer Quattro S";
@@ -6465,15 +6231,97 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
     }
 
-    .explorer
-      .explorer-content
-      li:has(> .folder-outer.open)
-      > .folder-container {
+    .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
       color: rgba(240, 240, 240, 0.7);
       cursor: default;
       font-family: "iA Writer Quattro S";
       font-weight: 400;
       text-decoration: rgb(218, 218, 218);
+    }
+
+    .explorer .folder-outer > ul {
+      border-left: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .explorer {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .bases-table {
+      border-color: rgb(128, 128, 128);
+    }
+
+    .bases-table thead th {
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(240, 240, 240);
+      font-weight: 600;
+      border-color: rgb(50, 50, 50);
+    }
+
+    .bases-table tbody tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .canvas-node {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(240, 240, 240);
+      border-radius: 0px;
+      border-width: 0px;
+    }
+
+    .canvas-node-content {
+      color: rgb(240, 240, 240);
+    }
+
+    .canvas-node-file {
+      color: rgb(240, 240, 240);
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .canvas-sidebar {
+      background-color: rgb(20, 20, 20);
+      border-color: rgb(240, 240, 240);
+      box-shadow:
+        rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset,
+        rgba(0, 0, 0, 0.15) 0px 2px 4px 0px,
+        rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px,
+        rgba(0, 0, 0, 0.2) 0px 1px 2px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    }
+
+    .canvas-node-group {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(240, 240, 240);
+      border-width: 0px;
+    }
+
+    .note-properties {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(50, 50, 50);
+      border-radius: 0px;
+    }
+
+    .note-properties-key {
+      color: rgba(240, 240, 240, 0.7);
+      font-weight: 400;
+    }
+
+    .note-properties-value {
+      color: rgba(240, 240, 240, 0.7);
+    }
+
+    .note-properties-tags {
+      background-color: rgba(138, 92, 245, 0.1);
+      color: rgb(112, 122, 250);
+      border-radius: 28px;
+    }
+
+    .note-properties-row {
+      border-color: rgba(240, 240, 240, 0.7);
+    }
+
+    details.toc summary::marker {
+      color: rgb(240, 240, 240);
     }
 
     .graph > .graph-outer > .global-graph-icon {
@@ -6499,6 +6347,7 @@ html[saved-theme="dark"] {
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
+      opacity: 1;
     }
 
     footer ul li a {
@@ -6701,6 +6550,34 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+    }
+
+    ul.tags > li {
+      background-color: rgba(138, 92, 245, 0.1);
+      color: rgb(112, 122, 250);
+      border: 0px solid rgba(138, 92, 245, 0.15);
+      border-top-left-radius: 24.5px;
+      border-top-right-radius: 24.5px;
+      border-bottom-left-radius: 24.5px;
+      border-bottom-right-radius: 24.5px;
+    }
+
+    li.task-list-item input[type="checkbox"] {
+      border-color: rgba(240, 240, 240, 0.7);
+      border-radius: 4px;
+      border-width: 1px;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    li.task-list-item input[type="checkbox"]:checked {
+      background-color: rgb(112, 122, 250);
+      border-color: rgb(112, 122, 250);
+    }
+
+    h1.article-title {
+      color: rgb(240, 240, 240);
+      font-size: 13px;
+      font-weight: 400;
     }
   }
 }
@@ -7455,10 +7332,7 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }
@@ -7684,51 +7558,75 @@ button.toc-header .fold,
 
 figure[data-rehype-pretty-code-figure] pre,
 pre {
-  background-color: var(--code-background);
+  background-color: var(--qt-code-background, var(--code-background));
   white-space: pre;
 
   & > code {
     overflow-x: auto;
 
-    span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
-      color: var(--code-value) !important;
+    span[class*="qt-code-keyword"] {
+      color: var(--qt-code-keyword, var(--code-keyword)) !important;
     }
-    span[style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"] {
-      color: var(--code-function) !important;
+    span[class*="qt-code-string"] {
+      color: var(--qt-code-string, var(--code-string)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"] {
-      color: var(--code-string) !important;
+    span[class*="qt-code-comment"] {
+      color: var(--qt-code-comment, var(--code-comment)) !important;
     }
-    span[style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;"] {
-      color: var(--code-property) !important;
+    span[class*="qt-code-function"] {
+      color: var(--qt-code-function, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"] {
-      color: var(--code-normal) !important;
+    span[class*="qt-code-number"] {
+      color: var(--qt-code-number, var(--code-value)) !important;
     }
-    span[style="--shiki-light:#586069;--shiki-dark:#D1D5DA;"] {
-      color: var(--code-punctuation) !important;
+    span[class*="qt-code-operator"] {
+      color: var(--qt-code-operator, var(--code-operator)) !important;
     }
-    span[style="--shiki-light:#F6F8FA;--shiki-dark:#2F363D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-property"] {
+      color: var(--qt-code-property, var(--code-property)) !important;
     }
-    span[style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"] {
-      color: var(--code-comment) !important;
+    span[class*="qt-code-variable"] {
+      color: var(--qt-code-variable, var(--code-normal)) !important;
     }
-    span[style="--shiki-light:#22863A;--shiki-dark:#85E89D;"] {
-      color: var(--code-tag) !important;
+    span[class*="qt-code-tag"] {
+      color: var(--qt-code-tag, var(--code-tag)) !important;
     }
-    span[style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"] {
-      color: var(--code-important) !important;
+    span[class*="qt-code-attribute"] {
+      color: var(--qt-code-attribute, var(--code-important)) !important;
     }
-    span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-      color: var(--text-operator) !important;
+    span[class*="qt-code-type"] {
+      color: var(--qt-code-type, var(--code-function)) !important;
     }
-    span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
-      color: var(--code-keyword) !important;
+    span[class*="qt-code-builtin"] {
+      color: var(--qt-code-builtin, var(--code-function)) !important;
+    }
+    span[class*="qt-code-atom"] {
+      color: var(--qt-code-atom, var(--code-value)) !important;
+    }
+    span[class*="qt-code-meta"] {
+      color: var(--qt-code-meta, var(--code-comment)) !important;
+    }
+    span[class*="qt-code-qualifier"] {
+      color: var(--qt-code-qualifier, var(--code-property)) !important;
+    }
+    span[class*="qt-code-punctuation"] {
+      color: var(--qt-code-punctuation, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-bracket"] {
+      color: var(--qt-code-bracket, var(--code-punctuation)) !important;
+    }
+    span[class*="qt-code-header"] {
+      color: var(--qt-code-header, var(--code-tag)) !important;
+    }
+    span[class*="qt-code-link"] {
+      color: var(--qt-code-link, var(--code-string)) !important;
+    }
+    span[class*="qt-code-error"] {
+      color: var(--qt-code-error, var(--code-important)) !important;
     }
 
     background-color: transparent;
-    color: var(--code-normal);
+    color: var(--qt-code-default, var(--code-normal));
   }
 }
 
@@ -7743,50 +7641,80 @@ blockquote.callout {
     color: var(--color);
   }
   &[data-callout] {
-    --color: rgb(var(--callout-info)) !important;
+    --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="note"] {
-    --color: rgb(var(--callout-default)) !important;
+    --color: rgb(var(--callout-default, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-default, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-default, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="abstract"] {
-    --color: rgb(var(--callout-summary)) !important;
+    --color: rgb(var(--callout-summary, 83, 223, 221)) !important;
+    --border: rgba(var(--callout-summary, 83, 223, 221), 0.267) !important;
+    --bg: rgba(var(--callout-summary, 83, 223, 221), 0.063) !important;
   }
   &[data-callout="info"] {
-    --color: rgb(var(--callout-info)) !important;
+    --color: rgb(var(--callout-info, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-info, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-info, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="todo"] {
-    --color: rgb(var(--callout-todo)) !important;
+    --color: rgb(var(--callout-todo, 2, 122, 255)) !important;
+    --border: rgba(var(--callout-todo, 2, 122, 255), 0.267) !important;
+    --bg: rgba(var(--callout-todo, 2, 122, 255), 0.063) !important;
   }
   &[data-callout="tip"] {
-    --color: rgb(var(--callout-tip)) !important;
+    --color: rgb(var(--callout-tip, 83, 223, 221)) !important;
+    --border: rgba(var(--callout-tip, 83, 223, 221), 0.267) !important;
+    --bg: rgba(var(--callout-tip, 83, 223, 221), 0.063) !important;
   }
   &[data-callout="success"] {
-    --color: rgb(var(--callout-success)) !important;
+    --color: rgb(var(--callout-success, 68, 207, 110)) !important;
+    --border: rgba(var(--callout-success, 68, 207, 110), 0.267) !important;
+    --bg: rgba(var(--callout-success, 68, 207, 110), 0.063) !important;
   }
   &[data-callout="question"] {
-    --color: rgb(var(--callout-question)) !important;
+    --color: rgb(var(--callout-question, 233, 151, 63)) !important;
+    --border: rgba(var(--callout-question, 233, 151, 63), 0.267) !important;
+    --bg: rgba(var(--callout-question, 233, 151, 63), 0.063) !important;
   }
   &[data-callout="warning"] {
-    --color: rgb(var(--callout-warning)) !important;
+    --color: rgb(var(--callout-warning, 233, 151, 63)) !important;
+    --border: rgba(var(--callout-warning, 233, 151, 63), 0.267) !important;
+    --bg: rgba(var(--callout-warning, 233, 151, 63), 0.063) !important;
   }
   &[data-callout="failure"] {
-    --color: rgb(var(--callout-fail)) !important;
+    --color: rgb(var(--callout-fail, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-fail, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-fail, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="danger"] {
-    --color: rgb(var(--callout-bug)) !important;
+    --color: rgb(var(--callout-error, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-error, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-error, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="bug"] {
-    --color: rgb(var(--callout-bug)) !important;
+    --color: rgb(var(--callout-bug, 251, 70, 76)) !important;
+    --border: rgba(var(--callout-bug, 251, 70, 76), 0.267) !important;
+    --bg: rgba(var(--callout-bug, 251, 70, 76), 0.063) !important;
   }
   &[data-callout="example"] {
-    --color: rgb(var(--callout-example)) !important;
+    --color: rgb(var(--callout-example, 168, 130, 255)) !important;
+    --border: rgba(var(--callout-example, 168, 130, 255), 0.267) !important;
+    --bg: rgba(var(--callout-example, 168, 130, 255), 0.063) !important;
   }
   &[data-callout="quote"] {
-    --color: rgb(var(--callout-quote)) !important;
+    --color: rgb(var(--callout-quote, 158, 158, 158)) !important;
+    --border: rgba(var(--callout-quote, 158, 158, 158), 0.267) !important;
+    --bg: rgba(var(--callout-quote, 158, 158, 158), 0.063) !important;
   }
 
   &[data-callout="seealso"] {
-    --color: rgb(var(--callout-seealso)) !important;
+    --color: rgb(var(--callout-seealso, var(--callout-default, 2, 122, 255))) !important;
+    --border: rgba(var(--callout-seealso, var(--callout-default, 2, 122, 255)), 0.267) !important;
+    --bg: rgba(var(--callout-seealso, var(--callout-default, 2, 122, 255)), 0.063) !important;
   }
 }
 
