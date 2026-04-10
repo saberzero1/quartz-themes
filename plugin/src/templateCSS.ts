@@ -86,6 +86,11 @@ export const TEMPLATE_CSS = `
       & > svg {
         opacity: 0.001;
         position: absolute;
+        height: 1.5rem;
+        width: 1.5rem;
+        top: 0;
+        left: -0.25rem;
+        margin: 0;
       }
       &:before {
         width: 1rem;
