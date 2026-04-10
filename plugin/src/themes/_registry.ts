@@ -259,6 +259,7 @@ import { theme as notation } from "./notation.js";
 import { theme as notation_2 } from "./notation-2.js";
 import { theme as notswift } from "./notswift.js";
 import { theme as novadust } from "./novadust.js";
+import { theme as obsidian } from "./obsidian.js";
 import { theme as obsidian_ia } from "./obsidian_ia.js";
 import { theme as obsidian_vibrant } from "./obsidian_vibrant.js";
 import { theme as obsidian_boom } from "./obsidian-boom.js";
@@ -704,6 +705,7 @@ export const themeData: Record<string, ThemeData> = {
   "notation-2": notation_2,
   notswift: notswift,
   novadust: novadust,
+  obsidian: obsidian,
   obsidian_ia: obsidian_ia,
   obsidian_vibrant: obsidian_vibrant,
   "obsidian-boom": obsidian_boom,
@@ -2264,6 +2266,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["roboto", "sf-mono", "sf-pro-display"],
   },
   novadust: { name: "novadust", modes: ["dark"], variations: [], fonts: [] },
+  obsidian: {
+    name: "obsidian",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   obsidian_ia: {
     name: "obsidian_ia",
     modes: ["dark", "light"],
