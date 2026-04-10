@@ -1051,6 +1051,45 @@ async function main() {
       ? buildModeCSS(lightData, "light", bothModes, config, aspectMap, warnings)
       : {};
 
+    // Obsidian's stub is identical to `_baseline`, so the diff-based
+    // extractor emits an empty `base` aspect. Graft `_baseline`'s `base`
+    // onto `obsidian` so it actually renders Obsidian's default palette.
+    if (themeId === "obsidian") {
+      const baselineDir = path.join(resultsDir, "_baseline");
+      const baselineDark = await readJsonIfExists(
+        path.join(baselineDir, "dark.json"),
+      );
+      const baselineLight = await readJsonIfExists(
+        path.join(baselineDir, "light.json"),
+      );
+      if (baselineDark && hasDark) {
+        const baselineDarkCSS = buildModeCSS(
+          baselineDark,
+          "dark",
+          bothModes,
+          config,
+          aspectMap,
+          warnings,
+        );
+        if (baselineDarkCSS.base) {
+          darkAspectCSS.base = baselineDarkCSS.base;
+        }
+      }
+      if (baselineLight && hasLight) {
+        const baselineLightCSS = buildModeCSS(
+          baselineLight,
+          "light",
+          bothModes,
+          config,
+          aspectMap,
+          warnings,
+        );
+        if (baselineLightCSS.base) {
+          lightAspectCSS.base = baselineLightCSS.base;
+        }
+      }
+    }
+
     const normalizedId = resolveThemeKey(themeId, themesMeta);
     const fileBaseName = normalizedId.replace(/[^a-zA-Z0-9-_]/g, "-");
     const outputPath = path.join(outputDir, `${fileBaseName}.ts`);
