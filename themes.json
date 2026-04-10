@@ -5089,6 +5089,19 @@
       "fonts": [],
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
+    "obsidian": {
+      "compatibility": ["checking"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {},
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "Apache License 2.0", "spdx_id": "Apache-2.0" }
+    },
     "obsidian-boom": {
       "compatibility": ["checking"],
       "modes": ["light"],
