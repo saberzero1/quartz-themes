@@ -1386,7 +1386,6 @@ body.theme-dark {
   --outline: black !important;
   --shadow-m: 3px 3px 0 black !important;
   --blockquote-padding: 12px 24px !important;
-  --scrollbar-track-bg: #070b11 !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 700 !important;
   --highlight: rgba(139, 6, 6, 0.4) !important;
@@ -1712,6 +1711,7 @@ body.theme-dark {
   --root-list-spacing: 10px !important;
   --rpg: "rpg-awesome" !important;
   --scroll-size: 7px !important;
+  --scrollbar-track-bg: #070b11 !important;
   --search-border: 2px solid black !important;
   --search-box-shadow: 2px 2px 0 black !important;
   --setting-item-alt-background-hover: #03000054 !important;

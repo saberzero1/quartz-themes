@@ -1394,7 +1394,6 @@ body.theme-light {
   --outline: #912e2e !important;
   --shadow-m: 3px 3px 0 #912e2e !important;
   --blockquote-padding: 12px 24px !important;
-  --scrollbar-track-bg: #f8fbff !important;
   --link-decoration-color: #697580 !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 700 !important;
@@ -1720,6 +1719,7 @@ body.theme-light {
   --root-list-spacing: 10px !important;
   --rpg: "rpg-awesome" !important;
   --scroll-size: 7px !important;
+  --scrollbar-track-bg: #f8fbff !important;
   --search-border: 2px solid #912e2e !important;
   --search-box-shadow: 2px 2px 0 #912e2e !important;
   --setting-item-alt-background-hover: rgba(208, 221, 239, 0.38) !important;
@@ -2793,7 +2793,6 @@ body.theme-dark {
   --outline: #cfd7dd !important;
   --shadow-m: 3px 3px 0 #cfd7dd !important;
   --blockquote-padding: 12px 24px !important;
-  --scrollbar-track-bg: #1a1e24 !important;
   --link-decoration-color: #bccad8 !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 700 !important;
@@ -3120,6 +3119,7 @@ body.theme-dark {
   --root-list-spacing: 10px !important;
   --rpg: "rpg-awesome" !important;
   --scroll-size: 7px !important;
+  --scrollbar-track-bg: #1a1e24 !important;
   --search-border: 2px solid #cfd7dd !important;
   --search-box-shadow: 2px 2px 0 #cfd7dd !important;
   --setting-item-alt-background-hover: rgba(6, 8, 12, 0.38) !important;

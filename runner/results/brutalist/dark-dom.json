@@ -190,7 +190,7 @@
                 "styles": {
                   "color": "rgb(160, 160, 160)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(160, 160, 160) rgb(160, 160, 160) rgb(160, 160, 160) rgb(205, 205, 205)",
+                  "borderColor": "rgb(160, 160, 160) rgb(160, 160, 160) rgb(160, 160, 160) color(srgb 0.701961 0.701961 0.701961 / 0.9)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -287,7 +287,7 @@
                         "styles": {
                           "color": "rgb(160, 160, 160)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(160, 160, 160) rgb(160, 160, 160) rgb(160, 160, 160) rgb(205, 205, 205)",
+                          "borderColor": "rgb(160, 160, 160) rgb(160, 160, 160) rgb(160, 160, 160) color(srgb 0.701961 0.701961 0.701961 / 0.9)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -402,7 +402,7 @@
                         "styles": {
                           "color": "rgb(160, 160, 160)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(160, 160, 160) rgb(160, 160, 160) rgb(160, 160, 160) rgb(205, 205, 205)",
+                          "borderColor": "rgb(160, 160, 160) rgb(160, 160, 160) rgb(160, 160, 160) color(srgb 0.701961 0.701961 0.701961 / 0.9)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -607,7 +607,7 @@
                 "styles": {
                   "color": "rgb(160, 160, 160)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(160, 160, 160) rgb(160, 160, 160) rgb(160, 160, 160) rgb(205, 205, 205)",
+                  "borderColor": "rgb(160, 160, 160) rgb(160, 160, 160) rgb(160, 160, 160) color(srgb 0.701961 0.701961 0.701961 / 0.9)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -904,7 +904,7 @@
                 "styles": {
                   "color": "rgb(160, 160, 160)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(160, 160, 160) rgb(160, 160, 160) rgb(160, 160, 160) rgb(205, 205, 205)",
+                  "borderColor": "rgb(160, 160, 160) rgb(160, 160, 160) rgb(160, 160, 160) color(srgb 0.701961 0.701961 0.701961 / 0.9)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1596,7 +1596,7 @@
     "styles": {
       "color": "rgb(179, 179, 179)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "borderColor": "rgba(0, 0, 0, 0)",
+      "borderColor": "rgb(179, 179, 179)",
       "fill": "rgb(0, 0, 0)",
       "stroke": "none"
     },
@@ -1802,7 +1802,7 @@
                         "styles": {
                           "color": "rgb(160, 160, 160)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(160, 160, 160)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -1945,7 +1945,7 @@
               "backgroundColor": "rgba(0, 0, 0, 0)",
               "borderColor": "rgb(179, 179, 179)",
               "fill": "rgb(0, 0, 0)",
-              "stroke": "none"
+              "stroke": "rgb(179, 179, 179)"
             },
             "childCount": 2,
             "children": [
@@ -1958,7 +1958,7 @@
                   "backgroundColor": "rgba(0, 0, 0, 0)",
                   "borderColor": "rgb(179, 179, 179)",
                   "fill": "rgb(0, 0, 0)",
-                  "stroke": "none"
+                  "stroke": "rgb(179, 179, 179)"
                 },
                 "childCount": 1,
                 "children": [
@@ -2026,7 +2026,7 @@
                   "backgroundColor": "rgba(0, 0, 0, 0)",
                   "borderColor": "rgb(179, 179, 179)",
                   "fill": "rgb(0, 0, 0)",
-                  "stroke": "none"
+                  "stroke": "rgb(179, 179, 179)"
                 },
                 "childCount": 0,
                 "children": []

@@ -1609,7 +1609,7 @@ body body.theme-dark del {
   text-decoration-line: line-through;
   text-decoration-style: solid;
   transition: all;
-  transform: matrix(1, 0, 0, 1, 0.168986, 0);
+  transform: matrix(1, 0, 0, 1, 0.179423, 0);
   user-select: text;
   animation-name: glitch-flicker;
   animation-duration: 3s;

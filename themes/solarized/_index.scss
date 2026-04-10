@@ -14,11 +14,7 @@
   --focus-ring-color: #0df !important;
   --tab-container-background: rgb(253, 246, 227) !important;
   --table-border-color: rgb(238, 232, 213) !important;
-  --text-accent: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --text-accent: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --text-faint: rgb(147, 161, 161) !important;
   --text-normal: rgb(101, 123, 131) !important;
   --titlebar-background: rgb(253, 246, 227) !important;
@@ -53,17 +49,8 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.1
-  ) !important;
-  --background-modifier-border-focus: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --background-modifier-active-hover: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1) !important;
+  --background-modifier-border-focus: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --background-modifier-border-hover: rgb(238, 232, 213) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
   --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
@@ -104,18 +91,11 @@
   --bases-header-padding-start: 2px !important;
   --bases-table-cell-background-active: rgb(253, 246, 227) !important;
   --bases-table-cell-background-disabled: rgb(238, 232, 213) !important;
-  --bases-table-cell-background-selected: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.1
-  ) !important;
+  --bases-table-cell-background-selected: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px
-    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px
-    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -126,11 +106,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: rgb(131, 148, 150) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -140,18 +116,10 @@
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --blockquote-border-color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, rgb(253, 246, 227) 65%, transparent)
-    linear-gradient(
-      rgb(253, 246, 227),
-      color-mix(in srgb, rgb(253, 246, 227) 65%, transparent)
-    ) !important;
+  --blur-background: color-mix(in srgb, rgb(253, 246, 227) 65%, transparent) linear-gradient(rgb(253, 246, 227), color-mix(in srgb, rgb(253, 246, 227) 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -204,26 +172,10 @@
   --canvas-controls-radius: 4px !important;
   --canvas-dot-pattern: rgb(238, 232, 213) !important;
   --caret-color: rgb(101, 123, 131) !important;
-  --checkbox-border-color: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
-  --checkbox-border-color-hover: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
-  --checkbox-color: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
-  --checkbox-color-hover: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
+  --checkbox-border-color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --checkbox-border-color-hover: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
+  --checkbox-color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --checkbox-color-hover: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: rgb(253, 246, 227) !important;
   --checkbox-radius: 4px !important;
@@ -250,20 +202,11 @@
   --code-value: rgb(211, 54, 130) !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: rgb(147, 161, 161) !important;
-  --collapse-icon-color-collapsed: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
-  --color-accent: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --collapse-icon-color-collapsed: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --color-accent: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --color-accent-1: hsl(calc(17.56906deg - 1), 81.24889%, 47.42647%) !important;
   --color-accent-2: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
-  --color-accent-hsl:
-    17.5690607735deg, 80.4444444444%, 44.1176470588% !important;
+  --color-accent-hsl: 17.5690607735deg, 80.4444444444%, 44.1176470588% !important;
   --color-base-00: rgb(238, 232, 213) !important;
   --color-base-05: #fcfcfc !important;
   --color-base-10: rgb(238, 232, 213) !important;
@@ -300,11 +243,7 @@
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: rgb(238, 232, 213) !important;
-  --divider-color-hover: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --divider-color-hover: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -320,12 +259,10 @@
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px rgb(238, 232, 213), inset 0 0 0 1px rgb(238, 232, 213) !important;
+  --embed-block-shadow-hover: 0 0 0 1px rgb(238, 232, 213), inset 0 0 0 1px rgb(238, 232, 213) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid
-    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --embed-border-start: 2px solid hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -334,11 +271,7 @@
   --file-header-background: rgb(253, 246, 227) !important;
   --file-header-background-focused: rgb(253, 246, 227) !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -351,33 +284,17 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-mermaid: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -387,10 +304,7 @@
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -420,11 +334,7 @@
   --graph-line: rgb(238, 232, 213) !important;
   --graph-node: rgb(131, 148, 150) !important;
   --graph-node-attachment: rgb(181, 137, 0) !important;
-  --graph-node-focused: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --graph-node-focused: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --graph-node-tag: rgb(133, 153, 0) !important;
   --graph-node-unresolved: rgb(147, 161, 161) !important;
   --graph-text: rgb(101, 123, 131) !important;
@@ -471,11 +381,7 @@
   --hr-color: rgb(238, 232, 213) !important;
   --hr-thickness: 2px !important;
   --icon-color: rgb(131, 148, 150) !important;
-  --icon-color-active: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --icon-color-active: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --icon-color-focused: rgb(101, 123, 131) !important;
   --icon-color-hover: rgb(131, 148, 150) !important;
   --icon-l: 18px !important;
@@ -512,28 +418,13 @@
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgb(147, 161, 161) !important;
-  --input-shadow:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
-  --input-shadow-hover:
-    inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
-    0 0 0 0 transparent !important;
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
+  --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17), 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
-  --interactive-accent-hover: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
-  --interactive-accent-hsl:
-    17.5690607735deg, 80.4444444444%, 44.1176470588% !important;
+  --interactive-accent: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --interactive-accent-hover: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
+  --interactive-accent-hsl: 17.5690607735deg, 80.4444444444%, 44.1176470588% !important;
   --interactive-hover: rgb(253, 246, 227) !important;
   --interactive-normal: rgb(238, 232, 213) !important;
   --keyboard-height: 0px !important;
@@ -574,11 +465,7 @@
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: rgb(147, 161, 161) !important;
-  --list-marker-color-collapsed: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --list-marker-color-collapsed: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --list-marker-color-hover: rgb(131, 148, 150) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -590,14 +477,8 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
-  --menu-scroll-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.1) 48px
-  ) !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: rgb(238, 232, 213) !important;
   --metadata-border-radius: 0 !important;
@@ -612,11 +493,7 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -625,11 +502,7 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: rgb(131, 148, 150) !important;
   --metadata-label-text-color-hover: rgb(131, 148, 150) !important;
@@ -639,8 +512,7 @@
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: rgba(0, 0, 0, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px
-    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px rgb(238, 232, 213) !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
@@ -675,28 +547,14 @@
   --nav-heading-weight-hover: 500 !important;
   --nav-indentation-guide-color: rgba(0, 0, 0, 0.12) !important;
   --nav-indentation-guide-width: 1px !important;
-  --nav-item-background-active: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.1
-  ) !important;
+  --nav-item-background-active: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1) !important;
   --nav-item-background-hover: rgba(0, 0, 0, 0.067) !important;
-  --nav-item-background-selected: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.15
-  ) !important;
+  --nav-item-background-selected: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: rgb(131, 148, 150) !important;
   --nav-item-color-active: rgb(101, 123, 131) !important;
-  --nav-item-color-highlighted: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --nav-item-color-highlighted: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --nav-item-color-hover: rgb(101, 123, 131) !important;
   --nav-item-color-selected: rgb(101, 123, 131) !important;
   --nav-item-margin-bottom: 2px !important;
@@ -717,18 +575,12 @@
   --page-margin: 1px auto -8px !important;
   --pdf-background: rgb(253, 246, 227) !important;
   --pdf-page-background: rgb(253, 246, 227) !important;
-  --pdf-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
   --pdf-sidebar-background: rgb(253, 246, 227) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --pdf-thumbnail-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-color-remove-hover: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --pill-color-remove-hover: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-padding-x: 0.65em !important;
@@ -753,22 +605,10 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, rgb(253, 246, 227) 65%, transparent)
-    linear-gradient(
-      rgb(253, 246, 227),
-      color-mix(in srgb, rgb(253, 246, 227) 65%, transparent)
-    ) !important;
+  --raised-background: color-mix(in srgb, rgb(253, 246, 227) 65%, transparent) linear-gradient(rgb(253, 246, 227), color-mix(in srgb, rgb(253, 246, 227) 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(white, white) border-box !important;
-  --raised-mask-background: linear-gradient(
-      to bottom left,
-      white,
-      transparent,
-      white
-    )
-    border-box no-repeat !important;
+  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(to bottom left, white, transparent, white) border-box no-repeat !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
@@ -800,12 +640,8 @@
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 12px !important;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 15px 30px rgba(0, 0, 0, 0.1) !important;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
-    0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -878,26 +714,17 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: rgb(253, 246, 227) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    rgb(253, 246, 227),
-    transparent
-  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(253, 246, 227), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px
-    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --tab-text-color: rgb(147, 161, 161) !important;
   --tab-text-color-active: rgb(131, 148, 150) !important;
   --tab-text-color-focused: rgb(131, 148, 150) !important;
   --tab-text-color-focused-active: rgb(131, 148, 150) !important;
   --tab-text-color-focused-active-current: rgb(101, 123, 131) !important;
-  --tab-text-color-focused-highlighted: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --tab-text-color-focused-highlighted: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: rgb(238, 232, 213) !important;
@@ -911,11 +738,7 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --table-drag-handle-background-active: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --table-drag-handle-color: rgb(147, 161, 161) !important;
   --table-drag-handle-color-active: rgb(253, 246, 227) !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -930,53 +753,20 @@
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.1
-  ) !important;
+  --table-selection: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --table-selection-border-color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.1
-  ) !important;
-  --tag-background-hover: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.2
-  ) !important;
-  --tag-border-color: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.15
-  ) !important;
-  --tag-border-color-hover: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.15
-  ) !important;
+  --tag-background: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1) !important;
+  --tag-background-hover: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.2) !important;
+  --tag-border-color: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.15) !important;
+  --tag-border-color-hover: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
-  --tag-color-hover: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --tag-color-hover: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -984,27 +774,14 @@
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent-hover: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
+  --text-accent-hover: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
   --text-error: rgb(220, 50, 47) !important;
-  --text-highlight-bg: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --text-highlight-bg: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: rgb(131, 148, 150) !important;
   --text-on-accent: rgb(253, 246, 227) !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.2
-  ) !important;
+  --text-selection: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.2) !important;
   --text-success: rgb(133, 153, 0) !important;
   --text-warning: rgb(203, 75, 22) !important;
   --titlebar-background-focused: rgb(238, 232, 213) !important;
@@ -1051,13 +828,9 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
+  --raised-shadow: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
   --shadow-edges: 0 0 transparent !important;
-  --shadow-xs:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
+  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
   --h1-color: rgb(42, 161, 152) !important;
   --h2-color: rgb(42, 161, 152) !important;
   --h3-color: rgb(42, 161, 152) !important;
@@ -1065,19 +838,10 @@
   --h5-color: rgb(42, 161, 152) !important;
   --h6-color: rgb(42, 161, 152) !important;
   --inline-title-color: rgb(42, 161, 152) !important;
-  --text-highlight-bg-active: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --text-highlight-bg-active: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --link-unresolved-color-hover: rgb(220, 50, 47) !important;
   --text-title: rgb(42, 161, 152) !important;
-  --active-bg: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.1
-  ) !important;
+  --active-bg: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1) !important;
   --base0: rgb(131, 148, 150) !important;
   --base00: rgb(101, 123, 131) !important;
   --base01: rgb(88, 110, 117) !important;
@@ -1132,17 +896,8 @@
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.1
-  ) !important;
-  --background-modifier-border-focus: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --background-modifier-active-hover: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1) !important;
+  --background-modifier-border-focus: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --background-modifier-border-hover: rgb(7, 54, 66) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
   --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
@@ -1183,18 +938,11 @@
   --bases-header-padding-start: 2px !important;
   --bases-table-cell-background-active: rgb(0, 43, 54) !important;
   --bases-table-cell-background-disabled: rgb(7, 54, 66) !important;
-  --bases-table-cell-background-selected: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.1
-  ) !important;
+  --bases-table-cell-background-selected: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px
-    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px
-    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2px hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -1205,11 +953,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: rgb(101, 123, 131) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -1219,18 +963,10 @@
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
-  --blockquote-border-color: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --blockquote-border-color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, rgb(7, 54, 66) 65%, transparent)
-    linear-gradient(
-      rgb(7, 54, 66),
-      color-mix(in srgb, rgb(7, 54, 66) 65%, transparent)
-    ) !important;
+  --blur-background: color-mix(in srgb, rgb(7, 54, 66) 65%, transparent) linear-gradient(rgb(7, 54, 66), color-mix(in srgb, rgb(7, 54, 66) 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -1283,26 +1019,10 @@
   --canvas-controls-radius: 4px !important;
   --canvas-dot-pattern: rgb(7, 54, 66) !important;
   --caret-color: rgb(131, 148, 150) !important;
-  --checkbox-border-color: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
-  --checkbox-border-color-hover: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
-  --checkbox-color: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
-  --checkbox-color-hover: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
+  --checkbox-border-color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --checkbox-border-color-hover: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
+  --checkbox-color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --checkbox-color-hover: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: rgb(0, 43, 54) !important;
   --checkbox-radius: 4px !important;
@@ -1329,20 +1049,11 @@
   --code-value: rgb(211, 54, 130) !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: rgb(88, 110, 117) !important;
-  --collapse-icon-color-collapsed: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
-  --color-accent: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --collapse-icon-color-collapsed: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
+  --color-accent: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --color-accent-1: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
   --color-accent-2: hsl(calc(17.56906deg - 5), 84.46667%, 56.91176%) !important;
-  --color-accent-hsl:
-    17.5690607735deg, 80.4444444444%, 44.1176470588% !important;
+  --color-accent-hsl: 17.5690607735deg, 80.4444444444%, 44.1176470588% !important;
   --color-base-00: #1e1e1e !important;
   --color-base-05: #212121 !important;
   --color-base-10: #242424 !important;
@@ -1379,11 +1090,7 @@
   --dialog-width: 560px !important;
   --direction: 1 !important;
   --divider-color: rgb(7, 54, 66) !important;
-  --divider-color-hover: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --divider-color-hover: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
@@ -1399,12 +1106,10 @@
   --dropdown-padding: 0 1.9em 0 0.8em !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px rgb(7, 54, 66), inset 0 0 0 1px rgb(7, 54, 66) !important;
+  --embed-block-shadow-hover: 0 0 0 1px rgb(7, 54, 66), inset 0 0 0 1px rgb(7, 54, 66) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid
-    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --embed-border-start: 2px solid hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -1413,11 +1118,7 @@
   --file-header-background: rgb(0, 43, 54) !important;
   --file-header-background-focused: rgb(0, 43, 54) !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -1430,33 +1131,17 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --font-interface: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-mermaid: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -1466,10 +1151,7 @@
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
-    "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter",
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-text: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1499,11 +1181,7 @@
   --graph-line: rgb(7, 54, 66) !important;
   --graph-node: rgb(101, 123, 131) !important;
   --graph-node-attachment: rgb(181, 137, 0) !important;
-  --graph-node-focused: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
+  --graph-node-focused: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
   --graph-node-tag: rgb(133, 153, 0) !important;
   --graph-node-unresolved: rgb(88, 110, 117) !important;
   --graph-text: rgb(131, 148, 150) !important;
@@ -1550,11 +1228,7 @@
   --hr-color: rgb(7, 54, 66) !important;
   --hr-thickness: 2px !important;
   --icon-color: rgb(101, 123, 131) !important;
-  --icon-color-active: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
+  --icon-color-active: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
   --icon-color-focused: rgb(131, 148, 150) !important;
   --icon-color-hover: rgb(101, 123, 131) !important;
   --icon-l: 18px !important;
@@ -1591,28 +1265,13 @@
   --input-icon-inset: 4px !important;
   --input-padding: 4px 8px !important;
   --input-placeholder-color: rgb(88, 110, 117) !important;
-  --input-shadow:
-    inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
-    0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
-  --input-shadow-hover:
-    inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
-    0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
-    0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09), 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 transparent !important;
+  --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16), 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
-  --interactive-accent-hover: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
-  --interactive-accent-hsl:
-    17.5690607735deg, 80.4444444444%, 44.1176470588% !important;
+  --interactive-accent: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --interactive-accent-hover: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
+  --interactive-accent-hsl: 17.5690607735deg, 80.4444444444%, 44.1176470588% !important;
   --interactive-hover: rgb(0, 43, 54) !important;
   --interactive-normal: rgb(7, 54, 66) !important;
   --keyboard-height: 0px !important;
@@ -1653,11 +1312,7 @@
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: rgb(88, 110, 117) !important;
-  --list-marker-color-collapsed: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
+  --list-marker-color-collapsed: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
   --list-marker-color-hover: rgb(101, 123, 131) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
@@ -1669,14 +1324,8 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
-  --menu-scroll-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.1) 48px
-  ) !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: rgb(7, 54, 66) !important;
   --metadata-border-radius: 0 !important;
@@ -1691,11 +1340,7 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --metadata-input-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -1704,11 +1349,7 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
-    "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    sans-serif !important;
+  --metadata-label-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: rgb(101, 123, 131) !important;
   --metadata-label-text-color-hover: rgb(101, 123, 131) !important;
@@ -1718,8 +1359,7 @@
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: rgba(255, 255, 255, 0.067) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2px
-    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2px hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --metadata-property-box-shadow-hover: 0 0 0 1px rgb(7, 54, 66) !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
@@ -1756,21 +1396,12 @@
   --nav-indentation-guide-width: 1px !important;
   --nav-item-background-active: rgba(255, 255, 255, 0.067) !important;
   --nav-item-background-hover: rgba(255, 255, 255, 0.067) !important;
-  --nav-item-background-selected: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.15
-  ) !important;
+  --nav-item-background-selected: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.15) !important;
   --nav-item-children-margin-start: 12px !important;
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: rgb(101, 123, 131) !important;
   --nav-item-color-active: rgb(131, 148, 150) !important;
-  --nav-item-color-highlighted: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
+  --nav-item-color-highlighted: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
   --nav-item-color-hover: rgb(131, 148, 150) !important;
   --nav-item-color-selected: rgb(131, 148, 150) !important;
   --nav-item-margin-bottom: 2px !important;
@@ -1796,11 +1427,7 @@
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px rgb(7, 54, 66) !important;
   --pdfViewer-padding-bottom: 0 !important;
-  --pill-color-remove-hover: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
+  --pill-color-remove-hover: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-padding-x: 0.65em !important;
@@ -1825,15 +1452,9 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, rgb(7, 54, 66) 65%, transparent)
-    linear-gradient(
-      rgb(7, 54, 66),
-      color-mix(in srgb, rgb(7, 54, 66) 65%, transparent)
-    ) !important;
+  --raised-background: color-mix(in srgb, rgb(7, 54, 66) 65%, transparent) linear-gradient(rgb(7, 54, 66), color-mix(in srgb, rgb(7, 54, 66) 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(white, white) border-box !important;
+  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
   --raised-mask-background: transparent !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
@@ -1866,12 +1487,8 @@
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 12px !important;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
-    0px 30px 90px rgba(0, 0, 0, 0.2) !important;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
-    0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2) !important;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -1944,26 +1561,17 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: rgb(0, 43, 54) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    rgb(0, 43, 54),
-    transparent
-  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, rgb(0, 43, 54), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px
-    hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --tab-text-color: rgb(88, 110, 117) !important;
   --tab-text-color-active: rgb(101, 123, 131) !important;
   --tab-text-color-focused: rgb(101, 123, 131) !important;
   --tab-text-color-focused-active: rgb(101, 123, 131) !important;
   --tab-text-color-focused-active-current: rgb(131, 148, 150) !important;
-  --tab-text-color-focused-highlighted: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
+  --tab-text-color-focused-highlighted: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: rgb(7, 54, 66) !important;
@@ -1977,11 +1585,7 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --table-drag-handle-background-active: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --table-drag-handle-color: rgb(88, 110, 117) !important;
   --table-drag-handle-color-active: rgb(0, 43, 54) !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -1996,53 +1600,20 @@
   --table-row-alt-background-hover: transparent !important;
   --table-row-background-hover: transparent !important;
   --table-row-last-border-width: 1px !important;
-  --table-selection: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.1
-  ) !important;
+  --table-selection: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.1) !important;
   --table-selection-blend-mode: lighten !important;
-  --table-selection-border-color: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --table-selection-border-color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 16px !important;
   --table-white-space: break-spaces !important;
-  --tag-background: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.2
-  ) !important;
-  --tag-background-hover: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.2
-  ) !important;
-  --tag-border-color: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.15
-  ) !important;
-  --tag-border-color-hover: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.15
-  ) !important;
+  --tag-background: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.2) !important;
+  --tag-background-hover: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.2) !important;
+  --tag-border-color: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.15) !important;
+  --tag-border-color-hover: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
-  --tag-color-hover: hsl(
-    calc(17.56906deg - 3),
-    82.05333%,
-    50.73529%
-  ) !important;
+  --tag-color-hover: hsl(calc(17.56906deg - 3), 82.05333%, 50.73529%) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -2050,27 +1621,14 @@
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.875em !important;
-  --text-accent-hover: hsl(
-    calc(17.56906deg - 5),
-    84.46667%,
-    56.91176%
-  ) !important;
+  --text-accent-hover: hsl(calc(17.56906deg - 5), 84.46667%, 56.91176%) !important;
   --text-error: rgb(220, 50, 47) !important;
-  --text-highlight-bg: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --text-highlight-bg: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: rgb(101, 123, 131) !important;
   --text-on-accent: rgb(0, 43, 54) !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: hsla(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%,
-    0.33
-  ) !important;
+  --text-selection: hsla(17.5690607735deg, 80.4444444444%, 44.1176470588%, 0.33) !important;
   --text-success: rgb(133, 153, 0) !important;
   --text-warning: rgb(203, 75, 22) !important;
   --titlebar-background-focused: rgb(7, 54, 66) !important;
@@ -2124,11 +1682,7 @@
   --h5-color: rgb(42, 161, 152) !important;
   --h6-color: rgb(42, 161, 152) !important;
   --inline-title-color: rgb(42, 161, 152) !important;
-  --text-highlight-bg-active: hsl(
-    17.5690607735deg,
-    80.4444444444%,
-    44.1176470588%
-  ) !important;
+  --text-highlight-bg-active: hsl(17.5690607735deg, 80.4444444444%, 44.1176470588%) !important;
   --link-unresolved-color-hover: rgb(220, 50, 47) !important;
   --text-title: rgb(42, 161, 152) !important;
   --active-bg: rgba(255, 255, 255, 0.067) !important;
@@ -2200,26 +1754,22 @@ html {
   font-weight: 400;
   src:
     local("Avenir"),
-    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff")
-      format("woff");
+    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff") format("woff");
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2227,8 +1777,7 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2236,64 +1785,47 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2301,8 +1833,7 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2310,46 +1841,32 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -2357,10 +1874,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
@@ -2368,8 +1883,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2378,8 +1892,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2388,10 +1901,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
@@ -2399,21 +1910,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A,
-    U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346,
-    U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6,
-    U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043,
-    U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C,
-    U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121,
-    U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2,
-    U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319,
-    U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1,
-    U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB,
-    U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE,
-    U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
 }
 
 @font-face {
@@ -2421,32 +1919,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4,
-    U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3,
-    U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF,
-    U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF,
-    U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0,
-    U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F,
-    U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315,
-    U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382,
-    U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6,
-    U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7,
-    U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444,
-    U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0,
-    U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA,
-    U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB,
-    U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513,
-    U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D,
-    U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC,
-    U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC,
-    U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887,
-    U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B,
-    U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C,
-    U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8,
-    U+1FB00-1FBFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
 }
 
 @font-face {
@@ -2454,12 +1928,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
@@ -2467,12 +1937,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -2480,12 +1946,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -2494,28 +1956,23 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
-      format("woff");
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2523,46 +1980,32 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Monaco";
@@ -3042,24 +2485,9 @@ body {
     animation-play-state: running;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(0, 0, 0, 0.067);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3072,18 +2500,7 @@ body {
     color: rgb(101, 123, 131);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: rgba(0, 0, 0, 0.067);
     border: 0px rgb(101, 123, 131);
     border-top-left-radius: 4px;
@@ -3118,15 +2535,7 @@ body {
   }
 
   a.internal.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: rgba(203, 75, 22, 0.1);
     display: flex;
@@ -3215,10 +2624,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: rgb(101, 123, 131);
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
     padding: 0px;
   }
 
@@ -3437,20 +2843,11 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(101, 123, 131);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
     border: 0px rgb(101, 123, 131);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3462,71 +2859,20 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(101, 123, 131);
     font-weight: 400;
     background-color: rgba(0, 0, 0, 0.067);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: rgb(101, 123, 131);
   }
 
@@ -3669,14 +3015,12 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(253, 246, 227);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(253, 246, 227);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3691,20 +3035,17 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(253, 246, 227);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(253, 246, 227);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(253, 246, 227);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3717,8 +3058,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(253, 246, 227);
   }
 
@@ -4378,10 +3718,7 @@ body {
     background-color: rgb(238, 232, 213);
     box-shadow: none;
     color: rgb(101, 123, 131);
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
     font-size: 14px;
     border: 0px rgb(101, 123, 131);
     border-top-left-radius: 4px;
@@ -4633,10 +3970,7 @@ body {
     transition-timing-function: ease;
   }
 
-  .explorer
-    .explorer-content
-    li:has(> .folder-outer:not(.open))
-    > .folder-container {
+  .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
     color: rgb(131, 148, 150);
     cursor: default;
     font-family:
@@ -6212,24 +5546,9 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: rgba(255, 255, 255, 0.067);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6242,18 +5561,7 @@ html[saved-theme="dark"] {
       color: rgb(131, 148, 150);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:has(
-        ~ .result-card.focus:not(
-            :has(~ .result-card:hover, ~ .result-card:focus)
-          ),
-        ~ .result-card:focus,
-        ~ .result-card:hover
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
       background-color: rgba(255, 255, 255, 0.067);
       border: 0px rgb(131, 148, 150);
       border-top-left-radius: 4px;
@@ -6288,15 +5596,7 @@ html[saved-theme="dark"] {
     }
 
     a.internal.tag-link,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card
-      > ul
-      > li
-      > .match-tag {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: rgba(203, 75, 22, 0.2);
       display: flex;
@@ -6385,10 +5685,7 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       color: rgb(131, 148, 150);
-      font-family:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-        "Source Code Pro", monospace;
+      font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
       padding: 0px;
     }
 
@@ -6595,10 +5892,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout.display-results {
+    .search > .search-container > .search-space > .search-layout.display-results {
       border: 1px solid rgb(131, 148, 150);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -6610,20 +5904,11 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container {
+    .search > .search-container > .search-space > .search-layout > .results-container {
       color: rgb(131, 148, 150);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
       border: 0px rgb(131, 148, 150);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6635,73 +5920,20 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(
-        :has(~ .result-card:hover, ~ .result-card:focus)
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(131, 148, 150);
       font-weight: 400;
       background-color: rgba(255, 255, 255, 0.067);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-description {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
       color: rgb(131, 148, 150);
     }
 
@@ -6844,14 +6076,12 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(0, 43, 54);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(0, 43, 54);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6866,20 +6096,17 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(0, 43, 54);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(0, 43, 54);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(0, 43, 54);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6892,8 +6119,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgb(0, 43, 54) none repeat scroll 0% 0% / auto padding-box border-box;
       background-color: rgb(0, 43, 54);
     }
 
@@ -7553,10 +6779,7 @@ html[saved-theme="dark"] {
       background-color: rgb(7, 54, 66);
       box-shadow: none;
       color: rgb(131, 148, 150);
-      font-family:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-        "Source Code Pro", monospace;
+      font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
       font-size: 14px;
       border: 0px rgb(131, 148, 150);
       border-top-left-radius: 4px;
@@ -7808,10 +7031,7 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .explorer
-      .explorer-content
-      li:has(> .folder-outer:not(.open))
-      > .folder-container {
+    .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
       color: rgb(101, 123, 131);
       cursor: default;
       font-family:
@@ -7832,10 +7052,7 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
     }
 
-    .explorer
-      .explorer-content
-      li:has(> .folder-outer.open)
-      > .folder-container {
+    .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
       color: rgb(101, 123, 131);
       cursor: default;
       font-family:
@@ -9027,10 +8244,7 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

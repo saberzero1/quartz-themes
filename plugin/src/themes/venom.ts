@@ -339,8 +339,8 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(24, 32, 43);
-  font-weight: 685.75;
+  color: rgb(35, 43, 53);
+  font-weight: 671.75;
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
@@ -999,9 +999,9 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
-  color: rgb(24, 32, 43);
+  color: rgb(35, 43, 53);
   font-family: "??", "??", "Segoe UI", Arial, Tahoma, Helvetica, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-shadow: rgb(133, 13, 254) 0px 0px 2px, rgb(133, 13, 254) 0px 0px 2px, rgb(249, 243, 255) 0px 0px 3px, rgb(249, 243, 255) 0px 0px 3px, rgb(249, 243, 255) 0px 0px 3px, rgb(249, 243, 255) 0px 0px 3px, rgb(249, 243, 255) 0px 0px 3px;
+  text-shadow: rgb(139, 25, 254) 0px 0px 2px, rgb(139, 25, 254) 0px 0px 2px, rgb(243, 231, 255) 0px 0px 3px, rgb(243, 231, 255) 0px 0px 3px, rgb(243, 231, 255) 0px 0px 3px, rgb(243, 231, 255) 0px 0px 3px, rgb(243, 231, 255) 0px 0px 3px;
 }
 
 html body abbr {

@@ -106,11 +106,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: #a0a0a0 !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 400 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
@@ -123,8 +119,7 @@
   --blockquote-border-color: hsl(46deg, 95%, 65%) !important;
   --blockquote-border-thickness: 0px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, #404040 65%, transparent)
-    linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent)) !important;
+  --blur-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -276,8 +271,7 @@
   --file-header-background: #202020 !important;
   --file-header-background-focused: #202020 !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --file-header-font: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
@@ -290,22 +284,17 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
-  --font-default:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-default: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-interface: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
-  --font-mermaid:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
-  --font-monospace:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
-  --font-monospace-default:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-mermaid: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-monospace-default: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 400 !important;
@@ -315,8 +304,7 @@
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --font-text: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -489,14 +477,8 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 8px !important;
-  --menu-scroll-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.1) 48px
-  ) !important;
-  --menu-shadow:
-    0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
-    0px 15px 30px rgba(0, 0, 0, 0.15) !important;
+  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
+  --menu-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1), 0px 15px 30px rgba(0, 0, 0, 0.15) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: #404040 !important;
   --metadata-border-radius: 0 !important;
@@ -511,8 +493,7 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: rgba(255, 255, 255, 0.075) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --metadata-input-font: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
@@ -521,8 +502,7 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: rgba(255, 255, 255, 0.075) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
+  --metadata-label-font: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: #a0a0a0 !important;
   --metadata-label-text-color-hover: #a0a0a0 !important;
@@ -625,12 +605,9 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, #404040 65%, transparent)
-    linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent)) !important;
+  --raised-background: color-mix(in srgb, #404040 65%, transparent) linear-gradient(#404040, color-mix(in srgb, #404040 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
-  --raised-mask:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(white, white) border-box !important;
+  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
   --raised-mask-background: transparent !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
@@ -663,12 +640,8 @@
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
   --setting-items-radius: 12px !important;
-  --shadow-l:
-    0px 1.8px 7.3px rgba(0, 0, 0, 0.05), 0px 6.3px 24.7px rgba(0, 0, 0, 0.1),
-    0px 30px 90px rgba(0, 0, 0, 0.15) !important;
-  --shadow-s:
-    0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1),
-    0px 15px 30px rgba(0, 0, 0, 0.15) !important;
+  --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.05), 0px 6.3px 24.7px rgba(0, 0, 0, 0.1), 0px 30px 90px rgba(0, 0, 0, 0.15) !important;
+  --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 3.4px 6.7px rgba(0, 0, 0, 0.1), 0px 15px 30px rgba(0, 0, 0, 0.15) !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -741,11 +714,7 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: #303030 !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    #303030,
-    transparent
-  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, #303030, transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
@@ -866,70 +835,11 @@
   --color-base-15: #2b2b2b !important;
   --lt-file-icon-color: #707070 !important;
   --lt-canvas-hover-color: 112, 112, 112 !important;
-  --lt-gradient-gay: linear-gradient(
-    to right,
-    rgb(7, 141, 111),
-    rgb(152, 202, 153),
-    rgb(255, 255, 255) 45%,
-    rgb(255, 255, 255),
-    rgb(255, 255, 255) 55%,
-    rgb(205, 208, 234),
-    rgb(123, 173, 226) 70%,
-    rgb(69, 76, 189),
-    rgb(63, 26, 121)
-  ) !important;
-  --lt-gradient-lesbian: linear-gradient(
-    to right,
-    rgb(213, 44, 0),
-    rgb(226, 150, 136),
-    rgb(255, 255, 255) 45%,
-    rgb(255, 255, 255),
-    rgb(255, 255, 255) 55%,
-    rgb(210, 127, 164),
-    rgb(162, 2, 98)
-  ) !important;
-  --lt-gradient-non-bin: linear-gradient(
-    to right,
-    rgb(253, 219, 0),
-    rgb(238, 212, 143),
-    rgb(255, 255, 255) 30%,
-    rgb(255, 255, 255),
-    rgb(255, 255, 255) 36%,
-    rgb(212, 181, 222),
-    rgb(156, 92, 212),
-    rgb(88, 50, 96),
-    rgb(0, 0, 0)
-  ) !important;
-  --lt-gradient-pride: linear-gradient(
-    to right,
-    rgb(237, 34, 36),
-    rgb(243, 91, 34),
-    rgb(249, 150, 33),
-    rgb(245, 193, 30),
-    rgb(241, 235, 27) 27%,
-    rgb(241, 235, 27),
-    rgb(241, 235, 27) 33%,
-    rgb(99, 199, 32),
-    rgb(12, 155, 73),
-    rgb(33, 135, 141),
-    rgb(57, 84, 165),
-    rgb(97, 55, 155),
-    rgb(147, 40, 142)
-  ) !important;
-  --lt-gradient-trans: linear-gradient(
-    to right,
-    rgb(85, 205, 252),
-    rgb(179, 157, 233),
-    rgb(247, 168, 184),
-    rgb(246, 216, 221),
-    rgb(255, 255, 255) 45%,
-    rgb(255, 255, 255),
-    rgb(255, 255, 255) 55%,
-    rgb(246, 216, 221),
-    rgb(247, 168, 184),
-    rgb(179, 157, 233),
-    rgb(85, 205, 252)
-  ) !important;
+  --lt-gradient-gay: linear-gradient(to right, rgb(7, 141, 111), rgb(152, 202, 153), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(205, 208, 234), rgb(123, 173, 226) 70%, rgb(69, 76, 189), rgb(63, 26, 121)) !important;
+  --lt-gradient-lesbian: linear-gradient(to right, rgb(213, 44, 0), rgb(226, 150, 136), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(210, 127, 164), rgb(162, 2, 98)) !important;
+  --lt-gradient-non-bin: linear-gradient(to right, rgb(253, 219, 0), rgb(238, 212, 143), rgb(255, 255, 255) 30%, rgb(255, 255, 255), rgb(255, 255, 255) 36%, rgb(212, 181, 222), rgb(156, 92, 212), rgb(88, 50, 96), rgb(0, 0, 0)) !important;
+  --lt-gradient-pride: linear-gradient(to right, rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 27%, rgb(241, 235, 27), rgb(241, 235, 27) 33%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142)) !important;
+  --lt-gradient-trans: linear-gradient(to right, rgb(85, 205, 252), rgb(179, 157, 233), rgb(247, 168, 184), rgb(246, 216, 221), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(246, 216, 221), rgb(247, 168, 184), rgb(179, 157, 233), rgb(85, 205, 252)) !important;
   --lt-list-bullet-height: 2px !important;
   --lt-list-bullet-width: 6px !important;
 
@@ -971,26 +881,22 @@ html {
   font-weight: 400;
   src:
     local("Avenir"),
-    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff")
-      format("woff");
+    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff") format("woff");
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -998,8 +904,7 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -1007,64 +912,47 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -1072,8 +960,7 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -1081,64 +968,47 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -1146,46 +1016,32 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 body {
@@ -1233,9 +1089,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(250, 206, 62) none 0px;
     text-decoration: underline;
@@ -1263,9 +1117,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(250, 206, 62) none 0px;
     text-decoration: underline;
@@ -1292,9 +1144,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(250, 206, 62) none 0px;
     text-decoration: underline rgba(251, 211, 81, 0.3);
@@ -1338,9 +1188,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(160, 160, 160) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -1368,9 +1216,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 600;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -1398,9 +1244,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 600;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -1428,9 +1272,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -1458,9 +1300,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -1487,9 +1327,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(0, 0, 0);
@@ -1525,9 +1363,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: line-through;
@@ -1547,24 +1383,9 @@ body {
     animation-play-state: running;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(255, 255, 255, 0.075);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1577,18 +1398,7 @@ body {
     color: rgb(250, 206, 62);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: rgba(255, 255, 255, 0.075);
     border: 0px rgb(250, 206, 62);
     border-top-left-radius: 4px;
@@ -1623,21 +1433,11 @@ body {
   }
 
   a.internal.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: rgba(251, 211, 81, 0.1);
     display: flex;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     margin-inline-start: 0px;
     border: 0px solid rgba(251, 211, 81, 0.15);
@@ -1709,9 +1509,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     padding: 0px;
   }
 
@@ -1790,9 +1588,7 @@ body {
 
   blockquote {
     background-color: rgba(158, 158, 158, 0.1);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-style: normal;
     padding-bottom: 12px;
     padding-top: 12px;
@@ -1818,9 +1614,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .search > .search-container > .search-space {
@@ -1862,9 +1656,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -1897,20 +1689,11 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(250, 206, 62);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
     border: 0px rgb(250, 206, 62);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1922,128 +1705,63 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(250, 206, 62);
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.075);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: rgb(250, 206, 62);
   }
 
   h1 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
   h2 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
   h3 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
   h4 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
   h5 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
   h6 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
   h2.page-title,
   h2.page-title a {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     text-shadow: none;
   }
 
@@ -2052,14 +1770,12 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(32, 32, 32);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(32, 32, 32);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2074,20 +1790,17 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(32, 32, 32);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(32, 32, 32);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(32, 32, 32);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2100,8 +1813,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(32, 32, 32);
   }
 
@@ -2349,9 +2061,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-collapse: separate;
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     table-layout: auto;
     width: 246.422px;
     border: 0px rgb(128, 128, 128);
@@ -2489,9 +2199,7 @@ body {
 
   figcaption {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 16px;
     font-style: normal;
     text-align: start;
@@ -2582,9 +2290,7 @@ body {
   .metadata {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px solid rgb(64, 64, 64);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2597,9 +2303,7 @@ body {
   .metadata-properties {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border-color: rgb(160, 160, 160);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -2642,9 +2346,7 @@ body {
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px solid rgb(160, 160, 160);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2707,9 +2409,7 @@ body {
     background-color: rgb(40, 40, 40);
     box-shadow: none;
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 14px;
     border: 0px rgb(255, 255, 255);
     border-top-left-radius: 4px;
@@ -2883,15 +2583,11 @@ body {
     text-align: center;
     white-space-collapse: collapse;
     text-wrap-mode: wrap;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .katex-display > .katex > .katex-html {
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .katex > .katex-html {
@@ -2939,15 +2635,10 @@ body {
     transition-timing-function: ease;
   }
 
-  .explorer
-    .explorer-content
-    li:has(> .folder-outer:not(.open))
-    > .folder-container {
+  .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
     color: rgb(160, 160, 160);
     cursor: default;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     text-decoration: rgb(218, 218, 218);
   }
@@ -2955,9 +2646,7 @@ body {
   .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
     color: rgb(160, 160, 160);
     cursor: default;
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     text-decoration: rgb(218, 218, 218);
   }
@@ -3057,9 +2746,7 @@ body {
   footer {
     background-color: rgb(56, 56, 56);
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px solid rgb(64, 64, 64);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3074,9 +2761,7 @@ body {
 
   .recent-notes > h3 {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
   }
 
@@ -3097,9 +2782,7 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .meta {
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   ul.section-ul {
@@ -3128,9 +2811,7 @@ body {
 
   li.section-li > .section .meta {
     color: rgb(160, 160, 160);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .darkmode {
@@ -3163,9 +2844,7 @@ body {
 
   .breadcrumb-element p {
     color: rgb(112, 112, 112);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .navigation-progress {
@@ -3174,9 +2853,7 @@ body {
 
   .page-header h2.page-title {
     color: rgb(255, 255, 255);
-    font-family:
-      Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro",
-      monospace;
+    font-family: Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .katex-display {
@@ -4057,10 +3734,7 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

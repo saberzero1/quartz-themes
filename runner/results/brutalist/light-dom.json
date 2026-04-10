@@ -1596,7 +1596,7 @@
     "styles": {
       "color": "rgb(34, 34, 34)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "borderColor": "rgba(0, 0, 0, 0)",
+      "borderColor": "rgb(34, 34, 34)",
       "fill": "rgb(0, 0, 0)",
       "stroke": "none"
     },
@@ -1743,9 +1743,9 @@
                     "classes": ["metadata-property-key"],
                     "attrs": {},
                     "styles": {
-                      "color": "rgb(51, 51, 51)",
+                      "color": "rgb(34, 34, 34)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(51, 51, 51) rgb(51, 51, 51) rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34) rgb(34, 34, 34) rgba(0, 0, 0, 0)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -1802,7 +1802,7 @@
                         "styles": {
                           "color": "rgb(0, 0, 0)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(0, 0, 0)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -1816,9 +1816,9 @@
                     "classes": ["metadata-property-value"],
                     "attrs": { "data-property-type": "text" },
                     "styles": {
-                      "color": "rgb(51, 51, 51)",
+                      "color": "rgb(34, 34, 34)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(51, 51, 51) rgb(51, 51, 51) rgba(0, 0, 0, 0)",
+                      "borderColor": "rgb(34, 34, 34) rgb(34, 34, 34) rgba(0, 0, 0, 0)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -1834,9 +1834,9 @@
                           "tabindex": "0"
                         },
                         "styles": {
-                          "color": "rgb(51, 51, 51)",
+                          "color": "rgb(34, 34, 34)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(51, 51, 51)",
+                          "borderColor": "rgb(34, 34, 34)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -1945,7 +1945,7 @@
               "backgroundColor": "rgba(0, 0, 0, 0)",
               "borderColor": "rgb(34, 34, 34)",
               "fill": "rgb(0, 0, 0)",
-              "stroke": "none"
+              "stroke": "rgb(34, 34, 34)"
             },
             "childCount": 2,
             "children": [
@@ -1958,7 +1958,7 @@
                   "backgroundColor": "rgba(0, 0, 0, 0)",
                   "borderColor": "rgb(34, 34, 34)",
                   "fill": "rgb(0, 0, 0)",
-                  "stroke": "none"
+                  "stroke": "rgb(34, 34, 34)"
                 },
                 "childCount": 1,
                 "children": [
@@ -2026,7 +2026,7 @@
                   "backgroundColor": "rgba(0, 0, 0, 0)",
                   "borderColor": "rgb(34, 34, 34)",
                   "fill": "rgb(0, 0, 0)",
-                  "stroke": "none"
+                  "stroke": "rgb(34, 34, 34)"
                 },
                 "childCount": 0,
                 "children": []
