@@ -265,6 +265,7 @@ export const theme: ThemeData = {
   --nav-tag-color-active: #232323 !important;
   --nav-tag-color-hover: #232323 !important;
   --neumorphic-transition: all 0.15s !important;
+  --neumorphic-transition-faster: all 0.10s !important;
   --on-border: hsla(232, 
     32%, 
     64%) !important;
@@ -333,6 +334,7 @@ export const theme: ThemeData = {
     100%) !important;
   --tab-container-background: #F6F6F6 !important;
   --tab-outline-color: #EAEAEA !important;
+  --tab-stacked-header-width: 50px !important;
   --tab-switcher-background: #F6F6F6 !important;
   --tab-switcher-menubar-background: linear-gradient(to top, #F6F6F6, transparent) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(232, 

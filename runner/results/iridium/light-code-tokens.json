@@ -26,7 +26,7 @@
     "textDecoration": "none"
   },
   "header": {
-    "color": "oklch(0.48 0.2 292.489)",
+    "color": "oklch(0.5 0.2 292.489)",
     "fontStyle": "normal",
     "fontWeight": "600",
     "textDecoration": "none"
