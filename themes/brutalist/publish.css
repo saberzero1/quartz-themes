@@ -607,21 +607,21 @@ body.theme-light {
   --callout-content-padding: 0;
   --callout-default: 8, 109, 221;
   --callout-error: 233, 49, 71;
-  --callout-example: 143, 94, 153;
-  --callout-fail: 186, 84, 78;
+  --callout-example: 120, 82, 238;
+  --callout-fail: 233, 49, 71;
   --callout-important: 0, 191, 188;
-  --callout-info: 74, 130, 148;
+  --callout-info: 8, 109, 221;
   --callout-padding: 12px 12px 12px 24px;
   --callout-question: 236, 117, 0;
-  --callout-quote: 136, 136, 136;
+  --callout-quote: 158, 158, 158;
   --callout-radius: 0;
   --callout-success: 8, 185, 78;
   --callout-summary: 0, 191, 188;
-  --callout-tip: 99, 138, 102;
+  --callout-tip: 0, 191, 188;
   --callout-title-padding: 0;
   --callout-title-weight: 600;
   --callout-todo: 8, 109, 221;
-  --callout-warning: 191, 140, 59;
+  --callout-warning: 236, 117, 0;
   --canvas-background: #c5c5c5 !important;
   --canvas-card-label-color: color-mix(
     in srgb,
@@ -936,21 +936,21 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: #505050 !important;
+  --link-color: #000000 !important;
   --link-color-hover: #000000 !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: #505050 !important;
+  --link-external-color: #000000 !important;
   --link-external-color-hover: #000000 !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: #000000 !important;
+  --link-unresolved-color: #753e3f !important;
   --link-unresolved-decoration-color: hsla(0, 0%, 28%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
-  --link-unresolved-opacity: 0.7 !important;
+  --link-unresolved-opacity: 1 !important;
   --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
@@ -1395,8 +1395,6 @@ body.theme-light {
   --calendar-dot-bg: #d10000 !important;
   --calendar-header-color: #222222 !important;
   --calendar-today-color: #d10000 !important;
-  --callout-abstract: 88, 139, 150;
-  --callout-note: 84, 122, 155;
   --canvas-node-border-color: #232323 !important;
   --checkbox-border-width: 1px !important;
   --cta-bg-dynamic: #000000 !important;
@@ -1421,7 +1419,7 @@ body.theme-light {
   --input-border: transparent !important;
   --light-accent-custom: #000000 !important;
   --menu-custom-bg: #d6d6d6 !important;
-  --metadata-content-radius: 8px !important;
+  --metadata-content-radius: 0px !important;
   --mobile-active-bg: #d6d6d6 !important;
   --mobile-drawer-bg: #b0b0b0 !important;
   --mobile-drawer-color-dark: #c5c5c5 !important;
@@ -1950,12 +1948,12 @@ body.theme-dark {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: #e2e2e2 !important;
+  --link-color: #a0a0a0 !important;
   --link-color-hover: color-mix(in srgb, #b3b3b3, white 40%) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: #e2e2e2 !important;
+  --link-external-color: #a0a0a0 !important;
   --link-external-color-hover: color-mix(
     in srgb,
     #b3b3b3,
@@ -1964,11 +1962,11 @@ body.theme-dark {
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: #cdcdcd !important;
+  --link-unresolved-color: #e67e80 !important;
   --link-unresolved-decoration-color: hsla(0, 0%, 75%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
-  --link-unresolved-opacity: 0.7 !important;
+  --link-unresolved-opacity: 1 !important;
   --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
@@ -2327,7 +2325,7 @@ body.theme-dark {
   --tag-size: 0.875em !important;
   --text-accent-hover: color-mix(in srgb, #b3b3b3, white 40%) !important;
   --text-error: #fb464c !important;
-  --text-highlight-bg: color-mix(in srgb, #495ca1, transparent 55%) !important;
+  --text-highlight-bg: color-mix(in srgb, #38717f, transparent 55%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: #b3b3b3 !important;
   --text-on-accent: #323232 !important;
@@ -2428,7 +2426,7 @@ body.theme-dark {
   --input-border: transparent !important;
   --light-accent-custom: #000000 !important;
   --menu-custom-bg: #262626 !important;
-  --metadata-content-radius: 8px !important;
+  --metadata-content-radius: 0px !important;
   --mobile-active-bg: #505050 !important;
   --mobile-drawer-bg: #3c3c3c !important;
   --mobile-drawer-color-dark: #3c3c3c !important;
@@ -2471,7 +2469,7 @@ body.theme-dark {
   --tab-hover-bg-ui: color-mix(in srgb, #b3b3b3, transparent 90%) !important;
   --tab-hover-text-ui: #b3b3b3 !important;
   --text-align-mode: left !important;
-  --toggle-on-color: #5f6a93 !important;
+  --toggle-on-color: #448494 !important;
   --toggle-track-radius: 0 !important;
   --ui-font-color-dark: #b3b3b3 !important;
   --ui-font-color-light: #222222 !important;
@@ -2500,16 +2498,16 @@ body {
 }
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(80, 80, 80);
+  color: rgb(0, 0, 0);
   cursor: pointer;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
   font-family: Lora, serif;
   font-weight: 400;
-  outline: rgb(80, 80, 80) none 0px;
+  outline: rgb(0, 0, 0) none 0px;
   text-decoration: underline;
-  text-decoration-color: rgb(80, 80, 80);
+  text-decoration-color: rgb(0, 0, 0);
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
@@ -2526,16 +2524,16 @@ body body.theme-light .markdown-rendered a.external-link {
 }
 body body.theme-light .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(80, 80, 80);
+  color: rgb(0, 0, 0);
   cursor: pointer;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
   font-family: Lora, serif;
   font-weight: 400;
-  outline: rgb(80, 80, 80) none 0px;
+  outline: rgb(0, 0, 0) none 0px;
   text-decoration: underline;
-  text-decoration-color: rgb(80, 80, 80);
+  text-decoration-color: rgb(0, 0, 0);
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
@@ -2552,14 +2550,14 @@ body body.theme-light .markdown-rendered a.internal-link {
 }
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: rgb(117, 62, 63);
   cursor: pointer;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
   font-family: Lora, serif;
   font-weight: 400;
-  outline: rgb(0, 0, 0) none 0px;
+  outline: rgb(117, 62, 63) none 0px;
   text-decoration: underline rgba(71, 71, 71, 0.3);
   text-decoration-color: rgba(71, 71, 71, 0.3);
   text-decoration-line: underline;
@@ -3132,9 +3130,9 @@ body body.theme-light body.styled-scrollbars {
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
-  --callout-color: 84, 122, 155;
-  border: 1px solid rgba(84, 122, 155, 0.25);
-  border-left: 4px solid rgb(84, 122, 155);
+  --callout-color: 8, 109, 221;
+  border: 1px solid rgb(0, 0, 0);
+  border-left-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3145,7 +3143,7 @@ body body.theme-light .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
-  background-color: rgba(84, 122, 155, 0.15);
+  background-color: rgba(0, 0, 0, 0);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
   color: rgb(35, 35, 35);
@@ -3170,11 +3168,11 @@ body body.theme-light .callout > .callout-content {
   padding: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
-  --callout-color: 88, 139, 150;
-  background-color: rgba(88, 139, 150, 0.15);
+  --callout-color: 0, 191, 188;
+  background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid rgba(88, 139, 150, 0.25);
-  border-left: 4px solid rgb(88, 139, 150);
+  border: 1px solid rgb(0, 0, 0);
+  border-left-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3185,11 +3183,11 @@ body body.theme-light .callout[data-callout="abstract"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="info"] {
-  --callout-color: 74, 130, 148;
-  background-color: rgba(74, 130, 148, 0.15);
+  --callout-color: 8, 109, 221;
+  background-color: rgba(8, 109, 221, 0.15);
   mix-blend-mode: normal;
-  border: 1px solid rgba(74, 130, 148, 0.25);
-  border-left: 4px solid rgb(74, 130, 148);
+  border: 1px solid rgba(8, 109, 221, 0.25);
+  border-left: 4px solid rgb(8, 109, 221);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3200,11 +3198,11 @@ body body.theme-light .callout[data-callout="info"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="todo"] {
-  --callout-color: 191, 140, 59;
-  background-color: rgba(191, 140, 59, 0.15);
+  --callout-color: 236, 117, 0;
+  background-color: rgba(236, 117, 0, 0.15);
   mix-blend-mode: normal;
-  border: 1px solid rgba(191, 140, 59, 0.25);
-  border-left: 4px solid rgb(191, 140, 59);
+  border: 1px solid rgba(236, 117, 0, 0.25);
+  border-left: 4px solid rgb(236, 117, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3215,11 +3213,11 @@ body body.theme-light .callout[data-callout="todo"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="tip"] {
-  --callout-color: 99, 138, 102;
-  background-color: rgba(99, 138, 102, 0.15);
+  --callout-color: 0, 191, 188;
+  background-color: rgba(0, 191, 188, 0.15);
   mix-blend-mode: normal;
-  border: 1px solid rgba(99, 138, 102, 0.25);
-  border-left: 4px solid rgb(99, 138, 102);
+  border: 1px solid rgba(0, 191, 188, 0.25);
+  border-left: 4px solid rgb(0, 191, 188);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3230,11 +3228,11 @@ body body.theme-light .callout[data-callout="tip"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="success"] {
-  --callout-color: 99, 138, 102;
-  background-color: rgba(99, 138, 102, 0.15);
+  --callout-color: 0, 191, 188;
+  background-color: rgba(0, 191, 188, 0.15);
   mix-blend-mode: normal;
-  border: 1px solid rgba(99, 138, 102, 0.25);
-  border-left: 4px solid rgb(99, 138, 102);
+  border: 1px solid rgba(0, 191, 188, 0.25);
+  border-left: 4px solid rgb(0, 191, 188);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3245,11 +3243,11 @@ body body.theme-light .callout[data-callout="success"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="question"] {
-  --callout-color: 191, 140, 59;
-  background-color: rgba(191, 140, 59, 0.15);
+  --callout-color: 236, 117, 0;
+  background-color: rgba(236, 117, 0, 0.15);
   mix-blend-mode: normal;
-  border: 1px solid rgba(191, 140, 59, 0.25);
-  border-left: 4px solid rgb(191, 140, 59);
+  border: 1px solid rgba(236, 117, 0, 0.25);
+  border-left: 4px solid rgb(236, 117, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3260,11 +3258,11 @@ body body.theme-light .callout[data-callout="question"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="warning"] {
-  --callout-color: 191, 140, 59;
-  background-color: rgba(191, 140, 59, 0.15);
+  --callout-color: 236, 117, 0;
+  background-color: rgba(236, 117, 0, 0.15);
   mix-blend-mode: normal;
-  border: 1px solid rgba(191, 140, 59, 0.25);
-  border-left: 4px solid rgb(191, 140, 59);
+  border: 1px solid rgba(236, 117, 0, 0.25);
+  border-left: 4px solid rgb(236, 117, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3275,11 +3273,11 @@ body body.theme-light .callout[data-callout="warning"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="danger"] {
-  --callout-color: 186, 84, 78;
-  background-color: rgba(186, 84, 78, 0.15);
+  --callout-color: 233, 49, 71;
+  background-color: rgba(233, 49, 71, 0.15);
   mix-blend-mode: normal;
-  border: 1px solid rgba(186, 84, 78, 0.25);
-  border-left: 4px solid rgb(186, 84, 78);
+  border: 1px solid rgba(233, 49, 71, 0.25);
+  border-left: 4px solid rgb(233, 49, 71);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3290,11 +3288,11 @@ body body.theme-light .callout[data-callout="danger"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="failure"] {
-  --callout-color: 186, 84, 78;
-  background-color: rgba(186, 84, 78, 0.15);
+  --callout-color: 233, 49, 71;
+  background-color: rgba(233, 49, 71, 0.15);
   mix-blend-mode: normal;
-  border: 1px solid rgba(186, 84, 78, 0.25);
-  border-left: 4px solid rgb(186, 84, 78);
+  border: 1px solid rgba(233, 49, 71, 0.25);
+  border-left: 4px solid rgb(233, 49, 71);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3305,11 +3303,11 @@ body body.theme-light .callout[data-callout="failure"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="bug"] {
-  --callout-color: 186, 84, 78;
-  background-color: rgba(186, 84, 78, 0.15);
+  --callout-color: 233, 49, 71;
+  background-color: rgba(233, 49, 71, 0.15);
   mix-blend-mode: normal;
-  border: 1px solid rgba(186, 84, 78, 0.25);
-  border-left: 4px solid rgb(186, 84, 78);
+  border: 1px solid rgba(233, 49, 71, 0.25);
+  border-left: 4px solid rgb(233, 49, 71);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3320,11 +3318,11 @@ body body.theme-light .callout[data-callout="bug"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="example"] {
-  --callout-color: 143, 94, 153;
-  background-color: rgba(143, 94, 153, 0.15);
+  --callout-color: 120, 82, 238;
+  background-color: rgba(120, 82, 238, 0.15);
   mix-blend-mode: normal;
-  border: 1px solid rgba(143, 94, 153, 0.25);
-  border-left: 4px solid rgb(143, 94, 153);
+  border: 1px solid rgba(120, 82, 238, 0.25);
+  border-left: 4px solid rgb(120, 82, 238);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3335,11 +3333,11 @@ body body.theme-light .callout[data-callout="example"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="quote"] {
-  --callout-color: 136, 136, 136;
+  --callout-color: 158, 158, 158;
   background-color: rgba(0, 0, 0, 0);
   mix-blend-mode: normal;
-  border: 1px solid rgba(136, 136, 136, 0.25);
-  border-left: 4px solid rgb(136, 136, 136);
+  border: 1px solid rgba(158, 158, 158, 0.25);
+  border-left: 4px solid rgb(158, 158, 158);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4094,16 +4092,16 @@ body body.theme-light .search-highlight {
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(226, 226, 226);
+  color: rgb(160, 160, 160);
   cursor: pointer;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
   font-family: Lora, serif;
   font-weight: 400;
-  outline: rgb(226, 226, 226) none 0px;
+  outline: rgb(160, 160, 160) none 0px;
   text-decoration: underline;
-  text-decoration-color: rgb(226, 226, 226);
+  text-decoration-color: rgb(160, 160, 160);
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
@@ -4120,16 +4118,16 @@ body body.theme-dark .markdown-rendered a.external-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(226, 226, 226);
+  color: rgb(160, 160, 160);
   cursor: pointer;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
   font-family: Lora, serif;
   font-weight: 400;
-  outline: rgb(226, 226, 226) none 0px;
+  outline: rgb(160, 160, 160) none 0px;
   text-decoration: underline;
-  text-decoration-color: rgb(226, 226, 226);
+  text-decoration-color: rgb(160, 160, 160);
   text-decoration-line: underline;
   text-decoration-style: solid;
   transition: opacity 0.14s ease-in-out;
@@ -4146,14 +4144,14 @@ body body.theme-dark .markdown-rendered a.internal-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(205, 205, 205);
+  color: rgb(230, 126, 128);
   cursor: pointer;
   filter: none;
   backdrop-filter: none;
   box-shadow: none;
   font-family: Lora, serif;
   font-weight: 400;
-  outline: rgb(205, 205, 205) none 0px;
+  outline: rgb(230, 126, 128) none 0px;
   text-decoration: underline rgba(191, 191, 191, 0.3);
   text-decoration-color: rgba(191, 191, 191, 0.3);
   text-decoration-line: underline;
@@ -4314,7 +4312,7 @@ body body.theme-dark i {
   animation-play-state: running;
 }
 body body.theme-dark .markdown-rendered mark {
-  background-color: color(srgb 0.286275 0.360784 0.631373 / 0.45);
+  background-color: color(srgb 0.219608 0.443137 0.498039 / 0.45);
   color: rgb(160, 160, 160);
   cursor: grab;
   filter: none;

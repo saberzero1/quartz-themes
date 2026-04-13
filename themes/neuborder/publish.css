@@ -1147,7 +1147,7 @@ body.theme-light {
   --tab-radius-active: 6px 6px 0 0 !important;
   --tab-stacked-font-size: 13px !important;
   --tab-stacked-font-weight: 400 !important;
-  --tab-stacked-header-width: 40px !important;
+  --tab-stacked-header-width: 50px !important;
   --tab-stacked-pane-width: 700px !important;
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05) !important;
   --tab-stacked-text-align: start !important;
@@ -1341,6 +1341,7 @@ body.theme-light {
   --list-radius-small: 3px !important;
   --mix-blend-mode-on-border: normal !important;
   --neumorphic-transition: all 0.15s !important;
+  --neumorphic-transition-faster: all 0.1s !important;
   --on-border: hsla(232, 32%, 64%) !important;
   --shadow-active:
     4px 4px 8px rgba(0, 0, 0, 0), -4px -4px 8px rgba(255, 255, 255, 0),

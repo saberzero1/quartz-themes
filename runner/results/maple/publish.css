@@ -444,7 +444,7 @@ body.theme-light {
   --background-modifier-border-focus: hsla(35, 15.4%, 56%, 60%) !important;
   --background-modifier-border-hover: hsla(35, 15.4%, 56%, 60%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
-  --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
+  --background-modifier-cover: hsla(17, 8%, 93%, 0.6) !important;
   --background-modifier-error: rgba(189.0825, 81.2175, 81.2175, 1) !important;
   --background-modifier-error-hover: rgba(
     189.0825,
@@ -1530,7 +1530,7 @@ body.theme-dark {
   --background-modifier-border-focus: hsla(207, 16.8%, 52%, 60%) !important;
   --background-modifier-border-hover: hsla(207, 16.8%, 52%, 60%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
-  --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
+  --background-modifier-cover: hsla(189, 6%, 12%, 0.6) !important;
   --background-modifier-error: rgba(209.304, 137.496, 137.496, 1) !important;
   --background-modifier-error-hover: rgba(
     209.304,

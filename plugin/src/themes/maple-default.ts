@@ -59,6 +59,8 @@ export const theme: ThemeData = {
     52%,
     60%
   ) !important;
+  --background-modifier-cover: hsla(189, 6%,
+    12%, 0.6) !important;
   --background-modifier-error: rgba(209.304, 137.496, 137.496, 1) !important;
   --background-modifier-error-hover: rgba(209.304, 137.496, 137.496, 0.9) !important;
   --background-modifier-error-rgb: 209.304, 137.496, 137.496 !important;
@@ -76,19 +78,16 @@ export const theme: ThemeData = {
   ) !important;
   --background-modifier-success: rgba(147.288, 199.512, 155.992, 0.85) !important;
   --background-modifier-success-rgb: 147.288, 199.512, 155.992 !important;
-  --background-primary: hsl(207,
-    5%, 11%) !important;
+  --background-primary: hsl(207, 5%, 11%) !important;
   --background-primary-alt: hsl(207, 8%, 13.5%) !important;
   --background-primary-alt-hsl: 207, 8%, 13.5% !important;
-  --background-primary-hsl: 207,
-    5%, 11% !important;
-  --background-secondary: hsl(189,
-    6%, 12%) !important;
-  --background-secondary-hsl: 189,
-    6%, 12% !important;
+  --background-primary-hsl: 207, 5%, 11% !important;
+  --background-secondary: hsl(189, 6%,
+    12%) !important;
+  --background-secondary-hsl: 189, 6%,
+    12% !important;
   --base-accent-h: 207 !important;
-  --bases-cards-background: hsl(207,
-    5%, 11%) !important;
+  --bases-cards-background: hsl(207, 5%, 11%) !important;
   --bases-cards-cover-background: hsl(207, 8%, 13.5%) !important;
   --bases-cards-shadow: 0 0 0 1px hsla(
     207,
@@ -116,8 +115,7 @@ export const theme: ThemeData = {
     32%,
     75%
   ) !important;
-  --bases-table-cell-background-active: hsl(207,
-    5%, 11%) !important;
+  --bases-table-cell-background-active: hsl(207, 5%, 11%) !important;
   --bases-table-cell-background-disabled: hsl(207, 8%, 13.5%) !important;
   --bases-table-cell-background-selected: hsla(207, 24%,
     44.2%, 0.1) !important;
@@ -130,16 +128,14 @@ export const theme: ThemeData = {
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(207, 24%,
     44.2%) !important;
   --bases-table-group-background: hsl(207, 8%, 13.5%) !important;
-  --bases-table-header-background: hsl(207,
-    5%, 11%) !important;
+  --bases-table-header-background: hsl(207, 5%, 11%) !important;
   --bases-table-header-background-hover: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
   ) !important;
-  --bases-table-summary-background: hsl(207,
-    5%, 11%) !important;
+  --bases-table-summary-background: hsl(207, 5%, 11%) !important;
   --bases-table-summary-background-hover: hsl(
     207,
     24%,
@@ -148,13 +144,12 @@ export const theme: ThemeData = {
   ) !important;
   --bg-delta-dark: 0% !important;
   --bg-editor: hsla(
-    207,
-    5%, 11%,
+    207, 5%, 11%,
     max(0.6, 0.85)
   ) !important;
   --bg-opacity: 0.6 !important;
-  --bg-surface: hsla(189,
-    6%, 12%, 0.6) !important;
+  --bg-surface: hsla(189, 6%,
+    12%, 0.6) !important;
   --block-outline-width: 2px !important;
   --blockquote-background-color: hsl(207, 8%, 13.5%) !important;
   --blockquote-border-color: hsl(
@@ -179,8 +174,7 @@ export const theme: ThemeData = {
   --callout-tip: 126.48, 199.92, 197.472;
   --callout-todo: 126.48, 183.6, 240.72;
   --callout-warning: 206.04, 162.52, 140.76;
-  --canvas-background: hsl(207,
-    5%, 11%) !important;
+  --canvas-background: hsl(207, 5%, 11%) !important;
   --canvas-color-1: 209.304, 137.496, 137.496 !important;
   --canvas-color-2: 206.04, 162.52, 140.76 !important;
   --canvas-color-3: 214.2, 181.56, 132.6 !important;
@@ -281,16 +275,14 @@ export const theme: ThemeData = {
   --divider-width-hover: 4px !important;
   --editor-min-opacity: 0.85 !important;
   --embed-background: hsla(
-    207,
-    5%, 11%,
+    207, 5%, 11%,
     max(0.6, 0.85)
   ) !important;
   --embed-block-shadow-hover: 0 0 0 1px hsl(
     207,
     12%,
     32%
-  ),
-    inset 0 0 0 1px hsl(
+  ), inset 0 0 0 1px hsl(
     207,
     12%,
     32%
@@ -318,10 +310,8 @@ export const theme: ThemeData = {
   --embed-padding: 16px 20px !important;
   --embed-radius: 8px !important;
   --file-folding-offset: 28px !important;
-  --file-header-background: hsl(207,
-    5%, 11%) !important;
-  --file-header-background-focused: hsl(207,
-    5%, 11%) !important;
+  --file-header-background: hsl(207, 5%, 11%) !important;
+  --file-header-background-focused: hsl(207, 5%, 11%) !important;
   --file-header-font-size: 14px !important;
   --file-line-width: clamp(600px, 72%, 850px) !important;
   --flair-color: hsla(207, 50%, 94%, 75%) !important;
@@ -434,39 +424,23 @@ export const theme: ThemeData = {
   ) !important;
   --interactive-accent-hsl: 207, 24%,
     44.2% !important;
-  --light: hsl(207,
-    5%, 11%) !important;
-  --lightgray: hsl(189,
-    6%, 12%) !important;
+  --light: hsl(207, 5%, 11%) !important;
+  --lightgray: hsl(189, 6%,
+    12%) !important;
   --line-height-normal: 1.8 !important;
   --line-height-tight: 1.5 !important;
   --link-color: rgba(126.48, 199.92, 197.472, 0.85) !important;
   --link-color-hover: rgba(126.48, 199.92, 197.472, 0.85) !important;
   --link-color-rgb: 126.48, 199.92, 197.472 !important;
   --link-color-underline: rgba(126.48, 199.92, 197.472, 0.85) !important;
-  --link-external-color: rgba(
-    214.2, 181.56, 132.6,
-    0.85
-  ) !important;
-  --link-external-color-hover: rgba(
-    214.2, 181.56, 132.6,
-    0.85
-  ) !important;
+  --link-external-color: rgba(214.2, 181.56, 132.6, 0.85) !important;
+  --link-external-color-hover: rgba(214.2, 181.56, 132.6, 0.85) !important;
   --link-external-color-rgb: 214.2, 181.56, 132.6 !important;
-  --link-external-color-underline: rgba(
-    214.2, 181.56, 132.6,
-    0.85
-  ) !important;
+  --link-external-color-underline: rgba(214.2, 181.56, 132.6, 0.85) !important;
   --link-footnote: rgba(186.2265, 179.265, 238.935, 0.85) !important;
   --link-text-size: 16px !important;
-  --link-unresolved-color: rgba(
-    126.48, 199.92, 197.472,
-    0.7225
-  ) !important;
-  --link-unresolved-decoration-color: rgba(
-    126.48, 199.92, 197.472,
-    0.7225
-  ) !important;
+  --link-unresolved-color: rgba(126.48, 199.92, 197.472, 0.7225) !important;
+  --link-unresolved-decoration-color: rgba(126.48, 199.92, 197.472, 0.7225) !important;
   --list-bullet-size: 7.33333px !important;
   --list-marker-color: hsl(
     207,
@@ -490,8 +464,8 @@ export const theme: ThemeData = {
     32%
   ) !important;
   --list-threading-width: max(0.1rem, 2px) !important;
-  --menu-background: hsl(189,
-    6%, 12%) !important;
+  --menu-background: hsl(189, 6%,
+    12%) !important;
   --menu-border-color: hsla(
     207,
     6%,
@@ -544,8 +518,7 @@ export const theme: ThemeData = {
   ) !important;
   --metadata-sidebar-input-font-size: 14px !important;
   --metadata-sidebar-label-font-size: 14px !important;
-  --modal-background: hsl(207,
-    5%, 11%) !important;
+  --modal-background: hsl(207, 5%, 11%) !important;
   --modal-close-button-padding: 12px !important;
   --modal-header-height: 48px !important;
   --modal-height: min(85vh, 1000px) !important;
@@ -596,16 +569,14 @@ export const theme: ThemeData = {
   --outline-item-height: 25.92px !important;
   --p-spacing: 8px !important;
   --pdf-background: transparent !important;
-  --pdf-page-background: hsl(207,
-    5%, 11%) !important;
+  --pdf-page-background: hsl(207, 5%, 11%) !important;
   --pdf-shadow: 0 0 0 1px hsla(
     207,
     6%,
     32%,
     75%
   ) !important;
-  --pdf-sidebar-background: hsl(207,
-    5%, 11%) !important;
+  --pdf-sidebar-background: hsl(207, 5%, 11%) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px hsla(
     207,
     6%,
@@ -630,16 +601,13 @@ export const theme: ThemeData = {
     24.48%,
     50.83%
   ) !important;
-  --prompt-background: hsl(207,
-    5%, 11%) !important;
-  --ribbon-background: hsl(189,
-    6%, 12%) !important;
-  --ribbon-background-collapsed: hsl(207,
-    5%, 11%) !important;
+  --prompt-background: hsl(207, 5%, 11%) !important;
+  --ribbon-background: hsl(189, 6%,
+    12%) !important;
+  --ribbon-background-collapsed: hsl(207, 5%, 11%) !important;
   --scrollbar-color: rgba(0, 0, 0, 0) !important;
   --scrollbar-transition: --scrollbar-color 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
-  --search-result-background: hsl(207,
-    5%, 11%) !important;
+  --search-result-background: hsl(207, 5%, 11%) !important;
   --secondary: hsl(
     204,
     24.48%,
@@ -689,8 +657,8 @@ export const theme: ThemeData = {
     12%,
     32%
   ) !important;
-  --status-bar-background: hsl(189,
-    6%, 12%) !important;
+  --status-bar-background: hsl(189, 6%,
+    12%) !important;
   --status-bar-border-color: hsla(
     207,
     6%,
@@ -700,8 +668,7 @@ export const theme: ThemeData = {
   --status-bar-border-width: 1px !important;
   --status-bar-font-size: 13px !important;
   --status-bar-radius: 6px !important;
-  --suggestion-background: hsl(207,
-    5%, 11%) !important;
+  --suggestion-background: hsl(207, 5%, 11%) !important;
   --sync-avatar-color-1: rgba(209.304, 137.496, 137.496, 0.85) !important;
   --sync-avatar-color-2: rgba(206.04, 162.52, 140.76, 0.85) !important;
   --sync-avatar-color-3: rgba(214.2, 181.56, 132.6, 0.85) !important;
@@ -710,8 +677,7 @@ export const theme: ThemeData = {
   --sync-avatar-color-6: rgba(126.48, 183.6, 240.72, 0.85) !important;
   --sync-avatar-color-7: rgba(186.2265, 179.265, 238.935, 0.85) !important;
   --tab-active-shadow: none !important;
-  --tab-background-active: hsl(207,
-    5%, 11%) !important;
+  --tab-background-active: hsl(207, 5%, 11%) !important;
   --tab-container-background: hsl(
     207,
     12%,
@@ -721,10 +687,10 @@ export const theme: ThemeData = {
   --tab-outline-color: transparent !important;
   --tab-radius: 6px !important;
   --tab-stacked-font-size: 14px !important;
-  --tab-switcher-background: hsl(189,
-    6%, 12%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(189,
-    6%, 12%), transparent) !important;
+  --tab-switcher-background: hsl(189, 6%,
+    12%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(189, 6%,
+    12%), transparent) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(207, 24%,
     44.2%) !important;
   --tab-text-color-focused-active-current: hsla(207, 50%, 94%, 75%) !important;
@@ -2334,8 +2300,7 @@ html[saved-theme="dark"] body ul.tags > li {
     hsl(5, 36%, 87%)
   ) !important;
   --app-layout-spacing: 6px !important;
-  --background-modifier-active-hover: hsla(35, 22%,
-    56%, 0.1) !important;
+  --background-modifier-active-hover: hsla(35, 22%, 56%, 0.1) !important;
   --background-modifier-border: hsla(
     35,
     10%,
@@ -2354,6 +2319,7 @@ html[saved-theme="dark"] body ul.tags > li {
     56%,
     60%
   ) !important;
+  --background-modifier-cover: hsla(17, 8%, 93%, 0.6) !important;
   --background-modifier-error: rgba(189.0825, 81.2175, 81.2175, 1) !important;
   --background-modifier-error-hover: rgba(189.0825, 81.2175, 81.2175, 0.9) !important;
   --background-modifier-error-rgb: 189.0825, 81.2175, 81.2175 !important;
@@ -2408,8 +2374,7 @@ html[saved-theme="dark"] body ul.tags > li {
   ) !important;
   --bases-table-cell-background-active: hsl(35, 12%, 97%) !important;
   --bases-table-cell-background-disabled: hsl(35, 18%, 93.5%) !important;
-  --bases-table-cell-background-selected: hsla(35, 22%,
-    56%, 0.1) !important;
+  --bases-table-cell-background-selected: hsla(35, 22%, 56%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsla(
     35,
     15.4%,
@@ -2525,10 +2490,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --code-value: rgba(17.85, 124.95, 82.11, 1) !important;
   --code-variable: rgba(177.48, 139.74, 26.52, 1) !important;
   --codeFont: "maplemono", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
-  --collapse-icon-color-collapsed: hsl(35, 22%,
-    56%) !important;
-  --color-accent: hsl(35, 22%,
-    56%) !important;
+  --collapse-icon-color-collapsed: hsl(35, 22%, 56%) !important;
+  --color-accent: hsl(35, 22%, 56%) !important;
   --color-accent-1: hsl(
     34,
     22.22%,
@@ -2539,8 +2502,7 @@ html[saved-theme="dark"] body ul.tags > li {
     22.44%,
     64.4%
   ) !important;
-  --color-accent-hsl: 35, 22%,
-    56% !important;
+  --color-accent-hsl: 35, 22%, 56% !important;
   --color-blue: rgba(5.202, 132.8822, 168.198, 1) !important;
   --color-blue-rgb: 5.202, 132.8822, 168.198 !important;
   --color-cyan: rgba(17.85, 124.95, 82.11, 1) !important;
@@ -2572,8 +2534,7 @@ html[saved-theme="dark"] body ul.tags > li {
     35,
     20%,
     78%
-  ),
-    inset 0 0 0 1px hsl(
+  ), inset 0 0 0 1px hsl(
     35,
     20%,
     78%
@@ -2690,8 +2651,7 @@ html[saved-theme="dark"] body ul.tags > li {
     78%,
     75%
   ) !important;
-  --icon-color-active: hsl(35, 22%,
-    56%) !important;
+  --icon-color-active: hsl(35, 22%, 56%) !important;
   --inline-code: rgba(189.0825, 81.2175, 81.2175, 1) !important;
   --inline-title-color: rgb(189.0825, 81.2175, 81.2175) !important;
   --inline-title-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
@@ -2709,8 +2669,7 @@ html[saved-theme="dark"] body ul.tags > li {
     22.44%,
     64.4%
   ) !important;
-  --interactive-accent-hsl: 35, 22%,
-    56% !important;
+  --interactive-accent-hsl: 35, 22%, 56% !important;
   --light: hsl(35, 12%, 97%) !important;
   --lightgray: hsl(17, 8%, 93%) !important;
   --line-height-normal: 1.8 !important;
@@ -2719,29 +2678,14 @@ html[saved-theme="dark"] body ul.tags > li {
   --link-color-hover: rgba(17.85, 124.95, 82.11, 1) !important;
   --link-color-rgb: 17.85, 124.95, 82.11 !important;
   --link-color-underline: rgba(17.85, 124.95, 82.11, 1) !important;
-  --link-external-color: rgba(
-    177.48, 139.74, 26.52,
-    1
-  ) !important;
-  --link-external-color-hover: rgba(
-    177.48, 139.74, 26.52,
-    1
-  ) !important;
+  --link-external-color: rgba(177.48, 139.74, 26.52, 1) !important;
+  --link-external-color-hover: rgba(177.48, 139.74, 26.52, 1) !important;
   --link-external-color-rgb: 177.48, 139.74, 26.52 !important;
-  --link-external-color-underline: rgba(
-    177.48, 139.74, 26.52,
-    1
-  ) !important;
+  --link-external-color-underline: rgba(177.48, 139.74, 26.52, 1) !important;
   --link-footnote: rgba(114.24, 97.92, 146.88, 1) !important;
   --link-text-size: 16px !important;
-  --link-unresolved-color: rgba(
-    17.85, 124.95, 82.11,
-    0.85
-  ) !important;
-  --link-unresolved-decoration-color: rgba(
-    17.85, 124.95, 82.11,
-    0.85
-  ) !important;
+  --link-unresolved-color: rgba(17.85, 124.95, 82.11, 0.85) !important;
+  --link-unresolved-decoration-color: rgba(17.85, 124.95, 82.11, 0.85) !important;
   --list-bullet-size: 7.33333px !important;
   --list-marker-color: hsl(
     35,
@@ -2754,8 +2698,7 @@ html[saved-theme="dark"] body ul.tags > li {
     56%
   ) !important;
   --list-marker-color-alt-render: transparent !important;
-  --list-marker-color-collapsed: hsl(35, 22%,
-    56%) !important;
+  --list-marker-color-collapsed: hsl(35, 22%, 56%) !important;
   --list-threading-color: hsl(
     35,
     20%,
@@ -2840,8 +2783,7 @@ html[saved-theme="dark"] body ul.tags > li {
     25%
   ) !important;
   --nav-item-children-padding-left: 8px !important;
-  --nav-item-color-highlighted: hsl(35, 22%,
-    56%) !important;
+  --nav-item-color-highlighted: hsl(35, 22%, 56%) !important;
   --nav-item-size: 14.4px !important;
   --outline-guideline-color: hsl(
     35,
@@ -2871,8 +2813,7 @@ html[saved-theme="dark"] body ul.tags > li {
     56%,
     60%
   ) !important;
-  --pill-color-remove-hover: hsl(35, 22%,
-    56%) !important;
+  --pill-color-remove-hover: hsl(35, 22%, 56%) !important;
   --prompt-background: hsl(35, 12%, 97%) !important;
   --raised-background: color-mix(in srgb, hsl(35, 12%, 97%) 65%, transparent) linear-gradient(hsl(35, 12%, 97%), color-mix(in srgb, hsl(35, 12%, 97%) 65%, transparent)) !important;
   --ribbon-background: hsl(17, 8%, 93%) !important;
@@ -2880,8 +2821,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --scrollbar-color: rgba(0, 0, 0, 0) !important;
   --scrollbar-transition: --scrollbar-color 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --search-result-background: hsl(35, 12%, 97%) !important;
-  --secondary: hsl(35, 22%,
-    56%) !important;
+  --secondary: hsl(35, 22%, 56%) !important;
   --select-bg-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' stroke='%2523222222' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 9l6 6l6-6'/%3E%3C/svg%3E") !important;
   --setting-accent-h-dark: 207 !important;
   --setting-calendar-max-width: 500px !important;
@@ -2909,8 +2849,7 @@ html[saved-theme="dark"] body ul.tags > li {
     75%
   ) !important;
   --setting-modal-header-title: 'Maple 1.0.0-beta.33' !important;
-  --setting-scrollbar-hover: hsla(35, 22%,
-    56%, 40%) !important;
+  --setting-scrollbar-hover: hsla(35, 22%, 56%, 40%) !important;
   --setting-text-bold-style: underline dotted !important;
   --setting-text-highlight-bg: rgba(255, 208, 0, 0.4) !important;
   --setting-text-italic-style: underline dotted !important;
@@ -2956,10 +2895,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --tab-stacked-font-size: 14px !important;
   --tab-switcher-background: hsl(17, 8%, 93%) !important;
   --tab-switcher-menubar-background: linear-gradient(to top, hsl(17, 8%, 93%), transparent) !important;
-  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(35, 22%,
-    56%) !important;
-  --tab-text-color-focused-highlighted: hsl(35, 22%,
-    56%) !important;
+  --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(35, 22%, 56%) !important;
+  --tab-text-color-focused-highlighted: hsl(35, 22%, 56%) !important;
   --table-add-button-background: hsl(
     35,
     20%,
@@ -3001,27 +2938,20 @@ html[saved-theme="dark"] body ul.tags > li {
     75%
   ) !important;
   --table-line-height: 1.5 !important;
-  --table-selection: hsla(35, 22%,
-    56%, 0.1) !important;
+  --table-selection: hsla(35, 22%, 56%, 0.1) !important;
   --table-selection-border-color: hsl(
     35,
     20%,
     78%
   ) !important;
   --table-selection-border-radius: 8px !important;
-  --tag-background: hsla(35, 22%,
-    56%, 0.1) !important;
-  --tag-background-hover: hsla(35, 22%,
-    56%, 0.2) !important;
-  --tag-border-color: hsl(35, 22%,
-    56%) !important;
-  --tag-border-color-hover: hsla(35, 22%,
-    56%, 0.15) !important;
+  --tag-background: hsla(35, 22%, 56%, 0.1) !important;
+  --tag-background-hover: hsla(35, 22%, 56%, 0.2) !important;
+  --tag-border-color: hsl(35, 22%, 56%) !important;
+  --tag-border-color-hover: hsla(35, 22%, 56%, 0.15) !important;
   --tag-border-width: 1px !important;
-  --tag-color: hsl(35, 22%,
-    56%) !important;
-  --tag-color-hover: hsl(35, 22%,
-    56%) !important;
+  --tag-color: hsl(35, 22%, 56%) !important;
+  --tag-color-hover: hsl(35, 22%, 56%) !important;
   --tag-padding-x: 8px !important;
   --tag-padding-y: 0 !important;
   --tertiary: hsl(
@@ -3029,8 +2959,7 @@ html[saved-theme="dark"] body ul.tags > li {
     22.44%,
     64.4%
   ) !important;
-  --text-accent: hsl(35, 22%,
-    56%) !important;
+  --text-accent: hsl(35, 22%, 56%) !important;
   --text-accent-hover: hsl(
     32,
     22.44%,
@@ -3038,8 +2967,7 @@ html[saved-theme="dark"] body ul.tags > li {
   ) !important;
   --text-error: rgba(189.0825, 81.2175, 81.2175, 1) !important;
   --text-on-accent: #fafafa !important;
-  --text-selection: hsla(35, 22%,
-    56%, 0.25) !important;
+  --text-selection: hsla(35, 22%, 56%, 0.25) !important;
   --text-success: rgba(71.4, 142.8, 20.4, 1) !important;
   --text-warning: rgba(199.41, 122.774, 35.19, 1) !important;
   --textHighlight: hsl(

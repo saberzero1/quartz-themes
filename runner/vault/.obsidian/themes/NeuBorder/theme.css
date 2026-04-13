@@ -74,6 +74,7 @@ body {
 
   /* Transition times */
   --neumorphic-transition: all 0.15s;
+  --neumorphic-transition-faster: all 0.10s;
 }
 
 /* Light theme definitions */
@@ -168,7 +169,7 @@ body {
     calc(0.4*var(--accent-s)), 
     calc(var(--accent-l)));
   
-  --background-modifier-hover: hsla(var(--accent-h), 6%, 64%, 0.15); /* Used to color in buttons when hovered */
+  --background-modifier-hover: hsla(var(--accent-h), 6%, 64%, 0.15); /* Colors in buttons when hovered */
   --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   --background-modifier-cover: rgba(220, 220, 220, 0.4);
 
@@ -249,27 +250,39 @@ body {
   --background-base: #2b2b2b; /* This specific gray is the "middle ground" allowing for both highlights and deep shadows */
   
   --background: var(--background-base);
-  --background-primary: var(--background-base);
-  --background-primary-alt: #252525; /* Used to color in-line code block backgrounds */
-  --background-secondary: var(--background-base);
+  --background-primary: hsl(var(--accent-h), calc(var(--accent-s) / 5), calc(1.25*var(--accent-l) / 4.5));
+  --background-primary-alt: hsl(var(--accent-h), calc(var(--accent-s) / 5), calc(1.25*var(--accent-l) / 3.9)); /* Used to color in-line code block backgrounds */
+  --background-secondary: hsl(var(--accent-h), calc(var(--accent-s) / 5), calc(1.25*var(--accent-l) / 4.9));
   --background-tertiary: hsl(var(--accent-h), 40%, 25%);
+  --workspace-background-translucent: hsla(var(--accent-h),
+      calc(var(--accent-s) / 5.4),
+      calc(1.25*var(--accent-l) / 3.6), 0.6);
   
   /* Re-defined Shadows for Dark Mode\ */
   /* Top-left: Faint white (highlight) | Bottom-right: Deep black (shadow) */
   --shadow:
     5px 5px 10px rgba(0, 0, 0, 0.5),
-    -5px -5px 10px rgba(255, 255, 255, 0.06);
+    -5px -5px 10px rgba(255, 255, 255, 0.06),
+    inset 3px 3px 3px rgba(0, 0, 0, 0),
+    inset -3px -3px 3px rgba(255, 255, 255, 0);
 
   --shadow-hover:
+    5px 5px 10px rgba(0, 0, 0, 0),
+    -5px -5px 10px rgba(255, 255, 255, 0),
     inset 3px 3px 3px rgba(0, 0, 0, 0.5),
     inset -3px -3px 3px rgba(255, 255, 255, 0.06);
 
   --shadow-active:
+    5px 5px 10px rgba(0, 0, 0, 0),
+    -5px -5px 10px rgba(255, 255, 255, 0),
     inset 3px 3px 3px rgba(0, 0, 0, 0.7),
     inset -3px -3px 3px rgba(255, 255, 255, 0.04);
 
   --shadow-selected:
-    inset 3px 3px 3px rgba(0, 0, 0, 0.6);
+    5px 5px 10px rgba(0, 0, 0, 0),
+    -5px -5px 10px rgba(255, 255, 255, 0),
+    inset 3px 3px 3px rgba(0, 0, 0, 0.6),
+    inset -3px -3px 3px rgba(255, 255, 255, 0);
 
   --shadow-scrollbar:
     inset 4px 4px 8px rgba(0, 0, 0, 0.5),
@@ -284,17 +297,33 @@ body {
     0px 10px 30px rgba(0, 0, 0, 0.5);
 
   /* Typography */
-  --text-normal: #dcdcdc;
-  --text-muted: #999999;
-  --text-faint: #666666;
+  --text-normal: hsl(var(--accent-h), 15%, 85%);
+  --text-muted: hsl(var(--accent-h), 12%, 75%);
+  --text-faint: hsl(var(--accent-h), 9%, 50%);
+  --text-accent: var(--color-accent-1);
+  --text-accent-hover: var(--color-accent-2);
+  --highlight-mix-blend-mode: lighten;
   --text-error: #ff6666;
   --text-error-hover: #ff9999;
   --text-matched: #2ecc71;
   
   /* Accents & UI Elements */
-  --accent-h: 232;
-  --accent-s: 70%; /* Slightly desaturated for dark mode comfort */
-  --accent-l: 70%; /* Lightened slightly to pop against dark bg */
+  --accent-dark-h: 232;
+  --accent-dark-s: 40%;
+  --accent-dark-l: 60%;
+  --accent-h: var(--accent-dark-h);
+  --accent-s: var(--accent-dark-s);
+  --accent-l: var(--accent-dark-l);
+  
+  --color-accent-hsl-dark: var(--accent-h),
+        var(--accent-s),
+        var(--accent-l);
+  --color-accent-hsl: var(--color-accent-hsl-dark);
+
+  --color-accent-dark: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1-dark: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15));
+  --color-accent-2-dark: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l) * 1.29));
+  --color-accent-3-dark: hsla(var(--accent-h), calc(0.4*var(--accent-s)), calc(0.9*var(--accent-l)));
   
   --interactive-accent: 
     hsl(var(--accent-h),
@@ -311,12 +340,15 @@ body {
   --button-color-1: var(--background-base);
   
   /* Modifiers */
-  --background-modifier-border: rgba(0, 0, 0, 0.3); /* Subtle dark borders */
-  --background-modifier-border-focus: rgba(255, 255, 255, 0.1);
-  --background-modifier-border-hover: rgba(255, 255, 255, 0.1);
-  --background-modifier-box-shadow: rgba(0, 0, 0, 0.5);
-  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+  --background-modifier-border-muted: hsla(var(--accent-h), calc(0.4*var(--accent-s)), calc(0.9*var(--accent-l)), 0.1);
+  --background-modifier-border: hsla(var(--accent-h), calc(0.4*var(--accent-s)), calc(0.9*var(--accent-l)), 0.2);
+  --background-modifier-border-focus: hsla(var(--accent-h), calc(0.4*var(--accent-s)), calc(0.9*var(--accent-l)), 0.3);
+  --background-modifier-border-hover: hsla(var(--accent-h), calc(0.4*var(--accent-s)), calc(0.9*var(--accent-l)), 0.25);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
   --background-modifier-form-field: rgba(0, 0, 0, 0.2); /* Inset inputs */
+  --background-modifier-hover: hsla(var(--accent-h), 12%, 40%, 0.25);
+  --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
   
   /* Base Grayscale (Inverted logic for dark mode) */
   --color-base-00: #1a1a1a;
@@ -460,7 +492,6 @@ p {
 }
 
 /* Rounds corners on images inside markdown */
-.markdown-preview-view.img,
 img {
   border-radius: var(--image-radius);
 }
@@ -474,9 +505,9 @@ body:not(.is-mobile) .clickable-icon.side-dock-ribbon-action,
 .sidebar-toggle-button .clickable-icon,
 .workspace-tab-header-tab-list .clickable-icon,
 body:not(.is-mobile) .view-header .clickable-icon:not([aria-label="Accept changes"], [aria-label="Cancel apply"]) {
-    padding: 5px;
-    height: 32px;
-    width: 32px;
+  padding: 5px;
+  height: 32px;
+  width: 32px;
 }
 
 /* Adds Neumorphic styling to the button to modal close buttons */
@@ -541,12 +572,11 @@ body:not(.is-mobile) .view-header .clickable-icon:not([aria-label="Accept change
 .checkbox-container.is-enabled:hover {
   box-shadow: var(--shadow-hover);
 }
-.checkbox-container.is-enabled:active {
-  box-shadow: var(--shadow-active);
-}
+.checkbox-container.is-enabled:active,
 .checkbox-container:hover {
   box-shadow: var(--shadow-active);
 }
+
 /* Adds Neumorphic styling to the circles inside of the switches */
 .checkbox-container:after {
   box-shadow: var(--toggle-thumb-shadow);
@@ -656,10 +686,11 @@ body:not(.is-mobile).scrollbar-space-occupation-off :is(.mk-file-tree>div>div) {
 /* 4. Workspace & Layout                                             */
 /* ================================================================= */
 
-/* More side dock visual settings */
+/* Compresses the side dock a little bit. */
+/* Consider getting rid of this */
 .side-dock-settings,
 .side-dock-actions {
-    gap: var(--size-2-2);
+  gap: var(--size-2-2);
 }
 
 /* Defines Side dock ribbon properties */
@@ -688,9 +719,15 @@ body:not(.is-mobile).scrollbar-space-occupation-off :is(.mk-file-tree>div>div) {
 /* Sets collapsed side dock to be accent color */
 .workspace-ribbon.mod-left.is-collapsed {
   background-color: transparent;
+  border-right-width: 0px;
 }
 .workspace-ribbon {
-  background-color: var(--background);
+  background-color: var(--background-secondary);
+}
+
+/* Gives a nice color to the ribbon when the side dock is open in light mode */ 
+.theme-light .is-left-sidedock-open .workspace-ribbon {
+  background-color: var(--button-color-1);
 }
 
 /* Adds vertical overhead above markdown document for icons */
@@ -705,16 +742,15 @@ body:not(.is-mobile).scrollbar-space-occupation-off :is(.mk-file-tree>div>div) {
 
 /* Apply neumorphic styling to document title */
 .view-header-title {
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: var(--interactive-normal);
   border: none;
   border-radius: var(--button-radius-medium);
   box-shadow: var(--shadow);
-
   height: 32px;
-  display: flex;           
-  align-items: center; /* Keeps it perfectly centered vertically */
-  padding-left: 5px;
-  padding-right: 5px;
+  display: flex;
+  align-items: center; /* Keeps title perfectly centered vertically */
 }
 .view-header-title:hover {
   background-color: var(--background-modifier-hover);
@@ -727,23 +763,21 @@ body:not(.is-mobile).scrollbar-space-occupation-off :is(.mk-file-tree>div>div) {
 }
 
 .view-header-nav-buttons button.clickable-icon {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: var(--interactive-normal);
   color: var(--text-muted);
   border-radius: var(--button-radius-medium);
   box-shadow: var(--shadow);
   margin-left: 5px;
   margin-right: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
-
 .view-header-nav-buttons button.clickable-icon:hover {
   background-color: var(--background-modifier-hover);
   box-shadow: var(--shadow-hover);
 }
-
 .view-header-nav-buttons button.clickable-icon:active {
   box-shadow: var(--shadow-active);
 }
@@ -763,16 +797,11 @@ body:not(.is-mobile).scrollbar-space-occupation-off :is(.mk-file-tree>div>div) {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
 .view-action:hover {
   background-color: var(--background-modifier-hover);
   box-shadow: var(--shadow-hover);
 }
-
-.view-action:active {
-  box-shadow: var(--shadow-active);
-}
-
+.view-action:active,
 .view-action.has-active-menu {
   box-shadow: var(--shadow-active);
 }
@@ -972,7 +1001,6 @@ body:not(.is-mobile) .workspace::before {
 /* Dark Theme workspace shadow */
 .theme-dark:not(.is-mobile) .workspace::before {
   box-shadow: 
-    0px 0px 20px hsla(var(--accent-h), 18%, 80%, 0.1), 
     0px 0px 15px hsla(var(--accent-h), 18%, 80%, 0.1);
 }
 
@@ -1033,14 +1061,14 @@ body.is-hidden-frameless .titlebar .titlebar-button-container.mod-right {
 /* Icon replacement logic: */
 /* Hide the default Obsidian SVGs and replace them with custom ones */
 .titlebar-button:not(.mod-logo) > svg {
-    display: none !important;
+  display: none !important;
 }
 
 .titlebar-button-container.mod-right .titlebar-button::after {
-    content: '';
-    width: 16px;
-    height: 16px;
-    background-color: var(--color-base-80);
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-base-80);
 }
 
 /* When maximized, turn the maximize button background white */
@@ -1063,7 +1091,7 @@ body.is-maximized .titlebar-button.mod-maximize {
 
 /* Turn the close icon white when the background is red */
 .titlebar-button-container.mod-right .titlebar-button.mod-close:hover::after {
-    background-color: white !important;
+  background-color: white !important;
 }
 
 /* MacOS Specific header tweaks */
@@ -1080,11 +1108,11 @@ body.is-maximized .titlebar-button.mod-maximize {
 
 /* Set a bunch of properties for the file explorer */
 .workspace-leaf-content .tree-item-self {
-    margin-bottom: var(--size-2-2);
-    position: relative;
-    border-radius: var(--border-radius-activated-file-light);
-    align-items: center;
-    line-height: 20px; /* Adjusts the line height of the file tree */
+  margin-bottom: var(--size-2-2);
+  position: relative;
+  border-radius: var(--border-radius-activated-file-light);
+  align-items: center;
+  line-height: 20px; /* Adjusts the line height of the file tree */
 }
 
 /* Add neumorphic styling to just about every list */
@@ -1104,13 +1132,13 @@ body.is-maximized .titlebar-button.mod-maximize {
 
 /* Some stuff that adjusts the tabs on the top */
 .workspace-tab-header-container {
-    padding-left: 5px;
-    padding-right: var(--size-2-3);
+  padding-left: 5px;
+  padding-right: var(--size-2-3);
 }
 
 /* Adjust the positioning of the tabs on the left sidebar */
 .is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
-    padding-left: calc(0px + var(--frame-left-space));
+  padding-left: calc(0px + var(--frame-left-space));
 }
 
 /* Defines tab bar properties */
@@ -1137,10 +1165,6 @@ body.is-maximized .titlebar-button.mod-maximize {
   box-shadow: var(--shadow-active);
 }
 
-.workspace-tab-header-tab-list span.clickable-icon.has-active-menu {
-  background-color: var(--button-color-1);
-  box-shadow: var(--shadow);
-}
 .workspace-tab-header-tab-list span.clickable-icon.has-active-menu:hover {
   background-color: var(--button-color-1);
   box-shadow: var(--shadow);
@@ -1152,7 +1176,6 @@ body.is-maximized .titlebar-button.mod-maximize {
   background-color: var(--background-tertiary);
   box-shadow: var(--shadow);
   border-radius: var(--button-radius-medium);
-  height: 30pxz;
 }
 
 .workspace-tab-header-tab-list span.clickable-icon:hover,
@@ -1319,38 +1342,6 @@ body:not(.is-mobile) .workspace-tab-header-tab-list .clickable-icon .svg-icon {
   box-shadow: var(--shadow-hover);
 }
 
-/* Ditched effort to theme the vault switcher drawer */
-/* It just doesn't look good. I'm keeping it with the default look */
-
-/*
-.workspace-drawer-vault-switcher,
-.workspace-drawer-vault-actions .clickable-icon {
-  color: var(--nav-item-color);
-  background-color: var(--button-color-1);
-  box-shadow: var(--shadow);
-  border-radius: var(--button-radius-medium);
-  height: 35px;
-  width: 35px;
-
-  margin-left: 7px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.workspace-drawer-vault-switcher:hover,
-.workspace-drawer-vault-actions .clickable-icon:hover {
-  box-shadow: var(--shadow-hover);
-}
-.workspace-drawer-vault-switcher:active,
-.workspace-drawer-vault-switcher.has-active-menu,
-.workspace-drawer-vault-actions .clickable-icon:active {
-  box-shadow: var(--shadow-active);
-}
-.workspace-drawer-vault-actions {
-  margin-right: 7px;
-}
-*/
-
 /* Stop the vault switcher drawer icons from being so dull in dark mode */
 .theme-dark .workspace-drawer-vault-switcher-icon,
 .theme-dark .workspace-drawer-vault-name,
@@ -1362,9 +1353,7 @@ body:not(.is-mobile) .workspace-tab-header-tab-list .clickable-icon .svg-icon {
 .nav-buttons-container .nav-action-button.is-active[aria-label="Show search filter"] {
   background-color: var(--background-underlying);
 }
-.nav-action-button:active {
-  box-shadow: var(--shadow-active);
-}
+.nav-action-button:active,
 .nav-action-button.has-active-menu {
   box-shadow: var(--shadow-active);
 }
@@ -1562,6 +1551,7 @@ body:not(.is-mobile) .workspace-tab-header-tab-list .clickable-icon .svg-icon {
   background-color: var(--background-primary);
   box-shadow: var(--shadow);
 }
+
 /* Divide the results and the search bar*/
 body:not(.is-phone) div:has(>input.prompt-input) {
   border-bottom: 2px solid var(--color-accent) !important;
@@ -1591,27 +1581,27 @@ body:not(.is-phone) div:has(>input.prompt-input) {
 /* Define visual settings for blockquotes */
 .markdown-source-view .cm-scroller .cm-line.HyperMD-quote,
 .markdown-rendered blockquote {
-    background: var(--blockquote-background);
+  background: var(--blockquote-background);
 }
 
 /* Define visual settings for blockquotes */
 .markdown-rendered blockquote {
-    position: relative;
-    border-radius: var(--radius-l);
-    border-inline-start: none;
-    padding-inline: calc(16px + var(--blockquote-border-thickness) + var(--blockquote-padding)) var(--blockquote-padding);
-    padding-block: var(--blockquote-padding);
+  position: relative;
+  border-radius: var(--radius-l);
+  border-inline-start: none;
+  padding-inline: calc(16px + var(--blockquote-border-thickness) + var(--blockquote-padding)) var(--blockquote-padding);
+  padding-block: var(--blockquote-padding);
 }
 
 /* Add a themed line to the blockquote */
 .markdown-rendered blockquote::before {
-    position: absolute;
-    top: var(--blockquote-padding);
-    bottom: var(--blockquote-padding);
-    inset-inline-start: var(--blockquote-padding);
-    background-color: var(--blockquote-border-color);
-    width: var(--blockquote-border-thickness);
-    content: "";
+  position: absolute;
+  top: var(--blockquote-padding);
+  bottom: var(--blockquote-padding);
+  inset-inline-start: var(--blockquote-padding);
+  background-color: var(--blockquote-border-color);
+  width: var(--blockquote-border-thickness);
+  content: "";
 }
 
 /* Text related settings */
@@ -1632,7 +1622,6 @@ body:not(.is-phone) div:has(>input.prompt-input) {
   padding: 7px 7px;
   height: 32px;
   width: 32px;
-
   border-radius: var(--button-radius-medium);
   box-shadow: var(--shadow);
 }
@@ -1674,6 +1663,7 @@ body:not(.is-phone) div:has(>input.prompt-input) {
   white-space: pre; /* Makes code blocks scrollable */
 }
 
+/* More code block stuff */
 code,
 pre {
   word-wrap: break-word;
@@ -1895,10 +1885,8 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
   background-color: var(--background-modifier-hover);
   box-shadow: var(--shadow-hover);
 }
+.mod-community-modal .modal-sidebar button.clickable-icon.has-active-menu,
 .mod-community-modal .modal-sidebar button.clickable-icon:active {
-  box-shadow: var(--shadow-active);
-}
-.mod-community-modal .modal-sidebar button.clickable-icon.has-active-menu {
   box-shadow: var(--shadow-active);
 }
 
@@ -1925,7 +1913,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active:hover {
   box-shadow: var(--shadow-hover);
 }
 .bases-cards-item:active {
-  box-shadow: var(--shadow-hover);
+  box-shadow: var(--shadow-active);
 }
 .bases-toolbar .text-icon-button {
   box-shadow: var(--shadow);
@@ -2042,7 +2030,8 @@ body.is-mobile .workspace-leaf-content[data-type="empty"] .empty-state-action-li
 /* More button styling */
 .workspace-leaf-content[data-type="empty"] .empty-state-action:nth-child(1):before,
 .workspace-leaf-content[data-type="empty"] .empty-state-action:nth-child(2):before,
-.workspace-leaf-content[data-type="empty"] .empty-state-action:is(.mod-close, :nth-child(3).mod-close):before {
+.workspace-leaf-content[data-type="empty"] .empty-state-action:nth-child(3):before,
+.workspace-leaf-content[data-type="empty"] .empty-state-action:is(.mod-close):before {
   content: " ";
   display: block;
   height: 20px;
@@ -2072,15 +2061,15 @@ body.is-mobile .workspace-leaf-content[data-type="empty"] .empty-state-action {
 }
 
 /* Hover effects */
-body:not(.new-tab-text-btn-restore) .workspace-leaf-content[data-type="empty"] .empty-state-action:hover {
+.workspace-leaf-content[data-type="empty"] .empty-state-action:hover {
   background-color: var(--background-modifier-hover) !important;
   color: var(--text-normal);
-  box-shadow: var(--shadow-hover);
+  box-shadow: var(--shadow-hover) !important;
 }
 
 /* Active effects */
-body:not(.new-tab-text-btn-restore) .workspace-leaf-content[data-type="empty"] .empty-state-action:active {
-  box-shadow: var(--shadow-active);
+.workspace-leaf-content[data-type="empty"] .empty-state-action:active {
+  box-shadow: var(--shadow-active) !important;
 }
 
 /* Mobile Icon size fix */
@@ -2092,7 +2081,56 @@ body.is-mobile .workspace-leaf-content[data-type="empty"] .empty-state-action:be
 }
 
 /* ================================================================= */
-/* 13. Mobile & Tablet Overrides                                     */
+/* 13. Stacked tabs UI tweaks                                        */
+/* ================================================================= */
+
+body {
+  --tab-stacked-header-width: 50px; 
+}
+
+/* Keep inactive tabs their normal color when hovering the margin */
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header:hover .workspace-tab-header-inner {
+  background-color: var(--button-color-1);
+}
+
+/* Pulls the tab headers to the front so their shadows cast over the note content instead of getting clipped or hidden beneath it */
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header {
+  z-index: 1;
+}
+
+/* Controls the default look of the vertical tab spines, including their size, spacing from the screen edges, and base shadow */
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner {
+  background-color: var(--button-color-1);
+  border-radius: var(--button-radius-medium);
+  box-shadow: var(--shadow);
+  margin: 45px 8px; /* 35px top/bottom, 5px left/right */
+  height: calc(100% - 90px); 
+  width: calc(100% - 15px); /* Subtracts the 5px left + 5px right margins from the total width */
+}
+
+/* How inactive tabs react when interacted with */
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner:hover {
+  box-shadow: var(--shadow-hover);
+}
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner:active {
+  box-shadow: var(--shadow-active);
+}
+
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.is-active:hover .workspace-tab-header-inner,
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.is-active .workspace-tab-header-inner,
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.is-active .workspace-tab-header-inner:hover
+{ 
+  background-color: var(--background-tertiary);
+  box-shadow: var(--shadow);
+}
+
+/* Push actual note content to the right while in stacked mode */
+.workspace-tabs.mod-stacked .workspace-leaf {
+  padding-left: 10px;
+}
+
+/* ================================================================= */
+/* 14. Mobile & Tablet Overrides                                     */
 /* ================================================================= */
 
 /* Sets the selected menu thing to have rounder corners in phone mode */
@@ -2299,21 +2337,21 @@ body:not(.is-mobile) .sidebar-toggle-button,
 }
 
 /* ================================================================= */
-/* 14. Animations                                                    */
+/* 15. Animations                                                    */
 /* ================================================================= */
 
 /* "Scale up" style animation when opening prompts or search containers */
 body:not(.is-phone) .prompt,
 body:not(.is-mobile) .document-search-container,
-body:not(.is-phone) .modal:not(:has(.checkbox-container)) {
+body:not(.is-phone) .modal:not(:has(.checkbox-container)),
+body:not(.is-phone) .modal:has(.checkbox-container),
+body:not(.is-phone) .modal.mod-community-modal {
   animation: scale-up var(--anim-duration-fast) cubic-bezier(0.175, 0.885, 0.32, 1.095) both;
 }
 
-/* "Fade in" style animation */
-body:not(.is-phone) .modal:has(.checkbox-container),
-body:not(.is-phone) .modal.mod-settings,
-body:not(.is-phone) .modal.mod-community-modal {
-  animation: var(--anim-duration-fast) fadeIn both;
+/* "Fade in" style animation when opening settings*/
+body:not(.is-phone) .modal.mod-settings {
+  animation: fade-in var(--anim-duration-fast) both;
 }
 
 /* "Slide up" style animation when opening new tabs */
@@ -2330,6 +2368,16 @@ body:not(.is-phone) .modal.mod-community-modal {
   }
   100% {
     transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Defining the "Fade in" animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -2381,6 +2429,7 @@ input,                          /* Text fields and search inputs */
 .cm-hashtag,                    /* Tag styling within the Live Editor */
 .cm-url,                        /* Raw URLs within the Live Editor */
 .bases-cards-item,              /* Grid-style card items (often from plugins) */
+.community-item,                /* A cell in the grid of "Community Item" entries */
 .text-icon-button,              /* Buttons containing both text and an icon */
 .view-header-breadcrumb,        /* File path navigation in the header */
 .view-header-title,             /* The editable filename at the top of a note */
@@ -2389,11 +2438,19 @@ input,                          /* Text fields and search inputs */
 .dropdown,                      /* Select menus and dropdown containers */
 .checkbox-container             /* Toggle switches and checkbox wrappers */
 {
-    transition: var(--neumorphic-transition) !important;
+  transition: var(--neumorphic-transition) !important;
+}
+
+/* Applies a faster animation to a lot of other neumorphic buttons. */
+/* Excerpt is commented out for now because applying animations to the nav titles makes them act strange */
+.nav-folder-title,              /* Folder titles in the navigation bar */
+.nav-file-title                 /* File titles in the navigation bar */
+{
+  /* transition: var(--neumorphic-transition-faster) !important; */
 }
 
 /* ================================================================= */
-/* 15. Custom icons                                                  */
+/* 16. Custom icons                                                  */
 /* ================================================================= */
 
 /* Tree icons positioning */
@@ -2402,14 +2459,9 @@ input,                          /* Text fields and search inputs */
   --icon-color: currentColor;
 }
 
-.tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {
-  --icon-size: var(--icon-s);
-  --icon-stroke: var(--icon-s-stroke-width);
-}
-
 .workspace-leaf-content[data-type="tag"] .tree-item:not(:hover) .tree-item-icon.collapse-icon svg.svg-icon,
 .workspace-leaf-content:is([data-type="bookmarks"], [data-type="file-explorer"]) .tree-item-icon.collapse-icon svg.svg-icon {
-    color: transparent;
+  color: transparent;
 }
 
 .workspace-leaf-content[data-type="tag"] .tree-item:not(:hover) .tree-item-icon.collapse-icon,
@@ -2510,10 +2562,12 @@ input,                          /* Text fields and search inputs */
   -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M1.333 6V3.333C1.333 2.6 1.933 2 2.667 2h2.62a1.333 1.333 0 0 1 1.106.6l.547.8a1.333 1.333 0 0 0 1.107.6h5.286a1.333 1.333 0 0 1 1.334 1.333V12a1.333 1.333 0 0 1-1.334 1.333h-12'/%3e%3cpath d='m5.333 10.667 2-2-2-2'/%3e%3cpath d='M1.333 10.667V10a1.333 1.333 0 0 1 1.334-1.333h4'/%3e%3c/g%3e%3c/svg%3e");
 }
 
-/* Empty state (Used when no search matches are found) */
+/* Empty state icon (Used when no search matches are found) */
 body {
   --empty-state-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3e%3cpath fill='black' fill-opacity='.15' d='M13.32 7.155a4.375 4.375 0 0 1-5.7 6.517l5.7-6.517ZM10 5.625a4.375 4.375 0 0 0-3.32 7.22l5.704-6.514A4.35 4.35 0 0 0 10 5.625ZM18.125 10A8.125 8.125 0 1 1 10 1.875 8.135 8.135 0 0 1 18.125 10Zm-2.5 0a5.6 5.6 0 0 0-1.476-3.793l.382-.483a.626.626 0 1 0-.937-.823l-.384.483a5.625 5.625 0 0 0-7.36 8.409l-.381.483a.625.625 0 0 0 .937.823l.384-.483A5.621 5.621 0 0 0 15.625 10Z'/%3e%3c/svg%3e");
 }
+
+/* Empty state settings */
 .tag-pane-empty,
 .bookmarks-pane-empty,
 .pane-empty,
@@ -2565,8 +2619,13 @@ body:not(.is-phone) .vertical-tab-header-group:nth-last-of-type(1) .vertical-tab
   -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:none;}</style></defs><g><path d="M17.26,5.66L12.67,1.08c-.16-.16-.37-.24-.59-.24H5c-1.38,0-2.5,1.12-2.5,2.5v2.5c0,.46,.37,.83,.83,.83s.83-.37,.83-.83V3.33c0-.46,.37-.83,.83-.83h5.83V6.67c0,.46,.37,.83,.83,.83h4.17v9.17c0,.46-.37,.83-.83,.83H3.33c-.46,0-.83,.37-.83,.83s.37,.83,.83,.83H15c1.38,0,2.5-1.12,2.5-2.5V6.25c0-.22-.09-.43-.24-.59Zm-4.76-2.4l2.57,2.57h-2.57V3.26Z"/><path d="M5.85,14.53l1.06,1.06c.16,.16,.38,.24,.59,.24s.43-.08,.59-.24c.33-.33,.33-.85,0-1.18l-1.06-1.06c.29-.5,.47-1.07,.47-1.68,0-1.84-1.5-3.33-3.33-3.33s-3.33,1.49-3.33,3.33,1.5,3.33,3.33,3.33c.62,0,1.19-.18,1.68-.47Zm-3.35-2.86c0-.92,.75-1.67,1.67-1.67s1.67,.75,1.67,1.67-.75,1.67-1.67,1.67-1.67-.75-1.67-1.67Z"/></g><rect class="cls-1" width="20" height="20"/></svg>');
 }
 
+/* 'Web Browser' icon (in New Tab Page) */
+.workspace-leaf-content[data-type="empty"] .empty-state-action:nth-child(3):before {
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.667' clip-path='url(%23a)'%3e%3cpath d='M17.95 12.5h-3.783a1.666 1.666 0 0 0-1.667 1.667v3.783M5.833 2.783v1.384a2.5 2.5 0 0 0 2.5 2.5A1.667 1.667 0 0 1 10 8.333a1.667 1.667 0 1 0 3.333 0c0-.916.75-1.666 1.667-1.666h2.642M9.167 18.292V15A1.667 1.667 0 0 0 7.5 13.333a1.667 1.667 0 0 1-1.667-1.666v-.834a1.667 1.667 0 0 0-1.666-1.666H1.708'/%3e%3cpath d='M10 18.333a8.333 8.333 0 1 0 0-16.666 8.333 8.333 0 0 0 0 16.666Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h20v20H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+}
+
 /* 'Close' icon (in New Tab Page) */
-.workspace-leaf-content[data-type="empty"] .empty-state-action:is(.mod-close, :nth-child(3).mod-close):before {
+.workspace-leaf-content[data-type="empty"] .empty-state-action:is(.mod-close):before {
   -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1{fill:none;}</style></defs><path d="M11.18,10l5.24-5.24c.33-.33,.33-.85,0-1.18s-.85-.33-1.18,0l-5.24,5.24L4.76,3.58c-.33-.33-.85-.33-1.18,0s-.33,.85,0,1.18l5.24,5.24L3.58,15.24c-.33,.33-.33,.85,0,1.18,.16,.16,.38,.24,.59,.24s.43-.08,.59-.24l5.24-5.24,5.24,5.24c.16,.16,.38,.24,.59,.24s.43-.08,.59-.24c.33-.33,.33-.85,0-1.18l-5.24-5.24Z"/><rect class="cls-1" width="20" height="20"/></svg>');
 }
 
@@ -2584,26 +2643,26 @@ body:not(.is-phone) .vertical-tab-header-group:nth-last-of-type(1) .vertical-tab
 
 /* Close Icon Mask */
 .titlebar-button-container.mod-right .titlebar-button.mod-close::after {
-    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-width='1.5' d='m4.464 11.535 7.071-7.07m.001 7.071L4.464 4.464'/%3e%3c/svg%3e");
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-width='1.5' d='m4.464 11.535 7.071-7.07m.001 7.071L4.464 4.464'/%3e%3c/svg%3e");
 }
 
 /* Maximize Icon Mask (in Navbar) */
 body:not(.is-maximized) .titlebar-button-container.mod-right .titlebar-button.mod-maximize::after {
-    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3crect width='8' height='8' x='4' y='4' stroke='black' stroke-width='1.5' rx='2'/%3e%3c/svg%3e");
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3crect width='8' height='8' x='4' y='4' stroke='black' stroke-width='1.5' rx='2'/%3e%3c/svg%3e");
 }
 
 /* Maximize Icon Mask (When window is already MAXIMIZED - "Restore") (in Navbar) */
 .is-maximized .titlebar-button-container.mod-right .titlebar-button.mod-maximize::after {
-    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-width='1.5'%3e%3crect width='7' height='7' x='3' y='6' rx='2'/%3e%3cpath d='M9.5 10H11a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v1.5'/%3e%3c/g%3e%3c/svg%3e");
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-width='1.5'%3e%3crect width='7' height='7' x='3' y='6' rx='2'/%3e%3cpath d='M9.5 10H11a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v1.5'/%3e%3c/g%3e%3c/svg%3e");
 }
 
 /* Minimize Icon Mask (in Navbar)*/
 .titlebar-button-container.mod-right .titlebar-button.mod-minimize::after {
-    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-width='1.5' d='M3.5 8h9'/%3e%3c/svg%3e");
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-width='1.5' d='M3.5 8h9'/%3e%3c/svg%3e");
 }
 
 /* ================================================================= */
-/* 16. Custom checkbox icons                                         */
+/* 17. Custom checkbox icons                                         */
 /* (Closes issue https://github.com/sq1000000/NeuBorder/issues/1)    */
 /* ================================================================= */
 
