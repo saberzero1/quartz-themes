@@ -6774,10 +6774,173 @@
       "license": { "name": "The Unlicense", "spdx_id": "Unlicense" }
     },
     "sanctum-reborn": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
-      "style_settings": {},
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "102, 153, 97",
+        "sanctum@@color-accent-rgb-l": "246, 141, 69"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum-reborn.orange": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "246, 141, 69",
+        "sanctum@@color-accent-rgb-l": "246, 141, 69"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum-reborn.red": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "243, 90, 55",
+        "sanctum@@color-accent-rgb-l": "243, 90, 55"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum-reborn.pink": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "236, 90, 118",
+        "sanctum@@color-accent-rgb-l": "236, 90, 118"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum-reborn.lavender": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "165, 119, 218",
+        "sanctum@@color-accent-rgb-l": "165, 119, 218"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum-reborn.blue": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "83, 112, 159",
+        "sanctum@@color-accent-rgb-l": "83, 112, 159"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum-reborn.cyan": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "99, 149, 156",
+        "sanctum@@color-accent-rgb-l": "99, 149, 156"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum-reborn.viridian": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "92, 153, 124",
+        "sanctum@@color-accent-rgb-l": "92, 153, 124"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum-reborn.green": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "102, 153, 97",
+        "sanctum@@color-accent-rgb-l": "102, 153, 97"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum-reborn.pistachio": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "141, 147, 25",
+        "sanctum@@color-accent-rgb-l": "141, 147, 25"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum-reborn.yellow": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "243, 189, 79",
+        "sanctum@@color-accent-rgb-l": "243, 189, 79"
+      },
       "variations": [],
       "extra_extract_files": [],
       "snippets": [],
@@ -6787,10 +6950,173 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "sanctum": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
-      "style_settings": {},
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "102, 153, 97",
+        "sanctum@@color-accent-rgb-l": "246, 141, 69"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum.orange": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "246, 141, 69",
+        "sanctum@@color-accent-rgb-l": "246, 141, 69"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum.red": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "243, 90, 55",
+        "sanctum@@color-accent-rgb-l": "243, 90, 55"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum.pink": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "236, 90, 118",
+        "sanctum@@color-accent-rgb-l": "236, 90, 118"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum.lavender": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "165, 119, 218",
+        "sanctum@@color-accent-rgb-l": "165, 119, 218"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum.blue": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "83, 112, 159",
+        "sanctum@@color-accent-rgb-l": "83, 112, 159"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum.cyan": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "99, 149, 156",
+        "sanctum@@color-accent-rgb-l": "99, 149, 156"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum.viridian": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "92, 153, 124",
+        "sanctum@@color-accent-rgb-l": "92, 153, 124"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum.green": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "102, 153, 97",
+        "sanctum@@color-accent-rgb-l": "102, 153, 97"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum.pistachio": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "141, 147, 25",
+        "sanctum@@color-accent-rgb-l": "141, 147, 25"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "sanctum.yellow": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "sanctum@@color-accent-rgb-d": "243, 189, 79",
+        "sanctum@@color-accent-rgb-l": "243, 189, 79"
+      },
       "variations": [],
       "extra_extract_files": [],
       "snippets": [],
