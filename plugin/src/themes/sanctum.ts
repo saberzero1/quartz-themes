@@ -155,15 +155,9 @@ export const theme: ThemeData = {
   --color-accent-1: rgb(102, 153, 97) !important;
   --color-accent-2: rgb(102, 153, 97) !important;
   --color-accent-hsl: 24.4, 90.8%, 61.8% !important;
-  --color-accent-rgb: 102,
-    153,
-    97 !important;
-  --color-accent-rgb-d: 102,
-    153,
-    97 !important;
-  --color-accent-rgb-l: 246,
-    141,
-    69 !important;
+  --color-accent-rgb: 102, 153, 97 !important;
+  --color-accent-rgb-d: 102, 153, 97 !important;
+  --color-accent-rgb-l: 246, 141, 69 !important;
   --color-green-rgb: 102,
     153,
     97 !important;
@@ -2814,15 +2808,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --color-accent-1: rgb(246, 141, 69) !important;
   --color-accent-2: rgb(246, 141, 69) !important;
   --color-accent-hsl: 24.4, 90.8%, 61.8% !important;
-  --color-accent-rgb: 246,
-    141,
-    69 !important;
-  --color-accent-rgb-d: 102,
-    153,
-    97 !important;
-  --color-accent-rgb-l: 246,
-    141,
-    69 !important;
+  --color-accent-rgb: 246, 141, 69 !important;
+  --color-accent-rgb-d: 102, 153, 97 !important;
+  --color-accent-rgb-l: 246, 141, 69 !important;
   --color-green-rgb: 102,
     153,
     97 !important;

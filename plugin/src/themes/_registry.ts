@@ -380,6 +380,26 @@ import { theme as sakurajima } from "./sakurajima.js";
 import { theme as salem } from "./salem.js";
 import { theme as sanctum } from "./sanctum.js";
 import { theme as sanctum_reborn } from "./sanctum-reborn.js";
+import { theme as sanctum_reborn_blue } from "./sanctum-reborn-blue.js";
+import { theme as sanctum_reborn_cyan } from "./sanctum-reborn-cyan.js";
+import { theme as sanctum_reborn_green } from "./sanctum-reborn-green.js";
+import { theme as sanctum_reborn_lavender } from "./sanctum-reborn-lavender.js";
+import { theme as sanctum_reborn_orange } from "./sanctum-reborn-orange.js";
+import { theme as sanctum_reborn_pink } from "./sanctum-reborn-pink.js";
+import { theme as sanctum_reborn_pistachio } from "./sanctum-reborn-pistachio.js";
+import { theme as sanctum_reborn_red } from "./sanctum-reborn-red.js";
+import { theme as sanctum_reborn_viridian } from "./sanctum-reborn-viridian.js";
+import { theme as sanctum_reborn_yellow } from "./sanctum-reborn-yellow.js";
+import { theme as sanctum_blue } from "./sanctum-blue.js";
+import { theme as sanctum_cyan } from "./sanctum-cyan.js";
+import { theme as sanctum_green } from "./sanctum-green.js";
+import { theme as sanctum_lavender } from "./sanctum-lavender.js";
+import { theme as sanctum_orange } from "./sanctum-orange.js";
+import { theme as sanctum_pink } from "./sanctum-pink.js";
+import { theme as sanctum_pistachio } from "./sanctum-pistachio.js";
+import { theme as sanctum_red } from "./sanctum-red.js";
+import { theme as sanctum_viridian } from "./sanctum-viridian.js";
+import { theme as sanctum_yellow } from "./sanctum-yellow.js";
 import { theme as sandover } from "./sandover.js";
 import { theme as sandstorm } from "./sandstorm.js";
 import { theme as sanguine } from "./sanguine.js";
@@ -890,6 +910,26 @@ export const themeData: Record<string, ThemeData> = {
   salem: salem,
   sanctum: sanctum,
   "sanctum-reborn": sanctum_reborn,
+  "sanctum-reborn.blue": sanctum_reborn_blue,
+  "sanctum-reborn.cyan": sanctum_reborn_cyan,
+  "sanctum-reborn.green": sanctum_reborn_green,
+  "sanctum-reborn.lavender": sanctum_reborn_lavender,
+  "sanctum-reborn.orange": sanctum_reborn_orange,
+  "sanctum-reborn.pink": sanctum_reborn_pink,
+  "sanctum-reborn.pistachio": sanctum_reborn_pistachio,
+  "sanctum-reborn.red": sanctum_reborn_red,
+  "sanctum-reborn.viridian": sanctum_reborn_viridian,
+  "sanctum-reborn.yellow": sanctum_reborn_yellow,
+  "sanctum.blue": sanctum_blue,
+  "sanctum.cyan": sanctum_cyan,
+  "sanctum.green": sanctum_green,
+  "sanctum.lavender": sanctum_lavender,
+  "sanctum.orange": sanctum_orange,
+  "sanctum.pink": sanctum_pink,
+  "sanctum.pistachio": sanctum_pistachio,
+  "sanctum.red": sanctum_red,
+  "sanctum.viridian": sanctum_viridian,
+  "sanctum.yellow": sanctum_yellow,
   sandover: sandover,
   sandstorm: sandstorm,
   sanguine: sanguine,
@@ -3042,6 +3082,126 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   "sanctum-reborn": {
     name: "sanctum-reborn",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum-reborn.blue": {
+    name: "sanctum-reborn.blue",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum-reborn.cyan": {
+    name: "sanctum-reborn.cyan",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum-reborn.green": {
+    name: "sanctum-reborn.green",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum-reborn.lavender": {
+    name: "sanctum-reborn.lavender",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum-reborn.orange": {
+    name: "sanctum-reborn.orange",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum-reborn.pink": {
+    name: "sanctum-reborn.pink",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum-reborn.pistachio": {
+    name: "sanctum-reborn.pistachio",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum-reborn.red": {
+    name: "sanctum-reborn.red",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum-reborn.viridian": {
+    name: "sanctum-reborn.viridian",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum-reborn.yellow": {
+    name: "sanctum-reborn.yellow",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum.blue": {
+    name: "sanctum.blue",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum.cyan": {
+    name: "sanctum.cyan",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum.green": {
+    name: "sanctum.green",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum.lavender": {
+    name: "sanctum.lavender",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum.orange": {
+    name: "sanctum.orange",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum.pink": {
+    name: "sanctum.pink",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum.pistachio": {
+    name: "sanctum.pistachio",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum.red": {
+    name: "sanctum.red",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum.viridian": {
+    name: "sanctum.viridian",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["sf-mono"],
+  },
+  "sanctum.yellow": {
+    name: "sanctum.yellow",
     modes: ["dark", "light"],
     variations: [],
     fonts: ["sf-mono"],
