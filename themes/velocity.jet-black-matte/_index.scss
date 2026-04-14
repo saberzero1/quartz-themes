@@ -53,11 +53,7 @@
   --background-modifier-border-focus: transparent !important;
   --background-modifier-border-hover: oklch(82.5% 0.0025 281) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
-  --background-modifier-cover: color-mix(
-    in oklab,
-    oklch(40% 0.0025 281) 45%,
-    transparent 100%
-  ) !important;
+  --background-modifier-cover: color-mix(in oklab, oklch(40% 0.0025 281) 45%, transparent 100%) !important;
   --background-modifier-error: rgb(233, 49, 58) !important;
   --background-modifier-error-hover: rgb(233, 49, 58) !important;
   --background-modifier-error-rgb: 233, 49, 58 !important;
@@ -67,24 +63,14 @@
   --background-modifier-success: rgb(0, 187, 93) !important;
   --background-modifier-success-rgb: 0, 187, 93 !important;
   --background-primary: oklch(99% 0.0005 281) !important;
-  --background-primary-alt: color-mix(
-    in oklab,
-    oklch(99% 0.0005 281),
-    oklch(96.2% 0.0025 281)
-  ) !important;
+  --background-primary-alt: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281)) !important;
   --background-secondary: oklch(96.2% 0.0025 281) !important;
   --background-secondary-alt: oklch(99% 0.0005 281) !important;
-  --bases-cards-background: oklch(
-    from oklch(71.5% 0.0105 281) l c h / 0.1
-  ) !important;
+  --bases-cards-background: oklch(from oklch(71.5% 0.0105 281) l c h / 0.1) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
-  --bases-cards-cover-background: color-mix(
-    in oklab,
-    oklch(99% 0.0005 281),
-    oklch(96.2% 0.0025 281)
-  ) !important;
+  --bases-cards-cover-background: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281)) !important;
   --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 26px !important;
   --bases-cards-radius: 12px !important;
@@ -104,18 +90,12 @@
   --bases-header-padding-end: 0 !important;
   --bases-header-padding-start: 0 !important;
   --bases-table-cell-background-active: transparent !important;
-  --bases-table-cell-background-disabled: color-mix(
-    in oklab,
-    oklch(99% 0.0005 281),
-    oklch(96.2% 0.0025 281)
-  ) !important;
+  --bases-table-cell-background-disabled: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281)) !important;
   --bases-table-cell-background-selected: hsla(212, 100%, 52%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2.5px
-    color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px
-    color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2.5px color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
@@ -126,11 +106,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: oklch(65% 0.0105 281) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 490 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 0 !important;
@@ -143,11 +119,7 @@
   --blockquote-border-color: oklch(71.5% 0.0105 281) !important;
   --blockquote-border-thickness: 0.1875rem !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent)
-    linear-gradient(
-      oklch(99% 0.0005 281),
-      color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent)
-    ) !important;
+  --blur-background: color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent) linear-gradient(oklch(99% 0.0005 281), color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent)) !important;
   --blur-brightness: 1 !important;
   --blur-l: blur(16px) saturate(1.125) brightness(1) !important;
   --blur-m: blur(12px) saturate(1.125) brightness(1) !important;
@@ -202,16 +174,8 @@
   --caret-color: oklch(30% 0.0005 281) !important;
   --checkbox-border-color: oklch(82.5% 0.0025 281) !important;
   --checkbox-border-color-hover: oklch(46.5% 0.0105 281) !important;
-  --checkbox-color: color-mix(
-    in oklab,
-    hsl(212, 100%, 52%),
-    white 7.5%
-  ) !important;
-  --checkbox-color-hover: color-mix(
-    in oklch,
-    hsl(212, 100%, 52%) 80%,
-    transparent 40%
-  ) !important;
+  --checkbox-color: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
+  --checkbox-color-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: white !important;
   --checkbox-radius: 50% !important;
@@ -240,16 +204,8 @@
   --collapse-icon-color: oklch(71.5% 0.0105 281) !important;
   --collapse-icon-color-collapsed: hsl(212, 100%, 52%) !important;
   --color-accent: hsl(212, 100%, 52%) !important;
-  --color-accent-1: color-mix(
-    in oklab,
-    hsl(212, 100%, 52%),
-    white 7.5%
-  ) !important;
-  --color-accent-2: color-mix(
-    in oklch,
-    hsl(212, 100%, 52%) 80%,
-    transparent 40%
-  ) !important;
+  --color-accent-1: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
+  --color-accent-2: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
   --color-accent-hsl: 212, 100%, 52% !important;
   --color-base-00: oklch(100% 0.0005 281) !important;
   --color-base-05: oklch(99% 0.0005 281) !important;
@@ -287,11 +243,7 @@
   --dialog-width: 500px !important;
   --direction: 1 !important;
   --divider-color: oklch(0% 0 0 / 0.0625) !important;
-  --divider-color-hover: color-mix(
-    in oklch,
-    hsl(212, 100%, 52%) 50%,
-    transparent 75%
-  ) !important;
+  --divider-color-hover: color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 0 !important;
   --divider-width-hover: 3px !important;
@@ -319,13 +271,7 @@
   --file-header-background: oklch(99% 0.0005 281) !important;
   --file-header-background-focused: oklch(99% 0.0005 281) !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 490 !important;
   --file-header-justify: center !important;
@@ -338,66 +284,30 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 720 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 820 !important;
   --font-extralight: 305 !important;
-  --font-interface:
-    "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "Raveo" !important;
-  --font-interface-theme:
-    "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-interface-theme: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-light: 320 !important;
   --font-medium: 520 !important;
-  --font-mermaid:
-    "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 420 !important;
-  --font-print:
-    "??", "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "Arial" !important;
+  --font-print: "??", "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 620 !important;
   --font-small: 0.90625em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-text: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "Raveo" !important;
   --font-text-size: 16px !important;
-  --font-text-theme:
-    "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-text-theme: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-thin: 270 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 15px !important;
@@ -497,11 +407,7 @@
   --indentation-guide-width: 0 !important;
   --indentation-guide-width-active: 0 !important;
   --inline-title-line-height: 1.2 !important;
-  --inline-title-margin-bottom: round(
-    nearest,
-    clamp(0px, 0.5em, 1.5rem),
-    2px
-  ) !important;
+  --inline-title-margin-bottom: round(nearest, clamp(0px, 0.5em, 1.5rem), 2px) !important;
   --inline-title-size: 2em !important;
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
@@ -516,16 +422,8 @@
   --input-shadow-hover: none !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: color-mix(
-    in oklab,
-    hsl(212, 100%, 52%),
-    white 7.5%
-  ) !important;
-  --interactive-accent-hover: color-mix(
-    in oklch,
-    hsl(212, 100%, 52%) 80%,
-    transparent 40%
-  ) !important;
+  --interactive-accent: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
+  --interactive-accent-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
   --interactive-accent-hsl: 212, 100%, 52% !important;
   --interactive-hover: oklch(0% 0 0 / 0.092) !important;
   --interactive-normal: oklch(0% 0 0 / 0.07) !important;
@@ -543,26 +441,16 @@
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
   --link-color: hsl(212, 100%, 52%) !important;
-  --link-color-hover: color-mix(
-    in oklch,
-    hsl(212, 100%, 52%) 80%,
-    transparent 40%
-  ) !important;
+  --link-color-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
   --link-decoration-thickness: auto !important;
   --link-external-color: hsl(212, 100%, 52%) !important;
-  --link-external-color-hover: color-mix(
-    in oklch,
-    hsl(212, 100%, 52%) 80%,
-    transparent 40%
-  ) !important;
+  --link-external-color-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: oklch(
-    from color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) l c h / 0.7
-  ) !important;
+  --link-unresolved-color: oklch(from color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) l c h / 0.7) !important;
   --link-unresolved-decoration-color: hsla(212, 100%, 52%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -583,26 +471,14 @@
   --list-spacing: 0.125em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: color-mix(
-    in oklab,
-    oklch(99% 0.0005 281),
-    oklch(96.2% 0.0025 281)
-  ) !important;
+  --menu-background: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281)) !important;
   --menu-border-color: oklch(0% 0 0 / 0.1125) !important;
   --menu-border-width: 1px !important;
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 14px !important;
-  --menu-scroll-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.1) 48px
-  ) !important;
-  --menu-shadow:
-    inset 1px 1px 2px 0 oklch(100% 0 0 / 0.75),
-    inset -1px -1px 2px 0 oklch(100% 0 0 / 0.75),
-    0px 0px 5px 0px oklch(20% 0 0 / 0.0275),
-    0px 10px 20px 0px oklch(0% 0 0 / 0.07) !important;
+  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
+  --menu-shadow: inset 1px 1px 2px 0 oklch(100% 0 0 / 0.75), inset -1px -1px 2px 0 oklch(100% 0 0 / 0.75), 0px 0px 5px 0px oklch(20% 0 0 / 0.0275), 0px 10px 20px 0px oklch(0% 0 0 / 0.07) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: oklch(0% 0 0 / 0.0625) !important;
   --metadata-border-radius: 12px !important;
@@ -617,13 +493,7 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: oklch(0% 0 0 / 0.0625) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 2.125rem !important;
   --metadata-input-longtext-lines: 5 !important;
@@ -632,13 +502,7 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: oklch(0% 0 0 / 0.0625) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: oklch(55.75% 0.0105 281) !important;
   --metadata-label-text-color-hover: oklch(55.75% 0.0105 281) !important;
@@ -648,8 +512,7 @@
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: oklch(0% 0 0 / 0.0625) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2.5px
-    color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2.5px color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
   --metadata-property-box-shadow-hover: 0 0 0 2.5px oklch(0% 0 0 / 0.0625) !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
@@ -742,26 +605,10 @@
   --radius-m: 12px !important;
   --radius-s: 8px !important;
   --radius-xl: 20px !important;
-  --raised-background: color-mix(
-      in srgb,
-      oklch(99% 0.0005 281) 65%,
-      transparent
-    )
-    linear-gradient(
-      oklch(99% 0.0005 281),
-      color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent)
-    ) !important;
+  --raised-background: color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent) linear-gradient(oklch(99% 0.0005 281), color-mix(in srgb, oklch(99% 0.0005 281) 65%, transparent)) !important;
   --raised-blur: blur(8px) saturate(1.125) brightness(1) !important;
-  --raised-mask:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(white, white) border-box !important;
-  --raised-mask-background: linear-gradient(
-      to bottom left,
-      white,
-      transparent,
-      white
-    )
-    border-box no-repeat !important;
+  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
+  --raised-mask-background: linear-gradient(to bottom left, white, transparent, white) border-box no-repeat !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
@@ -793,16 +640,8 @@
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 16px !important;
   --setting-items-radius: 16px !important;
-  --shadow-l:
-    inset 1.5px 1.5px 4px 0 oklch(100% 0 0 / 0.625),
-    inset -1.5px -1.5px 4px 0 oklch(100% 0 0 / 0.625),
-    0px 1.25px 6.25px rgba(0, 0, 0, 0.08), 0px 3px 12px rgba(0, 0, 0, 0.06),
-    0px 16px 32px rgba(0, 0, 0, 0.12) !important;
-  --shadow-s:
-    inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4),
-    inset -1px -1px 2px 0 oklch(100% 0 0 / 0.4),
-    0px 0px 5px 0px oklch(20% 0 0 / 0.0275),
-    0px 10px 20px 0px oklch(0% 0 0 / 0.07) !important;
+  --shadow-l: inset 1.5px 1.5px 4px 0 oklch(100% 0 0 / 0.625), inset -1.5px -1.5px 4px 0 oklch(100% 0 0 / 0.625), 0px 1.25px 6.25px rgba(0, 0, 0, 0.08), 0px 3px 12px rgba(0, 0, 0, 0.06), 0px 16px 32px rgba(0, 0, 0, 0.12) !important;
+  --shadow-s: inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4), inset -1px -1px 2px 0 oklch(100% 0 0 / 0.4), 0px 0px 5px 0px oklch(20% 0 0 / 0.0275), 0px 10px 20px 0px oklch(0% 0 0 / 0.07) !important;
   --sidebar-left-toggle-inner-width: 12% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -875,11 +714,7 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: oklch(96.2% 0.0025 281) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    oklch(96.2% 0.0025 281),
-    transparent
-  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, oklch(96.2% 0.0025 281), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 20px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
@@ -903,11 +738,7 @@
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
-  --table-drag-handle-background-active: color-mix(
-    in oklab,
-    hsl(212, 100%, 52%),
-    white 7.5%
-  ) !important;
+  --table-drag-handle-background-active: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
   --table-drag-handle-color: oklch(71.5% 0.0105 281) !important;
   --table-drag-handle-color-active: white !important;
   --table-drop-indicator-half-width: 2px !important;
@@ -924,11 +755,7 @@
   --table-row-last-border-width: 1px !important;
   --table-selection: hsla(212, 100%, 52%, 0.1) !important;
   --table-selection-blend-mode: darken !important;
-  --table-selection-border-color: color-mix(
-    in oklab,
-    hsl(212, 100%, 52%),
-    white 7.5%
-  ) !important;
+  --table-selection-border-color: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 0.90625em !important;
@@ -947,11 +774,7 @@
   --tag-padding-y: 0.3125em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.8em !important;
-  --text-accent-hover: color-mix(
-    in oklch,
-    hsl(212, 100%, 52%) 80%,
-    transparent 40%
-  ) !important;
+  --text-accent-hover: color-mix(in oklch, hsl(212, 100%, 52%) 80%, transparent 40%) !important;
   --text-error: rgb(233, 49, 58) !important;
   --text-highlight-bg: oklch(from rgb(229, 169, 37) 0.9 c h / 0.33) !important;
   --text-highlight-bg-rgb: 229, 169, 37 !important;
@@ -1005,13 +828,9 @@
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --raised-shadow:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
+  --raised-shadow: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
   --shadow-edges: 0 0 transparent !important;
-  --shadow-xs:
-    0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
-    0 0 transparent !important;
+  --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
   --h1-color: oklch(24% 0.0005 281) !important;
   --h2-color: oklch(30% 0.0005 281) !important;
   --h3-color: oklch(30% 0.0005 281) !important;
@@ -1027,19 +846,11 @@
   --radius-sm: 10px !important;
   --pill-weight: 490 !important;
   --tag-weight: 490 !important;
-  --color-accent-3: color-mix(
-    in oklch,
-    hsl(212, 100%, 52%) 50%,
-    transparent 75%
-  ) !important;
+  --color-accent-3: color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
   --radius-xs: 6px !important;
   --tab-font-weight: 420 !important;
   --strikethrough-color: oklch(71.5% 0.0105 281) !important;
-  --settings-background: color-mix(
-    in oklab,
-    oklch(96.2% 0.0025 281) 70%,
-    oklch(92% 0.0025 281)
-  ) !important;
+  --settings-background: color-mix(in oklab, oklch(96.2% 0.0025 281) 70%, oklch(92% 0.0025 281)) !important;
   --color-base-55: oklch(65% 0.0105 281) !important;
   --bases-table-text-size: 0.90625em !important;
   --color-highlight: rgb(229, 169, 37) !important;
@@ -1058,22 +869,11 @@
   --autofit-left-padding: 4px !important;
   --bases-cards-label-color: oklch(55.75% 0.0105 281) !important;
   --bases-table-header-color-hover: oklch(40% 0.0025 281) !important;
-  --bg-checkbox: radial-gradient(
-    transparent 50%,
-    oklch(82.5% 0.0025 281) 55% 60%,
-    transparent 65%
-  ) !important;
-  --bg-checkbox-active: radial-gradient(
-    transparent 56%,
-    #ffffffdd 76%
-  ) !important;
+  --bg-checkbox: radial-gradient(transparent 50%, oklch(82.5% 0.0025 281) 55% 60%, transparent 65%) !important;
+  --bg-checkbox-active: radial-gradient(transparent 56%, #ffffffdd 76%) !important;
   --bg-main-inner: oklch(97.5% 0.00125 281) !important;
   --bg-main-outer: oklch(94.5% 0.00625 281) !important;
-  --bg-main-workspace: radial-gradient(
-    at 50% 50%,
-    oklch(97.5% 0.00125 281) 20%,
-    oklch(94.5% 0.00625 281) 100%
-  ) !important;
+  --bg-main-workspace: radial-gradient(at 50% 50%, oklch(97.5% 0.00125 281) 20%, oklch(94.5% 0.00625 281) 100%) !important;
   --bhue: 281 !important;
   --bl-00: 100% !important;
   --bl-05: 99% !important;
@@ -1097,11 +897,7 @@
   --bsat-xtr: 0.0105 !important;
   --code-background-alt: oklch(100% 0 0 / 0.75) !important;
   --code-special: rgb(233, 49, 58) !important;
-  --color-accent-4: color-mix(
-    in oklch,
-    oklab(from hsl(212, 100%, 52%) l a b / 0.15) 40%,
-    transparent 60%
-  ) !important;
+  --color-accent-4: color-mix(in oklch, oklab(from hsl(212, 100%, 52%) l a b / 0.15) 40%, transparent 60%) !important;
   --color-highlight-rgb: 229, 169, 37 !important;
   --control-icon-background: oklch(99% 0.0005 281) !important;
   --control-icon-color: oklch(40% 0.0025 281) !important;
@@ -1111,23 +907,13 @@
   --fab-color-active: oklch(30% 0.0005 281) !important;
   --fab-easing-curve: cubic-bezier(0.55, 2, 0.5, 0.97) !important;
   --flair-padding: 3px 1px !important;
-  --font-label:
-    "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-normal-linux: 490 !important;
   --font-semi-medium: 490 !important;
   --frame-right-space-override: 164px !important;
-  --glass-base:
-    inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4),
-    inset -1px -1px 2px 0 oklch(100% 0 0 / 0.4) !important;
-  --glass-base-l:
-    inset 1.5px 1.5px 4px 0 oklch(100% 0 0 / 0.625),
-    inset -1.5px -1.5px 4px 0 oklch(100% 0 0 / 0.625) !important;
-  --glass-base-m:
-    inset 0 0 1px 0 oklch(100% 0 0 / 0.625),
-    inset 1.5px 1.5px 3px 0 oklch(100% 0 0 / 0.4),
-    inset -1.5px -1.5px 3px 0 oklch(100% 0 0 / 0.4) !important;
+  --glass-base: inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4), inset -1px -1px 2px 0 oklch(100% 0 0 / 0.4) !important;
+  --glass-base-l: inset 1.5px 1.5px 4px 0 oklch(100% 0 0 / 0.625), inset -1.5px -1.5px 4px 0 oklch(100% 0 0 / 0.625) !important;
+  --glass-base-m: inset 0 0 1px 0 oklch(100% 0 0 / 0.625), inset 1.5px 1.5px 3px 0 oklch(100% 0 0 / 0.4), inset -1.5px -1.5px 3px 0 oklch(100% 0 0 / 0.4) !important;
   --h1-size-alt: 1.625em !important;
   --h1-weight-alt: 570 !important;
   --highlight-blue-rgb: 31, 132, 255 !important;
@@ -1139,24 +925,13 @@
   --highlight-red-rgb: 233, 49, 58 !important;
   --highlight-yellow-rgb: 229, 169, 37 !important;
   --icon-stroke-thick: 2.25px !important;
-  --link-color-sidebar: color-mix(
-    in oklab,
-    hsl(212, 100%, 52%),
-    white 7.5%
-  ) !important;
+  --link-color-sidebar: color-mix(in oklab, hsl(212, 100%, 52%), white 7.5%) !important;
   --link-unresolved-lch: 0.7 !important;
   --list-bullet-color: oklch(55.75% 0.0105 281) !important;
   --list-dash-color: oklch(0% 0 0 / 0.25) !important;
-  --mobile-nav-fade-bg: linear-gradient(
-    oklch(96.2% 0.0025 281),
-    transparent 78px
-  ) !important;
+  --mobile-nav-fade-bg: linear-gradient(oklch(96.2% 0.0025 281), transparent 78px) !important;
   --modal-community-header-bg: oklch(100% 0 0 / 0.75) !important;
-  --modal-community-item-bg: color-mix(
-    in oklab,
-    oklch(99% 0.0005 281),
-    oklch(96.2% 0.0025 281)
-  ) !important;
+  --modal-community-item-bg: color-mix(in oklab, oklch(99% 0.0005 281), oklch(96.2% 0.0025 281)) !important;
   --modal-small-background: oklch(99.5% 0.00125 281 / 0.7) !important;
   --nav-header-bg: oklch(from oklch(71.5% 0.0105 281) l c h / 0.1) !important;
   --nav-header-timing: cubic-bezier(0.3, 0.75, 0, 1) !important;
@@ -1168,68 +943,33 @@
   --radius-settings: 28px !important;
   --radius-xxl: 22px !important;
   --setting-item-background: oklch(100% 0 0 / 0.75) !important;
-  --shadow-button:
-    inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4),
-    inset -1px -1px 2px 0 oklch(100% 0 0 / 0.4),
-    0px 3px 18px 0px oklch(0% 0 0 / 0.07) !important;
-  --shadow-button-error:
-    inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4),
-    inset -1px -1px 2px 0 oklch(100% 0 0 / 0.4),
-    0px 3px 18px 0px oklch(0% 0 0 / 0.07) !important;
+  --shadow-button: inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4), inset -1px -1px 2px 0 oklch(100% 0 0 / 0.4), 0px 3px 18px 0px oklch(0% 0 0 / 0.07) !important;
+  --shadow-button-error: inset 1px 1px 2px 0 oklch(100% 0 0 / 0.4), inset -1px -1px 2px 0 oklch(100% 0 0 / 0.4), 0px 3px 18px 0px oklch(0% 0 0 / 0.07) !important;
   --shadow-canvas-node: 0px 0px 16px 0px oklch(0% 0 0 / 0.0625) !important;
-  --shadow-fab:
-    0 0 0 0.5px oklch(0% 0 0 / 0.1125), 0px 3px 15px 0px oklch(0% 0 0 / 0.0625) !important;
+  --shadow-fab: 0 0 0 0.5px oklch(0% 0 0 / 0.1125), 0px 3px 15px 0px oklch(0% 0 0 / 0.0625) !important;
   --shadow-faint: 0px 0 12px 0px oklch(05% 0 0 / 0.055) !important;
   --shadow-input: 0 0 0 0.5px oklch(0% 0 0 / 0.1125) !important;
-  --shadow-input-active: 0 0 0 2.5px
-    color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
+  --shadow-input-active: 0 0 0 2.5px color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
   --shadow-muted: 0px 3px 18px 0px oklch(0% 0 0 / 0.07) !important;
-  --shadow-normal:
-    0px 0px 5px 0px oklch(20% 0 0 / 0.0275),
-    0px 10px 20px 0px oklch(0% 0 0 / 0.07) !important;
-  --shadow-setting-items:
-    inset 1px 1px 2px 0 oklch(100% 0 0 / 0.75),
-    inset -1px -1px 2px 0 oklch(100% 0 0 / 0.75),
-    0px 1px 9px oklch(20% 0 0 / 0.0275) !important;
-  --shadow-setting-items-top:
-    inset 1px 2px 2px 0 oklch(100% 0 0 / 0.75),
-    0px 1px 9px oklch(20% 0 0 / 0.0275) !important;
+  --shadow-normal: 0px 0px 5px 0px oklch(20% 0 0 / 0.0275), 0px 10px 20px 0px oklch(0% 0 0 / 0.07) !important;
+  --shadow-setting-items: inset 1px 1px 2px 0 oklch(100% 0 0 / 0.75), inset -1px -1px 2px 0 oklch(100% 0 0 / 0.75), 0px 1px 9px oklch(20% 0 0 / 0.0275) !important;
+  --shadow-setting-items-top: inset 1px 2px 2px 0 oklch(100% 0 0 / 0.75), 0px 1px 9px oklch(20% 0 0 / 0.0275) !important;
   --shadow-sidebar: 0px 0px 8px 0px oklch(62.5% 0 0 / 0.03) !important;
-  --shadow-strong:
-    0px 1.25px 6.25px rgba(0, 0, 0, 0.08), 0px 3px 12px rgba(0, 0, 0, 0.06),
-    0px 16px 32px rgba(0, 0, 0, 0.12) !important;
-  --shadow-suggestion-item:
-    inset 0 0 1px 0 oklch(100% 0 0 / 0.625),
-    inset 1.5px 1.5px 3px 0 oklch(100% 0 0 / 0.4),
-    inset -1.5px -1.5px 3px 0 oklch(100% 0 0 / 0.4),
-    0px 3px 18px 0px oklch(0% 0 0 / 0.07) !important;
+  --shadow-strong: 0px 1.25px 6.25px rgba(0, 0, 0, 0.08), 0px 3px 12px rgba(0, 0, 0, 0.06), 0px 16px 32px rgba(0, 0, 0, 0.12) !important;
+  --shadow-suggestion-item: inset 0 0 1px 0 oklch(100% 0 0 / 0.625), inset 1.5px 1.5px 3px 0 oklch(100% 0 0 / 0.4), inset -1.5px -1.5px 3px 0 oklch(100% 0 0 / 0.4), 0px 3px 18px 0px oklch(0% 0 0 / 0.07) !important;
   --shadow-tab: 0px 0px 4px 0px oklch(0% 0 0 / 0.092) !important;
-  --shadow-toggle:
-    inset 0.75px 0.75px 1.75px 0 oklch(100% 0 0 / 0.4),
-    inset -0.75px -0.75px 1.75px 0 oklch(100% 0 0 / 0.4) !important;
-  --shadow-workspace:
-    0 0.25px 1.25px 0px oklch(0% 0 0 / 0.25),
-    0px 0px 24px oklch(05% 0 0 / 0.055) !important;
+  --shadow-toggle: inset 0.75px 0.75px 1.75px 0 oklch(100% 0 0 / 0.4), inset -0.75px -0.75px 1.75px 0 oklch(100% 0 0 / 0.4) !important;
+  --shadow-workspace: 0 0.25px 1.25px 0px oklch(0% 0 0 / 0.25), 0px 0px 24px oklch(05% 0 0 / 0.055) !important;
   --shadow-workspace-multi: 0px 2.5px 10px oklch(05% 0 0 / 0.055) !important;
   --stacked-shadow-color: oklch(05% 0 0 / 0.055) !important;
   --tab-close-bg: oklch(from oklch(85.75% 0.0025 281) l c h / 0.8) !important;
-  --tab-right-fade: linear-gradient(
-    to left,
-    oklch(91.5% 0.0035 281) 80%,
-    transparent
-  ) !important;
-  --tab-right-fade-alt: linear-gradient(
-    to left,
-    oklch(93.5% 0 0) 80%,
-    transparent
-  ) !important;
+  --tab-right-fade: linear-gradient(to left, oklch(91.5% 0.0035 281) 80%, transparent) !important;
+  --tab-right-fade-alt: linear-gradient(to left, oklch(93.5% 0 0) 80%, transparent) !important;
   --tab-sidebar-bg: oklch(100% 0 0 / 0.95) !important;
   --tab-sidebar-container-bg: oklch(00% 0 0 / 0.03125) !important;
   --table-row-bg: oklch(20% 0 0 / 0.0275) !important;
   --table-text-weight: 420 !important;
-  --text-highlight-bg-search: oklch(
-    from rgb(229, 169, 37) 0.9 c h / 0.625
-  ) !important;
+  --text-highlight-bg-search: oklch(from rgb(229, 169, 37) 0.9 c h / 0.625) !important;
   --trans-faint-00: oklch(62.5% 0 0 / 0.03) !important;
   --trans-faint-05: oklch(20% 0 0 / 0.0275) !important;
   --trans-faint-10: oklch(05% 0 0 / 0.055) !important;
@@ -1340,8 +1080,7 @@
   --bases-table-cell-background-selected: hsla(5, 65%, 45%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2.5px
-    color-mix(in oklab, hsl(5, 65%, 45%) 50%, transparent 75%) !important;
+  --bases-table-cell-shadow-active: 0 0 0 2.5px color-mix(in oklab, hsl(5, 65%, 45%) 50%, transparent 75%) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(5, 65%, 45%) !important;
   --bases-table-column-border-width: 1px !important;
   --bases-table-column-max-width: 300 !important;
@@ -1353,11 +1092,7 @@
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: oklch(57.5% 0 0) !important;
   --bases-table-header-icon-display: flex !important;
-  --bases-table-header-sort-mask: linear-gradient(
-    to left,
-    transparent 24px,
-    black 24px
-  ) !important;
+  --bases-table-header-sort-mask: linear-gradient(to left, transparent 24px, black 24px) !important;
   --bases-table-header-weight: 490 !important;
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 0 !important;
@@ -1370,11 +1105,7 @@
   --blockquote-border-color: oklch(52.5% 0 0) !important;
   --blockquote-border-thickness: 0.1875rem !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, oklch(30% 0 0) 65%, transparent)
-    linear-gradient(
-      oklch(30% 0 0),
-      color-mix(in srgb, oklch(30% 0 0) 65%, transparent)
-    ) !important;
+  --blur-background: color-mix(in srgb, oklch(30% 0 0) 65%, transparent) linear-gradient(oklch(30% 0 0), color-mix(in srgb, oklch(30% 0 0) 65%, transparent)) !important;
   --blur-brightness: 1 !important;
   --blur-l: blur(16px) saturate(1.125) brightness(1) !important;
   --blur-m: blur(12px) saturate(1.125) brightness(1) !important;
@@ -1430,11 +1161,7 @@
   --checkbox-border-color: oklch(43.75% 0 0) !important;
   --checkbox-border-color-hover: oklch(70% 0 0) !important;
   --checkbox-color: hsl(5, 65%, 45%) !important;
-  --checkbox-color-hover: color-mix(
-    in oklab,
-    hsl(5, 65%, 45%) 62.5%,
-    color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%)
-  ) !important;
+  --checkbox-color-hover: color-mix(in oklab, hsl(5, 65%, 45%) 62.5%, color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%)) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: white !important;
   --checkbox-radius: 50% !important;
@@ -1461,22 +1188,10 @@
   --code-value: #a882ff !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: oklch(52.5% 0 0) !important;
-  --collapse-icon-color-collapsed: color-mix(
-    in oklab,
-    hsl(5, 65%, 45%) 64%,
-    #fff 36%
-  ) !important;
+  --collapse-icon-color-collapsed: color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%) !important;
   --color-accent: hsl(5, 65%, 45%) !important;
-  --color-accent-1: color-mix(
-    in oklab,
-    hsl(5, 65%, 45%) 64%,
-    #fff 36%
-  ) !important;
-  --color-accent-2: color-mix(
-    in oklab,
-    color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%),
-    transparent 8%
-  ) !important;
+  --color-accent-1: color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%) !important;
+  --color-accent-2: color-mix(in oklab, color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%), transparent 8%) !important;
   --color-accent-hsl: 5, 65%, 45% !important;
   --color-base-00: oklch(00% 0 0) !important;
   --color-base-05: oklch(05% 0 0) !important;
@@ -1514,11 +1229,7 @@
   --dialog-width: 500px !important;
   --direction: 1 !important;
   --divider-color: oklch(100% 0 0 / 0.0625) !important;
-  --divider-color-hover: color-mix(
-    in oklab,
-    hsl(5, 65%, 45%) 50%,
-    transparent 75%
-  ) !important;
+  --divider-color-hover: color-mix(in oklab, hsl(5, 65%, 45%) 50%, transparent 75%) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 0 !important;
   --divider-width-hover: 3px !important;
@@ -1546,13 +1257,7 @@
   --file-header-background: oklch(00% 0 0) !important;
   --file-header-background-focused: oklch(00% 0 0) !important;
   --file-header-border: 1px solid transparent !important;
-  --file-header-font:
-    "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --file-header-font: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 490 !important;
   --file-header-justify: center !important;
@@ -1565,66 +1270,30 @@
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 720 !important;
-  --font-default:
-    ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
-    "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-default: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 820 !important;
   --font-extralight: 305 !important;
-  --font-interface:
-    "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-interface: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-interface-override: "Raveo" !important;
-  --font-interface-theme:
-    "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-interface-theme: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-light: 320 !important;
   --font-medium: 520 !important;
-  --font-mermaid:
-    "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
-  --font-monospace:
-    "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
-  --font-monospace-default:
-    ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-    "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
-    "Source Code Pro", monospace !important;
+  --font-mermaid: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+  --font-monospace: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
+  --font-monospace-default: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-override: "??" !important;
   --font-monospace-theme: "??" !important;
   --font-normal: 420 !important;
-  --font-print:
-    "??", "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "Arial" !important;
+  --font-print: "??", "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 620 !important;
   --font-small: 0.90625em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text:
-    "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-text: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-override: "Raveo" !important;
   --font-text-size: 16px !important;
-  --font-text-theme:
-    "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-text-theme: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-thin: 270 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 15px !important;
@@ -1698,11 +1367,7 @@
   --hr-color: oklch(100% 0 0 / 0.1375) !important;
   --hr-thickness: 2px !important;
   --icon-color: oklch(63.75% 0 0) !important;
-  --icon-color-active: color-mix(
-    in oklab,
-    hsl(5, 65%, 45%) 64%,
-    #fff 36%
-  ) !important;
+  --icon-color-active: color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%) !important;
   --icon-color-focused: oklch(80% 0 0) !important;
   --icon-color-hover: oklch(80% 0 0) !important;
   --icon-l: 18px !important;
@@ -1728,11 +1393,7 @@
   --indentation-guide-width: 0 !important;
   --indentation-guide-width-active: 0 !important;
   --inline-title-line-height: 1.2 !important;
-  --inline-title-margin-bottom: round(
-    nearest,
-    clamp(0px, 0.5em, 1.5rem),
-    2px
-  ) !important;
+  --inline-title-margin-bottom: round(nearest, clamp(0px, 0.5em, 1.5rem), 2px) !important;
   --inline-title-size: 2em !important;
   --inline-title-style: normal !important;
   --inline-title-variant: normal !important;
@@ -1748,11 +1409,7 @@
   --inset-end: right !important;
   --inset-start: left !important;
   --interactive-accent: hsl(5, 65%, 45%) !important;
-  --interactive-accent-hover: color-mix(
-    in oklab,
-    hsl(5, 65%, 45%) 62.5%,
-    color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%)
-  ) !important;
+  --interactive-accent-hover: color-mix(in oklab, hsl(5, 65%, 45%) 62.5%, color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%)) !important;
   --interactive-accent-hsl: 5, 65%, 45% !important;
   --interactive-hover: oklch(36.25% 0 0) !important;
   --interactive-normal: oklch(30% 0 0) !important;
@@ -1770,30 +1427,16 @@
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
   --link-color: color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%) !important;
-  --link-color-hover: color-mix(
-    in oklab,
-    color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%),
-    transparent 8%
-  ) !important;
+  --link-color-hover: color-mix(in oklab, color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%), transparent 8%) !important;
   --link-decoration: none !important;
   --link-decoration-hover: none !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: color-mix(
-    in oklab,
-    hsl(5, 65%, 45%) 64%,
-    #fff 36%
-  ) !important;
-  --link-external-color-hover: color-mix(
-    in oklab,
-    color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%),
-    transparent 8%
-  ) !important;
+  --link-external-color: color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%) !important;
+  --link-external-color-hover: color-mix(in oklab, color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%), transparent 8%) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: oklch(
-    from color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%) l c h / 0.75
-  ) !important;
+  --link-unresolved-color: oklch(from color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%) l c h / 0.75) !important;
   --link-unresolved-decoration-color: hsla(5, 65%, 45%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -1808,11 +1451,7 @@
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: oklch(52.5% 0 0) !important;
-  --list-marker-color-collapsed: color-mix(
-    in oklab,
-    hsl(5, 65%, 45%) 64%,
-    #fff 36%
-  ) !important;
+  --list-marker-color-collapsed: color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%) !important;
   --list-marker-color-hover: oklch(70% 0 0) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.125em !important;
@@ -1824,11 +1463,7 @@
   --menu-corner-shape: round !important;
   --menu-padding: 6px !important;
   --menu-radius: 14px !important;
-  --menu-scroll-mask: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.1) 48px
-  ) !important;
+  --menu-scroll-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 48px) !important;
   --menu-shadow: 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --metadata-background: transparent !important;
   --metadata-border-color: oklch(100% 0 0 / 0.0625) !important;
@@ -1844,13 +1479,7 @@
   --metadata-input-background: transparent !important;
   --metadata-input-background-active: oklch(100% 0 0 / 0.05) !important;
   --metadata-input-background-hover: transparent !important;
-  --metadata-input-font:
-    "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --metadata-input-font: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 2.125rem !important;
   --metadata-input-longtext-lines: 5 !important;
@@ -1859,13 +1488,7 @@
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: oklch(100% 0 0 / 0.05) !important;
   --metadata-label-background-hover: transparent !important;
-  --metadata-label-font:
-    "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system,
-    BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto,
-    "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --metadata-label-font: "Raveo", "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: oklch(63.75% 0 0) !important;
   --metadata-label-text-color-hover: oklch(63.75% 0 0) !important;
@@ -1875,8 +1498,7 @@
   --metadata-property-background: transparent !important;
   --metadata-property-background-active: oklch(100% 0 0 / 0.05) !important;
   --metadata-property-background-hover: transparent !important;
-  --metadata-property-box-shadow-focus: 0 0 0 2.5px
-    color-mix(in oklab, hsl(5, 65%, 45%) 50%, transparent 75%) !important;
+  --metadata-property-box-shadow-focus: 0 0 0 2.5px color-mix(in oklab, hsl(5, 65%, 45%) 50%, transparent 75%) !important;
   --metadata-property-box-shadow-hover: 0 0 0 2.5px oklch(100% 0 0 / 0.05) !important;
   --metadata-property-corner-shape: round !important;
   --metadata-property-corner-shape-focus: round !important;
@@ -1918,11 +1540,7 @@
   --nav-item-children-padding-start: 4px !important;
   --nav-item-color: oklch(70% 0 0) !important;
   --nav-item-color-active: oklch(80% 0 0) !important;
-  --nav-item-color-highlighted: color-mix(
-    in oklab,
-    hsl(5, 65%, 45%) 64%,
-    #fff 36%
-  ) !important;
+  --nav-item-color-highlighted: color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%) !important;
   --nav-item-color-hover: oklch(80% 0 0) !important;
   --nav-item-color-selected: oklch(80% 0 0) !important;
   --nav-item-margin-bottom: 2px !important;
@@ -1973,15 +1591,9 @@
   --radius-m: 12px !important;
   --radius-s: 8px !important;
   --radius-xl: 20px !important;
-  --raised-background: color-mix(in srgb, oklch(30% 0 0) 65%, transparent)
-    linear-gradient(
-      oklch(30% 0 0),
-      color-mix(in srgb, oklch(30% 0 0) 65%, transparent)
-    ) !important;
+  --raised-background: color-mix(in srgb, oklch(30% 0 0) 65%, transparent) linear-gradient(oklch(30% 0 0), color-mix(in srgb, oklch(30% 0 0) 65%, transparent)) !important;
   --raised-blur: blur(8px) saturate(1.125) brightness(1) !important;
-  --raised-mask:
-    linear-gradient(white, white) padding-box,
-    linear-gradient(white, white) border-box !important;
+  --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
   --raised-mask-background: transparent !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
@@ -2005,9 +1617,7 @@
   --search-clear-button-size: 13px !important;
   --search-icon-color: oklch(52.5% 0 0) !important;
   --search-icon-size: 17px !important;
-  --search-result-background: oklch(
-    from oklch(05% 0 0) l 0 h / 0.375
-  ) !important;
+  --search-result-background: oklch(from oklch(05% 0 0) l 0 h / 0.375) !important;
   --setting-group-heading-color: oklch(63.75% 0 0) !important;
   --setting-group-heading-size: 18px !important;
   --setting-group-heading-weight: 520 !important;
@@ -2016,16 +1626,8 @@
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 16px !important;
   --setting-items-radius: 16px !important;
-  --shadow-l:
-    inset 1.125px 1.875px 2.5px -1.25px rgba(255, 255, 255, 0.188),
-    inset -1.125px -1.875px 2.5px -1.25px rgba(255, 255, 255, 0.138),
-    inset 0 8px 16px rgba(255, 255, 255, 0.015),
-    0px 0px 24px 0px oklch(0 0 0 / 0.375) !important;
-  --shadow-s:
-    inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263),
-    inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188),
-    inset 0 8px 16px rgba(255, 255, 255, 0.025),
-    0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
+  --shadow-l: inset 1.125px 1.875px 2.5px -1.25px rgba(255, 255, 255, 0.188), inset -1.125px -1.875px 2.5px -1.25px rgba(255, 255, 255, 0.138), inset 0 8px 16px rgba(255, 255, 255, 0.015), 0px 0px 24px 0px oklch(0 0 0 / 0.375) !important;
+  --shadow-s: inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263), inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188), inset 0 8px 16px rgba(255, 255, 255, 0.025), 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --sidebar-left-toggle-inner-width: 12% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -2098,11 +1700,7 @@
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
   --tab-switcher-background: oklch(20% 0 0) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    oklch(20% 0 0),
-    transparent
-  ) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, oklch(20% 0 0), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 20px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
@@ -2112,11 +1710,7 @@
   --tab-text-color-focused: oklch(63.75% 0 0) !important;
   --tab-text-color-focused-active: oklch(86.25% 0 0) !important;
   --tab-text-color-focused-active-current: oklch(86.25% 0 0) !important;
-  --tab-text-color-focused-highlighted: color-mix(
-    in oklab,
-    hsl(5, 65%, 45%) 64%,
-    #fff 36%
-  ) !important;
+  --tab-text-color-focused-highlighted: color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%) !important;
   --tab-width: 240px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: oklch(100% 0 0 / 0.0625) !important;
@@ -2158,11 +1752,7 @@
   --tag-border-color-hover: hsla(5, 65%, 45%, 0.15) !important;
   --tag-border-width: 0px !important;
   --tag-color: color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%) !important;
-  --tag-color-hover: color-mix(
-    in oklab,
-    hsl(5, 65%, 45%) 64%,
-    #fff 36%
-  ) !important;
+  --tag-color-hover: color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -2170,15 +1760,9 @@
   --tag-padding-y: 0.3125em !important;
   --tag-radius: 2em !important;
   --tag-size: 0.8em !important;
-  --text-accent-hover: color-mix(
-    in oklab,
-    color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%),
-    transparent 8%
-  ) !important;
+  --text-accent-hover: color-mix(in oklab, color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%), transparent 8%) !important;
   --text-error: #fb464c !important;
-  --text-highlight-bg: oklch(
-    from rgb(255, 208, 0) 0.8 calc(c * 1.375) h / 0.33
-  ) !important;
+  --text-highlight-bg: oklch(from rgb(255, 208, 0) 0.8 calc(c * 1.375) h / 0.33) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: oklch(70% 0 0) !important;
   --text-on-accent: white !important;
@@ -2245,11 +1829,7 @@
   --radius-sm: 10px !important;
   --pill-weight: 490 !important;
   --tag-weight: 490 !important;
-  --color-accent-3: color-mix(
-    in oklab,
-    hsl(5, 65%, 45%) 50%,
-    transparent 75%
-  ) !important;
+  --color-accent-3: color-mix(in oklab, hsl(5, 65%, 45%) 50%, transparent 75%) !important;
   --radius-xs: 6px !important;
   --tab-font-weight: 420 !important;
   --strikethrough-color: oklch(52.5% 0 0) !important;
@@ -2272,22 +1852,11 @@
   --autofit-left-padding: 4px !important;
   --bases-cards-label-color: oklch(63.75% 0 0) !important;
   --bases-table-header-color-hover: oklch(76.25% 0 0) !important;
-  --bg-checkbox: radial-gradient(
-    transparent 50%,
-    oklch(43.75% 0 0) 55% 60%,
-    transparent 65%
-  ) !important;
-  --bg-checkbox-active: radial-gradient(
-    #0000000f 52%,
-    #ffffff20 64%
-  ) !important;
+  --bg-checkbox: radial-gradient(transparent 50%, oklch(43.75% 0 0) 55% 60%, transparent 65%) !important;
+  --bg-checkbox-active: radial-gradient(#0000000f 52%, #ffffff20 64%) !important;
   --bg-main-inner: oklch(20% 0 0) !important;
   --bg-main-outer: oklch(15% 0 0) !important;
-  --bg-main-workspace: radial-gradient(
-    at 50% 50%,
-    oklch(20% 0 0) 0%,
-    oklch(15% 0 0) 200%
-  ) !important;
+  --bg-main-workspace: radial-gradient(at 50% 50%, oklch(20% 0 0) 0%, oklch(15% 0 0) 200%) !important;
   --bhue: 0 !important;
   --bl-00: 00% !important;
   --bl-05: 05% !important;
@@ -2312,58 +1881,26 @@
   --bsat-xtr: 0 !important;
   --code-background-alt: oklch(from oklch(05% 0 0) l 0 h / 0.375) !important;
   --code-special: #fb464c !important;
-  --color-accent-4: color-mix(
-    in oklab,
-    oklab(from hsl(5, 65%, 45%) l a b / 0.25) 30%,
-    transparent 70%
-  ) !important;
+  --color-accent-4: color-mix(in oklab, oklab(from hsl(5, 65%, 45%) l a b / 0.25) 30%, transparent 70%) !important;
   --color-highlight-rgb: 255, 208, 0 !important;
   --control-icon-background: oklch(100% 0 0 / 0.0625) !important;
   --control-icon-color: oklch(76.25% 0 0) !important;
-  --control-icon-shadow:
-    inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263),
-    inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188),
-    inset 0 8px 16px rgba(255, 255, 255, 0.025),
-    0px 0px 12px 0px oklch(from oklch(05% 0 0) l 0 h / 0.375) !important;
+  --control-icon-shadow: inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263), inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188), inset 0 8px 16px rgba(255, 255, 255, 0.025), 0px 0px 12px 0px oklch(from oklch(05% 0 0) l 0 h / 0.375) !important;
   --fab-bg: oklch(00% 0 0) !important;
   --fab-color: oklch(63.75% 0 0) !important;
   --fab-color-active: oklch(80% 0 0) !important;
   --fab-easing-curve: cubic-bezier(0.55, 2, 0.5, 0.97) !important;
   --flair-padding: 3px 1px !important;
-  --font-label:
-    "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif !important;
+  --font-label: "Raveo", "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-normal-linux: 490 !important;
   --font-semi-medium: 490 !important;
   --frame-right-space-override: 164px !important;
-  --glass-base:
-    inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263),
-    inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188),
-    inset 0 8px 16px rgba(255, 255, 255, 0.025) !important;
-  --glass-base-l:
-    inset 1.125px 1.875px 2.5px -1.25px rgba(255, 255, 255, 0.188),
-    inset -1.125px -1.875px 2.5px -1.25px rgba(255, 255, 255, 0.138),
-    inset 0 8px 16px rgba(255, 255, 255, 0.015) !important;
-  --glass-base-m:
-    inset 1px 1.75px 2.25px -1.125px rgba(255, 255, 255, 0.15),
-    inset -1px -1.75px 2.25px -1.125px rgba(255, 255, 255, 0.1),
-    inset 0 8px 16px rgba(255, 255, 255, 0.015) !important;
-  --glass-button:
-    inset 3px 3px 1.5px -1.25px
-      oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.75),
-    inset -3px -3px 1.5px -1.25px
-      oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.5) !important;
-  --glass-button-error:
-    inset 3.25px 3.25px 1.25px -1.25px
-      oklab(from #fb464c calc(l + 0.075) a b / 0.75),
-    inset -3.25px -3.25px 1.25px -1.25px
-      oklab(from #fb464c calc(l + 0.075) a b / 0.5) !important;
-  --glass-button-l:
-    inset 3.75px 3.75px 1.5px -1.25px
-      oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.75),
-    inset -3.75px -3.75px 1.5px -1.25px
-      oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.5) !important;
+  --glass-base: inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263), inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188), inset 0 8px 16px rgba(255, 255, 255, 0.025) !important;
+  --glass-base-l: inset 1.125px 1.875px 2.5px -1.25px rgba(255, 255, 255, 0.188), inset -1.125px -1.875px 2.5px -1.25px rgba(255, 255, 255, 0.138), inset 0 8px 16px rgba(255, 255, 255, 0.015) !important;
+  --glass-base-m: inset 1px 1.75px 2.25px -1.125px rgba(255, 255, 255, 0.15), inset -1px -1.75px 2.25px -1.125px rgba(255, 255, 255, 0.1), inset 0 8px 16px rgba(255, 255, 255, 0.015) !important;
+  --glass-button: inset 3px 3px 1.5px -1.25px oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.75), inset -3px -3px 1.5px -1.25px oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.5) !important;
+  --glass-button-error: inset 3.25px 3.25px 1.25px -1.25px oklab(from #fb464c calc(l + 0.075) a b / 0.75), inset -3.25px -3.25px 1.25px -1.25px oklab(from #fb464c calc(l + 0.075) a b / 0.5) !important;
+  --glass-button-l: inset 3.75px 3.75px 1.5px -1.25px oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.75), inset -3.75px -3.75px 1.5px -1.25px oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.5) !important;
   --h1-size-alt: 1.625em !important;
   --h1-weight-alt: 570 !important;
   --highlight-blue-rgb: 2, 122, 255 !important;
@@ -2374,32 +1911,14 @@
   --highlight-purple-rgb: 168, 130, 255 !important;
   --highlight-red-rgb: 251, 70, 76 !important;
   --highlight-yellow-rgb: 255, 208, 0 !important;
-  --hotkey-gradient: linear-gradient(
-    to top,
-    hsl(5, 65%, 45%) -10%,
-    color-mix(
-        in oklab,
-        oklab(from hsl(5, 65%, 45%) l a b / 0.25) 30%,
-        transparent 70%
-      )
-      210%
-  ) !important;
+  --hotkey-gradient: linear-gradient(to top, hsl(5, 65%, 45%) -10%, color-mix(in oklab, oklab(from hsl(5, 65%, 45%) l a b / 0.25) 30%, transparent 70%) 210%) !important;
   --icon-stroke-thick: 2.25px !important;
-  --link-color-sidebar: color-mix(
-    in oklab,
-    color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%),
-    transparent 8%
-  ) !important;
+  --link-color-sidebar: color-mix(in oklab, color-mix(in oklab, hsl(5, 65%, 45%) 64%, #fff 36%), transparent 8%) !important;
   --link-unresolved-lch: 0.75 !important;
   --list-bullet-color: oklch(76.25% 0 0) !important;
   --list-dash-color: oklch(100% 0 0 / 0.35) !important;
-  --mobile-nav-fade-bg: linear-gradient(
-    oklch(from oklch(20% 0 0) l c h),
-    transparent 78px
-  ) !important;
-  --modal-community-header-bg: oklch(
-    from oklch(20% 0 0) l 0 h / 0.5
-  ) !important;
+  --mobile-nav-fade-bg: linear-gradient(oklch(from oklch(20% 0 0) l c h), transparent 78px) !important;
+  --modal-community-header-bg: oklch(from oklch(20% 0 0) l 0 h / 0.5) !important;
   --modal-community-item-bg: oklch(from oklch(30% 0 0) l 0 h / 0.5) !important;
   --modal-small-background: oklch(21.25% 0 0 / 0.675) !important;
   --nav-header-bg: oklch(100% 0 0 / 0.0625) !important;
@@ -2411,86 +1930,35 @@
   --radius-prompt: 24px !important;
   --radius-settings: 28px !important;
   --radius-xxl: 22px !important;
-  --setting-item-background: color-mix(
-    in oklab,
-    oklch(00% 0 0) 87.5%,
-    oklch(20% 0 0)
-  ) !important;
-  --shadow-button:
-    inset 3px 3px 1.5px -1.25px
-      oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.75),
-    inset -3px -3px 1.5px -1.25px
-      oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.5),
-    0px 3px 15px 0px oklch(from oklch(00% 0 0) l 0 h / 0.75) !important;
-  --shadow-button-error:
-    inset 3.25px 3.25px 1.25px -1.25px
-      oklab(from #fb464c calc(l + 0.075) a b / 0.75),
-    inset -3.25px -3.25px 1.25px -1.25px
-      oklab(from #fb464c calc(l + 0.075) a b / 0.5),
-    0px 3px 15px 0px oklch(from oklch(00% 0 0) l 0 h / 0.75) !important;
+  --setting-item-background: color-mix(in oklab, oklch(00% 0 0) 87.5%, oklch(20% 0 0)) !important;
+  --shadow-button: inset 3px 3px 1.5px -1.25px oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.75), inset -3px -3px 1.5px -1.25px oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.5), 0px 3px 15px 0px oklch(from oklch(00% 0 0) l 0 h / 0.75) !important;
+  --shadow-button-error: inset 3.25px 3.25px 1.25px -1.25px oklab(from #fb464c calc(l + 0.075) a b / 0.75), inset -3.25px -3.25px 1.25px -1.25px oklab(from #fb464c calc(l + 0.075) a b / 0.5), 0px 3px 15px 0px oklch(from oklch(00% 0 0) l 0 h / 0.75) !important;
   --shadow-canvas-node: 0px 0px 16px 0px oklch(0 0 0 / 0.1875) !important;
-  --shadow-fab:
-    0 0 0 0.5px oklch(100% 0 0 / 0.125), 0px 2px 12px 0px oklch(0 0 0 / 0.1875) !important;
+  --shadow-fab: 0 0 0 0.5px oklch(100% 0 0 / 0.125), 0px 2px 12px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-faint: 0px 3px 15px 0px oklch(from oklch(00% 0 0) l 0 h / 0.75) !important;
   --shadow-input: 0 0 0 0.5px oklch(100% 0 0 / 0.125) !important;
-  --shadow-input-active: 0 0 0 2.5px
-    color-mix(in oklab, hsl(5, 65%, 45%) 50%, transparent 75%) !important;
+  --shadow-input-active: 0 0 0 2.5px color-mix(in oklab, hsl(5, 65%, 45%) 50%, transparent 75%) !important;
   --shadow-muted: 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-normal: 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
   --shadow-setting-items: 0 4px 12px 0 oklch(from oklch(05% 0 0) l 0 h / 0.375) !important;
-  --shadow-setting-items-top:
-    inset 1px 2px 2px 0 oklch(from oklch(05% 0 0) l 0 h / 0.375),
-    0px 1px 9px oklch(100% 0 0 / 0.025) !important;
+  --shadow-setting-items-top: inset 1px 2px 2px 0 oklch(from oklch(05% 0 0) l 0 h / 0.375), 0px 1px 9px oklch(100% 0 0 / 0.025) !important;
   --shadow-sidebar: 0px 0px 12px 0px oklch(from oklch(20% 0 0) l 0 h / 0.5) !important;
   --shadow-strong: 0px 0px 24px 0px oklch(0 0 0 / 0.375) !important;
-  --shadow-suggestion-item:
-    inset 3.75px 3.75px 1.5px -1.25px
-      oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.75),
-    inset -3.75px -3.75px 1.5px -1.25px
-      oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.5),
-    0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
-  --shadow-tab:
-    inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263),
-    inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188),
-    inset 0 8px 16px rgba(255, 255, 255, 0.025) !important;
-  --shadow-toggle:
-    inset 1.5px 1.5px 1.5px 0px
-      oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.75),
-    inset -1.5px -1.5px 1.5px 0px
-      oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.5) !important;
-  --shadow-workspace:
-    0 0 0 0.5px oklch(100% 0 0 / 0.1375),
-    0 0 20px oklch(from oklch(00% 0 0) l 0 h / 0.75) !important;
+  --shadow-suggestion-item: inset 3.75px 3.75px 1.5px -1.25px oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.75), inset -3.75px -3.75px 1.5px -1.25px oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.5), 0px 3px 18px 0px oklch(0 0 0 / 0.1875) !important;
+  --shadow-tab: inset 0.875px 1.625px 2px -1px rgba(255, 255, 255, 0.263), inset -0.875px -1.625px 2px -1px rgba(255, 255, 255, 0.188), inset 0 8px 16px rgba(255, 255, 255, 0.025) !important;
+  --shadow-toggle: inset 1.5px 1.5px 1.5px 0px oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.75), inset -1.5px -1.5px 1.5px 0px oklab(from hsl(5, 65%, 45%) calc(l + 0.075) a b / 0.5) !important;
+  --shadow-workspace: 0 0 0 0.5px oklch(100% 0 0 / 0.1375), 0 0 20px oklch(from oklch(00% 0 0) l 0 h / 0.75) !important;
   --shadow-workspace-multi: 0 0 0 0.5px oklch(100% 0 0 / 0.1375) !important;
   --stacked-shadow-color: oklch(0 0 0 / 0.1875) !important;
   --tab-close-bg: oklch(38.25% 0 0 / 0.875) !important;
-  --tab-right-fade: linear-gradient(
-    to left,
-    oklch(25% 0 0) 80%,
-    transparent
-  ) !important;
-  --tab-right-fade-alt: linear-gradient(
-    to left,
-    oklch(20% 0 0) 80%,
-    transparent
-  ) !important;
+  --tab-right-fade: linear-gradient(to left, oklch(25% 0 0) 80%, transparent) !important;
+  --tab-right-fade-alt: linear-gradient(to left, oklch(20% 0 0) 80%, transparent) !important;
   --tab-sidebar-bg: oklch(100% 0 0 / 0.0625) !important;
   --tab-sidebar-container-bg: oklch(100% 0 0 / 0.025) !important;
   --table-row-bg: oklch(100% 0 0 / 0.05) !important;
   --table-text-weight: 420 !important;
-  --text-highlight-bg-search: oklch(
-    from rgb(255, 208, 0) 0.875 calc(c * 1.375) h / 0.625
-  ) !important;
-  --toggle-gradient: linear-gradient(
-    to bottom,
-    hsl(5, 65%, 45%) -30%,
-    color-mix(
-        in oklab,
-        oklab(from hsl(5, 65%, 45%) l a b / 0.25) 30%,
-        transparent 70%
-      )
-      180%
-  ) !important;
+  --text-highlight-bg-search: oklch(from rgb(255, 208, 0) 0.875 calc(c * 1.375) h / 0.625) !important;
+  --toggle-gradient: linear-gradient(to bottom, hsl(5, 65%, 45%) -30%, color-mix(in oklab, oklab(from hsl(5, 65%, 45%) l a b / 0.25) 30%, transparent 70%) 180%) !important;
   --toggle-track-bg: oklch(100% 0 0 / 0.2) !important;
   --trans-black-00: oklch(0 0 0 / 0.375) !important;
   --trans-black-10: oklch(0 0 0 / 0.1875) !important;
@@ -2513,11 +1981,7 @@
   --trans-white-10: oklch(86.25% 0 0 / 0.625) !important;
   --vl-ease-out: cubic-bezier(0.3, 0.75, 0, 1) !important;
   --vl-layout-padding: 8px !important;
-  --warning-gradient: linear-gradient(
-    to top,
-    #fb464c -30%,
-    oklch(from oklch(20% 0 0) l 0 h / 0.5) 180%
-  ) !important;
+  --warning-gradient: linear-gradient(to top, #fb464c -30%, oklch(from oklch(20% 0 0) l 0 h / 0.5) 180%) !important;
   --workspace-border-color: oklch(100% 0 0 / 0.08125) !important;
 
   --quartz-icon-color: currentColor;
@@ -2579,26 +2043,22 @@ html {
   font-weight: 400;
   src:
     local("Avenir"),
-    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff")
-      format("woff");
+    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff") format("woff");
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2606,8 +2066,7 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2615,64 +2074,47 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2680,8 +2122,7 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2689,46 +2130,32 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -2736,10 +2163,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
@@ -2747,8 +2172,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2757,8 +2181,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -2767,10 +2190,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
@@ -2778,21 +2199,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A,
-    U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346,
-    U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6,
-    U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043,
-    U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C,
-    U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121,
-    U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2,
-    U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319,
-    U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1,
-    U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB,
-    U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE,
-    U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
 }
 
 @font-face {
@@ -2800,32 +2208,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4,
-    U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3,
-    U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF,
-    U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF,
-    U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0,
-    U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F,
-    U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315,
-    U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382,
-    U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6,
-    U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7,
-    U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444,
-    U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0,
-    U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA,
-    U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB,
-    U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513,
-    U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D,
-    U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC,
-    U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC,
-    U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887,
-    U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B,
-    U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C,
-    U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8,
-    U+1FB00-1FBFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
 }
 
 @font-face {
@@ -2833,12 +2217,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
@@ -2846,12 +2226,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -2859,12 +2235,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -2873,28 +2245,23 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
-      format("woff");
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -2902,46 +2269,32 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Monaco";
@@ -3541,24 +2894,9 @@ body {
     animation-play-state: running;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: oklch(0 0 0 / 0.0625);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -3571,18 +2909,7 @@ body {
     color: oklch(0.3 0.0005 281);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: oklch(0 0 0 / 0.0625);
     border: 0px oklch(0.3 0.0005 281);
     border-top-left-radius: 8px;
@@ -3617,15 +2944,7 @@ body {
   }
 
   a.internal.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: rgba(10, 124, 255, 0.1);
     display: flex;
@@ -3726,10 +3045,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: oklch(0.3 0.0005 281);
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
     padding: 0px;
   }
 
@@ -3986,20 +3302,11 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: oklch(0.3 0.0005 281);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
     border: 0px oklch(0.3 0.0005 281);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -4011,71 +3318,20 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: oklch(0.3 0.0005 281);
     font-weight: 420;
     background-color: oklch(0 0 0 / 0.0625);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: oklch(0.3 0.0005 281);
   }
 
@@ -4302,22 +3558,12 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: oklch(0.99 0.0005 281)
-      radial-gradient(
-        oklch(0.975 0.00125 281) 20%,
-        oklch(0.945 0.00625 281) 100%
-      )
-      repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
     background-color: oklch(0.99 0.0005 281);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: oklch(0.99 0.0005 281)
-      radial-gradient(
-        oklch(0.975 0.00125 281) 20%,
-        oklch(0.945 0.00625 281) 100%
-      )
-      repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
     background-color: oklch(0.99 0.0005 281);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -4332,32 +3578,17 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: oklch(0.99 0.0005 281)
-      radial-gradient(
-        oklch(0.975 0.00125 281) 20%,
-        oklch(0.945 0.00625 281) 100%
-      )
-      repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
     background-color: oklch(0.99 0.0005 281);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: oklch(0.99 0.0005 281)
-      radial-gradient(
-        oklch(0.975 0.00125 281) 20%,
-        oklch(0.945 0.00625 281) 100%
-      )
-      repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
     background-color: oklch(0.99 0.0005 281);
   }
 
   ::-webkit-scrollbar-track {
-    background: oklch(0.99 0.0005 281)
-      radial-gradient(
-        oklch(0.975 0.00125 281) 20%,
-        oklch(0.945 0.00625 281) 100%
-      )
-      repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
     background-color: oklch(0.99 0.0005 281);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -4370,12 +3601,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: oklch(0.99 0.0005 281)
-      radial-gradient(
-        oklch(0.975 0.00125 281) 20%,
-        oklch(0.945 0.00625 281) 100%
-      )
-      repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
     background-color: oklch(0.99 0.0005 281);
   }
 
@@ -5094,10 +4320,7 @@ body {
     background-color: oklch(0 0 0 / 0.0625);
     box-shadow: none;
     color: oklch(0.3 0.0005 281);
-    font-family:
-      ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-      "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-      "Source Code Pro", monospace;
+    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
     font-size: 14px;
     border: 0px oklch(0.3 0.0005 281);
     border-top-left-radius: 8px;
@@ -5373,10 +4596,7 @@ body {
     transition-timing-function: ease;
   }
 
-  .explorer
-    .explorer-content
-    li:has(> .folder-outer:not(.open))
-    > .folder-container {
+  .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
     color: rgb(10, 124, 255);
     cursor: default;
     font-family:
@@ -5458,8 +4678,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: oklch(0.5575 0.0105 281);
     font-weight: 520;
-    border-color: oklch(0.5575 0.0105 281) oklch(0.5575 0.0105 281)
-      oklch(0 0 0 / 0.092);
+    border-color: oklch(0.5575 0.0105 281) oklch(0.5575 0.0105 281) oklch(0 0 0 / 0.092);
   }
 
   .bases-table tbody tr:nth-child(even) {
@@ -7167,24 +6386,9 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: oklch(1 0 0 / 0.05);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -7197,18 +6401,7 @@ html[saved-theme="dark"] {
       color: oklch(0.8 0 0);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:has(
-        ~ .result-card.focus:not(
-            :has(~ .result-card:hover, ~ .result-card:focus)
-          ),
-        ~ .result-card:focus,
-        ~ .result-card:hover
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
       background-color: oklch(1 0 0 / 0.05);
       border: 0px oklch(0.8 0 0);
       border-top-left-radius: 8px;
@@ -7223,8 +6416,7 @@ html[saved-theme="dark"] {
     }
 
     hr {
-      border-color: rgb(128, 128, 128) oklch(1 0 0 / 0.0625)
-        oklch(1 0 0 / 0.0625);
+      border-color: rgb(128, 128, 128) oklch(1 0 0 / 0.0625) oklch(1 0 0 / 0.0625);
       border-style: solid solid none none;
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -7244,15 +6436,7 @@ html[saved-theme="dark"] {
     }
 
     a.internal.tag-link,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card
-      > ul
-      > li
-      > .match-tag {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: rgba(189, 53, 40, 0.1);
       display: flex;
@@ -7353,10 +6537,7 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       color: oklch(0.8 0 0);
-      font-family:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-        "Source Code Pro", monospace;
+      font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
       padding: 0px;
     }
 
@@ -7600,10 +6781,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout.display-results {
+    .search > .search-container > .search-space > .search-layout.display-results {
       border: 0px solid oklch(1 0 0 / 0.125);
       border-top-left-radius: 24px;
       border-top-right-radius: 24px;
@@ -7615,20 +6793,11 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container {
+    .search > .search-container > .search-space > .search-layout > .results-container {
       color: oklch(0.8 0 0);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
       border: 0px oklch(0.8 0 0);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -7640,73 +6809,20 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(
-        :has(~ .result-card:hover, ~ .result-card:focus)
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: oklch(0.8 0 0);
       font-weight: 420;
       background-color: oklch(1 0 0 / 0.05);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-description {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
       color: oklch(0.8 0 0);
     }
 
@@ -7933,16 +7049,12 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: oklch(0 0 0)
-        radial-gradient(oklch(0.2 0 0) 0%, oklch(0.15 0 0) 200%) repeat scroll
-        0% 0% / auto padding-box border-box;
+      background: oklch(0 0 0) radial-gradient(oklch(0.2 0 0) 0%, oklch(0.15 0 0) 200%) repeat scroll 0% 0% / auto padding-box border-box;
       background-color: oklch(0 0 0);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: oklch(0 0 0)
-        radial-gradient(oklch(0.2 0 0) 0%, oklch(0.15 0 0) 200%) repeat scroll
-        0% 0% / auto padding-box border-box;
+      background: oklch(0 0 0) radial-gradient(oklch(0.2 0 0) 0%, oklch(0.15 0 0) 200%) repeat scroll 0% 0% / auto padding-box border-box;
       background-color: oklch(0 0 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7957,23 +7069,17 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: oklch(0 0 0)
-        radial-gradient(oklch(0.2 0 0) 0%, oklch(0.15 0 0) 200%) repeat scroll
-        0% 0% / auto padding-box border-box;
+      background: oklch(0 0 0) radial-gradient(oklch(0.2 0 0) 0%, oklch(0.15 0 0) 200%) repeat scroll 0% 0% / auto padding-box border-box;
       background-color: oklch(0 0 0);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: oklch(0 0 0)
-        radial-gradient(oklch(0.2 0 0) 0%, oklch(0.15 0 0) 200%) repeat scroll
-        0% 0% / auto padding-box border-box;
+      background: oklch(0 0 0) radial-gradient(oklch(0.2 0 0) 0%, oklch(0.15 0 0) 200%) repeat scroll 0% 0% / auto padding-box border-box;
       background-color: oklch(0 0 0);
     }
 
     ::-webkit-scrollbar-track {
-      background: oklch(0 0 0)
-        radial-gradient(oklch(0.2 0 0) 0%, oklch(0.15 0 0) 200%) repeat scroll
-        0% 0% / auto padding-box border-box;
+      background: oklch(0 0 0) radial-gradient(oklch(0.2 0 0) 0%, oklch(0.15 0 0) 200%) repeat scroll 0% 0% / auto padding-box border-box;
       background-color: oklch(0 0 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7986,9 +7092,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: oklch(0 0 0)
-        radial-gradient(oklch(0.2 0 0) 0%, oklch(0.15 0 0) 200%) repeat scroll
-        0% 0% / auto padding-box border-box;
+      background: oklch(0 0 0) radial-gradient(oklch(0.2 0 0) 0%, oklch(0.15 0 0) 200%) repeat scroll 0% 0% / auto padding-box border-box;
       background-color: oklch(0 0 0);
     }
 
@@ -8707,10 +7811,7 @@ html[saved-theme="dark"] {
       background-color: oklch(1 0 0 / 0.05);
       box-shadow: none;
       color: oklch(0.8 0 0);
-      font-family:
-        ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
-        "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
-        "Source Code Pro", monospace;
+      font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
       font-size: 14px;
       border: 0px oklch(0.8 0 0);
       border-top-left-radius: 8px;
@@ -8986,10 +8087,7 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .explorer
-      .explorer-content
-      li:has(> .folder-outer:not(.open))
-      > .folder-container {
+    .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
       color: oklab(0.701721 0.0979667 0.0550956);
       cursor: default;
       font-family:
@@ -9022,10 +8120,7 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
     }
 
-    .explorer
-      .explorer-content
-      li:has(> .folder-outer.open)
-      > .folder-container {
+    .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
       color: oklab(0.701721 0.0979667 0.0550956);
       cursor: default;
       font-family:
@@ -10299,10 +9394,7 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

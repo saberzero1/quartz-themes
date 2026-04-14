@@ -3171,7 +3171,7 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "its-theme": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": {},
@@ -3187,7 +3187,7 @@
       }
     },
     "its-theme.rainbow": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": {
@@ -3613,7 +3613,7 @@
       }
     },
     "its-theme.blue": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@slrvb-b": true },
@@ -3629,7 +3629,7 @@
       }
     },
     "its-theme.gray": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@slrvb-g": true },
@@ -3645,7 +3645,7 @@
       }
     },
     "its-theme.school-days": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@s-d": true },
@@ -3661,7 +3661,7 @@
       }
     },
     "its-theme.ttrpg-dnd": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@select": "dnd" },
@@ -3677,7 +3677,7 @@
       }
     },
     "its-theme.ttrpg-wotc": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@select": "wotc-beyond" },
@@ -3693,7 +3693,7 @@
       }
     },
     "its-theme.ttrpg-pathfinder": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@select": "pathfinder" },
@@ -3709,7 +3709,7 @@
       }
     },
     "its-theme.ttrpg-pathfinder-remastered": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@select": "pathfinder-remaster" },
@@ -3725,7 +3725,7 @@
       }
     },
     "its-theme.tangerine-dunes": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@t-d": true },
@@ -3741,7 +3741,7 @@
       }
     },
     "its-theme.drowned": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@drwn": true },
@@ -3757,7 +3757,7 @@
       }
     },
     "its-theme.nord": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@nord": true },
@@ -3773,7 +3773,7 @@
       }
     },
     "its-theme.minimalist": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@mini": true },
@@ -3789,7 +3789,7 @@
       }
     },
     "its-theme.notion": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@notion": true },
@@ -3805,7 +3805,7 @@
       }
     },
     "its-theme.its-dark": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark"],
       "use_extended_syntax": true,
       "style_settings": { "ITS@@its-d": true },
@@ -3834,10 +3834,162 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "kakano": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
-      "style_settings": {},
+      "style_settings": {
+        "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-kahurangi"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["roboto", "sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "kakano.red": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-whero"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["roboto", "sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "kakano.orange": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-karaka"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["roboto", "sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "kakano.yellow": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-koowhai"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["roboto", "sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "kakano.green": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-kaakaariki"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["roboto", "sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "kakano.cyan": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-kaarikioorangi"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["roboto", "sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "kakano.purple": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-waiporoporo"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["roboto", "sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "kakano.pink": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-maawhero"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["roboto", "sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "kakano.black": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-mangu"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["roboto", "sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "kakano.white": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-maa"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": [],
+      "extras": [],
+      "fixes": [],
+      "fonts": ["roboto", "sf-mono"],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "kakano.grey": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "kakano-style@@theme-setting-predefinedBaseColor": "theme-setting-baseColorPreset-kiwikiwi"
+      },
       "variations": [],
       "extra_extract_files": [],
       "snippets": [],

@@ -9,9 +9,9 @@ cssclasses:
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/its-theme.its-dark/README.md">Install instructions</a>
 
-| Name                 | Modes                     | Compatibility                                                                                     | License                                                                                                                                                           |
-| -------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `its-theme.its-dark` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/its-theme.its-dark/LICENSE.md"><img src="media/license/gpl-2.0.svg" alt="GPL-2.0"/></a> |
+| Name                 | Modes                     | Compatibility                                                                                   | License                                                                                                                                                           |
+| -------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `its-theme.its-dark` | ![[media/dark.svg\|DARK]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/its-theme.its-dark/LICENSE.md"><img src="media/license/gpl-2.0.svg" alt="GPL-2.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

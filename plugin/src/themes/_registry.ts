@@ -199,6 +199,16 @@ import { theme as its_theme_ttrpg_pathfinder_remastered } from "./its-theme-ttrp
 import { theme as its_theme_ttrpg_wotc } from "./its-theme-ttrpg-wotc.js";
 import { theme as jotter } from "./jotter.js";
 import { theme as kakano } from "./kakano.js";
+import { theme as kakano_black } from "./kakano-black.js";
+import { theme as kakano_cyan } from "./kakano-cyan.js";
+import { theme as kakano_green } from "./kakano-green.js";
+import { theme as kakano_grey } from "./kakano-grey.js";
+import { theme as kakano_orange } from "./kakano-orange.js";
+import { theme as kakano_pink } from "./kakano-pink.js";
+import { theme as kakano_purple } from "./kakano-purple.js";
+import { theme as kakano_red } from "./kakano-red.js";
+import { theme as kakano_white } from "./kakano-white.js";
+import { theme as kakano_yellow } from "./kakano-yellow.js";
 import { theme as kanagawa } from "./kanagawa.js";
 import { theme as kanagawa_paper } from "./kanagawa-paper.js";
 import { theme as kiwi_mono } from "./kiwi-mono.js";
@@ -699,6 +709,16 @@ export const themeData: Record<string, ThemeData> = {
   "its-theme.ttrpg-wotc": its_theme_ttrpg_wotc,
   jotter: jotter,
   kakano: kakano,
+  "kakano.black": kakano_black,
+  "kakano.cyan": kakano_cyan,
+  "kakano.green": kakano_green,
+  "kakano.grey": kakano_grey,
+  "kakano.orange": kakano_orange,
+  "kakano.pink": kakano_pink,
+  "kakano.purple": kakano_purple,
+  "kakano.red": kakano_red,
+  "kakano.white": kakano_white,
+  "kakano.yellow": kakano_yellow,
   kanagawa: kanagawa,
   "kanagawa-paper": kanagawa_paper,
   "kiwi-mono": kiwi_mono,
@@ -2066,6 +2086,66 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   kakano: {
     name: "kakano",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["roboto", "sf-mono"],
+  },
+  "kakano.black": {
+    name: "kakano.black",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["roboto", "sf-mono"],
+  },
+  "kakano.cyan": {
+    name: "kakano.cyan",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["roboto", "sf-mono"],
+  },
+  "kakano.green": {
+    name: "kakano.green",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["roboto", "sf-mono"],
+  },
+  "kakano.grey": {
+    name: "kakano.grey",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["roboto", "sf-mono"],
+  },
+  "kakano.orange": {
+    name: "kakano.orange",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["roboto", "sf-mono"],
+  },
+  "kakano.pink": {
+    name: "kakano.pink",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["roboto", "sf-mono"],
+  },
+  "kakano.purple": {
+    name: "kakano.purple",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["roboto", "sf-mono"],
+  },
+  "kakano.red": {
+    name: "kakano.red",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["roboto", "sf-mono"],
+  },
+  "kakano.white": {
+    name: "kakano.white",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["roboto", "sf-mono"],
+  },
+  "kakano.yellow": {
+    name: "kakano.yellow",
     modes: ["dark", "light"],
     variations: [],
     fonts: ["roboto", "sf-mono"],
