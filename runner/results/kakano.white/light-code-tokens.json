@@ -1,0 +1,82 @@
+{
+  "_codeBlock": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "color(srgb 0.095 0.095 0.095)"
+  },
+  "_preBlock": {
+    "backgroundColor": "color(srgb 0 0 0 / 0.06)",
+    "borderColor": "color(srgb 0.9625 0.9625 0.9625)"
+  },
+  "atom": {
+    "color": "color(srgb 0.095 0.095 0.095)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "comment": {
+    "color": "color(srgb 0 0 0 / 0.5)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "def": {
+    "color": "color(srgb 0.095 0.095 0.095)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "header": {
+    "color": "color(srgb 0.095 0.095 0.095)",
+    "fontStyle": "normal",
+    "fontWeight": "100",
+    "textDecoration": "none"
+  },
+  "keyword": {
+    "color": "color(srgb 0.95 0.95 0.95)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "number": {
+    "color": "color(srgb 0.95 0.95 0.95)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "operator": {
+    "color": "color(srgb 0.95 0.95 0.95)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "property": {
+    "color": "color(srgb 0.95 0.95 0.95)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "string": {
+    "color": "color(srgb 0.95 0.95 0.95)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "string-2": {
+    "color": "color(srgb 0.95 0.95 0.95)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "variable": {
+    "color": "color(srgb 0.95 0.95 0.95)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "variable-2": {
+    "color": "color(srgb 0.95 0.95 0.95)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  }
+}

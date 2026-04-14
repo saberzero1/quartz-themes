@@ -1,0 +1,82 @@
+{
+  "_codeBlock": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "color(srgb 0.773333 0.68 0.84)"
+  },
+  "_preBlock": {
+    "backgroundColor": "color(srgb 1 1 1 / 0.06)",
+    "borderColor": "color(srgb 0.325 0.15 0.45)"
+  },
+  "atom": {
+    "color": "color(srgb 0.773333 0.68 0.84)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "comment": {
+    "color": "color(srgb 1 1 1 / 0.5)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "def": {
+    "color": "color(srgb 0.773333 0.68 0.84)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "header": {
+    "color": "color(srgb 0.773333 0.68 0.84)",
+    "fontStyle": "normal",
+    "fontWeight": "100",
+    "textDecoration": "none"
+  },
+  "keyword": {
+    "color": "color(srgb 0.6 0.2 0.393333)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "number": {
+    "color": "color(srgb 0.286667 0.2 0.6)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "operator": {
+    "color": "color(srgb 0.6 0.2 0.226667)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "property": {
+    "color": "color(srgb 0.6 0.58 0.2)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "string": {
+    "color": "color(srgb 0.2 0.6 0.226667)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "string-2": {
+    "color": "color(srgb 0.2 0.6 0.226667)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "variable": {
+    "color": "color(srgb 0.2 0.6 0.593333)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "variable-2": {
+    "color": "color(srgb 0.2 0.6 0.593333)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  }
+}

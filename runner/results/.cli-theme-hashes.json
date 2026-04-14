@@ -208,7 +208,19 @@
     "ttrpg-wotc": "defb4e2ed6f9b12694124f6ad81e6b27"
   },
   "Jotter": { "_default": "de15274910949d0f421b8d3d65983d49" },
-  "Kakano": { "_default": "57491469d113b0748a47b3bc0a9e9471" },
+  "Kakano": {
+    "_default": "5331d0ebbfefb6edba43512f635ad077",
+    "black": "1ce404d56308bb88dfa97102ba9711ec",
+    "cyan": "06dc8c7c03e8d05190bf2446589374b2",
+    "green": "3e1c136ff6887dd82a35b3580dec9c55",
+    "grey": "877ee77885d23aa993d90722bbdb856c",
+    "orange": "4854caa8de5d8e73183001fe7a7d1b4d",
+    "pink": "a267f6b938ea8e18de25bf958725959f",
+    "purple": "780183fc9d2b6e74e6e844ff2d57ef59",
+    "red": "fcb7cb7301dcdc5a5e5b06f7da636adb",
+    "white": "aceaf0887b5162c28788d0a9b71fde7b",
+    "yellow": "e45c6e99cde21b50747c318f917fff47"
+  },
   "Kanagawa": { "_default": "a8b607939a41ee7dc4c4daba451711fd" },
   "Kanagawa Paper": { "_default": "c5f0e0408db01baf291e95125d3bc64f" },
   "Kiwi Mono": { "_default": "b747eba1ee7d561614a9636ef627300e" },

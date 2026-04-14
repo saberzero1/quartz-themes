@@ -1,0 +1,82 @@
+{
+  "_codeBlock": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "color(srgb 0.09 0.05 0.01)"
+  },
+  "_preBlock": {
+    "backgroundColor": "color(srgb 0 0 0 / 0.06)",
+    "borderColor": "color(srgb 0.925 0.625 0.325)"
+  },
+  "atom": {
+    "color": "color(srgb 0.09 0.05 0.01)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "comment": {
+    "color": "color(srgb 0 0 0 / 0.5)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "def": {
+    "color": "color(srgb 0.09 0.05 0.01)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "header": {
+    "color": "color(srgb 0.09 0.05 0.01)",
+    "fontStyle": "normal",
+    "fontWeight": "100",
+    "textDecoration": "none"
+  },
+  "keyword": {
+    "color": "color(srgb 0.9 0.1 0.486667)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "number": {
+    "color": "color(srgb 0.273333 0.1 0.9)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "operator": {
+    "color": "color(srgb 0.9 0.1 0.153333)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "property": {
+    "color": "color(srgb 0.9 0.86 0.1)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "string": {
+    "color": "color(srgb 0.1 0.9 0.153333)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "string-2": {
+    "color": "color(srgb 0.1 0.9 0.153333)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "variable": {
+    "color": "color(srgb 0.1 0.9 0.886667)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "variable-2": {
+    "color": "color(srgb 0.1 0.9 0.886667)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  }
+}

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theme-code/syntax-samples.md",
+                "file": "general.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "syntax-samples"
+              "title": "general"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theme-code/syntax-samples.md",
+                "file": "general.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of syntax-samples"
+              "title": "Outline of general"
             }
           }
         ],
@@ -194,12 +194,12 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
+    "theme-code/syntax-samples.md",
     "theme-bases/bases-cards.md",
     "theme-bases/bases-list.md",
     "theme-bases/bases-table.md",
     "theme-canvas/test-canvas.canvas",
     "theme-properties/note-properties.md",
-    "theme-code/syntax-samples.md",
     "theme-checkboxes/upper.md",
     "theme-checkboxes/lower.md",
     "theme-checkboxes/special.md",
@@ -214,12 +214,12 @@
     "callouts.md",
     "headings.md",
     "general.md",
+    "theme-callouts/kakano.md",
     "theme-callouts/velocity.md",
     "theme-callouts/vauxhall.md",
     "theme-callouts/brutalist.md",
     "theme-callouts/base16-default-dark.md",
     "theme-callouts/underwater.md",
-    "theme-callouts/brainhack.md",
     "theme-properties",
     "theme-code",
     "theme-canvas",

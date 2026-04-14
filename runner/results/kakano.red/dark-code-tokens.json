@@ -1,0 +1,82 @@
+{
+  "_codeBlock": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "color(srgb 0.93 0.67 0.67)"
+  },
+  "_preBlock": {
+    "backgroundColor": "color(srgb 1 1 1 / 0.06)",
+    "borderColor": "color(srgb 0.61875 0.13125 0.13125)"
+  },
+  "atom": {
+    "color": "color(srgb 0.93 0.67 0.67)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "comment": {
+    "color": "color(srgb 1 1 1 / 0.5)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "def": {
+    "color": "color(srgb 0.93 0.67 0.67)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "header": {
+    "color": "color(srgb 0.93 0.67 0.67)",
+    "fontStyle": "normal",
+    "fontWeight": "100",
+    "textDecoration": "none"
+  },
+  "keyword": {
+    "color": "color(srgb 0.825 0.175 0.489167)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "number": {
+    "color": "color(srgb 0.315833 0.175 0.825)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "operator": {
+    "color": "color(srgb 0.825 0.175 0.218333)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "property": {
+    "color": "color(srgb 0.825 0.7925 0.175)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "string": {
+    "color": "color(srgb 0.175 0.825 0.218333)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "string-2": {
+    "color": "color(srgb 0.175 0.825 0.218333)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "variable": {
+    "color": "color(srgb 0.175 0.825 0.814167)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  },
+  "variable-2": {
+    "color": "color(srgb 0.175 0.825 0.814167)",
+    "fontStyle": "normal",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  }
+}
