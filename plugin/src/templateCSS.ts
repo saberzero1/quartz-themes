@@ -512,11 +512,15 @@ blockquote.callout {
   }
 }
 
+/* fallback for internal links */
+body a.internal {
+  background-color: rgb(from var(--highlight) r g b / 0.3);
+}
+
 :root[saved-theme="light"], :root[saved-theme="dark"] {
   body {
     a.external, a.internal, .breadcrumb-container .breadcrumb-element > a, footer a {
       text-decoration: none;
-
     }
     div#quartz-root.page[data-frame="canvas"] > div#quartz-body {
       width: 100%;
