@@ -240,9 +240,9 @@
   "MagicUser": { "_default": "c04591511afe2a432ffe8897b5338d64" },
   "Mammoth": { "_default": "ba1a5ec5e5caf0adcdac928a3d50ae17" },
   "Maple": {
-    "_default": "b5499423f095c90c669a58b1fd7c402d",
-    "default": "484b58ac53412fe710ea5f0a2e899d29",
-    "minimal": "d5be3ca9c1277382f4ca8699a96dcbcd"
+    "_default": "f7ac63259abb18cb066ffeac0f1c3170",
+    "default": "c901832b9f687d9eae15309e033c645b",
+    "minimal": "b4901701b1f6c376ae63f17c0af4b664"
   },
   "Marathon": { "_default": "ead8c55257418b9818b85bd72b2d7d73" },
   "Material 3": { "_default": "e462dedf957e06ea58fdf97004c38e98" },

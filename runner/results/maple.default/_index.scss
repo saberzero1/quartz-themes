@@ -9,15 +9,15 @@
 :root:root {
   --bases-embed-border-color: hsla(35, 10%, 78%, 75%) !important;
   --bases-table-border-color: hsla(35, 10%, 78%, 75%) !important;
-  --bases-table-header-background: hsl(35, 12%, 97%) !important;
+  --bases-table-header-background: hsl(0, 0%, 93%) !important;
   --bases-table-header-background-hover: hsl(35, 20%, max(70%, 66% * 0.8), 25%) !important;
   --focus-ring-color: #0df !important;
-  --tab-container-background: hsl(35, 13.2%, 90.6%) !important;
+  --tab-container-background: hsl(0, 0%, 93%) !important;
   --table-border-color: hsla(35, 10%, 78%, 75%) !important;
   --text-accent: hsl(35, 22%, 56%) !important;
   --text-faint: #ababab !important;
   --text-normal: #222222 !important;
-  --titlebar-background: hsl(35, 13.2%, 90.6%) !important;
+  --titlebar-background: hsl(0, 0%, 93%) !important;
   --input-height: 30px !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
@@ -53,7 +53,7 @@
   --background-modifier-border-focus: hsla(35, 15.4%, 56%, 60%) !important;
   --background-modifier-border-hover: hsla(35, 15.4%, 56%, 60%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
-  --background-modifier-cover: hsla(17, 8%, 93%, 0.6) !important;
+  --background-modifier-cover: hsla(0, 0%, 93%, 0.6) !important;
   --background-modifier-error: rgba(189.0825, 81.2175, 81.2175, 1) !important;
   --background-modifier-error-hover: rgba(189.0825, 81.2175, 81.2175, 0.9) !important;
   --background-modifier-error-rgb: 189.0825, 81.2175, 81.2175 !important;
@@ -62,11 +62,11 @@
   --background-modifier-message: hsla(35, 22%, 56%, 1) !important;
   --background-modifier-success: rgba(71.4, 142.8, 20.4, 1) !important;
   --background-modifier-success-rgb: 71.4, 142.8, 20.4 !important;
-  --background-primary: hsl(35, 12%, 97%) !important;
+  --background-primary: hsl(0, 0%, 93%) !important;
   --background-primary-alt: hsl(35, 18%, 93.5%) !important;
-  --background-secondary: hsl(17, 8%, 93%) !important;
+  --background-secondary: hsl(0, 0%, 93%) !important;
   --background-secondary-alt: #fcfcfc !important;
-  --bases-cards-background: hsl(35, 12%, 97%) !important;
+  --bases-cards-background: hsl(0, 0%, 93%) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
@@ -89,7 +89,7 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-cell-background-active: hsl(35, 12%, 97%) !important;
+  --bases-table-cell-background-active: hsl(0, 0%, 93%) !important;
   --bases-table-cell-background-disabled: hsl(35, 18%, 93.5%) !important;
   --bases-table-cell-background-selected: hsla(35, 22%, 56%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
@@ -111,7 +111,7 @@
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: hsl(35, 12%, 97%) !important;
+  --bases-table-summary-background: hsl(0, 0%, 93%) !important;
   --bases-table-summary-background-hover: hsl(35, 20%, max(70%, 66% * 0.8), 25%) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
@@ -119,7 +119,7 @@
   --blockquote-border-color: hsl(35, 22%, 56%) !important;
   --blockquote-border-thickness: 4px !important;
   --blockquote-font-style: normal !important;
-  --blur-background: color-mix(in srgb, hsl(35, 12%, 97%) 65%, transparent) linear-gradient(hsl(35, 12%, 97%), color-mix(in srgb, hsl(35, 12%, 97%) 65%, transparent)) !important;
+  --blur-background: color-mix(in srgb, hsl(0, 0%, 93%) 65%, transparent) linear-gradient(hsl(0, 0%, 93%), color-mix(in srgb, hsl(0, 0%, 93%) 65%, transparent)) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(16px) saturate(1.5) brightness(1.15) !important;
   --blur-m: blur(10px) saturate(1.5) brightness(1.15) !important;
@@ -158,7 +158,7 @@
   --callout-title-weight: 600;
   --callout-todo: 5.202, 132.8822, 168.198;
   --callout-warning: 199.41, 122.774, 35.19;
-  --canvas-background: hsl(35, 12%, 97%) !important;
+  --canvas-background: hsl(0, 0%, 93%) !important;
   --canvas-card-label-color: #ababab !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: 189.0825, 81.2175, 81.2175 !important;
@@ -268,8 +268,8 @@
   --embed-max-height: 4000px !important;
   --embed-padding: 16px 20px !important;
   --file-folding-offset: 28px !important;
-  --file-header-background: hsl(35, 12%, 97%) !important;
-  --file-header-background-focused: hsl(35, 12%, 97%) !important;
+  --file-header-background: hsl(0, 0%, 93%) !important;
+  --file-header-background-focused: hsl(0, 0%, 93%) !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 14px !important;
@@ -471,7 +471,7 @@
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: hsl(17, 8%, 93%) !important;
+  --menu-background: hsl(0, 0%, 93%) !important;
   --menu-border-color: hsla(35, 10%, 78%, 75%) !important;
   --menu-border-width: 1px !important;
   --menu-corner-shape: round !important;
@@ -523,7 +523,7 @@
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 14px !important;
   --metadata-sidebar-label-font-size: 14px !important;
-  --modal-background: hsl(35, 12%, 97%) !important;
+  --modal-background: hsl(0, 0%, 93%) !important;
   --modal-border-color: #bdbdbd !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -574,9 +574,9 @@
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
   --pdf-background: transparent !important;
-  --pdf-page-background: hsl(35, 12%, 97%) !important;
+  --pdf-page-background: hsl(0, 0%, 93%) !important;
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: hsl(35, 12%, 97%) !important;
+  --pdf-sidebar-background: hsl(0, 0%, 93%) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
@@ -594,7 +594,7 @@
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: hsl(35, 12%, 97%) !important;
+  --prompt-background: hsl(0, 0%, 93%) !important;
   --prompt-border-color: #bdbdbd !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -605,15 +605,15 @@
   --radius-m: 8px !important;
   --radius-s: 4px !important;
   --radius-xl: 16px !important;
-  --raised-background: color-mix(in srgb, hsl(35, 12%, 97%) 65%, transparent) linear-gradient(hsl(35, 12%, 97%), color-mix(in srgb, hsl(35, 12%, 97%) 65%, transparent)) !important;
+  --raised-background: color-mix(in srgb, hsl(0, 0%, 93%) 65%, transparent) linear-gradient(hsl(0, 0%, 93%), color-mix(in srgb, hsl(0, 0%, 93%) 65%, transparent)) !important;
   --raised-blur: blur(6px) saturate(1.5) brightness(1.15) !important;
   --raised-mask: linear-gradient(white, white) padding-box, linear-gradient(white, white) border-box !important;
   --raised-mask-background: linear-gradient(to bottom left, white, transparent, white) border-box no-repeat !important;
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: hsl(17, 8%, 93%) !important;
-  --ribbon-background-collapsed: hsl(35, 12%, 97%) !important;
+  --ribbon-background: hsl(0, 0%, 93%) !important;
+  --ribbon-background-collapsed: hsl(0, 0%, 93%) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -631,7 +631,7 @@
   --search-clear-button-size: 13px !important;
   --search-icon-color: #5c5c5c !important;
   --search-icon-size: 18px !important;
-  --search-result-background: hsl(35, 12%, 97%) !important;
+  --search-result-background: hsl(0, 0%, 93%) !important;
   --setting-group-heading-color: #222222 !important;
   --setting-group-heading-size: 16px !important;
   --setting-group-heading-weight: 600 !important;
@@ -674,7 +674,7 @@
   --slider-track-background: hsl(35, 20%, 78%) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: hsl(17, 8%, 93%) !important;
+  --status-bar-background: hsl(0, 0%, 93%) !important;
   --status-bar-border-color: hsla(35, 10%, 78%, 75%) !important;
   --status-bar-border-width: 1px !important;
   --status-bar-font-size: 13px !important;
@@ -682,7 +682,7 @@
   --status-bar-radius: 6px !important;
   --status-bar-text-color: #5c5c5c !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: hsl(35, 12%, 97%) !important;
+  --suggestion-background: hsl(0, 0%, 93%) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
@@ -696,7 +696,7 @@
   --sync-avatar-color-7: rgba(114.24, 97.92, 146.88, 1) !important;
   --sync-avatar-color-8: #d53984 !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: hsl(35, 12%, 97%) !important;
+  --tab-background-active: hsl(0, 0%, 93%) !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #d4d4d4 !important;
   --tab-font-size: 14px !important;
@@ -713,8 +713,8 @@
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: hsl(17, 8%, 93%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(17, 8%, 93%), transparent) !important;
+  --tab-switcher-background: hsl(0, 0%, 93%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 93%), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
@@ -784,7 +784,7 @@
   --text-selection: hsla(35, 22%, 56%, 0.25) !important;
   --text-success: rgba(71.4, 142.8, 20.4, 1) !important;
   --text-warning: rgba(199.41, 122.774, 35.19, 1) !important;
-  --titlebar-background-focused: hsl(35, 13.2%, 90.6%) !important;
+  --titlebar-background-focused: hsl(0, 0%, 93%) !important;
   --titlebar-border-color: hsla(35, 10%, 78%, 75%) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
@@ -848,12 +848,12 @@
   --h6-font: "" !important;
   --inline-title-font: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --nav-item-children-padding-left: 8px !important;
-  --embed-background: hsla(35, 12%, 97%, max(0.6, 0.8)) !important;
+  --embed-background: hsla(0, 0%, 93%, max(0.6, 0.8)) !important;
   --code-variable: rgba(177.48, 139.74, 26.52, 1) !important;
   --code-class: rgba(199.41, 122.774, 35.19, 1) !important;
   --folder-color: hsl(45.81, 80.87%, 45.1%) !important;
   --animation: 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
-  --frame-bg: hsl(35, 13.2%, 90.6%) !important;
+  --frame-bg: hsl(0, 0%, 93%) !important;
   --accent-active: hsl(35, 22%, 56%) !important;
   --accent-active-bg: hsla(35, 22%, 56%, 1) !important;
   --accent-inactive: hsl(35, 20%, 78%) !important;
@@ -865,17 +865,18 @@
   --app-bg-image: linear-gradient(320deg, hsl(85, 50%, 92%), hsl(5, 36%, 87%)) !important;
   --app-layout-spacing: 6px !important;
   --background-primary-alt-hsl: 35, 18%, 93.5% !important;
-  --background-primary-hsl: 35, 12%, 97% !important;
-  --background-secondary-hsl: 17, 8%, 93% !important;
+  --background-primary-hsl: 0, 0%, 93% !important;
+  --background-secondary-hsl: 0, 0%, 93% !important;
   --base-accent-h: 35 !important;
-  --bg-editor: hsla(35, 12%, 97%, max(0.6, 0.8)) !important;
+  --bg-editor: hsla(0, 0%, 93%, max(0.6, 0.8)) !important;
   --bg-opacity: 0.6 !important;
-  --bg-surface: hsla(17, 8%, 93%, 0.6) !important;
+  --bg-surface: hsla(0, 0%, 93%, 0.6) !important;
   --block-outline-width: 2px !important;
   --blockquote-radius: 6px !important;
   --code-mac-style-header-bg: #333 !important;
   --code-mac-style-header-color: #ddd !important;
   --color-opacity: 1 !important;
+  --default-mod-bg-hsl: 0, 0%, 93% !important;
   --editor-min-opacity: 0.8 !important;
   --embed-radius: 8px !important;
   --folder-inactive: 85% !important;
@@ -942,15 +943,15 @@
 :root:root[saved-theme="dark"] {
   --bases-embed-border-color: hsla(207, 6%, 32%, 75%) !important;
   --bases-table-border-color: hsla(207, 6%, 32%, 75%) !important;
-  --bases-table-header-background: hsl(207, 5%, 11%) !important;
+  --bases-table-header-background: hsl(0, 0%, 7%) !important;
   --bases-table-header-background-hover: hsl(207, 24%, max(50%, 66% * 0.6), 20%) !important;
   --focus-ring-color: #0df !important;
-  --tab-container-background: hsl(207, 12%, 12.42%) !important;
+  --tab-container-background: hsl(0, 0%, 7%) !important;
   --table-border-color: hsla(207, 6%, 32%, 75%) !important;
   --text-accent: hsl(204, 24.48%, 50.83%) !important;
   --text-faint: #666666 !important;
   --text-normal: hsla(207, 50%, 94%, 75%) !important;
-  --titlebar-background: hsl(207, 12%, 12.42%) !important;
+  --titlebar-background: hsl(0, 0%, 7%) !important;
   --input-height: 30px !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
@@ -986,7 +987,7 @@
   --background-modifier-border-focus: hsla(207, 16.8%, 52%, 60%) !important;
   --background-modifier-border-hover: hsla(207, 16.8%, 52%, 60%) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
-  --background-modifier-cover: hsla(189, 6%, 12%, 0.6) !important;
+  --background-modifier-cover: hsla(0, 0%, 7%, 0.6) !important;
   --background-modifier-error: rgba(209.304, 137.496, 137.496, 1) !important;
   --background-modifier-error-hover: rgba(209.304, 137.496, 137.496, 0.9) !important;
   --background-modifier-error-rgb: 209.304, 137.496, 137.496 !important;
@@ -995,11 +996,11 @@
   --background-modifier-message: hsla(207, 24%, 52%, 0.85) !important;
   --background-modifier-success: rgba(147.288, 199.512, 155.992, 0.85) !important;
   --background-modifier-success-rgb: 147.288, 199.512, 155.992 !important;
-  --background-primary: hsl(207, 5%, 11%) !important;
+  --background-primary: hsl(0, 0%, 7%) !important;
   --background-primary-alt: hsl(207, 8%, 13.5%) !important;
-  --background-secondary: hsl(189, 6%, 12%) !important;
+  --background-secondary: hsl(0, 0%, 7%) !important;
   --background-secondary-alt: #363636 !important;
-  --bases-cards-background: hsl(207, 5%, 11%) !important;
+  --bases-cards-background: hsl(0, 0%, 7%) !important;
   --bases-cards-border-width: 1px !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
@@ -1022,7 +1023,7 @@
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
-  --bases-table-cell-background-active: hsl(207, 5%, 11%) !important;
+  --bases-table-cell-background-active: hsl(0, 0%, 7%) !important;
   --bases-table-cell-background-disabled: hsl(207, 8%, 13.5%) !important;
   --bases-table-cell-background-selected: hsla(207, 24%, 44.2%, 0.1) !important;
   --bases-table-cell-radius-active: 2px !important;
@@ -1044,7 +1045,7 @@
   --bases-table-row-background-hover: transparent !important;
   --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
-  --bases-table-summary-background: hsl(207, 5%, 11%) !important;
+  --bases-table-summary-background: hsl(0, 0%, 7%) !important;
   --bases-table-summary-background-hover: hsl(207, 24%, max(50%, 66% * 0.6), 20%) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
@@ -1091,7 +1092,7 @@
   --callout-title-weight: 600;
   --callout-todo: 126.48, 183.6, 240.72;
   --callout-warning: 206.04, 162.52, 140.76;
-  --canvas-background: hsl(207, 5%, 11%) !important;
+  --canvas-background: hsl(0, 0%, 7%) !important;
   --canvas-card-label-color: #666666 !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: 209.304, 137.496, 137.496 !important;
@@ -1201,8 +1202,8 @@
   --embed-max-height: 4000px !important;
   --embed-padding: 16px 20px !important;
   --file-folding-offset: 28px !important;
-  --file-header-background: hsl(207, 5%, 11%) !important;
-  --file-header-background-focused: hsl(207, 5%, 11%) !important;
+  --file-header-background: hsl(0, 0%, 7%) !important;
+  --file-header-background-focused: hsl(0, 0%, 7%) !important;
   --file-header-border: 1px solid transparent !important;
   --file-header-font: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --file-header-font-size: 14px !important;
@@ -1404,7 +1405,7 @@
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
-  --menu-background: hsl(189, 6%, 12%) !important;
+  --menu-background: hsl(0, 0%, 7%) !important;
   --menu-border-color: hsla(207, 6%, 32%, 75%) !important;
   --menu-border-width: 1px !important;
   --menu-corner-shape: round !important;
@@ -1456,7 +1457,7 @@
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: 14px !important;
   --metadata-sidebar-label-font-size: 14px !important;
-  --modal-background: hsl(207, 5%, 11%) !important;
+  --modal-background: hsl(0, 0%, 7%) !important;
   --modal-border-color: #555555 !important;
   --modal-border-width: 1px !important;
   --modal-community-sidebar-width: 280px !important;
@@ -1507,9 +1508,9 @@
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
   --pdf-background: transparent !important;
-  --pdf-page-background: hsl(207, 5%, 11%) !important;
+  --pdf-page-background: hsl(0, 0%, 7%) !important;
   --pdf-shadow: 0 0 0 1px hsla(207, 6%, 32%, 75%) !important;
-  --pdf-sidebar-background: hsl(207, 5%, 11%) !important;
+  --pdf-sidebar-background: hsl(0, 0%, 7%) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px hsla(207, 6%, 32%, 75%) !important;
   --pdfViewer-padding-bottom: 0 !important;
@@ -1527,7 +1528,7 @@
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
-  --prompt-background: hsl(207, 5%, 11%) !important;
+  --prompt-background: hsl(0, 0%, 7%) !important;
   --prompt-border-color: #555555 !important;
   --prompt-border-width: 1px !important;
   --prompt-input-height: 40px !important;
@@ -1545,8 +1546,8 @@
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: hsl(189, 6%, 12%) !important;
-  --ribbon-background-collapsed: hsl(207, 5%, 11%) !important;
+  --ribbon-background: hsl(0, 0%, 7%) !important;
+  --ribbon-background-collapsed: hsl(0, 0%, 7%) !important;
   --ribbon-padding: 8px 4px 12px !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -1564,7 +1565,7 @@
   --search-clear-button-size: 13px !important;
   --search-icon-color: #b3b3b3 !important;
   --search-icon-size: 18px !important;
-  --search-result-background: hsl(207, 5%, 11%) !important;
+  --search-result-background: hsl(0, 0%, 7%) !important;
   --setting-group-heading-color: hsla(207, 50%, 94%, 75%) !important;
   --setting-group-heading-size: 16px !important;
   --setting-group-heading-weight: 600 !important;
@@ -1607,7 +1608,7 @@
   --slider-track-background: hsl(207, 12%, 32%) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: hsl(189, 6%, 12%) !important;
+  --status-bar-background: hsl(0, 0%, 7%) !important;
   --status-bar-border-color: hsla(207, 6%, 32%, 75%) !important;
   --status-bar-border-width: 1px !important;
   --status-bar-font-size: 13px !important;
@@ -1615,7 +1616,7 @@
   --status-bar-radius: 6px !important;
   --status-bar-text-color: #b3b3b3 !important;
   --suggestion-backdrop-filter: none !important;
-  --suggestion-background: hsl(207, 5%, 11%) !important;
+  --suggestion-background: hsl(0, 0%, 7%) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15) !important;
@@ -1629,7 +1630,7 @@
   --sync-avatar-color-7: rgba(186.2265, 179.265, 238.935, 0.85) !important;
   --sync-avatar-color-8: #fa99cd !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: hsl(207, 5%, 11%) !important;
+  --tab-background-active: hsl(0, 0%, 7%) !important;
   --tab-curve: 6px !important;
   --tab-divider-color: #3f3f3f !important;
   --tab-font-size: 14px !important;
@@ -1646,8 +1647,8 @@
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
-  --tab-switcher-background: hsl(189, 6%, 12%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(189, 6%, 12%), transparent) !important;
+  --tab-switcher-background: hsl(0, 0%, 7%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 7%), transparent) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: 16px !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
@@ -1717,7 +1718,7 @@
   --text-selection: hsla(207, 24%, 44.2%, 0.33) !important;
   --text-success: rgba(147.288, 199.512, 155.992, 0.85) !important;
   --text-warning: rgba(206.04, 162.52, 140.76, 0.85) !important;
-  --titlebar-background-focused: hsl(207, 12%, 12.42%) !important;
+  --titlebar-background-focused: hsl(0, 0%, 7%) !important;
   --titlebar-border-color: hsla(207, 6%, 32%, 75%) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
@@ -1778,12 +1779,12 @@
   --h6-font: "" !important;
   --inline-title-font: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --nav-item-children-padding-left: 8px !important;
-  --embed-background: hsla(207, 5%, 11%, max(0.6, 0.85)) !important;
+  --embed-background: hsla(0, 0%, 7%, max(0.6, 0.85)) !important;
   --code-variable: rgba(214.2, 181.56, 132.6, 0.85) !important;
   --code-class: rgba(206.04, 162.52, 140.76, 0.85) !important;
   --folder-color: hsl(45.81, 80.87%, 45.1%) !important;
   --animation: 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
-  --frame-bg: hsl(207, 12%, 12.42%) !important;
+  --frame-bg: hsl(0, 0%, 7%) !important;
   --accent-active: hsl(207, 24%, 52%) !important;
   --accent-active-bg: hsla(207, 24%, 52%, 0.85) !important;
   --accent-inactive: hsl(207, 12%, 32%) !important;
@@ -1795,18 +1796,19 @@
   --app-bg-image: linear-gradient(320deg, hsl(267, 11%, 22%), hsl(197, 24%, 28%)) !important;
   --app-layout-spacing: 6px !important;
   --background-primary-alt-hsl: 207, 8%, 13.5% !important;
-  --background-primary-hsl: 207, 5%, 11% !important;
-  --background-secondary-hsl: 189, 6%, 12% !important;
+  --background-primary-hsl: 0, 0%, 7% !important;
+  --background-secondary-hsl: 0, 0%, 7% !important;
   --base-accent-h: 207 !important;
   --bg-delta-dark: 0% !important;
-  --bg-editor: hsla(207, 5%, 11%, max(0.6, 0.85)) !important;
+  --bg-editor: hsla(0, 0%, 7%, max(0.6, 0.85)) !important;
   --bg-opacity: 0.6 !important;
-  --bg-surface: hsla(189, 6%, 12%, 0.6) !important;
+  --bg-surface: hsla(0, 0%, 7%, 0.6) !important;
   --block-outline-width: 2px !important;
   --blockquote-radius: 6px !important;
   --code-mac-style-header-bg: #111 !important;
   --code-mac-style-header-color: #aaa !important;
   --color-opacity: 0.85 !important;
+  --default-mod-bg-hsl: 0, 0%, 7% !important;
   --editor-min-opacity: 0.85 !important;
   --embed-radius: 8px !important;
   --folder-inactive: 70% !important;
@@ -2223,12 +2225,12 @@ body {
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-    background-color: rgba(239, 237, 236, 0.6);
+    background-color: rgba(237, 237, 237, 0.6);
     color: rgb(34, 34, 34);
   }
 
   .page > div#quartz-body div.sidebar.right {
-    background-color: rgba(239, 237, 236, 0.6);
+    background-color: rgba(237, 237, 237, 0.6);
     color: rgb(34, 34, 34);
     border-left: 0px rgba(0, 0, 0, 0);
   }
@@ -2943,7 +2945,7 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: rgb(248, 248, 246);
+    background-color: rgb(237, 237, 237);
     border: 1px solid rgb(189, 189, 189);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -3638,7 +3640,7 @@ body {
   }
 
   .transclude {
-    background-color: rgba(248, 248, 246, 0.8);
+    background-color: rgba(237, 237, 237, 0.8);
     border: 2px solid rgb(210, 201, 188);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -3649,7 +3651,7 @@ body {
   }
 
   .transclude-inner {
-    background-color: rgba(248, 248, 246, 0.8);
+    background-color: rgba(237, 237, 237, 0.8);
     border: 0px solid rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -4165,7 +4167,7 @@ body {
   }
 
   .canvas-sidebar {
-    background-color: rgb(248, 248, 246);
+    background-color: rgb(237, 237, 237);
     border-color: rgb(34, 34, 34);
     box-shadow:
       rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset,
@@ -4223,7 +4225,7 @@ body {
   }
 
   footer {
-    background-color: rgb(239, 237, 236);
+    background-color: rgb(237, 237, 237);
     color: rgb(92, 92, 92);
     font-family:
       ui-sans-serif,
@@ -4392,7 +4394,7 @@ body {
   }
 
   .navigation-progress {
-    background-color: rgb(239, 237, 236);
+    background-color: rgb(237, 237, 237);
   }
 
   .page-header h2.page-title {
@@ -4553,8 +4555,8 @@ li.task-list-item[data-task="_"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="-"] input[type="checkbox"]::after {
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
 }
@@ -4581,15 +4583,15 @@ li.task-list-item[data-task=":"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="!"] input[type="checkbox"]::after {
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0zM7 12a1 1 0 1 1 2 0a1 1 0 0 1-2 0'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0zM7 12a1 1 0 1 1 2 0a1 1 0 0 1-2 0'/%3E%3C/svg%3E");
 }
 
 li.task-list-item[data-task="?"] input[type="checkbox"]::after {
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14'/%3E%3C/svg%3E");
 }
@@ -4665,8 +4667,8 @@ li.task-list-item[data-task="`"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="+"] input[type="checkbox"]::after {
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2'/%3E%3C/svg%3E");
 }
@@ -4896,8 +4898,8 @@ li.task-list-item[data-task="H"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="i"] input[type="checkbox"]::after {
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='m9.708 6.075l-3.024.379l-.108.502l.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74c.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325c-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0a1.32 1.32 0 0 1 2.64 0'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='m9.708 6.075l-3.024.379l-.108.502l.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74c.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325c-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0a1.32 1.32 0 0 1 2.64 0'/%3E%3C/svg%3E");
 }
@@ -5029,8 +5031,8 @@ li.task-list-item[data-task="r"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="R"] input[type="checkbox"]::after {
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 20V4h5.5a4 4 0 0 1 0 9H7m5 0l5 7'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 20V4h5.5a4 4 0 0 1 0 9H7m5 0l5 7'/%3E%3C/svg%3E");
 }
@@ -5043,8 +5045,8 @@ li.task-list-item[data-task="s"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="S"] input[type="checkbox"]::after {
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3c0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156c0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616c0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769c0 1.097-.826 1.828-2.2 1.939V8.73z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3c0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156c0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616c0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769c0 1.097-.826 1.828-2.2 1.939V8.73z'/%3E%3C/svg%3E");
 }
@@ -5400,12 +5402,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left,
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-      background-color: rgba(29, 32, 32, 0.6);
+      background-color: rgba(18, 18, 18, 0.6);
       color: rgba(232, 240, 247, 0.75);
     }
 
     .page > div#quartz-body div.sidebar.right {
-      background-color: rgba(29, 32, 32, 0.6);
+      background-color: rgba(18, 18, 18, 0.6);
       color: rgba(232, 240, 247, 0.75);
       border-left: 0px rgba(0, 0, 0, 0);
     }
@@ -6120,7 +6122,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: rgb(27, 28, 29);
+      background-color: rgb(18, 18, 18);
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -6815,7 +6817,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude {
-      background-color: rgba(27, 28, 29, 0.85);
+      background-color: rgba(18, 18, 18, 0.85);
       border: 2px solid rgb(72, 83, 91);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -6826,7 +6828,7 @@ html[saved-theme="dark"] {
     }
 
     .transclude-inner {
-      background-color: rgba(27, 28, 29, 0.85);
+      background-color: rgba(18, 18, 18, 0.85);
       border: 0px solid rgba(232, 240, 247, 0.75);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7342,7 +7344,7 @@ html[saved-theme="dark"] {
     }
 
     .canvas-sidebar {
-      background-color: rgb(29, 32, 32);
+      background-color: rgb(18, 18, 18);
       border-color: rgba(232, 240, 247, 0.75);
       box-shadow:
         rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset,
@@ -7400,7 +7402,7 @@ html[saved-theme="dark"] {
     }
 
     footer {
-      background-color: rgb(29, 32, 32);
+      background-color: rgb(18, 18, 18);
       color: rgb(179, 179, 179);
       font-family:
         ui-sans-serif,
@@ -7569,7 +7571,7 @@ html[saved-theme="dark"] {
     }
 
     .navigation-progress {
-      background-color: rgb(29, 32, 32);
+      background-color: rgb(18, 18, 18);
     }
 
     .page-header h2.page-title {
@@ -7730,8 +7732,8 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="-"] input[type="checkbox"]::after {
-    background-color: rgb(27, 28, 29);
-    color: rgb(27, 28, 29);
+    background-color: rgb(18, 18, 18);
+    color: rgb(18, 18, 18);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
   }
@@ -7758,15 +7760,15 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="!"] input[type="checkbox"]::after {
-    background-color: rgb(27, 28, 29);
-    color: rgb(27, 28, 29);
+    background-color: rgb(18, 18, 18);
+    color: rgb(18, 18, 18);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0zM7 12a1 1 0 1 1 2 0a1 1 0 0 1-2 0'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0zM7 12a1 1 0 1 1 2 0a1 1 0 0 1-2 0'/%3E%3C/svg%3E");
   }
 
   li.task-list-item[data-task="?"] input[type="checkbox"]::after {
-    background-color: rgb(27, 28, 29);
-    color: rgb(27, 28, 29);
+    background-color: rgb(18, 18, 18);
+    color: rgb(18, 18, 18);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14'/%3E%3C/svg%3E");
   }
@@ -7842,8 +7844,8 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="+"] input[type="checkbox"]::after {
-    background-color: rgb(27, 28, 29);
-    color: rgb(27, 28, 29);
+    background-color: rgb(18, 18, 18);
+    color: rgb(18, 18, 18);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2'/%3E%3C/svg%3E");
   }
@@ -8073,8 +8075,8 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="i"] input[type="checkbox"]::after {
-    background-color: rgb(27, 28, 29);
-    color: rgb(27, 28, 29);
+    background-color: rgb(18, 18, 18);
+    color: rgb(18, 18, 18);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='m9.708 6.075l-3.024.379l-.108.502l.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74c.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325c-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0a1.32 1.32 0 0 1 2.64 0'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='m9.708 6.075l-3.024.379l-.108.502l.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74c.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325c-.363 0-.494-.255-.402-.704zm.091-2.755a1.32 1.32 0 1 1-2.64 0a1.32 1.32 0 0 1 2.64 0'/%3E%3C/svg%3E");
   }
@@ -8206,8 +8208,8 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="R"] input[type="checkbox"]::after {
-    background-color: rgb(27, 28, 29);
-    color: rgb(27, 28, 29);
+    background-color: rgb(18, 18, 18);
+    color: rgb(18, 18, 18);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 20V4h5.5a4 4 0 0 1 0 9H7m5 0l5 7'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 20V4h5.5a4 4 0 0 1 0 9H7m5 0l5 7'/%3E%3C/svg%3E");
   }
@@ -8220,8 +8222,8 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="S"] input[type="checkbox"]::after {
-    background-color: rgb(27, 28, 29);
-    color: rgb(27, 28, 29);
+    background-color: rgb(18, 18, 18);
+    color: rgb(18, 18, 18);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3c0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156c0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616c0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769c0 1.097-.826 1.828-2.2 1.939V8.73z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='1em' height='1em'%3E%3Cpath fill='currentColor' d='M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3c0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156c0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616c0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769c0 1.097-.826 1.828-2.2 1.939V8.73z'/%3E%3C/svg%3E");
   }

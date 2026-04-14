@@ -59,8 +59,7 @@ export const theme: ThemeData = {
     52%,
     60%
   ) !important;
-  --background-modifier-cover: hsla(189, 6%,
-    12%, 0.6) !important;
+  --background-modifier-cover: hsla(0, 0%, 7%, 0.6) !important;
   --background-modifier-error: rgba(209.304, 137.496, 137.496, 1) !important;
   --background-modifier-error-hover: rgba(209.304, 137.496, 137.496, 0.9) !important;
   --background-modifier-error-rgb: 209.304, 137.496, 137.496 !important;
@@ -78,16 +77,14 @@ export const theme: ThemeData = {
   ) !important;
   --background-modifier-success: rgba(147.288, 199.512, 155.992, 0.85) !important;
   --background-modifier-success-rgb: 147.288, 199.512, 155.992 !important;
-  --background-primary: hsl(207, 5%, 11%) !important;
+  --background-primary: hsl(0, 0%, 7%) !important;
   --background-primary-alt: hsl(207, 8%, 13.5%) !important;
   --background-primary-alt-hsl: 207, 8%, 13.5% !important;
-  --background-primary-hsl: 207, 5%, 11% !important;
-  --background-secondary: hsl(189, 6%,
-    12%) !important;
-  --background-secondary-hsl: 189, 6%,
-    12% !important;
+  --background-primary-hsl: 0, 0%, 7% !important;
+  --background-secondary: hsl(0, 0%, 7%) !important;
+  --background-secondary-hsl: 0, 0%, 7% !important;
   --base-accent-h: 207 !important;
-  --bases-cards-background: hsl(207, 5%, 11%) !important;
+  --bases-cards-background: hsl(0, 0%, 7%) !important;
   --bases-cards-cover-background: hsl(207, 8%, 13.5%) !important;
   --bases-cards-shadow: 0 0 0 1px hsla(
     207,
@@ -115,7 +112,7 @@ export const theme: ThemeData = {
     32%,
     75%
   ) !important;
-  --bases-table-cell-background-active: hsl(207, 5%, 11%) !important;
+  --bases-table-cell-background-active: hsl(0, 0%, 7%) !important;
   --bases-table-cell-background-disabled: hsl(207, 8%, 13.5%) !important;
   --bases-table-cell-background-selected: hsla(207, 24%,
     44.2%, 0.1) !important;
@@ -128,14 +125,14 @@ export const theme: ThemeData = {
   --bases-table-cell-shadow-focus: 0 0 0 2px hsl(207, 24%,
     44.2%) !important;
   --bases-table-group-background: hsl(207, 8%, 13.5%) !important;
-  --bases-table-header-background: hsl(207, 5%, 11%) !important;
+  --bases-table-header-background: hsl(0, 0%, 7%) !important;
   --bases-table-header-background-hover: hsl(
     207,
     24%,
     max(50%, 66% * 0.6),
     20%
   ) !important;
-  --bases-table-summary-background: hsl(207, 5%, 11%) !important;
+  --bases-table-summary-background: hsl(0, 0%, 7%) !important;
   --bases-table-summary-background-hover: hsl(
     207,
     24%,
@@ -144,12 +141,11 @@ export const theme: ThemeData = {
   ) !important;
   --bg-delta-dark: 0% !important;
   --bg-editor: hsla(
-    207, 5%, 11%,
+    0, 0%, 7%,
     max(0.6, 0.85)
   ) !important;
   --bg-opacity: 0.6 !important;
-  --bg-surface: hsla(189, 6%,
-    12%, 0.6) !important;
+  --bg-surface: hsla(0, 0%, 7%, 0.6) !important;
   --block-outline-width: 2px !important;
   --blockquote-background-color: hsl(207, 8%, 13.5%) !important;
   --blockquote-border-color: hsl(
@@ -174,7 +170,7 @@ export const theme: ThemeData = {
   --callout-tip: 126.48, 199.92, 197.472;
   --callout-todo: 126.48, 183.6, 240.72;
   --callout-warning: 206.04, 162.52, 140.76;
-  --canvas-background: hsl(207, 5%, 11%) !important;
+  --canvas-background: hsl(0, 0%, 7%) !important;
   --canvas-color-1: 209.304, 137.496, 137.496 !important;
   --canvas-color-2: 206.04, 162.52, 140.76 !important;
   --canvas-color-3: 214.2, 181.56, 132.6 !important;
@@ -269,13 +265,14 @@ export const theme: ThemeData = {
   --color-yellow-rgb: 214.2, 181.56, 132.6 !important;
   --dark: hsla(207, 50%, 94%, 75%) !important;
   --darkgray: hsla(207, 50%, 94%, 75%) !important;
+  --default-mod-bg-hsl: 0, 0%, 7% !important;
   --divider-color: transparent !important;
   --divider-color-hover: hsl(207, 24%,
     44.2%) !important;
   --divider-width-hover: 4px !important;
   --editor-min-opacity: 0.85 !important;
   --embed-background: hsla(
-    207, 5%, 11%,
+    0, 0%, 7%,
     max(0.6, 0.85)
   ) !important;
   --embed-block-shadow-hover: 0 0 0 1px hsl(
@@ -310,8 +307,8 @@ export const theme: ThemeData = {
   --embed-padding: 16px 20px !important;
   --embed-radius: 8px !important;
   --file-folding-offset: 28px !important;
-  --file-header-background: hsl(207, 5%, 11%) !important;
-  --file-header-background-focused: hsl(207, 5%, 11%) !important;
+  --file-header-background: hsl(0, 0%, 7%) !important;
+  --file-header-background-focused: hsl(0, 0%, 7%) !important;
   --file-header-font-size: 14px !important;
   --file-line-width: clamp(600px, 72%, 850px) !important;
   --flair-color: hsla(207, 50%, 94%, 75%) !important;
@@ -335,11 +332,7 @@ export const theme: ThemeData = {
     20%
   ) !important;
   --footnote-line-height: 1.8 !important;
-  --frame-bg: hsl(
-    207,
-    12%,
-    12.42%
-  ) !important;
+  --frame-bg: hsl(0, 0%, 7%) !important;
   --graph-node-attachment: rgba(214.2, 181.56, 132.6, 0.85) !important;
   --graph-node-focused: hsl(
     207,
@@ -424,9 +417,8 @@ export const theme: ThemeData = {
   ) !important;
   --interactive-accent-hsl: 207, 24%,
     44.2% !important;
-  --light: hsl(207, 5%, 11%) !important;
-  --lightgray: hsl(189, 6%,
-    12%) !important;
+  --light: hsl(0, 0%, 7%) !important;
+  --lightgray: hsl(0, 0%, 7%) !important;
   --line-height-normal: 1.8 !important;
   --line-height-tight: 1.5 !important;
   --link-color: rgba(126.48, 199.92, 197.472, 0.85) !important;
@@ -464,8 +456,7 @@ export const theme: ThemeData = {
     32%
   ) !important;
   --list-threading-width: max(0.1rem, 2px) !important;
-  --menu-background: hsl(189, 6%,
-    12%) !important;
+  --menu-background: hsl(0, 0%, 7%) !important;
   --menu-border-color: hsla(
     207,
     6%,
@@ -518,7 +509,7 @@ export const theme: ThemeData = {
   ) !important;
   --metadata-sidebar-input-font-size: 14px !important;
   --metadata-sidebar-label-font-size: 14px !important;
-  --modal-background: hsl(207, 5%, 11%) !important;
+  --modal-background: hsl(0, 0%, 7%) !important;
   --modal-close-button-padding: 12px !important;
   --modal-header-height: 48px !important;
   --modal-height: min(85vh, 1000px) !important;
@@ -569,14 +560,14 @@ export const theme: ThemeData = {
   --outline-item-height: 25.92px !important;
   --p-spacing: 8px !important;
   --pdf-background: transparent !important;
-  --pdf-page-background: hsl(207, 5%, 11%) !important;
+  --pdf-page-background: hsl(0, 0%, 7%) !important;
   --pdf-shadow: 0 0 0 1px hsla(
     207,
     6%,
     32%,
     75%
   ) !important;
-  --pdf-sidebar-background: hsl(207, 5%, 11%) !important;
+  --pdf-sidebar-background: hsl(0, 0%, 7%) !important;
   --pdf-thumbnail-shadow: 0 0 0 1px hsla(
     207,
     6%,
@@ -601,13 +592,12 @@ export const theme: ThemeData = {
     24.48%,
     50.83%
   ) !important;
-  --prompt-background: hsl(207, 5%, 11%) !important;
-  --ribbon-background: hsl(189, 6%,
-    12%) !important;
-  --ribbon-background-collapsed: hsl(207, 5%, 11%) !important;
+  --prompt-background: hsl(0, 0%, 7%) !important;
+  --ribbon-background: hsl(0, 0%, 7%) !important;
+  --ribbon-background-collapsed: hsl(0, 0%, 7%) !important;
   --scrollbar-color: rgba(0, 0, 0, 0) !important;
   --scrollbar-transition: --scrollbar-color 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
-  --search-result-background: hsl(207, 5%, 11%) !important;
+  --search-result-background: hsl(0, 0%, 7%) !important;
   --secondary: hsl(
     204,
     24.48%,
@@ -657,8 +647,7 @@ export const theme: ThemeData = {
     12%,
     32%
   ) !important;
-  --status-bar-background: hsl(189, 6%,
-    12%) !important;
+  --status-bar-background: hsl(0, 0%, 7%) !important;
   --status-bar-border-color: hsla(
     207,
     6%,
@@ -668,7 +657,7 @@ export const theme: ThemeData = {
   --status-bar-border-width: 1px !important;
   --status-bar-font-size: 13px !important;
   --status-bar-radius: 6px !important;
-  --suggestion-background: hsl(207, 5%, 11%) !important;
+  --suggestion-background: hsl(0, 0%, 7%) !important;
   --sync-avatar-color-1: rgba(209.304, 137.496, 137.496, 0.85) !important;
   --sync-avatar-color-2: rgba(206.04, 162.52, 140.76, 0.85) !important;
   --sync-avatar-color-3: rgba(214.2, 181.56, 132.6, 0.85) !important;
@@ -677,20 +666,14 @@ export const theme: ThemeData = {
   --sync-avatar-color-6: rgba(126.48, 183.6, 240.72, 0.85) !important;
   --sync-avatar-color-7: rgba(186.2265, 179.265, 238.935, 0.85) !important;
   --tab-active-shadow: none !important;
-  --tab-background-active: hsl(207, 5%, 11%) !important;
-  --tab-container-background: hsl(
-    207,
-    12%,
-    12.42%
-  ) !important;
+  --tab-background-active: hsl(0, 0%, 7%) !important;
+  --tab-container-background: hsl(0, 0%, 7%) !important;
   --tab-font-size: 14px !important;
   --tab-outline-color: transparent !important;
   --tab-radius: 6px !important;
   --tab-stacked-font-size: 14px !important;
-  --tab-switcher-background: hsl(189, 6%,
-    12%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(189, 6%,
-    12%), transparent) !important;
+  --tab-switcher-background: hsl(0, 0%, 7%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 7%), transparent) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(207, 24%,
     44.2%) !important;
   --tab-text-color-focused-active-current: hsla(207, 50%, 94%, 75%) !important;
@@ -808,16 +791,8 @@ export const theme: ThemeData = {
   --theme-accent-inactive-h: 207 !important;
   --theme-accent-inactive-l: 32% !important;
   --theme-accent-inactive-s: 12% !important;
-  --titlebar-background: hsl(
-    207,
-    12%,
-    12.42%
-  ) !important;
-  --titlebar-background-focused: hsl(
-    207,
-    12%,
-    12.42%
-  ) !important;
+  --titlebar-background: hsl(0, 0%, 7%) !important;
+  --titlebar-background-focused: hsl(0, 0%, 7%) !important;
   --titlebar-border-color: hsla(
     207,
     6%,
@@ -837,7 +812,7 @@ html[saved-theme="dark"] body {
 }
 
 html[saved-theme="dark"] body[data-slug] div#quartz-root.page, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left, html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="dark"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgba(29, 32, 32, 0.6);
+  background-color: rgba(18, 18, 18, 0.6);
   color: rgba(232, 240, 247, 0.75);
 }
 
@@ -869,7 +844,7 @@ html[saved-theme="dark"] body .canvas-node-group {
 }
 
 html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(29, 32, 32);
+  background-color: rgb(18, 18, 18);
   border-color: rgba(232, 240, 247, 0.75);
 }
 
@@ -892,7 +867,7 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgba(29, 32, 32, 0.6);
+  background-color: rgba(18, 18, 18, 0.6);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgba(232, 240, 247, 0.75);
 }
@@ -1237,7 +1212,7 @@ html[saved-theme="dark"] body .footnotes {
 }
 
 html[saved-theme="dark"] body .transclude {
-  background-color: rgba(27, 28, 29, 0.85);
+  background-color: rgba(18, 18, 18, 0.85);
   border-bottom-color: rgb(72, 83, 91);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1257,7 +1232,7 @@ html[saved-theme="dark"] body .transclude {
 }
 
 html[saved-theme="dark"] body .transclude-inner {
-  background-color: rgba(27, 28, 29, 0.85);
+  background-color: rgba(18, 18, 18, 0.85);
   border-bottom-color: rgba(232, 240, 247, 0.75);
   border-bottom-style: solid;
   border-left-color: rgba(232, 240, 247, 0.75);
@@ -1377,8 +1352,8 @@ html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(27, 28, 29);
-  color: rgb(27, 28, 29);
+  background-color: rgb(18, 18, 18);
+  color: rgb(18, 18, 18);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
@@ -1388,8 +1363,8 @@ html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(27, 28, 29);
-  color: rgb(27, 28, 29);
+  background-color: rgb(18, 18, 18);
+  color: rgb(18, 18, 18);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
@@ -1399,8 +1374,8 @@ html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(27, 28, 29);
-  color: rgb(27, 28, 29);
+  background-color: rgb(18, 18, 18);
+  color: rgb(18, 18, 18);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="\\""] input[type="checkbox"] {
@@ -1449,8 +1424,8 @@ html[saved-theme="dark"] body li.task-list-item[data-task="+"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(27, 28, 29);
-  color: rgb(27, 28, 29);
+  background-color: rgb(18, 18, 18);
+  color: rgb(18, 18, 18);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
@@ -1573,8 +1548,8 @@ html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(27, 28, 29);
-  color: rgb(27, 28, 29);
+  background-color: rgb(18, 18, 18);
+  color: rgb(18, 18, 18);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
@@ -1666,8 +1641,8 @@ html[saved-theme="dark"] body li.task-list-item[data-task="R"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(27, 28, 29);
-  color: rgb(27, 28, 29);
+  background-color: rgb(18, 18, 18);
+  color: rgb(18, 18, 18);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
@@ -1677,8 +1652,8 @@ html[saved-theme="dark"] body li.task-list-item[data-task="S"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(27, 28, 29);
-  color: rgb(27, 28, 29);
+  background-color: rgb(18, 18, 18);
+  color: rgb(18, 18, 18);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="checkbox"] {
@@ -1963,7 +1938,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space {
-  background-color: rgb(27, 28, 29);
+  background-color: rgb(18, 18, 18);
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
@@ -2129,7 +2104,7 @@ html[saved-theme="dark"] body .explorer .folder-outer > ul {
   color: rgba(232, 240, 247, 0.75);
 }`,
     footer: `html[saved-theme="dark"] body footer {
-  background-color: rgb(29, 32, 32);
+  background-color: rgb(18, 18, 18);
   border-bottom-color: rgba(77, 82, 86, 0.75);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -2186,7 +2161,7 @@ html[saved-theme="dark"] body .metadata {
 }
 
 html[saved-theme="dark"] body .navigation-progress {
-  background-color: rgb(29, 32, 32);
+  background-color: rgb(18, 18, 18);
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
@@ -2319,7 +2294,7 @@ html[saved-theme="dark"] body ul.tags > li {
     56%,
     60%
   ) !important;
-  --background-modifier-cover: hsla(17, 8%, 93%, 0.6) !important;
+  --background-modifier-cover: hsla(0, 0%, 93%, 0.6) !important;
   --background-modifier-error: rgba(189.0825, 81.2175, 81.2175, 1) !important;
   --background-modifier-error-hover: rgba(189.0825, 81.2175, 81.2175, 0.9) !important;
   --background-modifier-error-rgb: 189.0825, 81.2175, 81.2175 !important;
@@ -2337,14 +2312,14 @@ html[saved-theme="dark"] body ul.tags > li {
   ) !important;
   --background-modifier-success: rgba(71.4, 142.8, 20.4, 1) !important;
   --background-modifier-success-rgb: 71.4, 142.8, 20.4 !important;
-  --background-primary: hsl(35, 12%, 97%) !important;
+  --background-primary: hsl(0, 0%, 93%) !important;
   --background-primary-alt: hsl(35, 18%, 93.5%) !important;
   --background-primary-alt-hsl: 35, 18%, 93.5% !important;
-  --background-primary-hsl: 35, 12%, 97% !important;
-  --background-secondary: hsl(17, 8%, 93%) !important;
-  --background-secondary-hsl: 17, 8%, 93% !important;
+  --background-primary-hsl: 0, 0%, 93% !important;
+  --background-secondary: hsl(0, 0%, 93%) !important;
+  --background-secondary-hsl: 0, 0%, 93% !important;
   --base-accent-h: 35 !important;
-  --bases-cards-background: hsl(35, 12%, 97%) !important;
+  --bases-cards-background: hsl(0, 0%, 93%) !important;
   --bases-cards-cover-background: hsl(35, 18%, 93.5%) !important;
   --bases-cards-shadow: 0 0 0 1px hsla(
     35,
@@ -2372,7 +2347,7 @@ html[saved-theme="dark"] body ul.tags > li {
     78%,
     75%
   ) !important;
-  --bases-table-cell-background-active: hsl(35, 12%, 97%) !important;
+  --bases-table-cell-background-active: hsl(0, 0%, 93%) !important;
   --bases-table-cell-background-disabled: hsl(35, 18%, 93.5%) !important;
   --bases-table-cell-background-selected: hsla(35, 22%, 56%, 0.1) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsla(
@@ -2387,14 +2362,14 @@ html[saved-theme="dark"] body ul.tags > li {
     60.2%
   ) !important;
   --bases-table-group-background: hsl(35, 18%, 93.5%) !important;
-  --bases-table-header-background: hsl(35, 12%, 97%) !important;
+  --bases-table-header-background: hsl(0, 0%, 93%) !important;
   --bases-table-header-background-hover: hsl(
     35,
     20%,
     max(70%, 66% * 0.8),
     25%
   ) !important;
-  --bases-table-summary-background: hsl(35, 12%, 97%) !important;
+  --bases-table-summary-background: hsl(0, 0%, 93%) !important;
   --bases-table-summary-background-hover: hsl(
     35,
     20%,
@@ -2402,11 +2377,11 @@ html[saved-theme="dark"] body ul.tags > li {
     25%
   ) !important;
   --bg-editor: hsla(
-    35, 12%, 97%,
+    0, 0%, 93%,
     max(0.6, 0.8)
   ) !important;
   --bg-opacity: 0.6 !important;
-  --bg-surface: hsla(17, 8%, 93%, 0.6) !important;
+  --bg-surface: hsla(0, 0%, 93%, 0.6) !important;
   --block-outline-width: 2px !important;
   --blockquote-background-color: hsl(35, 18%, 93.5%) !important;
   --blockquote-border-color: hsl(
@@ -2416,7 +2391,7 @@ html[saved-theme="dark"] body ul.tags > li {
   ) !important;
   --blockquote-border-thickness: 4px !important;
   --blockquote-radius: 6px !important;
-  --blur-background: color-mix(in srgb, hsl(35, 12%, 97%) 65%, transparent) linear-gradient(hsl(35, 12%, 97%), color-mix(in srgb, hsl(35, 12%, 97%) 65%, transparent)) !important;
+  --blur-background: color-mix(in srgb, hsl(0, 0%, 93%) 65%, transparent) linear-gradient(hsl(0, 0%, 93%), color-mix(in srgb, hsl(0, 0%, 93%) 65%, transparent)) !important;
   --button-radius: 6px !important;
   --callout-bug: 189.0825, 81.2175, 81.2175;
   --callout-default: 5.202, 132.8822, 168.198;
@@ -2432,7 +2407,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --callout-tip: 17.85, 124.95, 82.11;
   --callout-todo: 5.202, 132.8822, 168.198;
   --callout-warning: 199.41, 122.774, 35.19;
-  --canvas-background: hsl(35, 12%, 97%) !important;
+  --canvas-background: hsl(0, 0%, 93%) !important;
   --canvas-color-1: 189.0825, 81.2175, 81.2175 !important;
   --canvas-color-2: 199.41, 122.774, 35.19 !important;
   --canvas-color-3: 177.48, 139.74, 26.52 !important;
@@ -2518,6 +2493,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --color-red-rgb: 189.0825, 81.2175, 81.2175 !important;
   --color-yellow: rgba(177.48, 139.74, 26.52, 1) !important;
   --color-yellow-rgb: 177.48, 139.74, 26.52 !important;
+  --default-mod-bg-hsl: 0, 0%, 93% !important;
   --divider-color: transparent !important;
   --divider-color-hover: hsl(
     34,
@@ -2527,7 +2503,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --divider-width-hover: 4px !important;
   --editor-min-opacity: 0.8 !important;
   --embed-background: hsla(
-    35, 12%, 97%,
+    0, 0%, 93%,
     max(0.6, 0.8)
   ) !important;
   --embed-block-shadow-hover: 0 0 0 1px hsl(
@@ -2562,8 +2538,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --embed-padding: 16px 20px !important;
   --embed-radius: 8px !important;
   --file-folding-offset: 28px !important;
-  --file-header-background: hsl(35, 12%, 97%) !important;
-  --file-header-background-focused: hsl(35, 12%, 97%) !important;
+  --file-header-background: hsl(0, 0%, 93%) !important;
+  --file-header-background-focused: hsl(0, 0%, 93%) !important;
   --file-header-font-size: 14px !important;
   --file-line-width: clamp(600px, 72%, 850px) !important;
   --folder-color: hsl(45.81,80.87%,45.1%) !important;
@@ -2586,11 +2562,7 @@ html[saved-theme="dark"] body ul.tags > li {
     25%
   ) !important;
   --footnote-line-height: 1.8 !important;
-  --frame-bg: hsl(
-    35,
-    13.2%,
-    90.6%
-  ) !important;
+  --frame-bg: hsl(0, 0%, 93%) !important;
   --graph-node-attachment: rgba(177.48, 139.74, 26.52, 1) !important;
   --graph-node-focused: hsl(
     35,
@@ -2670,8 +2642,8 @@ html[saved-theme="dark"] body ul.tags > li {
     64.4%
   ) !important;
   --interactive-accent-hsl: 35, 22%, 56% !important;
-  --light: hsl(35, 12%, 97%) !important;
-  --lightgray: hsl(17, 8%, 93%) !important;
+  --light: hsl(0, 0%, 93%) !important;
+  --lightgray: hsl(0, 0%, 93%) !important;
   --line-height-normal: 1.8 !important;
   --line-height-tight: 1.5 !important;
   --link-color: rgba(17.85, 124.95, 82.11, 1) !important;
@@ -2705,7 +2677,7 @@ html[saved-theme="dark"] body ul.tags > li {
     78%
   ) !important;
   --list-threading-width: max(0.1rem, 2px) !important;
-  --menu-background: hsl(17, 8%, 93%) !important;
+  --menu-background: hsl(0, 0%, 93%) !important;
   --menu-border-color: hsla(
     35,
     10%,
@@ -2757,7 +2729,7 @@ html[saved-theme="dark"] body ul.tags > li {
   ) !important;
   --metadata-sidebar-input-font-size: 14px !important;
   --metadata-sidebar-label-font-size: 14px !important;
-  --modal-background: hsl(35, 12%, 97%) !important;
+  --modal-background: hsl(0, 0%, 93%) !important;
   --modal-close-button-padding: 12px !important;
   --modal-header-height: 48px !important;
   --modal-height: min(85vh, 1000px) !important;
@@ -2799,8 +2771,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --outline-item-height: 25.92px !important;
   --p-spacing: 8px !important;
   --pdf-background: transparent !important;
-  --pdf-page-background: hsl(35, 12%, 97%) !important;
-  --pdf-sidebar-background: hsl(35, 12%, 97%) !important;
+  --pdf-page-background: hsl(0, 0%, 93%) !important;
+  --pdf-sidebar-background: hsl(0, 0%, 93%) !important;
   --pill-border-color: hsla(
     35,
     10%,
@@ -2814,13 +2786,13 @@ html[saved-theme="dark"] body ul.tags > li {
     60%
   ) !important;
   --pill-color-remove-hover: hsl(35, 22%, 56%) !important;
-  --prompt-background: hsl(35, 12%, 97%) !important;
-  --raised-background: color-mix(in srgb, hsl(35, 12%, 97%) 65%, transparent) linear-gradient(hsl(35, 12%, 97%), color-mix(in srgb, hsl(35, 12%, 97%) 65%, transparent)) !important;
-  --ribbon-background: hsl(17, 8%, 93%) !important;
-  --ribbon-background-collapsed: hsl(35, 12%, 97%) !important;
+  --prompt-background: hsl(0, 0%, 93%) !important;
+  --raised-background: color-mix(in srgb, hsl(0, 0%, 93%) 65%, transparent) linear-gradient(hsl(0, 0%, 93%), color-mix(in srgb, hsl(0, 0%, 93%) 65%, transparent)) !important;
+  --ribbon-background: hsl(0, 0%, 93%) !important;
+  --ribbon-background-collapsed: hsl(0, 0%, 93%) !important;
   --scrollbar-color: rgba(0, 0, 0, 0) !important;
   --scrollbar-transition: --scrollbar-color 250ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
-  --search-result-background: hsl(35, 12%, 97%) !important;
+  --search-result-background: hsl(0, 0%, 93%) !important;
   --secondary: hsl(35, 22%, 56%) !important;
   --select-bg-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' stroke='%2523222222' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 9l6 6l6-6'/%3E%3C/svg%3E") !important;
   --setting-accent-h-dark: 207 !important;
@@ -2864,7 +2836,7 @@ html[saved-theme="dark"] body ul.tags > li {
     20%,
     78%
   ) !important;
-  --status-bar-background: hsl(17, 8%, 93%) !important;
+  --status-bar-background: hsl(0, 0%, 93%) !important;
   --status-bar-border-color: hsla(
     35,
     10%,
@@ -2874,7 +2846,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --status-bar-border-width: 1px !important;
   --status-bar-font-size: 13px !important;
   --status-bar-radius: 6px !important;
-  --suggestion-background: hsl(35, 12%, 97%) !important;
+  --suggestion-background: hsl(0, 0%, 93%) !important;
   --sync-avatar-color-1: rgba(189.0825, 81.2175, 81.2175, 1) !important;
   --sync-avatar-color-2: rgba(199.41, 122.774, 35.19, 1) !important;
   --sync-avatar-color-3: rgba(177.48, 139.74, 26.52, 1) !important;
@@ -2883,18 +2855,14 @@ html[saved-theme="dark"] body ul.tags > li {
   --sync-avatar-color-6: rgba(5.202, 132.8822, 168.198, 1) !important;
   --sync-avatar-color-7: rgba(114.24, 97.92, 146.88, 1) !important;
   --tab-active-shadow: none !important;
-  --tab-background-active: hsl(35, 12%, 97%) !important;
-  --tab-container-background: hsl(
-    35,
-    13.2%,
-    90.6%
-  ) !important;
+  --tab-background-active: hsl(0, 0%, 93%) !important;
+  --tab-container-background: hsl(0, 0%, 93%) !important;
   --tab-font-size: 14px !important;
   --tab-outline-color: transparent !important;
   --tab-radius: 6px !important;
   --tab-stacked-font-size: 14px !important;
-  --tab-switcher-background: hsl(17, 8%, 93%) !important;
-  --tab-switcher-menubar-background: linear-gradient(to top, hsl(17, 8%, 93%), transparent) !important;
+  --tab-switcher-background: hsl(0, 0%, 93%) !important;
+  --tab-switcher-menubar-background: linear-gradient(to top, hsl(0, 0%, 93%), transparent) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(35, 22%, 56%) !important;
   --tab-text-color-focused-highlighted: hsl(35, 22%, 56%) !important;
   --table-add-button-background: hsl(
@@ -2983,16 +2951,8 @@ html[saved-theme="dark"] body ul.tags > li {
   --theme-accent-inactive-h: 35 !important;
   --theme-accent-inactive-l: 78% !important;
   --theme-accent-inactive-s: 20% !important;
-  --titlebar-background: hsl(
-    35,
-    13.2%,
-    90.6%
-  ) !important;
-  --titlebar-background-focused: hsl(
-    35,
-    13.2%,
-    90.6%
-  ) !important;
+  --titlebar-background: hsl(0, 0%, 93%) !important;
+  --titlebar-background-focused: hsl(0, 0%, 93%) !important;
   --titlebar-border-color: hsla(
     35,
     10%,
@@ -3009,7 +2969,7 @@ html[saved-theme="light"] body {
 }
 
 html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left, html[saved-theme="light"] .page > div#quartz-body div.sidebar.left:has(.explorer), html[saved-theme="light"] .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
-  background-color: rgba(239, 237, 236, 0.6);
+  background-color: rgba(237, 237, 237, 0.6);
 }
 
 html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-slug] .page > div#quartz-body, html[saved-theme="light"] .page > div#quartz-body div.center, html[saved-theme="light"] .page > div#quartz-body footer {
@@ -3022,7 +2982,7 @@ html[saved-theme="light"] body .bases-table thead th {
 }
 
 html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
 }
 
 html[saved-theme="light"] body .note-properties {
@@ -3043,7 +3003,7 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgba(239, 237, 236, 0.6);
+  background-color: rgba(237, 237, 237, 0.6);
   border-left-color: rgba(0, 0, 0, 0);
 }
 
@@ -3305,7 +3265,7 @@ html[saved-theme="light"] body video {
 }
 
 html[saved-theme="light"] body .transclude {
-  background-color: rgba(248, 248, 246, 0.8);
+  background-color: rgba(237, 237, 237, 0.8);
   border-bottom-color: rgb(210, 201, 188);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -3325,7 +3285,7 @@ html[saved-theme="light"] body .transclude {
 }
 
 html[saved-theme="light"] body .transclude-inner {
-  background-color: rgba(248, 248, 246, 0.8);
+  background-color: rgba(237, 237, 237, 0.8);
   border-bottom-style: solid;
   border-right-style: solid;
   border-top-style: solid;
@@ -3356,8 +3316,8 @@ html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
@@ -3367,8 +3327,8 @@ html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
@@ -3378,8 +3338,8 @@ html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="\\""] input[type="checkbox"] {
@@ -3428,8 +3388,8 @@ html[saved-theme="light"] body li.task-list-item[data-task="+"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="<"] input[type="checkbox"] {
@@ -3552,8 +3512,8 @@ html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
@@ -3645,8 +3605,8 @@ html[saved-theme="light"] body li.task-list-item[data-task="R"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="checkbox"]::after {
@@ -3656,8 +3616,8 @@ html[saved-theme="light"] body li.task-list-item[data-task="S"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(248, 248, 246);
-  color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
+  color: rgb(237, 237, 237);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="checkbox"] {
@@ -3941,7 +3901,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space {
-  background-color: rgb(248, 248, 246);
+  background-color: rgb(237, 237, 237);
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
@@ -4072,7 +4032,7 @@ html[saved-theme="light"] body .explorer .folder-outer > ul {
   border-left-color: rgb(224, 224, 224);
 }`,
     footer: `html[saved-theme="light"] body footer {
-  background-color: rgb(239, 237, 236);
+  background-color: rgb(237, 237, 237);
   border-bottom-color: rgba(205, 200, 193, 0.75);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -4100,7 +4060,7 @@ html[saved-theme="light"] body .metadata {
 }
 
 html[saved-theme="light"] body .navigation-progress {
-  background-color: rgb(239, 237, 236);
+  background-color: rgb(237, 237, 237);
 }
 
 html[saved-theme="light"] body input[type=text] {
