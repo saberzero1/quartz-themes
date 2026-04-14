@@ -22,14 +22,14 @@ import { themeData, themeMetas } from "./themes/_registry";
  * Resolve a theme + optional variation into a concrete theme ID.
  *
  * For themes with variations (e.g. catppuccin), the variation is appended:
- *   resolveThemeId("catppuccin", "frappe") → "catppuccin-frappe"
+ *   resolveThemeId("catppuccin", "frappe") → "catppuccin.frappe"
  *
  * For themes without variations, the base name is returned:
  *   resolveThemeId("tokyo-night") → "tokyo-night"
  */
 export function resolveThemeId(theme: string, variation?: string): string {
   if (variation) {
-    const variantId = `${theme}-${variation}`;
+    const variantId = `${theme}.${variation}`;
     if (variantId in themeData) return variantId;
   }
   if (theme in themeData) return theme;
