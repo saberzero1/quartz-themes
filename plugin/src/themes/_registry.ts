@@ -150,6 +150,26 @@ import { theme as halcyon } from "./halcyon.js";
 import { theme as handwriting_kalam } from "./handwriting-kalam.js";
 import { theme as heboric } from "./heboric.js";
 import { theme as hidden_grotto } from "./hidden-grotto.js";
+import { theme as hidden_grotto_absol } from "./hidden-grotto-absol.js";
+import { theme as hidden_grotto_aegislash } from "./hidden-grotto-aegislash.js";
+import { theme as hidden_grotto_aggron } from "./hidden-grotto-aggron.js";
+import { theme as hidden_grotto_arcanine } from "./hidden-grotto-arcanine.js";
+import { theme as hidden_grotto_aromatisse } from "./hidden-grotto-aromatisse.js";
+import { theme as hidden_grotto_calyrex } from "./hidden-grotto-calyrex.js";
+import { theme as hidden_grotto_cryogonal } from "./hidden-grotto-cryogonal.js";
+import { theme as hidden_grotto_darkrai } from "./hidden-grotto-darkrai.js";
+import { theme as hidden_grotto_diancie } from "./hidden-grotto-diancie.js";
+import { theme as hidden_grotto_hisuian_typhlosion } from "./hidden-grotto-hisuian-typhlosion.js";
+import { theme as hidden_grotto_manectric } from "./hidden-grotto-manectric.js";
+import { theme as hidden_grotto_mareep } from "./hidden-grotto-mareep.js";
+import { theme as hidden_grotto_mega_lucario } from "./hidden-grotto-mega-lucario.js";
+import { theme as hidden_grotto_meloetta } from "./hidden-grotto-meloetta.js";
+import { theme as hidden_grotto_necrozma } from "./hidden-grotto-necrozma.js";
+import { theme as hidden_grotto_pirouette_meloetta } from "./hidden-grotto-pirouette-meloetta.js";
+import { theme as hidden_grotto_poltchageist } from "./hidden-grotto-poltchageist.js";
+import { theme as hidden_grotto_scolipede } from "./hidden-grotto-scolipede.js";
+import { theme as hidden_grotto_swampert } from "./hidden-grotto-swampert.js";
+import { theme as hidden_grotto_ursaluna } from "./hidden-grotto-ursaluna.js";
 import { theme as hipstersmoothie } from "./hipstersmoothie.js";
 import { theme as hojicha } from "./hojicha.js";
 import { theme as hoverpopup } from "./hoverpopup.js";
@@ -328,6 +348,11 @@ import { theme as reshi } from "./reshi.js";
 import { theme as retro_windows } from "./retro-windows.js";
 import { theme as retroma } from "./retroma.js";
 import { theme as retronotes } from "./retronotes.js";
+import { theme as retronotes_blueprint } from "./retronotes-blueprint.js";
+import { theme as retronotes_carbon_ink } from "./retronotes-carbon-ink.js";
+import { theme as retronotes_forest_green } from "./retronotes-forest-green.js";
+import { theme as retronotes_misty_mirage } from "./retronotes-misty-mirage.js";
+import { theme as retronotes_pinot_noir } from "./retronotes-pinot-noir.js";
 import { theme as retroos_98 } from "./retroos-98.js";
 import { theme as reverie } from "./reverie.js";
 import { theme as rezin } from "./rezin.js";
@@ -414,8 +439,37 @@ import { theme as ursa } from "./ursa.js";
 import { theme as vanilla_amoled } from "./vanilla-amoled.js";
 import { theme as vanilla_amoled_color } from "./vanilla-amoled-color.js";
 import { theme as vanilla_palettes } from "./vanilla-palettes.js";
+import { theme as vanilla_palettes_atom_one } from "./vanilla-palettes-atom-one.js";
+import { theme as vanilla_palettes_catppuccin_frappe } from "./vanilla-palettes-catppuccin-frappe.js";
+import { theme as vanilla_palettes_catppuccin_macchiato } from "./vanilla-palettes-catppuccin-macchiato.js";
+import { theme as vanilla_palettes_catppuccin_mocha } from "./vanilla-palettes-catppuccin-mocha.js";
+import { theme as vanilla_palettes_dracula } from "./vanilla-palettes-dracula.js";
+import { theme as vanilla_palettes_dracula_soft } from "./vanilla-palettes-dracula-soft.js";
+import { theme as vanilla_palettes_gruvbox_hard } from "./vanilla-palettes-gruvbox-hard.js";
+import { theme as vanilla_palettes_gruvbox_medium } from "./vanilla-palettes-gruvbox-medium.js";
+import { theme as vanilla_palettes_gruvbox_soft } from "./vanilla-palettes-gruvbox-soft.js";
+import { theme as vanilla_palettes_horizon } from "./vanilla-palettes-horizon.js";
+import { theme as vanilla_palettes_kanagawa_dragon } from "./vanilla-palettes-kanagawa-dragon.js";
+import { theme as vanilla_palettes_kanagawa_wave } from "./vanilla-palettes-kanagawa-wave.js";
+import { theme as vanilla_palettes_rose_pine } from "./vanilla-palettes-rose-pine.js";
+import { theme as vanilla_palettes_rose_pine_moon } from "./vanilla-palettes-rose-pine-moon.js";
+import { theme as vanilla_palettes_tokyo_night } from "./vanilla-palettes-tokyo-night.js";
+import { theme as vanilla_palettes_tokyo_night_moon } from "./vanilla-palettes-tokyo-night-moon.js";
+import { theme as vanilla_palettes_tokyo_night_storm } from "./vanilla-palettes-tokyo-night-storm.js";
 import { theme as vauxhall } from "./vauxhall.js";
+import { theme as vauxhall_blue } from "./vauxhall-blue.js";
+import { theme as vauxhall_magenta } from "./vauxhall-magenta.js";
+import { theme as vauxhall_purple } from "./vauxhall-purple.js";
+import { theme as vauxhall_red } from "./vauxhall-red.js";
+import { theme as vauxhall_teal } from "./vauxhall-teal.js";
+import { theme as vauxhall_white } from "./vauxhall-white.js";
 import { theme as velocity } from "./velocity.js";
+import { theme as velocity_british_racing_green } from "./velocity-british-racing-green.js";
+import { theme as velocity_jet_black_matte } from "./velocity-jet-black-matte.js";
+import { theme as velocity_midnight_purple } from "./velocity-midnight-purple.js";
+import { theme as velocity_nordblau_metalic } from "./velocity-nordblau-metalic.js";
+import { theme as velocity_obsidian_gray } from "./velocity-obsidian-gray.js";
+import { theme as velocity_touring_bronze } from "./velocity-touring-bronze.js";
 import { theme as velvet_moon } from "./velvet-moon.js";
 import { theme as venom } from "./venom.js";
 import { theme as vercel_geist } from "./vercel-geist.js";
@@ -595,6 +649,26 @@ export const themeData: Record<string, ThemeData> = {
   "handwriting-kalam": handwriting_kalam,
   heboric: heboric,
   "hidden-grotto": hidden_grotto,
+  "hidden-grotto.absol": hidden_grotto_absol,
+  "hidden-grotto.aegislash": hidden_grotto_aegislash,
+  "hidden-grotto.aggron": hidden_grotto_aggron,
+  "hidden-grotto.arcanine": hidden_grotto_arcanine,
+  "hidden-grotto.aromatisse": hidden_grotto_aromatisse,
+  "hidden-grotto.calyrex": hidden_grotto_calyrex,
+  "hidden-grotto.cryogonal": hidden_grotto_cryogonal,
+  "hidden-grotto.darkrai": hidden_grotto_darkrai,
+  "hidden-grotto.diancie": hidden_grotto_diancie,
+  "hidden-grotto.hisuian-typhlosion": hidden_grotto_hisuian_typhlosion,
+  "hidden-grotto.manectric": hidden_grotto_manectric,
+  "hidden-grotto.mareep": hidden_grotto_mareep,
+  "hidden-grotto.mega-lucario": hidden_grotto_mega_lucario,
+  "hidden-grotto.meloetta": hidden_grotto_meloetta,
+  "hidden-grotto.necrozma": hidden_grotto_necrozma,
+  "hidden-grotto.pirouette-meloetta": hidden_grotto_pirouette_meloetta,
+  "hidden-grotto.poltchageist": hidden_grotto_poltchageist,
+  "hidden-grotto.scolipede": hidden_grotto_scolipede,
+  "hidden-grotto.swampert": hidden_grotto_swampert,
+  "hidden-grotto.ursaluna": hidden_grotto_ursaluna,
   hipstersmoothie: hipstersmoothie,
   hojicha: hojicha,
   hoverpopup: hoverpopup,
@@ -774,6 +848,11 @@ export const themeData: Record<string, ThemeData> = {
   "retro-windows": retro_windows,
   retroma: retroma,
   retronotes: retronotes,
+  "retronotes.blueprint": retronotes_blueprint,
+  "retronotes.carbon-ink": retronotes_carbon_ink,
+  "retronotes.forest-green": retronotes_forest_green,
+  "retronotes.misty-mirage": retronotes_misty_mirage,
+  "retronotes.pinot-noir": retronotes_pinot_noir,
   "retroos-98": retroos_98,
   reverie: reverie,
   rezin: rezin,
@@ -860,8 +939,38 @@ export const themeData: Record<string, ThemeData> = {
   "vanilla-amoled": vanilla_amoled,
   "vanilla-amoled-color": vanilla_amoled_color,
   "vanilla-palettes": vanilla_palettes,
+  "vanilla-palettes.atom-one": vanilla_palettes_atom_one,
+  "vanilla-palettes.catppuccin-frappe": vanilla_palettes_catppuccin_frappe,
+  "vanilla-palettes.catppuccin-macchiato":
+    vanilla_palettes_catppuccin_macchiato,
+  "vanilla-palettes.catppuccin-mocha": vanilla_palettes_catppuccin_mocha,
+  "vanilla-palettes.dracula": vanilla_palettes_dracula,
+  "vanilla-palettes.dracula-soft": vanilla_palettes_dracula_soft,
+  "vanilla-palettes.gruvbox-hard": vanilla_palettes_gruvbox_hard,
+  "vanilla-palettes.gruvbox-medium": vanilla_palettes_gruvbox_medium,
+  "vanilla-palettes.gruvbox-soft": vanilla_palettes_gruvbox_soft,
+  "vanilla-palettes.horizon": vanilla_palettes_horizon,
+  "vanilla-palettes.kanagawa-dragon": vanilla_palettes_kanagawa_dragon,
+  "vanilla-palettes.kanagawa-wave": vanilla_palettes_kanagawa_wave,
+  "vanilla-palettes.rose-pine": vanilla_palettes_rose_pine,
+  "vanilla-palettes.rose-pine-moon": vanilla_palettes_rose_pine_moon,
+  "vanilla-palettes.tokyo-night": vanilla_palettes_tokyo_night,
+  "vanilla-palettes.tokyo-night-moon": vanilla_palettes_tokyo_night_moon,
+  "vanilla-palettes.tokyo-night-storm": vanilla_palettes_tokyo_night_storm,
   vauxhall: vauxhall,
+  "vauxhall.blue": vauxhall_blue,
+  "vauxhall.magenta": vauxhall_magenta,
+  "vauxhall.purple": vauxhall_purple,
+  "vauxhall.red": vauxhall_red,
+  "vauxhall.teal": vauxhall_teal,
+  "vauxhall.white": vauxhall_white,
   velocity: velocity,
+  "velocity.british-racing-green": velocity_british_racing_green,
+  "velocity.jet-black-matte": velocity_jet_black_matte,
+  "velocity.midnight-purple": velocity_midnight_purple,
+  "velocity.nordblau-metalic": velocity_nordblau_metalic,
+  "velocity.obsidian-gray": velocity_obsidian_gray,
+  "velocity.touring-bronze": velocity_touring_bronze,
   "velvet-moon": velvet_moon,
   venom: venom,
   "vercel-geist": vercel_geist,
@@ -1688,6 +1797,126 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   "hidden-grotto": {
     name: "hidden-grotto",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.absol": {
+    name: "hidden-grotto.absol",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.aegislash": {
+    name: "hidden-grotto.aegislash",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.aggron": {
+    name: "hidden-grotto.aggron",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.arcanine": {
+    name: "hidden-grotto.arcanine",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.aromatisse": {
+    name: "hidden-grotto.aromatisse",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.calyrex": {
+    name: "hidden-grotto.calyrex",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.cryogonal": {
+    name: "hidden-grotto.cryogonal",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.darkrai": {
+    name: "hidden-grotto.darkrai",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.diancie": {
+    name: "hidden-grotto.diancie",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.hisuian-typhlosion": {
+    name: "hidden-grotto.hisuian-typhlosion",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.manectric": {
+    name: "hidden-grotto.manectric",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.mareep": {
+    name: "hidden-grotto.mareep",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.mega-lucario": {
+    name: "hidden-grotto.mega-lucario",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.meloetta": {
+    name: "hidden-grotto.meloetta",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.necrozma": {
+    name: "hidden-grotto.necrozma",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.pirouette-meloetta": {
+    name: "hidden-grotto.pirouette-meloetta",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.poltchageist": {
+    name: "hidden-grotto.poltchageist",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.scolipede": {
+    name: "hidden-grotto.scolipede",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.swampert": {
+    name: "hidden-grotto.swampert",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "hidden-grotto.ursaluna": {
+    name: "hidden-grotto.ursaluna",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
@@ -2620,6 +2849,36 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["ibm-plex-mono"],
   },
+  "retronotes.blueprint": {
+    name: "retronotes.blueprint",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["ibm-plex-mono"],
+  },
+  "retronotes.carbon-ink": {
+    name: "retronotes.carbon-ink",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["ibm-plex-mono"],
+  },
+  "retronotes.forest-green": {
+    name: "retronotes.forest-green",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["ibm-plex-mono"],
+  },
+  "retronotes.misty-mirage": {
+    name: "retronotes.misty-mirage",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["ibm-plex-mono"],
+  },
+  "retronotes.pinot-noir": {
+    name: "retronotes.pinot-noir",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["ibm-plex-mono"],
+  },
   "retroos-98": {
     name: "retroos-98",
     modes: ["dark", "light"],
@@ -3087,14 +3346,188 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  "vanilla-palettes.atom-one": {
+    name: "vanilla-palettes.atom-one",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.catppuccin-frappe": {
+    name: "vanilla-palettes.catppuccin-frappe",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.catppuccin-macchiato": {
+    name: "vanilla-palettes.catppuccin-macchiato",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.catppuccin-mocha": {
+    name: "vanilla-palettes.catppuccin-mocha",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.dracula": {
+    name: "vanilla-palettes.dracula",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.dracula-soft": {
+    name: "vanilla-palettes.dracula-soft",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.gruvbox-hard": {
+    name: "vanilla-palettes.gruvbox-hard",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.gruvbox-medium": {
+    name: "vanilla-palettes.gruvbox-medium",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.gruvbox-soft": {
+    name: "vanilla-palettes.gruvbox-soft",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.horizon": {
+    name: "vanilla-palettes.horizon",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.kanagawa-dragon": {
+    name: "vanilla-palettes.kanagawa-dragon",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.kanagawa-wave": {
+    name: "vanilla-palettes.kanagawa-wave",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.rose-pine": {
+    name: "vanilla-palettes.rose-pine",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.rose-pine-moon": {
+    name: "vanilla-palettes.rose-pine-moon",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.tokyo-night": {
+    name: "vanilla-palettes.tokyo-night",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.tokyo-night-moon": {
+    name: "vanilla-palettes.tokyo-night-moon",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vanilla-palettes.tokyo-night-storm": {
+    name: "vanilla-palettes.tokyo-night-storm",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   vauxhall: {
     name: "vauxhall",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
   },
+  "vauxhall.blue": {
+    name: "vauxhall.blue",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vauxhall.magenta": {
+    name: "vauxhall.magenta",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vauxhall.purple": {
+    name: "vauxhall.purple",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vauxhall.red": {
+    name: "vauxhall.red",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vauxhall.teal": {
+    name: "vauxhall.teal",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vauxhall.white": {
+    name: "vauxhall.white",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   velocity: {
     name: "velocity",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "velocity.british-racing-green": {
+    name: "velocity.british-racing-green",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "velocity.jet-black-matte": {
+    name: "velocity.jet-black-matte",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "velocity.midnight-purple": {
+    name: "velocity.midnight-purple",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "velocity.nordblau-metalic": {
+    name: "velocity.nordblau-metalic",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "velocity.obsidian-gray": {
+    name: "velocity.obsidian-gray",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "velocity.touring-bronze": {
+    name: "velocity.touring-bronze",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
