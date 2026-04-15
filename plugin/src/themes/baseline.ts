@@ -620,6 +620,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+  background-color: rgb(219, 134, 80);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
@@ -1026,6 +1027,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="i"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+  background-color: rgb(86, 148, 218);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
@@ -2496,6 +2498,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+  background-color: rgb(242, 154, 100);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="."] input[type="checkbox"]::after {
@@ -2902,6 +2905,7 @@ html[saved-theme="light"] body li.task-list-item[data-task="i"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+  background-color: rgb(106, 173, 250);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="I"] input[type="checkbox"]::after {
