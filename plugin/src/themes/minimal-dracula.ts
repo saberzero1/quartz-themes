@@ -87,8 +87,8 @@ export const theme: ThemeData = {
   --divider-color: #191A21 !important;
   --dropdown-background: #191A21 !important;
   --dropdown-background-hover: #282A36 !important;
-  --drx-border-radius: 10px !important;
-  --drx-border-width: 2px !important;
+  --drx-border-radius-inner: 10px !important;
+  --drx-border-radius-outer: 16px !important;
   --drx-color-accent: #BD93F9 !important;
   --drx-color-base: #191A21 !important;
   --drx-color-blue-1: #6DCCFF !important;
@@ -132,7 +132,6 @@ export const theme: ThemeData = {
   --drx-color-yellow-1: #FFFFA5 !important;
   --drx-color-yellow-2: #F1FA8C !important;
   --drx-color-yellow-3: #D8E173 !important;
-  --drx-shadow-radius: 8px !important;
   --embed-block-shadow-hover: 0 0 0 1px #191A21, inset 0 0 0 1px #191A21 !important;
   --file-header-background: #191A21 !important;
   --file-header-background-focused: #191A21 !important;
@@ -148,10 +147,9 @@ export const theme: ThemeData = {
   --gray: #BABCC9 !important;
   --h1-line-height: 1.00em !important;
   --h1-size: 1.50em !important;
-  --h1-weight: 600 !important;
   --h2-line-height: 1.00em !important;
   --h2-size: 1.35em !important;
-  --h2-weight: 600 !important;
+  --h2-weight: 700 !important;
   --h3-line-height: 1.00em !important;
   --h3-size: 1.20em !important;
   --h3-weight: 600 !important;
@@ -171,7 +169,6 @@ export const theme: ThemeData = {
   --icon-color-hover: #BABCC9 !important;
   --inline-title-line-height: 1.00em !important;
   --inline-title-size: 1.50em !important;
-  --inline-title-weight: 600 !important;
   --input-date-separator: #707487 !important;
   --input-placeholder-color: #707487 !important;
   --interactive-hover: #282A36 !important;
@@ -1091,13 +1088,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 html[saved-theme="dark"] body .search > .search-container > .search-space {
   background-color: rgb(25, 26, 33);
   border-bottom-color: rgb(40, 42, 54);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   border-left-color: rgb(40, 42, 54);
   border-right-color: rgb(40, 42, 54);
   border-top-color: rgb(40, 42, 54);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > * {
@@ -1127,13 +1124,13 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(40, 42, 54);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   border-left-color: rgb(40, 42, 54);
   border-right-color: rgb(40, 42, 54);
   border-top-color: rgb(40, 42, 54);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > input {
@@ -1466,14 +1463,14 @@ html[saved-theme="dark"] body ul.tags > li {
   --code-border-color: #EDE9DA !important;
   --code-comment: #6C664B !important;
   --code-function: #14710A !important;
-  --code-important: #A3144D !important;
-  --code-keyword: #B16286 !important;
+  --code-important: #CB3A2A !important;
+  --code-keyword: #A3144D !important;
   --code-normal: #6C664B !important;
-  --code-operator: #A3144D !important;
-  --code-property: #D65D0E !important;
+  --code-operator: #CB3A2A !important;
+  --code-property: #AF3A03 !important;
   --code-punctuation: #6C664B !important;
   --code-string: #846E15 !important;
-  --code-tag: #A3144D !important;
+  --code-tag: #CB3A2A !important;
   --code-value: #644AC9 !important;
   --collapse-icon-color: #BCBAB3 !important;
   --color-base-00: #EDE9DA !important;
@@ -1492,13 +1489,13 @@ html[saved-theme="dark"] body ul.tags > li {
   --divider-color: #EDE9DA !important;
   --dropdown-background: #EDE9DA !important;
   --dropdown-background-hover: #EDE9DA !important;
-  --drx-border-radius: 10px !important;
-  --drx-border-width: 2px !important;
+  --drx-border-radius-inner: 10px !important;
+  --drx-border-radius-outer: 16px !important;
   --drx-color-accent: #CB3A2A !important;
   --drx-color-base: #EDE9DA !important;
   --drx-color-blue-1: #047FB4 !important;
   --drx-color-blue-2: #036A96 !important;
-  --drx-color-blue-3: #000000 !important;
+  --drx-color-blue-3: #025578 !important;
   --drx-color-callout-blue: 84, 179, 255 !important;
   --drx-color-callout-comment: 98, 114, 164 !important;
   --drx-color-callout-cyan: 114, 208, 228 !important;
@@ -1509,35 +1506,34 @@ html[saved-theme="dark"] body ul.tags > li {
   --drx-color-callout-red: 255, 85, 85 !important;
   --drx-color-callout-yellow: 241, 250, 140 !important;
   --drx-color-comment: #6C664B !important;
-  --drx-color-cyan-1: #000000 !important;
-  --drx-color-cyan-2: #036A96 !important;
-  --drx-color-cyan-3: #000000 !important;
+  --drx-color-cyan-1: #2AA198 !important;
+  --drx-color-cyan-2: #179299 !important;
+  --drx-color-cyan-3: #12747A !important;
   --drx-color-deactivate: #BCBAB3 !important;
   --drx-color-green-1: #198D0C !important;
   --drx-color-green-2: #14710A !important;
-  --drx-color-green-3: #000000 !important;
+  --drx-color-green-3: #105908 !important;
   --drx-color-highlight: #CECCC0 !important;
   --drx-color-important: #E1776B !important;
-  --drx-color-orange-1: #000000 !important;
-  --drx-color-orange-2: #D65D0E !important;
-  --drx-color-orange-3: #AF3A03 !important;
+  --drx-color-orange-1: #D16319 !important;
+  --drx-color-orange-2: #AF3A03 !important;
+  --drx-color-orange-3: #8C2E02 !important;
   --drx-color-overlay: #DEDBCC !important;
-  --drx-color-pink-1: #000000 !important;
-  --drx-color-pink-2: #B16286 !important;
-  --drx-color-pink-3: #8F3F71 !important;
+  --drx-color-pink-1: #BF185A !important;
+  --drx-color-pink-2: #A3144D !important;
+  --drx-color-pink-3: #82103E !important;
   --drx-color-purple-1: #7862D0 !important;
   --drx-color-purple-2: #644AC9 !important;
-  --drx-color-purple-3: #000000 !important;
-  --drx-color-red-1: #BF185A !important;
-  --drx-color-red-2: #A3144D !important;
-  --drx-color-red-3: #000000 !important;
+  --drx-color-purple-3: #4F3AA1 !important;
+  --drx-color-red-1: #D74C3D !important;
+  --drx-color-red-2: #CB3A2A !important;
+  --drx-color-red-3: #9B2D21 !important;
   --drx-color-subtext: #6C664B !important;
   --drx-color-surface: #FFFBEB !important;
   --drx-color-text: #1F1F1F !important;
   --drx-color-yellow-1: #9E841A !important;
   --drx-color-yellow-2: #846E15 !important;
-  --drx-color-yellow-3: #000000 !important;
-  --drx-shadow-radius: 8px !important;
+  --drx-color-yellow-3: #6A5811 !important;
   --embed-block-shadow-hover: 0 0 0 1px #EDE9DA, inset 0 0 0 1px #EDE9DA !important;
   --file-header-background: #EDE9DA !important;
   --file-header-background-focused: #EDE9DA !important;
@@ -1553,10 +1549,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --gray: #6C664B !important;
   --h1-line-height: 1.00em !important;
   --h1-size: 1.50em !important;
-  --h1-weight: 600 !important;
   --h2-line-height: 1.00em !important;
   --h2-size: 1.35em !important;
-  --h2-weight: 600 !important;
+  --h2-weight: 700 !important;
   --h3-line-height: 1.00em !important;
   --h3-size: 1.20em !important;
   --h3-weight: 600 !important;
@@ -1576,7 +1571,6 @@ html[saved-theme="dark"] body ul.tags > li {
   --icon-color-hover: #6C664B !important;
   --inline-title-line-height: 1.00em !important;
   --inline-title-size: 1.50em !important;
-  --inline-title-weight: 600 !important;
   --input-date-separator: #BCBAB3 !important;
   --input-placeholder-color: #BCBAB3 !important;
   --interactive-hover: #EDE9DA !important;
@@ -1588,7 +1582,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --link-external-color: #CB3A2A !important;
   --link-external-color-hover: #E1776B !important;
   --link-unresolved-color: #14710A !important;
-  --link-unresolved-decoration-color: #A3144D !important;
+  --link-unresolved-decoration-color: #CB3A2A !important;
   --link-unresolved-opacity: 0.5 !important;
   --list-marker-color: #BCBAB3 !important;
   --list-marker-color-hover: #6C664B !important;
@@ -1664,7 +1658,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --text-faint: #BCBAB3 !important;
   --text-muted: #6C664B !important;
   --text-normal: #1F1F1F !important;
-  --text-selection: #DEDBCC !important;
+  --text-selection: #EDE9DA !important;
   --titlebar-background: #EDE9DA !important;
   --titlebar-border-color: #EDE9DA !important;
   --titlebar-text-color: #6C664B !important;
@@ -1818,8 +1812,8 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
 html[saved-theme="light"] body a.internal.broken {
   color: rgb(203, 58, 42);
   outline: rgb(203, 58, 42) none 0px;
-  text-decoration: underline rgb(163, 20, 77);
-  text-decoration-color: rgb(163, 20, 77);
+  text-decoration: underline rgb(203, 58, 42);
+  text-decoration-color: rgb(203, 58, 42);
 }`,
     lists: `html[saved-theme="light"] body dd {
   color: rgb(31, 31, 31);
@@ -2321,7 +2315,7 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] {
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: 255, 85, 85;
-  background-color: rgba(255, 85, 85, 0.247);
+  background-color: rgba(163, 20, 77, 0.31);
   border-bottom-color: rgba(255, 85, 85, 0.25);
   border-left-color: rgba(255, 85, 85, 0.25);
   border-right-color: rgba(255, 85, 85, 0.25);
@@ -2375,7 +2369,7 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
   --callout-color: 255, 184, 108;
-  background-color: rgba(255, 184, 108, 0.247);
+  background-color: rgba(175, 58, 3, 0.31);
   border-bottom-color: rgba(255, 184, 108, 0.25);
   border-left-color: rgba(255, 184, 108, 0.25);
   border-right-color: rgba(255, 184, 108, 0.25);
@@ -2393,7 +2387,7 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
   --callout-color: 55, 235, 98;
-  background-color: rgba(80, 250, 123, 0.247);
+  background-color: rgba(20, 113, 10, 0.31);
   border-bottom-color: rgba(55, 235, 98, 0.25);
   border-left-color: rgba(55, 235, 98, 0.25);
   border-right-color: rgba(55, 235, 98, 0.25);
@@ -2411,7 +2405,7 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
   --callout-color: white;
-  background-color: rgb(163, 20, 77);
+  background-color: rgb(203, 58, 42);
   border-bottom-color: rgb(255, 255, 255);
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
@@ -2420,7 +2414,7 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-color: 255, 184, 108;
-  background-color: rgba(214, 93, 14, 0.31);
+  background-color: rgba(175, 58, 3, 0.31);
   border-bottom-color: rgba(255, 184, 108, 0.25);
   border-left-color: rgba(255, 184, 108, 0.25);
   border-right-color: rgba(255, 184, 108, 0.25);
@@ -2494,13 +2488,13 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
 html[saved-theme="light"] body .search > .search-container > .search-space {
   background-color: rgb(237, 233, 218);
   border-bottom-color: rgb(222, 219, 204);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   border-left-color: rgb(222, 219, 204);
   border-right-color: rgb(222, 219, 204);
   border-top-color: rgb(222, 219, 204);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > * {
@@ -2530,13 +2524,13 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout.display-results {
   border-bottom-color: rgb(222, 219, 204);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   border-left-color: rgb(222, 219, 204);
   border-right-color: rgb(222, 219, 204);
   border-top-color: rgb(222, 219, 204);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > input {

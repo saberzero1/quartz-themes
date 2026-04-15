@@ -655,7 +655,7 @@ body.theme-light {
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
-  --file-line-width: 64ch !important;
+  --file-line-width: 700px !important;
   --file-margins: 32px 32px !important;
   --file-margins-x: 32px !important;
   --file-margins-y: 32px !important;
@@ -1700,7 +1700,7 @@ body.theme-dark {
   --file-header-font-size: 13px !important;
   --file-header-font-weight: 400 !important;
   --file-header-justify: center !important;
-  --file-line-width: 64ch !important;
+  --file-line-width: 700px !important;
   --file-margins: 32px 32px !important;
   --file-margins-x: 32px !important;
   --file-margins-y: 32px !important;

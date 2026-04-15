@@ -99,7 +99,6 @@ export const theme: ThemeData = {
   --fast: 0.15s ease !important;
   --file-header-background: #282520 !important;
   --file-header-background-focused: #282520 !important;
-  --file-line-width: 64ch !important;
   --flair-color: #e8dcc6 !important;
   --footnote-id-color: rgba(232, 220, 198, 0.7) !important;
   --glass-border: rgba(255, 255, 255, 0.2) !important;
@@ -1759,7 +1758,6 @@ html[saved-theme="dark"] body ul.tags > li {
   --fast: 0.15s ease !important;
   --file-header-background: #eeece2 !important;
   --file-header-background-focused: #eeece2 !important;
-  --file-line-width: 64ch !important;
   --flair-color: #3d2e1a !important;
   --footnote-id-color: rgba(61, 46, 26, 0.7) !important;
   --glass-border: rgba(255, 255, 255, 0.2) !important;

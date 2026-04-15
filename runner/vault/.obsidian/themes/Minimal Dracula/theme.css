@@ -1,24 +1,23 @@
 /* ==
 @name             Minimal Dracula
 @namespace        github.com/druxorey/minimal-dracula-for-obsidian
-@version          1.8.0
+@version          1.8.1
 @description      Are you tired of the same boring colors on Obsidian? Then try this modern color style based on the Dracula theme
 @author           Druxorey
 @license          GNU General Public License v3.0
 == */
 
 :root:not(.is-phone,.is-mobile) {
-	--drx-border-radius: 10px;
-	--drx-border-width: 2px;
-	--drx-shadow-radius: 8px;
+	--drx-border-radius-outer: 16px;
+	--drx-border-radius-inner: 10px;
 	background-color: #1E1F29;
 }
 
 /* ========================== OBSIDIAN VALUES ======================== */
 
 body:not(.is-phone,.is-mobile) {
-	--h1-weight: 600;
-	--h2-weight: 600;
+	--h1-weight: 700;
+	--h2-weight: 700;
 	--h3-weight: 600;
 	--h4-weight: 500;
 	--h5-weight: 500;
@@ -213,6 +212,23 @@ body.theme-dark {
 	background-color: var(--drx-color-base);
 }
 
+.theme-dark .kanban-plugin__item {
+	border: 1px solid var(--drx-color-highlight) ;
+}
+
+.theme-dark .kanban-plugin__lane {
+	background-color: var(--drx-color-overlay);
+}
+
+.theme-dark button:not(.clickable-icon),
+.theme-dark .setting-item-control select {
+	background-color: var(--drx-color-highlight);
+}
+
+.theme-dark .setting-item-control select:hover {
+	background-color: var(--drx-color-accent);
+}
+
 /* ============================ LIGHT THEME ========================== */
 
 body.theme-light:not(.is-phone,.is-mobile) {
@@ -229,35 +245,35 @@ body.theme-light:not(.is-phone,.is-mobile) {
     --drx-color-accent: #CB3A2A;
 	--drx-color-important: #E1776B;
 
-	--drx-color-red-1: #BF185A;
-	--drx-color-red-2: #A3144D;
-	--drx-color-red-3: #000000;
-	--drx-color-orange-1: #000000;
-	--drx-color-orange-2: #D65D0E;
-	--drx-color-orange-3: #AF3A03;
+	--drx-color-red-1: #D74C3D;
+	--drx-color-red-2: #CB3A2A;
+	--drx-color-red-3: #9B2D21;
+	--drx-color-orange-1: #D16319;
+	--drx-color-orange-2: #AF3A03;
+	--drx-color-orange-3: #8C2E02;
 	--drx-color-yellow-1: #9E841A;
 	--drx-color-yellow-2: #846E15;
-	--drx-color-yellow-3: #000000;
+	--drx-color-yellow-3: #6A5811;
 	--drx-color-green-1: #198D0C;
 	--drx-color-green-2: #14710A;
-	--drx-color-green-3: #000000;
-	--drx-color-cyan-1: #000000;
-	--drx-color-cyan-2: #036A96;
-	--drx-color-cyan-3: #000000;
+	--drx-color-green-3: #105908;
+	--drx-color-cyan-1: #2AA198;
+	--drx-color-cyan-2: #179299;
+	--drx-color-cyan-3: #12747A;
 	--drx-color-blue-1: #047FB4;
 	--drx-color-blue-2: #036A96;
-	--drx-color-blue-3: #000000;
+	--drx-color-blue-3: #025578;
 	--drx-color-purple-1: #7862D0;
 	--drx-color-purple-2: #644AC9;
-	--drx-color-purple-3: #000000;
-	--drx-color-pink-1: #000000;
-	--drx-color-pink-2: #B16286;
-	--drx-color-pink-3: #8F3F71;
+	--drx-color-purple-3: #4F3AA1;
+	--drx-color-pink-1: #BF185A;
+	--drx-color-pink-2: #A3144D;
+	--drx-color-pink-3: #82103E;
 
 	color: var(--drx-color-text);
 	
 	--bold-color: var(--drx-color-accent);
-	--text-selection: var(--drx-color-overlay);
+	--text-selection: var(--drx-color-base);
 
 	--color-base-00: var(--drx-color-base);
 	--color-base-10: var(--drx-color-base);
@@ -358,6 +374,19 @@ body.theme-light {
 	background-color: var(--drx-color-overlay);
 }
 
+.theme-light .kanban-plugin__item {
+	border: 1px solid var(--drx-color-overlay) ;
+}
+
+.theme-light .kanban-plugin__lane {
+	background-color: var(--drx-color-base);
+}
+
+.theme-light button:not(.clickable-icon),
+.theme-light .setting-item-control select {
+	background-color: var(--drx-color-overlay);
+}
+
 /* ========================== GENERAL STYLING ======================== */
 
 a {
@@ -376,7 +405,7 @@ h1 {
 /* Rounds the corners of all panels */
 .workspace-tab-container, .prompt {
 	margin: 10px;
-	border-radius: var(--drx-border-radius);
+	border-radius: var(--drx-border-radius-outer);
 }
 
 /* Styles header 1 in markdown with a underline */
@@ -395,13 +424,13 @@ h1 {
 .workspace-sidedock-vault-profile {
 	width: 94% !important;
 	margin: 10px;
-	border-radius: var(--drx-border-radius);
+	border-radius: var(--drx-border-radius-outer);
 	border: none;
 }
 
 /* Styles the status bar at the bottom-right */
 .status-bar {
-	border-radius: var(--drx-border-radius) 0px 0px 0px;
+	border-radius: var(--drx-border-radius-inner) 0px 0px 0px;
 	border-top: 3px solid;
 	border-left: 3px solid;
 	border-color: var(--drx-color-base);
@@ -416,18 +445,18 @@ h1 {
 /* Adds rounded corners to navigation headers */
 .nav-header {
 	margin: 10px;
-	border-radius: var(--drx-border-radius);
+	border-radius: var(--drx-border-radius-outer);
 }
 
 /* Styles the settings modal */
 .modal-container.mod-dim .modal {
-	border-radius: var(--drx-border-radius);
+	border-radius: var(--drx-border-radius-outer);
 	box-shadow: none;
 }
 
 /* Background color for the settings modal */
 .modal-bg {
-	background-color: var(--drx-color-highlight);
+	background-color: var(--drx-color-surface);
 }
 
 /* Justifies text in reading mode */
@@ -463,6 +492,46 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 	margin-left: (calc(200rem - 100%) / -2) !important;
 }
 
+button:not(.clickable-icon),
+select, .combobox-button, .dropdown {
+	box-shadow: none;
+	border-radius: var(--drx-border-radius-inner);
+}
+
+button:not(.clickable-icon):hover {
+	background: var(--drx-color-accent);
+	cursor: pointer;
+}
+
+button.mod-cta {
+	color: var(--drx-color-text) !important; 
+}
+
+.kanban-plugin__lane-header-wrapper, 
+.kanban-plugin__scroll-container.kanban-plugin__vertical, 
+.kanban-plugin__item-button-wrapper {
+	border: none;
+}
+
+.kanban-plugin__lane {
+	border: none;
+	border-radius: var(--drx-border-radius-outer);
+}
+
+.kanban-plugin__item-content-wrapper,
+.kanban-plugin__item-title-wrapper {
+	background: transparent;
+}
+
+.kanban-plugin__item {
+	margin-top: 0.25rem;
+}
+
+.workspace-leaf.mod-active .view-header,
+.is-focused .workspace-leaf.mod-active .view-header{
+	background: transparent;
+}
+
 /* ============================= CALLOUTS ============================ */
 
 .theme-dark .callout[data-callout="todo"] {
@@ -475,9 +544,9 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .theme-light .cm-callout {
-	border-radius: var(--drx-border-radius);
-	box-shadow: 0 0.25rem 0.5rem #CECCC0B6;
+	border-radius: var(--drx-border-radius-outer);
 	border: solid 1px var(--drx-color-highlight);
+	box-shadow: 0 0.25rem 0.5rem #CECCC0B6;
 }
 
 .theme-light .callout-title {
@@ -496,7 +565,7 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .theme-light .cm-callout:hover {
-	border-radius: var(--drx-border-radius) !important;
+	border-radius: var(--drx-border-radius-outer) !important;
 	box-shadow: 0 0.25rem 0.5rem var(--drx-color-base) !important;
 }
 
@@ -543,15 +612,18 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .theme-light .callout[data-callout="bug"] {
-	background: #FF55553F !important;
+	background: #A3144D4F !important;
+	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-red-2); }
 }
 
 .theme-light .callout[data-callout="error"] {
-	background: #FF55553F !important;
+	background: #A3144D4F !important;
+	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-red-2); }
 }
 
 .theme-light .callout[data-callout="fail"] {
-	background: #FF55553F !important;
+	background: #A3144D4F !important;
+	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-red-2); }
 }
 
 .theme-light .callout[data-callout="quote"] {
@@ -560,16 +632,22 @@ body:not(.table-width-obsidian-default) :is(.markdown-rendered, .markdown-source
 }
 
 .theme-light .callout[data-callout="success"] {
-	background: #50FA7B3F !important;
+	background: #14710A4F !important;
+	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-green-2); }
 }
 
 .theme-light .callout[data-callout="question"] {
-	background: #FFB86C3F !important;
+	background: #AF3A034F !important;
+	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-orange-2); }
 }
 
 .theme-light .callout[data-callout="warning"] {
-	background: #D65D0E4F !important;
+	background: #AF3A034F !important;
 	.callout-title, .callout-icon .svg-icon { color: var(--drx-color-orange-2); }
+}
+
+.callout[data-callout="important"] {
+	--bold-color: var(--drx-color-pink-2);
 }
 
 .callout[data-callout="example"] {

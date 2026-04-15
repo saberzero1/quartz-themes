@@ -1830,6 +1830,7 @@ body.enable-monochrome.theme-dark {
     /* Folders inherit accent */
     --folder-color: var(--emphasis-color);
     --folder-text-color: var(--text-normal);
+    --folder-heading-rgb: var(--heading-primary-rgb);
 }
 
 /* FORCE Monochrome Text Overrides - high specificity to beat other themes */
@@ -2087,16 +2088,8 @@ body.theme-dark.enable-monochrome {
 }
 
 /* Global Transitions */
-.theme-light,
-.theme-dark,
-body,
-html {
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
-
 body {
-    --file-line-width: var(--line-width, 64ch);
-    --line-normal: var(--editor-line-height, 1.6);
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .markdown-source-view.mod-cm6 .cm-content,
@@ -2209,26 +2202,6 @@ body.is-focused .workspace-tabs.mod-top {
 }
 
 /* UI Element Styling */
-
-/* Element Transitions and Containment */
-.nav-folder,
-.workspace-tab-header,
-.callout,
-.markdown-preview-view h1,
-.markdown-preview-view h2,
-.markdown-preview-view h3,
-.markdown-preview-view h4,
-.markdown-preview-view h5,
-.markdown-preview-view h6,
-.cm-header-1,
-.cm-header-2,
-.cm-header-3,
-.cm-header-4,
-.cm-header-5,
-.cm-header-6 {
-    will-change: transform;
-    contain: layout style;
-}
 
 .workspace-leaf-content,
 .nav-files-container {
@@ -3576,31 +3549,37 @@ body.link-style-wavy :is(.markdown-rendered a, .markdown-rendered .internal-link
 :is(.theme-light, .theme-dark) .nav-files-container>div>.nav-folder:nth-child(6n+1) {
     --folder-color: rgba(var(--heading-primary-rgb), var(--theme-folder-opacity));
     --folder-text-color: var(--heading-primary);
+    --folder-heading-rgb: var(--heading-primary-rgb);
 }
 
 :is(.theme-light, .theme-dark) .nav-files-container>div>.nav-folder:nth-child(6n+2) {
     --folder-color: rgba(var(--heading-secondary-rgb), var(--theme-folder-opacity));
     --folder-text-color: var(--heading-secondary);
+    --folder-heading-rgb: var(--heading-secondary-rgb);
 }
 
 :is(.theme-light, .theme-dark) .nav-files-container>div>.nav-folder:nth-child(6n+3) {
     --folder-color: rgba(var(--heading-tertiary-rgb), var(--theme-folder-opacity));
     --folder-text-color: var(--heading-tertiary);
+    --folder-heading-rgb: var(--heading-tertiary-rgb);
 }
 
 :is(.theme-light, .theme-dark) .nav-files-container>div>.nav-folder:nth-child(6n+4) {
     --folder-color: rgba(var(--heading-quaternary-rgb), var(--theme-folder-opacity));
     --folder-text-color: var(--heading-quaternary);
+    --folder-heading-rgb: var(--heading-quaternary-rgb);
 }
 
 :is(.theme-light, .theme-dark) .nav-files-container>div>.nav-folder:nth-child(6n+5) {
     --folder-color: rgba(var(--heading-quinary-rgb), var(--theme-folder-opacity));
     --folder-text-color: var(--heading-quinary);
+    --folder-heading-rgb: var(--heading-quinary-rgb);
 }
 
 :is(.theme-light, .theme-dark) .nav-files-container>div>.nav-folder:nth-child(6n+6) {
     --folder-color: rgba(var(--heading-senary-rgb), var(--theme-folder-opacity));
     --folder-text-color: var(--heading-senary);
+    --folder-heading-rgb: var(--heading-senary-rgb);
 }
 
 .nav-files-container>div>.nav-folder .nav-folder-title:is(.is-active, .is-selected) .nav-folder-title-content {
@@ -3624,6 +3603,7 @@ body.link-style-wavy :is(.markdown-rendered a, .markdown-rendered .internal-link
 .nav-folder .nav-folder-children .nav-folder {
     --folder-color: inherit;
     --folder-text-color: inherit;
+    --folder-heading-rgb: inherit;
     background-color: inherit;
 }
 
@@ -3672,34 +3652,9 @@ body.link-style-wavy :is(.markdown-rendered a, .markdown-rendered .internal-link
     background-color: inherit;
 }
 
-.nav-files-container>div>.nav-folder:nth-child(6n+1) .nav-file-title.is-active .nav-file-title-content {
-    background-color: rgba(var(--heading-primary-rgb), .25);
-    color: var(--heading-primary);
-}
-
-.nav-files-container>div>.nav-folder:nth-child(6n+2) .nav-file-title.is-active .nav-file-title-content {
-    background-color: rgba(var(--heading-secondary-rgb), .25);
-    color: var(--heading-secondary);
-}
-
-.nav-files-container>div>.nav-folder:nth-child(6n+3) .nav-file-title.is-active .nav-file-title-content {
-    background-color: rgba(var(--heading-tertiary-rgb), .25);
-    color: var(--heading-tertiary);
-}
-
-.nav-files-container>div>.nav-folder:nth-child(6n+4) .nav-file-title.is-active .nav-file-title-content {
-    background-color: rgba(var(--heading-quaternary-rgb), .25);
-    color: var(--heading-quaternary);
-}
-
-.nav-files-container>div>.nav-folder:nth-child(6n+5) .nav-file-title.is-active .nav-file-title-content {
-    background-color: rgba(var(--heading-quinary-rgb), .25);
-    color: var(--heading-quinary);
-}
-
-.nav-files-container>div>.nav-folder:nth-child(6n+6) .nav-file-title.is-active .nav-file-title-content {
-    background-color: rgba(var(--heading-senary-rgb), .25);
-    color: var(--heading-senary);
+.nav-files-container>div>.nav-folder .nav-file-title.is-active .nav-file-title-content {
+    background-color: rgba(var(--folder-heading-rgb), .25);
+    color: var(--folder-text-color);
 }
 
 .nav-file-title.is-selected {
@@ -4809,7 +4764,7 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
 }
 
 /* Checkbox styling */
-input[type="checkbox"] {
+:is(input[type="checkbox"], .task-list-item-checkbox) {
     inline-size: 18px;
     block-size: 18px;
     border: var(--border-thick) solid var(--emphasis-color);
@@ -4818,78 +4773,38 @@ input[type="checkbox"] {
     transition: transform var(--transition-ui), border-color var(--transition-ui), box-shadow var(--transition-ui), background-color var(--transition-ui);
 }
 
-/* Hover state */
-input[type="checkbox"]:hover {
+:is(input[type="checkbox"], .task-list-item-checkbox):hover {
     transform: scale(1.05);
     border-color: var(--emphasis-color);
 }
 
-/* Focus state */
-input[type="checkbox"]:focus {
+.task-list-item-checkbox:hover {
+    box-shadow: 0 0 8px var(--emphasis-color);
+}
+
+:is(input[type="checkbox"], .task-list-item-checkbox):focus {
     box-shadow: 0 0 0 3px var(--emphasis-color);
     border-color: var(--emphasis-color);
     outline: none;
 }
 
-/* Active/pressed state */
-input[type="checkbox"]:active {
+:is(input[type="checkbox"], .task-list-item-checkbox):active {
     transform: scale(0.95);
     border-color: var(--emphasis-color);
 }
 
-/* Checked state */
-input[type="checkbox"]:checked {
+:is(input[type="checkbox"], .task-list-item-checkbox):checked {
     background: var(--emphasis-color);
     border-color: var(--emphasis-color);
     animation: checkboxPop 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* Checkmark */
-input[type="checkbox"]:checked::after {
-    position: absolute;
-    inset-block-start: 50%;
-    inset-inline-start: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    animation: checkmarkAppear 0.2s 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-}
-
-/* Task list item checkboxes */
-.task-list-item-checkbox {
-    inline-size: 18px;
-    block-size: 18px;
-    border: var(--border-thick) solid var(--emphasis-color);
-    border-radius: var(--r1);
-    background: transparent;
-    transition: transform var(--transition-ui), border-color var(--transition-ui), box-shadow var(--transition-ui), background-color var(--transition-ui);
-}
-
-.task-list-item-checkbox:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 8px var(--emphasis-color);
-    border-color: var(--emphasis-color);
-}
-
-.task-list-item-checkbox:focus {
-    box-shadow: 0 0 0 3px var(--emphasis-color);
-    border-color: var(--emphasis-color);
-    outline: none;
-}
-
-.task-list-item-checkbox:active {
-    transform: scale(0.95);
-    border-color: var(--emphasis-color);
-}
-
 .task-list-item-checkbox:checked {
     background: var(--emphasis-color) !important;
     border-color: var(--emphasis-color) !important;
-    animation: checkboxPop 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.task-list-item-checkbox:checked::after {
+:is(input[type="checkbox"], .task-list-item-checkbox):checked::after {
     position: absolute;
     inset-block-start: 50%;
     inset-inline-start: 50%;
@@ -6374,7 +6289,19 @@ body:not(.disable-status-bar) .status-bar:hover .status-bar-item button:hover {
     -electron-corner-smoothing: var(--squircle-main);
 }
 
-body:not(.disable-scrollbars) * {
+body:not(.disable-scrollbars) :is(
+    .markdown-preview-view,
+    .markdown-source-view .cm-scroller,
+    .nav-files-container,
+    .workspace-leaf-content,
+    .modal-container,
+    .vertical-tab-content-container,
+    .suggestion-container,
+    .prompt-results,
+    .tag-container,
+    .workspace-leaf-content[data-type="outline"] .view-content,
+    .backlink-pane
+) {
     scrollbar-width: thin;
     scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
@@ -7433,39 +7360,29 @@ body.is-mobile .cm-scroller {
     height: 100% !important;
 }
 
-/* Prevent scroll jank from transforms */
-body.is-mobile * {
-    transform: none !important;
-    transition: none !important;
-}
-
 /* DISABLE CARD LAYOUT ON MOBILE - Just don't apply the card layout class effects */
 /* Mobile will automatically use default Obsidian styling since we're blocking card layout with :not(.is-mobile) */
 
-/* Just ensure basics work on mobile */
-body.is-mobile .workspace-leaf-content {
+/* Reset contain/will-change on mobile WebKit to prevent rendering bugs */
+body.is-mobile :is(
+    .workspace-leaf-content,
+    .view-content,
+    .markdown-preview-view,
+    .markdown-reading-view,
+    .markdown-source-view,
+    .inline-title
+) {
     contain: none !important;
     will-change: auto !important;
 }
 
-body.is-mobile .view-content,
-body.is-mobile .markdown-preview-view,
-body.is-mobile .markdown-source-view {
+body.is-mobile .metadata-container {
     contain: none !important;
-    will-change: auto !important;
-}
-
-/* Remove transforms and containment that cause rendering issues on WebKit */
-body.is-mobile .view-content,
-body.is-mobile .workspace-leaf-content,
-body.is-mobile .markdown-preview-view,
-body.is-mobile .markdown-source-view {
-    contain: none !important;
-    will-change: auto !important;
+    transform: none !important;
 }
 
 /* Fix heading backgrounds wrapping poorly on narrow screens */
-body.is-mobile .heading-style-pill .cm-line:is(.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3) .cm-formatting-header + span {
+body.is-mobile .heading-style-badge .cm-line:is(.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3) .cm-formatting-header + span {
     display: inline !important;
     white-space: normal !important;
     word-break: break-word !important;
@@ -7495,28 +7412,6 @@ body.is-mobile .heading-style-pill .cm-line:is(.HyperMD-header-1, .HyperMD-heade
     }
 }
 
-/* Fix contain/will-change rendering bugs on mobile WebKit */
-body.is-mobile {
-    .view-content,
-    .workspace-leaf-content,
-    .markdown-reading-view,
-    .markdown-source-view.mod-cm6 {
-        contain: none !important;
-        will-change: auto !important;
-    }
-
-    /* Fix metadata container on mobile */
-    .metadata-container {
-        contain: none !important;
-        transform: none !important;
-    }
-
-    /* Fix inline title */
-    .inline-title {
-        contain: none !important;
-    }
-}
-
 /* Remove -electron-corner-smoothing on mobile (ignored on WebKit anyway) */
 body.is-mobile {
     * {
@@ -7525,7 +7420,7 @@ body.is-mobile {
 }
 
 /* Fix heading pill backgrounds on mobile - prevent multi-line wrapping issues */
-body.is-mobile.heading-style-pill {
+body.is-mobile.heading-style-badge {
     .cm-line.HyperMD-header .cm-formatting-header + span,
     .markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
         display: inline !important;
@@ -7815,7 +7710,7 @@ body.inline-code-accent :not(pre) > code {
     border-radius: var(--radius-s) !important;
     font-weight: var(--weight-medium) !important;
     animation: code-pulse 3s ease infinite !important;
-    transition: all 0.2s ease !important;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
     box-shadow: 0 1px 3px rgba(var(--primary-color-rgb), 0.1) !important;
 }
 
@@ -7850,69 +7745,6 @@ body.inline-code-accent :not(pre) > code:hover {
     }
 }
 
-/* Gradient borders removed - not our style! */
-    border-top: 2px solid;
-    border-image: linear-gradient(
-        90deg, 
-        hsl(var(--accent-h), 70%, 60%), 
-        hsl(calc(var(--accent-h) + 30), 70%, 60%)
-    ) 1;
-}
-
-/* Modals get subtle gradient border */
-body.gradient-accent-borders .modal {
-    border-top: 3px solid;
-    border-image: linear-gradient(
-        90deg, 
-        hsl(var(--accent-h), 70%, 60%), 
-        hsl(calc(var(--accent-h) + 40), 70%, 60%)
-    ) 1;
-}
-
-/* Settings panels */
-body.gradient-accent-borders .vertical-tab-content-container {
-    border-left: 2px solid;
-    border-image: linear-gradient(
-        180deg, 
-        hsl(var(--accent-h), 60%, 60%), 
-        hsl(calc(var(--accent-h) + 20), 60%, 60%),
-        hsl(var(--accent-h), 60%, 60%)
-    ) 1;
-}
-
-/* Canvas cards */
-body.gradient-accent-borders .canvas-card:hover {
-    border: 2px solid;
-    border-image: linear-gradient(
-        135deg, 
-        hsl(var(--accent-h), 70%, 60%), 
-        hsl(calc(var(--accent-h) + 30), 70%, 60%)
-    ) 1;
-}
-
-/* Callouts get top gradient border */
-body.gradient-accent-borders .callout {
-    border-top: 2px solid;
-    border-image: linear-gradient(
-        90deg, 
-        var(--callout-color), 
-        hsl(from var(--callout-color) h s calc(l * 1.2))
-    ) 1 !important;
-}
-
-/* Active tab indicator */
-body.gradient-accent-borders .workspace-tab-header.is-active {
-    border-bottom: 3px solid;
-    border-image: linear-gradient(
-        90deg, 
-        transparent,
-        hsl(var(--accent-h), 70%, 60%),
-        transparent
-    ) 1;
-}
-
-/* Hue shift animation */
-/* Reverted - gradient borders weren't the vibe */
 
 /* ============================== */
 /*      RIBBON ENHANCEMENTS       */
@@ -7933,7 +7765,7 @@ body.layout-card:not(.show-ribbon) .workspace-ribbon.side-dock-ribbon.mod-left {
 /* Ribbon actions container */
 .side-dock-ribbon-action {
     margin: 4px 0;
-    transition: all var(--transition-ui);
+    transition: opacity var(--transition-ui), transform var(--transition-ui);
 }
 
 /* Ribbon action buttons */
@@ -7941,7 +7773,7 @@ body.layout-card:not(.show-ribbon) .workspace-ribbon.side-dock-ribbon.mod-left {
     width: 36px;
     height: 36px;
     border-radius: var(--radius-m);
-    transition: all var(--transition-ui);
+    transition: background-color var(--transition-ui), color var(--transition-ui), transform var(--transition-ui);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7965,7 +7797,7 @@ body.layout-card:not(.show-ribbon) .workspace-ribbon.side-dock-ribbon.mod-left {
     margin-top: 8px;
     padding: 4px;
     opacity: 0.5;
-    transition: all var(--transition-ui);
+    transition: opacity var(--transition-ui), transform var(--transition-ui);
 }
 
 .workspace-ribbon-collapse-btn:hover {
