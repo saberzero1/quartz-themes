@@ -1,7 +1,7 @@
 # Zenburn
 
 - Theme: Zenburn
-- Author: <a href="https://github.com/danyim" target="_blank" rel="noopener noreferrer">@danyim</a>
+- Author: <a href="https://github.com/danyim/obsidian-zenburn" target="_blank" rel="noopener noreferrer">@danyim</a>
 
 ## Preview
 

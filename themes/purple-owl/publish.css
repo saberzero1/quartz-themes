@@ -1317,10 +1317,14 @@ body.theme-dark {
   --background-translucent: hsla(276, 68%, 15%, 0.85) !important;
   --background-tertiary: #082632 !important;
   --font-ui: "monolisa", menlo, SFMono-Regular, Consolas, monospace !important;
+  --background-match-highlight: hsla(258, 40%, 62%, 0.2) !important;
+  --background-transparent: hsla(276, 68%, 15%, 0) !important;
+  --nested-padding: 3.5% !important;
   --h1: 1.125em !important;
   --h2: 1em !important;
+  --text-editor:
+    "monolisa", menlo, SFMono-Regular, Consolas, monospace !important;
   --line-width-adaptive: 40rem !important;
-  --nested-padding: 3.5% !important;
   --h3: 1em !important;
   --h4: 0.9em !important;
   --h5: 0.85em !important;
@@ -1329,12 +1333,8 @@ body.theme-dark {
   --font-adaptive-small: 0.933em !important;
   --font-adaptive-smaller: 0.875em !important;
   --font-adaptive-smallest: 0.8em !important;
-  --background-transparent: hsla(276, 68%, 15%, 0) !important;
-  --background-match-highlight: hsla(258, 40%, 62%, 0.2) !important;
   --font-settings: 14px !important;
   --font-settings-small: 12px !important;
-  --text-editor:
-    "monolisa", menlo, SFMono-Regular, Consolas, monospace !important;
 }
 
 body .site-body-left-column-site-theme-toggle {
@@ -2206,10 +2206,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(1, 22, 39) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(1, 22, 39);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2218,8 +2219,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(171, 178, 191);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

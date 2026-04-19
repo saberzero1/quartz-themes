@@ -1,7 +1,7 @@
 # Catppuccin
 
 - Theme: Catppuccin
-- Author: <a href="https://github.com/catppuccin/obsidian" target="_blank" rel="noopener noreferrer">Marshall Beckrich</a>
+- Author: <a href="https://github.com/catppuccin/obsidian" target="_blank" rel="noopener noreferrer">Catppuccin</a>
 
 ## Preview
 

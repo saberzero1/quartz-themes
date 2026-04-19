@@ -1281,11 +1281,11 @@ body.theme-light {
   --h6-color: #b4637a !important;
   --inline-title-color: #575279 !important;
   --text-color: #575279 !important;
+  --border-color: #dfdad9 !important;
   --bold-color: #d7827e !important;
   --italic-color: #d7827e !important;
   --accent: hsl(3, 53%, 67%) !important;
   --text: #575279 !important;
-  --border-color: #dfdad9 !important;
   --code-variable: #575279 !important;
   --code-builtin: #b4637a !important;
   --code-definition: #d7827e !important;
@@ -1303,6 +1303,7 @@ body.theme-light {
   --pine: #286983 !important;
   --rose: #d7827e !important;
   --subtle: #797593 !important;
+  --selection-background-color: #f2e9e1 !important;
   --accent-color-hover: #907aa9 !important;
   --accent-color-dark: #286983 !important;
   --accent-color-light: #d7827e !important;
@@ -1310,7 +1311,6 @@ body.theme-light {
   --border-color-secondary: #cecacd !important;
   --code-boolean: #d7827e !important;
   --code-parentheses: #797593 !important;
-  --selection-background-color: #f2e9e1 !important;
   --selection-border-color: #907aa9 !important;
   --text-color-accent: #575279 !important;
   --text-color-muted-dark: #f2e9e1 !important;
@@ -2208,6 +2208,7 @@ body.theme-dark {
   --h6-color: #ff5555 !important;
   --inline-title-color: #f8f8f2 !important;
   --text-color: #f8f8f2 !important;
+  --border-color: #4b5263 !important;
   --bold-color: #ff79c6 !important;
   --italic-color: #ff79c6 !important;
   --green: #50fa7b !important;
@@ -2219,7 +2220,6 @@ body.theme-dark {
   --comment: #6272a4 !important;
   --cyan: #8be9fd !important;
   --accent: hsl(265, 89%, 78%) !important;
-  --border-color: #4b5263 !important;
   --code-variable: #bd93f9 !important;
   --code-builtin: #50fa7b !important;
   --code-definition: #f8f8f2 !important;
@@ -2232,6 +2232,7 @@ body.theme-dark {
   --bright-green: #69ff94 !important;
   --bright-red: #ff6e6e !important;
   --bright-yellow: #ffffa5 !important;
+  --selection-background-color: #44475a !important;
   --accent-color-hover: #50fa7b !important;
   --accent-color-dark: #bd93f9 !important;
   --accent-color-light: #ff79c6 !important;
@@ -2239,7 +2240,6 @@ body.theme-dark {
   --border-color-secondary: #3e4452 !important;
   --code-boolean: #bd93f9 !important;
   --code-parentheses: #8be9fd !important;
-  --selection-background-color: #44475a !important;
   --selection-border-color: #50fa7b !important;
   --text-color-accent: white !important;
   --text-color-muted-dark: #3b4048 !important;
@@ -3152,10 +3152,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: rgb(250, 244, 237) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(250, 244, 237);
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3164,8 +3165,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(87, 82, 121);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -5183,10 +5206,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(40, 42, 54) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(40, 42, 54);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5195,8 +5219,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(248, 248, 242);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

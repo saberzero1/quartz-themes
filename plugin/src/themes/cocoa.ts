@@ -1335,40 +1335,6 @@ html body hr {
   border-top-right-radius: 15px;
   border-top-style: dotted;
   border-top-width: 1px;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(17, 15, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 15, 16);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(17, 15, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 15, 16);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(17, 15, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 15, 16);
-  border-bottom-color: rgb(163, 165, 170);
-  border-left-color: rgb(163, 165, 170);
-  border-right-color: rgb(163, 165, 170);
-  border-top-color: rgb(163, 165, 170);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(17, 15, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 15, 16);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(17, 15, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 15, 16);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(17, 15, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 15, 16);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(86, 65, 52);

@@ -955,40 +955,6 @@ html body h6 {
 }`,
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgba(7, 5, 53, 0) none repeat scroll 0% 90% / auto padding-box border-box;
-  background-color: rgba(7, 5, 53, 0);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgba(7, 5, 53, 0) none repeat scroll 0% 90% / auto padding-box border-box;
-  background-color: rgba(7, 5, 53, 0);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgba(7, 5, 53, 0) none repeat scroll 0% 90% / auto padding-box border-box;
-  background-color: rgba(7, 5, 53, 0);
-  border-bottom-color: rgba(255, 255, 255, 0.867);
-  border-left-color: rgba(255, 255, 255, 0.867);
-  border-right-color: rgba(255, 255, 255, 0.867);
-  border-top-color: rgba(255, 255, 255, 0.867);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgba(7, 5, 53, 0) none repeat scroll 0% 90% / auto padding-box border-box;
-  background-color: rgba(7, 5, 53, 0);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgba(7, 5, 53, 0) none repeat scroll 0% 90% / auto padding-box border-box;
-  background-color: rgba(7, 5, 53, 0);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgba(7, 5, 53, 0) none repeat scroll 0% 90% / auto padding-box border-box;
-  background-color: rgba(7, 5, 53, 0);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(255, 223, 223);

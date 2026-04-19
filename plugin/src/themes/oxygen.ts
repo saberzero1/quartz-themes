@@ -1620,40 +1620,6 @@ html[saved-theme="dark"] body hr {
   border-left-color: rgba(108, 153, 187, 0.25);
   border-right-color: rgba(108, 153, 187, 0.25);
   border-top-color: rgba(108, 153, 187, 0.25);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(28, 29, 30) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(28, 29, 30);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(28, 29, 30) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(28, 29, 30);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(28, 29, 30) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(28, 29, 30);
-  border-bottom-color: rgb(222, 222, 222);
-  border-left-color: rgb(222, 222, 222);
-  border-right-color: rgb(222, 222, 222);
-  border-top-color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(28, 29, 30) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(28, 29, 30);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(28, 29, 30) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(28, 29, 30);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(28, 29, 30) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(28, 29, 30);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(166, 166, 166);
@@ -3441,13 +3407,6 @@ html[saved-theme="light"] body hr {
   border-left-color: rgba(108, 153, 187, 0.25);
   border-right-color: rgba(108, 153, 187, 0.25);
   border-top-color: rgba(108, 153, 187, 0.25);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(26, 29, 35);
-  border-left-color: rgb(26, 29, 35);
-  border-right-color: rgb(26, 29, 35);
-  border-top-color: rgb(26, 29, 35);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(95, 107, 122);

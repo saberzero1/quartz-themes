@@ -970,40 +970,6 @@ html[saved-theme="dark"] body h6 {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(30, 31, 34) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(30, 31, 34);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(30, 31, 34) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(30, 31, 34);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(30, 31, 34) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(30, 31, 34);
-  border-bottom-color: rgb(188, 190, 196);
-  border-left-color: rgb(188, 190, 196);
-  border-right-color: rgb(188, 190, 196);
-  border-top-color: rgb(188, 190, 196);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(30, 31, 34) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(30, 31, 34);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(30, 31, 34) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(30, 31, 34);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(30, 31, 34) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(30, 31, 34);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(188, 190, 196);
@@ -2080,13 +2046,6 @@ html[saved-theme="light"] body h6 {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(0, 0, 0);

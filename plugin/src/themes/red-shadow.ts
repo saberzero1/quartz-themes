@@ -1047,40 +1047,6 @@ html body hr {
 }`,
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(11, 9, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(11, 9, 10);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(11, 9, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(11, 9, 10);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(11, 9, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(11, 9, 10);
-  border-bottom-color: rgb(224, 224, 224);
-  border-left-color: rgb(224, 224, 224);
-  border-right-color: rgb(224, 224, 224);
-  border-top-color: rgb(224, 224, 224);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(11, 9, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(11, 9, 10);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(11, 9, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(11, 9, 10);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(11, 9, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(11, 9, 10);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "??", "??", Poppins, Oswald, Montserrat, Roboto, "Glow Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

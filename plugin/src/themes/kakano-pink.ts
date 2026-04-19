@@ -2749,40 +2749,6 @@ html[saved-theme="dark"] body hr {
   padding-right: 24px;
 }
 
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: color(srgb 0.042 0.018 0.028) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.042 0.018 0.028);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: color(srgb 0.042 0.018 0.028) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.042 0.018 0.028);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: color(srgb 0.042 0.018 0.028) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.042 0.018 0.028);
-  border-bottom-color: color(srgb 0.936 0.744 0.824);
-  border-left-color: color(srgb 0.936 0.744 0.824);
-  border-right-color: color(srgb 0.936 0.744 0.824);
-  border-top-color: color(srgb 0.936 0.744 0.824);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: color(srgb 0.042 0.018 0.028) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.042 0.018 0.028);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: color(srgb 0.042 0.018 0.028) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.042 0.018 0.028);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: color(srgb 0.042 0.018 0.028) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.042 0.018 0.028);
-}
-
 html[saved-theme="dark"] body body {
   scrollbar-color: color(srgb 0.84 0.36 0.56 / 0.25) rgba(0, 0, 0, 0);
 }`,
@@ -5659,13 +5625,6 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
   padding-right: 24px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: color(srgb 0.084 0.036 0.056);
-  border-left-color: color(srgb 0.084 0.036 0.056);
-  border-right-color: color(srgb 0.084 0.036 0.056);
-  border-top-color: color(srgb 0.084 0.036 0.056);
 }
 
 html[saved-theme="light"] body body {

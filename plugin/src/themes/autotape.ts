@@ -763,36 +763,6 @@ html[saved-theme="dark"] body hr {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 0px;
@@ -1615,36 +1585,6 @@ html[saved-theme="light"] body hr {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(213, 213, 213) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(213, 213, 213);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(213, 213, 213) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(213, 213, 213);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(213, 213, 213) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(213, 213, 213);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(213, 213, 213) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(213, 213, 213);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(213, 213, 213) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(213, 213, 213);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(213, 213, 213) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(213, 213, 213);
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 0px;

@@ -1258,40 +1258,6 @@ html[saved-theme="dark"] body hr {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   padding-left: 20px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(41, 45, 62) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(41, 45, 62);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(41, 45, 62) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(41, 45, 62);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(41, 45, 62) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(41, 45, 62);
-  border-bottom-color: rgb(228, 104, 114);
-  border-left-color: rgb(228, 104, 114);
-  border-right-color: rgb(228, 104, 114);
-  border-top-color: rgb(228, 104, 114);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(41, 45, 62) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(41, 45, 62);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(41, 45, 62) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(41, 45, 62);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(41, 45, 62) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(41, 45, 62);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(149, 186, 232);
@@ -2745,13 +2711,6 @@ html[saved-theme="light"] body hr {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   padding-left: 20px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(56, 60, 78);
-  border-left-color: rgb(56, 60, 78);
-  border-right-color: rgb(56, 60, 78);
-  border-top-color: rgb(56, 60, 78);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(99, 74, 117);

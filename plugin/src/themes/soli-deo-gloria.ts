@@ -592,36 +592,6 @@ html[saved-theme="dark"] body h6 {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(37, 37, 35) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(37, 37, 35);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(37, 37, 35) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(37, 37, 35);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(37, 37, 35) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(37, 37, 35);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(37, 37, 35) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(37, 37, 35);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(37, 37, 35) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(37, 37, 35);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(37, 37, 35) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(37, 37, 35);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "??", Germania-One, serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1266,36 +1236,6 @@ html[saved-theme="light"] body h6 {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(249, 240, 214) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(249, 240, 214);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(249, 240, 214) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(249, 240, 214);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(249, 240, 214) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(249, 240, 214);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(249, 240, 214) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(249, 240, 214);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(249, 240, 214) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(249, 240, 214);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(249, 240, 214) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(249, 240, 214);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "??", Germania-One, serif, "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

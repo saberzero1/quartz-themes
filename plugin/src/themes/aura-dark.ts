@@ -472,36 +472,6 @@ html body hr {
 }`,
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(21, 20, 27) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(21, 20, 27);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(21, 20, 27) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(21, 20, 27);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(21, 20, 27) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(21, 20, 27);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(21, 20, 27) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(21, 20, 27);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(21, 20, 27) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(21, 20, 27);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(21, 20, 27) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(21, 20, 27);
 }`,
     explorer: `html body .explorer .folder-outer > ul {
   border-left-color: rgb(237, 236, 238);

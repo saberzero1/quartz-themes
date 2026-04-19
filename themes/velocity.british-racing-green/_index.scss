@@ -848,6 +848,7 @@
   --tag-weight: 490 !important;
   --color-accent-3: color-mix(in oklch, hsl(212, 100%, 52%) 50%, transparent 75%) !important;
   --radius-xs: 6px !important;
+  --math-color: oklch(24% 0.0005 281) !important;
   --tab-font-weight: 420 !important;
   --strikethrough-color: oklch(71.5% 0.0105 281) !important;
   --settings-background: color-mix(in oklab, oklch(96.2% 0.0025 281) 70%, oklch(92% 0.0025 281)) !important;
@@ -857,7 +858,6 @@
   --metadata-label-font-weight: 490 !important;
   --corner-smoothing: 60% !important;
   --nav-folder-color: oklch(40% 0.0025 281) !important;
-  --math-color: oklch(24% 0.0005 281) !important;
   --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-fast-swing: 150ms cubic-bezier(0, 0.55, 0.45, 1) !important;
@@ -1831,6 +1831,7 @@
   --tag-weight: 490 !important;
   --color-accent-3: color-mix(in oklab, hsl(75, 70%, 32%) 50%, transparent 75%) !important;
   --radius-xs: 6px !important;
+  --math-color: oklch(93.25% 0.0005 190) !important;
   --tab-font-weight: 420 !important;
   --strikethrough-color: oklch(52.5% 0.02 190) !important;
   --settings-background: oklch(26.875% 0.015 190) !important;
@@ -1840,7 +1841,6 @@
   --metadata-label-font-weight: 490 !important;
   --corner-smoothing: 60% !important;
   --nav-folder-color: oklch(77.5% 0.0125 190) !important;
-  --math-color: oklch(93.25% 0.0005 190) !important;
   --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-fast-swing: 150ms cubic-bezier(0, 0.55, 0.45, 1) !important;
@@ -3558,13 +3558,11 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: oklch(0.99 0.0005 281);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: oklch(0.99 0.0005 281);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3573,23 +3571,20 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px oklch(0.3 0.0005 281);
+    border: 0px rgb(34, 34, 34);
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: oklch(0.99 0.0005 281);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: oklch(0.99 0.0005 281);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: oklch(0.99 0.0005 281);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3601,8 +3596,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: oklch(0.99 0.0005 281);
+    background-color: rgb(255, 255, 255);
   }
 
   body {
@@ -7049,13 +7043,11 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: oklch(0.2275 0.015 190) radial-gradient(oklch(0.2875 0.0175 190) 0%, oklch(0.25 0.0225 190) 200%) repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: oklch(0.2275 0.015 190);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: oklch(0.2275 0.015 190) radial-gradient(oklch(0.2875 0.0175 190) 0%, oklch(0.25 0.0225 190) 200%) repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: oklch(0.2275 0.015 190);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7064,23 +7056,20 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      border: 0px oklch(0.85 0.0125 190);
+      border: 0px rgb(218, 218, 218);
       box-shadow: none;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: oklch(0.2275 0.015 190) radial-gradient(oklch(0.2875 0.0175 190) 0%, oklch(0.25 0.0225 190) 200%) repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: oklch(0.2275 0.015 190);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: oklch(0.2275 0.015 190) radial-gradient(oklch(0.2875 0.0175 190) 0%, oklch(0.25 0.0225 190) 200%) repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: oklch(0.2275 0.015 190);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-track {
-      background: oklch(0.2275 0.015 190) radial-gradient(oklch(0.2875 0.0175 190) 0%, oklch(0.25 0.0225 190) 200%) repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: oklch(0.2275 0.015 190);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7092,8 +7081,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: oklch(0.2275 0.015 190) radial-gradient(oklch(0.2875 0.0175 190) 0%, oklch(0.25 0.0225 190) 200%) repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: oklch(0.2275 0.015 190);
+      background-color: rgb(30, 30, 30);
     }
 
     body {
@@ -9356,8 +9344,8 @@ html[saved-theme="dark"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -9436,7 +9424,7 @@ html[saved-theme="dark"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

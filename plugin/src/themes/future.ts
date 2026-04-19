@@ -1320,13 +1320,6 @@ html body hr {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
-}
-
-html body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(47, 47, 47);
-  border-left-color: rgb(47, 47, 47);
-  border-right-color: rgb(47, 47, 47);
-  border-top-color: rgb(47, 47, 47);
 }`,
     explorer: `html body .explorer {
   background-color: rgb(255, 255, 255);

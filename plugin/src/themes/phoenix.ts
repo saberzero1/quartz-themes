@@ -1135,40 +1135,6 @@ html[saved-theme="dark"] body hr {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
   padding-left: 20px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(33, 33, 33);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(33, 33, 33);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(33, 33, 33);
-  border-bottom-color: rgb(234, 218, 217);
-  border-left-color: rgb(234, 218, 217);
-  border-right-color: rgb(234, 218, 217);
-  border-top-color: rgb(234, 218, 217);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(33, 33, 33);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(33, 33, 33);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(33, 33, 33);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "??", "??", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Liberation Sans", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2483,40 +2449,6 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
   padding-left: 20px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(219, 197, 175) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(219, 197, 175);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(219, 197, 175) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(219, 197, 175);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(219, 197, 175) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(219, 197, 175);
-  border-bottom-color: rgb(30, 30, 30);
-  border-left-color: rgb(30, 30, 30);
-  border-right-color: rgb(30, 30, 30);
-  border-top-color: rgb(30, 30, 30);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(219, 197, 175) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(219, 197, 175);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(219, 197, 175) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(219, 197, 175);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(219, 197, 175) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(219, 197, 175);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(83, 79, 78);

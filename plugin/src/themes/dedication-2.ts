@@ -1057,40 +1057,6 @@ html[saved-theme="dark"] body hr {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 17, 23);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 17, 23);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 17, 23);
-  border-bottom-color: rgb(222, 222, 222);
-  border-left-color: rgb(222, 222, 222);
-  border-right-color: rgb(222, 222, 222);
-  border-top-color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 17, 23);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 17, 23);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 17, 23);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -2286,40 +2252,6 @@ html[saved-theme="light"] body hr {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(237, 237, 237) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(237, 237, 237);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(237, 237, 237) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(237, 237, 237);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(237, 237, 237) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(237, 237, 237);
-  border-bottom-color: rgb(26, 32, 35);
-  border-left-color: rgb(26, 32, 35);
-  border-right-color: rgb(26, 32, 35);
-  border-top-color: rgb(26, 32, 35);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(237, 237, 237) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(237, 237, 237);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(237, 237, 237) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(237, 237, 237);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(237, 237, 237) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(237, 237, 237);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;

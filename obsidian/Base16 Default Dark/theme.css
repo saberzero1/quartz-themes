@@ -45,7 +45,7 @@
   --interactive-success: #a1b56c;
 
   /* Scrollbar */
-  --scrollbar-bg: #181818;
+  --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: #383838;
   --scrollbar-active-thumb-bg: #484848;
 
@@ -102,6 +102,8 @@
   --table-row-alt-background: transparent;
 
   /* Checkboxes */
+  --checkbox-radius: 0px;
+  --checkbox-border-width: 1.5px;
   --checkbox-color: #7cafc2;
   --checkbox-color-hover: #86c1b9;
   --checkbox-border-color: #585858;
@@ -149,6 +151,68 @@
 
   /* Misc */
   --list-indent: 1.6em;
+
+  /* Font weights */
+  --font-weight-normal: 450;
+}
+
+.theme-dark {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: var(--font-weight-normal);
+}
+
+.theme-dark .markdown-preview-view h1,
+.theme-dark .cm-header-1 {
+  font-weight: 650;
+}
+
+.theme-dark .markdown-preview-view h2,
+.theme-dark .cm-header-2 {
+  font-weight: 650;
+}
+
+.theme-dark .markdown-preview-view h3,
+.theme-dark .cm-header-3,
+.theme-dark .markdown-preview-view h4,
+.theme-dark .cm-header-4,
+.theme-dark .markdown-preview-view h5,
+.theme-dark .cm-header-5,
+.theme-dark .markdown-preview-view h6,
+.theme-dark .cm-header-6 {
+  font-weight: 600;
+}
+
+/* Modal font size — slightly smaller than body text */
+.theme-dark .prompt *,
+.theme-dark .modal *,
+.hybrid-search-preview,
+.hybrid-search-preview-meta-panel {
+  font-size: calc(var(--font-text-size) * 0.8);
+  font-weight: var(--font-weight-normal);
+}
+
+/* Context menu (right-click dropdown) */
+.theme-dark .menu-scroll * {
+  font-size: calc(var(--font-text-size) * 0.72);
+  font-weight: var(--font-weight-normal);
+}
+
+.theme-dark .prompt .another-quick-switcher__item__hot-key-guide,
+.theme-dark .prompt .another-quick-switcher__status__count-input,
+.theme-dark .prompt .another-quick-switcher__command-palette__item__key {
+  font-size: 0.75em;
+}
+
+.theme-dark .prompt .flair.mod-pop,
+.theme-dark .modal .flair.mod-pop,
+.theme-dark .modal .mv-picker-group-type {
+  font-size: 0.65em;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 1;
+  translate: 0 -1px;
 }
 
 .is-mobile.theme-dark {
@@ -263,8 +327,14 @@
 }
 
 /* Links */
-.theme-dark .internal-link {
+.theme-dark .internal-link,
+.theme-dark .cm-hmd-internal-link {
   color: var(--link-internal-color);
+  font-weight: var(--font-weight-normal);
+}
+
+.theme-dark .cm-hmd-internal-link .cm-underline {
+  font-weight: var(--font-weight-normal);
 }
 
 .theme-dark .internal-link:hover {
@@ -327,7 +397,8 @@
 .theme-dark strong,
 .theme-dark .cm-strong {
   color: var(--bold-color);
-  font-weight: 600;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Bold inside callouts - neutral color */
@@ -366,8 +437,8 @@
 
 /* Scrollbars */
 .theme-dark ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 4px;
+  height: 4px;
 }
 
 .theme-dark ::-webkit-scrollbar-track {
@@ -376,7 +447,7 @@
 
 .theme-dark ::-webkit-scrollbar-thumb {
   background: #383838;
-  border-radius: 5px;
+  border-radius: 0;
   transition: background 0.1s ease;
 }
 
@@ -683,7 +754,24 @@
 .popover.hover-editor {
   border: 1px ridge rgba(209, 209, 209, 0.5);
 }
+.popover-titlebar {
+  background-color: #181818 !important;
+}
+.popover-title {
+  visibility: hidden;
+}
+.popover-action,
+.popover-header-icon {
+  color: var(--text-muted) !important;
+}
+.popover-content {
+  font-size: var(--font-text-size);
+}
+
 /* TOC */
+.workspace-leaf-content[data-type='outline'] .tree-item-inner {
+  font-size: 1.1em;
+}
 .workspace-leaf-content[data-type='outline'] .clickable-icon.nav-action-button {
   width: auto !important;
   padding: 0 8px;
@@ -755,10 +843,10 @@ ul > li::marker,
 /* LEVEL 1 */
 .markdown-reading-view ul > li > .list-bullet:after,
 .markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after {
-  /* Bullet */
-  height: 7px;
-  width: 7px;
-  border-radius: 50%;
+  /* Solid Square */
+  height: 6px;
+  width: 6px;
+  border-radius: 0;
   background-color: var(--bullet-new-color);
   contain: paint;
 }
@@ -777,33 +865,32 @@ ul > li::marker,
 /* LEVEL 2 */
 .markdown-reading-view ul > li > ul > li > .list-bullet:after,
 .markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet:after {
-  /* Dash */
-  height: 3px;
-  width: 7px;
-  border-radius: 0%;
+  /* Bar */
+  height: 2px;
+  width: 8px;
+  border-radius: 0;
   background-color: var(--bullet-new-color);
 }
 
 .HyperMD-list-line-2 {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 /* LEVEL 3 */
 .markdown-reading-view ul > li > ul > li > ul > li > .list-bullet:after,
 .markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after {
-  /* Hollow Bullet */
+  /* Hollow Square */
   height: 5px;
   width: 5px;
   background-color: transparent;
   border-color: var(--bullet-new-color);
   border-style: solid;
-  border-radius: 50%;
+  border-radius: 0;
   border-width: 1px;
 }
 
 .HyperMD-list-line-3 {
-  font-weight: lighter;
-  font-style: normal;
+  font-weight: 400;
 }
 
 /* LEVEL 4 */
@@ -818,15 +905,15 @@ ul > li::marker,
   > li
   > .list-bullet:after,
 .markdown-source-view.mod-cm6 .HyperMD-list-line-4 .list-bullet:after {
-  /* Solid Square */
-  height: 5px;
-  width: 5px;
-  border-radius: 0%;
+  /* Solid Square small */
+  height: 4px;
+  width: 4px;
+  border-radius: 0;
   background-color: var(--bullet-new-color);
 }
 
 .HyperMD-list-line-4 {
-  font-weight: lighter;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -844,15 +931,15 @@ ul > li::marker,
   > li
   > .list-bullet:after,
 .markdown-source-view.mod-cm6 .HyperMD-list-line-5 .list-bullet:after {
-  /* Dash */
+  /* Bar thin */
   height: 1px;
-  width: 7px;
-  border-radius: 0%;
+  width: 6px;
+  border-radius: 0;
   background-color: var(--bullet-new-color);
 }
 
 .HyperMD-list-line-5 {
-  font-weight: lighter;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -872,18 +959,18 @@ ul > li::marker,
   > li
   > .list-bullet:after,
 .markdown-source-view.mod-cm6 .HyperMD-list-line-6 .list-bullet:after {
-  /* Hollow Square */
-  height: 4px;
-  width: 4px;
-  background-color: Transparent;
+  /* Hollow Square small */
+  height: 3px;
+  width: 3px;
+  background-color: transparent;
   border-color: var(--bullet-new-color);
   border-style: solid;
-  border-radius: 0%;
+  border-radius: 0;
   border-width: 1px;
 }
 
 .HyperMD-list-line-6 {
-  font-weight: lighter;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -905,15 +992,15 @@ ul > li::marker,
   > li
   > .list-bullet:after,
 .markdown-source-view.mod-cm6 .HyperMD-list-line-7 .list-bullet:after {
-  /* Small Bullet */
+  /* Micro dot */
   height: 2px;
   width: 2px;
-  border-radius: 50%;
+  border-radius: 0;
   background-color: var(--bullet-new-color);
 }
 
 .HyperMD-list-line-7 {
-  font-weight: lighter;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -929,7 +1016,7 @@ ul > li::marker,
 
   background: transparent;
 
-  font-weight: 500;
+  font-weight: 650;
 }
 
 /* fix */
@@ -995,6 +1082,44 @@ h6,
 
 .cm-s-obsidian .cm-line.HyperMD-header {
   padding: 0px;
+}
+
+/* Vertical left border on headings — document only */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.is-live-preview .HyperMD-header {
+  position: relative;
+  border-left: 3px solid var(--color-red) !important;
+  padding-left: 10px !important;
+}
+
+.markdown-preview-view .inline-title,
+.is-live-preview .inline-title {
+  position: relative;
+  border-left: 3px solid var(--color-red) !important;
+  padding-left: 10px !important;
+  border-radius: 5px;
+}
+
+/* Place collapse indicator to the left of the border */
+.markdown-preview-view
+  :is(h1, h2, h3, h4, h5, h6)
+  > .collapse-indicator.collapse-icon {
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.is-live-preview .HyperMD-header .cm-fold-indicator {
+  position: absolute;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* fix headings for tasks */
@@ -1073,8 +1198,12 @@ body {
   margin-top: 3px;
 }
 
-.markdown-source-view.is-live-preview.show-properties .metadata-container {
+.is-live-preview.show-properties .metadata-container {
   display: none;
+}
+
+.mod-header.mod-ui .metadata-container {
+  margin-bottom: 1.5rem;
 }
 
 /* metadatamenu */
@@ -1176,7 +1305,7 @@ body:has(.metadata-menu)
     padding: 8px;
     background-color: transparent !important;
     border: 1px solid var(--background-modifier-border);
-    border-radius: 8px;
+    border-radius: 2px;
     cursor: default;
     transition:
       background-color 0.1s ease,
@@ -1289,7 +1418,7 @@ body:has(.metadata-menu)
       background-color: var(--background-modifier-form-field-highlighted);
       border: 1px solid var(--background-modifier-border);
       border-radius: 99px;
-      font-weight: 500;
+      font-weight: var(--font-weight-normal);
       height: fit-content;
       padding: 2px 6px;
       line-height: 110%;
@@ -1376,7 +1505,7 @@ body:has(.metadata-menu)
       content: 'EDIT';
       font-size: var(--font-scale-000);
       color: var(--text-muted);
-      font-weight: 500;
+      font-weight: var(--font-weight-normal);
       margin-right: 4px;
     }
     &::after {
@@ -1394,7 +1523,7 @@ body:has(.metadata-menu)
       content: 'POSTPONE';
       font-size: var(--font-scale-000);
       color: var(--text-muted);
-      font-weight: 500;
+      font-weight: var(--font-weight-normal);
       margin-right: 4px;
     }
     &::after {
@@ -1421,6 +1550,19 @@ body:has(.metadata-menu)
 
 .dataview .task-list-item-checkbox {
   top: 2px;
+}
+
+/* square-in-square checkbox */
+.task-list-item-checkbox:not(:checked) {
+  background: transparent;
+  box-shadow: none;
+}
+
+.task-list-item-checkbox:checked {
+  background-color: #a0a0a0 !important;
+  background-image: none !important;
+  border-color: var(--checkbox-border-color) !important;
+  box-shadow: inset 0 0 0 2px var(--background-primary) !important;
 }
 
 /* BASES */
@@ -1466,6 +1608,12 @@ body:has(.metadata-menu)
 .view-content .bases-view {
   font-family: var(--font-interface-theme);
   font-size: 1rem;
+}
+
+.bases-table-header-name,
+.bases-group-property,
+.bases-group-value {
+  font-weight: var(--font-weight-normal);
 }
 
 /* less paddings on splits */
@@ -1561,7 +1709,7 @@ body .another-quick-switcher__status__count-input {
 .another-quick-switcher__item__title:not(
   .another-quick-switcher__item__title__header_hit
 ) {
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
 }
 .another-quick-switcher__item__description.another-quick-switcher__item__description {
   padding-left: 0;
@@ -1621,7 +1769,12 @@ body .another-quick-switcher__item__description {
   min-height: 96%;
 }
 .another-quick-switcher__custom__item__title {
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
+}
+
+.theme-dark .prompt .hybrid-search-score,
+.theme-dark .prompt .hybrid-search-mode-badge {
+  font-size: 0.75em;
 }
 
 .float-search-modal {
@@ -1668,9 +1821,11 @@ body .another-quick-switcher__status__count-input {
 }
 
 .another-quick-switcher__command-palette__item__key {
-  color: var(--hotkey-color);
-  background-color: var(--bg4);
-  border: var(--thin-border);
+  color: var(--inline-code-color);
+  background-color: #1a1a1a;
+  padding: 2px 4px;
+  border-radius: 2px;
+  border: none;
 }
 
 /* VARIOUS COMPLEMENTS */
@@ -1948,4 +2103,283 @@ mark {
 /* Properties of the virtual link when hovered */
 .virtual-link.glossary-entry a:hover {
   color: var(--link-color);
+}
+
+/* CALENDAR BASES */
+.bases-calendar-container .fc-scrollgrid {
+  border: 1px solid var(--background-modifier-border);
+}
+.bases-calendar-container .fc-event-main {
+  background: var(--interactive-normal);
+}
+.bases-calendar-container .bases-calendar-event-title {
+  color: var(--text-normal) !important;
+}
+
+/* BASES BOARD */
+.board-board-wrapper {
+  padding: 12px;
+  gap: 0;
+}
+/* Column headers — no fill, just bottom line */
+.board-column-header {
+  border-radius: 0;
+  border-bottom: 1px solid #484848;
+  background: transparent;
+  padding: 6px 8px;
+  font-size: 0.72em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.board-header-chip {
+  border-radius: 0;
+  padding: 0 4px;
+  background: transparent;
+}
+.board-header-color-circle {
+  display: none;
+}
+/* Row headers — tight, uppercase, bottom line */
+.board-row-header-bar {
+  padding: 6px 0;
+  border-bottom: 1px solid #484848;
+  margin-bottom: 10px;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.board-row-title {
+  font-size: 1em;
+}
+/* Cells — no background, no border */
+.board-cell {
+  border-radius: 0;
+  background: transparent;
+  padding: 4px 4px;
+}
+/* Cards — no fill, just bottom line (table row style) */
+.board-card {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #303030;
+  border-left: 2px solid transparent;
+  background: transparent;
+  padding: 5px 8px;
+  margin-bottom: 0;
+  box-shadow: none;
+}
+.board-card:hover {
+  background: #1e1e1e;
+  border-bottom-color: #484848;
+}
+/* Colored cards — left accent only */
+.board-card.has-plugin-color-border {
+  border-left-width: 2px;
+}
+/* Card ID badge */
+.card-id {
+  letter-spacing: 0.06em;
+}
+.card-id:hover {
+  opacity: 1;
+  color: #7cafc2;
+}
+/* Card title */
+.board-card .file-name,
+.board-column-headers {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.board-card .file-name {
+  padding-bottom: 4px;
+}
+.board-row-header-bar {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+/* New note button — invisible until hover on cell */
+.board-new-note-button {
+  border-radius: 0;
+  border: 1px dashed transparent;
+  background: transparent;
+  color: transparent;
+  font-size: 0.65em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  margin-top: 2px;
+  opacity: 0;
+  transition:
+    opacity 0.15s,
+    border-color 0.15s,
+    color 0.15s;
+}
+.board-cell:hover .board-new-note-button,
+.board-new-note-button:hover {
+  border-color: #383838;
+  color: #585858;
+  opacity: 1;
+}
+.board-new-note-button:hover {
+  border-color: #7cafc2;
+  color: #7cafc2;
+  background: transparent;
+}
+/* Drop indicators */
+.board-item-drop-target-top {
+  border-top: 2px solid #7cafc2 !important;
+}
+.board-item-drop-target-bottom {
+  border-bottom: 2px solid #7cafc2 !important;
+}
+/* Restore metadata padding inside board cards (overrides global --metadata-padding: 0) */
+.board-card {
+  --metadata-padding: 2px 0;
+}
+.board-card .multi-select-container {
+  padding: 0 4px !important;
+}
+.board-card .multi-select-input {
+  padding-left: 2px !important;
+}
+
+/* BASES CHARTS */
+/* Map --color-accent (used by plugin) to the theme's interactive accent */
+.theme-dark {
+  --bases-charts-accent: var(--interactive-accent);
+}
+
+/* ECharts tooltip outer container (inline styles need !important to override).
+   ECharts injects the tooltip as a div wrapping .bases-chart-tooltip content,
+   using its light-mode color palette (neutral05 bg, neutral30 border). */
+.theme-dark div:has(> .bases-chart-tooltip) {
+  background-color: #202020 !important;
+  border-color: #383838 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Tooltip inner container */
+.theme-dark .bases-chart-tooltip {
+  color: var(--text-normal);
+}
+
+/* Replace hardcoded #999 secondary text with theme muted color */
+.theme-dark .bases-chart-tooltip-value,
+.theme-dark .bases-chart-tooltip-file-value {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+/* Replace hardcoded rgba(128,128,128,0.2) divider */
+.theme-dark .bases-chart-tooltip-divider {
+  background: #383838;
+}
+
+/* Replace hardcoded rgba(128,128,128,0.15) hover */
+.theme-dark .bases-chart-tooltip-file:hover {
+  background: #282828;
+}
+/* META BIND */
+.mb-button-group {
+  --mb-border-radius: 0;
+  gap: 0;
+
+  & > .mb-button {
+    & > .mb-button-inner {
+      border-radius: 3px;
+      background: transparent;
+      border: 1px solid #383838;
+      box-shadow: none;
+      color: var(--text-normal);
+      font-size: var(--font-ui-small);
+      font-weight: var(--font-weight-normal);
+      transition:
+        background 0.1s ease,
+        border-color 0.1s ease,
+        color 0.1s ease;
+
+      &:hover,
+      &:focus {
+        background: transparent !important;
+        border-color: #484848 !important;
+        color: #f8f8f8 !important;
+        box-shadow: inset 2px 0 0 #7cafc2 !important;
+      }
+
+      &:active {
+        background: transparent !important;
+        border-color: #585858 !important;
+        color: #ffffff !important;
+        box-shadow: inset 2px 0 0 #86c1b9 !important;
+      }
+    }
+
+    /* collapse adjacent borders */
+    &:not(:first-child) > .mb-button-inner {
+      border-left: none;
+    }
+
+    /* single button — full border intact */
+    &:last-child:first-child > .mb-button-inner {
+      border-radius: 3px;
+      border: 1px solid #383838;
+    }
+  }
+}
+
+/* METADATA VALIDATOR */
+/* Action buttons */
+.mv-sidebar-actions {
+  gap: 0;
+}
+
+.mv-sidebar-actions .mv-sidebar-action-btn,
+.mv-vault-note-header .mv-vault-note-link {
+  border-radius: 3px;
+  background: transparent;
+  border: 1px solid #383838;
+  box-shadow: none;
+  padding-inline: 10px;
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  transition:
+    background 0.1s ease,
+    border-color 0.1s ease,
+    color 0.1s ease;
+}
+
+.mv-sidebar-actions .mv-sidebar-action-btn:hover,
+.mv-sidebar-actions .mv-sidebar-action-btn:focus-visible,
+.mv-vault-note-header .mv-vault-note-link:hover,
+.mv-vault-note-header .mv-vault-note-link:focus-visible {
+  background: transparent !important;
+  border-color: #484848 !important;
+  color: #f8f8f8 !important;
+  box-shadow: inset 2px 0 0 #7cafc2 !important;
+}
+
+.mv-sidebar-actions .mv-sidebar-action-btn:active,
+.mv-vault-note-header .mv-vault-note-link:active {
+  background: transparent !important;
+  border-color: #585858 !important;
+  color: #ffffff !important;
+  box-shadow: inset 2px 0 0 #86c1b9 !important;
+}
+
+.mv-sidebar-actions .mv-sidebar-action-btn:first-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.mv-sidebar-actions .mv-sidebar-action-btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.mv-sidebar-actions .mv-sidebar-action-btn:last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.mv-sidebar-actions .mv-sidebar-action-btn:not(:first-child) {
+  border-top: none;
 }

@@ -1176,40 +1176,6 @@ html[saved-theme="dark"] body hr {
   border-left-color: rgba(8, 109, 221, 0.25);
   border-right-color: rgba(8, 109, 221, 0.25);
   border-top-color: rgba(8, 109, 221, 0.25);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(26, 27, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(26, 27, 32);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(26, 27, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(26, 27, 32);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(26, 27, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(26, 27, 32);
-  border-bottom-color: rgb(221, 223, 238);
-  border-left-color: rgb(221, 223, 238);
-  border-right-color: rgb(221, 223, 238);
-  border-top-color: rgb(221, 223, 238);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(26, 27, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(26, 27, 32);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(26, 27, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(26, 27, 32);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(26, 27, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(26, 27, 32);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(177, 179, 194);
@@ -2450,40 +2416,6 @@ html[saved-theme="light"] body hr {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(219, 209, 198) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(219, 209, 198);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(219, 209, 198) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(219, 209, 198);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(219, 209, 198) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(219, 209, 198);
-  border-bottom-color: rgb(37, 36, 35);
-  border-left-color: rgb(37, 36, 35);
-  border-right-color: rgb(37, 36, 35);
-  border-top-color: rgb(37, 36, 35);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(219, 209, 198) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(219, 209, 198);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(219, 209, 198) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(219, 209, 198);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(219, 209, 198) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(219, 209, 198);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(84, 80, 77);

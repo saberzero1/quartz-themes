@@ -5,7 +5,7 @@ cssclasses:
 
 > This page is to quickly check how all features are rendered.
 
-- Theme author: <a href="https://github.com/danyim" target="_blank" rel="noopener noreferrer">@danyim</a>
+- Theme author: <a href="https://github.com/danyim/obsidian-zenburn" target="_blank" rel="noopener noreferrer">@danyim</a>
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/zenburn/README.md">Install instructions</a>
 

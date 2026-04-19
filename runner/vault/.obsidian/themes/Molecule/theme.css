@@ -1,0 +1,326 @@
+/*
+        :::   :::       ::::::::       :::        ::::::::::       ::::::::      :::    :::       :::        ::::::::::
+      :+:+: :+:+:     :+:    :+:      :+:        :+:             :+:    :+:     :+:    :+:       :+:        :+:
+    +:+ +:+:+ +:+    +:+    +:+      +:+        +:+             +:+            +:+    +:+       +:+        +:+
+   +#+  +:+  +#+    +#+    +:+      +#+        +#++:++#        +#+            +#+    +:+       +#+        +#++:++#
+  +#+       +#+    +#+    +#+      +#+        +#+             +#+            +#+    +#+       +#+        +#+
+ #+#       #+#    #+#    #+#      #+#        #+#             #+#    #+#     #+#    #+#       #+#        #+#
+###       ###     ########       ########## ##########       ########       ########        ########## ##########
+
+Version: 1.14
+Check for releases: https://github.com/manassadasivuni/obsidian-molecule
+
+Made by Manas Sadasivuni (https://links.manassadasivuni.com)
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root {
+    --default-font: 'JetBrains Mono' !important;
+}
+
+.theme-light{
+  --background-primary: #ffffff;
+  --background-primary-alt: #ffffff;
+  --background-secondary: #ffffff;
+  --background-secondary-alt: #eeeeee;
+  --background-accent: #5aa17b;
+  --background-modifier-success: #A4E7C3;
+  --text-accent: #5aa17b;
+  --text-accent-hover: #45795d;
+  --text-normal: #000000;
+  --text-muted: #444444;
+  --text-highlight-bg: #4FFFB0;
+  --text-selection: #B8D9F4;
+  --interactive-normal: #5aa17b;
+  --interactive-hover: #45795d;
+  --interactive-accent: #5aa17b;
+  --interactive-accent-rgb: 164, 231, 195;
+  --interactive-accent-hover: #45795d;
+
+  --green-accent: #4FFFB0;
+  --light-green-accent: #5CFFB6;
+  --purple-accent: #8269FF;
+  --red-accent: #FF5136;
+  --code-block-background: #eeeeee;
+}
+
+/* ========== */
+/* Element-wide styles */
+body {
+  -webkit-font-smoothing: auto;
+  --font-monospace: 'Space Mono', 'Source Code Pro', monospace;
+}
+
+mjx-container[jax='CHTML'] {
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+blockquote {
+  margin-inline-start: 0;
+}
+
+blockquote p { 
+  display: inline; 
+}
+
+img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+} 
+
+a, .cm-hmd-internal-link, .cm-url {
+color: var(--interactive-accent) !important;
+text-decoration: none !important;
+}
+
+a:hover, .cm-hmd-internal-link:hover, .cm-url:hover {
+color: var(--purple-accent) !important;
+text-decoration: none !important;
+}
+
+.math-block > mjx-container[jax="CHTML"] {
+  font-size: 125%;
+}
+
+.tag {
+  background-color: var(--text-highlight-bg);
+  color: var(--text-normal) !important;
+  padding: 2px 8px;
+  display: inline-block;
+  text-align: center;
+  margin: 0px 0px;
+}
+
+.tag:hover {
+  background-color: var(--purple-accent);
+  color: var(--background-primary-alt) !important;
+}
+
+p {
+  text-align: justify;
+}
+
+/* ========== */
+/* Graph colours*/
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight {
+    color: var(--light-green-accent);    
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--purple-accent) !important;
+  opacity: 0.6;
+}
+
+.graph-view.color-fill-tag {
+  color: var(--green-accent) !important;
+  opacity: 0.6;
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--red-accent);
+}
+
+.graph-view.color-text {
+    color: var(--text-normal);
+}
+
+.graph-view.color-line {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.graph-view.color-fill {
+    color: #111111;
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: 1px solid var(--text-muted);
+  border-radius: 2px;
+  position: relative;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0;
+  filter: none;
+  outline: none;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  vertical-align: baseline;
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked {
+  border: none;
+  background-color: var(--interactive-accent);
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked::before {
+  content: ' ';
+  position: absolute;
+  background-color: white;
+  left: 2px;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 14 14\'%3E%3Cpolygon points=\'5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039\'%3E%3C/polygon%3E%3C/svg%3E');
+}
+
+.markdown-preview-view.is-readable-line-width .markdown-preview-section,
+.markdown-source-view.is-readable-line-width .CodeMirror {
+  max-width: 900px !important;
+  line-height: 26px;
+}
+
+
+/* Code block background color */
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  background-color: var(--code-block-background);
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock,
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
+.markdown-preview-view code {
+  color: inherit;
+}
+
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-math,
+.cm-s-obsidian span.hmd-fold-math-placeholder {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.markdown-preview-view code {
+  vertical-align: text-top;
+  word-break: break-word;
+}
+
+.markdown-preview-section:not(:first-child) h1,
+.markdown-preview-section:not(:first-child) h2,
+.markdown-preview-section:not(:first-child) h3,
+.markdown-preview-section:not(:first-child) h4,
+.markdown-preview-section:not(:first-child) h5,
+.markdown-preview-section:not(:first-child) h6 {
+  margin-top: 40px !important;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b, .view-header-title {
+  font-weight: 600;
+}
+
+.nav-file.is-active {
+  --background-secondary-alt: var(--interactive-accent);
+  --text-normal: #ffffff;
+}
+
+.nav-file:not(.is-active):hover .nav-file-title,
+.nav-folder:hover .nav-folder-content {
+  background-color: transparent;
+}
+
+
+.theme-light .token.operator,
+.theme-light .token.entity,
+.theme-light .token.url,
+.theme-light .language-css .token.string,
+.theme-light .style .token.string {
+  background: transparent;
+}
+
+body:not(.is-grabbing) .nav-file:not(.is-active) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder:not(.is-active) .nav-folder-title:hover {
+  --text-normal: var(--text-muted);
+  --background-secondary-alt: var(--background-secondary);
+}
+
+.markdown-preview-view hr {
+  border: none;
+  height: 0;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to right, transparent, var(--red-accent), transparent);
+}
+
+.markdown-preview-view hr::after {
+  content: '«~»';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  padding: 0.5rem;
+  color: var(--text-muted);
+  background-color: var(--background-primary);
+}
+
+
+.markdown-preview-view blockquote {
+  background: var(--background-secondary-alt); 
+  border-radius: unset;
+  border: unset;
+  padding: 10px;
+  margin: unset;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--purple-accent) !important;
+}
+
+.markdown-preview-view blockquote p {
+  margin: 0 10px;
+}
+
+/*  Fix suggested item */
+.suggestion-item.is-selected .suggestion-note, .suggestion-item.is-selected{
+  color: var(--background-primary);
+  background: var(--interactive-accent);
+}
+
+.suggestion-item.is-selected .suggestion-hotkey{
+  color: var(--text-normal)
+}
+
+/* Change background overlay */
+.modal-bg {
+  background-color: var(--background-accent);
+  opacity: 0.75;
+}
+
+/* Increases link popup preview */
+.popover.hover-popover {
+  max-height: 1000px;    /* was 300 */
+  min-height: 100px;
+  width: 600px;     /* was 400 */
+}
+
+/* Fixes icons being same as highlight colour when selected */
+.suggestion-item.qsp-symbol-l0.is-selected .qsp-symbol-indicator, 
+.suggestion-item.qsp-symbol-l1.is-selected .qsp-symbol-indicator,
+.suggestion-item.qsp-symbol-l2.is-selected .qsp-symbol-indicator,
+.suggestion-item.qsp-symbol-l3.is-selected .qsp-symbol-indicator,
+.suggestion-item.qsp-symbol-l4.is-selected .qsp-symbol-indicator,
+.suggestion-item.qsp-symbol-l5.is-selected .qsp-symbol-indicator,
+.suggestion-item.qsp-symbol-l6.is-selected .qsp-symbol-indicator {
+  color: var(--background-primary-alt)
+}
+
+/* Fixes find and replace button colours */
+.document-search-button {
+  background-color: var(--interactive-normal);
+  color: var(--background-primary-alt);
+}
+
+/* center tables */
+.markdown-preview-view table {
+  margin-right: auto;
+  margin-left: auto;
+}

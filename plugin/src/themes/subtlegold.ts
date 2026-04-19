@@ -1812,40 +1812,6 @@ html[saved-theme="dark"] body h6 {
   border-left-color: rgba(68, 138, 255, 0.25);
   border-right-color: rgba(68, 138, 255, 0.25);
   border-top-color: rgba(68, 138, 255, 0.25);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(32, 32, 32);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(32, 32, 32);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(32, 32, 32);
-  border-bottom-color: rgb(220, 221, 222);
-  border-left-color: rgb(220, 221, 222);
-  border-right-color: rgb(220, 221, 222);
-  border-top-color: rgb(220, 221, 222);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(32, 32, 32);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(32, 32, 32);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(32, 32, 32);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(136, 136, 136);
@@ -3764,40 +3730,6 @@ html[saved-theme="light"] body h6 {
   border-left-color: rgba(68, 138, 255, 0.25);
   border-right-color: rgba(68, 138, 255, 0.25);
   border-top-color: rgba(68, 138, 255, 0.25);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 250, 250);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 250, 250);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 250, 250);
-  border-bottom-color: rgb(44, 44, 44);
-  border-left-color: rgb(44, 44, 44);
-  border-right-color: rgb(44, 44, 44);
-  border-top-color: rgb(44, 44, 44);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 250, 250);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 250, 250);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 250, 250);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;

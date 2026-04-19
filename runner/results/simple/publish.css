@@ -1266,6 +1266,16 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     0 0 transparent !important;
+  --h2-margin-bottom: 0.6rem !important;
+  --h2-margin-top: 3rem !important;
+  --h3-margin-bottom: 0.6rem !important;
+  --h3-margin-top: 3rem !important;
+  --h4-margin-bottom: 0.6rem !important;
+  --h4-margin-top: 3rem !important;
+  --h5-margin-bottom: 0.6rem !important;
+  --h5-margin-top: 3rem !important;
+  --h6-margin-bottom: 0.6rem !important;
+  --h6-margin-top: 3rem !important;
   --color-base-23: #eee !important;
   --font-family-iawriter-quattro: "iaWriterQuattro", mono !important;
   --font-family-ibm:
@@ -1284,16 +1294,6 @@ body.theme-light {
   --size-h6: 0.87rem !important;
   --default-border-radius: 3px !important;
   --font-family-serif: Times, Georgia, "Times New Roman", serif !important;
-  --h2-margin-bottom: 0.6rem !important;
-  --h2-margin-top: 3rem !important;
-  --h3-margin-bottom: 0.6rem !important;
-  --h3-margin-top: 3rem !important;
-  --h4-margin-bottom: 0.6rem !important;
-  --h4-margin-top: 3rem !important;
-  --h5-margin-bottom: 0.6rem !important;
-  --h5-margin-top: 3rem !important;
-  --h6-margin-bottom: 0.6rem !important;
-  --h6-margin-top: 3rem !important;
   --order-content: 3 !important;
   --order-embedded-backlinks: 4 !important;
   --order-inline-title: 2 !important;
@@ -2164,6 +2164,16 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
+  --h2-margin-bottom: 0.6rem !important;
+  --h2-margin-top: 3rem !important;
+  --h3-margin-bottom: 0.6rem !important;
+  --h3-margin-top: 3rem !important;
+  --h4-margin-bottom: 0.6rem !important;
+  --h4-margin-top: 3rem !important;
+  --h5-margin-bottom: 0.6rem !important;
+  --h5-margin-top: 3rem !important;
+  --h6-margin-bottom: 0.6rem !important;
+  --h6-margin-top: 3rem !important;
   --color-base-23: #323232 !important;
   --font-family-iawriter-quattro: "iaWriterQuattro", mono !important;
   --font-family-ibm:
@@ -2182,16 +2192,6 @@ body.theme-dark {
   --size-h6: 0.87rem !important;
   --default-border-radius: 3px !important;
   --font-family-serif: Times, Georgia, "Times New Roman", serif !important;
-  --h2-margin-bottom: 0.6rem !important;
-  --h2-margin-top: 3rem !important;
-  --h3-margin-bottom: 0.6rem !important;
-  --h3-margin-top: 3rem !important;
-  --h4-margin-bottom: 0.6rem !important;
-  --h4-margin-top: 3rem !important;
-  --h5-margin-bottom: 0.6rem !important;
-  --h5-margin-top: 3rem !important;
-  --h6-margin-bottom: 0.6rem !important;
-  --h6-margin-top: 3rem !important;
   --order-content: 3 !important;
   --order-embedded-backlinks: 4 !important;
   --order-inline-title: 2 !important;
@@ -2836,9 +2836,10 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2850,6 +2851,28 @@ body body.theme-light body.styled-scrollbars {
   border-end-end-radius: 0px;
   border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -4425,9 +4448,10 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(30, 30, 30) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
   background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -4439,6 +4463,28 @@ body body.theme-dark body.styled-scrollbars {
   border-end-end-radius: 0px;
   border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

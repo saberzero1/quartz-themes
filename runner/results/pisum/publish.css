@@ -1271,10 +1271,11 @@ body.theme-dark {
   --text-title-h5: #458588 !important;
   --text-title-h6: #b16286 !important;
   --vim-cursor: #d65d0e !important;
+  --border-color: #504945 !important;
+  --font-size-normal: 15px !important;
   --font-family-editor: Avenir, Avenir Next, sans-serif !important;
   --blockquote-border: #b57614 !important;
   --font-family-preview: Avenir, Avenir Next, sans-serif !important;
-  --border-color: #504945 !important;
   --font-size-code: 13.5px !important;
   --font-size-h1: 23px !important;
   --font-size-h2: 22px !important;
@@ -1282,7 +1283,6 @@ body.theme-dark {
   --font-size-h4: 20px !important;
   --font-size-h5: 19px !important;
   --font-size-h6: 18px !important;
-  --font-size-normal: 15px !important;
   --font-size-side-dock: 13.5px !important;
   --font-size-side-dock-title: 15px !important;
   --font-size-status-bar: 12px !important;
@@ -1941,10 +1941,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(54, 69, 73) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(54, 69, 73);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1953,8 +1954,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(251, 241, 199);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

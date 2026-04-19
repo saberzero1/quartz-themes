@@ -1403,6 +1403,7 @@ body.theme-light {
     transparent 75%
   ) !important;
   --radius-xs: 6px !important;
+  --math-color: oklch(24% 0.0005 281) !important;
   --tab-font-weight: 420 !important;
   --strikethrough-color: oklch(71.5% 0.0105 281) !important;
   --settings-background: color-mix(
@@ -1416,7 +1417,6 @@ body.theme-light {
   --metadata-label-font-weight: 490 !important;
   --corner-smoothing: 60% !important;
   --nav-folder-color: oklch(40% 0.0025 281) !important;
-  --math-color: oklch(24% 0.0005 281) !important;
   --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-fast-swing: 150ms cubic-bezier(0, 0.55, 0.45, 1) !important;
@@ -2644,6 +2644,7 @@ body.theme-dark {
     transparent 75%
   ) !important;
   --radius-xs: 6px !important;
+  --math-color: oklch(93.25% 0 0) !important;
   --tab-font-weight: 420 !important;
   --strikethrough-color: oklch(52.5% 0 0) !important;
   --settings-background: color-mix(
@@ -2657,7 +2658,6 @@ body.theme-dark {
   --metadata-label-font-weight: 490 !important;
   --corner-smoothing: 60% !important;
   --nav-folder-color: oklch(77.5% 0 0) !important;
-  --math-color: oklch(93.25% 0 0) !important;
   --anim-fast-delay: 150ms cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-fast-smooth: 150ms cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-fast-swing: 150ms cubic-bezier(0, 0.55, 0.45, 1) !important;
@@ -4061,14 +4061,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: oklch(99% 0.0005 281deg)
-    radial-gradient(
-      oklch(97.5% 0.00125 281deg) 20%,
-      oklch(94.5% 0.00625 281deg) 100%
-    )
-    repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(99% 0.0005 281deg);
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4077,8 +4074,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px oklch(30% 0.0005 281deg);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -6503,11 +6522,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: oklch(23.5% 0 0deg)
-    radial-gradient(rgb(38, 38, 38) 0%, rgb(38, 38, 38) 200%) repeat scroll 0%
-    0% / auto padding-box border-box;
-  background-color: oklch(23.5% 0 0deg);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6516,8 +6535,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px oklch(85% 0 0deg);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

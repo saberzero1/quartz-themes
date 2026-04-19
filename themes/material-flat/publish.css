@@ -1303,13 +1303,14 @@ body.theme-light {
   --surface-variant: hsl(258, 66%, 93%) !important;
   --tertiary: #7c5264 !important;
   --tertiary-container: hsl(258, 52.8%, 66%) !important;
+  --medium: 500 !important;
   --h1: 2.25em !important;
   --h2: 20pt !important;
   --h3: 16pt !important;
   --h4: 15pt !important;
   --h5: 14pt !important;
   --h6: 12pt !important;
-  --medium: 500 !important;
+  --light: 350 !important;
   --tooltip-color: white !important;
   --big-radius: 24px !important;
   --bold: 650 !important;
@@ -1323,7 +1324,6 @@ body.theme-light {
   --hover: rgb(242.2, 236.92, 249.72) !important;
   --inverse-on-surface: #eee !important;
   --inverse-surface: #111 !important;
-  --light: 350 !important;
   --medium-radius: 16px !important;
   --on-accent: hsl(258, 26.4%, 20%) !important;
   --onError: #ffffff !important;
@@ -2281,13 +2281,14 @@ body.theme-dark {
   --surface-variant: hsl(258, 7.04%, 28%) !important;
   --tertiary: #edb8cd !important;
   --tertiary-container: hsl(258, 44%, 18%) !important;
+  --medium: 500 !important;
   --h1: 2.25em !important;
   --h2: 20pt !important;
   --h3: 16pt !important;
   --h4: 15pt !important;
   --h5: 14pt !important;
   --h6: 12pt !important;
-  --medium: 500 !important;
+  --light: 350 !important;
   --tooltip-color: hsl(258, 7.04%, 28%) !important;
   --big-radius: 24px !important;
   --bold: 650 !important;
@@ -2301,7 +2302,6 @@ body.theme-dark {
   --hover: rgb(41.92, 40.04, 48) !important;
   --inverse-on-surface: #1c1b1e !important;
   --inverse-surface: #e5e1e5 !important;
-  --light: 350 !important;
   --medium-radius: 16px !important;
   --on-accent: hsl(258, 5.28%, 11.5%) !important;
   --onError: #680003 !important;
@@ -3488,10 +3488,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: rgb(232, 225, 249) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(232, 225, 249);
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3500,8 +3501,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(17, 17, 17);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -5911,10 +5934,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(0, 0, 0);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5923,8 +5947,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(229, 225, 229);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

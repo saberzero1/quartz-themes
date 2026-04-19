@@ -420,36 +420,6 @@ html body .callout[data-callout="warning"] {
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 18px;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgb(32, 32, 40), rgb(27, 32, 32)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgb(32, 32, 40), rgb(27, 32, 32)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgb(32, 32, 40), rgb(27, 32, 32)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgb(32, 32, 40), rgb(27, 32, 32)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgb(32, 32, 40), rgb(27, 32, 32)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgb(32, 32, 40), rgb(27, 32, 32)) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
 }`,
     footer: `html body footer {
   background-color: rgba(0, 0, 0, 0);

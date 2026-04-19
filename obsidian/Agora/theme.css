@@ -1,0 +1,621 @@
+
+/**************
+_______________
+
+Custom obsidian.css for Agora TTRPG
+ by Seraaron Art (MIT license 2021)
+_______________
+
+**************/
+
+/* GOOGLE FONT IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,600;0,800;1,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,500;0,800;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Open-Font License https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL */
+
+
+:root{
+  /* primary color palette */
+  --col-white:         #ffffff;
+  --col-crystal:       #c5e6e5;
+  --col-off-white:     #f1f0ee;
+  --col-lightest-gray: #ececec;
+  --col-lighter-gray:  #bfbfbf;
+  --col-light-gray:    #898989;
+  --col-dark-gray:     #505050;
+  --col-darker-gray:   #373737;
+  --col-darkest-gray:  #282828;
+  --col-off-black:     #16171e;
+  --col-black:         #000000;
+  --col-umber:         #321b1b;
+  --col-crimson:       #9f363c;
+  --col-red:           #d9363f;
+  --col-bright-red:    #eb182b;
+  --col-salmon:        #e27d83;
+  --col-pale-red:      #e39fa3;
+  --col-pale-orange:   #e9cba9;
+  --col-bright-orange: #ff6900;
+  --col-vermillion:    #ff4a00;
+  --col-orange:        #ff8700;
+  --col-brown:         #6b5137;
+  --col-beige:         #e1d7d4;
+/* secondary color pallete */
+  --col-magenta:       #ca4abf;
+  --col-desat-magenta: #b688b2;
+  --col-purple:        #823cbd;
+  --col-desat-purple:  #806597;
+  --col-lilac:         #5348c1;
+  --col-desat-lilac:   #8c88b6;
+  --col-blue:          #2b76cf;
+  --col-deep-blue:     #2968a6;
+  --col-desat-blue:    #7699c2;
+  --col-cyan:          #28c6d3;
+  --col-desat-cyan:    #8dc3c7;
+
+
+  /*font family library*/
+  --font-sans:            'Lato', sans-serif;
+  --font-serif:           'Petrona', serif;
+  --font-serif-alt:       'Crimson Pro', serif;
+  --font-serif-black:     'Vollkorn', serif;
+  --font-smallcaps:       'Vollkorn SC', serif;
+  --font-cursive:         'Overlock', cursive;
+  --font-monospace:       'Courier Prime', monospace;
+
+
+  /* text size library */
+  --font-size-dropcap: 2.4em;
+  --font-size-huge:    2.1em;
+  --font-size-larger:  1.9em;
+  --font-size-large:   1.6em;
+  --font-size-bigger:  1.5em;
+  --font-size-big:     1.2em;
+  --font-size-plus:    1.1em;
+  --font-size-normal:  1.0em;
+  --font-size-small:   0.9em;
+  --font-size-smaller: 0.8em;
+  --font-size-tiny:    0.7em;
+
+
+  /* margins library */
+  --margin-header-top: 0.8em;
+  --margin-header-bot: 0.4em;
+  --padding-bq-bottom: 2.0em;
+}
+
+.theme-light {
+  /* obsidian editor colors */
+  --background-primary: var(--col-white);
+  --background-primary-alt: var(--col-off-white);
+  --background-secondary: var(--col-off-white);
+  --background-secondary-alt: var(--col-lighter-gray);
+  --background-accent: var(--col-crystal);
+  --background-modifier-border: var(--col-lighter-gray);
+  --background-modifier-form-field: var(--col-off-white);
+  --background-modifier-form-field-highlighted: var(--col-white);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: var(--col-cyan);
+  --background-modifier-error: var(--col-desat-magenta);
+  --background-modifier-error-rgb: var(--col-dark-gray);
+  --background-modifier-error-hover: var(--col-magenta);
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: var(--col-crimson);
+  --text-accent-hover: var(--col-red);
+  --text-normal: var(--col-off-black);
+  --text-muted: var(--col-dark-gray);
+  --text-faint: var(--col-light-gray);
+  --accent-strong: var(--col-black);
+  --text-error: var(--col-desat-purple);
+  --text-error-hover: var(--col-purple);
+  --text-highlight-bg: var(--col-desat-cyan);
+  --mark-highlight: var(--col-desat-blue);
+  --text-selection: var(--col-crystal);
+  --text-on-accent: var(--col-off-white);
+  --interactive-normal: var(--col-light-gray);
+  --interactive-hover: var(--col-lighter-gray);
+  --interactive-accent: var(--col-red);
+  --interactive-accent-rgb: var(--col-dark-gray);
+  --interactive-accent-hover: var(--col-bright-red);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --panel-border-color: var(--col-off-white);
+  --search-text: var(--col-umber);
+  --folder-title: var(--col-black);
+  --background-search-result: var(--col-white);
+
+  /* call colors */
+  --title-color: var(--col-off-black);
+  --subtitle-color: var(--col-dark-gray);
+  --border-color: var(--col-brown);
+  --blockquote-bg-color: var(--col-off-white);
+  --blockquote-bg-image: url('https://cdn3.struffelproductions.com/file/ambientCG/media/tiled/Paper001_LQ.jpg');
+
+  --thead-ul-color: var(--col-darkest-gray);
+  --thead-bg-color: var(--col-dark-gray);
+  --thead-font-color: var(--col-off-white);
+  --th-hover-color: var(--col-darkest-gray);
+  --td-hover-color: rgba(190, 190, 190, 0.5);
+  --tr-even-color: var(--col-lightest-gray);
+
+  --embed-bg-color: var(--col-lightest-gray);
+
+  --tag-color: var(--col-umber);
+  --tag-hover-color: var(--col-crimson);
+  --tagpill-bg-color: var(--col-lighter-gray);
+  --tagpill-bg-hover-color: var(--col-lightest-gray);
+
+  --code-editor-color: var(--col-blue);
+  --codeblock-bg-color: rgba(200, 200, 200, 0.5);
+
+  --embed-bg-color: rgba(255, 255, 255, 0.5);
+
+  --h1-internal-color: var(--col-red);
+  --h2-internal-color: var(--col-magenta);
+  --h3-internal-color: var(--col-purple);
+  --h4-internal-color: var(--col-lilac);
+  --h5-internal-color: var(--col-blue);
+  --h6-internal-color: var(--col-cyan);
+}
+
+.theme-dark {
+  /* obsidian editor colors */
+  --text-accent: var(--col-red);
+  --text-accent-hover: var(--col-pale-red);
+  --text-highlight-bg: var(--col-blue);
+  --mark-highlight: var(--col-desat-blue);
+  --text-selection: var(--col-desat-blue);
+  --text-on-accent: var(--col-off-white);
+  --interactive-normal: var(--col-light-gray);
+  --interactive-hover: var(--col-lighter-gray);
+  --interactive-accent: var(--col-crimson);
+  --interactive-accent-hover: var(--col-red);
+  --panel-border-color: var(--col-off-black);
+  --folder-title: var(--col-white);
+  /* mostly uses default obisidan bg colors */
+
+  /* call colors */
+  --title-color: var(--col-off-white);
+  --subtitle-color: var(--col-light-gray);
+  --border-color: var(--col-crystal);
+  --blockquote-bg-color: var(--col-off-black);
+  --blockquote-bg-image: none;
+
+  --thead-ul-color: var(--col-lightest-gray);
+  --thead-bg-color: var(--col-light-gray);
+  --thead-font-color: var(--col-off-black);
+  --th-hover-color: var(--col-lightest-gray);
+  --td-hover-color: rgba(55, 55, 55, 0.5);
+  --tr-even-color: var(--col-darkest-gray);
+
+  --embed-bg-color: var(--col-darkest-gray);
+
+  --tag-color: var(--col-off-white);
+  --tag-hover-color: var(--col-salmon);
+  --tagpill-bg-color: var(--col-black);
+  --tagpill-bg-hover-color: var(--col-umber);
+
+  --code-editor-color: var(--col-desat-cyan);
+  --codeblock-bg-color: rgba(60, 60, 60, 0.5);
+
+  --embed-bg-color: rgba(0, 0, 0, 0.5);
+
+  --h1-internal-color: var(--col-salmon);
+  --h2-internal-color: var(--col-desat-magenta);
+  --h3-internal-color: var(--col-desat-purple);
+  --h4-internal-color: var(--col-desat-lilac);
+  --h5-internal-color: var(--col-desat-blue);
+  --h6-internal-color: var(--col-desat-cyan);
+}
+
+
+/* draggable panes handle color */
+.workspace-leaf-resize-handle:hover {
+  background-color: var(--col-salmon);
+}
+
+
+/* main text */
+html, body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-normal);
+  text-align: justify;
+}
+
+
+/* tables */
+table {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-small);
+  text-align: initial;
+  width: 100%;
+}
+thead {
+  font-family: var(--font-serif-alt);
+  font-size: var(--font-size-plus);
+  color: var(--thead-font-color);
+}
+.markdown-preview-view td,
+.reveal table td {
+    border: none;
+}
+.markdown-preview-view th,
+.reveal table th {
+    background-color: var(--thead-bg-color);
+    border: none;
+    border-bottom: 0.2em solid var(--thead-ul-color) !important;
+}
+th:hover {
+  background-color: var(--th-hover-color) !important;
+}
+.markdown-preview-view td:nth-child(odd),
+.reveal table td:nth-child(odd) {
+    background-color: var(--col-bg-color);
+    border: 0;
+}
+.markdown-preview-view tr:nth-child(even),
+.reveal table tr:nth-child(even) {
+    background-color: var(--tr-even-color);
+    border: 0;
+}
+.markdown-preview-view tr:nth-child(odd),
+.reveal table tr:nth-child(odd) {
+    background-color: var(--background-primary);
+    border: 0;
+}
+td:hover {
+  background-color: var(--td-hover-color) !important;
+}
+
+
+/* links */
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: var(--col-salmon);
+}
+.cm-hmd-internal-link, .cm-url {
+  /* removes underline in editor */
+  text-decoration: none;
+}
+.is-unresolved {
+  color: var(--col-vermillion);
+}
+.is-unresolved:hover {
+  color: var(--col-bright-red);
+}
+
+
+/* horizontal rule */
+hr {
+  border-color: var(--border-color) !important;
+  width: 98%;
+}
+
+
+/* code segments */
+.cm-s-obsidian .HyperMD-codeblock, .cm-s-obsidian span.cm-inline-code, .markdown-preview-view code {
+  color: var(--code-editor-color);
+  background-color: var(--codeblock-bg-color) !important;
+  padding-top: 0.1em;
+  display: inline-block;
+}
+
+
+/*  headers */
+.cm-header-2, .markdown-preview-section h2, h2,
+.cm-header-3, .markdown-preview-section h3, h3,
+.cm-header-4, .markdown-preview-section h4, h4,
+.cm-header-5, .markdown-preview-section h5, h5 {
+  padding-top: var(--margin-header-top);
+  font-family: var(--font-serif);
+}
+.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6 {
+  font-family: var(--font-serif);
+}
+.cm-header-1 {
+  color: var(--h1-internal-color);
+  font-variant: small-caps;
+}
+.cm-header-2 {
+  color: var(--h2-internal-color);
+}
+.cm-header-3 {
+  color: var(--h3-internal-color);
+}
+.cm-header-4 {
+  color: var(--h4-internal-color);
+}
+.cm-header-5 {
+  color: var(--h5-internal-color);
+}
+.cm-header-6 {
+  color: var(--h6-internal-color);
+  font-variant: small-caps;
+}
+.markdown-preview-section h1, h1 {
+  font-family: var(--font-smallcaps);
+  font-size: var(--font-size-huge);
+  color: var(--title-color);
+  text-align: center;
+}
+.markdown-preview-section h2, h2 {
+  font-size: var(--font-size-larger);
+  color: var(--title-color);
+  text-align: left;
+}
+.markdown-preview-section h3, h3 {
+  font-family: var(--font-smallcaps);
+  font-size: var(--font-size-large);
+  color: var(--title-color);
+  text-align: left;
+  text-indent: 0.5em;
+}
+.markdown-preview-section h4, h4 {
+  font-size: var(--font-size-bigger);
+  color: var(--title-color);
+  text-align: left;
+  text-indent: 1em;
+}
+.markdown-preview-section h5, h5 {
+  font-family: var(--font-smallcaps);
+  font-size: var(--font-size-big);
+  color: var(--title-color);
+  text-align: left;
+  text-indent: 1.5em;
+}
+.markdown-preview-section h6, h6 {
+  font-family: var(--font-smallcaps);
+  font-size: var(--font-size-plus);
+  color: var(--subtitle-color);
+  text-align: center;
+}
+
+
+/* ========================================================================== */
+/* CSS SNIPPETS */
+/* ========================================================================== */
+
+/* SNIPPET: bullets custom colors by @alltagsverstand */
+ul li::marker, ol li::marker {
+  color: var(--col-crimson);
+  font-size: var(--font-size-plus);
+}
+ul ul li::marker, ol ul li::marker, ol ol li::marker {
+  color: var(--col-red);
+}
+ul li, ol li {
+  text-align: left !important;
+  width: 95%;
+  margin-bottom: 0.5em;
+}
+
+/* __________________________________________________________________________ */
+/* SNIPPET: vertical bars between bullets by @lizardmenfromspace */
+.cm-hmd-list-indent .cm-tab, ul ul {
+  position: relative;
+}
+.cm-hmd-list-indent .cm-tab::before, ul ul::before {
+  content:'';
+  border-left: 1px dashed var(--col-crystal);
+  position: absolute;
+}
+.cm-hmd-list-indent .cm-tab::before {
+  left: 0;
+  top: -0.1em;
+  bottom: -0.1em;
+}
+ul ul::before {
+  left: -0.5em;
+  top: 0;
+  bottom: 0;
+}
+
+/* __________________________________________________________________________ */
+/* SNIPPET: tag pills by @_ph */
+.tag {
+  color: var(--tag-color);
+  font-family: var(--font-cursive);
+  font-size: var(--font-size-smaller);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0em 0.5em 0em 0.5em;
+  border-radius: 1em;
+  text-align: center;
+  display: inline-block;
+  margin-left: 0.1em;
+  margin-right: 0.2em;
+  background-color: var(--tagpill-bg-color);
+  border: 1px solid var(--tagpill-bg-color);
+  /* border-left-width: 0.2em; */
+}
+.tag:hover {
+  color: var(--tag-hover-color);
+  border: 1px solid var(--border-color);
+  /* border-left-width: 0.2em; */
+}
+
+/* __________________________________________________________________________ */
+/* SNIPPET: Enlarge image on click by @den */
+.markdown-preview-view img {
+  display: block;
+  margin-top: var(--margin-header-top);
+  margin-bottom: var(--margin-header-bot);
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;  /* experiment with values */
+  transition:transform 0.6s ease;
+}
+
+.markdown-preview-view img:active {
+  -webkit-transform:scale(1.1); /* experiment with values */
+  transform:scale(1.75);
+}
+
+/* __________________________________________________________________________ */
+/* SNIPPET: Round checkboxes by @rsdimitrov */
+input[type=checkbox] {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 1em;
+  border: 1px solid var(--col-lighter-gray);
+  border-left-width: 0.2em;
+  padding: 0.4em 0.4em 0.4em 0.4em;
+}
+
+input[type=checkbox]:focus{
+  outline:0;
+}
+
+input[type=checkbox]:checked {
+  background-color: #ff003e;
+  border: 0.1em solid #ff003e;
+  /* for some reason the color hue gets shifted slightly,
+  so we have to use a bespoke color here to accomodate. */
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(
+    'data:image/svg+xml; utf8, <svg width="1em" height="1em" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>'
+    );
+  /* this is an svg drawing of a check mark using xml */
+}
+
+/* __________________________________________________________________________ */
+/* SNIPPET: naked embeds by @MoodooM */
+.markdown-embed-title {
+  display: none;
+}
+.markdown-preview-view .markdown-embed {
+  border:none;
+}
+.markdown-preview-view .markdown-embed-content {
+  background-color: var(--embed-bg-color);
+  border-radius: 0.8em 0.3em 0.3em 0.8em;
+}
+.markdown-preview-view:hover .markdown-embed-content:hover {
+  background-color: var(--td-hover-color);
+}
+/* the link on the top right corner*/
+.markdown-embed-link {
+  color: var(--text-faint) !important;
+}
+.markdown-embed-link:hover {
+  color: var(--text-accent) !important;
+}
+
+/* __________________________________________________________________________ */
+/* SNIPPET: tag-styled blockquotes by @ShandeN */
+/* Defines the styling of the box */
+.markdown-preview-view blockquote, blockquote {
+  border: 1px solid var(--border-color);
+  font-family: var(--font-serif) !important;
+  /* font-size: var(--font-size-plus); */
+  text-align: left;
+  border-left-width: 0.2em;
+  border-radius: 0.8em 0.3em 0.3em 0.8em;
+  line-height: 1.6em;
+  font-weight: 500;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+  padding-bottom: var(--padding-bq-bottom);
+  background-color: var(--blockquote-bg-color);
+  background-image: var(--blockquote-bg-image);
+  /* CC0 paper texture */
+  background-size: auto;
+  background-repeat: repeat;
+}
+/* Hides the text of the #tags  */
+.tag[href="#important"], .tag[href="#question"], .tag[href="#asterisk"], .tag[href="#quote"] {
+  position: relative;
+  background-color: transparent !important;
+  color: transparent !important;
+  border: none !important;
+  pointer-events: none;
+}
+/* Defines the styling of the text and tag content */
+/* important bullet */
+.tag[href="#important"]:after {
+  font-family: var(--font-smallcaps) !important;
+  font-size: var(--font-size-bigger) !important;
+  color: var(--col-crimson);
+  font-weight: 900;
+  content: "!";
+  display: inline;
+  position: absolute;
+  left: 2em;
+  line-height: 1em;
+}
+/* question bullet */
+.tag[href="#question"]:after {
+  font-family: var(--font-smallcaps) !important;
+  font-size: var(--font-size-bigger) !important;
+  color: var(--col-crimson);
+  font-weight: 900;
+  content: "?";
+  display: inline;
+  position: absolute;
+  left: 1.95em;
+  line-height: 1em;
+}
+/* asterisk bullet */
+.tag[href="#asterisk"]:after {
+  font-family: var(--font-smallcaps) !important;
+  font-size: var(--font-size-big) !important;
+  color: var(--col-crimson);
+  font-weight: 700;
+  content: "∗";
+  display: inline;
+  position: absolute;
+  left: 2.3em;
+  line-height: 1em;
+}
+/* quote */
+.tag[href="#quote"]:after {
+  font-family: var(--font-smallcaps) !important;
+  font-size: var(--font-size-dropcap) !important;
+  color: var(--title-color);
+  font-weight: 700;
+  content: "“";
+  display: inline;
+  position: absolute;
+  right: 1.2em;
+  top: 0.3em;
+  line-height: 1em;
+}
+
+/* __________________________________________________________________________ */
+
+/*SNIPPET: change dropdown arrow from the Yin & Yang theme by @chetachiezikeuzor */
+/* MPL 2.0 */
+/* https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme/blob/main/LICENSE */
+.dropdown {
+  font-size: 0.875em;
+  color: var(--text-normal);
+  line-height: 1.4;
+  padding: 0.6em 1.9em 0.6em 0.8em;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 5px;
+  -moz-appearance: rotate(90deg);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20' viewBox='0 0 20 20' focusable='false' stroke-width='px' fill='%23B9BBBE' class='dropdown-svg'%3E%3Cpath d='M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z'%3E%3C/path%3E%3C/svg%3E") !important;
+  background-color: var(--background-modifier-form-field);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.6em top 50%, 0 0;
+  background-size: 1em auto, 100%;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 3px rgba(255, 255, 255, 0.15);
+  transition: 100ms;
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  background-color: var(--background-modifier-form-field-hover);
+}

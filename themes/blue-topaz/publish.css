@@ -8561,6 +8561,8 @@ body.theme-light {
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
+  --folder-title: #000000 !important;
+  --panel-border-color: #dbdbdc !important;
   --green: #a3be8c !important;
   --orange: #db9600 !important;
   --purple: #c74df7 !important;
@@ -8572,8 +8574,8 @@ body.theme-light {
   --green-1: #3dc730 !important;
   --red-1: #f16464f5 !important;
   --aqua: #88c0d0 !important;
-  --panel-border-color: #dbdbdc !important;
   --font-size-code: 0.825em !important;
+  --text-search-highlight-bg: #ffd1dd !important;
   --background-code: #e6e6e671 !important;
   --code-atom: #cc7523 !important;
   --code-attribute: #bf616a !important;
@@ -8765,7 +8767,6 @@ body.theme-light {
   --FoldC: #f7b731 !important;
   --FoldD: #20bf6b !important;
   --FoldE: #0fb9b1 !important;
-  --folder-title: #000000 !important;
   --FoldF: #2d98da !important;
   --FoldG: #3867d6 !important;
   --FoldH: #8854d0 !important;
@@ -9106,7 +9107,6 @@ body.theme-light {
   --text-pink: #c40075 !important;
   --text-purple: #5d1fb9 !important;
   --text-red: #ff4343 !important;
-  --text-search-highlight-bg: #ffd1dd !important;
   --text-yellow: #d4a300 !important;
   --text-yellow-2: #a78000 !important;
   --theme-color: hsl(206, 77.77%, 58.05%) !important;
@@ -10072,6 +10072,8 @@ body.theme-dark {
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
+  --folder-title: #ffffff !important;
+  --panel-border-color: #18191e !important;
   --green: #abd58e !important;
   --orange: #d1945b !important;
   --purple: #c594d4 !important;
@@ -10084,8 +10086,8 @@ body.theme-dark {
   --green-1: #79c142 !important;
   --red-1: #d05a63 !important;
   --aqua: #35bed0 !important;
-  --panel-border-color: #18191e !important;
   --font-size-code: 0.825em !important;
+  --text-search-highlight-bg: #bb4361 !important;
   --background-code: #1111118c !important;
   --code-atom: #da904b !important;
   --code-attribute: #cac685 !important;
@@ -10277,7 +10279,6 @@ body.theme-dark {
   --FoldC: #f7b731 !important;
   --FoldD: #20bf6b !important;
   --FoldE: #0fb9b1 !important;
-  --folder-title: #ffffff !important;
   --FoldF: #2d98da !important;
   --FoldG: #3867d6 !important;
   --FoldH: #8854d0 !important;
@@ -10625,7 +10626,6 @@ body.theme-dark {
   --text-pink: #ff6bba !important;
   --text-purple: #b386f1 !important;
   --text-red: #ff4f4f !important;
-  --text-search-highlight-bg: #bb4361 !important;
   --text-yellow: #ffdc51 !important;
   --text-yellow-2: #cca217 !important;
   --theme-color: hsl(208, 64%, 49%) !important;
@@ -11660,9 +11660,10 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -11672,8 +11673,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(14, 14, 14);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -13791,10 +13814,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(32, 32, 32);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -13803,8 +13827,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(198, 198, 198);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

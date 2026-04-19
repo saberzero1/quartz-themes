@@ -737,40 +737,6 @@ html body h6 {
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(5, 12, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(5, 12, 10);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(5, 12, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(5, 12, 10);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(5, 12, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(5, 12, 10);
-  border-bottom-color: rgb(223, 236, 232);
-  border-left-color: rgb(223, 236, 232);
-  border-right-color: rgb(223, 236, 232);
-  border-top-color: rgb(223, 236, 232);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(5, 12, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(5, 12, 10);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(5, 12, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(5, 12, 10);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(5, 12, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(5, 12, 10);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "Noto Sans Old Persian", sans-serif;

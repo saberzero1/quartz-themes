@@ -1316,16 +1316,16 @@ body.theme-light {
     system, BlinkMacSystemFont, "iA Writer Mono V", monospace !important;
   --background-code: #edeeee !important;
   --background-code-preview: #f0f0f0 !important;
-  --text-tag: #8c8c8c !important;
-  --background-tag: #ffffff !important;
   --background-preview: #fcfcfc !important;
   --background-quick: #f7f7f7 !important;
+  --background-tag: #ffffff !important;
   --file-hr: #ecebea !important;
   --leaf-handle: #ecebea !important;
+  --table-line: #f1f1f1 !important;
+  --text-tag: #8c8c8c !important;
   --menu-selection: #c4c3c2 !important;
   --menu-selection-text: #191919 !important;
   --quattro-font: "iA Writer Quattro V", sans-serif !important;
-  --table-line: #f1f1f1 !important;
 }
 
 body.theme-dark {
@@ -2215,16 +2215,16 @@ body.theme-dark {
     system, BlinkMacSystemFont, "iA Writer Mono V", monospace !important;
   --background-code: #242524 !important;
   --background-code-preview: #1d1d1e !important;
-  --text-tag: #8c8c8c !important;
-  --background-tag: #000000 !important;
   --background-preview: #101010 !important;
   --background-quick: #191a19 !important;
+  --background-tag: #000000 !important;
   --file-hr: #2e2e2e !important;
   --leaf-handle: #242524 !important;
+  --table-line: #e6e6e6 !important;
+  --text-tag: #8c8c8c !important;
   --menu-selection: #5f5d5b !important;
   --menu-selection-text: #cbcccc !important;
   --quattro-font: "iA Writer Quattro V", sans-serif !important;
-  --table-line: #e6e6e6 !important;
 }
 
 body {
@@ -2913,10 +2913,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: rgb(247, 247, 247) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(247, 247, 247);
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2925,8 +2926,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(25, 25, 25);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -4728,10 +4751,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(25, 26, 25) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(25, 26, 25);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4740,8 +4764,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(203, 204, 204);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

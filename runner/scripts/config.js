@@ -1004,16 +1004,16 @@ export const config = [
   // scrollbars
   // Webkit scrollbar - main scrollbar element (width, height, background)
   {
-    obsidianSelector: `body.styled-scrollbars`,
-    publishSelector: `body.styled-scrollbars`,
+    obsidianSelector: `body.styled-scrollbars ::-webkit-scrollbar`,
+    publishSelector: "::-webkit-scrollbar",
     quartzSelector: "::-webkit-scrollbar",
     pseudoElement: "::-webkit-scrollbar",
     properties: ["background", "background-color"],
   },
   // Webkit scrollbar thumb - the draggable part
   {
-    obsidianSelector: `body.styled-scrollbars`,
-    publishSelector: `body.styled-scrollbars`,
+    obsidianSelector: `body.styled-scrollbars ::-webkit-scrollbar-thumb`,
+    publishSelector: "::-webkit-scrollbar-thumb",
     quartzSelector: "::-webkit-scrollbar-thumb",
     pseudoElement: "::-webkit-scrollbar-thumb",
     properties: [
@@ -1028,32 +1028,32 @@ export const config = [
   },
   // Webkit scrollbar thumb hover state
   {
-    obsidianSelector: `body.styled-scrollbars`,
-    publishSelector: `body.styled-scrollbars`,
+    obsidianSelector: `body.styled-scrollbars ::-webkit-scrollbar-thumb:hover`,
+    publishSelector: "::-webkit-scrollbar-thumb:hover",
     quartzSelector: "::-webkit-scrollbar-thumb:hover",
     pseudoElement: "::-webkit-scrollbar-thumb:hover",
     properties: ["background", "background-color"],
   },
   // Webkit scrollbar thumb active state
   {
-    obsidianSelector: `body.styled-scrollbars`,
-    publishSelector: `body.styled-scrollbars`,
+    obsidianSelector: `body.styled-scrollbars ::-webkit-scrollbar-thumb:active`,
+    publishSelector: "::-webkit-scrollbar-thumb:active",
     quartzSelector: "::-webkit-scrollbar-thumb:active",
     pseudoElement: "::-webkit-scrollbar-thumb:active",
     properties: ["background", "background-color"],
   },
   // Webkit scrollbar track - the background track
   {
-    obsidianSelector: `body.styled-scrollbars`,
-    publishSelector: `body.styled-scrollbars`,
+    obsidianSelector: `body.styled-scrollbars ::-webkit-scrollbar-track`,
+    publishSelector: "::-webkit-scrollbar-track",
     quartzSelector: "::-webkit-scrollbar-track",
     pseudoElement: "::-webkit-scrollbar-track",
     properties: ["background", "background-color", ...expansions.borderRadius],
   },
   // Webkit scrollbar corner - where horizontal and vertical scrollbars meet
   {
-    obsidianSelector: `body.styled-scrollbars`,
-    publishSelector: `body.styled-scrollbars`,
+    obsidianSelector: `body.styled-scrollbars ::-webkit-scrollbar-corner`,
+    publishSelector: "::-webkit-scrollbar-corner",
     quartzSelector: "::-webkit-scrollbar-corner",
     pseudoElement: "::-webkit-scrollbar-corner",
     properties: ["background", "background-color"],
@@ -1061,7 +1061,7 @@ export const config = [
   // Firefox scrollbar properties (on body/html)
   {
     obsidianSelector: `body.styled-scrollbars`,
-    publishSelector: `body.styled-scrollbars`,
+    publishSelector: "body",
     quartzSelector: "body",
     pseudoElement: "",
     properties: ["scrollbar-width", "scrollbar-color"],

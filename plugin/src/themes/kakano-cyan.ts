@@ -2749,40 +2749,6 @@ html[saved-theme="dark"] body hr {
   padding-right: 24px;
 }
 
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: color(srgb 0.0086 0.0314 0.0295) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0086 0.0314 0.0295);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: color(srgb 0.0086 0.0314 0.0295) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0086 0.0314 0.0295);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: color(srgb 0.0086 0.0314 0.0295) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0086 0.0314 0.0295);
-  border-bottom-color: color(srgb 0.6688 0.8512 0.836);
-  border-left-color: color(srgb 0.6688 0.8512 0.836);
-  border-right-color: color(srgb 0.6688 0.8512 0.836);
-  border-top-color: color(srgb 0.6688 0.8512 0.836);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: color(srgb 0.0086 0.0314 0.0295) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0086 0.0314 0.0295);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: color(srgb 0.0086 0.0314 0.0295) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0086 0.0314 0.0295);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: color(srgb 0.0086 0.0314 0.0295) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0086 0.0314 0.0295);
-}
-
 html[saved-theme="dark"] body body {
   scrollbar-color: color(srgb 0.172 0.628 0.59 / 0.25) rgba(0, 0, 0, 0);
 }`,
@@ -5659,13 +5625,6 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
   padding-right: 24px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: color(srgb 0.0172 0.0628 0.059);
-  border-left-color: color(srgb 0.0172 0.0628 0.059);
-  border-right-color: color(srgb 0.0172 0.0628 0.059);
-  border-top-color: color(srgb 0.0172 0.0628 0.059);
 }
 
 html[saved-theme="light"] body body {

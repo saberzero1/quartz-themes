@@ -1122,13 +1122,6 @@ html body hr {
 }`,
     scrollbars: `html body .callout {
   --callout-color: 8, 109, 221;
-}
-
-html body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(77, 77, 77);

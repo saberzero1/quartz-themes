@@ -2835,6 +2835,20 @@ body:not(.composer--DisableFileFolderIcon)
 /* ====== Basic UI Component ====== */
 
 /* ====== Third Plugin integration ====== */
+
+/* notebook navigator */
+.notebook-navigator {
+  --nn-theme-list-bg: transparent;
+  --nn-theme-nav-bg: transparent;
+  --nn-theme-divider-border-color: transparent;
+  background-color: transparent;
+}
+
+.nn-calendar-right-sidebar {
+  --nn-calendar-right-sidebar-bg: transparent;
+  --nn-theme-calendar-weekend-bg: var(--background-modifier-hover);
+}
+
 /* note toolbar */
 .cg-note-toolbar-callout {
 	--link-external-color: transparent;

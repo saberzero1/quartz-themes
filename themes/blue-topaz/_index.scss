@@ -849,6 +849,8 @@
   --h3-font: "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai", "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --h4-font: "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai", "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --inline-title-font: "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai", "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --folder-title: #000000 !important;
+  --panel-border-color: #dbdbdc !important;
   --green: #a3be8c !important;
   --orange: #db9600 !important;
   --purple: #c74df7 !important;
@@ -860,8 +862,8 @@
   --green-1: #3dc730 !important;
   --red-1: #f16464f5 !important;
   --aqua: #88c0d0 !important;
-  --panel-border-color: #dbdbdc !important;
   --font-size-code: 0.825em !important;
+  --text-search-highlight-bg: #ffd1dd !important;
   --background-code: #e6e6e671 !important;
   --code-atom: #cc7523 !important;
   --code-attribute: #bf616a !important;
@@ -1053,7 +1055,6 @@
   --FoldC: #f7b731 !important;
   --FoldD: #20bf6b !important;
   --FoldE: #0fb9b1 !important;
-  --folder-title: #000000 !important;
   --FoldF: #2d98da !important;
   --FoldG: #3867d6 !important;
   --FoldH: #8854d0 !important;
@@ -1348,7 +1349,6 @@
   --text-pink: #c40075 !important;
   --text-purple: #5d1fb9 !important;
   --text-red: #ff4343 !important;
-  --text-search-highlight-bg: #ffd1dd !important;
   --text-yellow: #d4a300 !important;
   --text-yellow-2: #a78000 !important;
   --theme-color: hsl(206, 77.77%, 58.05%) !important;
@@ -2213,6 +2213,8 @@
   --h3-font: "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai", "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --h4-font: "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai", "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
   --inline-title-font: "??", Bookerly, "Inter", "Segoe UI", "霞鹜文楷 GB", "LXGW WenKai", "Microsoft YaHei", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+  --folder-title: #ffffff !important;
+  --panel-border-color: #18191e !important;
   --green: #abd58e !important;
   --orange: #d1945b !important;
   --purple: #c594d4 !important;
@@ -2225,8 +2227,8 @@
   --green-1: #79c142 !important;
   --red-1: #d05a63 !important;
   --aqua: #35bed0 !important;
-  --panel-border-color: #18191e !important;
   --font-size-code: 0.825em !important;
+  --text-search-highlight-bg: #bb4361 !important;
   --background-code: #1111118c !important;
   --code-atom: #da904b !important;
   --code-attribute: #cac685 !important;
@@ -2418,7 +2420,6 @@
   --FoldC: #f7b731 !important;
   --FoldD: #20bf6b !important;
   --FoldE: #0fb9b1 !important;
-  --folder-title: #ffffff !important;
   --FoldF: #2d98da !important;
   --FoldG: #3867d6 !important;
   --FoldH: #8854d0 !important;
@@ -2720,7 +2721,6 @@
   --text-pink: #ff6bba !important;
   --text-purple: #b386f1 !important;
   --text-red: #ff4f4f !important;
-  --text-search-highlight-bg: #bb4361 !important;
   --text-yellow: #ffdc51 !important;
   --text-yellow-2: #cca217 !important;
   --theme-color: hsl(208, 64%, 49%) !important;
@@ -9699,12 +9699,10 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -9714,22 +9712,19 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px rgb(14, 14, 14);
+    border: 0px rgb(34, 34, 34);
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -9742,7 +9737,6 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(255, 255, 255);
   }
 
@@ -12988,13 +12982,11 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -13003,23 +12995,20 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      border: 0px rgb(198, 198, 198);
+      border: 0px rgb(218, 218, 218);
       box-shadow: none;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -13031,8 +13020,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(30, 30, 30);
     }
 
     body {
@@ -15220,8 +15208,8 @@ html[saved-theme="dark"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -15300,7 +15288,7 @@ html[saved-theme="dark"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

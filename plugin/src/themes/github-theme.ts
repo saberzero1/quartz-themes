@@ -1309,40 +1309,6 @@ html[saved-theme="dark"] body hr {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 0px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 17, 23);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 17, 23);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 17, 23);
-  border-bottom-color: rgb(201, 209, 217);
-  border-left-color: rgb(201, 209, 217);
-  border-right-color: rgb(201, 209, 217);
-  border-top-color: rgb(201, 209, 217);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 17, 23);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 17, 23);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(13, 17, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 17, 23);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(139, 148, 158);
@@ -2773,13 +2739,6 @@ html[saved-theme="light"] body hr {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 0px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(36, 41, 47);
-  border-left-color: rgb(36, 41, 47);
-  border-right-color: rgb(36, 41, 47);
-  border-top-color: rgb(36, 41, 47);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(87, 96, 106);

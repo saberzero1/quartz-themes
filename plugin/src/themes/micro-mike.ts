@@ -1751,40 +1751,6 @@ html body hr {
   padding-left: 5px;
   padding-right: 0px;
   padding-top: 0px;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(8, 8, 9) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(8, 8, 9);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(8, 8, 9) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(8, 8, 9);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(8, 8, 9) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(8, 8, 9);
-  border-bottom-color: rgb(163, 165, 170);
-  border-left-color: rgb(163, 165, 170);
-  border-right-color: rgb(163, 165, 170);
-  border-top-color: rgb(163, 165, 170);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(8, 8, 9) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(8, 8, 9);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(8, 8, 9) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(8, 8, 9);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(8, 8, 9) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(8, 8, 9);
 }`,
     explorer: `html body .explorer .explorer-content ul.explorer-ul li a {
   color: rgb(179, 179, 179);

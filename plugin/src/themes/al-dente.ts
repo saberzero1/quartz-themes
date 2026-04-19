@@ -977,40 +977,6 @@ html body hr {
 }`,
     scrollbars: `html body .callout {
   --callout-color: 8, 109, 221;
-}
-
-html body ::-webkit-scrollbar {
-  background: radial-gradient(circle at 12.17% 41.13%, rgb(247, 246, 240), rgba(0, 0, 0, 0) 100%) repeat fixed 0% 0% / cover padding-box border-box, radial-gradient(circle at 88.72% 61.69%, rgb(235, 230, 222), rgba(0, 0, 0, 0) 100%) repeat fixed 0% 0% / cover padding-box border-box, rgb(246, 246, 244) radial-gradient(circle, rgb(225, 224, 218), rgb(233, 232, 230) 100%) repeat fixed 0% 0% / cover padding-box border-box;
-  background-color: rgb(246, 246, 244);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: radial-gradient(circle at 12.17% 41.13%, rgb(247, 246, 240), rgba(0, 0, 0, 0) 100%) repeat fixed 0% 0% / cover padding-box border-box, radial-gradient(circle at 88.72% 61.69%, rgb(235, 230, 222), rgba(0, 0, 0, 0) 100%) repeat fixed 0% 0% / cover padding-box border-box, rgb(246, 246, 244) radial-gradient(circle, rgb(225, 224, 218), rgb(233, 232, 230) 100%) repeat fixed 0% 0% / cover padding-box border-box;
-  background-color: rgb(246, 246, 244);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: radial-gradient(circle at 12.17% 41.13%, rgb(247, 246, 240), rgba(0, 0, 0, 0) 100%) repeat fixed 0% 0% / cover padding-box border-box, radial-gradient(circle at 88.72% 61.69%, rgb(235, 230, 222), rgba(0, 0, 0, 0) 100%) repeat fixed 0% 0% / cover padding-box border-box, rgb(246, 246, 244) radial-gradient(circle, rgb(225, 224, 218), rgb(233, 232, 230) 100%) repeat fixed 0% 0% / cover padding-box border-box;
-  background-color: rgb(246, 246, 244);
-  border-bottom-color: rgb(63, 62, 60);
-  border-left-color: rgb(63, 62, 60);
-  border-right-color: rgb(63, 62, 60);
-  border-top-color: rgb(63, 62, 60);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: radial-gradient(circle at 12.17% 41.13%, rgb(247, 246, 240), rgba(0, 0, 0, 0) 100%) repeat fixed 0% 0% / cover padding-box border-box, radial-gradient(circle at 88.72% 61.69%, rgb(235, 230, 222), rgba(0, 0, 0, 0) 100%) repeat fixed 0% 0% / cover padding-box border-box, rgb(246, 246, 244) radial-gradient(circle, rgb(225, 224, 218), rgb(233, 232, 230) 100%) repeat fixed 0% 0% / cover padding-box border-box;
-  background-color: rgb(246, 246, 244);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: radial-gradient(circle at 12.17% 41.13%, rgb(247, 246, 240), rgba(0, 0, 0, 0) 100%) repeat fixed 0% 0% / cover padding-box border-box, radial-gradient(circle at 88.72% 61.69%, rgb(235, 230, 222), rgba(0, 0, 0, 0) 100%) repeat fixed 0% 0% / cover padding-box border-box, rgb(246, 246, 244) radial-gradient(circle, rgb(225, 224, 218), rgb(233, 232, 230) 100%) repeat fixed 0% 0% / cover padding-box border-box;
-  background-color: rgb(246, 246, 244);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: radial-gradient(circle at 12.17% 41.13%, rgb(247, 246, 240), rgba(0, 0, 0, 0) 100%) repeat fixed 0% 0% / cover padding-box border-box, radial-gradient(circle at 88.72% 61.69%, rgb(235, 230, 222), rgba(0, 0, 0, 0) 100%) repeat fixed 0% 0% / cover padding-box border-box, rgb(246, 246, 244) radial-gradient(circle, rgb(225, 224, 218), rgb(233, 232, 230) 100%) repeat fixed 0% 0% / cover padding-box border-box;
-  background-color: rgb(246, 246, 244);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(63, 62, 60);

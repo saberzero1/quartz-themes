@@ -1821,44 +1821,6 @@ html[saved-theme="dark"] body hr {
   padding-left: 19.2px;
   padding-right: 19.2px;
   padding-top: 19.2px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.2228 0.0025 67.5819);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.2228 0.0025 67.5819);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.2228 0.0025 67.5819);
-  border-bottom-color: oklch(0.9901 0.0161 95.22);
-  border-bottom-style: solid;
-  border-left-color: oklch(0.9901 0.0161 95.22);
-  border-left-style: solid;
-  border-right-color: oklch(0.9901 0.0161 95.22);
-  border-right-style: solid;
-  border-top-color: oklch(0.9901 0.0161 95.22);
-  border-top-style: solid;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.2228 0.0025 67.5819);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.2228 0.0025 67.5819);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.2228 0.0025 67.5819);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: oklch(0.9901 0.0161 95.22);
@@ -3887,44 +3849,6 @@ html[saved-theme="light"] body hr {
   padding-left: 19.2px;
   padding-right: 19.2px;
   padding-top: 19.2px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(251, 251, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(251, 251, 250);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(251, 251, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(251, 251, 250);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(251, 251, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(251, 251, 250);
-  border-bottom-color: rgb(58, 54, 51);
-  border-bottom-style: solid;
-  border-left-color: rgb(58, 54, 51);
-  border-left-style: solid;
-  border-right-color: rgb(58, 54, 51);
-  border-right-style: solid;
-  border-top-color: rgb(58, 54, 51);
-  border-top-style: solid;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(251, 251, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(251, 251, 250);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(251, 251, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(251, 251, 250);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(251, 251, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(251, 251, 250);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(58, 54, 51);

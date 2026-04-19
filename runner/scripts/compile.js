@@ -263,9 +263,7 @@ function normalizeSvgDataUriValue(value) {
       if (svgStart !== -1) {
         return svgToDataUri(normalized.slice(svgStart));
       }
-      // Try to decode percent-encoded SVG content
       let decodable = normalized;
-      // Strip leading %22 artifact from double-quoting
       if (decodable.startsWith("%22")) {
         decodable = decodable.slice(3);
       }
@@ -293,17 +291,68 @@ function normalizeSvgDataUriValue(value) {
       return `url("${quoteSafe}")`;
     };
 
-    let result = input.replace(
-      /url\((['"])([\s\S]*?)\1\)/gi,
-      (match, _quote, content) => normalizeContent(content.trim(), match),
-    );
+    const extractUrlBlocks = (str) => {
+      let result = "";
+      let i = 0;
+      while (i < str.length) {
+        const urlStart = str.toLowerCase().indexOf("url(", i);
+        if (urlStart === -1) {
+          result += str.slice(i);
+          break;
+        }
+        result += str.slice(i, urlStart);
+        const openParen = urlStart + 4;
+        const quoteChar = str[openParen];
+        if (quoteChar === '"' || quoteChar === "'") {
+          const contentStart = openParen + 1;
+          const closePattern = quoteChar + ")";
+          const closeIdx = str.lastIndexOf(
+            closePattern,
+            str.indexOf(")", contentStart + 1) === -1 ? str.length : undefined,
+          );
+          let searchFrom = contentStart;
+          let endIdx = -1;
+          while (searchFrom < str.length) {
+            const candidate = str.indexOf(closePattern, searchFrom);
+            if (candidate === -1) break;
+            endIdx = candidate;
+            const after = str
+              .slice(candidate + closePattern.length)
+              .trimStart();
+            if (!after || /^[;,}\s]/.test(after) || /^[a-z]/i.test(after))
+              break;
+            searchFrom = candidate + 1;
+          }
+          if (endIdx !== -1) {
+            const content = str.slice(contentStart, endIdx);
+            result += normalizeContent(
+              content,
+              str.slice(urlStart, endIdx + closePattern.length),
+            );
+            i = endIdx + closePattern.length;
+          } else {
+            result += str.slice(urlStart, openParen + 1);
+            i = openParen + 1;
+          }
+        } else {
+          const closeParen = str.indexOf(")", openParen);
+          if (closeParen !== -1) {
+            const content = str.slice(openParen, closeParen).trim();
+            result += normalizeContent(
+              content,
+              str.slice(urlStart, closeParen + 1),
+            );
+            i = closeParen + 1;
+          } else {
+            result += str.slice(urlStart, openParen);
+            i = openParen;
+          }
+        }
+      }
+      return result;
+    };
 
-    result = result.replace(/url\(([^)]*)\)/gi, (match, raw) => {
-      const content = raw.trim();
-      return normalizeContent(content, match);
-    });
-
-    return result;
+    return extractUrlBlocks(input);
   };
 
   if (/url\(/i.test(normalizedData)) {
@@ -1226,8 +1275,8 @@ ${calloutIconDark}
     }
     .explorer-content {
       .folder-container {
-        --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-        --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+        --folder-closed-icon: ${svgToDataUri('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>')};
+        --folder-open-icon: ${svgToDataUri('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>')};
 
         text-overflow: ellipsis;
         position: relative;
@@ -1306,7 +1355,7 @@ ${calloutIconDark}
           }
         }
         > a:before {
-          --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+          --file-icon: ${svgToDataUri('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>')};
           width: 1rem;
           height: 1rem;
           min-width: 1rem;

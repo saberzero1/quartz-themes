@@ -1479,13 +1479,6 @@ html[saved-theme="dark"] body hr {
   border-top-right-radius: 2px;
   border-top-width: 1px;
   padding-left: 12px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(228, 228, 228);
-  border-left-color: rgb(228, 228, 228);
-  border-right-color: rgb(228, 228, 228);
-  border-top-color: rgb(228, 228, 228);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(149, 149, 149);
@@ -3150,13 +3143,6 @@ html[saved-theme="light"] body hr {
   border-top-right-radius: 2px;
   border-top-width: 1px;
   padding-left: 12px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(76, 73, 73);
-  border-left-color: rgb(76, 73, 73);
-  border-right-color: rgb(76, 73, 73);
-  border-top-color: rgb(76, 73, 73);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(110, 105, 102);

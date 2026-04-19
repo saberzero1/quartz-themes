@@ -1283,6 +1283,7 @@ body.theme-light {
   --inline-title-color: #b3d97e !important;
   --text-error-hover: #ef6f89 !important;
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
+  --panel-border-color: #fdf9f3 !important;
   --green: #b3d97e !important;
   --orange: #f19d6d !important;
   --purple: #a8a0ee !important;
@@ -1294,7 +1295,6 @@ body.theme-light {
   --gray-3: #2c292d !important;
   --gray-4: #eeeae5 !important;
   --aqua: #8dd9e6 !important;
-  --panel-border-color: #fdf9f3 !important;
   --tab-text-color-active-focused: #abb2bf !important;
   --text-highlight: #2c292d !important;
   --white: #ffffff !important;
@@ -2202,6 +2202,7 @@ body.theme-dark {
   --inline-title-color: #b3d97e !important;
   --text-error-hover: #ef6f89 !important;
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22) !important;
+  --panel-border-color: #1e1f2b !important;
   --green: #b3d97e !important;
   --orange: #f19d6d !important;
   --purple: #a8a0ee !important;
@@ -2212,7 +2213,6 @@ body.theme-dark {
   --gray-2: #abb2bf !important;
   --gray-3: #2c292d !important;
   --aqua: #8dd9e6 !important;
-  --panel-border-color: #1e1f2b !important;
   --text-highlight: #1e1f2b !important;
   --white: #ffffff !important;
   --beige: #fdf9f3 !important;
@@ -3125,10 +3125,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: rgb(253, 249, 243) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(253, 249, 243);
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3137,8 +3138,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(44, 41, 45);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -5149,10 +5172,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(30, 31, 43) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(30, 31, 43);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5161,8 +5185,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(255, 255, 255);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

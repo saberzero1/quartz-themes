@@ -761,40 +761,6 @@ html body h6 {
 }`,
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(0, 0, 0);
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(0, 0, 0);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(255, 255, 255);

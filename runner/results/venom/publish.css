@@ -1331,6 +1331,7 @@ body.theme-dark {
   --text-title-h4: lightgreen !important;
   --text-title-h5: skyblue !important;
   --text-title-h6: #8c44aa !important;
+  --panel-border-color: #752126 !important;
   --green: #15df6b !important;
   --orange: #ffc83f !important;
   --purple: #8c44aa !important;
@@ -1339,7 +1340,6 @@ body.theme-dark {
   --blue: #61afef !important;
   --gray-1: #5c6370 !important;
   --aqua: #078480 !important;
-  --panel-border-color: #752126 !important;
   --cyan: #0fb3ff !important;
   --green-light: #42accd !important;
   --altblue: #0087ff !important;
@@ -2279,10 +2279,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(30, 48, 58) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(30, 48, 58);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2291,8 +2292,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(255, 255, 255);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -3343,7 +3366,7 @@ body body.theme-dark .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-dark .page-header .page-title {
-  color: rgb(42, 50, 60);
+  color: rgb(26, 35, 45);
   font-family:
     "Segoe UI",
     Arial,
@@ -3364,13 +3387,13 @@ body body.theme-dark .page-header .page-title {
     "Segoe UI Symbol",
     sans-serif;
   text-shadow:
-    rgb(143, 32, 254) 0px 0px 2px,
-    rgb(143, 32, 254) 0px 0px 2px,
-    rgb(239, 224, 255) 0px 0px 3px,
-    rgb(239, 224, 255) 0px 0px 3px,
-    rgb(239, 224, 255) 0px 0px 3px,
-    rgb(239, 224, 255) 0px 0px 3px,
-    rgb(239, 224, 255) 0px 0px 3px;
+    rgb(135, 16, 254) 0px 0px 2px,
+    rgb(135, 16, 254) 0px 0px 2px,
+    rgb(247, 240, 255) 0px 0px 3px,
+    rgb(247, 240, 255) 0px 0px 3px,
+    rgb(247, 240, 255) 0px 0px 3px,
+    rgb(247, 240, 255) 0px 0px 3px,
+    rgb(247, 240, 255) 0px 0px 3px;
 }
 body body.theme-dark .math-block {
   background-color: rgba(0, 0, 0, 0);

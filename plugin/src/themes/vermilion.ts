@@ -978,40 +978,6 @@ html[saved-theme="dark"] body h6 {
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(28, 28, 28) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(28, 28, 28);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(28, 28, 28) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(28, 28, 28);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(28, 28, 28) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(28, 28, 28);
-  border-bottom-color: rgb(144, 144, 144);
-  border-left-color: rgb(144, 144, 144);
-  border-right-color: rgb(144, 144, 144);
-  border-top-color: rgb(144, 144, 144);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(28, 28, 28) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(28, 28, 28);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(28, 28, 28) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(28, 28, 28);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(28, 28, 28) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(28, 28, 28);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(144, 144, 144);

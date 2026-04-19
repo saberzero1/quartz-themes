@@ -1299,13 +1299,6 @@ html[saved-theme="dark"] body hr {
   border-bottom-right-radius: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(224, 224, 224);
-  border-left-color: rgb(224, 224, 224);
-  border-right-color: rgb(224, 224, 224);
-  border-top-color: rgb(224, 224, 224);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(160, 160, 160);
@@ -2835,13 +2828,6 @@ html[saved-theme="light"] body hr {
   border-bottom-right-radius: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(32, 33, 36);
-  border-left-color: rgb(32, 33, 36);
-  border-right-color: rgb(32, 33, 36);
-  border-top-color: rgb(32, 33, 36);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(95, 99, 104);

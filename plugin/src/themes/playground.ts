@@ -1640,40 +1640,6 @@ html body hr {
   border-top-right-radius: 8px;
   border-top-width: 1px;
   padding-left: 12px;
-}
-
-html body ::-webkit-scrollbar {
-  background: oklch(0.135 0.01 279.29) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.135 0.01 279.29);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: oklch(0.135 0.01 279.29) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.135 0.01 279.29);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: oklch(0.135 0.01 279.29) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.135 0.01 279.29);
-  border-bottom-color: oklch(0.92 0.004 279.29);
-  border-left-color: oklch(0.92 0.004 279.29);
-  border-right-color: oklch(0.92 0.004 279.29);
-  border-top-color: oklch(0.92 0.004 279.29);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: oklch(0.135 0.01 279.29) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.135 0.01 279.29);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.135 0.01 279.29) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.135 0.01 279.29);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: oklch(0.135 0.01 279.29) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.135 0.01 279.29);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: oklch(0.845 0.01 279.29);

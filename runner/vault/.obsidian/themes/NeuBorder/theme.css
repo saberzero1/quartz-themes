@@ -21,7 +21,6 @@ body {
   --card-shadow-border-radius: calc(var(--card-border-radius) - 1px);
 
   /* Foreground - underlying */
-  --on-border: var(--color-accent-3);
   --mix-blend-mode-on-border: normal;
 
   /* Tab style */
@@ -80,6 +79,9 @@ body {
 /* Light theme definitions */
 .theme-light {
   color-scheme: light;
+
+  /* Color for the icons on the border of the window */
+  --on-border: hsl(var(--accent-h), 60%, 50%);
 
   /* Neumorphic Light Base */
   --background: #f0f0f0;
@@ -141,10 +143,12 @@ body {
   --color-base-100: #222222;
  
   /* Accents & UI Elements */
+
+  /* Default accent color */
   --accent-h: 232;
   --accent-s: 80%;
   --accent-l: 64%;
-
+  
   --color-accent-hsl: var(--accent-h),
     var(--accent-s),
     var(--accent-l);
@@ -175,17 +179,18 @@ body {
 
   --color: 0, 0%;
   --l: 100%;
+
   --color-primary-lightest: 
     hsl(var(--color),
     var(--l));
    
   --color-primary-lighter: 
-      hsl(var(--color), 
-      calc(var(--l) - 3%));
+    hsl(var(--color), 
+    calc(var(--l) - 3%));
 
   --color-primary-light: 
-      hsl(var(--color), 
-      calc(var(--l) - 7.5%));
+    hsl(var(--color), 
+    calc(var(--l) - 7.5%));
 
   --color-primary: 
     hsl(var(--color), 
@@ -205,7 +210,7 @@ body {
   --background-tertiary: 
     hsl(calc(var(--accent-h) - 18), 
     calc(var(--accent-s) - 4%), 
-    calc(100% - (100% - var(--accent-l)) / 8));
+    calc(100% - (100% - var(--accent-l)) / 7));
 
   --color-text-dark: 
     hsl(var(--color), 
@@ -240,23 +245,58 @@ body {
 
   /* Blockquotes */
   --blockquote-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+
+  /* Slider */
+  --slider-track-shadow:
+    inset 3px 4px 10px rgba(0, 0, 0, 0.15),
+    inset -3px -4px 10px rgba(255, 255, 255, 0.55);
+  --slider-thumb-shadow:
+    inset 0.45em 0.45em 5px -5px rgba(255, 255, 255, 0.65),
+    inset -0.25em -0.25em 8px -2px rgba(0, 0, 0, 0.2),
+    0.4em 0.3em 5px -0.3em rgba(0, 0, 0, 0.35);
+  --slider-thumb-shadow-hover:
+    inset 0.45em 0.45em 5px -5px rgba(255, 255, 255, 0.65),
+    inset -0.25em -0.25em 8px -2px rgba(0, 0, 0, 0.2),
+    0.4em 0.3em 5px -0.3em rgba(0, 0, 0, 0.35),
+    0 0 0 3px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.3);
+  --slider-thumb-shadow-active:
+    inset 0.3em 0.3em 6px -3px rgba(0, 0, 0, 0.3),
+    inset -0.2em -0.2em 5px -3px rgba(255, 255, 255, 0.4),
+    0 0 0 3px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
 }
 
 /* Dark theme definitions */
 .theme-dark {
   color-scheme: dark;
 
+  /* Color for the icons on the border of the window */
+  --on-border: var(--color-accent-3);
+
   /* Neumorphic Dark Base */
   --background-base: #2b2b2b; /* This specific gray is the "middle ground" allowing for both highlights and deep shadows */
   
   --background: var(--background-base);
-  --background-primary: hsl(var(--accent-h), calc(var(--accent-s) / 5), calc(1.25*var(--accent-l) / 4.5));
-  --background-primary-alt: hsl(var(--accent-h), calc(var(--accent-s) / 5), calc(1.25*var(--accent-l) / 3.9)); /* Used to color in-line code block backgrounds */
-  --background-secondary: hsl(var(--accent-h), calc(var(--accent-s) / 5), calc(1.25*var(--accent-l) / 4.9));
+
+  --background-primary:
+    hsl(var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25*var(--accent-l) / 4.5));
+
+  --background-primary-alt:
+    hsl(var(--accent-h),
+    calc(var(--accent-s) / 5),
+    calc(1.25*var(--accent-l) / 3.9)); /* Used to color in-line code block backgrounds */
+
+  --background-secondary: 
+    hsl(var(--accent-h), calc(var(--accent-s) / 5),
+    calc(1.25*var(--accent-l) / 4.9));
+
   --background-tertiary: hsl(var(--accent-h), 40%, 25%);
+
+  
   --workspace-background-translucent: hsla(var(--accent-h),
-      calc(var(--accent-s) / 5.4),
-      calc(1.25*var(--accent-l) / 3.6), 0.6);
+    calc(var(--accent-s) / 5.4),
+    calc(1.25*var(--accent-l) / 3.6), 0.6);
   
   /* Re-defined Shadows for Dark Mode\ */
   /* Top-left: Faint white (highlight) | Bottom-right: Deep black (shadow) */
@@ -315,15 +355,32 @@ body {
   --accent-s: var(--accent-dark-s);
   --accent-l: var(--accent-dark-l);
   
-  --color-accent-hsl-dark: var(--accent-h),
-        var(--accent-s),
-        var(--accent-l);
+  --color-accent-hsl-dark: 
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l);
+
   --color-accent-hsl: var(--color-accent-hsl-dark);
 
-  --color-accent-dark: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-  --color-accent-1-dark: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15));
-  --color-accent-2-dark: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l) * 1.29));
-  --color-accent-3-dark: hsla(var(--accent-h), calc(0.4*var(--accent-s)), calc(0.9*var(--accent-l)));
+  --color-accent-dark: 
+    hsl(var(--accent-h), 
+    var(--accent-s), 
+    var(--accent-l));
+
+  --color-accent-1-dark: 
+    hsl(calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15));
+
+  --color-accent-2-dark: 
+    hsl(calc(var(--accent-h) - 5),
+    calc(var(--accent-s) * 1.05),
+    calc(var(--accent-l) * 1.29));
+
+  --color-accent-3-dark:
+    hsla(var(--accent-h),
+    calc(0.4*var(--accent-s)),
+    calc(0.9*var(--accent-l)));
   
   --interactive-accent: 
     hsl(var(--accent-h),
@@ -371,6 +428,24 @@ body {
 
   /* Blockquotes */
   --blockquote-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+
+  /* Slider */
+  --slider-track-shadow:
+    inset 3px 4px 10px rgba(0, 0, 0, 0.5),
+    inset -3px -4px 10px rgba(255, 255, 255, 0.05);
+  --slider-thumb-shadow:
+    inset 0.45em 0.45em 5px -5px rgba(255, 255, 255, 0.2),
+    inset -0.25em -0.25em 8px -2px rgba(0, 0, 0, 0.5),
+    0.4em 0.3em 5px -0.3em rgba(0, 0, 0, 0.65);
+  --slider-thumb-shadow-hover:
+    inset 0.45em 0.45em 5px -5px rgba(255, 255, 255, 0.2),
+    inset -0.25em -0.25em 8px -2px rgba(0, 0, 0, 0.5),
+    0.4em 0.3em 5px -0.3em rgba(0, 0, 0, 0.65),
+    0 0 0 3px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.4);
+  --slider-thumb-shadow-active:
+    inset 0.3em 0.3em 6px -3px rgba(0, 0, 0, 0.65),
+    inset -0.2em -0.2em 5px -3px rgba(255, 255, 255, 0.08),
+    0 0 0 3px hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
 }
 
 /* Shared Light and Dark theme definitions */
@@ -585,26 +660,10 @@ body:not(.is-mobile) .view-header .clickable-icon:not([aria-label="Accept change
   box-shadow: var(--toggle-thumb-enabled-shadow);
 }
 
-/* Adds Neumorphic styling to sliders */
-input[type='range'] {
-  background-color: var(--color-base-30);
-}
-input[type='range']::-webkit-slider-thumb {
-  transition: none;
-}
-input[type=range]::-webkit-slider-thumb:is(:hover, :active) {
-  box-shadow: var(--toggle-thumb-shadow);
-  outline-offset: 2px;
-  outline: 2px solid var(--background-modifier-border-hover);
-  transition: none;
-  border-color: var(--slider-thumb-border-color);
-}
-body:not(.is-mobile) input[type=range]:is(:focus, :focus-visible)::-webkit-slider-thumb {
-  box-shadow: var(--toggle-thumb-shadow);
-  outline-offset: 2px;
+/* Keyboard focus ring */
+body:not(.is-mobile) input[type='range']:is(:focus, :focus-visible)::-webkit-slider-thumb {
   outline: 2px solid var(--background-modifier-border-focus);
-  transition: none;
-  border-color: var(--slider-thumb-border-color);
+  outline-offset: 2px;
 }
 
 /* Adds Neumorphic styling to scrollbars */
@@ -1042,14 +1101,13 @@ body.is-hidden-frameless .titlebar .titlebar-button-container.mod-right {
 }
 
 /* Creates the extended bar - RESTRICTED to right container */
-.titlebar .titlebar-button-container.mod-right::before {
+/* Only show the dividing bar when the right sidebar is open */
+body:has(.workspace.is-right-sidedock-open) .titlebar .titlebar-button-container.mod-right::before {
   content: '';
   position: absolute;  /* Required for placement */
   left: 5px; 
-  width: calc(100% + 10px);  /* Increased width to cover the right margin */
   height: calc(100% + 5px); /* Add some horizontal space to account for border at the bottom */
-  background-color: var(--background-tertiary); /* The background color */
-  border-left: 2px solid var(--color-base-20); /* The white line color, moved to border */
+  border-left: 2px solid var(--background-secondary); /* The white line color, moved to border */
   z-index: -1; /* Ensures buttons float on top */
 }
 
@@ -1190,9 +1248,20 @@ body.is-maximized .titlebar-button.mod-maximize {
   box-shadow: var(--shadow-active);
 }
 
+/* Color the caret down square when the dropdown menu is active */
+.workspace-tab-header-tab-list span.clickable-icon.has-active-menu {
+  background-color: var(--background-primary);
+}
+.workspace-tab-header-tab-list span.clickable-icon.has-active-menu:hover {
+  box-shadow: var(--shadow-hover);
+}
+.workspace-tab-header-tab-list span.clickable-icon.has-active-menu:active {
+  box-shadow: var(--shadow-active);
+}
+
 .sidebar-toggle-button.mod-right div.clickable-icon,
 .workspace-tab-header-tab-list span.clickable-icon {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 /* Add an empty gap under the tab to have a chrome-style tab setup */

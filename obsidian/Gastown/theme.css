@@ -1,0 +1,527 @@
+
+
+/*
+Color Pallete:
+White: #FFFFFF;
+Forest Green: #647375;
+Off White: #ECEFF2;
+Red: #AF3541;
+Dark Dark Blue: #020F2B; RGB 2, 15, 43
+*/
+
+.theme-light {
+    --background-primary: white;                                                /* background for main body of text */
+    --background-primary-alt: white;                                            /* adjusts the background color of code block text */
+    --background-secondary: #ECEFF2;                                            /* Adjusts the background color of the File Explorer, Backlinks, and Tags Pane*/
+    --background-secondary-alt: #020F2B;                                        /* Adjusts the background color of  1) the two edge panels holding the icons  2) the file selector background color 3) tag number background 4) backlinks background*/
+    --background-accent: #fff;
+    --background-modifier-border: #ddd;
+    --background-modifier-form-field: #fff;
+    --background-modifier-form-field-highlighted: #fff;
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+    --background-modifier-success: #A4E7C3;
+    --background-modifier-error: #e68787;
+    --background-modifier-error-rgb: 230, 135, 135;
+    --background-modifier-error-hover: #FF9494;
+    --background-modifier-cover: rgba(0, 0, 0, 0.8);
+    --text-accent: #AF3541;                                                        /* changes the color of file explorer icons and editor icons*/
+    --text-accent-hover: #020F2B;                                     /* changes the color of linked text you hover over */
+    --text-normal: rgba(0, 0, 0, 0.87);                                                              /*Change the body text color */
+    --text-muted:  rgba(0, 0, 0, 0.50);
+    --text-faint: #999999;
+    --text-error: #800000;
+    --text-error-hover: #990000;
+    --text-highlight-bg: rgba(255, 255, 0, 0.4);
+    --text-selection: rgba(0, 122, 255, 0.15);
+    --text-on-accent: #f2f2f2;
+    --interactive-normal: #f2f3f5;
+    --interactive-hover: #e9e9e9;
+    --interactive-accent: #020F2B;                        /* when hovering over certain items such as the bar at the bottom of the note title it highlights it */
+    --interactive-accent-rgb: #020F2B;                                          /* adjusts the links in graph view */
+    --interactive-accent-hover: #8273e6;
+    --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+    --scrollbar-bg: rgba(0, 0, 0, 0.05);
+    --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+}
+
+html, body {
+
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+/* HEADERS AND NOTES TITLE BAR */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;                                                                                 /* Changing the Header font */
+}
+
+/* reworks how vertical notes open */
+.workspace-split.mod-vertical { overflow-x:auto; }
+.workspace-leaf, .workspace-split.mod-horizontal { min-width: 500px; }
+
+/* color of the bar between notes in editor*/
+.workspace-leaf-resize-handle {
+width: 2px !important;
+background-color: rgba(2, 15, 43, 0.3);
+}
+
+/* changing the color of linked text*/
+
+a {
+  color:  rgb(10, 132, 255, 0.75);
+}
+/* changes the color of linked text when hovered */
+
+a:hover {
+       color: #020F2B;
+}
+/* color of editor icons */
+.file-view-actions {
+
+color: #020F2B !important;
+
+}
+/* color of editor icons on hover */
+.file-view-actions:hover {
+
+color: #AF3541 !important;
+
+}
+
+/*change the color of text for links in editor */
+
+.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link {
+    color:  rgb(10, 132, 255, 0.8) !important;
+    text-decoration: none;
+}
+/* when you hover over an internal link it gets slightly darker */
+
+.cm-s-obsidian span.cm-link:hover, .cm-s-obsidian span.cm-hmd-internal-link:hover {
+  color: #020F2B;
+
+}
+
+/*.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link {
+
+}*/
+
+/* changing the color of hashtags in the editor */
+a.tag {
+  color: #647375;
+}
+/* changin the color of tag when you hover over it */
+a.tag:hover {
+  color: #AF3541;
+}
+/* changing the color of hashtags in the editor */
+.cm-s-obsidian span.cm-hashtag {
+color: #647375;
+}
+/* changin the color of tag when you hover over it */
+.cm-s-obsidian span.cm-hashtag:hover {
+color: #AF3541;
+}
+/* changing the style of the pop up when you do double brackets and it offers a suggestion*/
+
+.suggestion {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: white;
+}
+
+.suggestion-item:hover {
+  color: #ECEFF2 !important;
+  background-color: #020F2B !important;
+}
+
+/* tag pane text*/
+
+.tag-pane-tag-text {
+  color: rgba(2, 15, 43, 0.75);
+}
+
+.tag-pane-tag-count {
+  color: #020F2B;
+  background-color: #ECEFF2;
+}
+
+/* tag pane hover*/
+.tag-pane-tag:hover, .tag-pane-tag-text:hover {
+  background-color: #020F2B;
+  color: #ECEFF2 !important;
+}
+
+.tag-pane-tag:hover .tag-pane-tag-text {
+  background-color: #020F2B;
+  color: #ECEFF2 !important;
+}
+
+
+/* changing graph view colors*/
+
+#graph-view-canvas .links
+{
+stroke: rgba(10, 132, 255, .30) !important;
+  /* stroke: rgba(2, 15, 43, 0.3) !important;*/
+}
+
+ #graph-view-canvas .nodes text:hover {
+   fill: #AF3541 !important;
+ }
+
+ #graph-view-canvas .nodes text:hover  #graph-view-canvas .nodes circle:hover {
+   fill: green !important;
+ }
+
+
+   /* Adjusting the body of the text */
+
+
+.workspace > .workspace-split > .workspace-leaf.mod-single-child .workspace-leaf-header {
+    border-bottom: 2px solid var(--background-secondary-alt);
+    background-color: var(--background-primary);
+}
+
+/* Changing the presentation of the note titles */
+
+.workspace-leaf-header, .workspace-leaf-header-title {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+/* note titles that aren't in focus */
+.view-header, .view-header-title {
+color: rgba(2, 15, 43);
+background-color: white !important;
+
+}
+
+.workspace-leaf.mod-active .view-header {
+    background-color: var(--background-primary-alt);
+    border-bottom: 2px solid #AF3541;
+}
+/* CHANGING HOW THE EDITOR MODE LOOKS */
+
+.cm-s-obsidian {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 15px !important;
+  line-height: 24px !important;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+/* changing how the titles look in editor and prevewi */
+
+.cm-s-obsidian pre.HyperMD-header {
+  font-family: 'Merriweather', serif !important;
+  font-weight: 900;
+}
+
+/* changing how code displays on the screen */
+
+.markdown-preview-view code {                  /* this is for viewing mode */
+    background-color: #647375 !important;
+    color: white !important;
+    font-size: 13px;
+}
+
+.cm-s-obsidian span.cm-inline-code { /* this is for editing mode */
+  background-color: #ECEFF2;
+  color: #AF3541 !important;
+  font-size: 14px;
+}
+
+/* changes color of sidebar when collapsed */
+.side-dock-ribbon {
+  background-color: #020F2B !important;
+}
+
+/* kills the side dock ribbon transition which is distracting */
+.side-dock-ribbon-tab, .side-dock-ribbon-before, .side-dock-ribbon-after, .side-dock-ribbon-tab-inner {
+    transition: unset !important;
+}
+
+/* adjusting how highlighted text appears */
+mark {
+    background-color: #feebc8 !important;
+    color: #020F2B !important;
+}
+/*highlighted text in editor using markdown */
+.cm-s-obsidian span.cm-highlight {
+  background-color: #feebc8 !important;
+  color: #020F2B !important;
+}
+
+/*highlighted text in search results */
+.search-result-file-matched-text {
+  background-color: #feebc8 !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* matching search terms that are highlighted in editor*/
+
+.obsidian-search-match-highlight, .obsidian-search-match-highlight a {
+
+  color: black !important;
+  background-color: #feebc8  !important;
+}
+/* Adjusting the link brackets */
+
+.cm-s-obsidian .cm-formatting-link {
+
+  font-family: 'Open Sans', serif;
+  color: rgb(10, 132, 255, 0.50) !important;
+ }
+
+ /* color of text in the file explorer / color: rgba(0, 0, 0, 0.8) !important */
+ .nav-file-title {
+   color: rgba(2, 15, 43, 0.8) !important;
+ }
+
+/* color of text in the file explorer that is selected or hovered over */
+.nav-file.is-active > .nav-file-title, .nav-file-title:hover {
+  color: #ECEFF2 !important;
+}
+
+/*color of text for link pane icon, tag pane icon, file explorer icon, and search icon */
+.side-dock-ribbon-tab {
+color: #ECEFF2 !important;
+}
+/*color of all other major system icons such as system and network map*/
+ .side-dock-ribbon-action {
+   color: #ECEFF2 !important;
+ }
+
+ .side-dock-ribbon-tab.is-active {
+color: #020F2B !important;
+ }
+
+/* when you hover over a side bar item */
+.side-dock-ribbon-tab:hover, .side-dock-ribbon-action:hover
+{
+  color: #AF3541 !important;
+}
+
+/* changes the style of the box that comes up when you hover over links */
+
+.popover {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: white;
+  font-size: 18px;
+  border-size: 2px;
+  border-color: #647375;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+}
+
+.popover-title {
+  font-weight: 800;
+}
+
+.app-container {
+  overflow: hidden;
+}
+
+
+/* changes the color of code text within popover */
+.popover code {
+color:   white;
+ background-color: #647375;
+}
+
+/* ADJUSTING BACK LINKS */
+
+.search-result-file-match {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+
+/* when you hover over a backlink title */
+
+.search-result:hover, .search-result-file-title:hover {
+  background-color: white;
+  color: #020F2B;
+}
+/* border around search results when you hover over them */
+.search-result:hover {
+  border: 1px dashed #AF3541; /*#647375 for forest green */
+}
+
+/* when you hover over a backlink*/
+.search-result:hover, .search-result-file-match:hover, .search-result-file-title:hover  {
+  background-color: white;
+  color: #020F2B;
+}
+
+/*insert a backlink button */
+
+.search-result-file-match-replace-button {
+    color: white;
+    background-color: black;
+}
+
+.search-result-file-match-replace-button:hover {
+    color: white;
+    background-color: rgba(10, 132, 255);
+}
+
+/* if a file is being renamed  cahnges color */
+
+.nav-file-title-content.is-being-renamed, .nav-folder-title-content.is-being-renamed
+{
+  color: #020F2B;
+  background-color: white;
+
+}
+/*when hovering over a menu item*/
+.menu-item:hover, .menu-item:hover .menu-item-icon {
+  background-color: #020F2B;
+  color: white;
+}
+/* deleting button */
+
+button.mod-warning {
+    background-color: #020F2B !important;
+    color: white !important;
+}
+ /*hovering over the delete button */
+
+button.mod-warning:hover {
+  background-color: #AF3541 !important;
+  color: white !important;
+}
+
+/* cancel button */
+.modal-button-container button:not(.mod-cta):not(.mod-warning) {
+    background-color: #020F2B;
+    color: white;
+}
+/* cancel button hover over */
+.modal-button-container button:not(.mod-cta):not(.mod-warning):hover {
+  background-color: #647375 !important;
+}
+
+/* when you hover over the open a file selector after delteting a file*/
+.empty-state-container:hover
+{
+  border: 5px dashed rgb(10, 132, 255);
+}
+
+/* adjusting menu colors */
+
+.vertical-tab-nav-item {
+color: #ECEFF2;
+}
+
+.vertical-tab-nav-item.is-active, .vertical-tab-nav-item:hover {
+background-color: #ECEFF2;
+color: #020F2B;
+}
+
+/* adjusting menu button colors */
+  button.mod-cta:hover {
+    color: white;
+    background-color: #647375;
+  }
+
+/* enabled plugin */
+.checkbox-container {
+  background-color: rgba(175, 53, 65, 0.80);
+}
+
+  .checkbox-container.is-enabled {
+      background-color: rgba(10, 132, 255, .60);
+  }
+
+
+/* normal presentation of nav folder titles */
+
+.nav-folder-title {
+  color: #647375;
+}
+/* how folders display when hovering over*/
+  body:not(.is-grabbing) .nav-folder-title:hover {
+      background-color: #020F2B;
+      color: white;
+  }
+
+/* indicator for folder when hovered */
+  body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
+color: #ECEFF2;
+
+  }
+/* attachments tag style */
+  .nav-file-tag {
+    color: white;
+    background-color: #647375;
+  }
+
+/* hovering over File Explorer Title*/
+  .side-dock-title:hover {
+    color: #AF3541;
+  }
+/* hovering over root folder title */
+.nav-folder.mod-root > .nav-folder-title:hover {
+  color: #AF3541;
+}
+
+/* changing settings hotkey look */
+
+.setting-hotkey {
+background-color:  #ECEFF2;
+  font-family: 'Open Sans', sans-serif !important;
+
+}
+/* hover over change hotkey */
+.setting-add-hotkey-button:hover {
+  background-color: #ECEFF2;
+  color: #020F2B;
+}
+
+/* adjusting color of code in markdown format convertor */
+
+.setting-item-description code {
+background-color: #647375;
+color: white;
+}
+
+/* adjusting the title section of notes some more */
+.view-header-title-container:after {
+
+background: white !important;
+height: 36px;
+
+}
+
+
+------------------------
+
+
+/* */
+/*
+Color Pallete:
+White: #FFFFFF;
+Forest Green: #647375;
+Off White: #ECEFF2;
+Red: #AF3541;
+Dark Dark Blue: #020F2B;
+link blue: rgba(10, 132, 255, .80);
+*/

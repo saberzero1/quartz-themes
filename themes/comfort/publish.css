@@ -1263,6 +1263,7 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     0 0 transparent !important;
   --vault-name-color: #636867 !important;
+  --panel-border-color: rgba(0, 0, 0, 0) !important;
   --green: #afe4ae !important;
   --orange: #c1a58c !important;
   --purple: #ce82cd !important;
@@ -1272,7 +1273,6 @@ body.theme-light {
   --gray-1: #b0c0aa !important;
   --gray-2: #a0a5b8 !important;
   --aqua: #89bace !important;
-  --panel-border-color: rgba(0, 0, 0, 0) !important;
 }
 
 body .site-body-left-column-site-theme-toggle {
@@ -1929,10 +1929,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: rgb(252, 254, 243) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(252, 254, 243);
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1941,8 +1942,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(111, 110, 106);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

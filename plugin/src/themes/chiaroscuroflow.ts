@@ -803,40 +803,6 @@ html[saved-theme="dark"] body h6 {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(25, 18, 63) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(25, 18, 63);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(25, 18, 63) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(25, 18, 63);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(25, 18, 63) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(25, 18, 63);
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(25, 18, 63) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(25, 18, 63);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(25, 18, 63) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(25, 18, 63);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(25, 18, 63) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(25, 18, 63);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -1747,40 +1713,6 @@ html[saved-theme="light"] body h6 {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(255, 250, 205) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 250, 205);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(255, 250, 205) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 250, 205);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(255, 250, 205) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 250, 205);
-  border-bottom-color: rgb(12, 9, 9);
-  border-left-color: rgb(12, 9, 9);
-  border-right-color: rgb(12, 9, 9);
-  border-top-color: rgb(12, 9, 9);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(255, 250, 205) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 250, 205);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(255, 250, 205) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 250, 205);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(255, 250, 205) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 250, 205);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;

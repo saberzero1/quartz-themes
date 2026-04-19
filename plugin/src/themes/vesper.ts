@@ -868,40 +868,6 @@ html[saved-theme="dark"] body h6 {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(16, 16, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(16, 16, 16);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(16, 16, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(16, 16, 16);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(16, 16, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(16, 16, 16);
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(16, 16, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(16, 16, 16);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(16, 16, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(16, 16, 16);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(16, 16, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(16, 16, 16);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(160, 160, 160);
@@ -1926,13 +1892,6 @@ html[saved-theme="light"] body h6 {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(26, 26, 26);
-  border-left-color: rgb(26, 26, 26);
-  border-right-color: rgb(26, 26, 26);
-  border-top-color: rgb(26, 26, 26);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(119, 119, 119);

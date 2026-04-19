@@ -1284,6 +1284,7 @@ body.theme-light {
   --embed-background: #ffffff !important;
   --background-primary-rgb: 247, 249, 251 !important;
   --sidebar-background: #ffffff !important;
+  --text-heading: #0b1a24 !important;
   --background-secondary-rgb: 224, 232, 240 !important;
   --embed-border: #cdd7df !important;
   --interactive-muted: #cdd7df !important;
@@ -1310,7 +1311,6 @@ body.theme-light {
   --syntax-variable: #004f70 !important;
   --text-accent-visited: #2f8fb5 !important;
   --text-accent-visited-hover: #54b8e0 !important;
-  --text-heading: #0b1a24 !important;
   --text-normal-rgb: 16, 33, 45 !important;
   --view-action-active-bg: #006fa6 !important;
 }
@@ -2208,6 +2208,7 @@ body.theme-dark {
   --embed-background: #1f1f1f !important;
   --background-primary-rgb: 34, 34, 34 !important;
   --sidebar-background: #151b1f !important;
+  --text-heading: #e4e4e4 !important;
   --background-secondary-rgb: 28, 28, 28 !important;
   --embed-border: #2e2e2e !important;
   --interactive-muted: #2e2e2e !important;
@@ -2234,7 +2235,6 @@ body.theme-dark {
   --syntax-variable: #0090cc !important;
   --text-accent-visited: #2f8fb5 !important;
   --text-accent-visited-hover: #40aedd !important;
-  --text-heading: #e4e4e4 !important;
   --text-normal-rgb: 198, 198, 198 !important;
   --view-action-active-bg: #1a98ce !important;
 }
@@ -3137,10 +3137,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: rgb(247, 249, 251) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(247, 249, 251);
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3149,8 +3150,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(16, 33, 45);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -5168,10 +5191,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(34, 34, 34) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(34, 34, 34);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5180,8 +5204,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(198, 198, 198);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

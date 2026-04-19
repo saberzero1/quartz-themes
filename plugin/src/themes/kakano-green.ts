@@ -2749,40 +2749,6 @@ html[saved-theme="dark"] body hr {
   padding-right: 24px;
 }
 
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: color(srgb 0.0195 0.032175 0.006825) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0195 0.032175 0.006825);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: color(srgb 0.0195 0.032175 0.006825) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0195 0.032175 0.006825);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: color(srgb 0.0195 0.032175 0.006825) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0195 0.032175 0.006825);
-  border-bottom-color: color(srgb 0.756 0.8574 0.6546);
-  border-left-color: color(srgb 0.756 0.8574 0.6546);
-  border-right-color: color(srgb 0.756 0.8574 0.6546);
-  border-top-color: color(srgb 0.756 0.8574 0.6546);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: color(srgb 0.0195 0.032175 0.006825) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0195 0.032175 0.006825);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: color(srgb 0.0195 0.032175 0.006825) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0195 0.032175 0.006825);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: color(srgb 0.0195 0.032175 0.006825) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.0195 0.032175 0.006825);
-}
-
 html[saved-theme="dark"] body body {
   scrollbar-color: color(srgb 0.39 0.6435 0.1365 / 0.25) rgba(0, 0, 0, 0);
 }`,
@@ -5659,13 +5625,6 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
   padding-right: 24px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: color(srgb 0.039 0.06435 0.01365);
-  border-left-color: color(srgb 0.039 0.06435 0.01365);
-  border-right-color: color(srgb 0.039 0.06435 0.01365);
-  border-top-color: color(srgb 0.039 0.06435 0.01365);
 }
 
 html[saved-theme="light"] body body {

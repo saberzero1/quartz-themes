@@ -735,6 +735,10 @@ kbd {
   --tab-text-color-focused-active-current: var(--light-ink-alt);
 }
 
+.workspace-tab-header-container .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+  background-color: var(--color-base-10);
+}
+
 .titlebar-inner {
   --titlebar-text-color: var(--light-ink-alt);
   --titlebar-text-color-focused: var(--light-ink-alt);
@@ -747,12 +751,28 @@ kbd {
   --icon-color-focused: var(--light-ink-alt);
 }
 
-.modal.mod-settings .vertical-tab-header {
-  --text-faint: var(--light-ink-muted);
+.modal.mod-settings .vertical-tab-header-group-title {
+  --text-faint: var(--secondary-ink);
 }
 
-.modal.mod-settings .vertical-tab-header .vertical-tab-nav-item {
-  color: var(--light-ink-alt);
+.theme-light .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item,
+.retro-dm-misty-mirage .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item {
+  color: var(--main-ink);
+}
+
+.theme-light .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item:hover .vertical-tab-nav-item-icon,
+.theme-light .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item:hover,
+.retro-dm-misty-mirage .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item:hover .vertical-tab-nav-item-icon,
+.retro-dm-misty-mirage .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item:hover {
+  color: var(--color-base-20);
+}
+
+.theme-light .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item.is-active .vertical-tab-nav-item-icon,
+.theme-light .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item.is-active,
+.retro-dm-misty-mirage .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item.is-active .vertical-tab-nav-item-icon,
+.retro-dm-misty-mirage .modal.mod-settings .vertical-tab-header .vertical-tab-nav-item.is-active {
+  color: var(--color-base-20);
+  font-weight: 600;
 }
 
 .modal.mod-sync-log,
@@ -869,8 +889,10 @@ button:focus-visible {
   background-color: var(--leather-color);
 }
 
+.is-mobile .modal-container .mod-raised,
 .is-mobile .workspace-drawer-header-icon {
-  --interactive-accent: var(--light-ink-alt);
+  background: var(--leather-color-alt);
+  backdrop-filter: none;
 }
 
 .is-mobile .search-input-container .input-right-decorator,
@@ -890,6 +912,19 @@ button:focus-visible {
 
 .is-mobile .mobile-tab-title {
   --text-normal: var(--light-ink-alt);
+}
+
+.is-mobile .modal.mod-community-modal .community-modal-controls button.clickable-icon,
+.is-mobile .community-modal-controls .setting-item-name,
+.is-mobile .community-modal-controls .u-muted,
+.is-mobile .setting-item-heading .clickable-icon,
+.is-mobile .setting-item-heading .setting-item-name,
+.is-mobile .modal .vertical-tab-header-group-title {
+  color: var(--color-base-20);
+}
+
+.is-mobile .modal.mod-settings .vertical-tab-nav-item-icon {
+  color: var(--main-ink);
 }
 
 .is-mobile .mod-settings .modal-close-button,

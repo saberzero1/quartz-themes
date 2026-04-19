@@ -1397,36 +1397,6 @@ html[saved-theme="light"] body h6 {
   border-top-color: rgba(8, 109, 221, 0.7);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(216, 217, 207) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(216, 217, 207);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(216, 217, 207) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(216, 217, 207);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(216, 217, 207) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(216, 217, 207);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(216, 217, 207) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(216, 217, 207);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(216, 217, 207) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(216, 217, 207);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(216, 217, 207) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(216, 217, 207);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .folder-outer > ul {
   border-left-width: 0px;

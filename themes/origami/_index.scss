@@ -1706,6 +1706,7 @@
   --vault-name-font-size: 14px !important;
   --vault-name-font-weight: 500 !important;
   --color-accent-3: hsl(-175, 142.6%, 79.98%) !important;
+  --background-transparent: #55555599 !important;
   --color-accent-rgb: 247, 69, 69 !important;
   --ancestor-editor-color: #b3b3b3 !important;
   --aside-background: transparent !important;
@@ -1713,7 +1714,6 @@
   --aside-border-color: #555555 !important;
   --aside-text-color: #999999 !important;
   --background-primary-pre-alt: #333333 !important;
-  --background-transparent: #55555599 !important;
   --bb-border: 1px solid #555555 !important;
   --bb-border-alt: 1px solid #757575 !important;
   --bb-border-dashed: 1px dashed #555555 !important;
@@ -3101,13 +3101,11 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(248, 245, 243) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 245, 243);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(248, 245, 243) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 245, 243);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3121,18 +3119,15 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(248, 245, 243) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 245, 243);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(248, 245, 243) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 245, 243);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(248, 245, 243) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 245, 243);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3144,8 +3139,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(248, 245, 243) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 245, 243);
+    background-color: rgb(255, 255, 255);
   }
 
   body {
@@ -6229,13 +6223,11 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6244,23 +6236,20 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      border: 0px rgb(179, 179, 179);
+      border: 0px rgb(218, 218, 218);
       box-shadow: none;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6272,8 +6261,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(32, 32, 32) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(30, 30, 30);
     }
 
     body {
@@ -8388,8 +8376,8 @@ html[saved-theme="dark"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -8468,7 +8456,7 @@ html[saved-theme="dark"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

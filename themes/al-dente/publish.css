@@ -2554,24 +2554,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background:
-    radial-gradient(
-        circle at 12.17% 41.13%,
-        rgb(247, 246, 240),
-        rgba(0, 0, 0, 0) 100%
-      )
-      repeat fixed 0% 0% / cover padding-box border-box,
-    radial-gradient(
-        circle at 88.72% 61.69%,
-        rgb(235, 230, 222),
-        rgba(0, 0, 0, 0) 100%
-      )
-      repeat fixed 0% 0% / cover padding-box border-box,
-    rgb(246, 246, 244)
-      radial-gradient(circle, rgb(225, 224, 218), rgb(233, 232, 230) 100%)
-      repeat fixed 0% 0% / cover padding-box border-box;
-  background-color: rgb(246, 246, 244);
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2580,8 +2567,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(63, 62, 60);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

@@ -1081,13 +1081,6 @@ html body hr {
 }`,
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgba(255, 255, 255, 0.87);
-  border-left-color: rgba(255, 255, 255, 0.87);
-  border-right-color: rgba(255, 255, 255, 0.87);
-  border-top-color: rgba(255, 255, 255, 0.87);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgba(255, 255, 255, 0.6);

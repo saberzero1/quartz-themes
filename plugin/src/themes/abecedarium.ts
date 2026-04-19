@@ -1165,40 +1165,6 @@ html[saved-theme="dark"] body hr {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(19, 21, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(19, 21, 23);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(19, 21, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(19, 21, 23);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(19, 21, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(19, 21, 23);
-  border-bottom-color: rgb(236, 237, 238);
-  border-left-color: rgb(236, 237, 238);
-  border-right-color: rgb(236, 237, 238);
-  border-top-color: rgb(236, 237, 238);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(19, 21, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(19, 21, 23);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(19, 21, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(19, 21, 23);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(19, 21, 23) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(19, 21, 23);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(139, 149, 154);
@@ -2484,13 +2450,6 @@ html[saved-theme="light"] body hr {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(46, 51, 56);
-  border-left-color: rgb(46, 51, 56);
-  border-right-color: rgb(46, 51, 56);
-  border-top-color: rgb(46, 51, 56);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "??", "??", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

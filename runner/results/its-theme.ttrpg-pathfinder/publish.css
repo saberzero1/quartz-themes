@@ -1403,6 +1403,14 @@ body.theme-light {
   --blockquote-padding: 12px 24px !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 700 !important;
+  --med-small: 400px !important;
+  --med-tall: 600px !important;
+  --medium: 500px !important;
+  --micro: 70px !important;
+  --small: 200px !important;
+  --small-med: 300px !important;
+  --tall: 700px !important;
+  --tiny: 100px !important;
   --highlight: rgba(191, 0, 0, 0.2) !important;
   --hr-text-offset: 12px !important;
   --nav-item-border-color: #e58000 !important;
@@ -1434,6 +1442,12 @@ body.theme-light {
   --folder-icon: "" !important;
   --kanban-lane-background: #e0dacb !important;
   --kanban-lane-border: 3px solid rgba(124, 49, 3, 0.4) !important;
+  --h1-text-align: start !important;
+  --h2-text-align: start !important;
+  --h3-text-align: start !important;
+  --h4-text-align: start !important;
+  --h5-text-align: start !important;
+  --h6-text-align: start !important;
   --bg: #d2c4be !important;
   --embed-border: 2px solid transparent !important;
   --accent-text: #dcddde !important;
@@ -1534,7 +1548,6 @@ body.theme-light {
   --h1-border-width: 0 !important;
   --h1-padding: 0 !important;
   --h1-shadow: transparent !important;
-  --h1-text-align: start !important;
   --h2-background: transparent !important;
   --h2-border-left-color: black !important;
   --h2-border-line-color: black !important;
@@ -1544,7 +1557,6 @@ body.theme-light {
   --h2-border-width: 0 !important;
   --h2-padding: 0 !important;
   --h2-shadow: transparent !important;
-  --h2-text-align: start !important;
   --h3-background: transparent !important;
   --h3-border-left-color: black !important;
   --h3-border-line-color: black !important;
@@ -1554,7 +1566,6 @@ body.theme-light {
   --h3-border-width: 0 !important;
   --h3-padding: 0 !important;
   --h3-shadow: transparent !important;
-  --h3-text-align: start !important;
   --h4-background: transparent !important;
   --h4-border-left-color: black !important;
   --h4-border-line-color: black !important;
@@ -1564,7 +1575,6 @@ body.theme-light {
   --h4-border-width: 0 !important;
   --h4-padding: 0 !important;
   --h4-shadow: transparent !important;
-  --h4-text-align: start !important;
   --h5-background: transparent !important;
   --h5-border-left-color: black !important;
   --h5-border-line-color: black !important;
@@ -1574,7 +1584,6 @@ body.theme-light {
   --h5-border-width: 0 !important;
   --h5-padding: 0 !important;
   --h5-shadow: transparent !important;
-  --h5-text-align: start !important;
   --h6-background: transparent !important;
   --h6-border-left-color: black !important;
   --h6-border-line-color: black !important;
@@ -1584,7 +1593,6 @@ body.theme-light {
   --h6-border-width: 0 !important;
   --h6-padding: 0 !important;
   --h6-shadow: transparent !important;
-  --h6-text-align: start !important;
   --he-popover-border-radius: 0 !important;
   --header-arrow-icon-color: #4e5b6f !important;
   --header-arrow-icon-size: 10px !important;
@@ -1664,9 +1672,6 @@ body.theme-light {
   --list-numbered-color: #e58000 !important;
   --lite-accent: #e58000 !important;
   --mdi: "Material Icons Sharp" !important;
-  --med-small: 400px !important;
-  --med-tall: 600px !important;
-  --medium: 500px !important;
   --message-border-color: rgba(124, 49, 3, 0.4) !important;
   --message-border-width: 0px !important;
   --message-box-shadow: 2px 2px 0 rgba(124, 49, 3, 0.4) !important;
@@ -1682,7 +1687,6 @@ body.theme-light {
   --metadata-title-icon-padding: 5px !important;
   --metadata-title-size: 16px !important;
   --metadata-title-weight: 900 !important;
-  --micro: 70px !important;
   --modal-nav-item-background: transparent !important;
   --modal-nav-item-background-hover: #e0dacb99 !important;
   --modal-sidebar-background: #e2ded8 !important;
@@ -1749,8 +1753,6 @@ body.theme-light {
   --sidebar-tab-padding: 0 12px !important;
   --slide-background: #ece9e4 !important;
   --slider-track-radius: 0 !important;
-  --small: 200px !important;
-  --small-med: 300px !important;
   --soft-text: #5c1c16 !important;
   --statblock-alt: #e0dacb99 !important;
   --statblock-alt-padding: 0.25em 0.3em !important;
@@ -1824,7 +1826,6 @@ body.theme-light {
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
-  --tall: 700px !important;
   --td: #e0dacb99 !important;
   --text-dl: #e5ebee !important;
   --th: #5e0000 !important;
@@ -1835,7 +1836,6 @@ body.theme-light {
   --theme-rainbow-4: #5d0000 !important;
   --theme-rainbow-5: #e58000 !important;
   --theme-rainbow-6: #393636 !important;
-  --tiny: 100px !important;
   --toggle-shadow: none !important;
   --tooltip-color: #e5ebee !important;
   --icons: #d04e4e !important;
@@ -2786,6 +2786,14 @@ body.theme-dark {
   --blockquote-padding: 12px 24px !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 700 !important;
+  --med-small: 400px !important;
+  --med-tall: 600px !important;
+  --medium: 500px !important;
+  --micro: 70px !important;
+  --small: 200px !important;
+  --small-med: 300px !important;
+  --tall: 700px !important;
+  --tiny: 100px !important;
   --highlight: rgba(191, 0, 0, 0.2) !important;
   --hr-text-offset: 12px !important;
   --nav-item-border-color: #c94d4d !important;
@@ -2817,6 +2825,12 @@ body.theme-dark {
   --folder-icon: "" !important;
   --kanban-lane-background: #232831 !important;
   --kanban-lane-border: 3px solid #0b0f13 !important;
+  --h1-text-align: start !important;
+  --h2-text-align: start !important;
+  --h3-text-align: start !important;
+  --h4-text-align: start !important;
+  --h5-text-align: start !important;
+  --h6-text-align: start !important;
   --bg: #252c36 !important;
   --embed-border: 2px solid transparent !important;
   --accent-text: #dcddde !important;
@@ -2917,7 +2931,6 @@ body.theme-dark {
   --h1-border-width: 0 !important;
   --h1-padding: 0 !important;
   --h1-shadow: transparent !important;
-  --h1-text-align: start !important;
   --h2-background: transparent !important;
   --h2-border-left-color: #652121 !important;
   --h2-border-line-color: #652121 !important;
@@ -2927,7 +2940,6 @@ body.theme-dark {
   --h2-border-width: 0 !important;
   --h2-padding: 0 !important;
   --h2-shadow: transparent !important;
-  --h2-text-align: start !important;
   --h3-background: transparent !important;
   --h3-border-left-color: #652121 !important;
   --h3-border-line-color: #652121 !important;
@@ -2937,7 +2949,6 @@ body.theme-dark {
   --h3-border-width: 0 !important;
   --h3-padding: 0 !important;
   --h3-shadow: transparent !important;
-  --h3-text-align: start !important;
   --h4-background: transparent !important;
   --h4-border-left-color: #652121 !important;
   --h4-border-line-color: #652121 !important;
@@ -2947,7 +2958,6 @@ body.theme-dark {
   --h4-border-width: 0 !important;
   --h4-padding: 0 !important;
   --h4-shadow: transparent !important;
-  --h4-text-align: start !important;
   --h5-background: transparent !important;
   --h5-border-left-color: #652121 !important;
   --h5-border-line-color: #652121 !important;
@@ -2957,7 +2967,6 @@ body.theme-dark {
   --h5-border-width: 0 !important;
   --h5-padding: 0 !important;
   --h5-shadow: transparent !important;
-  --h5-text-align: start !important;
   --h6-background: transparent !important;
   --h6-border-left-color: #652121 !important;
   --h6-border-line-color: #652121 !important;
@@ -2967,7 +2976,6 @@ body.theme-dark {
   --h6-border-width: 0 !important;
   --h6-padding: 0 !important;
   --h6-shadow: transparent !important;
-  --h6-text-align: start !important;
   --he-popover-border-radius: 0 !important;
   --header-arrow-icon-color: #4e5b6f !important;
   --header-arrow-icon-size: 10px !important;
@@ -3047,9 +3055,6 @@ body.theme-dark {
   --list-numbered-color: #c94d4d !important;
   --lite-accent: #c94d4d !important;
   --mdi: "Material Icons Sharp" !important;
-  --med-small: 400px !important;
-  --med-tall: 600px !important;
-  --medium: 500px !important;
   --message-border-color: #0b0f13 !important;
   --message-border-width: 0px !important;
   --message-box-shadow: 2px 2px 0 #0b0f13 !important;
@@ -3065,7 +3070,6 @@ body.theme-dark {
   --metadata-title-icon-padding: 5px !important;
   --metadata-title-size: 16px !important;
   --metadata-title-weight: 900 !important;
-  --micro: 70px !important;
   --modal-nav-item-background: transparent !important;
   --modal-nav-item-background-hover: #06080c60 !important;
   --modal-sidebar-background: #0d1014 !important;
@@ -3132,8 +3136,6 @@ body.theme-dark {
   --sidebar-tab-padding: 0 12px !important;
   --slide-background: #1a1e24 !important;
   --slider-track-radius: 0 !important;
-  --small: 200px !important;
-  --small-med: 300px !important;
   --soft-text: #97a1b9 !important;
   --statblock-alt: #06080c60 !important;
   --statblock-alt-padding: 0.25em 0.3em !important;
@@ -3207,7 +3209,6 @@ body.theme-dark {
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Microsoft YaHei Light", sans-serif !important;
-  --tall: 700px !important;
   --td: #06080c60 !important;
   --text-dl: #e5ebee !important;
   --th: #652121 !important;
@@ -3218,7 +3219,6 @@ body.theme-dark {
   --theme-rainbow-4: #d0765b !important;
   --theme-rainbow-5: #694b3c !important;
   --theme-rainbow-6: #2e333d !important;
-  --tiny: 100px !important;
   --toggle-shadow: none !important;
   --tooltip-color: #e5ebee !important;
   --hr-image: url("data:image/svg+xml,%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 1000 204' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenoddclip-rule:evenoddstroke-linejoin:roundstroke-miterlimit:2'%3E%3Cg transform='matrix(1,0,0,1,1.7053e-13,-398.169)'%3E%3Crect id='Artboard1' x='-0' y='398.169' width='1000' height='203.661' style='fill:none'/%3E%3CclipPath id='_clip1'%3E%3Crect id='Artboard11' serif:id='Artboard1' x='-0' y='398.169' width='1000' height='203.661'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23_clip1)'%3E%3Cg transform='matrix(4.31034,0,0,4.31034,-267.917,-1094.41)'%3E%3Cpath d='M178.389,380.983C175.751,387.924 169.433,393.494 159,393.565C127.289,393.78 136.335,361.89 118,362C108.448,361.996 110.806,374.866 115,377C114.833,377.167 100.762,372.819 105,357C76.617,370.354 62.389,358 62.389,358C62.389,358 80.399,363.885 90.791,357.333C109.271,345.683 133.119,337.401 142,364C147.001,347.144 172.305,357.468 163,370.565C163.721,364.587 151.808,358.708 151,370.565C150.447,378.68 162.397,385.825 170.144,377.076C176.411,369.999 170.344,356.114 162,354C170.327,353.643 175.921,358.556 178.389,365.031C180.857,358.556 186.45,353.643 194.777,354C186.434,356.114 180.367,369.999 186.634,377.076C194.38,385.825 206.33,378.68 205.777,370.565C204.97,358.708 193.056,364.587 193.777,370.565C184.472,357.468 209.776,347.144 214.777,364C223.658,337.401 247.507,345.683 265.986,357.333C276.379,363.885 294.389,358 294.389,358C294.389,358 280.16,370.354 251.777,357C256.015,372.819 241.944,377.167 241.777,377C245.971,374.866 248.329,361.996 238.777,362C220.443,361.89 229.488,393.78 197.777,393.565C187.344,393.494 181.027,387.924 178.389,380.983Z' style='fill:rgb(139, 38, 45)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E ") !important;
@@ -4040,10 +4040,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: rgb(236, 233, 228) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(236, 233, 228);
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4052,8 +4053,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(57, 54, 54);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -5988,10 +6011,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(26, 30, 36);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6000,8 +6024,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(188, 202, 216);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

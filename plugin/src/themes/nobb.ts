@@ -864,13 +864,6 @@ html body h6 {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-html body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(187, 187, 187);
-  border-left-color: rgb(187, 187, 187);
-  border-right-color: rgb(187, 187, 187);
-  border-top-color: rgb(187, 187, 187);
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(187, 187, 187);

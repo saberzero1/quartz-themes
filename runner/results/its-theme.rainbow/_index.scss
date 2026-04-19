@@ -900,6 +900,14 @@
   --link-decoration-color: #697580 !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 700 !important;
+  --med-small: 400px !important;
+  --med-tall: 600px !important;
+  --medium: 500px !important;
+  --micro: 70px !important;
+  --small: 200px !important;
+  --small-med: 300px !important;
+  --tall: 700px !important;
+  --tiny: 100px !important;
   --highlight: rgba(229, 149, 149, 0.37) !important;
   --hr-text-offset: 12px !important;
   --nav-item-border-color: #a35158 !important;
@@ -929,6 +937,12 @@
   --folder-icon: "\e801" !important;
   --kanban-lane-background: #eef6ff !important;
   --kanban-lane-border: 3px solid #912e2e !important;
+  --h1-text-align: left !important;
+  --h2-text-align: left !important;
+  --h3-text-align: left !important;
+  --h4-text-align: left !important;
+  --h5-text-align: left !important;
+  --h6-text-align: left !important;
   --bg: #dde4ef !important;
   --embed-border: 2px solid transparent !important;
   --accent-text: #dcddde !important;
@@ -1027,7 +1041,6 @@
   --h1-border-width: 0 !important;
   --h1-padding: 0 !important;
   --h1-shadow: transparent !important;
-  --h1-text-align: left !important;
   --h2-background: transparent !important;
   --h2-border-left-color: #c14343 !important;
   --h2-border-line-color: #c14343 !important;
@@ -1037,7 +1050,6 @@
   --h2-border-width: 0 !important;
   --h2-padding: 0 !important;
   --h2-shadow: transparent !important;
-  --h2-text-align: left !important;
   --h3-background: transparent !important;
   --h3-border-left-color: #ce6d6d !important;
   --h3-border-line-color: #ce6d6d !important;
@@ -1047,7 +1059,6 @@
   --h3-border-width: 0 !important;
   --h3-padding: 0 !important;
   --h3-shadow: transparent !important;
-  --h3-text-align: left !important;
   --h4-background: transparent !important;
   --h4-border-left-color: #5599d0 !important;
   --h4-border-line-color: #5599d0 !important;
@@ -1057,7 +1068,6 @@
   --h4-border-width: 0 !important;
   --h4-padding: 0 !important;
   --h4-shadow: transparent !important;
-  --h4-text-align: left !important;
   --h5-background: transparent !important;
   --h5-border-left-color: #b5c2d8 !important;
   --h5-border-line-color: #b5c2d8 !important;
@@ -1067,7 +1077,6 @@
   --h5-border-width: 0 !important;
   --h5-padding: 0 !important;
   --h5-shadow: transparent !important;
-  --h5-text-align: left !important;
   --h6-background: transparent !important;
   --h6-border-left-color: #ccd6eb !important;
   --h6-border-line-color: #ccd6eb !important;
@@ -1077,7 +1086,6 @@
   --h6-border-width: 0 !important;
   --h6-padding: 0 !important;
   --h6-shadow: transparent !important;
-  --h6-text-align: left !important;
   --he-popover-border-radius: 0 !important;
   --header-arrow-icon-color: #4e5b6f !important;
   --header-arrow-icon-size: 10px !important;
@@ -1158,9 +1166,6 @@
   --list-numbered-color: #c14343 !important;
   --lite-accent: #a35158 !important;
   --mdi: "Material Icons Sharp" !important;
-  --med-small: 400px !important;
-  --med-tall: 600px !important;
-  --medium: 500px !important;
   --message-border-color: #912e2e !important;
   --message-border-width: 0px !important;
   --message-box-shadow: 2px 2px 0 #912e2e !important;
@@ -1176,7 +1181,6 @@
   --metadata-title-icon-padding: 5px !important;
   --metadata-title-size: 16px !important;
   --metadata-title-weight: 900 !important;
-  --micro: 70px !important;
   --modal-nav-item-background: transparent !important;
   --modal-nav-item-background-hover: rgba(208, 221, 239, 0.38) !important;
   --modal-sidebar-background: #7e8ea3 !important;
@@ -1243,8 +1247,6 @@
   --sidebar-tab-padding: 0 12px !important;
   --slide-background: #f8fbff !important;
   --slider-track-radius: 0 !important;
-  --small: 200px !important;
-  --small-med: 300px !important;
   --soft-text: #d04e4e !important;
   --statblock-alt: rgba(208, 221, 239, 0.38) !important;
   --statblock-alt-padding: 0.25em 0.3em !important;
@@ -1312,7 +1314,6 @@
   --table-row-edit-font-size: 0.95em !important;
   --tag: #c65656 !important;
   --tag-font: "Inter" !important;
-  --tall: 700px !important;
   --td: rgba(208, 221, 239, 0.38) !important;
   --text-dl: #e5ebee !important;
   --th: #c14343 !important;
@@ -1323,7 +1324,6 @@
   --theme-rainbow-4: #3333cc !important;
   --theme-rainbow-5: #a824a8 !important;
   --theme-rainbow-6: #e83b94 !important;
-  --tiny: 100px !important;
   --toggle-shadow: none !important;
   --tooltip-color: #e5ebee !important;
   --icons: #d04e4e !important;
@@ -2237,6 +2237,14 @@
   --link-decoration-color: #bccad8 !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 700 !important;
+  --med-small: 400px !important;
+  --med-tall: 600px !important;
+  --medium: 500px !important;
+  --micro: 70px !important;
+  --small: 200px !important;
+  --small-med: 300px !important;
+  --tall: 700px !important;
+  --tiny: 100px !important;
   --highlight: rgba(122, 20, 20, 0.4) !important;
   --hr-text-offset: 12px !important;
   --nav-item-border-color: #e06c75 !important;
@@ -2266,6 +2274,12 @@
   --folder-icon: "\e801" !important;
   --kanban-lane-background: #232831 !important;
   --kanban-lane-border: 3px solid #cfd7dd !important;
+  --h1-text-align: left !important;
+  --h2-text-align: left !important;
+  --h3-text-align: left !important;
+  --h4-text-align: left !important;
+  --h5-text-align: left !important;
+  --h6-text-align: left !important;
   --bg: #252c36 !important;
   --embed-border: 2px solid transparent !important;
   --accent-text: #dcddde !important;
@@ -2365,7 +2379,6 @@
   --h1-border-width: 0 !important;
   --h1-padding: 0 !important;
   --h1-shadow: transparent !important;
-  --h1-text-align: left !important;
   --h2-background: transparent !important;
   --h2-border-left-color: #c14343 !important;
   --h2-border-line-color: #c14343 !important;
@@ -2375,7 +2388,6 @@
   --h2-border-width: 0 !important;
   --h2-padding: 0 !important;
   --h2-shadow: transparent !important;
-  --h2-text-align: left !important;
   --h3-background: transparent !important;
   --h3-border-left-color: #bf5e5e !important;
   --h3-border-line-color: #bf5e5e !important;
@@ -2385,7 +2397,6 @@
   --h3-border-width: 0 !important;
   --h3-padding: 0 !important;
   --h3-shadow: transparent !important;
-  --h3-text-align: left !important;
   --h4-background: transparent !important;
   --h4-border-left-color: #61afef !important;
   --h4-border-line-color: #61afef !important;
@@ -2395,7 +2406,6 @@
   --h4-border-width: 0 !important;
   --h4-padding: 0 !important;
   --h4-shadow: transparent !important;
-  --h4-text-align: left !important;
   --h5-background: transparent !important;
   --h5-border-left-color: #2f3b4d !important;
   --h5-border-line-color: #2f3b4d !important;
@@ -2405,7 +2415,6 @@
   --h5-border-width: 0 !important;
   --h5-padding: 0 !important;
   --h5-shadow: transparent !important;
-  --h5-text-align: left !important;
   --h6-background: transparent !important;
   --h6-border-left-color: #2a2e35 !important;
   --h6-border-line-color: #2a2e35 !important;
@@ -2415,7 +2424,6 @@
   --h6-border-width: 0 !important;
   --h6-padding: 0 !important;
   --h6-shadow: transparent !important;
-  --h6-text-align: left !important;
   --he-popover-border-radius: 0 !important;
   --header-arrow-icon-color: #4e5b6f !important;
   --header-arrow-icon-size: 10px !important;
@@ -2496,9 +2504,6 @@
   --list-numbered-color: #883737 !important;
   --lite-accent: #e06c75 !important;
   --mdi: "Material Icons Sharp" !important;
-  --med-small: 400px !important;
-  --med-tall: 600px !important;
-  --medium: 500px !important;
   --message-border-color: #cfd7dd !important;
   --message-border-width: 0px !important;
   --message-box-shadow: 2px 2px 0 #cfd7dd !important;
@@ -2514,7 +2519,6 @@
   --metadata-title-icon-padding: 5px !important;
   --metadata-title-size: 16px !important;
   --metadata-title-weight: 900 !important;
-  --micro: 70px !important;
   --modal-nav-item-background: transparent !important;
   --modal-nav-item-background-hover: rgba(6, 8, 12, 0.38) !important;
   --modal-sidebar-background: #10161d !important;
@@ -2581,8 +2585,6 @@
   --sidebar-tab-padding: 0 12px !important;
   --slide-background: #1a1e24 !important;
   --slider-track-radius: 0 !important;
-  --small: 200px !important;
-  --small-med: 300px !important;
   --soft-text: #aab3ca !important;
   --statblock-alt: rgba(6, 8, 12, 0.38) !important;
   --statblock-alt-padding: 0.25em 0.3em !important;
@@ -2650,7 +2652,6 @@
   --table-row-edit-font-size: 0.95em !important;
   --tag: #571a1a !important;
   --tag-font: "Inter" !important;
-  --tall: 700px !important;
   --td: rgba(6, 8, 12, 0.38) !important;
   --text-dl: #e5ebee !important;
   --th: #652121 !important;
@@ -2661,7 +2662,6 @@
   --theme-rainbow-4: #3232c5 !important;
   --theme-rainbow-5: #7f307f !important;
   --theme-rainbow-6: #dd4794 !important;
-  --tiny: 100px !important;
   --toggle-shadow: none !important;
   --tooltip-color: #e5ebee !important;
   --background-image-blur: 11px !important;
@@ -3919,13 +3919,11 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(248, 251, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 251, 255);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(248, 251, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 251, 255);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3934,23 +3932,20 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px rgb(105, 117, 128);
+    border: 0px rgb(34, 34, 34);
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(248, 251, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 251, 255);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(248, 251, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 251, 255);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(248, 251, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 251, 255);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3962,8 +3957,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(248, 251, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 251, 255);
+    background-color: rgb(255, 255, 255);
   }
 
   body {
@@ -6896,13 +6890,11 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(26, 30, 36);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(26, 30, 36);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6911,23 +6903,20 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      border: 0px rgb(188, 202, 216);
+      border: 0px rgb(218, 218, 218);
       box-shadow: none;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(26, 30, 36);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(26, 30, 36);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(26, 30, 36);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6939,8 +6928,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(26, 30, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(26, 30, 36);
+      background-color: rgb(30, 30, 30);
     }
 
     body {
@@ -9071,8 +9059,8 @@ html[saved-theme="dark"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -9151,7 +9139,7 @@ html[saved-theme="dark"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

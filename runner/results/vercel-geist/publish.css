@@ -1423,6 +1423,8 @@ body.theme-light {
   --background-1: #000000 !important;
   --background-2: #000000 !important;
   --background-3: #333333 !important;
+  --border-color: #eaeaea !important;
+  --font-size-normal: 16px !important;
   --font-family-editor:
     "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
@@ -1430,7 +1432,6 @@ body.theme-light {
   --font-family-preview:
     "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --border-color: #eaeaea !important;
   --font-size-code: 14px !important;
   --font-size-h1: 26px !important;
   --font-size-h2: 24px !important;
@@ -1438,7 +1439,6 @@ body.theme-light {
   --font-size-h4: 18px !important;
   --font-size-h5: 17px !important;
   --font-size-h6: 16px !important;
-  --font-size-normal: 16px !important;
   --font-size-side-dock: 14px !important;
   --font-size-side-dock-title: 16px !important;
   --font-size-status-bar: 14px !important;
@@ -2375,6 +2375,8 @@ body.theme-dark {
   --background-1: #000000 !important;
   --background-2: #000000 !important;
   --background-3: #333333 !important;
+  --border-color: #333333 !important;
+  --font-size-normal: 16px !important;
   --font-family-editor:
     "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
@@ -2382,7 +2384,6 @@ body.theme-dark {
   --font-family-preview:
     "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  --border-color: #333333 !important;
   --font-size-code: 14px !important;
   --font-size-h1: 26px !important;
   --font-size-h2: 24px !important;
@@ -2390,7 +2391,6 @@ body.theme-dark {
   --font-size-h4: 18px !important;
   --font-size-h5: 17px !important;
   --font-size-h6: 16px !important;
-  --font-size-normal: 16px !important;
   --font-size-side-dock: 14px !important;
   --font-size-side-dock-title: 16px !important;
   --font-size-status-bar: 14px !important;
@@ -3294,10 +3294,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(0, 0, 0);
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3306,8 +3307,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(255, 255, 255);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -5273,10 +5296,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(0, 0, 0);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5285,8 +5309,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(255, 255, 255);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
