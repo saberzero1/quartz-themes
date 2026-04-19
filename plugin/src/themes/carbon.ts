@@ -402,7 +402,7 @@ html[saved-theme="dark"] body ul.overflow {
 html[saved-theme="dark"] body table {
   color: rgb(244, 244, 244);
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  width: 192.062px;
+  width: 187.484px;
 }
 
 html[saved-theme="dark"] body td {
@@ -1166,40 +1166,6 @@ html[saved-theme="dark"] body hr {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(22, 22, 22);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(22, 22, 22);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(22, 22, 22);
-  border-bottom-color: rgb(244, 244, 244);
-  border-left-color: rgb(244, 244, 244);
-  border-right-color: rgb(244, 244, 244);
-  border-top-color: rgb(244, 244, 244);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(22, 22, 22);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(22, 22, 22);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(22, 22, 22) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(22, 22, 22);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
@@ -1793,7 +1759,7 @@ html[saved-theme="light"] body ul.overflow {
 html[saved-theme="light"] body table {
   color: rgb(38, 38, 38);
   font-family: "??", "??", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  width: 192.062px;
+  width: 187.484px;
 }
 
 html[saved-theme="light"] body td {
@@ -2554,13 +2520,6 @@ html[saved-theme="light"] body hr {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(38, 38, 38);
-  border-left-color: rgb(38, 38, 38);
-  border-right-color: rgb(38, 38, 38);
-  border-top-color: rgb(38, 38, 38);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;

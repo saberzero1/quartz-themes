@@ -851,15 +851,15 @@
   --vault-name-font-weight: 500 !important;
   --background-code: #f8f1eb !important;
   --background-code-preview: #f8f1eb !important;
-  --text-tag: #0cc77c !important;
-  --background-tag: #d7c3ba !important;
   --background-preview: #fffefd !important;
   --background-quick: #f8f1eb !important;
+  --background-tag: #d7c3ba !important;
   --file-hr: #f8f1eb !important;
   --leaf-handle: #f8f1eb !important;
+  --table-line: #b29688 !important;
+  --text-tag: #0cc77c !important;
   --menu-selection: #f8f1eb !important;
   --menu-selection-text: #4a3827 !important;
-  --table-line: #b29688 !important;
   --canvas-contrast-high: #4a3827 !important;
   --canvas-contrast-low: #b29688 !important;
   --canvas-contrast-medium: #765c4f !important;
@@ -1713,15 +1713,15 @@
   --vault-name-font-weight: 500 !important;
   --background-code: #232120 !important;
   --background-code-preview: #232120 !important;
-  --text-tag: #23d18c !important;
-  --background-tag: #000000 !important;
   --background-preview: #121110 !important;
   --background-quick: #232120 !important;
+  --background-tag: #000000 !important;
   --file-hr: #232120 !important;
   --leaf-handle: #232120 !important;
+  --table-line: #807874 !important;
+  --text-tag: #23d18c !important;
   --menu-selection: #232120 !important;
   --menu-selection-text: #ffebd1 !important;
-  --table-line: #807874 !important;
   --canvas-contrast-high: #ffebd1 !important;
   --canvas-contrast-low: #807874 !important;
   --canvas-contrast-medium: #989692 !important;
@@ -3106,13 +3106,11 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(255, 254, 253) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(255, 254, 253);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(255, 254, 253) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(255, 254, 253);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3121,23 +3119,20 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px rgb(74, 56, 39);
+    border: 0px rgb(34, 34, 34);
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 254, 253) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(255, 254, 253);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(255, 254, 253) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(255, 254, 253);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(255, 254, 253) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(255, 254, 253);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3149,8 +3144,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(255, 254, 253) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(255, 254, 253);
+    background-color: rgb(255, 255, 255);
   }
 
   body {
@@ -6112,13 +6106,11 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(18, 17, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(18, 17, 16);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(18, 17, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(18, 17, 16);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6127,23 +6119,20 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      border: 0px rgb(255, 235, 209);
+      border: 0px rgb(218, 218, 218);
       box-shadow: none;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(18, 17, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(18, 17, 16);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(18, 17, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(18, 17, 16);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(18, 17, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(18, 17, 16);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6155,8 +6144,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(18, 17, 16) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(18, 17, 16);
+      background-color: rgb(30, 30, 30);
     }
 
     body {
@@ -8177,8 +8165,8 @@ html[saved-theme="dark"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -8257,7 +8245,7 @@ html[saved-theme="dark"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

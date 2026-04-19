@@ -741,40 +741,6 @@ html body h6 {
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(231, 233, 243) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(231, 233, 243);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(231, 233, 243) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(231, 233, 243);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(231, 233, 243) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(231, 233, 243);
-  border-bottom-color: rgb(18, 20, 33);
-  border-left-color: rgb(18, 20, 33);
-  border-right-color: rgb(18, 20, 33);
-  border-top-color: rgb(18, 20, 33);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(231, 233, 243) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(231, 233, 243);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(231, 233, 243) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(231, 233, 243);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(231, 233, 243) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(231, 233, 243);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "Noto Serif KR", serif;

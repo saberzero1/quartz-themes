@@ -1035,40 +1035,6 @@ html body hr {
 }`,
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(23, 26, 35) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(23, 26, 35);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(23, 26, 35) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(23, 26, 35);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(23, 26, 35) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(23, 26, 35);
-  border-bottom-color: rgb(215, 216, 215);
-  border-left-color: rgb(215, 216, 215);
-  border-right-color: rgb(215, 216, 215);
-  border-top-color: rgb(215, 216, 215);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(23, 26, 35) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(23, 26, 35);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(23, 26, 35) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(23, 26, 35);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(23, 26, 35) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(23, 26, 35);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(186, 179, 170);

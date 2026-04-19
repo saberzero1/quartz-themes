@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "headings.md",
+                "file": "theme-code/syntax-samples.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "headings"
+              "title": "syntax-samples"
             }
           }
         ]
@@ -148,13 +148,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "headings.md",
+                "file": "theme-code/syntax-samples.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of headings"
+              "title": "Outline of syntax-samples"
+            }
+          },
+          {
+            "id": "864a95c7ff018926",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ],
@@ -194,13 +208,12 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-code/syntax-samples.md",
-    "theme-callouts/terraflow.md",
     "theme-bases/bases-cards.md",
     "theme-bases/bases-list.md",
     "theme-bases/bases-table.md",
     "theme-canvas/test-canvas.canvas",
     "theme-properties/note-properties.md",
+    "theme-code/syntax-samples.md",
     "theme-checkboxes/upper.md",
     "theme-checkboxes/lower.md",
     "theme-checkboxes/special.md",
@@ -215,11 +228,12 @@
     "callouts.md",
     "headings.md",
     "general.md",
-    "theme-callouts/ebullientworks.md",
     "theme-callouts/willemstad.md",
     "theme-callouts/vortex.md",
+    "theme-callouts/viridian.md",
     "theme-callouts/velocity.md",
     "theme-callouts/vauxhall.md",
+    "theme-callouts/universitario.md",
     "theme-properties",
     "theme-code",
     "theme-canvas",

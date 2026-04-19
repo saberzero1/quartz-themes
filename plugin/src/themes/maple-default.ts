@@ -2158,40 +2158,6 @@ html[saved-theme="dark"] body hr {
   border-top-color: rgba(126, 184, 241, 0.25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgba(0, 0, 0, 0) linear-gradient(320deg, rgb(55, 50, 62), rgb(54, 79, 89)) no-repeat scroll 0% 0% / 100% 100% padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgba(0, 0, 0, 0) linear-gradient(320deg, rgb(55, 50, 62), rgb(54, 79, 89)) no-repeat scroll 0% 0% / 100% 100% padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0) linear-gradient(320deg, rgb(55, 50, 62), rgb(54, 79, 89)) no-repeat scroll 0% 0% / 100% 100% padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgba(232, 240, 247, 0.75);
-  border-left-color: rgba(232, 240, 247, 0.75);
-  border-right-color: rgba(232, 240, 247, 0.75);
-  border-top-color: rgba(232, 240, 247, 0.75);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgba(0, 0, 0, 0) linear-gradient(320deg, rgb(55, 50, 62), rgb(54, 79, 89)) no-repeat scroll 0% 0% / 100% 100% padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0) linear-gradient(320deg, rgb(55, 50, 62), rgb(54, 79, 89)) no-repeat scroll 0% 0% / 100% 100% padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0) linear-gradient(320deg, rgb(55, 50, 62), rgb(54, 79, 89)) no-repeat scroll 0% 0% / 100% 100% padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   cursor: pointer;
@@ -4197,36 +4163,6 @@ html[saved-theme="light"] body hr {
   border-top-color: rgba(5, 133, 168, 0.25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgba(0, 0, 0, 0) linear-gradient(320deg, rgb(236, 245, 224), rgb(234, 212, 210)) no-repeat scroll 0% 0% / 100% 100% padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgba(0, 0, 0, 0) linear-gradient(320deg, rgb(236, 245, 224), rgb(234, 212, 210)) no-repeat scroll 0% 0% / 100% 100% padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0) linear-gradient(320deg, rgb(236, 245, 224), rgb(234, 212, 210)) no-repeat scroll 0% 0% / 100% 100% padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgba(0, 0, 0, 0) linear-gradient(320deg, rgb(236, 245, 224), rgb(234, 212, 210)) no-repeat scroll 0% 0% / 100% 100% padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0) linear-gradient(320deg, rgb(236, 245, 224), rgb(234, 212, 210)) no-repeat scroll 0% 0% / 100% 100% padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0) linear-gradient(320deg, rgb(236, 245, 224), rgb(234, 212, 210)) no-repeat scroll 0% 0% / 100% 100% padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   cursor: pointer;

@@ -1275,6 +1275,7 @@ body.theme-light {
   --background-modifier-form-field-highlighted: #ffffff !important;
   --blockquote-color: #5f6b7a !important;
   --blockquote-style: normal !important;
+  --title-color: #1a1d23 !important;
   --background-modifier-accent: hsl(201, 59%, 44%) !important;
   --background-table-rows: #f7f8fa !important;
   --frame-divider-color: #e3e8ef !important;
@@ -1313,9 +1314,9 @@ body.theme-light {
   --line-width-wide: calc(40rem + 12.5%) !important;
   --shadow-color: rgba(0, 0, 0, 0.1) !important;
   --table-width: auto !important;
+  --nested-padding: 1.1em !important;
   --folding-offset: 32px !important;
   --max-col-width: 18em !important;
-  --nested-padding: 1.1em !important;
   --active-line-bg: rgba(0, 0, 0, 0.035) !important;
   --font-code: 14.4px !important;
   --bg1: #ffffff !important;
@@ -1420,7 +1421,6 @@ body.theme-light {
   --table-edge-cell-padding-last: 0 !important;
   --table-max-width: none !important;
   --table-wrapper-width: fit-content !important;
-  --title-color: #1a1d23 !important;
   --title-color-inactive: #5f6b7a !important;
   --tx1: #1a1d23 !important;
   --tx2: #5f6b7a !important;
@@ -2334,6 +2334,7 @@ body.theme-dark {
   --background-modifier-form-field-highlighted: #1c1d1e !important;
   --blockquote-color: hsl(220, -12%, 65%) !important;
   --blockquote-style: normal !important;
+  --title-color: hsl(220, -2%, 87%) !important;
   --background-modifier-accent: hsl(201, 59%, 61%) !important;
   --background-table-rows: #17191b !important;
   --frame-divider-color: #2d3139 !important;
@@ -2372,9 +2373,9 @@ body.theme-dark {
   --line-width-wide: calc(40rem + 12.5%) !important;
   --shadow-color: rgba(0, 0, 0, 0.3) !important;
   --table-width: auto !important;
+  --nested-padding: 1.1em !important;
   --folding-offset: 32px !important;
   --max-col-width: 18em !important;
-  --nested-padding: 1.1em !important;
   --active-line-bg: rgba(255, 255, 255, 0.04) !important;
   --font-code: 14.4px !important;
   --bg1: #1c1d1e !important;
@@ -2480,7 +2481,6 @@ body.theme-dark {
   --table-edge-cell-padding-last: 0 !important;
   --table-max-width: none !important;
   --table-wrapper-width: fit-content !important;
-  --title-color: hsl(220, -2%, 87%) !important;
   --title-color-inactive: hsl(220, -12%, 65%) !important;
   --tx1: hsl(220, -2%, 87%) !important;
   --tx2: hsl(220, -12%, 65%) !important;
@@ -3392,9 +3392,10 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3404,8 +3405,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(26, 29, 35);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -5424,10 +5447,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(28, 29, 30) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(28, 29, 30);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5436,8 +5460,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(222, 222, 222);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

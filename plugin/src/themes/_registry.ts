@@ -9,14 +9,17 @@ import { theme as adrenaline } from "./adrenaline.js";
 import { theme as adwaita } from "./adwaita.js";
 import { theme as agate } from "./agate.js";
 import { theme as aged_whisky } from "./aged-whisky.js";
+import { theme as agora } from "./agora.js";
 import { theme as al_dente } from "./al-dente.js";
 import { theme as allium } from "./allium.js";
+import { theme as amethyst } from "./amethyst.js";
 import { theme as amoled_serenity } from "./amoled-serenity.js";
 import { theme as antique_flowers } from "./antique-flowers.js";
 import { theme as anuppuccin } from "./anuppuccin.js";
 import { theme as apatheia } from "./apatheia.js";
 import { theme as apex } from "./apex.js";
 import { theme as arcane } from "./arcane.js";
+import { theme as ars_magna } from "./ars-magna.js";
 import { theme as arzaba } from "./arzaba.js";
 import { theme as atom } from "./atom.js";
 import { theme as atomus } from "./atomus.js";
@@ -27,6 +30,7 @@ import { theme as aurora } from "./aurora.js";
 import { theme as aurora_twilight } from "./aurora-twilight.js";
 import { theme as autotape } from "./autotape.js";
 import { theme as avatar } from "./avatar.js";
+import { theme as ayu } from "./ayu.js";
 import { theme as ayu_light_mirage } from "./ayu-light-mirage.js";
 import { theme as ayu_mirage } from "./ayu-mirage.js";
 import { theme as azure } from "./azure.js";
@@ -35,6 +39,7 @@ import { theme as base2tone } from "./base2tone.js";
 import { theme as baseline } from "./baseline.js";
 import { theme as behave_dark } from "./behave-dark.js";
 import { theme as big_bold } from "./big-bold.js";
+import { theme as big_sur_aesthetic } from "./big-sur-aesthetic.js";
 import { theme as black } from "./black.js";
 import { theme as blackbird } from "./blackbird.js";
 import { theme as blood_rush } from "./blood-rush.js";
@@ -48,10 +53,14 @@ import { theme as bossidian } from "./bossidian.js";
 import { theme as brainhack } from "./brainhack.js";
 import { theme as brutalism } from "./brutalism.js";
 import { theme as brutalist } from "./brutalist.js";
+import { theme as bubble_space } from "./bubble-space.js";
 import { theme as buena_vista } from "./buena-vista.js";
+import { theme as california_coast } from "./california-coast.js";
 import { theme as camena } from "./camena.js";
 import { theme as carbon } from "./carbon.js";
 import { theme as cardstock } from "./cardstock.js";
+import { theme as carnelian } from "./carnelian.js";
+import { theme as carpe_noctem } from "./carpe-noctem.js";
 import { theme as catppuccin } from "./catppuccin.js";
 import { theme as catppuccin_frappe } from "./catppuccin-frappe.js";
 import { theme as catppuccin_macchiato } from "./catppuccin-macchiato.js";
@@ -60,6 +69,8 @@ import { theme as charcoal } from "./charcoal.js";
 import { theme as chiaroscuroflow } from "./chiaroscuroflow.js";
 import { theme as chime } from "./chime.js";
 import { theme as christmas } from "./christmas.js";
+import { theme as cidreira_coast } from "./cidreira-coast.js";
+import { theme as clair_de_lune } from "./clair-de-lune.js";
 import { theme as cobalt_peacock } from "./cobalt-peacock.js";
 import { theme as cocoa } from "./cocoa.js";
 import { theme as coffee } from "./coffee.js";
@@ -96,6 +107,7 @@ import { theme as _default } from "./default.js";
 import { theme as dekurai } from "./dekurai.js";
 import { theme as desserts } from "./desserts.js";
 import { theme as discordian } from "./discordian.js";
+import { theme as doctorfree } from "./doctorfree.js";
 import { theme as dracula_for_obsidian } from "./dracula-for-obsidian.js";
 import { theme as dracula_gemini } from "./dracula-gemini.js";
 import { theme as dracula_lyt } from "./dracula-lyt.js";
@@ -110,6 +122,7 @@ import { theme as dynamic_color } from "./dynamic-color.js";
 import { theme as ebullientworks } from "./ebullientworks.js";
 import { theme as eldritch } from "./eldritch.js";
 import { theme as elegance } from "./elegance.js";
+import { theme as emerald } from "./emerald.js";
 import { theme as emerald_echo } from "./emerald-echo.js";
 import { theme as encore } from "./encore.js";
 import { theme as enhanced_file_explorer_tree } from "./enhanced-file-explorer-tree.js";
@@ -132,22 +145,27 @@ import { theme as flexcyon_tui } from "./flexcyon-tui.js";
 import { theme as flexoki } from "./flexoki.js";
 import { theme as flexoki_warm } from "./flexoki-warm.js";
 import { theme as focus } from "./focus.js";
+import { theme as friendly } from "./friendly.js";
 import { theme as frost } from "./frost.js";
 import { theme as fusion } from "./fusion.js";
 import { theme as future } from "./future.js";
 import { theme as garden_gnome_adwaita_gtk } from "./garden-gnome-adwaita-gtk.js";
+import { theme as gastown } from "./gastown.js";
 import { theme as gdct } from "./gdct.js";
 import { theme as gdct_dark } from "./gdct-dark.js";
 import { theme as github_theme } from "./github-theme.js";
 import { theme as githubdhc } from "./githubdhc.js";
 import { theme as gitsidian } from "./gitsidian.js";
 import { theme as glass_robo } from "./glass-robo.js";
+import { theme as golden_coffee } from "./golden-coffee.js";
 import { theme as golden_topaz } from "./golden-topaz.js";
 import { theme as green_nightmare } from "./green-nightmare.js";
+import { theme as gummy } from "./gummy.js";
 import { theme as gummy_revived } from "./gummy-revived.js";
 import { theme as hackthebox } from "./hackthebox.js";
 import { theme as halcyon } from "./halcyon.js";
 import { theme as handwriting_kalam } from "./handwriting-kalam.js";
+import { theme as harmonic } from "./harmonic.js";
 import { theme as heboric } from "./heboric.js";
 import { theme as hidden_grotto } from "./hidden-grotto.js";
 import { theme as hidden_grotto_absol } from "./hidden-grotto-absol.js";
@@ -170,8 +188,10 @@ import { theme as hidden_grotto_poltchageist } from "./hidden-grotto-poltchageis
 import { theme as hidden_grotto_scolipede } from "./hidden-grotto-scolipede.js";
 import { theme as hidden_grotto_swampert } from "./hidden-grotto-swampert.js";
 import { theme as hidden_grotto_ursaluna } from "./hidden-grotto-ursaluna.js";
+import { theme as higlighter } from "./higlighter.js";
 import { theme as hipstersmoothie } from "./hipstersmoothie.js";
 import { theme as hojicha } from "./hojicha.js";
+import { theme as horizon } from "./horizon.js";
 import { theme as hoverpopup } from "./hoverpopup.js";
 import { theme as hulk } from "./hulk.js";
 import { theme as hydra_pressure } from "./hydra-pressure.js";
@@ -220,6 +240,7 @@ import { theme as lemons_theme } from "./lemons-theme.js";
 import { theme as lesswrong } from "./lesswrong.js";
 import { theme as light_bright } from "./light-bright.js";
 import { theme as listive } from "./listive.js";
+import { theme as lizardmen_zettelkasten } from "./lizardmen-zettelkasten.js";
 import { theme as lorens } from "./lorens.js";
 import { theme as lumines } from "./lumines.js";
 import { theme as lyt_mode } from "./lyt-mode.js";
@@ -250,7 +271,9 @@ import { theme as minimalist_studio } from "./minimalist-studio.js";
 import { theme as minimalists_paradise } from "./minimalists-paradise.js";
 import { theme as mint_breeze } from "./mint-breeze.js";
 import { theme as mistymauve } from "./mistymauve.js";
+import { theme as modern_dark } from "./modern-dark.js";
 import { theme as modern_genz_vibedose } from "./modern-genz-vibedose.js";
+import { theme as molecule } from "./molecule.js";
 import { theme as mono_black_monochrome_charcoal } from "./mono-black-monochrome-charcoal.js";
 import { theme as mono_high_contrast } from "./mono-high-contrast.js";
 import { theme as monochroyou } from "./monochroyou.js";
@@ -289,12 +312,16 @@ import { theme as notation } from "./notation.js";
 import { theme as notation_2 } from "./notation-2.js";
 import { theme as notswift } from "./notswift.js";
 import { theme as novadust } from "./novadust.js";
+import { theme as obsdn_dark_rmx } from "./obsdn-dark-rmx.js";
 import { theme as obsidian } from "./obsidian.js";
 import { theme as obsidian_ia } from "./obsidian_ia.js";
 import { theme as obsidian_vibrant } from "./obsidian_vibrant.js";
 import { theme as obsidian_boom } from "./obsidian-boom.js";
 import { theme as obsidian_gruvbox } from "./obsidian-gruvbox.js";
 import { theme as obsidian_nord } from "./obsidian-nord.js";
+import { theme as obsidian_nord_enhanced } from "./obsidian-nord-enhanced.js";
+import { theme as obsidian_windows_98_edition } from "./obsidian-windows-98-edition.js";
+import { theme as obsidian_you } from "./obsidian-you.js";
 import { theme as obsidianite } from "./obsidianite.js";
 import { theme as obsidianotion } from "./obsidianotion.js";
 import { theme as obuntu } from "./obuntu.js";
@@ -315,6 +342,7 @@ import { theme as osaka_jade } from "./osaka-jade.js";
 import { theme as oscura } from "./oscura.js";
 import { theme as overcast } from "./overcast.js";
 import { theme as oxygen } from "./oxygen.js";
+import { theme as palatinate } from "./palatinate.js";
 import { theme as pale } from "./pale.js";
 import { theme as panic_mode } from "./panic-mode.js";
 import { theme as parfait } from "./parfait.js";
@@ -352,6 +380,7 @@ import { theme as radiance } from "./radiance.js";
 import { theme as ravenloft } from "./ravenloft.js";
 import { theme as red_graphite } from "./red-graphite.js";
 import { theme as red_shadow } from "./red-shadow.js";
+import { theme as red_solitude } from "./red-solitude.js";
 import { theme as redshift_oled_blue_light_filter } from "./redshift-oled-blue-light-filter.js";
 import { theme as refined_default } from "./refined-default.js";
 import { theme as reshi } from "./reshi.js";
@@ -375,6 +404,7 @@ import { theme as rose_pine_2 } from "./rose-pine-2.js";
 import { theme as rose_pine_moon } from "./rose-pine-moon.js";
 import { theme as rose_red } from "./rose-red.js";
 import { theme as royal_velvet } from "./royal-velvet.js";
+import { theme as ruby } from "./ruby.js";
 import { theme as sad_machine_druid } from "./sad-machine-druid.js";
 import { theme as sakurajima } from "./sakurajima.js";
 import { theme as salem } from "./salem.js";
@@ -413,10 +443,12 @@ import { theme as shade_sanctuary } from "./shade-sanctuary.js";
 import { theme as shadeflow } from "./shadeflow.js";
 import { theme as shiba_inu } from "./shiba-inu.js";
 import { theme as shimmering_focus } from "./shimmering-focus.js";
+import { theme as silence } from "./silence.js";
 import { theme as simple } from "./simple.js";
 import { theme as simple_color } from "./simple-color.js";
 import { theme as simplicity } from "./simplicity.js";
 import { theme as simply_colorful } from "./simply-colorful.js";
+import { theme as slytherin } from "./slytherin.js";
 import { theme as sodalite } from "./sodalite.js";
 import { theme as solarized } from "./solarized.js";
 import { theme as soli_deo_gloria } from "./soli-deo-gloria.js";
@@ -454,6 +486,7 @@ import { theme as tomorrow } from "./tomorrow.js";
 import { theme as tomorrow_night_bright } from "./tomorrow-night-bright.js";
 import { theme as toms_theme } from "./toms-theme.js";
 import { theme as trace_labs } from "./trace-labs.js";
+import { theme as traffic_lights } from "./traffic-lights.js";
 import { theme as transient } from "./transient.js";
 import { theme as transparent } from "./transparent.js";
 import { theme as true_black } from "./true-black.js";
@@ -508,10 +541,14 @@ import { theme as vesnea_vibe } from "./vesnea-vibe.js";
 import { theme as vesper } from "./vesper.js";
 import { theme as vibrant } from "./vibrant.js";
 import { theme as vicious } from "./vicious.js";
+import { theme as vileplume } from "./vileplume.js";
+import { theme as vintage_theme } from "./vintage-theme.js";
 import { theme as violet_evening } from "./violet-evening.js";
 import { theme as virgo } from "./virgo.js";
+import { theme as viridian } from "./viridian.js";
 import { theme as vortex } from "./vortex.js";
 import { theme as w95 } from "./w95.js";
+import { theme as warmth } from "./warmth.js";
 import { theme as wasp } from "./wasp.js";
 import { theme as wikipedia } from "./wikipedia.js";
 import { theme as wilcoxone } from "./wilcoxone.js";
@@ -522,6 +559,7 @@ import { theme as wombat } from "./wombat.js";
 import { theme as wy_console } from "./wy-console.js";
 import { theme as wyrd } from "./wyrd.js";
 import { theme as xscriptor } from "./xscriptor.js";
+import { theme as yin_and_yang } from "./yin-and-yang.js";
 import { theme as yue } from "./yue.js";
 import { theme as zario } from "./zario.js";
 import { theme as zen } from "./zen.js";
@@ -538,14 +576,17 @@ export const themeData: Record<string, ThemeData> = {
   adwaita: adwaita,
   agate: agate,
   "aged-whisky": aged_whisky,
+  agora: agora,
   "al-dente": al_dente,
   allium: allium,
+  amethyst: amethyst,
   "amoled-serenity": amoled_serenity,
   "antique-flowers": antique_flowers,
   anuppuccin: anuppuccin,
   apatheia: apatheia,
   apex: apex,
   arcane: arcane,
+  "ars-magna": ars_magna,
   arzaba: arzaba,
   atom: atom,
   atomus: atomus,
@@ -556,6 +597,7 @@ export const themeData: Record<string, ThemeData> = {
   "aurora-twilight": aurora_twilight,
   autotape: autotape,
   avatar: avatar,
+  ayu: ayu,
   "ayu-light-mirage": ayu_light_mirage,
   "ayu-mirage": ayu_mirage,
   azure: azure,
@@ -564,6 +606,7 @@ export const themeData: Record<string, ThemeData> = {
   baseline: baseline,
   "behave-dark": behave_dark,
   "big-bold": big_bold,
+  "big-sur-aesthetic": big_sur_aesthetic,
   black: black,
   blackbird: blackbird,
   "blood-rush": blood_rush,
@@ -577,10 +620,14 @@ export const themeData: Record<string, ThemeData> = {
   brainhack: brainhack,
   brutalism: brutalism,
   brutalist: brutalist,
+  "bubble-space": bubble_space,
   "buena-vista": buena_vista,
+  "california-coast": california_coast,
   camena: camena,
   carbon: carbon,
   cardstock: cardstock,
+  carnelian: carnelian,
+  "carpe-noctem": carpe_noctem,
   catppuccin: catppuccin,
   "catppuccin.frappe": catppuccin_frappe,
   "catppuccin.macchiato": catppuccin_macchiato,
@@ -589,6 +636,8 @@ export const themeData: Record<string, ThemeData> = {
   chiaroscuroflow: chiaroscuroflow,
   chime: chime,
   christmas: christmas,
+  "cidreira-coast": cidreira_coast,
+  "clair-de-lune": clair_de_lune,
   "cobalt-peacock": cobalt_peacock,
   cocoa: cocoa,
   coffee: coffee,
@@ -625,6 +674,7 @@ export const themeData: Record<string, ThemeData> = {
   dekurai: dekurai,
   desserts: desserts,
   discordian: discordian,
+  doctorfree: doctorfree,
   "dracula-for-obsidian": dracula_for_obsidian,
   "dracula-gemini": dracula_gemini,
   "dracula-lyt": dracula_lyt,
@@ -639,6 +689,7 @@ export const themeData: Record<string, ThemeData> = {
   ebullientworks: ebullientworks,
   eldritch: eldritch,
   elegance: elegance,
+  emerald: emerald,
   "emerald-echo": emerald_echo,
   encore: encore,
   "enhanced-file-explorer-tree": enhanced_file_explorer_tree,
@@ -661,22 +712,27 @@ export const themeData: Record<string, ThemeData> = {
   flexoki: flexoki,
   "flexoki-warm": flexoki_warm,
   focus: focus,
+  friendly: friendly,
   frost: frost,
   fusion: fusion,
   future: future,
   "garden-gnome-adwaita-gtk": garden_gnome_adwaita_gtk,
+  gastown: gastown,
   gdct: gdct,
   "gdct-dark": gdct_dark,
   "github-theme": github_theme,
   githubdhc: githubdhc,
   gitsidian: gitsidian,
   "glass-robo": glass_robo,
+  "golden-coffee": golden_coffee,
   "golden-topaz": golden_topaz,
   "green-nightmare": green_nightmare,
+  gummy: gummy,
   "gummy-revived": gummy_revived,
   hackthebox: hackthebox,
   halcyon: halcyon,
   "handwriting-kalam": handwriting_kalam,
+  harmonic: harmonic,
   heboric: heboric,
   "hidden-grotto": hidden_grotto,
   "hidden-grotto.absol": hidden_grotto_absol,
@@ -699,8 +755,10 @@ export const themeData: Record<string, ThemeData> = {
   "hidden-grotto.scolipede": hidden_grotto_scolipede,
   "hidden-grotto.swampert": hidden_grotto_swampert,
   "hidden-grotto.ursaluna": hidden_grotto_ursaluna,
+  higlighter: higlighter,
   hipstersmoothie: hipstersmoothie,
   hojicha: hojicha,
+  horizon: horizon,
   hoverpopup: hoverpopup,
   hulk: hulk,
   "hydra-pressure": hydra_pressure,
@@ -750,6 +808,7 @@ export const themeData: Record<string, ThemeData> = {
   lesswrong: lesswrong,
   "light-bright": light_bright,
   listive: listive,
+  "lizardmen-zettelkasten": lizardmen_zettelkasten,
   lorens: lorens,
   lumines: lumines,
   "lyt-mode": lyt_mode,
@@ -780,7 +839,9 @@ export const themeData: Record<string, ThemeData> = {
   "minimalists-paradise": minimalists_paradise,
   "mint-breeze": mint_breeze,
   mistymauve: mistymauve,
+  "modern-dark": modern_dark,
   "modern-genz-vibedose": modern_genz_vibedose,
+  molecule: molecule,
   "mono-black-monochrome-charcoal": mono_black_monochrome_charcoal,
   "mono-high-contrast": mono_high_contrast,
   monochroyou: monochroyou,
@@ -819,12 +880,16 @@ export const themeData: Record<string, ThemeData> = {
   "notation-2": notation_2,
   notswift: notswift,
   novadust: novadust,
+  "obsdn-dark-rmx": obsdn_dark_rmx,
   obsidian: obsidian,
   obsidian_ia: obsidian_ia,
   obsidian_vibrant: obsidian_vibrant,
   "obsidian-boom": obsidian_boom,
   "obsidian-gruvbox": obsidian_gruvbox,
   "obsidian-nord": obsidian_nord,
+  "obsidian-nord-enhanced": obsidian_nord_enhanced,
+  "obsidian-windows-98-edition": obsidian_windows_98_edition,
+  "obsidian-you": obsidian_you,
   obsidianite: obsidianite,
   obsidianotion: obsidianotion,
   obuntu: obuntu,
@@ -845,6 +910,7 @@ export const themeData: Record<string, ThemeData> = {
   oscura: oscura,
   overcast: overcast,
   oxygen: oxygen,
+  palatinate: palatinate,
   pale: pale,
   "panic-mode": panic_mode,
   parfait: parfait,
@@ -882,6 +948,7 @@ export const themeData: Record<string, ThemeData> = {
   ravenloft: ravenloft,
   "red-graphite": red_graphite,
   "red-shadow": red_shadow,
+  "red-solitude": red_solitude,
   "redshift-oled-blue-light-filter": redshift_oled_blue_light_filter,
   "refined-default": refined_default,
   reshi: reshi,
@@ -905,6 +972,7 @@ export const themeData: Record<string, ThemeData> = {
   "rose-pine-moon": rose_pine_moon,
   "rose-red": rose_red,
   "royal-velvet": royal_velvet,
+  ruby: ruby,
   "sad-machine-druid": sad_machine_druid,
   sakurajima: sakurajima,
   salem: salem,
@@ -943,10 +1011,12 @@ export const themeData: Record<string, ThemeData> = {
   shadeflow: shadeflow,
   "shiba-inu": shiba_inu,
   "shimmering-focus": shimmering_focus,
+  silence: silence,
   simple: simple,
   "simple-color": simple_color,
   simplicity: simplicity,
   "simply-colorful": simply_colorful,
+  slytherin: slytherin,
   sodalite: sodalite,
   solarized: solarized,
   "soli-deo-gloria": soli_deo_gloria,
@@ -984,6 +1054,7 @@ export const themeData: Record<string, ThemeData> = {
   "tomorrow-night-bright": tomorrow_night_bright,
   "toms-theme": toms_theme,
   "trace-labs": trace_labs,
+  "traffic-lights": traffic_lights,
   transient: transient,
   transparent: transparent,
   "true-black": true_black,
@@ -1039,10 +1110,14 @@ export const themeData: Record<string, ThemeData> = {
   vesper: vesper,
   vibrant: vibrant,
   vicious: vicious,
+  vileplume: vileplume,
+  "vintage-theme": vintage_theme,
   "violet-evening": violet_evening,
   virgo: virgo,
+  viridian: viridian,
   vortex: vortex,
   w95: w95,
+  warmth: warmth,
   wasp: wasp,
   wikipedia: wikipedia,
   wilcoxone: wilcoxone,
@@ -1053,6 +1128,7 @@ export const themeData: Record<string, ThemeData> = {
   "wy-console": wy_console,
   wyrd: wyrd,
   xscriptor: xscriptor,
+  "yin-and-yang": yin_and_yang,
   yue: yue,
   zario: zario,
   zen: zen,
@@ -1115,6 +1191,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  agora: { name: "agora", modes: ["dark"], variations: [], fonts: [] },
   "al-dente": {
     name: "al-dente",
     modes: ["light"],
@@ -1126,6 +1203,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["icons/its"],
+  },
+  amethyst: {
+    name: "amethyst",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   "amoled-serenity": {
     name: "amoled-serenity",
@@ -1157,6 +1240,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark"],
     variations: [],
     fonts: ["roboto"],
+  },
+  "ars-magna": {
+    name: "ars-magna",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
   },
   arzaba: {
     name: "arzaba",
@@ -1198,6 +1287,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["jetbrains-mono", "kalam"],
   },
+  ayu: { name: "ayu", modes: ["dark", "light"], variations: [], fonts: [] },
   "ayu-light-mirage": {
     name: "ayu-light-mirage",
     modes: ["dark", "light"],
@@ -1243,6 +1333,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
       "noto-emoji",
       "nunito-sans",
     ],
+  },
+  "big-sur-aesthetic": {
+    name: "big-sur-aesthetic",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   black: { name: "black", modes: ["dark"], variations: [], fonts: [] },
   blackbird: { name: "blackbird", modes: ["dark"], variations: [], fonts: [] },
@@ -1306,8 +1402,20 @@ export const themeMetas: Record<string, ThemeMeta> = {
       "sen",
     ],
   },
+  "bubble-space": {
+    name: "bubble-space",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "buena-vista": {
     name: "buena-vista",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "california-coast": {
+    name: "california-coast",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
@@ -1327,6 +1435,18 @@ export const themeMetas: Record<string, ThemeMeta> = {
   cardstock: {
     name: "cardstock",
     modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  carnelian: {
+    name: "carnelian",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "carpe-noctem": {
+    name: "carpe-noctem",
+    modes: ["dark"],
     variations: [],
     fonts: [],
   },
@@ -1379,6 +1499,18 @@ export const themeMetas: Record<string, ThemeMeta> = {
     ],
   },
   christmas: { name: "christmas", modes: ["dark"], variations: [], fonts: [] },
+  "cidreira-coast": {
+    name: "cidreira-coast",
+    modes: ["light"],
+    variations: [],
+    fonts: [],
+  },
+  "clair-de-lune": {
+    name: "clair-de-lune",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   "cobalt-peacock": {
     name: "cobalt-peacock",
     modes: ["dark"],
@@ -1565,6 +1697,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["catamaran"],
   },
+  doctorfree: {
+    name: "doctorfree",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "dracula-for-obsidian": {
     name: "dracula-for-obsidian",
     modes: ["dark"],
@@ -1638,6 +1776,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["monaco"],
+  },
+  emerald: {
+    name: "emerald",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   "emerald-echo": {
     name: "emerald-echo",
@@ -1758,6 +1902,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["jetbrains-mono"],
   },
+  friendly: {
+    name: "friendly",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   frost: {
     name: "frost",
     modes: ["dark", "light"],
@@ -1782,6 +1932,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  gastown: { name: "gastown", modes: ["light"], variations: [], fonts: [] },
   gdct: {
     name: "gdct",
     modes: ["light"],
@@ -1818,6 +1969,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["figtree", "jetbrains-mono"],
   },
+  "golden-coffee": {
+    name: "golden-coffee",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   "golden-topaz": {
     name: "golden-topaz",
     modes: ["dark", "light"],
@@ -1830,6 +1987,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  gummy: { name: "gummy", modes: ["dark"], variations: [], fonts: [] },
   "gummy-revived": {
     name: "gummy-revived",
     modes: ["dark", "light"],
@@ -1848,6 +2006,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["light"],
     variations: [],
     fonts: ["courier-prime", "kalam"],
+  },
+  harmonic: {
+    name: "harmonic",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   heboric: {
     name: "heboric",
@@ -1981,6 +2145,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  higlighter: {
+    name: "higlighter",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   hipstersmoothie: {
     name: "hipstersmoothie",
     modes: ["dark"],
@@ -1988,6 +2158,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: [],
   },
   hojicha: { name: "hojicha", modes: ["dark"], variations: [], fonts: [] },
+  horizon: { name: "horizon", modes: ["dark"], variations: [], fonts: [] },
   hoverpopup: {
     name: "hoverpopup",
     modes: ["dark", "light"],
@@ -2256,6 +2427,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["courgette", "karla", "open-sans"],
   },
+  "lizardmen-zettelkasten": {
+    name: "lizardmen-zettelkasten",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   lorens: { name: "lorens", modes: ["dark"], variations: [], fonts: [] },
   lumines: {
     name: "lumines",
@@ -2416,12 +2593,19 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["arvo", "permanent-marker"],
   },
+  "modern-dark": {
+    name: "modern-dark",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   "modern-genz-vibedose": {
     name: "modern-genz-vibedose",
     modes: ["dark", "light"],
     variations: [],
     fonts: ["jost", "satoshi", "syne", "jetbrains-mono"],
   },
+  molecule: { name: "molecule", modes: ["dark"], variations: [], fonts: [] },
   "mono-black-monochrome-charcoal": {
     name: "mono-black-monochrome-charcoal",
     modes: ["dark"],
@@ -2615,6 +2799,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["roboto", "sf-mono", "sf-pro-display"],
   },
   novadust: { name: "novadust", modes: ["dark"], variations: [], fonts: [] },
+  "obsdn-dark-rmx": {
+    name: "obsdn-dark-rmx",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   obsidian: {
     name: "obsidian",
     modes: ["dark", "light"],
@@ -2647,6 +2837,24 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   "obsidian-nord": {
     name: "obsidian-nord",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "obsidian-nord-enhanced": {
+    name: "obsidian-nord-enhanced",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "obsidian-windows-98-edition": {
+    name: "obsidian-windows-98-edition",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "obsidian-you": {
+    name: "obsidian-you",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
@@ -2747,6 +2955,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   overcast: { name: "overcast", modes: ["dark"], variations: [], fonts: [] },
   oxygen: {
     name: "oxygen",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  palatinate: {
+    name: "palatinate",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
@@ -2933,6 +3147,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["fira-code", "montserrat"],
   },
+  "red-solitude": {
+    name: "red-solitude",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "redshift-oled-blue-light-filter": {
     name: "redshift-oled-blue-light-filter",
     modes: ["dark"],
@@ -3061,6 +3281,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["fira-sans", "fira-code"],
   },
+  ruby: { name: "ruby", modes: ["dark", "light"], variations: [], fonts: [] },
   "sad-machine-druid": {
     name: "sad-machine-druid",
     modes: ["dark", "light"],
@@ -3280,6 +3501,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
       "icons/material-icons",
     ],
   },
+  silence: { name: "silence", modes: ["dark"], variations: [], fonts: [] },
   simple: {
     name: "simple",
     modes: ["dark", "light"],
@@ -3304,6 +3526,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["roboto"],
   },
+  slytherin: { name: "slytherin", modes: ["dark"], variations: [], fonts: [] },
   sodalite: { name: "sodalite", modes: ["dark"], variations: [], fonts: [] },
   solarized: {
     name: "solarized",
@@ -3502,6 +3725,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   "trace-labs": {
     name: "trace-labs",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "traffic-lights": {
+    name: "traffic-lights",
     modes: ["dark"],
     variations: [],
     fonts: [],
@@ -3810,6 +4039,18 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  vileplume: {
+    name: "vileplume",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "vintage-theme": {
+    name: "vintage-theme",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
   "violet-evening": {
     name: "violet-evening",
     modes: ["dark"],
@@ -3817,6 +4058,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: [],
   },
   virgo: { name: "virgo", modes: ["dark", "light"], variations: [], fonts: [] },
+  viridian: {
+    name: "viridian",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   vortex: {
     name: "vortex",
     modes: ["dark", "light"],
@@ -3824,6 +4071,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["rubik"],
   },
   w95: { name: "w95", modes: ["light"], variations: [], fonts: [] },
+  warmth: { name: "warmth", modes: ["dark"], variations: [], fonts: [] },
   wasp: { name: "wasp", modes: ["dark", "light"], variations: [], fonts: [] },
   wikipedia: {
     name: "wikipedia",
@@ -3873,6 +4121,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["eb-garamond"],
+  },
+  "yin-and-yang": {
+    name: "yin-and-yang",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   yue: {
     name: "yue",

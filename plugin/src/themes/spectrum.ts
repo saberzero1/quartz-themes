@@ -979,40 +979,6 @@ html[saved-theme="dark"] body h6 {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(36, 36, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(36, 36, 36);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(36, 36, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(36, 36, 36);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(36, 36, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(36, 36, 36);
-  border-bottom-color: rgb(201, 201, 201);
-  border-left-color: rgb(201, 201, 201);
-  border-right-color: rgb(201, 201, 201);
-  border-top-color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(36, 36, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(36, 36, 36);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(36, 36, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(36, 36, 36);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(36, 36, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(36, 36, 36);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "JetBrains Mono";
@@ -1850,36 +1816,6 @@ html[saved-theme="light"] body h6 {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(245, 245, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(245, 245, 245);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(245, 245, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(245, 245, 245);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(245, 245, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(245, 245, 245);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(245, 245, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(245, 245, 245);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(245, 245, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(245, 245, 245);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(245, 245, 245) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(245, 245, 245);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "JetBrains Mono";

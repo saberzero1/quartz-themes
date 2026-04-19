@@ -1007,7 +1007,7 @@
   --checkbox-color-hover: #86c1b9 !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: #181818 !important;
-  --checkbox-radius: 4px !important;
+  --checkbox-radius: 0px !important;
   --checkbox-size: 16px !important;
   --checklist-done-color: #b8b8b8 !important;
   --checklist-done-decoration: line-through !important;
@@ -1450,7 +1450,7 @@
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: #484848 !important;
-  --scrollbar-bg: #181818 !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: 12px !important;
@@ -1669,6 +1669,8 @@
   --interactive-success: #a1b56c !important;
   --bases-charts-accent: #7cafc2 !important;
   --bullet-new-color: rgb(72, 72, 72) !important;
+  --checkbox-border-width: 1.5px !important;
+  --font-weight-normal: 450 !important;
   --inline-code-color: #dc9656 !important;
   --link-internal-color: #7cafc2 !important;
   --link-internal-hover: #86c1b9 !important;
@@ -2994,12 +2996,10 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3014,17 +3014,14 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3037,7 +3034,6 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     background-color: rgb(255, 255, 255);
   }
 
@@ -4398,8 +4394,8 @@ body {
   }
 
   li.task-list-item input[type="checkbox"]:checked {
-    background-color: rgb(152, 115, 247);
-    border-color: rgb(152, 115, 247);
+    background-color: rgb(160, 160, 160);
+    border-color: rgb(171, 171, 171);
   }
 
   h1.article-title {
@@ -5154,7 +5150,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 450;
       outline: rgb(124, 175, 194) none 0px;
       text-decoration: underline;
       text-decoration-color: rgb(124, 175, 194);
@@ -5194,7 +5190,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 450;
       outline: rgb(136, 136, 136) none 0px;
       text-decoration: underline rgba(138, 92, 245, 0.3);
       text-decoration-color: rgb(136, 136, 136);
@@ -5251,7 +5247,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 450;
       outline: rgb(184, 184, 184) none 0px;
       text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(184, 184, 184);
@@ -5292,7 +5288,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 600;
+      font-weight: 700;
       outline: rgb(171, 70, 66) none 0px;
       text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(171, 70, 66);
@@ -5333,7 +5329,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 600;
+      font-weight: 700;
       outline: rgb(171, 70, 66) none 0px;
       text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(171, 70, 66);
@@ -5374,7 +5370,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 450;
       outline: rgb(161, 181, 108) none 0px;
       text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(161, 181, 108);
@@ -5415,7 +5411,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 450;
       outline: rgb(161, 181, 108) none 0px;
       text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(161, 181, 108);
@@ -5455,7 +5451,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 450;
       outline: rgb(216, 216, 216) none 0px;
       text-decoration: rgb(0, 0, 0);
       text-decoration-color: rgb(216, 216, 216);
@@ -5504,7 +5500,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 450;
       outline: rgb(216, 216, 216) none 0px;
       text-decoration: line-through;
       text-decoration-color: rgb(216, 216, 216);
@@ -5591,7 +5587,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 450;
       margin-inline-start: 0px;
       border: 0px solid rgba(138, 92, 245, 0.15);
       border-top-left-radius: 28px;
@@ -5704,10 +5700,10 @@ html[saved-theme="dark"] {
     input[type="checkbox"] {
       appearance: auto;
       border: 1px solid rgb(88, 88, 88);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -5849,7 +5845,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 450;
       outline: rgb(216, 216, 216) none 0px;
       text-decoration: rgb(218, 218, 218);
       text-decoration-color: rgb(216, 216, 216);
@@ -5901,7 +5897,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: rgb(216, 216, 216);
-      font-weight: 400;
+      font-weight: 450;
       background-color: rgba(255, 255, 255, 0.067);
     }
 
@@ -6049,17 +6045,15 @@ html[saved-theme="dark"] {
     }
 
     li.depth-0 {
-      font-weight: 400;
+      font-weight: 450;
     }
 
     ::-webkit-scrollbar {
-      background: rgb(24, 24, 24) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(24, 24, 24);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(24, 24, 24) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(24, 24, 24);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6068,23 +6062,20 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      border: 0px rgb(216, 216, 216);
+      border: 0px rgb(218, 218, 218);
       box-shadow: none;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(24, 24, 24) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(24, 24, 24);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(24, 24, 24) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(24, 24, 24);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(24, 24, 24) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(24, 24, 24);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6096,8 +6087,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(24, 24, 24) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(24, 24, 24);
+      background-color: rgb(30, 30, 30);
     }
 
     body {
@@ -6415,7 +6405,7 @@ html[saved-theme="dark"] {
     td {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(216, 216, 216);
-      font-weight: 400;
+      font-weight: 450;
       text-align: start;
       vertical-align: top;
       border: 1px solid rgb(48, 48, 48);
@@ -6728,7 +6718,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(216, 216, 216);
       cursor: auto;
-      font-weight: 400;
+      font-weight: 450;
       padding: 0px;
     }
 
@@ -6779,7 +6769,7 @@ html[saved-theme="dark"] {
 
     dt {
       color: rgb(216, 216, 216);
-      font-weight: 400;
+      font-weight: 450;
       margin: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
@@ -7024,7 +7014,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 450;
       text-decoration: rgb(218, 218, 218);
     }
 
@@ -7045,7 +7035,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 450;
       text-decoration: rgb(218, 218, 218);
     }
 
@@ -7113,7 +7103,7 @@ html[saved-theme="dark"] {
 
     .note-properties-key {
       color: rgb(184, 184, 184);
-      font-weight: 400;
+      font-weight: 450;
     }
 
     .note-properties-value {
@@ -7193,7 +7183,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      font-weight: 400;
+      font-weight: 450;
     }
 
     .recent-notes > ul.recent-ul > li {
@@ -7455,14 +7445,14 @@ html[saved-theme="dark"] {
 
     li.task-list-item input[type="checkbox"] {
       border-color: rgb(88, 88, 88);
-      border-radius: 4px;
+      border-radius: 0px;
       border-width: 1px;
       background-color: rgba(0, 0, 0, 0);
     }
 
     li.task-list-item input[type="checkbox"]:checked {
-      background-color: rgb(124, 175, 194);
-      border-color: rgb(124, 175, 194);
+      background-color: rgb(160, 160, 160);
+      border-color: rgb(88, 88, 88);
     }
 
     h1.article-title {
@@ -8185,8 +8175,8 @@ html[saved-theme="dark"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -8265,7 +8255,7 @@ html[saved-theme="dark"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

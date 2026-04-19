@@ -339,8 +339,8 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(42, 50, 60);
-  font-weight: 662.75;
+  color: rgb(26, 35, 45);
+  font-weight: 682;
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
@@ -1025,40 +1025,6 @@ html body hr {
 }`,
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(30, 48, 58) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(30, 48, 58);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(30, 48, 58) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(30, 48, 58);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(30, 48, 58) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(30, 48, 58);
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(30, 48, 58) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(30, 48, 58);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(30, 48, 58) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(30, 48, 58);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(30, 48, 58) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(30, 48, 58);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(117, 126, 138);
@@ -1189,9 +1155,9 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
-  color: rgb(42, 50, 60);
+  color: rgb(26, 35, 45);
   font-family: "??", "??", "Segoe UI", Arial, Tahoma, Helvetica, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-shadow: rgb(143, 32, 254) 0px 0px 2px, rgb(143, 32, 254) 0px 0px 2px, rgb(239, 224, 255) 0px 0px 3px, rgb(239, 224, 255) 0px 0px 3px, rgb(239, 224, 255) 0px 0px 3px, rgb(239, 224, 255) 0px 0px 3px, rgb(239, 224, 255) 0px 0px 3px;
+  text-shadow: rgb(135, 16, 254) 0px 0px 2px, rgb(135, 16, 254) 0px 0px 2px, rgb(247, 240, 255) 0px 0px 3px, rgb(247, 240, 255) 0px 0px 3px, rgb(247, 240, 255) 0px 0px 3px, rgb(247, 240, 255) 0px 0px 3px, rgb(247, 240, 255) 0px 0px 3px;
 }
 
 html body abbr {

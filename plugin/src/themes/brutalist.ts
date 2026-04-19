@@ -77,9 +77,10 @@ export const theme: ThemeData = {
   --canvas-controls-radius: 0 !important;
   --canvas-node-border-color: #c0c0c0 !important;
   --caret-color: #a0a0a0 !important;
+  --checkbox-bg-unchecked: #2f2f2f !important;
   --checkbox-border-color: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --checkbox-border-color-hover: #B3B3B3 !important;
-  --checkbox-border-width: 1px !important;
+  --checkbox-border-width: 0px !important;
   --checkbox-color: #cdcdcd !important;
   --checkbox-color-hover: color-mix(in srgb, #B3B3B3, white 40%) !important;
   --checkbox-marker-color: #3c3c3c !important;
@@ -142,6 +143,7 @@ export const theme: ThemeData = {
   --footnote-id-color: #B3B3B3 !important;
   --footnote-id-color-no-occurrences: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --footnote-line-height: 1.6 !important;
+  --footnote-link-color: #7bb3c0 !important;
   --footnote-radius: 0 !important;
   --graph-line: color-mix(in srgb, #B3B3B3, transparent 30%) !important;
   --graph-node: #B3B3B3 !important;
@@ -189,13 +191,13 @@ export const theme: ThemeData = {
   --lightgray: #323232 !important;
   --line-height: 1.6 !important;
   --line-height-normal: 1.6 !important;
-  --link-color: #a0a0a0 !important;
+  --link-color: #B3B3B3 !important;
   --link-color-hover: color-mix(in srgb, #B3B3B3, white 40%) !important;
-  --link-external-color: #a0a0a0 !important;
+  --link-external-color: #7bb3c0 !important;
   --link-external-color-hover: color-mix(in srgb, #B3B3B3, white 40%) !important;
-  --link-unresolved-color: #e67e80 !important;
+  --link-unresolved-color: #8da3a8 !important;
   --link-unresolved-decoration-color: hsla(0, 0%, 75%, 0.3) !important;
-  --link-unresolved-opacity: 1 !important;
+  --link-unresolved-opacity: 0.85 !important;
   --list-marker-color: color-mix(in srgb, #a0a0a0, white 25%) !important;
   --list-marker-color-collapsed: #cdcdcd !important;
   --list-marker-color-hover: #B3B3B3 !important;
@@ -285,7 +287,7 @@ export const theme: ThemeData = {
   --settings-border-color: #6a6a6a !important;
   --settings-border-width: 0px !important;
   --settings-icon-fill: #B3B3B3 !important;
-  --shadow-checkbox-inset: inset 0 0 0 2px #3c3c3c !important;
+  --shadow-checkbox-inset: none !important;
   --shadow-floating-card: none !important;
   --shadow-focus-inset: inset 0 0 0 1px #a0a0a0 !important;
   --shadow-focus-ring: 0 0 0 2px #cdcdcd !important;
@@ -336,7 +338,7 @@ export const theme: ThemeData = {
   --tag-background-hover: #000000 !important;
   --tag-border-color: #cdcdcd !important;
   --tag-border-color-hover: hsla(0, 0%, 75%, 0.15) !important;
-  --tag-color: #a0a0a0 !important;
+  --tag-color: color-mix(in srgb, #B3B3B3, white 10%) !important;
   --tag-color-hover: #cdcdcd !important;
   --tag-radius: 0 !important;
   --tertiary: color-mix(in srgb, #B3B3B3, white 40%) !important;
@@ -416,7 +418,7 @@ html[saved-theme="dark"] body .note-properties {
 html[saved-theme="dark"] body .note-properties-tags {
   background-color: color(srgb 0.803922 0.803922 0.803922 / 0.2);
   border-radius: 0px;
-  color: rgb(160, 160, 160);
+  color: color(srgb 0.731765 0.731765 0.731765);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
@@ -486,36 +488,38 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
-  border-color: rgb(205, 205, 205);
+  background-color: rgb(47, 47, 47);
+  border-color: rgb(255, 255, 255);
   border-radius: 0px;
+  border-width: 0px;
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
   background-color: rgb(205, 205, 205);
-  border-color: rgb(205, 205, 205);
+  border-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body p {
   font-family: Marcellus, serif;
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
-  color: rgb(160, 160, 160);
+  color: rgb(123, 179, 192);
   font-family: Lora, serif;
-  outline: rgb(160, 160, 160) none 0px;
-  text-decoration-color: rgb(160, 160, 160);
+  outline: rgb(123, 179, 192) none 0px;
+  text-decoration-color: rgb(123, 179, 192);
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(160, 160, 160);
+  color: rgb(179, 179, 179);
   font-family: Lora, serif;
-  outline: rgb(160, 160, 160) none 0px;
-  text-decoration-color: rgb(160, 160, 160);
+  outline: rgb(179, 179, 179) none 0px;
+  text-decoration-color: rgb(179, 179, 179);
 }
 
 html[saved-theme="dark"] body a.internal.broken {
-  color: rgb(230, 126, 128);
+  color: rgb(141, 163, 168);
   font-family: Lora, serif;
-  outline: rgb(230, 126, 128) none 0px;
+  outline: rgb(141, 163, 168) none 0px;
   text-decoration: underline rgba(191, 191, 191, 0.3);
   text-decoration-color: rgba(191, 191, 191, 0.3);
 }`,
@@ -549,7 +553,7 @@ html[saved-theme="dark"] body ul.overflow {
   border-top-color: rgb(160, 160, 160);
 }`,
     blockquotes: `html[saved-theme="dark"] body .data-footnote-backref {
-  color: color(srgb 0.701961 0.701961 0.701961 / 0.7);
+  color: rgb(123, 179, 192);
 }
 
 html[saved-theme="dark"] body blockquote {
@@ -714,14 +718,18 @@ html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
 }
 
 html[saved-theme="dark"] body input[type=checkbox] {
-  border-bottom-color: rgb(205, 205, 205);
+  border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: rgb(205, 205, 205);
-  border-right-color: rgb(205, 205, 205);
-  border-top-color: rgb(205, 205, 205);
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -1404,7 +1412,7 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
 }
 
 html[saved-theme="dark"] body a.internal.tag-link::before {
-  color: rgb(160, 160, 160);
+  color: color(srgb 0.731765 0.731765 0.731765);
 }
 
 html[saved-theme="dark"] body h1 {
@@ -1461,40 +1469,6 @@ html[saved-theme="dark"] body hr {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(60, 60, 60) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(60, 60, 60) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(60, 60, 60) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(60, 60, 60);
-  border-bottom-color: rgb(160, 160, 160);
-  border-left-color: rgb(160, 160, 160);
-  border-right-color: rgb(160, 160, 160);
-  border-top-color: rgb(160, 160, 160);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(60, 60, 60) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(60, 60, 60) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(60, 60, 60);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(60, 60, 60) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(60, 60, 60);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: Marcellus, serif;
@@ -1675,7 +1649,7 @@ html[saved-theme="dark"] body ul.tags > li {
   border-top-color: rgb(205, 205, 205);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  color: rgb(160, 160, 160);
+  color: color(srgb 0.731765 0.731765 0.731765);
 }`,
   },
   light: {
@@ -1735,9 +1709,10 @@ html[saved-theme="dark"] body ul.tags > li {
   --canvas-ink-light: #222222 !important;
   --canvas-node-border-color: #232323 !important;
   --caret-color: #000000 !important;
+  --checkbox-bg-unchecked: #a9a9a9 !important;
   --checkbox-border-color: color-mix(in srgb, #222222, transparent 30%) !important;
   --checkbox-border-color-hover: #222222 !important;
-  --checkbox-border-width: 1px !important;
+  --checkbox-border-width: 0px !important;
   --checkbox-color: #000000 !important;
   --checkbox-color-hover: #000000 !important;
   --checkbox-marker-color: #C5C5C5 !important;
@@ -1800,6 +1775,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --footnote-id-color: #222222 !important;
   --footnote-id-color-no-occurrences: color-mix(in srgb, #222222, transparent 30%) !important;
   --footnote-line-height: 1.6 !important;
+  --footnote-link-color: #bd4b00 !important;
   --footnote-radius: 0 !important;
   --graph-line: color-mix(in srgb, #222222, transparent 30%) !important;
   --graph-node: #222222 !important;
@@ -1847,13 +1823,13 @@ html[saved-theme="dark"] body ul.tags > li {
   --lightgray: #B0B0B0 !important;
   --line-height: 1.6 !important;
   --line-height-normal: 1.6 !important;
-  --link-color: #000000 !important;
+  --link-color: #222222 !important;
   --link-color-hover: #000000 !important;
-  --link-external-color: #000000 !important;
+  --link-external-color: #a34100 !important;
   --link-external-color-hover: #000000 !important;
-  --link-unresolved-color: #753e3f !important;
+  --link-unresolved-color: #772e00 !important;
   --link-unresolved-decoration-color: hsla(0, 0%, 28%, 0.3) !important;
-  --link-unresolved-opacity: 1 !important;
+  --link-unresolved-opacity: 0.8 !important;
   --list-marker-color: #000000 !important;
   --list-marker-color-collapsed: #000000 !important;
   --list-marker-color-hover: #222222 !important;
@@ -1941,7 +1917,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --settings-border-color: #000000 !important;
   --settings-border-width: 0px !important;
   --settings-icon-fill: #222222 !important;
-  --shadow-checkbox-inset: inset 0 0 0 2px #C5C5C5 !important;
+  --shadow-checkbox-inset: none !important;
   --shadow-floating-card: none !important;
   --shadow-focus-inset: inset 0 0 0 1px #000000 !important;
   --shadow-focus-ring: 0 0 0 2px #000000 !important;
@@ -2154,8 +2130,10 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
+  background-color: rgb(169, 169, 169);
   border-color: rgb(0, 0, 0);
   border-radius: 0px;
+  border-width: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
@@ -2170,23 +2148,23 @@ html[saved-theme="light"] body p {
   text-decoration-color: rgb(34, 34, 34);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
-  color: rgb(0, 0, 0);
+  color: rgb(163, 65, 0);
   font-family: Lora, serif;
-  outline: rgb(0, 0, 0) none 0px;
-  text-decoration-color: rgb(0, 0, 0);
+  outline: rgb(163, 65, 0) none 0px;
+  text-decoration-color: rgb(163, 65, 0);
 }
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(0, 0, 0);
+  color: rgb(34, 34, 34);
   font-family: Lora, serif;
-  outline: rgb(0, 0, 0) none 0px;
-  text-decoration-color: rgb(0, 0, 0);
+  outline: rgb(34, 34, 34) none 0px;
+  text-decoration-color: rgb(34, 34, 34);
 }
 
 html[saved-theme="light"] body a.internal.broken {
-  color: rgb(117, 62, 63);
+  color: rgb(119, 46, 0);
   font-family: Lora, serif;
-  outline: rgb(117, 62, 63) none 0px;
+  outline: rgb(119, 46, 0) none 0px;
   text-decoration: underline rgba(71, 71, 71, 0.3);
   text-decoration-color: rgba(71, 71, 71, 0.3);
 }`,
@@ -2220,7 +2198,7 @@ html[saved-theme="light"] body ul.overflow {
   border-top-color: rgb(0, 0, 0);
 }`,
     blockquotes: `html[saved-theme="light"] body .data-footnote-backref {
-  color: color(srgb 0.133333 0.133333 0.133333 / 0.7);
+  color: rgb(189, 75, 0);
 }
 
 html[saved-theme="light"] body blockquote {
@@ -2392,11 +2370,15 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
   border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
   border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
   border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
@@ -3096,40 +3078,6 @@ html[saved-theme="light"] body hr {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(197, 197, 197) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(197, 197, 197) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(197, 197, 197) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(197, 197, 197);
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(197, 197, 197) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(197, 197, 197) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(197, 197, 197);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(197, 197, 197) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(197, 197, 197);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(34, 34, 34);

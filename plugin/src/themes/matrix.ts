@@ -1274,7 +1274,7 @@ html body a.internal.tag-link::before {
 
 html body h1 {
   color: rgba(0, 0, 0, 0);
-  text-shadow: rgb(0, 255, 170) 0px 0px 7.69999px, rgba(0, 255, 65, 0.14) 0px 0px 3.96665px;
+  text-shadow: rgb(0, 255, 170) 0px 0px 7.72517px, rgba(0, 255, 65, 0.145) 0px 0px 4.02539px;
 }
 
 html body h2 {
@@ -1283,7 +1283,7 @@ html body h2 {
 
 html body h2.page-title, html h2.page-title a {
   color: rgba(0, 0, 0, 0);
-  text-shadow: rgb(0, 255, 170) 0px 0px 7.72553px, rgba(0, 255, 65, 0.145) 0px 0px 4.02623px;
+  text-shadow: rgb(0, 255, 170) 0px 0px 7.70003px, rgba(0, 255, 65, 0.14) 0px 0px 3.96674px;
 }
 
 html body h3 {
@@ -1319,40 +1319,6 @@ html body hr {
   padding-left: 17.6px;
   padding-right: 17.6px;
   padding-top: 16px;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(0, 0, 0);
-  border-bottom-color: rgb(0, 255, 65);
-  border-left-color: rgb(0, 255, 65);
-  border-right-color: rgb(0, 255, 65);
-  border-top-color: rgb(0, 255, 65);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(0, 0, 0);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(0, 0, 0);
 }`,
     explorer: `html body .explorer {
   background-color: rgb(6, 22, 13);

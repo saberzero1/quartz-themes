@@ -1188,40 +1188,6 @@ html[saved-theme="dark"] body hr {
   border-left-color: rgba(67, 133, 190, 0.25);
   border-right-color: rgba(67, 133, 190, 0.25);
   border-top-color: rgba(67, 133, 190, 0.25);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(16, 15, 15) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(16, 15, 15);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(16, 15, 15) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(16, 15, 15);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(16, 15, 15) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(16, 15, 15);
-  border-bottom-color: rgb(206, 205, 195);
-  border-left-color: rgb(206, 205, 195);
-  border-right-color: rgb(206, 205, 195);
-  border-top-color: rgb(206, 205, 195);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(16, 15, 15) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(16, 15, 15);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(16, 15, 15) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(16, 15, 15);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(16, 15, 15) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(16, 15, 15);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(135, 133, 128);
@@ -2531,13 +2497,6 @@ html[saved-theme="light"] body hr {
   border-left-color: rgba(32, 94, 166, 0.25);
   border-right-color: rgba(32, 94, 166, 0.25);
   border-top-color: rgba(32, 94, 166, 0.25);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(16, 15, 15);
-  border-left-color: rgb(16, 15, 15);
-  border-right-color: rgb(16, 15, 15);
-  border-top-color: rgb(16, 15, 15);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(111, 110, 105);

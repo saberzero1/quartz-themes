@@ -208,6 +208,13 @@ ______  ___  ______ _   __
   --h5-size: 1.47em;
   --h6-size: 1.35em;
 
+  --h1-weight: 500 !important;
+  --h2-weight: 500 !important;
+  --h3-weight: 500 !important;
+  --h4-weight: 500 !important;
+  --h5-weight: 500 !important;
+  --h6-weight: 500 !important;
+
   --list-indent: 1em;
   --p-spacing: 0.25rem;
 
@@ -634,6 +641,7 @@ code {
 .cm-header-1 .cm-underline,
 .markdown-preview-section h1,
 .markdown-preview-section h1 code,
+.HyperMD-header-1 .cm-hmd-internal-link .cm-underline,
 h1 a
 {
   font-weight: 500 !important;
@@ -645,6 +653,7 @@ h1 a
 .cm-header-2 .cm-underline,
 .markdown-preview-section h2,
 .markdown-preview-section h2 code,
+.HyperMD-header-2 .cm-hmd-internal-link .cm-underline,
 h2 a
 {
   font-weight: 500 !important;
@@ -655,6 +664,7 @@ h2 a
 .cm-header-3 .cm-underline,
 .markdown-preview-section h3,
 .markdown-preview-section h3 code,
+.HyperMD-header-3 .cm-hmd-internal-link .cm-underline,
 h3 a
 {
   font-weight: 500 !important;
@@ -665,6 +675,7 @@ h3 a
 .cm-header-4 .cm-underline,
 .markdown-preview-section h4,
 .markdown-preview-section h4 code,
+.HyperMD-header-4 .cm-hmd-internal-link .cm-underline,
 h4 a
 {
   font-weight: 500 !important;
@@ -675,6 +686,7 @@ h4 a
 .cm-header-5 .cm-underline,
 .markdown-preview-section h5,
 .markdown-preview-section h5 code,
+.HyperMD-header-5 .cm-hmd-internal-link .cm-underline,
 h5 a
 {
   font-weight: 500 !important;
@@ -685,6 +697,7 @@ h5 a
 .cm-header-6 .cm-underline,
 .markdown-preview-section h6,
 .markdown-preview-section h6 code,
+.HyperMD-header-6 .cm-hmd-internal-link .cm-underline,
 h6 a
 {
   font-weight: 500 !important;

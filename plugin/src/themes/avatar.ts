@@ -1322,40 +1322,6 @@ html body hr {
   border-top-color: rgb(99, 102, 241);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(26, 35, 50) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(26, 35, 50);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(26, 35, 50) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(26, 35, 50);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(26, 35, 50) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(26, 35, 50);
-  border-bottom-color: rgb(226, 232, 240);
-  border-left-color: rgb(226, 232, 240);
-  border-right-color: rgb(226, 232, 240);
-  border-top-color: rgb(226, 232, 240);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(26, 35, 50) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(26, 35, 50);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(26, 35, 50) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(26, 35, 50);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(26, 35, 50) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(26, 35, 50);
 }`,
     explorer: `html body .explorer {
   background-color: rgba(45, 55, 72, 0.3);

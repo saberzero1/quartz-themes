@@ -845,6 +845,9 @@
   --background-modifier-form-field-highlighted: #f5a7a2 !important;
   --light-purple: #d3d6fe !important;
   --light-yellow: #e5e79c !important;
+  --folder-title: #37291a !important;
+  --mark-highlight: #fd355a !important;
+  --panel-border-color: #fd355a !important;
   --green: #40916c !important;
   --orange: #f19c79 !important;
   --purple: #8673b4 !important;
@@ -855,7 +858,6 @@
   --gray-2: #7c8595 !important;
   --red-1: #980000 !important;
   --aqua: #4dd8ef !important;
-  --panel-border-color: #fd355a !important;
   --header-color: #f5a7a2 !important;
   --font-size-code: 0.9375em !important;
   --font-size-h1: 1.5625em !important;
@@ -894,7 +896,6 @@
   --event-item-color7: #d08489 !important;
   --event-item-color8: #f39ba0 !important;
   --event-item-color9: #f39ba0c4 !important;
-  --folder-title: #37291a !important;
   --font-family-special-tag: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive !important;
   --font-size-edit-blockquote: 1em !important;
   --font-size-edit-normal: 1em !important;
@@ -963,7 +964,6 @@
   --font-family-preview-edit-code: "Consolas", "Monaco", monospace !important;
   --font-family-YAML: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive !important;
   --font-size-edit-code: 1em !important;
-  --mark-highlight: #fd355a !important;
   --tag6: #f5a7a2 !important;
   --tag7: #ab4967 !important;
   --tag8: #dbb671 !important;
@@ -1810,6 +1810,9 @@
   --text-error-hover: #f93759 !important;
   --background-modifier-form-field-highlighted: #e5c7a9 !important;
   --light-yellow: #ffd26c !important;
+  --folder-title: #fff !important;
+  --mark-highlight: #f93759 !important;
+  --panel-border-color: #f93759 !important;
   --green: #00ffc7 !important;
   --orange: #f28d61 !important;
   --purple: #b073ff !important;
@@ -1820,7 +1823,6 @@
   --gray-2: #b4b1c6 !important;
   --red-1: #f93759 !important;
   --aqua: #30daff !important;
-  --panel-border-color: #f93759 !important;
   --header-color: #f39ba0 !important;
   --font-size-code: 0.9375em !important;
   --font-size-h1: 1.5625em !important;
@@ -1859,7 +1861,6 @@
   --event-item-color7: #ffbcc4 !important;
   --event-item-color8: #ffbcbc !important;
   --event-item-color9: #ffc3bc !important;
-  --folder-title: #fff !important;
   --font-family-special-tag: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive !important;
   --font-size-edit-blockquote: 1em !important;
   --font-size-edit-normal: 1em !important;
@@ -1928,7 +1929,6 @@
   --font-family-preview-edit-code: "Consolas", "Monaco", monospace !important;
   --font-family-YAML: "Lucida Handwriting", "Dancing Script", "Hand of Sean", "Angelina", cursive !important;
   --font-size-edit-code: 1em !important;
-  --mark-highlight: #f93759 !important;
   --tag6: #f5a7a2 !important;
   --tag7: #f19c79 !important;
   --tag8: #02a588 !important;
@@ -3304,13 +3304,11 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(239, 233, 217) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(239, 233, 217);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(239, 233, 217) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(239, 233, 217);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3319,23 +3317,20 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px rgb(55, 41, 26);
+    border: 0px rgb(34, 34, 34);
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(239, 233, 217) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(239, 233, 217);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(239, 233, 217) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(239, 233, 217);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(239, 233, 217) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(239, 233, 217);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3347,8 +3342,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(239, 233, 217) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(239, 233, 217);
+    background-color: rgb(255, 255, 255);
   }
 
   body {
@@ -6376,13 +6370,11 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(33, 33, 33);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(33, 33, 33);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6391,23 +6383,20 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      border: 0px rgb(239, 233, 217);
+      border: 0px rgb(218, 218, 218);
       box-shadow: none;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(33, 33, 33);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(33, 33, 33);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(33, 33, 33);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6419,8 +6408,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(33, 33, 33) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(33, 33, 33);
+      background-color: rgb(30, 30, 30);
     }
 
     body {
@@ -8504,8 +8492,8 @@ html[saved-theme="dark"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -8584,7 +8572,7 @@ html[saved-theme="dark"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

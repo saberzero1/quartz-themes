@@ -841,6 +841,7 @@
   --bg-dark: #cbccd1 !important;
   --fg-dark: #8d98c9 !important;
   --text-color: #4c505e !important;
+  --border-color: #a8aecb !important;
   --bold-color: #77a0f7 !important;
   --italic-color: #77a0f7 !important;
   --green: #799f50 !important;
@@ -852,7 +853,6 @@
   --comment: #848cb5 !important;
   --cyan: #009cd0 !important;
   --accent: hsl(265, 47%, 51%) !important;
-  --border-color: #a8aecb !important;
   --code-variable: #4c505e !important;
   --code-builtin: #009cd0 !important;
   --code-definition: #77a0f7 !important;
@@ -862,6 +862,7 @@
   --teal: #18b495 !important;
   --fg: #4c505e !important;
   --bg: #d5d6db !important;
+  --selection-background-color: #b5b9c9 !important;
   --blue0: #7890dd !important;
   --red1: #c64343 !important;
   --accent-color-hover: #b28af6 !important;
@@ -873,7 +874,6 @@
   --border-color-secondary: #a8aecb !important;
   --code-boolean: #e97c00 !important;
   --code-parentheses: #8d98c9 !important;
-  --selection-background-color: #b5b9c9 !important;
   --selection-border-color: #b28af6 !important;
   --text-color-accent: white !important;
   --text-color-muted-dark: #a8aecb !important;
@@ -1723,6 +1723,7 @@
   --bg-dark: #16161e !important;
   --fg-dark: #a9b1d6 !important;
   --text-color: #c0caf5 !important;
+  --border-color: #3b4261 !important;
   --bold-color: #7aa2f7 !important;
   --italic-color: #7aa2f7 !important;
   --green: #9ece6a !important;
@@ -1734,7 +1735,6 @@
   --comment: #565f89 !important;
   --cyan: #7dcfff !important;
   --accent: hsl(261, 85%, 79%) !important;
-  --border-color: #3b4261 !important;
   --code-variable: #c0caf5 !important;
   --code-builtin: #7dcfff !important;
   --code-definition: #7aa2f7 !important;
@@ -1744,6 +1744,7 @@
   --teal: #1abc9c !important;
   --fg: #c0caf5 !important;
   --bg: #1a1b26 !important;
+  --selection-background-color: #363a4a !important;
   --blue0: #3d59a1 !important;
   --red1: #db4b4b !important;
   --accent-color-hover: #bb9af7 !important;
@@ -1755,7 +1756,6 @@
   --border-color-secondary: #3b4261 !important;
   --code-boolean: #ff9e64 !important;
   --code-parentheses: #a9b1d6 !important;
-  --selection-background-color: #363a4a !important;
   --selection-border-color: #bb9af7 !important;
   --text-color-accent: white !important;
   --text-color-muted-dark: #3b4261 !important;
@@ -3091,13 +3091,11 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(213, 214, 219) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(213, 214, 219);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(213, 214, 219) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(213, 214, 219);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3106,23 +3104,20 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px rgb(76, 80, 94);
+    border: 0px rgb(34, 34, 34);
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(213, 214, 219) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(213, 214, 219);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(213, 214, 219) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(213, 214, 219);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(213, 214, 219) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(213, 214, 219);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3134,8 +3129,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(213, 214, 219) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(213, 214, 219);
+    background-color: rgb(255, 255, 255);
   }
 
   body {
@@ -6152,13 +6146,11 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(26, 27, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(26, 27, 38);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(26, 27, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(26, 27, 38);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6167,23 +6159,20 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      border: 0px rgb(192, 202, 245);
+      border: 0px rgb(218, 218, 218);
       box-shadow: none;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(26, 27, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(26, 27, 38);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(26, 27, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(26, 27, 38);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(26, 27, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(26, 27, 38);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6195,8 +6184,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(26, 27, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(26, 27, 38);
+      background-color: rgb(30, 30, 30);
     }
 
     body {
@@ -8282,8 +8270,8 @@ html[saved-theme="dark"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -8362,7 +8350,7 @@ html[saved-theme="dark"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

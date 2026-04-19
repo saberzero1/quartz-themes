@@ -158,6 +158,7 @@ settings:
   --interactive-accent-hover: var(--color-accent-2);
 
   --hr-color: hsla(var(--accent-h), 50%, 75%, 0.1);
+  --list-marker-color: var(--base-30);
 }
 
 /* Heading Colors */
@@ -296,8 +297,8 @@ body.headings-color-colorful {
   --base-55: hsl(var(--base-hue), var(--base-sat, 8%), 8%);
   --base-60: hsl(var(--base-hue), var(--base-sat, 8%), 5%);
 
-  --text-accent: hsl(var(--accent-h), 75%, 75%);
-  --text-accent-hover: hsl(var(--accent-h), 75%, 84%);
+  --text-accent: hsl(var(--accent-h), 82%, 78%);
+  --text-accent-hover: hsl(var(--accent-h), 90%, 84%);
 }
 
 .theme-light {

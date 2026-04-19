@@ -863,40 +863,6 @@ html[saved-theme="dark"] body h6 {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(5, 5, 5) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(5, 5, 5);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(5, 5, 5) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(5, 5, 5);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(5, 5, 5) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(5, 5, 5);
-  border-bottom-color: rgb(214, 212, 212);
-  border-left-color: rgb(214, 212, 212);
-  border-right-color: rgb(214, 212, 212);
-  border-top-color: rgb(214, 212, 212);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(5, 5, 5) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(5, 5, 5);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(5, 5, 5) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(5, 5, 5);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(5, 5, 5) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(5, 5, 5);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell;
@@ -1856,13 +1822,6 @@ html[saved-theme="light"] body h6 {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(38, 38, 38);
-  border-left-color: rgb(38, 38, 38);
-  border-right-color: rgb(38, 38, 38);
-  border-top-color: rgb(38, 38, 38);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell;

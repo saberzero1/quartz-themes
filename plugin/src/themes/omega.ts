@@ -1327,40 +1327,6 @@ html body hr {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 8px;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-  border-bottom-color: rgb(245, 245, 245);
-  border-left-color: rgb(245, 245, 245);
-  border-right-color: rgb(245, 245, 245);
-  border-top-color: rgb(245, 245, 245);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(17, 17, 17);

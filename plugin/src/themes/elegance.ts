@@ -1260,40 +1260,6 @@ html[saved-theme="dark"] body hr {
   padding-top: 0px;
 }
 
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(53, 56, 67) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(53, 56, 67);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(53, 56, 67) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(53, 56, 67);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(53, 56, 67) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(53, 56, 67);
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(53, 56, 67) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(53, 56, 67);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(53, 56, 67) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(53, 56, 67);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(53, 56, 67) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(53, 56, 67);
-}
-
 html[saved-theme="dark"] body body {
   scrollbar-color: rgba(255, 255, 255, 0.22) rgba(255, 255, 255, 0.05);
   scrollbar-width: thin;
@@ -2734,13 +2700,6 @@ html[saved-theme="light"] body hr {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(6, 6, 6);
-  border-left-color: rgb(6, 6, 6);
-  border-right-color: rgb(6, 6, 6);
-  border-top-color: rgb(6, 6, 6);
 }
 
 html[saved-theme="light"] body body {

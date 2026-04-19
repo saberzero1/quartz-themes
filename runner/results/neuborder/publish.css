@@ -1299,8 +1299,8 @@ body.theme-light {
   --background-mod-left-split: #f6f6f6 !important;
   --background-mod-right-split: #f6f6f6 !important;
   --background-mod-root-split: hsl(0, 0%, 100%) !important;
-  --background-tertiary: hsl(214, 76%, 95.5%) !important;
-  --background-underlying: hsl(214, 76%, 95.5%) !important;
+  --background-tertiary: hsl(214, 76%, 94.85714%) !important;
+  --background-underlying: hsl(214, 76%, 94.85714%) !important;
   --blockquote-padding: 8px !important;
   --color-base-15: #f7f7f7 !important;
   --empty-state-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3E%3Cpath fill='black' fill-opacity='.15' d='M13.32 7.155a4.375 4.375 0 0 1-5.7 6.517l5.7-6.517ZM10 5.625a4.375 4.375 0 0 0-3.32 7.22l5.704-6.514A4.35 4.35 0 0 0 10 5.625ZM18.125 10A8.125 8.125 0 1 1 10 1.875 8.135 8.135 0 0 1 18.125 10Zm-2.5 0a5.6 5.6 0 0 0-1.476-3.793l.382-.483a.626.626 0 1 0-.937-.823l-.384.483a5.625 5.625 0 0 0-7.36 8.409l-.381.483a.625.625 0 0 0 .937.823l.384-.483A5.621 5.621 0 0 0 15.625 10Z'/%3E%3C/svg%3E") !important;
@@ -1342,7 +1342,7 @@ body.theme-light {
   --mix-blend-mode-on-border: normal !important;
   --neumorphic-transition: all 0.15s !important;
   --neumorphic-transition-faster: all 0.1s !important;
-  --on-border: hsla(232, 32%, 64%) !important;
+  --on-border: hsl(232, 60%, 50%) !important;
   --shadow-active:
     4px 4px 8px rgba(0, 0, 0, 0), -4px -4px 8px rgba(255, 255, 255, 0),
     inset 3px 3px 3px rgba(0, 0, 0, 0.5),
@@ -1355,6 +1355,22 @@ body.theme-light {
     inset 4px 4px 8px rgba(0, 0, 0, 0.15),
     inset -4px -4px 8px rgba(255, 255, 255, 0.7) !important;
   --shadow-selected: inset 3px 3px 3px rgba(0, 0, 0, 0.3) !important;
+  --slider-thumb-shadow:
+    inset 0.45em 0.45em 5px -5px rgba(255, 255, 255, 0.65),
+    inset -0.25em -0.25em 8px -2px rgba(0, 0, 0, 0.2),
+    0.4em 0.3em 5px -0.3em rgba(0, 0, 0, 0.35) !important;
+  --slider-thumb-shadow-active:
+    inset 0.3em 0.3em 6px -3px rgba(0, 0, 0, 0.3),
+    inset -0.2em -0.2em 5px -3px rgba(255, 255, 255, 0.4),
+    0 0 0 3px hsla(232, 80%, 64%, 0.5) !important;
+  --slider-thumb-shadow-hover:
+    inset 0.45em 0.45em 5px -5px rgba(255, 255, 255, 0.65),
+    inset -0.25em -0.25em 8px -2px rgba(0, 0, 0, 0.2),
+    0.4em 0.3em 5px -0.3em rgba(0, 0, 0, 0.35),
+    0 0 0 3px hsla(232, 80%, 64%, 0.3) !important;
+  --slider-track-shadow:
+    inset 3px 4px 10px rgba(0, 0, 0, 0.15),
+    inset -3px -4px 10px rgba(255, 255, 255, 0.55) !important;
 }
 
 body .site-body-left-column-site-theme-toggle {
@@ -2270,9 +2286,10 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-light body.styled-scrollbars {
-  background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+body body.theme-light ::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb {
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -2282,8 +2299,30 @@ body body.theme-light body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(0, 0, 0);
+  border: 0px rgb(34, 34, 34);
   box-shadow: none;
+}
+body body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light ::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light ::-webkit-scrollbar-corner {
+  background-color: rgb(255, 255, 255);
+}
+body body.theme-light body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }
@@ -3180,7 +3219,7 @@ body body.theme-light .clickable-icon {
 }
 body body.theme-light .site-footer {
   background-color: rgb(246, 246, 246);
-  color: rgb(134, 142, 193);
+  color: rgb(51, 71, 204);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3202,7 +3241,7 @@ body body.theme-light .site-footer {
   border-bottom-right-radius: 6px;
 }
 body body.theme-light .site-footer a {
-  color: rgb(134, 142, 193);
+  color: rgb(51, 71, 204);
 }
 body body.theme-light .nav-header {
   color: rgb(0, 0, 0);
@@ -3262,10 +3301,10 @@ body body.theme-light .nav-files-container {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light .site-body-left-column-site-theme-toggle {
-  background-color: rgb(235, 242, 252);
-  color: rgb(134, 142, 193);
+  background-color: rgb(232, 241, 252);
+  color: rgb(51, 71, 204);
   cursor: default;
-  border-color: rgb(134, 142, 193);
+  border-color: rgb(51, 71, 204);
   border-width: 0px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -3273,8 +3312,8 @@ body body.theme-light .site-body-left-column-site-theme-toggle {
   border-bottom-right-radius: 6px;
 }
 body body.theme-light .site-body-left-column-site-theme-toggle svg {
-  stroke: rgb(134, 142, 193);
-  color: rgb(134, 142, 193);
+  stroke: rgb(51, 71, 204);
+  color: rgb(51, 71, 204);
 }
 body body.theme-light .view-header-breadcrumb {
   background-color: rgba(0, 0, 0, 0);

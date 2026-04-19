@@ -911,40 +911,6 @@ html[saved-theme="dark"] body hr {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(17, 17, 17) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(17, 17, 17);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(255, 255, 255);
@@ -1954,40 +1920,6 @@ html[saved-theme="light"] body hr {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 250, 250);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 250, 250);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 250, 250);
-  border-bottom-color: rgb(31, 31, 31);
-  border-left-color: rgb(31, 31, 31);
-  border-right-color: rgb(31, 31, 31);
-  border-top-color: rgb(31, 31, 31);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 250, 250);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 250, 250);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(250, 250, 250) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(250, 250, 250);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(31, 31, 31);

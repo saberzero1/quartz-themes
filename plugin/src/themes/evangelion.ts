@@ -1643,40 +1643,6 @@ html body hr {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15px;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(32, 20, 48) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(32, 20, 48);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(32, 20, 48) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(32, 20, 48);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(32, 20, 48) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(32, 20, 48);
-  border-bottom-color: rgb(225, 214, 248);
-  border-left-color: rgb(225, 214, 248);
-  border-right-color: rgb(225, 214, 248);
-  border-top-color: rgb(225, 214, 248);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(32, 20, 48) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(32, 20, 48);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(32, 20, 48) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(32, 20, 48);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(32, 20, 48) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(32, 20, 48);
 }`,
     explorer: `html body .explorer {
   background-color: rgb(57, 39, 77);

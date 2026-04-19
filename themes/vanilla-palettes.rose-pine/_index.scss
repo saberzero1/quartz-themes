@@ -839,11 +839,11 @@
   --h6-color: #b4637a !important;
   --inline-title-color: #575279 !important;
   --text-color: #575279 !important;
+  --border-color: #dfdad9 !important;
   --bold-color: #d7827e !important;
   --italic-color: #d7827e !important;
   --accent: hsl(3, 53%, 67%) !important;
   --text: #575279 !important;
-  --border-color: #dfdad9 !important;
   --code-variable: #575279 !important;
   --code-builtin: #b4637a !important;
   --code-definition: #d7827e !important;
@@ -861,6 +861,7 @@
   --pine: #286983 !important;
   --rose: #d7827e !important;
   --subtle: #797593 !important;
+  --selection-background-color: #f2e9e1 !important;
   --accent-color-hover: #907aa9 !important;
   --accent-color-dark: #286983 !important;
   --accent-color-light: #d7827e !important;
@@ -868,7 +869,6 @@
   --border-color-secondary: #cecacd !important;
   --code-boolean: #d7827e !important;
   --code-parentheses: #797593 !important;
-  --selection-background-color: #f2e9e1 !important;
   --selection-border-color: #907aa9 !important;
   --text-color-accent: #575279 !important;
   --text-color-muted-dark: #f2e9e1 !important;
@@ -1707,11 +1707,11 @@
   --h6-color: #eb6f92 !important;
   --inline-title-color: #e0def4 !important;
   --text-color: #e0def4 !important;
+  --border-color: #403d52 !important;
   --bold-color: #ebbcba !important;
   --italic-color: #ebbcba !important;
   --accent: hsl(197, 49%, 38%) !important;
   --text: #e0def4 !important;
-  --border-color: #403d52 !important;
   --code-variable: #e0def4 !important;
   --code-builtin: #eb6f92 !important;
   --code-definition: #ebbcba !important;
@@ -1729,6 +1729,7 @@
   --pine: #31748f !important;
   --rose: #ebbcba !important;
   --subtle: #908caa !important;
+  --selection-background-color: #26233a !important;
   --accent-color-hover: #9ccfd8 !important;
   --accent-color-dark: #31748f !important;
   --accent-color-light: #ebbcba !important;
@@ -1736,7 +1737,6 @@
   --border-color-secondary: #524f67 !important;
   --code-boolean: #ebbcba !important;
   --code-parentheses: #908caa !important;
-  --selection-background-color: #26233a !important;
   --selection-border-color: #9ccfd8 !important;
   --text-color-accent: white !important;
   --text-color-muted-dark: #26233a !important;
@@ -3063,13 +3063,11 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(250, 244, 237) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(250, 244, 237);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(250, 244, 237) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(250, 244, 237);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3078,23 +3076,20 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px rgb(87, 82, 121);
+    border: 0px rgb(34, 34, 34);
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(250, 244, 237) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(250, 244, 237);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(250, 244, 237) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(250, 244, 237);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(250, 244, 237) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(250, 244, 237);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3106,8 +3101,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(250, 244, 237) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(250, 244, 237);
+    background-color: rgb(255, 255, 255);
   }
 
   body {
@@ -6124,13 +6118,11 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(25, 23, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(25, 23, 36);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(25, 23, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(25, 23, 36);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6139,23 +6131,20 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      border: 0px rgb(224, 222, 244);
+      border: 0px rgb(218, 218, 218);
       box-shadow: none;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(25, 23, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(25, 23, 36);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(25, 23, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(25, 23, 36);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(25, 23, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(25, 23, 36);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6167,8 +6156,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(25, 23, 36) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(25, 23, 36);
+      background-color: rgb(30, 30, 30);
     }
 
     body {
@@ -8254,8 +8242,8 @@ html[saved-theme="dark"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -8334,7 +8322,7 @@ html[saved-theme="dark"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

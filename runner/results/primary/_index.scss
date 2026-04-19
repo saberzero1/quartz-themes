@@ -869,37 +869,40 @@
   --background-modifier-warning-hover: hsla(21, 81%, 59%, 1) !important;
   --link-unresolved-decoration-color-hover: color-mix(in srgb, hsla(34, 37%, 70%, 1) 22%, transparent) !important;
   --kanban-lane-border: 1px solid hsla(34, 34%, 90%, 1) !important;
+  --h1-text-align: left !important;
+  --h2-text-align: left !important;
+  --h3-text-align: left !important;
+  --h4-text-align: left !important;
+  --h5-text-align: left !important;
+  --h6-text-align: left !important;
   --callout-color-opacity: 32.5%;
   --embed-border-bottom-color: hsla(37, 38%, 83%, 1) !important;
   --embed-border-top-color: hsla(37, 38%, 83%, 1) !important;
   --h1-border-left-color: hsla(37, 38%, 83%, 1) !important;
   --h1-border-right-color: hsla(37, 38%, 83%, 1) !important;
   --h1-border-width: 0px !important;
-  --h1-text-align: left !important;
   --h2-border-left-color: hsla(37, 38%, 83%, 1) !important;
   --h2-border-right-color: hsla(37, 38%, 83%, 1) !important;
   --h2-border-width: 0px !important;
-  --h2-text-align: left !important;
   --h3-border-left-color: hsla(37, 38%, 83%, 1) !important;
   --h3-border-right-color: hsla(37, 38%, 83%, 1) !important;
   --h3-border-width: 0px !important;
-  --h3-text-align: left !important;
   --h4-border-left-color: hsla(37, 38%, 83%, 1) !important;
   --h4-border-right-color: hsla(37, 38%, 83%, 1) !important;
   --h4-border-width: 0px !important;
-  --h4-text-align: left !important;
   --h5-border-left-color: hsla(37, 38%, 83%, 1) !important;
   --h5-border-right-color: hsla(37, 38%, 83%, 1) !important;
   --h5-border-width: 0px !important;
-  --h5-text-align: left !important;
   --h6-border-left-color: hsla(37, 38%, 83%, 1) !important;
   --h6-border-right-color: hsla(37, 38%, 83%, 1) !important;
   --h6-border-width: 0px !important;
-  --h6-text-align: left !important;
   --ribbon-border-width: 1px !important;
   --toggle-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.09), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.06), inset 0 0 1px rgba(0, 0, 0, 0.28) !important;
   --tab-active-shadow: inset 0px 1px 0px 0px rgb(255, 255, 255), inset 0px -2px 0px 1px rgba(0, 0, 0, 0.09), 0px 1px 2px -0.1px rgba(0, 0, 0, 0.15) !important;
   --vault-name-color-hover: hsla(36, 32%, 30%, 1) !important;
+  --slider-thumb-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), inset 0pc 1px 0px 1px rgb(255, 255, 255), inset 0px -1px 0px 1px rgba(0, 0, 0, 0.09), 0px 1px 2px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-hover: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), inset 0pc 1px 0px 1px rgb(255, 255, 255), inset 0px -1px 0px 1px rgba(0, 0, 0, 0.09), 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 6px rgba(0, 0, 0, 0.05) !important;
+  --slider-track-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.08), 0px 0px 0px 1px rgba(255, 255, 255, 0.08) !important;
   --search-clear-button-color-hover: hsla(4, 72%, 55%, 1) !important;
   --file-header-border-color: hsla(37, 38%, 83%, 1) !important;
   --button-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1), inset 0px -2px 0px 2px rgba(0, 0, 0, 0.09), inset 0px -2px 4px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px -5.6px rgba(0, 0, 0, 0.4), 0px 2px 4px -2.7px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.05) !important;
@@ -1395,9 +1398,6 @@
   --sidebar-nav-icon: 15px !important;
   --sidebar-tab-icon: 15px !important;
   --slider-thumb-bg: hsla(36, 38%, 98%, 1) !important;
-  --slider-thumb-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), inset 0pc 1px 0px 1px rgb(255, 255, 255), inset 0px -1px 0px 1px rgba(0, 0, 0, 0.09), 0px 1px 2px 0px rgba(0, 0, 0, 0.1) !important;
-  --slider-thumb-shadow-hover: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), inset 0pc 1px 0px 1px rgb(255, 255, 255), inset 0px -1px 0px 1px rgba(0, 0, 0, 0.09), 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 6px rgba(0, 0, 0, 0.05) !important;
-  --slider-track-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.08), 0px 0px 0px 1px rgba(255, 255, 255, 0.08) !important;
   --star-chbx-color: hsla(40, 93%, 51%, 1) !important;
   --star-chbx-icon-color: white !important;
   --status-bar-floating-bg: hsla(35, 37%, 92%, 1) !important;
@@ -2367,37 +2367,40 @@
   --background-modifier-warning-hover: hsla(22, 82%, 47%, 1) !important;
   --link-unresolved-decoration-color-hover: color-mix(in srgb, hsla(35, 27%, 55%, 1) 22%, transparent) !important;
   --kanban-lane-border: 1px solid color-mix(in srgb, hsla(33, 20%, 17%, 1) 40%, hsla(30, 19%, 15%, 1)) !important;
+  --h1-text-align: left !important;
+  --h2-text-align: left !important;
+  --h3-text-align: left !important;
+  --h4-text-align: left !important;
+  --h5-text-align: left !important;
+  --h6-text-align: left !important;
   --callout-color-opacity: 32.5%;
   --embed-border-bottom-color: hsla(28, 22%, 19%, 1) !important;
   --embed-border-top-color: hsla(28, 22%, 19%, 1) !important;
   --h1-border-left-color: hsla(28, 22%, 19%, 1) !important;
   --h1-border-right-color: hsla(28, 22%, 19%, 1) !important;
   --h1-border-width: 0px !important;
-  --h1-text-align: left !important;
   --h2-border-left-color: hsla(28, 22%, 19%, 1) !important;
   --h2-border-right-color: hsla(28, 22%, 19%, 1) !important;
   --h2-border-width: 0px !important;
-  --h2-text-align: left !important;
   --h3-border-left-color: hsla(28, 22%, 19%, 1) !important;
   --h3-border-right-color: hsla(28, 22%, 19%, 1) !important;
   --h3-border-width: 0px !important;
-  --h3-text-align: left !important;
   --h4-border-left-color: hsla(28, 22%, 19%, 1) !important;
   --h4-border-right-color: hsla(28, 22%, 19%, 1) !important;
   --h4-border-width: 0px !important;
-  --h4-text-align: left !important;
   --h5-border-left-color: hsla(28, 22%, 19%, 1) !important;
   --h5-border-right-color: hsla(28, 22%, 19%, 1) !important;
   --h5-border-width: 0px !important;
-  --h5-text-align: left !important;
   --h6-border-left-color: hsla(28, 22%, 19%, 1) !important;
   --h6-border-right-color: hsla(28, 22%, 19%, 1) !important;
   --h6-border-width: 0px !important;
-  --h6-text-align: left !important;
   --ribbon-border-width: 1px !important;
   --toggle-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.19), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.09), inset 0 0 1px rgba(0, 0, 0, 0.4) !important;
   --tab-active-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -2px 0px 1px rgba(0, 0, 0, 0.25), 0px 1px 2px -0.1px rgba(0, 0, 0, 0.47) !important;
   --vault-name-color-hover: hsla(34, 31%, 68%, 1) !important;
+  --slider-thumb-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.35), inset 0pc 1px 0px 1px rgba(255, 255, 255, 0.3), inset 0px -1px 0px 1px rgba(0, 0, 0, 0.29), 0px 1px 2px 0px rgba(0, 0, 0, 0.5) !important;
+  --slider-thumb-shadow-hover: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.35), inset 0pc 1px 0px 1px rgba(255, 255, 255, 0.3), inset 0px -1px 0px 1px rgba(0, 0, 0, 0.29), 0px 1px 2px 0px rgba(0, 0, 0, 0.5), 0px 0px 0px 6px rgba(255, 255, 255, 0.08) !important;
+  --slider-track-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 0px 0px 1px rgba(255, 255, 255, 0.04) !important;
   --search-clear-button-color-hover: hsla(4, 88%, 61%, 1) !important;
   --file-header-border-color: hsla(28, 22%, 19%, 1) !important;
   --button-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.02), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.25), inset 0px -2px 0px 2px rgba(0, 0, 0, 0.2), inset 0px -2px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px -5.6px rgba(0, 0, 0, 0.55), 0px 2px 4px -2.7px rgba(0, 0, 0, 0.25), 0px 2px 4px -1px rgba(0, 0, 0, 0.2) !important;
@@ -2939,9 +2942,6 @@
   --sidebar-nav-icon: 15px !important;
   --sidebar-tab-icon: 15px !important;
   --slider-thumb-bg: hsla(34, 39%, 74%, 1) !important;
-  --slider-thumb-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.35), inset 0pc 1px 0px 1px rgba(255, 255, 255, 0.3), inset 0px -1px 0px 1px rgba(0, 0, 0, 0.29), 0px 1px 2px 0px rgba(0, 0, 0, 0.5) !important;
-  --slider-thumb-shadow-hover: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.35), inset 0pc 1px 0px 1px rgba(255, 255, 255, 0.3), inset 0px -1px 0px 1px rgba(0, 0, 0, 0.29), 0px 1px 2px 0px rgba(0, 0, 0, 0.5), 0px 0px 0px 6px rgba(255, 255, 255, 0.08) !important;
-  --slider-track-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 0px 0px 1px rgba(255, 255, 255, 0.04) !important;
   --star-chbx-color: hsla(40, 95%, 46%, 1) !important;
   --star-chbx-icon-color: white !important;
   --status-bar-floating-bg: hsla(30, 17%, 14%, 1) !important;
@@ -4348,13 +4348,11 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(248, 245, 241) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 245, 241);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(248, 245, 241) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 245, 241);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4363,23 +4361,20 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px rgb(89, 62, 34);
+    border: 0px rgb(34, 34, 34);
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(248, 245, 241) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 245, 241);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(248, 245, 241) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 245, 241);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(248, 245, 241) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 245, 241);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4391,8 +4386,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(248, 245, 241) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(248, 245, 241);
+    background-color: rgb(255, 255, 255);
   }
 
   body {
@@ -7442,13 +7436,11 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(46, 38, 31) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(46, 38, 31);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(46, 38, 31) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(46, 38, 31);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7457,23 +7449,20 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      border: 0px rgb(215, 192, 163);
+      border: 0px rgb(218, 218, 218);
       box-shadow: none;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(46, 38, 31) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(46, 38, 31);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(46, 38, 31) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(46, 38, 31);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(46, 38, 31) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(46, 38, 31);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7485,8 +7474,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(46, 38, 31) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(46, 38, 31);
+      background-color: rgb(30, 30, 30);
     }
 
     body {
@@ -9581,8 +9569,8 @@ html[saved-theme="dark"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -9661,7 +9649,7 @@ html[saved-theme="dark"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

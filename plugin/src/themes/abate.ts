@@ -739,36 +739,6 @@ html body h6 {
   border-right-width: 1px;
   border-top-color: rgba(8, 109, 221, 0.5);
   border-top-width: 1px;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(253, 246, 227);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(253, 246, 227);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(253, 246, 227);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(253, 246, 227);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(253, 246, 227);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(253, 246, 227) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(253, 246, 227);
 }`,
     explorer: `html body .explorer .folder-outer > ul {
   border-left-color: rgba(40, 40, 40, 0.12);

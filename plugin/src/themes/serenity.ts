@@ -1991,40 +1991,6 @@ html[saved-theme="dark"] body hr {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(13, 13, 13) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 13, 13);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(13, 13, 13) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 13, 13);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(13, 13, 13) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 13, 13);
-  border-bottom-color: rgb(186, 186, 186);
-  border-left-color: rgb(186, 186, 186);
-  border-right-color: rgb(186, 186, 186);
-  border-top-color: rgb(186, 186, 186);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(13, 13, 13) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 13, 13);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(13, 13, 13) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 13, 13);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(13, 13, 13) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(13, 13, 13);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(166, 166, 166);
@@ -4262,13 +4228,6 @@ html[saved-theme="light"] body hr {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(51, 51, 51);
-  border-left-color: rgb(51, 51, 51);
-  border-right-color: rgb(51, 51, 51);
-  border-top-color: rgb(51, 51, 51);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(69, 69, 69);

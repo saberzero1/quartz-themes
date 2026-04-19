@@ -440,21 +440,21 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: #000000 !important;
+  --link-color: #222222 !important;
   --link-color-hover: #000000 !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: #000000 !important;
+  --link-external-color: #a34100 !important;
   --link-external-color-hover: #000000 !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: #753e3f !important;
+  --link-unresolved-color: #772e00 !important;
   --link-unresolved-decoration-color: hsla(0, 0%, 28%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
-  --link-unresolved-opacity: 1 !important;
+  --link-unresolved-opacity: 0.8 !important;
   --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
@@ -840,6 +840,7 @@
   --inline-title-color: #000000 !important;
   --quote-opening-modifier: color-mix(in srgb, #222222, transparent 30%) !important;
   --line-height: 1.6 !important;
+  --checkbox-border-width: 0px !important;
   --bases-text-color: #000000 !important;
   --body-font-color-dark: #a0a0a0 !important;
   --body-font-color-light: #000000 !important;
@@ -851,7 +852,7 @@
   --calendar-header-color: #222222 !important;
   --calendar-today-color: #d10000 !important;
   --canvas-node-border-color: #232323 !important;
-  --checkbox-border-width: 1px !important;
+  --checkbox-bg-unchecked: #a9a9a9 !important;
   --cta-bg-dynamic: #000000 !important;
   --cta-bg-hover-dynamic: #000000 !important;
   --cta-text-dynamic: #ffffff !important;
@@ -869,6 +870,7 @@
   --editor-width: 600px !important;
   --font-text-destructive: #ff4b4b !important;
   --font-ui: "Marcellus", serif !important;
+  --footnote-link-color: #bd4b00 !important;
   --inline-title-align: center !important;
   --input-bg-std: #cdcdcd !important;
   --input-border: transparent !important;
@@ -898,7 +900,7 @@
   --settings-border-color: #000000 !important;
   --settings-border-width: 0px !important;
   --settings-icon-fill: #222222 !important;
-  --shadow-checkbox-inset: inset 0 0 0 2px #c5c5c5 !important;
+  --shadow-checkbox-inset: none !important;
   --shadow-floating-card: none !important;
   --shadow-focus-inset: inset 0 0 0 1px #000000 !important;
   --shadow-focus-ring: 0 0 0 2px #000000 !important;
@@ -1359,21 +1361,21 @@
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: #a0a0a0 !important;
+  --link-color: #b3b3b3 !important;
   --link-color-hover: color-mix(in srgb, #b3b3b3, white 40%) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: #a0a0a0 !important;
+  --link-external-color: #7bb3c0 !important;
   --link-external-color-hover: color-mix(in srgb, #b3b3b3, white 40%) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: #e67e80 !important;
+  --link-unresolved-color: #8da3a8 !important;
   --link-unresolved-decoration-color: hsla(0, 0%, 75%, 0.3) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
-  --link-unresolved-opacity: 1 !important;
+  --link-unresolved-opacity: 0.85 !important;
   --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
@@ -1684,7 +1686,7 @@
   --tag-border-color: #cdcdcd !important;
   --tag-border-color-hover: hsla(0, 0%, 75%, 0.15) !important;
   --tag-border-width: 0px !important;
-  --tag-color: #a0a0a0 !important;
+  --tag-color: color-mix(in srgb, #b3b3b3, white 10%) !important;
   --tag-color-hover: #cdcdcd !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
@@ -1756,6 +1758,7 @@
   --inline-title-color: #cdcdcd !important;
   --quote-opening-modifier: color-mix(in srgb, #b3b3b3, transparent 30%) !important;
   --line-height: 1.6 !important;
+  --checkbox-border-width: 0px !important;
   --bases-text-color: #a0a0a0 !important;
   --body-font-color-dark: #a0a0a0 !important;
   --body-font-color-light: #000000 !important;
@@ -1769,7 +1772,7 @@
   --callout-abstract: 109, 163, 174;
   --callout-note: 96, 138, 176;
   --canvas-node-border-color: #c0c0c0 !important;
-  --checkbox-border-width: 1px !important;
+  --checkbox-bg-unchecked: #2f2f2f !important;
   --cta-bg-dynamic: #cdcdcd !important;
   --cta-bg-hover-dynamic: #e0e0e0 !important;
   --cta-text-dynamic: #000000 !important;
@@ -1787,6 +1790,7 @@
   --editor-width: 600px !important;
   --font-text-destructive: #ff4b4b !important;
   --font-ui: "Marcellus", serif !important;
+  --footnote-link-color: #7bb3c0 !important;
   --inline-title-align: center !important;
   --input-bg-std: #000000 !important;
   --input-border: transparent !important;
@@ -1816,7 +1820,7 @@
   --settings-border-color: #6a6a6a !important;
   --settings-border-width: 0px !important;
   --settings-icon-fill: #b3b3b3 !important;
-  --shadow-checkbox-inset: inset 0 0 0 2px #3c3c3c !important;
+  --shadow-checkbox-inset: none !important;
   --shadow-floating-card: none !important;
   --shadow-focus-inset: inset 0 0 0 1px #a0a0a0 !important;
   --shadow-focus-ring: 0 0 0 2px #cdcdcd !important;
@@ -2253,16 +2257,16 @@ body {
   a.external,
   footer a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(0, 0, 0);
+    color: rgb(163, 65, 0);
     cursor: pointer;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: Lora, serif;
     font-weight: 400;
-    outline: rgb(0, 0, 0) none 0px;
+    outline: rgb(163, 65, 0) none 0px;
     text-decoration: underline;
-    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-color: rgb(163, 65, 0);
     text-decoration-line: underline;
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
@@ -2281,16 +2285,16 @@ body {
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(0, 0, 0);
+    color: rgb(34, 34, 34);
     cursor: pointer;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: Lora, serif;
     font-weight: 400;
-    outline: rgb(0, 0, 0) none 0px;
+    outline: rgb(34, 34, 34) none 0px;
     text-decoration: underline;
-    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-color: rgb(34, 34, 34);
     text-decoration-line: underline;
     text-decoration-style: solid;
     transition: opacity 0.14s ease-in-out;
@@ -2308,14 +2312,14 @@ body {
 
   a.internal.broken {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(117, 62, 63);
+    color: rgb(119, 46, 0);
     cursor: pointer;
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
     font-family: Lora, serif;
     font-weight: 400;
-    outline: rgb(117, 62, 63) none 0px;
+    outline: rgb(119, 46, 0) none 0px;
     text-decoration: underline rgba(71, 71, 71, 0.3);
     text-decoration-color: rgba(71, 71, 71, 0.3);
     text-decoration-line: underline;
@@ -2719,7 +2723,7 @@ body {
 
   input[type="checkbox"] {
     appearance: auto;
-    border: 1px solid rgb(0, 0, 0);
+    border: 0px solid rgb(0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2767,7 +2771,7 @@ body {
   }
 
   .data-footnote-backref {
-    color: color(srgb 0.133333 0.133333 0.133333 / 0.7);
+    color: rgb(189, 75, 0);
     text-decoration: underline rgb(138, 92, 245);
   }
 
@@ -2938,13 +2942,11 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(197, 197, 197) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(197, 197, 197) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2953,23 +2955,20 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px rgb(0, 0, 0);
+    border: 0px rgb(34, 34, 34);
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(197, 197, 197) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(197, 197, 197) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(197, 197, 197) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2981,8 +2980,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(197, 197, 197) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(255, 255, 255);
   }
 
   body {
@@ -4156,8 +4154,8 @@ body {
   li.task-list-item input[type="checkbox"] {
     border-color: rgb(0, 0, 0);
     border-radius: 0px;
-    border-width: 1px;
-    background-color: rgba(0, 0, 0, 0);
+    border-width: 0px;
+    background-color: rgb(169, 169, 169);
   }
 
   li.task-list-item input[type="checkbox"]:checked {
@@ -4857,16 +4855,16 @@ html[saved-theme="dark"] {
     a.external,
     footer a {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(160, 160, 160);
+      color: rgb(123, 179, 192);
       cursor: pointer;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: Lora, serif;
       font-weight: 400;
-      outline: rgb(160, 160, 160) none 0px;
+      outline: rgb(123, 179, 192) none 0px;
       text-decoration: underline;
-      text-decoration-color: rgb(160, 160, 160);
+      text-decoration-color: rgb(123, 179, 192);
       text-decoration-line: underline;
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
@@ -4885,16 +4883,16 @@ html[saved-theme="dark"] {
     a.internal,
     .breadcrumb-container .breadcrumb-element > a {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(160, 160, 160);
+      color: rgb(179, 179, 179);
       cursor: pointer;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: Lora, serif;
       font-weight: 400;
-      outline: rgb(160, 160, 160) none 0px;
+      outline: rgb(179, 179, 179) none 0px;
       text-decoration: underline;
-      text-decoration-color: rgb(160, 160, 160);
+      text-decoration-color: rgb(179, 179, 179);
       text-decoration-line: underline;
       text-decoration-style: solid;
       transition: opacity 0.14s ease-in-out;
@@ -4912,14 +4910,14 @@ html[saved-theme="dark"] {
 
     a.internal.broken {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(230, 126, 128);
+      color: rgb(141, 163, 168);
       cursor: pointer;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: Lora, serif;
       font-weight: 400;
-      outline: rgb(230, 126, 128) none 0px;
+      outline: rgb(141, 163, 168) none 0px;
       text-decoration: underline rgba(191, 191, 191, 0.3);
       text-decoration-color: rgba(191, 191, 191, 0.3);
       text-decoration-line: underline;
@@ -5225,7 +5223,7 @@ html[saved-theme="dark"] {
     }
 
     a.internal.tag-link::before {
-      color: rgb(160, 160, 160);
+      color: color(srgb 0.731765 0.731765 0.731765);
     }
 
     ul > li {
@@ -5323,7 +5321,7 @@ html[saved-theme="dark"] {
 
     input[type="checkbox"] {
       appearance: auto;
-      border: 1px solid rgb(205, 205, 205);
+      border: 0px solid rgb(255, 255, 255);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -5371,7 +5369,7 @@ html[saved-theme="dark"] {
     }
 
     .data-footnote-backref {
-      color: color(srgb 0.701961 0.701961 0.701961 / 0.7);
+      color: rgb(123, 179, 192);
       text-decoration: underline rgb(166, 138, 249);
     }
 
@@ -5542,13 +5540,11 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: rgb(60, 60, 60) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(60, 60, 60);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgb(60, 60, 60) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(60, 60, 60);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -5557,23 +5553,20 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      border: 0px rgb(160, 160, 160);
+      border: 0px rgb(218, 218, 218);
       box-shadow: none;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(60, 60, 60) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(60, 60, 60);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: rgb(60, 60, 60) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(60, 60, 60);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-track {
-      background: rgb(60, 60, 60) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(60, 60, 60);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -5585,8 +5578,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: rgb(60, 60, 60) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: rgb(60, 60, 60);
+      background-color: rgb(30, 30, 30);
     }
 
     body {
@@ -6509,7 +6501,7 @@ html[saved-theme="dark"] {
 
     .note-properties-tags {
       background-color: color(srgb 0.803922 0.803922 0.803922 / 0.2);
-      color: rgb(160, 160, 160);
+      color: color(srgb 0.731765 0.731765 0.731765);
       border-radius: 0px;
     }
 
@@ -6749,7 +6741,7 @@ html[saved-theme="dark"] {
 
     ul.tags > li {
       background-color: color(srgb 0.803922 0.803922 0.803922 / 0.2);
-      color: rgb(160, 160, 160);
+      color: color(srgb 0.731765 0.731765 0.731765);
       border: 0px solid rgb(205, 205, 205);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6758,15 +6750,15 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"] {
-      border-color: rgb(205, 205, 205);
+      border-color: rgb(255, 255, 255);
       border-radius: 0px;
-      border-width: 1px;
-      background-color: rgba(0, 0, 0, 0);
+      border-width: 0px;
+      background-color: rgb(47, 47, 47);
     }
 
     li.task-list-item input[type="checkbox"]:checked {
       background-color: rgb(205, 205, 205);
-      border-color: rgb(205, 205, 205);
+      border-color: rgb(255, 255, 255);
     }
 
     h1.article-title {
@@ -7489,8 +7481,8 @@ html[saved-theme="dark"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -7569,7 +7561,7 @@ html[saved-theme="dark"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

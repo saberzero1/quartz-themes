@@ -569,6 +569,7 @@ color: var(--text-accent) !important;
 /*            Hide side bar            */
 /***************************************/
 
+/* DISABLED: Sidebar now always visible
 .workspace-ribbon:not(:hover) .workspace-ribbon-collapse-btn, 
 .workspace-ribbon:not(:hover) .side-dock-actions, 
 .workspace-ribbon:not(:hover) .side-dock-settings {
@@ -580,6 +581,7 @@ color: var(--text-accent) !important;
 
 .workspace-split.mod-left-split {margin-left: 0px;}
 .workspace-split.mod-right-split {margin-right: 0px;}
+*/
 
 /***************************************/
 /*           width of content          */

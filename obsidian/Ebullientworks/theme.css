@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Ebullientworks 1.1.1. A dark and light theme for Obsidian.
+Ebullientworks 1.1.2. A dark and light theme for Obsidian.
 
 https://github.com/ebullient/obsidian-theme-ebullientworks
 */
@@ -469,9 +469,9 @@ body {
 }
 
 body {
-  --ebw-font-text: "IBM Plex Sans", Helvetica Neue;
-  --ebw-font-monospace: "Fira Code", "Source Code Pro", Jetbrains Mono;
-  --ebw-header-font: "Architects Daughter";
+  --ebw-font-text: 'IBM Plex Sans', Helvetica Neue;
+  --ebw-font-monospace: 'Fira Code', 'Source Code Pro', Jetbrains Mono;
+  --ebw-header-font: 'Architects Daughter';
   --ebw-header-font-caps-variant: normal;
   --ebw-font-tags: var(--ebw-header-font);
   --ebw-font-callout-title: var(--ebw-header-font);
@@ -1341,7 +1341,6 @@ body:not(.ebullientworks-nix-heading-marker) .is-live-preview .HyperMD-header .c
 
 .cm-s-obsidian .cm-header.cm-inline-code {
   font-weight: var(--font-extralight);
-  font-weight: normal;
   font-variant-caps: normal;
 }
 .cm-s-obsidian .cm-line:not(.HyperMD-codeblock) .cm-header.cm-inline-code {
@@ -1400,7 +1399,7 @@ h5 a.tag,
 h6 a.tag {
   font-variant-caps: normal;
   font-weight: var(--font-extralight);
-  font-size: 75% !important;
+  font-size: 75%;
   padding: 0;
   background-color: transparent;
   border: none;

@@ -1443,13 +1443,6 @@ html body hr {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-}
-
-html body ::-webkit-scrollbar-thumb {
-  border-bottom-color: color(srgb 0.27731 0.3465 0.41569);
-  border-left-color: color(srgb 0.27731 0.3465 0.41569);
-  border-right-color: color(srgb 0.27731 0.3465 0.41569);
-  border-top-color: color(srgb 0.27731 0.3465 0.41569);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: color(srgb 0.40336 0.504 0.60464);

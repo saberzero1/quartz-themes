@@ -604,36 +604,6 @@ html body a.internal.tag-link::before {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(38, 38, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(38, 38, 38);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(38, 38, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(38, 38, 38);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(38, 38, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(38, 38, 38);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(38, 38, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(38, 38, 38);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(38, 38, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(38, 38, 38);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(38, 38, 38) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(38, 38, 38);
 }`,
     misc: `html body kbd {
   background-color: rgb(22, 22, 22);

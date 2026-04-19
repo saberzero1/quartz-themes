@@ -1821,40 +1821,6 @@ html[saved-theme="dark"] body hr {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: oklch(0.23 0.00875 265) radial-gradient(oklch(0.2825 0.00875 265) 0%, oklch(0.255 0.01375 265) 200%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.23 0.00875 265);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: oklch(0.23 0.00875 265) radial-gradient(oklch(0.2825 0.00875 265) 0%, oklch(0.255 0.01375 265) 200%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.23 0.00875 265);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: oklch(0.23 0.00875 265) radial-gradient(oklch(0.2825 0.00875 265) 0%, oklch(0.255 0.01375 265) 200%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.23 0.00875 265);
-  border-bottom-color: oklch(0.85 0.01125 265);
-  border-left-color: oklch(0.85 0.01125 265);
-  border-right-color: oklch(0.85 0.01125 265);
-  border-top-color: oklch(0.85 0.01125 265);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: oklch(0.23 0.00875 265) radial-gradient(oklch(0.2825 0.00875 265) 0%, oklch(0.255 0.01375 265) 200%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.23 0.00875 265);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.23 0.00875 265) radial-gradient(oklch(0.2825 0.00875 265) 0%, oklch(0.255 0.01375 265) 200%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.23 0.00875 265);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: oklch(0.23 0.00875 265) radial-gradient(oklch(0.2825 0.00875 265) 0%, oklch(0.255 0.01375 265) 200%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.23 0.00875 265);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: oklab(0.74221 -0.0506973 -0.0432923);
@@ -3885,40 +3851,6 @@ html[saved-theme="light"] body hr {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.99 0.0005 281);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.99 0.0005 281);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.99 0.0005 281);
-  border-bottom-color: oklch(0.3 0.0005 281);
-  border-left-color: oklch(0.3 0.0005 281);
-  border-right-color: oklch(0.3 0.0005 281);
-  border-top-color: oklch(0.3 0.0005 281);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.99 0.0005 281);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.99 0.0005 281);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: oklch(0.99 0.0005 281) radial-gradient(oklch(0.975 0.00125 281) 20%, oklch(0.945 0.00625 281) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.99 0.0005 281);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(10, 124, 255);

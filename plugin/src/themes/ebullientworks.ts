@@ -1637,13 +1637,6 @@ html[saved-theme="dark"] body hr {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(205, 205, 205);
-  border-left-color: rgb(205, 205, 205);
-  border-right-color: rgb(205, 205, 205);
-  border-top-color: rgb(205, 205, 205);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(184, 184, 184);
@@ -3492,40 +3485,6 @@ html[saved-theme="light"] body hr {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(248, 248, 248) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(248, 248, 248);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(248, 248, 248) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(248, 248, 248);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(248, 248, 248) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(248, 248, 248);
-  border-bottom-color: rgb(72, 72, 72);
-  border-left-color: rgb(72, 72, 72);
-  border-right-color: rgb(72, 72, 72);
-  border-top-color: rgb(72, 72, 72);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(248, 248, 248) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(248, 248, 248);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(248, 248, 248) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(248, 248, 248);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(248, 248, 248) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(248, 248, 248);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(93, 93, 93);

@@ -837,6 +837,7 @@
   --opacity-translucency: 0.75 !important;
   --table-header-background-hover: hsl(231, 9%, 15%) !important;
   --vault-name-color: hsl(224, 37%, 80%) !important;
+  --font-sans: "DM Sans", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI", "Ubuntu", Helvetica, Arial, sans-serif !important;
   --bold-color: hsl(51, 55%, 69%) !important;
   --italic-color: hsl(255, 100%, 86%) !important;
   --text-highlight-bg-active: rgba(255, 252, 59, 0.08) !important;
@@ -846,9 +847,12 @@
   --vault-name-font-size: 14px !important;
   --vault-name-font-weight: 500 !important;
   --font-mono: "DM Mono", "Fira Code", Courier, monospace !important;
-  --font-sans: "DM Sans", "Inter", -apple-system BlinkMacSystemFont, "Segoe UI", "Ubuntu", Helvetica, Arial, sans-serif !important;
   --color-white: hsl(220, 23%, 95%) !important;
+  --comment-color: hsl(225, 17%, 84%) !important;
+  --indentation-guide: hsl(219, 10%, 29%) !important;
+  --indentation-guide-active: rgba(255, 255, 255, 0.25) !important;
   --titlebar-text-color-highlighted: hsl(220, 23%, 95%) !important;
+  --color-black: hsl(230, 9%, 13%) !important;
   --bold-italic-color: hsl(225, 17%, 88%) !important;
   --window-border: 1px solid hsl(225, 11%, 36%) !important;
   --window-border-color: hsl(225, 11%, 36%) !important;
@@ -865,7 +869,6 @@
   --color-purple-900: hsl(263, 46%, 61%) !important;
   --color-red-300: hsl(3, 93%, 66%) !important;
   --color-red-500: hsl(3, 43%, 47%) !important;
-  --color-black: hsl(230, 9%, 13%) !important;
   --color-blacker: hsl(230, 8%, 10%) !important;
   --color-cyan-300: hsl(183, 29%, 62%) !important;
   --color-cyan-500: hsl(192, 46%, 68%) !important;
@@ -922,8 +925,6 @@
   --graph-color-node-border-hover: hsl(220, 23%, 95%) !important;
   --header-shadow-color: rgb(31, 31, 31) !important;
   --header-shadow-size: 0px 4px 3px !important;
-  --indentation-guide: hsl(219, 10%, 29%) !important;
-  --indentation-guide-active: rgba(255, 255, 255, 0.25) !important;
   --border-900: hsl(219, 10%, 29%) !important;
   --color-cyan-533: hsl(191, 90%, 50%) !important;
   --color-gray-95: hsl(228, 10%, 18%) !important;
@@ -952,7 +953,6 @@
   --color-yellow-355: hsl(61, 55%, 69%) !important;
   --color-yellow-510: hsl(59, 51%, 68%) !important;
   --color-yellowish-355: hsl(51, 55%, 69%) !important;
-  --comment-color: hsl(225, 17%, 84%) !important;
   --comment-h1: hsl(56, 44%, 76%) !important;
   --comment-h2: hsl(257, 33%, 82%) !important;
   --comment-h3: hsl(192, 34%, 74%) !important;
@@ -2468,13 +2468,11 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: rgb(45, 48, 57) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(45, 48, 57);
+    background-color: rgb(30, 30, 30);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgb(45, 48, 57) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(45, 48, 57);
+    background-color: rgb(30, 30, 30);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2483,23 +2481,20 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    border: 0px rgb(185, 195, 223);
+    border: 0px rgb(218, 218, 218);
     box-shadow: none;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(45, 48, 57) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(45, 48, 57);
+    background-color: rgb(30, 30, 30);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: rgb(45, 48, 57) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(45, 48, 57);
+    background-color: rgb(30, 30, 30);
   }
 
   ::-webkit-scrollbar-track {
-    background: rgb(45, 48, 57) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(45, 48, 57);
+    background-color: rgb(30, 30, 30);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2511,8 +2506,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: rgb(45, 48, 57) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: rgb(45, 48, 57);
+    background-color: rgb(30, 30, 30);
   }
 
   body {
@@ -4867,8 +4861,8 @@ li.task-list-item[data-task="i"] input[type="checkbox"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -4947,7 +4941,7 @@ li.task-list-item[data-task="i"] input[type="checkbox"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

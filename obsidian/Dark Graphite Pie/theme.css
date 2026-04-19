@@ -93,6 +93,8 @@ body {
   --background-nav-file-tag: rgb(116, 190, 247);
   --background-nav-selected:  #3e93d8;
   --background-nav: rgb(41, 44, 46);
+  --background-inline-code: #252626;
+  --code-background: #252626;
   --text-accent: #3e93d8;
   --text-accent-hover: #2b60af;
   --text-normal: #dcddde;
@@ -107,6 +109,8 @@ body {
   --text-highlight-bg: rgba(26, 73, 100, 0.66);
   --text-nav-selected: rgb(255, 255, 255);
   --text-nav: rgb(190, 190, 190);
+  --text-inline-code: #dddddd;
+  --code-normal: #dddddd;
   --interactive-normal: #2a2a2a;
   --interactive-hover: #303030;
   --interactive-accent: rgb(32, 171, 233);
@@ -146,7 +150,9 @@ body {
   --background-nav-alt: rgb(58, 62, 63);
   --background-nav-file-tag: rgb(203, 77, 73);
   --background-nav-selected: rgb(203, 77, 73);
+  --background-inline-code: #252626;
   --background-nav: rgb(41, 44, 46);
+  --code-background: #252626;
   --text-accent: rgb(203, 77, 73);
   --text-accent-hover: rgb(203, 77, 73);
   --text-normal: rgb(203, 77, 73);
@@ -161,9 +167,11 @@ body {
   --text-matched: #000000;
   --text-nav-selected: rgb(255, 255, 255);
   --text-nav: rgb(190, 190, 190);
+  --text-inline-code: #dddddd;
+  --code-normal: #dddddd;
   --interactive-normal: #f2f3f5;
   --interactive-hover: #e9e9e9;
-  --interactive-accent: rgb(34, 182, 226);
+  --interactive-accent: rgb(203, 77, 73);
   --interactive-accent-rgb: 34, 182, 226;
   --interactive-accent-hover: #1da3d6;
   --scrollbar-active-thumb-bg: rgb(97, 170, 221);
@@ -275,7 +283,7 @@ body {
     /* ------- #### Reading mode --------------*/
 
       .tag {
-        background-color: var(--text-accent);
+        background-color: green;
         border: none;
         color: white !important;
         font-size: 0.7rem;
@@ -337,6 +345,10 @@ body {
         background-color: #4d3ca6;
       }
 
+	  .tag[href^="#RMDB"] {
+        background-color: #4d3ca6;
+      }
+
       .tag[href^="#TIER1"] {
         background-color: red;
       }
@@ -360,6 +372,55 @@ body {
       .tag[href^="#failed"], .tag[href^="#проигран_конкурс"] {
         background-color: red;
       }
+
+      .tag[href^="#failed"], .tag[href^="#Core"] {
+        background-color: rgb(10, 10, 10);
+      }
+
+      .tag[href^="#failed"], .tag[href^="#Mission_Critical"] {
+        background-color: rgb(216, 0, 0);
+      }
+
+      .tag[href^="#Business_Critical"] {
+        background-color: red;
+      }
+
+      .tag[href^="#Business_Operational"] {
+        background-color: orange;
+      }
+
+      .tag[href^="#Office_Productivity"] {
+        background-color: green;
+      }
+
+      .tag[href^="#Test_Development"] {
+        background-color: gray;
+      }
+
+      .tag[href^="#Риск-координатор"] {
+        background-color: orange;
+      }
+
+      .tag[href^="#Дорожная_карта"] {
+        background-color: rgb(216, 0, 0);
+      }
+
+      .tag[href^="#Анализ_недопустимых_событий"] {
+        background-color: #8f238f;
+      }
+
+      .tag[href^="#Курсы_по_рискам"] {
+        background-color: green;
+      }
+
+      .tag[href^="#Совершенствование_процедур"] {
+        background-color: #d669bc;
+      }
+
+      .tag[href^="#СУР_ИБ"] {
+        background-color: #4d3ca6;
+      }
+
 
     /* ------- #### Live Preview --------------*/
 
@@ -418,7 +479,7 @@ body {
       This version works fine on Mac and Linux, but don't work on Win
       -----------------------------------------------------------------------------------
       */
-
+/*
       .theme-dark .markdown-preview-view .task-list-item-checkbox {
         filter: hue-rotate(360deg) brightness(120%) contrast(120%);
       }
@@ -427,7 +488,7 @@ body {
         content: '';
         filter: hue-rotate(130deg) saturate(80%) brightness(90%) contrast(110%);
       }
-
+*/
       /*TASKLIST in Preview mode: how to make it not-line-through*/
 
       .markdown-preview-view ul > li.task-list-item.is-checked {
@@ -436,11 +497,11 @@ body {
       }
 
     /* ------- #### Live Preview --------------*/
-
+/*
     input.task-list-item-checkbox {
       filter: hue-rotate(130deg) saturate(80%) brightness(90%) contrast(110%);
     }
-    
+    */
     
   
   
@@ -455,8 +516,8 @@ body {
         position: relative;
         border: none;
         border-left: 2px solid var(--text-accent);
-        background-color: var(--background-primary-alt);
-        color: #8c8c8c;
+        /*background-color: var(--background-primary-alt);*/
+        color: #555555;
         font-style: normal;
         text-indent: 0;;
       }
@@ -501,28 +562,17 @@ body {
     /* ------- #### Live Preview --------------*/
 
 
-
   /* ======= ### Blocks of code ==============*/
 
     /* ------- #### Edit mode --------------*/
 
       /* color of inline code */
-      .cm-s-obsidian span.cm-inline-code {
-        color: var(--text-accent);
-        text-align: left;
-      }
+   
 
     /* ------- #### Reading mode --------------*/
 
       /* color and border of inline code (between the ticks) */
-      .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code),
-      .markdown-preview-section code {
-        background-color: var(--background-inline-code);
-        border: 0px solid var(--border-inline-code);
-        padding: 4px 4px;
-        font-weight: 600;
-        color: var(--text-accent);
-      }
+      
 
     /* ------- #### Live Preview --------------*/
 
@@ -834,6 +884,11 @@ body {
     .search-input-container input {
       font-size: 0.8rem;
       color: var(--text-normal-original);
+    }
+
+    .search-result-file-matched-text {
+      color: var(--text-normal);
+      background-color: transparent;
     }
 
   /* ======= ### Outline ==============*/

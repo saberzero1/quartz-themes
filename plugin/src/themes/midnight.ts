@@ -1022,36 +1022,6 @@ html body hr {
   border-top-color: rgba(168, 130, 255, 0.25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-}
-
-html body ::-webkit-scrollbar {
-  background: rgb(4, 8, 18) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(4, 8, 18);
-}
-
-html body ::-webkit-scrollbar-corner {
-  background: rgb(4, 8, 18) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(4, 8, 18);
-}
-
-html body ::-webkit-scrollbar-thumb {
-  background: rgb(4, 8, 18) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(4, 8, 18);
-}
-
-html body ::-webkit-scrollbar-thumb:active {
-  background: rgb(4, 8, 18) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(4, 8, 18);
-}
-
-html body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(4, 8, 18) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(4, 8, 18);
-}
-
-html body ::-webkit-scrollbar-track {
-  background: rgb(4, 8, 18) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(4, 8, 18);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(102, 102, 102);

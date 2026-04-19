@@ -864,13 +864,6 @@ html[saved-theme="dark"] body h6 {
 }`,
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(238, 238, 238);
-  border-left-color: rgb(238, 238, 238);
-  border-right-color: rgb(238, 238, 238);
-  border-top-color: rgb(238, 238, 238);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(238, 238, 238);
@@ -1829,13 +1822,6 @@ html[saved-theme="light"] body h6 {
 }`,
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(52, 73, 94);
-  border-left-color: rgb(52, 73, 94);
-  border-right-color: rgb(52, 73, 94);
-  border-top-color: rgb(52, 73, 94);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(52, 73, 94);

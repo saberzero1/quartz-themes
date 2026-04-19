@@ -849,9 +849,9 @@
   --color-teal: oklch(from #009688 50% 30% h) !important;
   --img-border-radius: 0px !important;
   --settings-background: oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) l c calc(h + 330)) 98% calc(c * 0.4) h) !important;
+  --box-shadow: inset -2px -2px oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h) 50% c h), inset 2px 2px oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h) 100% c h) !important;
   --button-border-radius: 8px !important;
   --window-border-radius: 12px !important;
-  --box-shadow: inset -2px -2px oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h) 50% c h), inset 2px 2px oklch(from oklch(from oklch(from hsl(calc(258 - 1), calc(88% * 1.01), calc(66% * 1.075)) l c h) 80% calc(c * 0.4) h) 100% c h) !important;
   --metadata-label-font-weight: 700 !important;
   --folder-color-1: oklch(from #d32f2f 50% 30% h) !important;
   --folder-color-10: oklch(from #8bc34a 50% 30% h) !important;
@@ -1766,9 +1766,9 @@
   --color-teal: oklch(from #009688 70% 20% h) !important;
   --img-border-radius: 0px !important;
   --settings-background: oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) l c calc(h + 330)) 0.24 calc(c * 0.3) h) !important;
+  --box-shadow: inset -2px -2px oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3) h) 0% c h), inset 2px 2px oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3) h) 50% c h) !important;
   --button-border-radius: 8px !important;
   --window-border-radius: 12px !important;
-  --box-shadow: inset -2px -2px oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3) h) 0% c h), inset 2px 2px oklch(from oklch(from oklch(from hsl(258, 88%, 66%) l c h) calc(0.24 - 0.06) calc(c * 0.3) h) 50% c h) !important;
   --metadata-label-font-weight: 700 !important;
   --folder-color-1: oklch(from #d32f2f 70% 20% h) !important;
   --folder-color-10: oklch(from #8bc34a 70% 20% h) !important;
@@ -3161,13 +3161,11 @@ body {
   }
 
   ::-webkit-scrollbar {
-    background: oklch(0.93 0.0756873 263.559) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: oklch(0.93 0.0756873 263.559);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: oklch(0.93 0.0756873 263.559) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: oklch(0.93 0.0756873 263.559);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3181,18 +3179,15 @@ body {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: oklch(0.93 0.0756873 263.559) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: oklch(0.93 0.0756873 263.559);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-thumb:active {
-    background: oklch(0.93 0.0756873 263.559) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: oklch(0.93 0.0756873 263.559);
+    background-color: rgb(255, 255, 255);
   }
 
   ::-webkit-scrollbar-track {
-    background: oklch(0.93 0.0756873 263.559) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: oklch(0.93 0.0756873 263.559);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3204,8 +3199,7 @@ body {
   }
 
   ::-webkit-scrollbar-corner {
-    background: oklch(0.93 0.0756873 263.559) none repeat scroll 0% 0% / auto padding-box border-box;
-    background-color: oklch(0.93 0.0756873 263.559);
+    background-color: rgb(255, 255, 255);
   }
 
   body {
@@ -6213,13 +6207,11 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar {
-      background: oklch(0.22 0.0651659 262.49) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: oklch(0.22 0.0651659 262.49);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: oklch(0.22 0.0651659 262.49) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: oklch(0.22 0.0651659 262.49);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6233,18 +6225,15 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: oklch(0.22 0.0651659 262.49) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: oklch(0.22 0.0651659 262.49);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-thumb:active {
-      background: oklch(0.22 0.0651659 262.49) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: oklch(0.22 0.0651659 262.49);
+      background-color: rgb(30, 30, 30);
     }
 
     ::-webkit-scrollbar-track {
-      background: oklch(0.22 0.0651659 262.49) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: oklch(0.22 0.0651659 262.49);
+      background-color: rgb(30, 30, 30);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6256,8 +6245,7 @@ html[saved-theme="dark"] {
     }
 
     ::-webkit-scrollbar-corner {
-      background: oklch(0.22 0.0651659 262.49) none repeat scroll 0% 0% / auto padding-box border-box;
-      background-color: oklch(0.22 0.0651659 262.49);
+      background-color: rgb(30, 30, 30);
     }
 
     body {
@@ -8335,8 +8323,8 @@ html[saved-theme="dark"] {
   }
   .explorer-content {
     .folder-container {
-      --folder-closed-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path></svg>');
-      --folder-open-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>');
+      --folder-closed-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z'%3E%3C/path%3E%3C/svg%3E");
+      --folder-open-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z'%3E%3C/path%3E%3C/svg%3E");
 
       text-overflow: ellipsis;
       position: relative;
@@ -8415,7 +8403,7 @@ html[saved-theme="dark"] {
         }
       }
       > a:before {
-        --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
+        --file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill=''%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z'/%3E%3C/svg%3E");
         width: 1rem;
         height: 1rem;
         min-width: 1rem;

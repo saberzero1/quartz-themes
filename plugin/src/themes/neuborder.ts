@@ -29,10 +29,10 @@ export const theme: ThemeData = {
   --background-secondary: #F6F6F6 !important;
   --background-tertiary: hsl(214, 
     76%, 
-    95.5%) !important;
+    94.85714%) !important;
   --background-underlying: hsl(214, 
     76%, 
-    95.5%) !important;
+    94.85714%) !important;
   --bases-cards-background: hsl(0, 0%,
     100%) !important;
   --bases-cards-shadow: 0 0 0 1px #EAEAEA !important;
@@ -126,9 +126,9 @@ export const theme: ThemeData = {
   --color-primary-darkest: hsl(0, 0%, 
     75%) !important;
   --color-primary-light: hsl(0, 0%, 
-      92.5%) !important;
+    92.5%) !important;
   --color-primary-lighter: hsl(0, 0%, 
-      97%) !important;
+    97%) !important;
   --color-primary-lightest: hsl(0, 0%,
     100%) !important;
   --color-text-dark: hsl(0, 0%, 
@@ -266,9 +266,7 @@ export const theme: ThemeData = {
   --nav-tag-color-hover: #232323 !important;
   --neumorphic-transition: all 0.15s !important;
   --neumorphic-transition-faster: all 0.10s !important;
-  --on-border: hsla(232, 
-    32%, 
-    64%) !important;
+  --on-border: hsl(232, 60%, 50%) !important;
   --pdf-background: hsl(0, 0%,
     100%) !important;
   --pdf-page-background: hsl(0, 0%,
@@ -324,7 +322,19 @@ export const theme: ThemeData = {
   --shadow-scrollbar: inset 4px 4px 8px rgba(0, 0, 0, 0.15),
     inset -4px -4px 8px rgba(255, 255, 255, 0.7) !important;
   --shadow-selected: inset 3px 3px 3px rgba(0, 0, 0, 0.3) !important;
+  --slider-thumb-shadow: inset 0.45em 0.45em 5px -5px rgba(255, 255, 255, 0.65),
+    inset -0.25em -0.25em 8px -2px rgba(0, 0, 0, 0.2),
+    0.4em 0.3em 5px -0.3em rgba(0, 0, 0, 0.35) !important;
+  --slider-thumb-shadow-active: inset 0.3em 0.3em 6px -3px rgba(0, 0, 0, 0.3),
+    inset -0.2em -0.2em 5px -3px rgba(255, 255, 255, 0.4),
+    0 0 0 3px hsla(232, 80%, 64%, 0.5) !important;
+  --slider-thumb-shadow-hover: inset 0.45em 0.45em 5px -5px rgba(255, 255, 255, 0.65),
+    inset -0.25em -0.25em 8px -2px rgba(0, 0, 0, 0.2),
+    0.4em 0.3em 5px -0.3em rgba(0, 0, 0, 0.35),
+    0 0 0 3px hsla(232, 80%, 64%, 0.3) !important;
   --slider-track-background: #EAEAEA !important;
+  --slider-track-shadow: inset 3px 4px 10px rgba(0, 0, 0, 0.15),
+    inset -3px -4px 10px rgba(255, 255, 255, 0.55) !important;
   --status-bar-background: #F6F6F6 !important;
   --status-bar-border-color: #EAEAEA !important;
   --status-bar-text-color: #232323 !important;
@@ -1461,13 +1471,6 @@ html body hr {
   border-bottom-right-radius: 12px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-}
-
-html body ::-webkit-scrollbar-thumb {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
 }`,
     explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(35, 35, 35);
@@ -1497,11 +1500,11 @@ html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .fold
   border-top-color: rgb(234, 234, 234);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  color: rgb(134, 142, 193);
+  color: rgb(51, 71, 204);
 }
 
 html body footer ul li a {
-  color: rgb(134, 142, 193);
+  color: rgb(51, 71, 204);
 }`,
     recentNotes: `html body .recent-notes > h3 {
   color: rgb(0, 0, 0);
@@ -1544,21 +1547,21 @@ html body ul.section-ul {
   border-top-color: rgb(0, 0, 0);
 }`,
     darkmode: `html body .darkmode {
-  background-color: rgb(235, 242, 252);
-  border-bottom-color: rgb(134, 142, 193);
+  background-color: rgb(232, 241, 252);
+  border-bottom-color: rgb(51, 71, 204);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  border-left-color: rgb(134, 142, 193);
-  border-right-color: rgb(134, 142, 193);
-  border-top-color: rgb(134, 142, 193);
+  border-left-color: rgb(51, 71, 204);
+  border-right-color: rgb(51, 71, 204);
+  border-top-color: rgb(51, 71, 204);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  color: rgb(134, 142, 193);
+  color: rgb(51, 71, 204);
 }
 
 html body .darkmode svg {
-  color: rgb(134, 142, 193);
-  stroke: rgb(134, 142, 193);
+  color: rgb(51, 71, 204);
+  stroke: rgb(51, 71, 204);
 }`,
     breadcrumbs: `html body .breadcrumb-container {
   border-bottom-color: rgb(35, 35, 35);

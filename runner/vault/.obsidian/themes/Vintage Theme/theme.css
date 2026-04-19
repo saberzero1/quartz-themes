@@ -1,0 +1,842 @@
+/*
+VINTAGE THEME FOR OBSIDIAN.MD
+
+File Organization
+
+1. Variables
+2. Light/Dark Base Styles
+3. Page Container
+4. Typography
+    4.1 Typography: Headings
+    4.2 Typography: Links
+    4.3 Typography: Tags
+    4.4 Typography: Code
+    4.5 Typography: Lists
+    4.6 Typography: Blockquotes
+5. Tables
+6. Frontmatter
+7. Plugins
+    7.1 Dataview
+    7.2 Tasks
+8. Application Chrome
+9. Media Queries
+10. Miscellaneous
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,700;1,800&display=swap');
+
+
+/* ----------------- 1. Variables ----------------- */
+
+:root {
+    --font-monospace: "JetBrains Mono", "FuraCode Nerd Font", "Fira Code",
+        "Source Code Pro", "MesloLGS NF", Menlo, Monaco, Consolas, "Courier New",
+        monospace !important;
+    --font-serif: 'Newsreader', Georgia, serif;
+    --font-sans-serif: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+
+    --dark0: #333333;
+    --dark1: #474747;
+    --dark2: #5b5b5b;
+    --dark3: #707070;
+    --gray: #999999;
+    --gray-light: #ECEFF4;
+    --gray-dark: #4C566A;
+    --light0: #fdf3e7;
+    --light1: #e3dacf;
+    --light2: #fdf7f0;
+    --light3: #fefcfa;
+    --red: #c63d0f;
+    --red1: #cb5026;
+    --red2: #d1633e;
+    --yellow: #ebc06c;
+    --yellow2: #b49c5f;
+    --blue: #5E81AC;
+    --blue2: #88C0D0;
+
+    --default-font-size: 20px;
+    --default-line-height: 34px;
+    --small-font-size: 16px;
+    --small-line-height: 24px;
+    --editor-font-size-override: 18px !important;
+    --editor-line-height: 29px;
+    --monospace-font-size: 18px;
+    --monospace-line-height: 26px;
+    --h1-size: 50px;
+    --h2-size: 40px;
+    --h3-size: 35px;
+    --h4-size: 32px;
+    --h5-size: 28px;
+    --h6-size: 24px;
+}
+
+/* ----------------- 2. Base Styles ----------------- */
+
+/* Application chrome styles - light/dark */
+.theme-dark {
+    --background-primary: var(--dark0);
+    --background-primary-alt: var(--dark1);
+    --background-secondary: var(--dark2);
+    --background-secondary-alt: var(--dark3);
+    --text-normal: var(--light1);
+    --text-faint: var(--gray-light);
+    --text-muted: var(--gray-light);
+    --interactive-accent: var(--light1);
+    --text-on-accent: var(--dark0);
+}
+
+.theme-light {
+    --background-primary: var(--light0);
+    --background-primary-alt: var(--light1);
+    --background-secondary: var(--light2);
+    --background-secondary-alt: var(--light3);
+    --text-normal: var(--dark0);
+    --text-faint: var(--gray-dark);
+    --text-muted: var(--gray-dark);
+    --interactive-accent: var(--dark0);
+    --text-on-accent: var(--light0);
+}
+
+/* Main content views - light/dark */
+.theme-dark .markdown-source-view,
+.theme-dark .markdown-preview-view {
+    --background-primary: var(--dark0);
+    --background-primary-alt: var(--dark3);
+    --background-secondary: var(--dark1);
+    --background-secondary-alt: var(--dark0);
+    --text-normal: var(--light0);
+    --text-faint: var(--gray);
+    --text-muted: var(--gray);
+    --text-title-h1: var(--light0);
+    --text-title-h2: var(--light0);
+    --text-title-h3: var(--light0);
+    --text-title-h4: var(--light0);
+    --text-title-h5: var(--light0);
+    --text-title-h6: var(--light0);
+    --text-link: var(--red2);
+    --text-a: var(--red2);
+    --text-a-hover: var(--text-normal);
+    --text-mark: rgba(136, 192, 208, 0.3);
+    --text-highlight-bg: var(--yellow);
+    --interactive-accent: var(--light0);
+    --interactive-before: var(--dark3);
+    --background-modifier-border: var(--dark2);
+    --text-accent: var(--yellow);
+    --interactive-accent-rgb: var(--yellow);
+    --inline-code: var(--light0);
+    --vim-cursor: var(--yellow);
+    --text-selection: var(--yellow2);
+    --code-block: var(--light0);
+    --pre-code: var(--dark1);
+    --acrtive-line: var(--gray-dark);
+}
+
+.theme-light .markdown-source-view,
+.theme-light .markdown-preview-view {
+    --background-primary: var(--light0);
+    --background-primary-alt: var(--gray);
+    --background-secondary: var(--light3);
+    --background-secondary-alt: var(--light1);
+    --text-normal: var(--dark0);
+    --text-faint: var(--gray);
+    --text-muted: var(--gray);
+    --text-title-h1: var(--dark0);
+    --text-title-h2: var(--dark0);
+    --text-title-h3: var(--dark0);
+    --text-title-h4: var(--dark0);
+    --text-title-h5: var(--dark0);
+    --text-title-h6: var(--dark0);
+    --text-link: var(--red);
+    --text-a: var(--red);
+    --text-a-hover: var(--text-normal);
+    --text-mark: rgba(136, 192, 208, 0.3);
+    --text-highlight-bg: var(--yellow);
+    --interactive-accent: var(--dark0);
+    --interactive-before: var(--light0);
+    --background-modifier-border: var(--light1);
+    --text-accent: var(--yellow);
+    --interactive-accent-rgb: var(--yellow);
+    --inline-code: var(--dark0);
+    --vim-cursor: var(--red);
+    --text-selection: var(--yellow);
+    --code-block: var(--dark0);
+    --pre-code: var(--light3);
+    --acrtive-line: var(--gray-light);
+}
+
+/* ----------------- 3. Page Container ----------------- */
+html {
+    font-size: 100% !important;
+}
+
+strong {
+    font-weight: 700 !important;
+}
+
+/* Cursor in the editor */
+.CodeMirror-cursor,
+.cm-s-obsidian .cm-cursor,
+.cm-s-obsidian .cm-dropCursor {
+    background-color: var(--vim-cursor) !important;
+    border-color: var(--vim-cursor) !important;
+    border-left-width: 0.3em !important;
+    opacity: 70% !important;
+}
+
+.markdown-preview-view,
+.markdown-source-view {
+    background: var(--background-primary);
+}
+
+/* ----------------- 4. Typography ----------------- */
+
+.markdown-preview-view,
+.dataview {
+    font-family: var(--font-serif);
+    font-size: var(--default-font-size);
+    font-weight: 400;
+    line-height: var(--default-line-height);
+}
+
+.markdown-preview-section p {
+    margin: 0 0 1em 0 !important;
+}
+
+.cm-line {
+    font-family: var(--font-monospace);
+    font-size: var(--default-font-size);
+    font-weight: 400;
+    line-height: var(--default-line-height);
+    margin: 0 0 1em 0 !important;
+}
+
+/* 4.1 Headings */
+.HyperMD-header {
+    line-height: 95%;
+    margin-top: 1em !important;
+    padding-bottom: 0;
+    padding-top: 1em !important;
+}
+
+.markdown-preview-section h1,
+.HyperMD-header-1,
+.cm-header-1 {
+    font-family: var(--font-sans-serif) !important;
+    font-size: var(--h1-size);
+    font-weight: 700 !important;
+    line-height: 95% !important;
+    margin: 0.8em 0 0.2em 0;
+    padding-bottom: 5px;
+    text-decoration-style: double !important;
+    text-decoration-thickness: 1px !important;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.markdown-preview-section h2,
+.HyperMD-header-2,
+.cm-header-2 {
+    font-family: var(--font-sans-serif) !important;
+    font-size: var(--h2-size);
+    font-weight: 300 !important;
+    line-height: 95% !important;
+    margin: 0.8em 0 0.2em 0 !important;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.markdown-preview-section h2,
+.HyperMD-header-2 {
+    border-bottom: 3px double var(--text-normal);
+}
+
+.markdown-preview-section h3,
+.HyperMD-header-3,
+.cm-header-3 {
+    font-family: var(--font-sans-serif) !important;
+    font-size: var(--h3-size);
+    font-weight: 300 !important;
+    line-height: 95% !important;
+    margin: 0.8em 0 0.2em 0;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.markdown-preview-section h4,
+.HyperMD-header-4,
+.cm-header-4 {
+    font-family: var(--font-sans-serif) !important;
+    font-size: var(--h4-size);
+    font-weight: 300 !important;
+    line-height: 95% !important;
+    margin: 0.8em 0 0.2em 0;
+    text-transform: capitalize;
+}
+
+.markdown-preview-section h5,
+.HyperMD-header-5,
+.cm-header-5 {
+    font-family: var(--font-sans-serif) !important;
+    font-size: var(--h5-size);
+    font-weight: 300 !important;
+    line-height: 95% !important;
+    margin: 0.8em 0 0.2em 0;
+}
+
+.markdown-preview-section h6,
+.HyperMD-header-6,
+.cm-header-6 {
+    color: var(--text-title-h6);
+    font-family: var(--font-serif) !important;
+    font-size: var(--h6-size);
+    font-weight: 700 !important;
+    line-height: 95% !important;
+    margin: 0.8em 0 0.2em 0;
+}
+
+/* 4.2 Links */
+.markdown-preview-section a,
+.markdown-preview-section a:visited,
+.cm-hmd-internal-link,
+.dataview a,
+.plugin-tasks-query-result a,
+.block-language-dataview a,
+td a,
+.cm-link {
+    color: var(--text-a) !important;
+    cursor: pointer;
+    outline: 0 none;
+    text-decoration: none !important;
+    font-weight: bold;
+    transition: all 0.7s ease-in-out;
+}
+
+.markdown-preview-view .internal-link.is-unresolved {
+    opacity: 0.8;
+    text-decoration: underline wavy 1px var(--text-a) !important;
+}
+
+.markdown-preview-section a:hover,
+.dataview a:hover,
+td a:hover,
+.plugin-tasks-query-result a:hover,
+.block-language-dataview a:hover {
+    outline: 0 none;
+    color: var(--text-a-hover) !important;
+    text-decoration: underline;
+    transition: all 0.7s ease-in-out;
+}
+
+.markdown-preview-section a:active,
+.plugin-tasks-query-result a:active,
+td a:active,
+.dataview a:active {
+    color: var(--text-normal) !important;
+}
+
+/* Edit mode - URL expansion */
+.cm-s-obsidian span.cm-url,
+.cm-s-obsidian span.cm-url:hover {
+    font-family: var(--font-sans-serif) !important;
+    color: var(--text-faint);
+    /* font-size: 0.8em; */
+}
+
+/* 4.3 Tags */
+.markdown-preview-section a.tag,
+.markdown-preview-section .frontmatter-section-tags a {
+    font-family: var(--font-monospace) !important;
+    font-size: var(--monospace-font-size);
+    background-color: var(--text-normal);
+    color: var(--background-primary) !important;
+    padding: 6px 12px;
+    border-top: 1px solid var(--gray);
+    border-right: 1px solid var(--color-dark);
+    border-bottom: 1px solid var(--color-dark);
+    border-left: 1px solid var(--gray);
+    font-weight: 100 !important;
+    transition: all 0.7s ease-in-out;
+    border-radius: 8px;
+}
+
+.markdown-preview-section a.tag:hover,
+.markdown-preview-section .frontmatter-section-tags a:hover {
+    background-color: var(--text-a);
+    transition: all 0.7s ease-in-out;
+}
+
+.cm-hashtag {
+    font-family: var(--font-monospace) !important;
+    font-size: var(--monospace-font-size);
+    background-color: var(--text-normal);
+    color: var(--background-primary) !important;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none !important;
+}
+
+.cm-hashtag-begin {
+    padding-left: 6px;
+    padding-right: 0;
+}
+
+.cm-hashtag-end {
+    padding-right: 6px;
+}
+
+/* 4.4 Code */
+
+.cm-formatting-code {
+    padding: none !important;
+}
+
+.HyperMD-codeblock {
+    font-family: var(--font-monospace) !important;
+    font-size: var(--monospace-font-size) !important;
+    line-height: var(--monospace-line-height) !important;
+    color: var(--code-block) !important;
+    background-color: var(--pre-code) !important;
+    padding: 0 1.5em !important;
+}
+
+.HyperMD-codeblock-begin {
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+}
+
+.HyperMD-codeblock-end {
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    margin-bottom: 1em;
+}
+
+.HyperMD-codeblock .cm-fold-indicator {
+    display: none !important;
+}
+
+/* inline code */
+.cm-inline-code {
+    background: var(--text-normal) !important;
+    color: var(--background-primary) !important;
+    padding: 0.3em 1em 0.3em 0 !important;
+    font-family: var(--font-monospace) !important;
+    font-size: var(--monospace-font-size) !important;
+    line-height: var(--monospace-line-height) !important;
+    text-rendering: optimizeSpeed;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.markdown-preview-view p code,
+.markdown-preview-view td code,
+.markdown-preview-view ol li code,
+.markdown-preview-view ul li code {
+    font-family: var(--font-monospace) !important;
+    font-size: var(--monospace-font-size);
+    color: var(--background-primary) !important;
+    background-color: var(--text-normal) !important;
+    padding: 2px 8px;
+    text-rendering: optimizeSpeed;
+    border-radius: 4px;
+    background-clip: padding-box;
+    border: none;
+}
+
+/* Code Block */
+.markdown-preview-view pre,
+.markdown-preview-view code {
+    text-shadow: none !important;
+    background-color: var(--pre-code) !important;
+    border: 1px solid var(--text-normal);
+    border-radius: 4px;
+    font-family: var(--font-monospace) !important;
+    font-size: var(--monospace-font-size) !important;
+    line-height: var(--monospace-line-height) !important;
+    color: var(--text-normal) !important;
+    padding: 0.5em;
+    text-shadow: none !important;
+}
+
+.markdown-preview-view pre {
+    margin: 0 0 30px 0 !important;
+    font-family: var(--font-monospace) !important;
+    font-size: var(--monospace-font-size);
+    line-height: var(--monospace-line-height);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+        rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+/* 4.5 Lists */
+
+/* unordered lists */
+.markdown-preview-view ul {
+    margin-left: 1em;
+    list-style: none;
+    /* text-indent: -30px;
+        margin-left: 30px; */
+}
+
+.markdown-preview-view ul li,
+.markdown-preview-view ol li {
+    margin-top: 0.4em;
+}
+
+.markdown-preview-view ul li>ol,
+.markdown-preview-view ul li>ul,
+.markdown-preview-view ol li>ol,
+.markdown-preview-view ol li>ul {
+    margin-left: 1em;
+}
+
+.markdown-preview-view ul li:before {
+    content: "●";
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.cm-formatting-list-ul .list-bullet {
+    font-weight: 900;
+    font-size: 22px;
+}
+
+/* ordered lists */
+ol {
+    counter-reset: section;
+    list-style-type: none;
+    text-indent: -24px;
+    margin-left: 24px;
+}
+
+ol li:before {
+    counter-increment: section;
+    content: counters(section, ".") ") ";
+    font-weight: 700;
+    padding-right: 0.2em;
+    /* font-family: var(--font-sans-serif); */
+}
+
+.cm-formatting-list-ol.cm-list-1,
+.cm-formatting-list-ol.cm-list-2,
+.cm-formatting-list-ol.cm-list-3 {
+    font-weight: 700;
+}
+
+
+/* Task lists */
+.markdown-preview-view ul.contains-task-list li:before {
+    list-style: none !important;
+    content: none !important;
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+    filter: grayscale(100%);
+}
+
+.markdown-preview-view ul.contains-task-list>li.task-list-item.is-checked {
+    text-decoration: line-through;
+    text-decoration-color: var(--text-muted) !important;
+}
+
+/* 4.6 Blockquotes */
+.markdown-preview-view blockquote {
+    font-size: var(--h3-size);
+    line-height: 1.2em;
+    font-family: var(--font-serif);
+    font-weight: 200;
+    border: none !important;
+    font-style: italic;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.markdown-preview-view blockquote p {
+    margin: 0 !important;
+}
+
+/*
+.markdown-preview-view blockquote {
+    border: 2px dashed var(--background-primary) !important;
+    border-left: none;
+    border-right: none;
+    background-color: var(--text-normal);
+    color: var(--background-primary);
+    font-size: var(--h1-size);
+    line-height: 1.2em;
+    font-family: var(--font-serif);
+    font-weight: 200;
+    transform: rotate(-2deg);
+    padding: 1em 1em .1em 1em;
+    margin: 1em 0 1em 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+} */
+
+.markdown-preview-view blockquote:first-letter {
+    font-family: var(--font-sans-serif);
+    font-size: 2.8em !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    float: left;
+    line-height: .52em;
+    margin-top: 0.15em;
+    margin-right: 0.1em;
+    /* margin-right: -18px; */
+    position: relative;
+    z-index: 1;
+}
+
+/* ----------------- 5. Tables ----------------- */
+.markdown-preview-view tbody {
+    display: table-row-group;
+}
+
+.markdown-preview-view tfoot {
+    display: table-footer-group;
+}
+
+
+.markdown-preview-view table {
+    margin-bottom: 2em;
+    font-size: 0.9em;
+    padding: 0;
+    width: 100%;
+    margin: 0 0 2em 0;
+    border: 1px solid var(--text-normal) !important;
+    border: none !important;
+    border-collapse: collapse;
+    border-radius: 4px;
+    font-size: var(--default-font-size);
+    line-height: var(--default-line-height);
+}
+
+.markdown-preview-view table th,
+.markdown-preview-view table td {
+    padding: 10px 10px 9px;
+}
+
+
+.markdown-preview-view table th {
+    padding-top: 9px;
+    border: none !important;
+    border-bottom: medium double var(--text-normal) !important;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-family: var(--font-sans-serif);
+    font-weight: 700;
+    font-size: 1.17em;
+}
+
+.markdown-preview-view table td {
+    vertical-align: top;
+    border: none !important;
+    border-top: 1px dashed var(--text-faint) !important;
+}
+
+/* ----------------- 6. Frontmatter ----------------- */
+.markdown-preview-view pre.frontmatter {
+    display: none;
+}
+
+.markdown-preview-view .frontmatter-container {
+    margin-bottom: 40px;
+    font-family: var(--font-monospace);
+    color: var(--background-primary);
+    background-color: var(--text-normal);
+}
+
+.frontmatter-container .frontmatter-container-header:hover {
+    color: var(--background-primary);
+}
+
+.cm-hmd-frontmatter {
+    color: var(--text-normal) !important;
+    font-family: var(--font-monospace) !important;
+    font-size: var(--monospace-font-size) !important;
+    line-height: var(--monospace-line-height) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 300 !important;
+}
+
+.cm-hmd-frontmatter.cm-atom {
+    font-weight: 900 !important;
+    color: var(--text-faint) !important;
+}
+
+.cm-comment.cm-hmd-frontmatter {
+    color: var(--text-faint) !important;
+}
+
+/* ----------------- 7. Plugins ----------------- */
+
+/* 7.1 Dataview Plugin */
+.dataview.list-view-ul {
+    font-family: var(--font-serif);
+    font-size: var(--default-font-size);
+    line-height: var(--default-line-height);
+}
+
+.block-language-dataview .dataview.result-group ol,
+.block-language-dataview .dataview.result-group ul {
+    margin-top: 0;
+}
+
+.block-language-dataview h4 {
+    font-size: var(--default-font-size);
+    line-height: var(--default-line-height);
+    margin: 0;
+}
+
+.markdown-preview-view pre.dataview-error {
+    border: 0 !important;
+    font-family: var(--font-serif) !important;
+    margin-top: -2em !important;
+    background-color: var(--background-primary) !important;
+    box-shadow: none !important;
+    font-size: var(--default-font-size) !important;
+    line-height: var(--default-line-height) !important;
+    color: var(--text-muted) !important;
+}
+
+/* Other dataview styles are mixed in with links and headings.  Search for these classes:
+    - .dataview a:hover,
+    - .block-language-dataview
+/*
+
+/* 7.2 Tasks Plugin
+    note: base link styles added to section 4. Typography */
+.plugin-tasks-query-result .tasks-backlink {
+    font-family: var(--font-sans-serif);
+    font-size: var(--small-font-size);
+}
+
+
+/* ----------------- 9. Application Chrome ----------------- */
+
+.workspace-ribbon,
+.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
+.workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
+.workspace-tab-container-inner,
+.workspace-tab-header-container,
+.workspace-tab-header-inner,
+.workspace-tab-header.is-after-active .workspace-tab-header-inner,
+.workspace-tab-header.is-after-active,
+.workspace-tab-header.is-before-active .workspace-tab-header-inner,
+.workspace-tab-header.is-before-active,
+.workspace-tab-headerr,
+.workspace-tabs {
+    background-color: var(--text-normal);
+}
+
+.is-active .workspace-tab-header-container,
+.is-active .workspace-tab-header-inner {
+    background-color: var(--background-secondary);
+    color: var(--text-normal);
+}
+
+.side-dock-ribbon-tab,
+.side-dock-ribbon-action,
+.workspace-tab-header-inner-icon {
+    color: var(--background-primary);
+}
+
+/* fix sidebar icons in app */
+.is-mobile .side-dock-ribbon-action {
+    color: var(--text-normal);
+}
+
+.workspace-tab-header-inner-icon:hover {
+    color: var(--background-secondary-alt);
+}
+
+.is-active .workspace-tab-header-inner-icon {
+    color: var(--text-normal) !important;
+}
+
+.tree-item-self.is-clickable:hover {
+    background-color: var(--background-primary-alt);
+}
+
+.workspace-ribbon-collapse-btn {
+    color: var(--background-primary);
+}
+
+.is-collapsed .workspace-ribbon-collapse-btn,
+.is-collapsed .side-dock-ribbon-tab,
+.is-collapsed .side-dock-ribbon-action,
+.is-collapsed .workspace-tab-header-inner-icon {
+    color: var(--text-normal);
+}
+
+.workspace-leaf-resize-handle {
+    border-right: 3px double var(--text-normal);
+}
+
+.workspace-split.mod-left-split>.workspace-leaf-resize-handle,
+.workspace-split.mod-right-split>.workspace-leaf-resize-handle {
+    height: 100%;
+}
+
+.view-header-title {
+    font-family: var(--font-sans-serif);
+    font-weight: 300;
+    font-size: var(--h6-size);
+}
+
+.titlebar-inner {
+    color: var(--light0) !important;
+}
+
+/* ----------------- 9. Media Queries ----------------- */
+@media screen and (min-width: 1000px) {
+    .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+        max-width: 900px;
+    }
+
+    .markdown-source-view.is-readable-line-width .CodeMirror {
+        max-width: 900px;
+    }
+}
+
+/* ----------------- 10. Miscellaneous ----------------- */
+/* Horizontal rule */
+.markdown-preview-view hr {
+    padding: 0;
+    border: none;
+    border-top: medium double var(--text-normal);
+    color: var(--text-normal);
+    text-align: center;
+    margin: 2em 0 2em 0;
+}
+
+img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border: 1px solid var(--text-muted);
+}
+
+/* Text Selection Highlighting */
+::selection {
+    background-color: var(--text-selection) !important;
+    color: var(--text-normal) !important;
+}
+
+/* Active edit line selection */
+.cm-active {
+    background-color: var(--acrtive-line);
+}
+
+.graph-view.color-line {
+    color: var(--text-normal);
+}
+
+.graph-view.color-line-highlight {
+    color: var(--text-normal);
+}

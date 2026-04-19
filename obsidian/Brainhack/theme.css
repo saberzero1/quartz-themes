@@ -15,6 +15,10 @@ settings:
         title: More Space
         type: class-toggle
     -
+        id: smartlists
+        title: Smart Lists (WIP)
+        type: class-toggle
+    -
         id: Text and Spacing
         title: Text and Spacing
         type: heading
@@ -49,6 +53,85 @@ settings:
         min: 1.5
         max: 2.5
         step: .1
+    -
+        id: Headings
+        title: Headings
+        type: heading
+        collapsed: ture
+        level: 2
+    - 
+        id: Heading variants
+        title: Heading variants
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+            - 
+                label: default Headings
+                value: default
+            - 
+                label: Variant 1
+                value: hv1
+            - 
+                label: Variant 2
+                value: hv2
+    -
+        id: Blockquotes
+        title: Blockquotes
+        type: heading
+        collapsed: ture
+        level: 2
+    - 
+        id: Blockquote variants
+        title: Blockquote variants
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+            - 
+                label: default Blockquote
+                value: default
+            - 
+                label: Variant 1
+                value: bv1
+    -
+        id: Callouts
+        title: Callouts
+        type: heading
+        collapsed: ture
+        level: 2
+    - 
+        id: Callout variants
+        title: Callout variants
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+            - 
+                label: default Callout
+                value: default
+            - 
+                label: Variant 1
+                value: cv1
+    -
+        id: Canvas
+        title: Canvas
+        type: heading
+        collapsed: ture
+        level: 2
+    - 
+        id: Node Colors
+        title: Node Colors
+        type: class-select
+        allowEmpty: false
+        default: default
+        options:
+            - 
+                label: default Nodes
+                value: default
+            - 
+                label: Colored Nodes
+                value: nc
     -
         id: Colors
         title: Colors
@@ -155,6 +238,7 @@ body {
     --background-3: hsl(0, 0%, 98%);
     --background-3-1: rgb(197, 197, 197);
     --background-3-2: rgba(197, 197, 197, 0.288);
+    --background-3-3: hsla(0, 0%, 73%, 0.112);
     --background-4: white;
     --background-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 90%);
     --background-6: hsla(var(--accent-h), var(--accent-s), var(--accent-l), .2);  
@@ -199,6 +283,7 @@ body {
     --background-3: rgb(33, 33, 33);
     --background-3-1: rgb(70, 70, 70);
     --background-3-2: rgba(70, 70, 70, 0.27);
+    --background-3-3: hsla(0, 0%, 26%, 0.326);
     --background-4: rgb(12, 12, 12);
     --background-5: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 30%);
     --background-6: hsla(var(--accent-h), calc(var(--accent-s) * .1), var(--accent-l), 0.2);
@@ -656,7 +741,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="note"] {
     background: rgba(68, 138, 255, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(68, 138, 255, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(68, 138, 255, .5)!important;
     --callout-border-color: rgba(68, 138, 255, .5);
     & .callout-icon {
     display: flex;
@@ -669,7 +754,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="abstract"], .callout[data-callout="summary"], .callout[data-callout="tldr"] {
     background: rgba(0, 176, 255, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(0, 176, 255, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(0, 176, 255, .5)!important;
     --callout-border-color: rgba(0, 176, 255, .5);
     & .callout-icon {
     display: flex;
@@ -681,7 +766,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="info"] {
     background: rgba(0, 184, 212, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(0, 184, 212, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(0, 184, 212, .5)!important;
     --callout-border-color: rgba(0, 184, 212, .5);
     & .callout-icon {
     display: flex;
@@ -694,7 +779,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="todo"] {
     background: rgba(0, 184, 212, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(0, 184, 212, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(0, 184, 212, .5)!important;
     --callout-border-color: rgba(0, 184, 212, .5);
     & .callout-icon {
     display: flex;
@@ -707,7 +792,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="tip"], .callout[data-callout="hint"], .callout[data-callout="important"] {
     background: rgba(0, 191, 165, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(0, 191, 165, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(0, 191, 165, .5)!important;
     --callout-border-color: rgba(0, 191, 165, .5);
     & .callout-icon {
     display: flex;
@@ -721,7 +806,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="success"], .callout[data-callout="check"], .callout[data-callout="done"] {
     background: rgba(0, 200, 83, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(0, 200, 83, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(0, 200, 83, .5)!important;
     --callout-border-color: rgba(0, 200, 83, .5);
     & .callout-icon {
     display: flex;
@@ -734,7 +819,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="question"], .callout[data-callout="help"], .callout[data-callout="faq"] {
     background: rgba(255, 160, 0, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(255, 160, 0, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(255, 160, 0, .5)!important;
     --callout-border-color: rgba(255, 160, 0, .5);
     & .callout-icon {
     display: flex;
@@ -747,7 +832,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"] {
     background: rgba(255, 145, 0, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(255, 145, 0, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(255, 145, 0, .5)!important;
     --callout-border-color: rgba(255, 145, 0, .5);
     & .callout-icon {
     display: flex;
@@ -760,7 +845,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="failure"], .callout[data-callout="fail"], .callout[data-callout="missing"] {
     background: rgba(255, 82, 82, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(255, 82, 82, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(255, 82, 82, .5)!important;
     --callout-border-color: rgba(255, 82, 82, .5);
     & .callout-icon {
     display: flex;
@@ -773,7 +858,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="danger"], .callout[data-callout="error"] {
     background: rgba(255, 82, 82, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(255, 82, 82, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(255, 82, 82, .5)!important;
     --callout-border-color: rgba(255, 82, 82, .5);
     & .callout-icon {
     display: flex;
@@ -786,7 +871,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="bug"] {
     background: rgba(255, 6, 93, 0.1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(245, 0, 87, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(245, 0, 87, .5)!important;
     --callout-border-color: rgba(245, 0, 87, .5);
     & .callout-icon {
     display: flex;
@@ -797,7 +882,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 }
 .callout[data-callout="example"] {
     background: rgba(124, 77, 255, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(124, 77, 255, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(124, 77, 255, .5)!important;
     --callout-border-color: rgba(124, 77, 255, .5);
     & .callout-icon {
     display: flex;
@@ -810,7 +895,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="quote"], .callout[data-callout="cite"] {
     background: rgba(158, 158, 158, .1) !important;
-    box-shadow: inset 0 0 0 .04em rgba(158, 158, 158, .5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em rgba(158, 158, 158, .5)!important;
     --callout-border-color: rgba(158, 158, 158, .5);
     & .callout-icon {
     display: flex;
@@ -823,7 +908,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 .callout[data-callout="brainhack"] {
     background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1) !important;
-    box-shadow: inset 0 0 0 .04em hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5), 0 0 .35em var(--shadow-3) !important;
+    box-shadow: inset 0 0 0 .04em hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5)!important;
     --callout-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
     & .callout-content blockquote, .callout-content .callout {
         box-shadow: inset 0 0 0 .04em hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5), 0 0 .35em var(--shadow-3);
@@ -859,7 +944,7 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
 
 
 /*================================= EDITOR =================================*/
-.callout {
+body:not(.cv1) .callout {
     color: inherit;
     margin-bottom: .5em !important;
     margin-top: .5em !important;
@@ -871,14 +956,28 @@ body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout >
     --callout-content-radius: 0px;
     --callout-blend-mode: normal;
     background: var(--background-3);
-    box-shadow: inset 0 0 0 .04em var(--background-3-1), 0 0 .35em var(--shadow-3);
+    box-shadow: inset 0 0 0 .04em var(--background-3-1);
     overflow: hidden !important;
 }
+body.cv1 .callout {
+    mix-blend-mode: normal !important;
+    --callout-padding: 0;
+    border-left: .3em solid var(--tc);
+    border-radius: .5em;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    background: var(--background-3-3);
+    box-shadow: none !important;
+}
 
-.markdown-preview-view .callout:not(.callout-content .callout) {
+.markdown-preview-view .callout:not(.callout-content .callout, ul.has-list-bullet div.callout) {
     margin-bottom: 2em;
     margin-top: 1em !important;
 }
+li:not(:first-of-type):has(.callout) {
+    margin-bottom: 1em;
+}
+
 .callout-content {
     padding: .8em;
     padding-top: .5em;
@@ -903,8 +1002,15 @@ blockquote > *:last-child {
     box-shadow: 0 0 rgba(255, 0, 0, 0) !important;
 }
 
-.cm-embed-block.cm-callout {
+body:not(.cv1) .cm-embed-block.cm-callout {
     border-radius: 10px;
+    bottom: 0 !important;
+    overflow: hidden !important;
+}
+
+body.cv1 .cm-embed-block.cm-callout {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
     bottom: 0 !important;
     overflow: hidden !important;
 }
@@ -936,8 +1042,8 @@ blockquote > *:last-child {
     padding-left: 10px;
 }
 
-.markdown-rendered blockquote,
-.blockquote{
+body:not(.bv1) .markdown-rendered blockquote,
+body:not(.bv1) .blockquote{
     border-radius: var(--radius-m);
     background-color: var(--background-3);
     border-left: none;
@@ -948,7 +1054,8 @@ blockquote > *:last-child {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote{
+
+.markdown-source-view.mod-cm6.is-live-preview:not(.bv1) .HyperMD-quote{
     border-radius: var(--radius-m);
     background-color: var(--background-3);
     border-left: none;
@@ -959,15 +1066,31 @@ blockquote > *:last-child {
     margin-bottom: 1em;
 }
 
-.markdown-rendered blockquote:before,
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before {
+body:not(.bv1) .markdown-rendered blockquote:before,
+body:not(.bv1) .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before {
     z-index: -1;
     width: 100%;
     border-radius: var(--radius-m);
     box-shadow: 0 0 0 .04em var(--background-3-1), 0 0 .35em var(--shadow-3);
 }
 
-.el-blockquote, blockquote {
+body.bv1 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote,
+body.bv1 .markdown-rendered blockquote,
+body.bv1 .blockquote {
+    border-left: .3em solid var(--tc);
+    border-radius: .5em;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    background: var(--background-3-3);
+    box-shadow: none !important;
+    padding-left: .8em;
+    padding-right: .8em !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+body:not(.bv1) .el-blockquote,body:not(.bv1) blockquote {
     width: 100%;
     border-radius: var(--radius-m);
     box-shadow: inset 0 0 0 .04em var(--background-3-1);
@@ -1094,7 +1217,7 @@ p:has(+ ul.has-list-bullet) {
 
 
 
--li:not(:first-of-type) {
+body.smartlists li:not(:first-of-type) {
     margin-top: .8em;
     margin-bottom: 0em;
 }
@@ -1105,6 +1228,13 @@ p:has(+ ul.has-list-bullet) {
 -li:has(ul) + li:has(ul) {
     margin-top: 1.2em;
 }
+
+
+/*blockquote list fix*/
+li:has(blockquote) {
+    margin-top: .5em;
+}
+
 
 /*
 ul {
@@ -1131,7 +1261,10 @@ li > .callout {
 
 
 /*heading mark*/
+/*H1*/
+body:not(.hv1, .hv2)
 .cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
+body:not(.hv1, .hv2)
 .markdown-rendered h1 {
     color: var(--main-color-2);
     display: inline-block;
@@ -1154,6 +1287,43 @@ li > .callout {
         box-decoration-break: clone;
     --h1-radius: .4em;
 }
+
+body.hv1
+.cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
+body.hv1
+.markdown-rendered h1 {
+    color: var(--main-color-2);
+    display: inline-block;
+    background: var(--background-7);
+    translate: -.05em;
+    padding: .1rem .3rem .08rem .3rem;
+    margin: 0px;
+    margin: 0em !important;
+        -moz-border-bottom-left-radius: var(--h1-radius);
+        -webkit-border-bottom-left-radius: var(--h1-radius);
+        border-bottom-left-radius: var(--h1-radius);
+        -moz-border-bottom-right-radius: var(--h1-radius);
+        -webkit-border-bottom-right-radius: var(--h1-radius);
+        border-bottom-right-radius: var(--h1-radius);
+        -moz-border-top-right-radius: var(--h1-radius);
+        -webkit-border-top-right-radius: var(--h1-radius);
+        border-top-right-radius: var(--h1-radius);
+        -moz-border-top-left-radius: var(--h1-radius);
+        -webkit-border-top-left-radius: var(--h1-radius);
+        border-top-left-radius: var(--h1-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+    --h1-radius: .3em;
+}
+
+body.hv2
+.cm-header.cm-header-1:not(.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1),
+body.hv2
+.markdown-rendered h1 {
+    color: var(--main-color-2);
+    border-bottom: .1em solid var(--tc);
+}
 /* heading mark link color correction */
 h1 > a, 
 h2 > a, 
@@ -1164,17 +1334,15 @@ h6 > a {
     color: var(--text-color-inverted) !important;
 }
 
+/*H2*/
+body:not(.hv1, .hv2)
 .cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
+body:not(.hv1, .hv2)
 .markdown-rendered h2 {
     color: var(--main-color-2);
     display: inline-block;
-    -translate: -.05em;
-    -padding: .1rem .3rem .08rem .3rem;
-    -margin: 0px;
-    -border: .01em dashed;
     font-weight: 600;
     border-color: var(--colored-accent-4);
-    -background-color: var(--colored-accent-5);
         -moz-border-bottom-left-radius: var(--mark-radius);
         -webkit-border-bottom-left-radius: var(--mark-radius);
         border-bottom-left-radius: var(--mark-radius);
@@ -1193,15 +1361,55 @@ h6 > a {
     --mark-radius: .4em;
 }
 
+body.hv1
+.cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
+body.hv1
+.markdown-rendered h2 {
+    color: var(--main-color-2);
+    display: inline-block;
+    translate: -.05em;
+    padding: .1rem .3rem .08rem .3rem;
+    margin: 0px;
+    border: .1em dashed;
+    font-weight: 600;
+    border-color: var(--colored-accent-4);
+    background-color: var(--colored-accent-5);
+        -moz-border-bottom-left-radius: var(--mark-radius);
+        -webkit-border-bottom-left-radius: var(--mark-radius);
+        border-bottom-left-radius: var(--mark-radius);
+        -moz-border-bottom-right-radius: var(--mark-radius);
+        -webkit-border-bottom-right-radius: var(--mark-radius);
+        border-bottom-right-radius: var(--mark-radius);
+        -moz-border-top-right-radius: var(--mark-radius);
+        -webkit-border-top-right-radius: var(--mark-radius);
+        border-top-right-radius: var(--mark-radius);
+        -moz-border-top-left-radius: var(--mark-radius);
+        -webkit-border-top-left-radius: var(--mark-radius);
+        border-top-left-radius: var(--mark-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+    --mark-radius: .4em;
+}
+
+body.hv2
+.cm-header.cm-header-2:not(.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2),
+body.hv2
+.markdown-rendered h2 {
+    color: var(--main-color-2);
+    border-bottom: .1em solid var(--tc);
+}
+
+/*H3*/
+body:not(.hv1, .hv2)
 .cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
+body:not(.hv1, .hv2)
 .markdown-rendered h3 {
     display: inline-block;
     translate: -.05em;
     padding: .1rem .3rem .08rem .3rem;
     margin-bottom: 0px;
-    -border: .01em dashed;
     border-color: var(--colored-accent-4);
-    -background-color: var(--colored-accent-5);
         -moz-border-bottom-left-radius: var(--mark-radius);
         -webkit-border-bottom-left-radius: var(--mark-radius);
         border-bottom-left-radius: var(--mark-radius);
@@ -1220,6 +1428,42 @@ h6 > a {
     --mark-radius: .4em;
 }
 
+body.hv1
+.cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
+body.hv1
+.markdown-rendered h3 {
+    display: inline-block;
+    translate: -.05em;
+    padding: .1rem .3rem .08rem .3rem;
+    margin-bottom: 0px;
+    border: .08em dashed;
+    border-color: var(--colored-accent-4);
+    background-color: var(--colored-accent-5);
+        -moz-border-bottom-left-radius: var(--mark-radius);
+        -webkit-border-bottom-left-radius: var(--mark-radius);
+        border-bottom-left-radius: var(--mark-radius);
+        -moz-border-bottom-right-radius: var(--mark-radius);
+        -webkit-border-bottom-right-radius: var(--mark-radius);
+        border-bottom-right-radius: var(--mark-radius);
+        -moz-border-top-right-radius: var(--mark-radius);
+        -webkit-border-top-right-radius: var(--mark-radius);
+        border-top-right-radius: var(--mark-radius);
+        -moz-border-top-left-radius: var(--mark-radius);
+        -webkit-border-top-left-radius: var(--mark-radius);
+        border-top-left-radius: var(--mark-radius);
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+    --mark-radius: .4em;
+}
+
+body.hv2
+.cm-header.cm-header-3:not(.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3),
+body.hv2
+.markdown-rendered h3 {
+    color: var(--main-color-2);
+    border-bottom: .1em solid var(--tc);
+}
 /*DYNAMIC HEADING SPACING ADJUST*/
 div.el-h1 {
     margin-top: var(--dynamic-heading-spacing, 0em);
@@ -1455,3 +1699,6 @@ body.status-bar-hover .status-bar{
 }
 
 
+body.nc .markdown-embed-content .node-insert-event {
+    background: var(--canvas-color) !important;
+}

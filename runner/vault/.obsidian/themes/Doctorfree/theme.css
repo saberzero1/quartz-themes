@@ -1,0 +1,2204 @@
+/** ------------------------------------------------------------------
+**      ________            _____             ________                 
+**      ___  __ \_____________  /________________  __/________________ 
+**      __  / / /  __ \  ___/  __/  __ \_  ___/_  /_ __  ___/  _ \  _ \
+**      _  /_/ // /_/ / /__ / /_ / /_/ /  /   _  __/ _  /   /  __/  __/
+**      /_____/ \____/\___/ \__/ \____//_/    /_/    /_/    \___/\___/ 
+**                                                                     
+**  —— Made with 💎 by Dr. Ronald Joe Record
+** ------------------------------------------------------------------- */
+
+@charset "UTF-8";@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=Karla:ital,wght@0,400;0,600;1,400;1,600&family=Rubik:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+
+/*-----------------------------*/
+/*          Typography         */
+/*-----------------------------*/
+/*-----------------------------*/
+/*          Colors             */
+/*-----------------------------*/
+/* @settings
+
+name: Doctorfree Theme
+id: doctorfree-theme
+settings:
+    -
+        id: doctorfree-typography
+        title: Colors
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: text-bold-color
+        title: Bold Color
+        type: variable-color
+        format: hex
+        default: '#50fa7b'
+    -
+        id: text-italic-color
+        title: Italic Color
+        type: variable-color
+        format: hex
+        default: '#ffeb95'
+    -
+        id: text-italic-bold-color
+        title: Italic Bold Color
+        type: variable-color
+        format: hex
+        default: '#b380fb'
+    - 
+        id: text-accent
+        title: Accent Color
+        type: variable-color
+        format: hex
+        default: '#ffeb95'
+    - 
+        id: text-accent-hover
+        title: Hover Accent Color
+        type: variable-color
+        format: hex
+        default: '#8be9fd'
+    - 
+        id: text-sub-accent
+        title: Sub Accent Color
+        type: variable-color
+        format: hex
+        default: '#f4569d'
+    - 
+        id: background-primary
+        title: Background Color
+        type: variable-color
+        format: hsl
+        opacity: false
+        default: hsl(207deg, 95%, 5%)
+    - 
+        id: background-primary-alt
+        title: Alternate Background Color
+        type: variable-color
+        format: hsl
+        opacity: false
+        default: 'hsl(210deg, 95%, 6%)'
+    - 
+        id: background-secondary
+        title: Secondary Background Color
+        type: variable-color
+        format: hsl
+        opacity: false
+        default: 'hsl(200deg, 95%, 5%)'
+    - 
+        id: background-secondary-alt
+        title: Alternate Secondary Background Color
+        type: variable-color
+        format: hsl
+        opacity: false
+        default: 'hsl(203deg, 95%, 6%)'
+    - 
+        id: background-accent
+        title: Accent Background Color
+        type: variable-color
+        format: rgb
+        opacity: true
+        default: 'rgba(14, 210, 247, 0.25)'
+    - 
+        id: text-highlight-bg
+        title: Highlight Color
+        type: variable-color
+        format: rgb
+        opacity: true
+        default: 'hsla(61deg, 100%, 32%, 0.8)'
+    - 
+        id: text-normal
+        title: Text Normal Color
+        type: variable-color
+        format: hex
+        default: '#f8f8f2'
+    - 
+        id: text-selection
+        title: Text Selection Background Color
+        type: variable-color
+        format: hex
+        default: '#6272a4'
+    - 
+        id: text-muted
+        title: Text Muted Color
+        type: variable-color
+        format: hex
+        default: '#f8f8f2'
+    - 
+        id: text-faint
+        title: Text Faint Color
+        type: variable-color
+        format: hex
+        default: '#7fdbca'
+    - 
+        id: interactive-accent
+        title: Interactive Accent Background Color
+        type: variable-color
+        format: rgb
+        opacity: true
+        default: 'rgba(14, 210, 247, 0.5)'
+    - 
+        id: interactive-accent-hover
+        title: Interactive Accent Hover Color
+        type: variable-color
+        format: rgb
+        opacity: true
+        default: 'rgba(14, 210, 247, 0.8)'
+    - 
+        id: table-border-color
+        title: Table Border Color
+        type: variable-color
+        format: hex
+        default: '#f8f8f2'
+    - 
+        id: text-title-h1
+        title: Heading 1 Color
+        type: variable-color
+        format: hex
+        default: '#ff79c6'
+    - 
+        id: text-title-h2
+        title: Heading 2 Color
+        type: variable-color
+        format: hex
+        default: '#82aaff'
+    - 
+        id: text-title-h3
+        title: Heading 3 Color
+        type: variable-color
+        format: hex
+        default: '#c5e478'
+    - 
+        id: text-title-h4
+        title: Heading 4 Color
+        type: variable-color
+        format: hex
+        default: '#ffb86c'
+    - 
+        id: text-title-h5
+        title: Heading 5 Color
+        type: variable-color
+        format: hex
+        default: '#50fa7b'
+    - 
+        id: text-title-h6
+        title: Heading 6 Color
+        type: variable-color
+        format: hex
+        default: '#8be9fd'
+    - 
+        id: inline-code
+        title: "Inline Code Color"
+        type: variable-color
+        format: hex
+        default: '#bd93f9'
+    - 
+        id: code-block
+        title: "Code Block Color"
+        type: variable-color
+        format: hex
+        default: '#8be9fd'
+    - 
+        id: pre-code
+        title: "Inline Code Color"
+        type: variable-color
+        format: hex
+        default: '#44475a'
+    - 
+        id: vim-cursor
+        title: "Vim Cursor Color"
+        type: variable-color
+        format: hex
+        default: '#ff5555'
+    - 
+        id: border-color
+        title: "Border Color"
+        type: variable-color
+        format: hex
+        default: '#2b2727'
+    - 
+        id: border-color-alt
+        title: "Alternate Border Color"
+        type: variable-color
+        format: hex
+        default: '#101014'
+    - 
+        id: white
+        title: "White Color"
+        type: variable-color
+        format: hex
+        default: '#F8F8F3'
+    - 
+        id: gray-1
+        title: "Gray 1 Color"
+        type: variable-color
+        format: hex
+        default: '#586e75'
+    - 
+        id: gray-2
+        title: "Gray 2 Color"
+        type: variable-color
+        format: hex
+        default: '#D5D4DE'
+    - 
+        id: red
+        title: "Red Color"
+        type: variable-color
+        format: hex
+        default: '#FF5555'
+    - 
+        id: orange
+        title: "Orange Color"
+        type: variable-color
+        format: hex
+        default: '#FE9580'
+    - 
+        id: green
+        title: "Green Color"
+        type: variable-color
+        format: hex
+        default: '#8AFF7F'
+    - 
+        id: cyan
+        title: "Cyan Color"
+        type: variable-color
+        format: hex
+        default: '#81FFEA'
+    - 
+        id: cyan-transparent
+        title: "Cyan Transparent Color"
+        type: variable-color
+        format: rgb
+        opacity: true
+        default: 'rgba(129, 255, 234, 0.3)'
+    - 
+        id: purple
+        title: "Purple Color"
+        type: variable-color
+        format: hex
+        default: '#9580FF'
+    - 
+        id: purple-transparent
+        title: "Purple Transparent Color"
+        type: variable-color
+        format: rgb
+        opacity: true
+        default: 'rgba(149, 128, 255, 0.5)'
+    - 
+        id: pink
+        title: "Pink Color"
+        type: variable-color
+        format: hex
+        default: '#FE7FBF'
+    - 
+        id: blue
+        title: "Blue Color"
+        type: variable-color
+        format: hex
+        default: '#00588E'
+    - 
+        id: lavender
+        title: "Lavender Color"
+        type: variable-color
+        format: hex
+        default: '#b380fb'
+    - 
+        id: yellow
+        title: "Yellow Color"
+        type: variable-color
+        format: hex
+        default: '#FEFF7F'
+
+    - 
+        id: custom-fonts
+        title: Fonts
+        type: heading
+        level: 2
+        collapsed: true
+    - 
+        id: font-text-size
+        title: Font Size
+        description: The font size in pixels
+        type: variable-number
+        format: px
+        default: 18
+    - 
+        id: font-size-normal
+        title: Normal Font Size
+        description: The normal font size in pixels
+        type: variable-number
+        format: px
+        default: 18
+    - 
+        id: code-size
+        title: "Code Font Size"
+        description: "The code font size in pixels"
+        type: variable-number
+        format: px
+        default: 16
+    - 
+        id: nav-item-size
+        title: "Nav Item Font Size"
+        description: "The navigation item font size in pixels"
+        type: variable-number
+        format: px
+        default: 18
+    - 
+        id: font-size-side-dock
+        title: Side Dock Font Size
+        description: The side dock font size in pixels
+        type: variable-number
+        format: px
+        default: 18
+    - 
+        id: font-size-side-dock-title
+        title: "Side Dock Title Font Size"
+        description: "The side dock title font size in pixels"
+        type: variable-number
+        format: px
+        default: 18
+    - 
+        id: popover-font-size
+        title: "Pop Over Font Size"
+        description: The popup window font size in pixels
+        type: variable-number
+        format: px
+        default: 14
+    - 
+        id: vault-name-font-size
+        title: "Vault Name Font Size"
+        description: The vault name font size in pixels
+        type: variable-number
+        format: px
+        default: 18
+    - 
+        id: font-size-status-bar
+        title: Status Bar Font Size
+        description: The status bar font size in pixels
+        type: variable-number
+        format: px
+        default: 18
+    - 
+        id: table-header-size
+        title: "Table Header Font Size"
+        description: "The table header font size in pixels"
+        type: variable-number
+        format: px
+        default: 18
+    - 
+        id: font-size-h1
+        title: Heading 1 Font Size
+        description: The Heading 1 font size in pixels
+        type: variable-number
+        format: px
+        default: 30
+    - 
+        id: font-size-h2
+        title: Heading 2 Font Size
+        description: The Heading 2 font size in pixels
+        type: variable-number
+        format: px
+        default: 25
+    - 
+        id: font-size-h3
+        title: Heading 3 Font Size
+        description: The Heading 3 font size in pixels
+        type: variable-number
+        format: px
+        default: 21
+    - 
+        id: font-size-h4
+        title: Heading 4 Font Size
+        description: The Heading 4 font size in pixels
+        type: variable-number
+        format: px
+        default: 20
+    - 
+        id: font-size-h5
+        title: Heading 5 Font Size
+        description: The Heading 5 font size in pixels
+        type: variable-number
+        format: px
+        default: 19
+    - 
+        id: font-size-h6
+        title: Heading 6 Font Size
+        description: The Heading 6 font size in pixels
+        type: variable-number
+        format: px
+        default: 18
+    - 
+        id: font-ui-smaller
+        title: Smaller UI Font Size
+        description: The smaller UI font size in pixels
+        type: variable-number
+        format: px
+        default: 14
+    - 
+        id: font-ui-small
+        title: "Small UI Font Size"
+        description: "The small UI font size in pixels"
+        type: variable-number
+        format: px
+        default: 16
+    - 
+        id: font-ui-medium
+        title: Medium UI Font Size
+        description: The medium UI font size in pixels
+        type: variable-number
+        format: px
+        default: 18
+    - 
+        id: font-ui-large
+        title: Large UI Font Size
+        description: The large UI font size in pixels
+        type: variable-number
+        format: px
+        default: 20
+    - 
+        id: font-family-editor
+        title: Editor Font Family
+        description: Font used for editing
+        type: variable-text
+        default: IBM Plex Mono, Menlo, Monaco, "Courier New", monospace
+    - 
+        id: font-text
+        title: "Text Font"
+        description: "Font used for text"
+        type: variable-text
+        default: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
+    - 
+        id: font-family-preview
+        title: Preview Font Family
+        description: Font used for preview
+        type: variable-text
+        default: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
+    - 
+        id: font-family-preview-heading
+        title: Preview Heading Font Family
+        description: Font used for preview heading
+        type: variable-text
+        default: Rubik, "Avenir Next", Helvetica, Arial, sans-serif;
+    -
+        id: line-width
+        title: Line width
+        description: The maximum line width in pixels
+        type: variable-number
+        format: px
+        default: 900
+
+    - 
+        id: level-1-headings
+        title: Level 1 Headings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: h1-size
+        title: H1 font size
+        description: Accepts any CSS font-size value
+        type: variable-text
+        default: 1.602em
+    - 
+        id: h1-line-height
+        title: H1 line height
+        description: Accepts decimal values
+        type: variable-number
+        default: 1.4
+    - 
+        id: h1-margin-top
+        title: H1 top margin
+        description: Accepts decimal values representing the number of lines to add before the heading
+        type: variable-number
+        default: 3
+    - 
+        id: h1-margin-bottom
+        title: H1 bottom margin
+        description: Accepts decimal values representing the number of lines to add below the heading
+        type: variable-number
+        default: 1
+    - 
+        id: h1-weight
+        title: H1 font weight
+        description: Accepts numbers represeting the CSS font-weight
+        type: variable-number
+        default: 500
+    - 
+        id: h1-style
+        title: H1 font style
+        description: Accepts any CSS font-style value
+        type: variable-text
+        default: normal
+
+    - 
+        id: level-2-headings
+        title: Level 2 Headings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: h2-size
+        title: H2 font size
+        description: Accepts any CSS font-size value
+        type: variable-text
+        default: 1.424em
+    - 
+        id: h2-line-height
+        title: H2 line height
+        description: Accepts decimal values
+        type: variable-number
+        default: 1.4
+    - 
+        id: h2-margin-top
+        title: H2 top margin
+        description: Accepts decimal values representing the number of lines to add before the heading
+        type: variable-number
+        default: 2.25
+    - 
+        id: h2-margin-bottom
+        title: H2 bottom margin
+        description: Accepts decimal values representing the number of lines to add below the heading
+        type: variable-number
+        default: 0.5
+    - 
+        id: h2-weight
+        title: H2 font weight
+        description: Accepts numbers represeting the CSS font-weight
+        type: variable-number
+        default: 500
+    - 
+        id: h2-style
+        title: H2 font style
+        description: Accepts any CSS font-style value
+        type: variable-text
+        default: normal
+
+    - 
+        id: level-3-headings
+        title: Level 3 Headings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: h3-size
+        title: H3 font size
+        description: Accepts any CSS font-size value
+        type: variable-text
+        default: 1.266em
+    - 
+        id: h3-line-height
+        title: H3 line height
+        description: Accepts decimal values
+        type: variable-number
+        default: 1.4
+    - 
+        id: h3-margin-top
+        title: H3 top margin
+        description: Accepts decimal values representing the number of lines to add before the heading
+        type: variable-number
+        default: 1.75
+    - 
+        id: h3-margin-bottom
+        title: H3 bottom margin
+        description: Accepts decimal values representing the number of lines to add below the heading
+        type: variable-number
+        default: 0.5
+    - 
+        id: h3-weight
+        title: H3 font weight
+        description: Accepts numbers represeting the CSS font-weight
+        type: variable-number
+        default: 500
+    - 
+        id: h3-style
+        title: H3 font style
+        description: Accepts any CSS font-style value
+        type: variable-text
+        default: normal
+
+    - 
+        id: level-4-headings
+        title: Level 4 Headings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: h4-size
+        title: H4 font size
+        description: Accepts any CSS font-size value
+        type: variable-text
+        default: 1.125em
+    - 
+        id: h4-line-height
+        title: H4 line height
+        description: Accepts decimal values
+        type: variable-number
+        default: 1.5
+    - 
+        id: h4-margin-top
+        title: H4 top margin
+        description: Accepts decimal values representing the number of lines to add before the heading
+        type: variable-number
+        default: 1.5
+    - 
+        id: h4-margin-bottom
+        title: H4 bottom margin
+        description: Accepts decimal values representing the number of lines to add below the heading
+        type: variable-number
+        default: 0.5
+    - 
+        id: h4-weight
+        title: H4 font weight
+        description: Accepts numbers represeting the CSS font-weight
+        type: variable-number
+        default: 500
+    - 
+        id: h4-style
+        title: H4 font style
+        description: Accepts any CSS font-style value
+        type: variable-text
+        default: normal
+
+    - 
+        id: level-5-headings
+        title: Level 5 Headings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: h5-size
+        title: H5 font size
+        description: Accepts any CSS font-size value
+        type: variable-text
+        default: 1em
+    - 
+        id: h5-line-height
+        title: H5 line height
+        description: Accepts decimal values
+        type: variable-number
+        default: 1.5
+    - 
+        id: h5-margin-top
+        title: H5 top margin
+        description: Accepts decimal values representing the number of lines to add before the heading
+        type: variable-number
+        default: 1.5
+    - 
+        id: h5-margin-bottom
+        title: H5 bottom margin
+        description: Accepts decimal values representing the number of lines to add below the heading
+        type: variable-number
+        default: 0.5
+    - 
+        id: h5-weight
+        title: H5 font weight
+        description: Accepts numbers represeting the CSS font-weight
+        type: variable-number
+        default: 500
+    - 
+        id: h5-style
+        title: H5 font style
+        description: Accepts any CSS font-style value
+        type: variable-text
+        default: normal
+
+    - 
+        id: level-6-headings
+        title: Level 6 Headings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: h6-size
+        title: H6 font size
+        description: Accepts any CSS font-size value
+        type: variable-text
+        default: 1em
+    - 
+        id: h6-line-height
+        title: H6 line height
+        description: Accepts decimal values
+        type: variable-number
+        default: 1.5
+    - 
+        id: h6-margin-top
+        title: H6 top margin
+        description: Accepts decimal values representing the number of lines to add before the heading
+        type: variable-number
+        default: 1.5
+    - 
+        id: h6-margin-bottom
+        title: H6 bottom margin
+        description: Accepts decimal values representing the number of lines to add below the heading
+        type: variable-number
+        default: 0.5
+    - 
+        id: h6-weight
+        title: H6 font weight
+        description: Accepts numbers represeting the CSS font-weight
+        type: variable-number
+        default: 500
+    - 
+        id: h6-style
+        title: H6 font style
+        description: Accepts any CSS font-style value
+        type: variable-text
+        default: italic
+
+    - 
+        id: icons
+        title: Icons
+        type: heading
+        level: 2
+        collapsed: true
+    - 
+        id: cc-no-custom-icons
+        title: Use Obsidian's default icons
+        type: class-toggle
+        default: false
+    - 
+        id: cc-no-file-icons
+        title: Hide file icons
+        type: class-toggle
+        default: false
+    - 
+        id: cc-no-folder-icons
+        title: Hide folder icons
+        type: class-toggle
+        default: false
+    - 
+        id: folder-h
+        title: Folder icon color
+        type: variable-number-slider
+        default: 0
+        format: deg
+        min: 0
+        max: 359
+        step: 1
+    - 
+        id: folder-s
+        title: Folder icon saturation
+        type: variable-number-slider
+        default: 100
+        format: '%'
+        min: 0
+        max: 200
+        step: 1
+    - 
+        id: folder-b
+        title: Folder icon brightness
+        type: variable-number-slider
+        default: 100
+        format: '%'
+        min: 50
+        max: 150
+        step: 1
+*/
+/*-----------------------------*/
+/*          CSS Variables      */
+/*-----------------------------*/
+:root {
+  --font-ui-smaller: 14px;
+  --font-ui-small: 16px;
+  --font-ui-medium: 18px;
+  --font-ui-large: 20px;
+  --font-text-size: 18px;
+  --font-size-normal: var(--font-text-size);
+  --code-size: var(--font-ui-small);
+  --font-size-side-dock: var(--font-text-size);
+  --font-size-side-dock-title: var(--font-text-size);
+  --font-size-status-bar: var(--font-text-size);
+  --table-header-size: var(--font-text-size);
+  --font-size-h1: 30px;
+  --font-size-h2: 25px;
+  --font-size-h3: 21px;
+  --font-size-h4: 20px;
+  --font-size-h5: 19px;
+  --font-size-h6: 18px;
+  --font-family-editor: IBM Plex Mono, Menlo, Monaco, "Courier New", monospace;
+  --font-text: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
+  --font-family-preview: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
+  --font-family-preview-heading: Rubik, "Avenir Next", Helvetica, Arial, sans-serif;
+  --line-width: 900px;
+  --white: #F8F8F3;
+  --gray-1: #586e75;
+  --gray-2: #D5D4DE;
+  --red: #FF5555;
+  --orange: #FE9580;
+  --green: #8AFF7F;
+  --cyan: #81FFEA;
+  --cyan-transparent: rgba(129, 255, 234, 0.3);
+  --purple: #9580FF;
+  --purple-transparent: rgba(149, 128, 255, 0.5);
+  --pink: #FE7FBF;
+  --blue: #00588E;
+  --lavender: #b380fb;
+  --yellow: #FEFF7F;
+}
+.theme-light,
+.theme-dark {
+  --background-primary: hsl(207deg, 95%, 5%);
+  --background-primary-alt: hsl(210deg, 95%, 6%);
+  --background-secondary: hsl(200deg, 95%, 5%);
+  --background-secondary-alt: hsl(203deg, 95%, 6%);
+  --background-accent: rgba(14, 210, 247, 0.25);
+  --background-modifier-border: rgba(14, 210, 247, 0.05);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #50fa7b;
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+  --table-border-color: #f8f8f2;
+  --text-accent: #ffeb95;
+  --text-accent-hover: #8be9fd;
+  --text-sub-accent: #f4569d;
+  --text-bold-color: #50fa7b;
+  --text-italic-color: #ffeb95;
+  --text-italic-bold-color: #b380fb;
+  --text-normal: #f8f8f2;
+  --text-muted: #f8f8f2;
+  --text-faint: #7fdbca;
+  --text-highlight-bg: hsla(101deg, 100%, 12%, 0.8);
+  --text-selection: #6272a4;
+  --interactive-accent: rgba(14, 210, 247, 0.5);
+  --interactive-accent-hover: rgba(14, 210, 247, 0.8);
+  --text-title-h1: #ff79c6;
+  --text-title-h2: #82aaff;
+  --text-title-h3: #c5e478;
+  --text-title-h4: #ffb86c;
+  --text-title-h5: #50fa7b;
+  --text-title-h6: #8be9fd;
+  --inline-code: #bd93f9;
+  --code-block: #8be9fd;
+  --pre-code: #44475a;
+  --vim-cursor: #ff5555;
+  --border-color: #2b2727;
+  --border-color-alt: #101014;
+}
+
+/*-------------------------------------*/
+/*      Search the following lines     */
+/*     to jump to specific section     */
+/*-------------------------------------*/
+/*       CUSTOMIZED TAG COLOURS        */
+/*           GENERAL STYLES            */
+/*       NAVIGATION / SIDE-DOCK        */
+/*           SETTINGS STYLES           */
+/*     resize-handle and borders       */
+/*                tags                 */
+/*                link                 */
+/*               Cursor                */
+/* Basic format in EDITOR and PREVIEW  */
+/* Headings - EDITOR and PREVIEW       */
+/*         Code block in  Preview      */
+/*       Code block in Editor          */
+/*              Brackets               */
+/*             Blockquote              */
+/*               Table                 */
+/*              Checkbox               */
+/*           html in editor            */
+/*              popover                */
+/*            Side panel               */
+/* internal embedded link in preview   */
+/*            graph view               */
+/*             settings                */
+/*           Hide side bar             */
+/*         width of content            */
+/*  note header bar for non-andy mode  */
+/*    at a rule line before ul list    */
+/*  Hide Scrollbar (recommend for mac) */
+/*-------------------------------------*/
+
+/************************/
+/* YAML IN PREVIEW MODE */
+/************************/
+
+/* Hide the metadata box at top of note in preview mode */
+.frontmatter-container {
+    display: none;
+}
+
+/**************************/
+/* CUSTOMIZED TAG COLOURS */
+/**************************/
+
+/* For preview mode */
+a.tag[href*="#todo"],
+a.tag[href*="#待完成"] {
+  background-color: #be2e5e;
+  color: #fff;
+}
+/* For Editor Mode */
+.cm-s-obsidian .CodeMirror-line span.cm-tag-todo:not(.cm-formatting-hashtag) {
+  color: #ee6a96;
+}
+
+a.tag[href*="#working-draft"],
+a.tag[href*="#进行中"] {
+  background-color: #4d3ca6;
+  color: #fff;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-working-draft:not(.cm-formatting-hashtag) {
+  color: #a897ff;
+}
+
+a.tag[href*="#notes"],
+a.tag[href*="#笔记"] {
+  background-color: #17b978;
+  color: #fff;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-notes:not(.cm-formatting-hashtag) {
+  color: #45e0a2;
+}
+
+a.tag[href*="#knowledge"],
+a.tag[href*="#知识"] {
+  background-color: #005792;
+  color: #fff;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-knowledge:not(.cm-formatting-hashtag) {
+  color: #6cbdf3;
+}
+
+a.tag[href*="#writing"],
+a.tag[href*="#文章"] {
+  background-color: #f95959;
+  color: #fff;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-writing:not(.cm-formatting-hashtag) {
+  color: #ff7a7a;
+}
+
+a.tag[href*="#ideas"],
+a.tag[href*="#想法"] {
+  background-color: #ffc93c;
+  color: #000;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-ideas:not(.cm-formatting-hashtag) {
+  color: #ffdc82;
+}
+
+/**************************************/
+/* GENERAL STYLES                     */
+/**************************************/
+body {
+  --code-size-code: 16px;
+  --file-header-font-size: 18px;
+  --nav-item-size: 18px;
+  --popover-font-size: 14px;
+  --vault-name-font-size: 18px;
+  font-weight: var(--body-font-weight, normal);
+  font-size: var(--font-size-normal);
+}
+
+::-webkit-scrollbar {
+  opacity: 1;
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--background-modifier-border);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  background: var(--background-secondary);
+}
+
+.markdown-preview-view .internal-link.is-unresolved {
+  opacity: 0.7;
+}
+
+.theme-dark .notice {
+  background-color: var(--background-primary-alt);
+  color: var(--text-accent);
+}
+
+/** NAVIGATION / SIDE-DOCK **/
+
+.nav-folder-collapse-indicator {
+  color: var(--text-accent);
+}
+.nav-file.is-active > .nav-file-title,
+.nav-file.is-active > .nav-folder-title,
+.nav-file.is-active > .nav-folder-collapse-indicator,
+.nav-folder.is-active > .nav-file-title,
+.nav-folder.is-active > .nav-folder-title,
+.nav-folder.is-active > .nav-folder-collapse-indicator {
+  color: var(--text-accent);
+}
+
+/** Side-dock icons **/
+.side-dock-ribbon-tab,
+.side-dock-ribbon-action,
+.workspace-ribbon-collapse-btn,
+.workspace-tab-header {
+  transition: all 350ms ease-in-out;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.workspace-ribbon-collapse-btn:hover,
+.workspace-tab-header:hover {
+  opacity: 1;
+  color: var(--text-accent);
+}
+
+/** Left side menu -- collapsed **/
+.workspace-ribbon.is-collapsed {
+  background-color: var(--background-primary-alt);
+}
+/** Left side menu border **/
+.workspace-ribbon.mod-left.is-collapsed,
+.workspace-ribbon.mod-right.is-collapsed {
+  border-color: var(--border-color-alt);
+}
+
+/** Navigation tabs **/
+.workspace-tab-header.is-active {
+  opacity: 1;
+  color: var(--text-accent);
+}
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  background: var(--background-modifier-border);
+  border: 1px solid var(--background-accent);
+}
+
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover {
+  background: var(--background-modifier-border);
+  border: 1px solid var(--interactive-accent-hover);
+}
+
+/** File and Folder lists **/
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover {
+  color: var(--text-accent);
+}
+/** File and Folder list active arrow **/
+body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
+body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
+  color: var(--text-accent);
+}
+/** File and Folder list main title **/
+.nav-folder.mod-root > .nav-file-title,
+.nav-folder.mod-root > .nav-folder-title {
+  color: var(--text-accent);
+}
+
+/** View Header title **/
+.workspace-leaf.mod-active .view-header-title {
+  color: var(--text-accent);
+}
+
+/** Little tag styles (at links) **/
+.pane-list-item:hover .pane-list-item-ending-flair {
+  background-color: var(--background-secondary);
+  color: var(--text-accent);
+}
+
+/** SETTINGS STYLES **/
+.checkbox-container.is-enabled {
+  background-color: rgba(14, 210, 247, 0.7);
+}
+
+.workspace-drop-overlay {
+  background-color: var(--background-primary-alt);
+}
+
+/* Except list markers */
+/* code block backticks */
+/* optionally header hashes */
+span.cm-formatting-list,
+span.cm-formatting-code-block.cm-hmd-codeblock,
+span.cm-formatting-header {
+  display: inline !important;
+}
+
+/***************************************/
+/*  resize-handle and borders          */
+/***************************************/
+/*vertical resize-handle*/
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  width: 1px !important;
+  background-color: var(--border-color);
+}
+/*horizontal resize-handle*/
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+  height: 1px !important;
+  background-color: var(--border-color);
+}
+/*the vertical split*/
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
+.workspace-split.mod-vertical > .workspace-split,
+.workspace-split.mod-vertical > .workspace-leaf,
+.workspace-tabs {
+  padding-right: 0px;
+}
+/*status-bar*/
+.status-bar {
+  font-size: var(--font-size-status-bar);
+  background-color: var(--background-secondary-alt);
+  border-top: 0px;
+  border-color: var(--border-color-alt);
+  color: var(--text-faint);
+  position: absolute;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 8px;
+  padding: 8px 6px 6px 10px;
+  max-height: unset;
+  opacity: 0.4;
+  transition: 0.5s;
+}
+
+.status-bar:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.document-search-container {
+  border-top: 0px;
+  border-right: 0px;
+  z-index: inherit;
+}
+/*************************************/
+/*                tags               */
+/*************************************/
+/* Tag hover in preview */
+a.tag:hover {
+  color: var(--text-accent) !important;
+}
+/* Tag Color in editor and preview*/
+.cm-hashtag,
+a.tag {
+  color: var(--text-accent-hover) !important;
+  text-decoration: none !important;
+  font-style: normal !important;
+}
+/*********************************/
+/*             link              */
+/*********************************/
+/* link */
+a,
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link,
+.cm-formatting-link,
+.cm-url {
+  text-decoration: none !important;
+}
+/* the url string in editor */
+.cm-s-obsidian span.cm-string {
+  color: var(--text-accent-hover) !important;
+}
+/* make external links italics to differentiate */
+a:not(.internal-link) {
+  font-style: italic;
+}
+/*footnote*/
+.cm-s-obsidian span.cm-footref {
+  color: var(--text-accent) !important;
+}
+/***************************************/
+/*                Cursor               */
+/***************************************/
+/* Cursor color and opacity */
+.cm-fat-cursor .CodeMirror-cursor,
+.cm-animate-fat-cursor {
+  width: 0.5em;
+  background: var(--vim-cursor);
+  opacity: 60% !important;
+}
+/**************************************/
+/* Basic format in EDITOR and PREVIEW */
+/**************************************/
+/* Font for everything outside of editor/preview panes */
+.app-container {
+  font-family: var(--font-family-preview);
+}
+/* Set the text selection color for preview mode */
+::selection {
+  background-color: var(--text-selection);
+}
+/* Normal text outside of headings and code of editor */
+.cm-s-obsidian,
+.mod-single-child .cm-s-obsidian {
+  font-family: var(--font-family-editor);
+  font-size: var(--font-size-normal);
+}
+/* Bold in preview and editor */
+.cm-strong,
+strong {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+  font-weight: 600;
+  color: #7aa2f7;
+  background-color: #7aa2f7;
+  background-image: linear-gradient(62deg, #87c2fd 0%, #dcb9fc 100%) !important;
+}
+/* Emphasis in preview and editor */
+em,
+.cm-em {
+  color: var(--text-italic-color);
+  font-style: italic;
+}
+.cm-em.cm-strong {
+  color: var(--text-italic-bold-color);
+}
+/* Strikethrough in preview and editor */
+s,
+.cm-strikethrough {
+  color: var(--text-muted);
+}
+/* List in editor */
+.cm-s-obsidian span.cm-formatting-list {
+  color: var(--text-normal) !important;
+}
+
+/** hr styles -- PREVIEW MODE */
+.cm-line hr,
+.markdown-preview-view hr {
+  background-color: var(--text-faint) !important;
+  margin-block-start: 4em;
+  margin-block-end: 4em;
+  border: none;
+  height: 0;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+}
+
+.cm-line hr::after,
+.markdown-preview-view hr::after {
+  content: "§";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 0.5rem;
+  color: var(--text-sub-accent);
+  background-color: var(--background-primary);
+}
+/* embedded images */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* img hover zoom out img*/
+img:hover {
+  transform: scale(1.04);
+  transition: transform 0.25s ease-in-out 0s;
+}
+.community-theme img:hover {
+  transform: none;
+}
+/***************************************/
+/*         Code block in  Preview      */
+/***************************************/
+/* code blocks in preview */
+pre code {
+  font-family: monaco !important;
+  font-size: var(--code-size) !important;
+  padding: 6px !important;
+  line-height: normal;
+  display: block;
+  color: var(--code-block) !important;
+}
+/* padding of code blocks in preview */
+.markdown-preview-view pre {
+  padding: 0px !important;
+}
+/* font-size of in-line block for preview */
+.markdown-preview-view code {
+  font-size: var(--code-size);
+}
+/* remove the shadow that typically affect light mode */
+.theme-dark code[class*=language-],
+.theme-dark pre[class*=language-],
+.theme-light code[class*=language-],
+.theme-light pre[class*=language-] {
+  text-shadow: none !important;
+  color: var(--text-faint) !important;
+  background-color: var(--pre-code);
+}
+
+/***************************************/
+/*      Language (Dark mode only)      */
+/***************************************/
+pre[class*=language-]:before {
+  font-family: Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.6rem;
+  color: #fff;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  padding: 0;
+  color: var(--text-accent) !important;
+  content: "";
+  text-transform: uppercase;
+  background: rgba(16, 14, 23, 0.86);
+  border-radius: 8px;
+  padding: 0.1em 0.8em;
+  z-index: 10;
+}
+
+pre[class$=markdown]:before,
+pre[class$=md]:before {
+  content: "Markdown";
+}
+
+pre[class$=javascript]:before,
+pre[class$=js]:before {
+  content: "JavaScript";
+}
+
+pre[class$=typescript]:before,
+pre[class$=ts]:before {
+  content: "typescript";
+}
+
+pre[class$=code]:before {
+  content: "code";
+}
+
+pre[class$=text]:before {
+  content: "text";
+}
+
+pre[class$=html]:before {
+  content: "html";
+}
+
+pre[class$=css]:before {
+  content: "css";
+}
+
+pre[class$=ejs]:before {
+  content: "ejs";
+}
+
+pre[class$=vue]:before {
+  content: "vue";
+}
+
+pre[class$=react]:before {
+  content: "react";
+}
+
+pre[class$=shell]:before {
+  content: "Shell";
+}
+
+pre[class$=json]:before {
+  content: "Json";
+}
+
+pre[class$=yaml]:before {
+  content: "yaml";
+}
+
+pre[class$=python]:before {
+  content: "python";
+}
+
+pre[class$=lua]:before {
+  content: "lua";
+}
+
+pre[class$=php]:before {
+  content: "php";
+}
+
+pre[class$=ruby]:before {
+  content: "ruby";
+}
+
+pre[class$=rust]:before {
+  content: "rust";
+}
+
+pre[class$=sql]:before {
+  content: "sql";
+}
+
+pre[class$=toml]:before {
+  content: "toml";
+}
+
+pre[class$=haskell]:before {
+  content: "haskell";
+}
+
+pre[class$=ini]:before {
+  content: "ini";
+}
+
+pre[class$=java]:before {
+  content: "java";
+}
+
+.theme-dark :not(pre) > code[class*=language-],
+.theme-dark pre[class*=language-] {
+  background-color: var(--background-secondary);
+}
+
+code[class*=language-],
+pre[class*=language-] {
+  color: #ccc;
+  background: rgb(40, 41, 54);
+  text-shadow: none;
+  font-family: "OperatorMonoSSmLig-Book", PT Mono, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*=language-]::-moz-selection,
+pre[class*=language-] ::-moz-selection,
+code[class*=language-]::-moz-selection,
+code[class*=language-] ::-moz-selection {
+  text-shadow: none;
+  background-color: #5a5f80;
+}
+
+pre[class*=language-]::selection,
+pre[class*=language-] ::selection,
+code[class*=language-]::selection,
+code[class*=language-] ::selection {
+  text-shadow: none;
+  background-color: #5a5f80;
+}
+
+@media print {
+  code[class*=language-],
+  pre[class*=language-] {
+    text-shadow: none;
+  }
+}
+
+/* Code blocks */
+:not(pre) > code[class*=language-],
+pre[class*=language-] {
+  background: rgb(40, 41, 54);
+}
+
+/* Inline code */
+:not(pre) > code[class*=language-] {
+  padding: 4px 7px;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.language-cpp .theme-dark .token.string {
+  color: #8be9fd;
+}
+
+.language-c .theme-dark .token.string {
+  color: #8be9fd;
+}
+
+.theme-dark .language-css .token.selector {
+  color: rgb(80, 250, 123);
+}
+
+.theme-dark .language-css .token.property {
+  color: rgb(255, 184, 108);
+}
+
+.language-java span.theme-dark .token.class-name {
+  color: #8be9fd;
+}
+
+.language-java .theme-dark .token.class-name {
+  color: #8be9fd;
+}
+
+.language-markup .theme-dark .token.attr-value {
+  color: rgb(102, 217, 239);
+}
+
+.language-markup .theme-dark .token.tag {
+  color: rgb(80, 250, 123);
+}
+
+.language-objectivec .theme-dark .token.property {
+  color: #66d9ef;
+}
+
+.language-objectivec .theme-dark .token.string {
+  color: #50fa7b;
+}
+
+.language-php .theme-dark .token.boolean {
+  color: #8be9fd;
+}
+
+.language-php .theme-dark .token.function {
+  color: #ff79c6;
+}
+
+.language-php .theme-dark .token.keyword {
+  color: #66d9ef;
+}
+
+.language-ruby .theme-dark .token.symbol {
+  color: #8be9fd;
+}
+
+.language-ruby .theme-dark .token.class-name {
+  color: #cfcfc2;
+}
+
+/***************************************/
+/*              Brackets               */
+/***************************************/
+.cm-s-obsidian span.cm-formatting-link {
+  color: var(--text-accent) !important;
+}
+/***************************************/
+/*             Blockquote              */
+/***************************************/
+/* for editor */
+.cm-quote {
+  color: var(--text-normal) !important;
+  font-style: italic;
+}
+
+/* blockquote style overwrite */
+.markdown-preview-view blockquote {
+  position: relative;
+  padding: 1rem 2rem 1rem 3rem;
+  color: #bdbdbd;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 2em;
+  margin-right: 0 !important;
+  border-left: 3px rgba(14, 210, 247, 0.5) solid;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-right: transparent;
+  background: linear-gradient(135deg, rgba(32, 28, 41, 0.45), #100e17);
+  font-style: italic;
+}
+
+.markdown-preview-view blockquote::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 2px;
+  width: 60%;
+  background: linear-gradient(90deg, rgba(13, 185, 215, 0.5), #13111a);
+}
+.markdown-preview-view blockquote::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  height: 2px;
+  width: 25%;
+  background: linear-gradient(90deg, rgba(13, 185, 215, 0.5), #15131c);
+}
+
+/***************************************/
+/*             Image                   */
+/***************************************/
+.markdown-preview-view img {
+  display: block;
+  margin-top: 20pt;
+  margin-bottom: 20pt;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* experiment with values */
+  transition: transform 0.25s ease;
+}
+
+.markdown-preview-view img:hover {
+  -webkit-transform: scale(1.15); /* experiment with values */
+  transform: scale(2);
+}
+
+/***************************************/
+/*             Table                   */
+/*  Add the following to any documents */
+/*  in which tables should be centered */
+/*                                     */
+/*        ---                          */
+/*        cssclass: t-c                */
+/*        ---                          */
+/*                                     */
+/*  Add the following to any documents */
+/*  in which tables should be widened  */
+/*                                     */
+/*        ---                          */
+/*        cssclass: t-w                */
+/*        ---                          */
+/*                                     */
+/***************************************/
+
+.table-view-table tr {
+  border-bottom: 1px solid;
+}
+th {
+  font-weight: 800 !important;
+}
+.markdown-preview-view th {
+  font-weight: 800;
+  background-color: var(--background-secondary) !important;
+}
+thead {
+  border-bottom: 3px solid var(--table-border-color);
+}
+.table {
+  padding: 4px;
+  line-height: normal;
+  display: block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/*Table Centered*/
+.t-c table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Table Widened*/
+.t-w table {
+  width: 100%;
+}
+
+/***************************************/
+/*              popover                */
+/***************************************/
+.popover {
+  border: 1px solid var(--border-color);
+  background-color: var(--background-secondary);
+}
+/***************************************/
+/*            Side panel               */
+/***************************************/
+/* search result in backlink or file search */
+.search-result-file-title {
+  font-size: var(--font-size-normal);
+}
+.search-result-file-matches,
+.search-empty-state {
+  font-size: var(--font-size-side-dock);
+}
+/*decrease the spacing between result items*/
+.search-result-file-title,
+.search-result-file-match {
+  padding: 0px 10px;
+}
+/*backlink pane*/
+.workspace-leaf-content[data-type=backlink] .view-content {
+  background-color: var(--background-secondary);
+}
+.workspace-leaf-content[data-type=tag] .tag-pane-tag-count,
+.workspace-leaf-content[data-type=tag] .tag-pane-tag-text {
+  font-size: var(--font-size-side-dock);
+}
+.workspace-leaf-content[data-type=backlink] .search-result-file-matches {
+  font-size: var(--font-size-side-dock);
+}
+/***************************************/
+/* internal embedded link in preview   */
+/***************************************/
+/* Naked Embeds */
+.markdown-embed-title {
+  display: none;
+}
+.markdown-preview-view .markdown-embed-content > :first-child {
+  margin-top: 0;
+}
+.markdown-preview-view .markdown-embed-content > :last-child {
+  margin-bottom: 0;
+}
+.markdown-preview-view .markdown-embed {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.markdown-preview-view .markdown-embed-content {
+  max-height: unset;
+  background-color: var(--background-secondary);
+}
+/* the link on the top right corner*/
+.markdown-embed-link {
+  color: var(--text-faint) !important;
+}
+.markdown-embed-link:hover {
+  color: var(--text-accent) !important;
+}
+.markdown-rendered button.copy-code-button {
+  margin: 6px;
+  padding: 16px 8px;
+  height: auto;
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  font-family: var(--font-interface);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/***************************************/
+/*             Graph View              */
+/***************************************/
+/* Circle Stroke */
+/* Line When Hover */
+.graph-view.color-circle,
+.graph-view.color-line-highlight {
+  color: var(--cyan) !important;
+  border: 0;
+}
+/* Circle When Hover */
+.graph-view.color-fill-highlight {
+  color:var(--green);
+}
+.graph-view.color-text {
+  color:var(--yellow);
+}
+.graph-view.color-line {
+  color: #6272a4;
+}
+/* Circle When Not Hover */
+.graph-view.color-fill {
+  color: var(--cyan);
+}
+/* Arrows */
+.theme-light .graph-view.color-arrow,
+.theme-dark .graph-view.color-arrow {
+  color: #50fa7b;
+}
+/* Tags */
+.theme-light .graph-view.color-fill-tag,
+.theme-dark .graph-view.color-fill-tag {
+  color: #ffb86c;
+}
+/* Attachments */
+.theme-light .graph-view.color-fill-attachment,
+.theme-dark .graph-view.color-fill-attachment {
+  color: #ff5555;
+}
+/* Circle When Link Unresolved */
+.theme-light .graph-view.color-fill-unresolved,
+.theme-dark .graph-view.color-fill-unresolved {
+  color: #6272a4;
+}
+.workspace-leaf-content[data-type=graph] .view-content {
+  background-color: var(--background-primary);
+}
+
+/***************************************/
+/*            Settings                 */
+/***************************************/
+.modal.mod-settings button:not(.mod-cta):hover {
+  background-color: var(--interactive-accent-hover);
+}
+/***************************************/
+/*            Hide side bar            */
+/***************************************/
+.workspace-ribbon:not(:hover) .workspace-ribbon-collapse-btn,
+.workspace-ribbon:not(:hover) .side-dock-actions,
+.workspace-ribbon:not(:hover) .side-dock-settings {
+  display: none;
+  transition: all 300ms ease-in-out;
+}
+.workspace-ribbon:not(:hover) {
+  width: 0px;
+  transition: all 300ms ease-in-out;
+}
+.workspace-split.mod-left-split {
+  margin-left: 0px;
+}
+.workspace-split.mod-right-split {
+  margin-right: 0px;
+}
+/***************************************/
+/*           width of content          */
+/***************************************/
+.markdown-source-view.is-readable-line-width .CodeMirror {
+  max-width: var(--line-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+.markdown-preview-view.is-readable-line-width .markdown-preview-section {
+  max-width: var(--line-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Shift sticky position, so titles will stack up to the left */
+/* This will currently stack to a maximum of 10 before resetting */
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-8) {
+  left: calc(var(--sticky-left) * 0);
+}
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-7) {
+  left: calc(var(--sticky-left) * 1);
+}
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-6) {
+  left: calc(var(--sticky-left) * 2);
+}
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-5) {
+  left: calc(var(--sticky-left) * 3);
+}
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-4) {
+  left: calc(var(--sticky-left) * 4);
+}
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-3) {
+  left: calc(var(--sticky-left) * 5);
+}
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-2) {
+  left: calc(var(--sticky-left) * 6);
+}
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n-1) {
+  left: calc(var(--sticky-left) * 7);
+}
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n+0) {
+  left: calc(var(--sticky-left) * 8);
+}
+.theme-light .mod-root.workspace-split.mod-vertical > div:nth-child(10n+1) {
+  left: calc(var(--sticky-left) * 9);
+}
+/* Now it's time for the fancy vertical titles */
+/* First we'll add a bit of gap for the title to sit inside of */
+.theme-light .workspace-leaf-content {
+  padding-left: var(--sticky-left);
+  position: relative;
+}
+/* This is where the magic happens */
+.theme-light .view-header {
+  writing-mode: vertical-lr;
+  border-right: 1px solid var(--border-color);
+  border-left: 0px !important;
+  border-top: none;
+  border-bottom: none;
+  height: auto;
+  width: 36px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--background-primary) !important;
+}
+/* Fix the long-title-obscuring shadows */
+.theme-light .view-header-title-container:after {
+  width: 100%;
+  height: 30px;
+  top: unset;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+}
+/* Unset the title container height and swap padding */
+.theme-light .view-header-title-container {
+  height: unset;
+  padding-left: unset;
+  padding-top: 5px;
+}
+/* Active titles have different border colours */
+.theme-light .workspace-leaf.mod-active .view-header {
+  background-color: var(--background-secondary-alt) !important;
+  border-right: 3px solid var(--interactive-accent) !important;
+  border-left: 0px;
+  border-bottom: none;
+}
+/* Swap the padding/margin around for the header and actions icons */
+.theme-light .view-header-icon,
+.theme-light .view-actions {
+  padding: 10px 5px;
+}
+.theme-light .view-action {
+  margin: 8px 0;
+}
+/* Get rid of the gap left by the now-missing horizontal title */
+.theme-light .view-content {
+  height: 100%;
+}
+/* Make the fake drop target overlay have a background so you can see it. */
+/* TODO: figure out how the fake target overlay works so we can put the title back, too */
+.theme-light .workspace-fake-target-overlay {
+  background-color: var(--background-primary);
+}
+/* Preview padding too small*/
+.theme-light .markdown-preview-view,
+.theme-light .mod-single-child .markdown-preview-view {
+  font-family: var(--font-family-editor);
+  font-size: var(--font-size-normal);
+  padding-top: 5px;
+  padding-left: 4% !important;
+  padding-right: 2% !important;
+}
+
+/***************************************/
+/*    at a rule line before ul list    */
+/***************************************/
+ul ul {
+  position: relative;
+}
+ul ul::before {
+  content: "";
+  border-left: 1px solid var(--border-color);
+  position: absolute;
+  left: -1em;
+  top: 0;
+  bottom: 0;
+}
+/***************************************/
+/*       Code block in Editor          */
+/***************************************/
+/* in-line block for editor */
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
+  background-color: var(--pre-code-bg);
+  color: var(--inline-code) !important;
+  bottom: 0px !important;
+}
+/* in-line block for preview */
+code {
+  color: var(--inline-code) !important;
+  bottom: 0px !important;
+}
+.search-result-collapse-indicator {
+  position: absolute;
+  left: 0;
+  top: -3px;
+  color: var(--text-faint);
+  transition: transform 100ms ease-in-out;
+  padding: 0px !important;
+}
+.nav-file-title,
+.nav-folder-title {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  cursor: pointer;
+  color: var(--text-muted);
+/*font-size: 1rem; */
+  font-size: var(--font-size-side-dock);
+  line-height: 20px;
+  padding: 1px 20px 0 26px;
+  position: relative;
+  white-space: nowrap;
+  width: max-content;
+  min-width: 100%;
+}
+.markdown-preview-view .list-collapse-indicator {
+  margin-left: -60px;
+  padding-left: 8px;
+}
+/* rule line when there are checkboxes*/
+ul .task-list-item ul::before {
+  left: 0.15em !important;
+}
+/***************************************/
+/*               Checkbox              */
+/***************************************/
+.markdown-preview-view .task-list-item-checkbox {
+  -webkit-appearance: none;
+  top: 0.2em !important;
+  right: 8px;
+  box-sizing: border-box;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  box-shadow: 0 0 0.1em var(--text-muted);
+}
+.markdown-preview-view .task-list-item-checkbox:checked::before {
+  content: "✓";
+  position: absolute;
+  left: -1px;
+  top: -3px;
+  color: var(--text-accent);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  width: 1.2rem;
+  text-align: center;
+  text-shadow: 0 0 0.1rem var(--text-accent);
+}
+.markdown-preview-view ul > li.task-list-item.is-checked {
+  text-decoration: none;
+}
+.checkbox-container {
+  background-color: var(--background-primary);
+}
+/**************************************/
+/*  note header bar for non-andy mode */
+/*        activated in dark mode      */
+/**************************************/
+/* header */
+.theme-dark .view-header {
+  background-color: var(--background-primary) !important;
+  border-top: 1px solid var(--border-color) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+.theme-dark .view-header-title-container:after {
+  background: linear-gradient(to bottom, transparent, var(--background-primary)) !important;
+}
+.theme-dark .workspace-leaf.mod-active .view-header {
+  background-color: var(--background-primary-alt) !important;
+  border-top: 0px !important;
+  border-bottom: 3px solid var(--interactive-accent) !important;
+}
+.workspace-leaf.mod-active .view-header-title-container:after {
+  background: linear-gradient(to bottom, transparent, var(--background-secondary-alt)) !important;
+}
+.workspace-leaf.mod-active .view-header-title,
+.workspace-leaf.mod-active .view-header-icon {
+  color: var(--background-modifier-border);
+}
+.view-header-title,
+.view-header-icon,
+.view-action {
+  color: var(--text-faint);
+}
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: 500;
+}
+.cm-header-1 {
+  font-size: var(--font-size-h1);
+  color: var(--text-title-h1);
+}
+.cm-header-2 {
+  font-size: var(--font-size-h2);
+  color: var(--text-title-h2);
+}
+.cm-header-3 {
+  font-size: var(--font-size-h3);
+  color: var(--text-title-h3);
+}
+.cm-header-4 {
+  font-size: var(--font-size-h4);
+  color: var(--text-title-h4);
+}
+.cm-header-5 {
+  font-size: var(--font-size-h5);
+  color: var(--text-title-h5);
+}
+.cm-header-6 {
+  font-size: var(--font-size-h6);
+  color: var(--text-title-h6);
+}
+
+/** Headings */
+.markdown-preview-view h1 {
+  font-family: var(--font-family-preview-heading);
+  font-size: var(--font-size-h1);
+  font-weight: 900;
+  color: var(--text-title-h1);
+}
+.markdown-preview-view h2 {
+  /* padding-top: 1.25rem; */
+  margin: 45px 0 20px 0;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  border-width: 35%;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, var(--text-sub-accent), #100e17, #100e17, #100e17);
+  font-family: var(--font-family-preview-heading);
+  font-size: var(--font-size-h2);
+  font-weight: 800;
+  color: var(--text-title-h2);
+}
+.markdown-preview-view h3 {
+  /* padding-top: 1.25rem; */
+  margin: 45px 0 20px 0;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  border-width: 35%;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, var(--text-sub-accent), #100e17, #100e17, #100e17);
+  font-family: var(--font-family-preview-heading);
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+  color: var(--text-title-h3);
+}
+.markdown-preview-view h4 {
+  /* padding-top: 1.25rem; */
+  margin: 45px 0 20px 0;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  border-width: 35%;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, var(--text-sub-accent), #100e17, #100e17, #100e17);
+  font-family: var(--font-family-preview-heading);
+  font-size: var(--font-size-h4);
+  font-weight: 600;
+  color: var(--text-title-h4);
+}
+.markdown-preview-view h5 {
+  font-family: var(--font-family-preview-heading);
+  font-size: var(--font-size-h5);
+  font-weight: 500;
+  color: var(--text-title-h5);
+}
+.markdown-preview-view h6 {
+  font-family: var(--font-family-preview-heading);
+  font-size: var(--font-size-h6);
+  font-weight: 500;
+  color: var(--text-title-h6);
+}
+.markdown-source-view.mod-cm6 .is-unresolved {
+  opacity: 1;
+}
+.markdown-source-view.mod-cm6 .is-unresolved .cm-hmd-internal-link::after {
+  content: "↩️";
+  width: 30px;
+  height: 30px;
+  margin-left: 3px;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+.statediagram-note rect {
+  fill: var(--background-secondary-alt) !important;
+  stroke: #fff !important;
+}

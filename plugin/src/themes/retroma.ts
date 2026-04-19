@@ -1541,36 +1541,6 @@ html[saved-theme="dark"] body hr {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-top-width: 4px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: oklch(0.22 0.0651659 262.49) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.22 0.0651659 262.49);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: oklch(0.22 0.0651659 262.49) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.22 0.0651659 262.49);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: oklch(0.22 0.0651659 262.49) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.22 0.0651659 262.49);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: oklch(0.22 0.0651659 262.49) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.22 0.0651659 262.49);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.22 0.0651659 262.49) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.22 0.0651659 262.49);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: oklch(0.22 0.0651659 262.49) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.22 0.0651659 262.49);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer {
   background-color: oklch(0.24 0.0651659 262.49);
@@ -3215,36 +3185,6 @@ html[saved-theme="light"] body hr {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-top-width: 4px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: oklch(0.93 0.0756873 263.559) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.93 0.0756873 263.559);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: oklch(0.93 0.0756873 263.559) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.93 0.0756873 263.559);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: oklch(0.93 0.0756873 263.559) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.93 0.0756873 263.559);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: oklch(0.93 0.0756873 263.559) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.93 0.0756873 263.559);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.93 0.0756873 263.559) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.93 0.0756873 263.559);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: oklch(0.93 0.0756873 263.559) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: oklch(0.93 0.0756873 263.559);
 }`,
     explorer: `html[saved-theme="light"] body .explorer {
   background-color: oklch(0.98 0.0756873 263.559);

@@ -1272,12 +1272,12 @@ body.theme-dark {
     "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
     Meiryo, sans-serif !important;
   --white: #c6c8d1 !important;
+  --background-tag: #6b7089 !important;
+  --text-tag: #1e2132 !important;
   --black: #1e2132 !important;
   --text-inline-code: #84a0c6 !important;
   --text-strong: #d2d4de !important;
-  --text-tag: #1e2132 !important;
   --background-block-cursor: #c6c8d1 !important;
-  --background-tag: #6b7089 !important;
   --background-tag-hover: #81859c !important;
   --brightBlack: #6b7089 !important;
   --brightWhite: #d2d4de !important;
@@ -2001,10 +2001,11 @@ body
   margin-inline-start: 0px;
   padding-inline-start: 0px;
 }
-body body.theme-dark body.styled-scrollbars {
-  background: rgb(22, 24, 33) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  background-color: rgb(22, 24, 33);
+body body.theme-dark ::-webkit-scrollbar {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -2013,8 +2014,30 @@ body body.theme-dark body.styled-scrollbars {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  border: 0px rgb(198, 200, 209);
+  border: 0px rgb(218, 218, 218);
   box-shadow: none;
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark ::-webkit-scrollbar-track {
+  background-color: rgb(30, 30, 30);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark ::-webkit-scrollbar-corner {
+  background-color: rgb(30, 30, 30);
+}
+body body.theme-dark body {
   scrollbar-width: auto;
   scrollbar-color: auto;
 }

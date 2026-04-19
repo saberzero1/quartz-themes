@@ -2757,40 +2757,6 @@ html[saved-theme="dark"] body hr {
   padding-right: 24px;
 }
 
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: color(srgb 0.007425 0.0199875 0.037575) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.007425 0.0199875 0.037575);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: color(srgb 0.007425 0.0199875 0.037575) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.007425 0.0199875 0.037575);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: color(srgb 0.007425 0.0199875 0.037575) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.007425 0.0199875 0.037575);
-  border-bottom-color: color(srgb 0.6594 0.7599 0.9006);
-  border-left-color: color(srgb 0.6594 0.7599 0.9006);
-  border-right-color: color(srgb 0.6594 0.7599 0.9006);
-  border-top-color: color(srgb 0.6594 0.7599 0.9006);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: color(srgb 0.007425 0.0199875 0.037575) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.007425 0.0199875 0.037575);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: color(srgb 0.007425 0.0199875 0.037575) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.007425 0.0199875 0.037575);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: color(srgb 0.007425 0.0199875 0.037575) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: color(srgb 0.007425 0.0199875 0.037575);
-}
-
 html[saved-theme="dark"] body body {
   scrollbar-color: color(srgb 0.1485 0.39975 0.7515 / 0.25) rgba(0, 0, 0, 0);
 }`,
@@ -5675,13 +5641,6 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
   padding-right: 24px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  border-bottom-color: color(srgb 0.01485 0.039975 0.07515);
-  border-left-color: color(srgb 0.01485 0.039975 0.07515);
-  border-right-color: color(srgb 0.01485 0.039975 0.07515);
-  border-top-color: color(srgb 0.01485 0.039975 0.07515);
 }
 
 html[saved-theme="light"] body body {

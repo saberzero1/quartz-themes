@@ -1,0 +1,8 @@
+{
+    "name": "Doctorfree",
+    "version": "1.0.3",
+    "minAppVersion": "0.16.0",
+    "author": "Dr. Ronald Joe Record",
+    "authorUrl": "https://github.com/doctorfree",
+    "isDesktopOnly": false
+}

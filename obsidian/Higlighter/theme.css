@@ -1,0 +1,793 @@
+:root {
+	--normal-font: 	'Helvetica Neue', 'Roboto', sans-serif;
+	--font-monospace: 'Fira Code', 'Roboto Mono', monospace;
+	--default-font:	var(--normal-font);
+	--editor-font-size: 11pt;
+}
+
+/* Standard colors */
+:root {
+  --highlight-pink: #F9E0FF;
+  --highlight-blue: #DBF1FF;
+  --highlight-yellow: #FFDC5E;
+  --background-color: #FFFFFF;
+  --main-black: #000000;
+  --strong-blue: #19647E;
+  --list-symbol: '- ';
+}
+
+
+.theme-light {
+	--background-code: 				#f7f7f7;
+	--background-code-darker: 				#f0f0f0;
+	--background-code-preview:  	var(--background-code);
+	--background-preview:			var(--background-color);
+	--background-primary: 			var(--background-color);	/* Editor */
+	--background-primary-alt: 		var(--background-color);  /* Selected pane and borders */
+	--background-secondary: 		#fcfcfc;  /* File Pane */
+	--background-secondary-alt: 	#ecebea;  /* App Background */
+	--background-tag: 				var(--highlight-pink);
+	--background-modifier-cover:	rgba(255,255,255,0.8);
+	--interactive-accent: 			#00b1ef;
+	--interactive-accent-rgb: 		0, 193, 255;
+	--interactive-accent-hover: 	#00c1ff;
+	--menu-selection:				#c4c3c2;	/* Menu Selected Item */
+	--menu-selection-text:			#191919;	/* Menu Selected Item Text */
+	--scrollbar-bg:  				#fcfcfc;
+	--table-line:					#f1f1f1;
+	--text-accent:					var(--highlight-blue);
+	--text-accent-hover:			var(--strong-blue);
+	--text-faint:					#9c9c9c;
+	--text-highlight-bg:			rgba(255,228,0,0.5);
+	--text-muted:					#101010;
+	--text-normal:					var(--main-black);
+	--text-on-accent:				#f7f7f7;
+	--text-selection:				#c9e9f4;
+	--text-tag:						var(--text-normal);
+	--background-quick:				#f7f7f7;
+	--file-hr: 						#ecebea;
+	--leaf-handle:					#ecebea;
+	--background-link:              var(--highlight-blue);
+	--background-link-unresolved:   var(--highlight-yellow);
+}
+
+/* Reset fonts and colors */
+
+/* Fix Font sizes */
+html,
+body,
+.search-empty-state,
+.page-title,
+.markdown-reading-view,
+.markdown-preview-view code {
+	font-size: var(--editor-font-size);
+	-webkit-font-smoothing: antialiased;
+	/* line-height: 26px; */
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock {
+	font-size: 10pt;
+}
+
+/* Headings */
+/* Markdown Headings */
+.cm-header-1, .markdown-preview-view h1 {
+	font-size: 1.2em;
+}
+
+.cm-header-2, .markdown-preview-view h2 {
+	font-size: 1.1em;
+}
+
+.cm-header-3, .markdown-preview-view h3,
+.cm-header-4, .markdown-preview-view h4,
+.cm-header-5, .markdown-preview-view h5,
+.cm-header-6, .markdown-preview-view h6 {
+	font-size: inherit;
+}
+
+/* Fix all font-family settings to use the the font variables */
+button
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+.splash-brand-name,
+.dropdown,
+.setting-hotkey,
+.suggestion-hotkey,
+.markdown-source-view,
+.markdown-preview-view,
+.cm-s-view {
+	font-family: var(--default-font);
+}
+
+.cm-s-obsidian .hmd-fold-html-stub,
+.cm-s-obsidian .hmd-fold-code-stub,
+.cm-s-obsidian.CodeMirror .HyperMD-hover > .HyperMD-hover-content code,
+.cm-s-obsidian .cm-formatting-hashtag,
+.cm-s-obsidian .cm-formatting-highlight,
+.cm-s-obsidian .HyperMD-hr,
+.cm-s-obsidian .cm-hmd-frontmatter,
+.cm-s-obsidian .cm-hmd-orgmode-markup,
+.cm-s-obsidian .cm-formatting-header,
+.cm-s-obsidian .cm-formatting-link,
+.cm-s-obsidian .cm-math,
+.cm-s-obsidian span.hmd-fold-math-placeholder,
+.cm-s-obsidian .CodeMirror-linewidget kbd,
+.cm-s-obsidian .hmd-fold-html kbd,
+.CodeMirror span.hmd-hidden-token.cm-formatting-em,
+.CodeMirror span.hmd-hidden-token.cm-formatting-strong,
+.CodeMirror span.hmd-hidden-token.cm-formatting-strikethrough,
+.CodeMirror span.hmd-hidden-token.cm-formatting-link,
+.editor,
+.hidden-token,
+.cm-s-obsidian span.cm-formatting-task,
+.cm-s-obsidian span.cm-formatting-list,
+.cm-s-obsidian span.cm-formatting-quote {
+	font-family: var(--font-normal);
+}
+
+.cm-s-obsidian .cm-inline-code,
+.cm-s-obsidian .HyperMD-codeblock,
+.cm-s-obsidian .cm-formatting-code,
+.CodeMirror span.hmd-hidden-token.cm-formatting-code {
+	font-family: var(--font-monospace);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+	font-size: 13px;
+}
+
+/* fix math tags getting truncated in live preview */
+.ͼ1 .cm-scroller {
+	line-height: inherit;
+}
+
+/* MARKDOWN EDITOR SETTINGS */
+
+/* Code Block Markdown */
+.cm-s-obsidian pre.HyperMD-codeblock {
+	color: var(--text-normal);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+	background-color: var(--background-code);
+}
+
+.cm-s-obsidian span.cm-inline-code {
+	background-color: var(--background-code);
+}
+
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
+    background-color: var(--background-code);
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock.HyperMD-codeblock-begin {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock.HyperMD-codeblock-end {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+/* Blockquotes */
+.cm-s-obsidian pre.HyperMD-quote {
+	border-left: 2pt solid var(--text-normal);
+}
+
+.cm-s-obsidian pre.HyperMD-quote span.cm-quote {
+	color: var(--text-normal);
+
+}
+
+/* Math */
+.cm-s-obsidian span.cm-math,
+.cm-s-obsidian span.hmd-fold-math-placeholder {
+	font-style: normal;
+}
+
+.CodeMirror .cm-inline-code,
+.CodeMirror .cm-math {
+	color: var(--text-normal);
+}
+
+/* Reset colors */
+.cm-s-obsidian span.cm-tag,
+.cm-s-obsidian span.cm-hmd-escape-char,
+.cm-s-obsidian span.cm-hmd-escape-backslash,
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-math,
+.cm-s-obsidian span.hmd-fold-math-placeholder   {
+	color: inherit;
+}
+
+
+/* Links are blue */
+
+.cm-s-obsidian span.cm-url,
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian pre.HyperMD-footnote span.cm-hmd-footnote,
+.cm-s-obsidian span.cm-hmd-internal-link,
+.cm-s-obsidian span.cm-formatting-link,
+.markdown-preview-view .internal-link,
+.markdown-preview-view .external-link {
+	background-color: var(--background-link);
+	color: var(--text-normal);
+	text-decoration: none;
+}
+/* don't underline links */
+.cm-hmd-internal-link .cm-underline, .markdown-preview-view .internal-link, .markdown-source-view.mod-cm6 .cm-underline {
+	text-decoration: none;
+}
+
+.markdown-preview-view .internal-link.is-unresolved {
+	background-color: var(--background-link-unresolved);
+	color: var(--text-normal);
+}
+
+/* Format tags */
+.cm-s-obsidian span.cm-hashtag {
+	background-color: var(--background-tag);
+	border-bottom: 1px solid var(--background-secondary-alt);
+	border-top: 1px solid var(--background-secondary-alt);
+	color: var(--text-tag);
+	font-size: inherit;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	text-decoration: none;
+}
+
+.cm-s-obsidian span.cm-hashtag-begin {
+	border-bottom-left-radius: 20px;
+	border-left: 1px solid var(--background-secondary-alt);
+	border-top-left-radius: 20px;
+	padding-left: 5px;
+}
+
+.cm-s-obsidian span.cm-hashtag-end {
+	border-bottom-right-radius: 20px;
+	border-right: 1px solid var(--background-secondary-alt);
+	border-top-right-radius: 20px;
+	padding-right: 5px;
+}
+
+.cm-s-obsidian pre.HyperMD-footnote {
+	font-size: inherit;
+	padding-left: 0px;
+}
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight,
+.markdown-preview-view mark {
+	padding: 2px 1px 2px 1px;
+}
+
+
+/* MARKDOWN PREVIEW SETTINGS */
+
+/* Tags */
+.tag {
+	background-color: var(--background-tag);
+	border: 1px solid var(--background-secondary-alt);
+	color: var(--text-tag);
+	font-size: 1em;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	text-decoration: none;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.markdown-preview-view a.tag {
+	color: var(--text-tag);
+}
+
+/* Markdown Preview */
+.markdown-preview-view {
+	background-color: var(--background-preview);
+}
+
+/* Links and footnotes */
+.markdown-preview-view a {
+	color: inherit;
+}
+
+.markdown-preview-view a.footnote-link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.markdown-preview-view section.footnotes {
+	font-size: 0.8rem;
+}
+
+/* Remove external link icon */
+.markdown-preview-view .external-link {
+	background-image: none;
+	padding-right: 0;
+}
+
+/* Code blocks and inline code */
+.markdown-preview-view pre {
+	background-color: var(--background-code-preview);
+}
+
+.markdown-preview-view code {
+	background-color: var(--background-code-preview);
+	color: inherit;
+	font-size: 1em;
+}
+
+/* Markdown Preview Tables */
+.markdown-preview-view table {
+	width: 100%;
+}
+
+.markdown-preview-view td,
+.markdown-preview-view th {
+	background-color: var(--background-preview);
+	border: none;
+	font-size: 1em;
+	padding: 4px 10px;
+}
+.markdown-preview-view th {
+	border-bottom: 1px solid var(--table-line);
+	border-top: 1px solid var(--table-line);
+	font-weight: 800;
+	text-align: left;
+}
+.markdown-preview-view tr:nth-child(odd) {
+	background-color: var(--background-preview);
+}
+.markdown-preview-view tr:last-child {
+	background-color: var(--background-preview);
+	border-bottom: 1px solid var(--table-line);
+}
+
+.markdown-preview-view blockquote {
+	border: 0;
+	border-left: 2pt solid var(--text-normal);
+	border-radius: 0;
+	/* margin-bottom: 10pt !important; */
+	margin-top: 10pt
+}
+
+.markdown-preview-view blockquote:first-child {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.markdown-preview-view blockquote p:first-child {
+	margin-bottom: 0;
+}
+
+.markdown-preview-view blockquote:last-child {
+       margin-bottom: 25px;
+}
+
+.markdown-preview-view ul {
+	list-style-type: var(--list-symbol);
+	/* margin-block-end: 0em;
+	margin-block-start: 0em; */
+}
+
+/* Prevent live preview forcing bullet for lists. Keep using the dash */
+.markdown-source-view.mod-cm6 .list-bullet:after {
+	content: var(--list-symbol);
+}
+
+.markdown-preview-section > ul:first-child,
+.markdown-preview-section > ol:first-child {
+	margin-bottom: 30px;
+}
+
+.markdown-preview-view ul li {
+	margin-bottom: 0.2rem;
+	margin-top: 0.2rem;
+}
+
+.markdown-preview-view ul {
+	padding-inline-start: 15px;
+}
+
+
+.markdown-preview-view h6 {
+	line-height: 16px;
+}
+
+.markdown-preview-view h4 {
+	font-style: italic;
+}
+
+.markdown-preview-view h5 {
+	font-style: italic;
+	font-weight: 300;
+}
+
+.markdown-preview-view h6 {
+	color: inherit;
+}
+
+/* New Task Icons */
+.markdown-preview-view input[type=checkbox] {
+	-webkit-appearance: none;
+	appearance: none;
+	border: 1px solid var(--text-normal);
+	border-radius: 3px;
+	left: -2px;
+	margin-left: -13px;
+	top: 5px;
+}
+
+.markdown-preview-view input[type=checkbox]:focus{
+	outline:0;
+}
+
+.theme-dark .markdown-preview-view input[type=checkbox]:checked {
+	background-image: url('data:image/svg+xml; utf8, <svg width="100%" height="100%" viewBox="0 0 21 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="matrix(1,0,0,1,-333.852,-754.822)"><path d="M335.935,764.767L342.24,770.888L352.371,756.905" fill="none" stroke="%23cbcccc" stroke-width="4.17px"/></g></svg>');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 70%;
+}
+.theme-light .markdown-preview-view input[type=checkbox]:checked {
+	background-image: url('data:image/svg+xml; utf8, <svg width="100%" height="100%" viewBox="0 0 21 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="matrix(1,0,0,1,-333.852,-754.822)"><path d="M335.935,764.767L342.24,770.888L352.371,756.905" fill="none" stroke="%23191919" stroke-width="4.17px"/></g></svg>');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 70%;
+}
+.markdown-preview-view .task-list-item { text-indent: -0.5em; margin-left:0;}
+.markdown-preview-view .task-list-item-checkbox { margin-left:-25px; }
+.markdown-preview-view .task-list-item { padding-inline-start:0px; }
+
+.markdown-preview-view hr {
+	background-color: var(--text-normal);
+	border: none;
+	height: 1px;
+}
+
+.markdown-preview-view p {
+	margin-block-start: 0;
+	margin-block-end: 30px;
+}
+
+.markdown-preview-view .footnotes p {
+	margin-block-start: 0;
+	margin-block-end: 0px;
+}
+
+.markdown-embed-title {
+	font-size: 1em;
+}
+
+.file-embed-title {
+	font-size: 1em;
+}
+
+/* USER INTERFACE SETTINGS */
+
+.backlink-pane,
+.pane-empty,
+.search-empty-state {
+	font-size: 13px;
+}
+
+.workspace-split.mod-left-split .workspace-leaf-content,
+.workspace-split.mod-right-split .workspace-leaf-content {
+	font-size: 13px;
+}
+
+.pane-clickable-item {
+	font-size: 13px;
+}
+
+.suggestion-item.is-selected {
+	background-color: var(--menu-selection);
+	color: var(--menu-selection-text);
+	border-radius: 5px;
+}
+
+.side-dock-collapsible-section-header {
+	font-weight: bold;
+}
+
+.workspace-leaf-content[data-type='search'] .nav-action-button.is-active,
+.workspace-leaf-content[data-type='backlink'] .nav-action-button.is-active {
+	color: var(--text-normal);
+	background-color: inherit;
+}
+
+.search-result-file-title:hover,
+.search-result-file-match:hover,
+.side-dock-collapsible-section-header:hover {
+	background-color: var(--menu-selection);
+	color: var(--menu-selection-text);
+}
+
+.nav-action-button:hover, .nav-action-button.is-active,
+.view-action:hover, .view-action.is-active {
+	color: var(--text-normal);
+}
+
+.view-actions {
+	padding: 2px 0;
+}
+
+.view-action {
+	margin: 0 4px;
+}
+
+.view-header-icon {
+	top: 0;
+}
+.list-item:hover .list-item-ending-flair {
+	background-color: var(--background-secondary-alt);
+	color: var(--text-normal);
+}
+
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.workspace-tab-header:hover {
+	color: var(--text-normal);
+}
+
+.dropdown {
+	background-image: url('data:image/svg+xml;charset=utf-8, <svg width="100%" height="100%" viewBox="0 0 184 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-877.45,-1362.33)"><g transform="matrix(-1,-1.22465e-16,1.22465e-16,-1,1938.66,2773.3)"><path d="M969.328,1362.33L1061.21,1410.97L877.45,1410.97L969.328,1362.33Z" style="fill:rgb(0,177,239);"/></g></g></svg>');
+	background-size: 1em auto, 100%;
+	border: 1px solid var(--background-modifier-border);
+}
+
+.nav-folder.mod-root > .nav-file-title,
+.nav-folder.mod-root > .nav-folder-title,
+.nav-file-title,
+.nav-folder-title {
+	color: var(--text-normal);
+	font-size: 13px;
+}
+
+.view-header-title {
+	font-size: 13px;
+	color: var(--text-faint);
+	line-height: 30px;
+}
+
+/* Fix Nav and View Action Buttons Color */
+.nav-action-button,
+.view-action,
+.view-header-icon
+ {
+	color: var(--text-faint);
+}
+
+/* Remove Header Gradient */
+.workspace-leaf.mod-active .view-header-title-container:after,
+.view-header-title-container:after {
+	background: none;
+}
+
+/* Fix Nav Bar Selected Color */
+.nav-file.is-active > .nav-file-title,
+.nav-file.is-active > .nav-folder-title,
+.nav-file.is-active > .nav-folder-collapse-indicator,
+.nav-folder.is-active > .nav-file-title,
+.nav-folder.is-active > .nav-folder-title,
+.nav-folder.is-active > .nav-folder-collapse-indicator {
+	background-color: inherit;
+	color: inherit;
+
+}
+
+.nav-folder-title,
+.nav-file-title {
+	border-top: 1px solid var(--file-hr);
+}
+
+.nav-file-title-content,
+.nav-folder-title-content {
+	padding-left: 8px;
+}
+
+.nav-file.is-active .nav-file-title-content,
+.nav-file.is-active .nav-folder-title-content {
+	border-left: 4px solid var(--text-accent);
+	padding-left: 4px;
+}
+
+.is-being-renamed {
+	color: var(--menu-selection-text);
+}
+
+/* Fix Menu Hover Color */
+.menu-item:hover,
+.menu-item:hover .menu-item-icon,
+.pane-clickable-item:hover {
+	background-color: var(--menu-selection);
+	color: var(--menu-selection-text);
+}
+
+.menu-item:hover .menu-item-icon {
+	height: 20px;
+	width: 28px;
+	top: -5px;
+	vertical-align: middle;
+}
+
+/* Fix round borders */
+.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
+.workspace-tab-header.is-after-active .workspace-tab-header-inner {
+	border-bottom-left-radius: 0px;
+}
+
+.workspace-tab-container-before.is-before-active .workspace-tab-header-inner,
+.workspace-tab-header.is-before-active .workspace-tab-header-inner {
+	border-bottom-right-radius: 0px;
+}
+
+.workspace-split.mod-left-split .workspace-tabs .workspace-leaf {
+	border-top-left-radius: 0px;
+}
+
+.workspace-split.mod-right-split .workspace-tabs .workspace-leaf {
+	border-top-right-radius: 0px;
+}
+
+.workspace-tab-header.is-active {
+	border-radius: 0px;
+}
+
+.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content {
+	border-radius: 0px;
+}
+
+.workspace-tabs {
+	padding: 0 4px 30px 0;
+}
+
+.workspace-split.mod-root > .workspace-leaf:first-of-type .workspace-leaf-content {
+	border-radius: 0px;
+}
+
+/* Remove highlight line for active window and fix header background */
+.workspace-leaf .view-header,
+.workspace-leaf.mod-active .view-header {
+	background-color: var(--background-preview);
+	border-bottom: none;
+	height: 30px;
+}
+
+/* Fix nav folder colors */
+.nav-folder.mod-root > .nav-file-title,
+.nav-folder.mod-root > .nav-folder-title,
+.nav-file-title,
+.nav-folder-title {
+	color: var(--text-normal);
+}
+
+.nav-folder.mod-root > .nav-file-title:hover,
+.nav-folder.mod-root > .nav-folder-title:hover {
+	color: var(--text-faint);
+}
+
+/* Fix workspace leaf handle */
+.workspace-leaf-resize-handle {
+	background-color: var(--leaf-handle);
+}
+/*
+.workspace-leaf-resize-handle:hover {
+	background-color: var(--background-secondary-alt)
+}
+*/
+
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+	width: 4px;
+}
+
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+	height: 3px;
+}
+
+.workspace-split.mod-vertical > .workspace-split {
+	padding-right: 4px;
+}
+
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content {
+	padding-right: 4px;
+}
+
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content:last-child {
+	padding-right: 0;
+}
+.workspace-split.mod-vertical > .workspace-leaf {
+	padding-right: 4px;
+}
+
+.workspace-tab-header-container {
+	padding-top: 0px;
+}
+
+.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header {
+	border-bottom: none;
+}
+
+.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type.mod-active .view-header-title-container:after {
+	background: none;
+}
+
+.popover.hover-popover {
+	max-height: 600px;
+	min-height: 100px;
+	width: 400px;
+}
+
+.popover.hover-popover .markdown-embed {
+	padding: 5px 20px 15px 20px;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.popover.hover-popover .markdown-embed h1 {
+	font-size: 16px;
+}
+
+.top-titlebar-button {
+	color: var(--text-faint);
+	opacity: 1;
+}
+
+.top-titlebar-button:hover{
+	color: var(--text-normal);
+}
+
+.view-content {
+	  height: calc(100% - 30px);
+}
+
+.nav-file-title-content,
+.nav-folder-title-content {
+	border-radius: 0;
+	border: none;
+}
+
+.status-bar {
+	font-size: 13px;
+}
+
+.top-titlebar-text {
+	color: var(--text-normal);
+}
+
+.titlebar-inner {
+	color: var(--text-normal);
+}
+
+.theme-dark :not(pre) > code[class*="language-"], .theme-dark pre[class*="language-"],
+.theme-light :not(pre) > code[class*="language-"], .theme-light pre[class*="language-"] {
+	background-color: var(--background-code-preview)
+}
+
+.theme-light .prompt {
+  background-color: var(--background-quick);
+  box-shadow: 0px 0px 25px var(--text-faint);
+}
+.workspace-tab-header,
+.workspace-tab-header-inner,
+.workspace-tab-container-before,
+.workspace-tab-container-after {
+	border-top: 1px solid var(--background-secondary-alt);
+}
+.theme-dark .prompt {
+  background-color: var(--background-quick);
+  box-shadow: 0px 0px 25px var(--background-secondary-alt);
+}
+
+.markdown-preview-view ul > li.task-list-item {
+	margin-left: 0;
+}

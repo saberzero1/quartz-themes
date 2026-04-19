@@ -940,36 +940,6 @@ html[saved-theme="dark"] body hr {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar {
-  background: rgb(54, 57, 63) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-corner {
-  background: rgb(54, 57, 63) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb {
-  background: rgb(54, 57, 63) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(54, 57, 63) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(54, 57, 63) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(54, 57, 63);
-}
-
-html[saved-theme="dark"] body ::-webkit-scrollbar-track {
-  background: rgb(54, 57, 63) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(54, 57, 63);
 }`,
     explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   font-family: "??", "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -2047,36 +2017,6 @@ html[saved-theme="light"] body hr {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar {
-  background: rgb(231, 234, 238) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-corner {
-  background: rgb(231, 234, 238) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb {
-  background: rgb(231, 234, 238) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:active {
-  background: rgb(231, 234, 238) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-thumb:hover {
-  background: rgb(231, 234, 238) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(231, 234, 238);
-}
-
-html[saved-theme="light"] body ::-webkit-scrollbar-track {
-  background: rgb(231, 234, 238) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(231, 234, 238);
 }`,
     explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
   color: rgb(26, 26, 26);

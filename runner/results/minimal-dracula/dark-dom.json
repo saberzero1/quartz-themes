@@ -190,7 +190,7 @@
                 "styles": {
                   "color": "rgb(248, 248, 242)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(248, 248, 242) rgb(248, 248, 242) rgb(248, 248, 242) rgba(255, 255, 255, 0.12)",
+                  "borderColor": "rgb(248, 248, 242) rgb(248, 248, 242) rgb(248, 248, 242) rgba(127, 140, 187, 0.12)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -287,7 +287,7 @@
                         "styles": {
                           "color": "rgb(248, 248, 242)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(248, 248, 242) rgb(248, 248, 242) rgb(248, 248, 242) rgba(255, 255, 255, 0.12)",
+                          "borderColor": "rgb(248, 248, 242) rgb(248, 248, 242) rgb(248, 248, 242) rgba(127, 140, 187, 0.12)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -402,7 +402,7 @@
                         "styles": {
                           "color": "rgb(248, 248, 242)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(248, 248, 242) rgb(248, 248, 242) rgb(248, 248, 242) rgba(255, 255, 255, 0.12)",
+                          "borderColor": "rgb(248, 248, 242) rgb(248, 248, 242) rgb(248, 248, 242) rgba(127, 140, 187, 0.12)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -607,7 +607,7 @@
                 "styles": {
                   "color": "rgb(248, 248, 242)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(248, 248, 242) rgb(248, 248, 242) rgb(248, 248, 242) rgba(255, 255, 255, 0.12)",
+                  "borderColor": "rgb(248, 248, 242) rgb(248, 248, 242) rgb(248, 248, 242) rgba(127, 140, 187, 0.12)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -904,7 +904,7 @@
                 "styles": {
                   "color": "rgb(248, 248, 242)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(248, 248, 242) rgb(248, 248, 242) rgb(248, 248, 242) rgba(255, 255, 255, 0.12)",
+                  "borderColor": "rgb(248, 248, 242) rgb(248, 248, 242) rgb(248, 248, 242) rgba(127, 140, 187, 0.12)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
