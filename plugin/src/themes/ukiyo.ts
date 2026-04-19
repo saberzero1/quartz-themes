@@ -181,7 +181,7 @@ export const theme: ThemeData = {
   --pill-color-hover: #ccc2b7 !important;
   --pill-color-remove: #868074 !important;
   --pill-color-remove-hover: #ba945f !important;
-  --pop-callout-slide-out-duration: 700ms !important;
+  --pop-callout-slide-out-duration: 0ms !important;
   --pop-callout-width: 20px !important;
   --prompt-background: #372d29 !important;
   --prompt-border-color: #504431 !important;
@@ -1673,7 +1673,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --pill-color-hover: #5f4f49 !important;
   --pill-color-remove: #7a6d68 !important;
   --pill-color-remove-hover: #800000 !important;
-  --pop-callout-slide-out-duration: 700ms !important;
+  --pop-callout-slide-out-duration: 0ms !important;
   --pop-callout-width: 20px !important;
   --prompt-background: #e1c4a6 !important;
   --prompt-border-color: #b4916a !important;
