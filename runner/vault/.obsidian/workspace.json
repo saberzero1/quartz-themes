@@ -156,20 +156,6 @@
               "icon": "lucide-list",
               "title": "Outline of syntax-samples"
             }
-          },
-          {
-            "id": "864a95c7ff018926",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
           }
         ],
         "currentTab": 3
@@ -228,12 +214,12 @@
     "callouts.md",
     "headings.md",
     "general.md",
+    "theme-callouts/ukiyo.md",
     "theme-callouts/willemstad.md",
     "theme-callouts/vortex.md",
     "theme-callouts/viridian.md",
     "theme-callouts/velocity.md",
     "theme-callouts/vauxhall.md",
-    "theme-callouts/universitario.md",
     "theme-properties",
     "theme-code",
     "theme-canvas",

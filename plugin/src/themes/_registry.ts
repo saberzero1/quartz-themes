@@ -495,7 +495,42 @@ import { theme as typomagical } from "./typomagical.js";
 import { theme as typora_vue } from "./typora-vue.js";
 import { theme as tyrone_neon } from "./tyrone-neon.js";
 import { theme as ukiyo } from "./ukiyo.js";
+import { theme as ukiyo_alchemy } from "./ukiyo-alchemy.js";
+import { theme as ukiyo_golden_book } from "./ukiyo-golden-book.js";
+import { theme as ukiyo_golden_coffee } from "./ukiyo-golden-coffee.js";
+import { theme as ukiyo_rose_shadow } from "./ukiyo-rose-shadow.js";
+import { theme as ukiyo_ukiyo } from "./ukiyo-ukiyo.js";
 import { theme as ultra_lobster } from "./ultra-lobster.js";
+import { theme as ultra_lobster_abaddon } from "./ultra-lobster-abaddon.js";
+import { theme as ultra_lobster_abaddon_glass } from "./ultra-lobster-abaddon-glass.js";
+import { theme as ultra_lobster_architect } from "./ultra-lobster-architect.js";
+import { theme as ultra_lobster_blahaj } from "./ultra-lobster-blahaj.js";
+import { theme as ultra_lobster_blueprint } from "./ultra-lobster-blueprint.js";
+import { theme as ultra_lobster_bunny } from "./ultra-lobster-bunny.js";
+import { theme as ultra_lobster_chameleon } from "./ultra-lobster-chameleon.js";
+import { theme as ultra_lobster_control } from "./ultra-lobster-control.js";
+import { theme as ultra_lobster_creation } from "./ultra-lobster-creation.js";
+import { theme as ultra_lobster_cyan } from "./ultra-lobster-cyan.js";
+import { theme as ultra_lobster_demon_queen } from "./ultra-lobster-demon-queen.js";
+import { theme as ultra_lobster_dracula } from "./ultra-lobster-dracula.js";
+import { theme as ultra_lobster_eidolon } from "./ultra-lobster-eidolon.js";
+import { theme as ultra_lobster_green } from "./ultra-lobster-green.js";
+import { theme as ultra_lobster_gruvbox } from "./ultra-lobster-gruvbox.js";
+import { theme as ultra_lobster_linking_your_thinking } from "./ultra-lobster-linking-your-thinking.js";
+import { theme as ultra_lobster_lobster_time } from "./ultra-lobster-lobster-time.js";
+import { theme as ultra_lobster_orange } from "./ultra-lobster-orange.js";
+import { theme as ultra_lobster_pink } from "./ultra-lobster-pink.js";
+import { theme as ultra_lobster_purple } from "./ultra-lobster-purple.js";
+import { theme as ultra_lobster_red } from "./ultra-lobster-red.js";
+import { theme as ultra_lobster_shadow } from "./ultra-lobster-shadow.js";
+import { theme as ultra_lobster_soft } from "./ultra-lobster-soft.js";
+import { theme as ultra_lobster_solarized } from "./ultra-lobster-solarized.js";
+import { theme as ultra_lobster_sorcery } from "./ultra-lobster-sorcery.js";
+import { theme as ultra_lobster_succubus } from "./ultra-lobster-succubus.js";
+import { theme as ultra_lobster_timberwolf } from "./ultra-lobster-timberwolf.js";
+import { theme as ultra_lobster_umbra } from "./ultra-lobster-umbra.js";
+import { theme as ultra_lobster_white } from "./ultra-lobster-white.js";
+import { theme as ultra_lobster_yellow } from "./ultra-lobster-yellow.js";
 import { theme as underwater } from "./underwater.js";
 import { theme as universitario } from "./universitario.js";
 import { theme as ursa } from "./ursa.js";
@@ -1063,7 +1098,42 @@ export const themeData: Record<string, ThemeData> = {
   "typora-vue": typora_vue,
   "tyrone-neon": tyrone_neon,
   ukiyo: ukiyo,
+  "ukiyo.alchemy": ukiyo_alchemy,
+  "ukiyo.golden-book": ukiyo_golden_book,
+  "ukiyo.golden-coffee": ukiyo_golden_coffee,
+  "ukiyo.rose-shadow": ukiyo_rose_shadow,
+  "ukiyo.ukiyo": ukiyo_ukiyo,
   "ultra-lobster": ultra_lobster,
+  "ultra-lobster.abaddon": ultra_lobster_abaddon,
+  "ultra-lobster.abaddon-glass": ultra_lobster_abaddon_glass,
+  "ultra-lobster.architect": ultra_lobster_architect,
+  "ultra-lobster.blahaj": ultra_lobster_blahaj,
+  "ultra-lobster.blueprint": ultra_lobster_blueprint,
+  "ultra-lobster.bunny": ultra_lobster_bunny,
+  "ultra-lobster.chameleon": ultra_lobster_chameleon,
+  "ultra-lobster.control": ultra_lobster_control,
+  "ultra-lobster.creation": ultra_lobster_creation,
+  "ultra-lobster.cyan": ultra_lobster_cyan,
+  "ultra-lobster.demon-queen": ultra_lobster_demon_queen,
+  "ultra-lobster.dracula": ultra_lobster_dracula,
+  "ultra-lobster.eidolon": ultra_lobster_eidolon,
+  "ultra-lobster.green": ultra_lobster_green,
+  "ultra-lobster.gruvbox": ultra_lobster_gruvbox,
+  "ultra-lobster.linking-your-thinking": ultra_lobster_linking_your_thinking,
+  "ultra-lobster.lobster-time": ultra_lobster_lobster_time,
+  "ultra-lobster.orange": ultra_lobster_orange,
+  "ultra-lobster.pink": ultra_lobster_pink,
+  "ultra-lobster.purple": ultra_lobster_purple,
+  "ultra-lobster.red": ultra_lobster_red,
+  "ultra-lobster.shadow": ultra_lobster_shadow,
+  "ultra-lobster.soft": ultra_lobster_soft,
+  "ultra-lobster.solarized": ultra_lobster_solarized,
+  "ultra-lobster.sorcery": ultra_lobster_sorcery,
+  "ultra-lobster.succubus": ultra_lobster_succubus,
+  "ultra-lobster.timberwolf": ultra_lobster_timberwolf,
+  "ultra-lobster.umbra": ultra_lobster_umbra,
+  "ultra-lobster.white": ultra_lobster_white,
+  "ultra-lobster.yellow": ultra_lobster_yellow,
   underwater: underwater,
   universitario: universitario,
   ursa: ursa,
@@ -3778,8 +3848,218 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["cmu-typewriter-text", "jetbrains-mono"],
   },
+  "ukiyo.alchemy": {
+    name: "ukiyo.alchemy",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["cmu-typewriter-text", "jetbrains-mono"],
+  },
+  "ukiyo.golden-book": {
+    name: "ukiyo.golden-book",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["cmu-typewriter-text", "jetbrains-mono"],
+  },
+  "ukiyo.golden-coffee": {
+    name: "ukiyo.golden-coffee",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["cmu-typewriter-text", "jetbrains-mono"],
+  },
+  "ukiyo.rose-shadow": {
+    name: "ukiyo.rose-shadow",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["cmu-typewriter-text", "jetbrains-mono"],
+  },
+  "ukiyo.ukiyo": {
+    name: "ukiyo.ukiyo",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["cmu-typewriter-text", "jetbrains-mono"],
+  },
   "ultra-lobster": {
     name: "ultra-lobster",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.abaddon": {
+    name: "ultra-lobster.abaddon",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.abaddon-glass": {
+    name: "ultra-lobster.abaddon-glass",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.architect": {
+    name: "ultra-lobster.architect",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.blahaj": {
+    name: "ultra-lobster.blahaj",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.blueprint": {
+    name: "ultra-lobster.blueprint",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.bunny": {
+    name: "ultra-lobster.bunny",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.chameleon": {
+    name: "ultra-lobster.chameleon",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.control": {
+    name: "ultra-lobster.control",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.creation": {
+    name: "ultra-lobster.creation",
+    modes: ["light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.cyan": {
+    name: "ultra-lobster.cyan",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.demon-queen": {
+    name: "ultra-lobster.demon-queen",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.dracula": {
+    name: "ultra-lobster.dracula",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.eidolon": {
+    name: "ultra-lobster.eidolon",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.green": {
+    name: "ultra-lobster.green",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.gruvbox": {
+    name: "ultra-lobster.gruvbox",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.linking-your-thinking": {
+    name: "ultra-lobster.linking-your-thinking",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.lobster-time": {
+    name: "ultra-lobster.lobster-time",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.orange": {
+    name: "ultra-lobster.orange",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.pink": {
+    name: "ultra-lobster.pink",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.purple": {
+    name: "ultra-lobster.purple",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.red": {
+    name: "ultra-lobster.red",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.shadow": {
+    name: "ultra-lobster.shadow",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.soft": {
+    name: "ultra-lobster.soft",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.solarized": {
+    name: "ultra-lobster.solarized",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.sorcery": {
+    name: "ultra-lobster.sorcery",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.succubus": {
+    name: "ultra-lobster.succubus",
+    modes: ["dark"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.timberwolf": {
+    name: "ultra-lobster.timberwolf",
+    modes: ["light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.umbra": {
+    name: "ultra-lobster.umbra",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.white": {
+    name: "ultra-lobster.white",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["nightingale", "monaspace-neon"],
+  },
+  "ultra-lobster.yellow": {
+    name: "ultra-lobster.yellow",
     modes: ["dark", "light"],
     variations: [],
     fonts: ["nightingale", "monaspace-neon"],
