@@ -6,6 +6,32 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["archivo", "linux-libertine"],
+    fontFiles: [
+      {
+        family: "Linux Libertine",
+        style: "normal",
+        weight: "normal",
+        file: "linux-libertine.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+      {
+        family: "Linux Libertine",
+        style: "normal",
+        weight: "bold",
+        file: "linux-libertine-1.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+      {
+        family: "Linux Libertine",
+        style: "italic",
+        weight: "normal",
+        file: "linux-libertine-2.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

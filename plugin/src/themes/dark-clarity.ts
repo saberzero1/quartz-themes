@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["noto-sans", "jetbrains-mono"],
+    fontFiles: [
+      {
+        family: "Zhudou Sans Normal SS02",
+        style: "normal",
+        weight: "400",
+        file: "zhudou-sans-normal-ss02.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

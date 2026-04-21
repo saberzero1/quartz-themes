@@ -1,7 +1,30 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "slytherin", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "slytherin",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+    fontFiles: [
+      {
+        family: "JetBrains Mono",
+        style: "normal",
+        weight: "normal",
+        file: "jetbrains-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "ico",
+        style: "normal",
+        weight: "normal",
+        file: "ico.ttf",
+        format: "ttf",
+        unicodeRange: null,
+      },
+    ],
+  },
   dark: {
     base: `:root:root {
   --accent-d: 60% !important;

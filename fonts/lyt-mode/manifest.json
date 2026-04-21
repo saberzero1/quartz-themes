@@ -1,0 +1,86 @@
+{
+  "extractedAt": "2026-04-21T17:55:22.636Z",
+  "sourceTheme": "LYT Mode",
+  "fonts": [
+    {
+      "family": "DM Sans",
+      "style": "normal",
+      "weight": "normal",
+      "file": "dm-sans.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "DM Sans",
+      "style": "normal",
+      "weight": "bold",
+      "file": "dm-sans-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "DM Sans",
+      "style": "italic",
+      "weight": "normal",
+      "file": "dm-sans-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "DM Sans",
+      "style": "italic",
+      "weight": "bold",
+      "file": "dm-sans-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "DM Mono",
+      "style": "normal",
+      "weight": "400",
+      "file": "dm-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "DM Mono",
+      "style": "normal",
+      "weight": "900",
+      "file": "dm-mono-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "DM Mono",
+      "style": "italic",
+      "weight": "500",
+      "file": "dm-mono-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "DM Mono",
+      "style": "italic",
+      "weight": "900",
+      "file": "dm-mono-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

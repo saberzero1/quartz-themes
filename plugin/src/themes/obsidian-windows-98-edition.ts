@@ -6,6 +6,32 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: [],
+    fontFiles: [
+      {
+        family: "Pixelated MS Sans Serif",
+        style: "normal",
+        weight: "normal",
+        file: "pixelated-ms-sans-serif.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Pixelated MS Sans Serif",
+        style: "normal",
+        weight: "700",
+        file: "pixelated-ms-sans-serif-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Fixedsys",
+        style: "normal",
+        weight: "normal",
+        file: "fixedsys.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {

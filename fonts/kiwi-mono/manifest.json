@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:22.621Z",
+  "sourceTheme": "Kiwi Mono",
+  "fonts": [
+    {
+      "family": "Cascadia Mono",
+      "style": "normal",
+      "weight": "400",
+      "file": "cascadia-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Cascadia Mono",
+      "style": "italic",
+      "weight": "400",
+      "file": "cascadia-mono-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

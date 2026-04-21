@@ -6,6 +6,25 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["maple-mono"],
+    fontFiles: [
+      {
+        family: "maplemono",
+        style: "normal",
+        weight: "400",
+        file: "maplemono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "maplemono",
+        style: "italic",
+        weight: "400",
+        file: "maplemono-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
+    fontDir: "maple",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

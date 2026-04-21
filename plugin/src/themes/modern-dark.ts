@@ -1,7 +1,22 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "modern-dark", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "modern-dark",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+    fontFiles: [
+      {
+        family: "its",
+        style: "normal",
+        weight: "400",
+        file: "its.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+    ],
+  },
   dark: {
     base: `:root:root {
   --background-accent: #000 !important;

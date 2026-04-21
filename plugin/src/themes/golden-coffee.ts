@@ -1,7 +1,38 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "golden-coffee", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "golden-coffee",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+    fontFiles: [
+      {
+        family: "MADE Kenfolg v2",
+        style: "normal",
+        weight: "normal",
+        file: "made-kenfolg-v2.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "JetBrains Mono",
+        style: "normal",
+        weight: "normal",
+        file: "jetbrains-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "FA5FS",
+        style: "normal",
+        weight: "normal",
+        file: "fa5fs.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: #885938 !important;

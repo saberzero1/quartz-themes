@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-04-21T17:55:08.442Z",
+  "sourceTheme": "Cidreira Coast",
+  "fonts": [
+    {
+      "family": "boxicons",
+      "style": "normal",
+      "weight": "400",
+      "file": "boxicons.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

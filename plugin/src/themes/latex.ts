@@ -6,6 +6,40 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["computer-modern-bright"],
+    fontFiles: [
+      {
+        family: "Computer Modern",
+        style: "normal",
+        weight: "normal",
+        file: "computer-modern.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Computer Modern",
+        style: "italic",
+        weight: "normal",
+        file: "computer-modern-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Computer Modern",
+        style: "normal",
+        weight: "bold",
+        file: "computer-modern-2.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Computer Modern",
+        style: "italic",
+        weight: "bold",
+        file: "computer-modern-3.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

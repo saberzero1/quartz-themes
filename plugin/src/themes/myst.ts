@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["icons/material-symbols-outlined", "s-core-dream-3-light"],
+    fontFiles: [
+      {
+        family: "Theme-Font",
+        style: "normal",
+        weight: "normal",
+        file: "theme-font.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+      {
+        family: "Material Symbols Outlined",
+        style: "normal",
+        weight: "400",
+        file: "material-symbols-outlined.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

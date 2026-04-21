@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:50.921Z",
+  "sourceTheme": "Slytherin",
+  "fonts": [
+    {
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weight": "normal",
+      "file": "jetbrains-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "ico",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ico.ttf",
+      "format": "ttf",
+      "unicodeRange": null,
+      "sourceType": "cdn",
+      "sourceUrl": "https://unpkg.com/boxicons@2.0.7/fonts/boxicons.eot"
+    }
+  ]
+}

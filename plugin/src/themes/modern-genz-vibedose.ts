@@ -6,6 +6,40 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["jost", "satoshi", "syne", "jetbrains-mono"],
+    fontFiles: [
+      {
+        family: "Jost",
+        style: "normal",
+        weight: "400",
+        file: "jost.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Satoshi",
+        style: "normal",
+        weight: "400",
+        file: "satoshi.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Syne",
+        style: "normal",
+        weight: "400",
+        file: "syne.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "JetBrains Mono",
+        style: "normal",
+        weight: "400",
+        file: "jetbrains-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

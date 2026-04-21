@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["bricolage-grotesque"],
+    fontFiles: [
+      {
+        family: "Bricolage Grotesque",
+        style: "normal italic",
+        weight: "100 900",
+        file: "bricolage-grotesque.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {

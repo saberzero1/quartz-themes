@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["iosevka-web", "jetbrains-mono"],
+    fontFiles: [
+      {
+        family: "Iosevka",
+        style: "normal",
+        weight: "400",
+        file: "iosevka.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {

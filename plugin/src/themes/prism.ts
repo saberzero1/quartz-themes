@@ -6,6 +6,42 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["jetbrains-mono", "source-sans-3"],
+    fontFiles: [
+      {
+        family: "Source Sans 3",
+        style: "normal",
+        weight: "200 900",
+        file: "source-sans-3.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0000-1FFF, U+2070-20CF, U+2150-218F, U+2400-245F, U+2500-259F, U+27C0-28FF, U+2980-2AFF, U+2C00-2FFF, U+3040-31FF, U+3300-FFFF, U+10000-1EEFF, U+1F700-1F77F, U+1F800-1F8FF, U+1FB00-10FFFD",
+      },
+      {
+        family: "Source Sans 3",
+        style: "italic",
+        weight: "200 900",
+        file: "source-sans-3-1.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0000-1FFF, U+2070-20CF, U+2150-218F, U+2400-245F, U+2500-259F, U+27C0-28FF, U+2980-2AFF, U+2C00-2FFF, U+3040-31FF, U+3300-FFFF, U+10000-1EEFF, U+1F700-1F77F, U+1F800-1F8FF, U+1FB00-10FFFD",
+      },
+      {
+        family: "JetBrains Mono",
+        style: "normal",
+        weight: "100 800",
+        file: "jetbrains-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "JetBrains Mono",
+        style: "italic",
+        weight: "100 800",
+        file: "jetbrains-mono-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["lucida-handwriting", "icons/boxicons"],
+    fontFiles: [
+      {
+        family: "Lucida Handwriting",
+        style: "italic",
+        weight: "normal",
+        file: "lucida-handwriting.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "boxicons",
+        style: "normal",
+        weight: "normal",
+        file: "boxicons.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

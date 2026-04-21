@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:51.928Z",
+  "sourceTheme": "Spectrum Blue",
+  "fonts": [
+    {
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weight": "400",
+      "file": "jetbrains-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "cdn",
+      "sourceUrl": "https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2"
+    },
+    {
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weight": "400",
+      "file": "jetbrains-mono-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

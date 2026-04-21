@@ -6,6 +6,169 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["nightingale", "monaspace-neon"],
+    fontFiles: [
+      {
+        family: "Getai",
+        style: "normal",
+        weight: "400",
+        file: "getai.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Instrument",
+        style: "normal",
+        weight: "100 1000",
+        file: "instrument.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Instrument",
+        style: "italic",
+        weight: "100 1000",
+        file: "instrument-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Monaspace",
+        style: "normal",
+        weight: "400",
+        file: "monaspace.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Fraunces",
+        style: "normal",
+        weight: "100 900",
+        file: "fraunces.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Fraunces",
+        style: "italic",
+        weight: "100 900",
+        file: "fraunces-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Satoshi",
+        style: "normal",
+        weight: "400",
+        file: "satoshi.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Nightingale",
+        style: "normal",
+        weight: "300",
+        file: "nightingale.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "DobbinTextSF-Roman",
+        style: "normal",
+        weight: "100 900",
+        file: "dobbintextsf-roman.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Eurostile",
+        style: "normal",
+        weight: "100 900",
+        file: "eurostile.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "General Sans",
+        style: "normal",
+        weight: "100 900",
+        file: "general-sans.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "General Sans",
+        style: "italic",
+        weight: "100 900",
+        file: "general-sans-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Martian Mono",
+        style: "normal",
+        weight: "400",
+        file: "martian-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Space Grotesk",
+        style: "normal",
+        weight: "500 900",
+        file: "space-grotesk.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Aspekta",
+        style: "normal",
+        weight: "100 1000",
+        file: "aspekta.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Lexend",
+        style: "normal",
+        weight: "500 1000",
+        file: "lexend.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "IAWriter",
+        style: "normal",
+        weight: "500 1000",
+        file: "iawriter.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "IAWriter",
+        style: "italic",
+        weight: "500",
+        file: "iawriter-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Inter",
+        style: "normal",
+        weight: "500 1000",
+        file: "inter.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Inter",
+        style: "italic",
+        weight: "500 1000",
+        file: "inter-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
+    fontDir: "ultra-lobster",
   },
   dark: {
     base: `:root:root {
@@ -2163,7 +2326,7 @@ html body .search > .search-container > .search-space > .search-layout > .result
 }
 
 html body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(99, 94, 88);
   color: rgb(198, 187, 177);
 }
 
@@ -2194,7 +2357,7 @@ html body .search > .search-container > .search-space > input {
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)), html ~ .result-card:focus, html ~ .result-card:hover) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(99, 94, 88);
   border-bottom-color: rgb(198, 187, 177);
   border-left-color: rgb(198, 187, 177);
   border-right-color: rgb(198, 187, 177);
@@ -2203,7 +2366,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(99, 94, 88);
   color: rgb(198, 187, 177);
 }
 
@@ -2452,14 +2615,14 @@ html body .metadata {
   border-top-width: 1px;
   color: rgb(127, 120, 113);
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  margin-bottom: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 24px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
 }
 
 html body .metadata-properties {

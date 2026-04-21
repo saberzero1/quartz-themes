@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:56.966Z",
+  "sourceTheme": "Virgo",
+  "fonts": [
+    {
+      "family": "jinkaiFont",
+      "style": "normal",
+      "weight": "normal",
+      "file": "jinkaifont.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "romanFont",
+      "style": "normal",
+      "weight": "normal",
+      "file": "romanfont.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

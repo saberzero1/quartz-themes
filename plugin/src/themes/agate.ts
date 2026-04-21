@@ -5,10 +5,51 @@ export const theme: ThemeData = {
     name: "agate",
     modes: ["light"],
     variations: [],
-    fonts: ["noto-serif","pretendard","noto-sans-kr","itc-slimbach"],
+    fonts: ["noto-serif", "pretendard", "noto-sans-kr", "itc-slimbach"],
+    fontFiles: [
+      {
+        family: "noto-serif-kr-medium",
+        style: "normal",
+        weight: "400",
+        file: "noto-serif-kr-medium.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+      {
+        family: "noto-serif-kr-black",
+        style: "normal",
+        weight: "900",
+        file: "noto-serif-kr-black.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+      {
+        family: "Pretendard-Regular",
+        style: "normal",
+        weight: "400",
+        file: "pretendard-regular.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+      {
+        family: "Pretendard-Bold",
+        style: "normal",
+        weight: "700",
+        file: "pretendard-bold.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+      {
+        family: "ITC Slimbach Std",
+        style: "normal",
+        weight: "400",
+        file: "itc-slimbach-std.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
-  dark: {
-  },
+  dark: {},
   light: {
     base: `:root:root {
   --accent-color: 55, 0, 255 !important;

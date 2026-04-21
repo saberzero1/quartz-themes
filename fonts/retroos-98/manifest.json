@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-04-21T17:55:44.518Z",
+  "sourceTheme": "RetroOS 98",
+  "fonts": [
+    {
+      "family": "Win95Font",
+      "style": "normal",
+      "weight": "normal",
+      "file": "win95font.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

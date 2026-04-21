@@ -7,7 +7,7 @@ import {
   writeFileSync,
 } from "fs";
 import { cpus } from "os";
-import { dirname, join } from "path";
+import { dirname, join, resolve } from "path";
 import Piscina from "piscina";
 import postcss from "postcss";
 import calc from "postcss-calc";
@@ -124,6 +124,60 @@ function resolveFontFileName(fontName) {
   const normalized = normalizeFontName(fontName);
   if (availableFonts.has(normalized)) return normalized;
   return null;
+}
+
+const FONT_TAG_PATH = resolve("./plugin/src/fonts/font-tag.ts");
+
+function readFontTag() {
+  if (!existsSync(FONT_TAG_PATH)) return null;
+  const content = readFileSync(FONT_TAG_PATH, "utf8");
+  const match = content.match(/export const FONT_TAG\s*=\s*["']([^"']+)["']/);
+  return match ? match[1] : null;
+}
+
+function resolveManifestWithBase(themeName) {
+  const manifestPath = resolve(`./fonts/${themeName}/manifest.json`);
+  if (!existsSync(manifestPath)) return null;
+  const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
+  if (manifest.base) {
+    return resolveManifestWithBase(manifest.base);
+  }
+  return { manifest, fontDir: themeName };
+}
+
+function generateFontCSSFromManifest(themeName) {
+  const resolved = resolveManifestWithBase(themeName);
+  if (!resolved) return null;
+
+  const { manifest, fontDir } = resolved;
+  if (!manifest.fonts || manifest.fonts.length === 0) return "";
+
+  const tag = readFontTag();
+  if (!tag) {
+    console.warn(
+      `Warning: FONT_TAG not found, skipping jsDelivr font generation for ${themeName}`,
+    );
+    return null;
+  }
+
+  return manifest.fonts
+    .map(
+      (font) =>
+        `@font-face {\n` +
+        `  font-family: "${font.family}";\n` +
+        `  font-style: ${font.style};\n` +
+        `  font-weight: ${font.weight};\n` +
+        `  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@${tag}/fonts/${fontDir}/${font.file}") format("${font.format}");\n` +
+        (font.unicodeRange ? `  unicode-range: ${font.unicodeRange};\n` : "") +
+        `}`,
+    )
+    .join("\n");
+}
+
+function readFontManifest(themeName) {
+  const resolved = resolveManifestWithBase(themeName);
+  if (!resolved) return null;
+  return resolved.manifest;
 }
 
 function extractFontNamesFromValue(value) {
@@ -950,22 +1004,26 @@ function buildCSSStrings(themeData) {
   ingestModeData(lightPublishData, dataPublishLight, "light");
   ingestModeData(darkPublishData, dataPublishDark, "dark");
 
-  const manifestFonts =
-    manifest.fonts && manifest.fonts.length > 0
-      ? manifest.fonts
-      : ["avenir", "inter", "source-code-pro"];
-  const autoFonts = collectAutoFonts(bodyVariables);
-  const fonts = Array.from(
-    new Set(
-      [...manifestFonts, ...autoFonts]
-        .map((font) => resolveFontFileName(font) || font)
-        .filter(Boolean),
-    ),
-  );
-  let fontString = "";
-  fonts.forEach((font) => {
-    fontString += getCachedFontString(font);
-  });
+  // Try manifest-based font CSS first (jsDelivr URLs), fall back to legacy extras/fonts/
+  let fontString = generateFontCSSFromManifest(themeName);
+  if (fontString === null) {
+    const manifestFonts =
+      manifest.fonts && manifest.fonts.length > 0
+        ? manifest.fonts
+        : ["avenir", "inter", "source-code-pro"];
+    const autoFonts = collectAutoFonts(bodyVariables);
+    const fonts = Array.from(
+      new Set(
+        [...manifestFonts, ...autoFonts]
+          .map((font) => resolveFontFileName(font) || font)
+          .filter(Boolean),
+      ),
+    );
+    fontString = "";
+    fonts.forEach((font) => {
+      fontString += getCachedFontString(font);
+    });
+  }
 
   // Build variable strings from body CSS variables
   // For Quartz: Only include --code-* and --graph-* variables

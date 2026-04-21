@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["formular"],
+    fontFiles: [
+      {
+        family: "Formular",
+        style: "normal",
+        weight: "normal",
+        file: "formular.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

@@ -1,7 +1,22 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "horizon", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "horizon",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+    fontFiles: [
+      {
+        family: "Roboto Condensed",
+        style: "normal",
+        weight: "400",
+        file: "roboto-condensed.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: #2E303E !important;

@@ -6,6 +6,48 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["peace-sans", "space-grotesk"],
+    fontFiles: [
+      {
+        family: "Peace Sans",
+        style: "normal",
+        weight: "400",
+        file: "peace-sans.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Inter",
+        style: "normal",
+        weight: "400",
+        file: "inter.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Space Grotesk",
+        style: "normal",
+        weight: "400",
+        file: "space-grotesk.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Source Code Pro",
+        style: "normal",
+        weight: "400",
+        file: "source-code-pro.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Source Code Pro",
+        style: "italic",
+        weight: "400",
+        file: "source-code-pro-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

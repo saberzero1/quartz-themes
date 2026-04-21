@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["light"],
     variations: [],
     fonts: ["courier-prime", "kalam"],
+    fontFiles: [
+      {
+        family: "Kalam",
+        style: "normal",
+        weight: "normal",
+        file: "kalam.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {},
   light: {

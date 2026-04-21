@@ -6,6 +6,169 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["nightingale", "monaspace-neon"],
+    fontFiles: [
+      {
+        family: "Getai",
+        style: "normal",
+        weight: "400",
+        file: "getai.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Instrument",
+        style: "normal",
+        weight: "100 1000",
+        file: "instrument.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Instrument",
+        style: "italic",
+        weight: "100 1000",
+        file: "instrument-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Monaspace",
+        style: "normal",
+        weight: "400",
+        file: "monaspace.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Fraunces",
+        style: "normal",
+        weight: "100 900",
+        file: "fraunces.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Fraunces",
+        style: "italic",
+        weight: "100 900",
+        file: "fraunces-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Satoshi",
+        style: "normal",
+        weight: "400",
+        file: "satoshi.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Nightingale",
+        style: "normal",
+        weight: "300",
+        file: "nightingale.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "DobbinTextSF-Roman",
+        style: "normal",
+        weight: "100 900",
+        file: "dobbintextsf-roman.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Eurostile",
+        style: "normal",
+        weight: "100 900",
+        file: "eurostile.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "General Sans",
+        style: "normal",
+        weight: "100 900",
+        file: "general-sans.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "General Sans",
+        style: "italic",
+        weight: "100 900",
+        file: "general-sans-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Martian Mono",
+        style: "normal",
+        weight: "400",
+        file: "martian-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Space Grotesk",
+        style: "normal",
+        weight: "500 900",
+        file: "space-grotesk.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Aspekta",
+        style: "normal",
+        weight: "100 1000",
+        file: "aspekta.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Lexend",
+        style: "normal",
+        weight: "500 1000",
+        file: "lexend.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "IAWriter",
+        style: "normal",
+        weight: "500 1000",
+        file: "iawriter.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "IAWriter",
+        style: "italic",
+        weight: "500",
+        file: "iawriter-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Inter",
+        style: "normal",
+        weight: "500 1000",
+        file: "inter.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Inter",
+        style: "italic",
+        weight: "500 1000",
+        file: "inter-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
+    fontDir: "ultra-lobster",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
@@ -2174,7 +2337,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > .sea
 }
 
 html[saved-theme="dark"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(142, 113, 142);
   color: rgb(211, 201, 211);
 }
 
@@ -2205,7 +2368,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)), html[saved-theme="dark"] ~ .result-card:focus, html[saved-theme="dark"] ~ .result-card:hover) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(142, 113, 142);
   border-bottom-color: rgb(211, 201, 211);
   border-left-color: rgb(211, 201, 211);
   border-right-color: rgb(211, 201, 211);
@@ -2214,7 +2377,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
 }
 
 html[saved-theme="dark"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="dark"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="dark"] ~ .result-card:focus)) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(142, 113, 142);
   color: rgb(211, 201, 211);
 }
 
@@ -2463,14 +2626,14 @@ html[saved-theme="dark"] body .metadata {
   border-top-width: 1px;
   color: rgb(216, 204, 216);
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  margin-bottom: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 24px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
 }
 
 html[saved-theme="dark"] body .metadata-properties {
@@ -4709,7 +4872,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > .se
 }
 
 html[saved-theme="light"] body .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(245, 250, 253);
   color: rgb(85, 135, 168);
 }
 
@@ -4740,7 +4903,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)), html[saved-theme="light"] ~ .result-card:focus, html[saved-theme="light"] ~ .result-card:hover) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(245, 250, 253);
   border-bottom-color: rgb(85, 135, 168);
   border-left-color: rgb(85, 135, 168);
   border-right-color: rgb(85, 135, 168);
@@ -4749,7 +4912,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
 }
 
 html[saved-theme="light"] body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html[saved-theme="light"] .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html[saved-theme="light"] ~ .result-card:focus)) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(245, 250, 253);
   color: rgb(85, 135, 168);
 }
 
@@ -4998,14 +5161,14 @@ html[saved-theme="light"] body .metadata {
   border-top-width: 1px;
   color: rgb(122, 148, 165);
   font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  margin-bottom: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 24px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
 }
 
 html[saved-theme="light"] body .metadata-properties {

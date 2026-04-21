@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["fira-code"],
+    fontFiles: [
+      {
+        family: "Fira Code",
+        style: "normal",
+        weight: "normal",
+        file: "fira-code.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {

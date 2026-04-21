@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
+    fontFiles: [
+      {
+        family: "Instrument Serif",
+        style: "italic",
+        weight: "100 1000",
+        file: "instrument-serif.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Instrument Serif",
+        style: "normal",
+        weight: "100 1000",
+        file: "instrument-serif-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

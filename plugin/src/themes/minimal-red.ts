@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["geist"],
+    fontFiles: [
+      {
+        family: "Geist",
+        style: "normal",
+        weight: "normal",
+        file: "geist.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {

@@ -6,6 +6,32 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["cascadia-code"],
+    fontFiles: [
+      {
+        family: "Cascadia Code",
+        style: "normal",
+        weight: "400",
+        file: "cascadia-code.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Inter",
+        style: "normal",
+        weight: "100 900",
+        file: "inter.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Inter",
+        style: "italic",
+        weight: "100 900",
+        file: "inter-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

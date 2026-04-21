@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["eb-garamond"],
+    fontFiles: [
+      {
+        family: "EB Garamond",
+        style: "normal",
+        weight: "400 700",
+        file: "eb-garamond.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "EB Garamond",
+        style: "italic",
+        weight: "400 700",
+        file: "eb-garamond-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

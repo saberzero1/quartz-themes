@@ -6,6 +6,40 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["fira-code"],
+    fontFiles: [
+      {
+        family: "Fira Code",
+        style: "normal",
+        weight: "normal",
+        file: "fira-code.ttf",
+        format: "ttf",
+        unicodeRange: null,
+      },
+      {
+        family: "Fira Code",
+        style: "normal",
+        weight: "normal",
+        file: "fira-code-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Fira Code",
+        style: "normal",
+        weight: "normal",
+        file: "fira-code-2.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Fira Code",
+        style: "normal",
+        weight: "bold",
+        file: "fira-code-3.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {

@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["libre-franklin"],
+    fontFiles: [
+      {
+        family: "Win95Font",
+        style: "normal",
+        weight: "normal",
+        file: "win95font.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

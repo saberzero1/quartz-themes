@@ -1,0 +1,126 @@
+{
+  "extractedAt": "2026-04-21T17:55:05.032Z",
+  "sourceTheme": "Aura",
+  "fonts": [
+    {
+      "family": "iA Writer Quattro S",
+      "style": "normal",
+      "weight": "bold",
+      "file": "ia-writer-quattro-s.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro S",
+      "style": "italic",
+      "weight": "bold",
+      "file": "ia-writer-quattro-s-1.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro S",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ia-writer-quattro-s-2.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro S",
+      "style": "italic",
+      "weight": "normal",
+      "file": "ia-writer-quattro-s-3.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Mono S",
+      "style": "normal",
+      "weight": "bold",
+      "file": "ia-writer-mono-s.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Mono S",
+      "style": "italic",
+      "weight": "bold",
+      "file": "ia-writer-mono-s-1.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Mono S",
+      "style": "italic",
+      "weight": "normal",
+      "file": "ia-writer-mono-s-2.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Mono S",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ia-writer-mono-s-3.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Duo S",
+      "style": "italic",
+      "weight": "bold",
+      "file": "ia-writer-duo-s.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Duo S",
+      "style": "normal",
+      "weight": "bold",
+      "file": "ia-writer-duo-s-1.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Duo S",
+      "style": "italic",
+      "weight": "normal",
+      "file": "ia-writer-duo-s-2.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Duo S",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ia-writer-duo-s-3.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

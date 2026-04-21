@@ -6,6 +6,32 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["bricolage-grotesque", "roboto", "montserrat"],
+    fontFiles: [
+      {
+        family: "Bricolage Grotesque",
+        style: "normal",
+        weight: "400",
+        file: "bricolage-grotesque.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Roboto",
+        style: "normal",
+        weight: "400",
+        file: "roboto.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Montserrat",
+        style: "normal",
+        weight: "400",
+        file: "montserrat.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {

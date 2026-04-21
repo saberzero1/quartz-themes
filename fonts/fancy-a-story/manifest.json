@@ -1,0 +1,106 @@
+{
+  "extractedAt": "2026-04-21T17:55:18.119Z",
+  "sourceTheme": "Fancy-a-Story",
+  "fonts": [
+    {
+      "family": "Poppins",
+      "style": "normal",
+      "weight": "400",
+      "file": "poppins.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Poppins",
+      "style": "italic",
+      "weight": "400",
+      "file": "poppins-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Poppins",
+      "style": "normal",
+      "weight": "600",
+      "file": "poppins-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Poppins",
+      "style": "italic",
+      "weight": "600",
+      "file": "poppins-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Poppins",
+      "style": "normal",
+      "weight": "800",
+      "file": "poppins-4.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Poppins",
+      "style": "italic",
+      "weight": "800",
+      "file": "poppins-5.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Noto Serif",
+      "style": "normal",
+      "weight": "400",
+      "file": "noto-serif.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Noto Serif",
+      "style": "italic",
+      "weight": "400",
+      "file": "noto-serif-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Noto Sans",
+      "style": "normal",
+      "weight": "400",
+      "file": "noto-sans.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Noto Sans",
+      "style": "italic",
+      "weight": "400",
+      "file": "noto-sans-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:54.967Z",
+  "sourceTheme": "Ukiyo",
+  "fonts": [
+    {
+      "family": "CMU Typewriter Text",
+      "style": "normal",
+      "weight": "500",
+      "file": "cmu-typewriter-text.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weight": "400",
+      "file": "jetbrains-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

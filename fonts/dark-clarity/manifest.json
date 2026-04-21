@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-04-21T17:55:09.241Z",
+  "sourceTheme": "Dark Clarity",
+  "fonts": [
+    {
+      "family": "Zhudou Sans Normal SS02",
+      "style": "normal",
+      "weight": "400",
+      "file": "zhudou-sans-normal-ss02.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

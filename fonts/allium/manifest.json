@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-04-21T17:54:58.466Z",
+  "sourceTheme": "Allium",
+  "fonts": [
+    {
+      "family": "its",
+      "style": "normal",
+      "weight": "400",
+      "file": "its.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

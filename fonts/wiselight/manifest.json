@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:59.308Z",
+  "sourceTheme": "WiseLight",
+  "fonts": [
+    {
+      "family": "Karla",
+      "style": "normal",
+      "weight": "400",
+      "file": "karla.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Karla",
+      "style": "italic",
+      "weight": "400",
+      "file": "karla-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

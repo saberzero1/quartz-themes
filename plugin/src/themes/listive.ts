@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["courgette", "karla", "open-sans"],
+    fontFiles: [
+      {
+        family: "Courgette",
+        style: "normal italic",
+        weight: "100 900",
+        file: "courgette.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Karla",
+        style: "normal italic",
+        weight: "100 900",
+        file: "karla.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

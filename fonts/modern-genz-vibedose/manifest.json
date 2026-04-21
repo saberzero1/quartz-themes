@@ -1,0 +1,46 @@
+{
+  "extractedAt": "2026-04-21T17:55:30.654Z",
+  "sourceTheme": "Modern GenZ Vibedose",
+  "fonts": [
+    {
+      "family": "Jost",
+      "style": "normal",
+      "weight": "400",
+      "file": "jost.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Satoshi",
+      "style": "normal",
+      "weight": "400",
+      "file": "satoshi.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Syne",
+      "style": "normal",
+      "weight": "400",
+      "file": "syne.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weight": "400",
+      "file": "jetbrains-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

@@ -6,6 +6,40 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["ia-writer-duo"],
+    fontFiles: [
+      {
+        family: "iA Writer Duo",
+        style: "normal",
+        weight: "400",
+        file: "ia-writer-duo.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "iA Writer Duo",
+        style: "italic",
+        weight: "400",
+        file: "ia-writer-duo-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "iA Writer Duo",
+        style: "normal",
+        weight: "bold",
+        file: "ia-writer-duo-2.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "iA Writer Duo",
+        style: "italic",
+        weight: "bold",
+        file: "ia-writer-duo-3.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

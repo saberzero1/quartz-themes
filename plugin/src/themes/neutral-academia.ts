@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["cormorant", "manrope"],
+    fontFiles: [
+      {
+        family: "Cormorant",
+        style: "normal",
+        weight: "400",
+        file: "cormorant.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Manrope",
+        style: "normal",
+        weight: "400",
+        file: "manrope.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

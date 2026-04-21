@@ -1,0 +1,36 @@
+{
+  "extractedAt": "2026-04-21T17:55:57.226Z",
+  "sourceTheme": "Wikipedia",
+  "fonts": [
+    {
+      "family": "Linux Libertine",
+      "style": "normal",
+      "weight": "normal",
+      "file": "linux-libertine.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Linux Libertine",
+      "style": "normal",
+      "weight": "bold",
+      "file": "linux-libertine-1.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Linux Libertine",
+      "style": "italic",
+      "weight": "normal",
+      "file": "linux-libertine-2.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

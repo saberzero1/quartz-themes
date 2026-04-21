@@ -6,6 +6,40 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["ia-writer-mono", "ia-writer-quattro-s", "jetbrains-mono"],
+    fontFiles: [
+      {
+        family: "iA Writer Quattro S",
+        style: "italic",
+        weight: "bold",
+        file: "ia-writer-quattro-s.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "iA Writer Quattro S",
+        style: "normal",
+        weight: "normal",
+        file: "ia-writer-quattro-s-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "iA Writer Quattro S",
+        style: "normal",
+        weight: "bold",
+        file: "ia-writer-quattro-s-2.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "iA Writer Quattro S",
+        style: "italic",
+        weight: "normal",
+        file: "ia-writer-quattro-s-3.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

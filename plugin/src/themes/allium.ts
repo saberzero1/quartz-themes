@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["icons/its"],
+    fontFiles: [
+      {
+        family: "its",
+        style: "normal",
+        weight: "400",
+        file: "its.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

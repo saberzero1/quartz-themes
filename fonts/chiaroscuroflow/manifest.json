@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:59.337Z",
+  "sourceTheme": "chiaroscuroflow",
+  "fonts": [
+    {
+      "family": "Nunito Sans 12pt ExtraLight",
+      "style": "normal",
+      "weight": "100 900",
+      "file": "nunito-sans-12pt-extralight.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Manrope ExtraLight",
+      "style": "normal",
+      "weight": "100 900",
+      "file": "manrope-extralight.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

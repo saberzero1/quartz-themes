@@ -6,6 +6,25 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["icons/its"],
+    fontFiles: [
+      {
+        family: "Fira Code",
+        style: "normal",
+        weight: "500",
+        file: "fira-code.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "its",
+        style: "normal",
+        weight: "400",
+        file: "its.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+    ],
+    fontDir: "its-theme",
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

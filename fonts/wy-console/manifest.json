@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:57.192Z",
+  "sourceTheme": "WY Console",
+  "fonts": [
+    {
+      "family": "Scifi Title",
+      "style": "normal",
+      "weight": "400",
+      "file": "scifi-title.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "ModeSeven Regular",
+      "style": "normal",
+      "weight": "400",
+      "file": "modeseven-regular.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

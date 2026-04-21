@@ -1,0 +1,56 @@
+{
+  "extractedAt": "2026-04-21T17:55:22.154Z",
+  "sourceTheme": "Gummy-Revived",
+  "fonts": [
+    {
+      "family": "Peace Sans",
+      "style": "normal",
+      "weight": "400",
+      "file": "peace-sans.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Inter",
+      "style": "normal",
+      "weight": "400",
+      "file": "inter.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Space Grotesk",
+      "style": "normal",
+      "weight": "400",
+      "file": "space-grotesk.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Code Pro",
+      "style": "normal",
+      "weight": "400",
+      "file": "source-code-pro.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Code Pro",
+      "style": "italic",
+      "weight": "400",
+      "file": "source-code-pro-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

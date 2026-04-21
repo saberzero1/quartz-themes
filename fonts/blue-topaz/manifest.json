@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:05.257Z",
+  "sourceTheme": "Blue Topaz",
+  "fonts": [
+    {
+      "family": "Lucida Handwriting",
+      "style": "italic",
+      "weight": "normal",
+      "file": "lucida-handwriting.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "boxicons",
+      "style": "normal",
+      "weight": "normal",
+      "file": "boxicons.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

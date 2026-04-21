@@ -607,7 +607,7 @@ body.theme-light {
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: hsl(258, 29.33333%, 90%) !important;
-  --bases-cards-font-size: 0.875rem !important;
+  --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
@@ -620,7 +620,7 @@ body.theme-light {
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
-  --bases-group-heading-value-size: 0.875rem !important;
+  --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
@@ -637,7 +637,7 @@ body.theme-light {
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
-  --bases-table-font-size: 0.875rem !important;
+  --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: hsl(258, 29.33333%, 90%) !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: hsl(258, 29.33333%, 98%) !important;
@@ -717,14 +717,14 @@ body.theme-light {
   --canvas-color-2: from hsl(25, 88%, 66%) r g b !important;
   --canvas-color-3: from hsl(50, 88%, 66%) r g b !important;
   --canvas-color-4: from hsl(100, 88%, 66%) r g b !important;
-  --canvas-color-5: from hsl(185, 88%, 66%) r g b !important;
+  --canvas-color-5: from hsl(210, 88%, 66%) r g b !important;
   --canvas-color-6: from hsl(270, 88%, 66%) r g b !important;
   --canvas-controls-icon-size: 16px !important;
   --canvas-controls-icon-stroke: 2px !important;
   --canvas-controls-radius: 4px !important;
   --canvas-dot-pattern: hsl(258, 29.33333%, 75%) !important;
   --caret-color: hsl(258, 29.33333%, 20%) !important;
-  --checkbox-border-color: hsl(258, 29.33333%, 75%) !important;
+  --checkbox-border-color: hsl(258, 29.33333%, 60%) !important;
   --checkbox-border-color-hover: hsl(258, 88%, 66%) !important;
   --checkbox-color: hsl(258, 29.33333%, 60%) !important;
   --checkbox-color-hover: hsl(258, 88%, 66%) !important;
@@ -732,8 +732,8 @@ body.theme-light {
   --checkbox-marker-color: hsl(258, 29.33333%, 98%) !important;
   --checkbox-radius: 4px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: hsl(258, 29.33333%, 60%) !important;
-  --checklist-done-decoration: line-through !important;
+  --checklist-done-color: hsl(258, 29.33333%, 20%) !important;
+  --checklist-done-decoration: none !important;
   --clickable-icon-radius: 4px !important;
   --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1) !important;
   --code-border-color: hsl(258, 29.33333%, 75%) !important;
@@ -886,9 +886,9 @@ body.theme-light {
     source-sans-pro, sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
-  --font-small: 0.933rem !important;
-  --font-smaller: 0.875rem !important;
-  --font-smallest: 0.8rem !important;
+  --font-small: 0.933em !important;
+  --font-smaller: 0.875em !important;
+  --font-smallest: 0.8em !important;
   --font-text:
     "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
@@ -920,16 +920,16 @@ body.theme-light {
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
-  --footnote-size: 0.875rem !important;
+  --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: hsl(258, 29.33333%, 75%) !important;
-  --graph-node: hsl(5, 88%, 66%) !important;
-  --graph-node-attachment: hsl(210, 88%, 66%) !important;
+  --graph-line: hsl(258, 29.33333%, 80%) !important;
+  --graph-node: hsl(258, 88%, 66%) !important;
+  --graph-node-attachment: hsl(100, 88%, 66%) !important;
   --graph-node-focused: hsl(258, 88%, 66%) !important;
   --graph-node-tag: hsl(50, 88%, 66%) !important;
-  --graph-node-unresolved: rgba(from hsl(5, 88%, 66%) r g b / 0.8) !important;
+  --graph-node-unresolved: hsl(5, 88%, 66%) !important;
   --graph-text: hsl(258, 29.33333%, 20%) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
@@ -1049,13 +1049,13 @@ body.theme-light {
   --link-external-decoration: none !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: hsl(258, 88%, 66%) !important;
+  --link-unresolved-color: hsl(5, 88%, 66%) !important;
   --link-unresolved-decoration-color: rgba(
     from hsl(258, 88%, 66%) r g b / 0.2
   ) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
-  --link-unresolved-opacity: 0.7 !important;
+  --link-unresolved-opacity: 1 !important;
   --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
@@ -1108,7 +1108,7 @@ body.theme-light {
     system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
-  --metadata-input-font-size: 0.875rem !important;
+  --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: 4px 8px !important;
@@ -1124,7 +1124,7 @@ body.theme-light {
     system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
-  --metadata-label-font-size: 0.875rem !important;
+  --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: hsl(258, 29.33333%, 60%) !important;
   --metadata-label-text-color-hover: hsl(258, 29.33333%, 60%) !important;
   --metadata-label-width: 9em !important;
@@ -1280,7 +1280,9 @@ body.theme-light {
   --setting-group-heading-color: hsl(258, 29.33333%, 20%) !important;
   --setting-group-heading-size: 15px !important;
   --setting-group-heading-weight: 600 !important;
-  --setting-items-background: hsl(258, 29.33333%, 90%) !important;
+  --setting-items-background: rgba(
+    from hsl(258, 88%, 66%) r g b / 0.1
+  ) !important;
   --setting-items-border-color: hsl(258, 29.33333%, 75%) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
@@ -1432,7 +1434,7 @@ body.theme-light {
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
-  --tag-size: 0.875rem !important;
+  --tag-size: 0.875em !important;
   --text-accent-hover: hsl(255, 89.76%, 75.9%) !important;
   --text-error: hsl(5, 88%, 66%) !important;
   --text-highlight-bg: rgba(from hsl(258, 88%, 66%) r g b / 0.25) !important;
@@ -1590,7 +1592,7 @@ body.theme-dark {
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: round !important;
   --bases-cards-cover-background: hsl(258, 29.33333%, 20%) !important;
-  --bases-cards-font-size: 0.875rem !important;
+  --bases-cards-font-size: 0.875em !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: 8px !important;
   --bases-cards-scale: 1 !important;
@@ -1603,7 +1605,7 @@ body.theme-dark {
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: 12px !important;
   --bases-group-heading-property-weight: 400 !important;
-  --bases-group-heading-value-size: 0.875rem !important;
+  --bases-group-heading-value-size: 0.875em !important;
   --bases-group-heading-value-weight: 600 !important;
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
@@ -1620,7 +1622,7 @@ body.theme-dark {
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: 4px !important;
   --bases-table-container-border-width: 1px !important;
-  --bases-table-font-size: 0.875rem !important;
+  --bases-table-font-size: 0.875em !important;
   --bases-table-group-background: hsl(258, 29.33333%, 20%) !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: hsl(258, 29.33333%, 10%) !important;
@@ -1700,14 +1702,14 @@ body.theme-dark {
   --canvas-color-2: from hsl(25, 88%, 66%) r g b !important;
   --canvas-color-3: from hsl(50, 88%, 66%) r g b !important;
   --canvas-color-4: from hsl(100, 88%, 66%) r g b !important;
-  --canvas-color-5: from hsl(185, 88%, 66%) r g b !important;
+  --canvas-color-5: from hsl(210, 88%, 66%) r g b !important;
   --canvas-color-6: from hsl(270, 88%, 66%) r g b !important;
   --canvas-controls-icon-size: 16px !important;
   --canvas-controls-icon-stroke: 2px !important;
   --canvas-controls-radius: 4px !important;
   --canvas-dot-pattern: hsl(258, 29.33333%, 35%) !important;
   --caret-color: hsl(258, 29.33333%, 80%) !important;
-  --checkbox-border-color: hsl(258, 29.33333%, 35%) !important;
+  --checkbox-border-color: hsl(258, 29.33333%, 50%) !important;
   --checkbox-border-color-hover: hsl(258, 88%, 66%) !important;
   --checkbox-color: hsl(258, 29.33333%, 50%) !important;
   --checkbox-color-hover: hsl(258, 88%, 66%) !important;
@@ -1715,8 +1717,8 @@ body.theme-dark {
   --checkbox-marker-color: hsl(258, 29.33333%, 10%) !important;
   --checkbox-radius: 4px !important;
   --checkbox-size: 16px !important;
-  --checklist-done-color: hsl(258, 29.33333%, 50%) !important;
-  --checklist-done-decoration: line-through !important;
+  --checklist-done-color: hsl(258, 29.33333%, 80%) !important;
+  --checklist-done-decoration: none !important;
   --clickable-icon-radius: 4px !important;
   --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.15) !important;
   --code-border-color: hsl(258, 29.33333%, 35%) !important;
@@ -1869,9 +1871,9 @@ body.theme-dark {
     source-sans-pro, sans-serif, "Arial" !important;
   --font-print-override: "??" !important;
   --font-semibold: 600 !important;
-  --font-small: 0.933rem !important;
-  --font-smaller: 0.875rem !important;
-  --font-smallest: 0.8rem !important;
+  --font-small: 0.933em !important;
+  --font-smaller: 0.875em !important;
+  --font-smallest: 0.8em !important;
   --font-text:
     "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui,
@@ -1903,16 +1905,16 @@ body.theme-dark {
   --footnote-padding-block: 6px !important;
   --footnote-padding-inline: 6px !important;
   --footnote-radius: 4px !important;
-  --footnote-size: 0.875rem !important;
+  --footnote-size: 0.875em !important;
   --frame-left-space: 0px !important;
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
-  --graph-line: hsl(258, 29.33333%, 35%) !important;
-  --graph-node: hsl(5, 88%, 66%) !important;
-  --graph-node-attachment: hsl(210, 88%, 66%) !important;
+  --graph-line: hsl(258, 29.33333%, 30%) !important;
+  --graph-node: hsl(258, 88%, 66%) !important;
+  --graph-node-attachment: hsl(100, 88%, 66%) !important;
   --graph-node-focused: hsl(255, 89.76%, 75.9%) !important;
   --graph-node-tag: hsl(50, 88%, 66%) !important;
-  --graph-node-unresolved: rgba(from hsl(5, 88%, 66%) r g b / 0.8) !important;
+  --graph-node-unresolved: hsl(5, 88%, 66%) !important;
   --graph-text: hsl(258, 29.33333%, 80%) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
@@ -2032,13 +2034,13 @@ body.theme-dark {
   --link-external-decoration: none !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: hsl(258, 88%, 66%) !important;
+  --link-unresolved-color: hsl(5, 88%, 66%) !important;
   --link-unresolved-decoration-color: rgba(
     from hsl(258, 88%, 66%) r g b / 0.3
   ) !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
-  --link-unresolved-opacity: 0.7 !important;
+  --link-unresolved-opacity: 1 !important;
   --link-weight: 400 !important;
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
@@ -2091,7 +2093,7 @@ body.theme-dark {
     system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
-  --metadata-input-font-size: 0.875rem !important;
+  --metadata-input-font-size: 0.875em !important;
   --metadata-input-height: 28px !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: 4px 8px !important;
@@ -2107,7 +2109,7 @@ body.theme-dark {
     system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable",
     "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif !important;
-  --metadata-label-font-size: 0.875rem !important;
+  --metadata-label-font-size: 0.875em !important;
   --metadata-label-text-color: hsl(258, 29.33333%, 50%) !important;
   --metadata-label-text-color-hover: hsl(258, 29.33333%, 50%) !important;
   --metadata-label-width: 9em !important;
@@ -2255,7 +2257,9 @@ body.theme-dark {
   --setting-group-heading-color: hsl(258, 29.33333%, 80%) !important;
   --setting-group-heading-size: 15px !important;
   --setting-group-heading-weight: 600 !important;
-  --setting-items-background: hsl(258, 29.33333%, 20%) !important;
+  --setting-items-background: rgba(
+    from hsl(258, 88%, 66%) r g b / 0.15
+  ) !important;
   --setting-items-border-color: hsl(258, 29.33333%, 35%) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 20px !important;
@@ -2407,7 +2411,7 @@ body.theme-dark {
   --tag-padding-x: 0.65em !important;
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
-  --tag-size: 0.875rem !important;
+  --tag-size: 0.875em !important;
   --text-accent-hover: hsl(253, 92.4%, 85.14%) !important;
   --text-error: hsl(5, 88%, 66%) !important;
   --text-highlight-bg: rgba(from hsl(258, 88%, 66%) r g b / 0.25) !important;
@@ -2601,7 +2605,7 @@ body body.theme-light .markdown-rendered a.internal-link {
 }
 body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(138, 92, 245);
+  color: rgb(245, 105, 92);
   cursor: pointer;
   filter: none;
   backdrop-filter: none;
@@ -2628,7 +2632,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(138, 92, 245) none 0px;
+  outline: rgb(245, 105, 92) none 0px;
   text-decoration: color(srgb 0.54032 0.3608 0.9592 / 0.2);
   text-decoration-color: color(srgb 0.54032 0.3608 0.9592 / 0.2);
   text-decoration-line: underline;
@@ -3160,7 +3164,7 @@ body
   > li.task-list-item
   > .task-list-item-checkbox {
   appearance: auto;
-  border: 1px solid rgb(184, 173, 210);
+  border: 1px solid rgb(141, 123, 183);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -4199,12 +4203,12 @@ body body.theme-light abbr {
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(45, 36, 66);
-  text-decoration: none;
+  text-decoration: line-through;
   text-decoration-color: rgb(45, 36, 66);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(45, 36, 66);
-  text-decoration: none;
+  text-decoration: line-through;
   text-decoration-color: rgb(45, 36, 66);
 }
 body body.theme-light li.task-list-item[data-task="/"] {
@@ -4835,7 +4839,7 @@ body body.theme-dark .markdown-rendered a.internal-link {
 }
 body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(138, 92, 245);
+  color: rgb(245, 105, 92);
   cursor: pointer;
   filter: none;
   backdrop-filter: none;
@@ -4862,7 +4866,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  outline: rgb(138, 92, 245) none 0px;
+  outline: rgb(245, 105, 92) none 0px;
   text-decoration: color(srgb 0.54032 0.3608 0.9592 / 0.3);
   text-decoration-color: color(srgb 0.54032 0.3608 0.9592 / 0.3);
   text-decoration-line: underline;
@@ -5394,7 +5398,7 @@ body
   > li.task-list-item
   > .task-list-item-checkbox {
   appearance: auto;
-  border: 1px solid rgb(79, 63, 115);
+  border: 1px solid rgb(113, 90, 165);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -6433,12 +6437,12 @@ body body.theme-dark abbr {
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(198, 189, 219);
-  text-decoration: none;
+  text-decoration: line-through;
   text-decoration-color: rgb(198, 189, 219);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(198, 189, 219);
-  text-decoration: none;
+  text-decoration: line-through;
   text-decoration-color: rgb(198, 189, 219);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {

@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["inconsolata"],
+    fontFiles: [
+      {
+        family: "Ligconsolata",
+        style: "normal",
+        weight: "400",
+        file: "ligconsolata.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+      {
+        family: "Ligconsolata",
+        style: "normal",
+        weight: "700",
+        file: "ligconsolata-1.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {

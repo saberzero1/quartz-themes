@@ -45,6 +45,15 @@ export interface ThemeData {
 }
 
 /** Metadata about a theme (modes, variations, fonts). */
+export interface FontFileEntry {
+  family: string;
+  style: string;
+  weight: string;
+  file: string;
+  format: string;
+  unicodeRange?: string | null;
+}
+
 export interface ThemeMeta {
   /** Display name of the theme. */
   name: string;
@@ -52,8 +61,12 @@ export interface ThemeMeta {
   modes: Array<"dark" | "light">;
   /** Available variations (e.g. frappe, latte, mocha for catppuccin). */
   variations: string[];
-  /** Fonts used by the theme. */
+  /** Fonts used by the theme (legacy: references keys in FONT_CSS record). */
   fonts: string[];
+  /** Extracted font file metadata for jsDelivr delivery. */
+  fontFiles?: FontFileEntry[];
+  /** Base theme directory for font files (when variation references base theme's fonts). */
+  fontDir?: string;
 }
 
 /** User-facing configuration for the QuartzTheme plugin. */

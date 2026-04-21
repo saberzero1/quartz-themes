@@ -1,0 +1,56 @@
+{
+  "extractedAt": "2026-04-21T17:55:50.771Z",
+  "sourceTheme": "Simple",
+  "fonts": [
+    {
+      "family": "Fira Code",
+      "style": "normal",
+      "weight": "300 500",
+      "file": "fira-code.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Inter",
+      "style": "normal",
+      "weight": "100 300 400 600 700 800",
+      "file": "inter.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBMRegular",
+      "style": "normal",
+      "weight": "100 300 400 600 700 800",
+      "file": "ibmregular.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBMBold",
+      "style": "normal",
+      "weight": "100 300 400 600 700 800",
+      "file": "ibmbold.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iaWriterQuattro",
+      "style": "normal",
+      "weight": "100 300 400 600 700 800",
+      "file": "iawriterquattro.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

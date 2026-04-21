@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:45.042Z",
+  "sourceTheme": "Sanguine",
+  "fonts": [
+    {
+      "family": "Slasher Title",
+      "style": "normal",
+      "weight": "400",
+      "file": "slasher-title.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Slasher Regular",
+      "style": "normal",
+      "weight": "400",
+      "file": "slasher-regular.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

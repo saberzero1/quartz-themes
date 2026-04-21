@@ -1,0 +1,36 @@
+{
+  "extractedAt": "2026-04-21T17:55:09.258Z",
+  "sourceTheme": "Dune",
+  "fonts": [
+    {
+      "family": "LiberationSerifRegular",
+      "style": "normal italic",
+      "weight": "100 900",
+      "file": "liberationserifregular.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Louis George Cafe",
+      "style": "normal",
+      "weight": "400",
+      "file": "louis-george-cafe.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Manuskript Gothisch",
+      "style": "normal",
+      "weight": "400",
+      "file": "manuskript-gothisch.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["cmu-typewriter-text", "jetbrains-mono"],
+    fontFiles: [
+      {
+        family: "CMU Typewriter Text",
+        style: "normal",
+        weight: "500",
+        file: "cmu-typewriter-text.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "JetBrains Mono",
+        style: "normal",
+        weight: "400",
+        file: "jetbrains-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

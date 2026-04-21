@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-04-21T17:55:51.939Z",
+  "sourceTheme": "SpectrumPlus",
+  "fonts": [
+    {
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weight": "400",
+      "file": "jetbrains-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

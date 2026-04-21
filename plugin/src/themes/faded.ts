@@ -1,7 +1,70 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "faded", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "faded",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+    fontFiles: [
+      {
+        family: "Roboto Condensed",
+        style: "normal italic",
+        weight: "100 900",
+        file: "roboto-condensed.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "its",
+        style: "normal",
+        weight: "400",
+        file: "its.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+      {
+        family: "Font Awesome 6 Free Regular",
+        style: "normal italic",
+        weight: "100 900",
+        file: "font-awesome-6-free-regular.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Font Awesome 6 Free Solid",
+        style: "normal italic",
+        weight: "100 900",
+        file: "font-awesome-6-free-solid.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Cuprum",
+        style: "normal italic",
+        weight: "100 900",
+        file: "cuprum.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Gemunu Libre",
+        style: "normal italic",
+        weight: "100 900",
+        file: "gemunu-libre.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Kreon",
+        style: "normal italic",
+        weight: "100 900",
+        file: "kreon.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
+  },
   dark: {
     base: `:root:root {
   --Blue-Accent-1: #2799ad !important;

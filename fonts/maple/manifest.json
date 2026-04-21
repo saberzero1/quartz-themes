@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:27.057Z",
+  "sourceTheme": "Maple",
+  "fonts": [
+    {
+      "family": "maplemono",
+      "style": "normal",
+      "weight": "400",
+      "file": "maplemono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "maplemono",
+      "style": "italic",
+      "weight": "400",
+      "file": "maplemono-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

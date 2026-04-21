@@ -20,6 +20,7 @@ import { config } from "./config.js";
 import { themes } from "../../config.mjs";
 import { dirToKey } from "../../extensions/extractor.mjs";
 import { sanitizeFilenamePreservingEmojis as sanitize } from "../../util/util.mjs";
+import { extractFonts } from "./font-extractor.js";
 
 const VAULT_PATH = resolve("./runner/vault");
 const RESULTS_DIR = resolve("./runner/results");
@@ -1422,6 +1423,34 @@ async function extractSingleTheme(cli, themeName, hashCache, baseline) {
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
 
     saveResults(themeName, results, codeTokens, domStructure);
+
+    try {
+      // Extract fonts from source CSS
+      const fontFolderName = resolveThemeFolderName(themeName);
+      const fontCssPath = join(
+        VAULT_PATH,
+        ".obsidian/themes",
+        fontFolderName,
+        "theme.css",
+      );
+      const fontLegacyPath = join(
+        VAULT_PATH,
+        ".obsidian/themes",
+        fontFolderName,
+        "obsidian.css",
+      );
+      const fontSourcePath = existsSync(fontCssPath)
+        ? fontCssPath
+        : existsSync(fontLegacyPath)
+          ? fontLegacyPath
+          : null;
+      if (fontSourcePath) {
+        const resultDirName = getResultDirName(themeName);
+        await extractFonts(resultDirName, fontSourcePath);
+      }
+    } catch (error) {
+      console.warn(`  Font extraction skipped: ${error.message}`);
+    }
 
     const currentHash = getThemeHash(themeName, manifest);
     if (currentHash) {

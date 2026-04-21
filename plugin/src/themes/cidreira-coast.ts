@@ -1,7 +1,22 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "cidreira-coast", modes: ["light"], variations: [], fonts: [] },
+  meta: {
+    name: "cidreira-coast",
+    modes: ["light"],
+    variations: [],
+    fonts: [],
+    fontFiles: [
+      {
+        family: "boxicons",
+        style: "normal",
+        weight: "400",
+        file: "boxicons.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+    ],
+  },
   dark: {},
   light: {
     base: `:root:root {

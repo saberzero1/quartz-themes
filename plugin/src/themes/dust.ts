@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["icons/material-icons", "fira-code"],
+    fontFiles: [
+      {
+        family: "Material Icons",
+        style: "normal",
+        weight: "400",
+        file: "material-icons.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {

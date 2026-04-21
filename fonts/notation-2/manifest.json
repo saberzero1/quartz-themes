@@ -1,0 +1,126 @@
+{
+  "extractedAt": "2026-04-21T17:55:33.824Z",
+  "sourceTheme": "Notation 2",
+  "fonts": [
+    {
+      "family": "Lyon-Text",
+      "style": "normal",
+      "weight": "600",
+      "file": "lyon-text.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lyon-Text",
+      "style": "normal",
+      "weight": "bold",
+      "file": "lyon-text-1.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lyon-Text",
+      "style": "normal",
+      "weight": "normal",
+      "file": "lyon-text-2.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lyon-Text",
+      "style": "italic",
+      "weight": "bold",
+      "file": "lyon-text-3.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Duospace",
+      "style": "normal",
+      "weight": "600",
+      "file": "ia-writer-duospace.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Duospace",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ia-writer-duospace-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Duospace",
+      "style": "italic",
+      "weight": "bold",
+      "file": "ia-writer-duospace-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Duospace",
+      "style": "italic",
+      "weight": "normal",
+      "file": "ia-writer-duospace-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lyon-Text",
+      "style": "normal",
+      "weight": "bold",
+      "file": "lyon-text-4.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lyon-Text",
+      "style": "normal",
+      "weight": "normal",
+      "file": "lyon-text-5.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lyon-Text",
+      "style": "italic",
+      "weight": "normal",
+      "file": "lyon-text-6.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lyon-Text",
+      "style": "italic",
+      "weight": "normal",
+      "file": "lyon-text-7.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

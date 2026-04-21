@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["jetbrains-mono", "roboto"],
+    fontFiles: [
+      {
+        family: "JetBrains Mono",
+        style: "normal",
+        weight: "400",
+        file: "jetbrains-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "JetBrains Mono",
+        style: "normal",
+        weight: "400",
+        file: "jetbrains-mono-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {
