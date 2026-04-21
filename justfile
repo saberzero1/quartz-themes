@@ -144,7 +144,9 @@ test-quartz themeName="its-theme":
   cd runner/quartz && npx quartz build -d ../vault --serve
 
 tag:
-  git tag -a "$(grep 'export const FONT_TAG =' ./plugin/src/fonts/font-tag.ts | str replace 'export const FONT_TAG = "' '' | str replace '";' '')" -m "Release version $(grep 'export const FONT_TAG =' ./plugin/src/fonts/font-tag.ts | str replace 'export const FONT_TAG = "' '' | str replace '";' '')"
-  git push origin tag "$(grep 'export const FONT_TAG =' ./plugin/src/fonts/font-tag.ts | str replace 'export const FONT_TAG = "' '' | str replace '";' '')"
+  #!/usr/bin/env bash
+  TAG=$(grep 'export const FONT_TAG =' ./plugin/src/fonts/font-tag.ts | sed 's/.*= "//;s/".*//')
+  git tag -a "$TAG" -m "Release version $TAG"
+  git push origin tag "$TAG"
 
 everything-and-the-kitchen-sink: generate-callout-manifest cli-extract-baseline cli-extract-all-force drop prepare ingest compile generate-plugin convert format-non-generated
