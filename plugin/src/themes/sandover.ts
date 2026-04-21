@@ -6,6 +6,40 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["special-elite"],
+    fontFiles: [
+      {
+        family: "TT2020 Base",
+        style: "italic",
+        weight: "normal",
+        file: "tt2020-base.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "TT2020 Base",
+        style: "normal",
+        weight: "normal",
+        file: "tt2020-base-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "TT2020 Base",
+        style: "bold",
+        weight: "700",
+        file: "tt2020-base-2.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "TT2020 Base",
+        style: "italic",
+        weight: "bold",
+        file: "tt2020-base-3.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

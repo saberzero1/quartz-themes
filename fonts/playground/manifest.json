@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-04-21T17:55:38.785Z",
+  "sourceTheme": "Playground",
+  "fonts": [
+    {
+      "family": "Bricolage Grotesque",
+      "style": "normal italic",
+      "weight": "100 900",
+      "file": "bricolage-grotesque.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

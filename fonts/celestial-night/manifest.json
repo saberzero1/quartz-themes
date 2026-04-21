@@ -1,0 +1,96 @@
+{
+  "extractedAt": "2026-04-21T17:55:08.424Z",
+  "sourceTheme": "Celestial Night",
+  "fonts": [
+    {
+      "family": "Bookerly",
+      "style": "italic",
+      "weight": "normal",
+      "file": "bookerly.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Bookerly",
+      "style": "normal",
+      "weight": "bold",
+      "file": "bookerly-1.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Bookerly",
+      "style": "italic",
+      "weight": "bold",
+      "file": "bookerly-2.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Bookerly",
+      "style": "italic",
+      "weight": "300",
+      "file": "bookerly-3.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Bookerly",
+      "style": "normal",
+      "weight": "300",
+      "file": "bookerly-4.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Bookerly",
+      "style": "normal",
+      "weight": "normal",
+      "file": "bookerly-5.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Hatolie",
+      "style": "normal",
+      "weight": "normal",
+      "file": "hatolie.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Merienda",
+      "style": "normal",
+      "weight": "bold",
+      "file": "merienda.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Merienda",
+      "style": "normal",
+      "weight": "normal",
+      "file": "merienda-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

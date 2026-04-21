@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:59.324Z",
+  "sourceTheme": "Xscriptor",
+  "fonts": [
+    {
+      "family": "EB Garamond",
+      "style": "normal",
+      "weight": "400 700",
+      "file": "eb-garamond.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "EB Garamond",
+      "style": "italic",
+      "weight": "400 700",
+      "file": "eb-garamond-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

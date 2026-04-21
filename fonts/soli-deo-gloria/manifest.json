@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:51.708Z",
+  "sourceTheme": "Soli Deo Gloria",
+  "fonts": [
+    {
+      "family": "Germania-One",
+      "style": "normal",
+      "weight": "400",
+      "file": "germania-one.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Comorant-Garamond",
+      "style": "normal",
+      "weight": "400",
+      "file": "comorant-garamond.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

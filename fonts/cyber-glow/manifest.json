@@ -1,0 +1,46 @@
+{
+  "extractedAt": "2026-04-21T17:55:09.232Z",
+  "sourceTheme": "Cyber Glow",
+  "fonts": [
+    {
+      "family": "OxaniumFira",
+      "style": "normal italic",
+      "weight": "normal",
+      "file": "oxaniumfira.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Space Wham",
+      "style": "normal italic",
+      "weight": "normal",
+      "file": "space-wham.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Edwardian Script ITC",
+      "style": "normal italic",
+      "weight": "normal",
+      "file": "edwardian-script-itc.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Orbitron",
+      "style": "normal italic",
+      "weight": "normal",
+      "file": "orbitron.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "extractedAt": "2026-04-21T17:55:44.510Z",
+  "sourceTheme": "RetroNotes",
+  "fonts": [
+    {
+      "family": "IBM Plex Mono",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ibm-plex-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Mono",
+      "style": "italic",
+      "weight": "normal",
+      "file": "ibm-plex-mono-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Mono",
+      "style": "normal",
+      "weight": "bold",
+      "file": "ibm-plex-mono-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Mono",
+      "style": "italic",
+      "weight": "bold",
+      "file": "ibm-plex-mono-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

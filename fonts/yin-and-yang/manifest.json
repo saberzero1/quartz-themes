@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:59.326Z",
+  "sourceTheme": "Yin and Yang",
+  "fonts": [
+    {
+      "family": "mox-icons",
+      "style": "normal",
+      "weight": "normal",
+      "file": "mox-icons.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Karmilla",
+      "style": "normal",
+      "weight": "normal",
+      "file": "karmilla.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

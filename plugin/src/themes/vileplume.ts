@@ -6,6 +6,53 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
+    fontFiles: [
+      {
+        family: "Jomhuria",
+        style: "normal",
+        weight: "400",
+        file: "jomhuria.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      },
+      {
+        family: "Source Sans Pro",
+        style: "normal",
+        weight: "300",
+        file: "source-sans-pro.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      },
+      {
+        family: "Source Sans Pro",
+        style: "italic",
+        weight: "300",
+        file: "source-sans-pro-1.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      },
+      {
+        family: "Source Sans Pro",
+        style: "normal",
+        weight: "700",
+        file: "source-sans-pro-2.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      },
+      {
+        family: "Source Sans Pro",
+        style: "italic",
+        weight: "700",
+        file: "source-sans-pro-3.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

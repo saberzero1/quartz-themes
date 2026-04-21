@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["lato"],
+    fontFiles: [
+      {
+        family: "Lato Light",
+        style: "normal italic",
+        weight: "100 900",
+        file: "lato-light.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

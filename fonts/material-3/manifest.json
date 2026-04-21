@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:28.957Z",
+  "sourceTheme": "Material 3",
+  "fonts": [
+    {
+      "family": "Roboto",
+      "style": "normal",
+      "weight": "400",
+      "file": "roboto.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Roboto",
+      "style": "italic",
+      "weight": "400",
+      "file": "roboto-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

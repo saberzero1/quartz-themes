@@ -1,0 +1,56 @@
+{
+  "extractedAt": "2026-04-21T17:55:47.560Z",
+  "sourceTheme": "Shade Sanctuary",
+  "fonts": [
+    {
+      "family": "Computer Modern",
+      "style": "normal",
+      "weight": "normal",
+      "file": "computer-modern.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Computer Modern",
+      "style": "italic",
+      "weight": "normal",
+      "file": "computer-modern-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Computer Modern",
+      "style": "normal",
+      "weight": "bold",
+      "file": "computer-modern-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Computer Modern",
+      "style": "italic",
+      "weight": "bold",
+      "file": "computer-modern-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weight": "normal",
+      "file": "jetbrains-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

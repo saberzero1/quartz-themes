@@ -1,0 +1,586 @@
+{
+  "extractedAt": "2026-04-21T17:55:57.041Z",
+  "sourceTheme": "Viridian",
+  "fonts": [
+    {
+      "family": "Lora",
+      "style": "normal",
+      "weight": "normal",
+      "file": "lora.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lora",
+      "style": "italic",
+      "weight": "normal",
+      "file": "lora-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Serif Pro",
+      "style": "normal",
+      "weight": "900",
+      "file": "source-serif-pro.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Serif Pro",
+      "style": "italic",
+      "weight": "900",
+      "file": "source-serif-pro-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Serif Pro",
+      "style": "normal",
+      "weight": "bold",
+      "file": "source-serif-pro-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Serif Pro",
+      "style": "italic",
+      "weight": "normal",
+      "file": "source-serif-pro-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Serif Pro",
+      "style": "normal",
+      "weight": "300",
+      "file": "source-serif-pro-4.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Serif Pro",
+      "style": "italic",
+      "weight": "300",
+      "file": "source-serif-pro-5.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Serif Pro",
+      "style": "normal",
+      "weight": "normal",
+      "file": "source-serif-pro-6.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Serif Pro",
+      "style": "italic",
+      "weight": "bold",
+      "file": "source-serif-pro-7.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Serif Pro",
+      "style": "italic",
+      "weight": "200",
+      "file": "source-serif-pro-8.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Serif Pro",
+      "style": "normal",
+      "weight": "200",
+      "file": "source-serif-pro-9.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Serif Pro",
+      "style": "italic",
+      "weight": "600",
+      "file": "source-serif-pro-10.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Source Serif Pro",
+      "style": "normal",
+      "weight": "600",
+      "file": "source-serif-pro-11.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Manrope",
+      "style": "normal",
+      "weight": "500",
+      "file": "manrope.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Manrope",
+      "style": "normal",
+      "weight": "600",
+      "file": "manrope-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Manrope",
+      "style": "normal",
+      "weight": "normal",
+      "file": "manrope-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Manrope",
+      "style": "normal",
+      "weight": "200",
+      "file": "manrope-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Manrope",
+      "style": "normal",
+      "weight": "bold",
+      "file": "manrope-4.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Manrope",
+      "style": "normal",
+      "weight": "300",
+      "file": "manrope-5.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono Oblique",
+      "style": "italic",
+      "weight": "bold",
+      "file": "victor-mono-oblique.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "normal",
+      "weight": "200",
+      "file": "victor-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "italic",
+      "weight": "normal",
+      "file": "victor-mono-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "italic",
+      "weight": "200",
+      "file": "victor-mono-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "italic",
+      "weight": "200",
+      "file": "victor-mono-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "normal",
+      "weight": "bold",
+      "file": "victor-mono-4.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "italic",
+      "weight": "bold",
+      "file": "victor-mono-5.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "italic",
+      "weight": "300",
+      "file": "victor-mono-6.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "italic",
+      "weight": "600",
+      "file": "victor-mono-7.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "normal",
+      "weight": "100",
+      "file": "victor-mono-8.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "italic",
+      "weight": "600",
+      "file": "victor-mono-9.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "italic",
+      "weight": "500",
+      "file": "victor-mono-10.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "normal",
+      "weight": "normal",
+      "file": "victor-mono-11.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "italic",
+      "weight": "100",
+      "file": "victor-mono-12.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "italic",
+      "weight": "100",
+      "file": "victor-mono-13.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "normal",
+      "weight": "600",
+      "file": "victor-mono-14.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "italic",
+      "weight": "500",
+      "file": "victor-mono-15.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "normal",
+      "weight": "300",
+      "file": "victor-mono-16.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "italic",
+      "weight": "300",
+      "file": "victor-mono-17.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono Oblique",
+      "style": "italic",
+      "weight": "normal",
+      "file": "victor-mono-oblique-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Victor Mono",
+      "style": "normal",
+      "weight": "500",
+      "file": "victor-mono-18.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Recursive",
+      "style": "normal",
+      "weight": "300",
+      "file": "recursive.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Optima S",
+      "style": "normal",
+      "weight": "600",
+      "file": "optima-s.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia ExtraBlack",
+      "style": "normal",
+      "weight": "900",
+      "file": "brevia-extrablack.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia",
+      "style": "italic",
+      "weight": "bold",
+      "file": "brevia.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia Regular",
+      "style": "italic",
+      "weight": "normal",
+      "file": "brevia-regular.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia",
+      "style": "italic",
+      "weight": "300",
+      "file": "brevia-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia",
+      "style": "italic",
+      "weight": "500",
+      "file": "brevia-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia",
+      "style": "normal",
+      "weight": "900",
+      "file": "brevia-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia",
+      "style": "normal",
+      "weight": "500",
+      "file": "brevia-4.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia",
+      "style": "normal",
+      "weight": "normal",
+      "file": "brevia-5.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia",
+      "style": "italic",
+      "weight": "600",
+      "file": "brevia-6.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia",
+      "style": "normal",
+      "weight": "300",
+      "file": "brevia-7.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia",
+      "style": "normal",
+      "weight": "bold",
+      "file": "brevia-8.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia",
+      "style": "normal",
+      "weight": "600",
+      "file": "brevia-9.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia ExtraBlack",
+      "style": "italic",
+      "weight": "900",
+      "file": "brevia-extrablack-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Brevia",
+      "style": "italic",
+      "weight": "900",
+      "file": "brevia-10.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "nasin-nanpa",
+      "style": "normal",
+      "weight": "normal",
+      "file": "nasin-nanpa.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

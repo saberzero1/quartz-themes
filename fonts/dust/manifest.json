@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-04-21T17:55:09.263Z",
+  "sourceTheme": "Dust",
+  "fonts": [
+    {
+      "family": "Material Icons",
+      "style": "normal",
+      "weight": "400",
+      "file": "material-icons.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

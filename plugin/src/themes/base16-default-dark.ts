@@ -373,6 +373,7 @@ html[saved-theme="dark"] body del {
 
 html[saved-theme="dark"] body h1.article-title {
   color: rgb(216, 216, 216);
+  font-weight: 450;
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
@@ -393,6 +394,7 @@ html[saved-theme="dark"] body p {
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
   color: rgb(186, 139, 175);
+  font-weight: 450;
   outline: rgb(186, 139, 175) none 0px;
   text-decoration-color: rgb(186, 139, 175);
 }
@@ -970,6 +972,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
 
 html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p {
   color: rgb(232, 232, 232);
+  font-weight: 450;
 }
 
 html[saved-theme="dark"] body .callout > .callout-content {

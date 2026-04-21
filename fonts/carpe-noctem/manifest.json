@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:07.985Z",
+  "sourceTheme": "Carpe Noctem",
+  "fonts": [
+    {
+      "family": "Cabin",
+      "style": "italic",
+      "weight": "normal",
+      "file": "cabin.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Cabin",
+      "style": "normal",
+      "weight": "normal",
+      "file": "cabin-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

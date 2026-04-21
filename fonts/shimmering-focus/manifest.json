@@ -1,0 +1,76 @@
+{
+  "extractedAt": "2026-04-21T17:55:47.885Z",
+  "sourceTheme": "Shimmering Focus",
+  "fonts": [
+    {
+      "family": "iA Writer Quattro S",
+      "style": "normal",
+      "weight": "700",
+      "file": "ia-writer-quattro-s.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro S",
+      "style": "italic",
+      "weight": "700",
+      "file": "ia-writer-quattro-s-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro S",
+      "style": "italic",
+      "weight": "400",
+      "file": "ia-writer-quattro-s-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro S",
+      "style": "normal",
+      "weight": "400",
+      "file": "ia-writer-quattro-s-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Recursive S",
+      "style": "normal",
+      "weight": "600 900",
+      "file": "recursive-s.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Recursive S",
+      "style": "normal",
+      "weight": "300 500",
+      "file": "recursive-s-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Material Icons (Filled)",
+      "style": "normal",
+      "weight": "400",
+      "file": "material-icons-filled.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

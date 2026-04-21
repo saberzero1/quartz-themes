@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:08.852Z",
+  "sourceTheme": "Consolas",
+  "fonts": [
+    {
+      "family": "Ligconsolata",
+      "style": "normal",
+      "weight": "400",
+      "file": "ligconsolata.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "cdn",
+      "sourceUrl": "https://fonts.cdnfonts.com/s/107278/Ligconsolata-Regular.woff"
+    },
+    {
+      "family": "Ligconsolata",
+      "style": "normal",
+      "weight": "700",
+      "file": "ligconsolata-1.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "cdn",
+      "sourceUrl": "https://fonts.cdnfonts.com/s/107278/Ligconsolata-Bold.woff"
+    }
+  ]
+}

@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
+    fontFiles: [
+      {
+        family: "JetBrains Mono",
+        style: "normal",
+        weight: "normal",
+        file: "jetbrains-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-04-21T17:55:18.131Z",
+  "sourceTheme": "Focus",
+  "fonts": [
+    {
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weight": "400",
+      "file": "jetbrains-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

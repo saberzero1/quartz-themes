@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:56.568Z",
+  "sourceTheme": "Vesnea Vibe",
+  "fonts": [
+    {
+      "family": "Josefin Sans",
+      "style": "normal",
+      "weight": "350",
+      "file": "josefin-sans.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Work Sans",
+      "style": "normal",
+      "weight": "400",
+      "file": "work-sans.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

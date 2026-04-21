@@ -351,6 +351,8 @@
 /* .𖥔 ݁ ˖  accent variables ⊹ ࣪ ˖
 */
 .theme-dark.ulu-red {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --color-accent: hsl(var(--color-red-hsl));
     --color-accent-rgb: var(--color-red-rgb);
     --color-accent-hsl: var(--color-red-hsl);
@@ -367,6 +369,8 @@
 }
 
 .theme-dark.ulu-green {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --color-accent: hsl(var(--color-green-hsl));
     --color-accent-rgb: var(--color-green-rgb);
     --color-accent-hsl: var(--color-green-hsl);
@@ -383,6 +387,8 @@
 }
 
 .theme-dark.ulu-orange {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --color-accent: hsl(var(--color-orange-hsl));
     --color-accent-rgb: var(--color-orange-rgb);
     --color-accent-hsl: var(--color-orange-hsl);
@@ -399,6 +405,8 @@
 }
 
 .theme-dark.ulu-yellow {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --color-accent: hsl(var(--color-yellow-hsl));
     --color-accent-rgb: var(--color-yellow-rgb);
     --color-accent-hsl: var(--color-yellow-hsl);
@@ -415,6 +423,8 @@
 }
 
 .theme-dark.ulu-cyan {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --color-accent: hsl(var(--color-cyan-hsl));
     --color-accent-rgb: var(--color-cyan-rgb);
     --color-accent-hsl: var(--color-cyan-hsl);
@@ -431,6 +441,8 @@
 }
 
 .theme-dark.ulu-blue {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --color-accent: hsl(var(--color-blue-hsl));
     --color-accent-rgb: var(--color-blue-rgb);
     --color-accent-hsl: var(--color-blue-hsl);
@@ -447,6 +459,8 @@
 }
 
 .theme-dark.ulu-purple {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --color-accent: hsl(var(--color-purple-hsl));
     --color-accent-rgb: var(--color-purple-rgb);
     --color-accent-hsl: var(--color-purple-hsl);
@@ -463,6 +477,8 @@
 }
 
 .theme-dark.ulu-pink {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --color-accent: hsl(var(--color-pink-hsl));
     --color-accent-rgb: var(--color-pink-rgb);
     --color-accent-hsl: var(--color-pink-hsl);
@@ -479,6 +495,8 @@
 }
 
 .theme-dark.ulu-white {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --color-accent: hsl(0, 0%, 100%);
     --color-accent-rgb: 255, 255, 255;
     --color-accent-hsl: 0, 0%, 100%;
@@ -606,6 +624,8 @@
 }
 
 .ulu-red-d.theme-dark {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --accent-h: 75;
     --accent-s: 21%;
     --accent-l: 57%;
@@ -1042,6 +1062,8 @@
 }
 
 .theme-dark.ulu-solar-dt {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --accent-h: 1;
     --accent-s: 71.2%;
     --accent-l: 52.4%;
@@ -1164,6 +1186,8 @@
 }
 
 .theme-dark.ulu-gruvbox-dt {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --accent-h: 75;
     --accent-s: 21%;
     --accent-l: 57%;
@@ -1949,6 +1973,8 @@ body.ulu-meg-l.theme-light:not(.is-mobile)
 
 /* .𖥔 ݁ ˖  adaptive dark (paired with adaptive-lt) ⊹ ࣪ ˖ */
 .theme-dark.ulu-adaptive-dt {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --mix-base-dark: #09090b;
     --mix-base-light: #e4e4e7;
     --proxy-20: color-mix(in srgb, var(--color-accent) 4%, var(--mix-base-dark));
@@ -1985,6 +2011,8 @@ body.ulu-meg-l.theme-light:not(.is-mobile)
 
 /* .𖥔 ݁ ˖  ────୨ৎ──── ⊹ ࣪ ˖ */ /* .𖥔 ݁ ˖  dark-only sub-themes ⊹ ࣪ ˖ */
 .theme-dark.ulu-soft-dt {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --mono-rgb-100: #fbdfc7;
     --mono-rgb-0: #696969;
     --canvas-color: var(--background-modifier-border);
@@ -2042,6 +2070,8 @@ body.ulu-meg-l.theme-light:not(.is-mobile)
 }
 
 .theme-dark.ulu-spotlight-dt {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --color-accent: hsl(14, 100%, 73%);
     --color-accent-rgb: 255, 149, 117;
     --color-accent-hsl: 14, 100%, 73%;
@@ -2294,6 +2324,8 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile) .workspace-split.mod-root .view
 }
 
 .theme-dark.ulu-dracula-dt {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --accent-h: 1;
     --accent-s: 71.2%;
     --accent-l: 52.4%;
@@ -2354,6 +2386,8 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile) .workspace-split.mod-root .view
 }
 
 .theme-dark.ulu-succ-d {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --accent-h: 1;
     --accent-s: 71.2%;
     --accent-l: 52.4%;
@@ -2414,6 +2448,8 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile) .workspace-split.mod-root .view
 }
 
 .theme-dark.ulu-queen-d {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --accent-h: 1;
     --accent-s: 71.2%;
     --accent-l: 52.4%;
@@ -2474,6 +2510,8 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile) .workspace-split.mod-root .view
 }
 
 .theme-dark.ulu-lyt-dt {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --accent-h: 191 !important;
     --accent-s: 54% !important;
     --accent-l: 64% !important;
@@ -2534,6 +2572,8 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile) .workspace-split.mod-root .view
 }
 
 .theme-dark.ulu-abaddon-d {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --mono-rgb-0: #000000;
     --mono-rgb-100: #ffffff;
     --canvas-color: var(--background-modifier-border);
@@ -2586,6 +2626,8 @@ body.theme-dark.ulu-abaddon-d:not(.is-mobile) .workspace-split.mod-root .view-co
 }
 
 .theme-dark.ulu-abaddon-glass-d {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --mono-rgb-0: #000000;
     --mono-rgb-100: #ffffff;
     --canvas-color: var(--background-modifier-border);
@@ -3019,6 +3061,8 @@ body.theme-dark.ulu-abaddon-glass-d .nav-file-title-content {
 }
 
 .theme-dark.ulu-bunny-d {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: lighten;
     --accent-h: 26;
     --accent-s: 50%;
     --accent-l: 55%;
@@ -3171,7 +3215,7 @@ body {
 ╰───────────────────────────────────────────────────────────────╯
 */
 /* @settings
-name: "🦞 ultra lobster: unity" 
+name: "｡ ₊°༺ ultra lobster ༻°₊ ｡" 
 id: ulu-theme-settings 
 settings: 
   - id: theme-info 
@@ -3317,6 +3361,16 @@ settings:
     description: "paste a direct image link wrapped in url(\"\"). example: url(\"https://i.imgur.com/image.png\")" 
     type: variable-text 
     default: 'url("https://512pixels.net/downloads/macos-wallpapers/11-0-color-day.jpg")' 
+  - id: ulu-minimal-properties 
+    title: minimal properties card
+    description: removes the glass slab styling from the properties card
+    type: class-toggle
+    default: false
+  - id: ulu-inline-property-tags
+    title: match inline tags
+    description: makes property tags look like standard inline wireframe tags
+    type: class-toggle
+    default: false
   - id: ulu-radius 
     title: border radius [minimal implement] 
     type: variable-select 
@@ -3427,63 +3481,108 @@ settings:
     allowempty: false 
     default: 'satoshi' 
     options: 
-      - 'monaspace' 
-      - 'satoshi' 
-      - 'getai' 
-      - 'fraunces' 
-      - 'nightingale' 
-      - 'instrument' 
-      - 'aspekta' 
-      - 'general sans' 
-      - 'iawriter' 
-      - 'martian mono' 
-      - 'inter' 
-      - 'space grotesk' 
-      - 'lexend' 
-      - 'dobbintextsf-roman' 
-      - 'eurostile' 
+      - label: "satoshi ࣪ ִֶָ☾.sans"
+        value: "satoshi"
+      - label: "getai ࣪ ִֶָ☾.sans"
+        value: "getai"
+      - label: "aspekta ࣪ ִֶָ☾.sans"
+        value: "aspekta"
+      - label: "general sans ࣪ ִֶָ☾.sans"
+        value: "general sans"
+      - label: "inter ࣪ ִֶָ☾.sans"
+        value: "inter"
+      - label: "space grotesk ࣪ ִֶָ☾.sans"
+        value: "space grotesk"
+      - label: "lexend ࣪ ִֶָ☾.sans"
+        value: "lexend"
+      - label: "dobbintextsf-roman ࣪ ִֶָ☾.sans"
+        value: "dobbintextsf-roman"
+      - label: "eurostile ࣪ ִֶָ☾.sans"
+        value: "eurostile"
+      - label: "fraunces ✦ serif"
+        value: "fraunces"
+      - label: "nightingale ✦ serif"
+        value: "nightingale"
+      - label: "instrument ✦ serif"
+        value: "instrument"
+      - label: "monaspace ‪‪❤︎‬ mono"
+        value: "monaspace"
+      - label: "iawriter ‪‪❤︎‬ mono"
+        value: "iawriter"
+      - label: "martian mono ‪‪❤︎‬ mono"
+        value: "martian mono"
   - id: ulu-font-title 
     title: title type 
     type: variable-select 
     allowempty: false 
     default: 'monaspace' 
     options: 
-      - 'monaspace' 
-      - 'satoshi' 
-      - 'getai' 
-      - 'fraunces' 
-      - 'nightingale' 
-      - 'instrument' 
-      - 'aspekta' 
-      - 'general sans' 
-      - 'iawriter' 
-      - 'martian mono' 
-      - 'inter' 
-      - 'space grotesk' 
-      - 'lexend' 
-      - 'dobbintextsf-roman' 
-      - 'eurostile' 
+      - label: "satoshi ࣪ ִֶָ☾.sans"
+        value: "satoshi"
+      - label: "getai ࣪ ִֶָ☾.sans"
+        value: "getai"
+      - label: "aspekta ࣪ ִֶָ☾.sans"
+        value: "aspekta"
+      - label: "general sans ࣪ ִֶָ☾.sans"
+        value: "general sans"
+      - label: "inter ࣪ ִֶָ☾.sans"
+        value: "inter"
+      - label: "space grotesk ࣪ ִֶָ☾.sans"
+        value: "space grotesk"
+      - label: "lexend ࣪ ִֶָ☾.sans"
+        value: "lexend"
+      - label: "dobbintextsf-roman ࣪ ִֶָ☾.sans"
+        value: "dobbintextsf-roman"
+      - label: "eurostile ࣪ ִֶָ☾.sans"
+        value: "eurostile"
+      - label: "fraunces ✦ serif"
+        value: "fraunces"
+      - label: "nightingale ✦ serif"
+        value: "nightingale"
+      - label: "instrument ✦ serif"
+        value: "instrument"
+      - label: "monaspace ‪‪❤︎‬ mono"
+        value: "monaspace"
+      - label: "iawriter ‪‪❤︎‬ mono"
+        value: "iawriter"
+      - label: "martian mono ‪‪❤︎‬ mono"
+        value: "martian mono"
   - id: ulu-inline-title-font 
     title: inline title font 
     type: variable-select 
     allowempty: true 
     default: '' 
     options: 
-      - 'monaspace' 
-      - 'satoshi' 
-      - 'getai' 
-      - 'fraunces' 
-      - 'nightingale' 
-      - 'instrument' 
-      - 'aspekta' 
-      - 'general sans' 
-      - 'iawriter' 
-      - 'martian mono' 
-      - 'inter' 
-      - 'space grotesk' 
-      - 'lexend' 
-      - 'dobbintextsf-roman' 
-      - 'eurostile' 
+      - label: "satoshi ࣪ ִֶָ☾.sans"
+        value: "satoshi"
+      - label: "getai ࣪ ִֶָ☾.sans"
+        value: "getai"
+      - label: "aspekta ࣪ ִֶָ☾.sans"
+        value: "aspekta"
+      - label: "general sans ࣪ ִֶָ☾.sans"
+        value: "general sans"
+      - label: "inter ࣪ ִֶָ☾.sans"
+        value: "inter"
+      - label: "space grotesk ࣪ ִֶָ☾.sans"
+        value: "space grotesk"
+      - label: "lexend ࣪ ִֶָ☾.sans"
+        value: "lexend"
+      - label: "dobbintextsf-roman ࣪ ִֶָ☾.sans"
+        value: "dobbintextsf-roman"
+      - label: "eurostile ࣪ ִֶָ☾.sans"
+        value: "eurostile"
+      - label: "fraunces ✦ serif"
+        value: "fraunces"
+      - label: "nightingale ✦ serif"
+        value: "nightingale"
+      - label: "instrument ✦ serif"
+        value: "instrument"
+      - label: "monaspace ‪‪❤︎‬ mono"
+        value: "monaspace"
+      - label: "iawriter ‪‪❤︎‬ mono"
+        value: "iawriter"
+      - label: "martian mono ‪‪❤︎‬ mono"
+        value: "martian mono"
   - id: responsive-text 
     title: text adjuster 
     description: 🚨 must be a whole / decimal number such as 1 or 1.1. further scale can be changed via slider in appearance 
@@ -3870,216 +3969,216 @@ settings:
     allowempty: true 
     default: '' 
     options: 
-      - label: monaspace 
-        value: '"monaspace", monospace' 
-      - label: satoshi 
+      - label: "satoshi ࣪ ִֶָ☾.sans"
         value: '"satoshi", system-ui, sans-serif' 
-      - label: getai 
+      - label: "getai ࣪ ִֶָ☾.sans"
         value: '"getai", serif' 
-      - label: fraunces 
-        value: '"fraunces", serif' 
-      - label: nightingale 
-        value: '"nightingale", serif' 
-      - label: instrument 
-        value: '"instrument", sans-serif' 
-      - label: aspekta 
+      - label: "aspekta ࣪ ִֶָ☾.sans"
         value: '"aspekta", sans-serif' 
-      - label: general sans 
+      - label: "general sans ࣪ ִֶָ☾.sans"
         value: '"general sans", sans-serif' 
-      - label: iawriter 
-        value: '"iawriter", monospace' 
-      - label: martian mono 
-        value: '"martian mono", monospace' 
-      - label: inter 
+      - label: "inter ࣪ ִֶָ☾.sans"
         value: '"inter", sans-serif' 
-      - label: space grotesk 
+      - label: "space grotesk ࣪ ִֶָ☾.sans"
         value: '"space grotesk", sans-serif' 
-      - label: lexend 
+      - label: "lexend ࣪ ִֶָ☾.sans"
         value: '"lexend", sans-serif' 
-      - label: dobbintextsf-roman 
+      - label: "dobbintextsf-roman ࣪ ִֶָ☾.sans"
         value: '"dobbintextsf-roman", sans-serif' 
-      - label: eurostile 
+      - label: "eurostile ࣪ ִֶָ☾.sans"
         value: '"eurostile", sans-serif' 
+      - label: "fraunces ✦ serif"
+        value: '"fraunces", serif' 
+      - label: "nightingale ✦ serif"
+        value: '"nightingale", serif' 
+      - label: "instrument ✦ serif"
+        value: '"instrument", sans-serif' 
+      - label: "monaspace ‪‪❤︎‬ mono"
+        value: '"monaspace", monospace' 
+      - label: "iawriter ‪‪❤︎‬ mono"
+        value: '"iawriter", monospace' 
+      - label: "martian mono ‪‪❤︎‬ mono"
+        value: '"martian mono", monospace' 
   - id: ulu-header2-type 
     title: header 2 typeface 
     type: variable-select 
     allowempty: true 
     default: '' 
     options: 
-      - label: monaspace 
-        value: '"monaspace", monospace' 
-      - label: satoshi 
+      - label: "satoshi ࣪ ִֶָ☾.sans"
         value: '"satoshi", system-ui, sans-serif' 
-      - label: getai 
+      - label: "getai ࣪ ִֶָ☾.sans"
         value: '"getai", serif' 
-      - label: fraunces 
-        value: '"fraunces", serif' 
-      - label: nightingale 
-        value: '"nightingale", serif' 
-      - label: instrument 
-        value: '"instrument", sans-serif' 
-      - label: aspekta 
+      - label: "aspekta ࣪ ִֶָ☾.sans"
         value: '"aspekta", sans-serif' 
-      - label: general sans 
+      - label: "general sans ࣪ ִֶָ☾.sans"
         value: '"general sans", sans-serif' 
-      - label: iawriter 
-        value: '"iawriter", monospace' 
-      - label: martian mono 
-        value: '"martian mono", monospace' 
-      - label: inter 
+      - label: "inter ࣪ ִֶָ☾.sans"
         value: '"inter", sans-serif' 
-      - label: space grotesk 
+      - label: "space grotesk ࣪ ִֶָ☾.sans"
         value: '"space grotesk", sans-serif' 
-      - label: lexend 
+      - label: "lexend ࣪ ִֶָ☾.sans"
         value: '"lexend", sans-serif' 
-      - label: dobbintextsf-roman 
+      - label: "dobbintextsf-roman ࣪ ִֶָ☾.sans"
         value: '"dobbintextsf-roman", sans-serif' 
-      - label: eurostile 
+      - label: "eurostile ࣪ ִֶָ☾.sans"
         value: '"eurostile", sans-serif' 
+      - label: "fraunces ✦ serif"
+        value: '"fraunces", serif' 
+      - label: "nightingale ✦ serif"
+        value: '"nightingale", serif' 
+      - label: "instrument ✦ serif"
+        value: '"instrument", sans-serif' 
+      - label: "monaspace ‪‪❤︎‬ mono"
+        value: '"monaspace", monospace' 
+      - label: "iawriter ‪‪❤︎‬ mono"
+        value: '"iawriter", monospace' 
+      - label: "martian mono ‪‪❤︎‬ mono"
+        value: '"martian mono", monospace' 
   - id: ulu-header3-type 
     title: header 3 typeface 
     type: variable-select 
     allowempty: true 
     default: '' 
     options: 
-      - label: monaspace 
-        value: '"monaspace", monospace' 
-      - label: satoshi 
+      - label: "satoshi ࣪ ִֶָ☾.sans"
         value: '"satoshi", system-ui, sans-serif' 
-      - label: getai 
+      - label: "getai ࣪ ִֶָ☾.sans"
         value: '"getai", serif' 
-      - label: fraunces 
-        value: '"fraunces", serif' 
-      - label: nightingale 
-        value: '"nightingale", serif' 
-      - label: instrument 
-        value: '"instrument", sans-serif' 
-      - label: aspekta 
+      - label: "aspekta ࣪ ִֶָ☾.sans"
         value: '"aspekta", sans-serif' 
-      - label: general sans 
+      - label: "general sans ࣪ ִֶָ☾.sans"
         value: '"general sans", sans-serif' 
-      - label: iawriter 
-        value: '"iawriter", monospace' 
-      - label: martian mono 
-        value: '"martian mono", monospace' 
-      - label: inter 
+      - label: "inter ࣪ ִֶָ☾.sans"
         value: '"inter", sans-serif' 
-      - label: space grotesk 
+      - label: "space grotesk ࣪ ִֶָ☾.sans"
         value: '"space grotesk", sans-serif' 
-      - label: lexend 
+      - label: "lexend ࣪ ִֶָ☾.sans"
         value: '"lexend", sans-serif' 
-      - label: dobbintextsf-roman 
+      - label: "dobbintextsf-roman ࣪ ִֶָ☾.sans"
         value: '"dobbintextsf-roman", sans-serif' 
-      - label: eurostile 
+      - label: "eurostile ࣪ ִֶָ☾.sans"
         value: '"eurostile", sans-serif' 
+      - label: "fraunces ✦ serif"
+        value: '"fraunces", serif' 
+      - label: "nightingale ✦ serif"
+        value: '"nightingale", serif' 
+      - label: "instrument ✦ serif"
+        value: '"instrument", sans-serif' 
+      - label: "monaspace ‪‪❤︎‬ mono"
+        value: '"monaspace", monospace' 
+      - label: "iawriter ‪‪❤︎‬ mono"
+        value: '"iawriter", monospace' 
+      - label: "martian mono ‪‪❤︎‬ mono"
+        value: '"martian mono", monospace' 
   - id: ulu-header4-type 
     title: header 4 typeface 
     type: variable-select 
     allowempty: true 
     default: '' 
     options: 
-      - label: monaspace 
-        value: '"monaspace", monospace' 
-      - label: satoshi 
+      - label: "satoshi ࣪ ִֶָ☾.sans"
         value: '"satoshi", system-ui, sans-serif' 
-      - label: getai 
+      - label: "getai ࣪ ִֶָ☾.sans"
         value: '"getai", serif' 
-      - label: fraunces 
-        value: '"fraunces", serif' 
-      - label: nightingale 
-        value: '"nightingale", serif' 
-      - label: instrument 
-        value: '"instrument", sans-serif' 
-      - label: aspekta 
+      - label: "aspekta ࣪ ִֶָ☾.sans"
         value: '"aspekta", sans-serif' 
-      - label: general sans 
+      - label: "general sans ࣪ ִֶָ☾.sans"
         value: '"general sans", sans-serif' 
-      - label: iawriter 
-        value: '"iawriter", monospace' 
-      - label: martian mono 
-        value: '"martian mono", monospace' 
-      - label: inter 
+      - label: "inter ࣪ ִֶָ☾.sans"
         value: '"inter", sans-serif' 
-      - label: space grotesk 
+      - label: "space grotesk ࣪ ִֶָ☾.sans"
         value: '"space grotesk", sans-serif' 
-      - label: lexend 
+      - label: "lexend ࣪ ִֶָ☾.sans"
         value: '"lexend", sans-serif' 
-      - label: dobbintextsf-roman 
+      - label: "dobbintextsf-roman ࣪ ִֶָ☾.sans"
         value: '"dobbintextsf-roman", sans-serif' 
-      - label: eurostile 
+      - label: "eurostile ࣪ ִֶָ☾.sans"
         value: '"eurostile", sans-serif' 
+      - label: "fraunces ✦ serif"
+        value: '"fraunces", serif' 
+      - label: "nightingale ✦ serif"
+        value: '"nightingale", serif' 
+      - label: "instrument ✦ serif"
+        value: '"instrument", sans-serif' 
+      - label: "monaspace ‪‪❤︎‬ mono"
+        value: '"monaspace", monospace' 
+      - label: "iawriter ‪‪❤︎‬ mono"
+        value: '"iawriter", monospace' 
+      - label: "martian mono ‪‪❤︎‬ mono"
+        value: '"martian mono", monospace' 
   - id: ulu-header5-type 
     title: header 5 typeface 
     type: variable-select 
     allowempty: true 
     default: '' 
     options: 
-      - label: monaspace 
-        value: '"monaspace", monospace' 
-      - label: satoshi 
+      - label: "satoshi ࣪ ִֶָ☾.sans"
         value: '"satoshi", system-ui, sans-serif' 
-      - label: getai 
+      - label: "getai ࣪ ִֶָ☾.sans"
         value: '"getai", serif' 
-      - label: fraunces 
-        value: '"fraunces", serif' 
-      - label: nightingale 
-        value: '"nightingale", serif' 
-      - label: instrument 
-        value: '"instrument", sans-serif' 
-      - label: aspekta 
+      - label: "aspekta ࣪ ִֶָ☾.sans"
         value: '"aspekta", sans-serif' 
-      - label: general sans 
+      - label: "general sans ࣪ ִֶָ☾.sans"
         value: '"general sans", sans-serif' 
-      - label: iawriter 
-        value: '"iawriter", monospace' 
-      - label: martian mono 
-        value: '"martian mono", monospace' 
-      - label: inter 
+      - label: "inter ࣪ ִֶָ☾.sans"
         value: '"inter", sans-serif' 
-      - label: space grotesk 
+      - label: "space grotesk ࣪ ִֶָ☾.sans"
         value: '"space grotesk", sans-serif' 
-      - label: lexend 
+      - label: "lexend ࣪ ִֶָ☾.sans"
         value: '"lexend", sans-serif' 
-      - label: dobbintextsf-roman 
+      - label: "dobbintextsf-roman ࣪ ִֶָ☾.sans"
         value: '"dobbintextsf-roman", sans-serif' 
-      - label: eurostile 
+      - label: "eurostile ࣪ ִֶָ☾.sans"
         value: '"eurostile", sans-serif' 
+      - label: "fraunces ✦ serif"
+        value: '"fraunces", serif' 
+      - label: "nightingale ✦ serif"
+        value: '"nightingale", serif' 
+      - label: "instrument ✦ serif"
+        value: '"instrument", sans-serif' 
+      - label: "monaspace ‪‪❤︎‬ mono"
+        value: '"monaspace", monospace' 
+      - label: "iawriter ‪‪❤︎‬ mono"
+        value: '"iawriter", monospace' 
+      - label: "martian mono ‪‪❤︎‬ mono"
+        value: '"martian mono", monospace' 
   - id: ulu-header6-type 
     title: header 6 typeface 
     type: variable-select 
     allowempty: true 
     default: '' 
     options: 
-      - label: monaspace 
-        value: '"monaspace", monospace' 
-      - label: satoshi 
+      - label: "satoshi ࣪ ִֶָ☾.sans"
         value: '"satoshi", system-ui, sans-serif' 
-      - label: getai 
+      - label: "getai ࣪ ִֶָ☾.sans"
         value: '"getai", serif' 
-      - label: fraunces 
-        value: '"fraunces", serif' 
-      - label: nightingale 
-        value: '"nightingale", serif' 
-      - label: instrument 
-        value: '"instrument", sans-serif' 
-      - label: aspekta 
+      - label: "aspekta ࣪ ִֶָ☾.sans"
         value: '"aspekta", sans-serif' 
-      - label: general sans 
+      - label: "general sans ࣪ ִֶָ☾.sans"
         value: '"general sans", sans-serif' 
-      - label: iawriter 
-        value: '"iawriter", monospace' 
-      - label: martian mono 
-        value: '"martian mono", monospace' 
-      - label: inter 
+      - label: "inter ࣪ ִֶָ☾.sans"
         value: '"inter", sans-serif' 
-      - label: space grotesk 
+      - label: "space grotesk ࣪ ִֶָ☾.sans"
         value: '"space grotesk", sans-serif' 
-      - label: lexend 
+      - label: "lexend ࣪ ִֶָ☾.sans"
         value: '"lexend", sans-serif' 
-      - label: dobbintextsf-roman 
+      - label: "dobbintextsf-roman ࣪ ִֶָ☾.sans"
         value: '"dobbintextsf-roman", sans-serif' 
-      - label: eurostile 
+      - label: "eurostile ࣪ ִֶָ☾.sans"
         value: '"eurostile", sans-serif' 
+      - label: "fraunces ✦ serif"
+        value: '"fraunces", serif' 
+      - label: "nightingale ✦ serif"
+        value: '"nightingale", serif' 
+      - label: "instrument ✦ serif"
+        value: '"instrument", sans-serif' 
+      - label: "monaspace ‪‪❤︎‬ mono"
+        value: '"monaspace", monospace' 
+      - label: "iawriter ‪‪❤︎‬ mono"
+        value: '"iawriter", monospace' 
+      - label: "martian mono ‪‪❤︎‬ mono"
+        value: '"martian mono", monospace' 
 
   # header weights
 
@@ -4274,7 +4373,7 @@ body.ulu-flat .vertical-tab-content,
 body.ulu-flat .horizontal-tab-content,
 body.ulu-flat:not(.is-mobile) .workspace-split.mod-root .view-content,
 body.ulu-flat .view-actions,
-body.ulu-flat .view-header-title-container,
+body.ulu-flat:not(.is-mobile) .view-header-title-container,
 body.ulu-flat:not(.is-mobile) .view-header-left,
 body.ulu-flat .status-bar,
 body.ulu-flat:not(.is-mobile)
@@ -4347,6 +4446,50 @@ body.ulu-flat .markdown-source-view.mod-cm6 table td:not(:last-child)::after,
 body.ulu-flat .markdown-preview-view table td:not(:last-child)::after {
     top: 0 !important;
     bottom: 0 !important;
+}
+
+/* .𖥔 ݁ ˖  mobile header specific styling for flat mode ⊹ ࣪ ˖ */
+body.ulu-flat.is-mobile .workspace > .mod-root .view-header {
+    background-color: var(--color-base-25) !important;
+    border-bottom: 1px solid var(--background-modifier-border) !important;
+}
+
+body.ulu-flat.is-mobile.is-floating-nav.is-phone .view-header {
+    margin-top: 0.3em;
+}
+
+body.ulu-flat.is-mobile .workspace > .mod-root {
+    background-color: var(--color-base-25) !important;
+}
+
+body.ulu-flat.is-mobile .workspace-split.mod-root .view-content {
+    background-color: var(--color-base-25) !important;
+}
+
+body.ulu-flat.is-mobile .view-header-title-container {
+    padding-top: 8px;
+}
+
+/* Completely strip backgrounds/borders from all header action buttons */
+body.ulu-flat.is-mobile .view-header .view-action,
+body.ulu-flat.is-mobile .view-header .clickable-icon,
+body.ulu-flat.is-mobile .view-header .view-actions,
+body.ulu-flat.is-phone .view-header .view-header-left .view-action,
+body.ulu-flat.is-phone .view-header .view-header-left .view-action .clickable-icon {
+    border: none !important;
+    background: transparent !important;
+    background-image: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Flatten bottom mobile navbar */
+body.ulu-flat.is-mobile .mobile-navbar {
+    border-top: 1px solid var(--background-modifier-border) !important;
+    background: var(--color-base-25) !important;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05) !important;
 }
 
 /* .𖥔 ݁ ˖  settings panes use slightly different base fill ⊹ ࣪ ˖ */
@@ -5059,6 +5202,57 @@ body.ulu-justify .markdown-rendered p {
     word-spacing: -0.05em;
     text-justify: distribute;
     text-align-last: left;
+}
+
+/* .𖥔 ݁ ˖  minimal properties card (removes the slab/border/shadows) ⊹ ࣪ ˖ */
+body.ulu-minimal-properties .metadata-container {
+    background: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    margin: 1em 0 !important;
+    padding: 0 !important;
+}
+
+body.ulu-minimal-properties .metadata-property-value {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+body.ulu-minimal-properties .metadata-property:hover .metadata-property-value {
+    background-color: rgb(from var(--mono-rgb-0) r g b/0.05) !important;
+    border-color: rgb(from var(--mono-rgb-100) r g b/0.05) !important;
+}
+
+/* .𖥔 ݁ ˖  property tags look like inline wireframe tags ⊹ ࣪ ˖ */
+body.ulu-inline-property-tags .multi-select-pill {
+    background: rgb(from var(--color-accent) r g b/0.05) !important;
+    border: 1px solid rgb(from var(--color-accent) r g b/0.3) !important;
+    box-shadow: none !important;
+
+    color: var(--color-accent) !important;
+    font-weight: 600;
+
+    border-radius: var(--radius-m) !important;
+}
+
+body.ulu-inline-property-tags .multi-select-pill-content {
+    color: var(--color-accent) !important;
+    text-shadow: none !important;
+}
+
+body.ulu-inline-property-tags .multi-select-pill:hover {
+    background: rgb(from var(--color-accent) r g b/0.2) !important;
+    border-color: rgb(from var(--color-accent) r g b/0.6) !important;
+    box-shadow: 0 0 10px rgb(from var(--color-accent) r g b/0.2) !important;
+
+    color: var(--text-normal) !important;
+}
+
+body.ulu-inline-property-tags .multi-select-pill:hover .multi-select-pill-content {
+    color: var(--text-normal) !important;
 }
 
 /*
@@ -9397,31 +9591,31 @@ body.ulu-no-blur-canvas .canvas-node:not(.is-themed) .canvas-node-container {
 }
 
 .canvas-node.is-themed .canvas-node-container {
-    background-color: rgb(from var(--canvas-color) r g b/0.05) !important;
+    background-color: rgba(var(--canvas-color), 0.05) !important;
     border-radius: 28px !important;
     box-shadow:
-        0 12px 24px -6px rgb(from var(--canvas-color) r g b/0.15),
-        0 4px 12px -2px rgb(from var(--canvas-color) r g b/0.1),
+        0 12px 24px -6px rgba(var(--canvas-color), 0.15),
+        0 4px 12px -2px rgba(var(--canvas-color), 0.1),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.25),
-        inset -1px -1px 0 0 rgb(from var(--canvas-color) r g b/0.25),
-        0 0 0 1px rgb(from var(--canvas-color) r g b/0.4) !important;
+        inset -1px -1px 0 0 rgba(var(--canvas-color), 0.25),
+        0 0 0 1px rgba(var(--canvas-color), 0.4) !important;
 }
 
 body.ulu-no-blur-canvas .canvas-node.is-themed .canvas-node-container {
     background-image: linear-gradient(
-        rgb(from var(--canvas-color) r g b/0.1),
-        rgb(from var(--canvas-color) r g b/0.1)
+        rgba(var(--canvas-color), 0.1),
+        rgba(var(--canvas-color), 0.1)
     );
     background-color: var(--color-base-00) !important;
 }
 
 .theme-light .canvas-node.is-themed .canvas-node-container {
     box-shadow:
-        0 12px 24px -6px rgb(from var(--canvas-color) r g b/0.15),
-        0 4px 12px -2px rgb(from var(--canvas-color) r g b/0.15),
+        0 12px 24px -6px rgba(var(--canvas-color), 0.15),
+        0 4px 12px -2px rgba(var(--canvas-color), 0.15),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.15),
-        inset -1px -1px 0 0 rgb(from var(--canvas-color) r g b/0.25),
-        0 0 0 1px rgb(from var(--canvas-color) r g b/0.4) !important;
+        inset -1px -1px 0 0 rgba(var(--canvas-color), 0.25),
+        0 0 0 1px rgba(var(--canvas-color), 0.4) !important;
 }
 
 body:not(.ulu-no-blur-canvas) .canvas-node-container {
@@ -9468,21 +9662,21 @@ body:not(.ulu-no-blur-canvas) .canvas-node-container {
 .canvas-node.is-themed.is-selected .canvas-node-container,
 .canvas-node.is-themed.is-focused .canvas-node-container {
     box-shadow:
-        0 16px 36px -10px rgb(from var(--canvas-color) r g b/0.35),
-        0 8px 16px -4px rgb(from var(--canvas-color) r g b/0.2),
+        0 16px 36px -10px rgba(var(--canvas-color), 0.35),
+        0 8px 16px -4px rgba(var(--canvas-color), 0.2),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.25),
-        inset -1px -1px 0 0 rgb(from var(--canvas-color) r g b/0.3),
-        0 0 0 1px rgb(from var(--canvas-color) r g b/0.5) !important;
+        inset -1px -1px 0 0 rgba(var(--canvas-color), 0.3),
+        0 0 0 1px rgba(var(--canvas-color), 0.5) !important;
 }
 
 .theme-light .canvas-node.is-themed.is-selected .canvas-node-container,
 .theme-light .canvas-node.is-themed.is-focused .canvas-node-container {
     box-shadow:
-        0 16px 36px -10px rgb(from var(--canvas-color) r g b/0.25),
-        0 8px 16px -4px rgb(from var(--canvas-color) r g b/0.15),
+        0 16px 36px -10px rgba(var(--canvas-color), 0.25),
+        0 8px 16px -4px rgba(var(--canvas-color), 0.15),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.25),
-        inset -1px -1px 0 0 rgb(from var(--canvas-color) r g b/0.3),
-        0 0 0 1px rgb(from var(--canvas-color) r g b/0.5) !important;
+        inset -1px -1px 0 0 rgba(var(--canvas-color), 0.3),
+        0 0 0 1px rgba(var(--canvas-color), 0.5) !important;
 }
 
 .canvas-node.is-selected .canvas-node-container,
@@ -10131,14 +10325,14 @@ body:not(.ulu-no-blur-canvas) .canvas-node-container {
 .canvas-edges path,
 .canvas-edges line,
 .canvas-edges polyline {
-    stroke: rgb(from var(--canvas-color) r g b) !important;
+    stroke: rgb(var(--canvas-color)) !important;
 }
 
 /* .𖥔 ݁ ˖  color picker dots ⊹ ࣪ ˖ */
 .canvas-color-picker-item {
     border: 1px solid var(--background-modifier-border) !important;
     border-radius: 50% !important;
-    background-color: rgb(from var(--canvas-color) r g b) !important;
+    background-color: rgb(var(--canvas-color)) !important;
 }
 
 /* .𖥔 ݁ ˖  arrowhead colors ⊹ ࣪ ˖ */
@@ -11499,8 +11693,8 @@ hr {
     border: 1px solid transparent;
     border-radius: 16px;
 
-    margin: 1.5em 24px !important;
-    padding: 16px !important;
+    margin: 1em 16px !important;
+    padding: 12px !important;
 
     box-shadow: 0 4px 12px rgb(from var(--mono-rgb-0) r g b/0.2);
 }
@@ -11515,7 +11709,7 @@ hr {
     align-items: center !important;
 
     margin: 0 -12px !important;
-    padding: 6px 12px !important;
+    padding: 4px 8px !important;
 
     border-bottom: 1px solid rgb(from var(--mono-rgb-100) r g b/0.03);
 
@@ -11586,7 +11780,7 @@ hr {
     transition: all 0.2s ease;
 
     padding-left: 16px;
-    min-height: 32px;
+    min-height: 28px;
 }
 
 /* .𖥔 ݁ ˖  reset background for list containers ⊹ ࣪ ˖ */
@@ -11639,11 +11833,11 @@ hr {
     display: inline-flex;
     align-items: center;
 
-    height: 24px;
+    height: 20px;
     margin: 2px 4px 2px 0 !important;
     padding: 0 10px !important;
 
-    border-radius: 12px !important;
+    border-radius: 10px !important;
     background: linear-gradient(
         180deg,
         rgb(from var(--color-accent) r g b/0.25) 0%,
@@ -11656,7 +11850,7 @@ hr {
         0 2px 5px rgb(from var(--mono-rgb-0) r g b/0.1) !important;
 
     color: var(--text-normal) !important;
-    font-size: 0.85em;
+    font-size: 0.8em;
     font-weight: 600;
     letter-spacing: 0.02em;
 
@@ -11806,7 +12000,7 @@ hr {
     display: inline-flex;
     align-items: center;
 
-    height: 24px;
+    height: 20px;
     margin: 2px 4px 2px 0 !important;
     padding: 0 10px !important;
 
@@ -11822,7 +12016,7 @@ hr {
         inset 0 1px 0 rgb(from var(--mono-rgb-100) r g b/0.2),
         0 2px 5px rgb(from var(--mono-rgb-0) r g b/0.1) !important;
 
-    font-size: 0.85em;
+    font-size: 0.8em;
     font-weight: 600;
     letter-spacing: 0.02em;
 
@@ -12527,6 +12721,11 @@ kbd,
     background-clip: padding-box, border-box, border-box;
 }
 
+/* .𖥔 ݁ ˖  selected suggestion items (command palette, link popup, etc) ⊹ ࣪ ˖ */
+.suggestion-item.is-selected {
+    background-color: var(--interactive-hover) !important;
+}
+
 /*
 ╭── . ݁₊ ✶ ───────────────────────────────────────────── ✶ ₊ ݁ . ──╮
   section: notice (toasts)
@@ -13063,7 +13262,7 @@ span.dataview.inline-field {
 /* .𖥔 ݁ ˖  workspace spacing ⊹ ࣪ ˖
 */
 .is-mobile .workspace > .mod-root {
-    padding-top: 1em !important;
+    padding-top: var(--safe-area-inset-top) !important;
 }
 
 /* .𖥔 ݁ ˖  sidebar drawer container ⊹ ࣪ ˖

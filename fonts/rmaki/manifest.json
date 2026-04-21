@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-04-21T17:55:44.534Z",
+  "sourceTheme": "Rmaki",
+  "fonts": [
+    {
+      "family": "Fira Code",
+      "style": "normal italic bold",
+      "weight": "100 900",
+      "file": "fira-code.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

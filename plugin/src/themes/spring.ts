@@ -6,6 +6,48 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["apercu-pro"],
+    fontFiles: [
+      {
+        family: "Apercu Pro Thin",
+        style: "normal italic",
+        weight: "200",
+        file: "apercu-pro-thin.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Apercu Pro Light",
+        style: "normal italic",
+        weight: "300",
+        file: "apercu-pro-light.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Apercu Pro Black",
+        style: "bold",
+        weight: "100 900",
+        file: "apercu-pro-black.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Apercu Pro",
+        style: "normal italic",
+        weight: "100 900",
+        file: "apercu-pro.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Apercu Pro Italic Black",
+        style: "italic",
+        weight: "100 900",
+        file: "apercu-pro-italic-black.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

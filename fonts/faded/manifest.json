@@ -1,0 +1,76 @@
+{
+  "extractedAt": "2026-04-21T17:55:10.869Z",
+  "sourceTheme": "Faded",
+  "fonts": [
+    {
+      "family": "Roboto Condensed",
+      "style": "normal italic",
+      "weight": "100 900",
+      "file": "roboto-condensed.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "its",
+      "style": "normal",
+      "weight": "400",
+      "file": "its.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Font Awesome 6 Free Regular",
+      "style": "normal italic",
+      "weight": "100 900",
+      "file": "font-awesome-6-free-regular.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Font Awesome 6 Free Solid",
+      "style": "normal italic",
+      "weight": "100 900",
+      "file": "font-awesome-6-free-solid.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Cuprum",
+      "style": "normal italic",
+      "weight": "100 900",
+      "file": "cuprum.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Gemunu Libre",
+      "style": "normal italic",
+      "weight": "100 900",
+      "file": "gemunu-libre.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Kreon",
+      "style": "normal italic",
+      "weight": "100 900",
+      "file": "kreon.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

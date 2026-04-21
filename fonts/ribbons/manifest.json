@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-04-21T17:55:44.531Z",
+  "sourceTheme": "Ribbons",
+  "fonts": [
+    {
+      "family": "its",
+      "style": "normal",
+      "weight": "400",
+      "file": "its.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

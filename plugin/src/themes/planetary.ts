@@ -6,6 +6,40 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["ibm-plex-sans"],
+    fontFiles: [
+      {
+        family: "IBM Plex Sans",
+        style: "normal italic",
+        weight: "100 900",
+        file: "ibm-plex-sans.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "IBM Plex Mono",
+        style: "normal",
+        weight: "400",
+        file: "ibm-plex-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "IBM Plex Mono",
+        style: "normal",
+        weight: "700",
+        file: "ibm-plex-mono-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "IBM Plex Mono",
+        style: "italic",
+        weight: "400",
+        file: "ibm-plex-mono-2.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

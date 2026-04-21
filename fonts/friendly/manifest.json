@@ -1,0 +1,66 @@
+{
+  "extractedAt": "2026-04-21T17:55:18.143Z",
+  "sourceTheme": "Friendly",
+  "fonts": [
+    {
+      "family": "Lexend Deca",
+      "style": "normal",
+      "weight": "normal",
+      "file": "lexend-deca.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Recursive Sn Csl St",
+      "style": "italic",
+      "weight": "normal",
+      "file": "recursive-sn-csl-st.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Harlow Solid",
+      "style": "normal",
+      "weight": "normal",
+      "file": "harlow-solid.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Ranille Normal",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ranille-normal.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro V",
+      "style": "italic",
+      "weight": "normal",
+      "file": "ia-writer-quattro-v.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro V",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ia-writer-quattro-v-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

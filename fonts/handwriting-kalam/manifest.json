@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-04-21T17:55:22.166Z",
+  "sourceTheme": "Handwriting (Kalam)",
+  "fonts": [
+    {
+      "family": "Kalam",
+      "style": "normal",
+      "weight": "normal",
+      "file": "kalam.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

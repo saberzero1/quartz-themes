@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-04-21T17:55:05.258Z",
+  "sourceTheme": "Bolt",
+  "fonts": [
+    {
+      "family": "Formular",
+      "style": "normal",
+      "weight": "normal",
+      "file": "formular.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

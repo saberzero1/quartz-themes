@@ -29,17 +29,14 @@ export const theme: ThemeData = {
   --background-secondary-alt: hsl(258, 29.33333%, 15%) !important;
   --bases-cards-background: hsl(258, 29.33333%, 10%) !important;
   --bases-cards-cover-background: hsl(258, 29.33333%, 20%) !important;
-  --bases-cards-font-size: 0.875rem !important;
   --bases-cards-shadow: 0 0 0 1px hsl(258, 29.33333%, 35%) !important;
   --bases-cards-shadow-hover: 0 0 0 1px hsl(258, 29.33333%, 40%) !important;
   --bases-embed-border-color: hsl(258, 29.33333%, 35%) !important;
   --bases-group-heading-property-color: hsl(258, 29.33333%, 50%) !important;
-  --bases-group-heading-value-size: 0.875rem !important;
   --bases-table-border-color: hsl(258, 88%, 66%) !important;
   --bases-table-cell-background-active: hsl(258, 29.33333%, 10%) !important;
   --bases-table-cell-background-disabled: hsl(258, 29.33333%, 20%) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(258, 29.33333%, 45%) !important;
-  --bases-table-font-size: 0.875rem !important;
   --bases-table-group-background: hsl(258, 29.33333%, 20%) !important;
   --bases-table-header-background: hsl(258, 29.33333%, 10%) !important;
   --bases-table-header-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
@@ -71,16 +68,17 @@ export const theme: ThemeData = {
   --canvas-color-2: from hsl(25, 88%, 66%) r g b !important;
   --canvas-color-3: from hsl(50, 88%, 66%) r g b !important;
   --canvas-color-4: from hsl(100, 88%, 66%) r g b !important;
-  --canvas-color-5: from hsl(185, 88%, 66%) r g b !important;
+  --canvas-color-5: from hsl(210, 88%, 66%) r g b !important;
   --canvas-color-6: from hsl(270, 88%, 66%) r g b !important;
   --canvas-dot-pattern: hsl(258, 29.33333%, 35%) !important;
   --caret-color: hsl(258, 29.33333%, 80%) !important;
-  --checkbox-border-color: hsl(258, 29.33333%, 35%) !important;
+  --checkbox-border-color: hsl(258, 29.33333%, 50%) !important;
   --checkbox-border-color-hover: hsl(258, 88%, 66%) !important;
   --checkbox-color: hsl(258, 29.33333%, 50%) !important;
   --checkbox-color-hover: hsl(258, 88%, 66%) !important;
   --checkbox-marker-color: hsl(258, 29.33333%, 10%) !important;
-  --checklist-done-color: hsl(258, 29.33333%, 50%) !important;
+  --checklist-done-color: hsl(258, 29.33333%, 80%) !important;
+  --checklist-done-decoration: none !important;
   --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.15) !important;
   --code-border-color: hsl(258, 29.33333%, 35%) !important;
   --code-bracket-background: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
@@ -148,21 +146,17 @@ export const theme: ThemeData = {
   --font-monospace: ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace !important;
   --font-print: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, Arial' !important;
-  --font-small: 0.933rem !important;
-  --font-smaller: 0.875rem !important;
-  --font-smallest: 0.8rem !important;
   --font-text: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: Cantarell, Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif !important;
   --footnote-divider-color: hsl(258, 29.33333%, 35%) !important;
   --footnote-id-color: hsl(258, 29.33333%, 50%) !important;
   --footnote-id-color-no-occurrences: hsl(258, 29.33333%, 35%) !important;
   --footnote-input-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
-  --footnote-size: 0.875rem !important;
-  --graph-line: hsl(258, 29.33333%, 35%) !important;
-  --graph-node: hsl(5, 88%, 66%) !important;
-  --graph-node-attachment: hsl(210, 88%, 66%) !important;
+  --graph-line: hsl(258, 29.33333%, 30%) !important;
+  --graph-node: hsl(258, 88%, 66%) !important;
+  --graph-node-attachment: hsl(100, 88%, 66%) !important;
   --graph-node-tag: hsl(50, 88%, 66%) !important;
-  --graph-node-unresolved: rgba(from hsl(5, 88%, 66%) r g b / 0.8) !important;
+  --graph-node-unresolved: hsl(5, 88%, 66%) !important;
   --graph-text: hsl(258, 29.33333%, 80%) !important;
   --gray: hsl(258, 29.33333%, 50%) !important;
   --green-h: 100 !important;
@@ -203,8 +197,9 @@ export const theme: ThemeData = {
   --link-external-color: hsl(258, 88%, 66%) !important;
   --link-external-color-hover: hsl(258, 88%, 66%) !important;
   --link-external-decoration: none !important;
-  --link-unresolved-color: hsl(258, 88%, 66%) !important;
+  --link-unresolved-color: hsl(5, 88%, 66%) !important;
   --link-unresolved-decoration-color: rgba(from hsl(258, 88%, 66%) r g b / 0.3) !important;
+  --link-unresolved-opacity: 1.0 !important;
   --list-marker-color: hsl(258, 29.33333%, 50%) !important;
   --list-marker-color-hover: hsl(258, 29.33333%, 50%) !important;
   --menu-background: hsl(258, 29.33333%, 15%) !important;
@@ -213,11 +208,9 @@ export const theme: ThemeData = {
   --metadata-divider-color: hsl(258, 29.33333%, 35%) !important;
   --metadata-input-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
   --metadata-input-font: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-font-size: 0.875rem !important;
   --metadata-input-text-color: hsl(258, 29.33333%, 80%) !important;
   --metadata-label-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
   --metadata-label-font: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font-size: 0.875rem !important;
   --metadata-label-text-color: hsl(258, 29.33333%, 50%) !important;
   --metadata-label-text-color-hover: hsl(258, 29.33333%, 50%) !important;
   --metadata-property-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
@@ -269,7 +262,7 @@ export const theme: ThemeData = {
   --search-icon-color: hsl(258, 29.33333%, 50%) !important;
   --search-result-background: hsl(258, 29.33333%, 10%) !important;
   --setting-group-heading-color: hsl(258, 29.33333%, 80%) !important;
-  --setting-items-background: hsl(258, 29.33333%, 20%) !important;
+  --setting-items-background: rgba(from hsl(258, 88%, 66%) r g b / 0.15) !important;
   --setting-items-border-color: hsl(258, 29.33333%, 35%) !important;
   --slider-thumb-border-color: hsl(258, 29.33333%, 40%) !important;
   --slider-track-background: hsl(258, 29.33333%, 35%) !important;
@@ -314,7 +307,6 @@ export const theme: ThemeData = {
   --table-row-alt-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.3) !important;
   --table-row-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.15) !important;
   --table-row-last-border-width: 0.1rem !important;
-  --tag-size: 0.875rem !important;
   --text-error: hsl(5, 88%, 66%) !important;
   --text-faint: hsl(258, 29.33333%, 35%) !important;
   --text-highlight-bg: rgba(from hsl(258, 88%, 66%) r g b / 0.25) !important;
@@ -465,7 +457,7 @@ html[saved-theme="dark"] body h1.article-title {
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
-  border-color: rgb(79, 63, 115);
+  border-color: rgb(113, 90, 165);
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
@@ -494,9 +486,9 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
 }
 
 html[saved-theme="dark"] body a.internal.broken {
-  color: rgb(138, 92, 245);
+  color: rgb(245, 105, 92);
   font-family: "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  outline: rgb(138, 92, 245) none 0px;
+  outline: rgb(245, 105, 92) none 0px;
   text-decoration: color(srgb 0.54032 0.3608 0.9592 / 0.3);
   text-decoration-color: color(srgb 0.54032 0.3608 0.9592 / 0.3);
 }`,
@@ -729,10 +721,10 @@ html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
 }
 
 html[saved-theme="dark"] body input[type=checkbox] {
-  border-bottom-color: rgb(79, 63, 115);
-  border-left-color: rgb(79, 63, 115);
-  border-right-color: rgb(79, 63, 115);
-  border-top-color: rgb(79, 63, 115);
+  border-bottom-color: rgb(113, 90, 165);
+  border-left-color: rgb(113, 90, 165);
+  border-right-color: rgb(113, 90, 165);
+  border-top-color: rgb(113, 90, 165);
   transition: 0.2s ease-in-out;
 }
 
@@ -748,6 +740,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task='*'] {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(198, 189, 219);
+  text-decoration: line-through;
   text-decoration-color: rgb(198, 189, 219);
 }
 
@@ -758,6 +751,7 @@ html[saved-theme="dark"] body li.task-list-item[data-task='/'] {
 
 html[saved-theme="dark"] body li.task-list-item[data-task='>'] {
   color: rgb(198, 189, 219);
+  text-decoration: line-through;
   text-decoration-color: rgb(198, 189, 219);
 }
 
@@ -833,7 +827,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(23, 18, 33);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
@@ -843,7 +836,6 @@ html[saved-theme="dark"] body li.task-list-item[data-task="!"] input[type="check
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(23, 18, 33);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {
@@ -1554,17 +1546,14 @@ html[saved-theme="dark"] body ul.tags > li {
   --background-secondary-alt: hsl(258, 29.33333%, 95%) !important;
   --bases-cards-background: hsl(258, 29.33333%, 98%) !important;
   --bases-cards-cover-background: hsl(258, 29.33333%, 90%) !important;
-  --bases-cards-font-size: 0.875rem !important;
   --bases-cards-shadow: 0 0 0 1px hsl(258, 29.33333%, 75%) !important;
   --bases-cards-shadow-hover: 0 0 0 1px hsl(258, 29.33333%, 70%) !important;
   --bases-embed-border-color: hsl(258, 29.33333%, 75%) !important;
   --bases-group-heading-property-color: hsl(258, 29.33333%, 60%) !important;
-  --bases-group-heading-value-size: 0.875rem !important;
   --bases-table-border-color: hsl(258, 88%, 66%) !important;
   --bases-table-cell-background-active: hsl(258, 29.33333%, 98%) !important;
   --bases-table-cell-background-disabled: hsl(258, 29.33333%, 90%) !important;
   --bases-table-cell-shadow-active: 0 0 0 2px hsl(258, 29.33333%, 65%) !important;
-  --bases-table-font-size: 0.875rem !important;
   --bases-table-group-background: hsl(258, 29.33333%, 90%) !important;
   --bases-table-header-background: hsl(258, 29.33333%, 98%) !important;
   --bases-table-header-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
@@ -1596,16 +1585,17 @@ html[saved-theme="dark"] body ul.tags > li {
   --canvas-color-2: from hsl(25, 88%, 66%) r g b !important;
   --canvas-color-3: from hsl(50, 88%, 66%) r g b !important;
   --canvas-color-4: from hsl(100, 88%, 66%) r g b !important;
-  --canvas-color-5: from hsl(185, 88%, 66%) r g b !important;
+  --canvas-color-5: from hsl(210, 88%, 66%) r g b !important;
   --canvas-color-6: from hsl(270, 88%, 66%) r g b !important;
   --canvas-dot-pattern: hsl(258, 29.33333%, 75%) !important;
   --caret-color: hsl(258, 29.33333%, 20%) !important;
-  --checkbox-border-color: hsl(258, 29.33333%, 75%) !important;
+  --checkbox-border-color: hsl(258, 29.33333%, 60%) !important;
   --checkbox-border-color-hover: hsl(258, 88%, 66%) !important;
   --checkbox-color: hsl(258, 29.33333%, 60%) !important;
   --checkbox-color-hover: hsl(258, 88%, 66%) !important;
   --checkbox-marker-color: hsl(258, 29.33333%, 98%) !important;
-  --checklist-done-color: hsl(258, 29.33333%, 60%) !important;
+  --checklist-done-color: hsl(258, 29.33333%, 20%) !important;
+  --checklist-done-decoration: none !important;
   --code-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1) !important;
   --code-border-color: hsl(258, 29.33333%, 75%) !important;
   --code-bracket-background: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
@@ -1673,21 +1663,17 @@ html[saved-theme="dark"] body ul.tags > li {
   --font-monospace: ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace, ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace !important;
   --font-monospace-theme: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace !important;
   --font-print: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, Arial' !important;
-  --font-small: 0.933rem !important;
-  --font-smaller: 0.875rem !important;
-  --font-smallest: 0.8rem !important;
   --font-text: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-text-theme: Cantarell, Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif !important;
   --footnote-divider-color: hsl(258, 29.33333%, 75%) !important;
   --footnote-id-color: hsl(258, 29.33333%, 60%) !important;
   --footnote-id-color-no-occurrences: hsl(258, 29.33333%, 75%) !important;
   --footnote-input-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
-  --footnote-size: 0.875rem !important;
-  --graph-line: hsl(258, 29.33333%, 75%) !important;
-  --graph-node: hsl(5, 88%, 66%) !important;
-  --graph-node-attachment: hsl(210, 88%, 66%) !important;
+  --graph-line: hsl(258, 29.33333%, 80%) !important;
+  --graph-node: hsl(258, 88%, 66%) !important;
+  --graph-node-attachment: hsl(100, 88%, 66%) !important;
   --graph-node-tag: hsl(50, 88%, 66%) !important;
-  --graph-node-unresolved: rgba(from hsl(5, 88%, 66%) r g b / 0.8) !important;
+  --graph-node-unresolved: hsl(5, 88%, 66%) !important;
   --graph-text: hsl(258, 29.33333%, 20%) !important;
   --gray: hsl(258, 29.33333%, 60%) !important;
   --green-h: 100 !important;
@@ -1726,7 +1712,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --link-decoration-hover: wavy !important;
   --link-external-color-hover: hsl(258, 88%, 66%) !important;
   --link-external-decoration: none !important;
+  --link-unresolved-color: hsl(5, 88%, 66%) !important;
   --link-unresolved-decoration-color: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
+  --link-unresolved-opacity: 1.0 !important;
   --list-marker-color: hsl(258, 29.33333%, 60%) !important;
   --list-marker-color-hover: hsl(258, 29.33333%, 60%) !important;
   --menu-background: hsl(258, 29.33333%, 95%) !important;
@@ -1735,11 +1723,9 @@ html[saved-theme="dark"] body ul.tags > li {
   --metadata-divider-color: hsl(258, 29.33333%, 75%) !important;
   --metadata-input-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
   --metadata-input-font: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-input-font-size: 0.875rem !important;
   --metadata-input-text-color: hsl(258, 29.33333%, 20%) !important;
   --metadata-label-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
   --metadata-label-font: Cantarell, Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-  --metadata-label-font-size: 0.875rem !important;
   --metadata-label-text-color: hsl(258, 29.33333%, 60%) !important;
   --metadata-label-text-color-hover: hsl(258, 29.33333%, 60%) !important;
   --metadata-property-background-active: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
@@ -1789,7 +1775,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --search-icon-color: hsl(258, 29.33333%, 60%) !important;
   --search-result-background: hsl(258, 29.33333%, 98%) !important;
   --setting-group-heading-color: hsl(258, 29.33333%, 20%) !important;
-  --setting-items-background: hsl(258, 29.33333%, 90%) !important;
+  --setting-items-background: rgba(from hsl(258, 88%, 66%) r g b / 0.1) !important;
   --setting-items-border-color: hsl(258, 29.33333%, 75%) !important;
   --slider-thumb-border-color: hsl(258, 29.33333%, 70%) !important;
   --slider-track-background: hsl(258, 29.33333%, 75%) !important;
@@ -1834,7 +1820,6 @@ html[saved-theme="dark"] body ul.tags > li {
   --table-row-alt-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.2) !important;
   --table-row-background-hover: rgba(from hsl(258, 88%, 66%) r g b / 0.1) !important;
   --table-row-last-border-width: 0.1rem !important;
-  --tag-size: 0.875rem !important;
   --text-error: hsl(5, 88%, 66%) !important;
   --text-faint: hsl(258, 29.33333%, 75%) !important;
   --text-highlight-bg: rgba(from hsl(258, 88%, 66%) r g b / 0.25) !important;
@@ -1985,7 +1970,7 @@ html[saved-theme="light"] body h1.article-title {
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
-  border-color: rgb(184, 173, 210);
+  border-color: rgb(141, 123, 183);
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked {
@@ -2008,7 +1993,9 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
 }
 
 html[saved-theme="light"] body a.internal.broken {
+  color: rgb(245, 105, 92);
   font-family: "??", Cantarell, Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  outline: rgb(245, 105, 92) none 0px;
   text-decoration: color(srgb 0.54032 0.3608 0.9592 / 0.2);
   text-decoration-color: color(srgb 0.54032 0.3608 0.9592 / 0.2);
 }`,
@@ -2242,10 +2229,10 @@ html[saved-theme="light"] body .katex-display > .katex > .katex-html {
 }
 
 html[saved-theme="light"] body input[type=checkbox] {
-  border-bottom-color: rgb(184, 173, 210);
-  border-left-color: rgb(184, 173, 210);
-  border-right-color: rgb(184, 173, 210);
-  border-top-color: rgb(184, 173, 210);
+  border-bottom-color: rgb(141, 123, 183);
+  border-left-color: rgb(141, 123, 183);
+  border-right-color: rgb(141, 123, 183);
+  border-top-color: rgb(141, 123, 183);
   transition: 0.2s ease-in-out;
 }
 
@@ -2261,6 +2248,7 @@ html[saved-theme="light"] body li.task-list-item[data-task='*'] {
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {
   color: rgb(45, 36, 66);
+  text-decoration: line-through;
   text-decoration-color: rgb(45, 36, 66);
 }
 
@@ -2271,6 +2259,7 @@ html[saved-theme="light"] body li.task-list-item[data-task='/'] {
 
 html[saved-theme="light"] body li.task-list-item[data-task='>'] {
   color: rgb(45, 36, 66);
+  text-decoration: line-through;
   text-decoration-color: rgb(45, 36, 66);
 }
 
@@ -2346,7 +2335,6 @@ html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(249, 248, 251);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="checkbox"]::after {
@@ -2356,7 +2344,6 @@ html[saved-theme="light"] body li.task-list-item[data-task="!"] input[type="chec
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  background-color: rgb(249, 248, 251);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="?"] input[type="checkbox"]::after {

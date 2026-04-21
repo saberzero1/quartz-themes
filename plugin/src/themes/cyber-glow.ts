@@ -6,6 +6,40 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["ballet", "oxanium", "space-wham", "orbitron"],
+    fontFiles: [
+      {
+        family: "OxaniumFira",
+        style: "normal italic",
+        weight: "normal",
+        file: "oxaniumfira.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Space Wham",
+        style: "normal italic",
+        weight: "normal",
+        file: "space-wham.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Edwardian Script ITC",
+        style: "normal italic",
+        weight: "normal",
+        file: "edwardian-script-itc.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Orbitron",
+        style: "normal italic",
+        weight: "normal",
+        file: "orbitron.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

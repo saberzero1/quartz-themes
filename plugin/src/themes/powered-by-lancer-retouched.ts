@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["arimo"],
+    fontFiles: [
+      {
+        family: "Arimo",
+        style: "normal",
+        weight: "normal",
+        file: "arimo.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {
@@ -356,7 +366,7 @@ html[saved-theme="dark"] body blockquote {
 html[saved-theme="dark"] body table {
   color: rgb(231, 231, 231);
   font-family: Arimo, sans-serif;
-  width: 195.062px;
+  width: 185.297px;
 }
 
 html[saved-theme="dark"] body td {
@@ -1492,7 +1502,7 @@ html[saved-theme="light"] body blockquote {
 html[saved-theme="light"] body table {
   color: rgb(0, 0, 0);
   font-family: Arimo, sans-serif;
-  width: 195.062px;
+  width: 185.297px;
 }
 
 html[saved-theme="light"] body td {

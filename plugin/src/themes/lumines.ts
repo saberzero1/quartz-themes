@@ -6,6 +6,40 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
+    fontFiles: [
+      {
+        family: "JetBrains Mono",
+        style: "normal",
+        weight: "400",
+        file: "jetbrains-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Excalifont",
+        style: "normal",
+        weight: "400",
+        file: "excalifont.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Cascadia Code",
+        style: "normal",
+        weight: "400",
+        file: "cascadia-code.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Cascadia Code",
+        style: "italic",
+        weight: "400",
+        file: "cascadia-code-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

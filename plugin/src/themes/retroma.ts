@@ -6,6 +6,48 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
+    fontFiles: [
+      {
+        family: "W95font",
+        style: "normal",
+        weight: "400",
+        file: "w95font.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Cascadia Code",
+        style: "normal",
+        weight: "400",
+        file: "cascadia-code.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "iA Writer Mono S",
+        style: "normal",
+        weight: "400",
+        file: "ia-writer-mono-s.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Excalifont",
+        style: "normal",
+        weight: "400",
+        file: "excalifont.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Caveat",
+        style: "normal",
+        weight: "400",
+        file: "caveat.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

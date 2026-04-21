@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["josefin-sans", "work-sans"],
+    fontFiles: [
+      {
+        family: "Josefin Sans",
+        style: "normal",
+        weight: "350",
+        file: "josefin-sans.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Work Sans",
+        style: "normal",
+        weight: "400",
+        file: "work-sans.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

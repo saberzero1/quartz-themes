@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:39.979Z",
+  "sourceTheme": "Powered by Lancer",
+  "fonts": [
+    {
+      "family": "Arimo",
+      "style": "normal",
+      "weight": "normal",
+      "file": "arimo.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Anonymous Pro",
+      "style": "normal",
+      "weight": "400",
+      "file": "anonymous-pro.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

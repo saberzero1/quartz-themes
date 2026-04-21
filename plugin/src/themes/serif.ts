@@ -1,7 +1,30 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "serif", modes: ["dark", "light"], variations: [], fonts: [] },
+  meta: {
+    name: "serif",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+    fontFiles: [
+      {
+        family: "Libre Baskerville",
+        style: "normal italic",
+        weight: "100 900",
+        file: "libre-baskerville.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Fira Code",
+        style: "normal italic",
+        weight: "100 900",
+        file: "fira-code.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
+  },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --accent-h: 220 !important;

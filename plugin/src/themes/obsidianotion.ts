@@ -6,6 +6,48 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["fira-code", "ia-writer-quattro", "ibm-plex-sans"],
+    fontFiles: [
+      {
+        family: "Fira Code",
+        style: "normal",
+        weight: "300 500",
+        file: "fira-code.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Inter",
+        style: "normal",
+        weight: "100 300 400 600 700 800",
+        file: "inter.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "IBMRegular",
+        style: "normal",
+        weight: "normal",
+        file: "ibmregular.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "IBMBold",
+        style: "normal",
+        weight: "bold",
+        file: "ibmbold.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "iaWriterQuattro",
+        style: "normal",
+        weight: "normal",
+        file: "iawriterquattro.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

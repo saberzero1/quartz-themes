@@ -6,6 +6,16 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
+    fontFiles: [
+      {
+        family: "Raveo",
+        style: "normal",
+        weight: "100 900",
+        file: "raveo.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

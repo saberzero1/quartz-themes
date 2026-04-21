@@ -1,0 +1,46 @@
+{
+  "extractedAt": "2026-04-21T17:56:02.623Z",
+  "sourceTheme": "iA Writer",
+  "fonts": [
+    {
+      "family": "iA Writer Duo",
+      "style": "normal",
+      "weight": "400",
+      "file": "ia-writer-duo.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "cdn",
+      "sourceUrl": "https://mrowa44.github.io/roam-ia-writer/fonts/iA Writer Duo/Webfonts/iAWriterDuoS-Regular.woff2"
+    },
+    {
+      "family": "iA Writer Duo",
+      "style": "italic",
+      "weight": "400",
+      "file": "ia-writer-duo-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "cdn",
+      "sourceUrl": "https://mrowa44.github.io/roam-ia-writer/fonts/iA Writer Duo/Webfonts/iAWriterDuoS-Italic.woff2"
+    },
+    {
+      "family": "iA Writer Duo",
+      "style": "normal",
+      "weight": "bold",
+      "file": "ia-writer-duo-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "cdn",
+      "sourceUrl": "https://mrowa44.github.io/roam-ia-writer/fonts/iA Writer Duo/Webfonts/iAWriterDuoS-Bold.woff2"
+    },
+    {
+      "family": "iA Writer Duo",
+      "style": "italic",
+      "weight": "bold",
+      "file": "ia-writer-duo-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "cdn",
+      "sourceUrl": "https://mrowa44.github.io/roam-ia-writer/fonts/iA Writer Duo/Webfonts/iAWriterDuoS-BoldItalic.woff2"
+    }
+  ]
+}

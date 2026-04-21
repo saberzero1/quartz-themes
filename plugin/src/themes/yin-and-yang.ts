@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
+    fontFiles: [
+      {
+        family: "mox-icons",
+        style: "normal",
+        weight: "normal",
+        file: "mox-icons.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Karmilla",
+        style: "normal",
+        weight: "normal",
+        file: "karmilla.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

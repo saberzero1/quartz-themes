@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["arvo", "permanent-marker"],
+    fontFiles: [
+      {
+        family: "Arvo",
+        style: "normal italic",
+        weight: "100 900",
+        file: "arvo.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Permanent Marker",
+        style: "normal italic",
+        weight: "100 900",
+        file: "permanent-marker.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

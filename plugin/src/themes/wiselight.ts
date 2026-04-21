@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["light"],
     variations: [],
     fonts: ["karla", "open-sans"],
+    fontFiles: [
+      {
+        family: "Karla",
+        style: "normal",
+        weight: "400",
+        file: "karla.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Karla",
+        style: "italic",
+        weight: "400",
+        file: "karla-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {},
   light: {

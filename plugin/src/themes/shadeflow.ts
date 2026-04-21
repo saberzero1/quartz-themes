@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["geist", "geist-mono"],
+    fontFiles: [
+      {
+        family: "Geist Mono",
+        style: "normal",
+        weight: "400",
+        file: "geist-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Geist",
+        style: "normal",
+        weight: "400",
+        file: "geist.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

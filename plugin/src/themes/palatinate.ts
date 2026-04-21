@@ -6,6 +6,48 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
+    fontFiles: [
+      {
+        family: "Source Sans Pro",
+        style: "normal",
+        weight: "normal",
+        file: "source-sans-pro.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Libre Baskerville",
+        style: "normal",
+        weight: "normal",
+        file: "libre-baskerville.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Merriweather",
+        style: "normal",
+        weight: "normal",
+        file: "merriweather.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Caveat Brush",
+        style: "normal",
+        weight: "normal",
+        file: "caveat-brush.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Material Icons",
+        style: "normal",
+        weight: "normal",
+        file: "material-icons.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["roboto"],
+    fontFiles: [
+      {
+        family: "Roboto",
+        style: "normal",
+        weight: "400",
+        file: "roboto.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Roboto",
+        style: "italic",
+        weight: "400",
+        file: "roboto-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

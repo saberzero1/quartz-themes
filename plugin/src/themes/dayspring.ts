@@ -6,6 +6,62 @@ export const theme: ThemeData = {
     modes: ["light"],
     variations: [],
     fonts: ["crimson-pro", "figtree"],
+    fontFiles: [
+      {
+        family: "Figtree",
+        style: "normal",
+        weight: "300 700",
+        file: "figtree.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,\n\t\tU+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      },
+      {
+        family: "Figtree",
+        style: "normal",
+        weight: "300 700",
+        file: "figtree-1.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n\t\tU+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,\n\t\tU+2215, U+FEFF, U+FFFD",
+      },
+      {
+        family: "Crimson Pro",
+        style: "normal",
+        weight: "300 700",
+        file: "crimson-pro.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,\n\t\tU+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      },
+      {
+        family: "Crimson Pro",
+        style: "normal",
+        weight: "300 700",
+        file: "crimson-pro-1.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n\t\tU+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,\n\t\tU+2215, U+FEFF, U+FFFD",
+      },
+      {
+        family: "Crimson Pro",
+        style: "italic",
+        weight: "300 700",
+        file: "crimson-pro-2.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,\n\t\tU+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      },
+      {
+        family: "Crimson Pro",
+        style: "italic",
+        weight: "300 700",
+        file: "crimson-pro-3.woff2",
+        format: "woff2",
+        unicodeRange:
+          "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,\n\t\tU+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,\n\t\tU+2215, U+FEFF, U+FFFD",
+      },
+    ],
   },
   dark: {},
   light: {

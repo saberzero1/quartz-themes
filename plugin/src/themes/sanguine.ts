@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["slasher-film"],
+    fontFiles: [
+      {
+        family: "Slasher Title",
+        style: "normal",
+        weight: "400",
+        file: "slasher-title.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Slasher Regular",
+        style: "normal",
+        weight: "400",
+        file: "slasher-regular.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {

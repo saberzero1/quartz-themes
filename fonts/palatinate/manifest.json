@@ -1,0 +1,56 @@
+{
+  "extractedAt": "2026-04-21T17:55:37.493Z",
+  "sourceTheme": "Palatinate",
+  "fonts": [
+    {
+      "family": "Source Sans Pro",
+      "style": "normal",
+      "weight": "normal",
+      "file": "source-sans-pro.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Libre Baskerville",
+      "style": "normal",
+      "weight": "normal",
+      "file": "libre-baskerville.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Merriweather",
+      "style": "normal",
+      "weight": "normal",
+      "file": "merriweather.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Caveat Brush",
+      "style": "normal",
+      "weight": "normal",
+      "file": "caveat-brush.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Material Icons",
+      "style": "normal",
+      "weight": "normal",
+      "file": "material-icons.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

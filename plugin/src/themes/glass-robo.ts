@@ -6,6 +6,48 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["figtree", "jetbrains-mono"],
+    fontFiles: [
+      {
+        family: "Figtree",
+        style: "normal",
+        weight: "100 900",
+        file: "figtree.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Figtree",
+        style: "normal",
+        weight: "bold",
+        file: "figtree-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "azer",
+        style: "normal",
+        weight: "100 900",
+        file: "azer.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "azer",
+        style: "normal",
+        weight: "bold",
+        file: "azer-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "JetBrains Mono",
+        style: "normal",
+        weight: "100 900",
+        file: "jetbrains-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {

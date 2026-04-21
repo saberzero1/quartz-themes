@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["manrope", "nunito-sans"],
+    fontFiles: [
+      {
+        family: "Nunito Sans 12pt ExtraLight",
+        style: "normal",
+        weight: "100 900",
+        file: "nunito-sans-12pt-extralight.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Manrope ExtraLight",
+        style: "normal",
+        weight: "100 900",
+        file: "manrope-extralight.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

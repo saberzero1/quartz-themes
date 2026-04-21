@@ -1,7 +1,38 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "dune", modes: ["dark", "light"], variations: [], fonts: [] },
+  meta: {
+    name: "dune",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+    fontFiles: [
+      {
+        family: "LiberationSerifRegular",
+        style: "normal italic",
+        weight: "100 900",
+        file: "liberationserifregular.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+      {
+        family: "Louis George Cafe",
+        style: "normal",
+        weight: "400",
+        file: "louis-george-cafe.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Manuskript Gothisch",
+        style: "normal",
+        weight: "400",
+        file: "manuskript-gothisch.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
+  },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --background-modifier-border: #555555 !important;

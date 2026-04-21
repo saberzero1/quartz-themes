@@ -13,6 +13,20 @@ const resultsDir = path.join(repoRoot, "runner", "results");
 const outputDir = path.join(repoRoot, "plugin", "src", "themes");
 const extrasDir = path.join(repoRoot, "plugin", "extras");
 
+async function resolveGenerateFontManifest(root, themeName) {
+  const manifestPath = path.join(root, "fonts", themeName, "manifest.json");
+  try {
+    await fs.access(manifestPath);
+  } catch {
+    return null;
+  }
+  const manifest = JSON.parse(await fs.readFile(manifestPath, "utf8"));
+  if (manifest.base) {
+    return resolveGenerateFontManifest(root, manifest.base);
+  }
+  return { manifest, fontDir: themeName };
+}
+
 const ASPECT_ORDER = [
   "base",
   "typography",
@@ -859,6 +873,12 @@ function renderThemeModule(themeData) {
   lines.push(`    modes: ${JSON.stringify(themeData.meta.modes)},`);
   lines.push(`    variations: ${JSON.stringify(themeData.meta.variations)},`);
   lines.push(`    fonts: ${JSON.stringify(themeData.meta.fonts)},`);
+  if (themeData.meta.fontFiles && themeData.meta.fontFiles.length > 0) {
+    lines.push(`    fontFiles: ${JSON.stringify(themeData.meta.fontFiles)},`);
+  }
+  if (themeData.meta.fontDir) {
+    lines.push(`    fontDir: ${JSON.stringify(themeData.meta.fontDir)},`);
+  }
   lines.push("  },");
 
   for (const mode of ["dark", "light"]) {
@@ -1035,11 +1055,30 @@ async function main() {
           ? ["dark"]
           : ["light"];
 
+    let fontFiles;
+    let fontDir;
+    try {
+      const resolved = await resolveGenerateFontManifest(repoRoot, themeId);
+      if (resolved) {
+        fontDir = resolved.fontDir;
+        fontFiles = (resolved.manifest.fonts || []).map((f) => ({
+          family: f.family,
+          style: f.style,
+          weight: f.weight,
+          file: f.file,
+          format: f.format,
+          unicodeRange: f.unicodeRange || null,
+        }));
+      }
+    } catch {}
+
     const meta = {
       name: themeId,
       modes: metaModes,
       variations: normalizeVariations(themeMeta.variations ?? []),
       fonts: normalizeFonts(themeMeta.fonts ?? []),
+      ...(fontFiles && fontFiles.length > 0 ? { fontFiles } : {}),
+      ...(fontDir && fontDir !== themeId ? { fontDir } : {}),
     };
 
     const bothModes = hasDark && hasLight;

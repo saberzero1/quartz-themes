@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["audiowide", "dotgothic16"],
+    fontFiles: [
+      {
+        family: "Scifi Title",
+        style: "normal",
+        weight: "400",
+        file: "scifi-title.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "ModeSeven Regular",
+        style: "normal",
+        weight: "400",
+        file: "modeseven-regular.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

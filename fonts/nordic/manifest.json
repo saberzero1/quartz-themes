@@ -1,0 +1,86 @@
+{
+  "extractedAt": "2026-04-21T17:55:33.787Z",
+  "sourceTheme": "Nordic",
+  "fonts": [
+    {
+      "family": "Avenir LT Std",
+      "style": "normal",
+      "weight": "600",
+      "file": "avenir-lt-std.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Avenir LT Std",
+      "style": "normal",
+      "weight": "400",
+      "file": "avenir-lt-std-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Deadhead Rough",
+      "style": "normal",
+      "weight": "400",
+      "file": "deadhead-rough.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Gentium Book Basic",
+      "style": "normal",
+      "weight": "normal",
+      "file": "gentium-book-basic.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Gentium Book Basic",
+      "style": "italic",
+      "weight": "normal",
+      "file": "gentium-book-basic-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Gentium Book Basic",
+      "style": "normal",
+      "weight": "bold",
+      "file": "gentium-book-basic-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Gentium Book Basic",
+      "style": "italic",
+      "weight": "bold",
+      "file": "gentium-book-basic-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Norwester",
+      "style": "normal",
+      "weight": "100 900",
+      "file": "norwester.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

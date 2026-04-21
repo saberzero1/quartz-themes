@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["cascadia-mono"],
+    fontFiles: [
+      {
+        family: "Cascadia Mono",
+        style: "normal",
+        weight: "400",
+        file: "cascadia-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Cascadia Mono",
+        style: "italic",
+        weight: "400",
+        file: "cascadia-mono-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root[saved-theme="dark"] {

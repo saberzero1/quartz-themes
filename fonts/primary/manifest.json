@@ -1,0 +1,36 @@
+{
+  "extractedAt": "2026-04-21T17:55:41.051Z",
+  "sourceTheme": "Primary",
+  "fonts": [
+    {
+      "family": "Cascadia Code",
+      "style": "normal",
+      "weight": "400",
+      "file": "cascadia-code.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Inter",
+      "style": "normal",
+      "weight": "100 900",
+      "file": "inter.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Inter",
+      "style": "italic",
+      "weight": "100 900",
+      "file": "inter-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

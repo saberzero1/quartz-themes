@@ -6,6 +6,24 @@ export const theme: ThemeData = {
     modes: ["dark"],
     variations: [],
     fonts: ["share-tech-mono", "vt323"],
+    fontFiles: [
+      {
+        family: "VT323",
+        style: "normal",
+        weight: "400",
+        file: "vt323.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Share Tech Mono",
+        style: "normal",
+        weight: "400",
+        file: "share-tech-mono.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
   },
   dark: {
     base: `:root:root {
@@ -397,7 +415,7 @@ html body del {
   font-family: "Share Tech Mono", "Courier New", monospace;
   outline: rgb(176, 108, 90) none 0px;
   text-decoration-color: rgb(176, 108, 90);
-  transform: matrix(1, 0, 0, 1, 0.174181, 0);
+  transform: matrix(1, 0, 0, 1, 0.176767, 0);
 }
 
 html body h1.article-title {

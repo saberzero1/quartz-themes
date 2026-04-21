@@ -1,7 +1,22 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "zen", modes: ["dark", "light"], variations: [], fonts: [] },
+  meta: {
+    name: "zen",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+    fontFiles: [
+      {
+        family: "number-font",
+        style: "normal",
+        weight: "100",
+        file: "number-font.woff",
+        format: "woff",
+        unicodeRange: null,
+      },
+    ],
+  },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --active-border-color: rgba(0, 157, 255, 0.8) !important;

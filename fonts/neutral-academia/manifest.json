@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-04-21T17:55:31.367Z",
+  "sourceTheme": "Neutral Academia",
+  "fonts": [
+    {
+      "family": "Cormorant",
+      "style": "normal",
+      "weight": "400",
+      "file": "cormorant.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Manrope",
+      "style": "normal",
+      "weight": "400",
+      "file": "manrope.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

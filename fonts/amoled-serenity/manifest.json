@@ -1,0 +1,36 @@
+{
+  "extractedAt": "2026-04-21T17:54:56.954Z",
+  "sourceTheme": "AMOLED Serenity",
+  "fonts": [
+    {
+      "family": "Bricolage Grotesque",
+      "style": "normal",
+      "weight": "400",
+      "file": "bricolage-grotesque.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Roboto",
+      "style": "normal",
+      "weight": "400",
+      "file": "roboto.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Montserrat",
+      "style": "normal",
+      "weight": "400",
+      "file": "montserrat.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

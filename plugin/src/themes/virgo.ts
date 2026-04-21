@@ -1,7 +1,30 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "virgo", modes: ["dark", "light"], variations: [], fonts: [] },
+  meta: {
+    name: "virgo",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+    fontFiles: [
+      {
+        family: "jinkaiFont",
+        style: "normal",
+        weight: "normal",
+        file: "jinkaifont.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "romanFont",
+        style: "normal",
+        weight: "normal",
+        file: "romanfont.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
+  },
   dark: {
     base: `:root:root[saved-theme="dark"] {
   --background-primary: #262626 !important;

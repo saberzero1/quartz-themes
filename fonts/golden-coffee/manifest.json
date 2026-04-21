@@ -1,0 +1,36 @@
+{
+  "extractedAt": "2026-04-21T17:55:19.315Z",
+  "sourceTheme": "Golden Coffee",
+  "fonts": [
+    {
+      "family": "MADE Kenfolg v2",
+      "style": "normal",
+      "weight": "normal",
+      "file": "made-kenfolg-v2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weight": "normal",
+      "file": "jetbrains-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "FA5FS",
+      "style": "normal",
+      "weight": "normal",
+      "file": "fa5fs.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

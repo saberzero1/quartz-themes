@@ -1,7 +1,30 @@
 import type { ThemeData } from "../types.js";
 
 export const theme: ThemeData = {
-  meta: { name: "carpe-noctem", modes: ["dark"], variations: [], fonts: [] },
+  meta: {
+    name: "carpe-noctem",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+    fontFiles: [
+      {
+        family: "Cabin",
+        style: "italic",
+        weight: "normal",
+        file: "cabin.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+      {
+        family: "Cabin",
+        style: "normal",
+        weight: "normal",
+        file: "cabin-1.woff2",
+        format: "woff2",
+        unicodeRange: null,
+      },
+    ],
+  },
   dark: {
     base: `:root:root {
   --background-modifier-border: #a79f94 !important;

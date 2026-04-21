@@ -4270,7 +4270,7 @@ body body.theme-dark .markdown-rendered a.external-link {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-weight: 400;
+  font-weight: 450;
   outline: rgb(186, 139, 175) none 0px;
   text-decoration: underline;
   text-decoration-color: rgb(186, 139, 175);
@@ -5199,7 +5199,7 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
   color: rgb(232, 232, 232);
-  font-weight: 600;
+  font-weight: 450;
 }
 body body.theme-dark .callout > .callout-content {
   background-color: rgb(24, 24, 24);
