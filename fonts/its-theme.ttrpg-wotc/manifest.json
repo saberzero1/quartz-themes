@@ -1,1 +1,26 @@
-{ "base": "its-theme" }
+{
+  "extractedAt": "2026-04-22T03:41:00.508Z",
+  "sourceTheme": "ITS Theme",
+  "fonts": [
+    {
+      "family": "Fira Code",
+      "style": "normal",
+      "weight": "500",
+      "file": "fira-code.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "its",
+      "style": "normal",
+      "weight": "400",
+      "file": "its.woff",
+      "format": "woff",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

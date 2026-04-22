@@ -1,1 +1,16 @@
-{ "base": "velocity" }
+{
+  "extractedAt": "2026-04-22T08:59:54.778Z",
+  "sourceTheme": "Velocity",
+  "fonts": [
+    {
+      "family": "Raveo",
+      "style": "normal",
+      "weight": "100 900",
+      "file": "raveo.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

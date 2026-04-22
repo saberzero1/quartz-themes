@@ -311,6 +311,113 @@ html body li.task-list-item[data-task='w'] {
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }`,
+    callouts: `html body .callout > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="abstract"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="abstract"] > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="bug"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="bug"] > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="danger"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="danger"] > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="example"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="example"] > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="failure"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="failure"] > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="info"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="info"] > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="note"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="note"] > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="question"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="question"] > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="quote"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="quote"] > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="success"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="success"] > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="tip"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="tip"] > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="todo"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="todo"] > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="warning"] {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="warning"] > .callout-content {
+  color: rgb(255, 255, 255);
+}`,
     search: `html body .search > .search-button {
   color: rgb(255, 255, 255);
 }

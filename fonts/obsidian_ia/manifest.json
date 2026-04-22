@@ -1,0 +1,46 @@
+{
+  "extractedAt": "2026-04-22T05:11:57.914Z",
+  "sourceTheme": "obsidian_ia",
+  "fonts": [
+    {
+      "family": "iA Writer Quattro V",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ia-writer-quattro-v.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Quattro V",
+      "style": "italic",
+      "weight": "normal",
+      "file": "ia-writer-quattro-v-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Mono V",
+      "style": "normal",
+      "weight": "normal",
+      "file": "ia-writer-mono-v.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Mono V",
+      "style": "italic",
+      "weight": "normal",
+      "file": "ia-writer-mono-v-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

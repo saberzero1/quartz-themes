@@ -3,406 +3,406 @@
   font-family: "Lora";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/lora.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/lora.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Lora";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/lora-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/lora-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: normal;
   font-weight: 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/source-serif-pro.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/source-serif-pro.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: italic;
   font-weight: 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/source-serif-pro-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/source-serif-pro-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/source-serif-pro-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/source-serif-pro-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/source-serif-pro-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/source-serif-pro-3.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: normal;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/source-serif-pro-4.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/source-serif-pro-4.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: italic;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/source-serif-pro-5.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/source-serif-pro-5.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/source-serif-pro-6.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/source-serif-pro-6.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/source-serif-pro-7.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/source-serif-pro-7.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: italic;
   font-weight: 200;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/source-serif-pro-8.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/source-serif-pro-8.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: normal;
   font-weight: 200;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/source-serif-pro-9.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/source-serif-pro-9.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: italic;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/source-serif-pro-10.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/source-serif-pro-10.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Serif Pro";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/source-serif-pro-11.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/source-serif-pro-11.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/manrope.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/manrope.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/manrope-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/manrope-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/manrope-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/manrope-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 200;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/manrope-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/manrope-3.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/manrope-4.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/manrope-4.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/manrope-5.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/manrope-5.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono Oblique";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-oblique.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-oblique.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: normal;
   font-weight: 200;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: italic;
   font-weight: 200;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: italic;
   font-weight: 200;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-3.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-4.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-4.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-5.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-5.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: italic;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-6.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-6.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: italic;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-7.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-7.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: normal;
   font-weight: 100;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-8.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-8.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: italic;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-9.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-9.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-10.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-10.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-11.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-11.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: italic;
   font-weight: 100;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-12.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-12.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: italic;
   font-weight: 100;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-13.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-13.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-14.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-14.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-15.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-15.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: normal;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-16.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-16.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: italic;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-17.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-17.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono Oblique";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-oblique-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-oblique-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Victor Mono";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/victor-mono-18.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/victor-mono-18.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Recursive";
   font-style: normal;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/recursive.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/recursive.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Optima S";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/optima-s.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/optima-s.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia ExtraBlack";
   font-style: normal;
   font-weight: 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-extrablack.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-extrablack.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia Regular";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-regular.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-regular.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia";
   font-style: italic;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia";
   font-style: normal;
   font-weight: 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-3.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-4.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-4.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-5.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-5.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia";
   font-style: italic;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-6.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-6.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia";
   font-style: normal;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-7.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-7.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-8.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-8.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-9.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-9.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia ExtraBlack";
   font-style: italic;
   font-weight: 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-extrablack-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-extrablack-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Brevia";
   font-style: italic;
   font-weight: 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/brevia-10.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/brevia-10.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "nasin-nanpa";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/viridian/nasin-nanpa.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/viridian/nasin-nanpa.woff2")
     format("woff2");
 }
 body.theme-light {
@@ -3133,8 +3133,13 @@ body body.theme-light .callout[data-callout="note"] {
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
   background-color: rgba(8, 109, 221, 0.1);
+  background-image: none;
+  background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(51, 39, 26);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
+  --callout-color: 223, 62, 35;
   color: rgb(223, 62, 35);
   gap: 5px;
   border: 0px rgb(223, 62, 35);
@@ -3147,6 +3152,10 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
   color: rgb(51, 39, 26);
@@ -3154,11 +3163,19 @@ body body.theme-light .callout > .callout-title > .callout-title-inner {
 }
 body body.theme-light .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(51, 39, 26);
   padding: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
   --callout-color: 0, 191, 188;
   background-color: rgba(0, 191, 188, 0.1);
+  background-image: none;
+  background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(51, 39, 26);
   mix-blend-mode: normal;
   border: 0px solid rgb(51, 39, 26);
   border-top-left-radius: 8px;
@@ -3169,10 +3186,33 @@ body body.theme-light .callout[data-callout="abstract"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="abstract"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
   --callout-color: 8, 109, 221;
   background-color: rgba(8, 109, 221, 0.1);
+  background-image: none;
+  background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(51, 39, 26);
   mix-blend-mode: normal;
   border: 0px solid rgb(51, 39, 26);
   border-top-left-radius: 8px;
@@ -3183,10 +3223,33 @@ body body.theme-light .callout[data-callout="info"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="info"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
   --callout-color: 8, 109, 221;
   background-color: rgba(8, 109, 221, 0.1);
+  background-image: none;
+  background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(51, 39, 26);
   mix-blend-mode: normal;
   border: 0px solid rgb(51, 39, 26);
   border-top-left-radius: 8px;
@@ -3197,10 +3260,33 @@ body body.theme-light .callout[data-callout="todo"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="todo"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="tip"] {
   --callout-color: 0, 191, 188;
   background-color: rgba(0, 191, 188, 0.1);
+  background-image: none;
+  background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(51, 39, 26);
   mix-blend-mode: normal;
   border: 0px solid rgb(51, 39, 26);
   border-top-left-radius: 8px;
@@ -3211,10 +3297,33 @@ body body.theme-light .callout[data-callout="tip"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="tip"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="success"] {
   --callout-color: 8, 185, 78;
   background-color: rgba(8, 185, 78, 0.1);
+  background-image: none;
+  background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(51, 39, 26);
   mix-blend-mode: normal;
   border: 0px solid rgb(51, 39, 26);
   border-top-left-radius: 8px;
@@ -3225,10 +3334,33 @@ body body.theme-light .callout[data-callout="success"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="success"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="question"] {
   --callout-color: 236, 117, 0;
   background-color: rgba(236, 117, 0, 0.1);
+  background-image: none;
+  background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(51, 39, 26);
   mix-blend-mode: normal;
   border: 0px solid rgb(51, 39, 26);
   border-top-left-radius: 8px;
@@ -3239,10 +3371,33 @@ body body.theme-light .callout[data-callout="question"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="question"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="warning"] {
   --callout-color: 236, 117, 0;
   background-color: rgba(236, 117, 0, 0.1);
+  background-image: none;
+  background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(51, 39, 26);
   mix-blend-mode: normal;
   border: 0px solid rgb(51, 39, 26);
   border-top-left-radius: 8px;
@@ -3253,10 +3408,33 @@ body body.theme-light .callout[data-callout="warning"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="warning"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="danger"] {
   --callout-color: 233, 49, 71;
   background-color: rgba(233, 49, 71, 0.1);
+  background-image: none;
+  background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(51, 39, 26);
   mix-blend-mode: normal;
   border: 0px solid rgb(51, 39, 26);
   border-top-left-radius: 8px;
@@ -3267,10 +3445,33 @@ body body.theme-light .callout[data-callout="danger"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="danger"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
   --callout-color: 233, 49, 71;
   background-color: rgba(233, 49, 71, 0.1);
+  background-image: none;
+  background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(51, 39, 26);
   mix-blend-mode: normal;
   border: 0px solid rgb(51, 39, 26);
   border-top-left-radius: 8px;
@@ -3281,10 +3482,33 @@ body body.theme-light .callout[data-callout="failure"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="failure"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
   --callout-color: 233, 49, 71;
   background-color: rgba(233, 49, 71, 0.1);
+  background-image: none;
+  background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(51, 39, 26);
   mix-blend-mode: normal;
   border: 0px solid rgb(51, 39, 26);
   border-top-left-radius: 8px;
@@ -3295,10 +3519,33 @@ body body.theme-light .callout[data-callout="bug"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="bug"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="example"] {
   --callout-color: 120, 82, 238;
   background-color: rgba(120, 82, 238, 0.1);
+  background-image: none;
+  background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(51, 39, 26);
   mix-blend-mode: normal;
   border: 0px solid rgb(51, 39, 26);
   border-top-left-radius: 8px;
@@ -3310,9 +3557,32 @@ body body.theme-light .callout[data-callout="example"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .callout[data-callout="example"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-light .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
   background-color: rgba(158, 158, 158, 0.1);
+  background-image: none;
+  background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(51, 39, 26);
   mix-blend-mode: normal;
   border: 0px solid rgb(51, 39, 26);
   border-top-left-radius: 8px;
@@ -3323,6 +3593,25 @@ body body.theme-light .callout[data-callout="quote"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="quote"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
@@ -4819,8 +5108,13 @@ body body.theme-dark .callout[data-callout="note"] {
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
   background-color: rgba(2, 122, 255, 0.1);
+  background-image: none;
+  background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(247, 237, 235);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  --callout-color: 223, 62, 35;
   color: rgb(223, 62, 35);
   gap: 5px;
   border: 0px rgb(223, 62, 35);
@@ -4833,6 +5127,10 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
   color: rgb(247, 237, 235);
@@ -4840,11 +5138,19 @@ body body.theme-dark .callout > .callout-title > .callout-title-inner {
 }
 body body.theme-dark .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(247, 237, 235);
   padding: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
   --callout-color: 83, 223, 221;
   background-color: rgba(83, 223, 221, 0.1);
+  background-image: none;
+  background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(247, 237, 235);
   mix-blend-mode: normal;
   border: 0px solid rgb(247, 237, 235);
   border-top-left-radius: 8px;
@@ -4855,10 +5161,33 @@ body body.theme-dark .callout[data-callout="abstract"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
   --callout-color: 2, 122, 255;
   background-color: rgba(2, 122, 255, 0.1);
+  background-image: none;
+  background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(247, 237, 235);
   mix-blend-mode: normal;
   border: 0px solid rgb(247, 237, 235);
   border-top-left-radius: 8px;
@@ -4869,10 +5198,33 @@ body body.theme-dark .callout[data-callout="info"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="info"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
   --callout-color: 2, 122, 255;
   background-color: rgba(2, 122, 255, 0.1);
+  background-image: none;
+  background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(247, 237, 235);
   mix-blend-mode: normal;
   border: 0px solid rgb(247, 237, 235);
   border-top-left-radius: 8px;
@@ -4883,10 +5235,33 @@ body body.theme-dark .callout[data-callout="todo"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="todo"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="tip"] {
   --callout-color: 83, 223, 221;
   background-color: rgba(83, 223, 221, 0.1);
+  background-image: none;
+  background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(247, 237, 235);
   mix-blend-mode: normal;
   border: 0px solid rgb(247, 237, 235);
   border-top-left-radius: 8px;
@@ -4897,10 +5272,33 @@ body body.theme-dark .callout[data-callout="tip"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="tip"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="success"] {
   --callout-color: 68, 207, 110;
   background-color: rgba(68, 207, 110, 0.1);
+  background-image: none;
+  background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(247, 237, 235);
   mix-blend-mode: normal;
   border: 0px solid rgb(247, 237, 235);
   border-top-left-radius: 8px;
@@ -4911,10 +5309,33 @@ body body.theme-dark .callout[data-callout="success"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="success"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="question"] {
   --callout-color: 233, 151, 63;
   background-color: rgba(233, 151, 63, 0.1);
+  background-image: none;
+  background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(247, 237, 235);
   mix-blend-mode: normal;
   border: 0px solid rgb(247, 237, 235);
   border-top-left-radius: 8px;
@@ -4925,10 +5346,33 @@ body body.theme-dark .callout[data-callout="question"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="question"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="warning"] {
   --callout-color: 233, 151, 63;
   background-color: rgba(233, 151, 63, 0.1);
+  background-image: none;
+  background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(247, 237, 235);
   mix-blend-mode: normal;
   border: 0px solid rgb(247, 237, 235);
   border-top-left-radius: 8px;
@@ -4939,10 +5383,33 @@ body body.theme-dark .callout[data-callout="warning"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="warning"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="danger"] {
   --callout-color: 251, 70, 76;
   background-color: rgba(251, 70, 76, 0.1);
+  background-image: none;
+  background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(247, 237, 235);
   mix-blend-mode: normal;
   border: 0px solid rgb(247, 237, 235);
   border-top-left-radius: 8px;
@@ -4953,10 +5420,33 @@ body body.theme-dark .callout[data-callout="danger"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="danger"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
   --callout-color: 251, 70, 76;
   background-color: rgba(251, 70, 76, 0.1);
+  background-image: none;
+  background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(247, 237, 235);
   mix-blend-mode: normal;
   border: 0px solid rgb(247, 237, 235);
   border-top-left-radius: 8px;
@@ -4967,10 +5457,33 @@ body body.theme-dark .callout[data-callout="failure"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="failure"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
   --callout-color: 251, 70, 76;
   background-color: rgba(251, 70, 76, 0.1);
+  background-image: none;
+  background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(247, 237, 235);
   mix-blend-mode: normal;
   border: 0px solid rgb(247, 237, 235);
   border-top-left-radius: 8px;
@@ -4981,10 +5494,33 @@ body body.theme-dark .callout[data-callout="bug"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="bug"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="example"] {
   --callout-color: 168, 130, 255;
   background-color: rgba(168, 130, 255, 0.1);
+  background-image: none;
+  background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(247, 237, 235);
   mix-blend-mode: normal;
   border: 0px solid rgb(247, 237, 235);
   border-top-left-radius: 8px;
@@ -4996,9 +5532,32 @@ body body.theme-dark .callout[data-callout="example"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-dark .callout[data-callout="example"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-dark .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
   background-color: rgba(158, 158, 158, 0.1);
+  background-image: none;
+  background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(247, 237, 235);
   mix-blend-mode: normal;
   border: 0px solid rgb(247, 237, 235);
   border-top-left-radius: 8px;
@@ -5009,6 +5568,25 @@ body body.theme-dark .callout[data-callout="quote"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="quote"] > .callout-title {
+  --callout-color: 223, 62, 35;
+  color: rgb(223, 62, 35);
+  gap: 5px;
+  border: 0px rgb(223, 62, 35);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
