@@ -8738,5 +8738,11 @@ li.task-list-item[data-task="<"]::before {
   background-color: var(--checkbox-color);
   border-color: var(--checkbox-color);
 }
+
+/* Fix: increase title size */
+html[saved-theme="dark"] body h1.article-title,
+html[saved-theme="light"] body h1.article-title {
+  font-size: 2rem;
+}
 `,
 };
