@@ -947,7 +947,15 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
   -webkit-mask-repeat: no-repeat;
   background-color: rgb(68, 207, 110);
 }`,
-    callouts: `html[saved-theme="dark"] body .callout[data-callout="abstract"] {
+    callouts: `html[saved-theme="dark"] body .callout .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout > .callout-content {
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --callout-color: 83, 223, 221;
   border-bottom-color: rgba(83, 223, 221, 0.4);
   border-bottom-left-radius: 0px;
@@ -961,6 +969,15 @@ html[saved-theme="dark"] body li.task-list-item[data-task="u"] input[type="check
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
@@ -977,6 +994,15 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
@@ -993,10 +1019,20 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
   --callout-color: 197, 133, 204;
+  background: rgba(197, 133, 204, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(197, 133, 204, 0.1);
   border-bottom-color: rgba(197, 133, 204, 0.4);
   border-bottom-left-radius: 0px;
@@ -1010,6 +1046,15 @@ html[saved-theme="dark"] body .callout[data-callout="example"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
@@ -1026,10 +1071,20 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: 224, 222, 113;
+  background: rgba(224, 222, 113, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(224, 222, 113, 0.1);
   border-bottom-color: rgba(224, 222, 113, 0.4);
   border-bottom-left-radius: 0px;
@@ -1043,6 +1098,15 @@ html[saved-theme="dark"] body .callout[data-callout="info"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
@@ -1059,10 +1123,20 @@ html[saved-theme="dark"] body .callout[data-callout="note"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
   --callout-color: 250, 153, 205;
+  background: rgba(250, 153, 205, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(250, 153, 205, 0.1);
   border-bottom-color: rgba(250, 153, 205, 0.4);
   border-bottom-left-radius: 0px;
@@ -1076,10 +1150,20 @@ html[saved-theme="dark"] body .callout[data-callout="question"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --callout-color: 68, 207, 110;
+  background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(68, 207, 110, 0.1);
   border-bottom-color: rgba(68, 207, 110, 0.4);
   border-bottom-left-radius: 0px;
@@ -1093,10 +1177,20 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
   --callout-color: 251, 70, 76;
+  background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(251, 70, 76, 0.1);
   border-bottom-color: rgba(251, 70, 76, 0.4);
   border-bottom-left-radius: 0px;
@@ -1110,10 +1204,20 @@ html[saved-theme="dark"] body .callout[data-callout="success"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --callout-color: 255, 169, 154;
+  background: rgba(255, 169, 154, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(255, 169, 154, 0.1);
   border-bottom-color: rgba(255, 169, 154, 0.4);
   border-bottom-left-radius: 0px;
@@ -1127,10 +1231,20 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --callout-color: 68, 207, 110;
+  background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(68, 207, 110, 0.1);
   border-bottom-color: rgba(68, 207, 110, 0.4);
   border-bottom-left-radius: 0px;
@@ -1144,6 +1258,15 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
@@ -1160,6 +1283,15 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="warning"] > .callout-content {
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
@@ -2505,7 +2637,15 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
   -webkit-mask-repeat: no-repeat;
   background-color: rgb(8, 185, 78);
 }`,
-    callouts: `html[saved-theme="light"] body .callout[data-callout="abstract"] {
+    callouts: `html[saved-theme="light"] body .callout .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout > .callout-content {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --callout-color: 0, 191, 188;
   border-bottom-color: rgba(0, 191, 188, 0.4);
   border-bottom-left-radius: 0px;
@@ -2519,6 +2659,15 @@ html[saved-theme="light"] body li.task-list-item[data-task="u"] input[type="chec
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
@@ -2535,6 +2684,15 @@ html[saved-theme="light"] body .callout[data-callout="bug"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
@@ -2551,10 +2709,20 @@ html[saved-theme="light"] body .callout[data-callout="danger"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
   --callout-color: 197, 133, 204;
+  background: rgba(197, 133, 204, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(197, 133, 204, 0.1);
   border-bottom-color: rgba(197, 133, 204, 0.4);
   border-bottom-left-radius: 0px;
@@ -2568,6 +2736,15 @@ html[saved-theme="light"] body .callout[data-callout="example"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="example"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
@@ -2584,10 +2761,20 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
   --callout-color: 224, 172, 0;
+  background: rgba(224, 172, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(224, 172, 0, 0.1);
   border-bottom-color: rgba(224, 172, 0, 0.4);
   border-bottom-left-radius: 0px;
@@ -2601,6 +2788,15 @@ html[saved-theme="light"] body .callout[data-callout="info"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
@@ -2617,10 +2813,20 @@ html[saved-theme="light"] body .callout[data-callout="note"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
   --callout-color: 213, 57, 132;
+  background: rgba(213, 57, 132, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(213, 57, 132, 0.1);
   border-bottom-color: rgba(213, 57, 132, 0.4);
   border-bottom-left-radius: 0px;
@@ -2634,10 +2840,20 @@ html[saved-theme="light"] body .callout[data-callout="question"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="question"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
   --callout-color: 8, 185, 78;
+  background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(8, 185, 78, 0.1);
   border-bottom-color: rgba(8, 185, 78, 0.4);
   border-bottom-left-radius: 0px;
@@ -2651,10 +2867,20 @@ html[saved-theme="light"] body .callout[data-callout="quote"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
   --callout-color: 233, 49, 71;
+  background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(233, 49, 71, 0.1);
   border-bottom-color: rgba(233, 49, 71, 0.4);
   border-bottom-left-radius: 0px;
@@ -2668,10 +2894,20 @@ html[saved-theme="light"] body .callout[data-callout="success"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="success"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
   --callout-color: 255, 169, 154;
+  background: rgba(255, 169, 154, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(255, 169, 154, 0.1);
   border-bottom-color: rgba(255, 169, 154, 0.4);
   border-bottom-left-radius: 0px;
@@ -2685,10 +2921,20 @@ html[saved-theme="light"] body .callout[data-callout="tip"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
   --callout-color: 8, 185, 78;
+  background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(8, 185, 78, 0.1);
   border-bottom-color: rgba(8, 185, 78, 0.4);
   border-bottom-left-radius: 0px;
@@ -2702,6 +2948,15 @@ html[saved-theme="light"] body .callout[data-callout="todo"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
@@ -2718,6 +2973,15 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-top-width: 1px;
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {
+  --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="warning"] > .callout-content {
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {

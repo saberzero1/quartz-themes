@@ -339,8 +339,8 @@ html body del {
 }
 
 html body h1.article-title {
-  color: rgb(31, 39, 49);
-  font-weight: 676.25;
+  color: rgb(26, 35, 45);
+  font-weight: 682;
 }
 
 html body li.task-list-item input[type="checkbox"]:checked {
@@ -812,56 +812,181 @@ html body li.task-list-item[data-task="u"] input[type="checkbox"]::after {
   -webkit-mask-repeat: no-repeat;
   background-color: rgb(68, 207, 110);
 }`,
-    callouts: `html body .callout[data-callout="abstract"] {
+    callouts: `html body .callout .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout > .callout-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="abstract"] {
   --callout-color: 83, 223, 221;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="abstract"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="abstract"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="bug"] {
   --callout-color: 251, 70, 76;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="bug"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="bug"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="danger"] {
   --callout-color: 251, 70, 76;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="danger"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="danger"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="example"] {
   --callout-color: 168, 130, 255;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="example"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="example"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="failure"] {
   --callout-color: 251, 70, 76;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="failure"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="failure"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="info"] {
   --callout-color: 2, 122, 255;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="info"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="info"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="note"] {
   --callout-color: 2, 122, 255;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="note"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="note"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="question"] {
   --callout-color: 233, 151, 63;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="question"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="question"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="quote"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="quote"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="success"] {
   --callout-color: 68, 207, 110;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="success"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="success"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="tip"] {
   --callout-color: 83, 223, 221;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="tip"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="tip"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="todo"] {
   --callout-color: 2, 122, 255;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="todo"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="todo"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="warning"] {
   --callout-color: 233, 151, 63;
+  color: rgb(255, 255, 255);
+}
+
+html body .callout[data-callout="warning"] .callout-title {
+  --callout-color: 2, 122, 255;
+}
+
+html body .callout[data-callout="warning"] > .callout-content {
+  color: rgb(255, 255, 255);
 }
 
 html body .callout[data-callout="note"] {
@@ -1155,9 +1280,9 @@ html body .navigation-progress {
 }
 
 html body .page-header h2.page-title {
-  color: rgb(31, 39, 49);
+  color: rgb(26, 35, 45);
   font-family: "??", "??", "Segoe UI", Arial, Tahoma, Helvetica, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  text-shadow: rgb(137, 21, 254) 0px 0px 2px, rgb(137, 21, 254) 0px 0px 2px, rgb(245, 235, 255) 0px 0px 3px, rgb(245, 235, 255) 0px 0px 3px, rgb(245, 235, 255) 0px 0px 3px, rgb(245, 235, 255) 0px 0px 3px, rgb(245, 235, 255) 0px 0px 3px;
+  text-shadow: rgb(135, 16, 254) 0px 0px 2px, rgb(135, 16, 254) 0px 0px 2px, rgb(247, 240, 255) 0px 0px 3px, rgb(247, 240, 255) 0px 0px 3px, rgb(247, 240, 255) 0px 0px 3px, rgb(247, 240, 255) 0px 0px 3px, rgb(247, 240, 255) 0px 0px 3px;
 }
 
 html body abbr {

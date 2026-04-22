@@ -263,6 +263,9 @@ const sets = {
       "--callout-color",
       "--callout-icon",
       "background-color",
+      "background-image",
+      "background",
+      "color",
       //"border-style",
       //"border-color",
       //"border-width",
@@ -271,13 +274,23 @@ const sets = {
       //"padding",
       ...defaults.border,
     ],
-    content: ["background-color", ...defaults.padding],
+    content: [
+      "background-color",
+      "background-image",
+      "background",
+      "color",
+      ...defaults.padding,
+    ],
     icon: ["fill", "stroke"],
     title: [
+      "--callout-color",
       "color",
       /*"font-size", */ "gap" /*, "line-height"*/,
       ...defaults.border,
       ...defaults.padding,
+      "background-color",
+      "background-image",
+      "background",
     ],
     titleInner: ["color", "font-weight"],
   },
@@ -1089,14 +1102,6 @@ export const config = [
     ],
   },
   {
-    obsidianSelector: `div.callout-title`,
-    publishSelector: `.callout[data-callout="note"] > .callout-title`,
-    // quartzSelector: ".callout[data-callout] .callout-title",
-    quartzSelector: ".callout .callout-title",
-    pseudoElement: "",
-    properties: sets.callouts.title,
-  },
-  {
     obsidianSelector: `.callout[data-callout="note"] > .callout-title > .callout-icon > svg.svg-icon`,
     publishSelector: null,
     quartzSelector: null,
@@ -1104,10 +1109,15 @@ export const config = [
     properties: sets.callouts.icon,
   },
   {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="note"] > .callout-title`,
+    quartzSelector: ".callout .callout-title",
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
     obsidianSelector: `div.callout-title-inner`,
     publishSelector: `.callout > .callout-title > .callout-title-inner`,
-    // quartzSelector:
-    // ".callout[data-callout] .callout-title > .callout-title-inner > p",
     quartzSelector: ".callout .callout-title > .callout-title-inner > p",
     pseudoElement: "",
     properties: sets.callouts.titleInner,
@@ -1115,7 +1125,6 @@ export const config = [
   {
     obsidianSelector: `div.callout-content`,
     publishSelector: `.callout > .callout-content`,
-    // quartzSelector: ".callout[data-callout] > .callout-content",
     quartzSelector: ".callout > .callout-content",
     pseudoElement: "",
     properties: sets.callouts.content,
@@ -1135,6 +1144,27 @@ export const config = [
     pseudoElement: "",
     properties: sets.callouts.icon,
   },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="note"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="note"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="note"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="note"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
+  },
   // abstract
   {
     obsidianSelector: `div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"abstract\"]`,
@@ -1149,6 +1179,27 @@ export const config = [
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
+  },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="abstract"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="abstract"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="abstract"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="abstract"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
   },
   // info
   {
@@ -1165,6 +1216,27 @@ export const config = [
     pseudoElement: "",
     properties: sets.callouts.icon,
   },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="info"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="info"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="info"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="info"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
+  },
   // todo
   {
     obsidianSelector: `div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"todo\"]`,
@@ -1179,6 +1251,27 @@ export const config = [
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
+  },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="todo"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="todo"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="todo"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="todo"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
   },
   // tip
   {
@@ -1195,6 +1288,27 @@ export const config = [
     pseudoElement: "",
     properties: sets.callouts.icon,
   },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="tip"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="tip"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="tip"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="tip"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
+  },
   // success
   {
     obsidianSelector: `div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"success\"]`,
@@ -1209,6 +1323,27 @@ export const config = [
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
+  },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="success"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="success"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="success"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="success"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
   },
   // question
   {
@@ -1225,6 +1360,27 @@ export const config = [
     pseudoElement: "",
     properties: sets.callouts.icon,
   },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="question"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="question"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="question"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="question"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
+  },
   // warning
   {
     obsidianSelector: `div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"warning\"]`,
@@ -1239,6 +1395,27 @@ export const config = [
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
+  },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="warning"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="warning"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="warning"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="warning"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
   },
   // danger
   {
@@ -1255,6 +1432,27 @@ export const config = [
     pseudoElement: "",
     properties: sets.callouts.icon,
   },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="danger"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="danger"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="danger"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="danger"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
+  },
   // failure
   {
     obsidianSelector: `div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"failure\"]`,
@@ -1269,6 +1467,27 @@ export const config = [
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
+  },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="failure"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="failure"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="failure"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="failure"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
   },
   // bug
   {
@@ -1285,6 +1504,27 @@ export const config = [
     pseudoElement: "",
     properties: sets.callouts.icon,
   },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="bug"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="bug"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="bug"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="bug"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
+  },
   // example
   {
     obsidianSelector: `div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"example\"]`,
@@ -1300,6 +1540,27 @@ export const config = [
     pseudoElement: "",
     properties: sets.callouts.icon,
   },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="example"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="example"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="example"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="example"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
+  },
   // quote
   {
     obsidianSelector: `div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"quote\"]`,
@@ -1314,6 +1575,27 @@ export const config = [
     quartzSelector: null,
     pseudoElement: "",
     properties: sets.callouts.icon,
+  },
+  {
+    obsidianSelector: `div.callout-title`,
+    publishSelector: `.callout[data-callout="quote"] > .callout-title`,
+    quartzSelector: `.callout[data-callout="quote"] .callout-title`,
+    pseudoElement: "",
+    properties: sets.callouts.title,
+  },
+  {
+    obsidianSelector: `div.callout-title-inner`,
+    publishSelector: `.callout > .callout-title > .callout-title-inner`,
+    quartzSelector: `.callout[data-callout="quote"] .callout-title > .callout-title-inner > p`,
+    pseudoElement: "",
+    properties: sets.callouts.titleInner,
+  },
+  {
+    obsidianSelector: `div.callout-content`,
+    publishSelector: `.callout > .callout-content`,
+    quartzSelector: `.callout[data-callout="quote"] > .callout-content`,
+    pseudoElement: "",
+    properties: sets.callouts.content,
   },
   // === TABLES ===
   {

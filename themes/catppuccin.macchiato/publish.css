@@ -2,7 +2,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn.woff2")
     format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -11,7 +11,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-1.woff2")
     format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
@@ -19,7 +19,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-2.woff2")
     format("woff2");
   unicode-range: U+0370-03FF;
 }
@@ -27,7 +27,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-3.woff2")
     format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
@@ -37,7 +37,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-4.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-4.woff2")
     format("woff2");
   unicode-range:
     U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
@@ -47,7 +47,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-5.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-5.woff2")
     format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -58,7 +58,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-6.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-6.woff2")
     format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -67,7 +67,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-7.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-7.woff2")
     format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
@@ -75,7 +75,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-8.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-8.woff2")
     format("woff2");
   unicode-range: U+0370-03FF;
 }
@@ -83,7 +83,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-9.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-9.woff2")
     format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
@@ -93,7 +93,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-10.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-10.woff2")
     format("woff2");
   unicode-range:
     U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
@@ -103,7 +103,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-11.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-11.woff2")
     format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -114,7 +114,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-12.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-12.woff2")
     format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -123,7 +123,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-13.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-13.woff2")
     format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
@@ -131,7 +131,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-14.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-14.woff2")
     format("woff2");
   unicode-range: U+0370-03FF;
 }
@@ -139,7 +139,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-15.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-15.woff2")
     format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
@@ -149,7 +149,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-16.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-16.woff2")
     format("woff2");
   unicode-range:
     U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
@@ -159,7 +159,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-17.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-17.woff2")
     format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -170,7 +170,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-18.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-18.woff2")
     format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -179,7 +179,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-19.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-19.woff2")
     format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
@@ -187,7 +187,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-20.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-20.woff2")
     format("woff2");
   unicode-range: U+0370-03FF;
 }
@@ -195,7 +195,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-21.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-21.woff2")
     format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
@@ -205,7 +205,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-22.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-22.woff2")
     format("woff2");
   unicode-range:
     U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
@@ -215,7 +215,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-23.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-23.woff2")
     format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -226,7 +226,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-24.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-24.woff2")
     format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -235,7 +235,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-25.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-25.woff2")
     format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
@@ -243,7 +243,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-26.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-26.woff2")
     format("woff2");
   unicode-range: U+0370-03FF;
 }
@@ -251,7 +251,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-27.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-27.woff2")
     format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
@@ -261,7 +261,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-28.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-28.woff2")
     format("woff2");
   unicode-range:
     U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113,
@@ -271,7 +271,7 @@
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-29.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-29.woff2")
     format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -282,7 +282,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-30.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-30.woff")
     format("woff");
   unicode-range:
     U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -291,7 +291,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-31.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-31.woff")
     format("woff");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
@@ -299,7 +299,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-32.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-32.woff")
     format("woff");
   unicode-range: U+0370-03FF;
 }
@@ -307,7 +307,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-33.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-33.woff")
     format("woff");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
@@ -318,7 +318,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-34.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-34.woff")
     format("woff");
   unicode-range:
     U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
@@ -328,7 +328,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-35.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-35.woff")
     format("woff");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -339,7 +339,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-36.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-36.woff2")
     format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -348,7 +348,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-37.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-37.woff2")
     format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
@@ -356,7 +356,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-38.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-38.woff2")
     format("woff2");
   unicode-range: U+0370-03FF;
 }
@@ -364,7 +364,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-39.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-39.woff2")
     format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
@@ -375,7 +375,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-40.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-40.woff2")
     format("woff2");
   unicode-range:
     U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
@@ -385,7 +385,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-41.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-41.woff2")
     format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -396,7 +396,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-42.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-42.woff2")
     format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -405,7 +405,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-43.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-43.woff2")
     format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
@@ -413,7 +413,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-44.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-44.woff2")
     format("woff2");
   unicode-range: U+0370-03FF;
 }
@@ -421,7 +421,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-45.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-45.woff2")
     format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
@@ -432,7 +432,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-46.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-46.woff2")
     format("woff2");
   unicode-range:
     U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
@@ -442,7 +442,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-47.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-47.woff2")
     format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -453,7 +453,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-48.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-48.woff2")
     format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -462,7 +462,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-49.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-49.woff2")
     format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
@@ -470,7 +470,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-50.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-50.woff2")
     format("woff2");
   unicode-range: U+0370-03FF;
 }
@@ -478,7 +478,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-51.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-51.woff2")
     format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
@@ -489,7 +489,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-52.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-52.woff2")
     format("woff2");
   unicode-range:
     U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
@@ -499,7 +499,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-53.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-53.woff2")
     format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -510,7 +510,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-54.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-54.woff2")
     format("woff2");
   unicode-range:
     U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
@@ -519,7 +519,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-55.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-55.woff2")
     format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
@@ -527,7 +527,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-56.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-56.woff2")
     format("woff2");
   unicode-range: U+0370-03FF;
 }
@@ -535,7 +535,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-57.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-57.woff2")
     format("woff2");
   unicode-range:
     U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
@@ -546,7 +546,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-58.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-58.woff2")
     format("woff2");
   unicode-range:
     U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
@@ -556,7 +556,7 @@
   font-family: "Vollkorn";
   font-style: italic;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.0/fonts/catppuccin/vollkorn-59.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/catppuccin.macchiato/vollkorn-59.woff2")
     format("woff2");
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
@@ -3652,8 +3652,13 @@ body body.theme-light .callout[data-callout="note"] {
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
   background-color: rgba(30, 102, 245, 0.1);
+  background-image: none;
+  background: rgba(30, 102, 245, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(76, 79, 105);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
+  --callout-color: 30, 102, 245;
   color: rgb(30, 102, 245);
   gap: 4px;
   border: 0px rgb(30, 102, 245);
@@ -3666,6 +3671,10 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout > .callout-title > .callout-title-inner {
   color: rgb(30, 102, 245);
@@ -3673,11 +3682,19 @@ body body.theme-light .callout > .callout-title > .callout-title-inner {
 }
 body body.theme-light .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(76, 79, 105);
   padding: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] {
   --callout-color: 32, 159, 181;
   background-color: rgba(32, 159, 181, 0.1);
+  background-image: none;
+  background: rgba(32, 159, 181, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(76, 79, 105);
   mix-blend-mode: normal;
   border: 1px solid rgba(32, 159, 181, 0.6);
   border-top-left-radius: 4px;
@@ -3688,10 +3705,33 @@ body body.theme-light .callout[data-callout="abstract"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="abstract"] > .callout-title {
+  --callout-color: 30, 102, 245;
+  color: rgb(30, 102, 245);
+  gap: 4px;
+  border: 0px rgb(30, 102, 245);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="info"] {
   --callout-color: 30, 102, 245;
   background-color: rgba(30, 102, 245, 0.1);
+  background-image: none;
+  background: rgba(30, 102, 245, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(76, 79, 105);
   mix-blend-mode: normal;
   border: 1px solid rgba(30, 102, 245, 0.6);
   border-top-left-radius: 4px;
@@ -3702,10 +3742,33 @@ body body.theme-light .callout[data-callout="info"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="info"] > .callout-title {
+  --callout-color: 30, 102, 245;
+  color: rgb(30, 102, 245);
+  gap: 4px;
+  border: 0px rgb(30, 102, 245);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="todo"] {
   --callout-color: 30, 102, 245;
   background-color: rgba(30, 102, 245, 0.1);
+  background-image: none;
+  background: rgba(30, 102, 245, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(76, 79, 105);
   mix-blend-mode: normal;
   border: 1px solid rgba(30, 102, 245, 0.6);
   border-top-left-radius: 4px;
@@ -3717,9 +3780,32 @@ body body.theme-light .callout[data-callout="todo"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .callout[data-callout="todo"] > .callout-title {
+  --callout-color: 30, 102, 245;
+  color: rgb(30, 102, 245);
+  gap: 4px;
+  border: 0px rgb(30, 102, 245);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-light .callout[data-callout="tip"] {
   --callout-color: 32, 159, 181;
   background-color: rgba(32, 159, 181, 0.1);
+  background-image: none;
+  background: rgba(32, 159, 181, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(76, 79, 105);
   mix-blend-mode: normal;
   border: 1px solid rgba(32, 159, 181, 0.6);
   border-top-left-radius: 4px;
@@ -3731,9 +3817,32 @@ body body.theme-light .callout[data-callout="tip"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .callout[data-callout="tip"] > .callout-title {
+  --callout-color: 30, 102, 245;
+  color: rgb(30, 102, 245);
+  gap: 4px;
+  border: 0px rgb(30, 102, 245);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-light .callout[data-callout="success"] {
   --callout-color: 64, 160, 43;
   background-color: rgba(64, 160, 43, 0.1);
+  background-image: none;
+  background: rgba(64, 160, 43, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(76, 79, 105);
   mix-blend-mode: normal;
   border: 1px solid rgba(64, 160, 43, 0.6);
   border-top-left-radius: 4px;
@@ -3745,9 +3854,32 @@ body body.theme-light .callout[data-callout="success"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .callout[data-callout="success"] > .callout-title {
+  --callout-color: 30, 102, 245;
+  color: rgb(30, 102, 245);
+  gap: 4px;
+  border: 0px rgb(30, 102, 245);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-light .callout[data-callout="question"] {
   --callout-color: 223, 142, 29;
   background-color: rgba(223, 142, 29, 0.1);
+  background-image: none;
+  background: rgba(223, 142, 29, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(76, 79, 105);
   mix-blend-mode: normal;
   border: 1px solid rgba(223, 142, 29, 0.6);
   border-top-left-radius: 4px;
@@ -3759,9 +3891,32 @@ body body.theme-light .callout[data-callout="question"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .callout[data-callout="question"] > .callout-title {
+  --callout-color: 30, 102, 245;
+  color: rgb(30, 102, 245);
+  gap: 4px;
+  border: 0px rgb(30, 102, 245);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-light .callout[data-callout="warning"] {
   --callout-color: 254, 100, 11;
   background-color: rgba(254, 100, 11, 0.1);
+  background-image: none;
+  background: rgba(254, 100, 11, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(76, 79, 105);
   mix-blend-mode: normal;
   border: 1px solid rgba(254, 100, 11, 0.6);
   border-top-left-radius: 4px;
@@ -3773,9 +3928,32 @@ body body.theme-light .callout[data-callout="warning"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .callout[data-callout="warning"] > .callout-title {
+  --callout-color: 30, 102, 245;
+  color: rgb(30, 102, 245);
+  gap: 4px;
+  border: 0px rgb(30, 102, 245);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-light .callout[data-callout="danger"] {
   --callout-color: 210, 15, 57;
   background-color: rgba(210, 15, 57, 0.1);
+  background-image: none;
+  background: rgba(210, 15, 57, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(76, 79, 105);
   mix-blend-mode: normal;
   border: 1px solid rgba(210, 15, 57, 0.6);
   border-top-left-radius: 4px;
@@ -3786,10 +3964,33 @@ body body.theme-light .callout[data-callout="danger"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="danger"] > .callout-title {
+  --callout-color: 30, 102, 245;
+  color: rgb(30, 102, 245);
+  gap: 4px;
+  border: 0px rgb(30, 102, 245);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="failure"] {
   --callout-color: 210, 15, 57;
   background-color: rgba(210, 15, 57, 0.1);
+  background-image: none;
+  background: rgba(210, 15, 57, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(76, 79, 105);
   mix-blend-mode: normal;
   border: 1px solid rgba(210, 15, 57, 0.6);
   border-top-left-radius: 4px;
@@ -3800,10 +4001,33 @@ body body.theme-light .callout[data-callout="failure"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="failure"] > .callout-title {
+  --callout-color: 30, 102, 245;
+  color: rgb(30, 102, 245);
+  gap: 4px;
+  border: 0px rgb(30, 102, 245);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .callout[data-callout="bug"] {
   --callout-color: 210, 15, 57;
   background-color: rgba(210, 15, 57, 0.1);
+  background-image: none;
+  background: rgba(210, 15, 57, 0.1) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(76, 79, 105);
   mix-blend-mode: normal;
   border: 1px solid rgba(210, 15, 57, 0.6);
   border-top-left-radius: 4px;
@@ -3815,9 +4039,32 @@ body body.theme-light .callout[data-callout="bug"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .callout[data-callout="bug"] > .callout-title {
+  --callout-color: 30, 102, 245;
+  color: rgb(30, 102, 245);
+  gap: 4px;
+  border: 0px rgb(30, 102, 245);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-light .callout[data-callout="example"] {
   --callout-color: 136, 57, 239;
   background-color: rgba(136, 57, 239, 0.1);
+  background-image: none;
+  background: rgba(136, 57, 239, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(76, 79, 105);
   mix-blend-mode: normal;
   border: 1px solid rgba(136, 57, 239, 0.6);
   border-top-left-radius: 4px;
@@ -3829,9 +4076,32 @@ body body.theme-light .callout[data-callout="example"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-light .callout[data-callout="example"] > .callout-title {
+  --callout-color: 30, 102, 245;
+  color: rgb(30, 102, 245);
+  gap: 4px;
+  border: 0px rgb(30, 102, 245);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-light .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
   background-color: rgba(158, 158, 158, 0.1);
+  background-image: none;
+  background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(76, 79, 105);
   mix-blend-mode: normal;
   border: 1px solid rgba(158, 158, 158, 0.6);
   border-top-left-radius: 4px;
@@ -3842,6 +4112,25 @@ body body.theme-light .callout[data-callout="quote"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-light .callout[data-callout="quote"] > .callout-title {
+  --callout-color: 30, 102, 245;
+  color: rgb(30, 102, 245);
+  gap: 4px;
+  border: 0px rgb(30, 102, 245);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-light .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
@@ -5983,8 +6272,13 @@ body body.theme-dark .callout[data-callout="note"] {
   mix-blend-mode: normal;
   padding: 12px 12px 12px 24px;
   background-color: rgba(138, 173, 244, 0.1);
+  background-image: none;
+  background: rgba(138, 173, 244, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
+  --callout-color: 138, 173, 244;
   color: rgb(138, 173, 244);
   gap: 4px;
   border: 0px rgb(138, 173, 244);
@@ -5997,6 +6291,10 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout > .callout-title > .callout-title-inner {
   color: rgb(138, 173, 244);
@@ -6004,11 +6302,19 @@ body body.theme-dark .callout > .callout-title > .callout-title-inner {
 }
 body body.theme-dark .callout > .callout-content {
   background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  color: rgb(202, 211, 245);
   padding: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] {
   --callout-color: 125, 196, 228;
   background-color: rgba(125, 196, 228, 0.1);
+  background-image: none;
+  background: rgba(125, 196, 228, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
   mix-blend-mode: normal;
   border: 1px solid rgba(125, 196, 228, 0.6);
   border-top-left-radius: 4px;
@@ -6019,10 +6325,33 @@ body body.theme-dark .callout[data-callout="abstract"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
+  --callout-color: 138, 173, 244;
+  color: rgb(138, 173, 244);
+  gap: 4px;
+  border: 0px rgb(138, 173, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="info"] {
   --callout-color: 138, 173, 244;
   background-color: rgba(138, 173, 244, 0.1);
+  background-image: none;
+  background: rgba(138, 173, 244, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
   mix-blend-mode: normal;
   border: 1px solid rgba(138, 173, 244, 0.6);
   border-top-left-radius: 4px;
@@ -6033,10 +6362,33 @@ body body.theme-dark .callout[data-callout="info"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="info"] > .callout-title {
+  --callout-color: 138, 173, 244;
+  color: rgb(138, 173, 244);
+  gap: 4px;
+  border: 0px rgb(138, 173, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="todo"] {
   --callout-color: 138, 173, 244;
   background-color: rgba(138, 173, 244, 0.1);
+  background-image: none;
+  background: rgba(138, 173, 244, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
   mix-blend-mode: normal;
   border: 1px solid rgba(138, 173, 244, 0.6);
   border-top-left-radius: 4px;
@@ -6048,9 +6400,32 @@ body body.theme-dark .callout[data-callout="todo"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-dark .callout[data-callout="todo"] > .callout-title {
+  --callout-color: 138, 173, 244;
+  color: rgb(138, 173, 244);
+  gap: 4px;
+  border: 0px rgb(138, 173, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-dark .callout[data-callout="tip"] {
   --callout-color: 125, 196, 228;
   background-color: rgba(125, 196, 228, 0.1);
+  background-image: none;
+  background: rgba(125, 196, 228, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
   mix-blend-mode: normal;
   border: 1px solid rgba(125, 196, 228, 0.6);
   border-top-left-radius: 4px;
@@ -6062,9 +6437,32 @@ body body.theme-dark .callout[data-callout="tip"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-dark .callout[data-callout="tip"] > .callout-title {
+  --callout-color: 138, 173, 244;
+  color: rgb(138, 173, 244);
+  gap: 4px;
+  border: 0px rgb(138, 173, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-dark .callout[data-callout="success"] {
   --callout-color: 166, 218, 149;
   background-color: rgba(166, 218, 149, 0.1);
+  background-image: none;
+  background: rgba(166, 218, 149, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
   mix-blend-mode: normal;
   border: 1px solid rgba(166, 218, 149, 0.6);
   border-top-left-radius: 4px;
@@ -6076,9 +6474,32 @@ body body.theme-dark .callout[data-callout="success"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-dark .callout[data-callout="success"] > .callout-title {
+  --callout-color: 138, 173, 244;
+  color: rgb(138, 173, 244);
+  gap: 4px;
+  border: 0px rgb(138, 173, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-dark .callout[data-callout="question"] {
   --callout-color: 238, 212, 159;
   background-color: rgba(238, 212, 159, 0.1);
+  background-image: none;
+  background: rgba(238, 212, 159, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
   mix-blend-mode: normal;
   border: 1px solid rgba(238, 212, 159, 0.6);
   border-top-left-radius: 4px;
@@ -6090,9 +6511,32 @@ body body.theme-dark .callout[data-callout="question"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-dark .callout[data-callout="question"] > .callout-title {
+  --callout-color: 138, 173, 244;
+  color: rgb(138, 173, 244);
+  gap: 4px;
+  border: 0px rgb(138, 173, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-dark .callout[data-callout="warning"] {
   --callout-color: 245, 169, 127;
   background-color: rgba(245, 169, 127, 0.1);
+  background-image: none;
+  background: rgba(245, 169, 127, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
   mix-blend-mode: normal;
   border: 1px solid rgba(245, 169, 127, 0.6);
   border-top-left-radius: 4px;
@@ -6104,9 +6548,32 @@ body body.theme-dark .callout[data-callout="warning"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-dark .callout[data-callout="warning"] > .callout-title {
+  --callout-color: 138, 173, 244;
+  color: rgb(138, 173, 244);
+  gap: 4px;
+  border: 0px rgb(138, 173, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-dark .callout[data-callout="danger"] {
   --callout-color: 237, 135, 150;
   background-color: rgba(237, 135, 150, 0.1);
+  background-image: none;
+  background: rgba(237, 135, 150, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
   mix-blend-mode: normal;
   border: 1px solid rgba(237, 135, 150, 0.6);
   border-top-left-radius: 4px;
@@ -6117,10 +6584,33 @@ body body.theme-dark .callout[data-callout="danger"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="danger"] > .callout-title {
+  --callout-color: 138, 173, 244;
+  color: rgb(138, 173, 244);
+  gap: 4px;
+  border: 0px rgb(138, 173, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="failure"] {
   --callout-color: 237, 135, 150;
   background-color: rgba(237, 135, 150, 0.1);
+  background-image: none;
+  background: rgba(237, 135, 150, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
   mix-blend-mode: normal;
   border: 1px solid rgba(237, 135, 150, 0.6);
   border-top-left-radius: 4px;
@@ -6131,10 +6621,33 @@ body body.theme-dark .callout[data-callout="failure"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="failure"] > .callout-title {
+  --callout-color: 138, 173, 244;
+  color: rgb(138, 173, 244);
+  gap: 4px;
+  border: 0px rgb(138, 173, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .callout[data-callout="bug"] {
   --callout-color: 237, 135, 150;
   background-color: rgba(237, 135, 150, 0.1);
+  background-image: none;
+  background: rgba(237, 135, 150, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
   mix-blend-mode: normal;
   border: 1px solid rgba(237, 135, 150, 0.6);
   border-top-left-radius: 4px;
@@ -6146,9 +6659,32 @@ body body.theme-dark .callout[data-callout="bug"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-dark .callout[data-callout="bug"] > .callout-title {
+  --callout-color: 138, 173, 244;
+  color: rgb(138, 173, 244);
+  gap: 4px;
+  border: 0px rgb(138, 173, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-dark .callout[data-callout="example"] {
   --callout-color: 198, 160, 246;
   background-color: rgba(198, 160, 246, 0.1);
+  background-image: none;
+  background: rgba(198, 160, 246, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
   mix-blend-mode: normal;
   border: 1px solid rgba(198, 160, 246, 0.6);
   border-top-left-radius: 4px;
@@ -6160,9 +6696,32 @@ body body.theme-dark .callout[data-callout="example"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
 }
+body body.theme-dark .callout[data-callout="example"] > .callout-title {
+  --callout-color: 138, 173, 244;
+  color: rgb(138, 173, 244);
+  gap: 4px;
+  border: 0px rgb(138, 173, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+}
 body body.theme-dark .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
   background-color: rgba(158, 158, 158, 0.1);
+  background-image: none;
+  background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
+  color: rgb(202, 211, 245);
   mix-blend-mode: normal;
   border: 1px solid rgba(158, 158, 158, 0.6);
   border-top-left-radius: 4px;
@@ -6173,6 +6732,25 @@ body body.theme-dark .callout[data-callout="quote"] {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
+}
+body body.theme-dark .callout[data-callout="quote"] > .callout-title {
+  --callout-color: 138, 173, 244;
+  color: rgb(138, 173, 244);
+  gap: 4px;
+  border: 0px rgb(138, 173, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
 }
 body body.theme-dark .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
