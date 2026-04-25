@@ -217,6 +217,10 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(36, 36, 36);
   color: rgb(250, 242, 214);
+}
+
+html[saved-theme="dark"] body html {
+  --font-monospace: "Source Code Pro", monospace;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(250, 242, 214);
@@ -1376,6 +1380,10 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(237, 237, 237);
   color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body html {
+  --font-monospace: "Source Code Pro", monospace;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(26, 32, 35);

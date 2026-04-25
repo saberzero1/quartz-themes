@@ -4039,6 +4039,436 @@ body {
     font-weight: 400;
   }
 
+  li.task-list-item[data-task="_"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task=","] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task=";"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task=":"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="."] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="'"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="@"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="&"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="#"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="%"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="`"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="+"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="<"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="="] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="|"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="~"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="$"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="0"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="1"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="2"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="3"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="4"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="5"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="6"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="7"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="8"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="9"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="a"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="A"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="B"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="C"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="D"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="e"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="E"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="F"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="g"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="G"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="h"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="H"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="j"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="J"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="K"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="L"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="m"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="M"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="n"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="N"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="o"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="O"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="P"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="q"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="Q"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="r"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="R"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="s"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="t"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="T"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="U"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="v"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="V"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="W"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="x"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(229, 233, 240);
+  }
+
+  li.task-list-item[data-task="X"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(229, 233, 240);
+  }
+
+  li.task-list-item[data-task="y"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="Y"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="z"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  li.task-list-item[data-task="Z"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --link-color-hover: hsl(253, 92.4%, 85.14%);
+    color: rgb(236, 239, 244);
+  }
+
+  html {
+    --background-color: #2e3440;
+    --dark0: #2e3440;
+    --dark1: #3b4252;
+    --dark2: #434c5e;
+    --dark3: #4c566a;
+    --font-monospace: "MesloLGS NF", "Source Code Pro", monospace;
+    --frost0: #8fbcbb;
+    --frost1: #88c0d0;
+    --frost2: #81a1c1;
+    --frost3: #5e81ac;
+    --green: #a3be8c;
+    --heading-color: #eceff4;
+    --light0: #d8dee9;
+    --light1: #e5e9f0;
+    --light2: #eceff4;
+    --light3: #ffffff;
+    --link-color: #var(--frost0);
+    --link-color-hover: #81a1c1;
+    --main-color: #eceff4;
+    --orange: #d08770;
+    --purple: #b48ead;
+    --red: #bf616a;
+    --selection-background-color: #4c566a;
+    --selection-color: #e5e9f0;
+    --yellow: #ebcb8b;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 

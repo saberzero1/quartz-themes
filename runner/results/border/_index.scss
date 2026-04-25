@@ -3128,6 +3128,21 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     text-shadow: none;
+    --font-weight: 675;
+    font-size: 22.8px;
+    font-weight: 675;
+    letter-spacing: -0.2508px;
+    line-height: 27.36px;
+    background-color: rgb(222, 116, 23);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-color: rgb(29, 29, 32);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-width: 0px;
+    content: " ";
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
   }
 
   h3 {
@@ -3147,6 +3162,21 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     text-shadow: none;
+    --font-weight: 650;
+    font-size: 21.6px;
+    font-weight: 650;
+    letter-spacing: -0.1728px;
+    line-height: 28.08px;
+    background-color: rgb(192, 156, 12);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-color: rgb(29, 29, 32);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-width: 0px;
+    content: " ";
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
   }
 
   h4 {
@@ -3166,6 +3196,21 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     text-shadow: none;
+    --font-weight: 625;
+    font-size: 20.4px;
+    font-weight: 625;
+    letter-spacing: -0.102px;
+    line-height: 28.56px;
+    background-color: rgb(29, 165, 29);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-color: rgb(29, 29, 32);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-width: 0px;
+    content: " ";
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
   }
 
   h5 {
@@ -3185,6 +3230,21 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     text-shadow: none;
+    --font-weight: 600;
+    font-size: 19.2px;
+    font-weight: 600;
+    letter-spacing: -0.0384px;
+    line-height: 28.8px;
+    background-color: rgb(23, 117, 217);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-color: rgb(29, 29, 32);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-width: 0px;
+    content: " ";
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
   }
 
   h6 {
@@ -3204,6 +3264,20 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     text-shadow: none;
+    --font-weight: 575;
+    font-size: 18px;
+    font-weight: 575;
+    line-height: 27px;
+    background-color: rgb(143, 71, 225);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-color: rgb(29, 29, 32);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-width: 0px;
+    content: " ";
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
   }
 
   h2.page-title,
@@ -5101,6 +5175,374 @@ body {
     font-weight: 400;
   }
 
+  article > h1 {
+    font-size: 24px;
+    letter-spacing: -0.36px;
+    line-height: 28.8px;
+    --font-weight: 700;
+    background-color: rgb(221, 44, 56);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-color: rgb(29, 29, 32);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-width: 0px;
+    color: rgb(29, 29, 32);
+    content: " ";
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-weight: 700;
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
+  }
+
+  li.task-list-item[data-task="_"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=","] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=";"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=":"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="."] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="'"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="@"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="&"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="#"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="%"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="`"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="+"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="<"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="="] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="|"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="~"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="$"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="0"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="1"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="2"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="3"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="4"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="5"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="6"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="7"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="8"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="9"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="a"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="A"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="B"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="C"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="D"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="e"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="E"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="F"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="g"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="G"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="h"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="H"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="j"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="J"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="K"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="L"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="m"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="M"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="n"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="N"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="o"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="O"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="P"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="q"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Q"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="r"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="R"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="s"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="t"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="T"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="U"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="v"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="V"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="W"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="x"] {
+    color: rgb(152, 155, 174);
+    text-decoration-line: line-through;
+  }
+
+  li.task-list-item[data-task="X"] {
+    color: rgb(152, 155, 174);
+    text-decoration-line: line-through;
+  }
+
+  li.task-list-item[data-task="y"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Y"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="z"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Z"] {
+    color: rgb(29, 29, 32);
+    text-decoration-line: none;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 
@@ -6763,6 +7205,21 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       text-shadow: none;
+      --font-weight: 675;
+      font-size: 22.8px;
+      font-weight: 675;
+      letter-spacing: -0.2508px;
+      line-height: 27.36px;
+      background-color: rgb(251, 187, 131);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-color: rgb(211, 213, 222);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-width: 0px;
+      content: " ";
+      margin: 0px 6px 0px 0px;
+      padding: 0px;
     }
 
     h3 {
@@ -6782,6 +7239,21 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       text-shadow: none;
+      --font-weight: 650;
+      font-size: 21.6px;
+      font-weight: 650;
+      letter-spacing: -0.1728px;
+      line-height: 28.08px;
+      background-color: rgb(255, 232, 139);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-color: rgb(211, 213, 222);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-width: 0px;
+      content: " ";
+      margin: 0px 6px 0px 0px;
+      padding: 0px;
     }
 
     h4 {
@@ -6801,6 +7273,21 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       text-shadow: none;
+      --font-weight: 625;
+      font-size: 20.4px;
+      font-weight: 625;
+      letter-spacing: -0.102px;
+      line-height: 28.56px;
+      background-color: rgb(124, 211, 124);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-color: rgb(211, 213, 222);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-width: 0px;
+      content: " ";
+      margin: 0px 6px 0px 0px;
+      padding: 0px;
     }
 
     h5 {
@@ -6820,6 +7307,21 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       text-shadow: none;
+      --font-weight: 600;
+      font-size: 19.2px;
+      font-weight: 600;
+      letter-spacing: -0.0384px;
+      line-height: 28.8px;
+      background-color: rgb(137, 189, 244);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-color: rgb(211, 213, 222);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-width: 0px;
+      content: " ";
+      margin: 0px 6px 0px 0px;
+      padding: 0px;
     }
 
     h6 {
@@ -6839,6 +7341,20 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       text-shadow: none;
+      --font-weight: 575;
+      font-size: 18px;
+      font-weight: 575;
+      line-height: 27px;
+      background-color: rgb(203, 158, 255);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-color: rgb(211, 213, 222);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-width: 0px;
+      content: " ";
+      margin: 0px 6px 0px 0px;
+      padding: 0px;
     }
 
     h2.page-title,
@@ -8735,6 +9251,374 @@ html[saved-theme="dark"] {
       color: rgb(211, 213, 222);
       font-size: 13px;
       font-weight: 400;
+    }
+
+    article > h1 {
+      font-size: 24px;
+      letter-spacing: -0.36px;
+      line-height: 28.8px;
+      --font-weight: 700;
+      background-color: rgb(255, 120, 129);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-color: rgb(211, 213, 222);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-width: 0px;
+      color: rgb(211, 213, 222);
+      content: " ";
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      font-weight: 700;
+      margin: 0px 6px 0px 0px;
+      padding: 0px;
+    }
+
+    li.task-list-item[data-task="_"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=","] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=";"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=":"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="."] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="'"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="@"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="&"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="#"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="%"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="`"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="+"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="<"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="="] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="|"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="~"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="$"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="0"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="1"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="2"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="3"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="4"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="5"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="6"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="7"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="8"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="9"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="a"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="A"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="B"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="C"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="D"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="e"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="E"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="F"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="g"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="G"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="h"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="H"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="j"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="J"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="K"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="L"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="m"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="M"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="n"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="N"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="o"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="O"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="P"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="q"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Q"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="r"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="R"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="s"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="t"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="T"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="U"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="v"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="V"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="W"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="x"] {
+      color: rgb(116, 119, 139);
+      text-decoration-line: line-through;
+    }
+
+    li.task-list-item[data-task="X"] {
+      color: rgb(116, 119, 139);
+      text-decoration-line: line-through;
+    }
+
+    li.task-list-item[data-task="y"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Y"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="z"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Z"] {
+      color: rgb(211, 213, 222);
+      text-decoration-line: none;
     }
   }
 }

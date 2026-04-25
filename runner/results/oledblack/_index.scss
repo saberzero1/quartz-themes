@@ -3983,6 +3983,10 @@ body {
     text-decoration: rgb(255, 255, 255);
   }
 
+  li.task-list-item[data-task="x"] {
+    caret-color: rgb(255, 255, 255);
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 

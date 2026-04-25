@@ -210,6 +210,14 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(34, 34, 34);
   color: rgb(237, 237, 237);
+}
+
+html body html {
+  --accent-1: rgb(0, 255, 140);
+  --blockquote-border-color: rgb(0, 255, 140);
+  --color-accent: rgb(0, 255, 140);
+  --color-var: rgb(0, 255, 140);
+  --interactive-accent: rgb(0, 255, 140);
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(12, 255, 174);

@@ -576,6 +576,105 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(38, 34, 38);
   color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body html {
+  --anim-duration-fast: 150ms;
+  --anim-duration-moderate: 250ms;
+  --anim-duration-none: 0;
+  --anim-duration-slow: 500ms;
+  --anim-duration-superfast: 75ms;
+  --crimson0: 346, 50%, 40%;
+  --crimson1: 346, 50%, 36%;
+  --crimson2: 346, 50%, 32%;
+  --crimson3: 346, 50%, 28%;
+  --crimson4: 346, 50%, 24%;
+  --crimson5: 346, 50%, 20%;
+  --day0: 15, 20%, 96%;
+  --day1: 15, 20%, 92%;
+  --day2: 15, 20%, 88%;
+  --day3: 15, 20%, 84%;
+  --day4: 15, 20%, 80%;
+  --day5: 15, 20%, 76%;
+  --default-font: 'Consolas', 'Source Sans Pro', 'Segoe UI Emoji', sans-serif;
+  --font-default: 'Consolas', 'Source Sans Pro', 'Segoe UI Emoji', sans-serif;
+  --font-headings: 'Tahoma', serif;
+  --font-interface: 'Consolas', 'Source Sans Pro', 'Segoe UI Emoji', sans-serif;
+  --font-title: 'Jomhuria', 'Source Sans Pro', sans-serif;
+  --frost0: 226, 40%, 44%;
+  --frost1: 226, 40%, 48%;
+  --frost2: 226, 40%, 52%;
+  --frost3: 226, 40%, 56%;
+  --frost4: 226, 40%, 60%;
+  --frost5: 226, 40%, 64%;
+  --green0: 108, 40%, 34%;
+  --green1: 108, 40%, 38%;
+  --green2: 108, 40%, 42%;
+  --green3: 108, 40%, 46%;
+  --green4: 108, 40%, 50%;
+  --green5: 108, 40%, 54%;
+  --indigo0: 270, 40%, 30%;
+  --indigo1: 270, 40%, 34%;
+  --indigo2: 270, 40%, 38%;
+  --indigo3: 270, 40%, 42%;
+  --indigo4: 270, 40%, 46%;
+  --indigo5: 270, 40%, 50%;
+  --letterspacing-text-headers: 1.2px;
+  --letterspacing-text-p: 1px;
+  --moonstone0: 189, 40%, 34%;
+  --moonstone1: 189, 40%, 38%;
+  --moonstone2: 189, 40%, 42%;
+  --moonstone3: 189, 40%, 46%;
+  --moonstone4: 189, 40%, 50%;
+  --moonstone5: 189, 40%, 54%;
+  --night0: 300,  6%, 10%;
+  --night1: 300,  6%, 14%;
+  --night2: 300,  6%, 18%;
+  --night3: 300,  6%, 22%;
+  --night4: 300,  6%, 26%;
+  --night5: 300,  6%, 30%;
+  --peach0: 22, 50%, 40%;
+  --peach1: 22, 50%, 44%;
+  --peach2: 21, 50%, 48%;
+  --peach3: 21, 50%, 52%;
+  --peach4: 21, 50%, 56%;
+  --peach5: 22, 50%, 60%;
+  --pink0: 316, 50%, 60%;
+  --pink1: 316, 50%, 64%;
+  --pink2: 316, 50%, 68%;
+  --pink3: 316, 50%, 72%;
+  --pink4: 315, 50%, 76%;
+  --pink5: 316, 50%, 80%;
+  --size-icon: 15px;
+  --size-text-h1: 3em;
+  --size-text-h2: 30px;
+  --size-text-h3: 27px;
+  --size-text-h4: 24px;
+  --size-text-h5: 21px;
+  --size-text-h6: 18px;
+  --size-text-p: 15px;
+  --size-text-title: 5em;
+  --teal0: 160, 50%, 34%;
+  --teal1: 160, 50%, 38%;
+  --teal2: 160, 50%, 42%;
+  --teal3: 160, 50%, 46%;
+  --teal4: 160, 50%, 50%;
+  --teal5: 168, 50%, 54%;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+  --weight-extralight: 200;
+  --weight-light: 300;
+  --weight-maxbold: 900;
+  --weight-medium: 500;
+  --weight-normal: 400;
+  --weight-semibold: 600;
+  --weight-thin: 100;
+  --yellow0: 45, 50%, 44%;
+  --yellow1: 45, 50%, 48%;
+  --yellow2: 45, 50%, 52%;
+  --yellow3: 45, 50%, 56%;
+  --yellow4: 45, 50%, 60%;
+  --yellow5: 45, 50%, 64%;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(77, 163, 179);
@@ -897,6 +996,274 @@ html[saved-theme="dark"] body .transclude-inner {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: 0.3s;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(59, 176, 137);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(59, 176, 137);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgb(48, 145, 113);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgb(48, 145, 113);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -2355,6 +2722,105 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(239, 233, 231);
   color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body html {
+  --anim-duration-fast: 150ms;
+  --anim-duration-moderate: 250ms;
+  --anim-duration-none: 0;
+  --anim-duration-slow: 500ms;
+  --anim-duration-superfast: 75ms;
+  --crimson0: 346, 50%, 40%;
+  --crimson1: 346, 50%, 36%;
+  --crimson2: 346, 50%, 32%;
+  --crimson3: 346, 50%, 28%;
+  --crimson4: 346, 50%, 24%;
+  --crimson5: 346, 50%, 20%;
+  --day0: 15, 20%, 96%;
+  --day1: 15, 20%, 92%;
+  --day2: 15, 20%, 88%;
+  --day3: 15, 20%, 84%;
+  --day4: 15, 20%, 80%;
+  --day5: 15, 20%, 76%;
+  --default-font: 'Consolas', 'Source Sans Pro', 'Segoe UI Emoji', sans-serif;
+  --font-default: 'Consolas', 'Source Sans Pro', 'Segoe UI Emoji', sans-serif;
+  --font-headings: 'Tahoma', serif;
+  --font-interface: 'Consolas', 'Source Sans Pro', 'Segoe UI Emoji', sans-serif;
+  --font-title: 'Jomhuria', 'Source Sans Pro', sans-serif;
+  --frost0: 226, 40%, 44%;
+  --frost1: 226, 40%, 48%;
+  --frost2: 226, 40%, 52%;
+  --frost3: 226, 40%, 56%;
+  --frost4: 226, 40%, 60%;
+  --frost5: 226, 40%, 64%;
+  --green0: 108, 40%, 34%;
+  --green1: 108, 40%, 38%;
+  --green2: 108, 40%, 42%;
+  --green3: 108, 40%, 46%;
+  --green4: 108, 40%, 50%;
+  --green5: 108, 40%, 54%;
+  --indigo0: 270, 40%, 30%;
+  --indigo1: 270, 40%, 34%;
+  --indigo2: 270, 40%, 38%;
+  --indigo3: 270, 40%, 42%;
+  --indigo4: 270, 40%, 46%;
+  --indigo5: 270, 40%, 50%;
+  --letterspacing-text-headers: 1.2px;
+  --letterspacing-text-p: 1px;
+  --moonstone0: 189, 40%, 34%;
+  --moonstone1: 189, 40%, 38%;
+  --moonstone2: 189, 40%, 42%;
+  --moonstone3: 189, 40%, 46%;
+  --moonstone4: 189, 40%, 50%;
+  --moonstone5: 189, 40%, 54%;
+  --night0: 300,  6%, 10%;
+  --night1: 300,  6%, 14%;
+  --night2: 300,  6%, 18%;
+  --night3: 300,  6%, 22%;
+  --night4: 300,  6%, 26%;
+  --night5: 300,  6%, 30%;
+  --peach0: 22, 50%, 40%;
+  --peach1: 22, 50%, 44%;
+  --peach2: 21, 50%, 48%;
+  --peach3: 21, 50%, 52%;
+  --peach4: 21, 50%, 56%;
+  --peach5: 22, 50%, 60%;
+  --pink0: 316, 50%, 60%;
+  --pink1: 316, 50%, 64%;
+  --pink2: 316, 50%, 68%;
+  --pink3: 316, 50%, 72%;
+  --pink4: 315, 50%, 76%;
+  --pink5: 316, 50%, 80%;
+  --size-icon: 15px;
+  --size-text-h1: 3em;
+  --size-text-h2: 30px;
+  --size-text-h3: 27px;
+  --size-text-h4: 24px;
+  --size-text-h5: 21px;
+  --size-text-h6: 18px;
+  --size-text-p: 15px;
+  --size-text-title: 5em;
+  --teal0: 160, 50%, 34%;
+  --teal1: 160, 50%, 38%;
+  --teal2: 160, 50%, 42%;
+  --teal3: 160, 50%, 46%;
+  --teal4: 160, 50%, 50%;
+  --teal5: 168, 50%, 54%;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+  --weight-extralight: 200;
+  --weight-light: 300;
+  --weight-maxbold: 900;
+  --weight-medium: 500;
+  --weight-normal: 400;
+  --weight-semibold: 600;
+  --weight-thin: 100;
+  --yellow0: 45, 50%, 44%;
+  --yellow1: 45, 50%, 48%;
+  --yellow2: 45, 50%, 52%;
+  --yellow3: 45, 50%, 56%;
+  --yellow4: 45, 50%, 60%;
+  --yellow5: 45, 50%, 64%;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(64, 137, 150);
@@ -2676,6 +3142,274 @@ html[saved-theme="light"] body .transclude-inner {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: 0.3s;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(59, 53, 59);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(59, 53, 59);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: rgb(38, 34, 38);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: rgb(38, 34, 38);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {

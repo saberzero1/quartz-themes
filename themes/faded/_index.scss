@@ -1323,43 +1323,43 @@ html {
   font-family: "Roboto Condensed";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/faded/roboto-condensed.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/faded/roboto-condensed.woff2") format("woff2");
 }
 @font-face {
   font-family: "its";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/faded/its.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/faded/its.woff") format("woff");
 }
 @font-face {
   font-family: "Font Awesome 6 Free Regular";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/faded/font-awesome-6-free-regular.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/faded/font-awesome-6-free-regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Font Awesome 6 Free Solid";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/faded/font-awesome-6-free-solid.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/faded/font-awesome-6-free-solid.woff2") format("woff2");
 }
 @font-face {
   font-family: "Cuprum";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/faded/cuprum.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/faded/cuprum.woff2") format("woff2");
 }
 @font-face {
   font-family: "Gemunu Libre";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/faded/gemunu-libre.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/faded/gemunu-libre.woff2") format("woff2");
 }
 @font-face {
   font-family: "Kreon";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/faded/kreon.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/faded/kreon.woff2") format("woff2");
 }
 
 body {
@@ -2216,97 +2216,121 @@ body {
 
   h2 {
     color: rgb(218, 218, 218);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "Font Awesome 6 Free Solid";
     text-shadow: none;
+    --font-weight: 700;
+    font-size: 25.6px;
+    font-weight: 700;
+    letter-spacing: -0.2816px;
+    line-height: 30.72px;
+    --unstacked-tabs-header-width: 6px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: rgb(218, 218, 218);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    content: " ";
+    margin: 0px;
+    padding: 0px;
+    background-image: none;
+    filter: none;
   }
 
   h3 {
     color: rgb(218, 218, 218);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "Font Awesome 6 Free Solid";
     text-shadow: none;
+    --font-weight: 700;
+    font-size: 21.92px;
+    font-weight: 700;
+    letter-spacing: -0.17536px;
+    line-height: 28.496px;
+    --unstacked-tabs-header-width: 6px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: rgb(218, 218, 218);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    content: " ";
+    margin: 0px;
+    padding: 0px;
+    background-image: none;
+    filter: none;
   }
 
   h4 {
     color: rgb(218, 218, 218);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "Font Awesome 6 Free Solid";
     text-shadow: none;
+    --font-weight: 700;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.1px;
+    line-height: 28px;
+    --unstacked-tabs-header-width: 6px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: rgb(218, 218, 218);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    content: " ";
+    margin: 0px;
+    padding: 0px;
+    background-image: none;
+    filter: none;
   }
 
   h5 {
     color: rgb(218, 218, 218);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "Font Awesome 6 Free Solid";
     text-shadow: none;
+    --font-weight: 700;
+    font-size: 17.92px;
+    font-weight: 700;
+    letter-spacing: -0.03584px;
+    line-height: 26.88px;
+    --unstacked-tabs-header-width: 6px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: rgb(218, 218, 218);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    content: " ";
+    margin: 0px;
+    padding: 0px;
+    background-image: none;
+    filter: none;
   }
 
   h6 {
     color: rgb(218, 218, 218);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "Font Awesome 6 Free Solid";
     text-shadow: none;
+    --font-weight: 700;
+    font-size: 17.92px;
+    font-weight: 700;
+    line-height: 26.88px;
+    --unstacked-tabs-header-width: 6px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: rgb(218, 218, 218);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    content: " ";
+    margin: 0px;
+    padding: 0px;
+    background-image: none;
+    filter: none;
   }
 
   h2.page-title,
@@ -4151,6 +4175,502 @@ body {
     font-weight: 400;
   }
 
+  .callout[data-callout="multi-column-flex-height"] {
+    --callout-color: #d6ba7c;
+    --table-border-color: color-mix(in srgb, rgb(#d6ba7c) 25%, #1a1e24 50%);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(218, 218, 218);
+    border-width: 0px;
+    --unstacked-tabs-header-width: 6px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(218, 218, 218);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    line-height: 24px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .callout[data-callout="multi-column"] {
+    --callout-color: #d6ba7c;
+    --table-border-color: color-mix(in srgb, rgb(#d6ba7c) 25%, #1a1e24 50%);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(218, 218, 218);
+    border-width: 0px;
+    --unstacked-tabs-header-width: 6px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(218, 218, 218);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    line-height: 24px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  article > h1 {
+    font-size: 32px;
+    letter-spacing: -0.48px;
+    line-height: 38.4px;
+    --unstacked-tabs-header-width: 6px;
+    --font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: rgb(218, 218, 218);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    color: rgb(218, 218, 218);
+    content: " ";
+    font-family: "Font Awesome 6 Free Solid";
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+    background-image: none;
+    filter: none;
+  }
+
+  li.task-list-item[data-task="-"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(145, 145, 145);
+    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145) currentcolor;
+    border-left: rgb(145, 145, 145);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="!"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(150, 50, 50);
+    border-color: rgb(150, 50, 50) rgb(150, 50, 50) rgb(150, 50, 50) currentcolor;
+    border-left: rgb(150, 50, 50);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="?"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(145, 145, 145);
+    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145) currentcolor;
+    border-left: rgb(145, 145, 145);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="*"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(145, 145, 145);
+    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145) currentcolor;
+    border-left: rgb(145, 145, 145);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="/"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(145, 145, 145);
+    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145) currentcolor;
+    border-left: rgb(145, 145, 145);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=">"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(145, 145, 145);
+    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145) currentcolor;
+    border-left: rgb(145, 145, 145);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="b"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(150, 50, 50);
+    border-color: rgb(150, 50, 50) rgb(150, 50, 50) rgb(150, 50, 50) currentcolor;
+    border-left: rgb(150, 50, 50);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="c"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(145, 145, 145);
+    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145) currentcolor;
+    border-left: rgb(145, 145, 145);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="d"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(150, 50, 50);
+    border-color: rgb(150, 50, 50) rgb(150, 50, 50) rgb(150, 50, 50) currentcolor;
+    border-left: rgb(150, 50, 50);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="f"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(150, 50, 50);
+    border-color: rgb(150, 50, 50) rgb(150, 50, 50) rgb(150, 50, 50) currentcolor;
+    border-left: rgb(150, 50, 50);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="i"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(145, 145, 145);
+    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145) currentcolor;
+    border-left: rgb(145, 145, 145);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="I"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(145, 145, 145);
+    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145) currentcolor;
+    border-left: rgb(145, 145, 145);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="k"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(145, 145, 145);
+    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145) currentcolor;
+    border-left: rgb(145, 145, 145);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="l"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(150, 50, 50);
+    border-color: rgb(150, 50, 50) rgb(150, 50, 50) rgb(150, 50, 50) currentcolor;
+    border-left: rgb(150, 50, 50);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="p"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(150, 50, 50);
+    border-color: rgb(150, 50, 50) rgb(150, 50, 50) rgb(150, 50, 50) currentcolor;
+    border-left: rgb(150, 50, 50);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="S"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(145, 145, 145);
+    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145) currentcolor;
+    border-left: rgb(145, 145, 145);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="u"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(145, 145, 145);
+    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145) currentcolor;
+    border-left: rgb(145, 145, 145);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="w"] {
+    --unstacked-tabs-header-width: 6px;
+    color: rgb(145, 145, 145);
+    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145) currentcolor;
+    border-left: rgb(145, 145, 145);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: "";
+    font-family: its;
+    line-height: 24px;
+    margin: 0px 0px 0px -22px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="x"] {
+    color: rgb(102, 102, 102);
+    border-color: rgb(218, 218, 218) rgb(218, 218, 218) rgb(218, 218, 218) currentcolor;
+    border-left: rgb(218, 218, 218);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: normal;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    line-height: 1.3;
+    margin: 0px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="X"] {
+    color: rgb(102, 102, 102);
+    border-color: rgb(218, 218, 218) rgb(218, 218, 218) rgb(218, 218, 218) currentcolor;
+    border-left: rgb(218, 218, 218);
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: normal;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    line-height: 1.3;
+    margin: 0px;
+    padding: 0px;
+    text-decoration-line: none;
+  }
+
+  html {
+    --FA6Regular: "Font Awesome 6 Free Regular";
+    --FA6Solid: "Font Awesome 6 Free Solid";
+    --font: "";
+    --its: "its";
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 
@@ -4794,6 +5314,12 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 }
 .callout[data-callout="quote"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+}
+.callout[data-callout="multi-column-flex-height"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
+}
+.callout[data-callout="multi-column"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z'/%3E%3Cpath d='m15 5 4 4'/%3E%3C/svg%3E");
 }
 
 .search {

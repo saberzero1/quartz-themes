@@ -52,6 +52,22 @@ html body {
 
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(255, 255, 255);
+}
+
+html body html {
+  --border: #404040;
+  --titlebar_active_1: #0a246a;
+  --titlebar_active_2: #a6caf0;
+  --titlebar_inactive_1: #808080;
+  --titlebar_inactive_2: #c0c0c0;
+  --tooltip: rgb(255, 255, 225);
+  --window: #d4d0c8;
+  background-color: rgb(212, 208, 200);
+  box-shadow: rgb(64, 64, 64) -1px -1px 0px 0px inset, rgb(255, 255, 255) 1px 1px 0px 0px inset, rgb(212, 208, 200) -2px -2px 0px 0px inset, rgb(255, 255, 255) 2px 2px 0px 0px inset;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
 }`,
     typography: `html body h1.article-title {
   font-size: 11px;

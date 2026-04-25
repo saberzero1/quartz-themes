@@ -726,6 +726,14 @@ html[saved-theme="dark"] body .transclude-inner {
   border-top-right-radius: 50%;
 }
 
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  text-decoration-line: none;
+}
+
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(217, 217, 217);
   text-decoration-color: rgb(217, 217, 217);
@@ -2553,6 +2561,14 @@ html[saved-theme="light"] body .transclude-inner {
   border-top-color: rgb(138, 92, 245);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  text-decoration-line: none;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {

@@ -20,6 +20,10 @@ export const theme: ThemeData = {
 html body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
+}
+
+html body html {
+  --default-font: 'JetBrains Mono';
 }`,
     typography: `html body h1.article-title {
   font-weight: 600;

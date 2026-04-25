@@ -1,0 +1,382 @@
+{
+  "callout:container": {
+    "matchBy": "data-attr",
+    "dataAttr": "data-callout",
+    "quartzSelector": false,
+    "properties": [
+      "--callout-color",
+      "--callout-icon",
+      "background-color",
+      "background",
+      "color",
+      "border-left-color",
+      "border-right-color",
+      "border-top-color",
+      "border-bottom-color",
+      "border-left-width",
+      "border-right-width",
+      "border-top-width",
+      "border-bottom-width",
+      "border-left-style",
+      "border-right-style",
+      "border-top-style",
+      "border-bottom-style",
+      "border-top-left-radius",
+      "border-top-right-radius",
+      "border-bottom-left-radius",
+      "border-bottom-right-radius",
+      "mix-blend-mode"
+    ]
+  },
+  "callout:title": {
+    "matchBy": "singleton",
+    "dataAttr": null,
+    "quartzSelector": ".callout-title",
+    "properties": [
+      "--callout-color",
+      "color",
+      "gap",
+      "background-color",
+      "background",
+      "border-left-color",
+      "border-right-color",
+      "border-top-color",
+      "border-bottom-color",
+      "padding-top",
+      "padding-bottom",
+      "padding-left",
+      "padding-right"
+    ]
+  },
+  "callout:icon": {
+    "matchBy": "singleton",
+    "dataAttr": null,
+    "quartzSelector": ".callout-title .callout-icon",
+    "properties": [
+      "fill",
+      "stroke",
+      "color",
+      "column-rule-color",
+      "outline-color"
+    ]
+  },
+  "callout:title-inner": {
+    "matchBy": "singleton",
+    "dataAttr": null,
+    "quartzSelector": ".callout-title > .callout-title-inner > p",
+    "properties": ["color", "font-weight"]
+  },
+  "callout:content": {
+    "matchBy": "singleton",
+    "dataAttr": null,
+    "quartzSelector": ".callout .callout-content",
+    "properties": [
+      "background-color",
+      "color",
+      "padding-top",
+      "padding-bottom",
+      "padding-left",
+      "padding-right",
+      "border-bottom-color",
+      "border-top-color"
+    ]
+  },
+  "heading:h1": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "article > h1",
+    "properties": [
+      "color",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "text-shadow"
+    ]
+  },
+  "heading:h2": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "h2",
+    "properties": [
+      "color",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "text-shadow"
+    ]
+  },
+  "heading:h3": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "h3",
+    "properties": [
+      "color",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "text-shadow"
+    ]
+  },
+  "heading:h4": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "h4",
+    "properties": [
+      "color",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "text-shadow"
+    ]
+  },
+  "heading:h5": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "h5",
+    "properties": [
+      "color",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "text-shadow"
+    ]
+  },
+  "heading:h6": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "h6",
+    "properties": [
+      "color",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "text-shadow"
+    ]
+  },
+  "text:paragraph": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "p",
+    "properties": ["color", "font-family", "font-weight", "line-height"]
+  },
+  "text:strong": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": ".page article p > strong, strong",
+    "properties": ["color", "font-family", "font-weight"]
+  },
+  "text:emphasis": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": ".page article p > em, em",
+    "properties": ["color", "font-family", "font-style"]
+  },
+  "text:strikethrough": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "del",
+    "properties": ["color", "text-decoration", "text-decoration-color"]
+  },
+  "text:highlight": {
+    "matchBy": "class",
+    "dataAttr": null,
+    "quartzSelector": ".text-highlight",
+    "properties": ["background-color", "color", "border-radius", "padding"]
+  },
+  "text:inline-code": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "code",
+    "properties": [
+      "background-color",
+      "color",
+      "font-family",
+      "border-radius",
+      "padding"
+    ]
+  },
+  "link:internal": {
+    "matchBy": "class",
+    "dataAttr": null,
+    "quartzSelector": "a.internal",
+    "properties": [
+      "color",
+      "background-color",
+      "font-weight",
+      "text-decoration",
+      "text-decoration-color",
+      "text-decoration-line"
+    ]
+  },
+  "link:external": {
+    "matchBy": "class",
+    "dataAttr": null,
+    "quartzSelector": "a.external",
+    "properties": [
+      "color",
+      "background-color",
+      "font-weight",
+      "text-decoration",
+      "text-decoration-color",
+      "text-decoration-line"
+    ]
+  },
+  "link:unresolved": {
+    "matchBy": "class",
+    "dataAttr": null,
+    "quartzSelector": "a.internal.broken",
+    "properties": ["color", "opacity", "text-decoration"]
+  },
+  "link:tag": {
+    "matchBy": "class",
+    "dataAttr": null,
+    "quartzSelector": "a.internal.tag-link",
+    "properties": ["color", "background-color", "font-weight", "border-radius"]
+  },
+  "blockquote:standard": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "blockquote:not(.callout)",
+    "properties": [
+      "background-color",
+      "border-inline-start",
+      "border-left-color",
+      "border-left-width",
+      "font-style",
+      "padding-left",
+      "padding-top",
+      "padding-bottom",
+      "margin-inline-start",
+      "margin-inline-end"
+    ]
+  },
+  "table:container": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": ".table-container > table",
+    "properties": [
+      "background-color",
+      "border-collapse",
+      "color",
+      "border-left-color",
+      "border-right-color",
+      "border-top-color",
+      "border-bottom-color"
+    ]
+  },
+  "table:header": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "th",
+    "properties": [
+      "background-color",
+      "color",
+      "font-weight",
+      "text-align",
+      "border-bottom-color",
+      "border-bottom-width",
+      "padding-top",
+      "padding-bottom",
+      "padding-left",
+      "padding-right"
+    ]
+  },
+  "table:cell": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "td",
+    "properties": [
+      "background-color",
+      "color",
+      "padding-top",
+      "padding-bottom",
+      "padding-left",
+      "padding-right",
+      "border-bottom-color"
+    ]
+  },
+  "table:row": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "tr",
+    "properties": [
+      "background-color",
+      "border-bottom-color",
+      "border-bottom-width"
+    ]
+  },
+  "code-block:container": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "figure[data-rehype-pretty-code-figure] pre",
+    "properties": [
+      "background-color",
+      "color",
+      "font-family",
+      "border-left-color",
+      "border-right-color",
+      "border-top-color",
+      "border-bottom-color",
+      "border-radius",
+      "padding"
+    ]
+  },
+  "checkbox:item": {
+    "matchBy": "data-attr",
+    "dataAttr": "data-task",
+    "quartzSelector": false,
+    "properties": ["color", "text-decoration", "text-decoration-color"]
+  },
+  "checkbox:input": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "input[type=\"checkbox\"]",
+    "properties": [
+      "background-color",
+      "border-color",
+      "border-width",
+      "border-radius",
+      "accent-color",
+      "color"
+    ]
+  },
+  "separator:hr": {
+    "matchBy": "tag",
+    "dataAttr": null,
+    "quartzSelector": "hr",
+    "properties": [
+      "background-color",
+      "border-top-color",
+      "border-bottom-color",
+      "border-top-width",
+      "border-bottom-width",
+      "height",
+      "margin-top",
+      "margin-bottom"
+    ]
+  },
+  "layout:body": {
+    "matchBy": "singleton",
+    "dataAttr": null,
+    "quartzSelector": "div#quartz-root",
+    "properties": ["background-color", "color"]
+  },
+  "layout:sidebar-left": {
+    "matchBy": "singleton",
+    "dataAttr": null,
+    "quartzSelector": ".page > div#quartz-body div.sidebar.left",
+    "properties": ["background-color", "color"]
+  },
+  "layout:sidebar-right": {
+    "matchBy": "singleton",
+    "dataAttr": null,
+    "quartzSelector": ".page > div#quartz-body div.sidebar.right",
+    "properties": ["background-color", "color"]
+  },
+  "layout:content": {
+    "matchBy": "singleton",
+    "dataAttr": null,
+    "quartzSelector": ".page > div#quartz-body div.center",
+    "properties": ["background-color", "color"]
+  }
+}

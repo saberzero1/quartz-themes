@@ -294,8 +294,34 @@ html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.side
 }
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
-  background-color: rgb(29, 32, 33);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(107, 140, 164) 20%, rgb(232, 216, 163) 50%, rgb(107, 140, 164) 80%, rgba(0, 0, 0, 0) 100%);
+  border-bottom-color: rgb(235, 219, 178);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
+  border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
+  border-top-color: rgb(235, 219, 178);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  box-shadow: rgb(235, 219, 178) 0px 0px 5px 0px;
   color: rgb(235, 219, 178);
+  content: "";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  transform: matrix(1, 0, 0, 1, -692.683, 0);
 }
 
 html body .bases-table {
@@ -406,6 +432,39 @@ html body .text-highlight {
   text-decoration-color: rgb(235, 219, 178);
 }
 
+html body article > h1 {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(90deg, rgb(232, 216, 163) 0%, rgba(0, 0, 0, 0) 100%);
+  border-bottom-color: rgba(232, 216, 163, 0.6);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(232, 216, 163, 0.6);
+  border-left-width: 0px;
+  border-right-color: rgba(232, 216, 163, 0.6);
+  border-right-width: 0px;
+  border-top-color: rgba(232, 216, 163, 0.6);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  box-shadow: rgb(232, 216, 163) 0px 0px 5px 0px;
+  color: rgba(232, 216, 163, 0.6);
+  content: "▓▒░";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  font-size: 48px;
+  letter-spacing: -1.2px;
+  line-height: 57.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 8px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
 html body del {
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -420,6 +479,162 @@ html body del {
 
 html body h1.article-title {
   color: rgb(235, 219, 178);
+}
+
+html body h2 {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(90deg, rgb(232, 216, 163) 0%, rgba(0, 0, 0, 0) 100%);
+  border-bottom-color: rgba(232, 216, 163, 0.5);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(232, 216, 163, 0.5);
+  border-left-width: 0px;
+  border-right-color: rgba(232, 216, 163, 0.5);
+  border-right-width: 0px;
+  border-top-color: rgba(232, 216, 163, 0.5);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  box-shadow: rgb(232, 216, 163) 0px 0px 5px 0px;
+  color: rgba(232, 216, 163, 0.5);
+  content: "▒░";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  font-size: 50.4px;
+  letter-spacing: -0.792px;
+  line-height: 60.48px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6.4px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body h3 {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(232, 216, 163, 0.4);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(232, 216, 163, 0.4);
+  border-left-width: 0px;
+  border-right-color: rgba(232, 216, 163, 0.4);
+  border-right-width: 0px;
+  border-top-color: rgba(232, 216, 163, 0.4);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(232, 216, 163, 0.4);
+  content: "░";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  font-size: 51.2px;
+  letter-spacing: -0.512px;
+  line-height: 61.44px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 4.8px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body h4 {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(232, 216, 163, 0.5);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(232, 216, 163, 0.5);
+  border-left-width: 0px;
+  border-right-color: rgba(232, 216, 163, 0.5);
+  border-right-width: 0px;
+  border-top-color: rgba(232, 216, 163, 0.5);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(232, 216, 163, 0.5);
+  content: "▸";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  font-size: 50.4px;
+  letter-spacing: -0.28px;
+  line-height: 60.48px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 4.8px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body h5 {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(232, 216, 163, 0.4);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(232, 216, 163, 0.4);
+  border-left-width: 0px;
+  border-right-color: rgba(232, 216, 163, 0.4);
+  border-right-width: 0px;
+  border-top-color: rgba(232, 216, 163, 0.4);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(232, 216, 163, 0.4);
+  content: "◦";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  font-size: 48px;
+  letter-spacing: -0.096px;
+  line-height: 57.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 4.8px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body h6 {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(232, 216, 163, 0.3);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(232, 216, 163, 0.3);
+  border-left-width: 0px;
+  border-right-color: rgba(232, 216, 163, 0.3);
+  border-right-width: 0px;
+  border-top-color: rgba(232, 216, 163, 0.3);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(232, 216, 163, 0.3);
+  content: "·";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  font-size: 48px;
+  line-height: 57.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 4.8px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
 }
 
 html body li.task-list-item input[type="checkbox"] {
@@ -438,23 +653,113 @@ html body p {
   text-decoration-color: rgb(213, 196, 161);
 }`,
     links: `html body a.external, html footer a {
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgb(156, 122, 153);
+  border-bottom-color: rgb(156, 122, 153);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(156, 122, 153);
+  border-left-width: 0px;
+  border-right-color: rgb(156, 122, 153);
+  border-right-width: 0px;
+  border-top-color: rgb(156, 122, 153);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  box-shadow: rgb(156, 122, 153) 0px 0px 3px 0px;
   color: rgb(156, 122, 153);
+  content: "";
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(156, 122, 153) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration-color: rgb(156, 122, 153);
+  text-shadow: rgba(0, 0, 0, 0) 0px 0px 5px;
 }
 
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgb(176, 108, 90);
+  border-bottom-color: rgb(176, 108, 90);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(176, 108, 90);
+  border-left-width: 0px;
+  border-right-color: rgb(176, 108, 90);
+  border-right-width: 0px;
+  border-top-color: rgb(176, 108, 90);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  box-shadow: rgb(176, 108, 90) 0px 0px 3px 0px;
   color: rgb(176, 108, 90);
+  content: "";
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(176, 108, 90) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration-color: rgb(176, 108, 90);
+  text-shadow: rgba(0, 0, 0, 0) 0px 0px 5px;
 }
 
 html body a.internal.broken {
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgb(232, 216, 163);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  box-shadow: rgb(232, 216, 163) 0px 0px 3px 0px;
   color: rgb(232, 216, 163);
+  content: "";
   font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(232, 216, 163) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(0, 0, 0, 0) 0px 0px 5px;
 }`,
     lists: `html body ol > li {
   color: rgb(235, 219, 178);
@@ -726,6 +1031,796 @@ html body input[type=checkbox] {
   border-top-width: 2px;
   margin-right: 12.8px;
   transition: 0.2s;
+}
+
+html body li.task-list-item[data-task="!"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgb(235, 219, 178);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="*"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="-"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="/"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task=">"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="?"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="I"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="S"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="X"] {
+  color: rgb(213, 196, 161);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="b"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="c"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="d"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="f"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="i"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="k"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="l"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="p"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="u"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="w"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(232, 216, 163);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 216, 163);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 216, 163);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 216, 163);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(232, 216, 163);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-shadow: rgba(232, 216, 163, 0.5) 0px 0px 4px;
+}
+
+html body li.task-list-item[data-task="x"] {
+  color: rgb(213, 196, 161);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgb(235, 219, 178);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgb(235, 219, 178);
 }
 
 html body li.task-list-item[data-task='!'] {
@@ -1446,7 +2541,40 @@ html body li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
   color: rgb(232, 216, 163);
   content: "▓";
 }`,
-    callouts: `html body .callout .callout-title {
+    callouts: `html body .callout .callout-content {
+  --callout-color: 2, 122, 255;
+  --current-callout-color: 107, 140, 164;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1d2021 50%);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: radial-gradient(circle, rgba(107, 140, 164, 0.02) 1px, rgba(0, 0, 0, 0) 1px);
+  border-bottom-color: rgb(235, 219, 178);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
+  border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
+  border-top-color: rgb(235, 219, 178);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(235, 219, 178);
+  content: "";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html body .callout .callout-title {
   --callout-color: 2, 122, 255;
   background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgba(107, 140, 164, 0.3) 0%, rgba(107, 140, 164, 0.15) 50%, rgba(107, 140, 164, 0.05) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-image: linear-gradient(90deg, rgba(107, 140, 164, 0.3) 0%, rgba(107, 140, 164, 0.15) 50%, rgba(107, 140, 164, 0.05) 100%);
@@ -1477,19 +2605,109 @@ html body .callout > .callout-content {
   padding-top: 16px;
 }
 
-html body .callout[data-callout="abstract"] {
-  --callout-color: 83, 223, 221;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+html body .callout-title {
+  --callout-color: 2, 122, 255;
+  --current-callout-color: 107, 140, 164;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1d2021 50%);
   background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(235, 219, 178);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 45%, rgba(107, 140, 164, 0.8) 50%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0) 100%);
+  border-bottom-color: rgba(107, 140, 164, 0.4);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: rgb(235, 219, 178);
-  border-right-color: rgb(235, 219, 178);
-  border-top-color: rgb(235, 219, 178);
+  border-bottom-width: 0px;
+  border-left-color: rgba(107, 140, 164, 0.4);
+  border-left-width: 0px;
+  border-right-color: rgba(107, 140, 164, 0.4);
+  border-right-width: 0px;
+  border-top-color: rgba(107, 140, 164, 0.4);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(107, 140, 164, 0.4);
+  content: "▓▒░";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  font-size: 12.8px;
+  letter-spacing: 2.56px;
+  line-height: 16.64px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-transform: uppercase;
+}
+
+html body .callout-title > .callout-title-inner > p {
+  --callout-color: 2, 122, 255;
+  --current-callout-color: 107, 140, 164;
+  --font-weight: 600;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1d2021 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(107, 140, 164, 0.6);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(107, 140, 164, 0.6);
+  border-left-width: 0px;
+  border-right-color: rgba(107, 140, 164, 0.6);
+  border-right-width: 0px;
+  border-top-color: rgba(107, 140, 164, 0.6);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(107, 140, 164, 0.6);
+  content: "▓";
+  font-family: "Share Tech Mono", "Courier New", monospace;
+  font-size: 9.6px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  line-height: 12.48px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-transform: uppercase;
+}
+
+html body .callout[data-callout="abstract"] {
+  --callout-color: 83, 223, 221;
+  --current-callout-color: 156, 122, 153;
+  --table-border-color: color-mix(in srgb, rgb(83, 223, 221) 25%, #1d2021 50%);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(156, 122, 153) 0%, rgba(156, 122, 153, 0.8) 25%, rgba(156, 122, 153, 0.4) 50%, rgba(156, 122, 153, 0.2) 75%, rgba(156, 122, 153, 0.1) 100%);
+  border-bottom-color: rgb(235, 219, 178);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
+  border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
+  border-top-color: rgb(235, 219, 178);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="abstract"] .callout-title {
@@ -1525,17 +2743,36 @@ html body .callout[data-callout="abstract"] > .callout-content {
 
 html body .callout[data-callout="bug"] {
   --callout-color: 251, 70, 76;
+  --current-callout-color: 176, 108, 90;
+  --table-border-color: color-mix(in srgb, rgb(251, 70, 76) 25%, #1d2021 50%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(176, 108, 90) 0%, rgba(176, 108, 90, 0.8) 25%, rgba(176, 108, 90, 0.4) 50%, rgba(176, 108, 90, 0.2) 75%, rgba(176, 108, 90, 0.1) 100%);
   border-bottom-color: rgb(235, 219, 178);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
   border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
   border-top-color: rgb(235, 219, 178);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="bug"] .callout-title {
@@ -1571,17 +2808,36 @@ html body .callout[data-callout="bug"] > .callout-content {
 
 html body .callout[data-callout="danger"] {
   --callout-color: 251, 70, 76;
+  --current-callout-color: 176, 108, 90;
+  --table-border-color: color-mix(in srgb, rgb(251, 70, 76) 25%, #1d2021 50%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(176, 108, 90) 0%, rgba(176, 108, 90, 0.8) 25%, rgba(176, 108, 90, 0.4) 50%, rgba(176, 108, 90, 0.2) 75%, rgba(176, 108, 90, 0.1) 100%);
   border-bottom-color: rgb(235, 219, 178);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
   border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
   border-top-color: rgb(235, 219, 178);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="danger"] .callout-title {
@@ -1617,17 +2873,36 @@ html body .callout[data-callout="danger"] > .callout-content {
 
 html body .callout[data-callout="example"] {
   --callout-color: 168, 130, 255;
+  --current-callout-color: 156, 122, 153;
+  --table-border-color: color-mix(in srgb, rgb(168, 130, 255) 25%, #1d2021 50%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(156, 122, 153) 0%, rgba(156, 122, 153, 0.8) 25%, rgba(156, 122, 153, 0.4) 50%, rgba(156, 122, 153, 0.2) 75%, rgba(156, 122, 153, 0.1) 100%);
   border-bottom-color: rgb(235, 219, 178);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
   border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
   border-top-color: rgb(235, 219, 178);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="example"] .callout-title {
@@ -1663,17 +2938,36 @@ html body .callout[data-callout="example"] > .callout-content {
 
 html body .callout[data-callout="failure"] {
   --callout-color: 251, 70, 76;
+  --current-callout-color: 176, 108, 90;
+  --table-border-color: color-mix(in srgb, rgb(251, 70, 76) 25%, #1d2021 50%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(176, 108, 90) 0%, rgba(176, 108, 90, 0.8) 25%, rgba(176, 108, 90, 0.4) 50%, rgba(176, 108, 90, 0.2) 75%, rgba(176, 108, 90, 0.1) 100%);
   border-bottom-color: rgb(235, 219, 178);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
   border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
   border-top-color: rgb(235, 219, 178);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="failure"] .callout-title {
@@ -1709,17 +3003,36 @@ html body .callout[data-callout="failure"] > .callout-content {
 
 html body .callout[data-callout="info"] {
   --callout-color: 2, 122, 255;
+  --current-callout-color: 107, 140, 164;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1d2021 50%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(107, 140, 164) 0%, rgba(107, 140, 164, 0.8) 25%, rgba(107, 140, 164, 0.4) 50%, rgba(107, 140, 164, 0.2) 75%, rgba(107, 140, 164, 0.1) 100%);
   border-bottom-color: rgb(235, 219, 178);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
   border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
   border-top-color: rgb(235, 219, 178);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="info"] .callout-title {
@@ -1755,17 +3068,36 @@ html body .callout[data-callout="info"] > .callout-content {
 
 html body .callout[data-callout="note"] {
   --callout-color: 2, 122, 255;
+  --current-callout-color: 107, 140, 164;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1d2021 50%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(107, 140, 164) 0%, rgba(107, 140, 164, 0.8) 25%, rgba(107, 140, 164, 0.4) 50%, rgba(107, 140, 164, 0.2) 75%, rgba(107, 140, 164, 0.1) 100%);
   border-bottom-color: rgb(235, 219, 178);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
   border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
   border-top-color: rgb(235, 219, 178);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="note"] .callout-title {
@@ -1801,17 +3133,36 @@ html body .callout[data-callout="note"] > .callout-content {
 
 html body .callout[data-callout="question"] {
   --callout-color: 233, 151, 63;
+  --current-callout-color: 232, 216, 163;
+  --table-border-color: color-mix(in srgb, rgb(233, 151, 63) 25%, #1d2021 50%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(232, 216, 163) 0%, rgba(232, 216, 163, 0.8) 25%, rgba(232, 216, 163, 0.4) 50%, rgba(232, 216, 163, 0.2) 75%, rgba(232, 216, 163, 0.1) 100%);
   border-bottom-color: rgb(235, 219, 178);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
   border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
   border-top-color: rgb(235, 219, 178);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="question"] .callout-title {
@@ -1847,17 +3198,36 @@ html body .callout[data-callout="question"] > .callout-content {
 
 html body .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
+  --current-callout-color: 168, 168, 168;
+  --table-border-color: color-mix(in srgb, rgb(158, 158, 158) 25%, #1d2021 50%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(168, 168, 168) 0%, rgba(168, 168, 168, 0.8) 25%, rgba(168, 168, 168, 0.4) 50%, rgba(168, 168, 168, 0.2) 75%, rgba(168, 168, 168, 0.1) 100%);
   border-bottom-color: rgb(235, 219, 178);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
   border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
   border-top-color: rgb(235, 219, 178);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="quote"] .callout-title {
@@ -1893,17 +3263,36 @@ html body .callout[data-callout="quote"] > .callout-content {
 
 html body .callout[data-callout="success"] {
   --callout-color: 68, 207, 110;
+  --current-callout-color: 122, 143, 113;
+  --table-border-color: color-mix(in srgb, rgb(68, 207, 110) 25%, #1d2021 50%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(122, 143, 113) 0%, rgba(122, 143, 113, 0.8) 25%, rgba(122, 143, 113, 0.4) 50%, rgba(122, 143, 113, 0.2) 75%, rgba(122, 143, 113, 0.1) 100%);
   border-bottom-color: rgb(235, 219, 178);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
   border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
   border-top-color: rgb(235, 219, 178);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="success"] .callout-title {
@@ -1939,17 +3328,36 @@ html body .callout[data-callout="success"] > .callout-content {
 
 html body .callout[data-callout="tip"] {
   --callout-color: 83, 223, 221;
+  --current-callout-color: 122, 143, 113;
+  --table-border-color: color-mix(in srgb, rgb(83, 223, 221) 25%, #1d2021 50%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(122, 143, 113) 0%, rgba(122, 143, 113, 0.8) 25%, rgba(122, 143, 113, 0.4) 50%, rgba(122, 143, 113, 0.2) 75%, rgba(122, 143, 113, 0.1) 100%);
   border-bottom-color: rgb(235, 219, 178);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
   border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
   border-top-color: rgb(235, 219, 178);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="tip"] .callout-title {
@@ -1985,17 +3393,36 @@ html body .callout[data-callout="tip"] > .callout-content {
 
 html body .callout[data-callout="todo"] {
   --callout-color: 2, 122, 255;
+  --current-callout-color: 168, 168, 168;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1d2021 50%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(168, 168, 168) 0%, rgba(168, 168, 168, 0.8) 25%, rgba(168, 168, 168, 0.4) 50%, rgba(168, 168, 168, 0.2) 75%, rgba(168, 168, 168, 0.1) 100%);
   border-bottom-color: rgb(235, 219, 178);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
   border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
   border-top-color: rgb(235, 219, 178);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="todo"] .callout-title {
@@ -2031,17 +3458,36 @@ html body .callout[data-callout="todo"] > .callout-content {
 
 html body .callout[data-callout="warning"] {
   --callout-color: 233, 151, 63;
+  --current-callout-color: 194, 140, 92;
+  --table-border-color: color-mix(in srgb, rgb(233, 151, 63) 25%, #1d2021 50%);
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(135deg, rgb(194, 140, 92) 0%, rgba(194, 140, 92, 0.7) 20%, rgba(194, 140, 92, 0.3) 40%, rgba(194, 140, 92, 0.1) 60%, rgba(194, 140, 92, 0.05) 80%, rgba(0, 0, 0, 0) 100%);
   border-bottom-color: rgb(235, 219, 178);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
   border-left-color: rgb(235, 219, 178);
+  border-left-width: 0px;
   border-right-color: rgb(235, 219, 178);
+  border-right-width: 0px;
   border-top-color: rgb(235, 219, 178);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
   color: rgb(235, 219, 178);
+  content: "▓▓▒▒░░";
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0px;
+  line-height: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="warning"] .callout-title {

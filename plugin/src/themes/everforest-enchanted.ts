@@ -982,6 +982,44 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
   color: rgb(211, 198, 170);
 }
 
+html[saved-theme="dark"] body .callout[data-callout="code"] {
+  --callout-border-dashed: 1px dashed rgba(76, 175, 80, 0.4);
+  --callout-border-solid: 1px solid rgba(76, 175, 80, 0.3);
+  --callout-color: 76, 175, 80;
+  --callout-content-color: rgba(41, 49, 54, 0.3);
+  --callout-content-padding: 8px 16px;
+  --table-border-color: color-mix(in srgb, rgb(76, 175, 80) 25%, #333c43 50%);
+  background-color: rgba(76, 175, 80, 0.1);
+  border-bottom-color: rgba(76, 175, 80, 0.3);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(76, 175, 80, 0.7);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(76, 175, 80, 0.3);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(76, 175, 80, 0.3);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.267) 2px 2px 3px 0px;
+  color: rgb(211, 198, 170);
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: 251, 70, 76;
   border-bottom-color: rgba(251, 70, 76, 0.3);
@@ -1105,6 +1143,82 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
   color: rgb(211, 198, 170);
 }
 
+html[saved-theme="dark"] body .callout[data-callout="graph"] {
+  --callout-border-dashed: 1px dashed rgba(255, 152, 0, 0.4);
+  --callout-border-solid: 1px solid rgba(255, 152, 0, 0.3);
+  --callout-color: 255, 152, 0;
+  --callout-content-color: rgba(41, 49, 54, 0.3);
+  --callout-content-padding: 8px 16px;
+  --table-border-color: color-mix(in srgb, rgb(255, 152, 0) 25%, #333c43 50%);
+  background-color: rgba(255, 152, 0, 0.1);
+  border-bottom-color: rgba(255, 152, 0, 0.3);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(255, 152, 0, 0.7);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(255, 152, 0, 0.3);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(255, 152, 0, 0.3);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.267) 2px 2px 3px 0px;
+  color: rgb(211, 198, 170);
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="image"] {
+  --callout-border-dashed: 1px dashed rgba(234, 128, 252, 0.4);
+  --callout-border-solid: 1px solid rgba(234, 128, 252, 0.3);
+  --callout-color: 234, 128, 252;
+  --callout-content-color: rgba(41, 49, 54, 0.3);
+  --callout-content-padding: 8px 16px;
+  --table-border-color: color-mix(in srgb, rgb(234, 128, 252) 25%, #333c43 50%);
+  background-color: rgba(234, 128, 252, 0.1);
+  border-bottom-color: rgba(234, 128, 252, 0.3);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(234, 128, 252, 0.7);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(234, 128, 252, 0.3);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(234, 128, 252, 0.3);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.267) 2px 2px 3px 0px;
+  color: rgb(211, 198, 170);
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: 2, 122, 255;
   border-bottom-color: rgba(2, 122, 255, 0.3);
@@ -1144,6 +1258,44 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
   background: rgba(41, 49, 54, 0.3) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(41, 49, 54, 0.3);
   color: rgb(211, 198, 170);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="math"] {
+  --callout-border-dashed: 1px dashed rgba(132, 255, 255, 0.4);
+  --callout-border-solid: 1px solid rgba(132, 255, 255, 0.3);
+  --callout-color: 132, 255, 255;
+  --callout-content-color: rgba(41, 49, 54, 0.3);
+  --callout-content-padding: 8px 16px;
+  --table-border-color: color-mix(in srgb, rgb(132, 255, 255) 25%, #333c43 50%);
+  background-color: rgba(132, 255, 255, 0.1);
+  border-bottom-color: rgba(132, 255, 255, 0.3);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(132, 255, 255, 0.7);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(132, 255, 255, 0.3);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(132, 255, 255, 0.3);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.267) 2px 2px 3px 0px;
+  color: rgb(211, 198, 170);
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
@@ -2708,6 +2860,44 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
   color: rgb(92, 106, 114);
 }
 
+html[saved-theme="light"] body .callout[data-callout="code"] {
+  --callout-border-dashed: 1px dashed rgba(76, 175, 80, 0.4);
+  --callout-border-solid: 1px solid rgba(76, 175, 80, 0.3);
+  --callout-color: 76, 175, 80;
+  --callout-content-color: rgba(242, 239, 223, 0.3);
+  --callout-content-padding: 8px 16px;
+  --table-border-color: color-mix(in srgb, rgb(76, 175, 80) 25%, #fffbef 50%);
+  background-color: rgba(76, 175, 80, 0.1);
+  border-bottom-color: rgba(76, 175, 80, 0.3);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(76, 175, 80, 0.7);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(76, 175, 80, 0.3);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(76, 175, 80, 0.3);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.267) 2px 2px 3px 0px;
+  color: rgb(92, 106, 114);
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="danger"] {
   --callout-color: 233, 49, 71;
   border-bottom-color: rgba(233, 49, 71, 0.3);
@@ -2831,6 +3021,82 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
   color: rgb(92, 106, 114);
 }
 
+html[saved-theme="light"] body .callout[data-callout="graph"] {
+  --callout-border-dashed: 1px dashed rgba(255, 152, 0, 0.4);
+  --callout-border-solid: 1px solid rgba(255, 152, 0, 0.3);
+  --callout-color: 255, 152, 0;
+  --callout-content-color: rgba(242, 239, 223, 0.3);
+  --callout-content-padding: 8px 16px;
+  --table-border-color: color-mix(in srgb, rgb(255, 152, 0) 25%, #fffbef 50%);
+  background-color: rgba(255, 152, 0, 0.1);
+  border-bottom-color: rgba(255, 152, 0, 0.3);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(255, 152, 0, 0.7);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(255, 152, 0, 0.3);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(255, 152, 0, 0.3);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.267) 2px 2px 3px 0px;
+  color: rgb(92, 106, 114);
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="image"] {
+  --callout-border-dashed: 1px dashed rgba(234, 128, 252, 0.4);
+  --callout-border-solid: 1px solid rgba(234, 128, 252, 0.3);
+  --callout-color: 234, 128, 252;
+  --callout-content-color: rgba(242, 239, 223, 0.3);
+  --callout-content-padding: 8px 16px;
+  --table-border-color: color-mix(in srgb, rgb(234, 128, 252) 25%, #fffbef 50%);
+  background-color: rgba(234, 128, 252, 0.1);
+  border-bottom-color: rgba(234, 128, 252, 0.3);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(234, 128, 252, 0.7);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(234, 128, 252, 0.3);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(234, 128, 252, 0.3);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.267) 2px 2px 3px 0px;
+  color: rgb(92, 106, 114);
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="info"] {
   --callout-color: 8, 109, 221;
   border-bottom-color: rgba(8, 109, 221, 0.3);
@@ -2870,6 +3136,44 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
   background: rgba(242, 239, 223, 0.3) none repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(242, 239, 223, 0.3);
   color: rgb(92, 106, 114);
+}
+
+html[saved-theme="light"] body .callout[data-callout="math"] {
+  --callout-border-dashed: 1px dashed rgba(132, 255, 255, 0.4);
+  --callout-border-solid: 1px solid rgba(132, 255, 255, 0.3);
+  --callout-color: 132, 255, 255;
+  --callout-content-color: rgba(242, 239, 223, 0.3);
+  --callout-content-padding: 8px 16px;
+  --table-border-color: color-mix(in srgb, rgb(132, 255, 255) 25%, #fffbef 50%);
+  background-color: rgba(132, 255, 255, 0.1);
+  border-bottom-color: rgba(132, 255, 255, 0.3);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(132, 255, 255, 0.7);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(132, 255, 255, 0.3);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(132, 255, 255, 0.3);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.267) 2px 2px 3px 0px;
+  color: rgb(92, 106, 114);
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {

@@ -16,6 +16,10 @@ export const theme: ThemeData = {
 html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
+}
+
+html[saved-theme="dark"] body html {
+  --checkbox-size: 1em;
 }`,
     typography: `html[saved-theme="dark"] body .text-highlight {
   background-color: rgba(172, 232, 255, 0.39);
@@ -779,6 +783,10 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
 html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
+}
+
+html[saved-theme="light"] body html {
+  --checkbox-size: 1em;
 }`,
     typography: `html[saved-theme="light"] body .text-highlight {
   background-color: rgba(172, 232, 255, 0.39);

@@ -307,6 +307,35 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(22, 27, 34);
   color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body html {
+  --altblue: #0087ff;
+  --aqua: #078480;
+  --aquadark: #0b4c5e;
+  --blue: #61afef;
+  --cyan: #0fb3ff;
+  --file-line-width: 1000px;
+  --folder-alpha: 0.2;
+  --folder-color0: hsl( 214 21% 31% / 0.2);
+  --font-monospace: 'JetBrains Mono NL', 'JetBrains Mono',Consolas, Monaco,"等距更纱黑体 SC", monospace;
+  --font-weight-title: 600;
+  --gray-1: #5C6370;
+  --gray-2: #abb2bf;
+  --green: #15df6b;
+  --green-light: #42accd;
+  --light-orange: #ff693f;
+  --lila: #c90481;
+  --lime: #b2f711;
+  --line-height-headers: 1;
+  --magenta: #ff2857;
+  --orange: #ffc83f;
+  --peach: #ff5555;
+  --purple: #8c44aa;
+  --red: #ff0f44;
+  --search-match-color: #ffff00;
+  --search-other-match-color: #ff9632;
+  --yellow: #fccd11;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(255, 255, 255);
@@ -581,6 +610,274 @@ html[saved-theme="dark"] body .transclude-inner {
 
 html[saved-theme="dark"] body .katex-display > .katex > .katex-html {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(187, 187, 187);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(187, 187, 187);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgb(222, 222, 222);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -933,6 +1230,40 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-content {
   color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="folder"] {
+  --callout-color: 2, 122, 255;
+  --list-indent: 0em;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #161b22 50%);
+  background-color: rgba(2, 122, 255, 0.1);
+  border-bottom-color: rgba(2, 122, 255, 0.25);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(2, 122, 255, 0.25);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgba(2, 122, 255, 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgba(2, 122, 255, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(222, 222, 222);
+  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 12px;
+  padding-top: 12px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
@@ -1475,6 +1806,35 @@ html[saved-theme="light"] body {
 
 html[saved-theme="light"] body .note-properties-tags {
   color: rgb(88, 166, 255);
+}
+
+html[saved-theme="light"] body html {
+  --altblue: #0087ff;
+  --aqua: #078480;
+  --aquadark: #0b4c5e;
+  --blue: #61afef;
+  --cyan: #0fb3ff;
+  --file-line-width: 1000px;
+  --folder-alpha: 0.2;
+  --folder-color0: hsl( 214 21% 31% / 0.2);
+  --font-monospace: 'JetBrains Mono NL', 'JetBrains Mono',Consolas, Monaco,"等距更纱黑体 SC", monospace;
+  --font-weight-title: 600;
+  --gray-1: #5C6370;
+  --gray-2: #abb2bf;
+  --green: #15df6b;
+  --green-light: #42accd;
+  --light-orange: #ff693f;
+  --lila: #c90481;
+  --lime: #b2f711;
+  --line-height-headers: 1;
+  --magenta: #ff2857;
+  --orange: #ffc83f;
+  --peach: #ff5555;
+  --purple: #8c44aa;
+  --red: #ff0f44;
+  --search-match-color: #ffff00;
+  --search-other-match-color: #ff9632;
+  --yellow: #fccd11;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(0, 0, 0);
@@ -1825,6 +2185,40 @@ html[saved-theme="light"] body .callout[data-callout="failure"] {
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
   --callout-color: 8, 109, 221;
+}
+
+html[saved-theme="light"] body .callout[data-callout="folder"] {
+  --callout-color: 8, 109, 221;
+  --list-indent: 0em;
+  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, #ffffff 50%);
+  background-color: rgba(8, 109, 221, 0.1);
+  border-bottom-color: rgba(8, 109, 221, 0.25);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(8, 109, 221, 0.25);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgba(8, 109, 221, 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgba(8, 109, 221, 0.25);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(34, 34, 34);
+  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 12px;
+  padding-top: 12px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] {

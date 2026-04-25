@@ -287,6 +287,10 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(26, 26, 26);
   color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body html {
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s, opacity 0.2s, transform 0.2s;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(143, 166, 143);
@@ -616,6 +620,274 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-top-right-radius: 6px;
 }
 
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(168, 168, 168);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(168, 168, 168);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgb(232, 232, 232);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgb(232, 232, 232);
+}
+
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(232, 232, 232);
   text-decoration-color: rgb(232, 232, 232);
@@ -915,21 +1187,33 @@ html[saved-theme="dark"] body .callout > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
   --callout-color: 83, 223, 221;
+  --table-border-color: color-mix(in srgb, rgb(83, 223, 221) 25%, #1a1a1a 50%);
   background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 42, 42, 0.7);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(143, 166, 143);
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title {
@@ -952,21 +1236,33 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: 251, 70, 76;
+  --table-border-color: color-mix(in srgb, rgb(251, 70, 76) 25%, #1a1a1a 50%);
   background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 42, 42, 0.7);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(143, 166, 143);
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="bug"] .callout-title {
@@ -989,21 +1285,33 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: 251, 70, 76;
+  --table-border-color: color-mix(in srgb, rgb(251, 70, 76) 25%, #1a1a1a 50%);
   background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 42, 42, 0.7);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(143, 166, 143);
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] .callout-title {
@@ -1026,21 +1334,33 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
   --callout-color: 168, 130, 255;
+  --table-border-color: color-mix(in srgb, rgb(168, 130, 255) 25%, #1a1a1a 50%);
   background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 42, 42, 0.7);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(143, 166, 143);
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] .callout-title {
@@ -1063,21 +1383,33 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
   --callout-color: 251, 70, 76;
+  --table-border-color: color-mix(in srgb, rgb(251, 70, 76) 25%, #1a1a1a 50%);
   background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 42, 42, 0.7);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(143, 166, 143);
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] .callout-title {
@@ -1100,22 +1432,34 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
 
 html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: 2, 122, 255;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1a1a1a 50%);
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(143, 166, 143, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(143, 166, 143);
   background-image: linear-gradient(135deg, rgba(143, 166, 143, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="info"] .callout-title {
@@ -1138,22 +1482,34 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-color: 2, 122, 255;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1a1a1a 50%);
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(143, 166, 143, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(143, 166, 143);
   background-image: linear-gradient(135deg, rgba(143, 166, 143, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
@@ -1176,21 +1532,33 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
   --callout-color: 233, 151, 63;
+  --table-border-color: color-mix(in srgb, rgb(233, 151, 63) 25%, #1a1a1a 50%);
   background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 42, 42, 0.7);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(143, 166, 143);
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] .callout-title {
@@ -1213,21 +1581,35 @@ html[saved-theme="dark"] body .callout[data-callout="question"] > .callout-conte
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
+  --table-border-color: color-mix(in srgb, rgb(158, 158, 158) 25%, #1a1a1a 50%);
   background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 42, 42, 0.7);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-top-width: 1px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(rgb(143, 166, 143), rgb(212, 192, 150));
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
+  line-height: 27.2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title {
@@ -1250,21 +1632,33 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
   --callout-color: 68, 207, 110;
+  --table-border-color: color-mix(in srgb, rgb(68, 207, 110) 25%, #1a1a1a 50%);
   background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 42, 42, 0.7);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(143, 166, 143);
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] .callout-title {
@@ -1287,22 +1681,34 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
   --callout-color: 83, 223, 221;
+  --table-border-color: color-mix(in srgb, rgb(83, 223, 221) 25%, #1a1a1a 50%);
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(212, 192, 150, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(212, 192, 150);
   background-image: linear-gradient(135deg, rgba(212, 192, 150, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] .callout-title {
@@ -1325,21 +1731,33 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
   --callout-color: 2, 122, 255;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1a1a1a 50%);
   background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(42, 42, 42, 0.7);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(143, 166, 143);
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] .callout-title {
@@ -1362,22 +1780,34 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --callout-color: 233, 151, 63;
+  --table-border-color: color-mix(in srgb, rgb(233, 151, 63) 25%, #1a1a1a 50%);
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(212, 165, 116, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(212, 165, 116);
   background-image: linear-gradient(135deg, rgba(212, 165, 116, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%);
-  border-bottom-color: rgba(58, 58, 58, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(58, 58, 58, 0.8);
-  border-left-width: 1px;
-  border-right-color: rgba(58, 58, 58, 0.8);
-  border-right-width: 1px;
-  border-top-color: rgba(58, 58, 58, 0.8);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  border-bottom-color: rgb(232, 232, 232);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(232, 232, 232);
+  border-left-width: 0px;
+  border-right-color: rgb(232, 232, 232);
+  border-right-width: 0px;
+  border-top-color: rgb(232, 232, 232);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(232, 232, 232);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] .callout-title {
@@ -2156,6 +2586,10 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(250, 250, 250);
   color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body html {
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s, opacity 0.2s, transform 0.2s;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(107, 125, 107);
@@ -2490,6 +2924,274 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-top-right-radius: 6px;
 }
 
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(107, 107, 107);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(107, 107, 107);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: rgb(44, 44, 44);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: rgb(44, 44, 44);
+}
+
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: rgb(44, 44, 44);
   text-decoration-color: rgb(44, 44, 44);
@@ -2789,21 +3491,33 @@ html[saved-theme="light"] body .callout > .callout-content {
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {
   --callout-color: 0, 191, 188;
+  --table-border-color: color-mix(in srgb, rgb(0, 191, 188) 25%, #fafafa 50%);
   background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 255, 255);
-  border-bottom-color: rgb(229, 229, 229);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(229, 229, 229);
-  border-left-width: 1px;
-  border-right-color: rgb(229, 229, 229);
-  border-right-width: 1px;
-  border-top-color: rgb(229, 229, 229);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(107, 125, 107);
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title {
@@ -2826,21 +3540,33 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: 233, 49, 71;
+  --table-border-color: color-mix(in srgb, rgb(233, 49, 71) 25%, #fafafa 50%);
   background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 255, 255);
-  border-bottom-color: rgb(229, 229, 229);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(229, 229, 229);
-  border-left-width: 1px;
-  border-right-color: rgb(229, 229, 229);
-  border-right-width: 1px;
-  border-top-color: rgb(229, 229, 229);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(107, 125, 107);
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] .callout-title {
@@ -2863,21 +3589,33 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
   --callout-color: 233, 49, 71;
+  --table-border-color: color-mix(in srgb, rgb(233, 49, 71) 25%, #fafafa 50%);
   background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 255, 255);
-  border-bottom-color: rgb(229, 229, 229);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(229, 229, 229);
-  border-left-width: 1px;
-  border-right-color: rgb(229, 229, 229);
-  border-right-width: 1px;
-  border-top-color: rgb(229, 229, 229);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(107, 125, 107);
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] .callout-title {
@@ -2900,21 +3638,33 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
   --callout-color: 120, 82, 238;
+  --table-border-color: color-mix(in srgb, rgb(120, 82, 238) 25%, #fafafa 50%);
   background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 255, 255);
-  border-bottom-color: rgb(229, 229, 229);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(229, 229, 229);
-  border-left-width: 1px;
-  border-right-color: rgb(229, 229, 229);
-  border-right-width: 1px;
-  border-top-color: rgb(229, 229, 229);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(107, 125, 107);
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] .callout-title {
@@ -2937,21 +3687,33 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
   --callout-color: 233, 49, 71;
+  --table-border-color: color-mix(in srgb, rgb(233, 49, 71) 25%, #fafafa 50%);
   background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 255, 255);
-  border-bottom-color: rgb(229, 229, 229);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(229, 229, 229);
-  border-left-width: 1px;
-  border-right-color: rgb(229, 229, 229);
-  border-right-width: 1px;
-  border-top-color: rgb(229, 229, 229);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(107, 125, 107);
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] .callout-title {
@@ -2974,22 +3736,34 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
 
 html[saved-theme="light"] body .callout[data-callout="info"] {
   --callout-color: 8, 109, 221;
+  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, #fafafa 50%);
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(107, 125, 107, 0.08) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(107, 125, 107);
   background-image: linear-gradient(135deg, rgba(107, 125, 107, 0.08) 0%, rgb(255, 255, 255) 100%);
-  border-bottom-color: rgba(107, 125, 107, 0.3);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(107, 125, 107, 0.3);
-  border-left-width: 1px;
-  border-right-color: rgba(107, 125, 107, 0.3);
-  border-right-width: 1px;
-  border-top-color: rgba(107, 125, 107, 0.3);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="info"] .callout-title {
@@ -3012,22 +3786,34 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
   --callout-color: 8, 109, 221;
+  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, #fafafa 50%);
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(107, 125, 107, 0.08) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(107, 125, 107);
   background-image: linear-gradient(135deg, rgba(107, 125, 107, 0.08) 0%, rgb(255, 255, 255) 100%);
-  border-bottom-color: rgba(107, 125, 107, 0.3);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(107, 125, 107, 0.3);
-  border-left-width: 1px;
-  border-right-color: rgba(107, 125, 107, 0.3);
-  border-right-width: 1px;
-  border-top-color: rgba(107, 125, 107, 0.3);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
@@ -3050,21 +3836,33 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
   --callout-color: 236, 117, 0;
+  --table-border-color: color-mix(in srgb, rgb(236, 117, 0) 25%, #fafafa 50%);
   background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 255, 255);
-  border-bottom-color: rgb(229, 229, 229);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(229, 229, 229);
-  border-left-width: 1px;
-  border-right-color: rgb(229, 229, 229);
-  border-right-width: 1px;
-  border-top-color: rgb(229, 229, 229);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(107, 125, 107);
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] .callout-title {
@@ -3087,22 +3885,35 @@ html[saved-theme="light"] body .callout[data-callout="question"] > .callout-cont
 
 html[saved-theme="light"] body .callout[data-callout="quote"] {
   --callout-color: 158, 158, 158;
+  --table-border-color: color-mix(in srgb, rgb(158, 158, 158) 25%, #fafafa 50%);
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(107, 125, 107, 0.05) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0% / auto padding-box border-box;
   background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(135deg, rgba(107, 125, 107, 0.05) 0%, rgb(255, 255, 255) 100%);
-  border-bottom-color: rgba(107, 125, 107, 0.2);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(107, 125, 107, 0.2);
-  border-left-width: 1px;
-  border-right-color: rgba(107, 125, 107, 0.2);
-  border-right-width: 1px;
-  border-top-color: rgba(107, 125, 107, 0.2);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-top-width: 1px;
+  background-image: linear-gradient(rgb(107, 125, 107), rgb(201, 184, 150));
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
+  line-height: 27.2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title {
@@ -3125,21 +3936,33 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
 
 html[saved-theme="light"] body .callout[data-callout="success"] {
   --callout-color: 8, 185, 78;
+  --table-border-color: color-mix(in srgb, rgb(8, 185, 78) 25%, #fafafa 50%);
   background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 255, 255);
-  border-bottom-color: rgb(229, 229, 229);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(229, 229, 229);
-  border-left-width: 1px;
-  border-right-color: rgb(229, 229, 229);
-  border-right-width: 1px;
-  border-top-color: rgb(229, 229, 229);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(107, 125, 107);
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] .callout-title {
@@ -3162,22 +3985,34 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
   --callout-color: 0, 191, 188;
+  --table-border-color: color-mix(in srgb, rgb(0, 191, 188) 25%, #fafafa 50%);
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(201, 184, 150, 0.08) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(201, 184, 150);
   background-image: linear-gradient(135deg, rgba(201, 184, 150, 0.08) 0%, rgb(255, 255, 255) 100%);
-  border-bottom-color: rgba(201, 184, 150, 0.3);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(201, 184, 150, 0.3);
-  border-left-width: 1px;
-  border-right-color: rgba(201, 184, 150, 0.3);
-  border-right-width: 1px;
-  border-top-color: rgba(201, 184, 150, 0.3);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] .callout-title {
@@ -3200,21 +4035,33 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {
   --callout-color: 8, 109, 221;
+  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, #fafafa 50%);
   background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgb(255, 255, 255);
-  border-bottom-color: rgb(229, 229, 229);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(229, 229, 229);
-  border-left-width: 1px;
-  border-right-color: rgb(229, 229, 229);
-  border-right-width: 1px;
-  border-top-color: rgb(229, 229, 229);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  background-color: rgb(107, 125, 107);
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] .callout-title {
@@ -3237,22 +4084,34 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {
   --callout-color: 236, 117, 0;
+  --table-border-color: color-mix(in srgb, rgb(236, 117, 0) 25%, #fafafa 50%);
   background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(212, 165, 116, 0.08) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0% / auto padding-box border-box;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(212, 165, 116);
   background-image: linear-gradient(135deg, rgba(212, 165, 116, 0.08) 0%, rgb(255, 255, 255) 100%);
-  border-bottom-color: rgba(212, 165, 116, 0.3);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(212, 165, 116, 0.3);
-  border-left-width: 1px;
-  border-right-color: rgba(212, 165, 116, 0.3);
-  border-right-width: 1px;
-  border-top-color: rgba(212, 165, 116, 0.3);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-top-width: 1px;
+  border-bottom-color: rgb(44, 44, 44);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(44, 44, 44);
+  border-left-width: 0px;
+  border-right-color: rgb(44, 44, 44);
+  border-right-width: 0px;
+  border-top-color: rgb(44, 44, 44);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(44, 44, 44);
+  content: "";
+  font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] .callout-title {

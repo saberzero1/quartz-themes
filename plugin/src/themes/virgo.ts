@@ -101,6 +101,14 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(38, 38, 38);
+}
+
+html[saved-theme="dark"] body html {
+  --color-jk-purple: #896a9e;
+  --color-jk-purple-33: #896a9e33;
+  --font-jk-base: "LXGW WenKai GB Screen R", jinkaiFont;
+  --font-jk-mono: "Code New Roman", romanFont, "LXGW WenKai Mono";
+  --font-jk-text: "LXGW WenKai GB Screen R", jinkaiFont;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   font-family: "??", "LXGW WenKai GB Screen R", jinkaiFont, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -757,6 +765,14 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(244, 247, 251);
+}
+
+html[saved-theme="light"] body html {
+  --color-jk-purple: #896a9e;
+  --color-jk-purple-33: #896a9e33;
+  --font-jk-base: "LXGW WenKai GB Screen R", jinkaiFont;
+  --font-jk-mono: "Code New Roman", romanFont, "LXGW WenKai Mono";
+  --font-jk-text: "LXGW WenKai GB Screen R", jinkaiFont;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   font-family: "??", "LXGW WenKai GB Screen R", jinkaiFont, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

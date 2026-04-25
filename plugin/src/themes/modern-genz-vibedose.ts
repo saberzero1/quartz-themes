@@ -159,6 +159,21 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(16, 16, 16);
+}
+
+html[saved-theme="dark"] body html {
+  --faded-aqua: #83c092;
+  --faded-blue: #7fbbb3;
+  --faded-green: #a7c080;
+  --faded-orange: #e69875;
+  --faded-red: #e67e80;
+  --faded-yellow: #dbbc7f;
+  --light-aqua: #569d79;
+  --light-blue: #5a93a2;
+  --light-green: #899c40;
+  --light-orange: #f57d26;
+  --light-red: #f85552;
+  --light-yellow: #bf983d;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   font-family: "??", Satoshi, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -830,6 +845,21 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(255, 255, 255);
   border-left-color: rgba(0, 0, 0, 0);
+}
+
+html[saved-theme="light"] body html {
+  --faded-aqua: #83c092;
+  --faded-blue: #7fbbb3;
+  --faded-green: #a7c080;
+  --faded-orange: #e69875;
+  --faded-red: #e67e80;
+  --faded-yellow: #dbbc7f;
+  --light-aqua: #569d79;
+  --light-blue: #5a93a2;
+  --light-green: #899c40;
+  --light-orange: #f57d26;
+  --light-red: #f85552;
+  --light-yellow: #bf983d;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   font-family: "??", Satoshi, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

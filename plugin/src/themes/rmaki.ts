@@ -92,6 +92,66 @@ html body .note-properties-tags {
 
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(28, 28, 33);
+}
+
+html body html {
+  --accent: hsl(164, 68%, 72%);
+  --black: hsl(240, 7%, 12%);
+  --black-dark-1: hsl(240, 7%, 7%);
+  --black-light-1: hsl(240, 7%, 17%);
+  --black-light-2: hsl(240, 7%, 22%);
+  --black-light-3: hsl(240, 7%, 27%);
+  --border: 0.5px solid hsl(246, 28%, 48%);
+  --current-line-bg: hsl(240, 7%, 12%);
+  --editor-background: hsl(240, 7%, 7%);
+  --editor-icons: hsl(211, 19%, 60%);
+  --editor-title: hsl(212, 61%, 91%);
+  --explorer-active: hsl(240, 7%, 12%);
+  --explorer-active-bg: hsl(164, 68%, 72%);
+  --explorer-hover: hsl(240, 7%, 17%);
+  --font: "Fira Code", monospace;
+  --formatting: hsl(164, 68%, 72%);
+  --h-black: 240;
+  --h-purple: 246;
+  --h-white: 212;
+  --heading: 1.1rem;
+  --heading-color: hsl(246, 28%, 48%);
+  --icon-accent: hsl(164, 68%, 72%);
+  --icon-hover: hsl(164, 68%, 72%);
+  --icon-normal: hsl(246, 28%, 48%);
+  --l-black: 12%;
+  --l-purple: 48%;
+  --l-white: 91%;
+  --line-number: hsl(246, 28%, 33%);
+  --list: hsl(246, 28%, 48%);
+  --par: 0.9rem;
+  --popup-dark: hsl(240, 7%, 7%);
+  --purple: hsl(246, 28%, 48%);
+  --purple-dark-1: hsl(246, 28%, 43%);
+  --purple-dark-2: hsl(246, 28%, 38%);
+  --purple-dark-3: hsl(246, 28%, 33%);
+  --purple-dark-4: hsl(246, 28%, 28%);
+  --purple-dark-5: hsl(246, 28%, 23%);
+  --purple-dark-6: hsl(246, 28%, 18%);
+  --purple-light-1: hsl(246, 28%, 53%);
+  --purple-light-2: hsl(246, 28%, 58%);
+  --purple-light-3: hsl(246, 28%, 63%);
+  --ribbon-background: hsl(240, 7%, 7%);
+  --s-black: 7%;
+  --s-purple: 28%;
+  --s-white: 61%;
+  --scrollbar-bg: hsl(246, 28%, 48%);
+  --search-bar: hsl(240, 7%, 17%);
+  --search-hover: hsl(246, 28%, 48%);
+  --sidebar-background: hsl(240, 7%, 12%);
+  --small: 0.7rem;
+  --tab-background: hsl(240, 7%, 7%);
+  --text: hsl(212, 61%, 91%);
+  --text-mute: hsl(211, 19%, 60%);
+  --white: hsl(212, 61%, 91%);
+  --white-dark-1: hsl(212, 61%, 86%);
+  --white-dark-2: hsl(212, 61%, 81%);
+  --white-dark-3: hsl(211, 19%, 60%);
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(218, 231, 246);
@@ -212,6 +272,266 @@ html body video {
 
 html body .katex-display > .katex > .katex-html {
   font-family: "Fira Code", monospace;
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgb(218, 231, 246);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgb(218, 231, 246);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgb(218, 231, 246);
 }
 
 html body li.task-list-item[data-task='!'] {

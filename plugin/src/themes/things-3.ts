@@ -527,6 +527,16 @@ html[saved-theme="dark"] body .transclude-inner {
   transition: box-shadow 0.25s ease-in-out;
 }
 
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(138, 145, 155);
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(138, 145, 155);
+  text-decoration-line: none;
+}
+
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(102, 102, 102);
   text-decoration: line-through 1px rgb(102, 102, 102);
@@ -2005,6 +2015,16 @@ html[saved-theme="light"] body .transclude-inner {
   border-top-right-radius: 5px;
   border-top-width: 2px;
   transition: box-shadow 0.25s ease-in-out;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(130, 134, 138);
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(130, 134, 138);
+  text-decoration-line: none;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {

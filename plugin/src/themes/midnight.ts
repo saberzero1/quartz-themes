@@ -409,6 +409,24 @@ html body .page > div#quartz-body div.sidebar.right {
 
 html body div#quartz-root {
   background-color: rgb(4, 8, 18);
+}
+
+html body html {
+  --color-dark-magenta: rgb(213, 26, 126);
+  --color-graph-node: rgb(140, 140, 140);
+  --color-graph-node-unresolved: rgb(95, 95, 100);
+  --color-light-blue: #849dff;
+  --color-light-purple: #aa8fd1;
+  --color-main-dark: #040812;
+  --color-muted-purple: #1e1e32;
+  --color-outline: #282828;
+  --color-secondary-dark: #0f1116;
+  --color-thistle: #d8bfd8;
+  --input-disabled-border-color: transparent;
+  --input-focus-border-color: Highlight;
+  --input-focus-outline: 1px solid Canvas;
+  --input-hover-border-color: black;
+  --input-unfocused-border-color: transparent;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(216, 191, 216);
@@ -554,7 +572,15 @@ html body .transclude-inner {
   border-bottom-style: solid;
   border-top-style: solid;
 }`,
-    checkboxes: `html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+    checkboxes: `html body li.task-list-item[data-task="X"] {
+  color: rgb(102, 102, 102);
+}
+
+html body li.task-list-item[data-task="x"] {
+  color: rgb(102, 102, 102);
+}
+
+html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
   mask-size: contain;

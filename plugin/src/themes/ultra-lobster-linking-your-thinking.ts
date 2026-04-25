@@ -697,6 +697,41 @@ html body h1.article-title {
   color: rgb(114, 195, 213);
 }
 
+html body h2 {
+  --font-weight: 600;
+  --glass-angle-dark: 125deg;
+  --glass-angle-light: 120deg;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(90deg, rgb(82, 178, 207) 0%, color(srgb 0.321922 0.698525 0.812078 / 0.2) 60%, rgba(0, 0, 0, 0) 100%);
+  border-bottom-color: rgb(82, 178, 207);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(82, 178, 207);
+  border-left-width: 0px;
+  border-right-color: rgb(82, 178, 207);
+  border-right-width: 0px;
+  border-top-color: rgb(82, 178, 207);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(82, 178, 207);
+  content: "";
+  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.36px;
+  line-height: 28.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html body li.task-list-item input[type="checkbox"] {
   background-color: color(srgb 0.909804 0.92549 0.960784 / 0.05);
   border-color: color(srgb 0.909804 0.92549 0.960784 / 0.15);
@@ -1092,6 +1127,274 @@ html body input[type=checkbox] {
   border-top-right-radius: 50%;
   transition: 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
   width: 18px;
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgb(114, 195, 213);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="X"] {
+  color: rgb(185, 195, 223);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="x"] {
+  color: rgb(185, 195, 223);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgb(114, 195, 213);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgb(114, 195, 213);
 }
 
 html body li.task-list-item[data-task='!'] {
@@ -2068,6 +2371,41 @@ html body .callout > .callout-content {
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 12px;
+}
+
+html body .callout-title {
+  --callout-color: 82, 178, 207;
+  --glass-angle-dark: 125deg;
+  --glass-angle-light: 120deg;
+  --table-border-color: color-mix(in srgb, rgb(82, 178, 207) 25%, #23242a 50%);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(82, 178, 207, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+  border-bottom-color: rgb(82, 178, 207);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(82, 178, 207);
+  border-left-width: 0px;
+  border-right-color: rgb(82, 178, 207);
+  border-right-width: 0px;
+  border-top-color: rgb(82, 178, 207);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(82, 178, 207);
+  content: "";
+  font-family: "??", Instrument, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.16px;
+  line-height: 20.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body .callout[data-callout="abstract"] {

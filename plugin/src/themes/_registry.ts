@@ -337,6 +337,21 @@ import { theme as ono_sendai } from "./ono-sendai.js";
 import { theme as orange } from "./orange.js";
 import { theme as oreo } from "./oreo.js";
 import { theme as origami } from "./origami.js";
+import { theme as origami_abaddon } from "./origami-abaddon.js";
+import { theme as origami_dracula } from "./origami-dracula.js";
+import { theme as origami_eidolon } from "./origami-eidolon.js";
+import { theme as origami_gruvbox } from "./origami-gruvbox.js";
+import { theme as origami_heckhound } from "./origami-heckhound.js";
+import { theme as origami_linking_your_thinking } from "./origami-linking-your-thinking.js";
+import { theme as origami_minimum } from "./origami-minimum.js";
+import { theme as origami_nano } from "./origami-nano.js";
+import { theme as origami_shadow } from "./origami-shadow.js";
+import { theme as origami_shark_time } from "./origami-shark-time.js";
+import { theme as origami_siren } from "./origami-siren.js";
+import { theme as origami_soft } from "./origami-soft.js";
+import { theme as origami_solarized } from "./origami-solarized.js";
+import { theme as origami_sorcery } from "./origami-sorcery.js";
+import { theme as origami_umbra } from "./origami-umbra.js";
 import { theme as origin } from "./origin.js";
 import { theme as osaka_jade } from "./osaka-jade.js";
 import { theme as oscura } from "./oscura.js";
@@ -940,6 +955,21 @@ export const themeData: Record<string, ThemeData> = {
   orange: orange,
   oreo: oreo,
   origami: origami,
+  "origami.abaddon": origami_abaddon,
+  "origami.dracula": origami_dracula,
+  "origami.eidolon": origami_eidolon,
+  "origami.gruvbox": origami_gruvbox,
+  "origami.heckhound": origami_heckhound,
+  "origami.linking-your-thinking": origami_linking_your_thinking,
+  "origami.minimum": origami_minimum,
+  "origami.nano": origami_nano,
+  "origami.shadow": origami_shadow,
+  "origami.shark-time": origami_shark_time,
+  "origami.siren": origami_siren,
+  "origami.soft": origami_soft,
+  "origami.solarized": origami_solarized,
+  "origami.sorcery": origami_sorcery,
+  "origami.umbra": origami_umbra,
   origin: origin,
   "osaka-jade": osaka_jade,
   oscura: oscura,
@@ -3000,6 +3030,96 @@ export const themeMetas: Record<string, ThemeMeta> = {
   oreo: { name: "oreo", modes: ["dark", "light"], variations: [], fonts: [] },
   origami: {
     name: "origami",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.abaddon": {
+    name: "origami.abaddon",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.dracula": {
+    name: "origami.dracula",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.eidolon": {
+    name: "origami.eidolon",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.gruvbox": {
+    name: "origami.gruvbox",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.heckhound": {
+    name: "origami.heckhound",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.linking-your-thinking": {
+    name: "origami.linking-your-thinking",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.minimum": {
+    name: "origami.minimum",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.nano": {
+    name: "origami.nano",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.shadow": {
+    name: "origami.shadow",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.shark-time": {
+    name: "origami.shark-time",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.siren": {
+    name: "origami.siren",
+    modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.soft": {
+    name: "origami.soft",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.solarized": {
+    name: "origami.solarized",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.sorcery": {
+    name: "origami.sorcery",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "origami.umbra": {
+    name: "origami.umbra",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],

@@ -26,6 +26,11 @@ html body .canvas-node-file {
 
 html body .note-properties-key {
   font-weight: 500;
+}
+
+html body html {
+  font-size: 14px;
+  font-weight: 500;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(32, 43, 51);
@@ -80,14 +85,70 @@ html body p {
 }
 
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
-  color: rgb(16, 107, 163);
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(167, 182, 194);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(167, 182, 194);
+  border-left-width: 0px;
+  border-right-color: rgb(167, 182, 194);
+  border-right-width: 0px;
+  border-top-color: rgb(167, 182, 194);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(167, 182, 194);
+  content: "[[";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(16, 107, 163) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration-color: rgb(16, 107, 163);
 }
 
 html body a.internal.broken {
-  color: rgb(16, 107, 163);
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(167, 182, 194);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(167, 182, 194);
+  border-left-width: 0px;
+  border-right-color: rgb(167, 182, 194);
+  border-right-width: 0px;
+  border-top-color: rgb(167, 182, 194);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(167, 182, 194);
+  content: "[[";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(16, 107, 163) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html body dd {
@@ -174,7 +235,267 @@ html body .transclude {
   border-right-color: rgb(32, 43, 51);
   border-top-color: rgb(32, 43, 51);
 }`,
-    checkboxes: `html body li.task-list-item[data-task='!'] {
+    checkboxes: `html body li.task-list-item[data-task="#"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgb(32, 43, 51);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgb(32, 43, 51);
+}
+
+html body li.task-list-item[data-task='!'] {
   color: rgb(32, 43, 51);
   text-decoration-color: rgb(32, 43, 51);
 }

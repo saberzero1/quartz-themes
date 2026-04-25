@@ -799,9 +799,36 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
 }
 
 html[saved-theme="dark"] body a.internal.broken {
-  color: rgb(205, 205, 205);
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(5, 128, 128);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(5, 128, 128);
+  border-left-width: 0px;
+  border-right-color: rgb(5, 128, 128);
+  border-right-width: 0px;
+  border-top-color: rgb(5, 128, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(5, 128, 128);
+  content: " ✎";
   font-family: "??", "IBM Plex Sans", "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(205, 205, 205) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration: underline dotted rgb(5, 128, 128);
   text-decoration-color: rgb(5, 128, 128);
   text-decoration-style: dotted;
@@ -1013,6 +1040,276 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-left-color: rgb(160, 160, 160);
   border-right-color: rgb(160, 160, 160);
   border-top-color: rgb(160, 160, 160);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(205, 205, 205);
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(205, 205, 205);
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgb(205, 205, 205);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgb(205, 205, 205);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -1393,6 +1690,39 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
   padding-right: 8px;
 }
 
+html[saved-theme="dark"] body .callout[data-callout="chat"] {
+  --callout-color: 61, 126, 123;
+  --table-border-color: color-mix(in srgb, rgb(61, 126, 123) 25%, #1e1e1e 50%);
+  background-color: rgba(61, 126, 123, 0.1);
+  border-bottom-color: rgba(61, 126, 123, 0.4);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(61, 126, 123, 0.4);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(61, 126, 123, 0.4);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(61, 126, 123, 0.4);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(205, 205, 205);
+  font-family: "??", "IBM Plex Sans", "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: 230, 133, 132;
   background: rgba(230, 133, 132, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1475,6 +1805,39 @@ html[saved-theme="dark"] body .callout[data-callout="example"] > .callout-conten
   color: rgb(205, 205, 205);
   padding-left: 8px;
   padding-right: 8px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="excerpt"] {
+  --callout-color: 53, 120, 175;
+  --table-border-color: color-mix(in srgb, rgb(53, 120, 175) 25%, #1e1e1e 50%);
+  background-color: rgba(53, 120, 175, 0.1);
+  border-bottom-color: rgba(53, 120, 175, 0.4);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(53, 120, 175, 0.4);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(53, 120, 175, 0.4);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(53, 120, 175, 0.4);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(205, 205, 205);
+  font-family: "??", "IBM Plex Sans", "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="failure"] {
@@ -1687,6 +2050,39 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
   padding-right: 8px;
 }
 
+html[saved-theme="dark"] body .callout[data-callout="reference"] {
+  --callout-color: 183, 183, 183;
+  --table-border-color: color-mix(in srgb, rgb(183, 183, 183) 25%, #1e1e1e 50%);
+  background-color: rgba(183, 183, 183, 0.1);
+  border-bottom-color: rgba(183, 183, 183, 0.4);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(183, 183, 183, 0.4);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(183, 183, 183, 0.4);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(183, 183, 183, 0.4);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(205, 205, 205);
+  font-family: "??", "IBM Plex Sans", "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="success"] {
   --callout-color: 139, 167, 145;
   background: rgba(139, 167, 145, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1769,6 +2165,39 @@ html[saved-theme="dark"] body .callout[data-callout="tip"] > .callout-content {
   color: rgb(205, 205, 205);
   padding-left: 8px;
   padding-right: 8px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="toc"] {
+  --callout-color: 235, 235, 235;
+  --table-border-color: color-mix(in srgb, rgb(235, 235, 235) 25%, #1e1e1e 50%);
+  background-color: rgba(235, 235, 235, 0.1);
+  border-bottom-color: rgba(235, 235, 235, 0.4);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(235, 235, 235, 0.4);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(235, 235, 235, 0.4);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(235, 235, 235, 0.4);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(205, 205, 205);
+  font-family: "??", "IBM Plex Sans", "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="todo"] {
@@ -3000,9 +3429,36 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
 }
 
 html[saved-theme="light"] body a.internal.broken {
-  color: rgb(115, 115, 115);
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(65, 176, 176);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(65, 176, 176);
+  border-left-width: 0px;
+  border-right-color: rgb(65, 176, 176);
+  border-right-width: 0px;
+  border-top-color: rgb(65, 176, 176);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(65, 176, 176);
+  content: " ✎";
   font-family: "??", "IBM Plex Sans", "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(115, 115, 115) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration: underline dotted rgb(65, 176, 176);
   text-decoration-color: rgb(65, 176, 176);
   text-decoration-style: dotted;
@@ -3214,6 +3670,276 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-left-color: rgb(160, 160, 160);
   border-right-color: rgb(160, 160, 160);
   border-top-color: rgb(160, 160, 160);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(72, 72, 72);
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(72, 72, 72);
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: rgb(72, 72, 72);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: rgb(72, 72, 72);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
@@ -3594,6 +4320,39 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
   padding-right: 8px;
 }
 
+html[saved-theme="light"] body .callout[data-callout="chat"] {
+  --callout-color: 61, 126, 123;
+  --table-border-color: color-mix(in srgb, rgb(61, 126, 123) 25%, #f8f8f8 50%);
+  background-color: rgba(61, 126, 123, 0.1);
+  border-bottom-color: rgba(61, 126, 123, 0.4);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(61, 126, 123, 0.4);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(61, 126, 123, 0.4);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(61, 126, 123, 0.4);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(72, 72, 72);
+  font-family: "??", "IBM Plex Sans", "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="danger"] {
   --callout-color: 167, 92, 112;
   background: rgba(167, 92, 112, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3676,6 +4435,39 @@ html[saved-theme="light"] body .callout[data-callout="example"] > .callout-conte
   color: rgb(72, 72, 72);
   padding-left: 8px;
   padding-right: 8px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="excerpt"] {
+  --callout-color: 53, 120, 175;
+  --table-border-color: color-mix(in srgb, rgb(53, 120, 175) 25%, #f8f8f8 50%);
+  background-color: rgba(53, 120, 175, 0.1);
+  border-bottom-color: rgba(53, 120, 175, 0.4);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(53, 120, 175, 0.4);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(53, 120, 175, 0.4);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(53, 120, 175, 0.4);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(72, 72, 72);
+  font-family: "??", "IBM Plex Sans", "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="failure"] {
@@ -3888,6 +4680,39 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
   padding-right: 8px;
 }
 
+html[saved-theme="light"] body .callout[data-callout="reference"] {
+  --callout-color: 137, 137, 137;
+  --table-border-color: color-mix(in srgb, rgb(137, 137, 137) 25%, #f8f8f8 50%);
+  background-color: rgba(137, 137, 137, 0.1);
+  border-bottom-color: rgba(137, 137, 137, 0.4);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(137, 137, 137, 0.4);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(137, 137, 137, 0.4);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(137, 137, 137, 0.4);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(72, 72, 72);
+  font-family: "??", "IBM Plex Sans", "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="success"] {
   --callout-color: 92, 122, 99;
   background: rgba(92, 122, 99, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3970,6 +4795,39 @@ html[saved-theme="light"] body .callout[data-callout="tip"] > .callout-content {
   color: rgb(72, 72, 72);
   padding-left: 8px;
   padding-right: 8px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="toc"] {
+  --callout-color: 159, 159, 159;
+  --table-border-color: color-mix(in srgb, rgb(159, 159, 159) 25%, #f8f8f8 50%);
+  background-color: rgba(159, 159, 159, 0.1);
+  border-bottom-color: rgba(159, 159, 159, 0.4);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(159, 159, 159, 0.4);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(159, 159, 159, 0.4);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(159, 159, 159, 0.4);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(72, 72, 72);
+  font-family: "??", "IBM Plex Sans", "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="todo"] {

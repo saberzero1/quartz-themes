@@ -36,11 +36,11 @@ extract-baseline: build
 
 [group('extract')]
 compile:
-  node ./runner/scripts/compile.js
+  node ./runner/scripts/compile.js "" --auto
 
 [group('cli-extract'), doc('Compile a single theme')]
 cli-compile-theme themeName:
-  node ./runner/scripts/compile.js "{{themeName}}"
+  node ./runner/scripts/compile.js "{{themeName}}" --auto
 
 [group('extract')]
 convert:
@@ -54,7 +54,7 @@ recompile: compile convert
 
 [group('cli-extract'), doc('Recompile a single theme')]
 cli-recompile-theme themeName:
-  node ./runner/scripts/compile.js "{{themeName}}"
+  node ./runner/scripts/compile.js "{{themeName}}" --auto
   bun ./convert.js
 
 [group('cli-extract')]
@@ -63,7 +63,7 @@ cli-extract-fonts:
 
 [group('plugin')]
 generate-plugin:
-  node ./plugin/scripts/generate.js
+  node ./plugin/scripts/generate.js --auto
   npm --prefix ./plugin run build
 
 [group('cli-extract'), doc('Extract a single theme using CLI (requires running Obsidian)')]

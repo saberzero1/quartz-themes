@@ -5294,6 +5294,46 @@ body {
     font-weight: 400;
   }
 
+  li.task-list-item[data-task="x"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    color: rgb(85, 94, 104);
+    text-decoration-line: line-through;
+  }
+
+  li.task-list-item[data-task="X"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    color: rgb(85, 94, 104);
+    text-decoration-line: line-through;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 
@@ -9226,6 +9266,46 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
       font-size: 16px;
       font-weight: 400;
+    }
+
+    li.task-list-item[data-task="x"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      color: rgb(190, 198, 207);
+      text-decoration-line: line-through;
+    }
+
+    li.task-list-item[data-task="X"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      color: rgb(190, 198, 207);
+      text-decoration-line: line-through;
     }
   }
 }

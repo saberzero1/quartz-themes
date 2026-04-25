@@ -138,6 +138,10 @@ html body .page > div#quartz-body div.sidebar.left {
 
 html body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(64, 64, 64);
+}
+
+html body html {
+  --text-highlight-bg: #006600;
 }`,
     typography: `html body .text-highlight {
   background-color: rgb(0, 102, 0);

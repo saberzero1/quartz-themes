@@ -1744,7 +1744,7 @@ html {
   font-family: "Formular";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/things-3/formular.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/things-3/formular.woff") format("woff");
 }
 
 body {
@@ -4609,6 +4609,22 @@ body {
     color: rgb(45, 46, 52);
     font-size: 13px;
     font-weight: 400;
+  }
+
+  li.task-list-item[data-task="x"] {
+    margin-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: rgb(130, 134, 138);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="X"] {
+    margin-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: rgb(130, 134, 138);
+    text-decoration-line: none;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -8282,6 +8298,22 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
       font-size: 13px;
       font-weight: 400;
+    }
+
+    li.task-list-item[data-task="x"] {
+      margin-left: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      color: rgb(138, 145, 155);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="X"] {
+      margin-left: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      color: rgb(138, 145, 155);
+      text-decoration-line: none;
     }
   }
 }

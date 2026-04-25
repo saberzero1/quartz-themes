@@ -3099,20 +3099,28 @@ body {
 
   .callout[data-callout="note"] {
     --callout-color: 8, 109, 221;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(135deg, rgba(107, 125, 107, 0.08) 0%, rgb(255, 255, 255) 100%);
+    background-color: rgb(107, 125, 107);
+    background-image: none;
     background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(107, 125, 107, 0.08) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgba(107, 125, 107, 0.3);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 24px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: normal;
   }
 
   .callout[data-callout="note"] .callout-title {
@@ -3149,20 +3157,28 @@ body {
 
   .callout[data-callout="abstract"] {
     --callout-color: 0, 191, 188;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(107, 125, 107);
     background-image: none;
     background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgb(229, 229, 229);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(0, 191, 188) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 24px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: normal;
   }
 
   .callout[data-callout="abstract"] .callout-title {
@@ -3199,20 +3215,28 @@ body {
 
   .callout[data-callout="info"] {
     --callout-color: 8, 109, 221;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(135deg, rgba(107, 125, 107, 0.08) 0%, rgb(255, 255, 255) 100%);
+    background-color: rgb(107, 125, 107);
+    background-image: none;
     background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(107, 125, 107, 0.08) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgba(107, 125, 107, 0.3);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 24px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: normal;
   }
 
   .callout[data-callout="info"] .callout-title {
@@ -3249,20 +3273,28 @@ body {
 
   .callout[data-callout="todo"] {
     --callout-color: 8, 109, 221;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(107, 125, 107);
     background-image: none;
     background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgb(229, 229, 229);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 24px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: normal;
   }
 
   .callout[data-callout="todo"] .callout-title {
@@ -3299,20 +3331,28 @@ body {
 
   .callout[data-callout="tip"] {
     --callout-color: 0, 191, 188;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(135deg, rgba(201, 184, 150, 0.08) 0%, rgb(255, 255, 255) 100%);
+    background-color: rgb(201, 184, 150);
+    background-image: none;
     background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(201, 184, 150, 0.08) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgba(201, 184, 150, 0.3);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(0, 191, 188) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 24px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: normal;
   }
 
   .callout[data-callout="tip"] .callout-title {
@@ -3349,20 +3389,28 @@ body {
 
   .callout[data-callout="success"] {
     --callout-color: 8, 185, 78;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(107, 125, 107);
     background-image: none;
     background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgb(229, 229, 229);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(8, 185, 78) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 24px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: normal;
   }
 
   .callout[data-callout="success"] .callout-title {
@@ -3399,20 +3447,28 @@ body {
 
   .callout[data-callout="question"] {
     --callout-color: 236, 117, 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(107, 125, 107);
     background-image: none;
     background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgb(229, 229, 229);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(236, 117, 0) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 24px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: normal;
   }
 
   .callout[data-callout="question"] .callout-title {
@@ -3449,20 +3505,28 @@ body {
 
   .callout[data-callout="warning"] {
     --callout-color: 236, 117, 0;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(135deg, rgba(212, 165, 116, 0.08) 0%, rgb(255, 255, 255) 100%);
+    background-color: rgb(212, 165, 116);
+    background-image: none;
     background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(212, 165, 116, 0.08) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgba(212, 165, 116, 0.3);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(236, 117, 0) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 24px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: normal;
   }
 
   .callout[data-callout="warning"] .callout-title {
@@ -3499,20 +3563,28 @@ body {
 
   .callout[data-callout="danger"] {
     --callout-color: 233, 49, 71;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(107, 125, 107);
     background-image: none;
     background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgb(229, 229, 229);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(233, 49, 71) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 24px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: normal;
   }
 
   .callout[data-callout="danger"] .callout-title {
@@ -3549,20 +3621,28 @@ body {
 
   .callout[data-callout="failure"] {
     --callout-color: 233, 49, 71;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(107, 125, 107);
     background-image: none;
     background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgb(229, 229, 229);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(233, 49, 71) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 24px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: normal;
   }
 
   .callout[data-callout="failure"] .callout-title {
@@ -3599,20 +3679,28 @@ body {
 
   .callout[data-callout="bug"] {
     --callout-color: 233, 49, 71;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(107, 125, 107);
     background-image: none;
     background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgb(229, 229, 229);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(233, 49, 71) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 24px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: normal;
   }
 
   .callout[data-callout="bug"] .callout-title {
@@ -3649,20 +3737,28 @@ body {
 
   .callout[data-callout="example"] {
     --callout-color: 120, 82, 238;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(107, 125, 107);
     background-image: none;
     background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgb(229, 229, 229);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(120, 82, 238) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 24px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: normal;
   }
 
   .callout[data-callout="example"] .callout-title {
@@ -3700,19 +3796,27 @@ body {
   .callout[data-callout="quote"] {
     --callout-color: 158, 158, 158;
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(135deg, rgba(107, 125, 107, 0.05) 0%, rgb(255, 255, 255) 100%);
+    background-image: linear-gradient(rgb(107, 125, 107), rgb(201, 184, 150));
     background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(107, 125, 107, 0.05) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(44, 44, 44);
     mix-blend-mode: normal;
-    border: 1px solid rgba(107, 125, 107, 0.2);
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border: 0px solid rgb(44, 44, 44);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    --table-border-color: color-mix(in srgb, rgb(158, 158, 158) 25%, #fafafa 50%);
+    padding: 0px;
+    line-height: 27.2px;
+    box-shadow: none;
+    content: "";
+    font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0px;
+    font-style: italic;
   }
 
   .callout[data-callout="quote"] .callout-title {
@@ -4680,6 +4784,552 @@ body {
     color: rgb(44, 44, 44);
     font-size: 13px;
     font-weight: 400;
+  }
+
+  li.task-list-item[data-task="_"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task=","] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task=";"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task=":"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="."] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="'"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="@"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="&"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="#"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="%"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="`"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="+"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="<"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="="] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="|"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="~"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="$"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="0"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="1"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="2"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="3"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="4"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="5"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="6"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="7"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="8"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="9"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="a"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="A"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="B"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="C"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="D"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="e"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="E"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="F"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="g"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="G"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="h"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="H"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="j"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="J"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="K"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="L"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="m"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="M"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="n"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="N"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="o"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="O"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="P"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="q"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="Q"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="r"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="R"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="s"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="t"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="T"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="U"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="v"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="V"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="W"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="x"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(107, 107, 107);
+  }
+
+  li.task-list-item[data-task="X"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(107, 107, 107);
+  }
+
+  li.task-list-item[data-task="y"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="Y"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="z"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  li.task-list-item[data-task="Z"] {
+    line-height: 1.3;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: rgb(44, 44, 44);
+  }
+
+  html {
+    transition:
+      color 0.2s,
+      background-color 0.2s,
+      border-color 0.2s,
+      box-shadow 0.2s,
+      opacity 0.2s,
+      transform 0.2s;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -6197,20 +6847,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="note"] {
       --callout-color: 2, 122, 255;
-      background-color: rgba(0, 0, 0, 0);
-      background-image: linear-gradient(135deg, rgba(143, 166, 143, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%);
+      background-color: rgb(143, 166, 143);
+      background-image: none;
       background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(143, 166, 143, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%) repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 24px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: normal;
     }
 
     .callout[data-callout="note"] .callout-title {
@@ -6247,20 +6905,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="abstract"] {
       --callout-color: 83, 223, 221;
-      background-color: rgba(42, 42, 42, 0.7);
+      background-color: rgb(143, 166, 143);
       background-image: none;
       background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(83, 223, 221) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 24px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: normal;
     }
 
     .callout[data-callout="abstract"] .callout-title {
@@ -6297,20 +6963,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="info"] {
       --callout-color: 2, 122, 255;
-      background-color: rgba(0, 0, 0, 0);
-      background-image: linear-gradient(135deg, rgba(143, 166, 143, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%);
+      background-color: rgb(143, 166, 143);
+      background-image: none;
       background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(143, 166, 143, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%) repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 24px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: normal;
     }
 
     .callout[data-callout="info"] .callout-title {
@@ -6347,20 +7021,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="todo"] {
       --callout-color: 2, 122, 255;
-      background-color: rgba(42, 42, 42, 0.7);
+      background-color: rgb(143, 166, 143);
       background-image: none;
       background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 24px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: normal;
     }
 
     .callout[data-callout="todo"] .callout-title {
@@ -6397,20 +7079,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="tip"] {
       --callout-color: 83, 223, 221;
-      background-color: rgba(0, 0, 0, 0);
-      background-image: linear-gradient(135deg, rgba(212, 192, 150, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%);
+      background-color: rgb(212, 192, 150);
+      background-image: none;
       background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(212, 192, 150, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%) repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(83, 223, 221) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 24px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: normal;
     }
 
     .callout[data-callout="tip"] .callout-title {
@@ -6447,20 +7137,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="success"] {
       --callout-color: 68, 207, 110;
-      background-color: rgba(42, 42, 42, 0.7);
+      background-color: rgb(143, 166, 143);
       background-image: none;
       background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(68, 207, 110) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 24px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: normal;
     }
 
     .callout[data-callout="success"] .callout-title {
@@ -6497,20 +7195,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="question"] {
       --callout-color: 233, 151, 63;
-      background-color: rgba(42, 42, 42, 0.7);
+      background-color: rgb(143, 166, 143);
       background-image: none;
       background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(233, 151, 63) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 24px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: normal;
     }
 
     .callout[data-callout="question"] .callout-title {
@@ -6547,20 +7253,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="warning"] {
       --callout-color: 233, 151, 63;
-      background-color: rgba(0, 0, 0, 0);
-      background-image: linear-gradient(135deg, rgba(212, 165, 116, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%);
+      background-color: rgb(212, 165, 116);
+      background-image: none;
       background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(212, 165, 116, 0.15) 0%, rgba(42, 42, 42, 0.7) 100%) repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(233, 151, 63) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 24px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: normal;
     }
 
     .callout[data-callout="warning"] .callout-title {
@@ -6597,20 +7311,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="danger"] {
       --callout-color: 251, 70, 76;
-      background-color: rgba(42, 42, 42, 0.7);
+      background-color: rgb(143, 166, 143);
       background-image: none;
       background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(251, 70, 76) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 24px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: normal;
     }
 
     .callout[data-callout="danger"] .callout-title {
@@ -6647,20 +7369,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="failure"] {
       --callout-color: 251, 70, 76;
-      background-color: rgba(42, 42, 42, 0.7);
+      background-color: rgb(143, 166, 143);
       background-image: none;
       background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(251, 70, 76) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 24px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: normal;
     }
 
     .callout[data-callout="failure"] .callout-title {
@@ -6697,20 +7427,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="bug"] {
       --callout-color: 251, 70, 76;
-      background-color: rgba(42, 42, 42, 0.7);
+      background-color: rgb(143, 166, 143);
       background-image: none;
       background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(251, 70, 76) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 24px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: normal;
     }
 
     .callout[data-callout="bug"] .callout-title {
@@ -6747,20 +7485,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="example"] {
       --callout-color: 168, 130, 255;
-      background-color: rgba(42, 42, 42, 0.7);
+      background-color: rgb(143, 166, 143);
       background-image: none;
       background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(168, 130, 255) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 24px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: normal;
     }
 
     .callout[data-callout="example"] .callout-title {
@@ -6797,20 +7543,28 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="quote"] {
       --callout-color: 158, 158, 158;
-      background-color: rgba(42, 42, 42, 0.7);
-      background-image: none;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: linear-gradient(rgb(143, 166, 143), rgb(212, 192, 150));
       background: rgba(42, 42, 42, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(232, 232, 232);
       mix-blend-mode: normal;
-      border: 1px solid rgba(58, 58, 58, 0.8);
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
+      border: 0px solid rgb(232, 232, 232);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      --table-border-color: color-mix(in srgb, rgb(158, 158, 158) 25%, #1a1a1a 50%);
+      padding: 0px;
+      line-height: 27.2px;
+      box-shadow: none;
+      content: "";
+      font-family: Inter, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      margin: 0px;
+      font-style: italic;
     }
 
     .callout[data-callout="quote"] .callout-title {
@@ -7778,6 +8532,552 @@ html[saved-theme="dark"] {
       color: rgb(232, 232, 232);
       font-size: 13px;
       font-weight: 400;
+    }
+
+    li.task-list-item[data-task="_"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task=","] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task=";"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task=":"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="."] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="'"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="@"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="&"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="#"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="%"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="`"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="+"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="<"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="="] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="|"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="~"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="$"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="0"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="1"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="2"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="3"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="4"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="5"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="6"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="7"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="8"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="9"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="a"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="A"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="B"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="C"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="D"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="e"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="E"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="F"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="g"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="G"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="h"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="H"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="j"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="J"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="K"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="L"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="m"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="M"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="n"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="N"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="o"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="O"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="P"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="q"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="Q"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="r"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="R"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="s"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="t"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="T"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="U"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="v"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="V"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="W"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="x"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(168, 168, 168);
+    }
+
+    li.task-list-item[data-task="X"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(168, 168, 168);
+    }
+
+    li.task-list-item[data-task="y"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="Y"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="z"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    li.task-list-item[data-task="Z"] {
+      line-height: 1.3;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      color: rgb(232, 232, 232);
+    }
+
+    html {
+      transition:
+        color 0.2s,
+        background-color 0.2s,
+        border-color 0.2s,
+        box-shadow 0.2s,
+        opacity 0.2s,
+        transform 0.2s;
     }
   }
 }

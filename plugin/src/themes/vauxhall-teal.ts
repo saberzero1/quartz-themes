@@ -1009,6 +1009,274 @@ html[saved-theme="dark"] body .transclude-inner {
   border-top-color: color(srgb 0.2664 0.4792 0.5056);
 }
 
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: color(srgb 0.4332 0.7396 0.7528);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: color(srgb 0.4332 0.7396 0.7528);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: color(srgb 0.88 1 1);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: color(srgb 0.88 1 1);
+}
+
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: color(srgb 0.88 1 1);
   text-decoration-color: color(srgb 0.88 1 1);
@@ -2862,6 +3130,274 @@ html[saved-theme="light"] body .transclude-inner {
   border-left-color: color(srgb 0.552 0.816 0.828);
   border-right-color: color(srgb 0.552 0.816 0.828);
   border-top-color: color(srgb 0.552 0.816 0.828);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: color(srgb 0.276 0.708 0.714);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: color(srgb 0.276 0.708 0.714);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: color(srgb 0 0.3 0.3);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: color(srgb 0 0.3 0.3);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {

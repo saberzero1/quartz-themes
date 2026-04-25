@@ -67,6 +67,183 @@ export const theme: ThemeData = {
 html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
+}
+
+html[saved-theme="dark"] body html {
+  --accent-light: #d9d4f0;
+  --accent-lightest: #F5F4FB;
+  --accent-middle: #8272d0;
+  --admonition-green: #64DD17;
+  --altaccent-light: #BFDEFF;
+  --altaccent-lighter: #E3E5E8;
+  --altaccent-middle: #277f8e;
+  --altaccent2-middle: #ad3fc9;
+  --header-font: 'Caveat Brush';
+  --infobox-header: #F2EDFF;
+}`,
+    typography: `html[saved-theme="dark"] body article > h1 {
+  --font-weight: 700;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(218, 218, 218);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
+  border-top-color: rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(218, 218, 218);
+  content: "";
+  font-family: "Caveat Brush";
+  font-size: 43.2px;
+  font-weight: 700;
+  letter-spacing: -0.648px;
+  line-height: 51.84px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h2 {
+  --font-weight: 680;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(218, 218, 218);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
+  border-top-color: rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(218, 218, 218);
+  content: "";
+  font-family: "Caveat Brush";
+  font-size: 40px;
+  font-weight: 680;
+  letter-spacing: -0.44px;
+  line-height: 48px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h3 {
+  --font-weight: 660;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(218, 218, 218);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
+  border-top-color: rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(218, 218, 218);
+  content: "";
+  font-family: "Caveat Brush";
+  font-size: 33.6px;
+  font-weight: 660;
+  letter-spacing: -0.2688px;
+  line-height: 43.68px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h4 {
+  --font-weight: 640;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(218, 218, 218);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
+  border-top-color: rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(218, 218, 218);
+  content: "";
+  font-family: "Caveat Brush";
+  font-size: 30.4px;
+  font-weight: 640;
+  letter-spacing: -0.152px;
+  line-height: 42.56px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h5 {
+  --font-weight: 620;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(218, 218, 218);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
+  border-top-color: rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(218, 218, 218);
+  content: "";
+  font-family: "Caveat Brush";
+  font-size: 27.2px;
+  font-weight: 620;
+  letter-spacing: -0.0544px;
+  line-height: 40.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
   padding-bottom: 10px;
@@ -80,6 +257,14 @@ html[saved-theme="dark"] body {
   margin-bottom: 2px;
   margin-right: 4px;
   transition: background-color 0.2s ease-out;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(218, 218, 218);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(218, 218, 218);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -477,6 +662,183 @@ html[saved-theme="dark"] body h6 {
 html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
+}
+
+html[saved-theme="light"] body html {
+  --accent-light: #d9d4f0;
+  --accent-lightest: #F5F4FB;
+  --accent-middle: #8272d0;
+  --admonition-green: #64DD17;
+  --altaccent-light: #BFDEFF;
+  --altaccent-lighter: #E3E5E8;
+  --altaccent-middle: #277f8e;
+  --altaccent2-middle: #ad3fc9;
+  --header-font: 'Caveat Brush';
+  --infobox-header: #F2EDFF;
+}`,
+    typography: `html[saved-theme="light"] body article > h1 {
+  --font-weight: 700;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(34, 34, 34);
+  content: "";
+  font-family: "Caveat Brush";
+  font-size: 43.2px;
+  font-weight: 700;
+  letter-spacing: -0.648px;
+  line-height: 51.84px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h2 {
+  --font-weight: 680;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(34, 34, 34);
+  content: "";
+  font-family: "Caveat Brush";
+  font-size: 40px;
+  font-weight: 680;
+  letter-spacing: -0.44px;
+  line-height: 48px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h3 {
+  --font-weight: 660;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(34, 34, 34);
+  content: "";
+  font-family: "Caveat Brush";
+  font-size: 33.6px;
+  font-weight: 660;
+  letter-spacing: -0.2688px;
+  line-height: 43.68px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h4 {
+  --font-weight: 640;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(34, 34, 34);
+  content: "";
+  font-family: "Caveat Brush";
+  font-size: 30.4px;
+  font-weight: 640;
+  letter-spacing: -0.152px;
+  line-height: 42.56px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h5 {
+  --font-weight: 620;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(34, 34, 34);
+  content: "";
+  font-family: "Caveat Brush";
+  font-size: 27.2px;
+  font-weight: 620;
+  letter-spacing: -0.0544px;
+  line-height: 40.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
   padding-bottom: 10px;
@@ -490,6 +852,14 @@ html[saved-theme="light"] body {
   margin-bottom: 2px;
   margin-right: 4px;
   transition: background-color 0.2s ease-out;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(34, 34, 34);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(34, 34, 34);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {

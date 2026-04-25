@@ -208,6 +208,14 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(19, 20, 31);
   color: rgb(236, 236, 236);
+}
+
+html body html {
+  --font-headings: "Playfair Display", "Merriweather", "Georgia", serif;
+  --font-monospace: "JetBrains Mono", "Fira Code", monospace;
+  --font-text: "Inter", "Segoe UI", Roboto, Helvetica, sans-serif;
+  --header-line-height: 1.2;
+  --line-height-normal: 1.8;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(255, 5, 141);
@@ -461,6 +469,274 @@ html body .transclude-inner {
   border-top-right-radius: 50%;
   border-top-width: 0px;
   transition: 0.2s;
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgb(236, 236, 236);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="X"] {
+  color: rgb(142, 142, 158);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="x"] {
+  color: rgb(142, 142, 158);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgb(236, 236, 236);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgb(236, 236, 236);
 }
 
 html body li.task-list-item[data-task='!'] {

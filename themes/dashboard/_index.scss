@@ -4004,6 +4004,16 @@ body {
     font-weight: 400;
   }
 
+  li.task-list-item[data-task="x"] {
+    letter-spacing: normal;
+    color: rgb(67, 75, 86);
+  }
+
+  li.task-list-item[data-task="X"] {
+    letter-spacing: normal;
+    color: rgb(67, 75, 86);
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 

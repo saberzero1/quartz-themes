@@ -326,6 +326,11 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(26, 35, 50);
   color: rgb(226, 232, 240);
+}
+
+html body html {
+  --avatar-focus-border: rgba(125, 211, 192, 0.2);
+  --avatar-focus-color: #343e4f;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(52, 211, 153);
@@ -635,6 +640,274 @@ html body input[type=checkbox] {
   border-left-color: rgb(113, 128, 150);
   border-right-color: rgb(113, 128, 150);
   border-top-color: rgb(113, 128, 150);
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgb(226, 232, 240);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="X"] {
+  color: rgb(160, 174, 192);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="x"] {
+  color: rgb(160, 174, 192);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgb(226, 232, 240);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgb(226, 232, 240);
 }
 
 html body li.task-list-item[data-task='!'] {

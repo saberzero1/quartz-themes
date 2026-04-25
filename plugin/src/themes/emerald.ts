@@ -57,6 +57,11 @@ html[saved-theme="dark"] body {
 html[saved-theme="dark"] body .bases-table thead th {
   background-color: rgb(35, 112, 82);
   color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body html {
+  --accent-middle: #72D0AE;
+  --header-font: 'Caveat Brush';
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   font-family: Inter;
@@ -599,6 +604,11 @@ html[saved-theme="light"] body {
 html[saved-theme="light"] body .bases-table thead th {
   background-color: rgb(73, 208, 158);
   color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body html {
+  --accent-middle: #72D0AE;
+  --header-font: 'Caveat Brush';
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   font-family: Inter;

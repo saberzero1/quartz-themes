@@ -738,6 +738,45 @@ html[saved-theme="dark"] body .text-highlight {
   text-decoration-color: oklch(0.8625 0 0);
 }
 
+html[saved-theme="dark"] body article > h1 {
+  --bold-modifier: 200;
+  --font-weight: 330;
+  --heading-margin-start: 1.375em;
+  --heading-spacing: round(nearest, 2.375em, 2px);
+  --hr-spacing: 2.25rem;
+  --left-margin-delay: 150ms;
+  --p-spacing: 1.125rem;
+  --right-margin-delay: 150ms;
+  background-color: oklch(1 0 0 / 0.1375);
+  border-bottom-color: oklch(0.825 0 0);
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  border-bottom-width: 0px;
+  border-left-color: oklch(0.825 0 0);
+  border-left-width: 0px;
+  border-right-color: oklch(0.825 0 0);
+  border-right-width: 0px;
+  border-top-color: oklch(0.825 0 0);
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-top-width: 0px;
+  color: oklch(0.825 0 0);
+  content: "";
+  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 32px;
+  font-weight: 330;
+  letter-spacing: -0.32px;
+  line-height: 38.4px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 6px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body del {
   color: oklch(0.525 0 0);
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -1041,6 +1080,274 @@ html[saved-theme="dark"] body input[type=checkbox] {
   margin-left: -27px;
   transition: 0.21s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   width: 18px;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: oklch(0.525 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: oklch(0.525 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: oklch(0.8 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: oklch(0.8 0 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -2960,6 +3267,45 @@ html[saved-theme="light"] body .text-highlight {
   text-decoration-color: oklch(0.24 0.0005 281);
 }
 
+html[saved-theme="light"] body article > h1 {
+  --bold-modifier: 200;
+  --font-weight: 330;
+  --heading-margin-start: 1.375em;
+  --heading-spacing: round(nearest, 2.375em, 2px);
+  --hr-spacing: 2.25rem;
+  --left-margin-delay: 150ms;
+  --p-spacing: 1.125rem;
+  --right-margin-delay: 150ms;
+  background-color: oklch(0 0 0 / 0.092);
+  border-bottom-color: oklch(0.24 0.0005 281);
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  border-bottom-width: 0px;
+  border-left-color: oklch(0.24 0.0005 281);
+  border-left-width: 0px;
+  border-right-color: oklch(0.24 0.0005 281);
+  border-right-width: 0px;
+  border-top-color: oklch(0.24 0.0005 281);
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-top-width: 0px;
+  color: oklch(0.24 0.0005 281);
+  content: "";
+  font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 32px;
+  font-weight: 330;
+  letter-spacing: -0.32px;
+  line-height: 38.4px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 6px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body del {
   color: oklch(0.715 0.0105 281);
   font-family: Raveo, Raveo, Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -3278,6 +3624,274 @@ html[saved-theme="light"] body input[type=checkbox] {
   margin-left: -27px;
   transition: 0.21s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   width: 18px;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: oklch(0.715 0.0105 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: oklch(0.715 0.0105 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: oklch(0.3 0.0005 281);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: oklch(0.3 0.0005 281);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {

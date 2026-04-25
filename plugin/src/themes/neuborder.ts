@@ -513,6 +513,39 @@ html body .page > div#quartz-body div.sidebar.right {
 
 html body div#quartz-root {
   color: rgb(0, 0, 0);
+}
+
+html body html {
+  --button-radius-circle: 36px;
+  --button-radius-large: 12px;
+  --button-radius-medium: 6px;
+  --button-radius-medium-large: 8px;
+  --button-radius-small: 3px;
+  --color-blue: rgb(3, 138, 255);
+  --color-blue-rgb: 3, 138, 255;
+  --color-cyan: rgb(54, 215, 183);
+  --color-cyan-rgb: 54, 215, 183;
+  --color-green: rgb(120, 186, 126);
+  --color-green-rgb: 120, 186, 126;
+  --color-orange: rgb(243, 156, 18);
+  --color-orange-rgb: 243, 156, 18;
+  --color-pink: rgb(242, 63, 165);
+  --color-pink-rgb: 242, 63, 165;
+  --color-purple: rgb(148, 85, 236);
+  --color-purple-rgb: 148, 85, 236;
+  --color-red: rgb(254, 121, 104);
+  --color-red-rgb: 254, 121, 104;
+  --color-yellow: rgb(229, 199, 0);
+  --color-yellow-rgb: 229, 199, 0;
+  --image-radius: 6px;
+  --input-radius: 5px;
+  --list-radius-large: 12px;
+  --list-radius-medium: 6px;
+  --list-radius-small: 3px;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --neumorphic-transition: all 0.15s;
+  --neumorphic-transition-faster: all 0.10s;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(0, 0, 0);
@@ -544,6 +577,54 @@ html body .text-highlight {
   text-decoration-color: rgb(0, 0, 0);
 }
 
+html body article > h1 {
+  --color-blue: #086ddd;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #00bfbc;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #08b94e;
+  --color-green-rgb: 8, 185, 78;
+  --color-orange: #ec7500;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #d53984;
+  --color-pink-rgb: 213, 57, 132;
+  --color-purple: #7852ee;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: #e93147;
+  --color-red-rgb: 233, 49, 71;
+  --color-yellow: #e0ac00;
+  --color-yellow-rgb: 224, 172, 0;
+  --font-weight: 700;
+  background-color: rgb(232, 241, 252);
+  border-bottom-color: rgb(0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgb(0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(0, 0, 0);
+  content: "";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 25.888px;
+  font-weight: 700;
+  letter-spacing: -0.38832px;
+  line-height: 31.0656px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html body del {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
@@ -552,6 +633,54 @@ html body del {
 
 html body h1.article-title {
   color: rgb(0, 0, 0);
+}
+
+html body h2 {
+  --color-blue: #086ddd;
+  --color-blue-rgb: 8, 109, 221;
+  --color-cyan: #00bfbc;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-green: #08b94e;
+  --color-green-rgb: 8, 185, 78;
+  --color-orange: #ec7500;
+  --color-orange-rgb: 236, 117, 0;
+  --color-pink: #d53984;
+  --color-pink-rgb: 213, 57, 132;
+  --color-purple: #7852ee;
+  --color-purple-rgb: 120, 82, 238;
+  --color-red: #e93147;
+  --color-red-rgb: 233, 49, 71;
+  --color-yellow: #e0ac00;
+  --color-yellow-rgb: 224, 172, 0;
+  --font-weight: 680;
+  background-color: rgb(232, 241, 252);
+  border-bottom-color: rgb(0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgb(0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgb(0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(0, 0, 0);
+  content: "";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 23.392px;
+  font-weight: 680;
+  letter-spacing: -0.257312px;
+  line-height: 28.0704px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body li.task-list-item input[type="checkbox"] {
@@ -780,6 +909,276 @@ html body .transclude-inner {
   border-right-color: rgb(158, 159, 169);
   border-top-color: rgb(158, 159, 169);
   transition: 0.15s;
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgb(0, 0, 0);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="X"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: none;
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="x"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: none;
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgb(0, 0, 0);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgb(0, 0, 0);
 }
 
 html body li.task-list-item[data-task='!'] {

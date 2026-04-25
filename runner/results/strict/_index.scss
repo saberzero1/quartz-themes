@@ -4011,6 +4011,10 @@ body {
     font-weight: 400;
   }
 
+  html {
+    --text-highlight-bg: #006600;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 

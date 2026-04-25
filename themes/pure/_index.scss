@@ -4849,6 +4849,10 @@ body {
     font-weight: 400;
   }
 
+  html {
+    --checkbox-size: 1em;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 
@@ -8450,6 +8454,10 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
       font-size: 13px;
       font-weight: 400;
+    }
+
+    html {
+      --checkbox-size: 1em;
     }
   }
 }

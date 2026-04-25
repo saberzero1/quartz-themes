@@ -1754,25 +1754,25 @@ html {
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/modern-genz-vibedose/jost.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/modern-genz-vibedose/jost.woff2") format("woff2");
 }
 @font-face {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/modern-genz-vibedose/satoshi.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/modern-genz-vibedose/satoshi.woff2") format("woff2");
 }
 @font-face {
   font-family: "Syne";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/modern-genz-vibedose/syne.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/modern-genz-vibedose/syne.woff2") format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/modern-genz-vibedose/jetbrains-mono.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/modern-genz-vibedose/jetbrains-mono.woff2") format("woff2");
 }
 
 body {
@@ -4701,6 +4701,21 @@ body {
     color: rgb(34, 34, 34);
     font-size: 13px;
     font-weight: 400;
+  }
+
+  html {
+    --faded-aqua: #83c092;
+    --faded-blue: #7fbbb3;
+    --faded-green: #a7c080;
+    --faded-orange: #e69875;
+    --faded-red: #e67e80;
+    --faded-yellow: #dbbc7f;
+    --light-aqua: #569d79;
+    --light-blue: #5a93a2;
+    --light-green: #899c40;
+    --light-orange: #f57d26;
+    --light-red: #f85552;
+    --light-yellow: #bf983d;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -8275,6 +8290,21 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
       font-size: 13px;
       font-weight: 400;
+    }
+
+    html {
+      --faded-aqua: #83c092;
+      --faded-blue: #7fbbb3;
+      --faded-green: #a7c080;
+      --faded-orange: #e69875;
+      --faded-red: #e67e80;
+      --faded-yellow: #dbbc7f;
+      --light-aqua: #569d79;
+      --light-blue: #5a93a2;
+      --light-green: #899c40;
+      --light-orange: #f57d26;
+      --light-red: #f85552;
+      --light-yellow: #bf983d;
     }
   }
 }

@@ -2876,6 +2876,23 @@ body {
       "Segoe UI",
       sans-serif;
     text-shadow: none;
+    --color-accent: hsl(258, 88%, 66%);
+    border-color: rgb(0, 183, 235) rgb(0, 183, 235) currentcolor;
+    border-bottom: rgb(0, 183, 235);
+    border-width: 0px;
+    --font-weight: 680;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    content: " ";
+    font-size: 23.392px;
+    font-weight: 680;
+    letter-spacing: -0.257312px;
+    line-height: 28.0704px;
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
   }
 
   h3 {
@@ -2887,6 +2904,23 @@ body {
       "Segoe UI",
       sans-serif;
     text-shadow: none;
+    --color-accent: hsl(258, 88%, 66%);
+    border-color: rgb(255, 140, 0) rgb(255, 140, 0) currentcolor;
+    border-bottom: rgb(255, 140, 0);
+    border-width: 0px;
+    --font-weight: 660;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    content: " ";
+    font-size: 21.088px;
+    font-weight: 660;
+    letter-spacing: -0.168704px;
+    line-height: 27.4144px;
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
   }
 
   h4 {
@@ -2898,6 +2932,23 @@ body {
       "Segoe UI",
       sans-serif;
     text-shadow: none;
+    --color-accent: hsl(258, 88%, 66%);
+    border-color: rgb(0, 0, 204) rgb(0, 0, 204) currentcolor;
+    border-bottom: rgb(0, 0, 204);
+    border-width: 0px;
+    --font-weight: 640;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    content: " ";
+    font-size: 19.008px;
+    font-weight: 640;
+    letter-spacing: -0.09504px;
+    line-height: 26.6112px;
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
   }
 
   h5 {
@@ -2909,6 +2960,23 @@ body {
       "Segoe UI",
       sans-serif;
     text-shadow: none;
+    --color-accent: hsl(258, 88%, 66%);
+    border-color: rgb(204, 0, 0) rgb(204, 0, 0) currentcolor;
+    border-bottom: rgb(204, 0, 0);
+    border-width: 0px;
+    --font-weight: 620;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    content: " ";
+    font-size: 17.216px;
+    font-weight: 620;
+    letter-spacing: -0.034432px;
+    line-height: 25.824px;
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
   }
 
   h6 {
@@ -2920,6 +2988,21 @@ body {
       "Segoe UI",
       sans-serif;
     text-shadow: none;
+    --color-accent: hsl(258, 88%, 66%);
+    border-color: rgb(204, 204, 0) rgb(204, 204, 0) currentcolor;
+    border-bottom: rgb(204, 204, 0);
+    border-width: 0px;
+    --font-weight: 600;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    content: " ";
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
   }
 
   h2.page-title,
@@ -4752,6 +4835,470 @@ body {
     font-weight: 400;
   }
 
+  article > h1 {
+    color: rgb(204, 0, 196);
+    --color-accent: hsl(258, 88%, 66%);
+    border-color: rgb(204, 0, 196) rgb(204, 0, 196) currentcolor;
+    border-bottom: rgb(204, 0, 196);
+    border-width: 0px;
+    --font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    content: " ";
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    font-size: 25.888px;
+    font-weight: 700;
+    letter-spacing: -0.38832px;
+    line-height: 31.0656px;
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
+  }
+
+  li.task-list-item[data-task="_"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=","] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=";"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=":"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="."] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="'"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="@"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="&"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="#"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="%"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="`"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="+"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="<"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="="] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="|"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="~"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="$"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="0"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="1"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="2"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="3"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="4"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="5"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="6"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="7"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="8"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="9"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="a"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="A"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="B"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="C"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="D"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="e"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="E"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="F"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="g"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="G"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="h"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="H"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="j"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="J"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="K"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="L"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="m"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="M"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="n"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="N"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="o"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="O"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="P"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="q"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Q"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="r"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="R"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="s"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="t"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="T"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="U"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="v"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="V"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="W"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="x"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(138, 92, 245);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="X"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(138, 92, 245);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="y"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Y"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="z"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Z"] {
+    --color-accent: hsl(258, 88%, 66%);
+    color: rgb(26, 32, 35);
+    text-decoration-line: none;
+  }
+
+  html {
+    --base-font-size: 16px;
+    --border-radius-large: 8px;
+    --border-radius-medium: 6px;
+    --border-radius-small: 4px;
+    --color-accent: #0066cc;
+    --color-accent-hover: #004499;
+    --color-border: #00ffff;
+    --content-max-width: 100%;
+    --custom-font-family: Arial, sans-serif;
+    --dark-bg-primary: #060335;
+    --dark-bg-primary-alt: #242424;
+    --dark-bg-secondary: #191919;
+    --dark-bg-secondary-alt: #3d3d3d;
+    --dark-text: #faf2d6;
+    --dark-text-faint: #c0b0a0;
+    --default-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --h1-color: #cc00c4;
+    --h2-color: #00b7eb;
+    --h3-color: #ff8c00;
+    --h4-color: #0000cc;
+    --h5-color: #cc0000;
+    --h6-color: #cccc00;
+    --light-bg-primary: #ededed;
+    --light-bg-primary-alt: #d4d4d4;
+    --light-bg-secondary: #c4c4c4;
+    --light-bg-secondary-alt: #707070;
+    --light-text: #1a2023;
+    --light-text-faint: #999999;
+    --line-height: 1.6;
+    --rainbow-folders-enabled: 1;
+    --sidebar-width: 300px;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 
@@ -6184,6 +6731,23 @@ html[saved-theme="dark"] {
         "Segoe UI",
         sans-serif;
       text-shadow: none;
+      --color-accent: hsl(258, 88%, 66%);
+      border-color: rgb(0, 183, 235) rgb(0, 183, 235) currentcolor;
+      border-bottom: rgb(0, 183, 235);
+      border-width: 0px;
+      --font-weight: 680;
+      background-color: rgba(0, 0, 0, 0);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      content: " ";
+      font-size: 23.392px;
+      font-weight: 680;
+      letter-spacing: -0.257312px;
+      line-height: 28.0704px;
+      margin: 0px 6px 0px 0px;
+      padding: 0px;
     }
 
     h3 {
@@ -6195,6 +6759,23 @@ html[saved-theme="dark"] {
         "Segoe UI",
         sans-serif;
       text-shadow: none;
+      --color-accent: hsl(258, 88%, 66%);
+      border-color: rgb(255, 140, 0) rgb(255, 140, 0) currentcolor;
+      border-bottom: rgb(255, 140, 0);
+      border-width: 0px;
+      --font-weight: 660;
+      background-color: rgba(0, 0, 0, 0);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      content: " ";
+      font-size: 21.088px;
+      font-weight: 660;
+      letter-spacing: -0.168704px;
+      line-height: 27.4144px;
+      margin: 0px 6px 0px 0px;
+      padding: 0px;
     }
 
     h4 {
@@ -6206,6 +6787,23 @@ html[saved-theme="dark"] {
         "Segoe UI",
         sans-serif;
       text-shadow: none;
+      --color-accent: hsl(258, 88%, 66%);
+      border-color: rgb(0, 0, 204) rgb(0, 0, 204) currentcolor;
+      border-bottom: rgb(0, 0, 204);
+      border-width: 0px;
+      --font-weight: 640;
+      background-color: rgba(0, 0, 0, 0);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      content: " ";
+      font-size: 19.008px;
+      font-weight: 640;
+      letter-spacing: -0.09504px;
+      line-height: 26.6112px;
+      margin: 0px 6px 0px 0px;
+      padding: 0px;
     }
 
     h5 {
@@ -6217,6 +6815,23 @@ html[saved-theme="dark"] {
         "Segoe UI",
         sans-serif;
       text-shadow: none;
+      --color-accent: hsl(258, 88%, 66%);
+      border-color: rgb(204, 0, 0) rgb(204, 0, 0) currentcolor;
+      border-bottom: rgb(204, 0, 0);
+      border-width: 0px;
+      --font-weight: 620;
+      background-color: rgba(0, 0, 0, 0);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      content: " ";
+      font-size: 17.216px;
+      font-weight: 620;
+      letter-spacing: -0.034432px;
+      line-height: 25.824px;
+      margin: 0px 6px 0px 0px;
+      padding: 0px;
     }
 
     h6 {
@@ -6228,6 +6843,21 @@ html[saved-theme="dark"] {
         "Segoe UI",
         sans-serif;
       text-shadow: none;
+      --color-accent: hsl(258, 88%, 66%);
+      border-color: rgb(204, 204, 0) rgb(204, 204, 0) currentcolor;
+      border-bottom: rgb(204, 204, 0);
+      border-width: 0px;
+      --font-weight: 600;
+      background-color: rgba(0, 0, 0, 0);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      content: " ";
+      font-weight: 600;
+      line-height: 24px;
+      margin: 0px 6px 0px 0px;
+      padding: 0px;
     }
 
     h2.page-title,
@@ -8058,6 +8688,470 @@ html[saved-theme="dark"] {
       color: rgb(250, 242, 214);
       font-size: 13px;
       font-weight: 400;
+    }
+
+    article > h1 {
+      color: rgb(204, 0, 196);
+      --color-accent: hsl(258, 88%, 66%);
+      border-color: rgb(204, 0, 196) rgb(204, 0, 196) currentcolor;
+      border-bottom: rgb(204, 0, 196);
+      border-width: 0px;
+      --font-weight: 700;
+      background-color: rgba(0, 0, 0, 0);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      content: " ";
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      font-size: 25.888px;
+      font-weight: 700;
+      letter-spacing: -0.38832px;
+      line-height: 31.0656px;
+      margin: 0px 6px 0px 0px;
+      padding: 0px;
+    }
+
+    li.task-list-item[data-task="_"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=","] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=";"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=":"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="."] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="'"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="@"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="&"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="#"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="%"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="`"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="+"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="<"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="="] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="|"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="~"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="$"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="0"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="1"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="2"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="3"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="4"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="5"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="6"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="7"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="8"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="9"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="a"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="A"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="B"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="C"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="D"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="e"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="E"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="F"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="g"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="G"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="h"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="H"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="j"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="J"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="K"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="L"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="m"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="M"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="n"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="N"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="o"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="O"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="P"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="q"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Q"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="r"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="R"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="s"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="t"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="T"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="U"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="v"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="V"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="W"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="x"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(138, 92, 245);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="X"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(138, 92, 245);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="y"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Y"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="z"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Z"] {
+      --color-accent: hsl(258, 88%, 66%);
+      color: rgb(250, 242, 214);
+      text-decoration-line: none;
+    }
+
+    html {
+      --base-font-size: 16px;
+      --border-radius-large: 8px;
+      --border-radius-medium: 6px;
+      --border-radius-small: 4px;
+      --color-accent: #0066cc;
+      --color-accent-hover: #004499;
+      --color-border: #00ffff;
+      --content-max-width: 100%;
+      --custom-font-family: Arial, sans-serif;
+      --dark-bg-primary: #060335;
+      --dark-bg-primary-alt: #242424;
+      --dark-bg-secondary: #191919;
+      --dark-bg-secondary-alt: #3d3d3d;
+      --dark-text: #faf2d6;
+      --dark-text-faint: #c0b0a0;
+      --default-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --h1-color: #cc00c4;
+      --h2-color: #00b7eb;
+      --h3-color: #ff8c00;
+      --h4-color: #0000cc;
+      --h5-color: #cc0000;
+      --h6-color: #cccc00;
+      --light-bg-primary: #ededed;
+      --light-bg-primary-alt: #d4d4d4;
+      --light-bg-secondary: #c4c4c4;
+      --light-bg-secondary-alt: #707070;
+      --light-text: #1a2023;
+      --light-text-faint: #999999;
+      --line-height: 1.6;
+      --rainbow-folders-enabled: 1;
+      --sidebar-width: 300px;
     }
   }
 }

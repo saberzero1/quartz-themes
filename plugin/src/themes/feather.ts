@@ -597,6 +597,14 @@ html[saved-theme="dark"] body input[type=checkbox] {
   width: 17.5938px;
 }
 
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(190, 198, 207);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(190, 198, 207);
+}
+
 html[saved-theme="dark"] body li.task-list-item[data-task='-'] {
   color: rgb(93, 109, 126);
   text-decoration: line-through 1px rgb(240, 48, 99);
@@ -2186,6 +2194,14 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-top-right-radius: 30%;
   margin-left: -26.4px;
   width: 17.5938px;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(85, 94, 104);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(85, 94, 104);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='-'] {

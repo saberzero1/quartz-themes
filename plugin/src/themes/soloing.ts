@@ -165,6 +165,58 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(26, 28, 37);
+}
+
+html[saved-theme="dark"] body html {
+  --anti-flash-white: #EBEBEB;
+  --background-1st-dark: #1a1c25;
+  --background-1st-light: #f6f6fc;
+  --background-2nd-dark: #20212b;
+  --background-2nd-light: #eceff5;
+  --bittersweet: #F05D5E;
+  --bright-green: #5AFF15;
+  --cool-gray: #7C809B;
+  --cool-gray-light: #cbcdd3;
+  --dark-accent: #5AFF15;
+  --dark-background-primary: #1a1c25;
+  --dark-background-secondary: #20212b;
+  --dark-code: #C3F73A;
+  --dark-code-background: #292c3a;
+  --dark-divider-color: #2f3144;
+  --dark-hr-color: #6e8166;
+  --dark-link: #13C4A3;
+  --dark-mint: #2f9b56;
+  --dark-purple: #242032;
+  --floral-white: #FFF8F0;
+  --folly: #FF3366;
+  --folly-dark: #c7204a;
+  --french-gray: #D1D2DC;
+  --gold: rgb(253, 233, 9);
+  --gold-light: #e8e08b;
+  --light-accent: #3fc570;
+  --light-background-primary: #f6f6fc;
+  --light-background-secondary: #eceff5;
+  --light-code: #2f9b56;
+  --light-code-background: #eceff5;
+  --light-divider: #dbe1f0;
+  --light-divider-color: #dbe1f0;
+  --light-hr-color: #dbe1f0;
+  --light-link: #3fc570;
+  --light-mint: #3fc570;
+  --light-sea-green: #00BFB3;
+  --lime: #C3F73A;
+  --lime-dark: #92cb00;
+  --line-width: 850px;
+  --mint: #13C4A3;
+  --mint-light: #9af6e5;
+  --raisin-black: #1B1825;
+  --rich-black: #121019;
+  --robin-egg-blue: #19D8D5;
+  --tropical-indigo: #685fce;
+  --tropical-indigo-light: #A69EFA;
+  --white: #FCFCFC;
+  --white-smoke: #F5F5F5;
+  --ylmn-blue: #375BA9;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(19, 196, 163);
@@ -259,7 +311,17 @@ html[saved-theme="dark"] body pre:has(> code) {
 html[saved-theme="dark"] body .transclude {
   border-left-color: rgb(90, 255, 21);
 }`,
-    checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+    checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(124, 128, 155);
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(124, 128, 155);
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
   mask-size: contain;
@@ -831,6 +893,58 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(246, 246, 252);
+}
+
+html[saved-theme="light"] body html {
+  --anti-flash-white: #EBEBEB;
+  --background-1st-dark: #1a1c25;
+  --background-1st-light: #f6f6fc;
+  --background-2nd-dark: #20212b;
+  --background-2nd-light: #eceff5;
+  --bittersweet: #F05D5E;
+  --bright-green: #5AFF15;
+  --cool-gray: #7C809B;
+  --cool-gray-light: #cbcdd3;
+  --dark-accent: #5AFF15;
+  --dark-background-primary: #1a1c25;
+  --dark-background-secondary: #20212b;
+  --dark-code: #C3F73A;
+  --dark-code-background: #292c3a;
+  --dark-divider-color: #2f3144;
+  --dark-hr-color: #6e8166;
+  --dark-link: #13C4A3;
+  --dark-mint: #2f9b56;
+  --dark-purple: #242032;
+  --floral-white: #FFF8F0;
+  --folly: #FF3366;
+  --folly-dark: #c7204a;
+  --french-gray: #D1D2DC;
+  --gold: rgb(253, 233, 9);
+  --gold-light: #e8e08b;
+  --light-accent: #3fc570;
+  --light-background-primary: #f6f6fc;
+  --light-background-secondary: #eceff5;
+  --light-code: #2f9b56;
+  --light-code-background: #eceff5;
+  --light-divider: #dbe1f0;
+  --light-divider-color: #dbe1f0;
+  --light-hr-color: #dbe1f0;
+  --light-link: #3fc570;
+  --light-mint: #3fc570;
+  --light-sea-green: #00BFB3;
+  --lime: #C3F73A;
+  --lime-dark: #92cb00;
+  --line-width: 850px;
+  --mint: #13C4A3;
+  --mint-light: #9af6e5;
+  --raisin-black: #1B1825;
+  --rich-black: #121019;
+  --robin-egg-blue: #19D8D5;
+  --tropical-indigo: #685fce;
+  --tropical-indigo-light: #A69EFA;
+  --white: #FCFCFC;
+  --white-smoke: #F5F5F5;
+  --ylmn-blue: #375BA9;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(47, 155, 86);
@@ -930,7 +1044,17 @@ html[saved-theme="light"] body pre:has(> code) {
 html[saved-theme="light"] body .transclude {
   border-left-color: rgb(63, 197, 112);
 }`,
-    checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
+    checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(124, 128, 155);
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(124, 128, 155);
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
   mask-size: contain;

@@ -1778,25 +1778,25 @@ html {
   font-family: "TT2020 Base";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/sandover/tt2020-base.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/sandover/tt2020-base.woff2") format("woff2");
 }
 @font-face {
   font-family: "TT2020 Base";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/sandover/tt2020-base-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/sandover/tt2020-base-1.woff2") format("woff2");
 }
 @font-face {
   font-family: "TT2020 Base";
   font-style: bold;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/sandover/tt2020-base-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/sandover/tt2020-base-2.woff2") format("woff2");
 }
 @font-face {
   font-family: "TT2020 Base";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/sandover/tt2020-base-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/sandover/tt2020-base-3.woff2") format("woff2");
 }
 
 body {
@@ -4410,6 +4410,2113 @@ body {
     color: rgb(0, 0, 0);
     font-size: 13px;
     font-weight: 400;
+  }
+
+  li.task-list-item[data-task="_"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task=","] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task=";"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task=":"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="."] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="'"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="@"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="&"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="#"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="%"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="`"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="+"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="<"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="="] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="|"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="~"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="$"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="0"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="1"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="2"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="3"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="4"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="5"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="6"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="7"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="8"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="9"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="a"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="A"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="B"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="C"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="D"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="e"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="E"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="F"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="g"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="G"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="h"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="H"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="j"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="J"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="K"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="L"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="m"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="M"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="n"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="N"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="o"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="O"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="P"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="q"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="Q"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="r"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="R"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="s"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="t"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="T"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="U"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="v"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="V"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="W"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="x"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="X"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="y"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="Y"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="z"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  li.task-list-item[data-task="Z"] {
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
+    --color-blue: #086ddd;
+    --color-blue-rgb: 8, 109, 221;
+    --color-cyan: #00bfbc;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-green: #08b94e;
+    --color-green-rgb: 8, 185, 78;
+    --color-orange: #ec7500;
+    --color-orange-rgb: 236, 117, 0;
+    --color-pink: #d53984;
+    --color-red: #e93147;
+    --color-red-rgb: 233, 49, 71;
+    --color-yellow: #e0ac00;
+    --color-yellow-rgb: 224, 172, 0;
+  }
+
+  html {
+    --color-blue: #537791;
+    --color-blue-rgb: 83, 119, 145;
+    --color-cyan: #a6e6e3;
+    --color-cyan-rgb: 166, 230, 227;
+    --color-dark1: #282828;
+    --color-dark1-rgb: 40, 40, 40;
+    --color-darker-purple: 153, 119, 181;
+    --color-gray-rgb: 240, 240, 240;
+    --color-green: #ace099;
+    --color-green-rgb: 172, 224, 153;
+    --color-light1: #fffcf4;
+    --color-light1-rgb: 255, 252, 244;
+    --color-orange: #ff5400;
+    --color-orange-rgb: 255, 84, 0;
+    --color-pink: #fc62a2;
+    --color-red: #ff394d;
+    --color-red-rgb: 255, 57, 77;
+    --color-salmon: #ff8671;
+    --color-salmon-lighter: #ffa99a;
+    --color-salmon-lighter-rgb: 255, 169, 154;
+    --color-salmon-rgb: 255, 134, 113;
+    --color-yellow: #ffd77d;
+    --color-yellow-light: #ffe5a7;
+    --color-yellow-light-rgb: 255, 229, 167;
+    --color-yellow-rgb: 255, 215, 125;
+    --sandover-purple: #c585cc;
+    --sandover-purple-rgb: 197, 133, 204;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -7669,6 +9776,2113 @@ html[saved-theme="dark"] {
       color: rgb(255, 252, 244);
       font-size: 13px;
       font-weight: 400;
+    }
+
+    li.task-list-item[data-task="_"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task=","] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task=";"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task=":"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="."] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="'"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="@"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="&"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="#"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="%"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="`"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="+"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="<"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="="] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="|"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="~"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="$"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="0"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="1"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="2"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="3"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="4"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="5"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="6"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="7"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="8"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="9"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="a"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="A"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="B"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="C"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="D"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="e"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="E"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="F"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="g"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="G"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="h"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="H"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="j"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="J"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="K"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="L"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="m"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="M"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="n"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="N"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="o"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="O"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="P"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="q"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="Q"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="r"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="R"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="s"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="t"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="T"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="U"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="v"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="V"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="W"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="x"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="X"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="y"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="Y"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="z"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    li.task-list-item[data-task="Z"] {
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      margin-left: 0px;
+      --color-blue: #027aff;
+      --color-blue-rgb: 2, 122, 255;
+      --color-cyan: #53dfdd;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-green: #44cf6e;
+      --color-green-rgb: 68, 207, 110;
+      --color-orange: #e9973f;
+      --color-orange-rgb: 233, 151, 63;
+      --color-pink: #fa99cd;
+      --color-red: #fb464c;
+      --color-red-rgb: 251, 70, 76;
+      --color-yellow: #e0de71;
+      --color-yellow-rgb: 224, 222, 113;
+    }
+
+    html {
+      --color-blue: #537791;
+      --color-blue-rgb: 83, 119, 145;
+      --color-cyan: #a6e6e3;
+      --color-cyan-rgb: 166, 230, 227;
+      --color-dark1: #282828;
+      --color-dark1-rgb: 40, 40, 40;
+      --color-darker-purple: 153, 119, 181;
+      --color-gray-rgb: 240, 240, 240;
+      --color-green: #ace099;
+      --color-green-rgb: 172, 224, 153;
+      --color-light1: #fffcf4;
+      --color-light1-rgb: 255, 252, 244;
+      --color-orange: #ff5400;
+      --color-orange-rgb: 255, 84, 0;
+      --color-pink: #fc62a2;
+      --color-red: #ff394d;
+      --color-red-rgb: 255, 57, 77;
+      --color-salmon: #ff8671;
+      --color-salmon-lighter: #ffa99a;
+      --color-salmon-lighter-rgb: 255, 169, 154;
+      --color-salmon-rgb: 255, 134, 113;
+      --color-yellow: #ffd77d;
+      --color-yellow-light: #ffe5a7;
+      --color-yellow-light-rgb: 255, 229, 167;
+      --color-yellow-rgb: 255, 215, 125;
+      --sandover-purple: #c585cc;
+      --sandover-purple-rgb: 197, 133, 204;
     }
   }
 }

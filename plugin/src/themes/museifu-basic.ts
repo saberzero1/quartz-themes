@@ -246,6 +246,30 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(22, 22, 22);
   color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body html {
+  --default-font: 'JetBrains Mono', monospace;
+  --font-interface-theme: 'JetBrains Mono', monospace;
+  --font-text-theme: 'JetBrains Mono', monospace;
+  --large-kanban-width: 400px;
+  --pen-black: #26241f;
+  --pen-blue: #3f76ed;
+  --pen-gray: #5f5d58;
+  --pen-green: #15b64f;
+  --pen-light-blue: #54b6f8;
+  --pen-museifu-cream: #804620;
+  --pen-museifu-dark: #838383;
+  --pen-museifu-paperdark: #beb7b7;
+  --pen-museifu-paperlike: #32302c;
+  --pen-museifu-simple: #edf1fc;
+  --pen-purple: #9b4ff0;
+  --pen-red: #e14a49;
+  --pen-white: #edf1fc;
+  --radius-l: 15px;
+  --radius-m: 10px;
+  --radius-s: 5px;
+  --radius-xl: 20px;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: color(srgb 0.632256 0.48864 0.96736);
@@ -1896,6 +1920,30 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(228, 228, 228);
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body html {
+  --default-font: 'JetBrains Mono', monospace;
+  --font-interface-theme: 'JetBrains Mono', monospace;
+  --font-text-theme: 'JetBrains Mono', monospace;
+  --large-kanban-width: 400px;
+  --pen-black: #26241f;
+  --pen-blue: #3f76ed;
+  --pen-gray: #5f5d58;
+  --pen-green: #15b64f;
+  --pen-light-blue: #54b6f8;
+  --pen-museifu-cream: #804620;
+  --pen-museifu-dark: #838383;
+  --pen-museifu-paperdark: #beb7b7;
+  --pen-museifu-paperlike: #32302c;
+  --pen-museifu-simple: #edf1fc;
+  --pen-purple: #9b4ff0;
+  --pen-red: #e14a49;
+  --pen-white: #edf1fc;
+  --radius-l: 15px;
+  --radius-m: 10px;
+  --radius-s: 5px;
+  --radius-xl: 20px;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: color(srgb 0.432256 0.28864 0.76736);

@@ -9,3 +9,4 @@ runner/quartz
 .obsidian-cache
 runner/results/**/dark.json
 runner/results/**/light.json
+.playwright-mcp

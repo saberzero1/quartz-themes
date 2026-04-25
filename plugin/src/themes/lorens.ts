@@ -664,6 +664,104 @@ html body h1.article-title {
   color: rgb(204, 212, 224);
 }
 
+html body h2 {
+  --font-weight: 675;
+  background-color: rgb(13, 200, 242);
+  border-bottom-color: rgb(13, 200, 242);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(13, 200, 242);
+  border-left-width: 0px;
+  border-right-color: rgb(13, 200, 242);
+  border-right-width: 0px;
+  border-top-color: rgb(13, 200, 242);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-width: 0px;
+  color: rgb(13, 200, 242);
+  content: " ";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 22.8px;
+  font-weight: 675;
+  letter-spacing: -0.2508px;
+  line-height: 27.36px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 4);
+}
+
+html body h3 {
+  --font-weight: 650;
+  background-color: rgb(114, 213, 165);
+  border-bottom-color: rgb(114, 213, 165);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(114, 213, 165);
+  border-left-width: 0px;
+  border-right-color: rgb(114, 213, 165);
+  border-right-width: 0px;
+  border-top-color: rgb(114, 213, 165);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-width: 0px;
+  color: rgb(114, 213, 165);
+  content: " ";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 21.6px;
+  font-weight: 650;
+  letter-spacing: -0.1728px;
+  line-height: 28.08px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 4);
+}
+
+html body h4 {
+  --font-weight: 625;
+  background-color: rgb(185, 195, 223);
+  border-bottom-color: rgb(185, 195, 223);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(185, 195, 223);
+  border-left-width: 0px;
+  border-right-color: rgb(185, 195, 223);
+  border-right-width: 0px;
+  border-top-color: rgb(185, 195, 223);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-width: 0px;
+  color: rgb(185, 195, 223);
+  content: " ";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 20.4px;
+  font-weight: 625;
+  letter-spacing: -0.102px;
+  line-height: 28.56px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html body li.task-list-item input[type="checkbox"] {
   border-color: rgb(99, 110, 126);
 }
@@ -932,6 +1030,274 @@ html body .transclude-inner {
   border-right-color: rgb(99, 110, 126);
   border-top-color: rgb(99, 110, 126);
   transition: box-shadow 0.3s cubic-bezier(0, 0.55, 0.45, 1), filter 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgb(204, 212, 224);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="X"] {
+  color: rgb(99, 110, 126);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="x"] {
+  color: rgb(99, 110, 126);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgb(204, 212, 224);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgb(204, 212, 224);
 }
 
 html body li.task-list-item[data-task='!'] {

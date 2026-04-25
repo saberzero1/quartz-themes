@@ -2,14 +2,14 @@
   font-family: "jinkaiFont";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/virgo/jinkaifont.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/virgo/jinkaifont.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "romanFont";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/virgo/romanfont.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/virgo/romanfont.woff2")
     format("woff2");
 }
 body.theme-light {

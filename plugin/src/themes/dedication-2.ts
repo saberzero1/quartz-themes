@@ -238,6 +238,11 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(13, 17, 23);
   color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body html {
+  --default-font: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --mono-font: "SF Mono", "Cascadia Code", "JetBrains Mono", "Fira Code", monospace;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(0, 245, 106);
@@ -279,6 +284,38 @@ html[saved-theme="dark"] body .text-highlight {
   text-decoration-color: rgb(222, 222, 222);
 }
 
+html[saved-theme="dark"] body article > h1 {
+  --font-weight: 700;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(40, 154, 255);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(40, 154, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(40, 154, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(40, 154, 255);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  color: rgb(40, 154, 255);
+  content: " ";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 25.888px;
+  font-weight: 700;
+  letter-spacing: -0.38832px;
+  line-height: 31.0656px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body del {
   color: rgb(192, 176, 160);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -289,6 +326,164 @@ html[saved-theme="dark"] body del {
 
 html[saved-theme="dark"] body h1.article-title {
   color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body h2 {
+  --font-weight: 680;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(0, 245, 106);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(0, 245, 106);
+  border-left-width: 0px;
+  border-right-color: rgb(0, 245, 106);
+  border-right-width: 0px;
+  border-top-color: rgb(0, 245, 106);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  color: rgb(0, 245, 106);
+  content: " ";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 23.392px;
+  font-weight: 680;
+  letter-spacing: -0.257312px;
+  line-height: 28.0704px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h3 {
+  --font-weight: 660;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(10, 247, 255);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(10, 247, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(10, 247, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(10, 247, 255);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  color: rgb(10, 247, 255);
+  content: " ";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 21.088px;
+  font-weight: 660;
+  letter-spacing: -0.168704px;
+  line-height: 27.4144px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h4 {
+  --font-weight: 640;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(249, 248, 113);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(249, 248, 113);
+  border-left-width: 0px;
+  border-right-color: rgb(249, 248, 113);
+  border-right-width: 0px;
+  border-top-color: rgb(249, 248, 113);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  color: rgb(249, 248, 113);
+  content: " ";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 19.008px;
+  font-weight: 640;
+  letter-spacing: -0.09504px;
+  line-height: 26.6112px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h5 {
+  --font-weight: 620;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(255, 87, 87);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 87, 87);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 87, 87);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 87, 87);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  color: rgb(255, 87, 87);
+  content: " ";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 17.216px;
+  font-weight: 620;
+  letter-spacing: -0.034432px;
+  line-height: 25.824px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h6 {
+  --font-weight: 600;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(255, 60, 213);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 60, 213);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 60, 213);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 60, 213);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  color: rgb(255, 60, 213);
+  content: " ";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
@@ -561,6 +756,276 @@ html[saved-theme="dark"] body .transclude-inner {
   margin-bottom: 2.66667px;
   transition: 0.2s;
   width: 16.6562px;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(192, 176, 160);
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(192, 176, 160);
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgb(222, 222, 222);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -1554,6 +2019,11 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(237, 237, 237);
   color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body html {
+  --default-font: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --mono-font: "SF Mono", "Cascadia Code", "JetBrains Mono", "Fira Code", monospace;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(0, 200, 83);
@@ -1595,6 +2065,38 @@ html[saved-theme="light"] body .text-highlight {
   text-decoration-color: rgb(26, 32, 35);
 }
 
+html[saved-theme="light"] body article > h1 {
+  --font-weight: 700;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(0, 118, 255);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(0, 118, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(0, 118, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(0, 118, 255);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  color: rgb(0, 118, 255);
+  content: " ";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 25.888px;
+  font-weight: 700;
+  letter-spacing: -0.38832px;
+  line-height: 31.0656px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body del {
   color: rgb(153, 153, 153);
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -1605,6 +2107,164 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body h1.article-title {
   color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body h2 {
+  --font-weight: 680;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(0, 200, 83);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(0, 200, 83);
+  border-left-width: 0px;
+  border-right-color: rgb(0, 200, 83);
+  border-right-width: 0px;
+  border-top-color: rgb(0, 200, 83);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  color: rgb(0, 200, 83);
+  content: " ";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 23.392px;
+  font-weight: 680;
+  letter-spacing: -0.257312px;
+  line-height: 28.0704px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h3 {
+  --font-weight: 660;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(0, 184, 212);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(0, 184, 212);
+  border-left-width: 0px;
+  border-right-color: rgb(0, 184, 212);
+  border-right-width: 0px;
+  border-top-color: rgb(0, 184, 212);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  color: rgb(0, 184, 212);
+  content: " ";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 21.088px;
+  font-weight: 660;
+  letter-spacing: -0.168704px;
+  line-height: 27.4144px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h4 {
+  --font-weight: 640;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(255, 145, 0);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 145, 0);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 145, 0);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 145, 0);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  color: rgb(255, 145, 0);
+  content: " ";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 19.008px;
+  font-weight: 640;
+  letter-spacing: -0.09504px;
+  line-height: 26.6112px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h5 {
+  --font-weight: 620;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(255, 23, 68);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 23, 68);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 23, 68);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 23, 68);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  color: rgb(255, 23, 68);
+  content: " ";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 17.216px;
+  font-weight: 620;
+  letter-spacing: -0.034432px;
+  line-height: 25.824px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h6 {
+  --font-weight: 600;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(224, 64, 251);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(224, 64, 251);
+  border-left-width: 0px;
+  border-right-color: rgb(224, 64, 251);
+  border-right-width: 0px;
+  border-top-color: rgb(224, 64, 251);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-width: 0px;
+  color: rgb(224, 64, 251);
+  content: " ";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 6px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -1881,6 +2541,276 @@ html[saved-theme="light"] body .transclude-inner {
   margin-bottom: 2.66667px;
   transition: 0.2s;
   width: 16.6562px;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(153, 153, 153);
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(153, 153, 153);
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: rgb(26, 32, 35);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: rgb(26, 32, 35);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {

@@ -1288,6 +1288,274 @@ html[saved-theme="dark"] body input[type=checkbox] {
   margin-right: 8.64px;
 }
 
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: oklch(0.68 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: oklch(0.68 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: oklch(0.98 0 0);
+}
+
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: oklch(0.98 0 0);
   text-decoration-color: oklch(0.98 0 0);
@@ -2305,6 +2573,86 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
   padding-top: 6px;
 }
 
+html[saved-theme="dark"] body .callout[data-callout="aside"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 0, 191, 111;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(0, 191, 111) 25%, oklch(0.13 0 0) 50%);
+  background-color: oklch(0.17 0 0);
+  border-bottom-color: oklch(0.706977 0.17372 155.298);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(0, 191, 111);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.706977 0.17372 155.298);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.706977 0.17372 155.298);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="attachment"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 197, 101, 199;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(197, 101, 199) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(197, 101, 199, 0.125);
+  border-bottom-color: oklch(0.65404 0.172483 326.575);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(197, 101, 199);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.65404 0.172483 326.575);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.65404 0.172483 326.575);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: 164, 103, 80;
   background: rgba(164, 103, 80, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2347,6 +2695,85 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
   padding-top: 6px;
 }
 
+html[saved-theme="dark"] body .callout[data-callout="code"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 0, 0, 0;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(0, 0, 0) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(0, 0, 0, 0.125);
+  border-bottom-color: oklch(0 0 0);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0 0 0);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0 0 0);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="columns"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 150, 150, 150;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(150, 150, 150) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: oklch(0.673118 0.0000334402 23.7551 / 0.25);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: oklch(0.98 0 0);
+  border-left-width: 0px;
+  border-right-color: oklch(0.673118 0.0000334402 23.7551 / 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.673118 0.0000334402 23.7551 / 0.25);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: 241, 0, 34;
   background: rgba(241, 0, 34, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2387,6 +2814,46 @@ html[saved-theme="dark"] body .callout[data-callout="danger"] > .callout-content
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 6px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="email"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 250, 121, 33;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(250, 121, 33) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(250, 121, 33, 0.125);
+  border-bottom-color: oklch(0.715428 0.181466 48.6451);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(250, 121, 33);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.715428 0.181466 48.6451);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.715428 0.181466 48.6451);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="example"] {
@@ -2473,6 +2940,125 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
   padding-top: 6px;
 }
 
+html[saved-theme="dark"] body .callout[data-callout="file"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 197, 101, 199;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(197, 101, 199) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(197, 101, 199, 0.125);
+  border-bottom-color: oklch(0.65404 0.172483 326.575);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(197, 101, 199);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.65404 0.172483 326.575);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.65404 0.172483 326.575);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="goal"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 140, 102, 255;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(140, 102, 255) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(140, 102, 255, 0.125);
+  border-bottom-color: oklch(0.627693 0.216838 290.176);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(140, 102, 255);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.627693 0.216838 290.176);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.627693 0.216838 290.176);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="images"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 150, 150, 150;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(150, 150, 150) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: oklch(0.673118 0.0000334402 23.7551 / 0.25);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: oklch(0.98 0 0);
+  border-left-width: 0px;
+  border-right-color: oklch(0.673118 0.0000334402 23.7551 / 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.673118 0.0000334402 23.7551 / 0.25);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: 0, 170, 199;
   background: rgba(0, 170, 199, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2515,6 +3101,246 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
   padding-top: 6px;
 }
 
+html[saved-theme="dark"] body .callout[data-callout="infobox"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 2, 122, 255;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(2, 122, 255, 0.125);
+  border-bottom-color: oklch(0.602893 0.217554 257.503);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(2, 122, 255);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.602893 0.217554 257.503);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.602893 0.217554 257.503);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="kanban"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 2, 122, 255;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(2, 122, 255, 0.125);
+  border-bottom-color: oklch(0.602893 0.217554 257.503);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(2, 122, 255);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.602893 0.217554 257.503);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.602893 0.217554 257.503);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="link"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 127, 127, 127;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(127, 127, 127) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(127, 127, 127, 0.125);
+  border-bottom-color: oklch(0.596486 0.0000297456 23.6885);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(127, 127, 127);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.596486 0.0000297456 23.6885);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.596486 0.0000297456 23.6885);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="mail"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 250, 121, 33;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(250, 121, 33) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(250, 121, 33, 0.125);
+  border-bottom-color: oklch(0.715428 0.181466 48.6451);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(250, 121, 33);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.715428 0.181466 48.6451);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.715428 0.181466 48.6451);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="minus"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 124, 13, 14;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(124, 13, 14) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(124, 13, 14, 0.125);
+  border-bottom-color: oklch(0.375769 0.143473 27.4677);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(124, 13, 14);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.375769 0.143473 27.4677);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.375769 0.143473 27.4677);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="negative"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 124, 13, 14;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(124, 13, 14) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(124, 13, 14, 0.125);
+  border-bottom-color: oklch(0.375769 0.143473 27.4677);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(124, 13, 14);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.375769 0.143473 27.4677);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.375769 0.143473 27.4677);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-color: 0, 191, 111;
   background: rgba(0, 191, 111, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2555,6 +3381,166 @@ html[saved-theme="dark"] body .callout[data-callout="note"] > .callout-content {
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 6px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 2, 122, 255;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(2, 122, 255, 0.125);
+  border-bottom-color: oklch(0.602893 0.217554 257.503 / 0.25);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: oklch(0.602893 0.217554 257.503 / 0.25);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.602893 0.217554 257.503 / 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.602893 0.217554 257.503 / 0.25);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="phone"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 250, 121, 33;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(250, 121, 33) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(250, 121, 33, 0.125);
+  border-bottom-color: oklch(0.715428 0.181466 48.6451);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(250, 121, 33);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.715428 0.181466 48.6451);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.715428 0.181466 48.6451);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="plus"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 50, 205, 50;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(50, 205, 50) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(50, 205, 50, 0.125);
+  border-bottom-color: oklch(0.74187 0.228617 142.828);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(50, 205, 50);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.74187 0.228617 142.828);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.74187 0.228617 142.828);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="positive"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 50, 205, 50;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(50, 205, 50) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(50, 205, 50, 0.125);
+  border-bottom-color: oklch(0.74187 0.228617 142.828);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(50, 205, 50);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.74187 0.228617 142.828);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.74187 0.228617 142.828);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
@@ -2765,6 +3751,46 @@ html[saved-theme="dark"] body .callout[data-callout="todo"] > .callout-content {
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 6px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="url"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 127, 127, 127;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(127, 127, 127) 25%, oklch(0.13 0 0) 50%);
+  background-color: rgba(127, 127, 127, 0.125);
+  border-bottom-color: oklch(0.596486 0.0000297456 23.6885);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(127, 127, 127);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.596486 0.0000297456 23.6885);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.596486 0.0000297456 23.6885);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0.98 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="warning"] {
@@ -4490,6 +5516,274 @@ html[saved-theme="light"] body input[type=checkbox] {
   margin-right: 8.64px;
 }
 
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: oklch(0.3 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: oklch(0.3 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: oklch(0 0 0);
+}
+
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
   color: oklch(0 0 0);
   text-decoration-color: oklch(0 0 0);
@@ -5507,6 +6801,86 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
   padding-top: 6px;
 }
 
+html[saved-theme="light"] body .callout[data-callout="aside"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 0, 191, 111;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(0, 191, 111) 25%, oklch(1 0 0) 50%);
+  background-color: oklch(0.98 0 0);
+  border-bottom-color: oklch(0.706977 0.17372 155.298);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(0, 191, 111);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.706977 0.17372 155.298);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.706977 0.17372 155.298);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="attachment"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 197, 101, 199;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(197, 101, 199) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(197, 101, 199, 0.125);
+  border-bottom-color: oklch(0.65404 0.172483 326.575);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(197, 101, 199);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.65404 0.172483 326.575);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.65404 0.172483 326.575);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: 164, 103, 80;
   background: rgba(164, 103, 80, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5549,6 +6923,85 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
   padding-top: 6px;
 }
 
+html[saved-theme="light"] body .callout[data-callout="code"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 0, 0, 0;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(0, 0, 0) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(0, 0, 0, 0.125);
+  border-bottom-color: oklch(0 0 0);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0 0 0);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0 0 0);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="columns"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 150, 150, 150;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(150, 150, 150) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: oklch(0.673118 0.0000334402 23.7551 / 0.25);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: oklch(0 0 0);
+  border-left-width: 0px;
+  border-right-color: oklch(0.673118 0.0000334402 23.7551 / 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.673118 0.0000334402 23.7551 / 0.25);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="danger"] {
   --callout-color: 241, 0, 34;
   background: rgba(241, 0, 34, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5589,6 +7042,46 @@ html[saved-theme="light"] body .callout[data-callout="danger"] > .callout-conten
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 6px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="email"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 250, 121, 33;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(250, 121, 33) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(250, 121, 33, 0.125);
+  border-bottom-color: oklch(0.715428 0.181466 48.6451);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(250, 121, 33);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.715428 0.181466 48.6451);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.715428 0.181466 48.6451);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="example"] {
@@ -5675,6 +7168,125 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
   padding-top: 6px;
 }
 
+html[saved-theme="light"] body .callout[data-callout="file"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 197, 101, 199;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(197, 101, 199) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(197, 101, 199, 0.125);
+  border-bottom-color: oklch(0.65404 0.172483 326.575);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(197, 101, 199);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.65404 0.172483 326.575);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.65404 0.172483 326.575);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="goal"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 140, 102, 255;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(140, 102, 255) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(140, 102, 255, 0.125);
+  border-bottom-color: oklch(0.627693 0.216838 290.176);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(140, 102, 255);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.627693 0.216838 290.176);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.627693 0.216838 290.176);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="images"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 150, 150, 150;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(150, 150, 150) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: oklch(0.673118 0.0000334402 23.7551 / 0.25);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: oklch(0 0 0);
+  border-left-width: 0px;
+  border-right-color: oklch(0.673118 0.0000334402 23.7551 / 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.673118 0.0000334402 23.7551 / 0.25);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="info"] {
   --callout-color: 0, 170, 199;
   background: rgba(0, 170, 199, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5717,6 +7329,246 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
   padding-top: 6px;
 }
 
+html[saved-theme="light"] body .callout[data-callout="infobox"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 8, 109, 221;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(8, 109, 221, 0.125);
+  border-bottom-color: oklch(0.550587 0.189745 256.787);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(8, 109, 221);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.550587 0.189745 256.787);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.550587 0.189745 256.787);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="kanban"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 8, 109, 221;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(8, 109, 221, 0.125);
+  border-bottom-color: oklch(0.550587 0.189745 256.787);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(8, 109, 221);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.550587 0.189745 256.787);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.550587 0.189745 256.787);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="link"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 127, 127, 127;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(127, 127, 127) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(127, 127, 127, 0.125);
+  border-bottom-color: oklch(0.596486 0.0000297456 23.6885);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(127, 127, 127);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.596486 0.0000297456 23.6885);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.596486 0.0000297456 23.6885);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="mail"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 250, 121, 33;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(250, 121, 33) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(250, 121, 33, 0.125);
+  border-bottom-color: oklch(0.715428 0.181466 48.6451);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(250, 121, 33);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.715428 0.181466 48.6451);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.715428 0.181466 48.6451);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="minus"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 124, 13, 14;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(124, 13, 14) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(124, 13, 14, 0.125);
+  border-bottom-color: oklch(0.375769 0.143473 27.4677);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(124, 13, 14);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.375769 0.143473 27.4677);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.375769 0.143473 27.4677);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="negative"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 124, 13, 14;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(124, 13, 14) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(124, 13, 14, 0.125);
+  border-bottom-color: oklch(0.375769 0.143473 27.4677);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(124, 13, 14);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.375769 0.143473 27.4677);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.375769 0.143473 27.4677);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="note"] {
   --callout-color: 0, 191, 111;
   background: rgba(0, 191, 111, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -5757,6 +7609,166 @@ html[saved-theme="light"] body .callout[data-callout="note"] > .callout-content 
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 6px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 8, 109, 221;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(8, 109, 221, 0.125);
+  border-bottom-color: oklch(0.550587 0.189745 256.787 / 0.25);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: oklch(0.550587 0.189745 256.787 / 0.25);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.550587 0.189745 256.787 / 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.550587 0.189745 256.787 / 0.25);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="phone"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 250, 121, 33;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(250, 121, 33) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(250, 121, 33, 0.125);
+  border-bottom-color: oklch(0.715428 0.181466 48.6451);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(250, 121, 33);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.715428 0.181466 48.6451);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.715428 0.181466 48.6451);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="plus"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 50, 205, 50;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(50, 205, 50) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(50, 205, 50, 0.125);
+  border-bottom-color: oklch(0.74187 0.228617 142.828);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(50, 205, 50);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.74187 0.228617 142.828);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.74187 0.228617 142.828);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="positive"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 50, 205, 50;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(50, 205, 50) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(50, 205, 50, 0.125);
+  border-bottom-color: oklch(0.74187 0.228617 142.828);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(50, 205, 50);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.74187 0.228617 142.828);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.74187 0.228617 142.828);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {
@@ -5967,6 +7979,46 @@ html[saved-theme="light"] body .callout[data-callout="todo"] > .callout-content 
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 6px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="url"] {
+  --callout-border-base-width-preset: 0px;
+  --callout-color: 127, 127, 127;
+  --callout-padding: 0;
+  --callout-title-padding: 6px 8px;
+  --enable-bw-bases: 0;
+  --enable-bw-iframe: 0;
+  --enable-bw-pdfembed: 0;
+  --enable-bw-table: 0;
+  --table-border-color: color-mix(in srgb, rgb(127, 127, 127) 25%, oklch(1 0 0) 50%);
+  background-color: rgba(127, 127, 127, 0.125);
+  border-bottom-color: oklch(0.596486 0.0000297456 23.6885);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(127, 127, 127);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: oklch(0.596486 0.0000297456 23.6885);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: oklch(0.596486 0.0000297456 23.6885);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: oklch(0 0 0);
+  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  line-height: 24px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="warning"] {

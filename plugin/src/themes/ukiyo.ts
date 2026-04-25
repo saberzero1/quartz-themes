@@ -352,6 +352,16 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(55, 45, 41);
   color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body html {
+  --cubic-animation: cubic-bezier(0.175, 0.9, 0.3, 1.1);
+  --default-animation-duration: 150ms;
+  --default-border-radius: 4px;
+  --hover-animation-duration: 100ms;
+  --hover-faster-animation-duration: 75ms;
+  --pop-callout-slide-out-duration: 700ms;
+  --pop-callout-width: 20px;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(186, 148, 95);
@@ -647,6 +657,274 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-left-color: rgb(134, 128, 116);
   border-right-color: rgb(134, 128, 116);
   border-top-color: rgb(134, 128, 116);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(178, 166, 153);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(178, 166, 153);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgb(204, 194, 183);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgb(204, 194, 183);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -998,6 +1276,98 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 4px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="col"] {
+  --callout-color: 2, 122, 255;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #372d29 50%);
+  background-color: rgba(2, 122, 255, 0.1);
+  border-bottom-color: rgba(2, 122, 255, 0.25);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(2, 122, 255);
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-right-color: rgba(2, 122, 255, 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgba(2, 122, 255, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
+  color: rgb(204, 194, 183);
+  font-family: "??", "??", "CMU Typewriter Text";
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="cont"] {
+  --callout-color: 2, 122, 255;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #372d29 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(204, 194, 183);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(204, 194, 183);
+  border-left-width: 0px;
+  border-right-color: rgb(204, 194, 183);
+  border-right-width: 0px;
+  border-top-color: rgb(204, 194, 183);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
+  color: rgb(204, 194, 183);
+  font-family: "??", "??", "CMU Typewriter Text";
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="container"] {
+  --callout-color: 2, 122, 255;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #372d29 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(204, 194, 183);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(204, 194, 183);
+  border-left-width: 0px;
+  border-right-color: rgb(204, 194, 183);
+  border-right-width: 0px;
+  border-top-color: rgb(204, 194, 183);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
+  color: rgb(204, 194, 183);
+  font-family: "??", "??", "CMU Typewriter Text";
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
@@ -2105,6 +2475,16 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(225, 196, 166);
   color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body html {
+  --cubic-animation: cubic-bezier(0.175, 0.9, 0.3, 1.1);
+  --default-animation-duration: 150ms;
+  --default-border-radius: 4px;
+  --hover-animation-duration: 100ms;
+  --hover-faster-animation-duration: 75ms;
+  --pop-callout-slide-out-duration: 700ms;
+  --pop-callout-width: 20px;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(189, 87, 87);
@@ -2413,6 +2793,274 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-left-color: rgb(122, 109, 104);
   border-right-color: rgb(122, 109, 104);
   border-top-color: rgb(122, 109, 104);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(91, 79, 74);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(91, 79, 74);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: rgb(95, 79, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: rgb(95, 79, 73);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
@@ -2801,6 +3449,98 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 4px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="col"] {
+  --callout-color: 2, 95, 200;
+  --table-border-color: color-mix(in srgb, rgb(2, 95, 200) 25%, #e1c4a6 50%);
+  background-color: rgba(2, 95, 200, 0.1);
+  border-bottom-color: rgba(2, 95, 200, 0.25);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(2, 95, 200);
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-right-color: rgba(2, 95, 200, 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgba(2, 95, 200, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
+  color: rgb(95, 79, 73);
+  font-family: "??", "??", "CMU Typewriter Text";
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="cont"] {
+  --callout-color: 2, 95, 200;
+  --table-border-color: color-mix(in srgb, rgb(2, 95, 200) 25%, #e1c4a6 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(95, 79, 73);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(95, 79, 73);
+  border-left-width: 0px;
+  border-right-color: rgb(95, 79, 73);
+  border-right-width: 0px;
+  border-top-color: rgb(95, 79, 73);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
+  color: rgb(95, 79, 73);
+  font-family: "??", "??", "CMU Typewriter Text";
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="container"] {
+  --callout-color: 2, 95, 200;
+  --table-border-color: color-mix(in srgb, rgb(2, 95, 200) 25%, #e1c4a6 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(95, 79, 73);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(95, 79, 73);
+  border-left-width: 0px;
+  border-right-color: rgb(95, 79, 73);
+  border-right-width: 0px;
+  border-top-color: rgb(95, 79, 73);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 4px;
+  border-top-width: 0px;
+  color: rgb(95, 79, 73);
+  font-family: "??", "??", "CMU Typewriter Text";
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {

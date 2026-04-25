@@ -1338,6 +1338,39 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
   color: rgb(160, 160, 160);
 }
 
+html[saved-theme="dark"] body .callout[data-callout="banner"] {
+  --callout-color: 192, 192, 192;
+  --table-border-color: color-mix(in srgb, rgb(192, 192, 192) 25%, #3c3c3c 50%);
+  background-color: rgba(192, 192, 192, 0.15);
+  border-bottom-color: rgba(192, 192, 192, 0.25);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(192, 192, 192);
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-right-color: rgba(192, 192, 192, 0.25);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(192, 192, 192, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(160, 160, 160);
+  font-family: Lora, serif;
+  line-height: 27.2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 12px;
+  padding-top: 12px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: 209, 109, 103;
   background: rgba(209, 109, 103, 0.15) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3235,6 +3268,39 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-content {
   color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="banner"] {
+  --callout-color: 35, 35, 35;
+  --table-border-color: color-mix(in srgb, rgb(35, 35, 35) 25%, #C5C5C5 50%);
+  background-color: rgba(35, 35, 35, 0.15);
+  border-bottom-color: rgba(35, 35, 35, 0.25);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(35, 35, 35);
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-right-color: rgba(35, 35, 35, 0.25);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(35, 35, 35, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(0, 0, 0);
+  font-family: Lora, serif;
+  line-height: 27.2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 12px;
+  padding-top: 12px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="bug"] {

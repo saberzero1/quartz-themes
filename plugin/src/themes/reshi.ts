@@ -863,6 +863,50 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(37, 37, 37);
   color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body html {
+  --black: #202020;
+  --dark-grey-1: #1d1d1d;
+  --dark-grey-2: #1f1f1f;
+  --dark-grey-3: #151515;
+  --dark-white: #9d9d9d;
+  --gold-01: #f4e8be;
+  --gold-02: #f0e0a8;
+  --gold-03: #ecd993;
+  --gold-04: #e8d17d;
+  --gold-05: #e4c967;
+  --gold-06: #e0c252;
+  --gold-07: #ddba3c;
+  --green-01: #829f55;
+  --green-02: #748e4c;
+  --green-03: #677e43;
+  --green-04: #596d3a;
+  --green-05: #4b5c31;
+  --green-06: #3e4c28;
+  --green-07: #303b1f;
+  --green-08: #9db27e;
+  --green-09: #91a86e;
+  --green-10: #849e5f;
+  --green-11: #778e55;
+  --green-12: #6a7e4b;
+  --green-13: #5c6e42;
+  --green-14: #4f5e38;
+  --light-black: #404040;
+  --light-gold: #f8f1d8;
+  --light-green: #cdd3c3;
+  --light-grey: #ececec;
+  --medium-dark-grey: #252525;
+  --medium-grey-1: #707070;
+  --medium-grey-2: #6a6a6a;
+  --medium-grey-3: #555555;
+  --medium-grey-4: #404040;
+  --medium-grey-5: #333333;
+  --medium-grey-6: #202020;
+  --medium-light-grey-1: #e1e1e1;
+  --medium-light-grey-2: #d7d7d7;
+  --medium-light-grey-3: #c4c4c4;
+  --white: #a3a3a3;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(119, 142, 85);
@@ -1181,6 +1225,274 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-top-color: rgb(119, 142, 85);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(106, 106, 106);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(106, 106, 106);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgb(157, 157, 157);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -1821,6 +2133,40 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .c
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
   color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="sparkle"] {
+  --callout-background-color: 145, 168, 110;
+  --callout-color: 145, 168, 110;
+  --table-border-color: color-mix(in srgb, rgb(145, 168, 110) 25%, #252525 50%);
+  background-color: rgba(145, 168, 110, 0.1);
+  border-bottom-color: rgb(145, 168, 110);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(145, 168, 110);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(145, 168, 110);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(145, 168, 110);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(157, 157, 157);
+  font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
@@ -3055,6 +3401,50 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(236, 236, 236);
   color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body html {
+  --black: #202020;
+  --dark-grey-1: #1d1d1d;
+  --dark-grey-2: #1f1f1f;
+  --dark-grey-3: #151515;
+  --dark-white: #9d9d9d;
+  --gold-01: #f4e8be;
+  --gold-02: #f0e0a8;
+  --gold-03: #ecd993;
+  --gold-04: #e8d17d;
+  --gold-05: #e4c967;
+  --gold-06: #e0c252;
+  --gold-07: #ddba3c;
+  --green-01: #829f55;
+  --green-02: #748e4c;
+  --green-03: #677e43;
+  --green-04: #596d3a;
+  --green-05: #4b5c31;
+  --green-06: #3e4c28;
+  --green-07: #303b1f;
+  --green-08: #9db27e;
+  --green-09: #91a86e;
+  --green-10: #849e5f;
+  --green-11: #778e55;
+  --green-12: #6a7e4b;
+  --green-13: #5c6e42;
+  --green-14: #4f5e38;
+  --light-black: #404040;
+  --light-gold: #f8f1d8;
+  --light-green: #cdd3c3;
+  --light-grey: #ececec;
+  --medium-dark-grey: #252525;
+  --medium-grey-1: #707070;
+  --medium-grey-2: #6a6a6a;
+  --medium-grey-3: #555555;
+  --medium-grey-4: #404040;
+  --medium-grey-5: #333333;
+  --medium-grey-6: #202020;
+  --medium-light-grey-1: #e1e1e1;
+  --medium-light-grey-2: #d7d7d7;
+  --medium-light-grey-3: #c4c4c4;
+  --white: #a3a3a3;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(89, 109, 58);
@@ -3373,6 +3763,274 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-top-color: rgb(89, 109, 58);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(106, 106, 106);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(106, 106, 106);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
@@ -4013,6 +4671,40 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
   color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .callout[data-callout="sparkle"] {
+  --callout-background-color: 89, 109, 58;
+  --callout-color: 89, 109, 58;
+  --table-border-color: color-mix(in srgb, rgb(89, 109, 58) 25%, #ececec 50%);
+  background-color: rgba(89, 109, 58, 0.1);
+  border-bottom-color: rgb(89, 109, 58);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(89, 109, 58);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(89, 109, 58);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(89, 109, 58);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(64, 64, 64);
+  font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {

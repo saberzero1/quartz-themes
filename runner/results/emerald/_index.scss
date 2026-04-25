@@ -4838,6 +4838,11 @@ body {
     font-weight: 400;
   }
 
+  html {
+    --accent-middle: #72d0ae;
+    --header-font: "Caveat Brush";
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 
@@ -8306,6 +8311,11 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
       font-size: 16.25px;
       font-weight: 400;
+    }
+
+    html {
+      --accent-middle: #72d0ae;
+      --header-font: "Caveat Brush";
     }
   }
 }

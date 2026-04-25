@@ -240,6 +240,21 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(23, 23, 23);
+}
+
+html[saved-theme="dark"] body html {
+  --coral: #ff725b;
+  --dark-green: #32cd32;
+  --dark-yellow: #ffd700;
+  --green: #00dfa2;
+  --input-disabled-border-color: transparent;
+  --input-focus-border-color: Highlight;
+  --input-focus-outline: 1px solid Canvas;
+  --input-unfocused-border-color: transparent;
+  --pink: #ff4684;
+  --purple: #9e8af3;
+  --white: #f9f9f9;
+  --yellow: #f6fa70;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(246, 250, 112);
@@ -1165,6 +1180,21 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(240, 240, 240);
+}
+
+html[saved-theme="light"] body html {
+  --coral: #ff725b;
+  --dark-green: #32cd32;
+  --dark-yellow: #ffd700;
+  --green: #00dfa2;
+  --input-disabled-border-color: transparent;
+  --input-focus-border-color: Highlight;
+  --input-focus-outline: 1px solid Canvas;
+  --input-unfocused-border-color: transparent;
+  --pink: #ff4684;
+  --purple: #9e8af3;
+  --white: #f9f9f9;
+  --yellow: #f6fa70;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(255, 215, 0);
