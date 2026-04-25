@@ -707,6 +707,14 @@ html[saved-theme="dark"] body .transclude-inner {
   margin-left: -20.6px;
 }
 
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  text-decoration-line: none;
+}
+
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
   color: rgb(217, 184, 140);
   text-decoration-color: rgb(217, 184, 140);
@@ -2593,6 +2601,14 @@ html[saved-theme="light"] body .transclude-inner {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   margin-left: -20.6px;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  text-decoration-line: none;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {

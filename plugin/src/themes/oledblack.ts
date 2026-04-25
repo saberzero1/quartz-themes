@@ -204,7 +204,11 @@ html body .transclude-inner {
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }`,
-    checkboxes: `html body li.task-list-item[data-task='!'] {
+    checkboxes: `html body li.task-list-item[data-task="x"] {
+  caret-color: rgb(255, 255, 255);
+}
+
+html body li.task-list-item[data-task='!'] {
   color: rgb(255, 255, 255);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);

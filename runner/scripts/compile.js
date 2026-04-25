@@ -26,7 +26,11 @@ import {
   isLightTheme,
   sanitizeFilenamePreservingEmojis as sanitize,
 } from "../../util/util.mjs";
-import { config } from "./config.js";
+import { config as manualConfig } from "./config.js";
+import { generateAutoConfig, mergeConfigs } from "./auto-config.mjs";
+
+const USE_AUTO_CONFIG = process.argv.includes("--auto");
+const config = manualConfig;
 import {
   closeDb,
   getAllStylesForThemeMode,
@@ -57,7 +61,8 @@ let mode;
 
 initializeDb();
 
-const singleThemeArg = process.argv[2] || null;
+const singleThemeArg =
+  process.argv[2] && !process.argv[2].startsWith("--") ? process.argv[2] : null;
 const fullThemeCollection = getThemeCollection();
 const themeCollection = singleThemeArg
   ? fullThemeCollection.filter((m) => {
@@ -647,6 +652,30 @@ themeCollection.forEach((manifest) => {
   const bodyVariables = { dark: {}, light: {} };
   const checkboxIcons = { dark: new Map(), light: new Map() };
 
+  // Compute effective config: merge auto-discovered entries when --auto is set
+  let effectiveConfig = config;
+  if (USE_AUTO_CONFIG) {
+    try {
+      const autoEntries = generateAutoConfig(themeName);
+      if (autoEntries.length > 0) {
+        effectiveConfig = mergeConfigs(config, autoEntries);
+        console.log(
+          `  Auto-config: ${autoEntries.length} auto entries, ${effectiveConfig.length} total (merged)`,
+        );
+      }
+    } catch (e) {
+      console.warn(`  Auto-config failed for ${themeName}: ${e.message}`);
+    }
+  }
+
+  // Build needed selectors from effective config
+  const effectiveNeededSelectors = new Set(["body"]);
+  effectiveConfig.forEach((mapping) => {
+    if (mapping.obsidianSelector) {
+      effectiveNeededSelectors.add(mapping.obsidianSelector);
+    }
+  });
+
   manifest.modes.forEach((m) => {
     mode = m;
     console.log(`Processing theme: ${themeName} (${mode})`);
@@ -660,7 +689,7 @@ themeCollection.forEach((manifest) => {
       themeName,
       optionSetName,
       isDarkMode,
-      neededSelectors,
+      USE_AUTO_CONFIG ? effectiveNeededSelectors : neededSelectors,
     );
 
     const getStyleFromMap = (selector, property) => {
@@ -681,7 +710,7 @@ themeCollection.forEach((manifest) => {
       isDarkMode,
     );
 
-    config.forEach((mapping) => {
+    effectiveConfig.forEach((mapping) => {
       if (mapping.quartzSelector) {
         if (!quartzMappings[mode][mapping.quartzSelector]) {
           quartzMappings[mode][mapping.quartzSelector] = {};

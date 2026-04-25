@@ -1051,6 +1051,39 @@ html body .callout[data-callout="bug"] > .callout-content {
   color: rgb(20, 20, 20);
 }
 
+html body .callout[data-callout="callout"] {
+  --callout-color: 55, 0, 255;
+  --table-border-color: color-mix(in srgb, rgb(55, 0, 255) 25%, linear-gradient(to left, #ffffff00 93%, rgba(20, 20, 20, 0.2)) 50%);
+  background-color: rgba(55, 0, 255, 0.1);
+  border-bottom-color: rgb(55, 0, 255);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(55, 0, 255);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(55, 0, 255);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(55, 0, 255);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(20, 20, 20);
+  font-family: "??", "Noto Serif KR", serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 32px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+}
+
 html body .callout[data-callout="danger"] {
   --callout-color: 149, 0, 0;
   background: rgba(149, 0, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;

@@ -5033,6 +5033,408 @@ body {
     font-weight: 500;
   }
 
+  li.task-list-item[data-task="_"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=","] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=";"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=":"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="."] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="'"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="@"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="&"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="#"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="%"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="`"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="+"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="<"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="="] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="|"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="~"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="$"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="0"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="1"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="2"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="3"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="4"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="5"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="6"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="7"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="8"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="9"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="a"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="A"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="B"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="C"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="D"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="e"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="E"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="F"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="g"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="G"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="h"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="H"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="j"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="J"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="K"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="L"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="m"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="M"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="n"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="N"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="o"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="O"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="P"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="q"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Q"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="r"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="R"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="s"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="t"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="T"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="U"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="v"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="V"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="W"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="x"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="X"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="y"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Y"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="z"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Z"] {
+    --checkbox-color: hsl(257, 88.88%, 70.95%);
+    --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+    text-decoration-line: none;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 
@@ -8536,6 +8938,408 @@ html[saved-theme="dark"] {
       color: rgb(217, 217, 217);
       font-size: 13px;
       font-weight: 500;
+    }
+
+    li.task-list-item[data-task="_"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=","] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=";"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=":"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="."] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="'"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="@"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="&"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="#"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="%"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="`"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="+"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="<"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="="] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="|"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="~"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="$"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="0"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="1"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="2"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="3"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="4"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="5"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="6"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="7"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="8"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="9"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="a"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="A"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="B"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="C"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="D"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="e"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="E"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="F"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="g"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="G"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="h"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="H"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="j"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="J"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="K"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="L"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="m"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="M"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="n"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="N"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="o"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="O"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="P"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="q"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Q"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="r"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="R"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="s"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="t"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="T"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="U"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="v"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="V"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="W"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="x"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="X"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="y"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Y"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="z"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Z"] {
+      --checkbox-color: hsl(258, 88%, 66%);
+      --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
+      text-decoration-line: none;
     }
   }
 }

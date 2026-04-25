@@ -228,6 +228,45 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(246, 246, 244);
   color: rgb(63, 62, 60);
+}
+
+html body html {
+  --color-accent: #e9573f;
+  --color-accent-faded: #fc6e51;
+  --color-blue: #117a8b;
+  --color-blue-light: #17a2b8;
+  --color-blue-lightest: #8bd1dc;
+  --color-dark: #3f3e3c;
+  --color-gray: #696966;
+  --color-gray-light: #b6b5af;
+  --color-gray-lightest: #87837070;
+  --color-gray-lightest-fade: #8783703b;
+  --color-green: #adbb63;
+  --color-green-light: #c4cd8e;
+  --color-green-lightest: #d4dbad;
+  --color-light: #f6f6f4;
+  --color-orange: #e9573f;
+  --color-orange-light: #fc6e51;
+  --color-purple: #886b97;
+  --color-purple-light: #b19fb6;
+  --color-purple-lightest: #e1d6e2;
+  --color-red: #d62c1a;
+  --color-red-light: #e74c3c;
+  --color-red-lightest: #f3a69e;
+  --color-yellow: #fcbb42;
+  --color-yellow-light: #ffce54;
+  --color-yellow-lightest: #f9dda2c0;
+  --font-family-editor: 'nunito sans', gotham, metropolis, prologue, manrope, inter, poppins,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
+  --font-monospace: "courier prime code";
+  --font-title: "moranga", "matchbook regular", bitter, prompt,
+    'nunito sans', gotham, metropolis, prologue, manrope, inter, poppins,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Microsoft YaHei Light", sans-serif;
+  --shadow: 1px 1px 2px #88888888;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(63, 62, 60);
@@ -292,24 +331,127 @@ html body p {
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }`,
     links: `html body a.external, html footer a {
+  --color-blue: #086ddd;
+  --color-green: #08b94e;
+  --color-orange: #ec7500;
+  --color-purple: #7852ee;
+  --color-red: #e93147;
+  --color-yellow: #e0ac00;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(8, 185, 78);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(8, 185, 78);
+  border-left-width: 0px;
+  border-right-color: rgb(8, 185, 78);
+  border-right-width: 0px;
+  border-top-color: rgb(8, 185, 78);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(8, 185, 78);
+  content: "↗";
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  font-size: 11.2px;
+  line-height: 16.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(8, 185, 78) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration-color: rgb(8, 185, 78);
   transition: background 0.3s, color 0.3s;
 }
 
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+  --color-blue: #086ddd;
+  --color-green: #08b94e;
+  --color-orange: #ec7500;
+  --color-purple: #7852ee;
+  --color-red: #e93147;
+  --color-yellow: #e0ac00;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(8, 185, 78);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(8, 185, 78);
+  border-left-width: 0px;
+  border-right-color: rgb(8, 185, 78);
+  border-right-width: 0px;
+  border-top-color: rgb(8, 185, 78);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(8, 185, 78);
+  content: "«";
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(8, 185, 78) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration-color: rgb(8, 185, 78);
 }
 
 html body a.internal.broken {
+  --color-blue: #086ddd;
+  --color-green: #08b94e;
+  --color-orange: #ec7500;
+  --color-purple: #7852ee;
+  --color-red: #e93147;
+  --color-yellow: #e0ac00;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(8, 185, 78);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(8, 185, 78);
+  border-left-width: 0px;
+  border-right-color: rgb(8, 185, 78);
+  border-right-width: 0px;
+  border-top-color: rgb(8, 185, 78);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(8, 185, 78);
+  content: "«";
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(8, 185, 78) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     lists: `html body dd {
   color: rgb(63, 62, 60);

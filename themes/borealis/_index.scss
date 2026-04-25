@@ -1770,7 +1770,7 @@ html {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/borealis/jetbrains-mono.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/borealis/jetbrains-mono.woff2") format("woff2");
 }
 
 body {
@@ -4631,6 +4631,336 @@ body {
     font-weight: 400;
   }
 
+  .callout[data-callout="primary"] {
+    --table-border-color: color-mix(in srgb, rgb(34, 176, 67) 25%, #f6f6f6 50%);
+    --callout-color: 34, 176, 67;
+    --checkbox-border-color-hover: rgb(34, 176, 67);
+    background-color: rgba(34, 176, 67, 0.1);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 0px solid rgba(34, 176, 67, 0.25);
+    color: rgb(34, 176, 67);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0px;
+    padding: 12px 12px 12px 24px;
+  }
+
+  .callout[data-callout="secondary"] {
+    --table-border-color: color-mix(in srgb, rgb(176, 33, 142) 25%, #f6f6f6 50%);
+    --callout-color: 176, 33, 142;
+    --checkbox-border-color-hover: rgb(176, 33, 142);
+    background-color: rgba(176, 33, 142, 0.1);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 0px solid rgba(176, 33, 142, 0.25);
+    color: rgb(176, 33, 142);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0px;
+    padding: 12px 12px 12px 24px;
+  }
+
+  li.task-list-item[data-task="_"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=","] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=";"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=":"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="."] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="'"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="@"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="&"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="#"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="%"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="`"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="+"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="<"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="="] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="|"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="~"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="$"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="0"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="1"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="2"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="3"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="4"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="5"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="6"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="7"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="8"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="9"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="a"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="A"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="B"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="C"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="D"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="e"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="E"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="F"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="g"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="G"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="h"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="H"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="j"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="J"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="K"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="L"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="m"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="M"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="n"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="N"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="o"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="O"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="P"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="q"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Q"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="r"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="R"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="s"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="t"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="T"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="U"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="v"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="V"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="W"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="x"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="X"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="y"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Y"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="z"] {
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Z"] {
+    text-decoration-line: none;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 
@@ -5274,6 +5604,12 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 }
 .callout[data-callout="quote"] {
   --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+}
+.callout[data-callout="primary"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+}
+.callout[data-callout="secondary"] {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
 }
 
 html[saved-theme="dark"] {
@@ -8134,6 +8470,336 @@ html[saved-theme="dark"] {
       font-size: 13px;
       font-weight: 400;
     }
+
+    .callout[data-callout="primary"] {
+      --table-border-color: color-mix(in srgb, rgb(161, 249, 143) 25%, #141414 50%);
+      --callout-color: 161, 249, 143;
+      --checkbox-border-color-hover: rgb(161, 249, 143);
+      background-color: rgba(161, 249, 143, 0.1);
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border: 0px solid rgba(161, 249, 143, 0.25);
+      color: rgb(161, 249, 143);
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0px;
+      padding: 12px 12px 12px 24px;
+    }
+
+    .callout[data-callout="secondary"] {
+      --table-border-color: color-mix(in srgb, rgb(231, 143, 249) 25%, #141414 50%);
+      --callout-color: 231, 143, 249;
+      --checkbox-border-color-hover: rgb(231, 143, 249);
+      background-color: rgba(231, 143, 249, 0.1);
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border: 0px solid rgba(231, 143, 249, 0.25);
+      color: rgb(231, 143, 249);
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0px;
+      padding: 12px 12px 12px 24px;
+    }
+
+    li.task-list-item[data-task="_"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=","] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=";"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=":"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="."] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="'"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="@"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="&"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="#"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="%"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="`"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="+"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="<"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="="] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="|"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="~"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="$"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="0"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="1"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="2"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="3"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="4"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="5"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="6"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="7"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="8"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="9"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="a"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="A"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="B"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="C"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="D"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="e"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="E"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="F"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="g"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="G"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="h"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="H"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="j"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="J"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="K"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="L"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="m"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="M"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="n"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="N"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="o"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="O"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="P"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="q"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Q"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="r"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="R"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="s"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="t"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="T"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="U"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="v"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="V"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="W"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="x"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="X"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="y"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Y"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="z"] {
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Z"] {
+      text-decoration-line: none;
+    }
   }
 }
 
@@ -8780,6 +9446,12 @@ html[saved-theme="dark"] {
   }
   .callout[data-callout="quote"] {
     --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3Cpath d='M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+  }
+  .callout[data-callout="primary"] {
+    --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+  }
+  .callout[data-callout="secondary"] {
+    --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
   }
 }
 

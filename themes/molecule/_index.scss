@@ -4085,6 +4085,10 @@ body {
     font-weight: 600;
   }
 
+  html {
+    --default-font: "JetBrains Mono";
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 

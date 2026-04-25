@@ -1,0 +1,156 @@
+{
+  "extractedAt": "2026-04-25T00:40:53.202Z",
+  "sourceTheme": "Origami",
+  "fonts": [
+    {
+      "family": "Fraunces",
+      "style": "normal",
+      "weight": "100 900",
+      "file": "fraunces.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Monaspace",
+      "style": "normal",
+      "weight": "100 900",
+      "file": "monaspace.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Aspekta",
+      "style": "normal",
+      "weight": "100 1000",
+      "file": "aspekta.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Instrument",
+      "style": "normal",
+      "weight": "100 1000",
+      "file": "instrument.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Instrument",
+      "style": "italic",
+      "weight": "100 1000",
+      "file": "instrument-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lexend",
+      "style": "normal",
+      "weight": "500",
+      "file": "lexend.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IAWriter",
+      "style": "normal",
+      "weight": "500",
+      "file": "iawriter.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IAWriter",
+      "style": "italic",
+      "weight": "500",
+      "file": "iawriter-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Satoshi",
+      "style": "normal",
+      "weight": "500",
+      "file": "satoshi.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Satoshi",
+      "style": "italic",
+      "weight": "500",
+      "file": "satoshi-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Chillax",
+      "style": "normal",
+      "weight": "500",
+      "file": "chillax.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Uncut",
+      "style": "normal",
+      "weight": "500",
+      "file": "uncut.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Overused Grotesk",
+      "style": "normal",
+      "weight": "500",
+      "file": "overused-grotesk.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Nightingale",
+      "style": "normal",
+      "weight": "300",
+      "file": "nightingale.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "DobbinTextSF-Roman",
+      "style": "normal",
+      "weight": "100 900",
+      "file": "dobbintextsf-roman.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

@@ -1899,31 +1899,31 @@ html {
   font-family: "W95font";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/retroma/w95font.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/retroma/w95font.woff2") format("woff2");
 }
 @font-face {
   font-family: "Cascadia Code";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/retroma/cascadia-code.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/retroma/cascadia-code.woff2") format("woff2");
 }
 @font-face {
   font-family: "iA Writer Mono S";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/retroma/ia-writer-mono-s.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/retroma/ia-writer-mono-s.woff2") format("woff2");
 }
 @font-face {
   font-family: "Excalifont";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/retroma/excalifont.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/retroma/excalifont.woff2") format("woff2");
 }
 @font-face {
   font-family: "Caveat";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/retroma/caveat.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/retroma/caveat.woff2") format("woff2");
 }
 
 body {
@@ -4786,6 +4786,24 @@ body {
     color: rgb(34, 34, 34);
     font-size: 13px;
     font-weight: 700;
+  }
+
+  html {
+    --hue-amber: #ffb300;
+    --hue-blue: #2196f3;
+    --hue-cyan: #00bcd4;
+    --hue-green: #4caf50;
+    --hue-indigo: #3f51b5;
+    --hue-lime: #8bc34a;
+    --hue-magenta: #e91e63;
+    --hue-orange: #ff9800;
+    --hue-purple: #673ab7;
+    --hue-red: #d32f2f;
+    --hue-rose: #f48fb1;
+    --hue-teal: #009688;
+    --hue-vermillion: #ff5722;
+    --hue-violet: #9c27b0;
+    --hue-yellow: #ffeb3b;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -8294,6 +8312,24 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
       font-size: 13px;
       font-weight: 700;
+    }
+
+    html {
+      --hue-amber: #ffb300;
+      --hue-blue: #2196f3;
+      --hue-cyan: #00bcd4;
+      --hue-green: #4caf50;
+      --hue-indigo: #3f51b5;
+      --hue-lime: #8bc34a;
+      --hue-magenta: #e91e63;
+      --hue-orange: #ff9800;
+      --hue-purple: #673ab7;
+      --hue-red: #d32f2f;
+      --hue-rose: #f48fb1;
+      --hue-teal: #009688;
+      --hue-vermillion: #ff5722;
+      --hue-violet: #9c27b0;
+      --hue-yellow: #ffeb3b;
     }
   }
 }

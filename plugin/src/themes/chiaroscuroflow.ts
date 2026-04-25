@@ -145,6 +145,12 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(25, 18, 63);
   color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body html {
+  --heading-color-dark: #DDDDDD;
+  --heading-color-light: #0c0909;
+  --heading-font: 'Nunito Sans Bold', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(255, 255, 255);
@@ -1180,6 +1186,12 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(255, 250, 205);
   color: rgb(12, 9, 9);
+}
+
+html[saved-theme="light"] body html {
+  --heading-color-dark: #DDDDDD;
+  --heading-color-light: #0c0909;
+  --heading-font: 'Nunito Sans Bold', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(12, 9, 9);

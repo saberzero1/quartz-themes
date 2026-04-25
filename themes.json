@@ -6208,10 +6208,243 @@
       }
     },
     "origami": {
-      "compatibility": ["checking", "collection"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
-      "style_settings": {},
+      "style_settings": { "o-theme-settings@@o-color-accent": "o-red" },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.sorcery": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "o-theme-settings@@o-color-accent": "o-red",
+        "o-theme-settings@@o-theme-light": "o-red-l",
+        "o-theme-settings@@o-theme-dark": "o-red-d"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.eidolon": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "o-theme-settings@@o-color-accent": "o-green",
+        "o-theme-settings@@o-theme-light": "o-green-l",
+        "o-theme-settings@@o-theme-dark": "o-green-d"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.shadow": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "o-theme-settings@@o-color-accent": "o-blue",
+        "o-theme-settings@@o-theme-light": "o-blue-l",
+        "o-theme-settings@@o-theme-dark": "o-blue-d"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.umbra": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "o-theme-settings@@o-color-accent": "o-purple",
+        "o-theme-settings@@o-theme-light": "o-purple-l",
+        "o-theme-settings@@o-theme-dark": "o-purple-d"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.minimum": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "o-theme-settings@@o-theme-light": "o-min-l",
+        "o-theme-settings@@o-theme-dark": "o-min-d"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.soft": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "o-theme-settings@@o-theme-light": "o-soft-l",
+        "o-theme-settings@@o-theme-dark": "o-soft-d"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.shark-time": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "o-theme-settings@@o-theme-light": "o-shark-l",
+        "o-theme-settings@@o-theme-dark": "o-shark-d"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.solarized": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "o-theme-settings@@o-theme-light": "o-solar-lt",
+        "o-theme-settings@@o-theme-dark": "o-solar-dt",
+        "o-theme-settings@@o-color-accent": "o-blue"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.gruvbox": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "o-theme-settings@@o-theme-light": "o-gruvbox-lt",
+        "o-theme-settings@@o-theme-dark": "o-gruvbox-dt"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.dracula": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "o-theme-settings@@o-theme-dark": "o-dracula-dt",
+        "o-theme-settings@@o-color-accent": "o-green"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.linking-your-thinking": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark"],
+      "use_extended_syntax": false,
+      "style_settings": { "o-theme-settings@@o-theme-dark": "o-lyt-dt" },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.abaddon": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark"],
+      "use_extended_syntax": false,
+      "style_settings": { "o-theme-settings@@o-theme-dark": "o-end-d" },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.nano": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark"],
+      "use_extended_syntax": false,
+      "style_settings": { "o-theme-settings@@o-theme-dark": "o-hack-d" },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.heckhound": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark"],
+      "use_extended_syntax": false,
+      "style_settings": { "o-theme-settings@@o-theme-dark": "o-heck-d" },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "origami.siren": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "o-theme-settings@@o-theme-dark": "o-si-d",
+        "o-theme-settings@@o-color-accent": "o-purple"
+      },
       "variations": [],
       "extra_extract_files": [],
       "snippets": ["checkboxes-reference-set"],

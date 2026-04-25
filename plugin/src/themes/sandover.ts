@@ -387,6 +387,36 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(40, 40, 40);
   color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body html {
+  --color-blue: #537791;
+  --color-blue-rgb: 83, 119, 145;
+  --color-cyan: #a6e6e3;
+  --color-cyan-rgb: 166, 230, 227;
+  --color-dark1: #282828;
+  --color-dark1-rgb: 40, 40, 40;
+  --color-darker-purple: 153, 119, 181;
+  --color-gray-rgb: 240, 240, 240;
+  --color-green: #ace099;
+  --color-green-rgb: 172, 224, 153;
+  --color-light1: #fffcf4;
+  --color-light1-rgb: 255, 252, 244;
+  --color-orange: #ff5400;
+  --color-orange-rgb: 255, 84, 0;
+  --color-pink: #fc62a2;
+  --color-red: #ff394d;
+  --color-red-rgb: 255, 57, 77;
+  --color-salmon: #ff8671;
+  --color-salmon-lighter: #ffa99a;
+  --color-salmon-lighter-rgb: 255, 169, 154;
+  --color-salmon-rgb: 255, 134, 113;
+  --color-yellow: #ffd77d;
+  --color-yellow-light: #ffe5a7;
+  --color-yellow-light-rgb: 255, 229, 167;
+  --color-yellow-rgb: 255, 215, 125;
+  --sandover-purple: #c585cc;
+  --sandover-purple-rgb: 197, 133, 204;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(255, 252, 244);
@@ -2073,6 +2103,36 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(255, 252, 244);
   color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body html {
+  --color-blue: #537791;
+  --color-blue-rgb: 83, 119, 145;
+  --color-cyan: #a6e6e3;
+  --color-cyan-rgb: 166, 230, 227;
+  --color-dark1: #282828;
+  --color-dark1-rgb: 40, 40, 40;
+  --color-darker-purple: 153, 119, 181;
+  --color-gray-rgb: 240, 240, 240;
+  --color-green: #ace099;
+  --color-green-rgb: 172, 224, 153;
+  --color-light1: #fffcf4;
+  --color-light1-rgb: 255, 252, 244;
+  --color-orange: #ff5400;
+  --color-orange-rgb: 255, 84, 0;
+  --color-pink: #fc62a2;
+  --color-red: #ff394d;
+  --color-red-rgb: 255, 57, 77;
+  --color-salmon: #ff8671;
+  --color-salmon-lighter: #ffa99a;
+  --color-salmon-lighter-rgb: 255, 169, 154;
+  --color-salmon-rgb: 255, 134, 113;
+  --color-yellow: #ffd77d;
+  --color-yellow-light: #ffe5a7;
+  --color-yellow-light-rgb: 255, 229, 167;
+  --color-yellow-rgb: 255, 215, 125;
+  --sandover-purple: #c585cc;
+  --sandover-purple-rgb: 197, 133, 204;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(0, 0, 0);

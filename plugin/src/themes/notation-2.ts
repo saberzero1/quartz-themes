@@ -656,20 +656,76 @@ html[saved-theme="dark"] body p {
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-left-width: 0px;
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-right-width: 0px;
+  border-top-color: rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgba(255, 255, 255, 0.9);
+  content: " ";
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
+  line-height: 20.8px;
+  margin-bottom: -4px;
+  margin-left: 0px;
+  margin-right: 1px;
+  margin-top: 0px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'%3E%3C/line%3E%3Cpolyline points='7 7 17 7 17 17'%3E%3C/polyline%3E%3C/svg%3E");
   outline: rgba(255, 255, 255, 0.9) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration: underline 1px rgba(255, 255, 255, 0.14);
   text-decoration-color: rgba(255, 255, 255, 0.14);
   text-decoration-thickness: 1px;
 }
 
 html[saved-theme="dark"] body a.internal.broken {
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom-color: rgba(255, 255, 255, 0.7);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(255, 255, 255, 0.7);
+  border-left-width: 0px;
+  border-right-color: rgba(255, 255, 255, 0.7);
+  border-right-width: 0px;
+  border-top-color: rgba(255, 255, 255, 0.7);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgba(255, 255, 255, 0.7);
+  content: " ";
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
+  line-height: 20.8px;
+  margin-bottom: -1px;
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-top: 0px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 16 16\\'%3E%3Cpath d=\\'M7.977 14.963c.407 0 .747-.324.747-.723V8.72h5.362c.399 0 .74-.34.74-.747a.746.746 0 00-.74-.738H8.724V1.706c0-.398-.34-.722-.747-.722a.732.732 0 00-.739.722v5.529h-5.37a.746.746 0 00-.74.738c0 .407.341.747.74.747h5.37v5.52c0 .399.332.723.739.723z\\'%3E%3C/path%3E%3C/svg%3E");
   outline: rgba(255, 255, 255, 0.7) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration: underline 1px rgba(255, 255, 255, 0.14);
   text-decoration-color: rgba(255, 255, 255, 0.14);
   text-decoration-thickness: 1px;
@@ -897,6 +953,274 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-top-color: rgba(255, 255, 255, 0.9);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -1194,6 +1518,36 @@ html[saved-theme="dark"] body .callout .callout-title > .callout-title-inner > p
 html[saved-theme="dark"] body .callout > .callout-content {
   color: rgba(255, 255, 255, 0.9);
   padding-left: 36.8px;
+}
+
+html[saved-theme="dark"] body .callout-title {
+  --callout-color: 54, 73, 84;
+  --table-border-color: color-mix(in srgb, rgb(54, 73, 84) 25%, hsl(203, 8%, 20%) 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(255, 255, 255, 0.9);
+  border-left-width: 0px;
+  border-right-color: rgba(255, 255, 255, 0.9);
+  border-right-width: 0px;
+  border-top-color: rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(255, 255, 255, 0.9);
+  content: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 width=\\%2220\\%22 height=\\%2220\\%22 viewBox=\\%220 0 36 36\\%22%3E%3Cpath fill=\\%22%23D99E82\\%22 d=\\%22M35.222 33.598c-.647-2.101-1.705-6.059-2.325-7.566c-.501-1.216-.969-2.438-1.544-3.014c-.575-.575-1.553-.53-2.143.058c0 0-2.469 1.675-3.354 2.783c-1.108.882-2.785 3.357-2.785 3.357c-.59.59-.635 1.567-.06 2.143c.576.575 1.798 1.043 3.015 1.544c1.506.62 5.465 1.676 7.566 2.325c.359.11 1.74-1.271 1.63-1.63z\\%22%2F%3E%3Cpath fill=\\%22%23EA596E\\%22 d=\\%22M13.643 5.308a2.946 2.946 0 0 1 0 4.167l-4.167 4.168a2.948 2.948 0 0 1-4.167 0L1.141 9.475a2.948 2.948 0 0 1 0-4.167l4.167-4.167a2.946 2.946 0 0 1 4.167 0l4.168 4.167z\\%22%2F%3E%3Cpath fill=\\%22%23FFCC4D\\%22 d=\\%22m31.353 23.018l-4.17 4.17l-4.163 4.165L7.392 15.726l8.335-8.334l15.626 15.626z\\%22%2F%3E%3Cpath fill=\\%22%23292F33\\%22 d=\\%22M32.078 34.763s2.709 1.489 3.441.757c.732-.732-.765-3.435-.765-3.435s-2.566.048-2.676 2.678z\\%22%2F%3E%3Cpath fill=\\%22%23CCD6DD\\%22 d=\\%22m2.183 10.517l8.335-8.335l5.208 5.209l-8.334 8.335z\\%22%2F%3E%3Cpath fill=\\%22%2399AAB5\\%22 d=\\%22m3.225 11.558l8.334-8.334l1.042 1.042L4.267 12.6zm2.083 2.086l8.335-8.335l1.042 1.042l-8.335 8.334z\\%22%2F%3E%3C%2Fsvg%3E");
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 9.6px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="abstract"] {
@@ -2661,20 +3015,76 @@ html[saved-theme="light"] body p {
 }
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(55, 53, 47, 0.9);
+  border-bottom-color: rgba(55, 53, 47, 0.9);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(55, 53, 47, 0.9);
+  border-left-width: 0px;
+  border-right-color: rgba(55, 53, 47, 0.9);
+  border-right-width: 0px;
+  border-top-color: rgba(55, 53, 47, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgba(55, 53, 47, 0.9);
+  content: " ";
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
+  line-height: 20.8px;
+  margin-bottom: -4px;
+  margin-left: 0px;
+  margin-right: 1px;
+  margin-top: 0px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'%3E%3C/line%3E%3Cpolyline points='7 7 17 7 17 17'%3E%3C/polyline%3E%3C/svg%3E");
   outline: rgba(55, 53, 47, 0.9) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration: underline 1px rgba(55, 53, 47, 0.14);
   text-decoration-color: rgba(55, 53, 47, 0.14);
   text-decoration-thickness: 1px;
 }
 
 html[saved-theme="light"] body a.internal.broken {
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(55, 53, 47, 0.7);
+  border-bottom-color: rgba(55, 53, 47, 0.7);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(55, 53, 47, 0.7);
+  border-left-width: 0px;
+  border-right-color: rgba(55, 53, 47, 0.7);
+  border-right-width: 0px;
+  border-top-color: rgba(55, 53, 47, 0.7);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgba(55, 53, 47, 0.7);
+  content: " ";
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
+  line-height: 20.8px;
+  margin-bottom: -1px;
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-top: 0px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 16 16\\'%3E%3Cpath d=\\'M7.977 14.963c.407 0 .747-.324.747-.723V8.72h5.362c.399 0 .74-.34.74-.747a.746.746 0 00-.74-.738H8.724V1.706c0-.398-.34-.722-.747-.722a.732.732 0 00-.739.722v5.529h-5.37a.746.746 0 00-.74.738c0 .407.341.747.74.747h5.37v5.52c0 .399.332.723.739.723z\\'%3E%3C/path%3E%3C/svg%3E");
   outline: rgba(55, 53, 47, 0.7) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration: underline 1px rgba(55, 53, 47, 0.14);
   text-decoration-color: rgba(55, 53, 47, 0.14);
   text-decoration-thickness: 1px;
@@ -2902,6 +3312,274 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-top-color: rgba(55, 53, 47, 0.9);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgba(55, 53, 47, 0.7);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgba(55, 53, 47, 0.7);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: rgba(55, 53, 47, 0.9);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: rgba(55, 53, 47, 0.9);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
@@ -3197,6 +3875,36 @@ html[saved-theme="light"] body .callout .callout-title > .callout-title-inner > 
 html[saved-theme="light"] body .callout > .callout-content {
   color: rgba(55, 53, 47, 0.9);
   padding-left: 36.8px;
+}
+
+html[saved-theme="light"] body .callout-title {
+  --callout-color: 221, 235, 241;
+  --table-border-color: color-mix(in srgb, rgb(221, 235, 241) 25%, hsl(203, 8%, 100%) 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(55, 53, 47, 0.9);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(55, 53, 47, 0.9);
+  border-left-width: 0px;
+  border-right-color: rgba(55, 53, 47, 0.9);
+  border-right-width: 0px;
+  border-top-color: rgba(55, 53, 47, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(55, 53, 47, 0.9);
+  content: url("data:image/svg+xml,%3Csvg xmlns=\\%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\\%22 width=\\%2220\\%22 height=\\%2220\\%22 viewBox=\\%220 0 36 36\\%22%3E%3Cpath fill=\\%22%23D99E82\\%22 d=\\%22M35.222 33.598c-.647-2.101-1.705-6.059-2.325-7.566c-.501-1.216-.969-2.438-1.544-3.014c-.575-.575-1.553-.53-2.143.058c0 0-2.469 1.675-3.354 2.783c-1.108.882-2.785 3.357-2.785 3.357c-.59.59-.635 1.567-.06 2.143c.576.575 1.798 1.043 3.015 1.544c1.506.62 5.465 1.676 7.566 2.325c.359.11 1.74-1.271 1.63-1.63z\\%22%2F%3E%3Cpath fill=\\%22%23EA596E\\%22 d=\\%22M13.643 5.308a2.946 2.946 0 0 1 0 4.167l-4.167 4.168a2.948 2.948 0 0 1-4.167 0L1.141 9.475a2.948 2.948 0 0 1 0-4.167l4.167-4.167a2.946 2.946 0 0 1 4.167 0l4.168 4.167z\\%22%2F%3E%3Cpath fill=\\%22%23FFCC4D\\%22 d=\\%22m31.353 23.018l-4.17 4.17l-4.163 4.165L7.392 15.726l8.335-8.334l15.626 15.626z\\%22%2F%3E%3Cpath fill=\\%22%23292F33\\%22 d=\\%22M32.078 34.763s2.709 1.489 3.441.757c.732-.732-.765-3.435-.765-3.435s-2.566.048-2.676 2.678z\\%22%2F%3E%3Cpath fill=\\%22%23CCD6DD\\%22 d=\\%22m2.183 10.517l8.335-8.335l5.208 5.209l-8.334 8.335z\\%22%2F%3E%3Cpath fill=\\%22%2399AAB5\\%22 d=\\%22m3.225 11.558l8.334-8.334l1.042 1.042L4.267 12.6zm2.083 2.086l8.335-8.335l1.042 1.042l-8.335 8.334z\\%22%2F%3E%3C%2Fsvg%3E");
+  font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 9.6px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="abstract"] {

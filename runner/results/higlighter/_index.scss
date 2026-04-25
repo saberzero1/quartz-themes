@@ -4647,6 +4647,20 @@ body {
     font-weight: 400;
   }
 
+  html {
+    --background-color: #ffffff;
+    --default-font: "Helvetica Neue", "Roboto", sans-serif;
+    --editor-font-size: 11pt;
+    --font-monospace: "Fira Code", "Roboto Mono", monospace;
+    --highlight-blue: #dbf1ff;
+    --highlight-pink: #f9e0ff;
+    --highlight-yellow: #ffdc5e;
+    --list-symbol: "- ";
+    --main-black: #000000;
+    --normal-font: "Helvetica Neue", "Roboto", sans-serif;
+    --strong-blue: #19647e;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 
@@ -7923,6 +7937,20 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
       font-size: 13px;
       font-weight: 400;
+    }
+
+    html {
+      --background-color: #ffffff;
+      --default-font: "Helvetica Neue", "Roboto", sans-serif;
+      --editor-font-size: 11pt;
+      --font-monospace: "Fira Code", "Roboto Mono", monospace;
+      --highlight-blue: #dbf1ff;
+      --highlight-pink: #f9e0ff;
+      --highlight-yellow: #ffdc5e;
+      --list-symbol: "- ";
+      --main-black: #000000;
+      --normal-font: "Helvetica Neue", "Roboto", sans-serif;
+      --strong-blue: #19647e;
     }
   }
 }

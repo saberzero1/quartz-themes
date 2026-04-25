@@ -57,6 +57,36 @@ html body .page > div#quartz-body div.sidebar.right {
 
 html body div#quartz-root {
   background-color: rgba(0, 0, 0, 0);
+}
+
+html body html {
+  --sdlt-accent: #8BA4CC;
+  --sdlt-accent-muted: #304F80;
+  --sdlt-accent-muted-selection: rgba(48, 79, 128, 0.99);
+  --sdlt-accent-muted-transparent: rgba(48, 79, 128, 0.3);
+  --sdlt-base-bg-end: #1B2020;
+  --sdlt-base-bg-start: #202028;
+  --sdlt-border: #1A1F28;
+  --sdlt-content-bg-end: #212223;
+  --sdlt-content-bg-end-transparent: rgba(33, 34, 35, 0.3);
+  --sdlt-content-bg-start: #222832;
+  --sdlt-content-bg-start-transparent: rgba(34, 40, 50, 0.3);
+  --sdlt-gradient-base: linear-gradient(135deg, #202028, #1B2020);
+  --sdlt-gradient-content: linear-gradient(135deg, #222832, #212223);
+  --sdlt-gradient-subtle: linear-gradient(160deg, transparent, rgba(255, 255, 255, 0.02));
+  --sdlt-graph-line: #404050;
+  --sdlt-graph-line-highlight: #507090;
+  --sdlt-header-height: 48px;
+  --sdlt-markdown-header-height: 56px;
+  --sdlt-overlay-bg: rgba(255, 255, 255, 0.05);
+  --sdlt-overlay-border: rgba(255, 255, 255, 0.08);
+  --sdlt-ribbon-width: 48px;
+  --sdlt-search-border: #404040;
+  --sdlt-shadow-active: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+  --sdlt-tag-indicator: #caca00;
+  --sdlt-text-faint: #909090;
+  --sdlt-text-muted: #cacaca;
+  --sdlt-text-on-accent: #000000;
 }`,
     typography: `html body h1.article-title {
   font-size: 38px;

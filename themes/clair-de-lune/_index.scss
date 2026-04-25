@@ -4023,6 +4023,561 @@ body {
     font-weight: 400;
   }
 
+  li.task-list-item[data-task="_"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task=","] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task=";"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task=":"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="."] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="'"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="@"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="&"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="#"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="%"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="`"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="+"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="<"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="="] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="|"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="~"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="$"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="0"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="1"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="2"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="3"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="4"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="5"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="6"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="7"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="8"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="9"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="a"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="A"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="B"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="C"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="D"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="e"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="E"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="F"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="g"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="G"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="h"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="H"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="j"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="J"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="K"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="L"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="m"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="M"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="n"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="N"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="o"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="O"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="P"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="q"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="Q"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="r"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="R"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="s"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="t"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="T"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="U"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="v"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="V"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="W"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="x"] {
+    color: rgb(169, 184, 232);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="X"] {
+    color: rgb(169, 184, 232);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="y"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="Y"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="z"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  li.task-list-item[data-task="Z"] {
+    color: rgb(192, 205, 243);
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  }
+
+  html {
+    --default-font: "Inter", sans-serif;
+    --font-editor-linenumbers-size: medium;
+    --font-editor-size: 1em;
+    --font-h1-preview-size: 2em;
+    --font-h2-preview-size: 1.5em;
+    --font-h3-preview-size: 1.25em;
+    --font-h4-preview-size: 1em;
+    --font-h5-preview-size: 0.875em;
+    --font-h6-preview-size: 0.85em;
+    --font-hover-preview-size: 0.9em;
+    --font-math-preview-size: 1.126em;
+    --font-monospace: "Jetbrains Mono", monospace;
+    --font-prompts-size: 0.875em;
+    --font-tag-preview-size: 0.9em;
+    --font-todoist-metadata-size: small;
+    --font-todoist-title-size: 1em;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 

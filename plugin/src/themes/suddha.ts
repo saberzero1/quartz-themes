@@ -304,6 +304,39 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(15, 15, 15);
   color: rgb(204, 204, 204);
+}
+
+html[saved-theme="dark"] body html {
+  --accent-d: 85%;
+  --accent-h: 210;
+  --accent-h-o: 50;
+  --accent-l: 63%;
+  --accent-s: 90%;
+  --base-d: 10%;
+  --base-h: 0;
+  --base-l: 95%;
+  --base-s: 0%;
+  --bold-weight: 500;
+  --buttons-fade-in-speed: filter 100ms ease-in-out;
+  --buttons-fade-out-speed: filter 2000ms ease-in-out;
+  --cursor: pointer;
+  --font-medium: 13.5px;
+  --font-monospace: Menlo,Monaco,Consolas,"Courier New",monospace;
+  --font-normal: 16px;
+  --font-small: 12px;
+  --font-smaller: 11px;
+  --line-width: 800px;
+  --main-accent-d: 60%;
+  --main-accent-h: 360;
+  --main-accent-l: 10%;
+  --main-accent-s: 70%;
+  --max-width: 100%;
+  --normal-weight: 300;
+  --tags-fade-in-speed: 100ms cubic-bezier(0.4, 0, 1, 1);
+  --tags-fade-out-speed: 2000ms cubic-bezier(0.4, 0, 1, 1);
+  --text: system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,'m1+ 1p';
+  --text-editor: system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue", 'm1+ 1p';
+  --view-width: 95%;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(204, 204, 204);
@@ -369,9 +402,50 @@ html[saved-theme="dark"] body p {
   text-decoration-color: rgb(140, 140, 140);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+  --accent-h: 258;
+  --accent-l: 66%;
+  --accent-s: 88%;
+  --bold-weight: 600;
+  --cursor: default;
+  --font-medium: 500;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-normal: 400;
+  --font-small: 0.933em;
+  --font-smaller: 0.875em;
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(240, 168, 168, 0.9);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(240, 168, 168, 0.9);
+  border-left-width: 0px;
+  border-right-color: rgba(240, 168, 168, 0.9);
+  border-right-width: 0px;
+  border-top-color: rgba(240, 168, 168, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgba(240, 168, 168, 0.9);
+  content: "↩";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 5.632px;
+  letter-spacing: 0.32px;
+  line-height: 19.712px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgba(240, 168, 168, 0.9) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration-color: rgba(240, 168, 168, 0.9);
+  text-shadow: rgba(0, 0, 0, 0) 0px 0px 20px;
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
@@ -588,6 +662,339 @@ html[saved-theme="dark"] body .transclude-inner {
   border-top-right-radius: 20%;
   margin-right: 15px;
   width: 10px;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(77, 77, 77);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(77, 77, 77);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgb(77, 77, 77);
+  text-decoration-line: line-through;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -1762,6 +2169,39 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(230, 230, 230);
   color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body html {
+  --accent-d: 85%;
+  --accent-h: 210;
+  --accent-h-o: 50;
+  --accent-l: 63%;
+  --accent-s: 90%;
+  --base-d: 10%;
+  --base-h: 0;
+  --base-l: 95%;
+  --base-s: 0%;
+  --bold-weight: 500;
+  --buttons-fade-in-speed: filter 100ms ease-in-out;
+  --buttons-fade-out-speed: filter 2000ms ease-in-out;
+  --cursor: pointer;
+  --font-medium: 13.5px;
+  --font-monospace: Menlo,Monaco,Consolas,"Courier New",monospace;
+  --font-normal: 16px;
+  --font-small: 12px;
+  --font-smaller: 11px;
+  --line-width: 800px;
+  --main-accent-d: 60%;
+  --main-accent-h: 360;
+  --main-accent-l: 10%;
+  --main-accent-s: 70%;
+  --max-width: 100%;
+  --normal-weight: 300;
+  --tags-fade-in-speed: 100ms cubic-bezier(0.4, 0, 1, 1);
+  --tags-fade-out-speed: 2000ms cubic-bezier(0.4, 0, 1, 1);
+  --text: system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,'m1+ 1p';
+  --text-editor: system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue", 'm1+ 1p';
+  --view-width: 95%;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(0, 0, 0);
@@ -1827,9 +2267,50 @@ html[saved-theme="light"] body p {
   text-decoration-color: rgb(102, 102, 102);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+  --accent-h: 258;
+  --accent-l: 66%;
+  --accent-s: 88%;
+  --bold-weight: 600;
+  --cursor: default;
+  --font-medium: 500;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-normal: 400;
+  --font-small: 0.933em;
+  --font-smaller: 0.875em;
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(228, 103, 103);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(228, 103, 103);
+  border-left-width: 0px;
+  border-right-color: rgb(228, 103, 103);
+  border-right-width: 0px;
+  border-top-color: rgb(228, 103, 103);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(228, 103, 103);
+  content: "↩";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 5.632px;
+  letter-spacing: 0.32px;
+  line-height: 19.712px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(228, 103, 103) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration-color: rgb(228, 103, 103);
+  text-shadow: rgba(0, 0, 0, 0) 0px 0px 20px;
 }
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
@@ -2046,6 +2527,339 @@ html[saved-theme="light"] body .transclude-inner {
   border-top-right-radius: 20%;
   margin-right: 15px;
   width: 10px;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: rgb(0, 0, 0);
+  text-decoration-line: line-through;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {

@@ -429,6 +429,87 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.9);
+}
+
+html body html {
+  --accent-d: 51.6%;
+  --accent-h: 291.9;
+  --accent-l: 49.6%;
+  --accent-s: 14.6%;
+  --bold-weight: 600;
+  --border-width: 2px;
+  --border-width-alt: 1px;
+  --color-black: rgb(0, 0, 0);
+  --color-black-rgb: 0, 0, 0;
+  --color-side: rgb(145, 136, 125);
+  --color-side-rgb: 145, 136, 125;
+  --color-white: rgb(244, 226, 205);
+  --color-white-rgb: 244, 226, 205;
+  --cursor: pointer;
+  --default-font: "Petrona";
+  --editor-font-features: "";
+  --editor-font-size: 18px;
+  --editor-font-weight: 400;
+  --editor-line-height: 1.88889;
+  --font-monospace: "JetBrains Mono";
+  --font-normal: 16px;
+  --font-small: 14px;
+  --font-smaller: 11px;
+  --font-smallest: 10px;
+  --h1-line-height: 1.4;
+  --h1-margin-bottom: 1;
+  --h1-margin-top: 3;
+  --h1-size: 2.5em;
+  --h1-style: normal;
+  --h1-weight: 500;
+  --h2-line-height: 1.4;
+  --h2-margin-bottom: 13px;
+  --h2-margin-top: 2.25;
+  --h2-size: 1.9em;
+  --h2-style: normal;
+  --h2-weight: 500;
+  --h3-line-height: 1.4;
+  --h3-margin-bottom: 0.5;
+  --h3-margin-top: 1.75;
+  --h3-size: 1.7em;
+  --h3-style: normal;
+  --h3-weight: 500;
+  --h4-line-height: 1.5;
+  --h4-margin-bottom: 0.5;
+  --h4-margin-top: 1.5;
+  --h4-size: 1.3em;
+  --h4-style: normal;
+  --h4-weight: 500;
+  --h5-line-height: 1.5;
+  --h5-margin-bottom: 0.5;
+  --h5-margin-top: 1.5;
+  --h5-size: 1em;
+  --h5-style: normal;
+  --h5-weight: 500;
+  --h6-line-height: 1.5;
+  --h6-margin-bottom: 0.5;
+  --h6-margin-top: 1.5;
+  --h6-size: 1em;
+  --h6-style: italic;
+  --h6-weight: 500;
+  --header-width: 42px;
+  --hr-sym: " // ";
+  --icon-muted: 0.4;
+  --line-height: 1.5;
+  --line-width: 42rem;
+  --max-width: 100%;
+  --nested-padding: 3.5%;
+  --normal-weight: 400;
+  --radius-l: 25px;
+  --radius-m: 8px;
+  --radius-s: 4px;
+  --radius-xl: 25px;
+  --rem: 18px;
+  --scale-small: 90;
+  --strong-weight: 600;
+  --text: "Quicksand";
+  --text-editor: "Petrona";
+  --titlebar-height: 28px;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(28, 129, 176);
@@ -498,11 +579,63 @@ html body p {
   text-decoration-color: rgba(0, 0, 0, 0.5);
 }`,
     links: `html body a.external, html footer a {
+  --accent-h: 258;
+  --accent-l: 66%;
+  --accent-s: 88%;
+  --bold-weight: 600;
+  --border-width: 1px;
+  --cursor: default;
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-normal: 400;
+  --font-small: 0.933em;
+  --font-smaller: 0.875em;
+  --font-smallest: 0.8em;
+  --h1-line-height: 1.2;
+  --h1-size: 1.618em;
+  --h2-line-height: 1.2;
+  --h2-size: 1.462em;
+  --h3-line-height: 1.3;
+  --h3-size: 1.318em;
+  --h4-line-height: 1.4;
+  --h4-size: 1.188em;
+  --h5-size: 1.076em;
+  --h6-style: normal;
+  --radius-l: 12px;
+  --radius-xl: 16px;
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0.2);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0.2);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   box-shadow: rgba(0, 0, 0, 0) 0px 3px 0px 0px;
-  color: rgb(120, 88, 111);
-  font-family: Petrona;
+  color: rgba(0, 0, 0, 0.2);
+  content: "\\e917";
+  font-family: boxicons;
+  font-size: 16.2px;
+  line-height: 16.2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(120, 88, 111) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration-color: rgb(120, 88, 111);
+  transform: matrix(-0.707107, 0.707107, -0.707107, -0.707107, 0, 0);
   transition: box-shadow 0.1s ease-out;
 }
 
@@ -768,6 +901,266 @@ html body .transclude-inner {
   border-right-color: rgba(0, 0, 0, 0.4);
   border-top-color: rgba(0, 0, 0, 0.4);
   margin-right: 6px;
+}
+
+html body li.task-list-item[data-task="#"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="$"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="%"] {
+  text-decoration-line: line-through;
+}
+
+html li.task-list-item[data-task="body"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="'"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="+"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task=", html "] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="."] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="0"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="1"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="2"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="3"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="4"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="5"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="6"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="7"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="8"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="9"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task=":"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task=";"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="<"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="="] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="@"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="A"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="B"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="C"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="D"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="E"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="F"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="G"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="H"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="J"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="K"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="L"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="M"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="N"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="O"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="P"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="Q"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="R"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="T"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="U"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="V"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="W"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="Y"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="Z"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="_"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="\`"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="a"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="e"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="g"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="h"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="j"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="m"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="n"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="o"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="q"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="r"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="s"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="t"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="v"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="y"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="z"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="|"] {
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="~"] {
+  text-decoration-line: line-through;
 }
 
 html body li.task-list-item[data-task='!'] {

@@ -1734,31 +1734,31 @@ html {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/palatinate/source-sans-pro.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/palatinate/source-sans-pro.woff2") format("woff2");
 }
 @font-face {
   font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/palatinate/libre-baskerville.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/palatinate/libre-baskerville.woff2") format("woff2");
 }
 @font-face {
   font-family: "Merriweather";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/palatinate/merriweather.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/palatinate/merriweather.woff2") format("woff2");
 }
 @font-face {
   font-family: "Caveat Brush";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/palatinate/caveat-brush.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/palatinate/caveat-brush.woff2") format("woff2");
 }
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/palatinate/material-icons.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/palatinate/material-icons.woff2") format("woff2");
 }
 
 body {
@@ -2631,24 +2631,88 @@ body {
     color: rgb(34, 34, 34);
     font-family: "Caveat Brush";
     text-shadow: none;
+    font-size: 40px;
+    letter-spacing: -0.44px;
+    line-height: 48px;
+    --font-weight: 680;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    content: "";
+    font-weight: 680;
+    margin: 0px;
+    padding: 0px;
   }
 
   h3 {
     color: rgb(34, 34, 34);
     font-family: "Caveat Brush";
     text-shadow: none;
+    font-size: 33.6px;
+    letter-spacing: -0.2688px;
+    line-height: 43.68px;
+    --font-weight: 660;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    content: "";
+    font-weight: 660;
+    margin: 0px;
+    padding: 0px;
   }
 
   h4 {
     color: rgb(34, 34, 34);
     font-family: "Caveat Brush";
     text-shadow: none;
+    font-size: 30.4px;
+    letter-spacing: -0.152px;
+    line-height: 42.56px;
+    --font-weight: 640;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    content: "";
+    font-weight: 640;
+    margin: 0px;
+    padding: 0px;
   }
 
   h5 {
     color: rgb(34, 34, 34);
     font-family: "Caveat Brush";
     text-shadow: none;
+    font-size: 27.2px;
+    letter-spacing: -0.0544px;
+    line-height: 40.8px;
+    --font-weight: 620;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    content: "";
+    font-weight: 620;
+    margin: 0px;
+    padding: 0px;
   }
 
   h6 {
@@ -4554,6 +4618,56 @@ body {
     font-weight: 400;
   }
 
+  article > h1 {
+    font-family: "Caveat Brush";
+    font-size: 43.2px;
+    letter-spacing: -0.648px;
+    line-height: 51.84px;
+    --font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    color: rgb(34, 34, 34);
+    content: "";
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  li.task-list-item[data-task="x"] {
+    padding-left: 0px;
+    border-left: 0px rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
+    font-weight: 400;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="X"] {
+    padding-left: 0px;
+    border-left: 0px rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
+    font-weight: 400;
+    margin-left: 0px;
+  }
+
+  html {
+    --accent-light: #d9d4f0;
+    --accent-lightest: #f5f4fb;
+    --accent-middle: #8272d0;
+    --admonition-green: #64dd17;
+    --altaccent-light: #bfdeff;
+    --altaccent-lighter: #e3e5e8;
+    --altaccent-middle: #277f8e;
+    --altaccent2-middle: #ad3fc9;
+    --header-font: "Caveat Brush";
+    --infobox-header: #f2edff;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 
@@ -6070,24 +6184,88 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
       font-family: "Caveat Brush";
       text-shadow: none;
+      font-size: 40px;
+      letter-spacing: -0.44px;
+      line-height: 48px;
+      --font-weight: 680;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-color: rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-width: 0px;
+      content: "";
+      font-weight: 680;
+      margin: 0px;
+      padding: 0px;
     }
 
     h3 {
       color: rgb(218, 218, 218);
       font-family: "Caveat Brush";
       text-shadow: none;
+      font-size: 33.6px;
+      letter-spacing: -0.2688px;
+      line-height: 43.68px;
+      --font-weight: 660;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-color: rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-width: 0px;
+      content: "";
+      font-weight: 660;
+      margin: 0px;
+      padding: 0px;
     }
 
     h4 {
       color: rgb(218, 218, 218);
       font-family: "Caveat Brush";
       text-shadow: none;
+      font-size: 30.4px;
+      letter-spacing: -0.152px;
+      line-height: 42.56px;
+      --font-weight: 640;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-color: rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-width: 0px;
+      content: "";
+      font-weight: 640;
+      margin: 0px;
+      padding: 0px;
     }
 
     h5 {
       color: rgb(218, 218, 218);
       font-family: "Caveat Brush";
       text-shadow: none;
+      font-size: 27.2px;
+      letter-spacing: -0.0544px;
+      line-height: 40.8px;
+      --font-weight: 620;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-color: rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-width: 0px;
+      content: "";
+      font-weight: 620;
+      margin: 0px;
+      padding: 0px;
     }
 
     h6 {
@@ -7991,6 +8169,56 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
       font-size: 13px;
       font-weight: 400;
+    }
+
+    article > h1 {
+      font-family: "Caveat Brush";
+      font-size: 43.2px;
+      letter-spacing: -0.648px;
+      line-height: 51.84px;
+      --font-weight: 700;
+      background-color: rgba(0, 0, 0, 0);
+      background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-color: rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-width: 0px;
+      color: rgb(218, 218, 218);
+      content: "";
+      font-weight: 700;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    li.task-list-item[data-task="x"] {
+      padding-left: 0px;
+      border-left: 0px rgb(218, 218, 218);
+      color: rgb(218, 218, 218);
+      font-weight: 400;
+      margin-left: 0px;
+    }
+
+    li.task-list-item[data-task="X"] {
+      padding-left: 0px;
+      border-left: 0px rgb(218, 218, 218);
+      color: rgb(218, 218, 218);
+      font-weight: 400;
+      margin-left: 0px;
+    }
+
+    html {
+      --accent-light: #d9d4f0;
+      --accent-lightest: #f5f4fb;
+      --accent-middle: #8272d0;
+      --admonition-green: #64dd17;
+      --altaccent-light: #bfdeff;
+      --altaccent-lighter: #e3e5e8;
+      --altaccent-middle: #277f8e;
+      --altaccent2-middle: #ad3fc9;
+      --header-font: "Caveat Brush";
+      --infobox-header: #f2edff;
     }
   }
 }

@@ -500,6 +500,274 @@ html body .transclude-inner {
   width: 16.6562px;
 }
 
+html body li.task-list-item[data-task="#"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="X"] {
+  color: rgb(255, 121, 198);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="x"] {
+  color: rgb(255, 121, 198);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgba(255, 220, 255, 0.8);
+}
+
 html body li.task-list-item[data-task='!'] {
   color: rgba(255, 220, 255, 0.8);
   text-decoration-color: rgba(255, 220, 255, 0.8);

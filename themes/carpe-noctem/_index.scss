@@ -908,13 +908,13 @@ html {
   font-family: "Cabin";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/carpe-noctem/cabin.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/carpe-noctem/cabin.woff2") format("woff2");
 }
 @font-face {
   font-family: "Cabin";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/carpe-noctem/cabin-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/carpe-noctem/cabin-1.woff2") format("woff2");
 }
 
 body {
@@ -3820,6 +3820,455 @@ body {
     color: rgb(195, 221, 250);
     font-size: 13px;
     font-weight: 400;
+  }
+
+  li.task-list-item[data-task="_"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task=","] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task=";"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task=":"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="."] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="'"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="@"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="&"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="#"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="%"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="`"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="+"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="<"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="="] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="|"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="~"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="$"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="0"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="1"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="2"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="3"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="4"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="5"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="6"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="7"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="8"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="9"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="a"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="A"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="B"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="C"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="D"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="e"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="E"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="F"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="g"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="G"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="h"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="H"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="j"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="J"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="K"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="L"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="m"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="M"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="n"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="N"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="o"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="O"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="P"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="q"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="Q"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="r"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="R"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="s"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="t"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="T"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="U"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="v"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="V"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="W"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="x"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(170, 179, 190);
+  }
+
+  li.task-list-item[data-task="X"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(170, 179, 190);
+  }
+
+  li.task-list-item[data-task="y"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="Y"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="z"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  li.task-list-item[data-task="Z"] {
+    --color-green: #44cf6e;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(195, 221, 250);
+  }
+
+  html {
+    --color-dt-blue: #83bdff;
+    --color-dt-blue-1: #83bdff;
+    --color-dt-blue-2: #0267ff;
+    --color-dt-blue-3: #004caf;
+    --color-dt-blue-5: #001755;
+    --color-dt-blue-7: #000d36;
+    --color-dt-blue-8: #000518;
+    --color-dt-blue-9: #050511;
+    --color-dt-brown: #1f0d04;
+    --color-dt-brown-1: #311000;
+    --color-dt-brown-3: #301406;
+    --color-dt-brown-5: #2b190f;
+    --color-dt-brown-7: #1f0d04;
+    --color-dt-brown-9: #0e0602;
+    --color-green: #00ff00;
+    --color-green-bright: #00ff00;
+    --color-green-light: #74fc74;
+    --color-grey: #1a1c23;
+    --color-grey-0: #2b3a50;
+    --color-grey-1: #303642;
+    --color-grey-3: #282831;
+    --color-grey-5: #282828;
+    --color-grey-7: #1c1e26;
+    --color-grey-9: #1a1c23;
+    --color-tan: #f0e9d2;
+    --color-tan-1: #f0e9d2;
+    --color-tan-10: #0c0704;
+    --color-tan-3: #e6ddc4;
+    --color-tan-5: #dfd3c3;
+    --color-tan-7: #a79f94;
+    --color-tan-9: #6e655a;
+    --color-ver: #ff4824;
+    --color-ver-3: #ffa16b;
+    --color-ver-5: #862e18;
+    --color-ver-7: #ff5c1c;
+    --color-ver-9: #ff4824;
+    --color-white: #ffffff;
+    --color-white-0: #ffffff;
+    --color-white-1: #ddecff;
+    --color-white-3: #d5d9e0;
+    --color-white-5: #aab3be;
+    --color-white-7: #c3ddfa;
+    --default-font: "Cabin", "Alumni Sans", Helvetica, Inter, sans-serif;
+    --font-monospace: "Source Code Pro", Roboto mono, monospace;
   }
 
   --current-page-slug: attr(data-slug raw-string);

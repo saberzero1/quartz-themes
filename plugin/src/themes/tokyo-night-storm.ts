@@ -445,6 +445,11 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(36, 40, 59);
   color: rgb(192, 202, 245);
+}
+
+html body html {
+  --default-font: "JetBrains Mono Nerd Font", monospace;
+  --font-monospace: "Anonymouse Pro for Powerline", monospace;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(128, 208, 255);

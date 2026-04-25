@@ -4035,6 +4035,32 @@ body {
     font-weight: 400;
   }
 
+  li.task-list-item[data-task="x"] {
+    color: rgb(102, 102, 102);
+  }
+
+  li.task-list-item[data-task="X"] {
+    color: rgb(102, 102, 102);
+  }
+
+  html {
+    --color-dark-magenta: rgb(213, 26, 126);
+    --color-graph-node: rgb(140, 140, 140);
+    --color-graph-node-unresolved: rgb(95, 95, 100);
+    --color-light-blue: #849dff;
+    --color-light-purple: #aa8fd1;
+    --color-main-dark: #040812;
+    --color-muted-purple: #1e1e32;
+    --color-outline: #282828;
+    --color-secondary-dark: #0f1116;
+    --color-thistle: #d8bfd8;
+    --input-disabled-border-color: transparent;
+    --input-focus-border-color: Highlight;
+    --input-focus-outline: 1px solid Canvas;
+    --input-hover-border-color: black;
+    --input-unfocused-border-color: transparent;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 

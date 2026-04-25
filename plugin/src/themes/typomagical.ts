@@ -525,6 +525,18 @@ html[saved-theme="dark"] body .bases-table thead th {
 html[saved-theme="dark"] body .note-properties-tags {
   background-color: rgba(183, 154, 249, 0.1);
   color: rgb(238, 182, 98);
+}
+
+html[saved-theme="dark"] body html {
+  --font-title: "Playfair Display";
+  --h1-size: clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em);
+  --h2-size: clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em);
+  --h3-size: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
+  --h4-size: clamp(1.424em, calc(1rem + 3vw), 1.728em);
+  --h5-size: clamp(1.266em, calc(1rem + 3vw), 1.44em);
+  --h6-size: clamp(1.125em, calc(1rem + 3vw), 1.2em);
+  --heading-weight: 600;
+  --line-height-headings: 1.2;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
@@ -1306,6 +1318,18 @@ html[saved-theme="light"] body .bases-table thead th {
 html[saved-theme="light"] body .note-properties-tags {
   background-color: rgb(238, 182, 98);
   color: rgb(34, 34, 34);
+}
+
+html[saved-theme="light"] body html {
+  --font-title: "Playfair Display";
+  --h1-size: clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em);
+  --h2-size: clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em);
+  --h3-size: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
+  --h4-size: clamp(1.424em, calc(1rem + 3vw), 1.728em);
+  --h5-size: clamp(1.266em, calc(1rem + 3vw), 1.44em);
+  --h6-size: clamp(1.125em, calc(1rem + 3vw), 1.2em);
+  --heading-weight: 600;
+  --line-height-headings: 1.2;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   font-family: "??", Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif, Spectral, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;

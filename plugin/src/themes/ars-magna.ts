@@ -332,16 +332,76 @@ html body p {
 }
 
 html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+  --header-width: 36px;
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(240, 240, 240, 0.9);
+  border-bottom-color: rgba(240, 240, 240, 0.9);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(240, 240, 240, 0.9);
+  border-left-width: 0px;
+  border-right-color: rgba(240, 240, 240, 0.9);
+  border-right-width: 0px;
+  border-top-color: rgba(240, 240, 240, 0.9);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgba(240, 240, 240, 0.9);
+  content: " ";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 500;
+  line-height: 20.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 4px;
+  margin-top: 0px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpolygon points='5.4 26 24 7.4 24 20 26 20 26 4 10 4 10 6 22.6 6 4 24.6'%3E%3C/polygon%3E%3C/svg%3E");
   outline: rgba(240, 240, 240, 0.9) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration-color: rgba(240, 240, 240, 0.9);
 }
 
 html body a.internal.broken {
+  --header-width: 36px;
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(240, 240, 240, 0.9);
+  border-bottom-color: rgba(240, 240, 240, 0.45);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(240, 240, 240, 0.45);
+  border-left-width: 0px;
+  border-right-color: rgba(240, 240, 240, 0.45);
+  border-right-width: 0px;
+  border-top-color: rgba(240, 240, 240, 0.45);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgba(240, 240, 240, 0.45);
+  content: " ";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 500;
+  line-height: 20.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 4px;
+  margin-top: 0px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpolygon points='5.4 26 24 7.4 24 20 26 20 26 4 10 4 10 6 22.6 6 4 24.6'%3E%3C/polygon%3E%3C/svg%3E");
   outline: rgba(240, 240, 240, 0.45) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html body dd {
@@ -519,6 +579,339 @@ html body .transclude-inner {
   margin-right: 4px;
   transition: background-color 0.3s;
   width: 13.3281px;
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="X"] {
+  color: rgba(255, 180, 0, 0.75);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="x"] {
+  color: rgba(255, 180, 0, 0.75);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgba(255, 180, 0, 0.75);
+  text-decoration-line: line-through;
 }
 
 html body li.task-list-item[data-task='!'] {

@@ -443,6 +443,89 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(11, 10, 16);
   color: rgb(240, 239, 245);
+}
+
+html body html {
+  --ap-aqua: #a8e5e6;
+  --ap-base0: hsl(250, 23%, 5%);
+  --ap-base0-d: 13%;
+  --ap-base0-h: 250;
+  --ap-base0-l: 5%;
+  --ap-base0-s: 23%;
+  --ap-base1: hsl(249, 33%, 8%);
+  --ap-base1-d: 10%;
+  --ap-base1-h: 249;
+  --ap-base1-l: 8%;
+  --ap-base1-s: 33%;
+  --ap-blue: #A8C5E6;
+  --ap-code-aqua: #a8e5e6;
+  --ap-code-blue: #A8C5E6;
+  --ap-code-gray-1: #5b5c5f;
+  --ap-code-gray-2: #45474c;
+  --ap-code-green: #AAC5A0;
+  --ap-code-orange: #D1A999;
+  --ap-code-purple: #DFA7E7;
+  --ap-code-red: #E97193;
+  --ap-code-yellow: #ece0a8;
+  --ap-color-dp0: hsl(249, 33%, 8%);
+  --ap-color-dp1: hsl(250, 23%, 5%);
+  --ap-color-dp10: hsl(250, 23%, 90%);
+  --ap-color-dp11: hsl(250, 23%, 95%);
+  --ap-color-dp2: hsl(250, 23%, 10%);
+  --ap-color-dp3: hsl(250, 23%, 15%);
+  --ap-color-dp4: hsl(250, 23%, 20%);
+  --ap-color-dp5: hsl(250, 23%, 45%);
+  --ap-color-dp6: hsl(250, 23%, 55%);
+  --ap-color-dp7: hsl(250, 23%, 65%);
+  --ap-color-dp8: hsl(250, 23%, 75%);
+  --ap-color-dp9: hsl(250, 23%, 85%);
+  --ap-color-italic: #E97193;
+  --ap-color-quote: #E97193;
+  --ap-color-strong: #E97193;
+  --ap-color-tag-background: #2c2537;
+  --ap-color-tag-text: #EEEEEE;
+  --ap-container-padding: 8px;
+  --ap-font-hashtag: system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-header: system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-interface: system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-monospace: system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-text: system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
+  --ap-font-title: system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Ubuntu, sans-serif;
+  --ap-frame-left: 10px;
+  --ap-green: #AAC5A0;
+  --ap-h1: #E97193;
+  --ap-h1-size: 2.5em;
+  --ap-h2: #DFA7E7;
+  --ap-h2-size: 1.9882em;
+  --ap-h3: #A8C5E6;
+  --ap-h3-size: 1.5811em;
+  --ap-h4: #AAC5A0;
+  --ap-h4-size: 1.2574em;
+  --ap-h5: #D1A999;
+  --ap-h5-size: 1em;
+  --ap-h6: #ece0a8;
+  --ap-h6-size: 0.7953em;
+  --ap-orange: #D1A999;
+  --ap-primary: hsl(15, 64%, 88%);
+  --ap-primary-d: 80%;
+  --ap-primary-h: 15;
+  --ap-primary-l: 88%;
+  --ap-primary-s: 64%;
+  --ap-purple: #DFA7E7;
+  --ap-radius-l: 10px;
+  --ap-radius-m: 8px;
+  --ap-radius-s: 4px;
+  --ap-radius-xl: 16px;
+  --ap-red: #E97193;
+  --ap-secondary: hsl(157, 32%, 58%);
+  --ap-secondary-d: 70%;
+  --ap-secondary-h: 157;
+  --ap-secondary-l: 58%;
+  --ap-secondary-s: 32%;
+  --ap-size-text: 1em;
+  --ap-size-text-header: 1em;
+  --ap-size-text-item: 1em;
+  --ap-yellow: #ece0a8;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(233, 113, 147);
@@ -737,6 +820,276 @@ html body input[type=checkbox] {
   border-top-color: rgb(93, 84, 135);
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgb(93, 84, 135);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="X"] {
+  color: rgb(93, 84, 135);
+  text-decoration-line: none;
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="x"] {
+  color: rgb(93, 84, 135);
+  text-decoration-line: none;
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgb(93, 84, 135);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgb(93, 84, 135);
 }
 
 html body li.task-list-item[data-task='!'] {

@@ -882,6 +882,10 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(18, 18, 18);
   color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body html {
+  --scrollbar-color: rgba(0, 0, 0, 0);
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgba(232, 240, 247, 0.75);
@@ -925,6 +929,42 @@ html[saved-theme="dark"] body .text-highlight {
   text-decoration-color: rgba(232, 240, 247, 0.75);
 }
 
+html[saved-theme="dark"] body article > h1 {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --font-weight: 750;
+  --h-indicator-color: transparent;
+  --h-indicator-content: "H1";
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(0, 0, 0, 0);
+  content: "H1";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 11.2px;
+  font-weight: 750;
+  letter-spacing: -0.384px;
+  line-height: 46.08px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body del {
   color: rgba(232, 240, 247, 0.75);
   outline: rgba(232, 240, 247, 0.75) none 0px;
@@ -936,6 +976,185 @@ html[saved-theme="dark"] body h1.article-title {
   font-size: 14px;
 }
 
+html[saved-theme="dark"] body h2 {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --font-weight: 700;
+  --h-indicator-color: transparent;
+  --h-indicator-content: "H2";
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(0, 0, 0, 0);
+  content: "H2";
+  font-family: "";
+  font-size: 11.2px;
+  font-weight: 700;
+  letter-spacing: -0.264px;
+  line-height: 43.2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h3 {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --font-weight: 600;
+  --h-indicator-color: transparent;
+  --h-indicator-content: "H3";
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(0, 0, 0, 0);
+  content: "H3";
+  font-family: "";
+  font-size: 11.2px;
+  font-weight: 600;
+  letter-spacing: -0.1792px;
+  line-height: 40.32px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h4 {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --font-weight: 550;
+  --h-indicator-color: transparent;
+  --h-indicator-content: "H4";
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(0, 0, 0, 0);
+  content: "H4";
+  font-family: "";
+  font-size: 11.2px;
+  font-weight: 550;
+  letter-spacing: -0.104px;
+  line-height: 37.44px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h5 {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --font-weight: 550;
+  --h-indicator-color: transparent;
+  --h-indicator-content: "H5";
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(0, 0, 0, 0);
+  content: "H5";
+  font-family: "";
+  font-size: 11.2px;
+  font-weight: 550;
+  letter-spacing: -0.0384px;
+  line-height: 34.56px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h6 {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --font-weight: 500;
+  --h-indicator-color: transparent;
+  --h-indicator-content: "H6";
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(0, 0, 0, 0);
+  content: "H6";
+  font-family: "";
+  font-size: 11.2px;
+  font-weight: 500;
+  line-height: 31.68px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-color: rgb(72, 83, 91);
 }
@@ -945,18 +1164,82 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
   border-color: rgb(103, 136, 162);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(214, 182, 133, 0.85);
+  border-bottom-color: rgba(214, 182, 133, 0.85);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(214, 182, 133, 0.85);
+  border-left-width: 0px;
+  border-right-color: rgba(214, 182, 133, 0.85);
+  border-right-width: 0px;
+  border-top-color: rgba(214, 182, 133, 0.85);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgba(214, 182, 133, 0.85);
+  content: "";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 28.8px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 0px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cg fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/%3E%3C/g%3E%3C/svg%3E");
   outline: rgba(214, 182, 133, 0.85) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration: underline rgba(214, 182, 133, 0.85);
   text-decoration-color: rgba(214, 182, 133, 0.85);
+  transform: matrix(1, 0, 0, 1, 0, 2);
   transition: background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(126, 200, 197, 0.85);
+  border-bottom-color: rgba(126, 200, 197, 0.85);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(126, 200, 197, 0.85);
+  border-left-width: 0px;
+  border-right-color: rgba(126, 200, 197, 0.85);
+  border-right-width: 0px;
+  border-top-color: rgba(126, 200, 197, 0.85);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgba(126, 200, 197, 0.85);
+  content: "";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 28.8px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 0px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cg fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z'/%3E%3Cpath d='M14 2v4a2 2 0 0 0 2 2h4M10 9H8m8 4H8m8 4H8'/%3E%3C/g%3E%3C/svg%3E");
   outline: rgba(126, 200, 197, 0.85) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration: underline rgba(126, 200, 197, 0.85);
   text-decoration-color: rgba(126, 200, 197, 0.85);
+  transform: matrix(1, 0, 0, 1, 0, 2);
   transition: background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
@@ -1259,6 +1542,266 @@ html[saved-theme="dark"] body .transclude-inner {
   border-top-width: 2px;
   margin-left: -20.8px;
   transition: 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgba(232, 240, 247, 0.75);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgba(232, 240, 247, 0.75);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -3326,6 +3869,10 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(237, 237, 237);
+}
+
+html[saved-theme="light"] body html {
+  --scrollbar-color: rgba(0, 0, 0, 0);
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   text-decoration: underline dotted;
@@ -3351,8 +3898,223 @@ html[saved-theme="light"] body .page article p > strong, html[saved-theme="light
   text-decoration-style: dotted;
 }
 
+html[saved-theme="light"] body article > h1 {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --font-weight: 750;
+  --h-indicator-color: transparent;
+  --h-indicator-content: "H1";
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(0, 0, 0, 0);
+  content: "H1";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 11.2px;
+  font-weight: 750;
+  letter-spacing: -0.384px;
+  line-height: 46.08px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body h1.article-title {
   font-size: 14px;
+}
+
+html[saved-theme="light"] body h2 {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --font-weight: 700;
+  --h-indicator-color: transparent;
+  --h-indicator-content: "H2";
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(0, 0, 0, 0);
+  content: "H2";
+  font-family: "";
+  font-size: 11.2px;
+  font-weight: 700;
+  letter-spacing: -0.264px;
+  line-height: 43.2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h3 {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --font-weight: 600;
+  --h-indicator-color: transparent;
+  --h-indicator-content: "H3";
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(0, 0, 0, 0);
+  content: "H3";
+  font-family: "";
+  font-size: 11.2px;
+  font-weight: 600;
+  letter-spacing: -0.1792px;
+  line-height: 40.32px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h4 {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --font-weight: 550;
+  --h-indicator-color: transparent;
+  --h-indicator-content: "H4";
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(0, 0, 0, 0);
+  content: "H4";
+  font-family: "";
+  font-size: 11.2px;
+  font-weight: 550;
+  letter-spacing: -0.104px;
+  line-height: 37.44px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h5 {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --font-weight: 550;
+  --h-indicator-color: transparent;
+  --h-indicator-content: "H5";
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(0, 0, 0, 0);
+  content: "H5";
+  font-family: "";
+  font-size: 11.2px;
+  font-weight: 550;
+  letter-spacing: -0.0384px;
+  line-height: 34.56px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h6 {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --font-weight: 500;
+  --h-indicator-color: transparent;
+  --h-indicator-content: "H6";
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgba(0, 0, 0, 0);
+  content: "H6";
+  font-family: "";
+  font-size: 11.2px;
+  font-weight: 500;
+  line-height: 31.68px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -3364,18 +4126,82 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
   border-color: rgb(167, 147, 118);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgb(177, 140, 27);
+  border-bottom-color: rgb(177, 140, 27);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(177, 140, 27);
+  border-left-width: 0px;
+  border-right-color: rgb(177, 140, 27);
+  border-right-width: 0px;
+  border-top-color: rgb(177, 140, 27);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(177, 140, 27);
+  content: "";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 28.8px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 0px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cg fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/%3E%3C/g%3E%3C/svg%3E");
   outline: rgb(177, 140, 27) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration: underline rgb(177, 140, 27);
   text-decoration-color: rgb(177, 140, 27);
+  transform: matrix(1, 0, 0, 1, 0, 2);
   transition: background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+  --code-block-padding: 1.3125em
+    1.575em;
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgb(18, 125, 82);
+  border-bottom-color: rgb(18, 125, 82);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(18, 125, 82);
+  border-left-width: 0px;
+  border-right-color: rgb(18, 125, 82);
+  border-right-width: 0px;
+  border-top-color: rgb(18, 125, 82);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(18, 125, 82);
+  content: "";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 28.8px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 0px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cg fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z'/%3E%3Cpath d='M14 2v4a2 2 0 0 0 2 2h4M10 9H8m8 4H8m8 4H8'/%3E%3C/g%3E%3C/svg%3E");
   outline: rgb(18, 125, 82) none 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration: underline rgb(18, 125, 82);
   text-decoration-color: rgb(18, 125, 82);
+  transform: matrix(1, 0, 0, 1, 0, 2);
   transition: background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 

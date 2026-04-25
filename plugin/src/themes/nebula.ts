@@ -187,6 +187,11 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgba(7, 5, 53, 0);
   color: rgba(255, 255, 255, 0.867);
+}
+
+html body html {
+  --mono-font: "Source Code Pro", "Consolas", monospace;
+  --nice-font: "Myuppy", "Montserrat", "Roboto", "Segoe Print", sans-serif;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgba(255, 255, 255, 0.867);

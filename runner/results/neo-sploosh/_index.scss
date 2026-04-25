@@ -4929,6 +4929,1280 @@ body {
     font-weight: 400;
   }
 
+  li.task-list-item[data-task="_"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task=","] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task=";"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task=":"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="."] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="'"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="@"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="&"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="#"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="%"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="`"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="+"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="<"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="="] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="|"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="~"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="$"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="0"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="1"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="2"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="3"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="4"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="5"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="6"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="7"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="8"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="9"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="a"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="A"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="B"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="C"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="D"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="e"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="E"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="F"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="g"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="G"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="h"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="H"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="j"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="J"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="K"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="L"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="m"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="M"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="n"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="N"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="o"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="O"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="P"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="q"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="Q"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="r"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="R"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="s"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="t"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="T"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="U"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="v"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="V"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="W"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="x"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(91, 108, 120);
+  }
+
+  li.task-list-item[data-task="X"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(91, 108, 120);
+  }
+
+  li.task-list-item[data-task="y"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="Y"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="z"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  li.task-list-item[data-task="Z"] {
+    --accent-h: 258;
+    --accent-l: 66%;
+    --accent-s: 88%;
+    --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+    --background-modifier-border: #e0e0e0;
+    --background-modifier-error: #e93147;
+    --background-modifier-error-hover: #e93147;
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --background-modifier-success: #08b94e;
+    --text-error: #e93147;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-selection: hsla(258, 88%, 66%, 0.2);
+    --text-success: #08b94e;
+    color: rgb(16, 33, 45);
+  }
+
+  html {
+    --accent-h: 199;
+    --accent-l: 40%;
+    --accent-s: 100%;
+    --background-modifier-active-hover: #2c2c2c;
+    --background-modifier-border: #2e2e2e;
+    --background-modifier-error: #be0d22;
+    --background-modifier-error-hover: #40aedd;
+    --background-modifier-form-field: #1f1f1f;
+    --background-modifier-form-field-highlighted: #2c2c2c;
+    --background-modifier-hover: #2c2c2c;
+    --background-modifier-success: #47b8e6;
+    --background-modifier-success-hover: #47b8e6;
+    --background-primary: #222222;
+    --background-primary-alt: #1c1c1c;
+    --background-primary-rgb: 34, 34, 34;
+    --background-secondary: #181818;
+    --background-secondary-alt: #1f1f1f;
+    --background-secondary-rgb: 28, 28, 28;
+    --blockquote-border: #0090cc;
+    --embed-background: #1f1f1f;
+    --embed-border: #2e2e2e;
+    --inline-title-color: #40aedd;
+    --interactive-accent: #008dc9;
+    --interactive-accent-hover: #40aedd;
+    --interactive-hover: #2d2d2d;
+    --interactive-muted: #2e2e2e;
+    --interactive-normal: #2d2d2d;
+    --list-marker-color: #6ed5ff;
+    --modal-background: #1f1f1f;
+    --modal-border: #2e2e2e;
+    --modal-border-color: #2e2e2e;
+    --outline-item-color: #7a7a7a;
+    --outline-item-color-active: #c6c6c6;
+    --prompt-background: #1f1f1f;
+    --prompt-border: #2e2e2e;
+    --prompt-border-color: #2e2e2e;
+    --syntax-comment: #888888;
+    --syntax-constant: #64c8f2;
+    --syntax-diff-changed: #98e80f;
+    --syntax-function: #6ed5ff;
+    --syntax-invalid: #be0d22;
+    --syntax-keyword: #cccccc;
+    --syntax-keyword-secondary: #aaaaaa;
+    --syntax-markup-text: #eeeeee;
+    --syntax-property: #00b3ff;
+    --syntax-punctuation: #cccccc;
+    --syntax-string: #cbd200;
+    --syntax-variable: #0090cc;
+    --text-accent: #2f8fb5;
+    --text-accent-hover: #40aedd;
+    --text-accent-visited: #2f8fb5;
+    --text-accent-visited-hover: #40aedd;
+    --text-error: #be0d22;
+    --text-faint: #555555;
+    --text-heading: #e4e4e4;
+    --text-highlight-bg: #2c2c2c;
+    --text-muted: #7a7a7a;
+    --text-normal: #c6c6c6;
+    --text-normal-rgb: 198, 198, 198;
+    --text-on-accent: #111111;
+    --text-selection: #2c2c2c;
+    --text-success: #47b8e6;
+    --titlebar-background: #161616;
+    --titlebar-background-focused: #161616;
+    --view-action-active-bg: #1a98ce;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 
@@ -8444,6 +9718,1280 @@ html[saved-theme="dark"] {
       color: rgb(198, 198, 198);
       font-size: 13px;
       font-weight: 400;
+    }
+
+    li.task-list-item[data-task="_"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task=","] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task=";"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task=":"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="."] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="'"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="@"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="&"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="#"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="%"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="`"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="+"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="<"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="="] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="|"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="~"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="$"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="0"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="1"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="2"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="3"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="4"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="5"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="6"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="7"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="8"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="9"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="a"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="A"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="B"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="C"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="D"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="e"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="E"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="F"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="g"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="G"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="h"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="H"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="j"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="J"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="K"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="L"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="m"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="M"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="n"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="N"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="o"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="O"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="P"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="q"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="Q"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="r"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="R"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="s"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="t"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="T"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="U"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="v"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="V"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="W"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="x"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(122, 122, 122);
+    }
+
+    li.task-list-item[data-task="X"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(122, 122, 122);
+    }
+
+    li.task-list-item[data-task="y"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="Y"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="z"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    li.task-list-item[data-task="Z"] {
+      --accent-h: 258;
+      --accent-l: 66%;
+      --accent-s: 88%;
+      --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
+      --background-modifier-border: #363636;
+      --background-modifier-error: #fb464c;
+      --background-modifier-error-hover: #fb464c;
+      --background-modifier-form-field: #2a2a2a;
+      --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --background-modifier-success: #44cf6e;
+      --text-error: #fb464c;
+      --text-highlight-bg: rgba(255, 208, 0, 0.4);
+      --text-selection: hsla(258, 88%, 66%, 0.33);
+      --text-success: #44cf6e;
+      color: rgb(198, 198, 198);
+    }
+
+    html {
+      --accent-h: 199;
+      --accent-l: 40%;
+      --accent-s: 100%;
+      --background-modifier-active-hover: #2c2c2c;
+      --background-modifier-border: #2e2e2e;
+      --background-modifier-error: #be0d22;
+      --background-modifier-error-hover: #40aedd;
+      --background-modifier-form-field: #1f1f1f;
+      --background-modifier-form-field-highlighted: #2c2c2c;
+      --background-modifier-hover: #2c2c2c;
+      --background-modifier-success: #47b8e6;
+      --background-modifier-success-hover: #47b8e6;
+      --background-primary: #222222;
+      --background-primary-alt: #1c1c1c;
+      --background-primary-rgb: 34, 34, 34;
+      --background-secondary: #181818;
+      --background-secondary-alt: #1f1f1f;
+      --background-secondary-rgb: 28, 28, 28;
+      --blockquote-border: #0090cc;
+      --embed-background: #1f1f1f;
+      --embed-border: #2e2e2e;
+      --inline-title-color: #40aedd;
+      --interactive-accent: #008dc9;
+      --interactive-accent-hover: #40aedd;
+      --interactive-hover: #2d2d2d;
+      --interactive-muted: #2e2e2e;
+      --interactive-normal: #2d2d2d;
+      --list-marker-color: #6ed5ff;
+      --modal-background: #1f1f1f;
+      --modal-border: #2e2e2e;
+      --modal-border-color: #2e2e2e;
+      --outline-item-color: #7a7a7a;
+      --outline-item-color-active: #c6c6c6;
+      --prompt-background: #1f1f1f;
+      --prompt-border: #2e2e2e;
+      --prompt-border-color: #2e2e2e;
+      --syntax-comment: #888888;
+      --syntax-constant: #64c8f2;
+      --syntax-diff-changed: #98e80f;
+      --syntax-function: #6ed5ff;
+      --syntax-invalid: #be0d22;
+      --syntax-keyword: #cccccc;
+      --syntax-keyword-secondary: #aaaaaa;
+      --syntax-markup-text: #eeeeee;
+      --syntax-property: #00b3ff;
+      --syntax-punctuation: #cccccc;
+      --syntax-string: #cbd200;
+      --syntax-variable: #0090cc;
+      --text-accent: #2f8fb5;
+      --text-accent-hover: #40aedd;
+      --text-accent-visited: #2f8fb5;
+      --text-accent-visited-hover: #40aedd;
+      --text-error: #be0d22;
+      --text-faint: #555555;
+      --text-heading: #e4e4e4;
+      --text-highlight-bg: #2c2c2c;
+      --text-muted: #7a7a7a;
+      --text-normal: #c6c6c6;
+      --text-normal-rgb: 198, 198, 198;
+      --text-on-accent: #111111;
+      --text-selection: #2c2c2c;
+      --text-success: #47b8e6;
+      --titlebar-background: #161616;
+      --titlebar-background-focused: #161616;
+      --view-action-active-bg: #1a98ce;
     }
   }
 }

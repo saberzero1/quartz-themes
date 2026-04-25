@@ -1422,6 +1422,42 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] .callout-title >
   font-weight: 700;
 }
 
+html[saved-theme="dark"] body .callout[data-callout="banner-icon"] {
+  --banner-fade-height: 0px;
+  --banner-icon-size: 0px;
+  --banner-image-height: 0px;
+  --callout-color: 86, 148, 218;
+  --table-border-color: color-mix(in srgb, rgb(86, 148, 218) 25%, #1e1e1e 50%);
+  background-color: rgba(86, 148, 218, 0.1);
+  border-bottom-color: rgba(86, 148, 218, 0.25);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(86, 148, 218, 0.25);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(86, 148, 218, 0.25);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(86, 148, 218, 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(218, 218, 218);
+  font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: 217, 90, 95;
   background: rgba(217, 90, 95, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1618,6 +1654,42 @@ html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title {
 html[saved-theme="dark"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
   color: color(srgb 0.414902 0.621569 0.854902);
   font-weight: 700;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="note-toolbar"] {
+  --banner-fade-height: 0px;
+  --banner-icon-size: 0px;
+  --banner-image-height: 0px;
+  --callout-color: 86, 148, 218;
+  --table-border-color: color-mix(in srgb, rgb(86, 148, 218) 25%, #1e1e1e 50%);
+  background-color: rgba(86, 148, 218, 0.1);
+  border-bottom-color: rgba(86, 148, 218, 0.25);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(86, 148, 218, 0.25);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(86, 148, 218, 0.25);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(86, 148, 218, 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(218, 218, 218);
+  font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="question"] {
@@ -3508,6 +3580,42 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] .callout-title 
   font-weight: 700;
 }
 
+html[saved-theme="light"] body .callout[data-callout="banner-icon"] {
+  --banner-fade-height: 0px;
+  --banner-icon-size: 0px;
+  --banner-image-height: 0px;
+  --callout-color: 106, 173, 250;
+  --table-border-color: color-mix(in srgb, rgb(106, 173, 250) 25%, #ffffff 50%);
+  background-color: rgba(106, 173, 250, 0.1);
+  border-bottom-color: rgba(106, 173, 250, 0.25);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(106, 173, 250, 0.25);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(106, 173, 250, 0.25);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(106, 173, 250, 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(34, 34, 34);
+  font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: 254, 112, 112;
   background: rgba(254, 112, 112, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3704,6 +3812,42 @@ html[saved-theme="light"] body .callout[data-callout="note"] .callout-title {
 html[saved-theme="light"] body .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
   color: color(srgb 0.373333 0.596667 0.853333);
   font-weight: 700;
+}
+
+html[saved-theme="light"] body .callout[data-callout="note-toolbar"] {
+  --banner-fade-height: 0px;
+  --banner-icon-size: 0px;
+  --banner-image-height: 0px;
+  --callout-color: 106, 173, 250;
+  --table-border-color: color-mix(in srgb, rgb(106, 173, 250) 25%, #ffffff 50%);
+  background-color: rgba(106, 173, 250, 0.1);
+  border-bottom-color: rgba(106, 173, 250, 0.25);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgba(106, 173, 250, 0.25);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgba(106, 173, 250, 0.25);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgba(106, 173, 250, 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(34, 34, 34);
+  font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 25.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="question"] {

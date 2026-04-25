@@ -241,6 +241,12 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(24, 24, 24);
   color: rgb(231, 231, 231);
+}
+
+html[saved-theme="dark"] body html {
+  --font-code-blocks: "Arimo", sans-serif;
+  --font-text-headers: "Helvetica";
+  --font-text-normal: "Arimo", sans-serif;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(231, 231, 231);
@@ -278,6 +284,40 @@ html[saved-theme="dark"] body .text-highlight {
   text-decoration-color: rgb(231, 231, 231);
 }
 
+html[saved-theme="dark"] body article > h1 {
+  --font-weight: 700;
+  background-color: rgb(153, 30, 42);
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(255, 255, 255);
+  content: "";
+  font-family: Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.72px;
+  line-height: 57.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-transform: uppercase;
+  transform: matrix(1, 0, -1, 1, 0, 0);
+}
+
 html[saved-theme="dark"] body del {
   color: rgb(231, 231, 231);
   font-family: Arimo, sans-serif;
@@ -287,6 +327,138 @@ html[saved-theme="dark"] body del {
 
 html[saved-theme="dark"] body h1.article-title {
   color: rgb(231, 231, 231);
+}
+
+html[saved-theme="dark"] body h2 {
+  --font-weight: 680;
+  background-color: rgb(119, 22, 117);
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(255, 255, 255);
+  content: "";
+  font-family: Helvetica;
+  font-size: 32px;
+  font-weight: 680;
+  letter-spacing: -0.352px;
+  line-height: 38.4px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  transform: matrix(1, 0, -1, 1, 0, 0);
+}
+
+html[saved-theme="dark"] body h3 {
+  --font-weight: 660;
+  background-color: rgb(25, 82, 162);
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(255, 255, 255);
+  content: "";
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: 660;
+  letter-spacing: -0.192px;
+  line-height: 31.2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  transform: matrix(1, 0, -1, 1, 0, 0);
+}
+
+html[saved-theme="dark"] body h4 {
+  --font-weight: 640;
+  background-color: rgb(20, 100, 100);
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(255, 255, 255);
+  content: "";
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 640;
+  letter-spacing: -0.1px;
+  line-height: 28px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  transform: matrix(1, 0, -1, 1, 0, 0);
+}
+
+html[saved-theme="dark"] body h5 {
+  --font-weight: 620;
+  background-color: rgb(18, 97, 39);
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(255, 255, 255);
+  content: "";
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 620;
+  letter-spacing: -0.036px;
+  line-height: 27px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  transform: matrix(1, 0, -1, 1, 0, 0);
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
@@ -1502,6 +1674,12 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(231, 231, 231);
   color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body html {
+  --font-code-blocks: "Arimo", sans-serif;
+  --font-text-headers: "Helvetica";
+  --font-text-normal: "Arimo", sans-serif;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(0, 0, 0);
@@ -1539,6 +1717,40 @@ html[saved-theme="light"] body .text-highlight {
   text-decoration-color: rgb(0, 0, 0);
 }
 
+html[saved-theme="light"] body article > h1 {
+  --font-weight: 700;
+  background-color: rgb(194, 31, 37);
+  border-bottom-color: rgb(231, 231, 231);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(231, 231, 231);
+  border-left-width: 0px;
+  border-right-color: rgb(231, 231, 231);
+  border-right-width: 0px;
+  border-top-color: rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(231, 231, 231);
+  content: "";
+  font-family: Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.72px;
+  line-height: 57.6px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  text-transform: uppercase;
+  transform: matrix(1, 0, -1, 1, 0, 0);
+}
+
 html[saved-theme="light"] body del {
   color: rgb(0, 0, 0);
   font-family: Arimo, sans-serif;
@@ -1548,6 +1760,138 @@ html[saved-theme="light"] body del {
 
 html[saved-theme="light"] body h1.article-title {
   color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body h2 {
+  --font-weight: 680;
+  background-color: rgb(233, 53, 56);
+  border-bottom-color: rgb(231, 231, 231);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(231, 231, 231);
+  border-left-width: 0px;
+  border-right-color: rgb(231, 231, 231);
+  border-right-width: 0px;
+  border-top-color: rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(231, 231, 231);
+  content: "";
+  font-family: Helvetica;
+  font-size: 32px;
+  font-weight: 680;
+  letter-spacing: -0.352px;
+  line-height: 38.4px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  transform: matrix(1, 0, -1, 1, 0, 0);
+}
+
+html[saved-theme="light"] body h3 {
+  --font-weight: 660;
+  background-color: rgb(56, 10, 116);
+  border-bottom-color: rgb(231, 231, 231);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(231, 231, 231);
+  border-left-width: 0px;
+  border-right-color: rgb(231, 231, 231);
+  border-right-width: 0px;
+  border-top-color: rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(231, 231, 231);
+  content: "";
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: 660;
+  letter-spacing: -0.192px;
+  line-height: 31.2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  transform: matrix(1, 0, -1, 1, 0, 0);
+}
+
+html[saved-theme="light"] body h4 {
+  --font-weight: 640;
+  background-color: rgb(135, 0, 127);
+  border-bottom-color: rgb(231, 231, 231);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(231, 231, 231);
+  border-left-width: 0px;
+  border-right-color: rgb(231, 231, 231);
+  border-right-width: 0px;
+  border-top-color: rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(231, 231, 231);
+  content: "";
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 640;
+  letter-spacing: -0.1px;
+  line-height: 28px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  transform: matrix(1, 0, -1, 1, 0, 0);
+}
+
+html[saved-theme="light"] body h5 {
+  --font-weight: 620;
+  background-color: rgb(103, 188, 69);
+  border-bottom-color: rgb(231, 231, 231);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(231, 231, 231);
+  border-left-width: 0px;
+  border-right-color: rgb(231, 231, 231);
+  border-right-width: 0px;
+  border-top-color: rgb(231, 231, 231);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(231, 231, 231);
+  content: "";
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 620;
+  letter-spacing: -0.036px;
+  line-height: 27px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  transform: matrix(1, 0, -1, 1, 0, 0);
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {

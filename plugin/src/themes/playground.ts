@@ -466,6 +466,10 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: oklch(0.135 0.01 279.29);
   color: oklch(0.92 0.004 279.29);
+}
+
+html body html {
+  --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
 }`,
     typography: `html body .page article p > b, html b {
   color: oklch(0.92 0.004 279.29);
@@ -746,6 +750,274 @@ html body input[type=checkbox] {
   border-top-color: oklch(0.485 0.039 279.29);
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="X"] {
+  color: oklch(0.485 0.039 279.29);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="x"] {
+  color: oklch(0.485 0.039 279.29);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: oklch(0.92 0.004 279.29);
 }
 
 html body li.task-list-item[data-task='!'] {

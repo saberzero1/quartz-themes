@@ -415,6 +415,94 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="dark"] body div#quartz-root {
   color: rgb(224, 224, 224);
+}
+
+html[saved-theme="dark"] body html {
+  --accent-color: hsl(
+            353,
+            65%,
+            60%
+        );
+  --accent-color-hover: hsl(
+            353,
+            65%,
+            48% 
+        );
+  --accent-color-rgb: 208, 66, 85;
+  --accent-h: 353;
+  --accent-l: 60%;
+  --accent-s: 65%;
+  --background-modifier-active: #303030;
+  --background-modifier-border: #383838;
+  --background-modifier-hover: #2a2a2a;
+  --background-primary: #1e1e1e;
+  --background-secondary: #252525;
+  --color-accent: hsl(
+            353,
+            65%,
+            60%
+        );
+  --color-accent-hover: hsl(
+            353,
+            65%,
+            48% 
+        );
+  --color-accent-rgb: 208, 66, 85;
+  --font-family-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+  --input-background: #2d2d2d;
+  --input-border-color: #383838;
+  --input-focus-border-color: hsl(
+            353,
+            65%,
+            60%
+        );
+  --input-text-color: #e0e0e0;
+  --interactive-accent: hsl(
+            353,
+            65%,
+            60%
+        );
+  --interactive-accent-hover: hsl(
+            353,
+            65%,
+            48% 
+        );
+  --interactive-accent-rgb: 208, 66, 85;
+  --radius-l: 8px;
+  --radius-m: 5px;
+  --radius-s: 3px;
+  --sidebar-background: #1e1e1e;
+  --sidebar-border-color: #383838;
+  --spacing-l: 16px;
+  --spacing-m: 12px;
+  --spacing-s: 8px;
+  --spacing-xl: 24px;
+  --spacing-xs: 4px;
+  --text-accent: hsl(
+            353,
+            65%,
+            60%
+        );
+  --text-accent-hover: hsl(
+            353,
+            65%,
+            48% 
+        );
+  --text-accent-rgb: 208, 66, 85;
+  --text-muted: #a0a0a0;
+  --text-normal: #e0e0e0;
+  --text-on-accent: #ffffff;
+  --text-selection: rgba(
+            208,
+            66,
+            85,
+            0.3
+        );
+  --titlebar-background: #1e1e1e;
+  --titlebar-background-focused: #252525;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(224, 224, 224);
@@ -679,6 +767,339 @@ html[saved-theme="dark"] body .transclude-inner {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   margin-right: 4px;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(160, 160, 160);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(160, 160, 160);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgb(160, 160, 160);
+  text-decoration-line: line-through;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -2070,6 +2491,94 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="light"] body div#quartz-root {
   color: rgb(32, 33, 36);
+}
+
+html[saved-theme="light"] body html {
+  --accent-color: hsl(
+            353,
+            65%,
+            60%
+        );
+  --accent-color-hover: hsl(
+            353,
+            65%,
+            48% 
+        );
+  --accent-color-rgb: 208, 66, 85;
+  --accent-h: 353;
+  --accent-l: 60%;
+  --accent-s: 65%;
+  --background-modifier-active: #303030;
+  --background-modifier-border: #383838;
+  --background-modifier-hover: #2a2a2a;
+  --background-primary: #1e1e1e;
+  --background-secondary: #252525;
+  --color-accent: hsl(
+            353,
+            65%,
+            60%
+        );
+  --color-accent-hover: hsl(
+            353,
+            65%,
+            48% 
+        );
+  --color-accent-rgb: 208, 66, 85;
+  --font-family-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+  --input-background: #2d2d2d;
+  --input-border-color: #383838;
+  --input-focus-border-color: hsl(
+            353,
+            65%,
+            60%
+        );
+  --input-text-color: #e0e0e0;
+  --interactive-accent: hsl(
+            353,
+            65%,
+            60%
+        );
+  --interactive-accent-hover: hsl(
+            353,
+            65%,
+            48% 
+        );
+  --interactive-accent-rgb: 208, 66, 85;
+  --radius-l: 8px;
+  --radius-m: 5px;
+  --radius-s: 3px;
+  --sidebar-background: #1e1e1e;
+  --sidebar-border-color: #383838;
+  --spacing-l: 16px;
+  --spacing-m: 12px;
+  --spacing-s: 8px;
+  --spacing-xl: 24px;
+  --spacing-xs: 4px;
+  --text-accent: hsl(
+            353,
+            65%,
+            60%
+        );
+  --text-accent-hover: hsl(
+            353,
+            65%,
+            48% 
+        );
+  --text-accent-rgb: 208, 66, 85;
+  --text-muted: #a0a0a0;
+  --text-normal: #e0e0e0;
+  --text-on-accent: #ffffff;
+  --text-selection: rgba(
+            208,
+            66,
+            85,
+            0.3
+        );
+  --titlebar-background: #1e1e1e;
+  --titlebar-background-focused: #252525;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(32, 33, 36);
@@ -2334,6 +2843,339 @@ html[saved-theme="light"] body .transclude-inner {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   margin-right: 4px;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(95, 99, 104);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(95, 99, 104);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: rgb(95, 99, 104);
+  text-decoration-line: line-through;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {

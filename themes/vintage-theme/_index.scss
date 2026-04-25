@@ -3765,6 +3765,2925 @@ body {
     font-weight: 300;
   }
 
+  li.task-list-item[data-task="_"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task=","] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task=";"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task=":"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="."] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="'"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="@"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="&"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="#"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="%"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="`"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="+"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="<"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="="] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="|"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="~"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="$"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="0"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="1"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="2"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="3"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="4"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="5"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="6"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="7"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="8"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="9"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="a"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="A"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="B"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="C"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="D"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="e"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="E"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="F"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="g"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="G"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="h"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="H"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="j"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="J"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="K"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="L"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="m"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="M"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="n"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="N"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="o"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="O"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="P"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="q"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="Q"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="r"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="R"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="s"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="t"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="T"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="U"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="v"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="V"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="W"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="x"] {
+    color: rgb(236, 239, 244);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="X"] {
+    color: rgb(236, 239, 244);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="y"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="Y"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="z"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  li.task-list-item[data-task="Z"] {
+    color: rgb(253, 243, 231);
+    text-decoration-line: line-through;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    --background-modifier-border: #363636;
+    --background-primary-alt: #242424;
+    --background-secondary: #262626;
+    --background-secondary-alt: #363636;
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    --h1-size: 1.618em;
+    --h2-size: 1.462em;
+    --h3-size: 1.318em;
+    --h4-size: 1.188em;
+    --h5-size: 1.076em;
+    --h6-size: 1em;
+    --interactive-accent: hsl(258, 88%, 66%);
+    --text-accent: hsl(255, 89.76%, 75.9%);
+    --text-faint: #666666;
+    --text-highlight-bg: rgba(255, 208, 0, 0.4);
+    --text-muted: #b3b3b3;
+    --text-normal: #dadada;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
+  }
+
+  html {
+    --blue: #5e81ac;
+    --blue2: #88c0d0;
+    --dark0: #333333;
+    --dark1: #474747;
+    --dark2: #5b5b5b;
+    --dark3: #707070;
+    --default-font-size: 20px;
+    --default-line-height: 34px;
+    --editor-font-size-override: 18px;
+    --editor-line-height: 29px;
+    --font-monospace: "JetBrains Mono", "FuraCode Nerd Font", "Fira Code", "Source Code Pro", "MesloLGS NF", Menlo, Monaco, Consolas, "Courier New", monospace;
+    --font-sans-serif: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+    --font-serif: "Newsreader", Georgia, serif;
+    --gray: #999999;
+    --gray-dark: #4c566a;
+    --gray-light: #eceff4;
+    --h1-size: 50px;
+    --h2-size: 40px;
+    --h3-size: 35px;
+    --h4-size: 32px;
+    --h5-size: 28px;
+    --h6-size: 24px;
+    --light0: #fdf3e7;
+    --light1: #e3dacf;
+    --light2: #fdf7f0;
+    --light3: #fefcfa;
+    --monospace-font-size: 18px;
+    --monospace-line-height: 26px;
+    --red: #c63d0f;
+    --red1: #cb5026;
+    --red2: #d1633e;
+    --small-font-size: 16px;
+    --small-line-height: 24px;
+    --yellow: #ebc06c;
+    --yellow2: #b49c5f;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 

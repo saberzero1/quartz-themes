@@ -1782,7 +1782,7 @@ html {
   font-family: "Formular";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/bolt/formular.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/bolt/formular.woff") format("woff");
 }
 
 body {
@@ -4715,6 +4715,743 @@ body {
     color: rgb(255, 255, 255);
     font-size: 13px;
     font-weight: 400;
+  }
+
+  li.task-list-item[data-task="_"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=","] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=";"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task=":"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="."] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="'"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="@"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="&"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="#"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="%"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="`"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="+"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="<"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="="] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="|"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="~"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="$"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="0"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="1"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="2"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="3"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="4"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="5"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="6"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="7"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="8"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="9"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="a"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="A"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="B"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="C"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="D"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="e"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="E"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="F"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="g"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="G"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="h"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="H"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="j"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="J"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="K"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="L"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="m"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="M"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="n"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="N"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="o"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="O"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="P"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="q"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Q"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="r"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="R"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="s"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="t"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="T"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="U"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="v"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="V"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="W"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="x"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="X"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="y"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Y"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="z"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
+  }
+
+  li.task-list-item[data-task="Z"] {
+    --tab-text-color: #ababab;
+    --tab-text-color-active: #5c5c5c;
+    --tab-text-color-focused: #5c5c5c;
+    --tab-text-color-focused-active: #5c5c5c;
+    --tab-text-color-focused-active-current: #222222;
+    --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
+    --table-header-color: #222222;
+    text-decoration-line: none;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -8293,6 +9030,743 @@ html[saved-theme="dark"] {
       color: rgb(204, 232, 232);
       font-size: 13px;
       font-weight: 400;
+    }
+
+    li.task-list-item[data-task="_"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=","] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=";"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task=":"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="."] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="'"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="@"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="&"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="#"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="%"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="`"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="+"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="<"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="="] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="|"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="~"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="$"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="0"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="1"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="2"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="3"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="4"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="5"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="6"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="7"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="8"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="9"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="a"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="A"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="B"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="C"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="D"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="e"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="E"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="F"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="g"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="G"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="h"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="H"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="j"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="J"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="K"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="L"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="m"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="M"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="n"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="N"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="o"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="O"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="P"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="q"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Q"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="r"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="R"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="s"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="t"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="T"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="U"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="v"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="V"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="W"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="x"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="X"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="y"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Y"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="z"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
+    }
+
+    li.task-list-item[data-task="Z"] {
+      --tab-text-color: #666666;
+      --tab-text-color-active: #b3b3b3;
+      --tab-text-color-focused: #b3b3b3;
+      --tab-text-color-focused-active: #b3b3b3;
+      --tab-text-color-focused-active-current: #dadada;
+      --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
+      --table-header-color: #dadada;
+      text-decoration-line: none;
     }
   }
 }

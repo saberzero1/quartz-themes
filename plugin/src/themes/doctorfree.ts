@@ -303,6 +303,45 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(1, 14, 25);
   color: rgb(248, 248, 242);
+}
+
+html[saved-theme="dark"] body html {
+  --blue: #00588E;
+  --code-size: 16px;
+  --cyan: #81FFEA;
+  --cyan-transparent: rgba(129, 255, 234, 0.3);
+  --font-family-editor: IBM Plex Mono, Menlo, Monaco, "Courier New", monospace;
+  --font-family-preview: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
+  --font-family-preview-heading: Rubik, "Avenir Next", Helvetica, Arial, sans-serif;
+  --font-size-h1: 30px;
+  --font-size-h2: 25px;
+  --font-size-h3: 21px;
+  --font-size-h4: 20px;
+  --font-size-h5: 19px;
+  --font-size-h6: 18px;
+  --font-size-normal: 18px;
+  --font-size-side-dock: 18px;
+  --font-size-side-dock-title: 18px;
+  --font-size-status-bar: 18px;
+  --font-text: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
+  --font-text-size: 18px;
+  --font-ui-large: 20px;
+  --font-ui-medium: 18px;
+  --font-ui-small: 16px;
+  --font-ui-smaller: 14px;
+  --gray-1: #586e75;
+  --gray-2: #D5D4DE;
+  --green: #8AFF7F;
+  --lavender: #b380fb;
+  --line-width: 900px;
+  --orange: #FE9580;
+  --pink: #FE7FBF;
+  --purple: #9580FF;
+  --purple-transparent: rgba(149, 128, 255, 0.5);
+  --red: #FF5555;
+  --table-header-size: 18px;
+  --white: #F8F8F3;
+  --yellow: #FEFF7F;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   background-color: rgb(122, 162, 247);
@@ -581,6 +620,14 @@ html[saved-theme="dark"] body .transclude-inner {
   border-right-color: rgb(127, 219, 202);
   border-top-color: rgb(127, 219, 202);
   margin-right: 0px;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  text-decoration-line: none;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -1677,6 +1724,45 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(1, 14, 25);
   color: rgb(248, 248, 242);
+}
+
+html[saved-theme="light"] body html {
+  --blue: #00588E;
+  --code-size: 16px;
+  --cyan: #81FFEA;
+  --cyan-transparent: rgba(129, 255, 234, 0.3);
+  --font-family-editor: IBM Plex Mono, Menlo, Monaco, "Courier New", monospace;
+  --font-family-preview: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
+  --font-family-preview-heading: Rubik, "Avenir Next", Helvetica, Arial, sans-serif;
+  --font-size-h1: 30px;
+  --font-size-h2: 25px;
+  --font-size-h3: 21px;
+  --font-size-h4: 20px;
+  --font-size-h5: 19px;
+  --font-size-h6: 18px;
+  --font-size-normal: 18px;
+  --font-size-side-dock: 18px;
+  --font-size-side-dock-title: 18px;
+  --font-size-status-bar: 18px;
+  --font-text: Karla, "Avenir Next", Helvetica, Arial, sans-serif;
+  --font-text-size: 18px;
+  --font-ui-large: 20px;
+  --font-ui-medium: 18px;
+  --font-ui-small: 16px;
+  --font-ui-smaller: 14px;
+  --gray-1: #586e75;
+  --gray-2: #D5D4DE;
+  --green: #8AFF7F;
+  --lavender: #b380fb;
+  --line-width: 900px;
+  --orange: #FE9580;
+  --pink: #FE7FBF;
+  --purple: #9580FF;
+  --purple-transparent: rgba(149, 128, 255, 0.5);
+  --red: #FF5555;
+  --table-header-size: 18px;
+  --white: #F8F8F3;
+  --yellow: #FEFF7F;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   background-color: rgb(122, 162, 247);
@@ -1972,6 +2058,14 @@ html[saved-theme="light"] body .transclude-inner {
   border-right-color: rgb(127, 219, 202);
   border-top-color: rgb(127, 219, 202);
   margin-right: 0px;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  text-decoration-line: none;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {

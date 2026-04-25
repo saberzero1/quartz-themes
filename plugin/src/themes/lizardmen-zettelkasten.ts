@@ -138,6 +138,11 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(15, 20, 25);
   color: rgb(225, 232, 237);
+}
+
+html body html {
+  font-size: 15px;
+  font-weight: 500;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(225, 232, 237);

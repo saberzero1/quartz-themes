@@ -1034,6 +1034,39 @@ html[saved-theme="dark"] body .text-highlight {
   text-decoration-color: rgb(188, 202, 216);
 }
 
+html[saved-theme="dark"] body article > h1 {
+  --font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, rgb(201, 60, 60), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(193, 67, 67);
+  content: "";
+  font-family: its-Draconis, Draconis, Inter;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: -0.51px;
+  line-height: 40.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body del {
   color: rgb(188, 202, 216);
   font-family: its-Bookerly, Bookerly, Inter;
@@ -1047,6 +1080,170 @@ html[saved-theme="dark"] body h1.article-title {
   color: rgb(188, 202, 216);
   font-size: 15px;
   font-weight: 600;
+}
+
+html[saved-theme="dark"] body h2 {
+  --font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, rgb(244, 164, 96), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(244, 164, 96);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(244, 164, 96);
+  border-left-width: 0px;
+  border-right-color: rgb(244, 164, 96);
+  border-right-width: 0px;
+  border-top-color: rgb(244, 164, 96);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(244, 164, 96);
+  content: "";
+  font-family: its-Draconis, Draconis, Inter;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.33px;
+  line-height: 36px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h3 {
+  --font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, rgb(161, 17, 17), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(161, 17, 17);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(161, 17, 17);
+  border-left-width: 0px;
+  border-right-color: rgb(161, 17, 17);
+  border-right-width: 0px;
+  border-top-color: rgb(161, 17, 17);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(161, 17, 17);
+  content: "";
+  font-family: its-Draconis, Draconis, Inter;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.208px;
+  line-height: 33.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h4 {
+  --font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, rgb(40, 51, 69), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(193, 67, 67);
+  content: "";
+  font-family: its-Draconis, Draconis, Inter;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.11px;
+  line-height: 30.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h5 {
+  --font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, rgb(40, 51, 69), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(193, 67, 67);
+  content: "";
+  font-family: its-Draconis, Draconis, Inter;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.04px;
+  line-height: 30px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body h6 {
+  --font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, rgb(40, 51, 69), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(193, 67, 67);
+  content: "";
+  font-family: its-Draconis, Draconis, Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
@@ -1066,9 +1263,37 @@ html[saved-theme="dark"] body p {
   text-decoration-color: rgb(151, 161, 185);
 }`,
     links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(97, 175, 239);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(97, 175, 239);
+  border-left-width: 0px;
+  border-right-color: rgb(97, 175, 239);
+  border-right-width: 0px;
+  border-top-color: rgb(97, 175, 239);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(97, 175, 239);
-  font-family: its-Bookerly, Bookerly, Inter;
+  content: "\\e809";
+  font-family: its;
+  font-weight: 100;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(97, 175, 239) none 0px;
+  padding-bottom: 0px;
+  padding-left: 2px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration-color: rgb(97, 175, 239);
 }
 
@@ -1313,6 +1538,276 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   margin-left: -22.4px;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="#"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="$"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="%"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] li.task-list-item[data-task="body"] {
+  color: rgb(136, 94, 233);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="'"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="+"] {
+  color: rgb(248, 114, 181);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=", html[saved-theme="dark"] "] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="."] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="0"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="1"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="2"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="3"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="4"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="5"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="6"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="7"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="8"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="9"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=":"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task=";"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  color: rgb(78, 91, 111);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="="] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="@"] {
+  color: rgb(230, 129, 63);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="A"] {
+  color: rgb(79, 165, 79);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="B"] {
+  color: rgb(136, 94, 233);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="C"] {
+  color: rgb(207, 67, 67);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="D"] {
+  color: rgb(92, 118, 153);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="E"] {
+  color: rgb(82, 139, 212);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="F"] {
+  color: rgb(92, 118, 153);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="G"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="H"] {
+  color: rgb(248, 114, 181);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="J"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="K"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="L"] {
+  color: rgb(133, 91, 65);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="M"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="N"] {
+  color: rgb(133, 91, 65);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="O"] {
+  color: rgb(186, 64, 64);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="P"] {
+  color: rgb(79, 165, 79);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Q"] {
+  color: rgb(170, 179, 202);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="R"] {
+  color: rgb(170, 179, 202);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="T"] {
+  color: rgb(170, 179, 202);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="U"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="V"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="W"] {
+  color: rgb(79, 165, 79);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  color: rgb(78, 91, 111);
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Y"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="Z"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="_"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="\`"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="a"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="e"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="g"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="h"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="j"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="m"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="n"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="o"] {
+  color: rgb(230, 129, 63);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="q"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="r"] {
+  color: rgb(249, 190, 123);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="s"] {
+  color: rgb(62, 69, 82);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="t"] {
+  color: rgb(170, 179, 202);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="v"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  color: rgb(88, 100, 119);
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="y"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="z"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="|"] {
+  color: rgb(188, 202, 216);
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="~"] {
+  color: rgb(207, 67, 67);
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -1642,6 +2137,119 @@ html[saved-theme="dark"] body .callout[data-callout="abstract"] > .callout-conte
   padding-top: 5px;
 }
 
+html[saved-theme="dark"] body .callout[data-callout="aside"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: "";
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-margin: 0 -1.2em 0 5px;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb("") 25%, #1a1e24 50%);
+  background-color: rgb(17, 21, 29);
+  border-bottom-color: rgb(188, 202, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(188, 202, 216);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(188, 202, 216);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(188, 202, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  box-shadow: rgb(134, 55, 55) 4.8px 4.8px 0px 0px, rgb(134, 55, 55) 0px 0px 0px 1px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="blank"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-border-width: 0;
+  --callout-brown: 161, 106, 73;
+  --callout-color: transparent;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(transparent) 25%, #1a1e24 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(188, 202, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(188, 202, 216);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(188, 202, 216);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(188, 202, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="bug"] {
   --callout-color: 251, 70, 76;
   border-bottom-left-radius: 0px;
@@ -1671,6 +2279,329 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="caption"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 2, 122, 255;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1a1e24 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(188, 202, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(188, 202, 216);
+  border-left-width: 0px;
+  border-right-color: rgb(188, 202, 216);
+  border-right-width: 0px;
+  border-top-color: rgb(188, 202, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="captions"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 2, 122, 255;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1a1e24 50%);
+  background-color: rgba(2, 122, 255, 0.1);
+  border-bottom-color: rgba(2, 122, 255, 0.25);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(2, 122, 255, 0.25);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgba(2, 122, 255, 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgba(2, 122, 255, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="cards"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-cards-columns: 3;
+  --callout-cards-gap: 5px;
+  --callout-color: transparent;
+  --callout-color-opacity: 20%;
+  --callout-content-padding: 0px;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 0;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(transparent) 25%, #1a1e24 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(188, 202, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(188, 202, 216);
+  border-left-width: 0px;
+  border-right-color: rgb(188, 202, 216);
+  border-right-width: 0px;
+  border-top-color: rgb(188, 202, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="checks"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 0px;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --list-indent: 0;
+  --root-list-spacing: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(188, 202, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(188, 202, 216);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(188, 202, 216);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(188, 202, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="column"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: #bccad8;
+  --callout-color-opacity: 20%;
+  --callout-column-gap: 10px;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --columns: 2;
+  --table-border-color: color-mix(in srgb, rgb(#bccad8) 25%, #1a1e24 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(188, 202, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(188, 202, 216);
+  border-left-width: 0px;
+  border-right-color: rgb(188, 202, 216);
+  border-right-width: 0px;
+  border-top-color: rgb(188, 202, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="columns"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: #bccad8;
+  --callout-color-opacity: 20%;
+  --callout-column-gap: 10px;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --columns: 2;
+  --table-border-color: color-mix(in srgb, rgb(#bccad8) 25%, #1a1e24 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(188, 202, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(188, 202, 216);
+  border-left-width: 0px;
+  border-right-color: rgb(188, 202, 216);
+  border-right-width: 0px;
+  border-top-color: rgb(188, 202, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
@@ -1766,6 +2697,58 @@ html[saved-theme="dark"] body .callout[data-callout="failure"] > .callout-conten
   padding-top: 5px;
 }
 
+html[saved-theme="dark"] body .callout[data-callout="grid"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 2, 122, 255;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 0;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1a1e24 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(188, 202, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(188, 202, 216);
+  border-left-width: 0px;
+  border-right-color: rgb(188, 202, 216);
+  border-right-width: 0px;
+  border-top-color: rgb(188, 202, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="info"] {
   --callout-color: 2, 122, 255;
   border-bottom-left-radius: 0px;
@@ -1795,6 +2778,233 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="infobox"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: #1a1e24;
+  --callout-color-opacity: 20%;
+  --callout-content-padding: 5px;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-margin: 0 0 0 5px;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 0;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --h1-border-line-height: 0;
+  --h2-border-line-height: 0;
+  --h3-border-line-height: 0;
+  --h4-border-line-height: 0;
+  --h5-border-line-height: 0;
+  --h6-border-line-height: 0;
+  --table-border-color: color-mix(in srgb, rgb(#1a1e24) 25%, #1a1e24 50%);
+  background-color: rgb(26, 30, 36);
+  border-bottom-color: rgb(188, 202, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(188, 202, 216);
+  border-left-width: 0px;
+  border-right-color: rgb(188, 202, 216);
+  border-right-width: 0px;
+  border-top-color: rgb(188, 202, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="kanban"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 0;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --item-outline: 0 0 0 1px #0000008c;
+  --lane-width: 250px;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(188, 202, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(188, 202, 216);
+  border-left-width: 0px;
+  border-right-color: rgb(188, 202, 216);
+  border-right-width: 0px;
+  border-top-color: rgb(188, 202, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="kith"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 115, 167, 202;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(115, 167, 202) 25%, #1a1e24 50%);
+  background-color: rgba(115, 167, 202, 0.1);
+  border-bottom-color: rgba(115, 167, 202, 0.7);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(115, 167, 202, 0.7);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgba(115, 167, 202, 0.7);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgba(115, 167, 202, 0.7);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="metadata"] {
+  --bold-color: rgb(82, 139, 212);
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-border-width: 2px;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 82, 139, 212;
+  --callout-color-opacity: 20%;
+  --callout-content-padding: 0px 10px 10px;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-shadow: 0px 0px 0px 1px #0000008c;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-title-padding: 5px;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(82, 139, 212) 25%, #1a1e24 50%);
+  background-color: rgba(82, 139, 212, 0.1);
+  border-bottom-color: rgba(82, 139, 212, 0.25);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgba(82, 139, 212, 0.25);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(82, 139, 212, 0.25);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgba(82, 139, 212, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="note"] {
@@ -1897,6 +3107,176 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content 
   padding-top: 5px;
 }
 
+html[saved-theme="dark"] body .callout[data-callout="quotes"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 2, 122, 255;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1a1e24 50%);
+  background-color: rgba(2, 122, 255, 0.1);
+  border-bottom-color: rgba(2, 122, 255, 0.25);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(2, 122, 255, 0.25);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgba(2, 122, 255, 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgba(2, 122, 255, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="recite"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 193, 67, 67;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-margin: 10px;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 5px 10px 10px 10px;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(193, 67, 67) 25%, #1a1e24 50%);
+  background-color: rgb(26, 30, 36);
+  border-bottom-color: rgba(193, 67, 67, 0.25);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 11px;
+  border-left-color: rgba(193, 67, 67, 0.25);
+  border-left-style: solid;
+  border-left-width: 11px;
+  border-right-color: rgba(193, 67, 67, 0.25);
+  border-right-style: solid;
+  border-right-width: 11px;
+  border-top-color: rgba(193, 67, 67, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 11px;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 0px 10px 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="statblocks"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-border-color: #772d2d;
+  --callout-brown: 161, 106, 73;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-margin: 10px auto;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 12px 15px;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(188, 202, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-left-color: rgb(188, 202, 216);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(188, 202, 216);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(188, 202, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 5px;
+  box-shadow: rgba(0, 0, 0, 0.55) 5px 5px 0px 0px, rgba(0, 0, 0, 0.55) 0px 0px 20px 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-left: 138.688px;
+  margin-right: 138.688px;
+  margin-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="success"] {
   --callout-color: 68, 207, 110;
   border-bottom-left-radius: 0px;
@@ -1926,6 +3306,66 @@ html[saved-theme="dark"] body .callout[data-callout="success"] > .callout-conten
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
+}
+
+html[saved-theme="dark"] body .callout[data-callout="timeline"] {
+  --c-timeline: calc(50% - 2px);
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 2, 122, 255;
+  --callout-color-opacity: 20%;
+  --callout-content-background: rgb(2, 122, 255, 0.1);
+  --callout-content-padding: 10px;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-margin: 0;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 0;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-title-padding: 10px;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --micro: 50px;
+  --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, #1a1e24 50%);
+  --timeline-border: rgb(2, 122, 255);
+  --timeline-shadow: #0000008c;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(188, 202, 216);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(188, 202, 216);
+  border-left-width: 0px;
+  border-right-color: rgb(188, 202, 216);
+  border-right-width: 0px;
+  border-top-color: rgb(188, 202, 216);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(188, 202, 216);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="tip"] {
@@ -3551,6 +4991,39 @@ html[saved-theme="light"] body .text-highlight {
   text-decoration-color: rgb(65, 47, 47);
 }
 
+html[saved-theme="light"] body article > h1 {
+  --font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, rgb(201, 60, 60), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(193, 67, 67);
+  content: "";
+  font-family: its-Draconis, Draconis, Inter;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: -0.51px;
+  line-height: 40.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body del {
   color: rgb(65, 47, 47);
   font-family: its-Bookerly, Bookerly, Inter;
@@ -3564,6 +5037,170 @@ html[saved-theme="light"] body h1.article-title {
   color: rgb(65, 47, 47);
   font-size: 15px;
   font-weight: 600;
+}
+
+html[saved-theme="light"] body h2 {
+  --font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, rgb(244, 164, 96), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(244, 164, 96);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(244, 164, 96);
+  border-left-width: 0px;
+  border-right-color: rgb(244, 164, 96);
+  border-right-width: 0px;
+  border-top-color: rgb(244, 164, 96);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(244, 164, 96);
+  content: "";
+  font-family: its-Draconis, Draconis, Inter;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.33px;
+  line-height: 36px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h3 {
+  --font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, rgb(161, 17, 17), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(161, 17, 17);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(161, 17, 17);
+  border-left-width: 0px;
+  border-right-color: rgb(161, 17, 17);
+  border-right-width: 0px;
+  border-top-color: rgb(161, 17, 17);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(161, 17, 17);
+  content: "";
+  font-family: its-Draconis, Draconis, Inter;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.208px;
+  line-height: 33.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h4 {
+  --font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(193, 67, 67);
+  content: "";
+  font-family: its-Draconis, Draconis, Inter;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.11px;
+  line-height: 30.8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h5 {
+  --font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(193, 67, 67);
+  content: "";
+  font-family: its-Draconis, Draconis, Inter;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.04px;
+  line-height: 30px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body h6 {
+  --font-weight: 500;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, rgba(251, 180, 87, 0.494), rgba(0, 0, 0, 0));
+  border-bottom-color: rgb(193, 67, 67);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(193, 67, 67);
+  border-left-width: 0px;
+  border-right-color: rgb(193, 67, 67);
+  border-right-width: 0px;
+  border-top-color: rgb(193, 67, 67);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(193, 67, 67);
+  content: "";
+  font-family: its-Draconis, Draconis, Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body li.task-list-item input[type="checkbox"] {
@@ -3583,9 +5220,37 @@ html[saved-theme="light"] body p {
   text-decoration-color: rgb(105, 117, 128);
 }`,
     links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+  --resizer-size: 20px;
+  --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+  --zoom-multiplier: 1;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(223, 98, 98);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(223, 98, 98);
+  border-left-width: 0px;
+  border-right-color: rgb(223, 98, 98);
+  border-right-width: 0px;
+  border-top-color: rgb(223, 98, 98);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(223, 98, 98);
-  font-family: its-Bookerly, Bookerly, Inter;
+  content: "\\e809";
+  font-family: its;
+  font-weight: 100;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   outline: rgb(223, 98, 98) none 0px;
+  padding-bottom: 0px;
+  padding-left: 2px;
+  padding-right: 0px;
+  padding-top: 0px;
   text-decoration-color: rgb(223, 98, 98);
 }
 
@@ -3830,6 +5495,276 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   margin-left: -22.4px;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="#"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="$"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="%"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] li.task-list-item[data-task="body"] {
+  color: rgb(182, 118, 255);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="'"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="+"] {
+  color: rgb(248, 114, 181);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=", html[saved-theme="light"] "] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="."] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="0"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="1"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="2"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="3"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="4"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="5"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="6"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="7"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="8"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="9"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=":"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task=";"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  color: rgb(78, 91, 111);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="="] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="@"] {
+  color: rgb(251, 146, 76);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="A"] {
+  color: rgb(79, 165, 79);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="B"] {
+  color: rgb(182, 118, 255);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="C"] {
+  color: rgb(214, 108, 108);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="D"] {
+  color: rgb(168, 177, 189);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="E"] {
+  color: rgb(82, 139, 212);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="F"] {
+  color: rgb(168, 177, 189);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="G"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="H"] {
+  color: rgb(248, 114, 181);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="J"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="K"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="L"] {
+  color: rgb(161, 106, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="M"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="N"] {
+  color: rgb(161, 106, 73);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="O"] {
+  color: rgb(186, 64, 64);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="P"] {
+  color: rgb(79, 165, 79);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Q"] {
+  color: rgb(159, 186, 223);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="R"] {
+  color: rgb(159, 186, 223);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="T"] {
+  color: rgb(159, 186, 223);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="U"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="V"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="W"] {
+  color: rgb(79, 165, 79);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  color: rgb(78, 91, 111);
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Y"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="Z"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="_"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="\`"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="a"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="e"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="g"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="h"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="j"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="m"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="n"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="o"] {
+  color: rgb(251, 146, 76);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="q"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="r"] {
+  color: rgb(249, 190, 123);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="s"] {
+  color: rgb(203, 212, 235);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="t"] {
+  color: rgb(159, 186, 223);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="v"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  color: rgb(226, 183, 163);
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="y"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="z"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="|"] {
+  color: rgb(65, 47, 47);
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="~"] {
+  color: rgb(214, 108, 108);
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {
@@ -4159,6 +6094,119 @@ html[saved-theme="light"] body .callout[data-callout="abstract"] > .callout-cont
   padding-top: 5px;
 }
 
+html[saved-theme="light"] body .callout[data-callout="aside"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: "";
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-margin: 0 -1.2em 0 5px;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb("") 25%, #fff9f0 50%);
+  background-color: rgb(250, 242, 233);
+  border-bottom-color: rgb(65, 47, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(65, 47, 47);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(65, 47, 47);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(65, 47, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  box-shadow: rgb(199, 89, 89) 4.8px 4.8px 0px 0px, rgb(199, 89, 89) 0px 0px 0px 1px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="blank"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-border-width: 0;
+  --callout-brown: 161, 106, 73;
+  --callout-color: transparent;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(transparent) 25%, #fff9f0 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(65, 47, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(65, 47, 47);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(65, 47, 47);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(65, 47, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="bug"] {
   --callout-color: 233, 49, 71;
   border-bottom-left-radius: 0px;
@@ -4188,6 +6236,329 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="caption"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 8, 109, 221;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, #fff9f0 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(65, 47, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(65, 47, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(65, 47, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(65, 47, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="captions"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 8, 109, 221;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, #fff9f0 50%);
+  background-color: rgba(8, 109, 221, 0.1);
+  border-bottom-color: rgba(8, 109, 221, 0.25);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(8, 109, 221, 0.25);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgba(8, 109, 221, 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgba(8, 109, 221, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="cards"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-cards-columns: 3;
+  --callout-cards-gap: 5px;
+  --callout-color: transparent;
+  --callout-color-opacity: 20%;
+  --callout-content-padding: 0px;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 0;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(transparent) 25%, #fff9f0 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(65, 47, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(65, 47, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(65, 47, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(65, 47, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="checks"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 0px;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --list-indent: 0;
+  --root-list-spacing: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(65, 47, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgb(65, 47, 47);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(65, 47, 47);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(65, 47, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="column"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: #412f2f;
+  --callout-color-opacity: 20%;
+  --callout-column-gap: 10px;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --columns: 2;
+  --table-border-color: color-mix(in srgb, rgb(#412f2f) 25%, #fff9f0 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(65, 47, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(65, 47, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(65, 47, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(65, 47, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="columns"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: #412f2f;
+  --callout-color-opacity: 20%;
+  --callout-column-gap: 10px;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --columns: 2;
+  --table-border-color: color-mix(in srgb, rgb(#412f2f) 25%, #fff9f0 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(65, 47, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(65, 47, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(65, 47, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(65, 47, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="danger"] {
@@ -4283,6 +6654,58 @@ html[saved-theme="light"] body .callout[data-callout="failure"] > .callout-conte
   padding-top: 5px;
 }
 
+html[saved-theme="light"] body .callout[data-callout="grid"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 8, 109, 221;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 0;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, #fff9f0 50%);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(65, 47, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(65, 47, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(65, 47, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(65, 47, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="info"] {
   --callout-color: 8, 109, 221;
   border-bottom-left-radius: 0px;
@@ -4312,6 +6735,233 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="infobox"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: #fff9f0;
+  --callout-color-opacity: 20%;
+  --callout-content-padding: 5px;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-margin: 0 0 0 5px;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 0;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --h1-border-line-height: 0;
+  --h2-border-line-height: 0;
+  --h3-border-line-height: 0;
+  --h4-border-line-height: 0;
+  --h5-border-line-height: 0;
+  --h6-border-line-height: 0;
+  --table-border-color: color-mix(in srgb, rgb(#fff9f0) 25%, #fff9f0 50%);
+  background-color: rgb(255, 249, 240);
+  border-bottom-color: rgb(65, 47, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(65, 47, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(65, 47, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(65, 47, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="kanban"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 0;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --item-outline: 0 0 0 1px #fbb4577e;
+  --lane-width: 250px;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(65, 47, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(65, 47, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(65, 47, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(65, 47, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="kith"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 115, 167, 202;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(115, 167, 202) 25%, #fff9f0 50%);
+  background-color: rgba(115, 167, 202, 0.1);
+  border-bottom-color: rgba(115, 167, 202, 0.7);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(115, 167, 202, 0.7);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgba(115, 167, 202, 0.7);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgba(115, 167, 202, 0.7);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="metadata"] {
+  --bold-color: rgb(82, 139, 212);
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-border-width: 2px;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 82, 139, 212;
+  --callout-color-opacity: 20%;
+  --callout-content-padding: 0px 10px 10px;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-shadow: 0px 0px 0px 1px #fbb4577e;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-title-padding: 5px;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(82, 139, 212) 25%, #fff9f0 50%);
+  background-color: rgba(82, 139, 212, 0.1);
+  border-bottom-color: rgba(82, 139, 212, 0.25);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgba(82, 139, 212, 0.25);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-right-color: rgba(82, 139, 212, 0.25);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: rgba(82, 139, 212, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="note"] {
@@ -4414,6 +7064,176 @@ html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content
   padding-top: 5px;
 }
 
+html[saved-theme="light"] body .callout[data-callout="quotes"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 8, 109, 221;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, #fff9f0 50%);
+  background-color: rgba(8, 109, 221, 0.1);
+  border-bottom-color: rgba(8, 109, 221, 0.25);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-left-color: rgba(8, 109, 221, 0.25);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgba(8, 109, 221, 0.25);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgba(8, 109, 221, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="recite"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 193, 67, 67;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-margin: 10px;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 5px 10px 10px 10px;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --table-border-color: color-mix(in srgb, rgb(193, 67, 67) 25%, #fff9f0 50%);
+  background-color: rgb(255, 249, 240);
+  border-bottom-color: rgba(193, 67, 67, 0.25);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 11px;
+  border-left-color: rgba(193, 67, 67, 0.25);
+  border-left-style: solid;
+  border-left-width: 11px;
+  border-right-color: rgba(193, 67, 67, 0.25);
+  border-right-style: solid;
+  border-right-width: 11px;
+  border-top-color: rgba(193, 67, 67, 0.25);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 11px;
+  box-shadow: rgba(251, 180, 87, 0.494) 0px 0px 10px 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="statblocks"] {
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-border-color: #fbb4577e;
+  --callout-brown: 161, 106, 73;
+  --callout-color-opacity: 20%;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-margin: 10px auto;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 12px 15px;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(65, 47, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-left-color: rgb(65, 47, 47);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: rgb(65, 47, 47);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: rgb(65, 47, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 5px;
+  box-shadow: rgba(251, 180, 87, 0.494) 5px 5px 0px 0px, rgba(251, 180, 87, 0.494) 0px 0px 20px 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-left: 138.688px;
+  margin-right: 138.688px;
+  margin-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="success"] {
   --callout-color: 8, 185, 78;
   border-bottom-left-radius: 0px;
@@ -4443,6 +7263,66 @@ html[saved-theme="light"] body .callout[data-callout="success"] > .callout-conte
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
+}
+
+html[saved-theme="light"] body .callout[data-callout="timeline"] {
+  --c-timeline: calc(50% - 2px);
+  --callout-black: 0, 0, 0;
+  --callout-blend-mode: normal;
+  --callout-blue: 82, 139, 212;
+  --callout-brown: 161, 106, 73;
+  --callout-color: 8, 109, 221;
+  --callout-color-opacity: 20%;
+  --callout-content-background: rgb(8, 109, 221, 0.1);
+  --callout-content-padding: 10px;
+  --callout-gray: 166, 189, 197;
+  --callout-green: 86, 179, 117;
+  --callout-margin: 0;
+  --callout-med-small: 50%;
+  --callout-med-tall: 80%;
+  --callout-medium: 60%;
+  --callout-micro: 10%;
+  --callout-orange: 230, 129, 63;
+  --callout-padding: 0;
+  --callout-pink: 227, 107, 167;
+  --callout-plain: transparent;
+  --callout-purple: 153, 97, 218;
+  --callout-red: 193, 67, 67;
+  --callout-small: 30%;
+  --callout-small-med: 40%;
+  --callout-tall: 95%;
+  --callout-tiny: 20%;
+  --callout-title-padding: 10px;
+  --callout-white: 256, 256, 256;
+  --callout-yellow: 208, 181, 48;
+  --micro: 50px;
+  --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, #fff9f0 50%);
+  --timeline-border: rgb(8, 109, 221);
+  --timeline-shadow: #fbb4577e;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(65, 47, 47);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(65, 47, 47);
+  border-left-width: 0px;
+  border-right-color: rgb(65, 47, 47);
+  border-right-width: 0px;
+  border-top-color: rgb(65, 47, 47);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(65, 47, 47);
+  font-family: its-Bookerly, Bookerly, Inter;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="tip"] {
@@ -8774,6 +11654,29 @@ li.task-list-item[data-task="<"]::before {
 html[saved-theme="dark"] body h1.article-title,
 html[saved-theme="light"] body h1.article-title {
   font-size: 2rem;
+  background-color: transparent;
+}
+
+/* Fix: heading sizing */
+html[saved-theme="dark"] body h1,
+html[saved-theme="light"] body h1,
+html[saved-theme="dark"] body h2,
+html[saved-theme="light"] body h2,
+html[saved-theme="dark"] body h3,
+html[saved-theme="light"] body h3,
+html[saved-theme="dark"] body h4,
+html[saved-theme="light"] body h4,
+html[saved-theme="dark"] body h5,
+html[saved-theme="light"] body h5,
+html[saved-theme="dark"] body h6,
+html[saved-theme="light"] body h6,
+html[saved-theme="dark"] body .graph > h3,
+html[saved-theme="light"] body .graph > h3,
+html[saved-theme="dark"] body .backlinks > h3,
+html[saved-theme="light"] body .backlinks > h3,
+html[saved-theme="dark"] body button.desktop-explorer h2,
+html[saved-theme="light"] body button.desktop-explorer h2 {
+  background-color: transparent;
 }
 `,
 };

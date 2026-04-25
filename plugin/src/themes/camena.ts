@@ -408,6 +408,17 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(23, 18, 33);
   color: rgb(198, 189, 219);
+}
+
+html[saved-theme="dark"] body html {
+  --blue-h: 210;
+  --cyan-h: 185;
+  --green-h: 100;
+  --orange-h: 25;
+  --pink-h: 320;
+  --purple-h: 270;
+  --red-h: 5;
+  --yellow-h: 50;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(198, 189, 219);
@@ -726,6 +737,18 @@ html[saved-theme="dark"] body input[type=checkbox] {
   border-right-color: rgb(113, 90, 165);
   border-top-color: rgb(113, 90, 165);
   transition: 0.2s ease-in-out;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="<"] {
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="X"] {
+  text-decoration-line: none;
+}
+
+html[saved-theme="dark"] body li.task-list-item[data-task="x"] {
+  text-decoration-line: none;
 }
 
 html[saved-theme="dark"] body li.task-list-item[data-task='!'] {
@@ -2173,6 +2196,17 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(249, 248, 251);
   color: rgb(45, 36, 66);
+}
+
+html[saved-theme="light"] body html {
+  --blue-h: 210;
+  --cyan-h: 185;
+  --green-h: 100;
+  --orange-h: 25;
+  --pink-h: 320;
+  --purple-h: 270;
+  --red-h: 5;
+  --yellow-h: 50;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(45, 36, 66);
@@ -2486,6 +2520,18 @@ html[saved-theme="light"] body input[type=checkbox] {
   border-right-color: rgb(141, 123, 183);
   border-top-color: rgb(141, 123, 183);
   transition: 0.2s ease-in-out;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="<"] {
+  text-decoration-line: line-through;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="X"] {
+  text-decoration-line: none;
+}
+
+html[saved-theme="light"] body li.task-list-item[data-task="x"] {
+  text-decoration-line: none;
 }
 
 html[saved-theme="light"] body li.task-list-item[data-task='!'] {

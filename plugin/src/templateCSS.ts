@@ -224,8 +224,8 @@ button.toc-header .fold,
   stroke: var(--quartz-icon-color);
 }
 
-@media all and (max-width: 1199px) {
-  .page > div#quartz-body div.sidebar.right {
+@media all and (max-width: 1200px) {
+  html body .page > div#quartz-body div.sidebar.right {
     background-color: transparent;
     border-left: none;
   }
@@ -529,6 +529,16 @@ body a.internal {
         padding-left: 0;
         padding-right: 0;
       }
+    }
+  }
+}
+
+/* Fix: heading sizing */
+:root[saved-theme="dark"],
+:root[saved-theme="light"] {
+  body {
+    .graph >h3, .backlinks > h3, button.desktop-explorer h2 {
+      font-size: 1rem;
     }
   }
 }

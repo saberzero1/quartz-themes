@@ -883,13 +883,13 @@ html {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/spectrum-blue/jetbrains-mono.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/spectrum-blue/jetbrains-mono.woff2") format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/spectrum-blue/jetbrains-mono-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/spectrum-blue/jetbrains-mono-1.woff2") format("woff2");
 }
 
 body {
@@ -3785,6 +3785,404 @@ body {
     color: rgb(237, 237, 237);
     font-size: 13px;
     font-weight: 400;
+  }
+
+  li.task-list-item[data-task="_"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task=","] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task=";"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task=":"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="."] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="'"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="@"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="&"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="#"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="%"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="`"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="+"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="<"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="="] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="|"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="~"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="$"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="0"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="1"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="2"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="3"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="4"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="5"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="6"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="7"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="8"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="9"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="a"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="A"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="B"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="C"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="D"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="e"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="E"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="F"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="g"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="G"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="h"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="H"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="j"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="J"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="K"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="L"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="m"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="M"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="n"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="N"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="o"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="O"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="P"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="q"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="Q"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="r"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="R"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="s"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="t"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="T"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="U"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="v"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="V"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="W"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="y"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="Y"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="z"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  li.task-list-item[data-task="Z"] {
+    --blockquote-border-color: hsl(258, 88%, 66%);
+    --color-accent: hsl(258, 88%, 66%);
+    --interactive-accent: hsl(258, 88%, 66%);
+  }
+
+  html {
+    --accent-1: rgb(0, 255, 140);
+    --blockquote-border-color: rgb(0, 255, 140);
+    --color-accent: rgb(0, 255, 140);
+    --color-var: rgb(0, 255, 140);
+    --interactive-accent: rgb(0, 255, 140);
   }
 
   --current-page-slug: attr(data-slug raw-string);

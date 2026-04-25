@@ -164,6 +164,15 @@ html[saved-theme="dark"] body .bases-table thead th {
 html[saved-theme="dark"] body .note-properties-tags {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(218, 218, 218);
+}
+
+html[saved-theme="dark"] body html {
+  --arvo-bold: "Arvo", serif;
+  --color-bright-gray: #ededed;
+  --color-light-carmine-pink: #e26868;
+  --color-timberwolf: #d8d9cf;
+  --color-tulip: #ff8787;
+  --permanent-marker: "Permanent Marker", cursive;
 }`,
     typography: `html[saved-theme="dark"] body .text-highlight {
   background-color: rgb(226, 104, 104);
@@ -957,6 +966,15 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(216, 217, 207);
+}
+
+html[saved-theme="light"] body html {
+  --arvo-bold: "Arvo", serif;
+  --color-bright-gray: #ededed;
+  --color-light-carmine-pink: #e26868;
+  --color-timberwolf: #d8d9cf;
+  --color-tulip: #ff8787;
+  --permanent-marker: "Permanent Marker", cursive;
 }`,
     typography: `html[saved-theme="light"] body .text-highlight {
   background-color: rgb(255, 135, 135);

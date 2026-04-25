@@ -872,19 +872,19 @@ html {
   font-family: "Pixelated MS Sans Serif";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/obsidian-windows-98-edition/pixelated-ms-sans-serif.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/obsidian-windows-98-edition/pixelated-ms-sans-serif.woff2") format("woff2");
 }
 @font-face {
   font-family: "Pixelated MS Sans Serif";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/obsidian-windows-98-edition/pixelated-ms-sans-serif-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/obsidian-windows-98-edition/pixelated-ms-sans-serif-1.woff2") format("woff2");
 }
 @font-face {
   font-family: "Fixedsys";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/obsidian-windows-98-edition/fixedsys.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/obsidian-windows-98-edition/fixedsys.woff") format("woff");
 }
 
 body {
@@ -3669,6 +3669,23 @@ body {
     color: rgb(218, 218, 218);
     font-size: 11px;
     font-weight: 700;
+  }
+
+  html {
+    background-color: rgb(212, 208, 200);
+    padding: 3px;
+    --border: #404040;
+    --titlebar_active_1: #0a246a;
+    --titlebar_active_2: #a6caf0;
+    --titlebar_inactive_1: #808080;
+    --titlebar_inactive_2: #c0c0c0;
+    --tooltip: rgb(255, 255, 225);
+    --window: #d4d0c8;
+    box-shadow:
+      rgb(64, 64, 64) -1px -1px 0px 0px inset,
+      rgb(255, 255, 255) 1px 1px 0px 0px inset,
+      rgb(212, 208, 200) -2px -2px 0px 0px inset,
+      rgb(255, 255, 255) 2px 2px 0px 0px inset;
   }
 
   --current-page-slug: attr(data-slug raw-string);

@@ -2,14 +2,14 @@
   font-family: "Cormorant";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/neutral-academia/cormorant.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/neutral-academia/cormorant.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/neutral-academia/manrope.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/neutral-academia/manrope.woff2")
     format("woff2");
 }
 body.theme-light {

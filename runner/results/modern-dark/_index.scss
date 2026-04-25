@@ -922,7 +922,7 @@ html {
   font-family: "its";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/modern-dark/its.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/modern-dark/its.woff") format("woff");
 }
 
 body {
@@ -3429,6 +3429,46 @@ body {
     color: rgb(218, 218, 218);
     font-size: 13px;
     font-weight: 400;
+  }
+
+  html {
+    --content-code-line: #00b0ff;
+    --content-font-family: "Helvetica Neue", Helvetica, Avenir, Avenir Next, Arial, "Lucida Grande", sans-serif;
+    --content-font-family-code: Consolas, monaco, monospace;
+    --content-font-size-normal: 18px;
+    --content-search-result: rgba(0, 127, 212, 0.4);
+    --content-tab-border: #6a6a6a;
+    --content-text-bold: #4ec9b0;
+    --content-text-highlighted: #353535;
+    --content-text-highlighted-bg: #dfe14d;
+    --content-text-italic: #dcdcaa;
+    --content-text-normal: #dedede;
+    --content-text-selection: rgba(0, 127, 212, 0.4);
+    --content-text-strikethrough: #b0b0b0;
+    --content-title-font-weight: 600;
+    --content-title-h1: #569cd6;
+    --content-title-h2: #dcdcaa;
+    --content-title-h3: #9cdcfe;
+    --content-title-h4: #c586c0;
+    --content-title-h5: #ce9178;
+    --content-title-h6: #4ec9b0;
+    --content-title-line-height: 1;
+    --cyan: #00b0ff;
+    --file-hover: #569cd6;
+    --folder-hover: #569cd6;
+    --theme-accent-color: #569cd6;
+    --theme-accent-contrast: #000000;
+    --theme-active-tab: #1e1e1e;
+    --theme-inactive-tab: #2d2d2d;
+    --theme-side-panel-background: #252526;
+    --theme-side-panel-contrast: #37373d;
+    --theme-side-panel-text: #b0b0b0;
+    --theme-text-background: #1e1e1e;
+    --theme-text-input: #1e1e1e;
+    --theme-window-background: #353535;
+    --theme-window-light: #3f3f3f;
+    --theme-window-text: #fcfcfc;
+    --window-manager-titlebar: #3f3f3f;
   }
 
   --current-page-slug: attr(data-slug raw-string);

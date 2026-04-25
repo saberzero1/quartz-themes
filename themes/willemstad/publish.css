@@ -2,119 +2,119 @@
   font-family: "Inter 4.1";
   font-style: italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/inter-4-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/inter-4-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Inter 4.1";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/inter-4-1-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/inter-4-1-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/manrope.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/manrope.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "DM Sans";
   font-style: italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/dm-sans.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/dm-sans.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/dm-sans-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/dm-sans-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Crimson Pro";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/crimson-pro.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/crimson-pro.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Crimson Pro";
   font-style: italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/crimson-pro-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/crimson-pro-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/dm-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/dm-mono.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "DM Mono";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/dm-mono-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/dm-mono-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "DM Mono";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/dm-mono-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/dm-mono-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/dm-mono-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/dm-mono-3.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "DM Mono";
   font-style: italic;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/dm-mono-4.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/dm-mono-4.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/dm-mono-5.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/dm-mono-5.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "MathJax Main";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/mathjax-main.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/mathjax-main.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "MathJax Main";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/mathjax-main-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/mathjax-main-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "MathJax Main";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/mathjax-main-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/mathjax-main-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "remixicon";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/willemstad/remixicon.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/willemstad/remixicon.woff2")
     format("woff2");
 }
 body.theme-light {

@@ -101,6 +101,15 @@ html body {
 html body .bases-table thead th {
   border-color: rgb(255, 204, 0);
   font-weight: 650;
+}
+
+html body html {
+  --h1: 1.6em;
+  --h2: 1.3em;
+  --h3: 1.2em;
+  --h4: 1.1em;
+  --h5: 1.05em;
+  --h6: 1em;
 }`,
     typography: `html body .page article p > b, html b {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

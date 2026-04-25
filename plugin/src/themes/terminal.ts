@@ -343,6 +343,40 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(0, 0, 0);
   color: rgb(21, 208, 13);
+}
+
+html body html {
+  --active-tab: "^";
+  --all: "-a";
+  --char-width: 8.75px;
+  --close: "x";
+  --collapse-down: "v";
+  --collapse-right: ">";
+  --default-font: Fira Code;
+  --edit-mode: "/e";
+  --editor-line-height: 1.3;
+  --font-monospace: Fira Code;
+  --header-height: 36px;
+  --input-prompt: "$";
+  --more: "/?";
+  --next: ">";
+  --not-created-note: "+";
+  --pin-command: "*";
+  --prev: "<";
+  --preview-mode: "/p";
+  --pwd: "PWD";
+  --quit: "/q";
+  --replace: ":";
+  --search: "/";
+  --selected: ">";
+  --show-more-bottom: "+/";
+  --show-more-top: "+\\\\";
+  --status-bar-height: 21px;
+  --the-background-color: #000000;
+  --the-color: #15d00d;
+  --the-color-rgb: 35, 255, 24;
+  --the-font: Fira Code;
+  --the-font-size: 14px;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(21, 208, 13);
@@ -1216,7 +1250,34 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
 }
 
 html body .search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, html .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, html .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, html ~ .result-card:focus)) {
+  --font-monospace: '??', '??', ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --header-height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(21, 208, 13);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(21, 208, 13);
+  border-left-width: 0px;
+  border-right-color: rgb(21, 208, 13);
+  border-right-width: 0px;
+  border-top-color: rgb(21, 208, 13);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
   color: rgb(21, 208, 13);
+  content: ">";
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 14px;
+  line-height: 18.2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {

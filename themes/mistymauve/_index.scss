@@ -1760,13 +1760,13 @@ html {
   font-family: "Arvo";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/mistymauve/arvo.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/mistymauve/arvo.woff2") format("woff2");
 }
 @font-face {
   font-family: "Permanent Marker";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.1/fonts/mistymauve/permanent-marker.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v2.0.2/fonts/mistymauve/permanent-marker.woff2") format("woff2");
 }
 
 body {
@@ -4545,6 +4545,15 @@ body {
     color: rgb(34, 34, 34);
     font-size: 13px;
     font-weight: 400;
+  }
+
+  html {
+    --arvo-bold: "Arvo", serif;
+    --color-bright-gray: #ededed;
+    --color-light-carmine-pink: #e26868;
+    --color-timberwolf: #d8d9cf;
+    --color-tulip: #ff8787;
+    --permanent-marker: "Permanent Marker", cursive;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -7969,6 +7978,15 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
       font-size: 13px;
       font-weight: 400;
+    }
+
+    html {
+      --arvo-bold: "Arvo", serif;
+      --color-bright-gray: #ededed;
+      --color-light-carmine-pink: #e26868;
+      --color-timberwolf: #d8d9cf;
+      --color-tulip: #ff8787;
+      --permanent-marker: "Permanent Marker", cursive;
     }
   }
 }

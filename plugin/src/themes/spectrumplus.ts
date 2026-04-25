@@ -249,6 +249,94 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(36, 36, 36);
   color: rgb(201, 201, 201);
+}
+
+html body html {
+  --accent-1: rgb(245, 112, 76);
+  --accent-1-rgb: 245, 112, 76;
+  --accent-2: rgb(245, 161, 76);
+  --accent-2-rgb: 245, 161, 76;
+  --accent-3: #b7ad3a;
+  --accent-3-rgb: 237, 228, 130;
+  --accent-4: #8ac536;
+  --accent-4-rgb: 170, 222, 98;
+  --accent-5: #3cad7f;
+  --accent-5-rgb: 98, 222, 172;
+  --accent-6: rgb(98, 183, 222);
+  --accent-6-rgb: 98, 183, 222;
+  --attachments: rgb(105, 188, 235);
+  --attachments-rgb: 105, 188, 235;
+  --background-modifier-error: #cf2d2d;
+  --background-modifier-error-hover: #a72020;
+  --background-primary: #f5f5f5;
+  --background-secondary: #e2e2e2;
+  --chart-color-1: rgb(245, 112, 76);
+  --chart-color-2: rgb(245, 161, 76);
+  --chart-color-3: #b7ad3a;
+  --chart-color-4: #8ac536;
+  --chart-color-5: #3cad7f;
+  --chart-color-6: rgb(98, 183, 222);
+  --default-font: "JetBrains Mono", monospace;
+  --external-link: #307a8e;
+  --external-link-hidden: #307a8e99;
+  --external-link-hidden-rgb: 131, 197, 235;
+  --external-link-rgb: 130, 210, 232;
+  --font-monospace: "JetBrains Mono", monospace;
+  --font-size-2xl: 1.5em;
+  --font-size-3xl: 1.875em;
+  --font-size-base: 1em;
+  --font-size-lg: 1.125em;
+  --font-size-sm: .875em;
+  --font-size-xl: 1.25em;
+  --font-size-xs: .78em;
+  --header-height: 42px;
+  --interactive-accent: #dea500;
+  --interactive-accent-hover: rgb(254, 106, 38);
+  --list-marker: 1.5rem;
+  --list-marker-num: 1.5;
+  --list-padding: 1.5em;
+  --list-padding-num: 2.5;
+  --main-background: #f5f5f5;
+  --main-background-rgb: 36, 36, 36;
+  --main-node: #dea500;
+  --main-node-hover: rgb(254, 106, 38);
+  --main-node-hover-rgb: 254, 106, 38;
+  --main-node-rgb: 255, 190, 0;
+  --max-width-text: 750px;
+  --monochrome-color: hsl(20, 100%, 50%);
+  --ribbon-width: 40px;
+  --secondary-background: #e2e2e2;
+  --secondary-background-low-opacity: #e2e2e254;
+  --secondary-background-rgb: 27, 27, 27;
+  --size-0-5: .125em;
+  --size-1: .25em;
+  --size-1-5: .375em;
+  --size-12: 3em;
+  --size-128: 32em;
+  --size-16: 4em;
+  --size-2: .5em;
+  --size-2-5: .625em;
+  --size-24: 6em;
+  --size-3: .75em;
+  --size-3-5: .875em;
+  --size-32: 8em;
+  --size-4: 1em;
+  --size-48: 12em;
+  --size-5: 1.25em;
+  --size-6: 1.5em;
+  --size-64: 16em;
+  --size-7: 1.75em;
+  --size-8: 2em;
+  --size-96: 24em;
+  --spectrum-hue: 20;
+  --spectrum-side-docks: 0 0 40px;
+  --tags: rgb(241, 158, 238);
+  --tags-rgb: 241, 158, 238;
+  --text-accent: #dea500;
+  --text-accent-hover: rgb(254, 106, 38);
+  --text-highlight-bg: #e9b35f;
+  --text-normal: rgb(201, 201, 201);
+  --text-on-accent: black;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(245, 112, 76);
@@ -503,6 +591,14 @@ html body input[type=checkbox] {
   margin-bottom: 1.66667px;
   margin-right: 3.33333px;
   width: 20px;
+}
+
+html body li.task-list-item[data-task="X"] {
+  text-decoration-line: none;
+}
+
+html body li.task-list-item[data-task="x"] {
+  text-decoration-line: none;
 }
 
 html body li.task-list-item[data-task='!'] {

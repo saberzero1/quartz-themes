@@ -343,6 +343,12 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(22, 22, 22);
   color: rgb(244, 244, 244);
+}
+
+html[saved-theme="dark"] body html {
+  --input-disabled-border-color: transparent;
+  --input-hover-border-color: black;
+  --input-unfocused-border-color: transparent;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(244, 244, 244);
@@ -1825,6 +1831,12 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="light"] body div#quartz-root {
   color: rgb(38, 38, 38);
+}
+
+html[saved-theme="light"] body html {
+  --input-disabled-border-color: transparent;
+  --input-hover-border-color: black;
+  --input-unfocused-border-color: transparent;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(38, 38, 38);

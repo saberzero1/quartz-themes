@@ -1223,7 +1223,7 @@ body {
 
   a.internal,
   .breadcrumb-container .breadcrumb-element > a {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(240, 240, 240, 0.9);
     color: rgba(240, 240, 240, 0.9);
     cursor: pointer;
     filter: none;
@@ -1260,10 +1260,27 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
+    line-height: 20.8px;
+    --header-width: 36px;
+    border-color: rgba(240, 240, 240, 0.9) rgba(240, 240, 240, 0.9) currentcolor;
+    border-bottom: rgba(240, 240, 240, 0.9);
+    border-width: 0px;
+    --resizer-size: 20px;
+    --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+    --zoom-multiplier: 1;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpolygon points='5.4 26 24 7.4 24 20 26 20 26 4 10 4 10 6 22.6 6 4 24.6'%3E%3C/polygon%3E%3C/svg%3E");
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: " ";
+    margin: 0px 4px 0px 0px;
+    padding: 0px;
   }
 
   a.internal.broken {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(240, 240, 240, 0.9);
     color: rgba(240, 240, 240, 0.45);
     cursor: pointer;
     filter: none;
@@ -1300,6 +1317,23 @@ body {
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
+    line-height: 20.8px;
+    --header-width: 36px;
+    border-color: rgba(240, 240, 240, 0.45) rgba(240, 240, 240, 0.45) currentcolor;
+    border-bottom: rgba(240, 240, 240, 0.45);
+    border-width: 0px;
+    --resizer-size: 20px;
+    --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
+    --zoom-multiplier: 1;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpolygon points='5.4 26 24 7.4 24 20 26 20 26 4 10 4 10 6 22.6 6 4 24.6'%3E%3C/polygon%3E%3C/svg%3E");
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    content: " ";
+    margin: 0px 4px 0px 0px;
+    padding: 0px;
   }
 
   a.external:hover,
@@ -3910,6 +3944,408 @@ body {
     color: rgba(240, 240, 240, 0.9);
     font-size: 13px;
     font-weight: 700;
+  }
+
+  li.task-list-item[data-task="_"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task=","] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task=";"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task=":"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="."] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="'"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="@"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="&"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="#"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="%"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="`"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="+"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="<"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="="] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="|"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="~"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="$"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="0"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="1"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="2"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="3"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="4"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="5"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="6"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="7"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="8"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="9"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="a"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="A"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="B"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="C"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="D"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="e"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="E"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="F"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="g"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="G"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="h"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="H"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="j"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="J"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="K"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="L"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="m"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="M"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="n"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="N"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="o"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="O"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="P"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="q"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="Q"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="r"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="R"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="s"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="t"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="T"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="U"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="v"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="V"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="W"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="x"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="X"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="y"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="Y"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="z"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
+  }
+
+  li.task-list-item[data-task="Z"] {
+    color: rgba(255, 180, 0, 0.75);
+    text-decoration-line: line-through;
+    margin-left: 0px;
   }
 
   --current-page-slug: attr(data-slug raw-string);

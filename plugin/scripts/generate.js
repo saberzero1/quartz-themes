@@ -3,6 +3,8 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import * as lucideIcons from "@lucide/icons";
 
+const USE_AUTO_CONFIG = process.argv.includes("--auto");
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -1011,14 +1013,35 @@ async function main() {
     process.exit(0);
   }
 
-  const { config } = await import(pathToFileURL(configPath).href);
+  const { config: manualConfig } = await import(pathToFileURL(configPath).href);
   const configSource = await fs.readFile(configPath, "utf8");
-  const aspectMap = buildAspectMap(configSource, config.length);
+  const manualAspectMap = buildAspectMap(configSource, manualConfig.length);
+
+  let autoConfigModule = null;
+  if (USE_AUTO_CONFIG) {
+    try {
+      const autoConfigPath = path.join(
+        repoRoot,
+        "runner",
+        "scripts",
+        "auto-config.mjs",
+      );
+      autoConfigModule = await import(pathToFileURL(autoConfigPath).href);
+    } catch (e) {
+      console.warn(`Auto-config module not available: ${e.message}`);
+    }
+  }
+
+  const config = manualConfig;
+  const aspectMap = manualAspectMap;
 
   const themesJson = JSON.parse(await fs.readFile(themesJsonPath, "utf8"));
   const themesMeta = themesJson.themes ?? {};
 
-  const args = process.argv.slice(2).flatMap((arg) => arg.split(","));
+  const args = process.argv
+    .slice(2)
+    .flatMap((arg) => arg.split(","))
+    .filter((arg) => arg.trim() !== "--auto");
   const filter = new Set(args.map((arg) => arg.trim()).filter(Boolean));
 
   const themeDirs = (await fs.readdir(resultsDir, { withFileTypes: true }))
@@ -1083,11 +1106,50 @@ async function main() {
 
     const bothModes = hasDark && hasLight;
     const warnings = new Set();
+
+    let effectiveConfig = config;
+    let effectiveAspectMap = aspectMap;
+    if (autoConfigModule) {
+      try {
+        const autoEntries = autoConfigModule.generateAutoConfig(themeId);
+        if (autoEntries.length > 0) {
+          effectiveConfig = autoConfigModule.mergeConfigs(config, autoEntries);
+          effectiveAspectMap = [
+            ...aspectMap,
+            ...autoEntries
+              .filter(
+                (e) =>
+                  !new Set(config.map((c) => c.obsidianSelector)).has(
+                    e.obsidianSelector,
+                  ),
+              )
+              .map((e) => e._aspect || "misc"),
+          ];
+        }
+      } catch (e) {
+        console.warn(`  Auto-config failed for ${themeId}: ${e.message}`);
+      }
+    }
+
     const darkAspectCSS = hasDark
-      ? buildModeCSS(darkData, "dark", bothModes, config, aspectMap, warnings)
+      ? buildModeCSS(
+          darkData,
+          "dark",
+          bothModes,
+          effectiveConfig,
+          effectiveAspectMap,
+          warnings,
+        )
       : {};
     const lightAspectCSS = hasLight
-      ? buildModeCSS(lightData, "light", bothModes, config, aspectMap, warnings)
+      ? buildModeCSS(
+          lightData,
+          "light",
+          bothModes,
+          effectiveConfig,
+          effectiveAspectMap,
+          warnings,
+        )
       : {};
 
     // Obsidian's stub is identical to `_baseline`, so the diff-based

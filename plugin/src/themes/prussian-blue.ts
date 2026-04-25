@@ -389,6 +389,35 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(15, 17, 22);
   color: rgb(235, 235, 251);
+}
+
+html body html {
+  --blue: #63c8da;
+  --dark0: #0f1116;
+  --dark1: #1f2026;
+  --dark2: #393939;
+  --dark3: #000716;
+  --dark4: #00002a;
+  --frost0: #122886;
+  --frost1: #2F459C;
+  --frost3: #2F459C;
+  --frost5: #2F459C;
+  --green: #37c991;
+  --grey: #595151;
+  --light0: #22198e;
+  --light1: #889ef9;
+  --light2: #ebebfb;
+  --light3: #4e72ff;
+  --orange: #ff9035;
+  --pink: #eb95db;
+  --purple: #d469c1;
+  --red: #c51b0c;
+  --teal0: #2F459C;
+  --teal1: #2F459C;
+  --teal2: #8b9bd8;
+  --teal3: #4568fc;
+  --teal4: #2F459C;
+  --yellow: #FCC200;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(197, 27, 12);
@@ -688,6 +717,274 @@ html body .transclude-inner {
   border-top-color: rgb(18, 40, 134);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+html body li.task-list-item[data-task="#"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="$"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="%"] {
+  color: rgb(235, 235, 251);
+}
+
+html li.task-list-item[data-task="body"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="'"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="+"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task=", html "] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="."] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="0"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="1"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="2"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="3"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="4"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="5"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="6"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="7"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="8"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="9"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task=":"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task=";"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="<"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="="] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="@"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="A"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="B"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="C"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="D"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="E"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="F"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="G"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="H"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="J"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="K"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="L"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="M"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="N"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="O"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="P"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="Q"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="R"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="T"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="U"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="V"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="W"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="X"] {
+  color: rgb(18, 40, 134);
+}
+
+html body li.task-list-item[data-task="Y"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="Z"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="_"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="\`"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="a"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="e"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="g"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="h"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="j"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="m"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="n"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="o"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="q"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="r"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="s"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="t"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="v"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="x"] {
+  color: rgb(18, 40, 134);
+}
+
+html body li.task-list-item[data-task="y"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="z"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="|"] {
+  color: rgb(235, 235, 251);
+}
+
+html body li.task-list-item[data-task="~"] {
+  color: rgb(235, 235, 251);
 }
 
 html body li.task-list-item[data-task='!'] {

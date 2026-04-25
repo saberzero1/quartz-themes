@@ -4071,6 +4071,21 @@ body {
     font-weight: 400;
   }
 
+  li.task-list-item[data-task="x"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(167, 171, 175);
+  }
+
+  li.task-list-item[data-task="X"] {
+    --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+    color: rgb(167, 171, 175);
+  }
+
+  html {
+    --default-font: "Segoe UI", "Arial", "Tahoma", "Helvetica", sans-serif;
+    --font-monospace: "Consolas", "Fira Code", "Source Code Pro", "Droid Sans Mono", "Monoid", "Arial", sans-serif;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 

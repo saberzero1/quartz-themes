@@ -37,6 +37,20 @@ html[saved-theme="dark"] body {
 
 html[saved-theme="dark"] body .bases-table thead th {
   font-weight: 800;
+}
+
+html[saved-theme="dark"] body html {
+  --background-color: #FFFFFF;
+  --default-font: 'Helvetica Neue', 'Roboto', sans-serif;
+  --editor-font-size: 11pt;
+  --font-monospace: 'Fira Code', 'Roboto Mono', monospace;
+  --highlight-blue: #DBF1FF;
+  --highlight-pink: #F9E0FF;
+  --highlight-yellow: #FFDC5E;
+  --list-symbol: '- ';
+  --main-black: #000000;
+  --normal-font: 'Helvetica Neue', 'Roboto', sans-serif;
+  --strong-blue: #19647E;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   font-family: "Helvetica Neue", Roboto, sans-serif;
@@ -875,6 +889,20 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="light"] body div#quartz-root {
   color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body html {
+  --background-color: #FFFFFF;
+  --default-font: 'Helvetica Neue', 'Roboto', sans-serif;
+  --editor-font-size: 11pt;
+  --font-monospace: 'Fira Code', 'Roboto Mono', monospace;
+  --highlight-blue: #DBF1FF;
+  --highlight-pink: #F9E0FF;
+  --highlight-yellow: #FFDC5E;
+  --list-symbol: '- ';
+  --main-black: #000000;
+  --normal-font: 'Helvetica Neue', 'Roboto', sans-serif;
+  --strong-blue: #19647E;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(0, 0, 0);

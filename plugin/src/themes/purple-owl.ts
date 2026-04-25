@@ -302,6 +302,49 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(1, 22, 39);
   color: rgb(171, 178, 191);
+}
+
+html body html {
+  --accent-d: 60%;
+  --accent-h: 14;
+  --accent-l: 70%;
+  --accent-s: 90%;
+  --base-d: 15%;
+  --base-h: 276;
+  --base-l: 75%;
+  --base-s: 68%;
+  --bold-weight: 600;
+  --border-width: 1px;
+  --border-width-alt: 1px;
+  --cursor: default;
+  --font-monospace: "monolisa", menlo, SFMono-Regular, Consolas, monospace;
+  --font-normal: 16px;
+  --font-settings: 14px;
+  --font-settings-small: 12px;
+  --font-small: 13px;
+  --font-smaller: 11px;
+  --font-smallest: 10px;
+  --font-ui: "monolisa", menlo, SFMono-Regular, Consolas, monospace;
+  --h1: 1.125em;
+  --h1-weight: 600;
+  --h2: 1em;
+  --h2-weight: 600;
+  --h3: 1em;
+  --h3-weight: 500;
+  --h4: 0.90em;
+  --h4-weight: 500;
+  --h5: 0.85em;
+  --h5-weight: 500;
+  --h6: 0.85em;
+  --h6-weight: 400;
+  --icon-muted: 0.4;
+  --line-height: 1.5;
+  --line-width: 40rem;
+  --max-width: 88%;
+  --nested-padding: 3.5%;
+  --normal-weight: 400;
+  --text: "monolisa", menlo, SFMono-Regular, Consolas, monospace;
+  --text-editor: "monolisa", menlo, SFMono-Regular, Consolas, monospace;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(171, 178, 191);
@@ -569,6 +612,14 @@ html body input[type=checkbox] {
   border-top-right-radius: 50%;
   margin-right: 6px;
   width: 18px;
+}
+
+html body li.task-list-item[data-task="X"] {
+  text-decoration-line: none;
+}
+
+html body li.task-list-item[data-task="x"] {
+  text-decoration-line: none;
 }
 
 html body li.task-list-item[data-task='!'] {

@@ -295,6 +295,22 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(40, 42, 54);
   color: rgb(248, 248, 242);
+}
+
+html body html {
+  --font-family-editor: Avenir, Avenir Next, sans-serif;
+  --font-family-preview: Avenir, Avenir Next, sans-serif;
+  --font-size-code: 16px;
+  --font-size-h1: 24px;
+  --font-size-h2: 23px;
+  --font-size-h3: 22px;
+  --font-size-h4: 21px;
+  --font-size-h5: 20px;
+  --font-size-h6: 19px;
+  --font-size-normal: 19px;
+  --font-size-side-dock: 16px;
+  --font-size-side-dock-title: 18px;
+  --font-size-status-bar: 16px;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(80, 250, 123);

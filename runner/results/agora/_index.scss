@@ -3962,6 +3962,64 @@ body {
     font-weight: 400;
   }
 
+  html {
+    --col-beige: #e1d7d4;
+    --col-black: #000000;
+    --col-blue: #2b76cf;
+    --col-bright-orange: #ff6900;
+    --col-bright-red: #eb182b;
+    --col-brown: #6b5137;
+    --col-crimson: #9f363c;
+    --col-crystal: #c5e6e5;
+    --col-cyan: #28c6d3;
+    --col-dark-gray: #505050;
+    --col-darker-gray: #373737;
+    --col-darkest-gray: #282828;
+    --col-deep-blue: #2968a6;
+    --col-desat-blue: #7699c2;
+    --col-desat-cyan: #8dc3c7;
+    --col-desat-lilac: #8c88b6;
+    --col-desat-magenta: #b688b2;
+    --col-desat-purple: #806597;
+    --col-light-gray: #898989;
+    --col-lighter-gray: #bfbfbf;
+    --col-lightest-gray: #ececec;
+    --col-lilac: #5348c1;
+    --col-magenta: #ca4abf;
+    --col-off-black: #16171e;
+    --col-off-white: #f1f0ee;
+    --col-orange: #ff8700;
+    --col-pale-orange: #e9cba9;
+    --col-pale-red: #e39fa3;
+    --col-purple: #823cbd;
+    --col-red: #d9363f;
+    --col-salmon: #e27d83;
+    --col-umber: #321b1b;
+    --col-vermillion: #ff4a00;
+    --col-white: #ffffff;
+    --font-cursive: "Overlock", cursive;
+    --font-monospace: "Courier Prime", monospace;
+    --font-sans: "Lato", sans-serif;
+    --font-serif: "Petrona", serif;
+    --font-serif-alt: "Crimson Pro", serif;
+    --font-serif-black: "Vollkorn", serif;
+    --font-size-big: 1.2em;
+    --font-size-bigger: 1.5em;
+    --font-size-dropcap: 2.4em;
+    --font-size-huge: 2.1em;
+    --font-size-large: 1.6em;
+    --font-size-larger: 1.9em;
+    --font-size-normal: 1em;
+    --font-size-plus: 1.1em;
+    --font-size-small: 0.9em;
+    --font-size-smaller: 0.8em;
+    --font-size-tiny: 0.7em;
+    --font-smallcaps: "Vollkorn SC", serif;
+    --margin-header-bot: 0.4em;
+    --margin-header-top: 0.8em;
+    --padding-bq-bottom: 2em;
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 

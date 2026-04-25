@@ -217,6 +217,11 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(41, 45, 37);
   color: rgb(199, 184, 158);
+}
+
+html[saved-theme="dark"] body html {
+  --replete-custom-separators-left-margin: -12px;
+  --replete-custom-separators-vertical-padding: 4px;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: rgb(199, 184, 158);
@@ -829,6 +834,41 @@ html[saved-theme="dark"] body .callout[data-callout="bug"] > .callout-content {
   color: rgb(0, 0, 0);
 }
 
+html[saved-theme="dark"] body .callout[data-callout="combat"] {
+  --callout-color: 0, 0, 0;
+  --el-margin-bottom: 1em;
+  --el-margin-top: 1em;
+  --table-border-color: color-mix(in srgb, rgb(0, 0, 0) 25%, #292D25 50%);
+  background-color: rgb(235, 214, 193);
+  border-bottom-color: rgba(225, 208, 179, 0.533);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(199, 184, 158);
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-right-color: rgb(199, 184, 158);
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-top-color: rgba(225, 208, 179, 0.533);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  color: rgb(199, 184, 158);
+  font-family: "??", "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 12px;
+  padding-top: 20px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="danger"] {
   --callout-color: 251, 70, 76;
   color: rgb(199, 184, 158);
@@ -917,6 +957,41 @@ html[saved-theme="dark"] body .callout[data-callout="info"] > .callout-content {
   color: rgb(0, 0, 0);
 }
 
+html[saved-theme="dark"] body .callout[data-callout="letter"] {
+  --callout-color: 0, 0, 0;
+  --el-margin-bottom: 1em;
+  --el-margin-top: 1em;
+  --table-border-color: color-mix(in srgb, rgb(0, 0, 0) 25%, #292D25 50%);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 20px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 8px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 8px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 20px;
+  color: rgb(199, 184, 158);
+  font-family: "??", "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 12px;
+  padding-top: 12px;
+}
+
 html[saved-theme="dark"] body .callout[data-callout="note"] {
   --callout-color: 2, 122, 255;
   color: rgb(199, 184, 158);
@@ -981,6 +1056,42 @@ html[saved-theme="dark"] body .callout[data-callout="quote"] .callout-title > .c
 
 html[saved-theme="dark"] body .callout[data-callout="quote"] > .callout-content {
   color: rgb(0, 0, 0);
+}
+
+html[saved-theme="dark"] body .callout[data-callout="rules"] {
+  --callout-color: 0, 0, 0;
+  --callout-title-size: 18px;
+  --el-margin-bottom: 1em;
+  --el-margin-top: 1em;
+  --table-border-color: color-mix(in srgb, rgb(0, 0, 0) 25%, #292D25 50%);
+  background-color: rgb(224, 214, 223);
+  border-bottom-color: rgba(225, 208, 179, 0.533);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(199, 184, 158);
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-right-color: rgb(199, 184, 158);
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-top-color: rgba(225, 208, 179, 0.533);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  color: rgb(199, 184, 158);
+  font-family: "My Title font", "SF Compact Display";
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 12px;
+  padding-top: 20px;
 }
 
 html[saved-theme="dark"] body .callout[data-callout="success"] {
@@ -1525,6 +1636,11 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(251, 248, 244);
   color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body html {
+  --replete-custom-separators-left-margin: -12px;
+  --replete-custom-separators-vertical-padding: 4px;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: rgb(0, 0, 0);
@@ -2136,6 +2252,41 @@ html[saved-theme="light"] body .callout[data-callout="bug"] > .callout-content {
   color: rgb(0, 0, 0);
 }
 
+html[saved-theme="light"] body .callout[data-callout="combat"] {
+  --callout-color: 0, 0, 0;
+  --el-margin-bottom: 1em;
+  --el-margin-top: 1em;
+  --table-border-color: color-mix(in srgb, rgb(0, 0, 0) 25%, #FBF8F4 50%);
+  background-color: rgb(235, 214, 193);
+  border-bottom-color: rgba(80, 80, 80, 0.65);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-right-color: rgb(0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-top-color: rgba(80, 80, 80, 0.65);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  color: rgb(0, 0, 0);
+  font-family: "??", "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 12px;
+  padding-top: 20px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="danger"] {
   --callout-color: 233, 49, 71;
   color: rgb(0, 0, 0);
@@ -2224,6 +2375,41 @@ html[saved-theme="light"] body .callout[data-callout="info"] > .callout-content 
   color: rgb(0, 0, 0);
 }
 
+html[saved-theme="light"] body .callout[data-callout="letter"] {
+  --callout-color: 0, 0, 0;
+  --el-margin-bottom: 1em;
+  --el-margin-top: 1em;
+  --table-border-color: color-mix(in srgb, rgb(0, 0, 0) 25%, #FBF8F4 50%);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 20px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 8px;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 8px;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 20px;
+  color: rgb(0, 0, 0);
+  font-family: "??", "My Text font", "New York", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 12px;
+  padding-top: 12px;
+}
+
 html[saved-theme="light"] body .callout[data-callout="note"] {
   --callout-color: 8, 109, 221;
   color: rgb(0, 0, 0);
@@ -2288,6 +2474,42 @@ html[saved-theme="light"] body .callout[data-callout="quote"] .callout-title > .
 
 html[saved-theme="light"] body .callout[data-callout="quote"] > .callout-content {
   color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .callout[data-callout="rules"] {
+  --callout-color: 0, 0, 0;
+  --callout-title-size: 18px;
+  --el-margin-bottom: 1em;
+  --el-margin-top: 1em;
+  --table-border-color: color-mix(in srgb, rgb(0, 0, 0) 25%, #FBF8F4 50%);
+  background-color: rgb(224, 214, 223);
+  border-bottom-color: rgba(80, 80, 80, 0.65);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(0, 0, 0);
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-right-color: rgb(0, 0, 0);
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-top-color: rgba(80, 80, 80, 0.65);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  color: rgb(0, 0, 0);
+  font-family: "My Title font", "SF Compact Display";
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 12px;
+  padding-top: 20px;
 }
 
 html[saved-theme="light"] body .callout[data-callout="success"] {

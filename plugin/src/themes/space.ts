@@ -471,6 +471,34 @@ html body .page > div#quartz-body div.sidebar.right {
 html body div#quartz-root {
   background-color: rgb(24, 29, 39);
   color: rgb(216, 215, 223);
+}
+
+html body html {
+  --active-contrast-amount: 10%;
+  --bg-contrast-amount: 15%;
+  --blue: #4c86a8;
+  --blue-faint: #6b9ab6;
+  --brown: #806443;
+  --contrast-color: #fff;
+  --default-text-color: #d0d0d0;
+  --fg-contrast-amount: 40%;
+  --grey: #c9cad9;
+  --highlight: #fff;
+  --medium-contrast-amount: 20%;
+  --nav-item-weight-hover: bold;
+  --orange: #ff4f00;
+  --periwinkle: #beb7df;
+  --platinum: #d8d7df;
+  --platinum-faint: #b2b2b8;
+  --red: #db5461;
+  --space-dark: #0f1218;
+  --space-light: #242b3a;
+  --space-new: #181d27;
+  --space-old: #2b3242;
+  --space-old-dark: #212531;
+  --space-old-light: #3a4358;
+  --yellow: #ffd85e;
+  --yellow-faint: #ffe699;
 }`,
     typography: `html body .page article p > b, html b {
   color: rgb(216, 215, 223);

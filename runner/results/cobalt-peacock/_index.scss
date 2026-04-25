@@ -4022,6 +4022,14 @@ body {
     font-weight: 400;
   }
 
+  li.task-list-item[data-task="x"] {
+    color: rgb(0, 136, 255);
+  }
+
+  li.task-list-item[data-task="X"] {
+    color: rgb(0, 136, 255);
+  }
+
   --current-page-slug: attr(data-slug raw-string);
 }
 

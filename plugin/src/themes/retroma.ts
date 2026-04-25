@@ -783,6 +783,24 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="dark"] body div#quartz-root {
   background-color: oklch(0.22 0.0651659 262.49);
+}
+
+html[saved-theme="dark"] body html {
+  --hue-amber: #ffb300;
+  --hue-blue: #2196f3;
+  --hue-cyan: #00bcd4;
+  --hue-green: #4caf50;
+  --hue-indigo: #3f51b5;
+  --hue-lime: #8bc34a;
+  --hue-magenta: #e91e63;
+  --hue-orange: #ff9800;
+  --hue-purple: #673ab7;
+  --hue-red: #d32f2f;
+  --hue-rose: #f48fb1;
+  --hue-teal: #009688;
+  --hue-vermillion: #ff5722;
+  --hue-violet: #9c27b0;
+  --hue-yellow: #ffeb3b;
 }`,
     typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
   color: oklch(0.8 0.08 32.4895);
@@ -2483,6 +2501,24 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
 
 html[saved-theme="light"] body div#quartz-root {
   background-color: oklch(0.93 0.0756873 263.559);
+}
+
+html[saved-theme="light"] body html {
+  --hue-amber: #ffb300;
+  --hue-blue: #2196f3;
+  --hue-cyan: #00bcd4;
+  --hue-green: #4caf50;
+  --hue-indigo: #3f51b5;
+  --hue-lime: #8bc34a;
+  --hue-magenta: #e91e63;
+  --hue-orange: #ff9800;
+  --hue-purple: #673ab7;
+  --hue-red: #d32f2f;
+  --hue-rose: #f48fb1;
+  --hue-teal: #009688;
+  --hue-vermillion: #ff5722;
+  --hue-violet: #9c27b0;
+  --hue-yellow: #ffeb3b;
 }`,
     typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
   color: oklch(0.35 0.12 33.5585);
