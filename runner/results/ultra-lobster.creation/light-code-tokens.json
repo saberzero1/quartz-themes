@@ -1,82 +1,16 @@
 {
   "_codeBlock": {
     "backgroundColor": "rgba(0, 0, 0, 0)",
-    "color": "rgb(113, 111, 102)"
+    "color": "rgb(181, 178, 165)"
   },
   "_preBlock": {
-    "backgroundColor": "rgba(0, 0, 0, 0)",
-    "borderColor": "color(srgb 0.262745 0.235294 0.203922 / 0.08)"
-  },
-  "atom": {
-    "color": "rgb(113, 111, 102)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "comment": {
-    "color": "rgb(147, 144, 134)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "def": {
-    "color": "rgb(113, 111, 102)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
+    "backgroundColor": "rgb(247, 246, 242)",
+    "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {
     "color": "rgb(67, 60, 52)",
     "fontStyle": "normal",
     "fontWeight": "900",
-    "textDecoration": "none"
-  },
-  "keyword": {
-    "color": "rgb(251, 99, 118)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "number": {
-    "color": "rgb(147, 129, 255)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "operator": {
-    "color": "rgb(239, 121, 106)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "property": {
-    "color": "rgb(237, 174, 73)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string": {
-    "color": "rgb(140, 179, 105)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string-2": {
-    "color": "rgb(140, 179, 105)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable": {
-    "color": "rgb(15, 189, 168)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable-2": {
-    "color": "rgb(15, 189, 168)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
     "textDecoration": "none"
   }
 }

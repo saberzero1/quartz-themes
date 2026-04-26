@@ -256,6 +256,15 @@ export const theme: ThemeData = {
   --secondary: #ff8671 !important;
   --setting-group-heading-color: #fffcf4 !important;
   --setting-items-radius: 0px !important;
+  --shiki-active-tab-border-color: rgba(#fffcf4, 0.8) !important;
+  --shiki-code-block-border-radius: 0px !important;
+  --shiki-code-comment: rgba(#fffcf4, 0.5) !important;
+  --shiki-code-normal: rgba(#fffcf4, 0.8) !important;
+  --shiki-code-punctuation: rgba(#fffcf4, 0.8) !important;
+  --shiki-gutter-text-color: rgba(#fffcf4, 0.5) !important;
+  --shiki-gutter-text-color-highlight: rgba(#fffcf4, 0.8) !important;
+  --shiki-highlight-neutral: rgba(#fffcf4, 0.8) !important;
+  --shiki-terminal-dots-color: rgba(#fffcf4, 0.5) !important;
   --slider-thumb-radius: 0px !important;
   --status-bar-background: #282828 !important;
   --status-bar-border-color: #141300 !important;
@@ -330,61 +339,12 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(255, 252, 244);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  color: rgb(255, 252, 244);
-  font-weight: 700;
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(255, 252, 244);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(255, 252, 244);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(255, 252, 244);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(255, 252, 244);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(40, 40, 40);
-  border-color: rgb(255, 252, 244);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(255, 252, 244);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(255, 252, 244);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(245, 114, 91, 0.1);
-  border-radius: 4.2px;
-  color: rgb(255, 134, 113);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(255, 252, 244);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(40, 40, 40);
   color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(40, 40, 40);
-  color: rgb(255, 252, 244);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
   background-color: rgb(40, 40, 40);
   color: rgb(255, 252, 244);
 }
@@ -418,28 +378,28 @@ html[saved-theme="dark"] body html {
   --sandover-purple: #c585cc;
   --sandover-purple-rgb: 197, 133, 204;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(255, 252, 244);
   font-family: "TT2020 Base", "??";
   outline: rgb(255, 252, 244) none 0px;
   text-decoration-color: rgb(255, 252, 244);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(255, 252, 244);
   font-family: "TT2020 Base", "??";
   outline: rgb(255, 252, 244) none 0px;
   text-decoration-color: rgb(255, 252, 244);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(255, 252, 244);
   font-family: "TT2020 Base", "??";
   outline: rgb(255, 252, 244) none 0px;
   text-decoration-color: rgb(255, 252, 244);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(255, 252, 244);
   font-family: "TT2020 Base", "??";
   outline: rgb(255, 252, 244) none 0px;
@@ -482,21 +442,21 @@ html[saved-theme="dark"] body p {
   outline: rgb(255, 252, 244) none 0px;
   text-decoration-color: rgb(255, 252, 244);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(255, 134, 113);
   font-family: "TT2020 Base", "??";
   outline: rgb(255, 134, 113) none 0px;
   text-decoration-color: rgb(255, 134, 113);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 134, 113);
   font-family: "TT2020 Base", "??";
   outline: rgb(255, 134, 113) none 0px;
   text-decoration-color: rgb(255, 134, 113);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(255, 134, 113);
   font-family: "TT2020 Base", "??";
   outline: rgb(255, 134, 113) none 0px;
@@ -513,13 +473,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(255, 252, 244);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(255, 252, 244);
-  border-left-color: rgb(255, 252, 244);
-  border-right-color: rgb(255, 252, 244);
-  border-top-color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -561,60 +514,27 @@ html[saved-theme="dark"] body th {
   font-weight: 700;
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(255, 252, 244);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: rgb(255, 252, 244);
-  border-right-color: rgb(255, 252, 244);
-  border-top-color: rgb(255, 252, 244);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(255, 252, 244);
   font-family: "??", "TT2020 Base", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
 }
 
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(255, 252, 244);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line] {
-  border-left-color: rgb(83, 223, 221);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(83, 223, 221);
-}
-
-html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(83, 223, 221);
-  border-left-color: rgb(83, 223, 221);
-  border-right-color: rgb(83, 223, 221);
-  border-top-color: rgb(83, 223, 221);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
 html[saved-theme="dark"] body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(255, 252, 244);
@@ -630,9 +550,13 @@ html[saved-theme="dark"] body figcaption {
 
 html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(255, 252, 244);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-left-color: rgb(255, 252, 244);
   border-right-color: rgb(255, 252, 244);
   border-top-color: rgb(255, 252, 244);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 html[saved-theme="dark"] body img {
@@ -1460,7 +1384,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(255, 252, 244);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(245, 114, 91, 0.1);
   border-bottom-color: rgba(245, 114, 91, 0.15);
   border-bottom-left-radius: 4.2px;
@@ -1473,13 +1397,19 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(255, 134, 113);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(197, 133, 204);
   font-family: "TT2020 Base", "??";
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(197, 133, 204);
+  font-size: 24px;
+  font-weight: 600;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1526,18 +1456,18 @@ html[saved-theme="dark"] body h6 {
   border-top-right-radius: 0px;
   border-top-width: 1px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(255, 252, 244);
-  font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(255, 252, 244);
-  font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(42, 42, 42);
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(255, 252, 244);
+  font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(255, 252, 244);
+  font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(255, 252, 244);
@@ -1642,15 +1572,31 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(255, 252, 244);
   font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(255, 252, 244);
-  border-left-color: rgb(255, 252, 244);
-  border-right-color: rgb(255, 252, 244);
-  border-top-color: rgb(255, 252, 244);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(255, 252, 244);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(40, 40, 40);
+  border-color: rgb(255, 252, 244);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  color: rgb(255, 252, 244);
+  font-weight: 700;
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   color: rgb(255, 252, 244);
   font-family: "TT2020 Base", "??";
 }
@@ -1662,6 +1608,55 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(255, 252, 244);
   color: rgb(255, 252, 244);
   font-family: "TT2020 Base", "??";
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(245, 114, 91, 0.1);
+  border-radius: 4.2px;
+  color: rgb(255, 134, 113);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(40, 40, 40);
+  color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(255, 252, 244);
+  border-left-color: rgb(255, 252, 244);
+  border-right-color: rgb(255, 252, 244);
+  border-top-color: rgb(255, 252, 244);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(40, 40, 40);
+  border-color: rgb(255, 252, 244);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(255, 134, 113);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(255, 252, 244);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(255, 252, 244);
+  border-left-color: rgb(255, 252, 244);
+  border-right-color: rgb(255, 252, 244);
+  border-top-color: rgb(255, 252, 244);
+  color: rgb(255, 252, 244);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -1970,6 +1965,16 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-group-heading-color: #000000 !important;
   --setting-items-background: #fffcf4 !important;
   --setting-items-radius: 0px !important;
+  --shiki-active-tab-border-color: #000000 !important;
+  --shiki-code-background: #fffcf4 !important;
+  --shiki-code-block-border-radius: 0px !important;
+  --shiki-code-comment: #000000 !important;
+  --shiki-code-normal: #000000 !important;
+  --shiki-code-punctuation: #000000 !important;
+  --shiki-gutter-text-color: #000000 !important;
+  --shiki-gutter-text-color-highlight: #000000 !important;
+  --shiki-highlight-neutral: #000000 !important;
+  --shiki-terminal-dots-color: #000000 !important;
   --slider-thumb-border-color: #fffcf4 !important;
   --slider-thumb-radius: 0px !important;
   --status-bar-background: #fffcf4 !important;
@@ -2046,61 +2051,12 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  color: rgb(0, 0, 0);
-  font-weight: 700;
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(255, 252, 244);
-  border-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(245, 114, 91, 0.1);
-  border-radius: 4.2px;
-  color: rgb(255, 134, 113);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(0, 0, 0);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(255, 252, 244);
   color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(255, 252, 244);
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body div#quartz-root {
   background-color: rgb(255, 252, 244);
   color: rgb(0, 0, 0);
 }
@@ -2134,28 +2090,28 @@ html[saved-theme="light"] body html {
   --sandover-purple: #c585cc;
   --sandover-purple-rgb: 197, 133, 204;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(0, 0, 0);
   font-family: "TT2020 Base", "??";
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(0, 0, 0);
   font-family: "TT2020 Base", "??";
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(0, 0, 0);
   font-family: "TT2020 Base", "??";
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(0, 0, 0);
   font-family: "TT2020 Base", "??";
   outline: rgb(0, 0, 0) none 0px;
@@ -2197,21 +2153,21 @@ html[saved-theme="light"] body p {
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(255, 134, 113);
   font-family: "TT2020 Base", "??";
   outline: rgb(255, 134, 113) none 0px;
   text-decoration-color: rgb(255, 134, 113);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 134, 113);
   font-family: "TT2020 Base", "??";
   outline: rgb(255, 134, 113) none 0px;
   text-decoration-color: rgb(255, 134, 113);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(255, 134, 113);
   font-family: "TT2020 Base", "??";
   outline: rgb(255, 134, 113) none 0px;
@@ -2228,13 +2184,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2276,64 +2225,29 @@ html[saved-theme="light"] body th {
   font-weight: 700;
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(0, 0, 0);
+  background-color: rgb(255, 252, 244);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(0, 0, 0);
   font-family: "??", "TT2020 Base", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
 }
 
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(255, 252, 244);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(255, 252, 244);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body pre > code > [data-line] {
-  border-left-color: rgb(0, 191, 188);
-}
-
-html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(0, 191, 188);
-}
-
-html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(0, 191, 188);
-  border-left-color: rgb(0, 191, 188);
-  border-right-color: rgb(0, 191, 188);
-  border-top-color: rgb(0, 191, 188);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(255, 252, 244);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
 html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(255, 252, 244);
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(0, 0, 0);
@@ -2349,9 +2263,13 @@ html[saved-theme="light"] body figcaption {
 
 html[saved-theme="light"] body figure {
   border-bottom-color: rgb(0, 0, 0);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 html[saved-theme="light"] body img {
@@ -3180,7 +3098,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(245, 114, 91, 0.1);
   border-bottom-color: rgba(245, 114, 91, 0.15);
   border-bottom-left-radius: 4.2px;
@@ -3193,13 +3111,19 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(255, 134, 113);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(197, 133, 204);
   font-family: "TT2020 Base", "??";
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(197, 133, 204);
+  font-size: 24px;
+  font-weight: 600;
 }
 
 html[saved-theme="light"] body h2 {
@@ -3246,18 +3170,18 @@ html[saved-theme="light"] body h6 {
   border-top-right-radius: 0px;
   border-top-width: 1px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(0, 0, 0);
-  font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(0, 0, 0);
-  font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html[saved-theme="light"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(227, 227, 227);
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(0, 0, 0);
+  font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(0, 0, 0);
+  font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(0, 0, 0);
@@ -3362,15 +3286,31 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(0, 0, 0);
   font-family: "??", "TT2020 Base", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(255, 252, 244);
+  border-color: rgb(0, 0, 0);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   color: rgb(0, 0, 0);
   font-family: "TT2020 Base", "??";
 }
@@ -3382,6 +3322,55 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   font-family: "TT2020 Base", "??";
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(245, 114, 91, 0.1);
+  border-radius: 4.2px;
+  color: rgb(255, 134, 113);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(255, 252, 244);
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(255, 252, 244);
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(255, 169, 154);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(0, 0, 0);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .navigation-progress {

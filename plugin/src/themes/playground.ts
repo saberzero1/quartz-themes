@@ -322,6 +322,17 @@ export const theme: ThemeData = {
   --setting-group-heading-color: oklch(92% 0.004 279.29) !important;
   --setting-items-background: oklch(25.5% 0.021 279.29) !important;
   --setting-items-border-color: oklch(25.5% 0.021 279.29) !important;
+  --shiki-active-tab-border-color: oklch(84.5% 0.01 279.29) !important;
+  --shiki-code-background: oklch(25.5% 0.021 279.29) !important;
+  --shiki-code-block-border-radius: 8px !important;
+  --shiki-code-comment: oklch(74.5% 0.018 279.29) !important;
+  --shiki-code-normal: oklch(84.5% 0.01 279.29) !important;
+  --shiki-code-punctuation: oklch(84.5% 0.01 279.29) !important;
+  --shiki-gutter-border-color: oklch(25.5% 0.021 279.29) !important;
+  --shiki-gutter-text-color: oklch(74.5% 0.018 279.29) !important;
+  --shiki-gutter-text-color-highlight: oklch(84.5% 0.01 279.29) !important;
+  --shiki-highlight-neutral: oklch(84.5% 0.01 279.29) !important;
+  --shiki-terminal-dots-color: oklch(74.5% 0.018 279.29) !important;
   --slider-thumb-border-color: oklch(35.5% 0.029 279.29) !important;
   --slider-track-background: oklch(25.5% 0.021 279.29) !important;
   --status-bar-background: oklch(18% 0.014 279.29) !important;
@@ -400,54 +411,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: oklch(0.92 0.004 279.29);
 }
 
-html body .bases-table thead th {
-  border-color: oklch(0.255 0.021 279.29) oklch(0.255 0.021 279.29) oklch(0.355 0.029 279.29);
-  color: oklch(0.92 0.004 279.29);
-  font-weight: 700;
-}
-
-html body .canvas-node {
-  border-color: oklch(0.92 0.004 279.29);
-}
-
-html body .canvas-node-content {
-  color: oklch(0.92 0.004 279.29);
-}
-
-html body .canvas-node-file {
-  color: oklch(0.92 0.004 279.29);
-}
-
-html body .canvas-node-group {
-  border-color: oklch(0.92 0.004 279.29);
-}
-
-html body .canvas-sidebar {
-  background-color: oklch(0.18 0.014 279.29);
-  border-color: oklch(0.92 0.004 279.29);
-}
-
-html body .note-properties {
-  border-color: oklch(0.255 0.021 279.29);
-}
-
-html body .note-properties-key {
-  color: oklch(0.845 0.01 279.29);
-}
-
-html body .note-properties-row {
-  border-color: oklch(0.845 0.01 279.29);
-}
-
-html body .note-properties-tags {
-  background-color: oklch(0.255 0.021 279.29);
-  color: oklch(0.845 0.06 260.58);
-}
-
-html body .note-properties-value {
-  color: oklch(0.845 0.01 279.29);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: oklch(0.18 0.014 279.29);
   color: oklch(0.92 0.004 279.29);
@@ -463,15 +426,10 @@ html body .page > div#quartz-body div.sidebar.right {
   color: oklch(0.92 0.004 279.29);
 }
 
-html body div#quartz-root {
-  background-color: oklch(0.135 0.01 279.29);
-  color: oklch(0.92 0.004 279.29);
-}
-
 html body html {
   --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: oklch(0.92 0.004 279.29);
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 700;
@@ -479,21 +437,21 @@ html body html {
   text-decoration-color: oklch(0.92 0.004 279.29);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: oklch(0.92 0.004 279.29);
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.92 0.004 279.29) none 0px;
   text-decoration-color: oklch(0.92 0.004 279.29);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: oklch(0.92 0.004 279.29);
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: oklch(0.92 0.004 279.29) none 0px;
   text-decoration-color: oklch(0.92 0.004 279.29);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: oklch(0.92 0.004 279.29);
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 700;
@@ -535,15 +493,15 @@ html body p {
   outline: oklch(0.845 0.01 279.29) none 0px;
   text-decoration-color: oklch(0.845 0.01 279.29);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
@@ -557,13 +515,6 @@ html body dt {
 
 html body ol > li {
   color: oklch(0.92 0.004 279.29);
-}
-
-html body ol.overflow {
-  border-bottom-color: oklch(0.92 0.004 279.29);
-  border-left-color: oklch(0.92 0.004 279.29);
-  border-right-color: oklch(0.92 0.004 279.29);
-  border-top-color: oklch(0.92 0.004 279.29);
 }
 
 html body ul > li {
@@ -617,30 +568,6 @@ html body tr {
   background-color: oklch(0.255 0.021 279.29);
 }`,
     code: `html body code {
-  border-bottom-color: oklch(0.92 0.004 279.29);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: oklch(0.92 0.004 279.29);
-  border-right-color: oklch(0.92 0.004 279.29);
-  border-top-color: oklch(0.92 0.004 279.29);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  color: oklch(0.92 0.004 279.29);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: oklch(0.255 0.021 279.29);
-  border-bottom-color: oklch(0.255 0.021 279.29);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: oklch(0.255 0.021 279.29);
-  border-right-color: oklch(0.255 0.021 279.29);
-  border-top-color: oklch(0.255 0.021 279.29);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: oklch(0.255 0.021 279.29);
   border-bottom-color: oklch(0.255 0.021 279.29);
   border-bottom-left-radius: 8px;
@@ -651,18 +578,6 @@ html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-titl
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   color: oklch(0.92 0.004 279.29);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: oklch(0.255 0.021 279.29);
-  border-bottom-color: oklch(0.255 0.021 279.29);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: oklch(0.255 0.021 279.29);
-  border-right-color: oklch(0.255 0.021 279.29);
-  border-top-color: oklch(0.255 0.021 279.29);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
 }
 
 html body pre:has(> code) {
@@ -685,14 +600,17 @@ html body pre:has(> code) {
 
 html body figcaption {
   color: oklch(0.92 0.004 279.29);
-  font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body figure {
   border-bottom-color: oklch(0.92 0.004 279.29);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-left-color: oklch(0.92 0.004 279.29);
   border-right-color: oklch(0.92 0.004 279.29);
   border-top-color: oklch(0.92 0.004 279.29);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 html body img {
@@ -2124,17 +2042,22 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: oklch(0.92 0.004 279.29);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: oklch(0.255 0.021 279.29);
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: oklch(0.845 0.06 260.58);
 }
 
 html body h1 {
   color: oklch(0.615 0.17 288);
   font-family: "Bricolage Grotesque";
+}
+
+html body h1.article-title {
+  color: oklch(0.615 0.17 288);
+  font-weight: 550;
 }
 
 html body h2 {
@@ -2188,11 +2111,11 @@ html body hr {
   border-top-width: 1px;
   padding-left: 12px;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: oklch(0.845 0.01 279.29);
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: oklch(0.845 0.01 279.29);
 }`,
     toc: `html body details.toc summary::marker {
@@ -2281,15 +2204,32 @@ html body .breadcrumb-element p {
   color: oklch(0.745 0.018 279.29);
   font-family: Inter;
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: oklch(0.92 0.004 279.29);
-  border-left-color: oklch(0.92 0.004 279.29);
-  border-right-color: oklch(0.92 0.004 279.29);
-  border-top-color: oklch(0.92 0.004 279.29);
+    canvas: `html body .canvas-node {
+  border-color: oklch(0.92 0.004 279.29);
+}
+
+html body .canvas-node-content {
   color: oklch(0.92 0.004 279.29);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body .canvas-node-group {
+  border-color: oklch(0.92 0.004 279.29);
+}
+
+html body .canvas-sidebar {
+  background-color: oklch(0.18 0.014 279.29);
+  border-color: oklch(0.92 0.004 279.29);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: oklch(0.255 0.021 279.29) oklch(0.255 0.021 279.29) oklch(0.355 0.029 279.29);
+  color: oklch(0.92 0.004 279.29);
+  font-weight: 700;
+}`,
+    properties: `html body .metadata {
   border-bottom-color: oklch(0.255 0.021 279.29);
   border-left-color: oklch(0.255 0.021 279.29);
   border-right-color: oklch(0.255 0.021 279.29);
@@ -2305,6 +2245,58 @@ html body .metadata-properties {
   border-top-color: oklch(0.845 0.01 279.29);
   color: oklch(0.845 0.01 279.29);
   font-family: "??", Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .note-properties {
+  border-color: oklch(0.255 0.021 279.29);
+}
+
+html body .note-properties-key {
+  color: oklch(0.845 0.01 279.29);
+}
+
+html body .note-properties-row {
+  border-color: oklch(0.845 0.01 279.29);
+}
+
+html body .note-properties-tags {
+  background-color: oklch(0.255 0.021 279.29);
+  color: oklch(0.845 0.06 260.58);
+}
+
+html body .note-properties-value {
+  color: oklch(0.845 0.01 279.29);
+}
+
+html body div#quartz-root {
+  background-color: oklch(0.135 0.01 279.29);
+  color: oklch(0.92 0.004 279.29);
+}
+
+html body ol.overflow {
+  border-bottom-color: oklch(0.92 0.004 279.29);
+  border-left-color: oklch(0.92 0.004 279.29);
+  border-right-color: oklch(0.92 0.004 279.29);
+  border-top-color: oklch(0.92 0.004 279.29);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: oklch(0.18 0.014 279.29);
+  border-color: oklch(0.92 0.004 279.29);
+}
+
+html body .stacked-page-header {
+  background-color: oklch(0.18 0.014 279.29);
+}
+
+html body .stacked-page.active {
+  border-color: oklch(0.92 0.004 279.29);
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: oklch(0.92 0.004 279.29);
+  border-left-color: oklch(0.92 0.004 279.29);
+  border-right-color: oklch(0.92 0.004 279.29);
+  border-top-color: oklch(0.92 0.004 279.29);
+  color: oklch(0.92 0.004 279.29);
 }
 
 html body .navigation-progress {

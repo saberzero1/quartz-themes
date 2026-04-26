@@ -1,82 +1,16 @@
 {
   "_codeBlock": {
     "backgroundColor": "rgba(0, 0, 0, 0)",
-    "color": "rgb(211, 201, 211)"
+    "color": "rgb(216, 204, 216)"
   },
   "_preBlock": {
-    "backgroundColor": "rgba(0, 0, 0, 0)",
-    "borderColor": "color(srgb 0.996078 0.996078 0.996078 / 0.08)"
-  },
-  "atom": {
-    "color": "rgb(211, 201, 211)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "comment": {
-    "color": "rgb(211, 201, 211)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "def": {
-    "color": "rgb(211, 201, 211)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
+    "backgroundColor": "rgb(71, 65, 78)",
+    "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {
     "color": "rgb(254, 254, 254)",
     "fontStyle": "normal",
     "fontWeight": "900",
-    "textDecoration": "none"
-  },
-  "keyword": {
-    "color": "rgb(245, 169, 184)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "number": {
-    "color": "rgb(170, 69, 247)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "operator": {
-    "color": "rgb(247, 69, 69)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "property": {
-    "color": "rgb(247, 204, 68)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string": {
-    "color": "rgb(69, 247, 123)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string-2": {
-    "color": "rgb(69, 247, 123)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable": {
-    "color": "rgb(69, 206, 247)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable-2": {
-    "color": "rgb(69, 206, 247)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
     "textDecoration": "none"
   }
 }

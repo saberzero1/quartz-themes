@@ -1,82 +1,16 @@
 {
   "_codeBlock": {
     "backgroundColor": "rgba(0, 0, 0, 0)",
-    "color": "rgb(166, 172, 205)"
+    "color": "rgb(118, 124, 157)"
   },
   "_preBlock": {
     "backgroundColor": "rgb(32, 36, 48)",
-    "borderColor": "rgb(33, 36, 47)"
-  },
-  "atom": {
-    "color": "rgb(166, 172, 205)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "comment": {
-    "color": "rgb(118, 124, 157)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "def": {
-    "color": "rgb(173, 215, 255)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
+    "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {
     "color": "rgb(173, 215, 255)",
     "fontStyle": "normal",
     "fontWeight": "700",
-    "textDecoration": "none"
-  },
-  "keyword": {
-    "color": "rgb(166, 172, 205)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "number": {
-    "color": "rgb(93, 228, 199)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "operator": {
-    "color": "rgb(173, 215, 255)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "property": {
-    "color": "rgb(173, 215, 255)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string": {
-    "color": "rgb(93, 228, 199)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string-2": {
-    "color": "rgb(93, 228, 199)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable": {
-    "color": "rgb(173, 215, 255)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable-2": {
-    "color": "rgb(173, 215, 255)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
     "textDecoration": "none"
   }
 }

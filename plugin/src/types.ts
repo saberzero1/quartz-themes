@@ -30,6 +30,10 @@ export type AspectKey =
   | "darkmode"
   | "breadcrumbs"
   | "lists"
+  | "canvas"
+  | "bases"
+  | "properties"
+  | "stacked"
   | "misc";
 
 /** Per-aspect CSS strings for a single mode (dark or light). */

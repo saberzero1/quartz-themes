@@ -220,6 +220,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #ccbfd9 !important;
   --setting-items-background: #2b2136 !important;
   --setting-items-border-color: #1c1226 !important;
+  --shiki-active-tab-border-color: #b3a5c0 !important;
+  --shiki-code-background: #2b2136 !important;
+  --shiki-code-comment: #665973 !important;
+  --shiki-code-normal: #b3a5c0 !important;
+  --shiki-code-punctuation: #b3a5c0 !important;
+  --shiki-gutter-border-color: #1c1226 !important;
+  --shiki-gutter-text-color: #665973 !important;
+  --shiki-gutter-text-color-highlight: #b3a5c0 !important;
+  --shiki-highlight-neutral: #b3a5c0 !important;
+  --shiki-terminal-dots-color: #665973 !important;
   --slider-track-background: #1c1226 !important;
   --status-bar-background: #2b2136 !important;
   --status-bar-border-color: #1c1226 !important;
@@ -289,54 +299,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(204, 191, 217);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  background-color: rgb(43, 33, 54);
-  border-color: rgb(28, 18, 38);
-  color: rgb(204, 191, 217);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(204, 191, 217);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(204, 191, 217);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(204, 191, 217);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(204, 191, 217);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(43, 33, 54);
-  border-color: rgb(204, 191, 217);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgb(28, 18, 38);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(179, 165, 192);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(179, 165, 192);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(223, 118, 155, 0.15);
-  color: rgb(223, 118, 155);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(179, 165, 192);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(43, 33, 54);
   color: rgb(204, 191, 217);
@@ -350,32 +312,27 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(43, 33, 54);
   border-left-color: rgb(28, 18, 38);
   color: rgb(204, 191, 217);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(48, 36, 61);
-  color: rgb(204, 191, 217);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(228, 183, 129);
   font-weight: 700;
   outline: rgb(228, 183, 129) none 0px;
   text-decoration-color: rgb(228, 183, 129);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(214, 126, 92);
   outline: rgb(214, 126, 92) none 0px;
   text-decoration-color: rgb(214, 126, 92);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(214, 126, 92);
   outline: rgb(214, 126, 92) none 0px;
   text-decoration-color: rgb(214, 126, 92);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(228, 183, 129);
   font-weight: 700;
   outline: rgb(228, 183, 129) none 0px;
@@ -413,19 +370,19 @@ html[saved-theme="dark"] body p {
   outline: rgb(179, 165, 192) none 0px;
   text-decoration-color: rgb(179, 165, 192);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(73, 172, 233);
   outline: rgb(73, 172, 233) none 0px;
   text-decoration-color: rgb(73, 172, 233);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(191, 142, 241);
   outline: rgb(191, 142, 241) none 0px;
   text-decoration-color: rgb(191, 142, 241);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(191, 142, 241);
   outline: rgb(191, 142, 241) none 0px;
 }`,
@@ -439,13 +396,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(204, 191, 217);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(204, 191, 217);
-  border-left-color: rgb(204, 191, 217);
-  border-right-color: rgb(204, 191, 217);
-  border-top-color: rgb(204, 191, 217);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -493,51 +443,12 @@ html[saved-theme="dark"] body tr {
   background-color: rgb(43, 33, 54);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(204, 191, 217);
-  border-left-color: rgb(204, 191, 217);
-  border-right-color: rgb(204, 191, 217);
-  border-top-color: rgb(204, 191, 217);
-  color: rgb(204, 191, 217);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(43, 33, 54);
-  border-bottom-color: rgb(28, 18, 38);
-  border-left-color: rgb(28, 18, 38);
-  border-right-color: rgb(28, 18, 38);
-  border-top-color: rgb(28, 18, 38);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(43, 33, 54);
   border-bottom-color: rgb(28, 18, 38);
   border-left-color: rgb(28, 18, 38);
   border-right-color: rgb(28, 18, 38);
   border-top-color: rgb(28, 18, 38);
   color: rgb(204, 191, 217);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line] {
-  border-left-color: rgb(96, 219, 235);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(96, 219, 235);
-}
-
-html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(96, 219, 235);
-  border-left-color: rgb(96, 219, 235);
-  border-right-color: rgb(96, 219, 235);
-  border-top-color: rgb(96, 219, 235);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(43, 33, 54);
-  border-bottom-color: rgb(28, 18, 38);
-  border-left-color: rgb(28, 18, 38);
-  border-right-color: rgb(28, 18, 38);
-  border-top-color: rgb(28, 18, 38);
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -1457,15 +1368,19 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(237, 235, 255);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(223, 118, 155, 0.15);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(223, 118, 155);
 }
 
 html[saved-theme="dark"] body h1 {
+  color: rgb(191, 142, 241);
+}
+
+html[saved-theme="dark"] body h1.article-title {
   color: rgb(191, 142, 241);
 }
 
@@ -1501,11 +1416,11 @@ html[saved-theme="dark"] body hr {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(179, 165, 192);
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(179, 165, 192);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
@@ -1593,15 +1508,32 @@ html[saved-theme="dark"] body .darkmode svg {
 html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(102, 89, 115);
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(204, 191, 217);
-  border-left-color: rgb(204, 191, 217);
-  border-right-color: rgb(204, 191, 217);
-  border-top-color: rgb(204, 191, 217);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(204, 191, 217);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(204, 191, 217);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(204, 191, 217);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(204, 191, 217);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(43, 33, 54);
+  border-color: rgb(204, 191, 217);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  background-color: rgb(43, 33, 54);
+  border-color: rgb(28, 18, 38);
+  color: rgb(204, 191, 217);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(28, 18, 38);
   border-left-color: rgb(28, 18, 38);
   border-right-color: rgb(28, 18, 38);
@@ -1615,6 +1547,58 @@ html[saved-theme="dark"] body .metadata-properties {
   border-right-color: rgb(179, 165, 192);
   border-top-color: rgb(179, 165, 192);
   color: rgb(179, 165, 192);
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(28, 18, 38);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(179, 165, 192);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(179, 165, 192);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(223, 118, 155, 0.15);
+  color: rgb(223, 118, 155);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(179, 165, 192);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(48, 36, 61);
+  color: rgb(204, 191, 217);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(204, 191, 217);
+  border-left-color: rgb(204, 191, 217);
+  border-right-color: rgb(204, 191, 217);
+  border-top-color: rgb(204, 191, 217);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(43, 33, 54);
+  border-color: rgb(204, 191, 217);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(43, 33, 54);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(204, 191, 217);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(204, 191, 217);
+  border-left-color: rgb(204, 191, 217);
+  border-right-color: rgb(204, 191, 217);
+  border-top-color: rgb(204, 191, 217);
+  color: rgb(204, 191, 217);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -1691,11 +1675,11 @@ html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   font-weight: 700;
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   font-weight: 700;
 }`,
     checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {

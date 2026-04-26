@@ -213,6 +213,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: hsla(0, 0%, 73%, 1) !important;
   --setting-items-background: hsla(214, 24%, 15%, 1) !important;
   --setting-items-border-color: hsla(215, 22%, 13%, 1) !important;
+  --shiki-active-tab-border-color: hsl(218, 17%, 58%) !important;
+  --shiki-code-background: hsla(214, 24%, 15%, 1) !important;
+  --shiki-code-comment: hsla(217, 18%, 50%, 0.7) !important;
+  --shiki-code-normal: hsl(218, 17%, 58%) !important;
+  --shiki-code-punctuation: hsl(218, 17%, 58%) !important;
+  --shiki-gutter-border-color: hsla(215, 22%, 13%, 1) !important;
+  --shiki-gutter-text-color: hsla(217, 18%, 50%, 0.7) !important;
+  --shiki-gutter-text-color-highlight: hsl(218, 17%, 58%) !important;
+  --shiki-highlight-neutral: hsl(218, 17%, 58%) !important;
+  --shiki-terminal-dots-color: hsla(217, 18%, 50%, 0.7) !important;
   --sidebar-size-left: 270px !important;
   --sidebar-size-right: 270px !important;
   --slider-thumb-border-color: hsla(210, 15%, 33%, 1) !important;
@@ -292,53 +302,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(186, 186, 186);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgb(26, 32, 40);
-  color: rgb(186, 186, 186);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(186, 186, 186);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(186, 186, 186);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(186, 186, 186);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(186, 186, 186);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(29, 37, 47);
-  border-color: rgb(186, 186, 186);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgb(26, 32, 40);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(130, 143, 166);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(130, 143, 166);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(68, 158, 248, 0.1);
-  color: rgb(67, 159, 234);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(130, 143, 166);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(186, 186, 186);
@@ -353,31 +316,26 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(40, 47, 57);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(186, 186, 186);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(29, 37, 47);
-  color: rgb(186, 186, 186);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(186, 186, 186);
   outline: rgb(186, 186, 186) none 0px;
   text-decoration-color: rgb(186, 186, 186);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(119, 147, 187);
   outline: rgb(119, 147, 187) none 0px;
   text-decoration-color: rgb(119, 147, 187);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(119, 147, 187);
   outline: rgb(119, 147, 187) none 0px;
   text-decoration-color: rgb(119, 147, 187);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(186, 186, 186);
   outline: rgb(186, 186, 186) none 0px;
   text-decoration-color: rgb(186, 186, 186);
@@ -414,19 +372,19 @@ html[saved-theme="dark"] body p {
   outline: rgb(130, 143, 166) none 0px;
   text-decoration-color: rgb(130, 143, 166);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(67, 159, 234);
   outline: rgb(67, 159, 234) none 0px;
   text-decoration-color: rgb(67, 159, 234);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(67, 159, 234);
   outline: rgb(67, 159, 234) none 0px;
   text-decoration-color: rgb(67, 159, 234);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(67, 159, 234);
   outline: rgb(67, 159, 234) none 0px;
   text-decoration: underline rgba(68, 158, 248, 0.3);
@@ -442,13 +400,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(186, 186, 186);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(186, 186, 186);
-  border-left-color: rgb(186, 186, 186);
-  border-right-color: rgb(186, 186, 186);
-  border-top-color: rgb(186, 186, 186);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -514,44 +465,32 @@ html[saved-theme="dark"] body tr {
   border-top-color: rgb(77, 166, 255);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(142, 154, 175);
-  border-left-color: rgb(142, 154, 175);
-  border-right-color: rgb(142, 154, 175);
-  border-top-color: rgb(142, 154, 175);
-  color: rgb(142, 154, 175);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(29, 37, 47);
-  border-bottom-color: rgb(26, 32, 40);
-  border-left-color: rgb(26, 32, 40);
-  border-right-color: rgb(26, 32, 40);
-  border-top-color: rgb(26, 32, 40);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(29, 37, 47);
-  border-bottom-color: rgb(26, 32, 40);
-  border-left-color: rgb(26, 32, 40);
-  border-right-color: rgb(26, 32, 40);
-  border-top-color: rgb(26, 32, 40);
-  color: rgb(186, 186, 186);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(29, 37, 47);
-  border-bottom-color: rgb(26, 32, 40);
-  border-left-color: rgb(26, 32, 40);
-  border-right-color: rgb(26, 32, 40);
-  border-top-color: rgb(26, 32, 40);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(130, 143, 166);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(130, 143, 166);
+  border-right-color: rgb(130, 143, 166);
+  border-top-color: rgb(130, 143, 166);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: rgb(130, 143, 166);
+  padding-bottom: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 12px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(29, 37, 47);
-  border-bottom-color: rgb(26, 32, 40);
-  border-left-color: rgb(26, 32, 40);
-  border-right-color: rgb(26, 32, 40);
-  border-top-color: rgb(26, 32, 40);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(186, 186, 186);
@@ -2157,7 +2096,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(186, 186, 186);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(68, 158, 248, 0.1);
   border-bottom-color: rgba(68, 158, 248, 0.15);
   border-left-color: rgba(68, 158, 248, 0.15);
@@ -2165,11 +2104,15 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   border-top-color: rgba(68, 158, 248, 0.15);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(67, 159, 234);
 }
 
 html[saved-theme="dark"] body h1 {
+  color: rgb(186, 186, 186);
+}
+
+html[saved-theme="dark"] body h1.article-title {
   color: rgb(186, 186, 186);
 }
 
@@ -2219,19 +2162,19 @@ html[saved-theme="dark"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(71, 163, 255);
-  font-weight: 500;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(71, 163, 255);
-  font-weight: 500;
-}
-
-html[saved-theme="dark"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(186, 186, 186);
   border-left-width: 0px;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(71, 163, 255);
+  font-weight: 500;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(71, 163, 255);
+  font-weight: 500;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(186, 186, 186);
@@ -2322,15 +2265,31 @@ html[saved-theme="dark"] body .darkmode svg {
 html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgba(105, 122, 150, 0.7);
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(186, 186, 186);
-  border-left-color: rgb(186, 186, 186);
-  border-right-color: rgb(186, 186, 186);
-  border-top-color: rgb(186, 186, 186);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(186, 186, 186);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(186, 186, 186);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(186, 186, 186);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(186, 186, 186);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(29, 37, 47);
+  border-color: rgb(186, 186, 186);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(26, 32, 40);
+  color: rgb(186, 186, 186);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(26, 32, 40);
   border-left-color: rgb(26, 32, 40);
   border-right-color: rgb(26, 32, 40);
@@ -2344,6 +2303,58 @@ html[saved-theme="dark"] body .metadata-properties {
   border-right-color: rgb(130, 143, 166);
   border-top-color: rgb(130, 143, 166);
   color: rgb(130, 143, 166);
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(26, 32, 40);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(130, 143, 166);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(130, 143, 166);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(68, 158, 248, 0.1);
+  color: rgb(67, 159, 234);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(130, 143, 166);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(29, 37, 47);
+  color: rgb(186, 186, 186);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(186, 186, 186);
+  border-right-color: rgb(186, 186, 186);
+  border-top-color: rgb(186, 186, 186);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(186, 186, 186);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(29, 37, 47);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(186, 186, 186);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(186, 186, 186);
+  border-right-color: rgb(186, 186, 186);
+  border-top-color: rgb(186, 186, 186);
+  color: rgb(186, 186, 186);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -2603,6 +2614,15 @@ html[saved-theme="dark"] body ul.tags > li {
   --secondary: hsl(210, 93%, 62%) !important;
   --setting-group-heading-color: hsla(0, 0%, 13%, 1) !important;
   --setting-items-background: hsla(210, 39%, 93%, 1) !important;
+  --shiki-active-tab-border-color: hsla(218, 19%, 39%, 1) !important;
+  --shiki-code-background: hsla(210, 39%, 93%, 1) !important;
+  --shiki-code-comment: hsla(217, 15%, 73%, 1) !important;
+  --shiki-code-normal: hsla(218, 19%, 39%, 1) !important;
+  --shiki-code-punctuation: hsla(218, 19%, 39%, 1) !important;
+  --shiki-gutter-text-color: hsla(217, 15%, 73%, 1) !important;
+  --shiki-gutter-text-color-highlight: hsla(218, 19%, 39%, 1) !important;
+  --shiki-highlight-neutral: hsla(218, 19%, 39%, 1) !important;
+  --shiki-terminal-dots-color: hsla(217, 15%, 73%, 1) !important;
   --sidebar-size-left: 270px !important;
   --sidebar-size-right: 270px !important;
   --slider-thumb-border-color: hsla(210, 15%, 73%, 1) !important;
@@ -2674,48 +2694,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(33, 33, 33);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  color: rgb(33, 33, 33);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(33, 33, 33);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(33, 33, 33);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(33, 33, 33);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(33, 33, 33);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(244, 248, 251);
-  border-color: rgb(33, 33, 33);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(81, 94, 118);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(81, 94, 118);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(68, 158, 248, 0.1);
-  color: rgb(68, 158, 248);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(81, 94, 118);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(33, 33, 33);
@@ -2730,31 +2708,26 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(244, 248, 251);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(33, 33, 33);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(237, 242, 248);
-  color: rgb(33, 33, 33);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(33, 33, 33);
   outline: rgb(33, 33, 33) none 0px;
   text-decoration-color: rgb(33, 33, 33);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(120, 154, 201);
   outline: rgb(120, 154, 201) none 0px;
   text-decoration-color: rgb(120, 154, 201);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(120, 154, 201);
   outline: rgb(120, 154, 201) none 0px;
   text-decoration-color: rgb(120, 154, 201);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(33, 33, 33);
   outline: rgb(33, 33, 33) none 0px;
   text-decoration-color: rgb(33, 33, 33);
@@ -2790,19 +2763,19 @@ html[saved-theme="light"] body p {
   outline: rgb(81, 94, 118) none 0px;
   text-decoration-color: rgb(81, 94, 118);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(68, 158, 248);
   outline: rgb(68, 158, 248) none 0px;
   text-decoration-color: rgb(68, 158, 248);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(68, 158, 248);
   outline: rgb(68, 158, 248) none 0px;
   text-decoration-color: rgb(68, 158, 248);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(68, 158, 248);
   outline: rgb(68, 158, 248) none 0px;
   text-decoration: underline rgba(68, 158, 248, 0.3);
@@ -2818,13 +2791,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(33, 33, 33);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(33, 33, 33);
-  border-left-color: rgb(33, 33, 33);
-  border-right-color: rgb(33, 33, 33);
-  border-top-color: rgb(33, 33, 33);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2882,28 +2848,32 @@ html[saved-theme="light"] body tr {
   border-top-color: rgb(68, 158, 248);
 }`,
     code: `html[saved-theme="light"] body code {
+  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(81, 94, 118);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-left-color: rgb(81, 94, 118);
   border-right-color: rgb(81, 94, 118);
   border-top-color: rgb(81, 94, 118);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   color: rgb(81, 94, 118);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(230, 237, 244);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(230, 237, 244);
-  color: rgb(33, 33, 33);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(230, 237, 244);
+  padding-bottom: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 12px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(230, 237, 244);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(33, 33, 33);
@@ -4506,7 +4476,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(33, 33, 33);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(68, 158, 248, 0.1);
   border-bottom-color: rgba(68, 158, 248, 0.15);
   border-left-color: rgba(68, 158, 248, 0.15);
@@ -4514,11 +4484,15 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   border-top-color: rgba(68, 158, 248, 0.15);
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(68, 158, 248);
 }
 
 html[saved-theme="light"] body h1 {
+  color: rgb(33, 33, 33);
+}
+
+html[saved-theme="light"] body h1.article-title {
   color: rgb(33, 33, 33);
 }
 
@@ -4568,19 +4542,19 @@ html[saved-theme="light"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(43, 145, 247);
-  font-weight: 500;
-}
-
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(43, 145, 247);
-  font-weight: 500;
-}
-
-html[saved-theme="light"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(33, 33, 33);
   border-left-width: 0px;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(43, 145, 247);
+  font-weight: 500;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(43, 145, 247);
+  font-weight: 500;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(33, 33, 33);
@@ -4667,15 +4641,30 @@ html[saved-theme="light"] body .darkmode svg {
 html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(176, 184, 196);
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(33, 33, 33);
-  border-left-color: rgb(33, 33, 33);
-  border-right-color: rgb(33, 33, 33);
-  border-top-color: rgb(33, 33, 33);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(33, 33, 33);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(33, 33, 33);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(33, 33, 33);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(33, 33, 33);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(244, 248, 251);
+  border-color: rgb(33, 33, 33);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  color: rgb(33, 33, 33);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   color: rgb(81, 94, 118);
 }
 
@@ -4685,6 +4674,54 @@ html[saved-theme="light"] body .metadata-properties {
   border-right-color: rgb(81, 94, 118);
   border-top-color: rgb(81, 94, 118);
   color: rgb(81, 94, 118);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(81, 94, 118);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(81, 94, 118);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(68, 158, 248, 0.1);
+  color: rgb(68, 158, 248);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(81, 94, 118);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(237, 242, 248);
+  color: rgb(33, 33, 33);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(33, 33, 33);
+  border-left-color: rgb(33, 33, 33);
+  border-right-color: rgb(33, 33, 33);
+  border-top-color: rgb(33, 33, 33);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(33, 33, 33);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(237, 242, 248);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(33, 33, 33);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(33, 33, 33);
+  border-left-color: rgb(33, 33, 33);
+  border-right-color: rgb(33, 33, 33);
+  border-top-color: rgb(33, 33, 33);
+  color: rgb(33, 33, 33);
 }
 
 html[saved-theme="light"] body .navigation-progress {

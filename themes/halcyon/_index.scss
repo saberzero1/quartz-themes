@@ -642,6 +642,35 @@
   --setting-items-radius: 6px !important;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2) !important;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shiki-active-tab-border-color: color-mix(in hsl, #8695b799, #d7dce2) !important;
+  --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: #171c28 !important;
+  --shiki-code-block-border-color: transparent !important;
+  --shiki-code-block-border-radius: 2px !important;
+  --shiki-code-block-border-width: 0px !important;
+  --shiki-code-block-spacing: 1rem !important;
+  --shiki-code-comment: #8695b799 !important;
+  --shiki-code-function: #bae67e !important;
+  --shiki-code-important: #ffae57 !important;
+  --shiki-code-keyword: #f9cff2 !important;
+  --shiki-code-normal: color-mix(in hsl, #8695b799, #d7dce2) !important;
+  --shiki-code-property: #5ccfe6 !important;
+  --shiki-code-punctuation: color-mix(in hsl, #8695b799, #d7dce2) !important;
+  --shiki-code-string: #ffd580 !important;
+  --shiki-code-value: #c3a6ff !important;
+  --shiki-gutter-border-color: color-mix(in hsl, #1d2433, #2f3b54) !important;
+  --shiki-gutter-border-width: 1px !important;
+  --shiki-gutter-text-color: #8695b799 !important;
+  --shiki-gutter-text-color-highlight: color-mix(in hsl, #8695b799, #d7dce2) !important;
+  --shiki-highlight-green: rgba(186, 230, 126, 0.5) !important;
+  --shiki-highlight-green-background: rgba(186, 230, 126, 0.1) !important;
+  --shiki-highlight-neutral: color-mix(in hsl, #8695b799, #d7dce2) !important;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05) !important;
+  --shiki-highlight-red: rgba(239, 107, 115, 0.5) !important;
+  --shiki-highlight-red-background: rgba(239, 107, 115, 0.1) !important;
+  --shiki-terminal-dots-color: #8695b799 !important;
+  --shiki-tooltip-background: color-mix(in hsl, #1d2433, #2f3b54) !important;
+  --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -883,21 +912,10 @@
 }
 
 body {
-  --qt-code-atom: rgb(92, 207, 230);
-  --qt-code-comment: rgba(134, 149, 183, 0.6);
-  --qt-code-function: rgb(92, 207, 230);
   --qt-code-header: rgb(186, 230, 126);
-  --qt-code-keyword: rgb(195, 166, 255);
-  --qt-code-number: rgb(195, 166, 255);
-  --qt-code-operator: rgb(255, 174, 87);
-  --qt-code-property: rgb(255, 213, 128);
-  --qt-code-string: rgb(186, 230, 126);
-  --qt-code-string: rgb(186, 230, 126);
-  --qt-code-variable: color(srgb 0.729403 0.762969 0.817656 / 0.8);
-  --qt-code-variable-2: color(srgb 0.729403 0.762969 0.817656 / 0.8);
-  --qt-code-default: rgb(92, 207, 230);
+  --qt-code-default: color(srgb 0.729403 0.762969 0.817656 / 0.8);
   --qt-code-background: rgb(23, 28, 40);
-  --qt-code-border-color: color(srgb 0.149206 0.186251 0.26452);
+  --qt-code-border-color: rgba(0, 0, 0, 0);
 }
 
 .darkmode {
@@ -1216,7 +1234,7 @@ body {
     border-right: 0px solid color(srgb 0.149206 0.186251 0.26452);
   }
 
-  a.external,
+  a.external-link,
   footer a {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(195, 166, 255);
@@ -1257,7 +1275,7 @@ body {
     animation-play-state: running;
   }
 
-  a.internal,
+  a.internal-link,
   .breadcrumb-container .breadcrumb-element > a {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(195, 166, 255);
@@ -1298,7 +1316,7 @@ body {
     animation-play-state: running;
   }
 
-  a.internal.broken {
+  a.internal-link.broken {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(195, 166, 255);
     cursor: pointer;
@@ -1338,7 +1356,7 @@ body {
     animation-play-state: running;
   }
 
-  a.external:hover,
+  a.external-link:hover,
   footer a:hover {
     text-decoration: underline rgb(166, 138, 249);
     text-decoration-color: rgb(166, 138, 249);
@@ -1347,7 +1365,7 @@ body {
     color: rgb(166, 138, 249);
   }
 
-  a.internal:hover,
+  a.internal-link:hover,
   .breadcrumb-container .breadcrumb-element > a:hover {
     text-decoration-color: rgb(166, 138, 249);
     text-decoration-line: underline;
@@ -1395,7 +1413,7 @@ body {
     animation-play-state: running;
   }
 
-  .page article p > strong,
+  .markdown-rendered p > strong,
   strong {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(239, 107, 115);
@@ -1436,7 +1454,7 @@ body {
     animation-play-state: running;
   }
 
-  .page article p > b,
+  .markdown-rendered p > b,
   b {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(239, 107, 115);
@@ -1477,7 +1495,7 @@ body {
     animation-play-state: running;
   }
 
-  .page article p > em,
+  .markdown-rendered p > em,
   em {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(239, 107, 115);
@@ -1518,7 +1536,7 @@ body {
     animation-play-state: running;
   }
 
-  .page article p > i,
+  .markdown-rendered p > i,
   i {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(239, 107, 115);
@@ -1697,7 +1715,7 @@ body {
     margin-inline-start: 0px;
   }
 
-  a.internal.tag-link,
+  a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: color(srgb 0.360784 0.811765 0.901961 / 0.25);
@@ -1729,7 +1747,7 @@ body {
     border-end-end-radius: 0px;
   }
 
-  a.internal.tag-link::before {
+  a.internal-link.tag-link::before {
     color: rgb(92, 207, 230);
   }
 
@@ -1776,23 +1794,6 @@ body {
   }
 
   code {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px solid rgb(92, 207, 230);
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    color: rgb(92, 207, 230);
-    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-    padding: 0px;
-  }
-
-  pre > code,
-  pre:has(> code) {
     background-color: rgb(23, 28, 40);
     border: 0px solid color(srgb 0.149206 0.186251 0.26452);
     border-top-left-radius: 2px;
@@ -1803,8 +1804,25 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    color: rgb(92, 207, 230);
+    font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
+    padding: 2.1px 4.2px;
+  }
+
+  pre > code,
+  pre:has(> code) {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(218, 218, 218);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
     overflow-x: visible;
-    padding: 12px 16px;
+    padding: 0px;
     white-space-collapse: preserve;
     text-wrap-mode: nowrap;
   }
@@ -3057,15 +3075,15 @@ body {
     background-color: rgba(0, 0, 0, 0);
     text-align: start;
     border: 0px rgb(215, 220, 226);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    margin: 16px 40px;
+    margin: 0px;
     margin-block-end: 15px;
     margin-block-start: 15px;
     margin-inline-end: 40px;
@@ -3548,7 +3566,7 @@ body {
     font-family: MJXZERO, MJXTEX;
   }
 
-  .explorer .explorer-content ul.explorer-ul li a {
+  .nav-files-container .nav-file-title {
     color: rgb(218, 218, 218);
     cursor: auto;
     font-family:
@@ -3569,7 +3587,7 @@ body {
     text-decoration: rgb(218, 218, 218);
   }
 
-  .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+  .nav-files-container .nav-file-title.is-active {
     background-color: rgba(0, 0, 0, 0);
     border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
@@ -3589,7 +3607,7 @@ body {
     transition-timing-function: ease;
   }
 
-  .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+  .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: color(srgb 0.729403 0.762969 0.817656 / 0.8);
     cursor: default;
     font-family:
@@ -3610,7 +3628,7 @@ body {
     text-decoration: rgb(218, 218, 218);
   }
 
-  .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+  .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: color(srgb 0.729403 0.762969 0.817656 / 0.8);
     cursor: default;
     font-family:
@@ -3631,11 +3649,11 @@ body {
     text-decoration: rgb(218, 218, 218);
   }
 
-  .explorer .folder-outer > ul {
+  .nav-files-container .tree-item-children {
     border-left: 1px solid rgba(255, 255, 255, 0.12);
   }
 
-  .explorer {
+  .nav-files-container {
     background-color: rgba(0, 0, 0, 0);
   }
 
@@ -3972,12 +3990,12 @@ body {
   }
 
   figure[data-rehype-pretty-code-figure] {
-    background-color: rgb(23, 28, 40);
-    border: 0px solid color(srgb 0.149206 0.186251 0.26452);
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(218, 218, 218);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -3985,14 +4003,14 @@ body {
   }
 
   figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-    background-color: rgb(23, 28, 40);
-    color: rgb(215, 220, 226);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(218, 218, 218);
     font-family: monospace;
-    border: 0px solid color(srgb 0.149206 0.186251 0.26452);
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border: 0px rgb(218, 218, 218);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -4001,17 +4019,17 @@ body {
 
   pre > code > [data-line] {
     background-color: rgba(0, 0, 0, 0);
-    border-left: 0px rgb(255, 213, 128);
+    border-left: 0px rgb(218, 218, 218);
   }
 
   pre > code > [data-line][data-highlighted-line] {
     background-color: rgba(0, 0, 0, 0);
-    border-left-color: rgb(255, 213, 128);
+    border-left-color: rgb(218, 218, 218);
   }
 
   pre > code [data-highlighted-chars] {
     background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(255, 213, 128);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4045,9 +4063,22 @@ body {
   }
 
   h1.article-title {
-    color: rgb(215, 220, 226);
-    font-size: 13px;
-    font-weight: 400;
+    color: rgb(186, 230, 126);
+    font-size: 25.888px;
+    font-weight: 700;
+  }
+
+  .stacked-page {
+    border-color: rgb(215, 220, 226);
+    background-color: rgb(23, 28, 40);
+  }
+
+  .stacked-page-header {
+    background-color: rgb(23, 28, 40);
+  }
+
+  .stacked-page.active {
+    border-color: rgb(215, 220, 226);
   }
 
   li.task-list-item[data-task="_"] {
@@ -5299,6 +5330,45 @@ pre {
   & > code {
     overflow-x: auto;
 
+    span[data-token-type="keyword"] {
+      color: var(--qt-code-keyword, var(--code-keyword)) !important;
+    }
+    span[data-token-type="string"] {
+      color: var(--qt-code-string, var(--code-string)) !important;
+    }
+    span[data-token-type="comment"] {
+      color: var(--qt-code-comment, var(--code-comment)) !important;
+      font-style: italic;
+    }
+    span[data-token-type="function"] {
+      color: var(--qt-code-function, var(--code-function)) !important;
+    }
+    span[data-token-type="value"] {
+      color: var(--qt-code-value, var(--code-value)) !important;
+    }
+    span[data-token-type="operator"] {
+      color: var(--qt-code-operator, var(--code-operator)) !important;
+    }
+    span[data-token-type="property"] {
+      color: var(--qt-code-property, var(--code-property)) !important;
+    }
+    span[data-token-type="normal"] {
+      color: var(--qt-code-normal, var(--code-normal)) !important;
+    }
+    span[data-token-type="tag"] {
+      color: var(--qt-code-tag, var(--code-tag)) !important;
+    }
+    span[data-token-type="important"] {
+      color: var(--qt-code-important, var(--code-important)) !important;
+      font-style: italic;
+    }
+    span[data-token-type="punctuation"] {
+      color: var(--qt-code-punctuation, var(--code-punctuation)) !important;
+    }
+    span[data-token-type="regexp"] {
+      color: var(--qt-code-string, var(--code-string)) !important;
+    }
+
     span[class*="qt-code-keyword"] {
       color: var(--qt-code-keyword, var(--code-keyword)) !important;
     }
@@ -5486,8 +5556,8 @@ blockquote.callout {
 :root[saved-theme="light"],
 :root[saved-theme="dark"] {
   body {
-    a.external,
-    a.internal,
+    a.external-link,
+    a.internal-link,
     .breadcrumb-container .breadcrumb-element > a,
     footer a {
       text-decoration: none;

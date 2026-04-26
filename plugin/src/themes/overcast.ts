@@ -49,14 +49,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   background-color: rgba(0, 0, 0, 0);
 }
 
-html body .canvas-node-file {
-  color: rgb(255, 255, 255);
-}
-
-html body .canvas-sidebar {
-  background-color: rgba(0, 0, 0, 0);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -67,30 +59,26 @@ html body .page > div#quartz-body div.sidebar.left {
 
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgba(0, 0, 0, 0);
-}
-
-html body div#quartz-root {
-  background-color: rgba(0, 0, 0, 0);
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
@@ -128,9 +116,6 @@ html body table {
 }
 
 html body td {
-  color: rgb(255, 255, 255);
-}`,
-    code: `html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   color: rgb(255, 255, 255);
 }`,
     images: `html body audio {
@@ -1010,6 +995,10 @@ html body h1 {
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
 }
 
+html body h1.article-title {
+  color: rgb(255, 255, 255);
+}
+
 html body h2 {
   color: rgb(255, 255, 255);
   text-shadow: rgb(255, 255, 255) 0px 0px 3px;
@@ -1055,6 +1044,23 @@ html body hr {
   border-left-color: rgb(226, 226, 226);
   border-right-color: rgb(226, 226, 226);
   border-top-color: rgb(226, 226, 226);
+}`,
+    canvas: `html body .canvas-node-file {
+  color: rgb(255, 255, 255);
+}
+
+html body .canvas-sidebar {
+  background-color: rgba(0, 0, 0, 0);
+}`,
+    properties: `html body div#quartz-root {
+  background-color: rgba(0, 0, 0, 0);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0);
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(255, 255, 255);

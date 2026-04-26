@@ -251,8 +251,8 @@ button.toc-header .fold,
   .page > #quartz-body {
     div.center,
     footer {
-      min-width: calc(100% - 3rem);
-      max-width: calc(100% - 3rem);
+      min-width: calc(100% - 3rem) !important;
+      max-width: calc(100% - 3rem) !important;
       padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
@@ -350,6 +350,46 @@ pre {
   & > code {
     overflow-x: auto;
 
+    span[data-token-type="keyword"] {
+      color: var(--code-keyword) !important;
+    }
+    span[data-token-type="string"] {
+      color: var(--code-string) !important;
+    }
+    span[data-token-type="comment"] {
+      color: var(--code-comment) !important;
+      font-style: italic;
+    }
+    span[data-token-type="function"] {
+      color: var(--code-function) !important;
+    }
+    span[data-token-type="value"] {
+      color: var(--code-value) !important;
+    }
+    span[data-token-type="operator"] {
+      color: var(--code-operator) !important;
+    }
+    span[data-token-type="property"] {
+      color: var(--code-property) !important;
+    }
+    span[data-token-type="normal"] {
+      color: var(--code-normal) !important;
+    }
+    span[data-token-type="tag"] {
+      color: var(--code-tag) !important;
+    }
+    span[data-token-type="important"] {
+      color: var(--code-important) !important;
+      font-style: italic;
+    }
+    span[data-token-type="punctuation"] {
+      color: var(--code-punctuation) !important;
+    }
+    span[data-token-type="regexp"] {
+      color: var(--code-string) !important;
+    }
+
+    /* Legacy: github-light/github-dark only — remove once tokenClassification is standard */
     span[style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"] {
       color: var(--code-value) !important;
     }
@@ -381,13 +421,13 @@ pre {
       color: var(--code-important) !important;
     }
     span[style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;"] {
-      color: var(--text-operator) !important;
+      color: var(--code-operator) !important;
     }
     span[style="--shiki-light:#D73A49;--shiki-dark:#F97583;"] {
       color: var(--code-keyword) !important;
     }
 
-    background-color: transparent; 
+    background-color: transparent;
     color: var(--code-normal);
   }
 }
@@ -513,13 +553,13 @@ blockquote.callout {
 }
 
 /* fallback for internal links */
-body a.internal {
+body a.internal-link {
   background-color: rgb(from var(--highlight) r g b / 0.3);
 }
 
 :root[saved-theme="light"], :root[saved-theme="dark"] {
   body {
-    a.external, a.internal, .breadcrumb-container .breadcrumb-element > a, footer a {
+    a.external-link, a.internal-link, .breadcrumb-container .breadcrumb-element > a, footer a {
       text-decoration: none;
     }
     div#quartz-root.page[data-frame="canvas"] > div#quartz-body {

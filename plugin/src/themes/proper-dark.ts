@@ -48,6 +48,7 @@ export const theme: ThemeData = {
   --ribbon-background: #000000 !important;
   --ribbon-background-collapsed: #161a1d !important;
   --search-result-background: #161a1d !important;
+  --shiki-code-background: #0b0d0f !important;
   --status-bar-background: #0b0d0f !important;
   --status-bar-border-color: #30363d !important;
   --suggestion-background: #161a1d !important;
@@ -75,10 +76,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   background-color: rgb(22, 26, 29);
 }
 
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(11, 13, 15);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(11, 13, 15);
 }
@@ -90,25 +87,21 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(11, 13, 15);
   border-left-color: rgb(48, 54, 61);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(22, 26, 29);
 }`,
-    code: `html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(11, 13, 15);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(11, 13, 15);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
+    code: `html[saved-theme="dark"] body code {
   background-color: rgb(11, 13, 15);
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(11, 13, 15);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
@@ -482,6 +475,11 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   background-color: rgba(255, 255, 255, 0.09);
 }
 
+html[saved-theme="dark"] body h1.article-title {
+  font-size: 48px;
+  font-weight: 400;
+}
+
 html[saved-theme="dark"] body hr {
   border-bottom-color: rgb(48, 54, 61);
   border-left-color: rgb(48, 54, 61);
@@ -490,7 +488,7 @@ html[saved-theme="dark"] body hr {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(22, 26, 31);
 }`,
     footer: `html[saved-theme="dark"] body footer {
@@ -499,6 +497,19 @@ html[saved-theme="dark"] body hr {
   border-left-color: rgb(48, 54, 61);
   border-right-color: rgb(48, 54, 61);
   border-top-color: rgb(48, 54, 61);
+}`,
+    canvas: `html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(11, 13, 15);
+}`,
+    properties: `html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(22, 26, 29);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(11, 13, 15);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(11, 13, 15);
 }`,
     misc: `html[saved-theme="dark"] body .navigation-progress {
   background-color: rgb(11, 13, 15);

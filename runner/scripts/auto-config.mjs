@@ -77,7 +77,7 @@ const ROLE_REGISTRY = {
   // ── Headings ──────────────────────────────────────────────────────────
   "heading:h1": {
     obsidian: (sel) => /^h1[\[.\s]/.test(sel),
-    quartzSelector: "article > h1",
+    quartzSelector: ".markdown-rendered > h1",
     matchBy: "tag",
   },
   "heading:h2": {
@@ -114,12 +114,12 @@ const ROLE_REGISTRY = {
   },
   "text:strong": {
     obsidian: (sel) => sel === "strong",
-    quartzSelector: ".page article p > strong, strong",
+    quartzSelector: ".markdown-rendered p > strong, strong",
     matchBy: "tag",
   },
   "text:emphasis": {
     obsidian: (sel) => sel === "em",
-    quartzSelector: ".page article p > em, em",
+    quartzSelector: ".markdown-rendered p > em, em",
     matchBy: "tag",
   },
   "text:strikethrough": {
@@ -144,24 +144,25 @@ const ROLE_REGISTRY = {
       sel.includes("internal-link") &&
       !sel.includes("is-unresolved") &&
       !sel.includes("hover"),
-    quartzSelector: "a.internal, .breadcrumb-container .breadcrumb-element > a",
+    quartzSelector:
+      "a.internal-link, .breadcrumb-container .breadcrumb-element > a",
     matchBy: "class",
   },
   "link:external": {
     obsidian: (sel) => sel.includes("external-link") && !sel.includes("hover"),
-    quartzSelector: "a.external, footer a",
+    quartzSelector: "a.external-link, footer a",
     matchBy: "class",
   },
   "link:unresolved": {
     obsidian: (sel) => sel.includes("is-unresolved"),
-    quartzSelector: "a.internal.broken",
+    quartzSelector: "a.internal-link.broken",
     matchBy: "class",
   },
   "link:tag": {
     obsidian: (sel) =>
       sel.includes("multi-select-pill") && !sel.includes("content"),
     quartzSelector:
-      "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag",
+      "a.internal-link.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag",
     matchBy: "class",
   },
 
@@ -239,7 +240,7 @@ const ROLE_REGISTRY = {
   "layout:sidebar-left": {
     obsidian: (sel) => sel.includes("mod-horizontal.mod-left-split"),
     quartzSelector:
-      "&[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content",
+      "&[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.nav-files-container), .page > div#quartz-body div.sidebar.left .nav-files-container",
     matchBy: "singleton",
   },
   "layout:sidebar-right": {

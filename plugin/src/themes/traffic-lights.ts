@@ -147,6 +147,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #c2c2c2 !important;
   --setting-items-background: #5B5B5B !important;
   --setting-items-border-color: #242424 !important;
+  --shiki-active-tab-border-color: #c2c2c2 !important;
+  --shiki-code-background: #5B5B5B !important;
+  --shiki-code-comment: rgb(194, 194, 194, 0.50) !important;
+  --shiki-code-normal: #c2c2c2 !important;
+  --shiki-code-punctuation: #c2c2c2 !important;
+  --shiki-gutter-border-color: #242424 !important;
+  --shiki-gutter-text-color: rgb(194, 194, 194, 0.50) !important;
+  --shiki-gutter-text-color-highlight: #c2c2c2 !important;
+  --shiki-highlight-neutral: #c2c2c2 !important;
+  --shiki-terminal-dots-color: rgb(194, 194, 194, 0.50) !important;
   --slider-track-background: #242424 !important;
   --status-bar-background: #3e3e3e !important;
   --status-bar-border-color: #242424 !important;
@@ -204,53 +214,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(194, 194, 194);
 }
 
-html body .bases-table thead th {
-  border-color: rgb(36, 36, 36);
-  color: rgb(194, 194, 194);
-}
-
-html body .canvas-node {
-  border-color: rgb(194, 194, 194);
-}
-
-html body .canvas-node-content {
-  color: rgb(194, 194, 194);
-}
-
-html body .canvas-node-file {
-  color: rgb(194, 194, 194);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(194, 194, 194);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(62, 62, 62);
-  border-color: rgb(194, 194, 194);
-}
-
-html body .note-properties {
-  border-color: rgb(36, 36, 36);
-}
-
-html body .note-properties-key {
-  color: rgb(194, 194, 194);
-}
-
-html body .note-properties-row {
-  border-color: rgb(194, 194, 194);
-}
-
-html body .note-properties-tags {
-  border-radius: 25.375px;
-  color: rgb(216, 135, 54);
-}
-
-html body .note-properties-value {
-  color: rgb(194, 194, 194);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(194, 194, 194);
@@ -264,13 +227,8 @@ html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(62, 62, 62);
   border-left-color: rgb(36, 36, 36);
   color: rgb(194, 194, 194);
-}
-
-html body div#quartz-root {
-  background-color: rgb(62, 62, 62);
-  color: rgb(194, 194, 194);
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(194, 194, 194);
   font-family: Avenir, "Avenir Next", sans-serif;
   font-weight: 900;
@@ -278,21 +236,21 @@ html body div#quartz-root {
   text-decoration-color: rgb(194, 194, 194);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(194, 194, 194);
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(194, 194, 194) none 0px;
   text-decoration-color: rgb(194, 194, 194);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(194, 194, 194);
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(194, 194, 194) none 0px;
   text-decoration-color: rgb(194, 194, 194);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(194, 194, 194);
   font-family: Avenir, "Avenir Next", sans-serif;
   font-weight: 900;
@@ -334,21 +292,21 @@ html body p {
   outline: rgb(194, 194, 194) none 0px;
   text-decoration-color: rgb(194, 194, 194);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(216, 135, 54);
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(216, 135, 54) none 0px;
   text-decoration-color: rgb(216, 135, 54);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(216, 135, 54);
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(216, 135, 54) none 0px;
   text-decoration-color: rgb(216, 135, 54);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(216, 135, 54);
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(216, 135, 54) none 0px;
@@ -369,13 +327,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(194, 194, 194);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(194, 194, 194);
-  border-left-color: rgb(194, 194, 194);
-  border-right-color: rgb(194, 194, 194);
-  border-top-color: rgb(194, 194, 194);
 }
 
 html body ul > li {
@@ -428,33 +379,15 @@ html body th {
   color: rgb(194, 194, 194);
 }`,
     code: `html body code {
-  border-bottom-color: rgb(194, 194, 194);
-  border-left-color: rgb(194, 194, 194);
-  border-right-color: rgb(194, 194, 194);
-  border-top-color: rgb(194, 194, 194);
-  color: rgb(194, 194, 194);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  border-bottom-color: rgb(36, 36, 36);
-  border-left-color: rgb(36, 36, 36);
-  border-right-color: rgb(36, 36, 36);
-  border-top-color: rgb(36, 36, 36);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   border-bottom-color: rgb(36, 36, 36);
   border-left-color: rgb(36, 36, 36);
   border-right-color: rgb(36, 36, 36);
   border-top-color: rgb(36, 36, 36);
   color: rgb(194, 194, 194);
-}
-
-html body pre > code, html pre:has(> code) {
-  border-bottom-color: rgb(36, 36, 36);
-  border-left-color: rgb(36, 36, 36);
-  border-right-color: rgb(36, 36, 36);
-  border-top-color: rgb(36, 36, 36);
+  padding-bottom: 1.90313px;
+  padding-left: 3.80625px;
+  padding-right: 3.80625px;
+  padding-top: 1.90313px;
 }
 
 html body pre:has(> code) {
@@ -472,7 +405,6 @@ html body pre:has(> code) {
 
 html body figcaption {
   color: rgb(194, 194, 194);
-  font-size: 14.5px;
 }
 
 html body figure {
@@ -480,8 +412,6 @@ html body figure {
   border-left-color: rgb(194, 194, 194);
   border-right-color: rgb(194, 194, 194);
   border-top-color: rgb(194, 194, 194);
-  margin-bottom: 14.5px;
-  margin-top: 14.5px;
 }
 
 html body img {
@@ -1121,20 +1051,25 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(194, 194, 194);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 25.375px;
   border-bottom-right-radius: 25.375px;
   border-top-left-radius: 25.375px;
   border-top-right-radius: 25.375px;
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(216, 135, 54);
 }
 
 html body h1 {
   color: rgb(194, 194, 194);
   font-family: Avenir, "Avenir Next", sans-serif;
+}
+
+html body h1.article-title {
+  color: rgb(194, 194, 194);
+  font-size: 23.461px;
 }
 
 html body h2 {
@@ -1175,12 +1110,12 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(194, 194, 194);
   font-family: Avenir, "Avenir Next", sans-serif;
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(194, 194, 194);
   font-family: Avenir, "Avenir Next", sans-serif;
 }`,
@@ -1271,15 +1206,31 @@ html body .darkmode svg {
 html body .breadcrumb-element p {
   color: rgba(194, 194, 194, 0.5);
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: rgb(194, 194, 194);
-  border-left-color: rgb(194, 194, 194);
-  border-right-color: rgb(194, 194, 194);
-  border-top-color: rgb(194, 194, 194);
+    canvas: `html body .canvas-node {
+  border-color: rgb(194, 194, 194);
+}
+
+html body .canvas-node-content {
   color: rgb(194, 194, 194);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  color: rgb(194, 194, 194);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(194, 194, 194);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(62, 62, 62);
+  border-color: rgb(194, 194, 194);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgb(36, 36, 36);
+  color: rgb(194, 194, 194);
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(36, 36, 36);
   border-left-color: rgb(36, 36, 36);
   border-right-color: rgb(36, 36, 36);
@@ -1295,6 +1246,58 @@ html body .metadata-properties {
   border-top-color: rgb(194, 194, 194);
   color: rgb(194, 194, 194);
   font-family: Avenir, "Avenir Next", sans-serif;
+}
+
+html body .note-properties {
+  border-color: rgb(36, 36, 36);
+}
+
+html body .note-properties-key {
+  color: rgb(194, 194, 194);
+}
+
+html body .note-properties-row {
+  border-color: rgb(194, 194, 194);
+}
+
+html body .note-properties-tags {
+  border-radius: 25.375px;
+  color: rgb(216, 135, 54);
+}
+
+html body .note-properties-value {
+  color: rgb(194, 194, 194);
+}
+
+html body div#quartz-root {
+  background-color: rgb(62, 62, 62);
+  color: rgb(194, 194, 194);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(194, 194, 194);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(36, 36, 36);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(194, 194, 194);
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: rgb(194, 194, 194);
+  border-left-color: rgb(194, 194, 194);
+  border-right-color: rgb(194, 194, 194);
+  border-top-color: rgb(194, 194, 194);
+  color: rgb(194, 194, 194);
 }
 
 html body .navigation-progress {

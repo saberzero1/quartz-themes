@@ -251,6 +251,21 @@ export const theme: ThemeData = {
   --setting-items-background: rgba(15, 15, 15, 0.8) !important;
   --setting-items-border-color: #404040 !important;
   --setting-items-radius: 10.08px !important;
+  --shiki-active-tab-border-color: #d0d0d0 !important;
+  --shiki-code-background: rgba(15, 15, 15, 0.8) !important;
+  --shiki-code-block-border-radius: 4px !important;
+  --shiki-code-comment: #a0a0a0 !important;
+  --shiki-code-normal: #d0d0d0 !important;
+  --shiki-code-punctuation: #d0d0d0 !important;
+  --shiki-gutter-border-color: #404040 !important;
+  --shiki-gutter-text-color: #a0a0a0 !important;
+  --shiki-gutter-text-color-highlight: #d0d0d0 !important;
+  --shiki-highlight-green: rgba(143, 188, 143, 0.5) !important;
+  --shiki-highlight-green-background: rgba(143, 188, 143, 0.1) !important;
+  --shiki-highlight-neutral: #d0d0d0 !important;
+  --shiki-highlight-red: rgba(205, 145, 158, 0.5) !important;
+  --shiki-highlight-red-background: rgba(205, 145, 158, 0.1) !important;
+  --shiki-terminal-dots-color: #a0a0a0 !important;
   --slider-track-background: #404040 !important;
   --status-bar-background: rgba(18, 18, 18, 0.8) !important;
   --status-bar-border-color: #303030 !important;
@@ -321,59 +336,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .bases-table {
-  border-color: rgb(42, 42, 42);
-}
-
-html[saved-theme="dark"] body .bases-table thead th {
-  background-color: rgba(18, 18, 18, 0.9);
-  border-color: rgb(64, 64, 64);
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  background-color: rgba(10, 10, 10, 0.8);
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgba(18, 18, 18, 0.8);
-  border-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgb(64, 64, 64);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(208, 208, 208);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(208, 208, 208);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgb(26, 35, 50);
-  color: rgb(204, 153, 255);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(208, 208, 208);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgba(18, 18, 18, 0.8);
   color: rgb(255, 255, 255);
@@ -386,11 +348,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgba(18, 18, 18, 0.8);
   border-left-color: rgb(48, 48, 48);
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgba(10, 10, 10, 0.8);
   color: rgb(255, 255, 255);
 }
 
@@ -407,28 +364,28 @@ html[saved-theme="dark"] body html {
   --line-height: 1.6;
   --mica-effect: 1;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(255, 255, 255);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(139, 227, 235);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(139, 227, 235) none 0px;
   text-decoration-color: rgb(139, 227, 235);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(139, 227, 235);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(139, 227, 235) none 0px;
   text-decoration-color: rgb(139, 227, 235);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(255, 255, 255);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(255, 255, 255) none 0px;
@@ -471,21 +428,21 @@ html[saved-theme="dark"] body p {
   outline: rgb(208, 208, 208) none 0px;
   text-decoration-color: rgb(208, 208, 208);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(204, 153, 255);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(204, 153, 255) none 0px;
   text-decoration-color: rgb(204, 153, 255);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(204, 153, 255);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(204, 153, 255) none 0px;
   text-decoration-color: rgb(204, 153, 255);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(204, 153, 255);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(204, 153, 255) none 0px;
@@ -500,17 +457,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -597,7 +543,7 @@ html[saved-theme="dark"] body tr {
   border-top-color: rgb(42, 42, 42);
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgb(15, 17, 23);
+  background-color: rgb(17, 21, 26);
   border-bottom-color: rgb(42, 47, 58);
   border-bottom-width: 1px;
   border-left-color: rgb(42, 47, 58);
@@ -608,43 +554,6 @@ html[saved-theme="dark"] body tr {
   border-top-width: 1px;
   color: rgb(230, 233, 239);
   font-family: Consolas, Monaco, "Courier New", monospace;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(15, 17, 23);
-  border-bottom-color: rgb(42, 47, 58);
-  border-bottom-width: 1px;
-  border-left-color: rgb(42, 47, 58);
-  border-left-width: 1px;
-  border-right-color: rgb(42, 47, 58);
-  border-right-width: 1px;
-  border-top-color: rgb(42, 47, 58);
-  border-top-width: 1px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(15, 17, 23);
-  border-bottom-color: rgb(42, 47, 58);
-  border-bottom-width: 1px;
-  border-left-color: rgb(42, 47, 58);
-  border-left-width: 1px;
-  border-right-color: rgb(42, 47, 58);
-  border-right-width: 1px;
-  border-top-color: rgb(42, 47, 58);
-  border-top-width: 1px;
-  color: rgb(230, 233, 239);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(15, 17, 23);
-  border-bottom-color: rgb(42, 47, 58);
-  border-bottom-width: 1px;
-  border-left-color: rgb(42, 47, 58);
-  border-left-width: 1px;
-  border-right-color: rgb(42, 47, 58);
-  border-right-width: 1px;
-  border-top-color: rgb(42, 47, 58);
-  border-top-width: 1px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -1910,18 +1819,22 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgb(26, 35, 50);
   font-family: "EB Garamond", Georgia, serif;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(204, 153, 255);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(205, 145, 158);
   font-family: "EB Garamond", Georgia, serif;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(205, 145, 158);
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1978,19 +1891,19 @@ html[saved-theme="dark"] body hr {
   padding-right: 16px;
   padding-top: 16px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
+  border-left-color: rgb(78, 205, 196);
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(255, 255, 255);
   font-family: "EB Garamond", Georgia, serif;
   font-weight: 500;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(255, 255, 255);
   font-family: "EB Garamond", Georgia, serif;
-}
-
-html[saved-theme="dark"] body .explorer .folder-outer > ul {
-  border-left-color: rgb(78, 205, 196);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(255, 255, 255);
@@ -2087,15 +2000,37 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(160, 160, 160);
   font-family: "EB Garamond", Georgia, serif;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  background-color: rgba(10, 10, 10, 0.8);
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgba(18, 18, 18, 0.8);
+  border-color: rgb(255, 255, 255);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table {
+  border-color: rgb(42, 42, 42);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  background-color: rgba(18, 18, 18, 0.9);
+  border-color: rgb(64, 64, 64);
+  color: rgb(255, 255, 255);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(64, 64, 64);
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
@@ -2111,6 +2046,62 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(208, 208, 208);
   color: rgb(208, 208, 208);
   font-family: "EB Garamond", Georgia, serif;
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(64, 64, 64);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(208, 208, 208);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(208, 208, 208);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgb(26, 35, 50);
+  color: rgb(204, 153, 255);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(208, 208, 208);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgba(10, 10, 10, 0.8);
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgba(18, 18, 18, 0.8);
+  border-color: rgb(42, 42, 42);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgba(21, 21, 21, 0.8);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(42, 42, 42);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -2369,6 +2360,17 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-items-background: #f8f9fa !important;
   --setting-items-border-color: #dadce0 !important;
   --setting-items-radius: 10.08px !important;
+  --shiki-active-tab-border-color: #5f6368 !important;
+  --shiki-code-background: #f8f9fa !important;
+  --shiki-code-block-border-radius: 4px !important;
+  --shiki-code-comment: #9aa0a6 !important;
+  --shiki-code-normal: #5f6368 !important;
+  --shiki-code-punctuation: #5f6368 !important;
+  --shiki-gutter-border-color: #dadce0 !important;
+  --shiki-gutter-text-color: #9aa0a6 !important;
+  --shiki-gutter-text-color-highlight: #5f6368 !important;
+  --shiki-highlight-neutral: #5f6368 !important;
+  --shiki-terminal-dots-color: #9aa0a6 !important;
   --slider-track-background: #dadce0 !important;
   --status-bar-background: #f1f3f4 !important;
   --status-bar-border-color: #e8eaed !important;
@@ -2434,57 +2436,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(32, 33, 36);
 }
 
-html[saved-theme="light"] body .bases-table {
-  border-color: rgb(224, 224, 224);
-}
-
-html[saved-theme="light"] body .bases-table thead th {
-  background-color: rgb(255, 255, 255);
-  color: rgb(32, 33, 36);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(32, 33, 36);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(32, 33, 36);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  background-color: rgb(255, 255, 255);
-  color: rgb(32, 33, 36);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(32, 33, 36);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  border-color: rgb(32, 33, 36);
-}
-
-html[saved-theme="light"] body .note-properties {
-  border-color: rgb(218, 220, 224);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(95, 99, 104);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(95, 99, 104);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgb(232, 240, 254);
-  color: rgb(204, 153, 255);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(95, 99, 104);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(241, 243, 244);
   color: rgb(32, 33, 36);
@@ -2497,10 +2448,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(241, 243, 244);
   border-left-color: rgb(232, 234, 237);
-  color: rgb(32, 33, 36);
-}
-
-html[saved-theme="light"] body div#quartz-root {
   color: rgb(32, 33, 36);
 }
 
@@ -2517,28 +2464,28 @@ html[saved-theme="light"] body html {
   --line-height: 1.6;
   --mica-effect: 1;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(32, 33, 36);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(32, 33, 36) none 0px;
   text-decoration-color: rgb(32, 33, 36);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(139, 69, 19);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(139, 69, 19) none 0px;
   text-decoration-color: rgb(139, 69, 19);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(139, 69, 19);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(139, 69, 19) none 0px;
   text-decoration-color: rgb(139, 69, 19);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(32, 33, 36);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(32, 33, 36) none 0px;
@@ -2580,21 +2527,21 @@ html[saved-theme="light"] body p {
   outline: rgb(95, 99, 104) none 0px;
   text-decoration-color: rgb(95, 99, 104);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(204, 153, 255);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(204, 153, 255) none 0px;
   text-decoration-color: rgb(204, 153, 255);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(204, 153, 255);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(204, 153, 255) none 0px;
   text-decoration-color: rgb(204, 153, 255);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(204, 153, 255);
   font-family: "EB Garamond", Georgia, serif;
   outline: rgb(204, 153, 255) none 0px;
@@ -2609,17 +2556,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(32, 33, 36);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(32, 33, 36);
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  border-left-color: rgb(32, 33, 36);
-  border-right-color: rgb(32, 33, 36);
-  border-top-color: rgb(32, 33, 36);
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2697,7 +2633,7 @@ html[saved-theme="light"] body tr {
   border-top-color: rgb(224, 224, 224);
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgb(248, 249, 250);
+  background-color: rgb(241, 243, 244);
   border-bottom-color: rgb(222, 226, 230);
   border-bottom-width: 1px;
   border-left-color: rgb(222, 226, 230);
@@ -2708,43 +2644,6 @@ html[saved-theme="light"] body tr {
   border-top-width: 1px;
   color: rgb(33, 37, 41);
   font-family: Consolas, Monaco, "Courier New", monospace;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(248, 249, 250);
-  border-bottom-color: rgb(222, 226, 230);
-  border-bottom-width: 1px;
-  border-left-color: rgb(222, 226, 230);
-  border-left-width: 1px;
-  border-right-color: rgb(222, 226, 230);
-  border-right-width: 1px;
-  border-top-color: rgb(222, 226, 230);
-  border-top-width: 1px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(248, 249, 250);
-  border-bottom-color: rgb(222, 226, 230);
-  border-bottom-width: 1px;
-  border-left-color: rgb(222, 226, 230);
-  border-left-width: 1px;
-  border-right-color: rgb(222, 226, 230);
-  border-right-width: 1px;
-  border-top-color: rgb(222, 226, 230);
-  border-top-width: 1px;
-  color: rgb(33, 37, 41);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(248, 249, 250);
-  border-bottom-color: rgb(222, 226, 230);
-  border-bottom-width: 1px;
-  border-left-color: rgb(222, 226, 230);
-  border-left-width: 1px;
-  border-right-color: rgb(222, 226, 230);
-  border-right-width: 1px;
-  border-top-color: rgb(222, 226, 230);
-  border-top-width: 1px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -4144,18 +4043,22 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(255, 255, 255);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgb(232, 240, 254);
   font-family: "EB Garamond", Georgia, serif;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(204, 153, 255);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(139, 0, 0);
   font-family: "EB Garamond", Georgia, serif;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(139, 0, 0);
 }
 
 html[saved-theme="light"] body h2 {
@@ -4212,19 +4115,19 @@ html[saved-theme="light"] body hr {
   padding-right: 16px;
   padding-top: 16px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
+  border-left-color: rgb(78, 205, 196);
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(32, 33, 36);
   font-family: "EB Garamond", Georgia, serif;
   font-weight: 500;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(32, 33, 36);
   font-family: "EB Garamond", Georgia, serif;
-}
-
-html[saved-theme="light"] body .explorer .folder-outer > ul {
-  border-left-color: rgb(78, 205, 196);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(32, 33, 36);
@@ -4321,15 +4224,35 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(154, 160, 166);
   font-family: "EB Garamond", Georgia, serif;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(32, 33, 36);
-  border-left-color: rgb(32, 33, 36);
-  border-right-color: rgb(32, 33, 36);
-  border-top-color: rgb(32, 33, 36);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(32, 33, 36);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(32, 33, 36);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  background-color: rgb(255, 255, 255);
+  color: rgb(32, 33, 36);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(32, 33, 36);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  border-color: rgb(32, 33, 36);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table {
+  border-color: rgb(224, 224, 224);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  background-color: rgb(255, 255, 255);
+  color: rgb(32, 33, 36);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(218, 220, 224);
   border-left-color: rgb(218, 220, 224);
   border-right-color: rgb(218, 220, 224);
@@ -4345,6 +4268,61 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(95, 99, 104);
   color: rgb(95, 99, 104);
   font-family: "EB Garamond", Georgia, serif;
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(218, 220, 224);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(95, 99, 104);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(95, 99, 104);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgb(232, 240, 254);
+  color: rgb(204, 153, 255);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(95, 99, 104);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  color: rgb(32, 33, 36);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(32, 33, 36);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-left-color: rgb(32, 33, 36);
+  border-right-color: rgb(32, 33, 36);
+  border-top-color: rgb(32, 33, 36);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(241, 243, 244);
+  border-color: rgb(42, 42, 42);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(232, 234, 237);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(42, 42, 42);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(32, 33, 36);
+  border-left-color: rgb(32, 33, 36);
+  border-right-color: rgb(32, 33, 36);
+  border-top-color: rgb(32, 33, 36);
+  color: rgb(32, 33, 36);
 }
 
 html[saved-theme="light"] body .navigation-progress {

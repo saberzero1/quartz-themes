@@ -41,6 +41,11 @@ export const theme: ThemeData = {
   --embed-padding: 0 0 0 20px !important;
   --graph-node-attachment: #ffc82c !important;
   --quote-qutter-background: #2a2a2a !important;
+  --shiki-code-important: #ff9000 !important;
+  --shiki-code-keyword: #ff4d7b !important;
+  --shiki-code-property: #00bfbc !important;
+  --shiki-code-string: #ffc82c !important;
+  --shiki-code-value: #7852ee !important;
   --sync-avatar-color-2: #ff9000 !important;
   --sync-avatar-color-3: #ffc82c !important;
   --sync-avatar-color-5: #00bfbc !important;
@@ -54,43 +59,15 @@ html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    links: `html[saved-theme="dark"] body a.internal.broken {
+    links: `html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
-    code: `html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-html[saved-theme="dark"] body pre > code > [data-line] {
-  border-left-color: rgb(255, 200, 44);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(255, 200, 44);
-}
-
-html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(255, 200, 44);
-  border-left-color: rgb(255, 200, 44);
-  border-right-color: rgb(255, 200, 44);
-  border-top-color: rgb(255, 200, 44);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+    code: `html[saved-theme="dark"] body code {
+  background-color: color(srgb 0.701961 0.701961 0.701961 / 0.1);
+  padding-bottom: 1.82px;
+  padding-left: 6.3px;
+  padding-right: 6.3px;
+  padding-top: 1.82px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -947,7 +924,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   border-top-right-radius: 8px;
   padding-left: 20px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-style: dashed;
 }`,
   },
@@ -963,6 +940,7 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --color-pink-rgb: 232, 66, 109 !important;
   --embed-padding: 0 0 0 20px !important;
   --quote-qutter-background: #e3e3e3 !important;
+  --shiki-code-keyword: #e8426d !important;
   --sync-avatar-color-8: #e8426d !important;
   --quartz-icon-color: currentColor !important;
 }
@@ -971,40 +949,19 @@ html[saved-theme="light"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
 }`,
-    links: `html[saved-theme="light"] body a.internal.broken {
+    links: `html[saved-theme="light"] body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
-    code: `html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
+    code: `html[saved-theme="light"] body code {
+  background-color: color(srgb 0.360784 0.360784 0.360784 / 0.1);
   border-bottom-color: rgb(227, 227, 227);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   border-left-color: rgb(227, 227, 227);
   border-right-color: rgb(227, 227, 227);
   border-top-color: rgb(227, 227, 227);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  border-bottom-color: rgb(227, 227, 227);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: rgb(227, 227, 227);
-  border-right-color: rgb(227, 227, 227);
-  border-top-color: rgb(227, 227, 227);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  border-bottom-color: rgb(227, 227, 227);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: rgb(227, 227, 227);
-  border-right-color: rgb(227, 227, 227);
-  border-top-color: rgb(227, 227, 227);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  padding-bottom: 1.82px;
+  padding-left: 6.3px;
+  padding-right: 6.3px;
+  padding-top: 1.82px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -1860,7 +1817,7 @@ html[saved-theme="light"] body .callout[data-callout="warning"] {
   border-top-right-radius: 8px;
   padding-left: 20px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-style: dashed;
 }`,
   },

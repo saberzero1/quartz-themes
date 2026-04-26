@@ -75,6 +75,7 @@ export const theme: ThemeData = {
   --ribbon-background-collapsed: rgb(25, 18, 63) !important;
   --search-result-background: rgb(25, 18, 63) !important;
   --setting-group-heading-color: #FFFFFF !important;
+  --shiki-code-background: rgb(33, 19, 19) !important;
   --status-bar-background: rgb(45, 45, 45) !important;
   --suggestion-background: rgb(25, 18, 63) !important;
   --tab-background-active: rgb(25, 18, 63) !important;
@@ -107,31 +108,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(45, 45, 45);
-  border-color: rgb(255, 255, 255);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(45, 45, 45);
   color: rgb(255, 255, 255);
@@ -142,38 +118,33 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(25, 18, 63);
-  color: rgb(255, 255, 255);
-}
-
 html[saved-theme="dark"] body html {
   --heading-color-dark: #DDDDDD;
   --heading-color-light: #0c0909;
   --heading-font: 'Nunito Sans Bold', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(255, 255, 255);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(255, 255, 255);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(255, 255, 255);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(255, 255, 255);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
@@ -201,15 +172,15 @@ html[saved-theme="dark"] body h1.article-title {
 html[saved-theme="dark"] body p {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }`,
     lists: `html[saved-theme="dark"] body dd {
@@ -222,13 +193,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -265,24 +229,8 @@ html[saved-theme="dark"] body th {
   color: rgb(255, 255, 255);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(33, 19, 19);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(33, 19, 19);
   color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(33, 19, 19);
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -297,7 +245,6 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(255, 255, 255);
-  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body figure {
@@ -916,6 +863,10 @@ html[saved-theme="dark"] body h1 {
   text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
 }
 
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(255, 255, 255);
+}
+
 html[saved-theme="dark"] body h2 {
   color: rgb(221, 221, 221);
   font-family: "Nunito Sans Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -953,11 +904,11 @@ html[saved-theme="dark"] body h6 {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
@@ -1000,6 +951,60 @@ html[saved-theme="dark"] body ul.section-ul {
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
 }`,
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(45, 45, 45);
+  border-color: rgb(255, 255, 255);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  color: rgb(255, 255, 255);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-properties {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(25, 18, 63);
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(45, 45, 45);
+  border-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(255, 255, 255);
+}`,
     misc: `html[saved-theme="dark"] body .katex-display {
   background-color: rgb(33, 19, 19);
   border-bottom-color: rgb(255, 255, 255);
@@ -1007,14 +1012,6 @@ html[saved-theme="dark"] body ul.section-ul {
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .metadata {
-  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
-html[saved-theme="dark"] body .metadata-properties {
-  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -1116,6 +1113,7 @@ html[saved-theme="dark"] body sup {
   --ribbon-background-collapsed: rgb(255, 250, 205) !important;
   --search-result-background: rgb(255, 250, 205) !important;
   --setting-group-heading-color: #0c0909 !important;
+  --shiki-code-background: rgb(255, 255, 255) !important;
   --status-bar-background: rgb(240, 240, 240) !important;
   --suggestion-background: rgb(255, 250, 205) !important;
   --tab-background-active: rgb(255, 250, 205) !important;
@@ -1148,31 +1146,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(12, 9, 9);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  color: rgb(12, 9, 9);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(12, 9, 9);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(12, 9, 9);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(12, 9, 9);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(12, 9, 9);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(255, 250, 205);
-  border-color: rgb(12, 9, 9);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(240, 240, 240);
   color: rgb(12, 9, 9);
@@ -1183,38 +1156,33 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(12, 9, 9);
 }
 
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(255, 250, 205);
-  color: rgb(12, 9, 9);
-}
-
 html[saved-theme="light"] body html {
   --heading-color-dark: #DDDDDD;
   --heading-color-light: #0c0909;
   --heading-font: 'Nunito Sans Bold', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(12, 9, 9);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(12, 9, 9) none 0px;
   text-decoration-color: rgb(12, 9, 9);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(12, 9, 9);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(12, 9, 9) none 0px;
   text-decoration-color: rgb(12, 9, 9);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(12, 9, 9);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(12, 9, 9) none 0px;
   text-decoration-color: rgb(12, 9, 9);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(12, 9, 9);
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   outline: rgb(12, 9, 9) none 0px;
@@ -1242,15 +1210,15 @@ html[saved-theme="light"] body h1.article-title {
 html[saved-theme="light"] body p {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }`,
     lists: `html[saved-theme="light"] body dd {
@@ -1263,13 +1231,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(12, 9, 9);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(12, 9, 9);
-  border-left-color: rgb(12, 9, 9);
-  border-right-color: rgb(12, 9, 9);
-  border-top-color: rgb(12, 9, 9);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -1306,24 +1267,8 @@ html[saved-theme="light"] body th {
   color: rgb(12, 9, 9);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(12, 9, 9);
-  border-left-color: rgb(12, 9, 9);
-  border-right-color: rgb(12, 9, 9);
-  border-top-color: rgb(12, 9, 9);
-  color: rgb(12, 9, 9);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(255, 255, 255);
   color: rgb(12, 9, 9);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(255, 255, 255);
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -1338,7 +1283,6 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(12, 9, 9);
-  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="light"] body figure {
@@ -1957,6 +1901,10 @@ html[saved-theme="light"] body h1 {
   text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px;
 }
 
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(12, 9, 9);
+}
+
 html[saved-theme="light"] body h2 {
   color: rgb(12, 9, 9);
   font-family: "Nunito Sans Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -1994,11 +1942,11 @@ html[saved-theme="light"] body h6 {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
@@ -2041,6 +1989,60 @@ html[saved-theme="light"] body ul.section-ul {
   border-right-color: rgb(12, 9, 9);
   border-top-color: rgb(12, 9, 9);
 }`,
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(12, 9, 9);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgb(12, 9, 9);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(12, 9, 9);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(12, 9, 9);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(255, 250, 205);
+  border-color: rgb(12, 9, 9);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  color: rgb(12, 9, 9);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="light"] body .metadata-properties {
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(255, 250, 205);
+  color: rgb(12, 9, 9);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(12, 9, 9);
+  border-left-color: rgb(12, 9, 9);
+  border-right-color: rgb(12, 9, 9);
+  border-top-color: rgb(12, 9, 9);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(240, 240, 240);
+  border-color: rgb(12, 9, 9);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(12, 9, 9);
+}`,
     misc: `html[saved-theme="light"] body .katex-display {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(12, 9, 9);
@@ -2048,14 +2050,6 @@ html[saved-theme="light"] body ul.section-ul {
   border-right-color: rgb(12, 9, 9);
   border-top-color: rgb(12, 9, 9);
   color: rgb(12, 9, 9);
-}
-
-html[saved-theme="light"] body .metadata {
-  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
-html[saved-theme="light"] body .metadata-properties {
-  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="light"] body .navigation-progress {

@@ -1,82 +1,16 @@
 {
   "_codeBlock": {
     "backgroundColor": "rgba(0, 0, 0, 0)",
-    "color": "color(srgb 0.084 0.036 0.056)"
+    "color": "color(srgb 0.084 0.036 0.056 / 0.7)"
   },
   "_preBlock": {
     "backgroundColor": "color(srgb 0 0 0 / 0.06)",
-    "borderColor": "color(srgb 0.88 0.52 0.67)"
-  },
-  "atom": {
-    "color": "color(srgb 0.084 0.036 0.056)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "comment": {
-    "color": "color(srgb 0 0 0 / 0.5)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "def": {
-    "color": "color(srgb 0.084 0.036 0.056)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
+    "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {
     "color": "color(srgb 0.084 0.036 0.056)",
     "fontStyle": "normal",
     "fontWeight": "100",
-    "textDecoration": "none"
-  },
-  "keyword": {
-    "color": "color(srgb 0.84 0.36 0.592)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "number": {
-    "color": "color(srgb 0.464 0.36 0.84)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "operator": {
-    "color": "color(srgb 0.84 0.36 0.392)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "property": {
-    "color": "color(srgb 0.84 0.816 0.36)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string": {
-    "color": "color(srgb 0.36 0.84 0.392)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string-2": {
-    "color": "color(srgb 0.36 0.84 0.392)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable": {
-    "color": "color(srgb 0.36 0.84 0.832)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable-2": {
-    "color": "color(srgb 0.36 0.84 0.832)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
     "textDecoration": "none"
   }
 }

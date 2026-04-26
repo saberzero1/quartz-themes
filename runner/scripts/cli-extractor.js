@@ -368,6 +368,57 @@ class ObsidianCLI {
     }
   }
 
+  async hoverOverExplorerItem() {
+    try {
+      await this.eval(`
+        (() => {
+          const el = document.querySelector(".nav-folder-title");
+          if (el) {
+            el.dispatchEvent(new MouseEvent("mouseenter", { bubbles: true }));
+            el.dispatchEvent(new MouseEvent("mouseover", { bubbles: true }));
+          }
+        })();
+      `);
+      await this.sleep(300);
+    } catch {
+      // Explorer hover failed, continue
+    }
+  }
+
+  async hoverOverExplorerFile() {
+    try {
+      await this.eval(`
+        (() => {
+          const el = document.querySelector(".nav-file-title");
+          if (el) {
+            el.dispatchEvent(new MouseEvent("mouseenter", { bubbles: true }));
+            el.dispatchEvent(new MouseEvent("mouseover", { bubbles: true }));
+          }
+        })();
+      `);
+      await this.sleep(300);
+    } catch {
+      // Explorer file hover failed, continue
+    }
+  }
+
+  async hoverOverSearchResult() {
+    try {
+      await this.eval(`
+        (() => {
+          const el = document.querySelector(".search-result-file-title");
+          if (el) {
+            el.dispatchEvent(new MouseEvent("mouseenter", { bubbles: true }));
+            el.dispatchEvent(new MouseEvent("mouseover", { bubbles: true }));
+          }
+        })();
+      `);
+      await this.sleep(300);
+    } catch {
+      // Search hover failed, continue
+    }
+  }
+
   sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }

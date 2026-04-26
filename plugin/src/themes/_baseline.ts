@@ -641,6 +641,35 @@ export const theme: ThemeData = {
   --setting-items-radius: 12px !important;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2) !important;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shiki-active-tab-border-color: #b3b3b3 !important;
+  --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: #242424 !important;
+  --shiki-code-block-border-color: transparent !important;
+  --shiki-code-block-border-radius: 4px !important;
+  --shiki-code-block-border-width: 0px !important;
+  --shiki-code-block-spacing: 1rem !important;
+  --shiki-code-comment: #666666 !important;
+  --shiki-code-function: #44cf6e !important;
+  --shiki-code-important: #e9973f !important;
+  --shiki-code-keyword: #fa99cd !important;
+  --shiki-code-normal: #b3b3b3 !important;
+  --shiki-code-property: #53dfdd !important;
+  --shiki-code-punctuation: #b3b3b3 !important;
+  --shiki-code-string: #e0de71 !important;
+  --shiki-code-value: #a882ff !important;
+  --shiki-gutter-border-color: #363636 !important;
+  --shiki-gutter-border-width: 1px !important;
+  --shiki-gutter-text-color: #666666 !important;
+  --shiki-gutter-text-color-highlight: #b3b3b3 !important;
+  --shiki-highlight-green: rgba(68, 207, 110, 0.5) !important;
+  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1) !important;
+  --shiki-highlight-neutral: #b3b3b3 !important;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05) !important;
+  --shiki-highlight-red: rgba(251, 70, 76, 0.5) !important;
+  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1) !important;
+  --shiki-terminal-dots-color: #666666 !important;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9) !important;
+  --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -854,74 +883,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(218, 218, 218);
 }
 
-html[saved-theme="dark"] body .bases-table {
-  border-color: rgb(128, 128, 128);
-}
-
-html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="dark"] body .bases-table thead th {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(54, 54, 54);
-  color: rgb(218, 218, 218);
-  font-weight: 600;
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(218, 218, 218);
-  border-radius: 0px;
-  border-width: 0px;
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(218, 218, 218);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(218, 218, 218);
-  border-width: 0px;
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(38, 38, 38);
-  border-color: rgb(218, 218, 218);
-  box-shadow: rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-}
-
-html[saved-theme="dark"] body .note-properties {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(54, 54, 54);
-  border-radius: 0px;
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(179, 179, 179);
-  font-weight: 400;
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(179, 179, 179);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(138, 92, 245, 0.1);
-  border-radius: 28px;
-  color: rgb(166, 138, 249);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(179, 179, 179);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(38, 38, 38);
   color: rgb(218, 218, 218);
@@ -937,11 +898,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(38, 38, 38);
   border-left-color: rgb(54, 54, 54);
   border-left-width: 0px;
-  color: rgb(218, 218, 218);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(30, 30, 30);
   color: rgb(218, 218, 218);
 }
 
@@ -1030,7 +986,7 @@ html[saved-theme="dark"] body html {
   vertical-align: baseline;
   width: 2538px;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -1048,7 +1004,7 @@ html[saved-theme="dark"] body html {
   user-select: text;
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -1066,7 +1022,7 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
   user-select: text;
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -1084,7 +1040,7 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   user-select: text;
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -1177,7 +1133,7 @@ html[saved-theme="dark"] body p {
   text-decoration-style: solid;
   transition: all;
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -1197,7 +1153,7 @@ html[saved-theme="dark"] body p {
   user-select: text;
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -1217,7 +1173,7 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   user-select: text;
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -1267,21 +1223,6 @@ html[saved-theme="dark"] body dt {
 html[saved-theme="dark"] body ol > li {
   color: rgb(218, 218, 218);
   text-align: start;
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(218, 218, 218);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-width: 0px;
-  border-left-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-color: rgb(218, 218, 218);
-  border-right-width: 0px;
-  border-top-color: rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-width: 0px;
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -1456,122 +1397,29 @@ html[saved-theme="dark"] body tr {
   border-top-width: 0px;
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(218, 218, 218);
+  background-color: rgb(36, 36, 36);
+  border-bottom-color: rgb(54, 54, 54);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-bottom-style: solid;
   border-bottom-width: 0px;
-  border-left-color: rgb(218, 218, 218);
+  border-left-color: rgb(54, 54, 54);
   border-left-style: solid;
   border-left-width: 0px;
-  border-right-color: rgb(218, 218, 218);
+  border-right-color: rgb(54, 54, 54);
   border-right-style: solid;
   border-right-width: 0px;
-  border-top-color: rgb(218, 218, 218);
+  border-top-color: rgb(54, 54, 54);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-top-style: solid;
   border-top-width: 0px;
   color: rgb(218, 218, 218);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(36, 36, 36);
-  border-bottom-color: rgb(54, 54, 54);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-bottom-style: solid;
-  border-bottom-width: 0px;
-  border-left-color: rgb(54, 54, 54);
-  border-left-style: solid;
-  border-left-width: 0px;
-  border-right-color: rgb(54, 54, 54);
-  border-right-style: solid;
-  border-right-width: 0px;
-  border-top-color: rgb(54, 54, 54);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-top-style: solid;
-  border-top-width: 0px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(36, 36, 36);
-  border-bottom-color: rgb(54, 54, 54);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-bottom-style: solid;
-  border-bottom-width: 0px;
-  border-left-color: rgb(54, 54, 54);
-  border-left-style: solid;
-  border-left-width: 0px;
-  border-right-color: rgb(54, 54, 54);
-  border-right-style: solid;
-  border-right-width: 0px;
-  border-top-color: rgb(54, 54, 54);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-top-style: solid;
-  border-top-width: 0px;
-  color: rgb(218, 218, 218);
-  font-family: monospace;
-}
-
-html[saved-theme="dark"] body pre > code > [data-line] {
-  background-color: rgba(0, 0, 0, 0);
-  border-left-color: rgb(224, 222, 113);
-  border-left-width: 0px;
-}
-
-html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  background-color: rgba(0, 0, 0, 0);
-  border-left-color: rgb(224, 222, 113);
-}
-
-html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(224, 222, 113);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-width: 0px;
-  border-left-color: rgb(224, 222, 113);
-  border-left-width: 0px;
-  border-right-color: rgb(224, 222, 113);
-  border-right-width: 0px;
-  border-top-color: rgb(224, 222, 113);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-width: 0px;
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(36, 36, 36);
-  border-bottom-color: rgb(54, 54, 54);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-bottom-style: solid;
-  border-bottom-width: 0px;
-  border-left-color: rgb(54, 54, 54);
-  border-left-style: solid;
-  border-left-width: 0px;
-  border-right-color: rgb(54, 54, 54);
-  border-right-style: solid;
-  border-right-width: 0px;
-  border-top-color: rgb(54, 54, 54);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-top-style: solid;
-  border-top-width: 0px;
-  padding-bottom: 12px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 12px;
+  padding-bottom: 2.1px;
+  padding-left: 4.2px;
+  padding-right: 4.2px;
+  padding-top: 2.1px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -1619,7 +1467,7 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(218, 218, 218);
-  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 16px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -1635,21 +1483,21 @@ html[saved-theme="dark"] body figcaption {
 html[saved-theme="dark"] body figure {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(218, 218, 218);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-width: 0px;
   border-left-color: rgb(218, 218, 218);
   border-left-width: 0px;
   border-right-color: rgb(218, 218, 218);
   border-right-width: 0px;
   border-top-color: rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   border-top-width: 0px;
-  margin-bottom: 16px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 16px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -4331,7 +4179,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(218, 218, 218);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(138, 92, 245, 0.1);
   border-bottom-color: rgba(138, 92, 245, 0.15);
   border-bottom-left-radius: 28px;
@@ -4354,13 +4202,19 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   font-weight: 400;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(166, 138, 249);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(218, 218, 218);
   font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(218, 218, 218);
+  font-size: 25.888px;
+  font-weight: 700;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -4435,28 +4289,28 @@ html[saved-theme="dark"] body hr {
   padding-right: 12px;
   padding-top: 12px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer {
+    explorer: `html[saved-theme="dark"] body .nav-files-container {
   background-color: rgba(0, 0, 0, 0);
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(179, 179, 179);
-  cursor: default;
-  font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 400;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(179, 179, 179);
-  cursor: default;
-  font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 400;
-}
-
-html[saved-theme="dark"] body .explorer .folder-outer > ul {
+html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgba(255, 255, 255, 0.12);
   border-left-style: solid;
   border-left-width: 1px;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(179, 179, 179);
+  cursor: default;
+  font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(179, 179, 179);
+  cursor: default;
+  font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(218, 218, 218);
@@ -4621,24 +4475,48 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(102, 102, 102);
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
+    canvas: `html[saved-theme="dark"] body .canvas-node {
   background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(218, 218, 218);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-width: 0px;
-  border-left-color: rgb(218, 218, 218);
-  border-left-width: 0px;
-  border-right-color: rgb(218, 218, 218);
-  border-right-width: 0px;
-  border-top-color: rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-width: 0px;
+  border-color: rgb(218, 218, 218);
+  border-radius: 0px;
+  border-width: 0px;
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(218, 218, 218);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(218, 218, 218);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(218, 218, 218);
+  border-width: 0px;
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(38, 38, 38);
+  border-color: rgb(218, 218, 218);
+  box-shadow: rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table {
+  border-color: rgb(128, 128, 128);
+}
+
+html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(54, 54, 54);
+  color: rgb(218, 218, 218);
+  font-weight: 600;
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(54, 54, 54);
   border-bottom-left-radius: 0px;
@@ -4692,6 +4570,79 @@ html[saved-theme="dark"] body .metadata-properties {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .note-properties {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(54, 54, 54);
+  border-radius: 0px;
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(179, 179, 179);
+  font-weight: 400;
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(179, 179, 179);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(138, 92, 245, 0.1);
+  border-radius: 28px;
+  color: rgb(166, 138, 249);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(179, 179, 179);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(30, 30, 30);
+  color: rgb(218, 218, 218);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(218, 218, 218);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
+  border-top-color: rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(38, 38, 38);
+  border-color: rgb(218, 218, 218);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(54, 54, 54);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(218, 218, 218);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(218, 218, 218);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(218, 218, 218);
+  border-left-width: 0px;
+  border-right-color: rgb(218, 218, 218);
+  border-right-width: 0px;
+  border-top-color: rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(218, 218, 218);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -5478,6 +5429,35 @@ html[saved-theme="dark"] body ul.tags > li {
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
+  --shiki-active-tab-border-color: #5c5c5c !important;
+  --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: #fafafa !important;
+  --shiki-code-block-border-color: transparent !important;
+  --shiki-code-block-border-radius: 4px !important;
+  --shiki-code-block-border-width: 0px !important;
+  --shiki-code-block-spacing: 1rem !important;
+  --shiki-code-comment: #ababab !important;
+  --shiki-code-function: #08b94e !important;
+  --shiki-code-important: #ec7500 !important;
+  --shiki-code-keyword: #d53984 !important;
+  --shiki-code-normal: #5c5c5c !important;
+  --shiki-code-property: #00bfbc !important;
+  --shiki-code-punctuation: #5c5c5c !important;
+  --shiki-code-string: #e0ac00 !important;
+  --shiki-code-value: #7852ee !important;
+  --shiki-gutter-border-color: #e0e0e0 !important;
+  --shiki-gutter-border-width: 1px !important;
+  --shiki-gutter-text-color: #ababab !important;
+  --shiki-gutter-text-color-highlight: #5c5c5c !important;
+  --shiki-highlight-green: rgba(8, 185, 78, 0.5) !important;
+  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1) !important;
+  --shiki-highlight-neutral: #5c5c5c !important;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05) !important;
+  --shiki-highlight-red: rgba(233, 49, 71, 0.5) !important;
+  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1) !important;
+  --shiki-terminal-dots-color: #ababab !important;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9) !important;
+  --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -5691,74 +5671,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(34, 34, 34);
 }
 
-html[saved-theme="light"] body .bases-table {
-  border-color: rgb(128, 128, 128);
-}
-
-html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="light"] body .bases-table thead th {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(224, 224, 224);
-  color: rgb(34, 34, 34);
-  font-weight: 600;
-}
-
-html[saved-theme="light"] body .canvas-node {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(34, 34, 34);
-  border-radius: 0px;
-  border-width: 0px;
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(34, 34, 34);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(34, 34, 34);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(34, 34, 34);
-  border-width: 0px;
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(255, 255, 255);
-  border-color: rgb(34, 34, 34);
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-}
-
-html[saved-theme="light"] body .note-properties {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(224, 224, 224);
-  border-radius: 0px;
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(92, 92, 92);
-  font-weight: 400;
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(92, 92, 92);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(138, 92, 245, 0.1);
-  border-radius: 28px;
-  color: rgb(138, 92, 245);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(92, 92, 92);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(246, 246, 246);
   color: rgb(34, 34, 34);
@@ -5774,11 +5686,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(246, 246, 246);
   border-left-color: rgb(224, 224, 224);
   border-left-width: 0px;
-  color: rgb(34, 34, 34);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(255, 255, 255);
   color: rgb(34, 34, 34);
 }
 
@@ -5867,7 +5774,7 @@ html[saved-theme="light"] body html {
   vertical-align: baseline;
   width: 2538px;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -5885,7 +5792,7 @@ html[saved-theme="light"] body html {
   user-select: text;
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -5903,7 +5810,7 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
   user-select: text;
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -5921,7 +5828,7 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
   user-select: text;
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -6014,7 +5921,7 @@ html[saved-theme="light"] body p {
   text-decoration-style: solid;
   transition: all;
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -6034,7 +5941,7 @@ html[saved-theme="light"] body p {
   user-select: text;
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -6054,7 +5961,7 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
   user-select: text;
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   animation-delay: 0s;
   animation-duration: 0s;
   animation-iteration-count: 1;
@@ -6104,21 +6011,6 @@ html[saved-theme="light"] body dt {
 html[saved-theme="light"] body ol > li {
   color: rgb(34, 34, 34);
   text-align: start;
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(34, 34, 34);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-width: 0px;
-  border-left-color: rgb(34, 34, 34);
-  border-left-width: 0px;
-  border-right-color: rgb(34, 34, 34);
-  border-right-width: 0px;
-  border-top-color: rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-width: 0px;
 }
 
 html[saved-theme="light"] body ul > li {
@@ -6293,122 +6185,29 @@ html[saved-theme="light"] body tr {
   border-top-width: 0px;
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(34, 34, 34);
+  background-color: rgb(250, 250, 250);
+  border-bottom-color: rgb(224, 224, 224);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-bottom-style: solid;
   border-bottom-width: 0px;
-  border-left-color: rgb(34, 34, 34);
+  border-left-color: rgb(224, 224, 224);
   border-left-style: solid;
   border-left-width: 0px;
-  border-right-color: rgb(34, 34, 34);
+  border-right-color: rgb(224, 224, 224);
   border-right-style: solid;
   border-right-width: 0px;
-  border-top-color: rgb(34, 34, 34);
+  border-top-color: rgb(224, 224, 224);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-top-style: solid;
   border-top-width: 0px;
   color: rgb(34, 34, 34);
   font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(250, 250, 250);
-  border-bottom-color: rgb(224, 224, 224);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-bottom-style: solid;
-  border-bottom-width: 0px;
-  border-left-color: rgb(224, 224, 224);
-  border-left-style: solid;
-  border-left-width: 0px;
-  border-right-color: rgb(224, 224, 224);
-  border-right-style: solid;
-  border-right-width: 0px;
-  border-top-color: rgb(224, 224, 224);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-top-style: solid;
-  border-top-width: 0px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(250, 250, 250);
-  border-bottom-color: rgb(224, 224, 224);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-bottom-style: solid;
-  border-bottom-width: 0px;
-  border-left-color: rgb(224, 224, 224);
-  border-left-style: solid;
-  border-left-width: 0px;
-  border-right-color: rgb(224, 224, 224);
-  border-right-style: solid;
-  border-right-width: 0px;
-  border-top-color: rgb(224, 224, 224);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-top-style: solid;
-  border-top-width: 0px;
-  color: rgb(34, 34, 34);
-  font-family: monospace;
-}
-
-html[saved-theme="light"] body pre > code > [data-line] {
-  background-color: rgba(0, 0, 0, 0);
-  border-left-color: rgb(224, 172, 0);
-  border-left-width: 0px;
-}
-
-html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  background-color: rgba(0, 0, 0, 0);
-  border-left-color: rgb(224, 172, 0);
-}
-
-html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(224, 172, 0);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-width: 0px;
-  border-left-color: rgb(224, 172, 0);
-  border-left-width: 0px;
-  border-right-color: rgb(224, 172, 0);
-  border-right-width: 0px;
-  border-top-color: rgb(224, 172, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-width: 0px;
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(250, 250, 250);
-  border-bottom-color: rgb(224, 224, 224);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-bottom-style: solid;
-  border-bottom-width: 0px;
-  border-left-color: rgb(224, 224, 224);
-  border-left-style: solid;
-  border-left-width: 0px;
-  border-right-color: rgb(224, 224, 224);
-  border-right-style: solid;
-  border-right-width: 0px;
-  border-top-color: rgb(224, 224, 224);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-top-style: solid;
-  border-top-width: 0px;
-  padding-bottom: 12px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 12px;
+  padding-bottom: 2.1px;
+  padding-left: 4.2px;
+  padding-right: 4.2px;
+  padding-top: 2.1px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -6456,7 +6255,7 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(34, 34, 34);
-  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 16px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -6472,21 +6271,21 @@ html[saved-theme="light"] body figcaption {
 html[saved-theme="light"] body figure {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(34, 34, 34);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-bottom-width: 0px;
   border-left-color: rgb(34, 34, 34);
   border-left-width: 0px;
   border-right-color: rgb(34, 34, 34);
   border-right-width: 0px;
   border-top-color: rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   border-top-width: 0px;
-  margin-bottom: 16px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 16px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -9168,7 +8967,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(34, 34, 34);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(138, 92, 245, 0.1);
   border-bottom-color: rgba(138, 92, 245, 0.15);
   border-bottom-left-radius: 28px;
@@ -9191,13 +8990,19 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   font-weight: 400;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(138, 92, 245);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(34, 34, 34);
   font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(34, 34, 34);
+  font-size: 25.888px;
+  font-weight: 700;
 }
 
 html[saved-theme="light"] body h2 {
@@ -9272,28 +9077,28 @@ html[saved-theme="light"] body hr {
   padding-right: 12px;
   padding-top: 12px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer {
+    explorer: `html[saved-theme="light"] body .nav-files-container {
   background-color: rgba(0, 0, 0, 0);
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(92, 92, 92);
-  cursor: default;
-  font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 400;
-}
-
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(92, 92, 92);
-  cursor: default;
-  font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 400;
-}
-
-html[saved-theme="light"] body .explorer .folder-outer > ul {
+html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-color: rgba(0, 0, 0, 0.12);
   border-left-style: solid;
   border-left-width: 1px;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(92, 92, 92);
+  cursor: default;
+  font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(92, 92, 92);
+  cursor: default;
+  font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(34, 34, 34);
@@ -9458,24 +9263,48 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(171, 171, 171);
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
+    canvas: `html[saved-theme="light"] body .canvas-node {
   background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(34, 34, 34);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-width: 0px;
-  border-left-color: rgb(34, 34, 34);
-  border-left-width: 0px;
-  border-right-color: rgb(34, 34, 34);
-  border-right-width: 0px;
-  border-top-color: rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-width: 0px;
+  border-color: rgb(34, 34, 34);
+  border-radius: 0px;
+  border-width: 0px;
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(34, 34, 34);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(34, 34, 34);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(34, 34, 34);
+  border-width: 0px;
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(34, 34, 34);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}`,
+    bases: `html[saved-theme="light"] body .bases-table {
+  border-color: rgb(128, 128, 128);
+}
+
+html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(224, 224, 224);
+  color: rgb(34, 34, 34);
+  font-weight: 600;
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(224, 224, 224);
   border-bottom-left-radius: 0px;
@@ -9529,6 +9358,79 @@ html[saved-theme="light"] body .metadata-properties {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html[saved-theme="light"] body .note-properties {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(224, 224, 224);
+  border-radius: 0px;
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(92, 92, 92);
+  font-weight: 400;
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(92, 92, 92);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(138, 92, 245, 0.1);
+  border-radius: 28px;
+  color: rgb(138, 92, 245);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(92, 92, 92);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(255, 255, 255);
+  color: rgb(34, 34, 34);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(246, 246, 246);
+  border-color: rgb(34, 34, 34);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(252, 252, 252);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(34, 34, 34);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+  border-left-color: rgb(34, 34, 34);
+  border-left-width: 0px;
+  border-right-color: rgb(34, 34, 34);
+  border-right-width: 0px;
+  border-top-color: rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+  color: rgb(34, 34, 34);
 }
 
 html[saved-theme="light"] body .navigation-progress {

@@ -281,6 +281,24 @@ export const theme: ThemeData = {
   --setting-group-heading-color: rgb(192, 202, 245) !important;
   --setting-items-background: rgb(36, 40, 59) !important;
   --setting-items-border-color: rgb(65, 72, 104) !important;
+  --shiki-active-tab-border-color: rgb(169, 177, 214) !important;
+  --shiki-code-background: rgb(35, 35, 55) !important;
+  --shiki-code-comment: rgb(86, 95, 137) !important;
+  --shiki-code-function: rgb(158, 206, 106) !important;
+  --shiki-code-important: rgb(255, 158, 100) !important;
+  --shiki-code-keyword: rgb(187, 154, 247) !important;
+  --shiki-code-normal: rgb(169, 177, 214) !important;
+  --shiki-code-property: rgb(125, 207, 255) !important;
+  --shiki-code-punctuation: rgb(169, 177, 214) !important;
+  --shiki-code-string: rgb(224, 175, 104) !important;
+  --shiki-code-value: rgb(157, 124, 21) !important;
+  --shiki-gutter-border-color: rgb(65, 72, 104) !important;
+  --shiki-gutter-border-width: 2px !important;
+  --shiki-gutter-text-color: rgb(86, 95, 137) !important;
+  --shiki-gutter-text-color-highlight: rgb(169, 177, 214) !important;
+  --shiki-highlight-neutral: rgb(169, 177, 214) !important;
+  --shiki-terminal-dots-color: rgb(86, 95, 137) !important;
+  --shiki-tooltip-background: rgba(65, 72, 104, 0.9) !important;
   --slider-thumb-border-color: rgb(65, 72, 104) !important;
   --slider-thumb-border-width: 2px !important;
   --slider-track-background: rgb(65, 72, 104) !important;
@@ -376,57 +394,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(192, 202, 245);
 }
 
-html body .bases-table tbody tr:nth-child(even) {
-  background-color: rgb(36, 40, 59);
-}
-
-html body .bases-table thead th {
-  border-color: rgb(65, 72, 104);
-  color: rgb(192, 202, 245);
-}
-
-html body .canvas-node {
-  border-color: rgb(192, 202, 245);
-}
-
-html body .canvas-node-content {
-  color: rgb(192, 202, 245);
-}
-
-html body .canvas-node-file {
-  color: rgb(192, 202, 245);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(192, 202, 245);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(36, 40, 59);
-  border-color: rgb(192, 202, 245);
-}
-
-html body .note-properties {
-  border-color: rgb(65, 72, 104);
-}
-
-html body .note-properties-key {
-  color: rgb(169, 177, 214);
-}
-
-html body .note-properties-row {
-  border-color: rgb(169, 177, 214);
-}
-
-html body .note-properties-tags {
-  background-color: rgba(187, 154, 247, 0.15);
-  color: rgb(187, 154, 247);
-}
-
-html body .note-properties-value {
-  color: rgb(169, 177, 214);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(36, 40, 59);
   color: rgb(192, 202, 245);
@@ -442,34 +409,29 @@ html body .page > div#quartz-body div.sidebar.right {
   color: rgb(192, 202, 245);
 }
 
-html body div#quartz-root {
-  background-color: rgb(36, 40, 59);
-  color: rgb(192, 202, 245);
-}
-
 html body html {
   --default-font: "JetBrains Mono Nerd Font", monospace;
   --font-monospace: "Anonymouse Pro for Powerline", monospace;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(128, 208, 255);
   outline: rgb(128, 208, 255) none 0px;
   text-decoration-color: rgb(128, 208, 255);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(128, 208, 255);
   outline: rgb(128, 208, 255) none 0px;
   text-decoration-color: rgb(128, 208, 255);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(128, 208, 255);
   outline: rgb(128, 208, 255) none 0px;
   text-decoration-color: rgb(128, 208, 255);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(128, 208, 255);
   outline: rgb(128, 208, 255) none 0px;
   text-decoration-color: rgb(128, 208, 255);
@@ -507,19 +469,19 @@ html body p {
   outline: rgb(169, 177, 214) none 0px;
   text-decoration-color: rgb(169, 177, 214);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(185, 233, 255);
   outline: rgb(185, 233, 255) none 0px;
   text-decoration-color: rgb(185, 233, 255);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(185, 233, 255);
   outline: rgb(185, 233, 255) none 0px;
   text-decoration-color: rgb(185, 233, 255);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(185, 233, 255);
   outline: rgb(185, 233, 255) none 0px;
   text-decoration: underline rgba(128, 208, 255, 0.3);
@@ -535,13 +497,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(192, 202, 245);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(192, 202, 245);
-  border-left-color: rgb(192, 202, 245);
-  border-right-color: rgb(192, 202, 245);
-  border-top-color: rgb(192, 202, 245);
 }
 
 html body ul > li {
@@ -596,51 +551,12 @@ html body tr {
   background-color: rgb(36, 40, 59);
 }`,
     code: `html body code {
-  border-bottom-color: rgb(192, 202, 245);
-  border-left-color: rgb(192, 202, 245);
-  border-right-color: rgb(192, 202, 245);
-  border-top-color: rgb(192, 202, 245);
-  color: rgb(192, 202, 245);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(35, 35, 55);
-  border-bottom-color: rgb(65, 72, 104);
-  border-left-color: rgb(65, 72, 104);
-  border-right-color: rgb(65, 72, 104);
-  border-top-color: rgb(65, 72, 104);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(35, 35, 55);
   border-bottom-color: rgb(65, 72, 104);
   border-left-color: rgb(65, 72, 104);
   border-right-color: rgb(65, 72, 104);
   border-top-color: rgb(65, 72, 104);
   color: rgb(192, 202, 245);
-}
-
-html body pre > code > [data-line] {
-  border-left-color: rgb(224, 175, 104);
-}
-
-html body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(224, 175, 104);
-}
-
-html body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(224, 175, 104);
-  border-left-color: rgb(224, 175, 104);
-  border-right-color: rgb(224, 175, 104);
-  border-top-color: rgb(224, 175, 104);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(35, 35, 55);
-  border-bottom-color: rgb(65, 72, 104);
-  border-left-color: rgb(65, 72, 104);
-  border-right-color: rgb(65, 72, 104);
-  border-top-color: rgb(65, 72, 104);
 }
 
 html body pre:has(> code) {
@@ -659,6 +575,7 @@ html body pre:has(> code) {
 
 html body figcaption {
   color: rgb(192, 202, 245);
+  font-family: "??", "??", "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body figure {
@@ -1318,7 +1235,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(192, 202, 245);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(187, 154, 247, 0.15);
   border-bottom-color: rgba(128, 208, 255, 0.15);
   border-left-color: rgba(128, 208, 255, 0.15);
@@ -1327,12 +1244,16 @@ html body a.internal.tag-link, html .search > .search-container > .search-space 
   font-family: "??", "??", "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(187, 154, 247);
 }
 
 html body h1 {
   color: rgb(255, 117, 127);
+}
+
+html body h1.article-title {
+  color: rgb(187, 154, 247);
 }
 
 html body h2 {
@@ -1367,19 +1288,19 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(169, 177, 214);
-  font-family: "??", "??", "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(169, 177, 214);
-  font-family: "??", "??", "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html body .explorer .folder-outer > ul {
+    explorer: `html body .nav-files-container .tree-item-children {
   border-left-color: rgb(65, 72, 104);
   border-left-width: 2px;
+}
+
+html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(169, 177, 214);
+  font-family: "??", "??", "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(169, 177, 214);
+  font-family: "??", "??", "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(192, 202, 245);
@@ -1473,15 +1394,35 @@ html body .breadcrumb-element p {
   color: rgb(86, 95, 137);
   font-family: "??", "??", "JetBrains Mono Nerd Font", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: rgb(192, 202, 245);
-  border-left-color: rgb(192, 202, 245);
-  border-right-color: rgb(192, 202, 245);
-  border-top-color: rgb(192, 202, 245);
+    canvas: `html body .canvas-node {
+  border-color: rgb(192, 202, 245);
+}
+
+html body .canvas-node-content {
   color: rgb(192, 202, 245);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  color: rgb(192, 202, 245);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(192, 202, 245);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(36, 40, 59);
+  border-color: rgb(192, 202, 245);
+}`,
+    bases: `html body .bases-table tbody tr:nth-child(even) {
+  background-color: rgb(36, 40, 59);
+}
+
+html body .bases-table thead th {
+  border-color: rgb(65, 72, 104);
+  color: rgb(192, 202, 245);
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(65, 72, 104);
   border-left-color: rgb(65, 72, 104);
   border-right-color: rgb(65, 72, 104);
@@ -1495,6 +1436,58 @@ html body .metadata-properties {
   border-right-color: rgb(169, 177, 214);
   border-top-color: rgb(169, 177, 214);
   color: rgb(169, 177, 214);
+}
+
+html body .note-properties {
+  border-color: rgb(65, 72, 104);
+}
+
+html body .note-properties-key {
+  color: rgb(169, 177, 214);
+}
+
+html body .note-properties-row {
+  border-color: rgb(169, 177, 214);
+}
+
+html body .note-properties-tags {
+  background-color: rgba(187, 154, 247, 0.15);
+  color: rgb(187, 154, 247);
+}
+
+html body .note-properties-value {
+  color: rgb(169, 177, 214);
+}
+
+html body div#quartz-root {
+  background-color: rgb(36, 40, 59);
+  color: rgb(192, 202, 245);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(192, 202, 245);
+  border-left-color: rgb(192, 202, 245);
+  border-right-color: rgb(192, 202, 245);
+  border-top-color: rgb(192, 202, 245);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(36, 40, 59);
+  border-color: rgb(192, 202, 245);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(36, 40, 59);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(192, 202, 245);
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: rgb(192, 202, 245);
+  border-left-color: rgb(192, 202, 245);
+  border-right-color: rgb(192, 202, 245);
+  border-top-color: rgb(192, 202, 245);
+  color: rgb(192, 202, 245);
 }
 
 html body .navigation-progress {

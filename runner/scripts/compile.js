@@ -14,6 +14,7 @@ import calc from "postcss-calc";
 import postcssColorConverter from "postcss-color-converter";
 import postcssMergeLonghand from "postcss-merge-longhand";
 import postcssScss from "postcss-scss";
+import rewriteObsidianSelectors from "./selector-rewriter.mjs";
 import { compileString } from "sass";
 import * as lucideIcons from "@lucide/icons";
 import { fileURLToPath } from "url";
@@ -807,6 +808,7 @@ function mergeLonghandProperties(css, syntax = "scss") {
     }
 
     const processor = postcss()
+      .use(rewriteObsidianSelectors())
       .use(postcssMergeLonghand())
       .use(calc({ preserve: false })); // Resolve calc() where possible
     // .use(postcssColorConverter({ outputColorFormat: "hex" })); // Convert colors to hex
@@ -1054,6 +1056,37 @@ function buildCSSStrings(themeData) {
     });
   }
 
+  // Auto-generate font override variables from extracted theme data
+  const fontInterface =
+    bodyVariables.dark?.["--font-interface-theme"] ||
+    bodyVariables.dark?.["--font-interface"] ||
+    bodyVariables.light?.["--font-interface-theme"] ||
+    bodyVariables.light?.["--font-interface"];
+  const fontText =
+    bodyVariables.dark?.["--font-text-theme"] ||
+    bodyVariables.dark?.["--font-text"] ||
+    bodyVariables.light?.["--font-text-theme"] ||
+    bodyVariables.light?.["--font-text"];
+  const fontMonospace =
+    bodyVariables.dark?.["--font-monospace-theme"] ||
+    bodyVariables.dark?.["--font-monospace"] ||
+    bodyVariables.light?.["--font-monospace-theme"] ||
+    bodyVariables.light?.["--font-monospace"];
+
+  const SHIKI_TO_CODE = {
+    "--shiki-code-keyword": "--code-keyword",
+    "--shiki-code-string": "--code-string",
+    "--shiki-code-comment": "--code-comment",
+    "--shiki-code-function": "--code-function",
+    "--shiki-code-value": "--code-value",
+    "--shiki-code-normal": "--code-normal",
+    "--shiki-code-punctuation": "--code-punctuation",
+    "--shiki-code-property": "--code-property",
+    "--shiki-code-important": "--code-important",
+    "--shiki-code-tag": "--code-tag",
+    "--shiki-code-operator": "--code-operator",
+  };
+
   // Build variable strings from body CSS variables
   // For Quartz: Only include --code-* and --graph-* variables
   // For Publish: Include ALL variables
@@ -1081,6 +1114,16 @@ function buildCSSStrings(themeData) {
         };\n`;
       }
     }
+    for (const [shikiKey, codeKey] of Object.entries(SHIKI_TO_CODE)) {
+      const darkVal = bodyVariables.dark[shikiKey];
+      if (darkVal && !bodyVariables.dark[codeKey]) {
+        const normalized = normalizeSvgDataUriValue(darkVal);
+        bodyVarsStringDarkPublish += `  ${codeKey}: ${normalized} !important;\n`;
+        if (isIncludedVariable(codeKey)) {
+          bodyVarsStringDarkQuartz += `  ${codeKey}: ${normalized} !important;\n`;
+        }
+      }
+    }
   }
 
   if (Object.keys(bodyVariables.light).length > 0) {
@@ -1102,6 +1145,43 @@ function buildCSSStrings(themeData) {
         };\n`;
       }
     }
+    for (const [shikiKey, codeKey] of Object.entries(SHIKI_TO_CODE)) {
+      const lightVal = bodyVariables.light[shikiKey];
+      if (lightVal && !bodyVariables.light[codeKey]) {
+        const normalized = normalizeSvgDataUriValue(lightVal);
+        bodyVarsStringLightPublish += `  ${codeKey}: ${normalized} !important;\n`;
+        if (isIncludedVariable(codeKey)) {
+          bodyVarsStringLightQuartz += `  ${codeKey}: ${normalized} !important;\n`;
+        }
+      }
+    }
+  }
+
+  let fontOverrideLightString = "";
+  let fontOverrideDarkString = "";
+  if (fontInterface) {
+    if (!bodyVarsStringLightQuartz.includes("--font-interface-override")) {
+      fontOverrideLightString += `  --font-interface-override: ${fontInterface};\n`;
+    }
+    if (!bodyVarsStringDarkQuartz.includes("--font-interface-override")) {
+      fontOverrideDarkString += `  --font-interface-override: ${fontInterface};\n`;
+    }
+  }
+  if (fontText) {
+    if (!bodyVarsStringLightQuartz.includes("--font-text-override")) {
+      fontOverrideLightString += `  --font-text-override: ${fontText};\n`;
+    }
+    if (!bodyVarsStringDarkQuartz.includes("--font-text-override")) {
+      fontOverrideDarkString += `  --font-text-override: ${fontText};\n`;
+    }
+  }
+  if (fontMonospace) {
+    if (!bodyVarsStringLightQuartz.includes("--font-monospace-override")) {
+      fontOverrideLightString += `  --font-monospace-override: ${fontMonospace};\n`;
+    }
+    if (!bodyVarsStringDarkQuartz.includes("--font-monospace-override")) {
+      fontOverrideDarkString += `  --font-monospace-override: ${fontMonospace};\n`;
+    }
   }
 
   // Generate Quartz SCSS
@@ -1113,10 +1193,12 @@ function buildCSSStrings(themeData) {
       ? `
 :root:root {
 ${bodyVarsStringLightQuartz}
+${fontOverrideLightString}
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
 ${bodyVarsStringDarkQuartz}
+${fontOverrideDarkString}
   --quartz-icon-color: currentColor;
 }
 `
@@ -1124,6 +1206,7 @@ ${bodyVarsStringDarkQuartz}
         ? `
 :root:root {
 ${bodyVarsStringLightQuartz}
+${fontOverrideLightString}
   --quartz-icon-color: currentColor;
 }
 `
@@ -1131,6 +1214,7 @@ ${bodyVarsStringLightQuartz}
           ? `
 :root:root {
 ${bodyVarsStringDarkQuartz}
+${fontOverrideDarkString}
   --quartz-icon-color: currentColor;
 }
 `
@@ -1635,6 +1719,19 @@ ${calloutIconDark}
     & > code {
       overflow-x: auto;
 
+      span[data-token-type="keyword"] { color: var(--qt-code-keyword, var(--code-keyword)) !important; }
+      span[data-token-type="string"] { color: var(--qt-code-string, var(--code-string)) !important; }
+      span[data-token-type="comment"] { color: var(--qt-code-comment, var(--code-comment)) !important; font-style: italic; }
+      span[data-token-type="function"] { color: var(--qt-code-function, var(--code-function)) !important; }
+      span[data-token-type="value"] { color: var(--qt-code-value, var(--code-value)) !important; }
+      span[data-token-type="operator"] { color: var(--qt-code-operator, var(--code-operator)) !important; }
+      span[data-token-type="property"] { color: var(--qt-code-property, var(--code-property)) !important; }
+      span[data-token-type="normal"] { color: var(--qt-code-normal, var(--code-normal)) !important; }
+      span[data-token-type="tag"] { color: var(--qt-code-tag, var(--code-tag)) !important; }
+      span[data-token-type="important"] { color: var(--qt-code-important, var(--code-important)) !important; font-style: italic; }
+      span[data-token-type="punctuation"] { color: var(--qt-code-punctuation, var(--code-punctuation)) !important; }
+      span[data-token-type="regexp"] { color: var(--qt-code-string, var(--code-string)) !important; }
+
       span[class*="qt-code-keyword"] { color: var(--qt-code-keyword, var(--code-keyword)) !important; }
       span[class*="qt-code-string"] { color: var(--qt-code-string, var(--code-string)) !important; }
       span[class*="qt-code-comment"] { color: var(--qt-code-comment, var(--code-comment)) !important; }
@@ -1781,7 +1878,7 @@ ${customCalloutQuartzEntries ? "\n" + customCalloutQuartzEntries + "\n" : ""}  }
 
 :root[saved-theme="light"], :root[saved-theme="dark"] {
   body {
-    a.external, a.internal, .breadcrumb-container .breadcrumb-element > a, footer a {
+    a.external-link, a.internal-link, .breadcrumb-container .breadcrumb-element > a, footer a {
       text-decoration: none;
 
     }

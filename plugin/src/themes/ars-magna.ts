@@ -140,6 +140,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: rgba(240, 240, 240, 0.9) !important;
   --setting-items-background: hsl(203, 8%, 25%) !important;
   --setting-items-border-color: rgba(240, 240, 240, 0.14) !important;
+  --shiki-active-tab-border-color: rgba(255, 180, 0, 0.75) !important;
+  --shiki-code-background: hsl(203, 8%, 25%) !important;
+  --shiki-code-comment: rgba(240, 240, 240, 0.25) !important;
+  --shiki-code-normal: rgba(255, 180, 0, 0.75) !important;
+  --shiki-code-punctuation: rgba(255, 180, 0, 0.75) !important;
+  --shiki-gutter-border-color: rgba(240, 240, 240, 0.14) !important;
+  --shiki-gutter-text-color: rgba(240, 240, 240, 0.25) !important;
+  --shiki-gutter-text-color-highlight: rgba(255, 180, 0, 0.75) !important;
+  --shiki-highlight-neutral: rgba(255, 180, 0, 0.75) !important;
+  --shiki-terminal-dots-color: rgba(240, 240, 240, 0.25) !important;
   --slider-track-background: rgba(240, 240, 240, 0.14) !important;
   --status-bar-background: hsl(203, 8%, 20%) !important;
   --status-bar-border-color: rgba(240, 240, 240, 0.14) !important;
@@ -202,53 +212,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgba(240, 240, 240, 0.9);
 }
 
-html body .bases-table thead th {
-  border-color: rgba(240, 240, 240, 0.14) rgba(240, 240, 240, 0.14) rgba(240, 240, 240, 0.14) rgba(255, 180, 0, 0.75);
-  color: rgba(255, 180, 0, 0.75);
-  font-weight: 400;
-}
-
-html body .canvas-node {
-  border-color: rgba(240, 240, 240, 0.9);
-}
-
-html body .canvas-node-content {
-  color: rgba(240, 240, 240, 0.9);
-}
-
-html body .canvas-node-file {
-  color: rgba(240, 240, 240, 0.9);
-}
-
-html body .canvas-node-group {
-  border-color: rgba(240, 240, 240, 0.9);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(47, 52, 55);
-  border-color: rgba(240, 240, 240, 0.9);
-}
-
-html body .note-properties {
-  border-color: rgba(240, 240, 240, 0.14);
-}
-
-html body .note-properties-key {
-  color: rgba(255, 180, 0, 0.75);
-}
-
-html body .note-properties-row {
-  border-color: rgba(255, 180, 0, 0.75);
-}
-
-html body .note-properties-tags {
-  color: rgba(240, 240, 240, 0.45);
-}
-
-html body .note-properties-value {
-  color: rgba(255, 180, 0, 0.75);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(47, 52, 55);
   color: rgba(240, 240, 240, 0.9);
@@ -262,31 +225,26 @@ html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(47, 52, 55);
   border-left-color: rgba(240, 240, 240, 0.14);
   color: rgba(240, 240, 240, 0.9);
-}
-
-html body div#quartz-root {
-  background-color: rgb(54, 60, 63);
-  color: rgba(240, 240, 240, 0.9);
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgba(240, 240, 240, 0.9);
   outline: rgba(240, 240, 240, 0.9) none 0px;
   text-decoration-color: rgba(240, 240, 240, 0.9);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgba(240, 240, 240, 0.9);
   outline: rgba(240, 240, 240, 0.9) none 0px;
   text-decoration-color: rgba(240, 240, 240, 0.9);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgba(240, 240, 240, 0.9);
   outline: rgba(240, 240, 240, 0.9) none 0px;
   text-decoration-color: rgba(240, 240, 240, 0.9);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgba(240, 240, 240, 0.9);
   outline: rgba(240, 240, 240, 0.9) none 0px;
   text-decoration-color: rgba(240, 240, 240, 0.9);
@@ -325,13 +283,13 @@ html body p {
   outline: rgba(255, 180, 0, 0.75) none 0px;
   text-decoration-color: rgba(255, 180, 0, 0.75);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgba(240, 240, 240, 0.9);
   outline: rgba(240, 240, 240, 0.9) none 0px;
   text-decoration-color: rgba(240, 240, 240, 0.9);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   --header-width: 36px;
   --resizer-size: 20px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
@@ -368,7 +326,7 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   text-decoration-color: rgba(240, 240, 240, 0.9);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   --header-width: 36px;
   --resizer-size: 20px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
@@ -414,13 +372,6 @@ html body dt {
 
 html body ol > li {
   color: rgba(240, 240, 240, 0.9);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgba(240, 240, 240, 0.9);
-  border-left-color: rgba(240, 240, 240, 0.9);
-  border-right-color: rgba(240, 240, 240, 0.9);
-  border-top-color: rgba(240, 240, 240, 0.9);
 }
 
 html body ul > li {
@@ -469,45 +420,25 @@ html body th {
   text-align: left;
 }`,
     code: `html body code {
-  border-bottom-color: rgb(235, 87, 87);
-  border-left-color: rgb(235, 87, 87);
-  border-right-color: rgb(235, 87, 87);
-  border-top-color: rgb(235, 87, 87);
+  background-color: rgb(59, 65, 69);
+  border-bottom-color: rgba(240, 240, 240, 0.14);
+  border-left-color: rgba(240, 240, 240, 0.14);
+  border-right-color: rgba(240, 240, 240, 0.14);
+  border-top-color: rgba(240, 240, 240, 0.14);
   color: rgb(235, 87, 87);
   font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(59, 65, 69);
-  border-bottom-color: rgba(240, 240, 240, 0.14);
-  border-left-color: rgba(240, 240, 240, 0.14);
-  border-right-color: rgba(240, 240, 240, 0.14);
-  border-top-color: rgba(240, 240, 240, 0.14);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(59, 65, 69);
-  border-bottom-color: rgba(240, 240, 240, 0.14);
-  border-left-color: rgba(240, 240, 240, 0.14);
-  border-right-color: rgba(240, 240, 240, 0.14);
-  border-top-color: rgba(240, 240, 240, 0.14);
-  color: rgba(240, 240, 240, 0.9);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(59, 65, 69);
-  border-bottom-color: rgba(240, 240, 240, 0.14);
-  border-left-color: rgba(240, 240, 240, 0.14);
-  border-right-color: rgba(240, 240, 240, 0.14);
-  border-top-color: rgba(240, 240, 240, 0.14);
-}
-
 html body pre:has(> code) {
   background-color: rgb(59, 65, 69);
-  border-bottom-color: rgba(240, 240, 240, 0.14);
-  border-left-color: rgba(240, 240, 240, 0.14);
-  border-right-color: rgba(240, 240, 240, 0.14);
-  border-top-color: rgba(240, 240, 240, 0.14);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html body audio {
   border-bottom-color: rgba(240, 240, 240, 0.9);
@@ -1500,11 +1431,15 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgba(240, 240, 240, 0.9);
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgba(240, 240, 240, 0.45);
 }
 
 html body h1 {
+  color: rgba(240, 240, 240, 0.9);
+}
+
+html body h1.article-title {
   color: rgba(240, 240, 240, 0.9);
 }
 
@@ -1540,12 +1475,12 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgba(255, 180, 0, 0.75);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgba(255, 180, 0, 0.75);
   font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }`,
@@ -1638,15 +1573,32 @@ html body .darkmode svg {
 html body .breadcrumb-element p {
   color: rgba(240, 240, 240, 0.25);
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: rgba(240, 240, 240, 0.9);
-  border-left-color: rgba(240, 240, 240, 0.9);
-  border-right-color: rgba(240, 240, 240, 0.9);
-  border-top-color: rgba(240, 240, 240, 0.9);
+    canvas: `html body .canvas-node {
+  border-color: rgba(240, 240, 240, 0.9);
+}
+
+html body .canvas-node-content {
   color: rgba(240, 240, 240, 0.9);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  color: rgba(240, 240, 240, 0.9);
+}
+
+html body .canvas-node-group {
+  border-color: rgba(240, 240, 240, 0.9);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(47, 52, 55);
+  border-color: rgba(240, 240, 240, 0.9);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgba(240, 240, 240, 0.14) rgba(240, 240, 240, 0.14) rgba(240, 240, 240, 0.14) rgba(255, 180, 0, 0.75);
+  color: rgba(255, 180, 0, 0.75);
+  font-weight: 400;
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgba(240, 240, 240, 0.14);
   border-left-color: rgba(240, 240, 240, 0.14);
   border-right-color: rgba(240, 240, 240, 0.14);
@@ -1660,6 +1612,57 @@ html body .metadata-properties {
   border-right-color: rgba(255, 180, 0, 0.75);
   border-top-color: rgba(255, 180, 0, 0.75);
   color: rgba(255, 180, 0, 0.75);
+}
+
+html body .note-properties {
+  border-color: rgba(240, 240, 240, 0.14);
+}
+
+html body .note-properties-key {
+  color: rgba(255, 180, 0, 0.75);
+}
+
+html body .note-properties-row {
+  border-color: rgba(255, 180, 0, 0.75);
+}
+
+html body .note-properties-tags {
+  color: rgba(240, 240, 240, 0.45);
+}
+
+html body .note-properties-value {
+  color: rgba(255, 180, 0, 0.75);
+}
+
+html body div#quartz-root {
+  background-color: rgb(54, 60, 63);
+  color: rgba(240, 240, 240, 0.9);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgba(240, 240, 240, 0.9);
+  border-left-color: rgba(240, 240, 240, 0.9);
+  border-right-color: rgba(240, 240, 240, 0.9);
+  border-top-color: rgba(240, 240, 240, 0.9);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(47, 52, 55);
+  border-color: rgba(240, 240, 240, 0.9);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(59, 65, 69);
+}
+
+html body .stacked-page.active {
+  border-color: rgba(240, 240, 240, 0.9);
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: rgba(240, 240, 240, 0.9);
+  border-left-color: rgba(240, 240, 240, 0.9);
+  border-right-color: rgba(240, 240, 240, 0.9);
+  border-top-color: rgba(240, 240, 240, 0.9);
+  color: rgba(240, 240, 240, 0.9);
 }
 
 html body .navigation-progress {

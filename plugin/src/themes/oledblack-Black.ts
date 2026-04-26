@@ -57,6 +57,7 @@ export const theme: ThemeData = {
   --search-result-background: #000000 !important;
   --setting-group-heading-color: #ffffff !important;
   --setting-items-background: #000000 !important;
+  --shiki-code-background: #000000 !important;
   --status-bar-background: #000000 !important;
   --suggestion-background: #000000 !important;
   --tab-background-active: #000000 !important;
@@ -93,42 +94,12 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(255, 255, 255);
 }
 
-html body .bases-table thead th {
-  color: rgb(255, 255, 255);
-}
-
-html body .canvas-node {
-  border-color: rgb(255, 255, 255);
-}
-
-html body .canvas-node-content {
-  color: rgb(255, 255, 255);
-}
-
-html body .canvas-node-file {
-  color: rgb(255, 255, 255);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(255, 255, 255);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(0, 0, 0);
-  border-color: rgb(255, 255, 255);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-}
-
-html body div#quartz-root {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
@@ -146,25 +117,25 @@ html body html {
   --red: #ed3524;
   --white: #ffffff;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
@@ -197,13 +168,6 @@ html body ol > li {
   color: rgb(255, 255, 255);
 }
 
-html body ol.overflow {
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-}
-
 html body ul > li {
   color: rgb(255, 255, 255);
 }
@@ -233,24 +197,8 @@ html body th {
   color: rgb(255, 255, 255);
 }`,
     code: `html body code {
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(0, 0, 0);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(0, 0, 0);
 }
 
 html body pre:has(> code) {
@@ -1135,6 +1083,10 @@ html body h1 {
   color: rgb(255, 255, 255);
 }
 
+html body h1.article-title {
+  color: rgb(255, 255, 255);
+}
+
 html body h2 {
   color: rgb(255, 255, 255);
 }
@@ -1190,6 +1142,52 @@ html body ul.section-ul {
   border-left-color: rgb(255, 255, 255);
   border-right-color: rgb(255, 255, 255);
   border-top-color: rgb(255, 255, 255);
+}`,
+    canvas: `html body .canvas-node {
+  border-color: rgb(255, 255, 255);
+}
+
+html body .canvas-node-content {
+  color: rgb(255, 255, 255);
+}
+
+html body .canvas-node-file {
+  color: rgb(255, 255, 255);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(255, 255, 255);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(255, 255, 255);
+}`,
+    bases: `html body .bases-table thead th {
+  color: rgb(255, 255, 255);
+}`,
+    properties: `html body div#quartz-root {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(255, 255, 255);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(0, 0, 0);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(255, 255, 255);
 }`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(255, 255, 255);

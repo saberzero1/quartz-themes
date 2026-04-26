@@ -1,80 +1,14 @@
 {
   "_codeBlock": {
-    "backgroundColor": "rgba(172, 140, 248, 0.07)",
-    "color": "rgb(138, 92, 245)"
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(138, 138, 138)"
   },
   "_preBlock": {
-    "backgroundColor": "rgba(172, 140, 248, 0.07)",
-    "borderColor": "rgba(138, 92, 245, 0.1)"
-  },
-  "atom": {
-    "color": "rgb(138, 92, 245)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "comment": {
-    "color": "rgb(138, 92, 245)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "def": {
-    "color": "rgb(138, 92, 245)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
+    "backgroundColor": "rgb(247, 247, 247)",
+    "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {
     "color": "rgb(48, 48, 48)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "keyword": {
-    "color": "rgb(138, 92, 245)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "number": {
-    "color": "rgb(138, 92, 245)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "operator": {
-    "color": "rgb(138, 92, 245)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "property": {
-    "color": "rgb(138, 92, 245)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string": {
-    "color": "rgb(138, 92, 245)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string-2": {
-    "color": "rgb(138, 92, 245)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable": {
-    "color": "rgb(138, 92, 245)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable-2": {
-    "color": "rgb(138, 92, 245)",
     "fontStyle": "normal",
     "fontWeight": "400",
     "textDecoration": "none"

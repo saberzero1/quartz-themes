@@ -207,35 +207,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(201, 201, 201);
 }
 
-html body .bases-table thead th {
-  color: rgb(201, 201, 201);
-}
-
-html body .canvas-node {
-  border-color: rgb(201, 201, 201);
-}
-
-html body .canvas-node-content {
-  color: rgb(201, 201, 201);
-}
-
-html body .canvas-node-file {
-  color: rgb(201, 201, 201);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(201, 201, 201);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(27, 27, 27);
-  border-color: rgb(201, 201, 201);
-}
-
-html body .note-properties-tags {
-  color: rgb(255, 190, 0);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(27, 27, 27);
   color: rgb(201, 201, 201);
@@ -243,11 +214,6 @@ html body .page > div#quartz-body div.sidebar {
 
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(27, 27, 27);
-  color: rgb(201, 201, 201);
-}
-
-html body div#quartz-root {
-  background-color: rgb(36, 36, 36);
   color: rgb(201, 201, 201);
 }
 
@@ -338,7 +304,7 @@ html body html {
   --text-normal: rgb(201, 201, 201);
   --text-on-accent: black;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(245, 112, 76);
   font-family: "JetBrains Mono";
   font-weight: 900;
@@ -346,21 +312,21 @@ html body html {
   text-decoration-color: rgb(245, 112, 76);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(237, 228, 130);
   font-family: "JetBrains Mono";
   outline: rgb(237, 228, 130) none 0px;
   text-decoration-color: rgb(237, 228, 130);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(237, 228, 130);
   font-family: "JetBrains Mono";
   outline: rgb(237, 228, 130) none 0px;
   text-decoration-color: rgb(237, 228, 130);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(245, 112, 76);
   font-family: "JetBrains Mono";
   font-weight: 900;
@@ -396,21 +362,21 @@ html body li.task-list-item input[type="checkbox"]:checked {
 html body p {
   font-family: "JetBrains Mono";
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(130, 210, 232);
   font-family: "JetBrains Mono";
   outline: rgb(130, 210, 232) none 0px;
   text-decoration-color: rgb(130, 210, 232);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 190, 0);
   font-family: "JetBrains Mono";
   outline: rgb(255, 190, 0) none 0px;
   text-decoration-color: rgb(255, 190, 0);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(255, 190, 0);
   font-family: "JetBrains Mono";
   outline: rgb(255, 190, 0) none 0px;
@@ -425,13 +391,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(201, 201, 201);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(201, 201, 201);
-  border-left-color: rgb(201, 201, 201);
-  border-right-color: rgb(201, 201, 201);
-  border-top-color: rgb(201, 201, 201);
 }
 
 html body ul > li {
@@ -476,17 +435,19 @@ html body th {
   color: rgb(201, 201, 201);
 }`,
     code: `html body code {
-  border-bottom-color: rgb(193, 181, 148);
-  border-left-color: rgb(193, 181, 148);
-  border-right-color: rgb(193, 181, 148);
-  border-top-color: rgb(193, 181, 148);
   color: rgb(193, 181, 148);
   font-family: "JetBrains Mono", monospace;
 }
 
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  color: rgb(201, 201, 201);
-  font-family: "JetBrains Mono";
+html body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html body audio {
   border-bottom-color: rgb(201, 201, 201);
@@ -497,7 +458,7 @@ html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-titl
 
 html body figcaption {
   color: rgb(201, 201, 201);
-  font-family: "JetBrains Mono";
+  font-family: "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body figure {
@@ -1166,17 +1127,21 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(201, 201, 201);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "JetBrains Mono";
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(255, 190, 0);
 }
 
 html body h1 {
   color: rgb(245, 112, 76);
   font-family: "JetBrains Mono";
+}
+
+html body h1.article-title {
+  color: rgb(201, 201, 201);
 }
 
 html body h2 {
@@ -1211,11 +1176,11 @@ html body h6 {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "JetBrains Mono";
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "JetBrains Mono";
 }`,
     toc: `html body details.toc summary::marker {
@@ -1261,20 +1226,70 @@ html body ul.section-ul {
     breadcrumbs: `html body .breadcrumb-element p {
   font-family: "JetBrains Mono";
 }`,
+    canvas: `html body .canvas-node {
+  border-color: rgb(201, 201, 201);
+}
+
+html body .canvas-node-content {
+  color: rgb(201, 201, 201);
+}
+
+html body .canvas-node-file {
+  color: rgb(201, 201, 201);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(201, 201, 201);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(27, 27, 27);
+  border-color: rgb(201, 201, 201);
+}`,
+    bases: `html body .bases-table thead th {
+  color: rgb(201, 201, 201);
+}`,
+    properties: `html body .metadata {
+  font-family: "JetBrains Mono";
+}
+
+html body .metadata-properties {
+  font-family: "JetBrains Mono";
+}
+
+html body .note-properties-tags {
+  color: rgb(255, 190, 0);
+}
+
+html body div#quartz-root {
+  background-color: rgb(36, 36, 36);
+  color: rgb(201, 201, 201);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(27, 27, 27);
+  border-color: rgb(201, 201, 201);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(27, 27, 27);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(201, 201, 201);
+}`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
   color: rgb(201, 201, 201);
-}
-
-html body .metadata {
-  font-family: "JetBrains Mono";
-}
-
-html body .metadata-properties {
-  font-family: "JetBrains Mono";
 }
 
 html body .navigation-progress {
@@ -1337,19 +1352,6 @@ html body summary {
 html body sup {
   color: rgb(201, 201, 201);
   font-size: 11.2px;
-}
-
-html body ul.tags > li {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(251, 70, 76);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(251, 70, 76);
-  border-right-color: rgb(251, 70, 76);
-  border-top-color: rgb(251, 70, 76);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(251, 70, 76);
 }`,
   },
   light: {},

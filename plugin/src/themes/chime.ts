@@ -258,6 +258,27 @@ export const theme: ThemeData = {
   --setting-items-background: #413b4e !important;
   --setting-items-border-color: #4e4560 !important;
   --setting-items-radius: 12px !important;
+  --shiki-active-tab-border-color: #7f83a1 !important;
+  --shiki-code-background: #413b4e !important;
+  --shiki-code-block-border-radius: 8px !important;
+  --shiki-code-comment: rgb(125, 127, 149) !important;
+  --shiki-code-function: #75c297 !important;
+  --shiki-code-important: #f19070 !important;
+  --shiki-code-keyword: #dc76a7 !important;
+  --shiki-code-normal: #7f83a1 !important;
+  --shiki-code-property: #6fd2c2 !important;
+  --shiki-code-punctuation: #7f83a1 !important;
+  --shiki-code-string: #dcb46f !important;
+  --shiki-code-value: #b584c7 !important;
+  --shiki-gutter-border-color: #4e4560 !important;
+  --shiki-gutter-text-color: rgb(125, 127, 149) !important;
+  --shiki-gutter-text-color-highlight: #7f83a1 !important;
+  --shiki-highlight-green: rgba(117, 194, 151, 0.5) !important;
+  --shiki-highlight-green-background: rgba(117, 194, 151, 0.1) !important;
+  --shiki-highlight-neutral: #7f83a1 !important;
+  --shiki-highlight-red: rgba(225, 120, 132, 0.5) !important;
+  --shiki-highlight-red-background: rgba(225, 120, 132, 0.1) !important;
+  --shiki-terminal-dots-color: rgb(125, 127, 149) !important;
   --slider-thumb-border-color: #545e76 !important;
   --slider-track-background: #4e4560 !important;
   --status-bar-background: #2f2837 !important;
@@ -347,52 +368,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgb(47, 40, 55);
-}
-
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgb(78, 69, 96);
-  color: rgb(160, 167, 196);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(160, 167, 196);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(160, 167, 196);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(160, 167, 196);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(160, 167, 196);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(47, 40, 55);
-  border-color: rgb(160, 167, 196);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgb(78, 69, 96);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(127, 131, 161);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(127, 131, 161);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(127, 131, 161);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(160, 167, 196);
@@ -409,11 +384,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(59, 51, 71);
-  color: rgb(160, 167, 196);
-}
-
 html[saved-theme="dark"] body html {
   --cards-image-fit: contain;
   --cards-image-height: 400px;
@@ -422,28 +392,28 @@ html[saved-theme="dark"] body html {
   --cards-mobile-width: 120px;
   --cards-padding: 1.2em;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(160, 167, 196) none 0px;
   text-decoration-color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(160, 167, 196) none 0px;
   text-decoration-color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(160, 167, 196) none 0px;
   text-decoration-color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(160, 167, 196) none 0px;
@@ -481,15 +451,15 @@ html[saved-theme="dark"] body p {
   outline: rgb(127, 131, 161) none 0px;
   text-decoration-color: rgb(127, 131, 161);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   font-family: "??", "??", Arima, cursive;
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   font-family: "??", "??", Arima, cursive;
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   font-family: "??", "??", Arima, cursive;
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
@@ -503,13 +473,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(160, 167, 196);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(160, 167, 196);
-  border-left-color: rgb(160, 167, 196);
-  border-right-color: rgb(160, 167, 196);
-  border-top-color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -584,30 +547,6 @@ html[saved-theme="dark"] body tr {
   border-bottom-color: rgb(197, 182, 252);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(160, 167, 196);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: rgb(160, 167, 196);
-  border-right-color: rgb(160, 167, 196);
-  border-top-color: rgb(160, 167, 196);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  color: rgb(160, 167, 196);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(65, 59, 78);
-  border-bottom-color: rgb(78, 69, 96);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: rgb(78, 69, 96);
-  border-right-color: rgb(78, 69, 96);
-  border-top-color: rgb(78, 69, 96);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(65, 59, 78);
   border-bottom-color: rgb(78, 69, 96);
   border-bottom-left-radius: 8px;
@@ -618,45 +557,22 @@ html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-reh
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   color: rgb(160, 167, 196);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line] {
-  border-left-color: rgb(220, 180, 111);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(220, 180, 111);
-}
-
-html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(220, 180, 111);
-  border-left-color: rgb(220, 180, 111);
-  border-right-color: rgb(220, 180, 111);
-  border-top-color: rgb(220, 180, 111);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(65, 59, 78);
-  border-bottom-color: rgb(78, 69, 96);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: rgb(78, 69, 96);
-  border-right-color: rgb(78, 69, 96);
-  border-top-color: rgb(78, 69, 96);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(65, 59, 78);
-  border-bottom-color: rgb(78, 69, 96);
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-left-color: rgb(78, 69, 96);
-  border-right-color: rgb(78, 69, 96);
-  border-top-color: rgb(78, 69, 96);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(160, 167, 196);
@@ -667,14 +583,18 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(160, 167, 196);
-  font-family: "??", "??", Arima, cursive;
+  font-family: "??", "??", "??", Arima, cursive;
 }
 
 html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(160, 167, 196);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-left-color: rgb(160, 167, 196);
   border-right-color: rgb(160, 167, 196);
   border-top-color: rgb(160, 167, 196);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 html[saved-theme="dark"] body img {
@@ -1862,13 +1782,17 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "??", "??", "??", Arima, cursive;
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(160, 167, 196);
   font-family: "??", "??", Arima, cursive;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1918,12 +1842,12 @@ html[saved-theme="dark"] body hr {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(127, 131, 161);
   font-family: "??", "??", "??", Arima, cursive;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(127, 131, 161);
   font-family: "??", "??", "??", Arima, cursive;
 }`,
@@ -2030,15 +1954,35 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(125, 127, 149);
   font-family: "??", "??", "??", Arima, cursive;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(160, 167, 196);
-  border-left-color: rgb(160, 167, 196);
-  border-right-color: rgb(160, 167, 196);
-  border-top-color: rgb(160, 167, 196);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(160, 167, 196);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(160, 167, 196);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(160, 167, 196);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(160, 167, 196);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(47, 40, 55);
+  border-color: rgb(160, 167, 196);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
+  background-color: rgb(47, 40, 55);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(78, 69, 96);
+  color: rgb(160, 167, 196);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(78, 69, 96);
   border-left-color: rgb(78, 69, 96);
   border-right-color: rgb(78, 69, 96);
@@ -2054,6 +1998,53 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(127, 131, 161);
   color: rgb(127, 131, 161);
   font-family: "??", "??", Arima, cursive;
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(78, 69, 96);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(127, 131, 161);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(127, 131, 161);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(127, 131, 161);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(59, 51, 71);
+  color: rgb(160, 167, 196);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(160, 167, 196);
+  border-left-color: rgb(160, 167, 196);
+  border-right-color: rgb(160, 167, 196);
+  border-top-color: rgb(160, 167, 196);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(160, 167, 196);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(160, 167, 196);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(160, 167, 196);
+  border-left-color: rgb(160, 167, 196);
+  border-right-color: rgb(160, 167, 196);
+  border-top-color: rgb(160, 167, 196);
+  color: rgb(160, 167, 196);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -2392,6 +2383,27 @@ html[saved-theme="dark"] body sup {
   --setting-items-background: #f0e9e4 !important;
   --setting-items-border-color: #cec2c577 !important;
   --setting-items-radius: 12px !important;
+  --shiki-active-tab-border-color: #685a68 !important;
+  --shiki-code-background: #f0e9e4 !important;
+  --shiki-code-block-border-radius: 8px !important;
+  --shiki-code-comment: #a391a3 !important;
+  --shiki-code-function: #75c297 !important;
+  --shiki-code-important: #f19070 !important;
+  --shiki-code-keyword: #dc76a7 !important;
+  --shiki-code-normal: #685a68 !important;
+  --shiki-code-property: #6fd2c2 !important;
+  --shiki-code-punctuation: #685a68 !important;
+  --shiki-code-string: #dcb46f !important;
+  --shiki-code-value: #b584c7 !important;
+  --shiki-gutter-border-color: #cec2c577 !important;
+  --shiki-gutter-text-color: #a391a3 !important;
+  --shiki-gutter-text-color-highlight: #685a68 !important;
+  --shiki-highlight-green: rgba(117, 194, 151, 0.5) !important;
+  --shiki-highlight-green-background: rgba(117, 194, 151, 0.1) !important;
+  --shiki-highlight-neutral: #685a68 !important;
+  --shiki-highlight-red: rgba(225, 120, 132, 0.5) !important;
+  --shiki-highlight-red-background: rgba(225, 120, 132, 0.1) !important;
+  --shiki-terminal-dots-color: #a391a3 !important;
   --slider-thumb-border-color: #b5a7ac !important;
   --slider-track-background: #cec2c577 !important;
   --status-bar-background: #f4ebeb !important;
@@ -2496,57 +2508,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgb(250, 243, 241);
-}
-
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgba(206, 194, 197, 0.467);
-  color: rgb(89, 79, 103);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(89, 79, 103);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(89, 79, 103);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(89, 79, 103);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(89, 79, 103);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(248, 243, 242);
-  border-color: rgb(89, 79, 103);
-}
-
-html[saved-theme="light"] body .note-properties {
-  border-color: rgba(206, 194, 197, 0.467);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(104, 90, 104);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(104, 90, 104);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(193, 139, 172, 0.1);
-  color: rgb(193, 139, 172);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(104, 90, 104);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(89, 79, 103);
@@ -2563,11 +2524,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(248, 243, 242);
-  color: rgb(89, 79, 103);
-}
-
 html[saved-theme="light"] body html {
   --cards-image-fit: contain;
   --cards-image-height: 400px;
@@ -2576,28 +2532,28 @@ html[saved-theme="light"] body html {
   --cards-mobile-width: 120px;
   --cards-padding: 1.2em;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(89, 79, 103) none 0px;
   text-decoration-color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(89, 79, 103) none 0px;
   text-decoration-color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(89, 79, 103) none 0px;
   text-decoration-color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(89, 79, 103) none 0px;
@@ -2640,21 +2596,21 @@ html[saved-theme="light"] body p {
   outline: rgb(104, 90, 104) none 0px;
   text-decoration-color: rgb(104, 90, 104);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(193, 139, 172);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(193, 139, 172) none 0px;
   text-decoration-color: rgb(193, 139, 172);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(193, 139, 172);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(193, 139, 172) none 0px;
   text-decoration-color: rgb(193, 139, 172);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(193, 139, 172);
   font-family: "??", "??", Arima, cursive;
   outline: rgb(193, 139, 172) none 0px;
@@ -2671,13 +2627,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(89, 79, 103);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(89, 79, 103);
-  border-left-color: rgb(89, 79, 103);
-  border-right-color: rgb(89, 79, 103);
-  border-top-color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2752,30 +2701,6 @@ html[saved-theme="light"] body tr {
   border-bottom-color: rgb(210, 171, 197);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(89, 79, 103);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: rgb(89, 79, 103);
-  border-right-color: rgb(89, 79, 103);
-  border-top-color: rgb(89, 79, 103);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  color: rgb(89, 79, 103);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(240, 233, 228);
-  border-bottom-color: rgba(206, 194, 197, 0.467);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: rgba(206, 194, 197, 0.467);
-  border-right-color: rgba(206, 194, 197, 0.467);
-  border-top-color: rgba(206, 194, 197, 0.467);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(240, 233, 228);
   border-bottom-color: rgba(206, 194, 197, 0.467);
   border-bottom-left-radius: 8px;
@@ -2786,45 +2711,22 @@ html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-re
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   color: rgb(89, 79, 103);
-}
-
-html[saved-theme="light"] body pre > code > [data-line] {
-  border-left-color: rgb(220, 180, 111);
-}
-
-html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(220, 180, 111);
-}
-
-html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(220, 180, 111);
-  border-left-color: rgb(220, 180, 111);
-  border-right-color: rgb(220, 180, 111);
-  border-top-color: rgb(220, 180, 111);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(240, 233, 228);
-  border-bottom-color: rgba(206, 194, 197, 0.467);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: rgba(206, 194, 197, 0.467);
-  border-right-color: rgba(206, 194, 197, 0.467);
-  border-top-color: rgba(206, 194, 197, 0.467);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(240, 233, 228);
-  border-bottom-color: rgba(206, 194, 197, 0.467);
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-left-color: rgba(206, 194, 197, 0.467);
-  border-right-color: rgba(206, 194, 197, 0.467);
-  border-top-color: rgba(206, 194, 197, 0.467);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(89, 79, 103);
@@ -2835,14 +2737,18 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(89, 79, 103);
-  font-family: "??", "??", Arima, cursive;
+  font-family: "??", "??", "??", Arima, cursive;
 }
 
 html[saved-theme="light"] body figure {
   border-bottom-color: rgb(89, 79, 103);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-left-color: rgb(89, 79, 103);
   border-right-color: rgb(89, 79, 103);
   border-top-color: rgb(89, 79, 103);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 html[saved-theme="light"] body img {
@@ -4031,7 +3937,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(193, 139, 172, 0.1);
   border-bottom-color: rgba(193, 139, 172, 0.15);
   border-left-color: rgba(193, 139, 172, 0.15);
@@ -4040,13 +3946,17 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   font-family: "??", "??", "??", Arima, cursive;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(193, 139, 172);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(89, 79, 103);
   font-family: "??", "??", Arima, cursive;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body h2 {
@@ -4096,12 +4006,12 @@ html[saved-theme="light"] body hr {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(104, 90, 104);
   font-family: "??", "??", "??", Arima, cursive;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(104, 90, 104);
   font-family: "??", "??", "??", Arima, cursive;
 }`,
@@ -4208,15 +4118,35 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(163, 145, 163);
   font-family: "??", "??", "??", Arima, cursive;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(89, 79, 103);
-  border-left-color: rgb(89, 79, 103);
-  border-right-color: rgb(89, 79, 103);
-  border-top-color: rgb(89, 79, 103);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(89, 79, 103);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(89, 79, 103);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(89, 79, 103);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(89, 79, 103);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(248, 243, 242);
+  border-color: rgb(89, 79, 103);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
+  background-color: rgb(250, 243, 241);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgba(206, 194, 197, 0.467);
+  color: rgb(89, 79, 103);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgba(206, 194, 197, 0.467);
   border-left-color: rgba(206, 194, 197, 0.467);
   border-right-color: rgba(206, 194, 197, 0.467);
@@ -4232,6 +4162,58 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(104, 90, 104);
   color: rgb(104, 90, 104);
   font-family: "??", "??", Arima, cursive;
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgba(206, 194, 197, 0.467);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(104, 90, 104);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(104, 90, 104);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(193, 139, 172, 0.1);
+  color: rgb(193, 139, 172);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(104, 90, 104);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(248, 243, 242);
+  color: rgb(89, 79, 103);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(89, 79, 103);
+  border-left-color: rgb(89, 79, 103);
+  border-right-color: rgb(89, 79, 103);
+  border-top-color: rgb(89, 79, 103);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(89, 79, 103);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(89, 79, 103);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(89, 79, 103);
+  border-left-color: rgb(89, 79, 103);
+  border-right-color: rgb(89, 79, 103);
+  border-top-color: rgb(89, 79, 103);
+  color: rgb(89, 79, 103);
 }
 
 html[saved-theme="light"] body .navigation-progress {

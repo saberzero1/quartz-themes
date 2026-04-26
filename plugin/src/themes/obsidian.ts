@@ -641,6 +641,35 @@ export const theme: ThemeData = {
   --setting-items-radius: 12px !important;
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2) !important;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shiki-active-tab-border-color: #b3b3b3 !important;
+  --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: #242424 !important;
+  --shiki-code-block-border-color: transparent !important;
+  --shiki-code-block-border-radius: 4px !important;
+  --shiki-code-block-border-width: 0px !important;
+  --shiki-code-block-spacing: 1rem !important;
+  --shiki-code-comment: #666666 !important;
+  --shiki-code-function: #44cf6e !important;
+  --shiki-code-important: #e9973f !important;
+  --shiki-code-keyword: #fa99cd !important;
+  --shiki-code-normal: #b3b3b3 !important;
+  --shiki-code-property: #53dfdd !important;
+  --shiki-code-punctuation: #b3b3b3 !important;
+  --shiki-code-string: #e0de71 !important;
+  --shiki-code-value: #a882ff !important;
+  --shiki-gutter-border-color: #363636 !important;
+  --shiki-gutter-border-width: 1px !important;
+  --shiki-gutter-text-color: #666666 !important;
+  --shiki-gutter-text-color-highlight: #b3b3b3 !important;
+  --shiki-highlight-green: rgba(68, 207, 110, 0.5) !important;
+  --shiki-highlight-green-background: rgba(68, 207, 110, 0.1) !important;
+  --shiki-highlight-neutral: #b3b3b3 !important;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05) !important;
+  --shiki-highlight-red: rgba(251, 70, 76, 0.5) !important;
+  --shiki-highlight-red-background: rgba(251, 70, 76, 0.1) !important;
+  --shiki-terminal-dots-color: #666666 !important;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9) !important;
+  --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -854,74 +883,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(218, 218, 218);
 }
 
-html[saved-theme="dark"] body .bases-table {
-  border-color: rgb(128, 128, 128);
-}
-
-html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="dark"] body .bases-table thead th {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(54, 54, 54);
-  color: rgb(218, 218, 218);
-  font-weight: 600;
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(218, 218, 218);
-  border-radius: 0px;
-  border-width: 0px;
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(218, 218, 218);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(218, 218, 218);
-  border-width: 0px;
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(38, 38, 38);
-  border-color: rgb(218, 218, 218);
-  box-shadow: rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.15) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-}
-
-html[saved-theme="dark"] body .note-properties {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(54, 54, 54);
-  border-radius: 0px;
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(179, 179, 179);
-  font-weight: 400;
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(179, 179, 179);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(138, 92, 245, 0.1);
-  border-radius: 28px;
-  color: rgb(166, 138, 249);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(179, 179, 179);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(38, 38, 38);
   color: rgb(218, 218, 218);
@@ -937,11 +898,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(38, 38, 38);
   border-left-color: rgb(54, 54, 54);
   border-left-width: 0px;
-  color: rgb(218, 218, 218);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(30, 30, 30);
   color: rgb(218, 218, 218);
 }`,
     checkboxes: `html[saved-theme="dark"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -1935,6 +1891,35 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
   --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
   --shadow-xs: 0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065), 0 0 transparent !important;
+  --shiki-active-tab-border-color: #5c5c5c !important;
+  --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: #fafafa !important;
+  --shiki-code-block-border-color: transparent !important;
+  --shiki-code-block-border-radius: 4px !important;
+  --shiki-code-block-border-width: 0px !important;
+  --shiki-code-block-spacing: 1rem !important;
+  --shiki-code-comment: #ababab !important;
+  --shiki-code-function: #08b94e !important;
+  --shiki-code-important: #ec7500 !important;
+  --shiki-code-keyword: #d53984 !important;
+  --shiki-code-normal: #5c5c5c !important;
+  --shiki-code-property: #00bfbc !important;
+  --shiki-code-punctuation: #5c5c5c !important;
+  --shiki-code-string: #e0ac00 !important;
+  --shiki-code-value: #7852ee !important;
+  --shiki-gutter-border-color: #e0e0e0 !important;
+  --shiki-gutter-border-width: 1px !important;
+  --shiki-gutter-text-color: #ababab !important;
+  --shiki-gutter-text-color-highlight: #5c5c5c !important;
+  --shiki-highlight-green: rgba(8, 185, 78, 0.5) !important;
+  --shiki-highlight-green-background: rgba(8, 185, 78, 0.1) !important;
+  --shiki-highlight-neutral: #5c5c5c !important;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05) !important;
+  --shiki-highlight-red: rgba(233, 49, 71, 0.5) !important;
+  --shiki-highlight-red-background: rgba(233, 49, 71, 0.1) !important;
+  --shiki-terminal-dots-color: #ababab !important;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9) !important;
+  --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -2148,74 +2133,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(34, 34, 34);
 }
 
-html[saved-theme="light"] body .bases-table {
-  border-color: rgb(128, 128, 128);
-}
-
-html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="light"] body .bases-table thead th {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(224, 224, 224);
-  color: rgb(34, 34, 34);
-  font-weight: 600;
-}
-
-html[saved-theme="light"] body .canvas-node {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(34, 34, 34);
-  border-radius: 0px;
-  border-width: 0px;
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(34, 34, 34);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(34, 34, 34);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(34, 34, 34);
-  border-width: 0px;
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(255, 255, 255);
-  border-color: rgb(34, 34, 34);
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-}
-
-html[saved-theme="light"] body .note-properties {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(224, 224, 224);
-  border-radius: 0px;
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(92, 92, 92);
-  font-weight: 400;
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(92, 92, 92);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(138, 92, 245, 0.1);
-  border-radius: 28px;
-  color: rgb(138, 92, 245);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(92, 92, 92);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(246, 246, 246);
   color: rgb(34, 34, 34);
@@ -2231,11 +2148,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(246, 246, 246);
   border-left-color: rgb(224, 224, 224);
   border-left-width: 0px;
-  color: rgb(34, 34, 34);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(255, 255, 255);
   color: rgb(34, 34, 34);
 }`,
     checkboxes: `html[saved-theme="light"] body li.task-list-item[data-task="-"] input[type="checkbox"]::after {

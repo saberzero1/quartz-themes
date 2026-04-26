@@ -146,6 +146,10 @@ export const theme: ThemeData = {
   --setting-group-heading-weight: 500 !important;
   --setting-items-background: #191919 !important;
   --setting-items-radius: 32px !important;
+  --shiki-code-background: #191919 !important;
+  --shiki-code-block-border-radius: 10px !important;
+  --shiki-code-block-spacing: 1em !important;
+  --shiki-gutter-border-width: 0.5px !important;
   --side-padding: 20px !important;
   --slider-thumb-border-width: 0.5px !important;
   --status-bar-background: #191919 !important;
@@ -197,33 +201,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(204, 204, 204);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgba(170, 170, 170, 0.2);
-  color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(25, 25, 25);
-  border-color: rgb(204, 204, 204);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(25, 25, 25);
   color: rgb(204, 204, 204);
@@ -238,31 +215,26 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(25, 25, 25);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(0, 0, 0);
-  color: rgb(204, 204, 204);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(204, 204, 204);
   outline: rgb(204, 204, 204) none 0px;
   text-decoration-color: rgb(204, 204, 204);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(204, 204, 204);
   outline: rgb(204, 204, 204) none 0px;
   text-decoration-color: rgb(204, 204, 204);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(255, 255, 255);
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
@@ -289,7 +261,7 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
   border-radius: 15px;
   border-width: 2px;
 }`,
-    links: `html[saved-theme="dark"] body a.internal.broken {
+    links: `html[saved-theme="dark"] body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html[saved-theme="dark"] body dd {
@@ -302,13 +274,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(204, 204, 204);
-  border-left-color: rgb(204, 204, 204);
-  border-right-color: rgb(204, 204, 204);
-  border-top-color: rgb(204, 204, 204);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -353,40 +318,12 @@ html[saved-theme="dark"] body th {
   color: rgb(204, 204, 204);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(204, 204, 204);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-left-color: rgb(204, 204, 204);
-  border-right-color: rgb(204, 204, 204);
-  border-top-color: rgb(204, 204, 204);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(25, 25, 25);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(25, 25, 25);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(25, 25, 25);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -409,9 +346,13 @@ html[saved-theme="dark"] body figcaption {
 
 html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(204, 204, 204);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   border-left-color: rgb(204, 204, 204);
   border-right-color: rgb(204, 204, 204);
   border-top-color: rgb(204, 204, 204);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 html[saved-theme="dark"] body img {
@@ -1421,6 +1362,10 @@ html[saved-theme="dark"] body h1 {
   color: rgb(255, 255, 255);
 }
 
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(255, 255, 255);
+}
+
 html[saved-theme="dark"] body h2 {
   color: rgb(255, 255, 255);
 }
@@ -1463,12 +1408,12 @@ html[saved-theme="dark"] body hr {
   padding-right: 10px;
   padding-top: 15px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(255, 255, 255);
   font-weight: 500;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(255, 255, 255);
   font-weight: 500;
 }`,
@@ -1533,6 +1478,54 @@ html[saved-theme="dark"] body ul.section-ul {
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}`,
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(204, 204, 204);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(204, 204, 204);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(204, 204, 204);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(204, 204, 204);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(25, 25, 25);
+  border-color: rgb(204, 204, 204);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgba(170, 170, 170, 0.2);
+  color: rgb(204, 204, 204);
+}`,
+    properties: `html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(0, 0, 0);
+  color: rgb(204, 204, 204);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(204, 204, 204);
+  border-left-color: rgb(204, 204, 204);
+  border-right-color: rgb(204, 204, 204);
+  border-top-color: rgb(204, 204, 204);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(25, 25, 25);
+  border-color: rgb(204, 204, 204);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(25, 25, 25);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(204, 204, 204);
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(204, 204, 204);
@@ -1720,6 +1713,10 @@ html[saved-theme="dark"] body sup {
   --setting-group-heading-color: #404040 !important;
   --setting-group-heading-weight: 500 !important;
   --setting-items-radius: 32px !important;
+  --shiki-code-background: #efefef !important;
+  --shiki-code-block-border-radius: 10px !important;
+  --shiki-code-block-spacing: 1em !important;
+  --shiki-gutter-border-width: 0.5px !important;
   --side-padding: 20px !important;
   --slider-thumb-border-width: 0.5px !important;
   --status-bar-background: #efefef !important;
@@ -1771,33 +1768,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(64, 64, 64);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgba(170, 170, 170, 0.6);
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(245, 245, 245);
-  border-color: rgb(64, 64, 64);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(239, 239, 239);
   color: rgb(64, 64, 64);
@@ -1812,31 +1782,26 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(239, 239, 239);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(245, 245, 245);
-  color: rgb(64, 64, 64);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(64, 64, 64);
   outline: rgb(64, 64, 64) none 0px;
   text-decoration-color: rgb(64, 64, 64);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(64, 64, 64);
   outline: rgb(64, 64, 64) none 0px;
   text-decoration-color: rgb(64, 64, 64);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(0, 0, 0);
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
@@ -1868,7 +1833,7 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
   background-color: rgb(138, 92, 245);
   border-color: rgb(138, 92, 245);
 }`,
-    links: `html[saved-theme="light"] body a.internal.broken {
+    links: `html[saved-theme="light"] body a.internal-link.broken {
   text-decoration: rgba(138, 92, 245, 0.3);
 }`,
     lists: `html[saved-theme="light"] body dd {
@@ -1881,13 +1846,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(64, 64, 64);
-  border-left-color: rgb(64, 64, 64);
-  border-right-color: rgb(64, 64, 64);
-  border-top-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -1932,40 +1890,12 @@ html[saved-theme="light"] body th {
   color: rgb(64, 64, 64);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(64, 64, 64);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-left-color: rgb(64, 64, 64);
-  border-right-color: rgb(64, 64, 64);
-  border-top-color: rgb(64, 64, 64);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(239, 239, 239);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(239, 239, 239);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(239, 239, 239);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -1988,9 +1918,13 @@ html[saved-theme="light"] body figcaption {
 
 html[saved-theme="light"] body figure {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 html[saved-theme="light"] body img {
@@ -3000,6 +2934,10 @@ html[saved-theme="light"] body h1 {
   color: rgb(0, 0, 0);
 }
 
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(0, 0, 0);
+}
+
 html[saved-theme="light"] body h2 {
   color: rgb(0, 0, 0);
 }
@@ -3042,12 +2980,12 @@ html[saved-theme="light"] body hr {
   padding-right: 10px;
   padding-top: 15px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(0, 0, 0);
   font-weight: 500;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(0, 0, 0);
   font-weight: 500;
 }`,
@@ -3112,6 +3050,54 @@ html[saved-theme="light"] body ul.section-ul {
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}`,
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(245, 245, 245);
+  border-color: rgb(64, 64, 64);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgba(170, 170, 170, 0.6);
+  color: rgb(64, 64, 64);
+}`,
+    properties: `html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(245, 245, 245);
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(239, 239, 239);
+  border-color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(239, 239, 239);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(64, 64, 64);
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(64, 64, 64);

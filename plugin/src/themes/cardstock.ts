@@ -201,6 +201,17 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #ffffff !important;
   --setting-items-background: #38312e !important;
   --setting-items-border-color: #38312e !important;
+  --shiki-active-tab-border-color: #f0eae2 !important;
+  --shiki-code-background: #38312e !important;
+  --shiki-code-comment: #949494 !important;
+  --shiki-code-normal: #f0eae2 !important;
+  --shiki-code-punctuation: #f0eae2 !important;
+  --shiki-gutter-border-color: #38312e !important;
+  --shiki-gutter-text-color: #949494 !important;
+  --shiki-gutter-text-color-highlight: #f0eae2 !important;
+  --shiki-highlight-neutral: #f0eae2 !important;
+  --shiki-terminal-dots-color: #949494 !important;
+  --shiki-tooltip-background: #c95454 !important;
   --slider-thumb-border-color: #c43131 !important;
   --slider-track-background: #38312e !important;
   --status-bar-background: #2f2a27 !important;
@@ -275,53 +286,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgb(56, 49, 46);
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(47, 42, 39);
-  border-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgb(56, 49, 46);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(240, 234, 226);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(240, 234, 226);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(201, 84, 84, 0.1);
-  color: rgb(201, 84, 84);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(240, 234, 226);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(56, 49, 46);
   color: rgb(255, 255, 255);
@@ -334,11 +298,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(47, 42, 39);
   border-left-color: rgb(56, 49, 46);
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(47, 42, 39);
   color: rgb(255, 255, 255);
 }
 
@@ -384,28 +343,28 @@ html[saved-theme="dark"] body html {
   --text-on-accent-inverted: #c95454;
   font-size: 20px;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(255, 255, 255);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(255, 255, 255);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(255, 255, 255);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(255, 255, 255);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(255, 255, 255) none 0px;
@@ -445,21 +404,21 @@ html[saved-theme="dark"] body p {
   outline: rgb(240, 234, 226) none 0px;
   text-decoration-color: rgb(240, 234, 226);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(201, 84, 84);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(201, 84, 84) none 0px;
   text-decoration-color: rgb(201, 84, 84);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(201, 84, 84);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(201, 84, 84) none 0px;
   text-decoration-color: rgb(201, 84, 84);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(240, 234, 226);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(240, 234, 226) none 0px;
@@ -476,17 +435,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(255, 255, 255);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -550,77 +498,25 @@ html[saved-theme="dark"] body thead {
   background-color: rgb(152, 137, 130);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(201, 84, 84);
-  border-left-color: rgb(201, 84, 84);
-  border-right-color: rgb(201, 84, 84);
-  border-top-color: rgb(201, 84, 84);
+  background-color: rgb(56, 49, 46);
+  border-bottom-color: rgb(56, 49, 46);
+  border-left-color: rgb(56, 49, 46);
+  border-right-color: rgb(56, 49, 46);
+  border-top-color: rgb(56, 49, 46);
   color: rgb(201, 84, 84);
   font-family: MonoLisa, "Source Code Pro", monospace;
 }
 
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(56, 49, 46);
-  border-bottom-color: rgb(56, 49, 46);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-width: 2px;
-  border-left-color: rgb(56, 49, 46);
-  border-left-width: 2px;
-  border-right-color: rgb(56, 49, 46);
-  border-right-width: 2px;
-  border-top-color: rgb(56, 49, 46);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top-width: 2px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(56, 49, 46);
-  border-bottom-color: rgb(56, 49, 46);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-width: 2px;
-  border-left-color: rgb(56, 49, 46);
-  border-left-width: 2px;
-  border-right-color: rgb(56, 49, 46);
-  border-right-width: 2px;
-  border-top-color: rgb(56, 49, 46);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top-width: 2px;
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(56, 49, 46);
-  border-bottom-color: rgb(56, 49, 46);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-width: 2px;
-  border-left-color: rgb(56, 49, 46);
-  border-left-width: 2px;
-  border-right-color: rgb(56, 49, 46);
-  border-right-width: 2px;
-  border-top-color: rgb(56, 49, 46);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top-width: 2px;
-}
-
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(56, 49, 46);
-  border-bottom-color: rgb(56, 49, 46);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-width: 2px;
-  border-left-color: rgb(56, 49, 46);
-  border-left-width: 2px;
-  border-right-color: rgb(56, 49, 46);
-  border-right-width: 2px;
-  border-top-color: rgb(56, 49, 46);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top-width: 2px;
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(255, 255, 255);
@@ -631,7 +527,6 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(255, 255, 255);
-  font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
 }
 
 html[saved-theme="dark"] body figure {
@@ -1547,7 +1442,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(201, 84, 84, 0.1);
   border-bottom-color: rgb(201, 84, 84);
   border-left-color: rgb(201, 84, 84);
@@ -1555,13 +1450,18 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   border-top-color: rgb(201, 84, 84);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(201, 84, 84);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(255, 255, 255);
   font-family: "Source Serif Pro", "Source Serif 4", "Source Serif", Rockwell, "New York", serif;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(240, 234, 226);
+  font-size: 16px;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1602,11 +1502,11 @@ html[saved-theme="dark"] body hr {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(240, 234, 226);
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(240, 234, 226);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
@@ -1694,15 +1594,31 @@ html[saved-theme="dark"] body .darkmode svg {
 html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(148, 148, 148);
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(255, 255, 255);
-  border-left-color: rgb(255, 255, 255);
-  border-right-color: rgb(255, 255, 255);
-  border-top-color: rgb(255, 255, 255);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(47, 42, 39);
+  border-color: rgb(255, 255, 255);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(56, 49, 46);
+  color: rgb(255, 255, 255);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(56, 49, 46);
   border-left-color: rgb(56, 49, 46);
   border-right-color: rgb(56, 49, 46);
@@ -1719,6 +1635,62 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(240, 234, 226);
   color: rgb(240, 234, 226);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(56, 49, 46);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(240, 234, 226);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(240, 234, 226);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(201, 84, 84, 0.1);
+  color: rgb(201, 84, 84);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(240, 234, 226);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(47, 42, 39);
+  color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(56, 49, 46);
+  border-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(47, 42, 39);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(255, 255, 255);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(255, 255, 255);
+  border-left-color: rgb(255, 255, 255);
+  border-right-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -1954,6 +1926,17 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-group-heading-color: #2d2c2c !important;
   --setting-items-background: #f0eae2 !important;
   --setting-items-border-color: #f0eae2 !important;
+  --shiki-active-tab-border-color: #949494 !important;
+  --shiki-code-background: #f8f5f1 !important;
+  --shiki-code-comment: #949494 !important;
+  --shiki-code-normal: #949494 !important;
+  --shiki-code-punctuation: #949494 !important;
+  --shiki-gutter-border-color: #f0eae2 !important;
+  --shiki-gutter-text-color: #949494 !important;
+  --shiki-gutter-text-color-highlight: #949494 !important;
+  --shiki-highlight-neutral: #949494 !important;
+  --shiki-terminal-dots-color: #949494 !important;
+  --shiki-tooltip-background: #c95454 !important;
   --slider-thumb-border-color: #c43131 !important;
   --slider-track-background: #f0eae2 !important;
   --status-bar-background: #ffffff !important;
@@ -2025,52 +2008,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(45, 44, 44);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgb(240, 234, 226);
-  color: rgb(45, 44, 44);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(45, 44, 44);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(45, 44, 44);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(45, 44, 44);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(45, 44, 44);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  border-color: rgb(45, 44, 44);
-}
-
-html[saved-theme="light"] body .note-properties {
-  border-color: rgb(240, 234, 226);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(148, 148, 148);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(148, 148, 148);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(201, 84, 84, 0.1);
-  color: rgb(201, 84, 84);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(148, 148, 148);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(240, 234, 226);
   color: rgb(45, 44, 44);
@@ -2083,10 +2020,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(255, 255, 255);
   border-left-color: rgb(240, 234, 226);
-  color: rgb(45, 44, 44);
-}
-
-html[saved-theme="light"] body div#quartz-root {
   color: rgb(45, 44, 44);
 }
 
@@ -2132,28 +2065,28 @@ html[saved-theme="light"] body html {
   --text-on-accent-inverted: #c95454;
   font-size: 20px;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(45, 44, 44);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(45, 44, 44) none 0px;
   text-decoration-color: rgb(45, 44, 44);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(45, 44, 44);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(45, 44, 44) none 0px;
   text-decoration-color: rgb(45, 44, 44);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(45, 44, 44);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(45, 44, 44) none 0px;
   text-decoration-color: rgb(45, 44, 44);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(45, 44, 44);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(45, 44, 44) none 0px;
@@ -2193,21 +2126,21 @@ html[saved-theme="light"] body p {
   outline: rgb(148, 148, 148) none 0px;
   text-decoration-color: rgb(148, 148, 148);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(201, 84, 84);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(201, 84, 84) none 0px;
   text-decoration-color: rgb(201, 84, 84);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(201, 84, 84);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(201, 84, 84) none 0px;
   text-decoration-color: rgb(201, 84, 84);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(148, 148, 148);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
   outline: rgb(148, 148, 148) none 0px;
@@ -2224,17 +2157,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(45, 44, 44);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(45, 44, 44);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-left-color: rgb(45, 44, 44);
-  border-right-color: rgb(45, 44, 44);
-  border-top-color: rgb(45, 44, 44);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2298,77 +2220,25 @@ html[saved-theme="light"] body thead {
   background-color: rgb(248, 245, 241);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(201, 84, 84);
-  border-left-color: rgb(201, 84, 84);
-  border-right-color: rgb(201, 84, 84);
-  border-top-color: rgb(201, 84, 84);
+  background-color: rgb(248, 245, 241);
+  border-bottom-color: rgb(240, 234, 226);
+  border-left-color: rgb(240, 234, 226);
+  border-right-color: rgb(240, 234, 226);
+  border-top-color: rgb(240, 234, 226);
   color: rgb(201, 84, 84);
   font-family: MonoLisa, "Source Code Pro", monospace;
 }
 
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(248, 245, 241);
-  border-bottom-color: rgb(240, 234, 226);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-width: 2px;
-  border-left-color: rgb(240, 234, 226);
-  border-left-width: 2px;
-  border-right-color: rgb(240, 234, 226);
-  border-right-width: 2px;
-  border-top-color: rgb(240, 234, 226);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top-width: 2px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(248, 245, 241);
-  border-bottom-color: rgb(240, 234, 226);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-width: 2px;
-  border-left-color: rgb(240, 234, 226);
-  border-left-width: 2px;
-  border-right-color: rgb(240, 234, 226);
-  border-right-width: 2px;
-  border-top-color: rgb(240, 234, 226);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top-width: 2px;
-  color: rgb(45, 44, 44);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(248, 245, 241);
-  border-bottom-color: rgb(240, 234, 226);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-width: 2px;
-  border-left-color: rgb(240, 234, 226);
-  border-left-width: 2px;
-  border-right-color: rgb(240, 234, 226);
-  border-right-width: 2px;
-  border-top-color: rgb(240, 234, 226);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top-width: 2px;
-}
-
 html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(248, 245, 241);
-  border-bottom-color: rgb(240, 234, 226);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-width: 2px;
-  border-left-color: rgb(240, 234, 226);
-  border-left-width: 2px;
-  border-right-color: rgb(240, 234, 226);
-  border-right-width: 2px;
-  border-top-color: rgb(240, 234, 226);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top-width: 2px;
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(45, 44, 44);
@@ -2379,7 +2249,6 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(45, 44, 44);
-  font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
 }
 
 html[saved-theme="light"] body figure {
@@ -3288,7 +3157,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(45, 44, 44);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(201, 84, 84, 0.1);
   border-bottom-color: rgb(201, 84, 84);
   border-left-color: rgb(201, 84, 84);
@@ -3296,13 +3165,18 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   border-top-color: rgb(201, 84, 84);
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(201, 84, 84);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(45, 44, 44);
   font-family: "Source Serif Pro", "Source Serif 4", "Source Serif", Rockwell, "New York", serif;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(148, 148, 148);
+  font-size: 16px;
 }
 
 html[saved-theme="light"] body h2 {
@@ -3343,11 +3217,11 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(148, 148, 148);
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(148, 148, 148);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
@@ -3435,15 +3309,30 @@ html[saved-theme="light"] body .darkmode svg {
 html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(148, 148, 148);
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(45, 44, 44);
-  border-left-color: rgb(45, 44, 44);
-  border-right-color: rgb(45, 44, 44);
-  border-top-color: rgb(45, 44, 44);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(45, 44, 44);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(45, 44, 44);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(45, 44, 44);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(45, 44, 44);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  border-color: rgb(45, 44, 44);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(240, 234, 226);
+  color: rgb(45, 44, 44);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(240, 234, 226);
   border-left-color: rgb(240, 234, 226);
   border-right-color: rgb(240, 234, 226);
@@ -3460,6 +3349,61 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(148, 148, 148);
   color: rgb(148, 148, 148);
   font-family: "DM Sans", "Avenir Next", Avenir, sans-serif;
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(240, 234, 226);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(148, 148, 148);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(148, 148, 148);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(201, 84, 84, 0.1);
+  color: rgb(201, 84, 84);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(148, 148, 148);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  color: rgb(45, 44, 44);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(45, 44, 44);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left-color: rgb(45, 44, 44);
+  border-right-color: rgb(45, 44, 44);
+  border-top-color: rgb(45, 44, 44);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(240, 234, 226);
+  border-color: rgb(45, 44, 44);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(230, 219, 204);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(45, 44, 44);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(45, 44, 44);
+  border-left-color: rgb(45, 44, 44);
+  border-right-color: rgb(45, 44, 44);
+  border-top-color: rgb(45, 44, 44);
+  color: rgb(45, 44, 44);
 }
 
 html[saved-theme="light"] body .navigation-progress {

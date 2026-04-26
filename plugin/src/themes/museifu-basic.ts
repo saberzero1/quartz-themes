@@ -133,6 +133,15 @@ export const theme: ThemeData = {
   --search-result-background: rgb(22, 22, 22) !important;
   --setting-group-heading-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --setting-items-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #ffffff 10%) !important;
+  --shiki-active-tab-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --shiki-code-background: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%) !important;
+  --shiki-code-comment: hsl(258, 88%, 66%) !important;
+  --shiki-code-normal: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --shiki-code-punctuation: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --shiki-gutter-text-color: hsl(258, 88%, 66%) !important;
+  --shiki-gutter-text-color-highlight: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --shiki-highlight-neutral: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
+  --shiki-terminal-dots-color: hsl(258, 88%, 66%) !important;
   --status-bar-background: rgb(24, 24, 24) !important;
   --status-bar-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 30%, #ffffff 70%) !important;
   --suggestion-background: rgb(22, 22, 22) !important;
@@ -185,48 +194,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 
-html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
-}
-
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
-  color: color(srgb 0.632256 0.48864 0.96736);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: color(srgb 0.862096 0.80824 0.98776);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: color(srgb 0.862096 0.80824 0.98776);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: color(srgb 0.862096 0.80824 0.98776);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: color(srgb 0.862096 0.80824 0.98776);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(24, 24, 24);
-  border-color: color(srgb 0.862096 0.80824 0.98776);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: color(srgb 0.862096 0.80824 0.98776);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: color(srgb 0.862096 0.80824 0.98776);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: color(srgb 0.862096 0.80824 0.98776);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(24, 24, 24);
   color: color(srgb 0.862096 0.80824 0.98776);
@@ -240,11 +207,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(24, 24, 24);
   border-left-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.862096 0.80824 0.98776);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(22, 22, 22);
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 
@@ -271,28 +233,28 @@ html[saved-theme="dark"] body html {
   --radius-s: 5px;
   --radius-xl: 20px;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: color(srgb 0.632256 0.48864 0.96736);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.632256 0.48864 0.96736) none 0px;
   text-decoration-color: color(srgb 0.632256 0.48864 0.96736);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.65524 0.5206 0.9694 / 0.8) none 0px;
   text-decoration-color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.65524 0.5206 0.9694 / 0.8) none 0px;
   text-decoration-color: color(srgb 0.65524 0.5206 0.9694 / 0.8);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: color(srgb 0.632256 0.48864 0.96736);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.632256 0.48864 0.96736) none 0px;
@@ -333,15 +295,15 @@ html[saved-theme="dark"] body p {
   outline: color(srgb 0.862096 0.80824 0.98776) none 0px;
   text-decoration-color: color(srgb 0.862096 0.80824 0.98776);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   font-family: "JetBrains Mono", monospace;
 }`,
     lists: `html[saved-theme="dark"] body dd {
@@ -354,17 +316,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: color(srgb 0.862096 0.80824 0.98776);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-left-color: color(srgb 0.862096 0.80824 0.98776);
-  border-right-color: color(srgb 0.862096 0.80824 0.98776);
-  border-top-color: color(srgb 0.862096 0.80824 0.98776);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -429,29 +380,20 @@ html[saved-theme="dark"] body tr {
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
-  border-left-color: color(srgb 0.862096 0.80824 0.98776);
-  border-right-color: color(srgb 0.862096 0.80824 0.98776);
-  border-top-color: color(srgb 0.862096 0.80824 0.98776);
-  color: color(srgb 0.862096 0.80824 0.98776);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
   color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
@@ -462,7 +404,7 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: color(srgb 0.862096 0.80824 0.98776);
-  font-family: "JetBrains Mono", monospace;
+  font-family: "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body figure {
@@ -1446,13 +1388,17 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "JetBrains Mono", monospace;
 }
 
 html[saved-theme="dark"] body h1 {
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1511,12 +1457,12 @@ html[saved-theme="dark"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
 }`,
@@ -1606,15 +1552,35 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(138, 92, 245);
   font-family: "JetBrains Mono", monospace;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
-  border-left-color: color(srgb 0.862096 0.80824 0.98776);
-  border-right-color: color(srgb 0.862096 0.80824 0.98776);
-  border-top-color: color(srgb 0.862096 0.80824 0.98776);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: color(srgb 0.862096 0.80824 0.98776);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(24, 24, 24);
+  border-color: color(srgb 0.862096 0.80824 0.98776);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
+  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  border-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
+  color: color(srgb 0.632256 0.48864 0.96736);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
 }
@@ -1626,6 +1592,53 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: color(srgb 0.862096 0.80824 0.98776);
   color: color(srgb 0.862096 0.80824 0.98776);
   font-family: "JetBrains Mono", monospace;
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(22, 22, 22);
+  color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-left-color: color(srgb 0.862096 0.80824 0.98776);
+  border-right-color: color(srgb 0.862096 0.80824 0.98776);
+  border-top-color: color(srgb 0.862096 0.80824 0.98776);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(24, 24, 24);
+  border-color: color(srgb 0.862096 0.80824 0.98776);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.5);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: color(srgb 0.862096 0.80824 0.98776);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: color(srgb 0.862096 0.80824 0.98776);
+  border-left-color: color(srgb 0.862096 0.80824 0.98776);
+  border-right-color: color(srgb 0.862096 0.80824 0.98776);
+  border-top-color: color(srgb 0.862096 0.80824 0.98776);
+  color: color(srgb 0.862096 0.80824 0.98776);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -1805,6 +1818,15 @@ html[saved-theme="dark"] body sup {
   --search-result-background: rgb(228, 228, 228) !important;
   --setting-group-heading-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --setting-items-background: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 10%) !important;
+  --shiki-active-tab-border-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --shiki-code-background: color-mix(in srgb, hsl(258, 88%, 66%) 15%, transparent 0%) !important;
+  --shiki-code-comment: hsl(258, 88%, 66%) !important;
+  --shiki-code-normal: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --shiki-code-punctuation: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --shiki-gutter-text-color: hsl(258, 88%, 66%) !important;
+  --shiki-gutter-text-color-highlight: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --shiki-highlight-neutral: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
+  --shiki-terminal-dots-color: hsl(258, 88%, 66%) !important;
   --status-bar-background: rgb(197, 197, 197) !important;
   --status-bar-text-color: color-mix(in srgb, hsl(258, 88%, 66%) 50%, #000000 40%) !important;
   --suggestion-background: rgb(228, 228, 228) !important;
@@ -1859,48 +1881,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
-html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
-}
-
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
-  color: color(srgb 0.432256 0.28864 0.76736);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(228, 228, 228);
-  border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(197, 197, 197);
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
@@ -1914,11 +1894,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(197, 197, 197);
   border-left-color: rgba(0, 0, 0, 0);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(228, 228, 228);
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
@@ -1945,28 +1920,28 @@ html[saved-theme="light"] body html {
   --radius-s: 5px;
   --radius-xl: 20px;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: color(srgb 0.432256 0.28864 0.76736);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.432256 0.28864 0.76736) none 0px;
   text-decoration-color: color(srgb 0.432256 0.28864 0.76736);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.40524 0.2706 0.7194 / 0.8) none 0px;
   text-decoration-color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.40524 0.2706 0.7194 / 0.8) none 0px;
   text-decoration-color: color(srgb 0.40524 0.2706 0.7194 / 0.8);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: color(srgb 0.432256 0.28864 0.76736);
   font-family: "JetBrains Mono", monospace;
   outline: color(srgb 0.432256 0.28864 0.76736) none 0px;
@@ -2012,15 +1987,15 @@ html[saved-theme="light"] body p {
   outline: color(srgb 0.300178 0.200444 0.532889 / 0.9) none 0px;
   text-decoration-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   font-family: "JetBrains Mono", monospace;
 }`,
     lists: `html[saved-theme="light"] body dd {
@@ -2033,17 +2008,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2108,29 +2072,20 @@ html[saved-theme="light"] body tr {
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
 }
 
 html[saved-theme="light"] body pre:has(> code) {
   background-color: color(srgb 0.54032 0.3608 0.9592 / 0.15);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
@@ -2141,7 +2096,7 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  font-family: "JetBrains Mono", monospace;
+  font-family: "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body figure {
@@ -3125,13 +3080,17 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "JetBrains Mono", monospace;
 }
 
 html[saved-theme="light"] body h1 {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body h2 {
@@ -3190,12 +3149,12 @@ html[saved-theme="light"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
 }`,
@@ -3285,15 +3244,35 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(138, 92, 245);
   font-family: "JetBrains Mono", monospace;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
-  border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(228, 228, 228);
+  border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
+  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.181818);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  border-color: color(srgb 0.54032 0.3608 0.9592 / 0.8);
+  color: color(srgb 0.432256 0.28864 0.76736);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
 }
@@ -3305,6 +3284,53 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
   font-family: "JetBrains Mono", monospace;
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(228, 228, 228);
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(197, 197, 197);
+  border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: color(srgb 0.54032 0.3608 0.9592 / 0.3);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  border-left-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  border-right-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  border-top-color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
+  color: color(srgb 0.300178 0.200444 0.532889 / 0.9);
 }
 
 html[saved-theme="light"] body .navigation-progress {

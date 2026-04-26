@@ -3,5 +3,7 @@
   "dataview",
   "plugin-reloader",
   "obsidian-style-settings",
-  "snippet-commands-obsidian"
+  "snippet-commands-obsidian",
+  "shiki-highlighter",
+  "settings-search"
 ]

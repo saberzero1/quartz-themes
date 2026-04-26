@@ -1,82 +1,16 @@
 {
   "_codeBlock": {
     "backgroundColor": "rgba(0, 0, 0, 0)",
-    "color": "color(srgb 0.019 0.019 0.021)"
+    "color": "color(srgb 0.019 0.019 0.021 / 0.7)"
   },
   "_preBlock": {
     "backgroundColor": "color(srgb 0 0 0 / 0.06)",
-    "borderColor": "color(srgb 0.3925 0.3925 0.4075)"
-  },
-  "atom": {
-    "color": "color(srgb 0.019 0.019 0.021)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "comment": {
-    "color": "color(srgb 0 0 0 / 0.5)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "def": {
-    "color": "color(srgb 0.019 0.019 0.021)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
+    "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {
     "color": "color(srgb 0.019 0.019 0.021)",
     "fontStyle": "normal",
     "fontWeight": "100",
-    "textDecoration": "none"
-  },
-  "keyword": {
-    "color": "color(srgb 0.21 0.19 0.199667)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "number": {
-    "color": "color(srgb 0.194333 0.19 0.21)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "operator": {
-    "color": "color(srgb 0.21 0.19 0.191333)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "property": {
-    "color": "color(srgb 0.21 0.209 0.19)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string": {
-    "color": "color(srgb 0.19 0.21 0.191333)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string-2": {
-    "color": "color(srgb 0.19 0.21 0.191333)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable": {
-    "color": "color(srgb 0.19 0.21 0.209667)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable-2": {
-    "color": "color(srgb 0.19 0.21 0.209667)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
     "textDecoration": "none"
   }
 }

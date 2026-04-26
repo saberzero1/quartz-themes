@@ -1077,6 +1077,35 @@ body.theme-light {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shiki-active-tab-border-color: #999999 !important;
+  --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: #eeeeee !important;
+  --shiki-code-block-border-color: transparent !important;
+  --shiki-code-block-border-radius: 0.5em !important;
+  --shiki-code-block-border-width: 0px !important;
+  --shiki-code-block-spacing: 1rem !important;
+  --shiki-code-comment: #949494 !important;
+  --shiki-code-function: #5dd400 !important;
+  --shiki-code-important: #ffb522 !important;
+  --shiki-code-keyword: #bb72d6 !important;
+  --shiki-code-normal: #999999 !important;
+  --shiki-code-property: #0fc8ba !important;
+  --shiki-code-punctuation: #999999 !important;
+  --shiki-code-string: #ecd91b !important;
+  --shiki-code-value: #3e58eb !important;
+  --shiki-gutter-border-color: rgb(230, 230, 230) !important;
+  --shiki-gutter-border-width: 1px !important;
+  --shiki-gutter-text-color: #949494 !important;
+  --shiki-gutter-text-color-highlight: #999999 !important;
+  --shiki-highlight-green: rgba(93, 212, 0, 0.5) !important;
+  --shiki-highlight-green-background: rgba(93, 212, 0, 0.1) !important;
+  --shiki-highlight-neutral: #999999 !important;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05) !important;
+  --shiki-highlight-red: rgba(255, 85, 64, 0.5) !important;
+  --shiki-highlight-red-background: rgba(255, 85, 64, 0.1) !important;
+  --shiki-terminal-dots-color: #949494 !important;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9) !important;
+  --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -1862,8 +1891,8 @@ body body.theme-light .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-light .markdown-rendered code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px solid rgb(47, 47, 47);
+  background-color: rgb(238, 238, 238);
+  border: 0px solid rgb(230, 230, 230);
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -1877,21 +1906,21 @@ body body.theme-light .markdown-rendered code {
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
-  padding: 0px;
+  padding: 2.1px 4.2px;
 }
 body body.theme-light .markdown-rendered pre > code {
-  background-color: rgb(238, 238, 238);
-  border: 0px solid rgb(230, 230, 230);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding: 12px 16px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
@@ -2893,15 +2922,15 @@ body body.theme-light .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
   border: 0px rgb(47, 47, 47);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 40px;
+  margin: 0px;
   margin-block-end: 15px;
   margin-block-start: 15px;
   margin-inline-end: 40px;
@@ -3642,12 +3671,12 @@ body body.theme-light .view-content {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(238, 238, 238);
-  border: 0px solid rgb(230, 230, 230);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -3657,14 +3686,14 @@ body
   body.theme-light
   figure[data-rehype-pretty-code-figure]
   > [data-rehype-pretty-code-title] {
-  background-color: rgb(238, 238, 238);
-  color: rgb(47, 47, 47);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(34, 34, 34);
   font-family: monospace;
-  border: 0px solid rgb(230, 230, 230);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -3672,15 +3701,15 @@ body
 }
 body body.theme-light pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left: 0px rgb(236, 217, 27);
+  border-left: 0px rgb(34, 34, 34);
 }
 body body.theme-light pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-color: rgb(236, 217, 27);
+  border-left-color: rgb(34, 34, 34);
 }
 body body.theme-light pre > code [data-highlighted-chars] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(236, 217, 27);
+  border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

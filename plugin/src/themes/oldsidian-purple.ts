@@ -60,6 +60,7 @@ export const theme: ThemeData = {
   --search-result-background: #262626ff !important;
   --secondary: #814CFF !important;
   --setting-items-background: #161616 !important;
+  --shiki-code-background: #161616 !important;
   --suggestion-background: #262626ff !important;
   --tab-background-active: #262626ff !important;
   --tab-min-width: 100px !important;
@@ -82,14 +83,6 @@ html body {
 
 html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page > div#quartz-body div.center, html .page > div#quartz-body footer {
   background-color: rgb(38, 38, 38);
-}
-
-html body .note-properties-tags {
-  color: rgb(129, 76, 255);
-}
-
-html body div#quartz-root {
-  background-color: rgb(38, 38, 38);
 }`,
     typography: `html body .text-highlight {
   background-color: rgb(108, 65, 216);
@@ -99,19 +92,19 @@ html body li.task-list-item input[type="checkbox"]:checked {
   background-color: rgb(108, 65, 216);
   border-color: rgb(108, 65, 216);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(129, 76, 255);
   outline: rgb(129, 76, 255) none 0px;
   text-decoration-color: rgb(129, 76, 255);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(129, 76, 255);
   outline: rgb(129, 76, 255) none 0px;
   text-decoration-color: rgb(129, 76, 255);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(129, 76, 255);
   outline: rgb(129, 76, 255) none 0px;
   text-decoration: underline rgb(129, 76, 255);
@@ -121,23 +114,8 @@ html body a.internal.broken {
   background-color: rgb(22, 22, 22);
 }`,
     code: `html body code {
-  border-bottom-color: rgb(251, 70, 59);
-  border-left-color: rgb(251, 70, 59);
-  border-right-color: rgb(251, 70, 59);
-  border-top-color: rgb(251, 70, 59);
+  background-color: rgb(22, 22, 22);
   color: rgb(251, 70, 59);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(22, 22, 22);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(22, 22, 22);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(22, 22, 22);
 }
 
 html body pre:has(> code) {
@@ -889,7 +867,7 @@ html body .callout[data-callout="warning"] {
   background-color: rgb(38, 38, 38);
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(129, 76, 255);
 }`,
     scrollbars: `html body .callout {
@@ -907,6 +885,16 @@ html body a.internal.tag-link::before {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}`,
+    properties: `html body .note-properties-tags {
+  color: rgb(129, 76, 255);
+}
+
+html body div#quartz-root {
+  background-color: rgb(38, 38, 38);
+}`,
+    stacked: `html body .stacked-page-header {
+  background-color: rgb(22, 22, 22);
 }`,
     misc: `html body kbd {
   background-color: rgb(22, 22, 22);

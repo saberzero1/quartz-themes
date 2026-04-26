@@ -159,6 +159,17 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #222 !important;
   --setting-items-border-color: #acb7a7 !important;
   --setting-items-radius: 5px !important;
+  --shiki-active-tab-border-color: #434B56 !important;
+  --shiki-code-background: #F5F4F4 !important;
+  --shiki-code-block-border-radius: 5px !important;
+  --shiki-code-comment: #4E4D49 !important;
+  --shiki-code-normal: #434B56 !important;
+  --shiki-code-punctuation: #434B56 !important;
+  --shiki-gutter-border-color: #acb7a7 !important;
+  --shiki-gutter-text-color: #4E4D49 !important;
+  --shiki-gutter-text-color-highlight: #434B56 !important;
+  --shiki-highlight-neutral: #434B56 !important;
+  --shiki-terminal-dots-color: #4E4D49 !important;
   --slider-thumb-border-color: #acb7a7 !important;
   --slider-thumb-radius: 5px !important;
   --slider-track-background: #acb7a7 !important;
@@ -223,35 +234,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   background-color: rgb(250, 250, 250);
 }
 
-html body .bases-table thead th {
-  border-color: rgb(172, 183, 167);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(250, 250, 250);
-}
-
-html body .note-properties {
-  border-color: rgb(172, 183, 167);
-}
-
-html body .note-properties-key {
-  color: rgb(67, 75, 86);
-}
-
-html body .note-properties-row {
-  border-color: rgb(67, 75, 86);
-}
-
-html body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(126, 149, 115);
-}
-
-html body .note-properties-value {
-  color: rgb(67, 75, 86);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -263,18 +245,14 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
-}
-
-html body div#quartz-root {
-  background-color: rgb(250, 250, 250);
 }`,
-    typography: `html body .page article p > em, html em {
+    typography: `html body .markdown-rendered p > em, html em {
   color: rgb(117, 138, 82);
   outline: rgb(117, 138, 82) none 0px;
   text-decoration-color: rgb(117, 138, 82);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(117, 138, 82);
   outline: rgb(117, 138, 82) none 0px;
   text-decoration-color: rgb(117, 138, 82);
@@ -294,21 +272,21 @@ html body p {
   outline: rgb(67, 75, 86) none 0px;
   text-decoration-color: rgb(67, 75, 86);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(126, 149, 115);
   outline: rgb(126, 149, 115) none 0px;
   text-decoration: underline rgba(172, 183, 167, 0);
   text-decoration-color: rgba(172, 183, 167, 0);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(126, 149, 115);
   outline: rgb(126, 149, 115) none 0px;
   text-decoration: underline rgba(172, 183, 167, 0);
   text-decoration-color: rgba(172, 183, 167, 0);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(126, 149, 115);
   outline: rgb(126, 149, 115) none 0px;
 }`,
@@ -334,37 +312,6 @@ html body th {
   border-top-color: rgb(172, 183, 167);
 }`,
     code: `html body code {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(245, 244, 244);
-  border-bottom-color: rgb(172, 183, 167);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-left-color: rgb(172, 183, 167);
-  border-right-color: rgb(172, 183, 167);
-  border-top-color: rgb(172, 183, 167);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(245, 244, 244);
-  border-bottom-color: rgb(172, 183, 167);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-left-color: rgb(172, 183, 167);
-  border-right-color: rgb(172, 183, 167);
-  border-top-color: rgb(172, 183, 167);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-html body pre > code, html pre:has(> code) {
   background-color: rgb(245, 244, 244);
   border-bottom-color: rgb(172, 183, 167);
   border-bottom-left-radius: 5px;
@@ -378,12 +325,22 @@ html body pre > code, html pre:has(> code) {
 
 html body pre:has(> code) {
   background-color: rgb(245, 244, 244);
-  border-bottom-color: rgb(172, 183, 167);
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-left-color: rgb(172, 183, 167);
-  border-right-color: rgb(172, 183, 167);
-  border-top-color: rgb(172, 183, 167);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}`,
+    images: `html body figure {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }`,
@@ -1188,12 +1145,18 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   border-top-right-radius: 5px;
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(126, 149, 115);
+}
+
+html body h1.article-title {
+  color: rgb(151, 163, 146);
+  font-size: 40px;
+  font-weight: 200;
 }
 
 html body h2.page-title, html h2.page-title a {
@@ -1224,11 +1187,11 @@ html body hr {
   border-top-style: dotted;
   border-top-width: 1px;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(32, 36, 48);
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(32, 36, 48);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
@@ -1300,7 +1263,13 @@ html body .darkmode svg {
 html body .breadcrumb-element p {
   color: rgb(78, 77, 73);
 }`,
-    misc: `html body .metadata {
+    canvas: `html body .canvas-sidebar {
+  background-color: rgb(250, 250, 250);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgb(172, 183, 167);
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(172, 183, 167);
   border-left-color: rgb(172, 183, 167);
   border-right-color: rgb(172, 183, 167);
@@ -1316,7 +1285,38 @@ html body .metadata-properties {
   color: rgb(67, 75, 86);
 }
 
-html body .navigation-progress {
+html body .note-properties {
+  border-color: rgb(172, 183, 167);
+}
+
+html body .note-properties-key {
+  color: rgb(67, 75, 86);
+}
+
+html body .note-properties-row {
+  border-color: rgb(67, 75, 86);
+}
+
+html body .note-properties-tags {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(126, 149, 115);
+}
+
+html body .note-properties-value {
+  color: rgb(67, 75, 86);
+}
+
+html body div#quartz-root {
+  background-color: rgb(250, 250, 250);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0);
+}`,
+    misc: `html body .navigation-progress {
   background-color: rgb(250, 250, 250);
 }
 

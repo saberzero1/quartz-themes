@@ -157,6 +157,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #fbf1c7 !important;
   --setting-items-background: #2C383A !important;
   --setting-items-border-color: #f2e5bc !important;
+  --shiki-active-tab-border-color: #d5c4a1 !important;
+  --shiki-code-background: #2C383A !important;
+  --shiki-code-comment: #bdae93 !important;
+  --shiki-code-normal: #d5c4a1 !important;
+  --shiki-code-punctuation: #d5c4a1 !important;
+  --shiki-gutter-border-color: #f2e5bc !important;
+  --shiki-gutter-text-color: #bdae93 !important;
+  --shiki-gutter-text-color-highlight: #d5c4a1 !important;
+  --shiki-highlight-neutral: #d5c4a1 !important;
+  --shiki-terminal-dots-color: #bdae93 !important;
   --slider-track-background: #f2e5bc !important;
   --status-bar-background: #415358 !important;
   --status-bar-border-color: #f2e5bc !important;
@@ -227,55 +237,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(251, 241, 199);
 }
 
-html body .bases-table thead th {
-  background-color: rgb(65, 83, 88);
-  border-color: rgb(242, 229, 188);
-  color: rgb(251, 241, 199);
-  font-weight: 800;
-}
-
-html body .canvas-node {
-  border-color: rgb(251, 241, 199);
-}
-
-html body .canvas-node-content {
-  color: rgb(251, 241, 199);
-}
-
-html body .canvas-node-file {
-  color: rgb(251, 241, 199);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(251, 241, 199);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(65, 83, 88);
-  border-color: rgb(251, 241, 199);
-}
-
-html body .note-properties {
-  border-color: rgb(242, 229, 188);
-}
-
-html body .note-properties-key {
-  color: rgb(213, 196, 161);
-}
-
-html body .note-properties-row {
-  border-color: rgb(213, 196, 161);
-}
-
-html body .note-properties-tags {
-  border-radius: 26.25px;
-  color: rgb(254, 128, 25);
-}
-
-html body .note-properties-value {
-  color: rgb(213, 196, 161);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(65, 83, 88);
   color: rgb(251, 241, 199);
@@ -288,11 +249,6 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(65, 83, 88);
   border-left-color: rgb(242, 229, 188);
-  color: rgb(251, 241, 199);
-}
-
-html body div#quartz-root {
-  background-color: rgb(54, 69, 73);
   color: rgb(251, 241, 199);
 }
 
@@ -311,28 +267,28 @@ html body html {
   --font-size-side-dock-title: 15px;
   --font-size-status-bar: 12px;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(251, 241, 199);
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(251, 241, 199) none 0px;
   text-decoration-color: rgb(251, 241, 199);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(213, 196, 161);
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(213, 196, 161) none 0px;
   text-decoration-color: rgb(213, 196, 161);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(213, 196, 161);
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(213, 196, 161) none 0px;
   text-decoration-color: rgb(213, 196, 161);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(251, 241, 199);
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(251, 241, 199) none 0px;
@@ -373,21 +329,21 @@ html body p {
   outline: rgb(213, 196, 161) none 0px;
   text-decoration-color: rgb(213, 196, 161);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(254, 128, 25);
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(254, 128, 25) none 0px;
   text-decoration-color: rgb(254, 128, 25);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(254, 128, 25);
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(254, 128, 25) none 0px;
   text-decoration-color: rgb(254, 128, 25);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(254, 128, 25);
   font-family: Avenir, "Avenir Next", sans-serif;
   outline: rgb(254, 128, 25) none 0px;
@@ -408,13 +364,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(251, 241, 199);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(251, 241, 199);
-  border-left-color: rgb(251, 241, 199);
-  border-right-color: rgb(251, 241, 199);
-  border-top-color: rgb(251, 241, 199);
 }
 
 html body ul > li {
@@ -477,60 +426,16 @@ html body tr {
   border-bottom-color: rgb(242, 229, 188);
 }`,
     code: `html body code {
-  border-bottom-color: rgb(189, 174, 147);
-  border-left-color: rgb(189, 174, 147);
-  border-right-color: rgb(189, 174, 147);
-  border-top-color: rgb(189, 174, 147);
-  color: rgb(189, 174, 147);
-  font-family: monaco;
-  padding-bottom: 6px;
-  padding-left: 6px;
-  padding-right: 6px;
-  padding-top: 6px;
-}
-
-html body figure[data-rehype-pretty-code-figure] {
   background-color: rgb(44, 56, 58);
   border-bottom-color: rgb(242, 229, 188);
   border-left-color: rgb(242, 229, 188);
   border-right-color: rgb(242, 229, 188);
   border-top-color: rgb(242, 229, 188);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(44, 56, 58);
-  border-bottom-color: rgb(242, 229, 188);
-  border-left-color: rgb(242, 229, 188);
-  border-right-color: rgb(242, 229, 188);
-  border-top-color: rgb(242, 229, 188);
-  color: rgb(189, 174, 147);
-}
-
-html body pre > code > [data-line] {
-  border-left-color: rgb(221, 74, 104);
-}
-
-html body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(221, 74, 104);
-}
-
-html body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(221, 74, 104);
-  border-left-color: rgb(221, 74, 104);
-  border-right-color: rgb(221, 74, 104);
-  border-top-color: rgb(221, 74, 104);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(44, 56, 58);
-  border-bottom-color: rgb(242, 229, 188);
-  border-left-color: rgb(242, 229, 188);
-  border-right-color: rgb(242, 229, 188);
-  border-top-color: rgb(242, 229, 188);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
+  color: rgb(180, 142, 173);
+  padding-bottom: 2.025px;
+  padding-left: 4.05px;
+  padding-right: 4.05px;
+  padding-top: 2.025px;
 }
 
 html body pre:has(> code) {
@@ -553,7 +458,6 @@ html body pre:has(> code) {
 
 html body figcaption {
   color: rgb(251, 241, 199);
-  font-size: 15px;
 }
 
 html body figure {
@@ -561,8 +465,6 @@ html body figure {
   border-left-color: rgb(251, 241, 199);
   border-right-color: rgb(251, 241, 199);
   border-top-color: rgb(251, 241, 199);
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
 
 html body img {
@@ -1451,20 +1353,25 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(251, 241, 199);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 26.25px;
   border-bottom-right-radius: 26.25px;
   border-top-left-radius: 26.25px;
   border-top-right-radius: 26.25px;
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(254, 128, 25);
 }
 
 html body h1 {
   color: rgb(214, 93, 14);
   font-family: Avenir, "Avenir Next", sans-serif;
+}
+
+html body h1.article-title {
+  color: rgb(251, 241, 199);
+  font-size: 24.27px;
 }
 
 html body h2 {
@@ -1505,12 +1412,12 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(213, 196, 161);
   font-family: Avenir, "Avenir Next", sans-serif;
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(213, 196, 161);
   font-family: Avenir, "Avenir Next", sans-serif;
 }`,
@@ -1604,15 +1511,33 @@ html body .darkmode svg {
 html body .breadcrumb-element p {
   color: rgb(189, 174, 147);
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: rgb(251, 241, 199);
-  border-left-color: rgb(251, 241, 199);
-  border-right-color: rgb(251, 241, 199);
-  border-top-color: rgb(251, 241, 199);
+    canvas: `html body .canvas-node {
+  border-color: rgb(251, 241, 199);
+}
+
+html body .canvas-node-content {
   color: rgb(251, 241, 199);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  color: rgb(251, 241, 199);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(251, 241, 199);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(65, 83, 88);
+  border-color: rgb(251, 241, 199);
+}`,
+    bases: `html body .bases-table thead th {
+  background-color: rgb(65, 83, 88);
+  border-color: rgb(242, 229, 188);
+  color: rgb(251, 241, 199);
+  font-weight: 800;
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(242, 229, 188);
   border-left-color: rgb(242, 229, 188);
   border-right-color: rgb(242, 229, 188);
@@ -1628,6 +1553,58 @@ html body .metadata-properties {
   border-top-color: rgb(213, 196, 161);
   color: rgb(213, 196, 161);
   font-family: Avenir, "Avenir Next", sans-serif;
+}
+
+html body .note-properties {
+  border-color: rgb(242, 229, 188);
+}
+
+html body .note-properties-key {
+  color: rgb(213, 196, 161);
+}
+
+html body .note-properties-row {
+  border-color: rgb(213, 196, 161);
+}
+
+html body .note-properties-tags {
+  border-radius: 26.25px;
+  color: rgb(254, 128, 25);
+}
+
+html body .note-properties-value {
+  color: rgb(213, 196, 161);
+}
+
+html body div#quartz-root {
+  background-color: rgb(54, 69, 73);
+  color: rgb(251, 241, 199);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(251, 241, 199);
+  border-left-color: rgb(251, 241, 199);
+  border-right-color: rgb(251, 241, 199);
+  border-top-color: rgb(251, 241, 199);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(65, 83, 88);
+  border-color: rgb(251, 241, 199);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(44, 56, 58);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(251, 241, 199);
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: rgb(251, 241, 199);
+  border-left-color: rgb(251, 241, 199);
+  border-right-color: rgb(251, 241, 199);
+  border-top-color: rgb(251, 241, 199);
+  color: rgb(251, 241, 199);
 }
 
 html body .navigation-progress {

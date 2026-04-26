@@ -654,6 +654,28 @@ export const theme: ThemeData = {
   --setting-items-background: #1f1f1f !important;
   --setting-items-border-color: #9d9d9d !important;
   --setting-items-radius: 0px !important;
+  --shiki-active-tab-border-color: #707070 !important;
+  --shiki-code-background: #1d1d1d !important;
+  --shiki-code-block-border-radius: 0px !important;
+  --shiki-code-comment: #6a6a6a !important;
+  --shiki-code-function: #91a86e !important;
+  --shiki-code-important: #cf844f !important;
+  --shiki-code-keyword: #b96b88 !important;
+  --shiki-code-normal: #707070 !important;
+  --shiki-code-property: #7fbbb8 !important;
+  --shiki-code-punctuation: #707070 !important;
+  --shiki-code-string: #dfbf74 !important;
+  --shiki-code-value: #9b7ad1 !important;
+  --shiki-gutter-border-color: #9d9d9d !important;
+  --shiki-gutter-text-color: #6a6a6a !important;
+  --shiki-gutter-text-color-highlight: #707070 !important;
+  --shiki-highlight-green: rgba(rgb(145, 168, 110), .5) !important;
+  --shiki-highlight-green-background: rgba(rgb(145, 168, 110), .1) !important;
+  --shiki-highlight-neutral: #707070 !important;
+  --shiki-highlight-red: rgba(rgb(142, 70, 70), .5) !important;
+  --shiki-highlight-red-background: rgba(rgb(142, 70, 70), .1) !important;
+  --shiki-terminal-dots-color: #6a6a6a !important;
+  --shiki-tooltip-background: #202020 !important;
   --slider-s-thumb-size: 13px !important;
   --slider-thumb-border-color: #9d9d9d !important;
   --slider-thumb-height: 16px !important;
@@ -794,57 +816,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(157, 157, 157);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgb(157, 157, 157);
-  color: rgb(119, 142, 85);
-  font-weight: 650;
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(157, 157, 157);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(157, 157, 157);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(157, 157, 157);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(157, 157, 157);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(29, 29, 29);
-  border-color: rgb(157, 157, 157);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  background-color: rgb(29, 29, 29);
-  border-color: rgb(157, 157, 157);
-  border-radius: 6px;
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(112, 112, 112);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(112, 112, 112);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgb(119, 142, 85);
-  border-radius: 6px;
-  color: rgb(37, 37, 37);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(112, 112, 112);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(29, 29, 29);
   color: rgb(157, 157, 157);
@@ -857,11 +828,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(29, 29, 29);
   border-left-color: rgb(157, 157, 157);
-  color: rgb(157, 157, 157);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(37, 37, 37);
   color: rgb(157, 157, 157);
 }
 
@@ -908,28 +874,28 @@ html[saved-theme="dark"] body html {
   --medium-light-grey-3: #c4c4c4;
   --white: #a3a3a3;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(119, 142, 85);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(119, 142, 85) none 0px;
   text-decoration-color: rgb(119, 142, 85);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(236, 217, 147);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(236, 217, 147) none 0px;
   text-decoration-color: rgb(236, 217, 147);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(236, 217, 147);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(236, 217, 147) none 0px;
   text-decoration-color: rgb(236, 217, 147);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(119, 142, 85);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(119, 142, 85) none 0px;
@@ -971,21 +937,21 @@ html[saved-theme="dark"] body p {
   outline: rgb(112, 112, 112) none 0px;
   text-decoration-color: rgb(112, 112, 112);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(106, 106, 106);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(106, 106, 106) none 0px;
   text-decoration-color: rgb(106, 106, 106);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(119, 142, 85);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(119, 142, 85) none 0px;
   text-decoration-color: rgb(119, 142, 85);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(228, 201, 103);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(228, 201, 103) none 0px;
@@ -1001,13 +967,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(157, 157, 157);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(157, 157, 157);
-  border-left-color: rgb(157, 157, 157);
-  border-right-color: rgb(157, 157, 157);
-  border-top-color: rgb(157, 157, 157);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -1065,80 +1024,37 @@ html[saved-theme="dark"] body tr {
   background-color: rgb(31, 31, 31);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(112, 112, 112);
+  background-color: rgb(29, 29, 29);
+  border-bottom-color: rgb(157, 157, 157);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: rgb(112, 112, 112);
-  border-right-color: rgb(112, 112, 112);
-  border-top-color: rgb(112, 112, 112);
+  border-left-color: rgb(157, 157, 157);
+  border-right-color: rgb(157, 157, 157);
+  border-top-color: rgb(157, 157, 157);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(112, 112, 112);
   font-family: "??", "??", "JetBrains Mono", monospace;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(29, 29, 29);
-  border-bottom-color: rgb(157, 157, 157);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(157, 157, 157);
-  border-right-color: rgb(157, 157, 157);
-  border-top-color: rgb(157, 157, 157);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(29, 29, 29);
-  border-bottom-color: rgb(157, 157, 157);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(157, 157, 157);
-  border-right-color: rgb(157, 157, 157);
-  border-top-color: rgb(157, 157, 157);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(157, 157, 157);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line] {
-  border-left-color: rgb(127, 187, 184);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(127, 187, 184);
-}
-
-html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(127, 187, 184);
-  border-left-color: rgb(127, 187, 184);
-  border-right-color: rgb(127, 187, 184);
-  border-top-color: rgb(127, 187, 184);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(29, 29, 29);
-  border-bottom-color: rgb(157, 157, 157);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(157, 157, 157);
-  border-right-color: rgb(157, 157, 157);
-  border-top-color: rgb(157, 157, 157);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  padding-bottom: 1.92px;
+  padding-left: 3.84px;
+  padding-right: 3.84px;
+  padding-top: 1.92px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(29, 29, 29);
-  border-bottom-color: rgb(157, 157, 157);
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: rgb(157, 157, 157);
-  border-right-color: rgb(157, 157, 157);
-  border-top-color: rgb(157, 157, 157);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(157, 157, 157);
@@ -1149,14 +1065,18 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(157, 157, 157);
-  font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+  font-family: "??", "??", "??", "Noto Sans", sans-serif;
 }
 
 html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(157, 157, 157);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-left-color: rgb(157, 157, 157);
   border-right-color: rgb(157, 157, 157);
   border-top-color: rgb(157, 157, 157);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 html[saved-theme="dark"] body img {
@@ -2468,7 +2388,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(157, 157, 157);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgb(119, 142, 85);
   border-bottom-color: rgb(119, 142, 85);
   border-bottom-left-radius: 6px;
@@ -2485,13 +2405,19 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   font-family: "??", "??", "??", "Noto Sans", sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(37, 37, 37);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(119, 142, 85);
   font-family: "Noto Sans", sans-serif;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(157, 157, 157);
+  font-size: 36.8px;
+  font-weight: 650;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -2545,19 +2471,19 @@ html[saved-theme="dark"] body hr {
   border-top-width: 1px;
   padding-left: 12px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(157, 157, 157);
-  font-family: "??", "??", "??", "Noto Sans", sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(157, 157, 157);
-  font-family: "??", "??", "??", "Noto Sans", sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(29, 29, 29);
   border-left-width: 0px;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(157, 157, 157);
+  font-family: "??", "??", "??", "Noto Sans", sans-serif;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(157, 157, 157);
+  font-family: "??", "??", "??", "Noto Sans", sans-serif;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(157, 157, 157);
@@ -2663,15 +2589,32 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(106, 106, 106);
   font-family: "??", "??", "??", "Noto Sans", sans-serif;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(157, 157, 157);
-  border-left-color: rgb(157, 157, 157);
-  border-right-color: rgb(157, 157, 157);
-  border-top-color: rgb(157, 157, 157);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(157, 157, 157);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(29, 29, 29);
+  border-color: rgb(157, 157, 157);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(157, 157, 157);
+  color: rgb(119, 142, 85);
+  font-weight: 650;
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   background-color: rgb(29, 29, 29);
   border-bottom-color: rgb(157, 157, 157);
   border-bottom-left-radius: 6px;
@@ -2700,6 +2643,61 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(112, 112, 112);
   color: rgb(112, 112, 112);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+}
+
+html[saved-theme="dark"] body .note-properties {
+  background-color: rgb(29, 29, 29);
+  border-color: rgb(157, 157, 157);
+  border-radius: 6px;
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(112, 112, 112);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(112, 112, 112);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgb(119, 142, 85);
+  border-radius: 6px;
+  color: rgb(37, 37, 37);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(112, 112, 112);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(37, 37, 37);
+  color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(157, 157, 157);
+  border-left-color: rgb(157, 157, 157);
+  border-right-color: rgb(157, 157, 157);
+  border-top-color: rgb(157, 157, 157);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(29, 29, 29);
+  border-color: rgb(157, 157, 157);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(29, 29, 29);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(157, 157, 157);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(157, 157, 157);
+  border-left-color: rgb(157, 157, 157);
+  border-right-color: rgb(157, 157, 157);
+  border-top-color: rgb(157, 157, 157);
+  color: rgb(157, 157, 157);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -3192,6 +3190,28 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-items-background: #d7d7d7 !important;
   --setting-items-border-color: #404040 !important;
   --setting-items-radius: 0px !important;
+  --shiki-active-tab-border-color: #555555 !important;
+  --shiki-code-background: #e1e1e1 !important;
+  --shiki-code-block-border-radius: 0px !important;
+  --shiki-code-comment: #6a6a6a !important;
+  --shiki-code-function: #596d3a !important;
+  --shiki-code-important: #cf5e0e !important;
+  --shiki-code-keyword: #c62f46 !important;
+  --shiki-code-normal: #555555 !important;
+  --shiki-code-property: #2b8b87 !important;
+  --shiki-code-punctuation: #555555 !important;
+  --shiki-code-string: #d3980c !important;
+  --shiki-code-value: #452c6c !important;
+  --shiki-gutter-border-color: #404040 !important;
+  --shiki-gutter-text-color: #6a6a6a !important;
+  --shiki-gutter-text-color-highlight: #555555 !important;
+  --shiki-highlight-green: rgba(rgb(89, 109, 58), .5) !important;
+  --shiki-highlight-green-background: rgba(rgb(89, 109, 58), .1) !important;
+  --shiki-highlight-neutral: #555555 !important;
+  --shiki-highlight-red: rgba(rgb(128, 32, 32), .5) !important;
+  --shiki-highlight-red-background: rgba(rgb(128, 32, 32), .1) !important;
+  --shiki-terminal-dots-color: #6a6a6a !important;
+  --shiki-tooltip-background: #a3a3a3 !important;
   --slider-s-thumb-size: 13px !important;
   --slider-thumb-border-color: #404040 !important;
   --slider-thumb-height: 16px !important;
@@ -3332,57 +3352,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(64, 64, 64);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgb(64, 64, 64);
-  color: rgb(89, 109, 58);
-  font-weight: 650;
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(236, 236, 236);
-  border-color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .note-properties {
-  background-color: rgb(225, 225, 225);
-  border-color: rgb(64, 64, 64);
-  border-radius: 6px;
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(85, 85, 85);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(85, 85, 85);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgb(89, 109, 58);
-  border-radius: 6px;
-  color: rgb(236, 236, 236);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(85, 85, 85);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(225, 225, 225);
   color: rgb(64, 64, 64);
@@ -3395,11 +3364,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(225, 225, 225);
   border-left-color: rgb(64, 64, 64);
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(236, 236, 236);
   color: rgb(64, 64, 64);
 }
 
@@ -3446,28 +3410,28 @@ html[saved-theme="light"] body html {
   --medium-light-grey-3: #c4c4c4;
   --white: #a3a3a3;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(89, 109, 58);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(89, 109, 58) none 0px;
   text-decoration-color: rgb(89, 109, 58);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(106, 106, 106);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(106, 106, 106) none 0px;
   text-decoration-color: rgb(106, 106, 106);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(106, 106, 106);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(106, 106, 106) none 0px;
   text-decoration-color: rgb(106, 106, 106);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(89, 109, 58);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(89, 109, 58) none 0px;
@@ -3509,21 +3473,21 @@ html[saved-theme="light"] body p {
   outline: rgb(85, 85, 85) none 0px;
   text-decoration-color: rgb(85, 85, 85);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(106, 106, 106);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(106, 106, 106) none 0px;
   text-decoration-color: rgb(106, 106, 106);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(89, 109, 58);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(89, 109, 58) none 0px;
   text-decoration-color: rgb(89, 109, 58);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(62, 76, 40);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
   outline: rgb(62, 76, 40) none 0px;
@@ -3539,13 +3503,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(64, 64, 64);
-  border-left-color: rgb(64, 64, 64);
-  border-right-color: rgb(64, 64, 64);
-  border-top-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -3603,80 +3560,37 @@ html[saved-theme="light"] body tr {
   background-color: rgb(215, 215, 215);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(85, 85, 85);
+  background-color: rgb(225, 225, 225);
+  border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: rgb(85, 85, 85);
-  border-right-color: rgb(85, 85, 85);
-  border-top-color: rgb(85, 85, 85);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(85, 85, 85);
   font-family: "??", "??", "JetBrains Mono", monospace;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(225, 225, 225);
-  border-bottom-color: rgb(64, 64, 64);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(64, 64, 64);
-  border-right-color: rgb(64, 64, 64);
-  border-top-color: rgb(64, 64, 64);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(225, 225, 225);
-  border-bottom-color: rgb(64, 64, 64);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(64, 64, 64);
-  border-right-color: rgb(64, 64, 64);
-  border-top-color: rgb(64, 64, 64);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body pre > code > [data-line] {
-  border-left-color: rgb(43, 139, 135);
-}
-
-html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(43, 139, 135);
-}
-
-html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(43, 139, 135);
-  border-left-color: rgb(43, 139, 135);
-  border-right-color: rgb(43, 139, 135);
-  border-top-color: rgb(43, 139, 135);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(225, 225, 225);
-  border-bottom-color: rgb(64, 64, 64);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(64, 64, 64);
-  border-right-color: rgb(64, 64, 64);
-  border-top-color: rgb(64, 64, 64);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  padding-bottom: 1.92px;
+  padding-left: 3.84px;
+  padding-right: 3.84px;
+  padding-top: 1.92px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(225, 225, 225);
-  border-bottom-color: rgb(64, 64, 64);
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-left-color: rgb(64, 64, 64);
-  border-right-color: rgb(64, 64, 64);
-  border-top-color: rgb(64, 64, 64);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(64, 64, 64);
@@ -3687,14 +3601,18 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(64, 64, 64);
-  font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+  font-family: "??", "??", "??", "Noto Sans", sans-serif;
 }
 
 html[saved-theme="light"] body figure {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 html[saved-theme="light"] body img {
@@ -5007,7 +4925,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(64, 64, 64);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgb(89, 109, 58);
   border-bottom-color: rgb(89, 109, 58);
   border-bottom-left-radius: 6px;
@@ -5024,13 +4942,19 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   font-family: "??", "??", "??", "Noto Sans", sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(236, 236, 236);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(89, 109, 58);
   font-family: "Noto Sans", sans-serif;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(64, 64, 64);
+  font-size: 36.8px;
+  font-weight: 650;
 }
 
 html[saved-theme="light"] body h2 {
@@ -5084,19 +5008,19 @@ html[saved-theme="light"] body hr {
   border-top-width: 1px;
   padding-left: 12px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(64, 64, 64);
-  font-family: "??", "??", "??", "Noto Sans", sans-serif;
-}
-
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(64, 64, 64);
-  font-family: "??", "??", "??", "Noto Sans", sans-serif;
-}
-
-html[saved-theme="light"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(225, 225, 225);
   border-left-width: 0px;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(64, 64, 64);
+  font-family: "??", "??", "??", "Noto Sans", sans-serif;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(64, 64, 64);
+  font-family: "??", "??", "??", "Noto Sans", sans-serif;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(64, 64, 64);
@@ -5202,15 +5126,32 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(106, 106, 106);
   font-family: "??", "??", "??", "Noto Sans", sans-serif;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(64, 64, 64);
-  border-left-color: rgb(64, 64, 64);
-  border-right-color: rgb(64, 64, 64);
-  border-top-color: rgb(64, 64, 64);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(64, 64, 64);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(236, 236, 236);
+  border-color: rgb(64, 64, 64);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(64, 64, 64);
+  color: rgb(89, 109, 58);
+  font-weight: 650;
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   background-color: rgb(225, 225, 225);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 6px;
@@ -5239,6 +5180,61 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(85, 85, 85);
   color: rgb(85, 85, 85);
   font-family: "??", "Noto Sans", sans-serif, "Noto Sans", sans-serif;
+}
+
+html[saved-theme="light"] body .note-properties {
+  background-color: rgb(225, 225, 225);
+  border-color: rgb(64, 64, 64);
+  border-radius: 6px;
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(85, 85, 85);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(85, 85, 85);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgb(89, 109, 58);
+  border-radius: 6px;
+  color: rgb(236, 236, 236);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(85, 85, 85);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(236, 236, 236);
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(225, 225, 225);
+  border-color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(225, 225, 225);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(64, 64, 64);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
+  color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body .navigation-progress {

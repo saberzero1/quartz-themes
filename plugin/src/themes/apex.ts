@@ -123,6 +123,11 @@ export const theme: ThemeData = {
   --search-icon-color: #707070 !important;
   --search-result-background: transparent !important;
   --setting-group-heading-color: #ccc !important;
+  --shiki-active-tab-border-color: #707070 !important;
+  --shiki-code-normal: #707070 !important;
+  --shiki-code-punctuation: #707070 !important;
+  --shiki-gutter-text-color-highlight: #707070 !important;
+  --shiki-highlight-neutral: #707070 !important;
   --status-bar-background: #141414 !important;
   --status-bar-border-color: transparent !important;
   --status-bar-text-color: #707070 !important;
@@ -164,43 +169,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(204, 204, 204);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(20, 20, 20);
-  border-color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(112, 112, 112);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(112, 112, 112);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(112, 112, 112);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(20, 20, 20);
   color: rgb(204, 204, 204);
@@ -214,34 +182,29 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(20, 20, 20);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(204, 204, 204);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(204, 204, 204);
   font-family: "Geist Mono", ui-monospace, monospace;
   outline: rgb(204, 204, 204) none 0px;
   text-decoration-color: rgb(204, 204, 204);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(204, 204, 204);
   font-family: "Geist Mono", ui-monospace, monospace;
   outline: rgb(204, 204, 204) none 0px;
   text-decoration-color: rgb(204, 204, 204);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(204, 204, 204);
   font-family: "Geist Mono", ui-monospace, monospace;
   outline: rgb(204, 204, 204) none 0px;
   text-decoration-color: rgb(204, 204, 204);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(204, 204, 204);
   font-family: "Geist Mono", ui-monospace, monospace;
   outline: rgb(204, 204, 204) none 0px;
@@ -285,15 +248,15 @@ html[saved-theme="dark"] body p {
   outline: rgb(112, 112, 112) none 0px;
   text-decoration-color: rgb(112, 112, 112);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   font-family: "Geist Mono", ui-monospace, monospace;
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   font-family: "Geist Mono", ui-monospace, monospace;
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   font-family: "Geist Mono", ui-monospace, monospace;
   text-decoration: underline rgb(112, 112, 112);
   text-decoration-color: rgb(112, 112, 112);
@@ -308,13 +271,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(204, 204, 204);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(204, 204, 204);
-  border-left-color: rgb(204, 204, 204);
-  border-right-color: rgb(204, 204, 204);
-  border-top-color: rgb(204, 204, 204);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -351,15 +307,18 @@ html[saved-theme="dark"] body th {
   color: rgb(204, 204, 204);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(204, 204, 204);
-  border-left-color: rgb(204, 204, 204);
-  border-right-color: rgb(204, 204, 204);
-  border-top-color: rgb(204, 204, 204);
   color: rgb(204, 204, 204);
 }
 
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  color: rgb(204, 204, 204);
+html[saved-theme="dark"] body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(204, 204, 204);
@@ -370,7 +329,6 @@ html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-reh
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(204, 204, 204);
-  font-family: "Geist Mono", ui-monospace, monospace;
 }
 
 html[saved-theme="dark"] body figure {
@@ -1646,6 +1604,11 @@ html[saved-theme="dark"] body h1 {
   font-family: Geist, system-ui, sans-serif;
 }
 
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(204, 204, 204);
+  font-size: 25.6px;
+}
+
 html[saved-theme="dark"] body h2 {
   color: rgb(204, 204, 204);
   font-family: Geist, system-ui, sans-serif;
@@ -1684,11 +1647,11 @@ html[saved-theme="dark"] body hr {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(112, 112, 112);
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(112, 112, 112);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
@@ -1774,15 +1737,30 @@ html[saved-theme="dark"] body .darkmode svg {
   border-top-color: rgb(112, 112, 112);
   color: rgb(112, 112, 112);
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(204, 204, 204);
-  border-left-color: rgb(204, 204, 204);
-  border-right-color: rgb(204, 204, 204);
-  border-top-color: rgb(204, 204, 204);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(204, 204, 204);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(204, 204, 204);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(204, 204, 204);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(204, 204, 204);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(20, 20, 20);
+  border-color: rgb(204, 204, 204);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  color: rgb(204, 204, 204);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   color: rgb(112, 112, 112);
   font-family: "Geist Mono", ui-monospace, monospace;
 }
@@ -1794,6 +1772,45 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(112, 112, 112);
   color: rgb(112, 112, 112);
   font-family: "Geist Mono", ui-monospace, monospace;
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(112, 112, 112);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(112, 112, 112);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(112, 112, 112);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(204, 204, 204);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(204, 204, 204);
+  border-left-color: rgb(204, 204, 204);
+  border-right-color: rgb(204, 204, 204);
+  border-top-color: rgb(204, 204, 204);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(20, 20, 20);
+  border-color: rgb(204, 204, 204);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(204, 204, 204);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(204, 204, 204);
+  border-left-color: rgb(204, 204, 204);
+  border-right-color: rgb(204, 204, 204);
+  border-top-color: rgb(204, 204, 204);
+  color: rgb(204, 204, 204);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -1942,6 +1959,11 @@ html[saved-theme="dark"] body sup {
   --search-icon-color: #b5b3b1 !important;
   --search-result-background: #f7f7f7 !important;
   --setting-group-heading-color: #1a1a1a !important;
+  --shiki-active-tab-border-color: #b5b3b1 !important;
+  --shiki-code-normal: #b5b3b1 !important;
+  --shiki-code-punctuation: #b5b3b1 !important;
+  --shiki-gutter-text-color-highlight: #b5b3b1 !important;
+  --shiki-highlight-neutral: #b5b3b1 !important;
   --status-bar-background: #fcfcfc !important;
   --status-bar-border-color: transparent !important;
   --status-bar-text-color: #b5b3b1 !important;
@@ -1983,43 +2005,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(26, 26, 26);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  color: rgb(26, 26, 26);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(26, 26, 26);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(26, 26, 26);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(26, 26, 26);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(26, 26, 26);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(247, 247, 247);
-  border-color: rgb(26, 26, 26);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(181, 179, 177);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(181, 179, 177);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(181, 179, 177);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(252, 252, 252);
   color: rgb(26, 26, 26);
@@ -2033,34 +2018,29 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(252, 252, 252);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(26, 26, 26);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(247, 247, 247);
-  color: rgb(26, 26, 26);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(26, 26, 26);
   font-family: "Geist Mono", ui-monospace, monospace;
   outline: rgb(26, 26, 26) none 0px;
   text-decoration-color: rgb(26, 26, 26);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(26, 26, 26);
   font-family: "Geist Mono", ui-monospace, monospace;
   outline: rgb(26, 26, 26) none 0px;
   text-decoration-color: rgb(26, 26, 26);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(26, 26, 26);
   font-family: "Geist Mono", ui-monospace, monospace;
   outline: rgb(26, 26, 26) none 0px;
   text-decoration-color: rgb(26, 26, 26);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(26, 26, 26);
   font-family: "Geist Mono", ui-monospace, monospace;
   outline: rgb(26, 26, 26) none 0px;
@@ -2104,15 +2084,15 @@ html[saved-theme="light"] body p {
   outline: rgb(181, 179, 177) none 0px;
   text-decoration-color: rgb(181, 179, 177);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   font-family: "Geist Mono", ui-monospace, monospace;
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   font-family: "Geist Mono", ui-monospace, monospace;
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   font-family: "Geist Mono", ui-monospace, monospace;
   text-decoration: underline rgb(181, 179, 177);
   text-decoration-color: rgb(181, 179, 177);
@@ -2127,13 +2107,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(26, 26, 26);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(26, 26, 26);
-  border-left-color: rgb(26, 26, 26);
-  border-right-color: rgb(26, 26, 26);
-  border-top-color: rgb(26, 26, 26);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2170,15 +2143,18 @@ html[saved-theme="light"] body th {
   color: rgb(26, 26, 26);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(26, 26, 26);
-  border-left-color: rgb(26, 26, 26);
-  border-right-color: rgb(26, 26, 26);
-  border-top-color: rgb(26, 26, 26);
   color: rgb(26, 26, 26);
 }
 
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  color: rgb(26, 26, 26);
+html[saved-theme="light"] body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(26, 26, 26);
@@ -2189,7 +2165,6 @@ html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-re
 
 html[saved-theme="light"] body figcaption {
   color: rgb(26, 26, 26);
-  font-family: "Geist Mono", ui-monospace, monospace;
 }
 
 html[saved-theme="light"] body figure {
@@ -3465,6 +3440,11 @@ html[saved-theme="light"] body h1 {
   font-family: Geist, system-ui, sans-serif;
 }
 
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(26, 26, 26);
+  font-size: 25.6px;
+}
+
 html[saved-theme="light"] body h2 {
   color: rgb(26, 26, 26);
   font-family: Geist, system-ui, sans-serif;
@@ -3503,11 +3483,11 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(181, 179, 177);
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(181, 179, 177);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
@@ -3593,15 +3573,30 @@ html[saved-theme="light"] body .darkmode svg {
   border-top-color: rgb(181, 179, 177);
   color: rgb(181, 179, 177);
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(26, 26, 26);
-  border-left-color: rgb(26, 26, 26);
-  border-right-color: rgb(26, 26, 26);
-  border-top-color: rgb(26, 26, 26);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(26, 26, 26);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(26, 26, 26);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(26, 26, 26);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(26, 26, 26);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(247, 247, 247);
+  border-color: rgb(26, 26, 26);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  color: rgb(26, 26, 26);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   color: rgb(181, 179, 177);
   font-family: "Geist Mono", ui-monospace, monospace;
 }
@@ -3613,6 +3608,45 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(181, 179, 177);
   color: rgb(181, 179, 177);
   font-family: "Geist Mono", ui-monospace, monospace;
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(181, 179, 177);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(181, 179, 177);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(181, 179, 177);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(247, 247, 247);
+  color: rgb(26, 26, 26);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(26, 26, 26);
+  border-left-color: rgb(26, 26, 26);
+  border-right-color: rgb(26, 26, 26);
+  border-top-color: rgb(26, 26, 26);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(252, 252, 252);
+  border-color: rgb(26, 26, 26);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(26, 26, 26);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(26, 26, 26);
+  border-left-color: rgb(26, 26, 26);
+  border-right-color: rgb(26, 26, 26);
+  border-top-color: rgb(26, 26, 26);
+  color: rgb(26, 26, 26);
 }
 
 html[saved-theme="light"] body .navigation-progress {

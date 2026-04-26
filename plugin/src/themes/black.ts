@@ -49,19 +49,11 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   background-color: rgb(0, 0, 0);
 }
 
-html body .canvas-sidebar {
-  background-color: rgb(0, 0, 0);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(0, 0, 0);
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(0, 0, 0);
-}
-
-html body div#quartz-root {
   background-color: rgb(0, 0, 0);
 }`,
     checkboxes: `html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
@@ -427,6 +419,19 @@ html body .search > .search-container > .search-space > input {
   --callout-color: 2, 122, 255;
 }`,
     footer: `html body footer {
+  background-color: rgb(0, 0, 0);
+}`,
+    canvas: `html body .canvas-sidebar {
+  background-color: rgb(0, 0, 0);
+}`,
+    properties: `html body div#quartz-root {
+  background-color: rgb(0, 0, 0);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(0, 0, 0);
+}
+
+html body .stacked-page-header {
   background-color: rgb(0, 0, 0);
 }`,
     misc: `html body .navigation-progress {

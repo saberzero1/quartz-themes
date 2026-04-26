@@ -4,79 +4,13 @@
     "color": "color(srgb 0.1426 0.32234 0.3934 / 0.7)"
   },
   "_preBlock": {
-    "backgroundColor": "rgba(0, 0, 0, 0)",
-    "borderColor": "color(srgb 1 1 1 / 0.08)"
-  },
-  "atom": {
-    "color": "color(srgb 0.1426 0.32234 0.3934 / 0.7)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "comment": {
-    "color": "color(srgb 0.67825 0.902925 0.99175)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "def": {
-    "color": "color(srgb 0.1426 0.32234 0.3934 / 0.7)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
+    "backgroundColor": "color(srgb 0.895749 0.961534 0.987542)",
+    "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {
     "color": "color(srgb 0.1426 0.32234 0.3934)",
     "fontStyle": "normal",
     "fontWeight": "900",
-    "textDecoration": "none"
-  },
-  "keyword": {
-    "color": "rgb(245, 169, 184)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "number": {
-    "color": "rgb(120, 82, 238)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "operator": {
-    "color": "rgb(233, 49, 71)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "property": {
-    "color": "rgb(224, 172, 0)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string": {
-    "color": "rgb(143, 188, 143)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string-2": {
-    "color": "rgb(143, 188, 143)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable": {
-    "color": "rgb(0, 191, 188)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable-2": {
-    "color": "rgb(0, 191, 188)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
     "textDecoration": "none"
   }
 }

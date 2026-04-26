@@ -7099,10 +7099,149 @@
       "license": { "name": "MIT License", "spdx_id": "MIT" }
     },
     "retroma": {
-      "compatibility": ["checking"],
+      "compatibility": ["partial", "collection"],
       "modes": ["dark", "light"],
       "use_extended_syntax": false,
-      "style_settings": {},
+      "style_settings": {
+        "retroma-obsidian-theme@@theme-color-scheme-selection": "Analogous",
+        "retroma-obsidian-theme@@theme-variant": "Groovy",
+        "retroma-obsidian-theme@@window-border-radius": "12px",
+        "retroma-obsidian-theme@@button-border-radius": "8px",
+        "retroma-obsidian-theme@@theme-font-selection": "default"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "retroma.analogous-reversed": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "retroma-obsidian-theme@@theme-color-scheme-selection": "cs-analogous-colors-reversed",
+        "retroma-obsidian-theme@@theme-variant": "Groovy",
+        "retroma-obsidian-theme@@window-border-radius": "12px",
+        "retroma-obsidian-theme@@button-border-radius": "8px",
+        "retroma-obsidian-theme@@theme-font-selection": "default"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "retroma.split-complementary": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "retroma-obsidian-theme@@theme-color-scheme-selection": "cs-split-complementary-colors",
+        "retroma-obsidian-theme@@theme-variant": "Groovy",
+        "retroma-obsidian-theme@@window-border-radius": "12px",
+        "retroma-obsidian-theme@@button-border-radius": "8px",
+        "retroma-obsidian-theme@@theme-font-selection": "default"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "retroma.split-complementary-reversed": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "retroma-obsidian-theme@@theme-color-scheme-selection": "cs-split-complementary-colors-reversed",
+        "retroma-obsidian-theme@@theme-variant": "Groovy",
+        "retroma-obsidian-theme@@window-border-radius": "12px",
+        "retroma-obsidian-theme@@button-border-radius": "8px",
+        "retroma-obsidian-theme@@theme-font-selection": "default"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "retroma.triadic": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "retroma-obsidian-theme@@theme-color-scheme-selection": "cs-triadic-colors",
+        "retroma-obsidian-theme@@theme-variant": "Groovy",
+        "retroma-obsidian-theme@@window-border-radius": "12px",
+        "retroma-obsidian-theme@@button-border-radius": "8px",
+        "retroma-obsidian-theme@@theme-font-selection": "default"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "retroma.triadic-reversed": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "retroma-obsidian-theme@@theme-color-scheme-selection": "cs-triadic-colors-reversed",
+        "retroma-obsidian-theme@@theme-variant": "Groovy",
+        "retroma-obsidian-theme@@window-border-radius": "12px",
+        "retroma-obsidian-theme@@button-border-radius": "8px",
+        "retroma-obsidian-theme@@theme-font-selection": "default"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "retroma.monochromatic": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "retroma-obsidian-theme@@theme-color-scheme-selection": "cs-monochromatic-colors",
+        "retroma-obsidian-theme@@theme-variant": "Groovy",
+        "retroma-obsidian-theme@@window-border-radius": "12px",
+        "retroma-obsidian-theme@@button-border-radius": "8px",
+        "retroma-obsidian-theme@@theme-font-selection": "default"
+      },
+      "variations": [],
+      "extra_extract_files": [],
+      "snippets": ["checkboxes-reference-set"],
+      "extras": [],
+      "fixes": [],
+      "fonts": [],
+      "license": { "name": "MIT License", "spdx_id": "MIT" }
+    },
+    "retroma.monochromatic-reversed": {
+      "compatibility": ["partial", "collection"],
+      "modes": ["dark", "light"],
+      "use_extended_syntax": false,
+      "style_settings": {
+        "retroma-obsidian-theme@@theme-color-scheme-selection": "cs-monochromatic-colors-reversed",
+        "retroma-obsidian-theme@@theme-variant": "Groovy",
+        "retroma-obsidian-theme@@window-border-radius": "12px",
+        "retroma-obsidian-theme@@button-border-radius": "8px",
+        "retroma-obsidian-theme@@theme-font-selection": "default"
+      },
       "variations": [],
       "extra_extract_files": [],
       "snippets": ["checkboxes-reference-set"],

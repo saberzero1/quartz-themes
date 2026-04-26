@@ -782,6 +782,19 @@ export const theme: ThemeData = {
   --shadow-l: none !important;
   --shadow-s: none !important;
   --shape-roundish: 6px !important;
+  --shiki-active-tab-border-color: oklch(0.68 0 0) !important;
+  --shiki-code-background: oklch(0.18 0 0) !important;
+  --shiki-code-block-border-radius: 3px !important;
+  --shiki-code-block-spacing: 0.75em !important;
+  --shiki-code-comment: oklch(0.48 0 0) !important;
+  --shiki-code-normal: oklch(0.68 0 0) !important;
+  --shiki-code-punctuation: oklch(0.68 0 0) !important;
+  --shiki-gutter-border-color: oklch(0.3 0 0) !important;
+  --shiki-gutter-text-color: oklch(0.48 0 0) !important;
+  --shiki-gutter-text-color-highlight: oklch(0.68 0 0) !important;
+  --shiki-highlight-neutral: oklch(0.68 0 0) !important;
+  --shiki-terminal-dots-color: oklch(0.48 0 0) !important;
+  --shiki-tooltip-background: rgb(0 0 0 / 80%) !important;
   --sidebar-icon-padding: 5px !important;
   --sidebar-icon-size: 18px !important;
   --sidebar-icon-size-hover: 20.5px !important;
@@ -904,59 +917,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: oklch(0.98 0 0);
 }
 
-html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
-  background-color: oklch(0.13 0 0);
-}
-
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: oklch(0.3 0 0);
-  color: oklch(0.98 0 0);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: oklch(0.98 0 0);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: oklch(0.98 0 0);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: oklch(0.98 0 0);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: oklch(0.98 0 0);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: oklch(0.19 0 0);
-  border-color: oklch(0.3 0 0);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  background-color: oklch(0.17 0 0);
-  border-color: oklch(0.3 0 0);
-  border-radius: 3px;
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: oklch(0.68 0 0);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: oklch(0.68 0 0);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  border-radius: 3px;
-  color: oklch(0.707 0.1737 155.3);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: oklch(0.68 0 0);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: oklch(0.17 0 0);
   color: oklch(0.98 0 0);
@@ -970,34 +930,29 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: oklch(0.19 0 0);
   border-left-color: oklch(0.3 0 0);
   color: oklch(0.98 0 0);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: oklch(0.13 0 0);
-  color: oklch(0.98 0 0);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: oklch(0.98 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.98 0 0) none 0px;
   text-decoration-color: oklch(0.98 0 0);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: oklch(0.98 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.98 0 0) none 0px;
   text-decoration-color: oklch(0.98 0 0);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: oklch(0.98 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.98 0 0) none 0px;
   text-decoration-color: oklch(0.98 0 0);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: oklch(0.98 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.98 0 0) none 0px;
@@ -1040,21 +995,21 @@ html[saved-theme="dark"] body p {
   outline: oklch(0.68 0 0) none 0px;
   text-decoration-color: oklch(0.68 0 0);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: oklch(0.707 0.1737 155.3);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.707 0.1737 155.3) none 0px;
   text-decoration-color: oklch(0.707 0.1737 155.3);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: oklch(0.707 0.1737 155.3);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.707 0.1737 155.3) none 0px;
   text-decoration-color: oklch(0.707 0.1737 155.3);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: oklch(0.707 0.1737 155.3);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.707 0.1737 155.3) none 0px;
@@ -1069,13 +1024,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: oklch(0.98 0 0);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: oklch(0.98 0 0);
-  border-left-color: oklch(0.98 0 0);
-  border-right-color: oklch(0.98 0 0);
-  border-top-color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -1140,53 +1088,17 @@ html[saved-theme="dark"] body tr {
   background-color: oklch(0.19 0 0);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: oklch(0.98 0 0);
+  background-color: oklch(0.18 0 0);
+  border-bottom-color: oklch(0.3 0 0);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  border-left-color: oklch(0.98 0 0);
-  border-right-color: oklch(0.98 0 0);
-  border-top-color: oklch(0.98 0 0);
+  border-left-color: oklch(0.3 0 0);
+  border-right-color: oklch(0.3 0 0);
+  border-top-color: oklch(0.3 0 0);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   color: oklch(0.98 0 0);
   font-family: "??", "DM Mono", "DM Mono";
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: oklch(0.18 0 0);
-  border-bottom-color: oklch(0.3 0 0);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-left-color: oklch(0.3 0 0);
-  border-right-color: oklch(0.3 0 0);
-  border-top-color: oklch(0.3 0 0);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: oklch(0.18 0 0);
-  border-bottom-color: oklch(0.3 0 0);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-left-color: oklch(0.3 0 0);
-  border-right-color: oklch(0.3 0 0);
-  border-top-color: oklch(0.3 0 0);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  color: oklch(0.98 0 0);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: oklch(0.18 0 0);
-  border-bottom-color: oklch(0.3 0 0);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-left-color: oklch(0.3 0 0);
-  border-right-color: oklch(0.3 0 0);
-  border-top-color: oklch(0.3 0 0);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -1209,14 +1121,18 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: oklch(0.98 0 0);
-  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }
 
 html[saved-theme="dark"] body figure {
   border-bottom-color: oklch(0.98 0 0);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   border-left-color: oklch(0.98 0 0);
   border-right-color: oklch(0.98 0 0);
   border-top-color: oklch(0.98 0 0);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 html[saved-theme="dark"] body img {
@@ -4072,7 +3988,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: oklch(0.98 0 0);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-left-radius: 3px;
@@ -4080,13 +3996,19 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: oklch(0.707 0.1737 155.3);
 }
 
 html[saved-theme="dark"] body h1 {
   color: oklch(0.975 0.03 202.51);
   font-family: Manrope, "Inter 4.1", "DM Sans";
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: oklch(0.98 0 0);
+  font-size: 28.8px;
+  font-weight: 600;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -4139,12 +4061,12 @@ html[saved-theme="dark"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: oklch(0.68 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: oklch(0.68 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }`,
@@ -4256,15 +4178,35 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: oklch(0.48 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: oklch(0.98 0 0);
-  border-left-color: oklch(0.98 0 0);
-  border-right-color: oklch(0.98 0 0);
-  border-top-color: oklch(0.98 0 0);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: oklch(0.98 0 0);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: oklch(0.19 0 0);
+  border-color: oklch(0.3 0 0);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
+  background-color: oklch(0.13 0 0);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  border-color: oklch(0.3 0 0);
+  color: oklch(0.98 0 0);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   background-color: oklch(0.17 0 0);
   border-bottom-color: oklch(0.3 0 0);
   border-bottom-left-radius: 3px;
@@ -4289,6 +4231,60 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: oklch(0.68 0 0);
   color: oklch(0.68 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+}
+
+html[saved-theme="dark"] body .note-properties {
+  background-color: oklch(0.17 0 0);
+  border-color: oklch(0.3 0 0);
+  border-radius: 3px;
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: oklch(0.68 0 0);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: oklch(0.68 0 0);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  border-radius: 3px;
+  color: oklch(0.707 0.1737 155.3);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: oklch(0.68 0 0);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: oklch(0.13 0 0);
+  color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: oklch(0.98 0 0);
+  border-left-color: oklch(0.98 0 0);
+  border-right-color: oklch(0.98 0 0);
+  border-top-color: oklch(0.98 0 0);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: oklch(0.17 0 0);
+  border-color: oklch(0.98 0 0);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: oklch(0.19 0 0);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: oklch(0.98 0 0);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: oklch(0.98 0 0);
+  border-left-color: oklch(0.98 0 0);
+  border-right-color: oklch(0.98 0 0);
+  border-top-color: oklch(0.98 0 0);
+  color: oklch(0.98 0 0);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -5002,6 +4998,19 @@ html[saved-theme="dark"] body ul.tags > li {
   --shadow-l: none !important;
   --shadow-s: none !important;
   --shape-roundish: 6px !important;
+  --shiki-active-tab-border-color: oklch(0.3 0 0) !important;
+  --shiki-code-background: oklch(0.97 0 0) !important;
+  --shiki-code-block-border-radius: 3px !important;
+  --shiki-code-block-spacing: 0.75em !important;
+  --shiki-code-comment: oklch(0.6 0 0) !important;
+  --shiki-code-normal: oklch(0.3 0 0) !important;
+  --shiki-code-punctuation: oklch(0.3 0 0) !important;
+  --shiki-gutter-border-color: oklch(0.8 0 0) !important;
+  --shiki-gutter-text-color: oklch(0.6 0 0) !important;
+  --shiki-gutter-text-color-highlight: oklch(0.3 0 0) !important;
+  --shiki-highlight-neutral: oklch(0.3 0 0) !important;
+  --shiki-terminal-dots-color: oklch(0.6 0 0) !important;
+  --shiki-tooltip-background: rgb(0 0 0 / 80%) !important;
   --sidebar-icon-padding: 5px !important;
   --sidebar-icon-size: 18px !important;
   --sidebar-icon-size-hover: 20.5px !important;
@@ -5129,60 +5138,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: oklch(0 0 0);
 }
 
-html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
-  background-color: oklch(1 0 0);
-}
-
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: oklch(0.8 0 0);
-  color: oklch(0 0 0);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: oklch(0 0 0);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: oklch(0 0 0);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: oklch(0 0 0);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: oklch(0 0 0);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: oklch(0.95 0 0);
-  border-color: oklch(0.8 0 0);
-}
-
-html[saved-theme="light"] body .note-properties {
-  background-color: oklch(0.98 0 0);
-  border-color: oklch(0.8 0 0);
-  border-radius: 3px;
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: oklch(0.3 0 0);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: oklch(0.3 0 0);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: oklch(0.707 0.1737 155.3 / 0.1);
-  border-radius: 3px;
-  color: oklch(0.4014 0.0638 202.51);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: oklch(0.3 0 0);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: oklch(0.98 0 0);
   color: oklch(0 0 0);
@@ -5196,34 +5151,29 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: oklch(0.95 0 0);
   border-left-color: oklch(0.8 0 0);
   color: oklch(0 0 0);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: oklch(1 0 0);
-  color: oklch(0 0 0);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: oklch(0 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0 0 0) none 0px;
   text-decoration-color: oklch(0 0 0);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: oklch(0 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0 0 0) none 0px;
   text-decoration-color: oklch(0 0 0);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: oklch(0 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0 0 0) none 0px;
   text-decoration-color: oklch(0 0 0);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: oklch(0 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0 0 0) none 0px;
@@ -5266,21 +5216,21 @@ html[saved-theme="light"] body p {
   outline: oklch(0.3 0 0) none 0px;
   text-decoration-color: oklch(0.3 0 0);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: oklch(0.4014 0.0638 202.51);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.4014 0.0638 202.51) none 0px;
   text-decoration-color: oklch(0.4014 0.0638 202.51);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: oklch(0.4014 0.0638 202.51);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.4014 0.0638 202.51) none 0px;
   text-decoration-color: oklch(0.4014 0.0638 202.51);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: oklch(0.4014 0.0638 202.51);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
   outline: oklch(0.4014 0.0638 202.51) none 0px;
@@ -5297,13 +5247,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: oklch(0 0 0);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: oklch(0 0 0);
-  border-left-color: oklch(0 0 0);
-  border-right-color: oklch(0 0 0);
-  border-top-color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -5368,53 +5311,17 @@ html[saved-theme="light"] body tr {
   background-color: oklch(0.95 0 0);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: oklch(0 0 0);
+  background-color: oklch(0.97 0 0);
+  border-bottom-color: oklch(0.8 0 0);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  border-left-color: oklch(0 0 0);
-  border-right-color: oklch(0 0 0);
-  border-top-color: oklch(0 0 0);
+  border-left-color: oklch(0.8 0 0);
+  border-right-color: oklch(0.8 0 0);
+  border-top-color: oklch(0.8 0 0);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   color: oklch(0 0 0);
   font-family: "??", "DM Mono", "DM Mono";
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: oklch(0.97 0 0);
-  border-bottom-color: oklch(0.8 0 0);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-left-color: oklch(0.8 0 0);
-  border-right-color: oklch(0.8 0 0);
-  border-top-color: oklch(0.8 0 0);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: oklch(0.97 0 0);
-  border-bottom-color: oklch(0.8 0 0);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-left-color: oklch(0.8 0 0);
-  border-right-color: oklch(0.8 0 0);
-  border-top-color: oklch(0.8 0 0);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  color: oklch(0 0 0);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: oklch(0.97 0 0);
-  border-bottom-color: oklch(0.8 0 0);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-left-color: oklch(0.8 0 0);
-  border-right-color: oklch(0.8 0 0);
-  border-top-color: oklch(0.8 0 0);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -5437,14 +5344,18 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: oklch(0 0 0);
-  font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+  font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }
 
 html[saved-theme="light"] body figure {
   border-bottom-color: oklch(0 0 0);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   border-left-color: oklch(0 0 0);
   border-right-color: oklch(0 0 0);
   border-top-color: oklch(0 0 0);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 html[saved-theme="light"] body img {
@@ -8300,7 +8211,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: oklch(0 0 0);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: oklch(0.707 0.1737 155.3 / 0.1);
   border-bottom-color: oklch(0.707 0.1737 155.3 / 0.15);
   border-bottom-left-radius: 3px;
@@ -8313,13 +8224,19 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: oklch(0.4014 0.0638 202.51);
 }
 
 html[saved-theme="light"] body h1 {
   color: oklch(0.975 0.03 202.51);
   font-family: Manrope, "Inter 4.1", "DM Sans";
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: oklch(0 0 0);
+  font-size: 28.8px;
+  font-weight: 600;
 }
 
 html[saved-theme="light"] body h2 {
@@ -8372,12 +8289,12 @@ html[saved-theme="light"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: oklch(0.3 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: oklch(0.3 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }`,
@@ -8489,15 +8406,35 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: oklch(0.6 0 0);
   font-family: "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: oklch(0 0 0);
-  border-left-color: oklch(0 0 0);
-  border-right-color: oklch(0 0 0);
-  border-top-color: oklch(0 0 0);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: oklch(0 0 0);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: oklch(0.95 0 0);
+  border-color: oklch(0.8 0 0);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
+  background-color: oklch(1 0 0);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  border-color: oklch(0.8 0 0);
+  color: oklch(0 0 0);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   background-color: oklch(0.98 0 0);
   border-bottom-color: oklch(0.8 0 0);
   border-bottom-left-radius: 3px;
@@ -8522,6 +8459,61 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: oklch(0.3 0 0);
   color: oklch(0.3 0 0);
   font-family: "??", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "??", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+}
+
+html[saved-theme="light"] body .note-properties {
+  background-color: oklch(0.98 0 0);
+  border-color: oklch(0.8 0 0);
+  border-radius: 3px;
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: oklch(0.3 0 0);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: oklch(0.3 0 0);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: oklch(0.707 0.1737 155.3 / 0.1);
+  border-radius: 3px;
+  color: oklch(0.4014 0.0638 202.51);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: oklch(0.3 0 0);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: oklch(1 0 0);
+  color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: oklch(0 0 0);
+  border-left-color: oklch(0 0 0);
+  border-right-color: oklch(0 0 0);
+  border-top-color: oklch(0 0 0);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: oklch(0.98 0 0);
+  border-color: oklch(0 0 0);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: oklch(0.95 0 0);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: oklch(0 0 0);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: oklch(0 0 0);
+  border-left-color: oklch(0 0 0);
+  border-right-color: oklch(0 0 0);
+  border-top-color: oklch(0 0 0);
+  color: oklch(0 0 0);
 }
 
 html[saved-theme="light"] body .navigation-progress {

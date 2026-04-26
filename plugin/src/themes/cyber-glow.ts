@@ -293,6 +293,12 @@ export const theme: ThemeData = {
   --search-result-background: rgba(0, 0, 0, 0.45) !important;
   --secondary: hsl(198, 63%, 53.2%) !important;
   --setting-items-radius: 10px !important;
+  --shiki-code-background: rgba(30, 30, 30, 0.75) !important;
+  --shiki-code-block-border-radius: 3px !important;
+  --shiki-code-comment: #b3b3b3 !important;
+  --shiki-gutter-text-color: #b3b3b3 !important;
+  --shiki-terminal-dots-color: #b3b3b3 !important;
+  --shiki-tooltip-background: #171717b7 !important;
   --slider-thumb-border-color: hsl(199, 27%, 32%) !important;
   --slider-thumb-border-width: 7px !important;
   --status-bar-background: rgba(30, 30, 30, 0.45) !important;
@@ -363,19 +369,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   background-color: rgba(0, 0, 0, 0);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgb(60, 166, 211);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgba(30, 30, 30, 0.9);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(76, 173, 214, 0.1);
-  color: rgb(60, 166, 211);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -387,32 +380,8 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgba(0, 0, 0, 0.45);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="dark"] body .text-highlight {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="dark"] body article > h1 {
+    typography: `html[saved-theme="dark"] body .markdown-rendered > h1 {
   --font-weight: 500;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(60, 166, 211);
@@ -442,6 +411,26 @@ html[saved-theme="dark"] body article > h1 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="dark"] body .text-highlight {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }
 
 html[saved-theme="dark"] body del {
@@ -629,33 +618,28 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
 html[saved-theme="dark"] body p {
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(255, 196, 0);
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
   outline: rgb(255, 196, 0) none 0px;
   text-decoration-color: rgb(255, 196, 0);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 165, 0);
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
   outline: rgb(255, 165, 0) none 0px;
   text-decoration-color: rgb(255, 165, 0);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(60, 166, 211);
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
   outline: rgb(60, 166, 211) none 0px;
   text-decoration: underline rgba(76, 173, 214, 0.3);
   text-decoration-color: rgba(76, 173, 214, 0.3);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-}
-
-html[saved-theme="dark"] body ul.overflow {
+    lists: `html[saved-theme="dark"] body ul.overflow {
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }`,
@@ -690,49 +674,20 @@ html[saved-theme="dark"] body th {
   border-top-color: rgb(60, 166, 211);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(218, 218, 218);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(218, 218, 218);
+  border-right-color: rgb(218, 218, 218);
+  border-top-color: rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   font-family: OxaniumFira;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgba(30, 30, 30, 0.75);
-  border-bottom-color: rgb(218, 218, 218);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-width: 1px;
-  border-top-color: rgb(218, 218, 218);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-top-width: 1px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgba(30, 30, 30, 0.75);
-  border-bottom-color: rgb(218, 218, 218);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-width: 1px;
-  border-top-color: rgb(218, 218, 218);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-top-width: 1px;
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgba(30, 30, 30, 0.75);
-  border-bottom-color: rgb(218, 218, 218);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-width: 1px;
-  border-top-color: rgb(218, 218, 218);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-top-width: 1px;
-  padding-bottom: 24px;
-  padding-top: 24px;
+  padding-bottom: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 12px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -741,6 +696,8 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-bottom-width: 1px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgb(218, 218, 218);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -750,6 +707,13 @@ html[saved-theme="dark"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="dark"] body figcaption {
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="dark"] body figure {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   border-bottom-left-radius: 3px;
@@ -2503,7 +2467,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(76, 173, 214, 0.1);
   border-bottom-color: rgba(76, 173, 214, 0.15);
   border-left-color: rgba(76, 173, 214, 0.15);
@@ -2512,13 +2476,18 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(60, 166, 211);
 }
 
 html[saved-theme="dark"] body h1 {
   font-family: "Space Wham", Inter;
   text-shadow: rgb(60, 166, 211) 0px 0px 5px, rgb(60, 166, 211) 0px 0px 10px, rgb(60, 166, 211) 0px 0px 20px, rgb(60, 166, 211) 0px 0px 40px, rgb(60, 166, 211) 0px 0px 45px;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  font-size: 34px;
+  font-weight: 500;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -2569,20 +2538,20 @@ html[saved-theme="dark"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer {
+    explorer: `html[saved-theme="dark"] body .nav-files-container {
   background-color: rgba(0, 0, 0, 0.45);
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="dark"] body .explorer .folder-outer > ul {
+html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(60, 166, 211);
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 3px;
@@ -2646,7 +2615,13 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(179, 179, 179);
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }`,
-    misc: `html[saved-theme="dark"] body .metadata {
+    canvas: `html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgba(30, 30, 30, 0.9);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(60, 166, 211);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }
 
@@ -2654,7 +2629,27 @@ html[saved-theme="dark"] body .metadata-properties {
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="dark"] body .navigation-progress {
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(76, 173, 214, 0.1);
+  color: rgb(60, 166, 211);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0);
+}`,
+    misc: `html[saved-theme="dark"] body .navigation-progress {
   background-color: rgba(30, 30, 30, 0.45);
 }
 
@@ -2953,6 +2948,12 @@ html[saved-theme="dark"] body ul.tags > li {
   --search-result-background: rgba(230, 229, 229, 0.45) !important;
   --secondary: hsl(198, 58%, 54%) !important;
   --setting-items-radius: 10px !important;
+  --shiki-code-background: rgba(225, 225, 225, 0.75) !important;
+  --shiki-code-block-border-radius: 3px !important;
+  --shiki-code-comment: #5c5c5c !important;
+  --shiki-gutter-text-color: #5c5c5c !important;
+  --shiki-terminal-dots-color: #5c5c5c !important;
+  --shiki-tooltip-background: #f6f4f4b7 !important;
   --slider-thumb-border-color: hsl(199, 42%, 39%) !important;
   --slider-thumb-border-width: 7px !important;
   --status-bar-background: rgba(194, 194, 194, 0.45) !important;
@@ -3023,19 +3024,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   background-color: rgba(0, 0, 0, 0);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgb(70, 165, 206);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(92, 192, 235, 0.1);
-  color: rgb(70, 165, 206);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -3047,32 +3035,8 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgba(0, 0, 0, 0);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgba(230, 229, 229, 0.45);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="light"] body .text-highlight {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="light"] body article > h1 {
+    typography: `html[saved-theme="light"] body .markdown-rendered > h1 {
   --font-weight: 500;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(70, 165, 206);
@@ -3102,6 +3066,26 @@ html[saved-theme="light"] body article > h1 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="light"] body .text-highlight {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }
 
 html[saved-theme="light"] body del {
@@ -3289,33 +3273,28 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
 html[saved-theme="light"] body p {
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(255, 196, 0);
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
   outline: rgb(255, 196, 0) none 0px;
   text-decoration-color: rgb(255, 196, 0);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 165, 0);
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
   outline: rgb(255, 165, 0) none 0px;
   text-decoration-color: rgb(255, 165, 0);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(70, 165, 206);
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
   outline: rgb(70, 165, 206) none 0px;
   text-decoration: underline rgba(92, 192, 235, 0.3);
   text-decoration-color: rgba(92, 192, 235, 0.3);
 }`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-}
-
-html[saved-theme="light"] body ul.overflow {
+    lists: `html[saved-theme="light"] body ul.overflow {
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }`,
@@ -3350,49 +3329,20 @@ html[saved-theme="light"] body th {
   border-top-color: rgb(70, 165, 206);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(34, 34, 34);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(34, 34, 34);
+  border-right-color: rgb(34, 34, 34);
+  border-top-color: rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   font-family: OxaniumFira;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgba(225, 225, 225, 0.75);
-  border-bottom-color: rgb(34, 34, 34);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-width: 1px;
-  border-top-color: rgb(34, 34, 34);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-top-width: 1px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgba(225, 225, 225, 0.75);
-  border-bottom-color: rgb(34, 34, 34);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-width: 1px;
-  border-top-color: rgb(34, 34, 34);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-top-width: 1px;
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgba(225, 225, 225, 0.75);
-  border-bottom-color: rgb(34, 34, 34);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-width: 1px;
-  border-top-color: rgb(34, 34, 34);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-top-width: 1px;
-  padding-bottom: 24px;
-  padding-top: 24px;
+  padding-bottom: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 12px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -3401,6 +3351,8 @@ html[saved-theme="light"] body pre:has(> code) {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-bottom-width: 1px;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgb(34, 34, 34);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -3410,6 +3362,13 @@ html[saved-theme="light"] body pre:has(> code) {
 }`,
     images: `html[saved-theme="light"] body figcaption {
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="light"] body figure {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   border-bottom-left-radius: 3px;
@@ -5163,7 +5122,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(255, 255, 255);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(92, 192, 235, 0.1);
   border-bottom-color: rgba(92, 192, 235, 0.15);
   border-left-color: rgba(92, 192, 235, 0.15);
@@ -5172,13 +5131,18 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(70, 165, 206);
 }
 
 html[saved-theme="light"] body h1 {
   font-family: "Space Wham", Inter;
   text-shadow: rgb(70, 165, 206) 0px 0px 5px, rgb(70, 165, 206) 0px 0px 10px, rgb(70, 165, 206) 0px 0px 20px, rgb(70, 165, 206) 0px 0px 40px, rgb(70, 165, 206) 0px 0px 45px;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  font-size: 34px;
+  font-weight: 500;
 }
 
 html[saved-theme="light"] body h2 {
@@ -5229,20 +5193,20 @@ html[saved-theme="light"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer {
+    explorer: `html[saved-theme="light"] body .nav-files-container {
   background-color: rgba(230, 229, 229, 0.45);
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="light"] body .explorer .folder-outer > ul {
+html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(70, 165, 206);
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   border-bottom-left-radius: 3px;
@@ -5306,7 +5270,13 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(92, 92, 92);
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }`,
-    misc: `html[saved-theme="light"] body .metadata {
+    canvas: `html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgba(255, 255, 255, 0.9);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(70, 165, 206);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }
 
@@ -5314,7 +5284,27 @@ html[saved-theme="light"] body .metadata-properties {
   font-family: OxaniumFira, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="light"] body .navigation-progress {
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(92, 192, 235, 0.1);
+  color: rgb(70, 165, 206);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgba(230, 229, 229, 0.45);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0);
+}`,
+    misc: `html[saved-theme="light"] body .navigation-progress {
   background-color: rgba(194, 194, 194, 0.45);
 }
 

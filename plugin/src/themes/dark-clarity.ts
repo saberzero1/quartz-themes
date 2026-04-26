@@ -173,6 +173,13 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #dedede !important;
   --setting-items-background: #13161b !important;
   --setting-items-border-color: #424958 !important;
+  --shiki-active-tab-border-color: #bbb !important;
+  --shiki-code-background: #13161b !important;
+  --shiki-code-normal: #bbb !important;
+  --shiki-code-punctuation: #bbb !important;
+  --shiki-gutter-border-color: #424958 !important;
+  --shiki-gutter-text-color-highlight: #bbb !important;
+  --shiki-highlight-neutral: #bbb !important;
   --slider-track-background: #424958 !important;
   --status-bar-background: #11161d !important;
   --status-bar-border-color: #424958 !important;
@@ -243,52 +250,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(222, 222, 222);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgb(66, 73, 88);
-  color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(17, 22, 29);
-  border-color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgb(66, 73, 88);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(187, 187, 187);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(187, 187, 187);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  color: rgb(88, 166, 255);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(187, 187, 187);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(17, 22, 29);
   color: rgb(222, 222, 222);
@@ -301,11 +262,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(17, 22, 29);
   border-left-color: rgb(66, 73, 88);
-  color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(22, 27, 34);
   color: rgb(222, 222, 222);
 }
 
@@ -337,7 +293,7 @@ html[saved-theme="dark"] body html {
   --search-other-match-color: #ff9632;
   --yellow: #fccd11;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(255, 255, 255);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   font-weight: 800;
@@ -345,21 +301,21 @@ html[saved-theme="dark"] body html {
   text-decoration-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(222, 222, 222);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   outline: rgb(222, 222, 222) none 0px;
   text-decoration-color: rgb(222, 222, 222);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(222, 222, 222);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   outline: rgb(222, 222, 222) none 0px;
   text-decoration-color: rgb(222, 222, 222);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(255, 255, 255);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   font-weight: 800;
@@ -397,21 +353,21 @@ html[saved-theme="dark"] body p {
   outline: rgb(187, 187, 187) none 0px;
   text-decoration-color: rgb(187, 187, 187);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(81, 179, 133);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   outline: rgb(81, 179, 133) none 0px;
   text-decoration-color: rgb(81, 179, 133);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(81, 179, 133);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   outline: rgb(81, 179, 133) none 0px;
   text-decoration-color: rgb(81, 179, 133);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(81, 179, 133);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   outline: rgb(81, 179, 133) none 0px;
@@ -427,13 +383,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(222, 222, 222);
-  border-left-color: rgb(222, 222, 222);
-  border-right-color: rgb(222, 222, 222);
-  border-top-color: rgb(222, 222, 222);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -478,56 +427,13 @@ html[saved-theme="dark"] body th {
   color: rgb(222, 222, 222);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(222, 222, 222);
-  border-left-color: rgb(222, 222, 222);
-  border-right-color: rgb(222, 222, 222);
-  border-top-color: rgb(222, 222, 222);
-  color: rgb(222, 222, 222);
+  background-color: rgb(19, 22, 27);
+  border-bottom-color: rgb(66, 73, 88);
+  border-left-color: rgb(66, 73, 88);
+  border-right-color: rgb(66, 73, 88);
+  border-top-color: rgb(66, 73, 88);
+  color: rgb(15, 179, 255);
   font-family: "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", monospace;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(19, 22, 27);
-  border-bottom-color: rgb(66, 73, 88);
-  border-left-color: rgb(66, 73, 88);
-  border-right-color: rgb(66, 73, 88);
-  border-top-color: rgb(66, 73, 88);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(19, 22, 27);
-  border-bottom-color: rgb(66, 73, 88);
-  border-left-color: rgb(66, 73, 88);
-  border-right-color: rgb(66, 73, 88);
-  border-top-color: rgb(66, 73, 88);
-  color: rgb(222, 222, 222);
-  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-}
-
-html[saved-theme="dark"] body pre > code > [data-line] {
-  border-left-color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(222, 222, 222);
-  border-left-color: rgb(222, 222, 222);
-  border-right-color: rgb(222, 222, 222);
-  border-top-color: rgb(222, 222, 222);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(19, 22, 27);
-  border-bottom-color: rgb(66, 73, 88);
-  border-left-color: rgb(66, 73, 88);
-  border-right-color: rgb(66, 73, 88);
-  border-top-color: rgb(66, 73, 88);
-  overflow-x: hidden;
-  padding-left: 12px;
-  padding-right: 12px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -536,7 +442,6 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-left-color: rgb(66, 73, 88);
   border-right-color: rgb(66, 73, 88);
   border-top-color: rgb(66, 73, 88);
-  overflow-x: hidden;
   padding-left: 12px;
   padding-right: 12px;
 }`,
@@ -549,7 +454,6 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(222, 222, 222);
-  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
 html[saved-theme="dark"] body figure {
@@ -1488,17 +1392,21 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(222, 222, 222);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(88, 166, 255);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(121, 107, 245);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(222, 222, 222);
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1539,12 +1447,12 @@ html[saved-theme="dark"] body hr {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(117, 126, 138);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(117, 126, 138);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }`,
@@ -1639,15 +1547,31 @@ html[saved-theme="dark"] body .darkmode svg {
 html[saved-theme="dark"] body .breadcrumb-element p {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(222, 222, 222);
-  border-left-color: rgb(222, 222, 222);
-  border-right-color: rgb(222, 222, 222);
-  border-top-color: rgb(222, 222, 222);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(222, 222, 222);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(17, 22, 29);
+  border-color: rgb(222, 222, 222);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(66, 73, 88);
+  color: rgb(222, 222, 222);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(66, 73, 88);
   border-left-color: rgb(66, 73, 88);
   border-right-color: rgb(66, 73, 88);
@@ -1663,6 +1587,57 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(187, 187, 187);
   color: rgb(187, 187, 187);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(66, 73, 88);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(187, 187, 187);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(187, 187, 187);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  color: rgb(88, 166, 255);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(187, 187, 187);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(22, 27, 34);
+  color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(222, 222, 222);
+  border-left-color: rgb(222, 222, 222);
+  border-right-color: rgb(222, 222, 222);
+  border-top-color: rgb(222, 222, 222);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(17, 22, 29);
+  border-color: rgb(222, 222, 222);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(13, 17, 23);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(222, 222, 222);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(222, 222, 222);
+  border-left-color: rgb(222, 222, 222);
+  border-right-color: rgb(222, 222, 222);
+  border-top-color: rgb(222, 222, 222);
+  color: rgb(222, 222, 222);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -1804,10 +1779,6 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="light"] body .note-properties-tags {
-  color: rgb(88, 166, 255);
-}
-
 html[saved-theme="light"] body html {
   --altblue: #0087ff;
   --aqua: #078480;
@@ -1836,22 +1807,22 @@ html[saved-theme="light"] body html {
   --search-other-match-color: #ff9632;
   --yellow: #fccd11;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(0, 0, 0);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(0, 0, 0);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   outline: rgb(0, 0, 0) none 0px;
@@ -1870,21 +1841,21 @@ html[saved-theme="light"] body del {
 html[saved-theme="light"] body p {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(81, 179, 133);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   outline: rgb(81, 179, 133) none 0px;
   text-decoration-color: rgb(81, 179, 133);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(81, 179, 133);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   outline: rgb(81, 179, 133) none 0px;
   text-decoration-color: rgb(81, 179, 133);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(81, 179, 133);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
   outline: rgb(81, 179, 133) none 0px;
@@ -1898,49 +1869,15 @@ html[saved-theme="light"] body a.internal.broken {
   width: 194.5px;
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(8, 8, 8);
-  border-left-color: rgb(8, 8, 8);
-  border-right-color: rgb(8, 8, 8);
-  border-top-color: rgb(8, 8, 8);
-  color: rgb(8, 8, 8);
+  color: rgb(15, 179, 255);
   font-family: "JetBrains Mono NL", "JetBrains Mono", Consolas, Monaco, "等距更纱黑体 SC", monospace;
 }
 
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-}
-
-html[saved-theme="light"] body pre > code > [data-line] {
-  border-left-color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(8, 8, 8);
-  border-left-color: rgb(8, 8, 8);
-  border-right-color: rgb(8, 8, 8);
-  border-top-color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  overflow-x: hidden;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
 html[saved-theme="light"] body pre:has(> code) {
-  overflow-x: hidden;
   padding-left: 12px;
   padding-right: 12px;
 }`,
-    images: `html[saved-theme="light"] body figcaption {
-  font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
-}
-
-html[saved-theme="light"] body img {
+    images: `html[saved-theme="light"] body img {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-radius: 5px;
@@ -2352,11 +2289,11 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(88, 166, 255);
 }
 
@@ -2396,12 +2333,12 @@ html[saved-theme="light"] body h6 {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(117, 126, 138);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(117, 126, 138);
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }`,
@@ -2437,7 +2374,7 @@ html[saved-theme="light"] body li.section-li > .section > .desc > h3 > a {
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-element p {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }`,
-    misc: `html[saved-theme="light"] body .metadata {
+    properties: `html[saved-theme="light"] body .metadata {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
@@ -2445,7 +2382,10 @@ html[saved-theme="light"] body .metadata-properties {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 
-html[saved-theme="light"] body .page-header h2.page-title {
+html[saved-theme="light"] body .note-properties-tags {
+  color: rgb(88, 166, 255);
+}`,
+    misc: `html[saved-theme="light"] body .page-header h2.page-title {
   font-family: "Zhudou Sans Normal SS02", 微软雅黑, "Segoe UI", OpenSans-Medium, sans-serif;
 }
 

@@ -196,6 +196,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #e0def4 !important;
   --setting-items-background: #191724 !important;
   --setting-items-border-color: #403d52 !important;
+  --shiki-active-tab-border-color: #6e6a86 !important;
+  --shiki-code-background: #191724 !important;
+  --shiki-code-comment: #c4a7e7 !important;
+  --shiki-code-normal: #6e6a86 !important;
+  --shiki-code-punctuation: #6e6a86 !important;
+  --shiki-gutter-border-color: #403d52 !important;
+  --shiki-gutter-text-color: #c4a7e7 !important;
+  --shiki-gutter-text-color-highlight: #6e6a86 !important;
+  --shiki-highlight-neutral: #6e6a86 !important;
+  --shiki-terminal-dots-color: #c4a7e7 !important;
   --slider-track-background: #403d52 !important;
   --status-bar-background: #191724 !important;
   --status-bar-border-color: #403d52 !important;
@@ -259,55 +269,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(224, 222, 244);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  background-color: rgb(25, 23, 36);
-  border-color: rgb(64, 61, 82);
-  color: rgb(224, 222, 244);
-  font-weight: 800;
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(224, 222, 244);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(224, 222, 244);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(224, 222, 244);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(224, 222, 244);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(25, 23, 36);
-  border-color: rgb(224, 222, 244);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgb(64, 61, 82);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(110, 106, 134);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(110, 106, 134);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  border-radius: 31.5px;
-  color: rgb(196, 167, 231);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(110, 106, 134);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(25, 23, 36);
   color: rgb(224, 222, 244);
@@ -320,11 +281,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(25, 23, 36);
   border-left-color: rgb(64, 61, 82);
-  color: rgb(224, 222, 244);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(25, 23, 36);
   color: rgb(224, 222, 244);
 }
 
@@ -345,7 +301,7 @@ html[saved-theme="dark"] body html {
   --font-size-side-dock-title: 18px;
   --font-size-status-bar: 15px;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   background-color: rgb(235, 111, 146);
   color: rgb(235, 111, 146);
   font-family: Georgia, "Times New Roman", serif;
@@ -353,21 +309,21 @@ html[saved-theme="dark"] body html {
   text-decoration-color: rgb(235, 111, 146);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(196, 167, 231);
   font-family: Inter, "Segoe UI", "Helvetica Neue", sans-serif;
   outline: rgb(196, 167, 231) none 0px;
   text-decoration-color: rgb(196, 167, 231);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(196, 167, 231);
   font-family: Inter, "Segoe UI", "Helvetica Neue", sans-serif;
   outline: rgb(196, 167, 231) none 0px;
   text-decoration-color: rgb(196, 167, 231);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   background-color: rgb(235, 111, 146);
   color: rgb(235, 111, 146);
   font-family: Georgia, "Times New Roman", serif;
@@ -410,7 +366,7 @@ html[saved-theme="dark"] body p {
   outline: rgb(110, 106, 134) none 0px;
   text-decoration-color: rgb(110, 106, 134);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(196, 167, 231);
   font-family: Georgia, "Times New Roman", serif;
   outline: rgb(196, 167, 231) none 0px;
@@ -418,14 +374,14 @@ html[saved-theme="dark"] body p {
   transition: 0.35s;
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(196, 167, 231);
   font-family: Georgia, "Times New Roman", serif;
   outline: rgb(196, 167, 231) none 0px;
   text-decoration-color: rgb(196, 167, 231);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(196, 167, 231);
   font-family: Georgia, "Times New Roman", serif;
   outline: rgb(196, 167, 231) none 0px;
@@ -445,13 +401,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(224, 222, 244);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(224, 222, 244);
-  border-left-color: rgb(224, 222, 244);
-  border-right-color: rgb(224, 222, 244);
-  border-top-color: rgb(224, 222, 244);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -515,53 +464,24 @@ html[saved-theme="dark"] body tr {
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: rgb(25, 23, 36);
-  border-bottom-color: rgb(196, 167, 231);
-  border-left-color: rgb(196, 167, 231);
-  border-right-color: rgb(196, 167, 231);
-  border-top-color: rgb(196, 167, 231);
+  border-bottom-color: rgb(64, 61, 82);
+  border-left-color: rgb(64, 61, 82);
+  border-right-color: rgb(64, 61, 82);
+  border-top-color: rgb(64, 61, 82);
   color: rgb(196, 167, 231);
   font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
-  padding-bottom: 6px;
-  padding-left: 6px;
-  padding-right: 6px;
-  padding-top: 6px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(25, 23, 36);
-  border-bottom-color: rgb(64, 61, 82);
-  border-left-color: rgb(64, 61, 82);
-  border-right-color: rgb(64, 61, 82);
-  border-top-color: rgb(64, 61, 82);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(25, 23, 36);
-  border-bottom-color: rgb(64, 61, 82);
-  border-left-color: rgb(64, 61, 82);
-  border-right-color: rgb(64, 61, 82);
-  border-top-color: rgb(64, 61, 82);
-  color: rgb(196, 167, 231);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(25, 23, 36);
-  border-bottom-color: rgb(64, 61, 82);
-  border-left-color: rgb(64, 61, 82);
-  border-right-color: rgb(64, 61, 82);
-  border-top-color: rgb(64, 61, 82);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
+  padding-bottom: 2.25px;
+  padding-left: 4.5px;
+  padding-right: 4.5px;
+  padding-top: 2.25px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(25, 23, 36);
-  border-bottom-color: rgb(64, 61, 82);
-  border-left-color: rgb(64, 61, 82);
-  border-right-color: rgb(64, 61, 82);
-  border-top-color: rgb(64, 61, 82);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -576,8 +496,6 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(224, 222, 244);
-  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-  font-size: 18px;
 }
 
 html[saved-theme="dark"] body figure {
@@ -585,8 +503,6 @@ html[saved-theme="dark"] body figure {
   border-left-color: rgb(224, 222, 244);
   border-right-color: rgb(224, 222, 244);
   border-top-color: rgb(224, 222, 244);
-  margin-bottom: 18px;
-  margin-top: 18px;
 }
 
 html[saved-theme="dark"] body img {
@@ -1490,20 +1406,25 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(224, 222, 244);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 31.5px;
   border-bottom-right-radius: 31.5px;
   border-top-left-radius: 31.5px;
   border-top-right-radius: 31.5px;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(196, 167, 231);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(235, 111, 146);
   font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(224, 222, 244);
+  font-size: 29.124px;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1544,12 +1465,12 @@ html[saved-theme="dark"] body hr {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(110, 106, 134);
   font-family: Inter, "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(110, 106, 134);
   font-family: Inter, "Segoe UI", "Helvetica Neue", sans-serif;
 }`,
@@ -1643,15 +1564,33 @@ html[saved-theme="dark"] body .darkmode svg {
 html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(196, 167, 231);
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(224, 222, 244);
-  border-left-color: rgb(224, 222, 244);
-  border-right-color: rgb(224, 222, 244);
-  border-top-color: rgb(224, 222, 244);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(224, 222, 244);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(224, 222, 244);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(224, 222, 244);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(224, 222, 244);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(25, 23, 36);
+  border-color: rgb(224, 222, 244);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  background-color: rgb(25, 23, 36);
+  border-color: rgb(64, 61, 82);
+  color: rgb(224, 222, 244);
+  font-weight: 800;
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(64, 61, 82);
   border-left-color: rgb(64, 61, 82);
   border-right-color: rgb(64, 61, 82);
@@ -1667,6 +1606,58 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(110, 106, 134);
   color: rgb(110, 106, 134);
   font-family: Georgia, "Times New Roman", serif;
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(64, 61, 82);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(110, 106, 134);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(110, 106, 134);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  border-radius: 31.5px;
+  color: rgb(196, 167, 231);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(110, 106, 134);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(25, 23, 36);
+  color: rgb(224, 222, 244);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(224, 222, 244);
+  border-left-color: rgb(224, 222, 244);
+  border-right-color: rgb(224, 222, 244);
+  border-top-color: rgb(224, 222, 244);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(25, 23, 36);
+  border-color: rgb(224, 222, 244);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(25, 23, 36);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(224, 222, 244);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(224, 222, 244);
+  border-left-color: rgb(224, 222, 244);
+  border-right-color: rgb(224, 222, 244);
+  border-top-color: rgb(224, 222, 244);
+  color: rgb(224, 222, 244);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -1928,6 +1919,16 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-group-heading-color: #575279 !important;
   --setting-items-background: #faf4ed !important;
   --setting-items-border-color: #dfdad9 !important;
+  --shiki-active-tab-border-color: #9893a5 !important;
+  --shiki-code-background: #faf4ed !important;
+  --shiki-code-comment: #907aa9 !important;
+  --shiki-code-normal: #9893a5 !important;
+  --shiki-code-punctuation: #9893a5 !important;
+  --shiki-gutter-border-color: #dfdad9 !important;
+  --shiki-gutter-text-color: #907aa9 !important;
+  --shiki-gutter-text-color-highlight: #9893a5 !important;
+  --shiki-highlight-neutral: #9893a5 !important;
+  --shiki-terminal-dots-color: #907aa9 !important;
   --slider-track-background: #dfdad9 !important;
   --status-bar-background: #faf4ed !important;
   --status-bar-border-color: #dfdad9 !important;
@@ -1991,55 +1992,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(87, 82, 121);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  background-color: rgb(250, 244, 237);
-  border-color: rgb(223, 218, 217);
-  color: rgb(87, 82, 121);
-  font-weight: 800;
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(87, 82, 121);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(87, 82, 121);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(87, 82, 121);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(87, 82, 121);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(255, 250, 243);
-  border-color: rgb(87, 82, 121);
-}
-
-html[saved-theme="light"] body .note-properties {
-  border-color: rgb(223, 218, 217);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(152, 147, 165);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(152, 147, 165);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  border-radius: 31.5px;
-  color: rgb(144, 122, 169);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(152, 147, 165);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(250, 244, 237);
   color: rgb(87, 82, 121);
@@ -2052,11 +2004,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(250, 244, 237);
   border-left-color: rgb(223, 218, 217);
-  color: rgb(87, 82, 121);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(250, 244, 237);
   color: rgb(87, 82, 121);
 }
 
@@ -2077,7 +2024,7 @@ html[saved-theme="light"] body html {
   --font-size-side-dock-title: 18px;
   --font-size-status-bar: 15px;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   background-color: rgb(180, 99, 122);
   color: rgb(180, 99, 122);
   font-family: Georgia, "Times New Roman", serif;
@@ -2085,21 +2032,21 @@ html[saved-theme="light"] body html {
   text-decoration-color: rgb(180, 99, 122);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(144, 122, 169);
   font-family: Inter, "Segoe UI", "Helvetica Neue", sans-serif;
   outline: rgb(144, 122, 169) none 0px;
   text-decoration-color: rgb(144, 122, 169);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(144, 122, 169);
   font-family: Inter, "Segoe UI", "Helvetica Neue", sans-serif;
   outline: rgb(144, 122, 169) none 0px;
   text-decoration-color: rgb(144, 122, 169);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   background-color: rgb(180, 99, 122);
   color: rgb(180, 99, 122);
   font-family: Georgia, "Times New Roman", serif;
@@ -2142,7 +2089,7 @@ html[saved-theme="light"] body p {
   outline: rgb(152, 147, 165) none 0px;
   text-decoration-color: rgb(152, 147, 165);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(144, 122, 169);
   font-family: Georgia, "Times New Roman", serif;
   outline: rgb(144, 122, 169) none 0px;
@@ -2150,14 +2097,14 @@ html[saved-theme="light"] body p {
   transition: 0.35s;
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(144, 122, 169);
   font-family: Georgia, "Times New Roman", serif;
   outline: rgb(144, 122, 169) none 0px;
   text-decoration-color: rgb(144, 122, 169);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(144, 122, 169);
   font-family: Georgia, "Times New Roman", serif;
   outline: rgb(144, 122, 169) none 0px;
@@ -2177,13 +2124,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(87, 82, 121);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(87, 82, 121);
-  border-left-color: rgb(87, 82, 121);
-  border-right-color: rgb(87, 82, 121);
-  border-top-color: rgb(87, 82, 121);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2247,53 +2187,24 @@ html[saved-theme="light"] body tr {
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: rgb(250, 244, 237);
-  border-bottom-color: rgb(144, 122, 169);
-  border-left-color: rgb(144, 122, 169);
-  border-right-color: rgb(144, 122, 169);
-  border-top-color: rgb(144, 122, 169);
+  border-bottom-color: rgb(223, 218, 217);
+  border-left-color: rgb(223, 218, 217);
+  border-right-color: rgb(223, 218, 217);
+  border-top-color: rgb(223, 218, 217);
   color: rgb(144, 122, 169);
   font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
-  padding-bottom: 6px;
-  padding-left: 6px;
-  padding-right: 6px;
-  padding-top: 6px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(250, 244, 237);
-  border-bottom-color: rgb(223, 218, 217);
-  border-left-color: rgb(223, 218, 217);
-  border-right-color: rgb(223, 218, 217);
-  border-top-color: rgb(223, 218, 217);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(250, 244, 237);
-  border-bottom-color: rgb(223, 218, 217);
-  border-left-color: rgb(223, 218, 217);
-  border-right-color: rgb(223, 218, 217);
-  border-top-color: rgb(223, 218, 217);
-  color: rgb(144, 122, 169);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(250, 244, 237);
-  border-bottom-color: rgb(223, 218, 217);
-  border-left-color: rgb(223, 218, 217);
-  border-right-color: rgb(223, 218, 217);
-  border-top-color: rgb(223, 218, 217);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
+  padding-bottom: 2.25px;
+  padding-left: 4.5px;
+  padding-right: 4.5px;
+  padding-top: 2.25px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(250, 244, 237);
-  border-bottom-color: rgb(223, 218, 217);
-  border-left-color: rgb(223, 218, 217);
-  border-right-color: rgb(223, 218, 217);
-  border-top-color: rgb(223, 218, 217);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -2308,8 +2219,6 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(87, 82, 121);
-  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-  font-size: 18px;
 }
 
 html[saved-theme="light"] body figure {
@@ -2317,8 +2226,6 @@ html[saved-theme="light"] body figure {
   border-left-color: rgb(87, 82, 121);
   border-right-color: rgb(87, 82, 121);
   border-top-color: rgb(87, 82, 121);
-  margin-bottom: 18px;
-  margin-top: 18px;
 }
 
 html[saved-theme="light"] body img {
@@ -3222,20 +3129,25 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(87, 82, 121);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 31.5px;
   border-bottom-right-radius: 31.5px;
   border-top-left-radius: 31.5px;
   border-top-right-radius: 31.5px;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(144, 122, 169);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(180, 99, 122);
   font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(87, 82, 121);
+  font-size: 29.124px;
 }
 
 html[saved-theme="light"] body h2 {
@@ -3276,12 +3188,12 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(152, 147, 165);
   font-family: Inter, "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(152, 147, 165);
   font-family: Inter, "Segoe UI", "Helvetica Neue", sans-serif;
 }`,
@@ -3375,15 +3287,33 @@ html[saved-theme="light"] body .darkmode svg {
 html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(144, 122, 169);
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(87, 82, 121);
-  border-left-color: rgb(87, 82, 121);
-  border-right-color: rgb(87, 82, 121);
-  border-top-color: rgb(87, 82, 121);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(87, 82, 121);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(87, 82, 121);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(87, 82, 121);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(87, 82, 121);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(255, 250, 243);
+  border-color: rgb(87, 82, 121);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  background-color: rgb(250, 244, 237);
+  border-color: rgb(223, 218, 217);
+  color: rgb(87, 82, 121);
+  font-weight: 800;
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(223, 218, 217);
   border-left-color: rgb(223, 218, 217);
   border-right-color: rgb(223, 218, 217);
@@ -3399,6 +3329,58 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(152, 147, 165);
   color: rgb(152, 147, 165);
   font-family: Georgia, "Times New Roman", serif;
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(223, 218, 217);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(152, 147, 165);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(152, 147, 165);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  border-radius: 31.5px;
+  color: rgb(144, 122, 169);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(152, 147, 165);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(250, 244, 237);
+  color: rgb(87, 82, 121);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(87, 82, 121);
+  border-left-color: rgb(87, 82, 121);
+  border-right-color: rgb(87, 82, 121);
+  border-top-color: rgb(87, 82, 121);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(250, 244, 237);
+  border-color: rgb(87, 82, 121);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(250, 244, 237);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(87, 82, 121);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(87, 82, 121);
+  border-left-color: rgb(87, 82, 121);
+  border-right-color: rgb(87, 82, 121);
+  border-top-color: rgb(87, 82, 121);
+  color: rgb(87, 82, 121);
 }
 
 html[saved-theme="light"] body .navigation-progress {

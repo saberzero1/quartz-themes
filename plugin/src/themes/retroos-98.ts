@@ -131,6 +131,7 @@ export const theme: ThemeData = {
   --secondary: hsl(221, 94.94%, 19.95%) !important;
   --setting-items-background: #050505 !important;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042), 0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shiki-code-background: #050505 !important;
   --status-bar-background: rgb(64, 64, 64) !important;
   --suggestion-background: #000000 !important;
   --system-status-background: rgb(64, 64, 64) !important;
@@ -179,16 +180,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   background-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(64, 64, 64);
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(3, 30, 94, 0.1);
-  color: rgb(3, 33, 99);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(64, 64, 64);
 }
@@ -199,24 +190,20 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(64, 64, 64);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(0, 0, 0);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
@@ -240,37 +227,28 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
 html[saved-theme="dark"] body p {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(3, 33, 99);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 33, 99) none 0px;
   text-decoration-color: rgb(3, 33, 99);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(3, 33, 99);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 33, 99) none 0px;
   text-decoration-color: rgb(3, 33, 99);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(3, 33, 99);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 33, 99) none 0px;
   text-decoration: underline rgba(3, 30, 94, 0.3);
   text-decoration-color: rgba(3, 30, 94, 0.3);
 }`,
-    lists: `html[saved-theme="dark"] body ol.overflow {
-  border-left-color: rgb(64, 64, 64);
-  border-left-style: solid;
-  border-left-width: 5px;
-  border-right-color: rgb(64, 64, 64);
-  border-right-style: solid;
-  border-right-width: 5px;
-}
-
-html[saved-theme="dark"] body ul.overflow {
+    lists: `html[saved-theme="dark"] body ul.overflow {
   border-left-color: rgb(64, 64, 64);
   border-left-style: solid;
   border-left-width: 5px;
@@ -285,28 +263,8 @@ html[saved-theme="dark"] body ul.overflow {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   width: 163.938px;
 }`,
-    code: `html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
+    code: `html[saved-theme="dark"] body code {
   background-color: rgb(5, 5, 5);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(5, 5, 5);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(5, 5, 5);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -317,7 +275,7 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-top-right-radius: 0px;
 }`,
     images: `html[saved-theme="dark"] body figcaption {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: rgb(5, 5, 5);
@@ -1740,7 +1698,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(128, 128, 128);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(3, 30, 94, 0.1);
   border-bottom-color: rgba(3, 30, 94, 0.15);
   border-left-color: rgba(3, 30, 94, 0.15);
@@ -1749,7 +1707,7 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(3, 33, 99);
 }
 
@@ -1795,21 +1753,21 @@ html[saved-theme="dark"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer {
+    explorer: `html[saved-theme="dark"] body .nav-files-container {
   background-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="dark"] body .explorer .folder-outer > ul {
+html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(218, 218, 218);
   border-left-style: dashed;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
     graph: `html[saved-theme="dark"] body .graph > .graph-outer > .global-graph-icon {
   background-color: rgb(64, 64, 64);
@@ -1869,7 +1827,11 @@ html[saved-theme="dark"] body .darkmode svg {
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-element p {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    misc: `html[saved-theme="dark"] body .metadata {
+    canvas: `html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(64, 64, 64);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 2px 3px 0px, rgba(0, 0, 0, 0.03) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
@@ -1877,7 +1839,31 @@ html[saved-theme="dark"] body .metadata-properties {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="dark"] body .navigation-progress {
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(3, 30, 94, 0.1);
+  color: rgb(3, 33, 99);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-left-color: rgb(64, 64, 64);
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-right-color: rgb(64, 64, 64);
+  border-right-style: solid;
+  border-right-width: 5px;
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(64, 64, 64);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(3, 30, 94);
+}`,
+    misc: `html[saved-theme="dark"] body .navigation-progress {
   background-color: rgb(64, 64, 64);
 }
 
@@ -2022,11 +2008,6 @@ html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme
   background-color: rgb(192, 192, 192);
 }
 
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(3, 30, 94, 0.1);
-  color: rgb(3, 30, 94);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(192, 192, 192);
 }
@@ -2038,19 +2019,19 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(192, 192, 192);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
@@ -2074,37 +2055,28 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
 html[saved-theme="light"] body p {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(3, 30, 94);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 30, 94) none 0px;
   text-decoration-color: rgb(3, 30, 94);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(3, 30, 94);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 30, 94) none 0px;
   text-decoration-color: rgb(3, 30, 94);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(3, 30, 94);
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   outline: rgb(3, 30, 94) none 0px;
   text-decoration: underline rgba(3, 30, 94, 0.3);
   text-decoration-color: rgba(3, 30, 94, 0.3);
 }`,
-    lists: `html[saved-theme="light"] body ol.overflow {
-  border-left-color: rgb(192, 192, 192);
-  border-left-style: solid;
-  border-left-width: 5px;
-  border-right-color: rgb(192, 192, 192);
-  border-right-style: solid;
-  border-right-width: 5px;
-}
-
-html[saved-theme="light"] body ul.overflow {
+    lists: `html[saved-theme="light"] body ul.overflow {
   border-left-color: rgb(192, 192, 192);
   border-left-style: solid;
   border-left-width: 5px;
@@ -2119,35 +2091,14 @@ html[saved-theme="light"] body ul.overflow {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
   width: 163.938px;
 }`,
-    code: `html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-html[saved-theme="light"] body pre:has(> code) {
+    code: `html[saved-theme="light"] body pre:has(> code) {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }`,
     images: `html[saved-theme="light"] body figcaption {
-  font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+  font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
     embeds: `html[saved-theme="light"] body .transclude {
   border-left-color: rgb(3, 33, 99);
@@ -3566,7 +3517,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(255, 255, 255);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(3, 30, 94, 0.1);
   border-bottom-color: rgba(3, 30, 94, 0.15);
   border-left-color: rgba(3, 30, 94, 0.15);
@@ -3575,7 +3526,7 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(3, 30, 94);
 }
 
@@ -3621,21 +3572,21 @@ html[saved-theme="light"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer {
+    explorer: `html[saved-theme="light"] body .nav-files-container {
   background-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
-}
-
-html[saved-theme="light"] body .explorer .folder-outer > ul {
+html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(34, 34, 34);
   border-left-style: dashed;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
     graph: `html[saved-theme="light"] body .graph > .graph-outer > .global-graph-icon {
   background-color: rgb(192, 192, 192);
@@ -3695,7 +3646,7 @@ html[saved-theme="light"] body .darkmode svg {
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-element p {
   font-family: "??", "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }`,
-    misc: `html[saved-theme="light"] body .metadata {
+    properties: `html[saved-theme="light"] body .metadata {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
@@ -3703,7 +3654,27 @@ html[saved-theme="light"] body .metadata-properties {
   font-family: "??", "??", Win95Font, Inter, Rubik, "Segoe UI";
 }
 
-html[saved-theme="light"] body .navigation-progress {
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(3, 30, 94, 0.1);
+  color: rgb(3, 30, 94);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-left-color: rgb(192, 192, 192);
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-right-color: rgb(192, 192, 192);
+  border-right-style: solid;
+  border-right-width: 5px;
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(192, 192, 192);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(3, 30, 94);
+}`,
+    misc: `html[saved-theme="light"] body .navigation-progress {
   background-color: rgb(192, 192, 192);
 }
 

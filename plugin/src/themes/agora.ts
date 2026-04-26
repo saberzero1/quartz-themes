@@ -133,15 +133,6 @@ html body {
   color: var(--text-normal) !important;
 }
 
-html body .bases-table thead th {
-  background-color: rgb(137, 137, 137);
-  border-color: rgb(54, 54, 54) rgb(54, 54, 54) rgb(236, 236, 236);
-}
-
-html body .note-properties-tags {
-  color: rgb(241, 240, 238);
-}
-
 html body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(197, 230, 229);
 }
@@ -225,19 +216,19 @@ html body li.task-list-item input[type="checkbox"]:checked {
 html body p {
   font-family: Lato, sans-serif;
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(217, 54, 63);
   outline: rgb(217, 54, 63) none 0px;
   text-decoration-color: rgb(217, 54, 63);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(217, 54, 63);
   outline: rgb(217, 54, 63) none 0px;
   text-decoration-color: rgb(217, 54, 63);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(217, 54, 63);
   outline: rgb(217, 54, 63) none 0px;
 }`,
@@ -291,11 +282,19 @@ html body tr {
 }`,
     code: `html body code {
   background-color: rgba(60, 60, 60, 0.5);
-  border-bottom-color: rgb(141, 195, 199);
-  border-left-color: rgb(141, 195, 199);
-  border-right-color: rgb(141, 195, 199);
-  border-top-color: rgb(141, 195, 199);
   color: rgb(141, 195, 199);
+  padding-top: 1.4px;
+}
+
+html body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html body figcaption {
   text-align: justify;
@@ -681,7 +680,7 @@ html body .callout[data-callout="warning"] {
   font-family: Lato, sans-serif;
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(241, 240, 238);
 }
 
@@ -724,11 +723,11 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: Lato, sans-serif;
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: Lato, sans-serif;
 }`,
     footer: `html body footer {
@@ -743,6 +742,13 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li > .section .meta {
   font-family: Lato, sans-serif;
+}`,
+    bases: `html body .bases-table thead th {
+  background-color: rgb(137, 137, 137);
+  border-color: rgb(54, 54, 54) rgb(54, 54, 54) rgb(236, 236, 236);
+}`,
+    properties: `html body .note-properties-tags {
+  color: rgb(241, 240, 238);
 }`,
     misc: `html body ul.tags > li {
   color: rgb(241, 240, 238);

@@ -520,16 +520,16 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer {
+    explorer: `html body .nav-files-container {
   background-color: rgb(255, 255, 255);
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(0, 0, 0);
   font-family: "Pixelated MS Sans Serif";
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(0, 0, 0);
   font-family: "Pixelated MS Sans Serif";
 }`,
@@ -574,6 +574,13 @@ html body ul.section-ul {
 html body .darkmode svg {
   color: rgb(0, 0, 0);
   stroke: rgb(0, 0, 0);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(255, 255, 255);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(212, 208, 200);
 }`,
     misc: `html body .navigation-progress {
   background-color: rgb(212, 208, 200);

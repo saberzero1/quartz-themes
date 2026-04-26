@@ -32,39 +32,31 @@ export const theme: ThemeData = {
 html[saved-theme="dark"] body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
-}
-
-html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgb(30, 30, 30);
-}
-
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgb(218, 218, 218);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(166, 138, 249);
   outline: rgb(166, 138, 249) none 0px;
   text-decoration-color: rgb(166, 138, 249);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(166, 138, 249);
   outline: rgb(166, 138, 249) none 0px;
   text-decoration-color: rgb(166, 138, 249);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(89, 128, 247);
   outline: rgb(89, 128, 247) none 0px;
   text-decoration-color: rgb(89, 128, 247);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(89, 128, 247);
   outline: rgb(89, 128, 247) none 0px;
   text-decoration-color: rgb(89, 128, 247);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(89, 128, 247);
   outline: rgb(89, 128, 247) none 0px;
 }`,
@@ -454,6 +446,13 @@ html[saved-theme="dark"] body .callout[data-callout="warning"] {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
+    bases: `html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
+  background-color: rgb(30, 30, 30);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(218, 218, 218);
+}`,
   },
   light: {
     base: `:root:root {
@@ -495,14 +494,6 @@ html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme
   background-color: rgb(250, 250, 250);
 }
 
-html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgb(34, 34, 34);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(250, 250, 250);
 }
@@ -510,30 +501,30 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(250, 250, 250);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
   text-decoration-color: rgb(138, 92, 245);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
   text-decoration-color: rgb(138, 92, 245);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(44, 84, 242);
   outline: rgb(44, 84, 242) none 0px;
   text-decoration-color: rgb(44, 84, 242);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(44, 84, 242);
   outline: rgb(44, 84, 242) none 0px;
   text-decoration-color: rgb(44, 84, 242);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(44, 84, 242);
   outline: rgb(44, 84, 242) none 0px;
 }`,
@@ -928,6 +919,16 @@ html[saved-theme="light"] body h4 {
   --callout-color: 8, 109, 221;
 }`,
     footer: `html[saved-theme="light"] body footer {
+  background-color: rgb(250, 250, 250);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(34, 34, 34);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
   background-color: rgb(250, 250, 250);
 }`,
     misc: `html[saved-theme="light"] body .navigation-progress {

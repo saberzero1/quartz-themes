@@ -388,6 +388,27 @@ export const theme: ThemeData = {
   --setting-items-background: hsl( 0, 0%, 13% ) !important;
   --setting-items-border-color: hsl( 0, 0%, 21% ) !important;
   --shadow-color: rgba(0, 0, 0, 0.3) !important;
+  --shiki-active-tab-border-color: hsl( 0, -20%, 60% ) !important;
+  --shiki-code-background: hsl( 0, 0%, 13% ) !important;
+  --shiki-code-block-spacing: 1.75rem !important;
+  --shiki-code-comment: hsl( 0, -10%, 35% ) !important;
+  --shiki-code-function: #a8c373 !important;
+  --shiki-code-important: #d5763f !important;
+  --shiki-code-keyword: #b05279 !important;
+  --shiki-code-normal: hsl( 0, -20%, 60% ) !important;
+  --shiki-code-property: #73bbb2 !important;
+  --shiki-code-punctuation: hsl( 0, -20%, 60% ) !important;
+  --shiki-code-string: #e5b567 !important;
+  --shiki-code-value: #9e86c8 !important;
+  --shiki-gutter-border-color: hsl( 0, 0%, 21% ) !important;
+  --shiki-gutter-text-color: hsl( 0, -10%, 35% ) !important;
+  --shiki-gutter-text-color-highlight: hsl( 0, -20%, 60% ) !important;
+  --shiki-highlight-green: rgba(168, 195, 115, 0.5) !important;
+  --shiki-highlight-green-background: rgba(168, 195, 115, 0.1) !important;
+  --shiki-highlight-neutral: hsl( 0, -20%, 60% ) !important;
+  --shiki-highlight-red: rgba(208, 66, 85, 0.5) !important;
+  --shiki-highlight-red-background: rgba(208, 66, 85, 0.1) !important;
+  --shiki-terminal-dots-color: hsl( 0, -10%, 35% ) !important;
   --slider-thumb-border-color: hsl( 0, 0%, 27% ) !important;
   --slider-track-background: hsl( 0, 0%, 21% ) !important;
   --sp1: white !important;
@@ -507,53 +528,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(209, 209, 209);
 }
 
-html[saved-theme="dark"] body .bases-table {
-  border-color: rgb(209, 209, 209);
-}
-
-html[saved-theme="dark"] body .bases-table thead th {
-  color: rgb(209, 209, 209);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(209, 209, 209);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(209, 209, 209);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(209, 209, 209);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(209, 209, 209);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(33, 33, 33);
-  border-color: rgb(209, 209, 209);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(153, 153, 153);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(153, 153, 153);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 27.82px;
-  color: rgb(153, 153, 153);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(153, 153, 153);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(33, 33, 33);
   color: rgb(209, 209, 209);
@@ -564,36 +538,31 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(209, 209, 209);
 }
 
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(38, 38, 38);
-  color: rgb(209, 209, 209);
-}
-
 html[saved-theme="dark"] body html {
   --focus-animation-duration: 0.1s;
   --hider-ribbon-display: none;
   --image-mix: normal;
   --ribbon-animation-duration: 0.1s;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(209, 209, 209);
   outline: rgb(209, 209, 209) none 0px;
   text-decoration-color: rgb(209, 209, 209);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(209, 209, 209);
   outline: rgb(209, 209, 209) none 0px;
   text-decoration-color: rgb(209, 209, 209);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(209, 209, 209);
   outline: rgb(209, 209, 209) none 0px;
   text-decoration-color: rgb(209, 209, 209);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(209, 209, 209);
   outline: rgb(209, 209, 209) none 0px;
   text-decoration-color: rgb(209, 209, 209);
@@ -631,19 +600,19 @@ html[saved-theme="dark"] body p {
   outline: rgb(153, 153, 153) none 0px;
   text-decoration-color: rgb(153, 153, 153);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(136, 158, 170);
   outline: rgb(136, 158, 170) none 0px;
   text-decoration-color: rgb(136, 158, 170);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(136, 158, 170);
   outline: rgb(136, 158, 170) none 0px;
   text-decoration-color: rgb(136, 158, 170);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(136, 158, 170);
   outline: rgb(136, 158, 170) none 0px;
   text-decoration: rgba(136, 158, 170, 0.3);
@@ -659,13 +628,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(209, 209, 209);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(209, 209, 209);
-  border-left-color: rgb(209, 209, 209);
-  border-right-color: rgb(209, 209, 209);
-  border-top-color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -727,43 +689,20 @@ html[saved-theme="dark"] body tr {
   border-top-color: rgb(209, 209, 209);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(209, 209, 209);
-  border-left-color: rgb(209, 209, 209);
-  border-right-color: rgb(209, 209, 209);
-  border-top-color: rgb(209, 209, 209);
-  color: rgb(209, 209, 209);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(33, 33, 33);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(33, 33, 33);
   color: rgb(209, 209, 209);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line] {
-  border-left-color: rgb(229, 181, 103);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(229, 181, 103);
-}
-
-html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(229, 181, 103);
-  border-left-color: rgb(229, 181, 103);
-  border-right-color: rgb(229, 181, 103);
-  border-top-color: rgb(229, 181, 103);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(33, 33, 33);
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(33, 33, 33);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(209, 209, 209);
@@ -781,8 +720,6 @@ html[saved-theme="dark"] body figure {
   border-left-color: rgb(209, 209, 209);
   border-right-color: rgb(209, 209, 209);
   border-top-color: rgb(209, 209, 209);
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 html[saved-theme="dark"] body img {
@@ -2048,7 +1985,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(209, 209, 209);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(54, 54, 54);
   border-bottom-left-radius: 27.82px;
@@ -2064,12 +2001,18 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   border-top-width: 1px;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(153, 153, 153);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(209, 209, 209);
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(209, 209, 209);
+  font-size: 18px;
+  font-weight: 600;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -2102,16 +2045,16 @@ html[saved-theme="dark"] body h6 {
   border-right-color: rgba(108, 153, 187, 0.25);
   border-top-color: rgba(108, 153, 187, 0.25);
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(153, 153, 153);
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(153, 153, 153);
-}
-
-html[saved-theme="dark"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(54, 54, 54);
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(153, 153, 153);
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(209, 209, 209);
@@ -2195,15 +2138,34 @@ html[saved-theme="dark"] body .darkmode svg {
 html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(89, 89, 89);
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(209, 209, 209);
-  border-left-color: rgb(209, 209, 209);
-  border-right-color: rgb(209, 209, 209);
-  border-top-color: rgb(209, 209, 209);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(209, 209, 209);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(209, 209, 209);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(209, 209, 209);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(209, 209, 209);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(33, 33, 33);
+  border-color: rgb(209, 209, 209);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table {
+  border-color: rgb(209, 209, 209);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  color: rgb(209, 209, 209);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   color: rgb(153, 153, 153);
 }
 
@@ -2213,6 +2175,55 @@ html[saved-theme="dark"] body .metadata-properties {
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
   color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 27.82px;
+  color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(153, 153, 153);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(38, 38, 38);
+  color: rgb(209, 209, 209);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(209, 209, 209);
+  border-left-color: rgb(209, 209, 209);
+  border-right-color: rgb(209, 209, 209);
+  border-top-color: rgb(209, 209, 209);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(33, 33, 33);
+  border-color: rgb(209, 209, 209);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(33, 33, 33);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(209, 209, 209);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(209, 209, 209);
+  border-left-color: rgb(209, 209, 209);
+  border-right-color: rgb(209, 209, 209);
+  border-top-color: rgb(209, 209, 209);
+  color: rgb(209, 209, 209);
 }
 
 html[saved-theme="dark"] body .page-header h2.page-title {
@@ -2662,6 +2673,27 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-items-background: hsl( 0, 0%, 96% ) !important;
   --setting-items-border-color: hsl( 0, 0%, 90% ) !important;
   --shadow-color: rgba(0, 0, 0, 0.1) !important;
+  --shiki-active-tab-border-color: hsl( 0, -20%, 46% ) !important;
+  --shiki-code-background: hsl( 0, 0%, 96% ) !important;
+  --shiki-code-block-spacing: 1.75rem !important;
+  --shiki-code-comment: hsl( 0, -10%, 71% ) !important;
+  --shiki-code-function: #a8c373 !important;
+  --shiki-code-important: #d5763f !important;
+  --shiki-code-keyword: #b05279 !important;
+  --shiki-code-normal: hsl( 0, -20%, 46% ) !important;
+  --shiki-code-property: #73bbb2 !important;
+  --shiki-code-punctuation: hsl( 0, -20%, 46% ) !important;
+  --shiki-code-string: #e5b567 !important;
+  --shiki-code-value: #9e86c8 !important;
+  --shiki-gutter-border-color: hsl( 0, 0%, 90% ) !important;
+  --shiki-gutter-text-color: hsl( 0, -10%, 71% ) !important;
+  --shiki-gutter-text-color-highlight: hsl( 0, -20%, 46% ) !important;
+  --shiki-highlight-green: rgba(168, 195, 115, 0.5) !important;
+  --shiki-highlight-green-background: rgba(168, 195, 115, 0.1) !important;
+  --shiki-highlight-neutral: hsl( 0, -20%, 46% ) !important;
+  --shiki-highlight-red: rgba(208, 66, 85, 0.5) !important;
+  --shiki-highlight-red-background: rgba(208, 66, 85, 0.1) !important;
+  --shiki-terminal-dots-color: hsl( 0, -10%, 71% ) !important;
   --slider-thumb-border-color: hsl( 0, 0%, 84% ) !important;
   --slider-track-background: hsl( 0, 0%, 90% ) !important;
   --sp1: white !important;
@@ -2780,57 +2812,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(15, 15, 15);
 }
 
-html[saved-theme="light"] body .bases-table {
-  border-color: rgb(15, 15, 15);
-}
-
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgb(230, 230, 230);
-  color: rgb(15, 15, 15);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(15, 15, 15);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(15, 15, 15);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(15, 15, 15);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(15, 15, 15);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  border-color: rgb(15, 15, 15);
-}
-
-html[saved-theme="light"] body .note-properties {
-  border-color: rgb(230, 230, 230);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(117, 117, 117);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(117, 117, 117);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 27.82px;
-  color: rgb(117, 117, 117);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(117, 117, 117);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(245, 245, 245);
   color: rgb(15, 15, 15);
@@ -2846,35 +2827,31 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(15, 15, 15);
 }
 
-html[saved-theme="light"] body div#quartz-root {
-  color: rgb(15, 15, 15);
-}
-
 html[saved-theme="light"] body html {
   --focus-animation-duration: 0.1s;
   --hider-ribbon-display: none;
   --image-mix: normal;
   --ribbon-animation-duration: 0.1s;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(15, 15, 15);
   outline: rgb(15, 15, 15) none 0px;
   text-decoration-color: rgb(15, 15, 15);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(15, 15, 15);
   outline: rgb(15, 15, 15) none 0px;
   text-decoration-color: rgb(15, 15, 15);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(15, 15, 15);
   outline: rgb(15, 15, 15) none 0px;
   text-decoration-color: rgb(15, 15, 15);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(15, 15, 15);
   outline: rgb(15, 15, 15) none 0px;
   text-decoration-color: rgb(15, 15, 15);
@@ -2912,19 +2889,19 @@ html[saved-theme="light"] body p {
   outline: rgb(117, 117, 117) none 0px;
   text-decoration-color: rgb(117, 117, 117);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(106, 134, 149);
   outline: rgb(106, 134, 149) none 0px;
   text-decoration-color: rgb(106, 134, 149);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(106, 134, 149);
   outline: rgb(106, 134, 149) none 0px;
   text-decoration-color: rgb(106, 134, 149);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(106, 134, 149);
   outline: rgb(106, 134, 149) none 0px;
   text-decoration: rgba(106, 134, 149, 0.3);
@@ -2940,13 +2917,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(15, 15, 15);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(15, 15, 15);
-  border-left-color: rgb(15, 15, 15);
-  border-right-color: rgb(15, 15, 15);
-  border-top-color: rgb(15, 15, 15);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -3016,59 +2986,24 @@ html[saved-theme="light"] body tr {
   border-top-color: rgb(15, 15, 15);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(15, 15, 15);
-  border-left-color: rgb(15, 15, 15);
-  border-right-color: rgb(15, 15, 15);
-  border-top-color: rgb(15, 15, 15);
-  color: rgb(15, 15, 15);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(245, 245, 245);
-  border-bottom-color: rgb(230, 230, 230);
-  border-left-color: rgb(230, 230, 230);
-  border-right-color: rgb(230, 230, 230);
-  border-top-color: rgb(230, 230, 230);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(245, 245, 245);
   border-bottom-color: rgb(230, 230, 230);
   border-left-color: rgb(230, 230, 230);
   border-right-color: rgb(230, 230, 230);
   border-top-color: rgb(230, 230, 230);
   color: rgb(15, 15, 15);
-}
-
-html[saved-theme="light"] body pre > code > [data-line] {
-  border-left-color: rgb(229, 181, 103);
-}
-
-html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(229, 181, 103);
-}
-
-html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(229, 181, 103);
-  border-left-color: rgb(229, 181, 103);
-  border-right-color: rgb(229, 181, 103);
-  border-top-color: rgb(229, 181, 103);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(245, 245, 245);
-  border-bottom-color: rgb(230, 230, 230);
-  border-left-color: rgb(230, 230, 230);
-  border-right-color: rgb(230, 230, 230);
-  border-top-color: rgb(230, 230, 230);
 }
 
 html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(245, 245, 245);
-  border-bottom-color: rgb(230, 230, 230);
-  border-left-color: rgb(230, 230, 230);
-  border-right-color: rgb(230, 230, 230);
-  border-top-color: rgb(230, 230, 230);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(15, 15, 15);
@@ -3086,8 +3021,6 @@ html[saved-theme="light"] body figure {
   border-left-color: rgb(15, 15, 15);
   border-right-color: rgb(15, 15, 15);
   border-top-color: rgb(15, 15, 15);
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 html[saved-theme="light"] body img {
@@ -4355,7 +4288,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(15, 15, 15);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(230, 230, 230);
   border-bottom-left-radius: 27.82px;
@@ -4371,12 +4304,18 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   border-top-width: 1px;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(117, 117, 117);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(15, 15, 15);
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(15, 15, 15);
+  font-size: 18px;
+  font-weight: 600;
 }
 
 html[saved-theme="light"] body h2 {
@@ -4415,16 +4354,16 @@ html[saved-theme="light"] body hr {
   border-right-color: rgba(108, 153, 187, 0.25);
   border-top-color: rgba(108, 153, 187, 0.25);
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(117, 117, 117);
-}
-
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(117, 117, 117);
-}
-
-html[saved-theme="light"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(230, 230, 230);
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(117, 117, 117);
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(117, 117, 117);
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(15, 15, 15);
@@ -4513,15 +4452,34 @@ html[saved-theme="light"] body .darkmode svg {
 html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(181, 181, 181);
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(15, 15, 15);
-  border-left-color: rgb(15, 15, 15);
-  border-right-color: rgb(15, 15, 15);
-  border-top-color: rgb(15, 15, 15);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(15, 15, 15);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(15, 15, 15);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(15, 15, 15);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(15, 15, 15);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  border-color: rgb(15, 15, 15);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table {
+  border-color: rgb(15, 15, 15);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(230, 230, 230);
+  color: rgb(15, 15, 15);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(230, 230, 230);
   border-left-color: rgb(230, 230, 230);
   border-right-color: rgb(230, 230, 230);
@@ -4535,6 +4493,58 @@ html[saved-theme="light"] body .metadata-properties {
   border-right-color: rgb(117, 117, 117);
   border-top-color: rgb(117, 117, 117);
   color: rgb(117, 117, 117);
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(230, 230, 230);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(117, 117, 117);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(117, 117, 117);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 27.82px;
+  color: rgb(117, 117, 117);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(117, 117, 117);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  color: rgb(15, 15, 15);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(15, 15, 15);
+  border-left-color: rgb(15, 15, 15);
+  border-right-color: rgb(15, 15, 15);
+  border-top-color: rgb(15, 15, 15);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(245, 245, 245);
+  border-color: rgb(15, 15, 15);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(245, 245, 245);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(15, 15, 15);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(15, 15, 15);
+  border-left-color: rgb(15, 15, 15);
+  border-right-color: rgb(15, 15, 15);
+  border-top-color: rgb(15, 15, 15);
+  color: rgb(15, 15, 15);
 }
 
 html[saved-theme="light"] body .navigation-progress {

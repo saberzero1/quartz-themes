@@ -147,6 +147,14 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #6f6e6a !important;
   --setting-items-border-color: rgba(0, 0, 0, 0) !important;
   --setting-items-radius: 8px !important;
+  --shiki-active-tab-border-color: #8d9c8d !important;
+  --shiki-code-normal: #8d9c8d !important;
+  --shiki-code-punctuation: #8d9c8d !important;
+  --shiki-gutter-border-color: rgba(0, 0, 0, 0) !important;
+  --shiki-gutter-text-color-highlight: #8d9c8d !important;
+  --shiki-highlight-neutral: #8d9c8d !important;
+  --shiki-highlight-red: rgba(197, 65, 40, 0.5) !important;
+  --shiki-highlight-red-background: rgba(197, 65, 40, 0.1) !important;
   --slider-track-background: #eff1e1 !important;
   --status-bar-background: #f8f6ea !important;
   --status-bar-border-color: rgba(0, 0, 0, 0) !important;
@@ -207,54 +215,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(111, 110, 106);
 }
 
-html body .bases-table thead th {
-  border-color: rgba(0, 0, 0, 0);
-  color: rgb(111, 110, 106);
-}
-
-html body .canvas-node {
-  border-color: rgb(111, 110, 106);
-}
-
-html body .canvas-node-content {
-  color: rgb(111, 110, 106);
-}
-
-html body .canvas-node-file {
-  color: rgb(111, 110, 106);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(111, 110, 106);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(252, 254, 243);
-  border-color: rgb(111, 110, 106);
-}
-
-html body .note-properties {
-  border-color: rgba(0, 0, 0, 0);
-}
-
-html body .note-properties-key {
-  color: rgb(141, 156, 141);
-}
-
-html body .note-properties-row {
-  border-color: rgb(141, 156, 141);
-}
-
-html body .note-properties-tags {
-  background-color: rgb(212, 228, 241);
-  border-radius: 4px;
-  color: rgb(252, 253, 254);
-}
-
-html body .note-properties-value {
-  color: rgb(141, 156, 141);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(248, 246, 234);
   color: rgb(111, 110, 106);
@@ -268,34 +228,29 @@ html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(163, 213, 170);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(111, 110, 106);
-}
-
-html body div#quartz-root {
-  background-color: rgb(252, 254, 243);
-  color: rgb(111, 110, 106);
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
   outline: rgb(111, 110, 106) none 0px;
   text-decoration-color: rgb(111, 110, 106);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
   outline: rgb(111, 110, 106) none 0px;
   text-decoration-color: rgb(111, 110, 106);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
   outline: rgb(111, 110, 106) none 0px;
   text-decoration-color: rgb(111, 110, 106);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
   outline: rgb(111, 110, 106) none 0px;
@@ -326,18 +281,18 @@ html body p {
   outline: rgb(141, 156, 141) none 0px;
   text-decoration-color: rgb(141, 156, 141);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(82, 115, 165);
   font-family: 宋体, SimSun;
   outline: rgb(82, 115, 165) none 0px;
   text-decoration-color: rgb(82, 115, 165);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   font-family: 宋体, SimSun;
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   font-family: 宋体, SimSun;
 }`,
     lists: `html body dd {
@@ -350,13 +305,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(111, 110, 106);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(111, 110, 106);
-  border-left-color: rgb(111, 110, 106);
-  border-right-color: rgb(111, 110, 106);
-  border-top-color: rgb(111, 110, 106);
 }
 
 html body ul > li {
@@ -401,36 +349,11 @@ html body th {
   color: rgb(111, 110, 106);
 }`,
     code: `html body code {
-  border-bottom-color: rgb(111, 110, 106);
-  border-left-color: rgb(111, 110, 106);
-  border-right-color: rgb(111, 110, 106);
-  border-top-color: rgb(111, 110, 106);
-  color: rgb(111, 110, 106);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(243, 247, 228);
-  border-bottom-color: rgba(0, 0, 0, 0);
-  border-left-color: rgba(0, 0, 0, 0);
-  border-right-color: rgba(0, 0, 0, 0);
-  border-top-color: rgba(0, 0, 0, 0);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(243, 247, 228);
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
   border-top-color: rgba(0, 0, 0, 0);
   color: rgb(111, 110, 106);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(243, 247, 228);
-  border-bottom-color: rgba(0, 0, 0, 0);
-  border-left-color: rgba(0, 0, 0, 0);
-  border-right-color: rgba(0, 0, 0, 0);
-  border-top-color: rgba(0, 0, 0, 0);
 }
 
 html body pre:has(> code) {
@@ -449,7 +372,6 @@ html body pre:has(> code) {
 
 html body figcaption {
   color: rgb(111, 110, 106);
-  font-family: 宋体, SimSun;
 }
 
 html body figure {
@@ -1387,7 +1309,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(111, 110, 106);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgb(212, 228, 241);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -1395,13 +1317,17 @@ html body a.internal.tag-link, html .search > .search-container > .search-space 
   border-top-right-radius: 4px;
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(252, 253, 254);
 }
 
 html body h1 {
   color: rgb(111, 110, 106);
   font-family: 宋体, SimSun;
+}
+
+html body h1.article-title {
+  color: rgb(111, 110, 106);
 }
 
 html body h2 {
@@ -1442,18 +1368,18 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(98, 102, 102);
-  font-family: "Times New Roman";
-}
-
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(98, 102, 102);
-  font-family: "Times New Roman";
-}
-
-html body .explorer .folder-outer > ul {
+    explorer: `html body .nav-files-container .tree-item-children {
   border-left-color: rgba(0, 0, 0, 0);
+}
+
+html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(98, 102, 102);
+  font-family: "Times New Roman";
+}
+
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(98, 102, 102);
+  font-family: "Times New Roman";
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(111, 110, 106);
@@ -1543,15 +1469,31 @@ html body .darkmode svg {
   border-top-color: rgb(141, 156, 141);
   color: rgb(141, 156, 141);
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: rgb(111, 110, 106);
-  border-left-color: rgb(111, 110, 106);
-  border-right-color: rgb(111, 110, 106);
-  border-top-color: rgb(111, 110, 106);
+    canvas: `html body .canvas-node {
+  border-color: rgb(111, 110, 106);
+}
+
+html body .canvas-node-content {
   color: rgb(111, 110, 106);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  color: rgb(111, 110, 106);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(111, 110, 106);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(252, 254, 243);
+  border-color: rgb(111, 110, 106);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgba(0, 0, 0, 0);
+  color: rgb(111, 110, 106);
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgba(0, 0, 0, 0);
   border-left-color: rgba(0, 0, 0, 0);
   border-right-color: rgba(0, 0, 0, 0);
@@ -1567,6 +1509,59 @@ html body .metadata-properties {
   border-top-color: rgb(141, 156, 141);
   color: rgb(141, 156, 141);
   font-family: 宋体, SimSun;
+}
+
+html body .note-properties {
+  border-color: rgba(0, 0, 0, 0);
+}
+
+html body .note-properties-key {
+  color: rgb(141, 156, 141);
+}
+
+html body .note-properties-row {
+  border-color: rgb(141, 156, 141);
+}
+
+html body .note-properties-tags {
+  background-color: rgb(212, 228, 241);
+  border-radius: 4px;
+  color: rgb(252, 253, 254);
+}
+
+html body .note-properties-value {
+  color: rgb(141, 156, 141);
+}
+
+html body div#quartz-root {
+  background-color: rgb(252, 254, 243);
+  color: rgb(111, 110, 106);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(111, 110, 106);
+  border-left-color: rgb(111, 110, 106);
+  border-right-color: rgb(111, 110, 106);
+  border-top-color: rgb(111, 110, 106);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(248, 246, 234);
+  border-color: rgb(111, 110, 106);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(163, 213, 170);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(111, 110, 106);
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: rgb(111, 110, 106);
+  border-left-color: rgb(111, 110, 106);
+  border-right-color: rgb(111, 110, 106);
+  border-top-color: rgb(111, 110, 106);
+  color: rgb(111, 110, 106);
 }
 
 html body .navigation-progress {

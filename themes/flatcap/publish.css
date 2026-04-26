@@ -1067,6 +1067,35 @@ body.theme-dark {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shiki-active-tab-border-color: #bfc2ca !important;
+  --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: #191c22 !important;
+  --shiki-code-block-border-color: transparent !important;
+  --shiki-code-block-border-radius: 4px !important;
+  --shiki-code-block-border-width: 0px !important;
+  --shiki-code-block-spacing: 1.75rem !important;
+  --shiki-code-comment: #b2b6bf !important;
+  --shiki-code-function: #84dcc6 !important;
+  --shiki-code-important: #ffd670 !important;
+  --shiki-code-keyword: #ff70a6 !important;
+  --shiki-code-normal: #bfc2ca !important;
+  --shiki-code-property: #00a8e0 !important;
+  --shiki-code-punctuation: #bfc2ca !important;
+  --shiki-code-string: #ffd670 !important;
+  --shiki-code-value: #68b6ef !important;
+  --shiki-gutter-border-color: #303540 !important;
+  --shiki-gutter-border-width: 1px !important;
+  --shiki-gutter-text-color: #b2b6bf !important;
+  --shiki-gutter-text-color-highlight: #bfc2ca !important;
+  --shiki-highlight-green: rgba(132, 220, 198, 0.5) !important;
+  --shiki-highlight-green-background: rgba(132, 220, 198, 0.1) !important;
+  --shiki-highlight-neutral: #bfc2ca !important;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05) !important;
+  --shiki-highlight-red: rgba(255, 112, 166, 0.5) !important;
+  --shiki-highlight-red-background: rgba(255, 112, 166, 0.1) !important;
+  --shiki-terminal-dots-color: #b2b6bf !important;
+  --shiki-tooltip-background: rgba(0, 0, 0, 0.9) !important;
+  --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -1865,8 +1894,8 @@ body body.theme-dark .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px solid rgb(191, 194, 202);
+  background-color: rgb(25, 28, 34);
+  border: 0px solid rgb(48, 53, 64);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -1880,28 +1909,28 @@ body body.theme-dark .markdown-rendered code {
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas,
     "Source Code Pro", monospace;
-  padding: 0px;
+  padding: 2.1px 4.2px;
 }
 body body.theme-dark .markdown-rendered pre > code {
-  background-color: rgb(25, 28, 34);
-  border: 0px solid rgb(48, 53, 64);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding: 12px 16px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body body.theme-dark :not(pre) > code[class*="language-"],
 body body.theme-dark pre[class*="language-"] {
   background-color: rgb(25, 28, 34);
-  border: 0px solid rgb(48, 53, 64);
+  border: 0px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -1911,7 +1940,7 @@ body body.theme-dark pre[class*="language-"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding: 12px 16px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
@@ -2886,15 +2915,15 @@ body body.theme-dark .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
   border: 0px rgb(203, 206, 213);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 40px;
+  margin: 0px;
   margin-block-end: 15px;
   margin-block-start: 15px;
   margin-inline-end: 40px;
@@ -3619,12 +3648,12 @@ body body.theme-dark .view-content {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(25, 28, 34);
-  border: 0px solid rgb(48, 53, 64);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -3634,14 +3663,14 @@ body
   body.theme-dark
   figure[data-rehype-pretty-code-figure]
   > [data-rehype-pretty-code-title] {
-  background-color: rgb(25, 28, 34);
-  color: rgb(203, 206, 213);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(218, 218, 218);
   font-family: monospace;
-  border: 0px solid rgb(48, 53, 64);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -3649,15 +3678,15 @@ body
 }
 body body.theme-dark pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left: 0px rgb(255, 214, 112);
+  border-left: 0px rgb(218, 218, 218);
 }
 body body.theme-dark pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-color: rgb(255, 214, 112);
+  border-left-color: rgb(218, 218, 218);
 }
 body body.theme-dark pre > code [data-highlighted-chars] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(255, 214, 112);
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

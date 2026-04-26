@@ -199,6 +199,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #d1cec6 !important;
   --setting-items-background: rgba(0, 0, 0, 0.08) !important;
   --setting-items-border-color: #686e80 !important;
+  --shiki-active-tab-border-color: #686e80 !important;
+  --shiki-code-background: rgba(0, 0, 0, 0.08) !important;
+  --shiki-code-comment: #686e80 !important;
+  --shiki-code-normal: #686e80 !important;
+  --shiki-code-punctuation: #686e80 !important;
+  --shiki-gutter-border-color: #686e80 !important;
+  --shiki-gutter-text-color: #686e80 !important;
+  --shiki-gutter-text-color-highlight: #686e80 !important;
+  --shiki-highlight-neutral: #686e80 !important;
+  --shiki-terminal-dots-color: #686e80 !important;
   --slider-track-background: #686e80 !important;
   --status-bar-background: #13151e !important;
   --status-bar-border-color: #686e80 !important;
@@ -276,56 +286,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(209, 206, 198);
 }
 
-html body .bases-table thead th {
-  background-color: rgb(19, 21, 30);
-  border-color: rgb(104, 110, 128);
-  color: rgb(209, 206, 198);
-  font-weight: 800;
-}
-
-html body .canvas-node {
-  border-color: rgb(209, 206, 198);
-}
-
-html body .canvas-node-content {
-  color: rgb(209, 206, 198);
-}
-
-html body .canvas-node-file {
-  background-color: rgb(23, 26, 35);
-  color: rgb(209, 206, 198);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(209, 206, 198);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(19, 21, 30);
-  border-color: rgb(209, 206, 198);
-}
-
-html body .note-properties {
-  border-color: rgb(104, 110, 128);
-}
-
-html body .note-properties-key {
-  color: rgb(104, 110, 128);
-}
-
-html body .note-properties-row {
-  border-color: rgb(104, 110, 128);
-}
-
-html body .note-properties-tags {
-  border-radius: 42px;
-  color: rgb(254, 193, 84);
-}
-
-html body .note-properties-value {
-  color: rgb(104, 110, 128);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(19, 21, 30);
   color: rgb(209, 206, 198);
@@ -338,11 +298,6 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(19, 21, 30);
   border-left-color: rgb(104, 110, 128);
-  color: rgb(209, 206, 198);
-}
-
-html body div#quartz-root {
-  background-color: rgb(23, 26, 35);
   color: rgb(209, 206, 198);
 }
 
@@ -362,43 +317,7 @@ html body html {
   --line-height-header-preview: 1em;
   --line-height-preview: 1.7em;
 }`,
-    typography: `html body .page article p > b, html b {
-  color: rgb(209, 206, 198);
-  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
-  outline: rgb(209, 206, 198) none 0px;
-  text-decoration-color: rgb(209, 206, 198);
-}
-
-html body .page article p > em, html em {
-  color: rgb(209, 206, 198);
-  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
-  outline: rgb(209, 206, 198) none 0px;
-  text-decoration-color: rgb(209, 206, 198);
-}
-
-html body .page article p > i, html i {
-  color: rgb(209, 206, 198);
-  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
-  outline: rgb(209, 206, 198) none 0px;
-  text-decoration-color: rgb(209, 206, 198);
-}
-
-html body .page article p > strong, html strong {
-  color: rgb(209, 206, 198);
-  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
-  outline: rgb(209, 206, 198) none 0px;
-  text-decoration-color: rgb(209, 206, 198);
-}
-
-html body .text-highlight {
-  background-color: rgba(49, 54, 70, 0.5);
-  color: rgb(209, 206, 198);
-  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
-  outline: rgb(209, 206, 198) none 0px;
-  text-decoration-color: rgb(209, 206, 198);
-}
-
-html body article > h1 {
+    typography: `html body .markdown-rendered > h1 {
   --font-medium: 500;
   --font-small: 0.933em;
   --font-weight: 700;
@@ -430,6 +349,42 @@ html body article > h1 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html body .markdown-rendered p > b, html b {
+  color: rgb(209, 206, 198);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  outline: rgb(209, 206, 198) none 0px;
+  text-decoration-color: rgb(209, 206, 198);
+}
+
+html body .markdown-rendered p > em, html em {
+  color: rgb(209, 206, 198);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  outline: rgb(209, 206, 198) none 0px;
+  text-decoration-color: rgb(209, 206, 198);
+}
+
+html body .markdown-rendered p > i, html i {
+  color: rgb(209, 206, 198);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  outline: rgb(209, 206, 198) none 0px;
+  text-decoration-color: rgb(209, 206, 198);
+}
+
+html body .markdown-rendered p > strong, html strong {
+  color: rgb(209, 206, 198);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  outline: rgb(209, 206, 198) none 0px;
+  text-decoration-color: rgb(209, 206, 198);
+}
+
+html body .text-highlight {
+  background-color: rgba(49, 54, 70, 0.5);
+  color: rgb(209, 206, 198);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  outline: rgb(209, 206, 198) none 0px;
+  text-decoration-color: rgb(209, 206, 198);
 }
 
 html body del {
@@ -628,21 +583,21 @@ html body p {
   outline: rgb(104, 110, 128) none 0px;
   text-decoration-color: rgb(104, 110, 128);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(254, 193, 84);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   outline: rgb(254, 193, 84) none 0px;
   text-decoration-color: rgb(254, 193, 84);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(254, 193, 84);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   outline: rgb(254, 193, 84) none 0px;
   text-decoration-color: rgb(254, 193, 84);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(254, 193, 84);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   outline: rgb(254, 193, 84) none 0px;
@@ -663,13 +618,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(209, 206, 198);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(209, 206, 198);
-  border-left-color: rgb(209, 206, 198);
-  border-right-color: rgb(209, 206, 198);
-  border-top-color: rgb(209, 206, 198);
 }
 
 html body ul > li {
@@ -735,9 +683,13 @@ html body tr {
     code: `html body code {
   background-color: rgb(19, 20, 27);
   border-bottom-color: rgb(104, 110, 128);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-left-color: rgb(104, 110, 128);
   border-right-color: rgb(104, 110, 128);
   border-top-color: rgb(104, 110, 128);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   color: rgb(104, 110, 128);
   font-family: "Ubuntu Mono derivative Powerline", Menlo, Monaco;
   padding-bottom: 22px;
@@ -746,56 +698,12 @@ html body tr {
   padding-top: 22px;
 }
 
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgba(0, 0, 0, 0.08);
-  border-bottom-color: rgb(104, 110, 128);
-  border-left-color: rgb(104, 110, 128);
-  border-right-color: rgb(104, 110, 128);
-  border-top-color: rgb(104, 110, 128);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgba(0, 0, 0, 0.08);
-  border-bottom-color: rgb(104, 110, 128);
-  border-left-color: rgb(104, 110, 128);
-  border-right-color: rgb(104, 110, 128);
-  border-top-color: rgb(104, 110, 128);
-  color: rgb(104, 110, 128);
-}
-
-html body pre > code > [data-line] {
-  border-left-color: rgb(221, 74, 104);
-}
-
-html body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(221, 74, 104);
-}
-
-html body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(221, 74, 104);
-  border-left-color: rgb(221, 74, 104);
-  border-right-color: rgb(221, 74, 104);
-  border-top-color: rgb(221, 74, 104);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgba(0, 0, 0, 0.08);
-  border-bottom-color: rgb(104, 110, 128);
-  border-left-color: rgb(104, 110, 128);
-  border-right-color: rgb(104, 110, 128);
-  border-top-color: rgb(104, 110, 128);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-}
-
 html body pre:has(> code) {
   background-color: rgba(0, 0, 0, 0.08);
-  border-bottom-color: rgb(104, 110, 128);
-  border-left-color: rgb(104, 110, 128);
-  border-right-color: rgb(104, 110, 128);
-  border-top-color: rgb(104, 110, 128);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -810,7 +718,6 @@ html body pre:has(> code) {
 
 html body figcaption {
   color: rgb(209, 206, 198);
-  font-size: 24px;
 }
 
 html body figure {
@@ -818,8 +725,6 @@ html body figure {
   border-left-color: rgb(209, 206, 198);
   border-right-color: rgb(209, 206, 198);
   border-top-color: rgb(209, 206, 198);
-  margin-bottom: 24px;
-  margin-top: 24px;
 }
 
 html body img {
@@ -1713,20 +1618,25 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(209, 206, 198);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 42px;
   border-bottom-right-radius: 42px;
   border-top-left-radius: 42px;
   border-top-right-radius: 42px;
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(254, 193, 84);
 }
 
 html body h1 {
   color: rgb(142, 152, 170);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+}
+
+html body h1.article-title {
+  color: rgb(209, 206, 198);
+  font-size: 38.832px;
 }
 
 html body h2 {
@@ -1767,12 +1677,12 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(104, 110, 128);
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(104, 110, 128);
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
 }`,
@@ -1866,15 +1776,34 @@ html body .darkmode svg {
 html body .breadcrumb-element p {
   color: rgb(104, 110, 128);
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: rgb(209, 206, 198);
-  border-left-color: rgb(209, 206, 198);
-  border-right-color: rgb(209, 206, 198);
-  border-top-color: rgb(209, 206, 198);
+    canvas: `html body .canvas-node {
+  border-color: rgb(209, 206, 198);
+}
+
+html body .canvas-node-content {
   color: rgb(209, 206, 198);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  background-color: rgb(23, 26, 35);
+  color: rgb(209, 206, 198);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(209, 206, 198);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(19, 21, 30);
+  border-color: rgb(209, 206, 198);
+}`,
+    bases: `html body .bases-table thead th {
+  background-color: rgb(19, 21, 30);
+  border-color: rgb(104, 110, 128);
+  color: rgb(209, 206, 198);
+  font-weight: 800;
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(104, 110, 128);
   border-left-color: rgb(104, 110, 128);
   border-right-color: rgb(104, 110, 128);
@@ -1890,6 +1819,58 @@ html body .metadata-properties {
   border-top-color: rgb(104, 110, 128);
   color: rgb(104, 110, 128);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+}
+
+html body .note-properties {
+  border-color: rgb(104, 110, 128);
+}
+
+html body .note-properties-key {
+  color: rgb(104, 110, 128);
+}
+
+html body .note-properties-row {
+  border-color: rgb(104, 110, 128);
+}
+
+html body .note-properties-tags {
+  border-radius: 42px;
+  color: rgb(254, 193, 84);
+}
+
+html body .note-properties-value {
+  color: rgb(104, 110, 128);
+}
+
+html body div#quartz-root {
+  background-color: rgb(23, 26, 35);
+  color: rgb(209, 206, 198);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(209, 206, 198);
+  border-left-color: rgb(209, 206, 198);
+  border-right-color: rgb(209, 206, 198);
+  border-top-color: rgb(209, 206, 198);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(19, 21, 30);
+  border-color: rgb(209, 206, 198);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(19, 21, 30);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(209, 206, 198);
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: rgb(209, 206, 198);
+  border-left-color: rgb(209, 206, 198);
+  border-right-color: rgb(209, 206, 198);
+  border-top-color: rgb(209, 206, 198);
+  color: rgb(209, 206, 198);
 }
 
 html body .navigation-progress {

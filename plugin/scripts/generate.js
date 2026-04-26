@@ -53,6 +53,10 @@ const ASPECT_ORDER = [
   "listPage",
   "darkmode",
   "breadcrumbs",
+  "canvas",
+  "bases",
+  "properties",
+  "stacked",
   "misc",
 ];
 
@@ -83,6 +87,13 @@ const commentAspectMatchers = [
   { aspect: "listPage", tests: ["list page"] },
   { aspect: "darkmode", tests: ["darkmode", "dark mode"] },
   { aspect: "breadcrumbs", tests: ["breadcrumbs"] },
+  { aspect: "canvas", tests: ["canvas"] },
+  { aspect: "bases", tests: ["bases", "database"] },
+  {
+    aspect: "properties",
+    tests: ["properties", "metadata", "frontmatter properties"],
+  },
+  { aspect: "stacked", tests: ["stacked", "stacked pages"] },
   { aspect: "cards", tests: ["cards", "card"] },
   {
     aspect: "typography",

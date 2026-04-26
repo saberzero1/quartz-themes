@@ -52,7 +52,10 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
   const jsResources: JSResource[] = [];
 
   if (resolvedCSS) {
-    cssResources.push({ content: resolvedCSS, inline: true });
+    cssResources.push({
+      content: `@layer obsidian-theme {\n${resolvedCSS}\n}`,
+      inline: true,
+    });
   }
 
   if (isSingleMode) {

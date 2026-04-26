@@ -82,14 +82,6 @@ html body {
   color: var(--text-normal) !important;
 }
 
-html body .bases-table thead th {
-  color: rgb(135, 232, 206);
-}
-
-html body .note-properties-tags {
-  border-radius: 25.2px;
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(28, 28, 33);
 }
@@ -153,28 +145,28 @@ html body html {
   --white-dark-2: hsl(212, 61%, 81%);
   --white-dark-3: hsl(211, 19%, 60%);
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(218, 231, 246);
   font-family: "Fira Code", monospace;
   outline: rgb(218, 231, 246) none 0px;
   text-decoration-color: rgb(218, 231, 246);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(218, 231, 246);
   font-family: "Fira Code", monospace;
   outline: rgb(218, 231, 246) none 0px;
   text-decoration-color: rgb(218, 231, 246);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(218, 231, 246);
   font-family: "Fira Code", monospace;
   outline: rgb(218, 231, 246) none 0px;
   text-decoration-color: rgb(218, 231, 246);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(218, 231, 246);
   font-family: "Fira Code", monospace;
   outline: rgb(218, 231, 246) none 0px;
@@ -203,7 +195,7 @@ html body h1.article-title {
 html body p {
   font-family: "Fira Code", monospace;
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(218, 231, 246);
   font-family: "Fira Code", monospace;
   outline: rgb(218, 231, 246) none 0px;
@@ -211,13 +203,13 @@ html body p {
   text-decoration-color: rgb(135, 232, 206);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   font-family: "Fira Code", monospace;
   text-decoration: underline rgb(135, 232, 206);
   text-decoration-color: rgb(135, 232, 206);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   font-family: "Fira Code", monospace;
   text-decoration: underline rgb(135, 232, 206);
   text-decoration-color: rgb(135, 232, 206);
@@ -250,17 +242,13 @@ html body blockquote {
 html body th {
   color: rgb(135, 232, 206);
 }`,
-    images: `html body figcaption {
-  font-family: "Fira Code", monospace;
-  font-size: 14.4px;
-}
-
-html body figure {
-  margin-bottom: 14.4px;
-  margin-top: 14.4px;
-}
-
-html body video {
+    code: `html body code {
+  padding-bottom: 1.89px;
+  padding-left: 3.78px;
+  padding-right: 3.78px;
+  padding-top: 1.89px;
+}`,
+    images: `html body video {
   border-bottom-color: rgb(218, 231, 246);
   border-left-color: rgb(218, 231, 246);
   border-right-color: rgb(218, 231, 246);
@@ -984,7 +972,7 @@ html body .search > .search-container > .search-space > * {
   font-family: "Fira Code", monospace;
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 25.2px;
   border-bottom-right-radius: 25.2px;
   border-top-left-radius: 25.2px;
@@ -994,6 +982,10 @@ html body a.internal.tag-link, html .search > .search-container > .search-space 
 html body h1 {
   color: rgb(135, 232, 206);
   font-family: "Fira Code", monospace;
+}
+
+html body h1.article-title {
+  font-size: 23.2992px;
 }
 
 html body h2 {
@@ -1027,11 +1019,11 @@ html body h6 {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "Fira Code", monospace;
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "Fira Code", monospace;
 }`,
     footer: `html body footer {
@@ -1063,7 +1055,10 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(134, 152, 172);
 }`,
-    misc: `html body .metadata {
+    bases: `html body .bases-table thead th {
+  color: rgb(135, 232, 206);
+}`,
+    properties: `html body .metadata {
   font-family: "Fira Code", monospace;
 }
 
@@ -1071,7 +1066,17 @@ html body .metadata-properties {
   font-family: "Fira Code", monospace;
 }
 
-html body .navigation-progress {
+html body .note-properties-tags {
+  border-radius: 25.2px;
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(28, 28, 33);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(17, 17, 19);
+}`,
+    misc: `html body .navigation-progress {
   background-color: rgb(17, 17, 19);
 }
 

@@ -599,6 +599,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #f7edeb !important;
   --setting-items-background: #343231 !important;
   --setting-items-border-color: #36302a !important;
+  --shiki-active-tab-border-color: #f0d3c9 !important;
+  --shiki-code-background: #343231 !important;
+  --shiki-code-comment: #665957 !important;
+  --shiki-code-normal: #f0d3c9 !important;
+  --shiki-code-punctuation: #f0d3c9 !important;
+  --shiki-gutter-border-color: #36302a !important;
+  --shiki-gutter-text-color: #665957 !important;
+  --shiki-gutter-text-color-highlight: #f0d3c9 !important;
+  --shiki-highlight-neutral: #f0d3c9 !important;
+  --shiki-terminal-dots-color: #665957 !important;
   --slider-track-background: #36302a !important;
   --status-bar-background: #2e2d2d !important;
   --status-bar-border-color: #36302a !important;
@@ -775,53 +785,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(247, 237, 235);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  background-color: rgb(46, 45, 45);
-  border-color: rgb(54, 48, 42);
-  color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(46, 45, 45);
-  border-color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgb(54, 48, 42);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(240, 211, 201);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(240, 211, 201);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  color: rgb(75, 100, 68);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(240, 211, 201);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(46, 45, 45);
   color: rgb(247, 237, 235);
@@ -834,11 +797,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(46, 45, 45);
   border-left-color: rgb(54, 48, 42);
-  color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(40, 39, 39);
   color: rgb(247, 237, 235);
 }
 
@@ -907,43 +865,7 @@ html[saved-theme="dark"] body html {
   --vr-statusbar-item-padding: 6px;
   --vr-workspace-tab-padding: 2px;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
-  color: rgb(247, 237, 235);
-  font-family: "Source Serif Pro", nasin-nanpa;
-  outline: rgb(247, 237, 235) none 0px;
-  text-decoration-color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
-  color: rgb(247, 237, 235);
-  font-family: "Source Serif Pro", nasin-nanpa;
-  outline: rgb(247, 237, 235) none 0px;
-  text-decoration-color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
-  color: rgb(247, 237, 235);
-  font-family: "Source Serif Pro", nasin-nanpa;
-  outline: rgb(247, 237, 235) none 0px;
-  text-decoration-color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
-  color: rgb(247, 237, 235);
-  font-family: "Source Serif Pro", nasin-nanpa;
-  outline: rgb(247, 237, 235) none 0px;
-  text-decoration-color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body .text-highlight {
-  background-color: rgb(255, 196, 0);
-  color: rgb(41, 38, 35);
-  font-family: "Source Serif Pro", nasin-nanpa;
-  outline: rgb(41, 38, 35) none 0px;
-  text-decoration-color: rgb(41, 38, 35);
-}
-
-html[saved-theme="dark"] body article > h1 {
+    typography: `html[saved-theme="dark"] body .markdown-rendered > h1 {
   --font-weight: 700;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(247, 237, 235);
@@ -973,6 +895,42 @@ html[saved-theme="dark"] body article > h1 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
+  color: rgb(247, 237, 235);
+  font-family: "Source Serif Pro", nasin-nanpa;
+  outline: rgb(247, 237, 235) none 0px;
+  text-decoration-color: rgb(247, 237, 235);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
+  color: rgb(247, 237, 235);
+  font-family: "Source Serif Pro", nasin-nanpa;
+  outline: rgb(247, 237, 235) none 0px;
+  text-decoration-color: rgb(247, 237, 235);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: rgb(247, 237, 235);
+  font-family: "Source Serif Pro", nasin-nanpa;
+  outline: rgb(247, 237, 235) none 0px;
+  text-decoration-color: rgb(247, 237, 235);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
+  color: rgb(247, 237, 235);
+  font-family: "Source Serif Pro", nasin-nanpa;
+  outline: rgb(247, 237, 235) none 0px;
+  text-decoration-color: rgb(247, 237, 235);
+}
+
+html[saved-theme="dark"] body .text-highlight {
+  background-color: rgb(255, 196, 0);
+  color: rgb(41, 38, 35);
+  font-family: "Source Serif Pro", nasin-nanpa;
+  outline: rgb(41, 38, 35) none 0px;
+  text-decoration-color: rgb(41, 38, 35);
 }
 
 html[saved-theme="dark"] body del {
@@ -1160,21 +1118,21 @@ html[saved-theme="dark"] body p {
   outline: rgb(240, 211, 201) none 0px;
   text-decoration-color: rgb(240, 211, 201);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(104, 194, 211);
   font-family: "Source Serif Pro", nasin-nanpa;
   outline: rgb(104, 194, 211) none 0px;
   text-decoration-color: rgb(104, 194, 211);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(75, 100, 68);
   font-family: "Source Serif Pro", nasin-nanpa;
   outline: rgb(75, 100, 68) none 0px;
   text-decoration-color: rgb(75, 100, 68);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(75, 100, 68);
   font-family: "Source Serif Pro", nasin-nanpa;
   outline: rgb(75, 100, 68) none 0px;
@@ -1190,13 +1148,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(247, 237, 235);
-  border-left-color: rgb(247, 237, 235);
-  border-right-color: rgb(247, 237, 235);
-  border-top-color: rgb(247, 237, 235);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -1248,58 +1199,21 @@ html[saved-theme="dark"] body th {
   color: rgb(247, 237, 235);
 }`,
     code: `html[saved-theme="dark"] body code {
-  background-color: rgb(46, 45, 45);
-  border-bottom-color: rgb(247, 237, 235);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: rgb(247, 237, 235);
-  border-right-color: rgb(247, 237, 235);
-  border-top-color: rgb(247, 237, 235);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  background-color: rgb(52, 50, 49);
+  border-bottom-color: rgb(54, 48, 42);
+  border-left-color: rgb(54, 48, 42);
+  border-right-color: rgb(54, 48, 42);
+  border-top-color: rgb(54, 48, 42);
   color: rgb(247, 237, 235);
   font-family: "Victor Mono", nasin-nanpa;
 }
 
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(54, 48, 42);
-  border-left-color: rgb(54, 48, 42);
-  border-right-color: rgb(54, 48, 42);
-  border-top-color: rgb(54, 48, 42);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(54, 48, 42);
-  border-left-color: rgb(54, 48, 42);
-  border-right-color: rgb(54, 48, 42);
-  border-top-color: rgb(54, 48, 42);
-  color: rgb(247, 237, 235);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(54, 48, 42);
-  border-left-color: rgb(54, 48, 42);
-  border-right-color: rgb(54, 48, 42);
-  border-top-color: rgb(54, 48, 42);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-}
-
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(52, 50, 49);
   border-bottom-color: rgb(54, 48, 42);
   border-left-color: rgb(54, 48, 42);
   border-right-color: rgb(54, 48, 42);
   border-top-color: rgb(54, 48, 42);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(247, 237, 235);
@@ -2792,13 +2706,17 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(247, 237, 235);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(75, 100, 68);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(75, 100, 68);
   font-family: Brevia, nasin-nanpa;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(247, 237, 235);
 }
 
 html[saved-theme="dark"] body h2 {
@@ -2847,17 +2765,17 @@ html[saved-theme="dark"] body hr {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer {
+    explorer: `html[saved-theme="dark"] body .nav-files-container {
   background-color: rgb(40, 39, 39);
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(240, 211, 201);
   font-family: Recursive, nasin-nanpa;
   font-weight: 700;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(240, 211, 201);
   font-family: Recursive, nasin-nanpa;
   font-weight: 700;
@@ -2956,15 +2874,32 @@ html[saved-theme="dark"] body .darkmode svg {
 html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(102, 89, 87);
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(247, 237, 235);
-  border-left-color: rgb(247, 237, 235);
-  border-right-color: rgb(247, 237, 235);
-  border-top-color: rgb(247, 237, 235);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(247, 237, 235);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(247, 237, 235);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(247, 237, 235);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(247, 237, 235);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(46, 45, 45);
+  border-color: rgb(247, 237, 235);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  background-color: rgb(46, 45, 45);
+  border-color: rgb(54, 48, 42);
+  color: rgb(247, 237, 235);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(54, 48, 42);
   border-left-color: rgb(54, 48, 42);
   border-right-color: rgb(54, 48, 42);
@@ -2980,6 +2915,57 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(240, 211, 201);
   color: rgb(240, 211, 201);
   font-family: "Source Serif Pro", nasin-nanpa;
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(54, 48, 42);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(240, 211, 201);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(240, 211, 201);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  color: rgb(75, 100, 68);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(240, 211, 201);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(40, 39, 39);
+  color: rgb(247, 237, 235);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(247, 237, 235);
+  border-left-color: rgb(247, 237, 235);
+  border-right-color: rgb(247, 237, 235);
+  border-top-color: rgb(247, 237, 235);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(46, 45, 45);
+  border-color: rgb(247, 237, 235);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(40, 39, 39);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(247, 237, 235);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(247, 237, 235);
+  border-left-color: rgb(247, 237, 235);
+  border-right-color: rgb(247, 237, 235);
+  border-top-color: rgb(247, 237, 235);
+  color: rgb(247, 237, 235);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -3175,6 +3161,16 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-group-heading-color: #33271a !important;
   --setting-items-background: #f0eeeb !important;
   --setting-items-border-color: #ded6cc !important;
+  --shiki-active-tab-border-color: #474032 !important;
+  --shiki-code-background: #f0eeeb !important;
+  --shiki-code-comment: #9e9892 !important;
+  --shiki-code-normal: #474032 !important;
+  --shiki-code-punctuation: #474032 !important;
+  --shiki-gutter-border-color: #ded6cc !important;
+  --shiki-gutter-text-color: #9e9892 !important;
+  --shiki-gutter-text-color-highlight: #474032 !important;
+  --shiki-highlight-neutral: #474032 !important;
+  --shiki-terminal-dots-color: #9e9892 !important;
   --slider-track-background: #ded6cc !important;
   --status-bar-background: #edeae4 !important;
   --status-bar-border-color: #ded6cc !important;
@@ -3360,53 +3356,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(51, 39, 26);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  background-color: rgb(237, 234, 228);
-  border-color: rgb(222, 214, 204);
-  color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(245, 244, 242);
-  border-color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body .note-properties {
-  border-color: rgb(222, 214, 204);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(71, 64, 50);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(71, 64, 50);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  color: rgb(75, 100, 68);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(71, 64, 50);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(237, 234, 228);
   color: rgb(51, 39, 26);
@@ -3419,11 +3368,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(237, 234, 228);
   border-left-color: rgb(222, 214, 204);
-  color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(245, 244, 242);
   color: rgb(51, 39, 26);
 }
 
@@ -3492,43 +3436,7 @@ html[saved-theme="light"] body html {
   --vr-statusbar-item-padding: 6px;
   --vr-workspace-tab-padding: 2px;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
-  color: rgb(51, 39, 26);
-  font-family: "Source Serif Pro", nasin-nanpa;
-  outline: rgb(51, 39, 26) none 0px;
-  text-decoration-color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
-  color: rgb(51, 39, 26);
-  font-family: "Source Serif Pro", nasin-nanpa;
-  outline: rgb(51, 39, 26) none 0px;
-  text-decoration-color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
-  color: rgb(51, 39, 26);
-  font-family: "Source Serif Pro", nasin-nanpa;
-  outline: rgb(51, 39, 26) none 0px;
-  text-decoration-color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
-  color: rgb(51, 39, 26);
-  font-family: "Source Serif Pro", nasin-nanpa;
-  outline: rgb(51, 39, 26) none 0px;
-  text-decoration-color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body .text-highlight {
-  background-color: rgb(255, 196, 0);
-  color: rgb(51, 39, 26);
-  font-family: "Source Serif Pro", nasin-nanpa;
-  outline: rgb(51, 39, 26) none 0px;
-  text-decoration-color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body article > h1 {
+    typography: `html[saved-theme="light"] body .markdown-rendered > h1 {
   --font-weight: 700;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(51, 39, 26);
@@ -3558,6 +3466,42 @@ html[saved-theme="light"] body article > h1 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
+  color: rgb(51, 39, 26);
+  font-family: "Source Serif Pro", nasin-nanpa;
+  outline: rgb(51, 39, 26) none 0px;
+  text-decoration-color: rgb(51, 39, 26);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
+  color: rgb(51, 39, 26);
+  font-family: "Source Serif Pro", nasin-nanpa;
+  outline: rgb(51, 39, 26) none 0px;
+  text-decoration-color: rgb(51, 39, 26);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: rgb(51, 39, 26);
+  font-family: "Source Serif Pro", nasin-nanpa;
+  outline: rgb(51, 39, 26) none 0px;
+  text-decoration-color: rgb(51, 39, 26);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
+  color: rgb(51, 39, 26);
+  font-family: "Source Serif Pro", nasin-nanpa;
+  outline: rgb(51, 39, 26) none 0px;
+  text-decoration-color: rgb(51, 39, 26);
+}
+
+html[saved-theme="light"] body .text-highlight {
+  background-color: rgb(255, 196, 0);
+  color: rgb(51, 39, 26);
+  font-family: "Source Serif Pro", nasin-nanpa;
+  outline: rgb(51, 39, 26) none 0px;
+  text-decoration-color: rgb(51, 39, 26);
 }
 
 html[saved-theme="light"] body del {
@@ -3745,21 +3689,21 @@ html[saved-theme="light"] body p {
   outline: rgb(71, 64, 50) none 0px;
   text-decoration-color: rgb(71, 64, 50);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(104, 194, 211);
   font-family: "Source Serif Pro", nasin-nanpa;
   outline: rgb(104, 194, 211) none 0px;
   text-decoration-color: rgb(104, 194, 211);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(75, 100, 68);
   font-family: "Source Serif Pro", nasin-nanpa;
   outline: rgb(75, 100, 68) none 0px;
   text-decoration-color: rgb(75, 100, 68);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(75, 100, 68);
   font-family: "Source Serif Pro", nasin-nanpa;
   outline: rgb(75, 100, 68) none 0px;
@@ -3775,13 +3719,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(51, 39, 26);
-  border-left-color: rgb(51, 39, 26);
-  border-right-color: rgb(51, 39, 26);
-  border-top-color: rgb(51, 39, 26);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -3833,58 +3770,21 @@ html[saved-theme="light"] body th {
   color: rgb(51, 39, 26);
 }`,
     code: `html[saved-theme="light"] body code {
-  background-color: rgb(237, 234, 228);
-  border-bottom-color: rgb(51, 39, 26);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-left-color: rgb(51, 39, 26);
-  border-right-color: rgb(51, 39, 26);
-  border-top-color: rgb(51, 39, 26);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  background-color: rgb(240, 238, 235);
+  border-bottom-color: rgb(222, 214, 204);
+  border-left-color: rgb(222, 214, 204);
+  border-right-color: rgb(222, 214, 204);
+  border-top-color: rgb(222, 214, 204);
   color: rgb(51, 39, 26);
   font-family: "Victor Mono", nasin-nanpa;
 }
 
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(222, 214, 204);
-  border-left-color: rgb(222, 214, 204);
-  border-right-color: rgb(222, 214, 204);
-  border-top-color: rgb(222, 214, 204);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(222, 214, 204);
-  border-left-color: rgb(222, 214, 204);
-  border-right-color: rgb(222, 214, 204);
-  border-top-color: rgb(222, 214, 204);
-  color: rgb(51, 39, 26);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom-color: rgb(222, 214, 204);
-  border-left-color: rgb(222, 214, 204);
-  border-right-color: rgb(222, 214, 204);
-  border-top-color: rgb(222, 214, 204);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-}
-
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(240, 238, 235);
   border-bottom-color: rgb(222, 214, 204);
   border-left-color: rgb(222, 214, 204);
   border-right-color: rgb(222, 214, 204);
   border-top-color: rgb(222, 214, 204);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(51, 39, 26);
@@ -5377,13 +5277,17 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(51, 39, 26);
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(75, 100, 68);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(75, 100, 68);
   font-family: Brevia, nasin-nanpa;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(51, 39, 26);
 }
 
 html[saved-theme="light"] body h2 {
@@ -5432,17 +5336,17 @@ html[saved-theme="light"] body hr {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer {
+    explorer: `html[saved-theme="light"] body .nav-files-container {
   background-color: rgb(245, 244, 242);
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(71, 64, 50);
   font-family: Recursive, nasin-nanpa;
   font-weight: 700;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(71, 64, 50);
   font-family: Recursive, nasin-nanpa;
   font-weight: 700;
@@ -5541,15 +5445,32 @@ html[saved-theme="light"] body .darkmode svg {
 html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(158, 152, 146);
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(51, 39, 26);
-  border-left-color: rgb(51, 39, 26);
-  border-right-color: rgb(51, 39, 26);
-  border-top-color: rgb(51, 39, 26);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(51, 39, 26);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(51, 39, 26);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(51, 39, 26);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(51, 39, 26);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(245, 244, 242);
+  border-color: rgb(51, 39, 26);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  background-color: rgb(237, 234, 228);
+  border-color: rgb(222, 214, 204);
+  color: rgb(51, 39, 26);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(222, 214, 204);
   border-left-color: rgb(222, 214, 204);
   border-right-color: rgb(222, 214, 204);
@@ -5565,6 +5486,57 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(71, 64, 50);
   color: rgb(71, 64, 50);
   font-family: "Source Serif Pro", nasin-nanpa;
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(222, 214, 204);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(71, 64, 50);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(71, 64, 50);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  color: rgb(75, 100, 68);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(71, 64, 50);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(245, 244, 242);
+  color: rgb(51, 39, 26);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(51, 39, 26);
+  border-left-color: rgb(51, 39, 26);
+  border-right-color: rgb(51, 39, 26);
+  border-top-color: rgb(51, 39, 26);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(237, 234, 228);
+  border-color: rgb(51, 39, 26);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(245, 244, 242);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(51, 39, 26);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(51, 39, 26);
+  border-left-color: rgb(51, 39, 26);
+  border-right-color: rgb(51, 39, 26);
+  border-top-color: rgb(51, 39, 26);
+  color: rgb(51, 39, 26);
 }
 
 html[saved-theme="light"] body .navigation-progress {

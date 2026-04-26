@@ -701,6 +701,12 @@ export const theme: ThemeData = {
   --settingsMinWidth: 800px !important;
   --settingsOffsetX: 0px !important;
   --settingsWSize: 60% !important;
+  --shiki-code-background: hsl(220, 13%, 9%) !important;
+  --shiki-code-block-border-radius: 0px !important;
+  --shiki-code-comment: hsl(216.9, 5.5%, 46.1%) !important;
+  --shiki-gutter-border-color: hsl(218.2, 9.1%, 23.7%) !important;
+  --shiki-gutter-text-color: hsl(216.9, 5.5%, 46.1%) !important;
+  --shiki-terminal-dots-color: hsl(216.9, 5.5%, 46.1%) !important;
   --sidebarDashboardHeight: 40px !important;
   --sidebarTabHeight: 40px !important;
   --slider-thumb-border-color: hsl(220, 8.7%, 27.1%) !important;
@@ -837,41 +843,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(163, 165, 170);
 }
 
-html body .bases-table thead th {
-  border-color: rgb(55, 59, 66);
-  color: rgb(163, 165, 170);
-}
-
-html body .canvas-node {
-  border-color: rgb(163, 165, 170);
-}
-
-html body .canvas-node-content {
-  color: rgb(163, 165, 170);
-}
-
-html body .canvas-node-file {
-  color: rgb(163, 165, 170);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(163, 165, 170);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(32, 35, 41);
-  border-color: rgb(163, 165, 170);
-}
-
-html body .note-properties {
-  border-color: rgb(55, 59, 66);
-}
-
-html body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0px;
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(163, 165, 170);
@@ -885,11 +856,6 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgba(0, 0, 0, 0);
   border-left-color: rgb(29, 32, 37);
-  color: rgb(163, 165, 170);
-}
-
-html body div#quartz-root {
-  background-color: rgb(8, 8, 9);
   color: rgb(163, 165, 170);
 }
 
@@ -1368,25 +1334,25 @@ html body html {
   --yellow-inverted: hsl(38.2, 100%, 97.8%);
   --yellow-inverted-active: hsl(37.3, 95.7%, 90.8%);
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(163, 165, 170);
   outline: rgb(163, 165, 170) none 0px;
   text-decoration-color: rgb(163, 165, 170);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(163, 165, 170);
   outline: rgb(163, 165, 170) none 0px;
   text-decoration-color: rgb(163, 165, 170);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(163, 165, 170);
   outline: rgb(163, 165, 170) none 0px;
   text-decoration-color: rgb(163, 165, 170);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(163, 165, 170);
   outline: rgb(163, 165, 170) none 0px;
   text-decoration-color: rgb(163, 165, 170);
@@ -1414,7 +1380,7 @@ html body li.task-list-item input[type="checkbox"] {
   border-color: rgb(111, 116, 124);
   border-radius: 0px;
 }`,
-    links: `html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+    links: `html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
   text-decoration-color: rgb(138, 92, 245);
@@ -1429,13 +1395,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(163, 165, 170);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(163, 165, 170);
-  border-left-color: rgb(163, 165, 170);
-  border-right-color: rgb(163, 165, 170);
-  border-top-color: rgb(163, 165, 170);
 }
 
 html body ul > li {
@@ -1479,30 +1438,6 @@ html body th {
   color: rgb(163, 165, 170);
 }`,
     code: `html body code {
-  border-bottom-color: rgb(163, 165, 170);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(163, 165, 170);
-  border-right-color: rgb(163, 165, 170);
-  border-top-color: rgb(163, 165, 170);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  color: rgb(163, 165, 170);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(20, 22, 26);
-  border-bottom-color: rgb(55, 59, 66);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(55, 59, 66);
-  border-right-color: rgb(55, 59, 66);
-  border-top-color: rgb(55, 59, 66);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(20, 22, 26);
   border-bottom-color: rgb(55, 59, 66);
   border-bottom-left-radius: 0px;
@@ -1513,22 +1448,10 @@ html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-titl
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   color: rgb(163, 165, 170);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(20, 22, 26);
-  border-bottom-color: rgb(55, 59, 66);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(55, 59, 66);
-  border-right-color: rgb(55, 59, 66);
-  border-top-color: rgb(55, 59, 66);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  padding-bottom: 0px;
-  padding-left: 5px;
-  padding-right: 0px;
-  padding-top: 0px;
+  padding-bottom: 2.625px;
+  padding-left: 5.25px;
+  padding-right: 5.25px;
+  padding-top: 2.625px;
 }
 
 html body pre:has(> code) {
@@ -1559,9 +1482,13 @@ html body figcaption {
 
 html body figure {
   border-bottom-color: rgb(163, 165, 170);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-left-color: rgb(163, 165, 170);
   border-right-color: rgb(163, 165, 170);
   border-top-color: rgb(163, 165, 170);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 html body img {
@@ -2295,7 +2222,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(163, 165, 170);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 0px;
@@ -2308,6 +2235,10 @@ html body a.internal.tag-link, html .search > .search-container > .search-space 
 }
 
 html body h1 {
+  color: rgb(163, 165, 170);
+}
+
+html body h1.article-title {
   color: rgb(163, 165, 170);
 }
 
@@ -2353,14 +2284,14 @@ html body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html body .explorer .explorer-content ul.explorer-ul li a {
+    explorer: `html body .nav-files-container .nav-file-title {
   color: rgb(179, 179, 179);
   cursor: default;
   font-family: "??", "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 400;
 }
 
-html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
+html body .nav-files-container .nav-file-title.is-active {
   background-color: rgba(255, 255, 255, 0.067);
   border-bottom-color: rgb(163, 165, 170);
   border-bottom-left-radius: 0px;
@@ -2378,7 +2309,7 @@ html body .explorer .explorer-content ul.explorer-ul li:has(> .active) {
   cursor: default;
 }
 
-html body .explorer .folder-outer > ul {
+html body .nav-files-container .tree-item-children {
   border-left-color: rgba(255, 255, 255, 0.094);
 }`,
     toc: `html body details.toc summary::marker {
@@ -2441,19 +2372,75 @@ html body ul.section-ul {
 html body .breadcrumb-element p {
   color: rgb(111, 116, 124);
 }`,
+    canvas: `html body .canvas-node {
+  border-color: rgb(163, 165, 170);
+}
+
+html body .canvas-node-content {
+  color: rgb(163, 165, 170);
+}
+
+html body .canvas-node-file {
+  color: rgb(163, 165, 170);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(163, 165, 170);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(32, 35, 41);
+  border-color: rgb(163, 165, 170);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgb(55, 59, 66);
+  color: rgb(163, 165, 170);
+}`,
+    properties: `html body .metadata {
+  border-bottom-color: rgb(55, 59, 66);
+  border-left-color: rgb(55, 59, 66);
+  border-right-color: rgb(55, 59, 66);
+  border-top-color: rgb(55, 59, 66);
+}
+
+html body .note-properties {
+  border-color: rgb(55, 59, 66);
+}
+
+html body .note-properties-tags {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+}
+
+html body div#quartz-root {
+  background-color: rgb(8, 8, 9);
+  color: rgb(163, 165, 170);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(163, 165, 170);
+  border-left-color: rgb(163, 165, 170);
+  border-right-color: rgb(163, 165, 170);
+  border-top-color: rgb(163, 165, 170);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(163, 165, 170);
+}
+
+html body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(163, 165, 170);
+}`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(163, 165, 170);
   border-left-color: rgb(163, 165, 170);
   border-right-color: rgb(163, 165, 170);
   border-top-color: rgb(163, 165, 170);
   color: rgb(163, 165, 170);
-}
-
-html body .metadata {
-  border-bottom-color: rgb(55, 59, 66);
-  border-left-color: rgb(55, 59, 66);
-  border-right-color: rgb(55, 59, 66);
-  border-top-color: rgb(55, 59, 66);
 }
 
 html body .navigation-progress {

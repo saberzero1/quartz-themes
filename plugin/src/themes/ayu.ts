@@ -194,6 +194,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #595371 !important;
   --setting-items-background: rgba(0, 0, 0, 0.04) !important;
   --setting-items-border-color: #b1b4b9 !important;
+  --shiki-active-tab-border-color: #b1b4b9 !important;
+  --shiki-code-background: rgba(0, 0, 0, 0.04) !important;
+  --shiki-code-comment: #b1b4b9 !important;
+  --shiki-code-normal: #b1b4b9 !important;
+  --shiki-code-punctuation: #b1b4b9 !important;
+  --shiki-gutter-border-color: #b1b4b9 !important;
+  --shiki-gutter-text-color: #b1b4b9 !important;
+  --shiki-gutter-text-color-highlight: #b1b4b9 !important;
+  --shiki-highlight-neutral: #b1b4b9 !important;
+  --shiki-terminal-dots-color: #b1b4b9 !important;
   --slider-track-background: #b1b4b9 !important;
   --status-bar-background: #fbf9f9 !important;
   --status-bar-border-color: #b1b4b9 !important;
@@ -272,56 +282,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(89, 83, 113);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  background-color: rgb(251, 249, 249);
-  border-color: rgb(177, 180, 185);
-  color: rgb(89, 83, 113);
-  font-weight: 800;
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(89, 83, 113);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  background-color: rgb(249, 249, 251);
-  color: rgb(89, 83, 113);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(251, 249, 249);
-  border-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgb(177, 180, 185);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(177, 180, 185);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(177, 180, 185);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  border-radius: 42px;
-  color: rgb(222, 81, 5);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(177, 180, 185);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(251, 249, 249);
   color: rgb(89, 83, 113);
@@ -334,11 +294,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(251, 249, 249);
   border-left-color: rgb(177, 180, 185);
-  color: rgb(89, 83, 113);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(249, 249, 251);
   color: rgb(89, 83, 113);
 }
 
@@ -358,43 +313,7 @@ html[saved-theme="dark"] body html {
   --line-height-header-preview: 1em;
   --line-height-preview: 1.7em;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
-  color: rgb(89, 83, 113);
-  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
-  outline: rgb(89, 83, 113) none 0px;
-  text-decoration-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
-  color: rgb(89, 83, 113);
-  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
-  outline: rgb(89, 83, 113) none 0px;
-  text-decoration-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
-  color: rgb(89, 83, 113);
-  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
-  outline: rgb(89, 83, 113) none 0px;
-  text-decoration-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
-  color: rgb(89, 83, 113);
-  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
-  outline: rgb(89, 83, 113) none 0px;
-  text-decoration-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="dark"] body .text-highlight {
-  background-color: rgba(227, 238, 242, 0.5);
-  color: rgb(89, 83, 113);
-  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
-  outline: rgb(89, 83, 113) none 0px;
-  text-decoration-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="dark"] body article > h1 {
+    typography: `html[saved-theme="dark"] body .markdown-rendered > h1 {
   --font-medium: 500;
   --font-small: 0.933em;
   --font-weight: 700;
@@ -426,6 +345,42 @@ html[saved-theme="dark"] body article > h1 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
+  color: rgb(89, 83, 113);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  outline: rgb(89, 83, 113) none 0px;
+  text-decoration-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
+  color: rgb(89, 83, 113);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  outline: rgb(89, 83, 113) none 0px;
+  text-decoration-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: rgb(89, 83, 113);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  outline: rgb(89, 83, 113) none 0px;
+  text-decoration-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
+  color: rgb(89, 83, 113);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  outline: rgb(89, 83, 113) none 0px;
+  text-decoration-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="dark"] body .text-highlight {
+  background-color: rgba(227, 238, 242, 0.5);
+  color: rgb(89, 83, 113);
+  font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+  outline: rgb(89, 83, 113) none 0px;
+  text-decoration-color: rgb(89, 83, 113);
 }
 
 html[saved-theme="dark"] body del {
@@ -624,21 +579,21 @@ html[saved-theme="dark"] body p {
   outline: rgb(177, 180, 185) none 0px;
   text-decoration-color: rgb(177, 180, 185);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(222, 81, 5);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   outline: rgb(222, 81, 5) none 0px;
   text-decoration-color: rgb(222, 81, 5);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(222, 81, 5);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   outline: rgb(222, 81, 5) none 0px;
   text-decoration-color: rgb(222, 81, 5);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(222, 81, 5);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
   outline: rgb(222, 81, 5) none 0px;
@@ -659,13 +614,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(89, 83, 113);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(89, 83, 113);
-  border-left-color: rgb(89, 83, 113);
-  border-right-color: rgb(89, 83, 113);
-  border-top-color: rgb(89, 83, 113);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -731,9 +679,13 @@ html[saved-theme="dark"] body tr {
     code: `html[saved-theme="dark"] body code {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(177, 180, 185);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-left-color: rgb(177, 180, 185);
   border-right-color: rgb(177, 180, 185);
   border-top-color: rgb(177, 180, 185);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   color: rgb(177, 180, 185);
   font-family: "Ubuntu Mono derivative Powerline", Menlo, Monaco;
   padding-bottom: 22px;
@@ -742,56 +694,12 @@ html[saved-theme="dark"] body tr {
   padding-top: 22px;
 }
 
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgba(0, 0, 0, 0.04);
-  border-bottom-color: rgb(177, 180, 185);
-  border-left-color: rgb(177, 180, 185);
-  border-right-color: rgb(177, 180, 185);
-  border-top-color: rgb(177, 180, 185);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgba(0, 0, 0, 0.04);
-  border-bottom-color: rgb(177, 180, 185);
-  border-left-color: rgb(177, 180, 185);
-  border-right-color: rgb(177, 180, 185);
-  border-top-color: rgb(177, 180, 185);
-  color: rgb(177, 180, 185);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line] {
-  border-left-color: rgb(221, 74, 104);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(221, 74, 104);
-}
-
-html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(221, 74, 104);
-  border-left-color: rgb(221, 74, 104);
-  border-right-color: rgb(221, 74, 104);
-  border-top-color: rgb(221, 74, 104);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgba(0, 0, 0, 0.04);
-  border-bottom-color: rgb(177, 180, 185);
-  border-left-color: rgb(177, 180, 185);
-  border-right-color: rgb(177, 180, 185);
-  border-top-color: rgb(177, 180, 185);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-}
-
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgba(0, 0, 0, 0.04);
-  border-bottom-color: rgb(177, 180, 185);
-  border-left-color: rgb(177, 180, 185);
-  border-right-color: rgb(177, 180, 185);
-  border-top-color: rgb(177, 180, 185);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -806,7 +714,6 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(89, 83, 113);
-  font-size: 24px;
 }
 
 html[saved-theme="dark"] body figure {
@@ -814,8 +721,6 @@ html[saved-theme="dark"] body figure {
   border-left-color: rgb(89, 83, 113);
   border-right-color: rgb(89, 83, 113);
   border-top-color: rgb(89, 83, 113);
-  margin-bottom: 24px;
-  margin-top: 24px;
 }
 
 html[saved-theme="dark"] body img {
@@ -1709,20 +1614,25 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(89, 83, 113);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 42px;
   border-bottom-right-radius: 42px;
   border-top-left-radius: 42px;
   border-top-right-radius: 42px;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(222, 81, 5);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(92, 99, 105);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(89, 83, 113);
+  font-size: 38.832px;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1763,12 +1673,12 @@ html[saved-theme="dark"] body hr {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(177, 180, 185);
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(177, 180, 185);
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
 }`,
@@ -1862,15 +1772,34 @@ html[saved-theme="dark"] body .darkmode svg {
 html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(177, 180, 185);
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(89, 83, 113);
-  border-left-color: rgb(89, 83, 113);
-  border-right-color: rgb(89, 83, 113);
-  border-top-color: rgb(89, 83, 113);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(89, 83, 113);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  background-color: rgb(249, 249, 251);
+  color: rgb(89, 83, 113);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(251, 249, 249);
+  border-color: rgb(89, 83, 113);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  background-color: rgb(251, 249, 249);
+  border-color: rgb(177, 180, 185);
+  color: rgb(89, 83, 113);
+  font-weight: 800;
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(177, 180, 185);
   border-left-color: rgb(177, 180, 185);
   border-right-color: rgb(177, 180, 185);
@@ -1886,6 +1815,58 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(177, 180, 185);
   color: rgb(177, 180, 185);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(177, 180, 185);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(177, 180, 185);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(177, 180, 185);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  border-radius: 42px;
+  color: rgb(222, 81, 5);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(177, 180, 185);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(249, 249, 251);
+  color: rgb(89, 83, 113);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(89, 83, 113);
+  border-left-color: rgb(89, 83, 113);
+  border-right-color: rgb(89, 83, 113);
+  border-top-color: rgb(89, 83, 113);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(251, 249, 249);
+  border-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(251, 249, 249);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(89, 83, 113);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(89, 83, 113);
+  border-left-color: rgb(89, 83, 113);
+  border-right-color: rgb(89, 83, 113);
+  border-top-color: rgb(89, 83, 113);
+  color: rgb(89, 83, 113);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -2151,6 +2132,16 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-group-heading-color: #595371 !important;
   --setting-items-background: rgba(0, 0, 0, 0.04) !important;
   --setting-items-border-color: #b1b4b9 !important;
+  --shiki-active-tab-border-color: #b1b4b9 !important;
+  --shiki-code-background: rgba(0, 0, 0, 0.04) !important;
+  --shiki-code-comment: #b1b4b9 !important;
+  --shiki-code-normal: #b1b4b9 !important;
+  --shiki-code-punctuation: #b1b4b9 !important;
+  --shiki-gutter-border-color: #b1b4b9 !important;
+  --shiki-gutter-text-color: #b1b4b9 !important;
+  --shiki-gutter-text-color-highlight: #b1b4b9 !important;
+  --shiki-highlight-neutral: #b1b4b9 !important;
+  --shiki-terminal-dots-color: #b1b4b9 !important;
   --slider-track-background: #b1b4b9 !important;
   --status-bar-background: #fbf9f9 !important;
   --status-bar-border-color: #b1b4b9 !important;
@@ -2229,56 +2220,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(89, 83, 113);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  background-color: rgb(251, 249, 249);
-  border-color: rgb(177, 180, 185);
-  color: rgb(89, 83, 113);
-  font-weight: 800;
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(89, 83, 113);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  background-color: rgb(249, 249, 251);
-  color: rgb(89, 83, 113);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(249, 249, 251);
-  border-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="light"] body .note-properties {
-  border-color: rgb(177, 180, 185);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(177, 180, 185);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(177, 180, 185);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  border-radius: 42px;
-  color: rgb(222, 81, 5);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(177, 180, 185);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(251, 249, 249);
   color: rgb(89, 83, 113);
@@ -2291,11 +2232,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(251, 249, 249);
   border-left-color: rgb(177, 180, 185);
-  color: rgb(89, 83, 113);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(249, 249, 251);
   color: rgb(89, 83, 113);
 }
 
@@ -2315,43 +2251,7 @@ html[saved-theme="light"] body html {
   --line-height-header-preview: 1em;
   --line-height-preview: 1.7em;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
-  color: rgb(89, 83, 113);
-  font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
-  outline: rgb(89, 83, 113) none 0px;
-  text-decoration-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
-  color: rgb(89, 83, 113);
-  font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
-  outline: rgb(89, 83, 113) none 0px;
-  text-decoration-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
-  color: rgb(89, 83, 113);
-  font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
-  outline: rgb(89, 83, 113) none 0px;
-  text-decoration-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
-  color: rgb(89, 83, 113);
-  font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
-  outline: rgb(89, 83, 113) none 0px;
-  text-decoration-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="light"] body .text-highlight {
-  background-color: rgba(227, 238, 242, 0.5);
-  color: rgb(89, 83, 113);
-  font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
-  outline: rgb(89, 83, 113) none 0px;
-  text-decoration-color: rgb(89, 83, 113);
-}
-
-html[saved-theme="light"] body article > h1 {
+    typography: `html[saved-theme="light"] body .markdown-rendered > h1 {
   --font-medium: 500;
   --font-small: 0.933em;
   --font-weight: 700;
@@ -2383,6 +2283,42 @@ html[saved-theme="light"] body article > h1 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
+  color: rgb(89, 83, 113);
+  font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
+  outline: rgb(89, 83, 113) none 0px;
+  text-decoration-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
+  color: rgb(89, 83, 113);
+  font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
+  outline: rgb(89, 83, 113) none 0px;
+  text-decoration-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: rgb(89, 83, 113);
+  font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
+  outline: rgb(89, 83, 113) none 0px;
+  text-decoration-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
+  color: rgb(89, 83, 113);
+  font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
+  outline: rgb(89, 83, 113) none 0px;
+  text-decoration-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="light"] body .text-highlight {
+  background-color: rgba(227, 238, 242, 0.5);
+  color: rgb(89, 83, 113);
+  font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
+  outline: rgb(89, 83, 113) none 0px;
+  text-decoration-color: rgb(89, 83, 113);
 }
 
 html[saved-theme="light"] body del {
@@ -2581,21 +2517,21 @@ html[saved-theme="light"] body p {
   outline: rgb(177, 180, 185) none 0px;
   text-decoration-color: rgb(177, 180, 185);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(222, 81, 5);
   font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
   outline: rgb(222, 81, 5) none 0px;
   text-decoration-color: rgb(222, 81, 5);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(222, 81, 5);
   font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
   outline: rgb(222, 81, 5) none 0px;
   text-decoration-color: rgb(222, 81, 5);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(222, 81, 5);
   font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
   outline: rgb(222, 81, 5) none 0px;
@@ -2616,13 +2552,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(89, 83, 113);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(89, 83, 113);
-  border-left-color: rgb(89, 83, 113);
-  border-right-color: rgb(89, 83, 113);
-  border-top-color: rgb(89, 83, 113);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2688,9 +2617,13 @@ html[saved-theme="light"] body tr {
     code: `html[saved-theme="light"] body code {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(177, 180, 185);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-left-color: rgb(177, 180, 185);
   border-right-color: rgb(177, 180, 185);
   border-top-color: rgb(177, 180, 185);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   color: rgb(177, 180, 185);
   font-family: "Ubuntu Mono derivative Powerline", Menlo, Monaco;
   padding-bottom: 22px;
@@ -2699,56 +2632,12 @@ html[saved-theme="light"] body tr {
   padding-top: 22px;
 }
 
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgba(0, 0, 0, 0.04);
-  border-bottom-color: rgb(177, 180, 185);
-  border-left-color: rgb(177, 180, 185);
-  border-right-color: rgb(177, 180, 185);
-  border-top-color: rgb(177, 180, 185);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgba(0, 0, 0, 0.04);
-  border-bottom-color: rgb(177, 180, 185);
-  border-left-color: rgb(177, 180, 185);
-  border-right-color: rgb(177, 180, 185);
-  border-top-color: rgb(177, 180, 185);
-  color: rgb(177, 180, 185);
-}
-
-html[saved-theme="light"] body pre > code > [data-line] {
-  border-left-color: rgb(221, 74, 104);
-}
-
-html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(221, 74, 104);
-}
-
-html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(221, 74, 104);
-  border-left-color: rgb(221, 74, 104);
-  border-right-color: rgb(221, 74, 104);
-  border-top-color: rgb(221, 74, 104);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgba(0, 0, 0, 0.04);
-  border-bottom-color: rgb(177, 180, 185);
-  border-left-color: rgb(177, 180, 185);
-  border-right-color: rgb(177, 180, 185);
-  border-top-color: rgb(177, 180, 185);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-}
-
 html[saved-theme="light"] body pre:has(> code) {
   background-color: rgba(0, 0, 0, 0.04);
-  border-bottom-color: rgb(177, 180, 185);
-  border-left-color: rgb(177, 180, 185);
-  border-right-color: rgb(177, 180, 185);
-  border-top-color: rgb(177, 180, 185);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -2763,7 +2652,6 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(89, 83, 113);
-  font-size: 24px;
 }
 
 html[saved-theme="light"] body figure {
@@ -2771,8 +2659,6 @@ html[saved-theme="light"] body figure {
   border-left-color: rgb(89, 83, 113);
   border-right-color: rgb(89, 83, 113);
   border-top-color: rgb(89, 83, 113);
-  margin-bottom: 24px;
-  margin-top: 24px;
 }
 
 html[saved-theme="light"] body img {
@@ -3666,20 +3552,25 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(89, 83, 113);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 42px;
   border-bottom-right-radius: 42px;
   border-top-left-radius: 42px;
   border-top-right-radius: 42px;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(222, 81, 5);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(92, 99, 105);
   font-family: "Skolar PE", "Gentium Plus", Alegreya, "Source Sans Pro", "Avenir Next", "Times New Roman";
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(89, 83, 113);
+  font-size: 38.832px;
 }
 
 html[saved-theme="light"] body h2 {
@@ -3720,12 +3611,12 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(177, 180, 185);
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(177, 180, 185);
   font-family: "Gentium Plus", Alegreya, "Source Sans Pro", Palatino, "Avenir Next", "Times New Roman";
 }`,
@@ -3819,15 +3710,34 @@ html[saved-theme="light"] body .darkmode svg {
 html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(177, 180, 185);
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(89, 83, 113);
-  border-left-color: rgb(89, 83, 113);
-  border-right-color: rgb(89, 83, 113);
-  border-top-color: rgb(89, 83, 113);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(89, 83, 113);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  background-color: rgb(249, 249, 251);
+  color: rgb(89, 83, 113);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(249, 249, 251);
+  border-color: rgb(89, 83, 113);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  background-color: rgb(251, 249, 249);
+  border-color: rgb(177, 180, 185);
+  color: rgb(89, 83, 113);
+  font-weight: 800;
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(177, 180, 185);
   border-left-color: rgb(177, 180, 185);
   border-right-color: rgb(177, 180, 185);
@@ -3843,6 +3753,58 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(177, 180, 185);
   color: rgb(177, 180, 185);
   font-family: "Skolar PE", "iA Writer Quattro S", Menlo, "Avenir Next", "Times New Roman";
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(177, 180, 185);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(177, 180, 185);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(177, 180, 185);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  border-radius: 42px;
+  color: rgb(222, 81, 5);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(177, 180, 185);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(249, 249, 251);
+  color: rgb(89, 83, 113);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(89, 83, 113);
+  border-left-color: rgb(89, 83, 113);
+  border-right-color: rgb(89, 83, 113);
+  border-top-color: rgb(89, 83, 113);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(251, 249, 249);
+  border-color: rgb(89, 83, 113);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(251, 249, 249);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(89, 83, 113);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(89, 83, 113);
+  border-left-color: rgb(89, 83, 113);
+  border-right-color: rgb(89, 83, 113);
+  border-top-color: rgb(89, 83, 113);
+  color: rgb(89, 83, 113);
 }
 
 html[saved-theme="light"] body .navigation-progress {

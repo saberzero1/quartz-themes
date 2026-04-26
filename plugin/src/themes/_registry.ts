@@ -401,6 +401,13 @@ import { theme as refined_default } from "./refined-default.js";
 import { theme as reshi } from "./reshi.js";
 import { theme as retro_windows } from "./retro-windows.js";
 import { theme as retroma } from "./retroma.js";
+import { theme as retroma_analogous_reversed } from "./retroma-analogous-reversed.js";
+import { theme as retroma_monochromatic } from "./retroma-monochromatic.js";
+import { theme as retroma_monochromatic_reversed } from "./retroma-monochromatic-reversed.js";
+import { theme as retroma_split_complementary } from "./retroma-split-complementary.js";
+import { theme as retroma_split_complementary_reversed } from "./retroma-split-complementary-reversed.js";
+import { theme as retroma_triadic } from "./retroma-triadic.js";
+import { theme as retroma_triadic_reversed } from "./retroma-triadic-reversed.js";
 import { theme as retronotes } from "./retronotes.js";
 import { theme as retronotes_blueprint } from "./retronotes-blueprint.js";
 import { theme as retronotes_carbon_ink } from "./retronotes-carbon-ink.js";
@@ -1019,6 +1026,13 @@ export const themeData: Record<string, ThemeData> = {
   reshi: reshi,
   "retro-windows": retro_windows,
   retroma: retroma,
+  "retroma.analogous-reversed": retroma_analogous_reversed,
+  "retroma.monochromatic": retroma_monochromatic,
+  "retroma.monochromatic-reversed": retroma_monochromatic_reversed,
+  "retroma.split-complementary": retroma_split_complementary,
+  "retroma.split-complementary-reversed": retroma_split_complementary_reversed,
+  "retroma.triadic": retroma_triadic,
+  "retroma.triadic-reversed": retroma_triadic_reversed,
   retronotes: retronotes,
   "retronotes.blueprint": retronotes_blueprint,
   "retronotes.carbon-ink": retronotes_carbon_ink,
@@ -3369,6 +3383,48 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   retroma: {
     name: "retroma",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "retroma.analogous-reversed": {
+    name: "retroma.analogous-reversed",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "retroma.monochromatic": {
+    name: "retroma.monochromatic",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "retroma.monochromatic-reversed": {
+    name: "retroma.monochromatic-reversed",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "retroma.split-complementary": {
+    name: "retroma.split-complementary",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "retroma.split-complementary-reversed": {
+    name: "retroma.split-complementary-reversed",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "retroma.triadic": {
+    name: "retroma.triadic",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "retroma.triadic-reversed": {
+    name: "retroma.triadic-reversed",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],

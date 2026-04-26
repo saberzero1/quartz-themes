@@ -138,6 +138,11 @@ export const theme: ThemeData = {
   --secondary: #569cd6 !important;
   --setting-items-background: #1e1e1e !important;
   --setting-items-border-color: #6a6a6a !important;
+  --shiki-code-background: #1e1e1e !important;
+  --shiki-code-comment: rgb(81, 86, 99) !important;
+  --shiki-gutter-border-color: #6a6a6a !important;
+  --shiki-gutter-text-color: rgb(81, 86, 99) !important;
+  --shiki-terminal-dots-color: rgb(81, 86, 99) !important;
   --slider-track-background: #6a6a6a !important;
   --special-file-color: #569cd6 !important;
   --status-bar-background: #252526 !important;
@@ -191,23 +196,6 @@ html body {
 
 html body[data-slug] div#quartz-root.page, html .page > div#quartz-body div.sidebar.left, html .page > div#quartz-body div.sidebar.left:has(.explorer), html .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
   background-color: rgb(37, 37, 38);
-}
-
-html body .bases-table thead th {
-  border-color: rgb(106, 106, 106);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(37, 37, 38);
-}
-
-html body .note-properties {
-  border-color: rgb(106, 106, 106);
-}
-
-html body .note-properties-tags {
-  border-radius: 31.5px;
-  color: rgb(86, 156, 214);
 }
 
 html body .page > div#quartz-body div.sidebar {
@@ -270,28 +258,28 @@ html body html {
   --theme-window-text: #fcfcfc;
   --window-manager-titlebar: #3f3f3f;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(78, 201, 176);
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
   outline: rgb(78, 201, 176) none 0px;
   text-decoration-color: rgb(78, 201, 176);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(220, 220, 170);
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
   outline: rgb(220, 220, 170) none 0px;
   text-decoration-color: rgb(220, 220, 170);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(220, 220, 170);
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
   outline: rgb(220, 220, 170) none 0px;
   text-decoration-color: rgb(220, 220, 170);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(78, 201, 176);
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
   outline: rgb(78, 201, 176) none 0px;
@@ -322,21 +310,21 @@ html body li.task-list-item input[type="checkbox"]:checked {
 html body p {
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(86, 156, 214);
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
   outline: rgb(86, 156, 214) none 0px;
   text-decoration-color: rgb(86, 156, 214);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(86, 156, 214);
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
   outline: rgb(86, 156, 214) none 0px;
   text-decoration-color: rgb(86, 156, 214);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(86, 156, 214);
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
   outline: rgb(86, 156, 214) none 0px;
@@ -375,81 +363,28 @@ html body th {
   border-top-color: rgb(106, 106, 106);
 }`,
     code: `html body code {
-  border-bottom-color: rgb(0, 176, 255);
-  border-left-color: rgb(0, 176, 255);
-  border-right-color: rgb(0, 176, 255);
-  border-top-color: rgb(0, 176, 255);
+  background-color: rgb(30, 30, 30);
+  border-bottom-color: rgb(106, 106, 106);
+  border-left-color: rgb(106, 106, 106);
+  border-right-color: rgb(106, 106, 106);
+  border-top-color: rgb(106, 106, 106);
   color: rgb(0, 176, 255);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(37, 37, 38);
-  border-bottom-color: rgb(106, 106, 106);
-  border-left-color: rgb(106, 106, 106);
-  border-left-width: 5px;
-  border-right-color: rgb(106, 106, 106);
-  border-right-width: 1px;
-  border-top-color: rgb(106, 106, 106);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(37, 37, 38);
-  border-bottom-color: rgb(106, 106, 106);
-  border-left-color: rgb(106, 106, 106);
-  border-left-width: 5px;
-  border-right-color: rgb(106, 106, 106);
-  border-right-width: 1px;
-  border-top-color: rgb(106, 106, 106);
-  color: rgb(156, 220, 254);
-}
-
-html body pre > code > [data-line] {
-  border-left-color: rgb(156, 220, 254);
-}
-
-html body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(156, 220, 254);
-}
-
-html body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(156, 220, 254);
-  border-left-color: rgb(156, 220, 254);
-  border-right-color: rgb(156, 220, 254);
-  border-top-color: rgb(156, 220, 254);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(37, 37, 38);
-  border-bottom-color: rgb(106, 106, 106);
-  border-left-color: rgb(106, 106, 106);
-  border-left-width: 5px;
-  border-right-color: rgb(106, 106, 106);
-  border-right-width: 1px;
-  border-top-color: rgb(106, 106, 106);
-  overflow-x: hidden;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-bottom: 2.3625px;
+  padding-left: 4.725px;
+  padding-right: 4.725px;
+  padding-top: 2.3625px;
 }
 
 html body pre:has(> code) {
-  background-color: rgb(37, 37, 38);
-  border-bottom-color: rgb(106, 106, 106);
-  border-left-color: rgb(106, 106, 106);
-  border-left-width: 5px;
-  border-right-color: rgb(106, 106, 106);
-  border-right-width: 1px;
-  border-top-color: rgb(106, 106, 106);
-  overflow-x: hidden;
-  padding-left: 12px;
-  padding-right: 12px;
-}`,
-    images: `html body figcaption {
-  font-size: 18px;
-}
-
-html body figure {
-  margin-bottom: 18px;
-  margin-top: 18px;
+  background-color: rgb(30, 30, 30);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: rgb(30, 30, 30);
@@ -832,20 +767,24 @@ html body .search > .search-container > .search-space > input {
   border-bottom-color: rgb(37, 37, 38);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 31.5px;
   border-bottom-right-radius: 31.5px;
   border-top-left-radius: 31.5px;
   border-top-right-radius: 31.5px;
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(86, 156, 214);
 }
 
 html body h1 {
   color: rgb(86, 156, 214);
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
+}
+
+html body h1.article-title {
+  font-size: 29.124px;
 }
 
 html body h2 {
@@ -885,11 +824,11 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
 }`,
     footer: `html body footer {
@@ -927,7 +866,13 @@ html body li.section-li > .section .meta {
     breadcrumbs: `html body .breadcrumb-element p {
   color: rgb(81, 86, 99);
 }`,
-    misc: `html body .metadata {
+    canvas: `html body .canvas-sidebar {
+  background-color: rgb(37, 37, 38);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgb(106, 106, 106);
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(106, 106, 106);
   border-left-color: rgb(106, 106, 106);
   border-right-color: rgb(106, 106, 106);
@@ -939,7 +884,22 @@ html body .metadata-properties {
   font-family: "Helvetica Neue", Helvetica, Avenir, "Avenir Next", Arial, "Lucida Grande", sans-serif;
 }
 
-html body .navigation-progress {
+html body .note-properties {
+  border-color: rgb(106, 106, 106);
+}
+
+html body .note-properties-tags {
+  border-radius: 31.5px;
+  color: rgb(86, 156, 214);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(37, 37, 38);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(53, 53, 53);
+}`,
+    misc: `html body .navigation-progress {
   background-color: rgb(37, 37, 38);
 }
 

@@ -798,6 +798,35 @@ body.theme-light {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shiki-active-tab-border-color: hsla(35, 28%, 40%, 1) !important;
+  --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: hsla(35, 37%, 92%, 1) !important;
+  --shiki-code-block-border-color: transparent !important;
+  --shiki-code-block-border-radius: 8px !important;
+  --shiki-code-block-border-width: 0px !important;
+  --shiki-code-block-spacing: 1rem !important;
+  --shiki-code-comment: hsla(34, 29%, 60%, 1) !important;
+  --shiki-code-function: hsla(146, 37%, 49%, 1) !important;
+  --shiki-code-important: hsla(30, 66%, 52%, 1) !important;
+  --shiki-code-keyword: hsla(351, 44%, 61%, 1) !important;
+  --shiki-code-normal: hsla(35, 28%, 40%, 1) !important;
+  --shiki-code-property: hsla(178, 39%, 49%, 1) !important;
+  --shiki-code-punctuation: hsla(35, 28%, 40%, 1) !important;
+  --shiki-code-string: hsla(42, 89%, 46%, 1) !important;
+  --shiki-code-value: hsla(249, 39%, 60%, 1) !important;
+  --shiki-gutter-border-color: hsla(37, 38%, 83%, 1) !important;
+  --shiki-gutter-border-width: 1px !important;
+  --shiki-gutter-text-color: hsla(34, 29%, 60%, 1) !important;
+  --shiki-gutter-text-color-highlight: hsla(35, 28%, 40%, 1) !important;
+  --shiki-highlight-green: rgba(87, 185, 132, 0.5) !important;
+  --shiki-highlight-green-background: rgba(87, 185, 132, 0.1) !important;
+  --shiki-highlight-neutral: hsla(35, 28%, 40%, 1) !important;
+  --shiki-highlight-neutral-background: rgba(0, 0, 0, 0.05) !important;
+  --shiki-highlight-red: rgba(223, 90, 90, 0.5) !important;
+  --shiki-highlight-red-background: rgba(223, 90, 90, 0.1) !important;
+  --shiki-terminal-dots-color: hsla(34, 29%, 60%, 1) !important;
+  --shiki-tooltip-background: hsla(35, 28%, 40%, 1) !important;
+  --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -3103,6 +3132,35 @@ body.theme-dark {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.228), 0px 3.4px 6.7px rgba(0, 0, 0, 0.242),
     0px 15px 30px rgba(0, 0, 0, 0.27) !important;
+  --shiki-active-tab-border-color: hsla(35, 27%, 55%, 1) !important;
+  --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: hsla(30, 17%, 14%, 1) !important;
+  --shiki-code-block-border-color: transparent !important;
+  --shiki-code-block-border-radius: 8px !important;
+  --shiki-code-block-border-width: 0px !important;
+  --shiki-code-block-spacing: 1rem !important;
+  --shiki-code-comment: hsla(34, 24%, 46%, 1) !important;
+  --shiki-code-function: rgb(80, 196, 101) !important;
+  --shiki-code-important: rgb(203, 128, 53) !important;
+  --shiki-code-keyword: rgb(180, 100, 100) !important;
+  --shiki-code-normal: hsla(35, 27%, 55%, 1) !important;
+  --shiki-code-property: rgb(70, 169, 180) !important;
+  --shiki-code-punctuation: hsla(35, 27%, 55%, 1) !important;
+  --shiki-code-string: rgb(225, 178, 67) !important;
+  --shiki-code-value: rgb(113, 97, 194) !important;
+  --shiki-gutter-border-color: hsla(28, 22%, 19%, 1) !important;
+  --shiki-gutter-border-width: 1px !important;
+  --shiki-gutter-text-color: hsla(34, 24%, 46%, 1) !important;
+  --shiki-gutter-text-color-highlight: hsla(35, 27%, 55%, 1) !important;
+  --shiki-highlight-green: rgba(100, 194, 113, 0.5) !important;
+  --shiki-highlight-green-background: rgba(100, 194, 113, 0.1) !important;
+  --shiki-highlight-neutral: hsla(35, 27%, 55%, 1) !important;
+  --shiki-highlight-neutral-background: rgba(255, 255, 255, 0.05) !important;
+  --shiki-highlight-red: rgba(228, 87, 78, 0.5) !important;
+  --shiki-highlight-red-background: rgba(228, 87, 78, 0.1) !important;
+  --shiki-terminal-dots-color: hsla(34, 24%, 46%, 1) !important;
+  --shiki-tooltip-background: hsla(31, 27%, 25%, 1) !important;
+  --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
   --sidebar-left-toggle-inner-width-open: 24% !important;
   --sidebar-markdown-font-size: 14.4px !important;
@@ -5163,36 +5221,36 @@ body body.theme-light .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-light .markdown-rendered code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px solid rgb(89, 62, 34);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  background-color: rgb(252, 250, 248);
+  border: 0px solid rgb(228, 215, 195);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(89, 62, 34);
+  color: rgb(217, 116, 109);
   font-family:
     "Cascadia Code", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     Consolas, "Source Code Pro", monospace;
-  padding: 0px;
+  padding: 2.1px 4.2px;
 }
 body body.theme-light .markdown-rendered pre > code {
-  background-color: rgb(242, 236, 227);
-  border: 0px solid rgb(228, 215, 195);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding: 12px 16px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
@@ -6194,15 +6252,15 @@ body body.theme-light .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
   border: 0px rgb(89, 62, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 40px;
+  margin: 0px;
   margin-block-end: 15px;
   margin-block-start: 15px;
   margin-inline-end: 40px;
@@ -6936,12 +6994,12 @@ body body.theme-light .view-content {
   border-bottom-right-radius: 0px;
 }
 body body.theme-light figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(242, 236, 227);
-  border: 0px solid rgb(228, 215, 195);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -6951,14 +7009,14 @@ body
   body.theme-light
   figure[data-rehype-pretty-code-figure]
   > [data-rehype-pretty-code-title] {
-  background-color: rgb(242, 236, 227);
-  color: rgb(89, 62, 34);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(34, 34, 34);
   font-family: monospace;
-  border: 0px solid rgb(228, 215, 195);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -6966,15 +7024,15 @@ body
 }
 body body.theme-light pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left: 0px rgb(222, 159, 13);
+  border-left: 0px rgb(34, 34, 34);
 }
 body body.theme-light pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-color: rgb(222, 159, 13);
+  border-left-color: rgb(34, 34, 34);
 }
 body body.theme-light pre > code [data-highlighted-chars] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(222, 159, 13);
+  border: 0px rgb(34, 34, 34);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7539,36 +7597,36 @@ body body.theme-dark .markdown-rendered ol > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px solid rgb(215, 192, 163);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  background-color: rgb(33, 27, 23);
+  border: 0px solid rgb(59, 48, 38);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: rgb(215, 192, 163);
+  color: rgb(247, 104, 94);
   font-family:
     "Cascadia Code", ui-monospace, SFMono-Regular, "Cascadia Mono",
     "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco,
     Consolas, "Source Code Pro", monospace;
-  padding: 0px;
+  padding: 2.1px 4.2px;
 }
 body body.theme-dark .markdown-rendered pre > code {
-  background-color: rgb(42, 36, 30);
-  border: 0px solid rgb(59, 48, 38);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding: 12px 16px;
+  padding: 0px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
@@ -8570,15 +8628,15 @@ body body.theme-dark .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
   border: 0px rgb(215, 192, 163);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 16px 40px;
+  margin: 0px;
   margin-block-end: 15px;
   margin-block-start: 15px;
   margin-inline-end: 40px;
@@ -9312,12 +9370,12 @@ body body.theme-dark .view-content {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(42, 36, 30);
-  border: 0px solid rgb(59, 48, 38);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -9327,14 +9385,14 @@ body
   body.theme-dark
   figure[data-rehype-pretty-code-figure]
   > [data-rehype-pretty-code-title] {
-  background-color: rgb(42, 36, 30);
-  color: rgb(215, 192, 163);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(218, 218, 218);
   font-family: monospace;
-  border: 0px solid rgb(59, 48, 38);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -9342,15 +9400,15 @@ body
 }
 body body.theme-dark pre > code [data-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left: 0px rgb(225, 178, 67);
+  border-left: 0px rgb(218, 218, 218);
 }
 body body.theme-dark pre > code [data-highlighted-line] {
   background-color: rgba(0, 0, 0, 0);
-  border-left-color: rgb(225, 178, 67);
+  border-left-color: rgb(218, 218, 218);
 }
 body body.theme-dark pre > code [data-highlighted-chars] {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(225, 178, 67);
+  border: 0px rgb(218, 218, 218);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

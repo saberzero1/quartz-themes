@@ -117,6 +117,7 @@ export const theme: ThemeData = {
   --search-result-background: #1a1c25 !important;
   --secondary: #5AFF15 !important;
   --setting-items-background: #20212b !important;
+  --shiki-code-background: #20212b !important;
   --status-bar-background: #20212b !important;
   --suggestion-background: #1a1c25 !important;
   --tab-background-active: #1a1c25 !important;
@@ -151,20 +152,12 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   background-color: rgb(26, 28, 37);
 }
 
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(32, 33, 43);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(32, 33, 43);
 }
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(32, 33, 43);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(26, 28, 37);
 }
 
 html[saved-theme="dark"] body html {
@@ -218,13 +211,13 @@ html[saved-theme="dark"] body html {
   --white-smoke: #F5F5F5;
   --ylmn-blue: #375BA9;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(19, 196, 163);
   outline: rgb(19, 196, 163) none 0px;
   text-decoration-color: rgb(19, 196, 163);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(19, 196, 163);
   outline: rgb(19, 196, 163) none 0px;
   text-decoration-color: rgb(19, 196, 163);
@@ -241,13 +234,13 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
   background-color: rgb(19, 196, 163);
   border-color: rgb(19, 196, 163);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(19, 196, 163);
   outline: rgb(19, 196, 163) none 0px;
   text-decoration-color: rgb(19, 196, 163);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(19, 196, 163);
   outline: rgb(19, 196, 163) none 0px;
   text-decoration-color: rgb(19, 196, 163);
@@ -262,47 +255,27 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: rgb(41, 44, 58);
-  border-bottom-color: rgb(41, 44, 58);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-left-color: rgb(41, 44, 58);
-  border-right-color: rgb(41, 44, 58);
-  border-top-color: rgb(41, 44, 58);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  color: rgb(252, 252, 252);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(41, 44, 58);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(41, 44, 58);
-  color: rgb(252, 252, 252);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line] {
-  border-left-color: rgb(19, 196, 163);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(19, 196, 163);
-}
-
-html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(19, 196, 163);
-  border-left-color: rgb(19, 196, 163);
-  border-right-color: rgb(19, 196, 163);
-  border-top-color: rgb(19, 196, 163);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(41, 44, 58);
+  color: rgb(195, 247, 58);
+  padding-bottom: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 3px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(41, 44, 58);
+  background-color: rgb(32, 33, 43);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     embeds: `html[saved-theme="dark"] body .file-embed {
   background-color: rgb(32, 33, 43);
@@ -692,6 +665,19 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > inpu
     listPage: `html[saved-theme="dark"] body li.section-li > .section .meta {
   color: rgb(255, 248, 240);
 }`,
+    canvas: `html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(32, 33, 43);
+}`,
+    properties: `html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(26, 28, 37);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(32, 33, 43);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(32, 33, 43);
+}`,
     misc: `html[saved-theme="dark"] body .navigation-progress {
   background-color: rgb(32, 33, 43);
 }
@@ -830,6 +816,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --search-result-background: #f6f6fc !important;
   --secondary: #3fc570 !important;
   --setting-items-background: #eceff5 !important;
+  --shiki-code-background: #eceff5 !important;
   --status-bar-background: #eceff5 !important;
   --status-bar-border-color: #dbe1f0 !important;
   --suggestion-background: #f6f6fc !important;
@@ -870,14 +857,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   background-color: rgb(246, 246, 252);
 }
 
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(246, 246, 252);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  color: rgb(63, 197, 112);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(236, 239, 245);
 }
@@ -889,10 +868,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(236, 239, 245);
   border-left-color: rgb(219, 225, 240);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(246, 246, 252);
 }
 
 html[saved-theme="light"] body html {
@@ -946,13 +921,13 @@ html[saved-theme="light"] body html {
   --white-smoke: #F5F5F5;
   --ylmn-blue: #375BA9;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(47, 155, 86);
   outline: rgb(47, 155, 86) none 0px;
   text-decoration-color: rgb(47, 155, 86);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(47, 155, 86);
   outline: rgb(47, 155, 86) none 0px;
   text-decoration-color: rgb(47, 155, 86);
@@ -969,19 +944,19 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
   background-color: rgb(63, 197, 112);
   border-color: rgb(63, 197, 112);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(63, 197, 112);
   outline: rgb(63, 197, 112) none 0px;
   text-decoration-color: rgb(63, 197, 112);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(63, 197, 112);
   outline: rgb(63, 197, 112) none 0px;
   text-decoration-color: rgb(63, 197, 112);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(63, 197, 112);
   outline: rgb(63, 197, 112) none 0px;
 }`,
@@ -995,47 +970,27 @@ html[saved-theme="light"] body a.internal.broken {
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: rgb(236, 239, 245);
-  border-bottom-color: rgb(236, 239, 245);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-left-color: rgb(236, 239, 245);
-  border-right-color: rgb(236, 239, 245);
-  border-top-color: rgb(236, 239, 245);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  color: rgb(18, 16, 25);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(236, 239, 245);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(236, 239, 245);
-  color: rgb(18, 16, 25);
-}
-
-html[saved-theme="light"] body pre > code > [data-line] {
-  border-left-color: rgb(240, 93, 94);
-}
-
-html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(240, 93, 94);
-}
-
-html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(240, 93, 94);
-  border-left-color: rgb(240, 93, 94);
-  border-right-color: rgb(240, 93, 94);
-  border-top-color: rgb(240, 93, 94);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(236, 239, 245);
+  color: rgb(47, 155, 86);
+  padding-bottom: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 3px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(236, 239, 245);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   background-color: rgb(236, 239, 245);
@@ -1414,7 +1369,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-bottom-color: rgb(236, 239, 245);
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(63, 197, 112);
 }
 
@@ -1438,6 +1393,23 @@ html[saved-theme="light"] body hr {
 }`,
     listPage: `html[saved-theme="light"] body li.section-li > .section .meta {
   color: rgb(18, 16, 25);
+}`,
+    canvas: `html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(246, 246, 252);
+}`,
+    properties: `html[saved-theme="light"] body .note-properties-tags {
+  color: rgb(63, 197, 112);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(246, 246, 252);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(236, 239, 245);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(236, 239, 245);
 }`,
     misc: `html[saved-theme="light"] body .navigation-progress {
   background-color: rgb(236, 239, 245);

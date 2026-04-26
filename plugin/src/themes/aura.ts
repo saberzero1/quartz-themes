@@ -310,6 +310,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: rgb(240, 240, 240) !important;
   --setting-items-background: rgb(27, 27, 27) !important;
   --setting-items-border-color: rgb(50, 50, 50) !important;
+  --shiki-active-tab-border-color: rgba(240, 240, 240, 0.7) !important;
+  --shiki-code-background: rgb(27, 27, 27) !important;
+  --shiki-code-comment: rgba(240, 240, 240, 0.7) !important;
+  --shiki-code-normal: rgba(240, 240, 240, 0.7) !important;
+  --shiki-code-punctuation: rgba(240, 240, 240, 0.7) !important;
+  --shiki-gutter-border-color: rgb(50, 50, 50) !important;
+  --shiki-gutter-text-color: rgba(240, 240, 240, 0.7) !important;
+  --shiki-gutter-text-color-highlight: rgba(240, 240, 240, 0.7) !important;
+  --shiki-highlight-neutral: rgba(240, 240, 240, 0.7) !important;
+  --shiki-terminal-dots-color: rgba(240, 240, 240, 0.7) !important;
   --slider-thumb-border-color: rgb(50, 50, 50) !important;
   --slider-track-background: rgb(50, 50, 50) !important;
   --status-bar-background: rgb(20, 20, 20) !important;
@@ -374,52 +384,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(240, 240, 240);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgb(50, 50, 50);
-  color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(20, 20, 20);
-  border-color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgb(50, 50, 50);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgba(240, 240, 240, 0.7);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgba(240, 240, 240, 0.7);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  color: rgb(112, 122, 250);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgba(240, 240, 240, 0.7);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(20, 20, 20);
   color: rgb(240, 240, 240);
@@ -433,34 +397,29 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(20, 20, 20);
   border-left-color: rgb(50, 50, 50);
   color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(25, 25, 25);
-  color: rgb(240, 240, 240);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(208, 66, 85);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(208, 66, 85) none 0px;
   text-decoration-color: rgb(208, 66, 85);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
   text-decoration-color: rgb(112, 122, 250);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
   text-decoration-color: rgb(112, 122, 250);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(208, 66, 85);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(208, 66, 85) none 0px;
@@ -500,21 +459,21 @@ html[saved-theme="dark"] body p {
   outline: rgba(240, 240, 240, 0.7) none 0px;
   text-decoration-color: rgba(240, 240, 240, 0.7);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
   text-decoration-color: rgb(112, 122, 250);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
   text-decoration-color: rgb(112, 122, 250);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(112, 122, 250);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(112, 122, 250) none 0px;
@@ -529,13 +488,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(240, 240, 240);
-  border-left-color: rgb(240, 240, 240);
-  border-right-color: rgb(240, 240, 240);
-  border-top-color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -584,45 +536,25 @@ html[saved-theme="dark"] body th {
   color: rgb(240, 240, 240);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(240, 240, 240);
-  border-left-color: rgb(240, 240, 240);
-  border-right-color: rgb(240, 240, 240);
-  border-top-color: rgb(240, 240, 240);
+  background-color: rgb(27, 27, 27);
+  border-bottom-color: rgb(50, 50, 50);
+  border-left-color: rgb(50, 50, 50);
+  border-right-color: rgb(50, 50, 50);
+  border-top-color: rgb(50, 50, 50);
   color: rgb(240, 240, 240);
   font-family: "iA Writer Mono S";
 }
 
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(27, 27, 27);
-  border-bottom-color: rgb(50, 50, 50);
-  border-left-color: rgb(50, 50, 50);
-  border-right-color: rgb(50, 50, 50);
-  border-top-color: rgb(50, 50, 50);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(27, 27, 27);
-  border-bottom-color: rgb(50, 50, 50);
-  border-left-color: rgb(50, 50, 50);
-  border-right-color: rgb(50, 50, 50);
-  border-top-color: rgb(50, 50, 50);
-  color: rgb(240, 240, 240);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(27, 27, 27);
-  border-bottom-color: rgb(50, 50, 50);
-  border-left-color: rgb(50, 50, 50);
-  border-right-color: rgb(50, 50, 50);
-  border-top-color: rgb(50, 50, 50);
-}
-
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(27, 27, 27);
-  border-bottom-color: rgb(50, 50, 50);
-  border-left-color: rgb(50, 50, 50);
-  border-right-color: rgb(50, 50, 50);
-  border-top-color: rgb(50, 50, 50);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(240, 240, 240);
@@ -633,7 +565,7 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(240, 240, 240);
-  font-family: "??", "??", "iA Writer Quattro S";
+  font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
 html[saved-theme="dark"] body figure {
@@ -1671,17 +1603,22 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(240, 240, 240);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(112, 122, 250);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(208, 66, 85);
   font-family: Rubik;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(208, 66, 85);
+  font-size: 32px;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1722,12 +1659,12 @@ html[saved-theme="dark"] body hr {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }`,
@@ -1821,15 +1758,31 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(240, 240, 240);
-  border-left-color: rgb(240, 240, 240);
-  border-right-color: rgb(240, 240, 240);
-  border-top-color: rgb(240, 240, 240);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(240, 240, 240);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(20, 20, 20);
+  border-color: rgb(240, 240, 240);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(50, 50, 50);
+  color: rgb(240, 240, 240);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(50, 50, 50);
   border-left-color: rgb(50, 50, 50);
   border-right-color: rgb(50, 50, 50);
@@ -1845,6 +1798,57 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgba(240, 240, 240, 0.7);
   color: rgba(240, 240, 240, 0.7);
   font-family: "??", "??", "iA Writer Quattro S";
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(50, 50, 50);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgba(240, 240, 240, 0.7);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgba(240, 240, 240, 0.7);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  color: rgb(112, 122, 250);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgba(240, 240, 240, 0.7);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(25, 25, 25);
+  color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(240, 240, 240);
+  border-left-color: rgb(240, 240, 240);
+  border-right-color: rgb(240, 240, 240);
+  border-top-color: rgb(240, 240, 240);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(20, 20, 20);
+  border-color: rgb(240, 240, 240);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(18, 18, 18);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(240, 240, 240);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(240, 240, 240);
+  border-left-color: rgb(240, 240, 240);
+  border-right-color: rgb(240, 240, 240);
+  border-top-color: rgb(240, 240, 240);
+  color: rgb(240, 240, 240);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -2112,6 +2116,16 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-group-heading-color: rgb(74, 52, 28) !important;
   --setting-items-background: rgb(250, 238, 225) !important;
   --setting-items-border-color: rgb(233, 223, 209) !important;
+  --shiki-active-tab-border-color: rgba(74, 52, 28, 0.9) !important;
+  --shiki-code-background: rgb(250, 238, 225) !important;
+  --shiki-code-comment: rgba(74, 52, 28, 0.9) !important;
+  --shiki-code-normal: rgba(74, 52, 28, 0.9) !important;
+  --shiki-code-punctuation: rgba(74, 52, 28, 0.9) !important;
+  --shiki-gutter-border-color: rgb(233, 223, 209) !important;
+  --shiki-gutter-text-color: rgba(74, 52, 28, 0.9) !important;
+  --shiki-gutter-text-color-highlight: rgba(74, 52, 28, 0.9) !important;
+  --shiki-highlight-neutral: rgba(74, 52, 28, 0.9) !important;
+  --shiki-terminal-dots-color: rgba(74, 52, 28, 0.9) !important;
   --slider-thumb-border-color: rgb(233, 223, 209) !important;
   --slider-track-background: rgb(233, 223, 209) !important;
   --status-bar-background: rgb(238, 231, 221) !important;
@@ -2176,52 +2190,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(74, 52, 28);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgb(233, 223, 209);
-  color: rgb(74, 52, 28);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(74, 52, 28);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(74, 52, 28);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(74, 52, 28);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(74, 52, 28);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(247, 243, 238);
-  border-color: rgb(74, 52, 28);
-}
-
-html[saved-theme="light"] body .note-properties {
-  border-color: rgb(233, 223, 209);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgba(74, 52, 28, 0.9);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgba(74, 52, 28, 0.9);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  color: rgb(233, 179, 92);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgba(74, 52, 28, 0.9);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(238, 231, 221);
   color: rgb(74, 52, 28);
@@ -2235,34 +2203,29 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(238, 231, 221);
   border-left-color: rgb(233, 223, 209);
   color: rgb(74, 52, 28);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(247, 243, 238);
-  color: rgb(74, 52, 28);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(240, 100, 119);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(240, 100, 119) none 0px;
   text-decoration-color: rgb(240, 100, 119);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(124, 155, 255);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(124, 155, 255) none 0px;
   text-decoration-color: rgb(124, 155, 255);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(124, 155, 255);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(124, 155, 255) none 0px;
   text-decoration-color: rgb(124, 155, 255);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(240, 100, 119);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(240, 100, 119) none 0px;
@@ -2302,21 +2265,21 @@ html[saved-theme="light"] body p {
   outline: rgba(74, 52, 28, 0.9) none 0px;
   text-decoration-color: rgba(74, 52, 28, 0.9);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(233, 179, 92);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(233, 179, 92) none 0px;
   text-decoration-color: rgb(233, 179, 92);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(233, 179, 92);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(233, 179, 92) none 0px;
   text-decoration-color: rgb(233, 179, 92);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(233, 179, 92);
   font-family: "??", "??", "iA Writer Quattro S";
   outline: rgb(233, 179, 92) none 0px;
@@ -2331,13 +2294,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(74, 52, 28);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(74, 52, 28);
-  border-left-color: rgb(74, 52, 28);
-  border-right-color: rgb(74, 52, 28);
-  border-top-color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2386,45 +2342,25 @@ html[saved-theme="light"] body th {
   color: rgb(74, 52, 28);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(74, 52, 28);
-  border-left-color: rgb(74, 52, 28);
-  border-right-color: rgb(74, 52, 28);
-  border-top-color: rgb(74, 52, 28);
+  background-color: rgb(250, 238, 225);
+  border-bottom-color: rgb(233, 223, 209);
+  border-left-color: rgb(233, 223, 209);
+  border-right-color: rgb(233, 223, 209);
+  border-top-color: rgb(233, 223, 209);
   color: rgb(74, 52, 28);
   font-family: "iA Writer Mono S";
 }
 
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(250, 238, 225);
-  border-bottom-color: rgb(233, 223, 209);
-  border-left-color: rgb(233, 223, 209);
-  border-right-color: rgb(233, 223, 209);
-  border-top-color: rgb(233, 223, 209);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(250, 238, 225);
-  border-bottom-color: rgb(233, 223, 209);
-  border-left-color: rgb(233, 223, 209);
-  border-right-color: rgb(233, 223, 209);
-  border-top-color: rgb(233, 223, 209);
-  color: rgb(74, 52, 28);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(250, 238, 225);
-  border-bottom-color: rgb(233, 223, 209);
-  border-left-color: rgb(233, 223, 209);
-  border-right-color: rgb(233, 223, 209);
-  border-top-color: rgb(233, 223, 209);
-}
-
 html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(250, 238, 225);
-  border-bottom-color: rgb(233, 223, 209);
-  border-left-color: rgb(233, 223, 209);
-  border-right-color: rgb(233, 223, 209);
-  border-top-color: rgb(233, 223, 209);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(74, 52, 28);
@@ -2435,7 +2371,7 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(74, 52, 28);
-  font-family: "??", "??", "iA Writer Quattro S";
+  font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
 html[saved-theme="light"] body figure {
@@ -3473,17 +3409,22 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(74, 52, 28);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(233, 179, 92);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(240, 100, 119);
   font-family: Rubik;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(240, 100, 119);
+  font-size: 32px;
 }
 
 html[saved-theme="light"] body h2 {
@@ -3524,12 +3465,12 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }`,
@@ -3623,15 +3564,31 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "??", "iA Writer Quattro S";
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(74, 52, 28);
-  border-left-color: rgb(74, 52, 28);
-  border-right-color: rgb(74, 52, 28);
-  border-top-color: rgb(74, 52, 28);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(74, 52, 28);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(74, 52, 28);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(74, 52, 28);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(74, 52, 28);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(247, 243, 238);
+  border-color: rgb(74, 52, 28);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(233, 223, 209);
+  color: rgb(74, 52, 28);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(233, 223, 209);
   border-left-color: rgb(233, 223, 209);
   border-right-color: rgb(233, 223, 209);
@@ -3647,6 +3604,57 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgba(74, 52, 28, 0.9);
   color: rgba(74, 52, 28, 0.9);
   font-family: "??", "??", "iA Writer Quattro S";
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(233, 223, 209);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgba(74, 52, 28, 0.9);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgba(74, 52, 28, 0.9);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  color: rgb(233, 179, 92);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgba(74, 52, 28, 0.9);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(247, 243, 238);
+  color: rgb(74, 52, 28);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(74, 52, 28);
+  border-left-color: rgb(74, 52, 28);
+  border-right-color: rgb(74, 52, 28);
+  border-top-color: rgb(74, 52, 28);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(238, 231, 221);
+  border-color: rgb(74, 52, 28);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(241, 230, 214);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(74, 52, 28);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(74, 52, 28);
+  border-left-color: rgb(74, 52, 28);
+  border-right-color: rgb(74, 52, 28);
+  border-top-color: rgb(74, 52, 28);
+  color: rgb(74, 52, 28);
 }
 
 html[saved-theme="light"] body .navigation-progress {

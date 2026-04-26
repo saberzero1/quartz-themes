@@ -207,35 +207,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(201, 201, 201);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(27, 27, 27);
-  border-color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  color: rgb(255, 190, 0);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(27, 27, 27);
   color: rgb(201, 201, 201);
@@ -243,11 +214,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(27, 27, 27);
-  color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(36, 36, 36);
   color: rgb(201, 201, 201);
 }
 
@@ -338,7 +304,7 @@ html[saved-theme="dark"] body html {
   --text-normal: rgb(201, 201, 201);
   --text-on-accent: black;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(245, 112, 76);
   font-family: "JetBrains Mono";
   font-weight: 900;
@@ -346,21 +312,21 @@ html[saved-theme="dark"] body html {
   text-decoration-color: rgb(245, 112, 76);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(237, 228, 130);
   font-family: "JetBrains Mono";
   outline: rgb(237, 228, 130) none 0px;
   text-decoration-color: rgb(237, 228, 130);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(237, 228, 130);
   font-family: "JetBrains Mono";
   outline: rgb(237, 228, 130) none 0px;
   text-decoration-color: rgb(237, 228, 130);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(245, 112, 76);
   font-family: "JetBrains Mono";
   font-weight: 900;
@@ -396,21 +362,21 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
 html[saved-theme="dark"] body p {
   font-family: "JetBrains Mono";
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(130, 210, 232);
   font-family: "JetBrains Mono";
   outline: rgb(130, 210, 232) none 0px;
   text-decoration-color: rgb(130, 210, 232);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 190, 0);
   font-family: "JetBrains Mono";
   outline: rgb(255, 190, 0) none 0px;
   text-decoration-color: rgb(255, 190, 0);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(255, 190, 0);
   font-family: "JetBrains Mono";
   outline: rgb(255, 190, 0) none 0px;
@@ -425,13 +391,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(201, 201, 201);
-  border-left-color: rgb(201, 201, 201);
-  border-right-color: rgb(201, 201, 201);
-  border-top-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -476,17 +435,19 @@ html[saved-theme="dark"] body th {
   color: rgb(201, 201, 201);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(193, 181, 148);
-  border-left-color: rgb(193, 181, 148);
-  border-right-color: rgb(193, 181, 148);
-  border-top-color: rgb(193, 181, 148);
   color: rgb(193, 181, 148);
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  color: rgb(201, 201, 201);
-  font-family: "JetBrains Mono";
+html[saved-theme="dark"] body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(201, 201, 201);
@@ -497,7 +458,7 @@ html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-reh
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(201, 201, 201);
-  font-family: "JetBrains Mono";
+  font-family: "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body figure {
@@ -1166,17 +1127,21 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(201, 201, 201);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "JetBrains Mono";
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(255, 190, 0);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(245, 112, 76);
   font-family: "JetBrains Mono";
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1211,11 +1176,11 @@ html[saved-theme="dark"] body h6 {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "JetBrains Mono";
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "JetBrains Mono";
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
@@ -1261,20 +1226,70 @@ html[saved-theme="dark"] body ul.section-ul {
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-element p {
   font-family: "JetBrains Mono";
 }`,
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(201, 201, 201);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(201, 201, 201);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(201, 201, 201);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(201, 201, 201);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(27, 27, 27);
+  border-color: rgb(201, 201, 201);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  color: rgb(201, 201, 201);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
+  font-family: "JetBrains Mono";
+}
+
+html[saved-theme="dark"] body .metadata-properties {
+  font-family: "JetBrains Mono";
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  color: rgb(255, 190, 0);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(36, 36, 36);
+  color: rgb(201, 201, 201);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(27, 27, 27);
+  border-color: rgb(201, 201, 201);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(27, 27, 27);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(201, 201, 201);
+}`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(201, 201, 201);
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
   color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .metadata {
-  font-family: "JetBrains Mono";
-}
-
-html[saved-theme="dark"] body .metadata-properties {
-  font-family: "JetBrains Mono";
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -1509,24 +1524,12 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   background-color: rgb(245, 245, 245);
 }
 
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(245, 245, 245);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  color: rgb(222, 165, 0);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(226, 226, 226);
 }
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(226, 226, 226);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(245, 245, 245);
 }
 
 html[saved-theme="light"] body html {
@@ -1616,7 +1619,7 @@ html[saved-theme="light"] body html {
   --text-normal: rgb(201, 201, 201);
   --text-on-accent: black;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(245, 112, 76);
   font-family: "JetBrains Mono";
   font-weight: 900;
@@ -1624,21 +1627,21 @@ html[saved-theme="light"] body html {
   text-decoration-color: rgb(245, 112, 76);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(183, 173, 58);
   font-family: "JetBrains Mono";
   outline: rgb(183, 173, 58) none 0px;
   text-decoration-color: rgb(183, 173, 58);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(183, 173, 58);
   font-family: "JetBrains Mono";
   outline: rgb(183, 173, 58) none 0px;
   text-decoration-color: rgb(183, 173, 58);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(245, 112, 76);
   font-family: "JetBrains Mono";
   font-weight: 900;
@@ -1667,21 +1670,21 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
 html[saved-theme="light"] body p {
   font-family: "JetBrains Mono";
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(48, 122, 142);
   font-family: "JetBrains Mono";
   outline: rgb(48, 122, 142) none 0px;
   text-decoration-color: rgb(48, 122, 142);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(222, 165, 0);
   font-family: "JetBrains Mono";
   outline: rgb(222, 165, 0) none 0px;
   text-decoration-color: rgb(222, 165, 0);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(222, 165, 0);
   font-family: "JetBrains Mono";
   outline: rgb(222, 165, 0) none 0px;
@@ -1702,19 +1705,22 @@ html[saved-theme="light"] body tbody tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.204);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(193, 181, 148);
-  border-left-color: rgb(193, 181, 148);
-  border-right-color: rgb(193, 181, 148);
-  border-top-color: rgb(193, 181, 148);
   color: rgb(193, 181, 148);
   font-family: "JetBrains Mono", monospace;
 }
 
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  font-family: "JetBrains Mono";
+html[saved-theme="light"] body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body figcaption {
-  font-family: "JetBrains Mono";
+  font-family: "??", "??", "JetBrains Mono", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     embeds: `html[saved-theme="light"] body .file-embed {
   border-bottom-color: rgb(0, 0, 0);
@@ -2156,11 +2162,11 @@ html[saved-theme="light"] body .search > .search-container > .search-space > inp
   border-bottom-color: rgb(226, 226, 226);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "JetBrains Mono";
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(222, 165, 0);
 }
 
@@ -2200,11 +2206,11 @@ html[saved-theme="light"] body h6 {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "JetBrains Mono";
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "JetBrains Mono";
 }`,
     footer: `html[saved-theme="light"] body footer {
@@ -2224,7 +2230,10 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-element p {
   font-family: "JetBrains Mono";
 }`,
-    misc: `html[saved-theme="light"] body .metadata {
+    canvas: `html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(245, 245, 245);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   font-family: "JetBrains Mono";
 }
 
@@ -2232,7 +2241,21 @@ html[saved-theme="light"] body .metadata-properties {
   font-family: "JetBrains Mono";
 }
 
-html[saved-theme="light"] body .navigation-progress {
+html[saved-theme="light"] body .note-properties-tags {
+  color: rgb(222, 165, 0);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(245, 245, 245);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(226, 226, 226);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(226, 226, 226);
+}`,
+    misc: `html[saved-theme="light"] body .navigation-progress {
   background-color: rgb(226, 226, 226);
 }
 

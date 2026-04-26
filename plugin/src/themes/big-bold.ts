@@ -1638,6 +1638,27 @@ export const theme: ThemeData = {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
   --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
+  --shiki-active-tab-border-color: hsl(220, 17%, 66%) !important;
+  --shiki-code-background: hsl(216, 17%, 14%) !important;
+  --shiki-code-block-border-radius: 7px !important;
+  --shiki-code-comment: hsl(219, 13%, 51%) !important;
+  --shiki-code-function: #7dcf2b !important;
+  --shiki-code-important: #f69c00 !important;
+  --shiki-code-keyword: #e66ab4 !important;
+  --shiki-code-normal: hsl(220, 17%, 66%) !important;
+  --shiki-code-property: #00cecb !important;
+  --shiki-code-punctuation: hsl(220, 17%, 66%) !important;
+  --shiki-code-string: #e8c900 !important;
+  --shiki-code-value: #b45af5 !important;
+  --shiki-gutter-border-color: hsl(216, 20%, 20%) !important;
+  --shiki-gutter-text-color: hsl(219, 13%, 51%) !important;
+  --shiki-gutter-text-color-highlight: hsl(220, 17%, 66%) !important;
+  --shiki-highlight-green: rgba(125, 207, 43, 0.5) !important;
+  --shiki-highlight-green-background: rgba(125, 207, 43, 0.1) !important;
+  --shiki-highlight-neutral: hsl(220, 17%, 66%) !important;
+  --shiki-highlight-red: rgba(255, 77, 58, 0.5) !important;
+  --shiki-highlight-red-background: rgba(255, 77, 58, 0.1) !important;
+  --shiki-terminal-dots-color: hsl(219, 13%, 51%) !important;
   --slider-thumb-border-color: hsl(218, 19%, 27%) !important;
   --slider-track-background: hsl(216, 20%, 20%) !important;
   --slider-track-height: 1.2px !important;
@@ -1768,61 +1789,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(200, 212, 230);
 }
 
-html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgb(31, 36, 45);
-}
-
-html[saved-theme="dark"] body .bases-table thead th {
-  background-color: rgb(33, 39, 49);
-  border-color: rgb(41, 49, 61);
-  color: rgb(200, 212, 230);
-  font-weight: 400;
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(33, 39, 49);
-  border-color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  background-color: rgb(31, 36, 45);
-  border-color: rgb(41, 49, 61);
-  border-radius: 7px;
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(154, 163, 183);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(41, 49, 61);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(0, 176, 179, 0.1);
-  color: rgb(0, 168, 160);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(154, 163, 183);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(200, 212, 230);
@@ -1837,34 +1803,29 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(33, 39, 49);
   border-left-color: rgb(41, 49, 61);
   color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(28, 32, 38);
-  color: rgb(200, 212, 230);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(200, 212, 230);
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   outline: rgb(200, 212, 230) none 0px;
   text-decoration-color: rgb(200, 212, 230);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(200, 212, 230);
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   outline: rgb(200, 212, 230) none 0px;
   text-decoration-color: rgb(200, 212, 230);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(200, 212, 230);
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   outline: rgb(200, 212, 230) none 0px;
   text-decoration-color: rgb(200, 212, 230);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(200, 212, 230);
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   outline: rgb(200, 212, 230) none 0px;
@@ -1908,7 +1869,7 @@ html[saved-theme="dark"] body p {
   outline: rgb(154, 163, 183) none 0px;
   text-decoration-color: rgb(154, 163, 183);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   --resizer-size: 20px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
@@ -1947,7 +1908,7 @@ html[saved-theme="dark"] body p {
   transition: 0.25s;
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   --resizer-size: 20px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
@@ -1986,7 +1947,7 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   transition: 0.25s;
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   --resizer-size: 20px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
@@ -2034,13 +1995,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(200, 212, 230);
-  border-left-color: rgb(200, 212, 230);
-  border-right-color: rgb(200, 212, 230);
-  border-top-color: rgb(200, 212, 230);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -2108,84 +2062,21 @@ html[saved-theme="dark"] body tr {
   background-color: rgb(31, 36, 45);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(200, 212, 230);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-left-color: rgb(200, 212, 230);
-  border-right-color: rgb(200, 212, 230);
-  border-top-color: rgb(200, 212, 230);
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  color: rgb(200, 212, 230);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(154, 163, 183);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(154, 163, 183);
+  border-right-color: rgb(154, 163, 183);
+  border-top-color: rgb(154, 163, 183);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: rgb(154, 163, 183);
   font-family: "DM Mono", monospace;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(30, 34, 42);
-  border-bottom-color: rgb(41, 49, 61);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(41, 49, 61);
-  border-left-width: 1px;
-  border-right-color: rgb(41, 49, 61);
-  border-right-width: 1px;
-  border-top-color: rgb(41, 49, 61);
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-top-width: 1px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(30, 34, 42);
-  border-bottom-color: rgb(41, 49, 61);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(41, 49, 61);
-  border-left-width: 1px;
-  border-right-color: rgb(41, 49, 61);
-  border-right-width: 1px;
-  border-top-color: rgb(41, 49, 61);
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-top-width: 1px;
-  color: rgb(200, 212, 230);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line] {
-  border-left-color: rgb(232, 201, 0);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(232, 201, 0);
-}
-
-html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(232, 201, 0);
-  border-left-color: rgb(232, 201, 0);
-  border-right-color: rgb(232, 201, 0);
-  border-top-color: rgb(232, 201, 0);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(30, 34, 42);
-  border-bottom-color: rgb(41, 49, 61);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(41, 49, 61);
-  border-left-width: 1px;
-  border-right-color: rgb(41, 49, 61);
-  border-right-width: 1px;
-  border-top-color: rgb(41, 49, 61);
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-top-width: 1px;
-  padding-bottom: 32px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 32px;
+  padding-bottom: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 12px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -2216,14 +2107,18 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(200, 212, 230);
-  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
 html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(200, 212, 230);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
   border-left-color: rgb(200, 212, 230);
   border-right-color: rgb(200, 212, 230);
   border-top-color: rgb(200, 212, 230);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 html[saved-theme="dark"] body img {
@@ -3575,7 +3470,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(200, 212, 230);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 176, 179, 0.1);
   border-bottom-color: rgba(0, 176, 179, 0.15);
   border-left-color: rgba(0, 176, 179, 0.15);
@@ -3584,13 +3479,18 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(0, 168, 160);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(200, 212, 230);
   font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(200, 212, 230);
+  font-size: 40px;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -3648,19 +3548,19 @@ html[saved-theme="dark"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(154, 163, 183);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(154, 163, 183);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgba(0, 0, 0, 0);
   border-left-width: 0px;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(154, 163, 183);
+  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(154, 163, 183);
+  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(200, 212, 230);
@@ -3765,15 +3665,37 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(114, 125, 146);
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(200, 212, 230);
-  border-left-color: rgb(200, 212, 230);
-  border-right-color: rgb(200, 212, 230);
-  border-top-color: rgb(200, 212, 230);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(200, 212, 230);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(33, 39, 49);
+  border-color: rgb(200, 212, 230);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table tbody tr:nth-child(even) {
+  background-color: rgb(31, 36, 45);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  background-color: rgb(33, 39, 49);
+  border-color: rgb(41, 49, 61);
+  color: rgb(200, 212, 230);
+  font-weight: 400;
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   background-color: rgb(31, 36, 45);
   border-bottom-color: rgb(41, 49, 61);
   border-bottom-left-radius: 7px;
@@ -3802,6 +3724,60 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(154, 163, 183);
   color: rgb(154, 163, 183);
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+}
+
+html[saved-theme="dark"] body .note-properties {
+  background-color: rgb(31, 36, 45);
+  border-color: rgb(41, 49, 61);
+  border-radius: 7px;
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(154, 163, 183);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(41, 49, 61);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(0, 176, 179, 0.1);
+  color: rgb(0, 168, 160);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(154, 163, 183);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(28, 32, 38);
+  color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(200, 212, 230);
+  border-left-color: rgb(200, 212, 230);
+  border-right-color: rgb(200, 212, 230);
+  border-top-color: rgb(200, 212, 230);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(200, 212, 230);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(200, 212, 230);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(200, 212, 230);
+  border-left-color: rgb(200, 212, 230);
+  border-right-color: rgb(200, 212, 230);
+  border-top-color: rgb(200, 212, 230);
+  color: rgb(200, 212, 230);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -4269,6 +4245,27 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-items-radius: 19px !important;
   --shadow-color: hsl(0, 0%, 96%) !important;
   --shadow-ui: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042) !important;
+  --shiki-active-tab-border-color: #7f7f7f !important;
+  --shiki-code-background: #fdfdfd !important;
+  --shiki-code-block-border-radius: 7px !important;
+  --shiki-code-comment: #878787 !important;
+  --shiki-code-function: #8fb26b !important;
+  --shiki-code-important: #d08344 !important;
+  --shiki-code-keyword: #ac7aaa !important;
+  --shiki-code-normal: #7f7f7f !important;
+  --shiki-code-property: #49a7ba !important;
+  --shiki-code-punctuation: #7f7f7f !important;
+  --shiki-code-string: #dca931 !important;
+  --shiki-code-value: #8076ad !important;
+  --shiki-gutter-border-color: #9f9f9f66 !important;
+  --shiki-gutter-text-color: #878787 !important;
+  --shiki-gutter-text-color-highlight: #7f7f7f !important;
+  --shiki-highlight-green: rgba(125, 207, 43, 0.5) !important;
+  --shiki-highlight-green-background: rgba(125, 207, 43, 0.1) !important;
+  --shiki-highlight-neutral: #7f7f7f !important;
+  --shiki-highlight-red: rgba(255, 77, 58, 0.5) !important;
+  --shiki-highlight-red-background: rgba(255, 77, 58, 0.1) !important;
+  --shiki-terminal-dots-color: #878787 !important;
   --slider-thumb-border-color: #dedede !important;
   --slider-track-background: #9f9f9f66 !important;
   --slider-track-height: 1.2px !important;
@@ -4389,60 +4386,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(37, 37, 37);
 }
 
-html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
-  background-color: rgb(252, 252, 252);
-}
-
-html[saved-theme="light"] body .bases-table thead th {
-  background-color: rgb(245, 245, 245);
-  border-color: rgba(159, 159, 159, 0.4);
-  color: rgb(37, 37, 37);
-  font-weight: 400;
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  border-color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body .note-properties {
-  background-color: rgb(252, 252, 252);
-  border-color: rgba(159, 159, 159, 0.4);
-  border-radius: 7px;
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(127, 127, 127);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgba(159, 159, 159, 0.4);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(0, 176, 179, 0.1);
-  color: rgb(0, 176, 179);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(127, 127, 127);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(37, 37, 37);
@@ -4457,33 +4400,29 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(245, 245, 245);
   border-left-color: rgba(159, 159, 159, 0.4);
   color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  color: rgb(37, 37, 37);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(37, 37, 37);
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   outline: rgb(37, 37, 37) none 0px;
   text-decoration-color: rgb(37, 37, 37);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(37, 37, 37);
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   outline: rgb(37, 37, 37) none 0px;
   text-decoration-color: rgb(37, 37, 37);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(37, 37, 37);
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   outline: rgb(37, 37, 37) none 0px;
   text-decoration-color: rgb(37, 37, 37);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(37, 37, 37);
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
   outline: rgb(37, 37, 37) none 0px;
@@ -4527,7 +4466,7 @@ html[saved-theme="light"] body p {
   outline: rgb(127, 127, 127) none 0px;
   text-decoration-color: rgb(127, 127, 127);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   --resizer-size: 20px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
@@ -4566,7 +4505,7 @@ html[saved-theme="light"] body p {
   transition: 0.25s;
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   --resizer-size: 20px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
@@ -4605,7 +4544,7 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
   transition: 0.25s;
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   --resizer-size: 20px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
@@ -4653,13 +4592,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(37, 37, 37);
-  border-left-color: rgb(37, 37, 37);
-  border-right-color: rgb(37, 37, 37);
-  border-top-color: rgb(37, 37, 37);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -4727,84 +4659,21 @@ html[saved-theme="light"] body tr {
   background-color: rgb(252, 252, 252);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(37, 37, 37);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-left-color: rgb(37, 37, 37);
-  border-right-color: rgb(37, 37, 37);
-  border-top-color: rgb(37, 37, 37);
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  color: rgb(37, 37, 37);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(127, 127, 127);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(127, 127, 127);
+  border-right-color: rgb(127, 127, 127);
+  border-top-color: rgb(127, 127, 127);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: rgb(127, 127, 127);
   font-family: "DM Mono", monospace;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(253, 253, 253);
-  border-bottom-color: rgba(159, 159, 159, 0.4);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(159, 159, 159, 0.4);
-  border-left-width: 1px;
-  border-right-color: rgba(159, 159, 159, 0.4);
-  border-right-width: 1px;
-  border-top-color: rgba(159, 159, 159, 0.4);
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-top-width: 1px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(253, 253, 253);
-  border-bottom-color: rgba(159, 159, 159, 0.4);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(159, 159, 159, 0.4);
-  border-left-width: 1px;
-  border-right-color: rgba(159, 159, 159, 0.4);
-  border-right-width: 1px;
-  border-top-color: rgba(159, 159, 159, 0.4);
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-top-width: 1px;
-  color: rgb(37, 37, 37);
-}
-
-html[saved-theme="light"] body pre > code > [data-line] {
-  border-left-color: rgb(220, 169, 49);
-}
-
-html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(220, 169, 49);
-}
-
-html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(220, 169, 49);
-  border-left-color: rgb(220, 169, 49);
-  border-right-color: rgb(220, 169, 49);
-  border-top-color: rgb(220, 169, 49);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(253, 253, 253);
-  border-bottom-color: rgba(159, 159, 159, 0.4);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-bottom-width: 1px;
-  border-left-color: rgba(159, 159, 159, 0.4);
-  border-left-width: 1px;
-  border-right-color: rgba(159, 159, 159, 0.4);
-  border-right-width: 1px;
-  border-top-color: rgba(159, 159, 159, 0.4);
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-top-width: 1px;
-  padding-bottom: 32px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 32px;
+  padding-bottom: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 12px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -4835,14 +4704,18 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(37, 37, 37);
-  font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+  font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
 html[saved-theme="light"] body figure {
   border-bottom-color: rgb(37, 37, 37);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
   border-left-color: rgb(37, 37, 37);
   border-right-color: rgb(37, 37, 37);
   border-top-color: rgb(37, 37, 37);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 html[saved-theme="light"] body img {
@@ -6192,7 +6065,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(37, 37, 37);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 176, 179, 0.1);
   border-bottom-color: rgba(0, 176, 179, 0.15);
   border-left-color: rgba(0, 176, 179, 0.15);
@@ -6201,13 +6074,18 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(0, 176, 179);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(37, 37, 37);
   font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(37, 37, 37);
+  font-size: 40px;
 }
 
 html[saved-theme="light"] body h2 {
@@ -6265,19 +6143,19 @@ html[saved-theme="light"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(127, 127, 127);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-}
-
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(127, 127, 127);
-  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
-}
-
-html[saved-theme="light"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-color: rgba(0, 0, 0, 0);
   border-left-width: 0px;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(127, 127, 127);
+  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(127, 127, 127);
+  font-family: "Merriweather Sans", "Book Antiqua", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif, "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(37, 37, 37);
@@ -6382,15 +6260,36 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(135, 135, 135);
   font-family: "??", "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(37, 37, 37);
-  border-left-color: rgb(37, 37, 37);
-  border-right-color: rgb(37, 37, 37);
-  border-top-color: rgb(37, 37, 37);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(37, 37, 37);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  border-color: rgb(37, 37, 37);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table tbody tr:nth-child(even) {
+  background-color: rgb(252, 252, 252);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  background-color: rgb(245, 245, 245);
+  border-color: rgba(159, 159, 159, 0.4);
+  color: rgb(37, 37, 37);
+  font-weight: 400;
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   background-color: rgb(252, 252, 252);
   border-bottom-color: rgba(159, 159, 159, 0.4);
   border-bottom-left-radius: 7px;
@@ -6419,6 +6318,59 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(127, 127, 127);
   color: rgb(127, 127, 127);
   font-family: "??", "??", "Nunito Sans", "Noto Color Emoji", Inter, sans-serif;
+}
+
+html[saved-theme="light"] body .note-properties {
+  background-color: rgb(252, 252, 252);
+  border-color: rgba(159, 159, 159, 0.4);
+  border-radius: 7px;
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(127, 127, 127);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgba(159, 159, 159, 0.4);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(0, 176, 179, 0.1);
+  color: rgb(0, 176, 179);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(127, 127, 127);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(37, 37, 37);
+  border-left-color: rgb(37, 37, 37);
+  border-right-color: rgb(37, 37, 37);
+  border-top-color: rgb(37, 37, 37);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(37, 37, 37);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(37, 37, 37);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(37, 37, 37);
+  border-left-color: rgb(37, 37, 37);
+  border-right-color: rgb(37, 37, 37);
+  border-top-color: rgb(37, 37, 37);
+  color: rgb(37, 37, 37);
 }
 
 html[saved-theme="light"] body .navigation-progress {

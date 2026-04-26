@@ -275,6 +275,22 @@ export const theme: ThemeData = {
   --shade-70: rgba(0, 0, 0, 0.7) !important;
   --shade-80: rgba(0, 0, 0, 0.8) !important;
   --shade-90: rgba(0, 0, 0, 0.9) !important;
+  --shiki-active-tab-border-color: rgba(0, 0, 0, 0.5) !important;
+  --shiki-code-background: rgba(0, 0, 0, 0.03) !important;
+  --shiki-code-comment: rgba(0, 0, 0, 0.3) !important;
+  --shiki-code-function: rgb(80, 193, 178) !important;
+  --shiki-code-normal: rgba(0, 0, 0, 0.5) !important;
+  --shiki-code-punctuation: rgba(0, 0, 0, 0.5) !important;
+  --shiki-code-value: rgb(140, 108, 145) !important;
+  --shiki-gutter-border-color: rgba(0, 0, 0, 0.2) !important;
+  --shiki-gutter-text-color: rgba(0, 0, 0, 0.3) !important;
+  --shiki-gutter-text-color-highlight: rgba(0, 0, 0, 0.5) !important;
+  --shiki-highlight-green: rgba(80, 193, 178, 0.5) !important;
+  --shiki-highlight-green-background: rgba(80, 193, 178, 0.1) !important;
+  --shiki-highlight-neutral: rgba(0, 0, 0, 0.5) !important;
+  --shiki-highlight-red: rgba(175, 62, 77, 0.5) !important;
+  --shiki-highlight-red-background: rgba(175, 62, 77, 0.1) !important;
+  --shiki-terminal-dots-color: rgba(0, 0, 0, 0.3) !important;
   --slider-thumb-border-color: rgba(0, 0, 0, 0.2) !important;
   --slider-track-background: rgba(0, 0, 0, 0.2) !important;
   --status-bar-background: rgba(0, 0, 0, 0.03) !important;
@@ -357,59 +373,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgba(0, 0, 0, 0.9);
 }
 
-html body .bases-table {
-  border-color: rgba(0, 0, 0, 0.2);
-}
-
-html body .bases-table thead th {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.9);
-  color: rgba(0, 0, 0, 0.9);
-  font-weight: 700;
-}
-
-html body .canvas-node {
-  border-color: rgba(0, 0, 0, 0.9);
-}
-
-html body .canvas-node-content {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-html body .canvas-node-file {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-html body .canvas-node-group {
-  border-color: rgba(0, 0, 0, 0.9);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(244, 226, 205);
-  border-color: rgba(0, 0, 0, 0.9);
-}
-
-html body .note-properties {
-  border-color: rgba(0, 0, 0, 0.2);
-}
-
-html body .note-properties-key {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-html body .note-properties-row {
-  border-color: rgba(0, 0, 0, 0.5);
-}
-
-html body .note-properties-tags {
-  border-radius: 31.5px;
-  color: rgb(120, 88, 111);
-}
-
-html body .note-properties-value {
-  color: rgba(0, 0, 0, 0.5);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
   color: rgba(0, 0, 0, 0.9);
@@ -423,11 +386,6 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(244, 226, 205);
   border-left-color: rgba(0, 0, 0, 0.2);
-  color: rgba(0, 0, 0, 0.9);
-}
-
-html body div#quartz-root {
-  background-color: rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -511,14 +469,14 @@ html body html {
   --text-editor: "Petrona";
   --titlebar-height: 28px;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(28, 129, 176);
   font-family: Petrona;
   outline: rgb(28, 129, 176) none 0px;
   text-decoration-color: rgb(28, 129, 176);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(175, 62, 77);
   font-family: Petrona;
   font-weight: 700;
@@ -526,7 +484,7 @@ html body .page article p > em, html em {
   text-decoration-color: rgb(175, 62, 77);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(175, 62, 77);
   font-family: Petrona;
   font-weight: 700;
@@ -534,7 +492,7 @@ html body .page article p > i, html i {
   text-decoration-color: rgb(175, 62, 77);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(28, 129, 176);
   font-family: Petrona;
   outline: rgb(28, 129, 176) none 0px;
@@ -578,7 +536,7 @@ html body p {
   outline: rgba(0, 0, 0, 0.5) none 0px;
   text-decoration-color: rgba(0, 0, 0, 0.5);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   --accent-h: 258;
   --accent-l: 66%;
   --accent-s: 88%;
@@ -639,7 +597,7 @@ html body p {
   transition: box-shadow 0.1s ease-out;
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   box-shadow: rgba(0, 0, 0, 0) 0px 3px 0px 0px;
   color: rgb(120, 88, 111);
   font-family: Petrona;
@@ -648,7 +606,7 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   transition: box-shadow 0.1s ease-out;
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   box-shadow: rgba(0, 0, 0, 0) 0px 3px 0px 0px;
   color: rgb(120, 88, 111);
   font-family: Petrona;
@@ -671,13 +629,6 @@ html body dt {
 
 html body ol > li {
   color: rgba(0, 0, 0, 0.9);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgba(0, 0, 0, 0.9);
-  border-left-color: rgba(0, 0, 0, 0.9);
-  border-right-color: rgba(0, 0, 0, 0.9);
-  border-top-color: rgba(0, 0, 0, 0.9);
 }
 
 html body ul > li {
@@ -778,52 +729,28 @@ html body tr {
   border-top-color: rgba(0, 0, 0, 0.2);
 }`,
     code: `html body code {
+  background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   border-left-color: rgba(0, 0, 0, 0.5);
   border-right-color: rgba(0, 0, 0, 0.5);
   border-top-color: rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   color: rgba(0, 0, 0, 0.5);
-  padding-bottom: 22.4px;
-  padding-left: 22.4px;
-  padding-right: 22.4px;
-  padding-top: 22.4px;
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom-color: rgba(0, 0, 0, 0.2);
-  border-left-color: rgba(0, 0, 0, 0.2);
-  border-right-color: rgba(0, 0, 0, 0.2);
-  border-top-color: rgba(0, 0, 0, 0.2);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom-color: rgba(0, 0, 0, 0.2);
-  border-left-color: rgba(0, 0, 0, 0.2);
-  border-right-color: rgba(0, 0, 0, 0.2);
-  border-top-color: rgba(0, 0, 0, 0.2);
-  color: rgba(0, 0, 0, 0.9);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom-color: rgba(0, 0, 0, 0.2);
-  border-left-color: rgba(0, 0, 0, 0.2);
-  border-right-color: rgba(0, 0, 0, 0.2);
-  border-top-color: rgba(0, 0, 0, 0.2);
-  padding-bottom: 0px;
+  padding-bottom: 12px;
   padding-left: 0px;
   padding-right: 0px;
-  padding-top: 0px;
+  padding-top: 12px;
 }
 
 html body pre:has(> code) {
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom-color: rgba(0, 0, 0, 0.2);
-  border-left-color: rgba(0, 0, 0, 0.2);
-  border-right-color: rgba(0, 0, 0, 0.2);
-  border-top-color: rgba(0, 0, 0, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -837,8 +764,8 @@ html body pre:has(> code) {
 }
 
 html body figcaption {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16.2px;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "??", "??", Petrona, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-style: italic;
 }
 
@@ -847,8 +774,6 @@ html body figure {
   border-left-color: rgba(0, 0, 0, 0.9);
   border-right-color: rgba(0, 0, 0, 0.9);
   border-top-color: rgba(0, 0, 0, 0.9);
-  margin-bottom: 18px;
-  margin-top: 18px;
 }
 
 html body img {
@@ -1939,7 +1864,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgba(0, 0, 0, 0.9);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 31.5px;
   border-bottom-right-radius: 31.5px;
   border-top-left-radius: 31.5px;
@@ -1947,13 +1872,19 @@ html body a.internal.tag-link, html .search > .search-container > .search-space 
   font-family: "??", "??", Petrona, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(120, 88, 111);
 }
 
 html body h1 {
   color: rgba(0, 0, 0, 0.9);
   font-family: Petrona;
+}
+
+html body h1.article-title {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 29.124px;
+  font-weight: 500;
 }
 
 html body h2 {
@@ -2001,13 +1932,13 @@ html body hr {
   border-right-color: rgba(28, 129, 176, 0.25);
   border-top-color: rgba(28, 129, 176, 0.25);
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgba(0, 0, 0, 0.9);
   font-family: Quicksand;
   font-weight: 500;
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgba(0, 0, 0, 0.9);
   font-family: Quicksand;
   font-weight: 500;
@@ -2107,15 +2038,37 @@ html body .breadcrumb-element p {
   color: rgba(0, 0, 0, 0.3);
   font-family: "??", "??", Petrona, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: rgba(0, 0, 0, 0.9);
-  border-left-color: rgba(0, 0, 0, 0.9);
-  border-right-color: rgba(0, 0, 0, 0.9);
-  border-top-color: rgba(0, 0, 0, 0.9);
+    canvas: `html body .canvas-node {
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+html body .canvas-node-content {
   color: rgba(0, 0, 0, 0.9);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+html body .canvas-node-group {
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(244, 226, 205);
+  border-color: rgba(0, 0, 0, 0.9);
+}`,
+    bases: `html body .bases-table {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+html body .bases-table thead th {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 700;
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgba(0, 0, 0, 0.2);
   border-left-color: rgba(0, 0, 0, 0.2);
   border-right-color: rgba(0, 0, 0, 0.2);
@@ -2131,6 +2084,58 @@ html body .metadata-properties {
   border-top-color: rgba(0, 0, 0, 0.5);
   color: rgba(0, 0, 0, 0.5);
   font-family: Petrona;
+}
+
+html body .note-properties {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+html body .note-properties-key {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+html body .note-properties-row {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+html body .note-properties-tags {
+  border-radius: 31.5px;
+  color: rgb(120, 88, 111);
+}
+
+html body .note-properties-value {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+html body div#quartz-root {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.9);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-left-color: rgba(0, 0, 0, 0.9);
+  border-right-color: rgba(0, 0, 0, 0.9);
+  border-top-color: rgba(0, 0, 0, 0.9);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+html body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html body .stacked-page.active {
+  border-color: rgba(0, 0, 0, 0.9);
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: rgba(0, 0, 0, 0.9);
+  border-left-color: rgba(0, 0, 0, 0.9);
+  border-right-color: rgba(0, 0, 0, 0.9);
+  border-top-color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 html body .navigation-progress {

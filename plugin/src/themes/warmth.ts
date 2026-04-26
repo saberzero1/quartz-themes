@@ -10,30 +10,24 @@ export const theme: ThemeData = {
 html body {
   background-color: var(--background-primary) !important;
   color: var(--text-normal) !important;
-}
-
-html body .bases-table thead th {
-  background-color: rgb(102, 102, 102);
-  border-color: rgb(179, 179, 179);
-  color: rgb(38, 38, 38);
 }`,
     typography: `html body p {
   font-family: "Times New Roman";
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(197, 182, 252);
   outline: rgb(197, 182, 252) none 0px;
   text-decoration-color: rgb(197, 182, 252);
   transition: color 0.4s;
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(197, 182, 252);
   outline: rgb(197, 182, 252) none 0px;
   text-decoration-color: rgb(197, 182, 252);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(197, 182, 252);
   outline: rgb(197, 182, 252) none 0px;
 }`,
@@ -101,14 +95,26 @@ html body tr {
   border-top-color: rgb(179, 179, 179);
 }`,
     code: `html body code {
+  background-color: rgb(38, 38, 38);
   border-bottom-left-radius: 6.4px;
   border-bottom-right-radius: 6.4px;
   border-top-left-radius: 6.4px;
   border-top-right-radius: 6.4px;
-  padding-bottom: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
+  padding-bottom: 3.2px;
+  padding-left: 6.4px;
+  padding-right: 6.4px;
+  padding-top: 3.2px;
+}
+
+html body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     checkboxes: `html body li.task-list-item[data-task="-"] input[type="checkbox"]::after {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
@@ -466,11 +472,11 @@ html body .callout[data-callout="warning"] {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: "Times New Roman";
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: "Times New Roman";
 }`,
     footer: `html body footer {
@@ -485,6 +491,11 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 }`,
     listPage: `html body li.section-li > .section .meta {
   font-family: "Times New Roman";
+}`,
+    bases: `html body .bases-table thead th {
+  background-color: rgb(102, 102, 102);
+  border-color: rgb(179, 179, 179);
+  color: rgb(38, 38, 38);
 }`,
     misc: `html body ul.tags > li {
   background-color: rgb(38, 38, 38);

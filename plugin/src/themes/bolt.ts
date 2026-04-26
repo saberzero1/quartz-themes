@@ -301,6 +301,18 @@ export const theme: ThemeData = {
   --shadow-bottom: 0 10px 10px -10px rgba(0, 0, 0, 0.19), 0 6px 6px -6px rgba(0, 0, 0, 0.23) !important;
   --shadow-m: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
   --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  --shiki-active-tab-border-color: #bec8c8 !important;
+  --shiki-code-background: #2f3f3f !important;
+  --shiki-code-block-border-radius: 0.75em !important;
+  --shiki-code-comment: #899392 !important;
+  --shiki-code-normal: #bec8c8 !important;
+  --shiki-code-punctuation: #bec8c8 !important;
+  --shiki-gutter-border-color: #2f3f3f !important;
+  --shiki-gutter-border-width: 2px !important;
+  --shiki-gutter-text-color: #899392 !important;
+  --shiki-gutter-text-color-highlight: #bec8c8 !important;
+  --shiki-highlight-neutral: #bec8c8 !important;
+  --shiki-terminal-dots-color: #899392 !important;
   --slider-thumb-border-color: #2f3f3f !important;
   --slider-thumb-border-width: 2px !important;
   --slider-track-background: #2f3f3f !important;
@@ -393,57 +405,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(224, 227, 226);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgb(3, 71, 71);
-  color: rgb(3, 71, 71);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(224, 227, 226);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(224, 227, 226);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(224, 227, 226);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(224, 227, 226);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(25, 46, 46);
-  border-color: rgb(224, 227, 226);
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px 0px, rgba(0, 0, 0, 0.24) 0px 1px 2px 0px;
-}
-
-html[saved-theme="dark"] body .note-properties {
-  background-color: rgb(25, 46, 46);
-  border-color: rgb(47, 63, 63);
-  border-radius: 12px;
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(190, 200, 200);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(190, 200, 200);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgb(53, 72, 99);
-  border-radius: 5px;
-  color: rgb(212, 227, 255);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(190, 200, 200);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(25, 46, 46);
   color: rgb(224, 227, 226);
@@ -457,31 +418,26 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(25, 46, 46);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(224, 227, 226);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(13, 26, 26);
-  color: rgb(224, 227, 226);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(224, 227, 226);
   outline: rgb(224, 227, 226) none 0px;
   text-decoration-color: rgb(224, 227, 226);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(224, 227, 226);
   outline: rgb(224, 227, 226) none 0px;
   text-decoration-color: rgb(224, 227, 226);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(224, 227, 226);
   outline: rgb(224, 227, 226) none 0px;
   text-decoration-color: rgb(224, 227, 226);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(224, 227, 226);
   outline: rgb(224, 227, 226) none 0px;
   text-decoration-color: rgb(224, 227, 226);
@@ -520,7 +476,7 @@ html[saved-theme="dark"] body p {
   outline: rgb(190, 200, 200) none 0px;
   text-decoration-color: rgb(190, 200, 200);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(180, 200, 233);
   outline: rgb(180, 200, 233) none 0px;
   text-decoration: 1.5px;
@@ -528,7 +484,7 @@ html[saved-theme="dark"] body p {
   text-decoration-thickness: 1.5px;
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(21, 185, 188);
   outline: rgb(21, 185, 188) none 0px;
   text-decoration: underline 1.5px;
@@ -536,7 +492,7 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   text-decoration-thickness: 1.5px;
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(22, 218, 212);
   outline: rgb(22, 218, 212) none 0px;
   text-decoration: underline 1.5px rgba(21, 185, 188, 0.3);
@@ -553,13 +509,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(224, 227, 226);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(224, 227, 226);
-  border-left-color: rgb(224, 227, 226);
-  border-right-color: rgb(224, 227, 226);
-  border-top-color: rgb(224, 227, 226);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -624,64 +573,36 @@ html[saved-theme="dark"] body tr {
   background-color: rgb(176, 204, 204);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(224, 227, 226);
+  background-color: rgb(47, 63, 63);
+  border-bottom-color: rgb(47, 63, 63);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  border-left-color: rgb(224, 227, 226);
-  border-right-color: rgb(224, 227, 226);
-  border-top-color: rgb(224, 227, 226);
+  border-left-color: rgb(47, 63, 63);
+  border-right-color: rgb(47, 63, 63);
+  border-top-color: rgb(47, 63, 63);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   color: rgb(224, 227, 226);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(47, 63, 63);
-  border-bottom-color: rgb(47, 63, 63);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-left-color: rgb(47, 63, 63);
-  border-right-color: rgb(47, 63, 63);
-  border-top-color: rgb(47, 63, 63);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(47, 63, 63);
-  border-bottom-color: rgb(47, 63, 63);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-left-color: rgb(47, 63, 63);
-  border-right-color: rgb(47, 63, 63);
-  border-top-color: rgb(47, 63, 63);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  color: rgb(224, 227, 226);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(47, 63, 63);
-  border-bottom-color: rgb(47, 63, 63);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-left-color: rgb(47, 63, 63);
-  border-right-color: rgb(47, 63, 63);
-  border-top-color: rgb(47, 63, 63);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  padding-bottom: 1.4px;
+  padding-left: 5.6px;
+  padding-right: 5.6px;
+  padding-top: 1.4px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(47, 63, 63);
-  border-bottom-color: rgb(47, 63, 63);
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-left-color: rgb(47, 63, 63);
-  border-right-color: rgb(47, 63, 63);
-  border-top-color: rgb(47, 63, 63);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(224, 227, 226);
@@ -692,13 +613,18 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(224, 227, 226);
+  font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(224, 227, 226);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   border-left-color: rgb(224, 227, 226);
   border-right-color: rgb(224, 227, 226);
   border-top-color: rgb(224, 227, 226);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 html[saved-theme="dark"] body img {
@@ -2377,7 +2303,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(224, 227, 226);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgb(53, 72, 99);
   border-bottom-color: rgba(21, 185, 188, 0.15);
   border-bottom-left-radius: 5px;
@@ -2390,12 +2316,18 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(212, 227, 255);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(224, 227, 226);
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(224, 227, 226);
+  font-size: 40px;
+  font-weight: 500;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -2434,21 +2366,21 @@ html[saved-theme="dark"] body hr {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(190, 200, 200);
-  font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 600;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(190, 200, 200);
-  font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 600;
-}
-
-html[saved-theme="dark"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(21, 185, 188);
   border-left-width: 2px;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(190, 200, 200);
+  font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 600;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(190, 200, 200);
+  font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 600;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(224, 227, 226);
@@ -2559,15 +2491,32 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(204, 232, 232);
   font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(224, 227, 226);
-  border-left-color: rgb(224, 227, 226);
-  border-right-color: rgb(224, 227, 226);
-  border-top-color: rgb(224, 227, 226);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(224, 227, 226);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(224, 227, 226);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(224, 227, 226);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(224, 227, 226);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(25, 46, 46);
+  border-color: rgb(224, 227, 226);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px 0px, rgba(0, 0, 0, 0.24) 0px 1px 2px 0px;
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(3, 71, 71);
+  color: rgb(3, 71, 71);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   background-color: rgb(25, 46, 46);
   border-bottom-color: rgb(47, 63, 63);
   border-bottom-left-radius: 12px;
@@ -2590,6 +2539,61 @@ html[saved-theme="dark"] body .metadata-properties {
   border-right-color: rgb(190, 200, 200);
   border-top-color: rgb(190, 200, 200);
   color: rgb(190, 200, 200);
+}
+
+html[saved-theme="dark"] body .note-properties {
+  background-color: rgb(25, 46, 46);
+  border-color: rgb(47, 63, 63);
+  border-radius: 12px;
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(190, 200, 200);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(190, 200, 200);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgb(53, 72, 99);
+  border-radius: 5px;
+  color: rgb(212, 227, 255);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(190, 200, 200);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(13, 26, 26);
+  color: rgb(224, 227, 226);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(224, 227, 226);
+  border-left-color: rgb(224, 227, 226);
+  border-right-color: rgb(224, 227, 226);
+  border-top-color: rgb(224, 227, 226);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(25, 46, 46);
+  border-color: rgb(224, 227, 226);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(3, 71, 71);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(224, 227, 226);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(224, 227, 226);
+  border-left-color: rgb(224, 227, 226);
+  border-right-color: rgb(224, 227, 226);
+  border-top-color: rgb(224, 227, 226);
+  color: rgb(224, 227, 226);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -2948,6 +2952,18 @@ html[saved-theme="dark"] body ul.tags > li {
   --shadow-bottom: 0 10px 10px -10px rgba(0, 0, 0, 0.19), 0 6px 6px -6px rgba(0, 0, 0, 0.23) !important;
   --shadow-m: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
   --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  --shiki-active-tab-border-color: #3f4949 !important;
+  --shiki-code-background: #dbe8e8 !important;
+  --shiki-code-block-border-radius: 0.75em !important;
+  --shiki-code-comment: #6f7979 !important;
+  --shiki-code-normal: #3f4949 !important;
+  --shiki-code-punctuation: #3f4949 !important;
+  --shiki-gutter-border-color: #dbe8e8 !important;
+  --shiki-gutter-border-width: 2px !important;
+  --shiki-gutter-text-color: #6f7979 !important;
+  --shiki-gutter-text-color-highlight: #3f4949 !important;
+  --shiki-highlight-neutral: #3f4949 !important;
+  --shiki-terminal-dots-color: #6f7979 !important;
   --slider-thumb-border-color: #dbe8e8 !important;
   --slider-thumb-border-width: 2px !important;
   --slider-track-background: #dbe8e8 !important;
@@ -3040,57 +3056,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(25, 28, 28);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(25, 28, 28);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(25, 28, 28);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(25, 28, 28);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(25, 28, 28);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(253, 252, 250);
-  border-color: rgb(25, 28, 28);
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px 0px, rgba(0, 0, 0, 0.24) 0px 1px 2px 0px;
-}
-
-html[saved-theme="light"] body .note-properties {
-  background-color: rgb(238, 245, 243);
-  border-color: rgb(219, 232, 232);
-  border-radius: 12px;
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(63, 73, 73);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(63, 73, 73);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgb(212, 227, 255);
-  border-radius: 5px;
-  color: rgb(6, 28, 54);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(63, 73, 73);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(238, 245, 243);
   color: rgb(25, 28, 28);
@@ -3104,31 +3069,26 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(238, 245, 243);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(25, 28, 28);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(253, 252, 250);
-  color: rgb(25, 28, 28);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(25, 28, 28);
   outline: rgb(25, 28, 28) none 0px;
   text-decoration-color: rgb(25, 28, 28);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(25, 28, 28);
   outline: rgb(25, 28, 28) none 0px;
   text-decoration-color: rgb(25, 28, 28);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(25, 28, 28);
   outline: rgb(25, 28, 28) none 0px;
   text-decoration-color: rgb(25, 28, 28);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(25, 28, 28);
   outline: rgb(25, 28, 28) none 0px;
   text-decoration-color: rgb(25, 28, 28);
@@ -3167,7 +3127,7 @@ html[saved-theme="light"] body p {
   outline: rgb(63, 73, 73) none 0px;
   text-decoration-color: rgb(63, 73, 73);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(76, 95, 124);
   outline: rgb(76, 95, 124) none 0px;
   text-decoration: 1.5px;
@@ -3175,7 +3135,7 @@ html[saved-theme="light"] body p {
   text-decoration-thickness: 1.5px;
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(0, 105, 107);
   outline: rgb(0, 105, 107) none 0px;
   text-decoration: underline 1.5px;
@@ -3183,7 +3143,7 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
   text-decoration-thickness: 1.5px;
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(0, 105, 107);
   outline: rgb(0, 105, 107) none 0px;
   text-decoration: underline 1.5px rgba(0, 105, 107, 0.3);
@@ -3200,13 +3160,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(25, 28, 28);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(25, 28, 28);
-  border-left-color: rgb(25, 28, 28);
-  border-right-color: rgb(25, 28, 28);
-  border-top-color: rgb(25, 28, 28);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -3271,64 +3224,36 @@ html[saved-theme="light"] body tr {
   background-color: rgb(74, 99, 99);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(25, 28, 28);
+  background-color: rgb(219, 232, 232);
+  border-bottom-color: rgb(219, 232, 232);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  border-left-color: rgb(25, 28, 28);
-  border-right-color: rgb(25, 28, 28);
-  border-top-color: rgb(25, 28, 28);
+  border-left-color: rgb(219, 232, 232);
+  border-right-color: rgb(219, 232, 232);
+  border-top-color: rgb(219, 232, 232);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   color: rgb(25, 28, 28);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(219, 232, 232);
-  border-bottom-color: rgb(219, 232, 232);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-left-color: rgb(219, 232, 232);
-  border-right-color: rgb(219, 232, 232);
-  border-top-color: rgb(219, 232, 232);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(219, 232, 232);
-  border-bottom-color: rgb(219, 232, 232);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-left-color: rgb(219, 232, 232);
-  border-right-color: rgb(219, 232, 232);
-  border-top-color: rgb(219, 232, 232);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  color: rgb(25, 28, 28);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(219, 232, 232);
-  border-bottom-color: rgb(219, 232, 232);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-left-color: rgb(219, 232, 232);
-  border-right-color: rgb(219, 232, 232);
-  border-top-color: rgb(219, 232, 232);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  padding-bottom: 1.4px;
+  padding-left: 5.6px;
+  padding-right: 5.6px;
+  padding-top: 1.4px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(219, 232, 232);
-  border-bottom-color: rgb(219, 232, 232);
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  border-left-color: rgb(219, 232, 232);
-  border-right-color: rgb(219, 232, 232);
-  border-top-color: rgb(219, 232, 232);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(25, 28, 28);
@@ -3339,13 +3264,18 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(25, 28, 28);
+  font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body figure {
   border-bottom-color: rgb(25, 28, 28);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   border-left-color: rgb(25, 28, 28);
   border-right-color: rgb(25, 28, 28);
   border-top-color: rgb(25, 28, 28);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 html[saved-theme="light"] body img {
@@ -5024,7 +4954,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(25, 28, 28);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgb(212, 227, 255);
   border-bottom-color: rgba(0, 105, 107, 0.15);
   border-bottom-left-radius: 5px;
@@ -5037,12 +4967,18 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(6, 28, 54);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(25, 28, 28);
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(25, 28, 28);
+  font-size: 40px;
+  font-weight: 500;
 }
 
 html[saved-theme="light"] body h2 {
@@ -5081,21 +5017,21 @@ html[saved-theme="light"] body hr {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(63, 73, 73);
-  font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 600;
-}
-
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(63, 73, 73);
-  font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-weight: 600;
-}
-
-html[saved-theme="light"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(0, 115, 115);
   border-left-width: 2px;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(63, 73, 73);
+  font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 600;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(63, 73, 73);
+  font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 600;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(25, 28, 28);
@@ -5206,15 +5142,32 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(255, 255, 255);
   font-family: "??", Roboto, OpenSans, Inter, "Noto Sans JP", "UD Digi Kyokasho NK-R", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(25, 28, 28);
-  border-left-color: rgb(25, 28, 28);
-  border-right-color: rgb(25, 28, 28);
-  border-top-color: rgb(25, 28, 28);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(25, 28, 28);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(25, 28, 28);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(25, 28, 28);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(25, 28, 28);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(253, 252, 250);
+  border-color: rgb(25, 28, 28);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px 0px, rgba(0, 0, 0, 0.24) 0px 1px 2px 0px;
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   background-color: rgb(238, 245, 243);
   border-bottom-color: rgb(219, 232, 232);
   border-bottom-left-radius: 12px;
@@ -5237,6 +5190,61 @@ html[saved-theme="light"] body .metadata-properties {
   border-right-color: rgb(63, 73, 73);
   border-top-color: rgb(63, 73, 73);
   color: rgb(63, 73, 73);
+}
+
+html[saved-theme="light"] body .note-properties {
+  background-color: rgb(238, 245, 243);
+  border-color: rgb(219, 232, 232);
+  border-radius: 12px;
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(63, 73, 73);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(63, 73, 73);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgb(212, 227, 255);
+  border-radius: 5px;
+  color: rgb(6, 28, 54);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(63, 73, 73);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(253, 252, 250);
+  color: rgb(25, 28, 28);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(25, 28, 28);
+  border-left-color: rgb(25, 28, 28);
+  border-right-color: rgb(25, 28, 28);
+  border-top-color: rgb(25, 28, 28);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(238, 245, 243);
+  border-color: rgb(25, 28, 28);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(0, 105, 107);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(25, 28, 28);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(25, 28, 28);
+  border-left-color: rgb(25, 28, 28);
+  border-right-color: rgb(25, 28, 28);
+  border-top-color: rgb(25, 28, 28);
+  color: rgb(25, 28, 28);
 }
 
 html[saved-theme="light"] body .navigation-progress {

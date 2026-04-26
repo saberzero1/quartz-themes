@@ -231,6 +231,16 @@ export const theme: ThemeData = {
   --setting-items-background: #002c3d !important;
   --setting-items-border-color: #002c3d !important;
   --setting-items-radius: 11px !important;
+  --shiki-active-tab-border-color: #0a9396 !important;
+  --shiki-code-background: #002c3d !important;
+  --shiki-code-comment: #005f73 !important;
+  --shiki-code-normal: #0a9396 !important;
+  --shiki-code-punctuation: #0a9396 !important;
+  --shiki-gutter-border-color: #002c3d !important;
+  --shiki-gutter-text-color: #005f73 !important;
+  --shiki-gutter-text-color-highlight: #0a9396 !important;
+  --shiki-highlight-neutral: #0a9396 !important;
+  --shiki-terminal-dots-color: #005f73 !important;
   --slider-track-background: #002c3d !important;
   --small: 200px !important;
   --small-med: 300px !important;
@@ -302,53 +312,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(233, 216, 166);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  background-color: rgb(0, 31, 43);
-  border-color: rgb(0, 44, 61) rgb(0, 44, 61) rgb(233, 196, 106);
-  color: rgb(233, 196, 106);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(233, 216, 166);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(233, 216, 166);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(233, 216, 166);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(233, 216, 166);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(38, 70, 83);
-  border-color: rgb(233, 216, 166);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgb(0, 44, 61);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(10, 147, 150);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(10, 147, 150);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  color: rgb(233, 196, 106);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(10, 147, 150);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(38, 70, 83);
   color: rgb(233, 216, 166);
@@ -362,50 +325,8 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(38, 70, 83);
   border-left-color: rgb(0, 44, 61);
   color: rgb(233, 216, 166);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(0, 44, 61);
-  color: rgb(233, 216, 166);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
-  color: rgb(233, 196, 106);
-  font-family: "Ranille Normal", serif;
-  font-weight: 400;
-  outline: rgb(233, 196, 106) none 0px;
-  text-decoration-color: rgb(233, 196, 106);
-}
-
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
-  color: rgb(148, 210, 189);
-  font-family: "iA Writer Quattro V", monospace;
-  outline: rgb(148, 210, 189) none 0px;
-  text-decoration-color: rgb(148, 210, 189);
-}
-
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
-  color: rgb(148, 210, 189);
-  font-family: "iA Writer Quattro V", monospace;
-  outline: rgb(148, 210, 189) none 0px;
-  text-decoration-color: rgb(148, 210, 189);
-}
-
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
-  color: rgb(233, 196, 106);
-  font-family: "Ranille Normal", serif;
-  font-weight: 400;
-  outline: rgb(233, 196, 106) none 0px;
-  text-decoration-color: rgb(233, 196, 106);
-}
-
-html[saved-theme="dark"] body .text-highlight {
-  background-color: rgb(148, 210, 189);
-  color: rgb(0, 31, 43);
-  outline: rgb(0, 31, 43) none 0px;
-  text-decoration-color: rgb(0, 31, 43);
-}
-
-html[saved-theme="dark"] body article > h1 {
+    typography: `html[saved-theme="dark"] body .markdown-rendered > h1 {
   --font-weight: 700;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(0, 95, 115);
@@ -434,6 +355,43 @@ html[saved-theme="dark"] body article > h1 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
+  color: rgb(233, 196, 106);
+  font-family: "Ranille Normal", serif;
+  font-weight: 400;
+  outline: rgb(233, 196, 106) none 0px;
+  text-decoration-color: rgb(233, 196, 106);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
+  color: rgb(148, 210, 189);
+  font-family: "iA Writer Quattro V", monospace;
+  outline: rgb(148, 210, 189) none 0px;
+  text-decoration-color: rgb(148, 210, 189);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: rgb(148, 210, 189);
+  font-family: "iA Writer Quattro V", monospace;
+  outline: rgb(148, 210, 189) none 0px;
+  text-decoration-color: rgb(148, 210, 189);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
+  color: rgb(233, 196, 106);
+  font-family: "Ranille Normal", serif;
+  font-weight: 400;
+  outline: rgb(233, 196, 106) none 0px;
+  text-decoration-color: rgb(233, 196, 106);
+}
+
+html[saved-theme="dark"] body .text-highlight {
+  background-color: rgb(148, 210, 189);
+  color: rgb(0, 31, 43);
+  outline: rgb(0, 31, 43) none 0px;
+  text-decoration-color: rgb(0, 31, 43);
 }
 
 html[saved-theme="dark"] body del {
@@ -588,20 +546,20 @@ html[saved-theme="dark"] body p {
   outline: rgb(10, 147, 150) none 0px;
   text-decoration-color: rgb(10, 147, 150);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(233, 196, 106);
   outline: rgb(233, 196, 106) none 0px;
   text-decoration-color: rgb(233, 196, 106);
   transition: 0.2s;
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(233, 196, 106);
   outline: rgb(233, 196, 106) none 0px;
   text-decoration-color: rgb(233, 196, 106);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(233, 196, 106);
   outline: rgb(233, 196, 106) none 0px;
   text-decoration-color: rgb(233, 196, 106);
@@ -616,13 +574,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(233, 216, 166);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(233, 216, 166);
-  border-left-color: rgb(233, 216, 166);
-  border-right-color: rgb(233, 216, 166);
-  border-top-color: rgb(233, 216, 166);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -689,53 +640,29 @@ html[saved-theme="dark"] body tr {
 }`,
     code: `html[saved-theme="dark"] body code {
   background-color: rgb(0, 31, 43);
-  border-bottom-color: rgb(233, 216, 166);
-  border-left-color: rgb(233, 216, 166);
-  border-right-color: rgb(233, 216, 166);
-  border-top-color: rgb(233, 216, 166);
-  color: rgb(233, 216, 166);
+  border-bottom-color: rgb(0, 44, 61);
+  border-left-color: rgb(0, 44, 61);
+  border-right-color: rgb(0, 44, 61);
+  border-top-color: rgb(0, 44, 61);
+  color: rgb(233, 196, 106);
   font-family: "JetBrains Mono", monospace;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(0, 31, 43);
-  border-bottom-color: rgb(0, 44, 61);
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(0, 44, 61);
-  border-right-color: rgb(0, 44, 61);
-  border-top-color: rgb(0, 44, 61);
-  border-top-left-radius: 11px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(0, 31, 43);
-  border-bottom-color: rgb(0, 44, 61);
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(0, 44, 61);
-  border-right-color: rgb(0, 44, 61);
-  border-top-color: rgb(0, 44, 61);
-  border-top-left-radius: 11px;
-  color: rgb(233, 216, 166);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(0, 31, 43);
-  border-bottom-color: rgb(0, 44, 61);
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(0, 44, 61);
-  border-right-color: rgb(0, 44, 61);
-  border-top-color: rgb(0, 44, 61);
-  border-top-left-radius: 11px;
+  padding-bottom: 2.16px;
+  padding-left: 4.32px;
+  padding-right: 4.32px;
+  padding-top: 2.16px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(0, 31, 43);
-  border-bottom-color: rgb(0, 44, 61);
+  background-color: rgb(0, 44, 61);
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-right-radius: 0px;
-  border-left-color: rgb(0, 44, 61);
-  border-right-color: rgb(0, 44, 61);
-  border-top-color: rgb(0, 44, 61);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 11px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(233, 216, 166);
@@ -746,6 +673,7 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(233, 216, 166);
+  font-family: "??", "??", "iA Writer Quattro V", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="dark"] body figure {
@@ -1685,15 +1613,19 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(244, 162, 97);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "??", "??", "iA Writer Quattro V", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(233, 196, 106);
 }
 
 html[saved-theme="dark"] body h1 {
+  color: rgb(233, 216, 166);
+}
+
+html[saved-theme="dark"] body h1.article-title {
   color: rgb(233, 216, 166);
 }
 
@@ -1731,12 +1663,12 @@ html[saved-theme="dark"] body hr {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(10, 147, 150);
   font-family: "??", "??", "iA Writer Quattro V", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(10, 147, 150);
   font-family: "??", "??", "iA Writer Quattro V", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
@@ -1832,15 +1764,32 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(0, 95, 115);
   font-family: "??", "??", "iA Writer Quattro V", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(233, 216, 166);
-  border-left-color: rgb(233, 216, 166);
-  border-right-color: rgb(233, 216, 166);
-  border-top-color: rgb(233, 216, 166);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(233, 216, 166);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(233, 216, 166);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(233, 216, 166);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(233, 216, 166);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(38, 70, 83);
+  border-color: rgb(233, 216, 166);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  background-color: rgb(0, 31, 43);
+  border-color: rgb(0, 44, 61) rgb(0, 44, 61) rgb(233, 196, 106);
+  color: rgb(233, 196, 106);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(0, 44, 61);
   border-left-color: rgb(0, 44, 61);
   border-right-color: rgb(0, 44, 61);
@@ -1854,6 +1803,57 @@ html[saved-theme="dark"] body .metadata-properties {
   border-right-color: rgb(10, 147, 150);
   border-top-color: rgb(10, 147, 150);
   color: rgb(10, 147, 150);
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(0, 44, 61);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(10, 147, 150);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(10, 147, 150);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  color: rgb(233, 196, 106);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(10, 147, 150);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(0, 44, 61);
+  color: rgb(233, 216, 166);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(233, 216, 166);
+  border-left-color: rgb(233, 216, 166);
+  border-right-color: rgb(233, 216, 166);
+  border-top-color: rgb(233, 216, 166);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(38, 70, 83);
+  border-color: rgb(233, 216, 166);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(38, 70, 83);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(233, 216, 166);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(233, 216, 166);
+  border-left-color: rgb(233, 216, 166);
+  border-right-color: rgb(233, 216, 166);
+  border-top-color: rgb(233, 216, 166);
+  color: rgb(233, 216, 166);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -2090,6 +2090,16 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-items-background: #292929 !important;
   --setting-items-border-color: #292929 !important;
   --setting-items-radius: 11px !important;
+  --shiki-active-tab-border-color: #999999 !important;
+  --shiki-code-background: #292929 !important;
+  --shiki-code-comment: #606060 !important;
+  --shiki-code-normal: #999999 !important;
+  --shiki-code-punctuation: #999999 !important;
+  --shiki-gutter-border-color: #292929 !important;
+  --shiki-gutter-text-color: #606060 !important;
+  --shiki-gutter-text-color-highlight: #999999 !important;
+  --shiki-highlight-neutral: #999999 !important;
+  --shiki-terminal-dots-color: #606060 !important;
   --slider-track-background: #292929 !important;
   --small: 200px !important;
   --small-med: 300px !important;
@@ -2161,53 +2171,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(204, 204, 204);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  background-color: rgb(18, 18, 18);
-  border-color: rgb(41, 41, 41) rgb(41, 41, 41) rgb(238, 17, 102);
-  color: rgb(255, 255, 255);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(204, 204, 204);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(204, 204, 204);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(204, 204, 204);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(204, 204, 204);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(41, 41, 41);
-  border-color: rgb(204, 204, 204);
-}
-
-html[saved-theme="light"] body .note-properties {
-  border-color: rgb(41, 41, 41);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(153, 153, 153);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(153, 153, 153);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  color: rgb(238, 17, 102);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(153, 153, 153);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(31, 31, 31);
   color: rgb(204, 204, 204);
@@ -2221,50 +2184,8 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(31, 31, 31);
   border-left-color: rgb(41, 41, 41);
   color: rgb(204, 204, 204);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(41, 41, 41);
-  color: rgb(204, 204, 204);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
-  color: rgb(255, 255, 255);
-  font-family: "iA Writer Quattro V Black", serif;
-  font-weight: 400;
-  outline: rgb(255, 255, 255) none 0px;
-  text-decoration-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
-  color: rgb(255, 255, 255);
-  font-family: "Recursive Sn Csl St", serif;
-  outline: rgb(255, 255, 255) none 0px;
-  text-decoration-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
-  color: rgb(255, 255, 255);
-  font-family: "Recursive Sn Csl St", serif;
-  outline: rgb(255, 255, 255) none 0px;
-  text-decoration-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
-  color: rgb(255, 255, 255);
-  font-family: "iA Writer Quattro V Black", serif;
-  font-weight: 400;
-  outline: rgb(255, 255, 255) none 0px;
-  text-decoration-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="light"] body .text-highlight {
-  background-color: rgb(231, 204, 136);
-  color: rgb(18, 18, 18);
-  outline: rgb(18, 18, 18) none 0px;
-  text-decoration-color: rgb(18, 18, 18);
-}
-
-html[saved-theme="light"] body article > h1 {
+    typography: `html[saved-theme="light"] body .markdown-rendered > h1 {
   --font-weight: 700;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(96, 96, 96);
@@ -2293,6 +2214,43 @@ html[saved-theme="light"] body article > h1 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
+  color: rgb(255, 255, 255);
+  font-family: "iA Writer Quattro V Black", serif;
+  font-weight: 400;
+  outline: rgb(255, 255, 255) none 0px;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
+  color: rgb(255, 255, 255);
+  font-family: "Recursive Sn Csl St", serif;
+  outline: rgb(255, 255, 255) none 0px;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: rgb(255, 255, 255);
+  font-family: "Recursive Sn Csl St", serif;
+  outline: rgb(255, 255, 255) none 0px;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
+  color: rgb(255, 255, 255);
+  font-family: "iA Writer Quattro V Black", serif;
+  font-weight: 400;
+  outline: rgb(255, 255, 255) none 0px;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body .text-highlight {
+  background-color: rgb(231, 204, 136);
+  color: rgb(18, 18, 18);
+  outline: rgb(18, 18, 18) none 0px;
+  text-decoration-color: rgb(18, 18, 18);
 }
 
 html[saved-theme="light"] body del {
@@ -2447,7 +2405,7 @@ html[saved-theme="light"] body p {
   outline: rgb(153, 153, 153) none 0px;
   text-decoration-color: rgb(153, 153, 153);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(238, 17, 102);
   font-weight: 700;
   outline: rgb(238, 17, 102) none 0px;
@@ -2455,14 +2413,14 @@ html[saved-theme="light"] body p {
   transition: 0.2s;
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(238, 17, 102);
   font-weight: 700;
   outline: rgb(238, 17, 102) none 0px;
   text-decoration-color: rgb(238, 17, 102);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(238, 17, 102);
   font-weight: 700;
   outline: rgb(238, 17, 102) none 0px;
@@ -2478,13 +2436,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(204, 204, 204);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(204, 204, 204);
-  border-left-color: rgb(204, 204, 204);
-  border-right-color: rgb(204, 204, 204);
-  border-top-color: rgb(204, 204, 204);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2552,68 +2503,29 @@ html[saved-theme="light"] body tr {
 }`,
     code: `html[saved-theme="light"] body code {
   background-color: rgb(18, 18, 18);
-  border-bottom-color: rgb(204, 204, 204);
-  border-left-color: rgb(204, 204, 204);
-  border-right-color: rgb(204, 204, 204);
-  border-top-color: rgb(204, 204, 204);
-  color: rgb(204, 204, 204);
+  border-bottom-color: rgb(41, 41, 41);
+  border-left-color: rgb(41, 41, 41);
+  border-right-color: rgb(41, 41, 41);
+  border-top-color: rgb(41, 41, 41);
+  color: rgb(255, 255, 255);
   font-family: "JetBrains Mono Black", monospace;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(18, 18, 18);
-  border-bottom-color: rgb(41, 41, 41);
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(41, 41, 41);
-  border-right-color: rgb(41, 41, 41);
-  border-top-color: rgb(41, 41, 41);
-  border-top-left-radius: 11px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(18, 18, 18);
-  border-bottom-color: rgb(41, 41, 41);
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(41, 41, 41);
-  border-right-color: rgb(41, 41, 41);
-  border-top-color: rgb(41, 41, 41);
-  border-top-left-radius: 11px;
-  color: rgb(204, 204, 204);
-}
-
-html[saved-theme="light"] body pre > code > [data-line] {
-  border-left-color: rgb(231, 204, 136);
-}
-
-html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(231, 204, 136);
-}
-
-html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(231, 204, 136);
-  border-left-color: rgb(231, 204, 136);
-  border-right-color: rgb(231, 204, 136);
-  border-top-color: rgb(231, 204, 136);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(18, 18, 18);
-  border-bottom-color: rgb(41, 41, 41);
-  border-bottom-right-radius: 0px;
-  border-left-color: rgb(41, 41, 41);
-  border-right-color: rgb(41, 41, 41);
-  border-top-color: rgb(41, 41, 41);
-  border-top-left-radius: 11px;
+  padding-bottom: 2.16px;
+  padding-left: 4.32px;
+  padding-right: 4.32px;
+  padding-top: 2.16px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: rgb(18, 18, 18);
-  border-bottom-color: rgb(41, 41, 41);
+  background-color: rgb(41, 41, 41);
+  border-bottom-color: rgba(0, 0, 0, 0);
   border-bottom-right-radius: 0px;
-  border-left-color: rgb(41, 41, 41);
-  border-right-color: rgb(41, 41, 41);
-  border-top-color: rgb(41, 41, 41);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
   border-top-left-radius: 11px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(204, 204, 204);
@@ -2624,6 +2536,7 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(204, 204, 204);
+  font-family: "??", "??", "Lexend Deca Light", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html[saved-theme="light"] body figure {
@@ -3563,16 +3476,20 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(255, 255, 255);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "??", "??", "Lexend Deca Light", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(238, 17, 102);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(204, 204, 204);
 }
 
 html[saved-theme="light"] body h2 {
@@ -3609,12 +3526,12 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(153, 153, 153);
   font-family: "??", "??", "Lexend Deca Light", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(153, 153, 153);
   font-family: "??", "??", "Lexend Deca Light", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
@@ -3710,15 +3627,32 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(96, 96, 96);
   font-family: "??", "??", "Lexend Deca Light", monospace, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(204, 204, 204);
-  border-left-color: rgb(204, 204, 204);
-  border-right-color: rgb(204, 204, 204);
-  border-top-color: rgb(204, 204, 204);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(204, 204, 204);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(204, 204, 204);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(204, 204, 204);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(204, 204, 204);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(41, 41, 41);
+  border-color: rgb(204, 204, 204);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  background-color: rgb(18, 18, 18);
+  border-color: rgb(41, 41, 41) rgb(41, 41, 41) rgb(238, 17, 102);
+  color: rgb(255, 255, 255);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(41, 41, 41);
   border-left-color: rgb(41, 41, 41);
   border-right-color: rgb(41, 41, 41);
@@ -3732,6 +3666,57 @@ html[saved-theme="light"] body .metadata-properties {
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
   color: rgb(153, 153, 153);
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(41, 41, 41);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(153, 153, 153);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(153, 153, 153);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  color: rgb(238, 17, 102);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(153, 153, 153);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(41, 41, 41);
+  color: rgb(204, 204, 204);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(204, 204, 204);
+  border-left-color: rgb(204, 204, 204);
+  border-right-color: rgb(204, 204, 204);
+  border-top-color: rgb(204, 204, 204);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(31, 31, 31);
+  border-color: rgb(204, 204, 204);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(31, 31, 31);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(204, 204, 204);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(204, 204, 204);
+  border-left-color: rgb(204, 204, 204);
+  border-right-color: rgb(204, 204, 204);
+  border-top-color: rgb(204, 204, 204);
+  color: rgb(204, 204, 204);
 }
 
 html[saved-theme="light"] body .navigation-progress {

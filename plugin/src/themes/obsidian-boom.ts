@@ -20,39 +20,31 @@ html body {
   color: var(--text-normal) !important;
 }
 
-html body .canvas-node-file {
-  color: rgb(32, 43, 51);
-}
-
-html body .note-properties-key {
-  font-weight: 500;
-}
-
 html body html {
   font-size: 14px;
   font-weight: 500;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(32, 43, 51);
   outline: rgb(32, 43, 51) none 0px;
   text-decoration-color: rgb(32, 43, 51);
 }
 
-html body .page article p > em, html em {
-  color: rgb(32, 43, 51);
-  font-weight: 500;
-  outline: rgb(32, 43, 51) none 0px;
-  text-decoration-color: rgb(32, 43, 51);
-}
-
-html body .page article p > i, html i {
+html body .markdown-rendered p > em, html em {
   color: rgb(32, 43, 51);
   font-weight: 500;
   outline: rgb(32, 43, 51) none 0px;
   text-decoration-color: rgb(32, 43, 51);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > i, html i {
+  color: rgb(32, 43, 51);
+  font-weight: 500;
+  outline: rgb(32, 43, 51) none 0px;
+  text-decoration-color: rgb(32, 43, 51);
+}
+
+html body .markdown-rendered p > strong, html strong {
   color: rgb(32, 43, 51);
   outline: rgb(32, 43, 51) none 0px;
   text-decoration-color: rgb(32, 43, 51);
@@ -78,13 +70,13 @@ html body h1.article-title {
 html body p {
   font-weight: 500;
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(16, 107, 163);
   outline: rgb(16, 107, 163) none 0px;
   text-decoration-color: rgb(16, 107, 163);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   --resizer-size: 20px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
@@ -118,7 +110,7 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   text-decoration-color: rgb(16, 107, 163);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   --resizer-size: 20px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
@@ -188,11 +180,10 @@ html body td {
 }`,
     code: `html body code {
   font-family: Hack;
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  color: rgb(32, 43, 51);
-  font-family: Hack;
+  padding-bottom: 2.4px;
+  padding-left: 4.8px;
+  padding-right: 4.8px;
+  padding-top: 2.4px;
 }`,
     images: `html body audio {
   border-bottom-color: rgb(32, 43, 51);
@@ -1043,11 +1034,15 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(32, 43, 51);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-weight: 500;
 }
 
 html body h1 {
+  color: rgb(32, 43, 51);
+}
+
+html body h1.article-title {
   color: rgb(32, 43, 51);
 }
 
@@ -1077,12 +1072,12 @@ html body h6 {
     scrollbars: `html body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(92, 112, 128);
   font-weight: 700;
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(92, 112, 128);
   font-weight: 700;
 }`,
@@ -1111,16 +1106,22 @@ html body .recent-notes > ul.recent-ul > li .section > .meta {
 html body li.section-li > .section > .desc > h3 > a {
   color: rgb(92, 112, 128);
 }`,
+    canvas: `html body .canvas-node-file {
+  color: rgb(32, 43, 51);
+}`,
+    properties: `html body .metadata {
+  margin-bottom: 28px;
+}
+
+html body .note-properties-key {
+  font-weight: 500;
+}`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(32, 43, 51);
   border-left-color: rgb(32, 43, 51);
   border-right-color: rgb(32, 43, 51);
   border-top-color: rgb(32, 43, 51);
   color: rgb(32, 43, 51);
-}
-
-html body .metadata {
-  margin-bottom: 28px;
 }
 
 html body abbr {

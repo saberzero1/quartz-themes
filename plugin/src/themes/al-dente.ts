@@ -132,6 +132,10 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #3f3e3c !important;
   --setting-items-background: #f6f6f4 !important;
   --shadow: 1px 1px 2px #88888888 !important;
+  --shiki-code-background: #f6f6f4 !important;
+  --shiki-code-comment: #b6b5af !important;
+  --shiki-gutter-text-color: #b6b5af !important;
+  --shiki-terminal-dots-color: #b6b5af !important;
   --status-bar-background: #f6f6f4 !important;
   --suggestion-background: #f6f6f4 !important;
   --tab-background-active: #f6f6f4 !important;
@@ -181,36 +185,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(63, 62, 60);
 }
 
-html body .bases-table thead th {
-  background-color: rgb(182, 181, 175);
-  color: rgb(63, 62, 60);
-}
-
-html body .canvas-node {
-  border-color: rgb(63, 62, 60);
-}
-
-html body .canvas-node-content {
-  color: rgb(63, 62, 60);
-}
-
-html body .canvas-node-file {
-  color: rgb(63, 62, 60);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(63, 62, 60);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(246, 246, 244);
-  border-color: rgb(63, 62, 60);
-}
-
-html body .note-properties-tags {
-  color: rgb(8, 185, 78);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(246, 246, 244);
   color: rgb(63, 62, 60);
@@ -221,11 +195,6 @@ html body .page > div#quartz-body div.sidebar.left {
 }
 
 html body .page > div#quartz-body div.sidebar.right {
-  background-color: rgb(246, 246, 244);
-  color: rgb(63, 62, 60);
-}
-
-html body div#quartz-root {
   background-color: rgb(246, 246, 244);
   color: rgb(63, 62, 60);
 }
@@ -268,28 +237,28 @@ html body html {
     "Microsoft YaHei Light", sans-serif;
   --shadow: 1px 1px 2px #88888888;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(63, 62, 60);
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   outline: rgb(63, 62, 60) none 0px;
   text-decoration-color: rgb(63, 62, 60);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(63, 62, 60);
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   outline: rgb(63, 62, 60) none 0px;
   text-decoration-color: rgb(63, 62, 60);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(63, 62, 60);
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   outline: rgb(63, 62, 60) none 0px;
   text-decoration-color: rgb(63, 62, 60);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(63, 62, 60);
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
   outline: rgb(63, 62, 60) none 0px;
@@ -330,7 +299,7 @@ html body li.task-list-item input[type="checkbox"]:checked {
 html body p {
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   --color-blue: #086ddd;
   --color-green: #08b94e;
   --color-orange: #ec7500;
@@ -373,7 +342,7 @@ html body p {
   transition: background 0.3s, color 0.3s;
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   --color-blue: #086ddd;
   --color-green: #08b94e;
   --color-orange: #ec7500;
@@ -414,7 +383,7 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   text-decoration-color: rgb(8, 185, 78);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   --color-blue: #086ddd;
   --color-green: #08b94e;
   --color-orange: #ec7500;
@@ -463,13 +432,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(63, 62, 60);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(63, 62, 60);
-  border-left-color: rgb(63, 62, 60);
-  border-right-color: rgb(63, 62, 60);
-  border-top-color: rgb(63, 62, 60);
 }
 
 html body ul > li {
@@ -536,32 +498,19 @@ html body th {
 }`,
     code: `html body code {
   background-color: rgb(255, 255, 255);
-  border-bottom-color: rgb(233, 49, 71);
-  border-left-color: rgb(233, 49, 71);
-  border-right-color: rgb(233, 49, 71);
-  border-top-color: rgb(233, 49, 71);
   color: rgb(233, 49, 71);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(246, 246, 244);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(246, 246, 244);
-  color: rgb(63, 62, 60);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(246, 246, 244);
-  padding-bottom: 16px;
-  padding-top: 16px;
 }
 
 html body pre:has(> code) {
   background-color: rgb(246, 246, 244);
-  padding-bottom: 16px;
-  padding-top: 16px;
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html body audio {
   border-bottom-color: rgb(63, 62, 60);
@@ -1200,13 +1149,17 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(63, 62, 60);
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(8, 185, 78);
 }
 
 html body h1 {
   color: rgb(63, 62, 60);
   font-family: moranga, "matchbook regular", bitter, prompt, "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+}
+
+html body h1.article-title {
+  color: rgb(63, 62, 60);
 }
 
 html body h2 {
@@ -1245,12 +1198,12 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(63, 62, 60);
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(63, 62, 60);
   font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }`,
@@ -1313,20 +1266,71 @@ html body ul.section-ul {
     breadcrumbs: `html body .breadcrumb-element p {
   color: rgb(182, 181, 175);
 }`,
+    canvas: `html body .canvas-node {
+  border-color: rgb(63, 62, 60);
+}
+
+html body .canvas-node-content {
+  color: rgb(63, 62, 60);
+}
+
+html body .canvas-node-file {
+  color: rgb(63, 62, 60);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(63, 62, 60);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(246, 246, 244);
+  border-color: rgb(63, 62, 60);
+}`,
+    bases: `html body .bases-table thead th {
+  background-color: rgb(182, 181, 175);
+  color: rgb(63, 62, 60);
+}`,
+    properties: `html body .metadata {
+  font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+}
+
+html body .metadata-properties {
+  font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+}
+
+html body .note-properties-tags {
+  color: rgb(8, 185, 78);
+}
+
+html body div#quartz-root {
+  background-color: rgb(246, 246, 244);
+  color: rgb(63, 62, 60);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(63, 62, 60);
+  border-left-color: rgb(63, 62, 60);
+  border-right-color: rgb(63, 62, 60);
+  border-top-color: rgb(63, 62, 60);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(246, 246, 244);
+  border-color: rgb(63, 62, 60);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(246, 246, 244);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(63, 62, 60);
+}`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(63, 62, 60);
   border-left-color: rgb(63, 62, 60);
   border-right-color: rgb(63, 62, 60);
   border-top-color: rgb(63, 62, 60);
   color: rgb(63, 62, 60);
-}
-
-html body .metadata {
-  font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
-}
-
-html body .metadata-properties {
-  font-family: "nunito sans", gotham, metropolis, prologue, manrope, inter, poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
 }
 
 html body .navigation-progress {

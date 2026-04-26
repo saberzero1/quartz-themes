@@ -178,35 +178,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(201, 201, 201);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(27, 27, 27);
-  border-color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  color: rgb(255, 190, 0);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(27, 27, 27);
   color: rgb(201, 201, 201);
@@ -214,11 +185,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(27, 27, 27);
-  color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(36, 36, 36);
   color: rgb(201, 201, 201);
 }
 
@@ -268,26 +234,26 @@ html[saved-theme="dark"] body html {
   --size-8: 2em;
   --size-96: 24em;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(241, 177, 37);
   font-weight: 900;
   outline: rgb(241, 177, 37) none 0px;
   text-decoration-color: rgb(241, 177, 37);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(241, 177, 37);
   outline: rgb(241, 177, 37) none 0px;
   text-decoration-color: rgb(241, 177, 37);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(241, 177, 37);
   outline: rgb(241, 177, 37) none 0px;
   text-decoration-color: rgb(241, 177, 37);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(241, 177, 37);
   font-weight: 900;
   outline: rgb(241, 177, 37) none 0px;
@@ -476,19 +442,19 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
   background-color: rgb(255, 190, 0);
   border-color: rgb(255, 190, 0);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(130, 210, 232);
   outline: rgb(130, 210, 232) none 0px;
   text-decoration-color: rgb(130, 210, 232);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 190, 0);
   outline: rgb(255, 190, 0) none 0px;
   text-decoration-color: rgb(255, 190, 0);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(255, 190, 0);
   outline: rgb(255, 190, 0) none 0px;
 }`,
@@ -502,13 +468,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(201, 201, 201);
-  border-left-color: rgb(201, 201, 201);
-  border-right-color: rgb(201, 201, 201);
-  border-top-color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -556,25 +515,7 @@ html[saved-theme="dark"] body tr {
   background-color: color(srgb 0.284706 0.233725 0.0847059);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(201, 201, 201);
-  border-left-color: rgb(201, 201, 201);
-  border-right-color: rgb(201, 201, 201);
-  border-top-color: rgb(201, 201, 201);
   color: rgb(201, 201, 201);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(48, 48, 48);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(48, 48, 48);
-  color: rgb(146, 139, 120);
-  font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(48, 48, 48);
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -1503,12 +1444,16 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(201, 201, 201);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(255, 190, 0);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(240, 113, 40);
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(201, 201, 201);
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1566,6 +1511,56 @@ html[saved-theme="dark"] body ul.section-ul {
   border-left-color: rgb(201, 201, 201);
   border-right-color: rgb(201, 201, 201);
   border-top-color: rgb(201, 201, 201);
+}`,
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(201, 201, 201);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(201, 201, 201);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(201, 201, 201);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(201, 201, 201);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(27, 27, 27);
+  border-color: rgb(201, 201, 201);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  color: rgb(201, 201, 201);
+}`,
+    properties: `html[saved-theme="dark"] body .note-properties-tags {
+  color: rgb(255, 190, 0);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(36, 36, 36);
+  color: rgb(201, 201, 201);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(201, 201, 201);
+  border-left-color: rgb(201, 201, 201);
+  border-right-color: rgb(201, 201, 201);
+  border-top-color: rgb(201, 201, 201);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(27, 27, 27);
+  border-color: rgb(201, 201, 201);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(27, 27, 27);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(201, 201, 201);
 }`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(201, 201, 201);
@@ -1798,35 +1793,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(36, 36, 36);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  color: rgb(36, 36, 36);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(36, 36, 36);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(36, 36, 36);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(36, 36, 36);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(36, 36, 36);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(234, 234, 234);
-  border-color: rgb(36, 36, 36);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  color: rgb(224, 109, 15);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(217, 217, 217);
   color: rgb(36, 36, 36);
@@ -1834,11 +1800,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(217, 217, 217);
-  color: rgb(36, 36, 36);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(234, 234, 234);
   color: rgb(36, 36, 36);
 }
 
@@ -1888,26 +1849,26 @@ html[saved-theme="light"] body html {
   --size-8: 2em;
   --size-96: 24em;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(214, 69, 69);
   font-weight: 900;
   outline: rgb(214, 69, 69) none 0px;
   text-decoration-color: rgb(214, 69, 69);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(214, 69, 69);
   outline: rgb(214, 69, 69) none 0px;
   text-decoration-color: rgb(214, 69, 69);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(214, 69, 69);
   outline: rgb(214, 69, 69) none 0px;
   text-decoration-color: rgb(214, 69, 69);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(214, 69, 69);
   font-weight: 900;
   outline: rgb(214, 69, 69) none 0px;
@@ -2096,19 +2057,19 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
   background-color: rgb(224, 109, 15);
   border-color: rgb(224, 109, 15);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(48, 122, 142);
   outline: rgb(48, 122, 142) none 0px;
   text-decoration-color: rgb(48, 122, 142);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(224, 109, 15);
   outline: rgb(224, 109, 15) none 0px;
   text-decoration-color: rgb(224, 109, 15);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(224, 109, 15);
   outline: rgb(224, 109, 15) none 0px;
 }`,
@@ -2122,13 +2083,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(36, 36, 36);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(36, 36, 36);
-  border-left-color: rgb(36, 36, 36);
-  border-right-color: rgb(36, 36, 36);
-  border-top-color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2176,25 +2130,7 @@ html[saved-theme="light"] body tr {
   background-color: color(srgb 0.856471 0.766275 0.692549);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(36, 36, 36);
-  border-left-color: rgb(36, 36, 36);
-  border-right-color: rgb(36, 36, 36);
-  border-top-color: rgb(36, 36, 36);
   color: rgb(36, 36, 36);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(228, 227, 224);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(228, 227, 224);
-  color: rgb(22, 22, 22);
-  font-family: "??", "??", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(228, 227, 224);
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -3123,12 +3059,16 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(36, 36, 36);
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(224, 109, 15);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(240, 80, 6);
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(36, 36, 36);
 }
 
 html[saved-theme="light"] body h2 {
@@ -3186,6 +3126,56 @@ html[saved-theme="light"] body ul.section-ul {
   border-left-color: rgb(36, 36, 36);
   border-right-color: rgb(36, 36, 36);
   border-top-color: rgb(36, 36, 36);
+}`,
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(36, 36, 36);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgb(36, 36, 36);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(36, 36, 36);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(36, 36, 36);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(234, 234, 234);
+  border-color: rgb(36, 36, 36);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  color: rgb(36, 36, 36);
+}`,
+    properties: `html[saved-theme="light"] body .note-properties-tags {
+  color: rgb(224, 109, 15);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(234, 234, 234);
+  color: rgb(36, 36, 36);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(36, 36, 36);
+  border-left-color: rgb(36, 36, 36);
+  border-right-color: rgb(36, 36, 36);
+  border-top-color: rgb(36, 36, 36);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(217, 217, 217);
+  border-color: rgb(36, 36, 36);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(217, 217, 217);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(36, 36, 36);
 }`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(36, 36, 36);

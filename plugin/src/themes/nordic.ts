@@ -340,6 +340,26 @@ export const theme: ThemeData = {
   --setting-group-heading-color: color-mix(in srgb, hsl(210, 34%, 63%), #000 45%) !important;
   --setting-items-background: #ECEFF4 !important;
   --setting-items-border-color: #E5E9F0 !important;
+  --shiki-active-tab-border-color: color-mix(in srgb, hsl(210, 34%, 63%), #000 20%) !important;
+  --shiki-code-background: #ECEFF4 !important;
+  --shiki-code-comment: #4C566A !important;
+  --shiki-code-function: #a3be8c !important;
+  --shiki-code-important: #d08770 !important;
+  --shiki-code-keyword: #b48ead !important;
+  --shiki-code-normal: color-mix(in srgb, hsl(210, 34%, 63%), #000 20%) !important;
+  --shiki-code-property: #61b1bf !important;
+  --shiki-code-punctuation: color-mix(in srgb, hsl(210, 34%, 63%), #000 20%) !important;
+  --shiki-code-string: #ebcb8b !important;
+  --shiki-code-value: #958eb4 !important;
+  --shiki-gutter-border-color: #E5E9F0 !important;
+  --shiki-gutter-text-color: #4C566A !important;
+  --shiki-gutter-text-color-highlight: color-mix(in srgb, hsl(210, 34%, 63%), #000 20%) !important;
+  --shiki-highlight-green: rgba(163, 190, 140, 0.5) !important;
+  --shiki-highlight-green-background: rgba(163, 190, 140, 0.1) !important;
+  --shiki-highlight-neutral: color-mix(in srgb, hsl(210, 34%, 63%), #000 20%) !important;
+  --shiki-highlight-red: rgba(191, 97, 106, 0.5) !important;
+  --shiki-highlight-red-background: rgba(191, 97, 106, 0.1) !important;
+  --shiki-terminal-dots-color: #4C566A !important;
   --slider-thumb-border-color: #D8DEE9 !important;
   --slider-track-background: #E5E9F0 !important;
   --statblock-background-color: rgba(0, 0, 0, 0.05) !important;
@@ -442,56 +462,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: color(srgb 0.27731 0.3465 0.41569);
 }
 
-html body .bases-table tbody tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-html body .bases-table thead th {
-  border-color: rgba(0, 0, 0, 0.5);
-  color: color(srgb 0.27731 0.3465 0.41569);
-}
-
-html body .canvas-node {
-  border-color: color(srgb 0.27731 0.3465 0.41569);
-}
-
-html body .canvas-node-content {
-  color: color(srgb 0.27731 0.3465 0.41569);
-}
-
-html body .canvas-node-file {
-  color: color(srgb 0.27731 0.3465 0.41569);
-}
-
-html body .canvas-node-group {
-  border-color: color(srgb 0.27731 0.3465 0.41569);
-}
-
-html body .canvas-sidebar {
-  border-color: color(srgb 0.27731 0.3465 0.41569);
-}
-
-html body .note-properties {
-  border-color: rgb(229, 233, 240);
-}
-
-html body .note-properties-key {
-  color: color(srgb 0.40336 0.504 0.60464);
-}
-
-html body .note-properties-row {
-  border-color: color(srgb 0.40336 0.504 0.60464);
-}
-
-html body .note-properties-tags {
-  background-color: rgba(129, 161, 193, 0.1);
-  color: rgb(129, 161, 193);
-}
-
-html body .note-properties-value {
-  color: color(srgb 0.40336 0.504 0.60464);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(236, 239, 244);
   color: color(srgb 0.27731 0.3465 0.41569);
@@ -504,10 +474,6 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(236, 239, 244);
   border-left-color: rgb(229, 233, 240);
-  color: color(srgb 0.27731 0.3465 0.41569);
-}
-
-html body div#quartz-root {
   color: color(srgb 0.27731 0.3465 0.41569);
 }
 
@@ -538,28 +504,28 @@ html body html {
   --light3-raw: 255, 255, 255;
   --nordic-darken: 0%;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: color(srgb 0.27731 0.3465 0.41569);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: color(srgb 0.27731 0.3465 0.41569);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: color(srgb 0.27731 0.3465 0.41569);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
   text-decoration-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: color(srgb 0.27731 0.3465 0.41569);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: color(srgb 0.27731 0.3465 0.41569) none 0px;
@@ -599,21 +565,21 @@ html body p {
   outline: color(srgb 0.40336 0.504 0.60464) none 0px;
   text-decoration-color: color(srgb 0.40336 0.504 0.60464);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(129, 161, 193);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(129, 161, 193) none 0px;
   text-decoration-color: rgb(129, 161, 193);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(129, 161, 193);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(129, 161, 193) none 0px;
   text-decoration-color: rgb(129, 161, 193);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(129, 161, 193);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(129, 161, 193) none 0px;
@@ -630,13 +596,6 @@ html body dt {
 
 html body ol > li {
   color: color(srgb 0.27731 0.3465 0.41569);
-}
-
-html body ol.overflow {
-  border-bottom-color: color(srgb 0.27731 0.3465 0.41569);
-  border-left-color: color(srgb 0.27731 0.3465 0.41569);
-  border-right-color: color(srgb 0.27731 0.3465 0.41569);
-  border-top-color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body ul > li {
@@ -700,59 +659,24 @@ html body tr {
   background-color: rgba(0, 0, 0, 0.25);
 }`,
     code: `html body code {
-  border-bottom-color: color(srgb 0.27731 0.3465 0.41569);
-  border-left-color: color(srgb 0.27731 0.3465 0.41569);
-  border-right-color: color(srgb 0.27731 0.3465 0.41569);
-  border-top-color: color(srgb 0.27731 0.3465 0.41569);
-  color: color(srgb 0.27731 0.3465 0.41569);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(236, 239, 244);
-  border-bottom-color: rgb(229, 233, 240);
-  border-left-color: rgb(229, 233, 240);
-  border-right-color: rgb(229, 233, 240);
-  border-top-color: rgb(229, 233, 240);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(236, 239, 244);
   border-bottom-color: rgb(229, 233, 240);
   border-left-color: rgb(229, 233, 240);
   border-right-color: rgb(229, 233, 240);
   border-top-color: rgb(229, 233, 240);
   color: color(srgb 0.27731 0.3465 0.41569);
-}
-
-html body pre > code > [data-line] {
-  border-left-color: rgb(235, 203, 139);
-}
-
-html body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(235, 203, 139);
-}
-
-html body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(235, 203, 139);
-  border-left-color: rgb(235, 203, 139);
-  border-right-color: rgb(235, 203, 139);
-  border-top-color: rgb(235, 203, 139);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(236, 239, 244);
-  border-bottom-color: rgb(229, 233, 240);
-  border-left-color: rgb(229, 233, 240);
-  border-right-color: rgb(229, 233, 240);
-  border-top-color: rgb(229, 233, 240);
 }
 
 html body pre:has(> code) {
   background-color: rgb(236, 239, 244);
-  border-bottom-color: rgb(229, 233, 240);
-  border-left-color: rgb(229, 233, 240);
-  border-right-color: rgb(229, 233, 240);
-  border-top-color: rgb(229, 233, 240);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html body audio {
   border-bottom-color: color(srgb 0.27731 0.3465 0.41569);
@@ -763,7 +687,6 @@ html body pre:has(> code) {
 
 html body figcaption {
   color: color(srgb 0.27731 0.3465 0.41569);
-  font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body figure {
@@ -2089,7 +2012,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: color(srgb 0.27731 0.3465 0.41569);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(129, 161, 193, 0.1);
   border-bottom-color: rgba(129, 161, 193, 0.15);
   border-left-color: rgba(129, 161, 193, 0.15);
@@ -2097,13 +2020,17 @@ html body a.internal.tag-link, html .search > .search-container > .search-space 
   border-top-color: rgba(129, 161, 193, 0.15);
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(129, 161, 193);
 }
 
 html body h1 {
   color: rgb(129, 161, 193);
   font-family: Norwester;
+}
+
+html body h1.article-title {
+  color: rgb(129, 161, 193);
 }
 
 html body h2 {
@@ -2160,11 +2087,11 @@ html body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: color(srgb 0.40336 0.504 0.60464);
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: color(srgb 0.40336 0.504 0.60464);
 }`,
     toc: `html body details.toc summary::marker {
@@ -2252,15 +2179,34 @@ html body .darkmode svg {
 html body .breadcrumb-element p {
   color: rgb(76, 86, 106);
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: color(srgb 0.27731 0.3465 0.41569);
-  border-left-color: color(srgb 0.27731 0.3465 0.41569);
-  border-right-color: color(srgb 0.27731 0.3465 0.41569);
-  border-top-color: color(srgb 0.27731 0.3465 0.41569);
+    canvas: `html body .canvas-node {
+  border-color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body .canvas-node-content {
   color: color(srgb 0.27731 0.3465 0.41569);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body .canvas-node-group {
+  border-color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body .canvas-sidebar {
+  border-color: color(srgb 0.27731 0.3465 0.41569);
+}`,
+    bases: `html body .bases-table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+html body .bases-table thead th {
+  border-color: rgba(0, 0, 0, 0.5);
+  color: color(srgb 0.27731 0.3465 0.41569);
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(229, 233, 240);
   border-left-color: rgb(229, 233, 240);
   border-right-color: rgb(229, 233, 240);
@@ -2276,6 +2222,57 @@ html body .metadata-properties {
   border-top-color: color(srgb 0.40336 0.504 0.60464);
   color: color(srgb 0.40336 0.504 0.60464);
   font-family: "??", Avenir, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .note-properties {
+  border-color: rgb(229, 233, 240);
+}
+
+html body .note-properties-key {
+  color: color(srgb 0.40336 0.504 0.60464);
+}
+
+html body .note-properties-row {
+  border-color: color(srgb 0.40336 0.504 0.60464);
+}
+
+html body .note-properties-tags {
+  background-color: rgba(129, 161, 193, 0.1);
+  color: rgb(129, 161, 193);
+}
+
+html body .note-properties-value {
+  color: color(srgb 0.40336 0.504 0.60464);
+}
+
+html body div#quartz-root {
+  color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body ol.overflow {
+  border-bottom-color: color(srgb 0.27731 0.3465 0.41569);
+  border-left-color: color(srgb 0.27731 0.3465 0.41569);
+  border-right-color: color(srgb 0.27731 0.3465 0.41569);
+  border-top-color: color(srgb 0.27731 0.3465 0.41569);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(236, 239, 244);
+  border-color: color(srgb 0.27731 0.3465 0.41569);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(255, 255, 255);
+}
+
+html body .stacked-page.active {
+  border-color: color(srgb 0.27731 0.3465 0.41569);
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: color(srgb 0.27731 0.3465 0.41569);
+  border-left-color: color(srgb 0.27731 0.3465 0.41569);
+  border-right-color: color(srgb 0.27731 0.3465 0.41569);
+  border-top-color: color(srgb 0.27731 0.3465 0.41569);
+  color: color(srgb 0.27731 0.3465 0.41569);
 }
 
 html body .navigation-progress {

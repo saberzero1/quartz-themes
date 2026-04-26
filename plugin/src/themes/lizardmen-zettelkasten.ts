@@ -93,39 +93,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(225, 232, 237);
 }
 
-html body .bases-table thead th {
-  color: rgb(225, 232, 237);
-}
-
-html body .canvas-node {
-  border-color: rgb(225, 232, 237);
-}
-
-html body .canvas-node-content {
-  color: rgb(225, 232, 237);
-}
-
-html body .canvas-node-file {
-  background-color: rgb(15, 20, 25);
-  color: rgb(225, 232, 237);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(225, 232, 237);
-}
-
-html body .canvas-sidebar {
-  border-color: rgb(225, 232, 237);
-}
-
-html body .note-properties-key {
-  font-weight: 500;
-}
-
-html body .note-properties-tags {
-  color: rgb(45, 157, 227);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(24, 32, 38);
   color: rgb(225, 232, 237);
@@ -135,36 +102,31 @@ html body .page > div#quartz-body div.sidebar.right {
   color: rgb(225, 232, 237);
 }
 
-html body div#quartz-root {
-  background-color: rgb(15, 20, 25);
-  color: rgb(225, 232, 237);
-}
-
 html body html {
   font-size: 15px;
   font-weight: 500;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(225, 232, 237);
   outline: rgb(225, 232, 237) none 0px;
   text-decoration-color: rgb(225, 232, 237);
 }
 
-html body .page article p > em, html em {
-  color: rgb(225, 232, 237);
-  font-weight: 500;
-  outline: rgb(225, 232, 237) none 0px;
-  text-decoration-color: rgb(225, 232, 237);
-}
-
-html body .page article p > i, html i {
+html body .markdown-rendered p > em, html em {
   color: rgb(225, 232, 237);
   font-weight: 500;
   outline: rgb(225, 232, 237) none 0px;
   text-decoration-color: rgb(225, 232, 237);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > i, html i {
+  color: rgb(225, 232, 237);
+  font-weight: 500;
+  outline: rgb(225, 232, 237) none 0px;
+  text-decoration-color: rgb(225, 232, 237);
+}
+
+html body .markdown-rendered p > strong, html strong {
   color: rgb(225, 232, 237);
   outline: rgb(225, 232, 237) none 0px;
   text-decoration-color: rgb(225, 232, 237);
@@ -194,19 +156,19 @@ html body h1.article-title {
 html body p {
   font-weight: 500;
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(43, 149, 214);
   outline: rgb(43, 149, 214) none 0px;
   text-decoration-color: rgb(43, 149, 214);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(45, 157, 227);
   outline: rgb(45, 157, 227) none 0px;
   text-decoration-color: rgb(45, 157, 227);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(45, 157, 227);
   outline: rgb(45, 157, 227) none 0px;
   text-decoration: rgba(138, 92, 245, 0.3);
@@ -222,13 +184,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(225, 232, 237);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(225, 232, 237);
-  border-left-color: rgb(225, 232, 237);
-  border-right-color: rgb(225, 232, 237);
-  border-top-color: rgb(225, 232, 237);
 }
 
 html body ul > li {
@@ -272,20 +227,12 @@ html body th {
 }`,
     code: `html body code {
   background-color: rgb(24, 32, 38);
-  border-bottom-color: rgb(253, 215, 85);
-  border-left-color: rgb(253, 215, 85);
-  border-right-color: rgb(253, 215, 85);
-  border-top-color: rgb(253, 215, 85);
   color: rgb(253, 215, 85);
-  font-family: monospace;
+  font-family: "??", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   padding-bottom: 1px;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 5px;
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  color: rgb(225, 232, 237);
 }`,
     images: `html body audio {
   border-bottom-color: rgb(225, 232, 237);
@@ -899,16 +846,20 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(225, 232, 237);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-weight: 500;
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(45, 157, 227);
 }
 
 html body h1 {
   color: rgb(163, 33, 33);
+}
+
+html body h1.article-title {
+  color: rgb(225, 232, 237);
 }
 
 html body h2 {
@@ -937,12 +888,12 @@ html body h6 {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(92, 112, 128);
   font-weight: 700;
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(92, 112, 128);
   font-weight: 700;
 }`,
@@ -978,16 +929,70 @@ html body ul.section-ul {
   border-right-color: rgb(225, 232, 237);
   border-top-color: rgb(225, 232, 237);
 }`,
+    canvas: `html body .canvas-node {
+  border-color: rgb(225, 232, 237);
+}
+
+html body .canvas-node-content {
+  color: rgb(225, 232, 237);
+}
+
+html body .canvas-node-file {
+  background-color: rgb(15, 20, 25);
+  color: rgb(225, 232, 237);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(225, 232, 237);
+}
+
+html body .canvas-sidebar {
+  border-color: rgb(225, 232, 237);
+}`,
+    bases: `html body .bases-table thead th {
+  color: rgb(225, 232, 237);
+}`,
+    properties: `html body .metadata {
+  margin-bottom: 30px;
+}
+
+html body .note-properties-key {
+  font-weight: 500;
+}
+
+html body .note-properties-tags {
+  color: rgb(45, 157, 227);
+}
+
+html body div#quartz-root {
+  background-color: rgb(15, 20, 25);
+  color: rgb(225, 232, 237);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(225, 232, 237);
+  border-left-color: rgb(225, 232, 237);
+  border-right-color: rgb(225, 232, 237);
+  border-top-color: rgb(225, 232, 237);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(24, 32, 38);
+  border-color: rgb(225, 232, 237);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(245, 246, 248);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(225, 232, 237);
+}`,
     misc: `html body .katex-display {
   border-bottom-color: rgb(225, 232, 237);
   border-left-color: rgb(225, 232, 237);
   border-right-color: rgb(225, 232, 237);
   border-top-color: rgb(225, 232, 237);
   color: rgb(225, 232, 237);
-}
-
-html body .metadata {
-  margin-bottom: 30px;
 }
 
 html body .page-header h2.page-title {

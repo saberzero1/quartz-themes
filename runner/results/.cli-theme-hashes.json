@@ -423,7 +423,16 @@
   "Refined Default": { "_default": "bbf3883d038550e723e79c83b8239543" },
   "Reshi": { "_default": "669a77a4d6f212098854e46027f949d4" },
   "Retro Windows": { "_default": "ec2e7e57a4792ea842e65e67f6dc9d29" },
-  "Retroma": { "_default": "a7c1dbdcb0395f867bed79c3279d2de2" },
+  "Retroma": {
+    "_default": "bd99dc4852a29a29ceda0b62004549f1",
+    "analogous-reversed": "aaeb90cc3460e4ffb3c0a6c8f4b2e77c",
+    "monochromatic": "82ee8d543000f5dd03a60f5408a92387",
+    "monochromatic-reversed": "0075aab61f5ba2dccfef7f5cfe34e562",
+    "split-complementary": "6e68cbf58f68e41f5f702ab59c2dccc6",
+    "split-complementary-reversed": "3af45e082a715823fd4d52c901ba0212",
+    "triadic": "4479d24a71a369bda8596f3c0a7dc614",
+    "triadic-reversed": "97d1b5606b1036c725cd99368d65b73e"
+  },
   "RetroNotes": {
     "_default": "d13852e85f7e01d834a81de2466ea0c5",
     "blueprint": "179d98dc73e2fead11ad856b4a96bbe1",

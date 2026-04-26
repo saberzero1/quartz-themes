@@ -167,6 +167,16 @@ export const theme: ThemeData = {
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.028),
 		0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
 		0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shiki-code-background: #fdf6e3 !important;
+  --shiki-code-function: #05903d !important;
+  --shiki-code-important: #ed6002 !important;
+  --shiki-code-string: #fabd2f !important;
+  --shiki-code-value: #6645cc !important;
+  --shiki-highlight-green: rgba(5, 144, 61, 0.5) !important;
+  --shiki-highlight-green-background: rgba(5, 144, 61, 0.1) !important;
+  --shiki-highlight-neutral-background: rgba(40, 40, 40, 0.05) !important;
+  --shiki-highlight-red: rgba(184, 30, 25, 0.5) !important;
+  --shiki-highlight-red-background: rgba(184, 30, 25, 0.1) !important;
   --status-bar-background: #fdf6e3 !important;
   --suggestion-background: #fdf6e3 !important;
   --swatch-shadow: inset 0 0 0 1px rgba(40, 40, 40, 0.15) !important;
@@ -220,50 +230,27 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   background-color: rgb(253, 246, 227);
 }
 
-html body .canvas-sidebar {
-  background-color: rgb(253, 246, 227);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(253, 246, 227);
 }
 
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(253, 246, 227);
-}
-
-html body div#quartz-root {
-  background-color: rgb(253, 246, 227);
 }`,
-    code: `html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(253, 246, 227);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(253, 246, 227);
-}
-
-html body pre > code > [data-line] {
-  border-left-color: rgb(250, 189, 47);
-}
-
-html body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(250, 189, 47);
-}
-
-html body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(250, 189, 47);
-  border-left-color: rgb(250, 189, 47);
-  border-right-color: rgb(250, 189, 47);
-  border-top-color: rgb(250, 189, 47);
-}
-
-html body pre > code, html pre:has(> code) {
+    code: `html body code {
   background-color: rgb(253, 246, 227);
 }
 
 html body pre:has(> code) {
   background-color: rgb(253, 246, 227);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html body img {
   border-bottom-color: rgb(15, 71, 97);
@@ -769,6 +756,12 @@ html body h1 {
   color: rgb(15, 71, 97);
 }
 
+html body h1.article-title {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: 900;
+}
+
 html body h2 {
   color: rgb(18, 89, 122);
 }
@@ -803,12 +796,25 @@ html body h6 {
   border-top-color: rgba(8, 109, 221, 0.5);
   border-top-width: 1px;
 }`,
-    explorer: `html body .explorer .folder-outer > ul {
+    explorer: `html body .nav-files-container .tree-item-children {
   border-left-color: rgba(40, 40, 40, 0.12);
   border-left-width: 2px;
 }`,
     footer: `html body footer {
   background-color: rgb(253, 246, 227);
+}`,
+    canvas: `html body .canvas-sidebar {
+  background-color: rgb(253, 246, 227);
+}`,
+    properties: `html body div#quartz-root {
+  background-color: rgb(253, 246, 227);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(253, 246, 227);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(255, 245, 222);
 }`,
     misc: `html body .navigation-progress {
   background-color: rgb(253, 246, 227);

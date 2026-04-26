@@ -103,6 +103,11 @@ export const theme: ThemeData = {
   --setting-group-heading-size: 16px !important;
   --setting-items-background: #1a1b26 !important;
   --setting-items-border-color: #999999 !important;
+  --shiki-code-background: #1a1b26 !important;
+  --shiki-code-comment: #565f8988 !important;
+  --shiki-gutter-border-color: #999999 !important;
+  --shiki-gutter-text-color: #565f8988 !important;
+  --shiki-terminal-dots-color: #565f8988 !important;
   --slider-thumb-border-color: #555555 !important;
   --slider-track-background: #999999 !important;
   --status-bar-background: #1a1b26 !important;
@@ -145,18 +150,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   background-color: rgb(26, 27, 38);
 }
 
-html body .bases-table thead th {
-  border-color: rgb(153, 153, 153);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(26, 27, 38);
-}
-
-html body .note-properties {
-  border-color: rgb(153, 153, 153);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(26, 27, 38);
 }
@@ -168,30 +161,26 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(26, 27, 38);
   border-left-color: rgb(153, 153, 153);
-}
-
-html body div#quartz-root {
-  background-color: rgb(26, 27, 38);
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(187, 154, 247);
   outline: rgb(187, 154, 247) none 0px;
   text-decoration-color: rgb(187, 154, 247);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(154, 165, 206);
   outline: rgb(154, 165, 206) none 0px;
   text-decoration-color: rgb(154, 165, 206);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(154, 165, 206);
   outline: rgb(154, 165, 206) none 0px;
   text-decoration-color: rgb(154, 165, 206);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(187, 154, 247);
   outline: rgb(187, 154, 247) none 0px;
   text-decoration-color: rgb(187, 154, 247);
@@ -224,23 +213,7 @@ html body th {
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
 }`,
-    code: `html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(26, 27, 38);
-  border-bottom-color: rgb(153, 153, 153);
-  border-left-color: rgb(153, 153, 153);
-  border-right-color: rgb(153, 153, 153);
-  border-top-color: rgb(153, 153, 153);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(26, 27, 38);
-  border-bottom-color: rgb(153, 153, 153);
-  border-left-color: rgb(153, 153, 153);
-  border-right-color: rgb(153, 153, 153);
-  border-top-color: rgb(153, 153, 153);
-}
-
-html body pre > code, html pre:has(> code) {
+    code: `html body code {
   background-color: rgb(26, 27, 38);
   border-bottom-color: rgb(153, 153, 153);
   border-left-color: rgb(153, 153, 153);
@@ -642,6 +615,11 @@ html body h1 {
   color: rgb(122, 162, 247);
 }
 
+html body h1.article-title {
+  color: rgb(122, 162, 247);
+  font-size: 20px;
+}
+
 html body h2 {
   color: rgb(122, 162, 247);
 }
@@ -684,14 +662,34 @@ html body hr {
     breadcrumbs: `html body .breadcrumb-element p {
   color: rgba(86, 95, 137, 0.533);
 }`,
-    misc: `html body .metadata {
+    canvas: `html body .canvas-sidebar {
+  background-color: rgb(26, 27, 38);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgb(153, 153, 153);
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(153, 153, 153);
   border-left-color: rgb(153, 153, 153);
   border-right-color: rgb(153, 153, 153);
   border-top-color: rgb(153, 153, 153);
 }
 
-html body .navigation-progress {
+html body .note-properties {
+  border-color: rgb(153, 153, 153);
+}
+
+html body div#quartz-root {
+  background-color: rgb(26, 27, 38);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(26, 27, 38);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(26, 27, 38);
+}`,
+    misc: `html body .navigation-progress {
   background-color: rgb(26, 27, 38);
 }
 

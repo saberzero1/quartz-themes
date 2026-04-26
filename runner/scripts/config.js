@@ -377,21 +377,22 @@ export const config = [
   {
     obsidianSelector: `a.external-link[data-tooltip-position=\"top\"]`,
     publishSelector: `.markdown-rendered a.external-link`,
-    quartzSelector: "a.external, footer a",
+    quartzSelector: "a.external-link, footer a",
     pseudoElement: "",
     properties: sets.text,
   },
   {
     obsidianSelector: `a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]`,
     publishSelector: `.markdown-rendered a.internal-link`,
-    quartzSelector: "a.internal, .breadcrumb-container .breadcrumb-element > a",
+    quartzSelector:
+      "a.internal-link, .breadcrumb-container .breadcrumb-element > a",
     pseudoElement: "",
     properties: sets.text,
   },
   {
     obsidianSelector: `a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]`,
     publishSelector: `.markdown-rendered a.internal-link.is-unresolved`,
-    quartzSelector: "a.internal.broken",
+    quartzSelector: "a.internal-link.broken",
     pseudoElement: "",
     properties: sets.text,
   },
@@ -399,7 +400,7 @@ export const config = [
   {
     obsidianSelector: `a.external-link[data-tooltip-position=\"top\"]:hover`,
     publishSelector: `.markdown-rendered a.external-link:hover`,
-    quartzSelector: "a.external:hover, footer a:hover",
+    quartzSelector: "a.external-link:hover, footer a:hover",
     pseudoElement: "",
     properties: [
       "text-decoration",
@@ -413,7 +414,7 @@ export const config = [
     obsidianSelector: `a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]:hover`,
     publishSelector: `.markdown-rendered a.internal-link:hover`,
     quartzSelector:
-      "a.internal:hover, .breadcrumb-container .breadcrumb-element > a:hover",
+      "a.internal-link:hover, .breadcrumb-container .breadcrumb-element > a:hover",
     pseudoElement: "",
     properties: [
       // "text-decoration",
@@ -434,28 +435,28 @@ export const config = [
   {
     obsidianSelector: `strong`,
     publishSelector: `strong`,
-    quartzSelector: ".page article p > strong, strong",
+    quartzSelector: ".markdown-rendered p > strong, strong",
     pseudoElement: "",
     properties: sets.text,
   },
   {
     obsidianSelector: `strong`,
     publishSelector: `b`,
-    quartzSelector: ".page article p > b, b",
+    quartzSelector: ".markdown-rendered p > b, b",
     pseudoElement: "",
     properties: sets.text,
   },
   {
     obsidianSelector: `em`,
     publishSelector: `em`,
-    quartzSelector: ".page article p > em, em",
+    quartzSelector: ".markdown-rendered p > em, em",
     pseudoElement: "",
     properties: sets.text,
   },
   {
     obsidianSelector: `em`,
     publishSelector: `i`,
-    quartzSelector: ".page article p > i, i",
+    quartzSelector: ".markdown-rendered p > i, i",
     pseudoElement: "",
     properties: sets.text,
   },
@@ -463,21 +464,21 @@ export const config = [
       {
         obsidianSelector: `u`,
         publishSelector: `u`,
-        quartzSelector: ".page article p > u, u",
+        quartzSelector: ".markdown-rendered p > u, u",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `s`,
         publishSelector: `s`,
-        quartzSelector: ".page article p > s, s",
+        quartzSelector: ".markdown-rendered p > s, s",
         pseudoElement: "",
         properties: sets.text,
       },
       {
         obsidianSelector: `strong > em`,
         publishSelector: `strong > em`,
-        quartzSelector: ".page article p > strong > em, strong > em",
+        quartzSelector: ".markdown-rendered p > strong > em, strong > em",
         pseudoElement: "",
         properties: sets.text,
       },
@@ -545,14 +546,14 @@ export const config = [
     obsidianSelector: `div.multi-select-pill`,
     publishSelector: `div.multi-select-pill`,
     quartzSelector:
-      "a.internal.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag",
+      "a.internal-link.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag",
     pseudoElement: "",
     properties: sets.pill,
   },
   {
     obsidianSelector: `div.multi-select-pill-content`,
     publishSelector: `div.multi-select-pill > div.multi-select-pill-content`,
-    quartzSelector: "a.internal.tag-link::before",
+    quartzSelector: "a.internal-link.tag-link::before",
     pseudoElement: "",
     properties: ["color"],
   },
@@ -2065,7 +2066,7 @@ export const config = [
   {
     obsidianSelector: `div.is-clickable.nav-file-title.tappable.tree-item-self[data-path=\"callouts.md\"]`,
     publishSelector: `.nav-view-outer .tree-item-self a`,
-    quartzSelector: ".explorer .explorer-content ul.explorer-ul li a",
+    quartzSelector: ".nav-files-container .nav-file-title",
     pseudoElement: "",
     properties: [
       "color",
@@ -2081,8 +2082,7 @@ export const config = [
     // active
     obsidianSelector: `div.is-active.is-clickable.nav-file-title.tappable.tree-item-self[data-path=\"integrations.md\"]`,
     publishSelector: `.nav-view-outer .tree-item-self.mod-active`,
-    quartzSelector:
-      ".explorer .explorer-content ul.explorer-ul li:has(> .active)",
+    quartzSelector: ".nav-files-container .nav-file-title.is-active",
     pseudoElement: "",
     properties: [
       "background-color",
@@ -2097,7 +2097,7 @@ export const config = [
     obsidianSelector: `div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder/collapsed\"]`,
     publishSelector: `.nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self`,
     quartzSelector:
-      ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container",
+      ".nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title",
     pseudoElement: "",
     properties: [
       "color",
@@ -2114,7 +2114,7 @@ export const config = [
     obsidianSelector: `div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder\"]`,
     publishSelector: `.nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self`,
     quartzSelector:
-      ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container",
+      ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
     pseudoElement: "",
     properties: [
       "color",
@@ -2130,7 +2130,7 @@ export const config = [
   {
     obsidianSelector: `.nav-folder-collapse-indicator.collapse-icon svg.svg-icon`,
     publishSelector: null,
-    quartzSelector: ".explorer .folder-icon",
+    quartzSelector: ".nav-files-container .collapse-icon",
     pseudoElement: "",
     properties: ["color", "stroke", "fill", "opacity"],
   },
@@ -2138,7 +2138,7 @@ export const config = [
   {
     obsidianSelector: `.tree-item-children`,
     publishSelector: null,
-    quartzSelector: ".explorer .folder-outer > ul",
+    quartzSelector: ".nav-files-container .tree-item-children",
     pseudoElement: "",
     properties: ["border-left-color", "border-left-width", "border-left-style"],
   },
@@ -2146,7 +2146,7 @@ export const config = [
   {
     obsidianSelector: `.nav-files-container`,
     publishSelector: null,
-    quartzSelector: ".explorer",
+    quartzSelector: ".nav-files-container",
     pseudoElement: "",
     properties: ["background-color"],
   },
@@ -2739,7 +2739,7 @@ export const config = [
   {
     obsidianSelector: `article p > strong`,
     publishSelector: `.markdown-rendered p > strong`,
-    quartzSelector: ".page article p > strong",
+    quartzSelector: ".markdown-rendered p > strong",
     pseudoElement: "",
     properties: ["color", "font-weight"],
   },
@@ -2783,5 +2783,87 @@ export const config = [
     quartzSelector: "h1.article-title",
     pseudoElement: "",
     properties: ["color", "font-size", "font-weight", "text-decoration"],
+  },
+  // Stacked pages
+  {
+    obsidianSelector: `.workspace-leaf`,
+    publishSelector: null,
+    quartzSelector: ".stacked-page",
+    pseudoElement: "",
+    properties: ["border-color", "background-color", "box-shadow"],
+  },
+  {
+    obsidianSelector: `.workspace-tab-header-container`,
+    publishSelector: null,
+    quartzSelector: ".stacked-page-header",
+    pseudoElement: "",
+    properties: ["background-color"],
+  },
+  {
+    obsidianSelector: `.workspace-leaf.mod-active`,
+    publishSelector: null,
+    quartzSelector: ".stacked-page.active",
+    pseudoElement: "",
+    properties: ["border-color"],
+  },
+  // Search completions
+  {
+    obsidianSelector: `.search-result-file-match`,
+    publishSelector: null,
+    quartzSelector: ".preview-container",
+    pseudoElement: "",
+    properties: ["color", "font-weight", "background-color"],
+  },
+  {
+    obsidianSelector: `.search-result-file-matched-text`,
+    publishSelector: null,
+    quartzSelector: ".highlight",
+    pseudoElement: "",
+    properties: ["background-color", "border-radius"],
+  },
+  {
+    obsidianSelector: `.search-input:focus`,
+    publishSelector: null,
+    quartzSelector: "input:focus",
+    pseudoElement: "",
+    properties: ["border-color", "box-shadow"],
+  },
+  // Content meta
+  {
+    obsidianSelector: `.frontmatter-container`,
+    publishSelector: null,
+    quartzSelector: ".content-meta",
+    pseudoElement: "",
+    properties: ["color", "font-size"],
+  },
+  // Article title
+  {
+    obsidianSelector: `.inline-title`,
+    publishSelector: null,
+    quartzSelector: "h1.article-title",
+    pseudoElement: "",
+    properties: ["color", "font-size", "font-weight", "text-decoration"],
+  },
+  // Hover states
+  {
+    obsidianSelector: `.nav-folder-title:hover`,
+    publishSelector: null,
+    quartzSelector: ".nav-folder-title:hover",
+    pseudoElement: "",
+    properties: ["color", "background-color"],
+  },
+  {
+    obsidianSelector: `.nav-file-title:hover`,
+    publishSelector: null,
+    quartzSelector: ".nav-file-title:hover",
+    pseudoElement: "",
+    properties: ["color", "background-color"],
+  },
+  {
+    obsidianSelector: `.search-result-file-title:hover`,
+    publishSelector: null,
+    quartzSelector: ".search-result-title:hover",
+    pseudoElement: "",
+    properties: ["color", "background-color"],
   },
 ];

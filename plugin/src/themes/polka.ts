@@ -296,6 +296,23 @@ export const theme: ThemeData = {
   --setting-items-background: rgb(10, 18, 30) !important;
   --setting-items-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --setting-items-radius: 6px !important;
+  --shiki-active-tab-border-color: rgb(250, 247, 245) !important;
+  --shiki-code-background: rgb(10, 18, 30) !important;
+  --shiki-code-block-border-radius: 2px !important;
+  --shiki-code-comment: rgb(250, 247, 245) !important;
+  --shiki-code-function: rgb(30, 169, 67) !important;
+  --shiki-code-important: rgb(220, 95, 0) !important;
+  --shiki-code-keyword: rgb(220, 100, 210) !important;
+  --shiki-code-normal: rgb(250, 247, 245) !important;
+  --shiki-code-property: rgb(0, 202, 235) !important;
+  --shiki-code-punctuation: rgb(250, 247, 245) !important;
+  --shiki-code-string: rgb(230, 205, 90) !important;
+  --shiki-code-value: rgb(140, 110, 240) !important;
+  --shiki-gutter-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
+  --shiki-gutter-text-color: rgb(250, 247, 245) !important;
+  --shiki-gutter-text-color-highlight: rgb(250, 247, 245) !important;
+  --shiki-highlight-neutral: rgb(250, 247, 245) !important;
+  --shiki-terminal-dots-color: rgb(250, 247, 245) !important;
   --slider-thumb-border-color: hsla(221, 16.65%, 85%, 0.1) !important;
   --slider-track-background: hsla(221, 16.65%, 85%, 0.1) !important;
   --ss-border-radius: 0.1px !important;
@@ -398,54 +415,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(250, 247, 245);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgb(250, 247, 245);
-  color: rgb(250, 247, 245);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(250, 247, 245);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(250, 247, 245);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(250, 247, 245);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(250, 247, 245);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(33, 42, 61);
-  border-color: rgb(250, 247, 245);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgba(210, 214, 223, 0.1);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(250, 247, 245);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(250, 247, 245);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(0, 212, 250, 0.1);
-  border-radius: 4px;
-  color: rgb(0, 212, 250);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(250, 247, 245);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(33, 42, 61);
   color: rgb(250, 247, 245);
@@ -459,34 +428,29 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(33, 42, 61);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(250, 247, 245);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(22, 29, 44);
-  color: rgb(250, 247, 245);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(250, 247, 245);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(250, 247, 245) none 0px;
   text-decoration-color: rgb(250, 247, 245);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(250, 247, 245);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(250, 247, 245) none 0px;
   text-decoration-color: rgb(250, 247, 245);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(250, 247, 245);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(250, 247, 245) none 0px;
   text-decoration-color: rgb(250, 247, 245);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(250, 247, 245);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(250, 247, 245) none 0px;
@@ -529,21 +493,21 @@ html[saved-theme="dark"] body p {
   outline: rgb(250, 247, 245) none 0px;
   text-decoration-color: rgb(250, 247, 245);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(0, 212, 250);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 212, 250) none 0px;
   text-decoration-color: rgb(0, 212, 250);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(0, 212, 250);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 212, 250) none 0px;
   text-decoration-color: rgb(0, 212, 250);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(0, 212, 250);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 212, 250) none 0px;
@@ -560,13 +524,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(250, 247, 245);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(250, 247, 245);
-  border-left-color: rgb(250, 247, 245);
-  border-right-color: rgb(250, 247, 245);
-  border-top-color: rgb(250, 247, 245);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -615,31 +572,6 @@ html[saved-theme="dark"] body th {
   color: rgb(250, 247, 245);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(227, 227, 227);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-left-color: rgb(227, 227, 227);
-  border-right-color: rgb(227, 227, 227);
-  border-top-color: rgb(227, 227, 227);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  color: rgb(227, 227, 227);
-  font-family: "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(10, 18, 30);
-  border-bottom-color: rgba(210, 214, 223, 0.1);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-left-color: rgba(210, 214, 223, 0.1);
-  border-right-color: rgba(210, 214, 223, 0.1);
-  border-top-color: rgba(210, 214, 223, 0.1);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(10, 18, 30);
   border-bottom-color: rgba(210, 214, 223, 0.1);
   border-bottom-left-radius: 2px;
@@ -651,33 +583,6 @@ html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-reh
   border-top-right-radius: 2px;
   color: rgb(227, 227, 227);
   font-family: "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace;
-}
-
-html[saved-theme="dark"] body pre > code > [data-line] {
-  border-left-color: rgb(230, 205, 90);
-}
-
-html[saved-theme="dark"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(230, 205, 90);
-}
-
-html[saved-theme="dark"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(230, 205, 90);
-  border-left-color: rgb(230, 205, 90);
-  border-right-color: rgb(230, 205, 90);
-  border-top-color: rgb(230, 205, 90);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(10, 18, 30);
-  border-bottom-color: rgba(210, 214, 223, 0.1);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-left-color: rgba(210, 214, 223, 0.1);
-  border-right-color: rgba(210, 214, 223, 0.1);
-  border-top-color: rgba(210, 214, 223, 0.1);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -700,14 +605,18 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(250, 247, 245);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(250, 247, 245);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   border-left-color: rgb(250, 247, 245);
   border-right-color: rgb(250, 247, 245);
   border-top-color: rgb(250, 247, 245);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 html[saved-theme="dark"] body img {
@@ -1740,7 +1649,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(250, 247, 245);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 212, 250, 0.1);
   border-bottom-color: rgba(0, 212, 250, 0.15);
   border-bottom-left-radius: 4px;
@@ -1753,13 +1662,18 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(0, 212, 250);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(250, 247, 245);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(250, 247, 245);
+  font-size: 26px;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1817,18 +1731,18 @@ html[saved-theme="dark"] body hr {
   border-top-width: 2px;
   padding-left: 12px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(250, 247, 245);
-  font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(250, 247, 245);
-  font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-
-html[saved-theme="dark"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="dark"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(0, 212, 250);
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(250, 247, 245);
+  font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(250, 247, 245);
+  font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
   color: rgb(250, 247, 245);
@@ -1933,15 +1847,31 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(250, 247, 245);
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(250, 247, 245);
-  border-left-color: rgb(250, 247, 245);
-  border-right-color: rgb(250, 247, 245);
-  border-top-color: rgb(250, 247, 245);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(250, 247, 245);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(33, 42, 61);
+  border-color: rgb(250, 247, 245);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(250, 247, 245);
+  color: rgb(250, 247, 245);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgba(210, 214, 223, 0.1);
   border-left-color: rgba(210, 214, 223, 0.1);
   border-right-color: rgba(210, 214, 223, 0.1);
@@ -1957,6 +1887,59 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(250, 247, 245);
   color: rgb(250, 247, 245);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgba(210, 214, 223, 0.1);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(0, 212, 250, 0.1);
+  border-radius: 4px;
+  color: rgb(0, 212, 250);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(22, 29, 44);
+  color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(250, 247, 245);
+  border-left-color: rgb(250, 247, 245);
+  border-right-color: rgb(250, 247, 245);
+  border-top-color: rgb(250, 247, 245);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(33, 42, 61);
+  border-color: rgb(250, 247, 245);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(33, 42, 61);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(250, 247, 245);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(250, 247, 245);
+  border-left-color: rgb(250, 247, 245);
+  border-right-color: rgb(250, 247, 245);
+  border-top-color: rgb(250, 247, 245);
+  color: rgb(250, 247, 245);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -2321,6 +2304,23 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-items-background: hsl(0, 34.3%, 97.3%) !important;
   --setting-items-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --setting-items-radius: 6px !important;
+  --shiki-active-tab-border-color: rgb(0, 0, 0) !important;
+  --shiki-code-background: rgb(23, 35, 62) !important;
+  --shiki-code-block-border-radius: 2px !important;
+  --shiki-code-comment: rgb(0, 0, 0) !important;
+  --shiki-code-function: rgb(30, 169, 67) !important;
+  --shiki-code-important: rgb(220, 95, 0) !important;
+  --shiki-code-keyword: rgb(220, 100, 210) !important;
+  --shiki-code-normal: rgb(0, 0, 0) !important;
+  --shiki-code-property: rgb(0, 202, 235) !important;
+  --shiki-code-punctuation: rgb(0, 0, 0) !important;
+  --shiki-code-string: rgb(230, 205, 90) !important;
+  --shiki-code-value: rgb(140, 110, 240) !important;
+  --shiki-gutter-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
+  --shiki-gutter-text-color: rgb(0, 0, 0) !important;
+  --shiki-gutter-text-color-highlight: rgb(0, 0, 0) !important;
+  --shiki-highlight-neutral: rgb(0, 0, 0) !important;
+  --shiki-terminal-dots-color: rgb(0, 0, 0) !important;
   --slider-thumb-border-color: hsla(0, 19.6%, 15%, 0.1) !important;
   --slider-track-background: hsla(0, 19.6%, 15%, 0.1) !important;
   --ss-border-radius: 0.1px !important;
@@ -2423,54 +2423,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(254, 253, 253);
-  border-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .note-properties {
-  border-color: rgba(46, 31, 31, 0.1);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(224, 41, 41, 0.1);
-  border-radius: 4px;
-  color: rgb(224, 41, 41);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(0, 0, 0);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(250, 246, 246);
   color: rgb(0, 0, 0);
@@ -2484,34 +2436,29 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(250, 246, 246);
   border-left-color: rgba(0, 0, 0, 0);
   color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(254, 253, 253);
-  color: rgb(0, 0, 0);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(0, 0, 0);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(0, 0, 0);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(0, 0, 0);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(0, 0, 0);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(0, 0, 0) none 0px;
@@ -2554,21 +2501,21 @@ html[saved-theme="light"] body p {
   outline: rgb(0, 0, 0) none 0px;
   text-decoration-color: rgb(0, 0, 0);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(224, 41, 41);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(224, 41, 41) none 0px;
   text-decoration-color: rgb(224, 41, 41);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(224, 41, 41);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(224, 41, 41) none 0px;
   text-decoration-color: rgb(224, 41, 41);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(224, 41, 41);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   outline: rgb(224, 41, 41) none 0px;
@@ -2585,13 +2532,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2640,31 +2580,6 @@ html[saved-theme="light"] body th {
   color: rgb(0, 0, 0);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(227, 227, 227);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-left-color: rgb(227, 227, 227);
-  border-right-color: rgb(227, 227, 227);
-  border-top-color: rgb(227, 227, 227);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  color: rgb(227, 227, 227);
-  font-family: "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(23, 35, 62);
-  border-bottom-color: rgba(46, 31, 31, 0.1);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-left-color: rgba(46, 31, 31, 0.1);
-  border-right-color: rgba(46, 31, 31, 0.1);
-  border-top-color: rgba(46, 31, 31, 0.1);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(23, 35, 62);
   border-bottom-color: rgba(46, 31, 31, 0.1);
   border-bottom-left-radius: 2px;
@@ -2676,33 +2591,6 @@ html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-re
   border-top-right-radius: 2px;
   color: rgb(227, 227, 227);
   font-family: "??", "??", "iA Writer Mono S", "IBM Plex Mono", "Roboto Mono", Menlo, SFMono-Regular, Consolas, "Source Code Pro", monospace;
-}
-
-html[saved-theme="light"] body pre > code > [data-line] {
-  border-left-color: rgb(230, 205, 90);
-}
-
-html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(230, 205, 90);
-}
-
-html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(230, 205, 90);
-  border-left-color: rgb(230, 205, 90);
-  border-right-color: rgb(230, 205, 90);
-  border-top-color: rgb(230, 205, 90);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(23, 35, 62);
-  border-bottom-color: rgba(46, 31, 31, 0.1);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-left-color: rgba(46, 31, 31, 0.1);
-  border-right-color: rgba(46, 31, 31, 0.1);
-  border-top-color: rgba(46, 31, 31, 0.1);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -2725,14 +2613,18 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(0, 0, 0);
-  font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html[saved-theme="light"] body figure {
   border-bottom-color: rgb(0, 0, 0);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   border-left-color: rgb(0, 0, 0);
   border-right-color: rgb(0, 0, 0);
   border-top-color: rgb(0, 0, 0);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 html[saved-theme="light"] body img {
@@ -3765,7 +3657,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(224, 41, 41, 0.1);
   border-bottom-color: rgba(224, 41, 41, 0.15);
   border-bottom-left-radius: 4px;
@@ -3778,13 +3670,18 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(224, 41, 41);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(0, 0, 0);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(0, 0, 0);
+  font-size: 26px;
 }
 
 html[saved-theme="light"] body h2 {
@@ -3842,18 +3739,18 @@ html[saved-theme="light"] body hr {
   border-top-width: 2px;
   padding-left: 12px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(0, 0, 0);
-  font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(0, 0, 0);
-  font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-
-html[saved-theme="light"] body .explorer .folder-outer > ul {
+    explorer: `html[saved-theme="light"] body .nav-files-container .tree-item-children {
   border-left-color: rgb(224, 41, 41);
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(0, 0, 0);
+  font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(0, 0, 0);
+  font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
   color: rgb(0, 0, 0);
@@ -3958,15 +3855,31 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(0, 0, 0);
   font-family: "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(254, 253, 253);
+  border-color: rgb(0, 0, 0);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgba(46, 31, 31, 0.1);
   border-left-color: rgba(46, 31, 31, 0.1);
   border-right-color: rgba(46, 31, 31, 0.1);
@@ -3982,6 +3895,59 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   font-family: "??", "??", "Franklin Gothic Book", Rubik, "Helvetica Neue", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgba(46, 31, 31, 0.1);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(224, 41, 41, 0.1);
+  border-radius: 4px;
+  color: rgb(224, 41, 41);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(254, 253, 253);
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(250, 246, 246);
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(250, 246, 246);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(0, 0, 0);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .navigation-progress {

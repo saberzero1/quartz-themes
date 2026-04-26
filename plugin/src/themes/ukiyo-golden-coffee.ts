@@ -216,6 +216,17 @@ export const theme: ThemeData = {
   --setting-group-heading-size: 16px !important;
   --setting-items-background: #4f3626 !important;
   --setting-items-border-color: #5f4630 !important;
+  --shiki-active-tab-border-color: #b9987c !important;
+  --shiki-code-background: #4f3626 !important;
+  --shiki-code-comment: #ac8b6e !important;
+  --shiki-code-normal: #b9987c !important;
+  --shiki-code-punctuation: #b9987c !important;
+  --shiki-gutter-border-color: #5f4630 !important;
+  --shiki-gutter-text-color: #ac8b6e !important;
+  --shiki-gutter-text-color-highlight: #b9987c !important;
+  --shiki-highlight-neutral: #b9987c !important;
+  --shiki-terminal-dots-color: #ac8b6e !important;
+  --shiki-tooltip-background: #2c1e14 !important;
   --slider-thumb-border-color: #5f4630 !important;
   --slider-track-background: #5f4630 !important;
   --status-bar-background: #473224 !important;
@@ -288,53 +299,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(223, 194, 160);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgb(95, 70, 48);
-  color: rgb(223, 194, 160);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(223, 194, 160);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(223, 194, 160);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(223, 194, 160);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(223, 194, 160);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(71, 50, 36);
-  border-color: rgb(223, 194, 160);
-}
-
-html[saved-theme="dark"] body .note-properties {
-  border-color: rgb(95, 70, 48);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(185, 152, 124);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(185, 152, 124);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  border-radius: 4px;
-  color: rgb(230, 187, 87);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(185, 152, 124);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(71, 50, 36);
   color: rgb(223, 194, 160);
@@ -350,11 +314,6 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(223, 194, 160);
 }
 
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(64, 46, 34);
-  color: rgb(223, 194, 160);
-}
-
 html[saved-theme="dark"] body html {
   --cubic-animation: cubic-bezier(0.175, 0.9, 0.3, 1.1);
   --default-animation-duration: 150ms;
@@ -364,7 +323,7 @@ html[saved-theme="dark"] body html {
   --pop-callout-slide-out-duration: 700ms;
   --pop-callout-width: 20px;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(206, 99, 28);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(206, 99, 28) none 0px;
@@ -372,7 +331,7 @@ html[saved-theme="dark"] body html {
   transition: background-color 0.1s ease-in-out;
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(218, 149, 23);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(218, 149, 23) none 0px;
@@ -380,7 +339,7 @@ html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em 
   transition: background-color 0.1s ease-in-out;
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(218, 149, 23);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(218, 149, 23) none 0px;
@@ -388,7 +347,7 @@ html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
   transition: background-color 0.1s ease-in-out;
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(206, 99, 28);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(206, 99, 28) none 0px;
@@ -437,7 +396,7 @@ html[saved-theme="dark"] body p {
   outline: rgb(185, 152, 124) none 0px;
   text-decoration-color: rgb(185, 152, 124);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(230, 187, 87);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(230, 187, 87) none 0px;
@@ -445,7 +404,7 @@ html[saved-theme="dark"] body p {
   transition: background-color 0.1s ease-in-out;
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(230, 187, 87);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(230, 187, 87) none 0px;
@@ -453,7 +412,7 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   transition: filter 0.1s ease-in-out;
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(230, 187, 87);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(230, 187, 87) none 0px;
@@ -469,13 +428,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(223, 194, 160);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(223, 194, 160);
-  border-left-color: rgb(223, 194, 160);
-  border-right-color: rgb(223, 194, 160);
-  border-top-color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -538,41 +490,13 @@ html[saved-theme="dark"] body tr {
   border-bottom-color: rgb(100, 74, 51);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(223, 194, 160);
-  border-left-color: rgb(223, 194, 160);
-  border-right-color: rgb(223, 194, 160);
-  border-top-color: rgb(223, 194, 160);
+  background-color: rgb(79, 54, 38);
+  border-bottom-color: rgb(95, 70, 48);
+  border-left-color: rgb(95, 70, 48);
+  border-right-color: rgb(95, 70, 48);
+  border-top-color: rgb(95, 70, 48);
   color: rgb(223, 194, 160);
   font-family: "??", "??", "JetBrains Mono";
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(79, 54, 38);
-  border-bottom-color: rgb(95, 70, 48);
-  border-left-color: rgb(95, 70, 48);
-  border-right-color: rgb(95, 70, 48);
-  border-top-color: rgb(95, 70, 48);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(79, 54, 38);
-  border-bottom-color: rgb(95, 70, 48);
-  border-left-color: rgb(95, 70, 48);
-  border-right-color: rgb(95, 70, 48);
-  border-top-color: rgb(95, 70, 48);
-  color: rgb(223, 194, 160);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(79, 54, 38);
-  border-bottom-color: rgb(95, 70, 48);
-  border-left-color: rgb(95, 70, 48);
-  border-right-color: rgb(95, 70, 48);
-  border-top-color: rgb(95, 70, 48);
-  padding-bottom: 4px;
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 4px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
@@ -581,10 +505,6 @@ html[saved-theme="dark"] body pre:has(> code) {
   border-left-color: rgb(95, 70, 48);
   border-right-color: rgb(95, 70, 48);
   border-top-color: rgb(95, 70, 48);
-  padding-bottom: 4px;
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 4px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(223, 194, 160);
@@ -595,7 +515,7 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(223, 194, 160);
-  font-family: "??", "??", "CMU Typewriter Text";
+  font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
 html[saved-theme="dark"] body figure {
@@ -1714,7 +1634,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(223, 194, 160);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-top-left-radius: 4px;
@@ -1722,13 +1642,17 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(230, 187, 87);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(223, 194, 160);
   font-family: "??", "??", "CMU Typewriter Text";
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1777,12 +1701,12 @@ html[saved-theme="dark"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(185, 152, 124);
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(185, 152, 124);
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }`,
@@ -1888,15 +1812,31 @@ html[saved-theme="dark"] body .breadcrumb-element p {
   color: rgb(172, 139, 110);
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(223, 194, 160);
-  border-left-color: rgb(223, 194, 160);
-  border-right-color: rgb(223, 194, 160);
-  border-top-color: rgb(223, 194, 160);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(223, 194, 160);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
   color: rgb(223, 194, 160);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(223, 194, 160);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(223, 194, 160);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(71, 50, 36);
+  border-color: rgb(223, 194, 160);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(95, 70, 48);
+  color: rgb(223, 194, 160);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   border-bottom-color: rgb(95, 70, 48);
   border-left-color: rgb(95, 70, 48);
   border-right-color: rgb(95, 70, 48);
@@ -1915,6 +1855,58 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(185, 152, 124);
   color: rgb(185, 152, 124);
   font-family: "??", "??", "CMU Typewriter Text";
+}
+
+html[saved-theme="dark"] body .note-properties {
+  border-color: rgb(95, 70, 48);
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(185, 152, 124);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(185, 152, 124);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  border-radius: 4px;
+  color: rgb(230, 187, 87);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(185, 152, 124);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(64, 46, 34);
+  color: rgb(223, 194, 160);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(223, 194, 160);
+  border-left-color: rgb(223, 194, 160);
+  border-right-color: rgb(223, 194, 160);
+  border-top-color: rgb(223, 194, 160);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(71, 50, 36);
+  border-color: rgb(223, 194, 160);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(71, 50, 36);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(223, 194, 160);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(223, 194, 160);
+  border-left-color: rgb(223, 194, 160);
+  border-right-color: rgb(223, 194, 160);
+  border-top-color: rgb(223, 194, 160);
+  color: rgb(223, 194, 160);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -2225,6 +2217,27 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-group-heading-size: 16px !important;
   --setting-items-background: #fcebd9 !important;
   --setting-items-border-color: #e0c1a0 !important;
+  --shiki-active-tab-border-color: #cf8a3a !important;
+  --shiki-code-background: #f5dcc3 !important;
+  --shiki-code-comment: #c37e30 !important;
+  --shiki-code-function: #01903b !important;
+  --shiki-code-important: #c16d18 !important;
+  --shiki-code-keyword: #bf206d !important;
+  --shiki-code-normal: #cf8a3a !important;
+  --shiki-code-property: #009e9b !important;
+  --shiki-code-punctuation: #cf8a3a !important;
+  --shiki-code-string: #977400 !important;
+  --shiki-code-value: #5f38d6 !important;
+  --shiki-gutter-border-color: #e0c1a0 !important;
+  --shiki-gutter-text-color: #c37e30 !important;
+  --shiki-gutter-text-color-highlight: #cf8a3a !important;
+  --shiki-highlight-green: rgba(1, 144, 59, 0.5) !important;
+  --shiki-highlight-green-background: rgba(1, 144, 59, 0.1) !important;
+  --shiki-highlight-neutral: #cf8a3a !important;
+  --shiki-highlight-red: rgba(207, 30, 51, 0.5) !important;
+  --shiki-highlight-red-background: rgba(207, 30, 51, 0.1) !important;
+  --shiki-terminal-dots-color: #c37e30 !important;
+  --shiki-tooltip-background: #2c1e14 !important;
   --slider-thumb-border-color: #e0c1a0 !important;
   --slider-track-background: #e0c1a0 !important;
   --status-bar-background: #fae7d2 !important;
@@ -2308,53 +2321,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(151, 101, 60);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgb(224, 193, 160);
-  color: rgb(151, 101, 60);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(151, 101, 60);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(151, 101, 60);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(151, 101, 60);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(151, 101, 60);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(255, 243, 231);
-  border-color: rgb(151, 101, 60);
-}
-
-html[saved-theme="light"] body .note-properties {
-  border-color: rgb(224, 193, 160);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(207, 138, 58);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(207, 138, 58);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  border-radius: 4px;
-  color: rgb(216, 57, 57);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(207, 138, 58);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(250, 231, 210);
   color: rgb(151, 101, 60);
@@ -2370,11 +2336,6 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(151, 101, 60);
 }
 
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(255, 243, 231);
-  color: rgb(151, 101, 60);
-}
-
 html[saved-theme="light"] body html {
   --cubic-animation: cubic-bezier(0.175, 0.9, 0.3, 1.1);
   --default-animation-duration: 150ms;
@@ -2384,7 +2345,7 @@ html[saved-theme="light"] body html {
   --pop-callout-slide-out-duration: 700ms;
   --pop-callout-width: 20px;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(179, 107, 41);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(179, 107, 41) none 0px;
@@ -2392,7 +2353,7 @@ html[saved-theme="light"] body html {
   transition: background-color 0.1s ease-in-out;
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(216, 132, 5);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(216, 132, 5) none 0px;
@@ -2400,7 +2361,7 @@ html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] e
   transition: background-color 0.1s ease-in-out;
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(216, 132, 5);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(216, 132, 5) none 0px;
@@ -2408,7 +2369,7 @@ html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i 
   transition: background-color 0.1s ease-in-out;
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(179, 107, 41);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(179, 107, 41) none 0px;
@@ -2457,7 +2418,7 @@ html[saved-theme="light"] body p {
   outline: rgb(207, 138, 58) none 0px;
   text-decoration-color: rgb(207, 138, 58);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(216, 57, 57);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(216, 57, 57) none 0px;
@@ -2465,14 +2426,14 @@ html[saved-theme="light"] body p {
   transition: background-color 0.1s ease-in-out;
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(216, 57, 57);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(216, 57, 57) none 0px;
   text-decoration-color: rgb(216, 57, 57);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(216, 57, 57);
   font-family: "??", "??", "CMU Typewriter Text";
   outline: rgb(216, 57, 57) none 0px;
@@ -2487,13 +2448,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(151, 101, 60);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(151, 101, 60);
-  border-left-color: rgb(151, 101, 60);
-  border-right-color: rgb(151, 101, 60);
-  border-top-color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -2556,56 +2510,13 @@ html[saved-theme="light"] body tr {
   border-bottom-color: rgb(214, 176, 134);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(151, 101, 60);
-  border-left-color: rgb(151, 101, 60);
-  border-right-color: rgb(151, 101, 60);
-  border-top-color: rgb(151, 101, 60);
+  background-color: rgb(245, 220, 195);
+  border-bottom-color: rgb(224, 193, 160);
+  border-left-color: rgb(224, 193, 160);
+  border-right-color: rgb(224, 193, 160);
+  border-top-color: rgb(224, 193, 160);
   color: rgb(151, 101, 60);
   font-family: "??", "??", "JetBrains Mono";
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(245, 220, 195);
-  border-bottom-color: rgb(224, 193, 160);
-  border-left-color: rgb(224, 193, 160);
-  border-right-color: rgb(224, 193, 160);
-  border-top-color: rgb(224, 193, 160);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(245, 220, 195);
-  border-bottom-color: rgb(224, 193, 160);
-  border-left-color: rgb(224, 193, 160);
-  border-right-color: rgb(224, 193, 160);
-  border-top-color: rgb(224, 193, 160);
-  color: rgb(151, 101, 60);
-}
-
-html[saved-theme="light"] body pre > code > [data-line] {
-  border-left-color: rgb(151, 116, 0);
-}
-
-html[saved-theme="light"] body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(151, 116, 0);
-}
-
-html[saved-theme="light"] body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(151, 116, 0);
-  border-left-color: rgb(151, 116, 0);
-  border-right-color: rgb(151, 116, 0);
-  border-top-color: rgb(151, 116, 0);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(245, 220, 195);
-  border-bottom-color: rgb(224, 193, 160);
-  border-left-color: rgb(224, 193, 160);
-  border-right-color: rgb(224, 193, 160);
-  border-top-color: rgb(224, 193, 160);
-  padding-bottom: 4px;
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 4px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
@@ -2614,10 +2525,6 @@ html[saved-theme="light"] body pre:has(> code) {
   border-left-color: rgb(224, 193, 160);
   border-right-color: rgb(224, 193, 160);
   border-top-color: rgb(224, 193, 160);
-  padding-bottom: 4px;
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 4px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(151, 101, 60);
@@ -2628,7 +2535,7 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(151, 101, 60);
-  font-family: "??", "??", "CMU Typewriter Text";
+  font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
 html[saved-theme="light"] body figure {
@@ -3933,7 +3840,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(151, 101, 60);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   border-top-left-radius: 4px;
@@ -3941,13 +3848,17 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(216, 57, 57);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(151, 101, 60);
   font-family: "??", "??", "CMU Typewriter Text";
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body h2 {
@@ -3999,12 +3910,12 @@ html[saved-theme="light"] body hr {
   padding-right: 0px;
   padding-top: 0px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(207, 138, 58);
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(207, 138, 58);
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }`,
@@ -4110,15 +4021,31 @@ html[saved-theme="light"] body .breadcrumb-element p {
   color: rgb(195, 126, 48);
   font-family: "??", "??", "??", "CMU Typewriter Text";
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(151, 101, 60);
-  border-left-color: rgb(151, 101, 60);
-  border-right-color: rgb(151, 101, 60);
-  border-top-color: rgb(151, 101, 60);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(151, 101, 60);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(151, 101, 60);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(151, 101, 60);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(151, 101, 60);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(255, 243, 231);
+  border-color: rgb(151, 101, 60);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(224, 193, 160);
+  color: rgb(151, 101, 60);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(224, 193, 160);
   border-left-color: rgb(224, 193, 160);
   border-right-color: rgb(224, 193, 160);
@@ -4137,6 +4064,58 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(207, 138, 58);
   color: rgb(207, 138, 58);
   font-family: "??", "??", "CMU Typewriter Text";
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(224, 193, 160);
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(207, 138, 58);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(207, 138, 58);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  border-radius: 4px;
+  color: rgb(216, 57, 57);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(207, 138, 58);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(255, 243, 231);
+  color: rgb(151, 101, 60);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(151, 101, 60);
+  border-left-color: rgb(151, 101, 60);
+  border-right-color: rgb(151, 101, 60);
+  border-top-color: rgb(151, 101, 60);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(250, 231, 210);
+  border-color: rgb(151, 101, 60);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(250, 231, 210);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(151, 101, 60);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(151, 101, 60);
+  border-left-color: rgb(151, 101, 60);
+  border-right-color: rgb(151, 101, 60);
+  border-top-color: rgb(151, 101, 60);
+  color: rgb(151, 101, 60);
 }
 
 html[saved-theme="light"] body .navigation-progress {

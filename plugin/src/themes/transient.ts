@@ -56,6 +56,8 @@ export const theme: ThemeData = {
   --ribbon-background-collapsed: transparent !important;
   --search-result-background: transparent !important;
   --setting-items-border-color: #191926 !important;
+  --shiki-code-background: #22223333 !important;
+  --shiki-gutter-border-color: #191926 !important;
   --slider-track-background: #191926 !important;
   --status-bar-background: transparent !important;
   --status-bar-border-color: #191926 !important;
@@ -87,18 +89,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   background-color: rgba(0, 0, 0, 0);
 }
 
-html body .bases-table thead th {
-  border-color: rgb(25, 25, 38);
-}
-
-html body .canvas-sidebar {
-  background-color: rgba(0, 0, 0, 0);
-}
-
-html body .note-properties {
-  border-color: rgb(25, 25, 38);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -110,10 +100,6 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgba(0, 0, 0, 0);
   border-left-color: rgb(25, 25, 38);
-}
-
-html body div#quartz-root {
-  background-color: rgba(0, 0, 0, 0);
 }`,
     tables: `html body td {
   border-bottom-color: rgb(25, 25, 38);
@@ -128,23 +114,7 @@ html body th {
   border-right-color: rgb(25, 25, 38);
   border-top-color: rgb(25, 25, 38);
 }`,
-    code: `html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgba(34, 34, 51, 0.2);
-  border-bottom-color: rgb(25, 25, 38);
-  border-left-color: rgb(25, 25, 38);
-  border-right-color: rgb(25, 25, 38);
-  border-top-color: rgb(25, 25, 38);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgba(34, 34, 51, 0.2);
-  border-bottom-color: rgb(25, 25, 38);
-  border-left-color: rgb(25, 25, 38);
-  border-right-color: rgb(25, 25, 38);
-  border-top-color: rgb(25, 25, 38);
-}
-
-html body pre > code, html pre:has(> code) {
+    code: `html body code {
   background-color: rgba(34, 34, 51, 0.2);
   border-bottom-color: rgb(25, 25, 38);
   border-left-color: rgb(25, 25, 38);
@@ -552,14 +522,34 @@ html body hr {
   border-right-color: rgb(25, 25, 38);
   border-top-color: rgb(25, 25, 38);
 }`,
-    misc: `html body .metadata {
+    canvas: `html body .canvas-sidebar {
+  background-color: rgba(0, 0, 0, 0);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgb(25, 25, 38);
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(25, 25, 38);
   border-left-color: rgb(25, 25, 38);
   border-right-color: rgb(25, 25, 38);
   border-top-color: rgb(25, 25, 38);
 }
 
-html body .navigation-progress {
+html body .note-properties {
+  border-color: rgb(25, 25, 38);
+}
+
+html body div#quartz-root {
+  background-color: rgba(0, 0, 0, 0);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(25, 25, 38);
+}`,
+    misc: `html body .navigation-progress {
   background-color: rgba(0, 0, 0, 0);
 }
 

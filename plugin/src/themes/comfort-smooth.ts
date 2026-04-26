@@ -119,6 +119,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: #bbc0c5 !important;
   --setting-items-background: #3b3f48 !important;
   --setting-items-border-color: #92a1a17a !important;
+  --shiki-active-tab-border-color: #bbc0c5 !important;
+  --shiki-code-background: #3b3f48 !important;
+  --shiki-code-comment: #a09b80 !important;
+  --shiki-code-normal: #bbc0c5 !important;
+  --shiki-code-punctuation: #bbc0c5 !important;
+  --shiki-gutter-border-color: #92a1a17a !important;
+  --shiki-gutter-text-color: #a09b80 !important;
+  --shiki-gutter-text-color-highlight: #bbc0c5 !important;
+  --shiki-highlight-neutral: #bbc0c5 !important;
+  --shiki-terminal-dots-color: #a09b80 !important;
   --slider-track-background: #92a1a17a !important;
   --status-bar-background: #202225 !important;
   --status-bar-border-color: #92a1a17a !important;
@@ -188,53 +198,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(187, 192, 197);
 }
 
-html body .bases-table thead th {
-  border-color: rgba(146, 161, 161, 0.48);
-  color: rgb(187, 192, 197);
-  font-weight: 800;
-}
-
-html body .canvas-node {
-  border-color: rgb(187, 192, 197);
-}
-
-html body .canvas-node-content {
-  color: rgb(187, 192, 197);
-}
-
-html body .canvas-node-file {
-  color: rgb(187, 192, 197);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(187, 192, 197);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(32, 34, 37);
-  border-color: rgb(187, 192, 197);
-}
-
-html body .note-properties {
-  border-color: rgba(146, 161, 161, 0.48);
-}
-
-html body .note-properties-key {
-  color: rgb(187, 192, 197);
-}
-
-html body .note-properties-row {
-  border-color: rgb(187, 192, 197);
-}
-
-html body .note-properties-tags {
-  color: rgba(255, 150, 64, 0.73);
-}
-
-html body .note-properties-value {
-  color: rgb(187, 192, 197);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(32, 34, 37);
   color: rgb(187, 192, 197);
@@ -248,32 +211,27 @@ html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(32, 34, 37);
   border-left-color: rgba(146, 161, 161, 0.48);
   color: rgb(187, 192, 197);
-}
-
-html body div#quartz-root {
-  background-color: rgb(47, 49, 54);
-  color: rgb(187, 192, 197);
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(202, 196, 188);
   font-weight: 550;
   outline: rgb(202, 196, 188) none 0px;
   text-decoration-color: rgb(202, 196, 188);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(186, 167, 109);
   outline: rgb(186, 167, 109) none 0px;
   text-decoration-color: rgb(186, 167, 109);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(186, 167, 109);
   outline: rgb(186, 167, 109) none 0px;
   text-decoration-color: rgb(186, 167, 109);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(202, 196, 188);
   font-weight: 550;
   outline: rgb(202, 196, 188) none 0px;
@@ -311,21 +269,21 @@ html body p {
   outline: rgb(187, 192, 197) none 0px;
   text-decoration-color: rgb(187, 192, 197);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(89, 162, 197);
   font-family: Avenir;
   outline: rgb(89, 162, 197) none 0px;
   text-decoration-color: rgb(89, 162, 197);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(89, 162, 197);
   font-family: Avenir;
   outline: rgb(89, 162, 197) none 0px;
   text-decoration-color: rgb(89, 162, 197);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(89, 162, 197);
   font-family: Avenir;
   outline: rgb(89, 162, 197) none 0px;
@@ -341,13 +299,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(187, 192, 197);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(187, 192, 197);
-  border-left-color: rgb(187, 192, 197);
-  border-right-color: rgb(187, 192, 197);
-  border-top-color: rgb(187, 192, 197);
 }
 
 html body ul > li {
@@ -402,44 +353,15 @@ html body tr {
 }`,
     code: `html body code {
   background-color: rgb(85, 89, 97);
-  border-bottom-color: rgb(213, 218, 221);
-  border-left-color: rgb(213, 218, 221);
-  border-right-color: rgb(213, 218, 221);
-  border-top-color: rgb(213, 218, 221);
+  border-bottom-color: rgba(146, 161, 161, 0.48);
+  border-left-color: rgba(146, 161, 161, 0.48);
+  border-right-color: rgba(146, 161, 161, 0.48);
+  border-top-color: rgba(146, 161, 161, 0.48);
   color: rgb(213, 218, 221);
-  padding-bottom: 6px;
-  padding-left: 6px;
-  padding-right: 6px;
-  padding-top: 6px;
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(59, 63, 72);
-  border-bottom-color: rgba(146, 161, 161, 0.48);
-  border-left-color: rgba(146, 161, 161, 0.48);
-  border-right-color: rgba(146, 161, 161, 0.48);
-  border-top-color: rgba(146, 161, 161, 0.48);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(59, 63, 72);
-  border-bottom-color: rgba(146, 161, 161, 0.48);
-  border-left-color: rgba(146, 161, 161, 0.48);
-  border-right-color: rgba(146, 161, 161, 0.48);
-  border-top-color: rgba(146, 161, 161, 0.48);
-  color: rgb(187, 192, 197);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(59, 63, 72);
-  border-bottom-color: rgba(146, 161, 161, 0.48);
-  border-left-color: rgba(146, 161, 161, 0.48);
-  border-right-color: rgba(146, 161, 161, 0.48);
-  border-top-color: rgba(146, 161, 161, 0.48);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
+  padding-bottom: 2.025px;
+  padding-left: 4.05px;
+  padding-right: 4.05px;
+  padding-top: 2.025px;
 }
 
 html body pre:has(> code) {
@@ -462,7 +384,6 @@ html body pre:has(> code) {
 
 html body figcaption {
   color: rgb(187, 192, 197);
-  font-size: 15px;
 }
 
 html body figure {
@@ -470,8 +391,6 @@ html body figure {
   border-left-color: rgb(187, 192, 197);
   border-right-color: rgb(187, 192, 197);
   border-top-color: rgb(187, 192, 197);
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
 
 html body img {
@@ -1359,12 +1278,16 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(187, 192, 197);
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgba(255, 150, 64, 0.73);
 }
 
 html body h1 {
   color: rgb(147, 155, 214);
+}
+
+html body h1.article-title {
+  color: rgb(187, 192, 197);
 }
 
 html body h2 {
@@ -1399,11 +1322,11 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(191, 191, 191);
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(191, 191, 191);
 }`,
     toc: `html body details.toc summary::marker {
@@ -1491,15 +1414,32 @@ html body .darkmode svg {
 html body .breadcrumb-element p {
   color: rgb(160, 155, 128);
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: rgb(187, 192, 197);
-  border-left-color: rgb(187, 192, 197);
-  border-right-color: rgb(187, 192, 197);
-  border-top-color: rgb(187, 192, 197);
+    canvas: `html body .canvas-node {
+  border-color: rgb(187, 192, 197);
+}
+
+html body .canvas-node-content {
   color: rgb(187, 192, 197);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  color: rgb(187, 192, 197);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(187, 192, 197);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(32, 34, 37);
+  border-color: rgb(187, 192, 197);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgba(146, 161, 161, 0.48);
+  color: rgb(187, 192, 197);
+  font-weight: 800;
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgba(146, 161, 161, 0.48);
   border-left-color: rgba(146, 161, 161, 0.48);
   border-right-color: rgba(146, 161, 161, 0.48);
@@ -1508,6 +1448,57 @@ html body .metadata {
 }
 
 html body .metadata-properties {
+  border-bottom-color: rgb(187, 192, 197);
+  border-left-color: rgb(187, 192, 197);
+  border-right-color: rgb(187, 192, 197);
+  border-top-color: rgb(187, 192, 197);
+  color: rgb(187, 192, 197);
+}
+
+html body .note-properties {
+  border-color: rgba(146, 161, 161, 0.48);
+}
+
+html body .note-properties-key {
+  color: rgb(187, 192, 197);
+}
+
+html body .note-properties-row {
+  border-color: rgb(187, 192, 197);
+}
+
+html body .note-properties-tags {
+  color: rgba(255, 150, 64, 0.73);
+}
+
+html body .note-properties-value {
+  color: rgb(187, 192, 197);
+}
+
+html body div#quartz-root {
+  background-color: rgb(47, 49, 54);
+  color: rgb(187, 192, 197);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(187, 192, 197);
+  border-left-color: rgb(187, 192, 197);
+  border-right-color: rgb(187, 192, 197);
+  border-top-color: rgb(187, 192, 197);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(32, 34, 37);
+  border-color: rgb(187, 192, 197);
+}
+
+html body .stacked-page-header {
+  background-color: rgba(12, 16, 24, 0.82);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(187, 192, 197);
+}`,
+    misc: `html body .katex-display {
   border-bottom-color: rgb(187, 192, 197);
   border-left-color: rgb(187, 192, 197);
   border-right-color: rgb(187, 192, 197);

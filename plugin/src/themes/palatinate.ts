@@ -81,7 +81,7 @@ html[saved-theme="dark"] body html {
   --header-font: 'Caveat Brush';
   --infobox-header: #F2EDFF;
 }`,
-    typography: `html[saved-theme="dark"] body article > h1 {
+    typography: `html[saved-theme="dark"] body .markdown-rendered > h1 {
   --font-weight: 700;
   background-color: rgba(0, 0, 0, 0);
   background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
@@ -248,6 +248,16 @@ html[saved-theme="dark"] body h5 {
     blockquotes: `html[saved-theme="dark"] body blockquote {
   padding-bottom: 10px;
   padding-top: 10px;
+}`,
+    code: `html[saved-theme="dark"] body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     checkboxes: `html[saved-theme="dark"] body input[type=checkbox] {
   border-bottom-color: rgb(218, 218, 218);
@@ -676,7 +686,7 @@ html[saved-theme="light"] body html {
   --header-font: 'Caveat Brush';
   --infobox-header: #F2EDFF;
 }`,
-    typography: `html[saved-theme="light"] body article > h1 {
+    typography: `html[saved-theme="light"] body .markdown-rendered > h1 {
   --font-weight: 700;
   background-color: rgba(0, 0, 0, 0);
   background-image: linear-gradient(to right, rgb(130, 114, 208), rgba(0, 0, 0, 0));
@@ -843,6 +853,16 @@ html[saved-theme="light"] body h5 {
     blockquotes: `html[saved-theme="light"] body blockquote {
   padding-bottom: 10px;
   padding-top: 10px;
+}`,
+    code: `html[saved-theme="light"] body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     checkboxes: `html[saved-theme="light"] body input[type=checkbox] {
   border-bottom-color: rgb(34, 34, 34);

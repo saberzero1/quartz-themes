@@ -381,6 +381,13 @@ export const theme: ThemeData = {
   --secondary: hsl(0, 0%, 90%) !important;
   --setting-group-heading-color: #d4d4d4 !important;
   --setting-items-background: #262626 !important;
+  --shiki-active-tab-border-color: #737373 !important;
+  --shiki-code-background: #262626 !important;
+  --shiki-code-block-border-radius: 0.125em !important;
+  --shiki-code-normal: #737373 !important;
+  --shiki-code-punctuation: #737373 !important;
+  --shiki-gutter-text-color-highlight: #737373 !important;
+  --shiki-highlight-neutral: #737373 !important;
   --status-bar-background: #171717 !important;
   --status-bar-border-color: #404040 !important;
   --status-bar-text-color: #737373 !important;
@@ -449,55 +456,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(212, 212, 212);
 }
 
-html[saved-theme="dark"] body .bases-table {
-  border-color: rgba(0, 0, 0, 0) rgb(128, 128, 128);
-}
-
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(212, 212, 212);
-  color: rgb(245, 245, 245);
-  font-weight: 400;
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(212, 212, 212);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(212, 212, 212);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(212, 212, 212);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(212, 212, 212);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(23, 23, 23);
-  border-color: rgb(64, 64, 64);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  color: rgb(115, 115, 115);
-}
-
-html[saved-theme="dark"] body .note-properties-row {
-  border-color: rgb(115, 115, 115);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0px;
-  color: rgb(245, 245, 245);
-}
-
-html[saved-theme="dark"] body .note-properties-value {
-  color: rgb(115, 115, 115);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(23, 23, 23);
   color: rgb(212, 212, 212);
@@ -511,61 +469,8 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(23, 23, 23);
   border-left-color: rgb(64, 64, 64);
   color: rgb(212, 212, 212);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(10, 10, 10);
-  color: rgb(212, 212, 212);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
-  color: rgb(245, 245, 245);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-weight: 900;
-  outline: rgb(245, 245, 245) none 0px;
-  text-decoration: 1px rgb(245, 245, 245);
-  text-decoration-color: rgb(245, 245, 245);
-  text-decoration-thickness: 1px;
-}
-
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
-  color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  outline: rgb(212, 212, 212) none 0px;
-  text-decoration: 1px rgb(212, 212, 212);
-  text-decoration-color: rgb(212, 212, 212);
-  text-decoration-thickness: 1px;
-}
-
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
-  color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  outline: rgb(212, 212, 212) none 0px;
-  text-decoration: 1px rgb(212, 212, 212);
-  text-decoration-color: rgb(212, 212, 212);
-  text-decoration-thickness: 1px;
-}
-
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
-  color: rgb(245, 245, 245);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-weight: 900;
-  outline: rgb(245, 245, 245) none 0px;
-  text-decoration: 1px rgb(245, 245, 245);
-  text-decoration-color: rgb(245, 245, 245);
-  text-decoration-thickness: 1px;
-}
-
-html[saved-theme="dark"] body .text-highlight {
-  background-color: rgb(230, 230, 230);
-  color: rgb(10, 10, 10);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  outline: rgb(10, 10, 10) none 0px;
-  text-decoration: 2px rgb(212, 212, 212);
-  text-decoration-color: rgb(212, 212, 212);
-  text-decoration-thickness: 2px;
-}
-
-html[saved-theme="dark"] body article > h1 {
+    typography: `html[saved-theme="dark"] body .markdown-rendered > h1 {
   --font-weight: 700;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(115, 115, 115);
@@ -595,6 +500,54 @@ html[saved-theme="dark"] body article > h1 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
+  color: rgb(245, 245, 245);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  outline: rgb(245, 245, 245) none 0px;
+  text-decoration: 1px rgb(245, 245, 245);
+  text-decoration-color: rgb(245, 245, 245);
+  text-decoration-thickness: 1px;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
+  color: rgb(212, 212, 212);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  outline: rgb(212, 212, 212) none 0px;
+  text-decoration: 1px rgb(212, 212, 212);
+  text-decoration-color: rgb(212, 212, 212);
+  text-decoration-thickness: 1px;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: rgb(212, 212, 212);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  outline: rgb(212, 212, 212) none 0px;
+  text-decoration: 1px rgb(212, 212, 212);
+  text-decoration-color: rgb(212, 212, 212);
+  text-decoration-thickness: 1px;
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
+  color: rgb(245, 245, 245);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  outline: rgb(245, 245, 245) none 0px;
+  text-decoration: 1px rgb(245, 245, 245);
+  text-decoration-color: rgb(245, 245, 245);
+  text-decoration-thickness: 1px;
+}
+
+html[saved-theme="dark"] body .text-highlight {
+  background-color: rgb(230, 230, 230);
+  color: rgb(10, 10, 10);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  outline: rgb(10, 10, 10) none 0px;
+  text-decoration: 2px rgb(212, 212, 212);
+  text-decoration-color: rgb(212, 212, 212);
+  text-decoration-thickness: 2px;
 }
 
 html[saved-theme="dark"] body del {
@@ -787,7 +740,7 @@ html[saved-theme="dark"] body p {
   outline: rgb(115, 115, 115) none 0px;
   text-decoration-color: rgb(115, 115, 115);
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(217, 217, 217);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(217, 217, 217) none 0px;
@@ -796,7 +749,7 @@ html[saved-theme="dark"] body p {
   text-decoration-thickness: 1px;
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(217, 217, 217);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(217, 217, 217) none 0px;
@@ -805,7 +758,7 @@ html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-c
   text-decoration-thickness: 1px;
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgba(230, 230, 230, 0.9);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgba(230, 230, 230, 0.9) none 0px;
@@ -824,13 +777,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(212, 212, 212);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(212, 212, 212);
-  border-left-color: rgb(212, 212, 212);
-  border-right-color: rgb(212, 212, 212);
-  border-top-color: rgb(212, 212, 212);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -907,73 +853,25 @@ html[saved-theme="dark"] body tr {
   border-top-color: rgba(0, 0, 0, 0);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(212, 212, 212);
-  border-bottom-left-radius: 1.75px;
-  border-bottom-right-radius: 1.75px;
-  border-left-color: rgb(212, 212, 212);
-  border-right-color: rgb(212, 212, 212);
-  border-top-color: rgb(212, 212, 212);
-  border-top-left-radius: 1.75px;
-  border-top-right-radius: 1.75px;
-  color: rgb(212, 212, 212);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-right-color: rgb(115, 115, 115);
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: rgb(115, 115, 115);
   font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(23, 23, 23);
-  border-bottom-color: rgb(64, 64, 64);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(64, 64, 64);
-  border-left-width: 1px;
-  border-right-color: rgb(64, 64, 64);
-  border-right-width: 1px;
-  border-top-color: rgb(64, 64, 64);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-top-width: 1px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(23, 23, 23);
-  border-bottom-color: rgb(64, 64, 64);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(64, 64, 64);
-  border-left-width: 1px;
-  border-right-color: rgb(64, 64, 64);
-  border-right-width: 1px;
-  border-top-color: rgb(64, 64, 64);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-top-width: 1px;
-  color: rgb(212, 212, 212);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(23, 23, 23);
-  border-bottom-color: rgb(64, 64, 64);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(64, 64, 64);
-  border-left-width: 1px;
-  border-right-color: rgb(64, 64, 64);
-  border-right-width: 1px;
-  border-top-color: rgb(64, 64, 64);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-top-width: 1px;
-  padding-bottom: 20px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 20px;
+  padding-bottom: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 12px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
-  background-color: rgb(23, 23, 23);
+  background-color: rgb(38, 38, 38);
   border-bottom-color: rgb(64, 64, 64);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -1000,14 +898,18 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(212, 212, 212);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body figure {
   border-bottom-color: rgb(212, 212, 212);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   border-left-color: rgb(212, 212, 212);
   border-right-color: rgb(212, 212, 212);
   border-top-color: rgb(212, 212, 212);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 html[saved-theme="dark"] body img {
@@ -2865,7 +2767,7 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(212, 212, 212);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgba(230, 230, 230, 0.5);
   border-bottom-left-radius: 0px;
@@ -2882,13 +2784,19 @@ html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .sea
   font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(245, 245, 245);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(245, 245, 245);
+  font-size: 32px;
+  font-weight: 900;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -2941,12 +2849,12 @@ html[saved-theme="dark"] body hr {
   padding-right: 16px;
   padding-top: 8px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(212, 212, 212);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }`,
@@ -3057,15 +2965,36 @@ html[saved-theme="dark"] body .darkmode svg {
 html[saved-theme="dark"] body .breadcrumb-element p {
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }`,
-    misc: `html[saved-theme="dark"] body .katex-display {
-  border-bottom-color: rgb(245, 245, 245);
-  border-left-color: rgb(245, 245, 245);
-  border-right-color: rgb(245, 245, 245);
-  border-top-color: rgb(245, 245, 245);
-  color: rgb(245, 245, 245);
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(212, 212, 212);
 }
 
-html[saved-theme="dark"] body .metadata {
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(212, 212, 212);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(212, 212, 212);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(212, 212, 212);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(23, 23, 23);
+  border-color: rgb(64, 64, 64);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table {
+  border-color: rgba(0, 0, 0, 0) rgb(128, 128, 128);
+}
+
+html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(212, 212, 212);
+  color: rgb(245, 245, 245);
+  font-weight: 400;
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
@@ -3077,6 +3006,55 @@ html[saved-theme="dark"] body .metadata-properties {
   border-top-color: rgb(115, 115, 115);
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="dark"] body .note-properties-key {
+  color: rgb(115, 115, 115);
+}
+
+html[saved-theme="dark"] body .note-properties-row {
+  border-color: rgb(115, 115, 115);
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+  color: rgb(245, 245, 245);
+}
+
+html[saved-theme="dark"] body .note-properties-value {
+  color: rgb(115, 115, 115);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(10, 10, 10);
+  color: rgb(212, 212, 212);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(212, 212, 212);
+  border-left-color: rgb(212, 212, 212);
+  border-right-color: rgb(212, 212, 212);
+  border-top-color: rgb(212, 212, 212);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(23, 23, 23);
+  border-color: rgb(212, 212, 212);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(10, 10, 10);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(212, 212, 212);
+}`,
+    misc: `html[saved-theme="dark"] body .katex-display {
+  border-bottom-color: rgb(245, 245, 245);
+  border-left-color: rgb(245, 245, 245);
+  border-right-color: rgb(245, 245, 245);
+  border-top-color: rgb(245, 245, 245);
+  color: rgb(245, 245, 245);
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -3534,6 +3512,13 @@ html[saved-theme="dark"] body ul.tags > li {
   --secondary: hsl(0, 0%, 10%) !important;
   --setting-group-heading-color: #404040 !important;
   --setting-items-background: #e5e5e5 !important;
+  --shiki-active-tab-border-color: #737373 !important;
+  --shiki-code-background: #e5e5e5 !important;
+  --shiki-code-block-border-radius: 0.125em !important;
+  --shiki-code-normal: #737373 !important;
+  --shiki-code-punctuation: #737373 !important;
+  --shiki-gutter-text-color-highlight: #737373 !important;
+  --shiki-highlight-neutral: #737373 !important;
   --status-bar-background: #f5f5f5 !important;
   --status-bar-border-color: #d4d4d4 !important;
   --status-bar-text-color: #737373 !important;
@@ -3602,55 +3587,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(64, 64, 64);
 }
 
-html[saved-theme="light"] body .bases-table {
-  border-color: rgba(0, 0, 0, 0) rgb(128, 128, 128);
-}
-
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(64, 64, 64);
-  color: rgb(23, 23, 23);
-  font-weight: 400;
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(245, 245, 245);
-  border-color: rgb(212, 212, 212);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  color: rgb(115, 115, 115);
-}
-
-html[saved-theme="light"] body .note-properties-row {
-  border-color: rgb(115, 115, 115);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 0px;
-  color: rgb(23, 23, 23);
-}
-
-html[saved-theme="light"] body .note-properties-value {
-  color: rgb(115, 115, 115);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(245, 245, 245);
   color: rgb(64, 64, 64);
@@ -3664,61 +3600,8 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(245, 245, 245);
   border-left-color: rgb(212, 212, 212);
   color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(250, 250, 250);
-  color: rgb(64, 64, 64);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
-  color: rgb(23, 23, 23);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-weight: 900;
-  outline: rgb(23, 23, 23) none 0px;
-  text-decoration: 1px rgb(23, 23, 23);
-  text-decoration-color: rgb(23, 23, 23);
-  text-decoration-thickness: 1px;
-}
-
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
-  color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  outline: rgb(64, 64, 64) none 0px;
-  text-decoration: 1px rgb(64, 64, 64);
-  text-decoration-color: rgb(64, 64, 64);
-  text-decoration-thickness: 1px;
-}
-
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
-  color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  outline: rgb(64, 64, 64) none 0px;
-  text-decoration: 1px rgb(64, 64, 64);
-  text-decoration-color: rgb(64, 64, 64);
-  text-decoration-thickness: 1px;
-}
-
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
-  color: rgb(23, 23, 23);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  font-weight: 900;
-  outline: rgb(23, 23, 23) none 0px;
-  text-decoration: 1px rgb(23, 23, 23);
-  text-decoration-color: rgb(23, 23, 23);
-  text-decoration-thickness: 1px;
-}
-
-html[saved-theme="light"] body .text-highlight {
-  background-color: rgb(26, 26, 26);
-  color: rgb(250, 250, 250);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
-  outline: rgb(250, 250, 250) none 0px;
-  text-decoration: 2px rgb(64, 64, 64);
-  text-decoration-color: rgb(64, 64, 64);
-  text-decoration-thickness: 2px;
-}
-
-html[saved-theme="light"] body article > h1 {
+    typography: `html[saved-theme="light"] body .markdown-rendered > h1 {
   --font-weight: 700;
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgb(115, 115, 115);
@@ -3748,6 +3631,54 @@ html[saved-theme="light"] body article > h1 {
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 0px;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
+  color: rgb(23, 23, 23);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  outline: rgb(23, 23, 23) none 0px;
+  text-decoration: 1px rgb(23, 23, 23);
+  text-decoration-color: rgb(23, 23, 23);
+  text-decoration-thickness: 1px;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
+  color: rgb(64, 64, 64);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  outline: rgb(64, 64, 64) none 0px;
+  text-decoration: 1px rgb(64, 64, 64);
+  text-decoration-color: rgb(64, 64, 64);
+  text-decoration-thickness: 1px;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: rgb(64, 64, 64);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  outline: rgb(64, 64, 64) none 0px;
+  text-decoration: 1px rgb(64, 64, 64);
+  text-decoration-color: rgb(64, 64, 64);
+  text-decoration-thickness: 1px;
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
+  color: rgb(23, 23, 23);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  outline: rgb(23, 23, 23) none 0px;
+  text-decoration: 1px rgb(23, 23, 23);
+  text-decoration-color: rgb(23, 23, 23);
+  text-decoration-thickness: 1px;
+}
+
+html[saved-theme="light"] body .text-highlight {
+  background-color: rgb(26, 26, 26);
+  color: rgb(250, 250, 250);
+  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  outline: rgb(250, 250, 250) none 0px;
+  text-decoration: 2px rgb(64, 64, 64);
+  text-decoration-color: rgb(64, 64, 64);
+  text-decoration-thickness: 2px;
 }
 
 html[saved-theme="light"] body del {
@@ -3940,7 +3871,7 @@ html[saved-theme="light"] body p {
   outline: rgb(115, 115, 115) none 0px;
   text-decoration-color: rgb(115, 115, 115);
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(13, 13, 13);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(13, 13, 13) none 0px;
@@ -3949,7 +3880,7 @@ html[saved-theme="light"] body p {
   text-decoration-thickness: 1px;
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(13, 13, 13);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgb(13, 13, 13) none 0px;
@@ -3958,7 +3889,7 @@ html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb
   text-decoration-thickness: 1px;
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgba(26, 26, 26, 0.9);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
   outline: rgba(26, 26, 26, 0.9) none 0px;
@@ -3977,13 +3908,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(64, 64, 64);
-  border-left-color: rgb(64, 64, 64);
-  border-right-color: rgb(64, 64, 64);
-  border-top-color: rgb(64, 64, 64);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -4060,73 +3984,25 @@ html[saved-theme="light"] body tr {
   border-top-color: rgba(0, 0, 0, 0);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(64, 64, 64);
-  border-bottom-left-radius: 1.75px;
-  border-bottom-right-radius: 1.75px;
-  border-left-color: rgb(64, 64, 64);
-  border-right-color: rgb(64, 64, 64);
-  border-top-color: rgb(64, 64, 64);
-  border-top-left-radius: 1.75px;
-  border-top-right-radius: 1.75px;
-  color: rgb(64, 64, 64);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgb(115, 115, 115);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left-color: rgb(115, 115, 115);
+  border-right-color: rgb(115, 115, 115);
+  border-top-color: rgb(115, 115, 115);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: rgb(115, 115, 115);
   font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(245, 245, 245);
-  border-bottom-color: rgb(212, 212, 212);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(212, 212, 212);
-  border-left-width: 1px;
-  border-right-color: rgb(212, 212, 212);
-  border-right-width: 1px;
-  border-top-color: rgb(212, 212, 212);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-top-width: 1px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(245, 245, 245);
-  border-bottom-color: rgb(212, 212, 212);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(212, 212, 212);
-  border-left-width: 1px;
-  border-right-color: rgb(212, 212, 212);
-  border-right-width: 1px;
-  border-top-color: rgb(212, 212, 212);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-top-width: 1px;
-  color: rgb(64, 64, 64);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(245, 245, 245);
-  border-bottom-color: rgb(212, 212, 212);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-width: 1px;
-  border-left-color: rgb(212, 212, 212);
-  border-left-width: 1px;
-  border-right-color: rgb(212, 212, 212);
-  border-right-width: 1px;
-  border-top-color: rgb(212, 212, 212);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-top-width: 1px;
-  padding-bottom: 20px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 20px;
+  padding-bottom: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 12px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(229, 229, 229);
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -4153,14 +4029,18 @@ html[saved-theme="light"] body pre:has(> code) {
 
 html[saved-theme="light"] body figcaption {
   color: rgb(64, 64, 64);
-  font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+  font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="light"] body figure {
   border-bottom-color: rgb(64, 64, 64);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   border-left-color: rgb(64, 64, 64);
   border-right-color: rgb(64, 64, 64);
   border-top-color: rgb(64, 64, 64);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 html[saved-theme="light"] body img {
@@ -6018,7 +5898,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(64, 64, 64);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgba(26, 26, 26, 0.5);
   border-bottom-left-radius: 0px;
@@ -6035,13 +5915,19 @@ html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .s
   font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(23, 23, 23);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(23, 23, 23);
+  font-size: 32px;
+  font-weight: 900;
 }
 
 html[saved-theme="light"] body h2 {
@@ -6094,12 +5980,12 @@ html[saved-theme="light"] body hr {
   padding-right: 16px;
   padding-top: 8px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(64, 64, 64);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }`,
@@ -6210,15 +6096,36 @@ html[saved-theme="light"] body .darkmode svg {
 html[saved-theme="light"] body .breadcrumb-element p {
   font-family: "", "??", "??", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(23, 23, 23);
-  border-left-color: rgb(23, 23, 23);
-  border-right-color: rgb(23, 23, 23);
-  border-top-color: rgb(23, 23, 23);
-  color: rgb(23, 23, 23);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(64, 64, 64);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(245, 245, 245);
+  border-color: rgb(212, 212, 212);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table {
+  border-color: rgba(0, 0, 0, 0) rgb(128, 128, 128);
+}
+
+html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(64, 64, 64);
+  color: rgb(23, 23, 23);
+  font-weight: 400;
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
 }
@@ -6230,6 +6137,55 @@ html[saved-theme="light"] body .metadata-properties {
   border-top-color: rgb(115, 115, 115);
   color: rgb(115, 115, 115);
   font-family: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif;
+}
+
+html[saved-theme="light"] body .note-properties-key {
+  color: rgb(115, 115, 115);
+}
+
+html[saved-theme="light"] body .note-properties-row {
+  border-color: rgb(115, 115, 115);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+  color: rgb(23, 23, 23);
+}
+
+html[saved-theme="light"] body .note-properties-value {
+  color: rgb(115, 115, 115);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(250, 250, 250);
+  color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(64, 64, 64);
+  border-left-color: rgb(64, 64, 64);
+  border-right-color: rgb(64, 64, 64);
+  border-top-color: rgb(64, 64, 64);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(245, 245, 245);
+  border-color: rgb(64, 64, 64);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(250, 250, 250);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(64, 64, 64);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(23, 23, 23);
+  border-left-color: rgb(23, 23, 23);
+  border-right-color: rgb(23, 23, 23);
+  border-top-color: rgb(23, 23, 23);
+  color: rgb(23, 23, 23);
 }
 
 html[saved-theme="light"] body .navigation-progress {

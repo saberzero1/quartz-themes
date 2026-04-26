@@ -131,6 +131,10 @@ export const theme: ThemeData = {
   --secondary: #9748c9 !important;
   --setting-group-heading-color: #e7e7e7 !important;
   --setting-items-background: #373737 !important;
+  --shiki-code-background: #333333 !important;
+  --shiki-code-comment: #af9edb !important;
+  --shiki-gutter-text-color: #af9edb !important;
+  --shiki-terminal-dots-color: #af9edb !important;
   --status-bar-background: #000000 !important;
   --status-bar-text-color: #ffffff !important;
   --suggestion-background: #181818 !important;
@@ -199,35 +203,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(231, 231, 231);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(0, 0, 0);
-  border-color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  color: rgb(151, 72, 201);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(0, 0, 0);
   color: rgb(231, 231, 231);
@@ -238,53 +213,12 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(231, 231, 231);
 }
 
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(24, 24, 24);
-  color: rgb(231, 231, 231);
-}
-
 html[saved-theme="dark"] body html {
   --font-code-blocks: "Arimo", sans-serif;
   --font-text-headers: "Helvetica";
   --font-text-normal: "Arimo", sans-serif;
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
-  color: rgb(231, 231, 231);
-  font-family: Arimo, sans-serif;
-  outline: rgb(231, 231, 231) none 0px;
-  text-decoration-color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
-  color: rgb(231, 231, 231);
-  font-family: Arimo, sans-serif;
-  outline: rgb(231, 231, 231) none 0px;
-  text-decoration-color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
-  color: rgb(231, 231, 231);
-  font-family: Arimo, sans-serif;
-  outline: rgb(231, 231, 231) none 0px;
-  text-decoration-color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
-  color: rgb(231, 231, 231);
-  font-family: Arimo, sans-serif;
-  outline: rgb(231, 231, 231) none 0px;
-  text-decoration-color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body .text-highlight {
-  background-color: rgb(227, 102, 0);
-  color: rgb(231, 231, 231);
-  font-family: Arimo, sans-serif;
-  outline: rgb(231, 231, 231) none 0px;
-  text-decoration-color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body article > h1 {
+    typography: `html[saved-theme="dark"] body .markdown-rendered > h1 {
   --font-weight: 700;
   background-color: rgb(153, 30, 42);
   border-bottom-color: rgb(255, 255, 255);
@@ -316,6 +250,42 @@ html[saved-theme="dark"] body article > h1 {
   padding-top: 0px;
   text-transform: uppercase;
   transform: matrix(1, 0, -1, 1, 0, 0);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
+  color: rgb(231, 231, 231);
+  font-family: Arimo, sans-serif;
+  outline: rgb(231, 231, 231) none 0px;
+  text-decoration-color: rgb(231, 231, 231);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
+  color: rgb(231, 231, 231);
+  font-family: Arimo, sans-serif;
+  outline: rgb(231, 231, 231) none 0px;
+  text-decoration-color: rgb(231, 231, 231);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
+  color: rgb(231, 231, 231);
+  font-family: Arimo, sans-serif;
+  outline: rgb(231, 231, 231) none 0px;
+  text-decoration-color: rgb(231, 231, 231);
+}
+
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
+  color: rgb(231, 231, 231);
+  font-family: Arimo, sans-serif;
+  outline: rgb(231, 231, 231) none 0px;
+  text-decoration-color: rgb(231, 231, 231);
+}
+
+html[saved-theme="dark"] body .text-highlight {
+  background-color: rgb(227, 102, 0);
+  color: rgb(231, 231, 231);
+  font-family: Arimo, sans-serif;
+  outline: rgb(231, 231, 231) none 0px;
+  text-decoration-color: rgb(231, 231, 231);
 }
 
 html[saved-theme="dark"] body del {
@@ -473,21 +443,21 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
 html[saved-theme="dark"] body p {
   font-family: Arimo, sans-serif;
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(151, 72, 201);
   font-family: Arimo, sans-serif;
   outline: rgb(151, 72, 201) none 0px;
   text-decoration-color: rgb(151, 72, 201);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(151, 72, 201);
   font-family: Arimo, sans-serif;
   outline: rgb(151, 72, 201) none 0px;
   text-decoration-color: rgb(151, 72, 201);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(151, 72, 201);
   font-family: Arimo, sans-serif;
   outline: rgb(151, 72, 201) none 0px;
@@ -502,13 +472,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(231, 231, 231);
-  border-left-color: rgb(231, 231, 231);
-  border-right-color: rgb(231, 231, 231);
-  border-top-color: rgb(231, 231, 231);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -549,29 +512,25 @@ html[saved-theme="dark"] body th {
   color: rgb(231, 231, 231);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(231, 231, 231);
-  border-left-color: rgb(231, 231, 231);
-  border-right-color: rgb(231, 231, 231);
-  border-top-color: rgb(231, 231, 231);
+  background-color: rgb(51, 51, 51);
   color: rgb(231, 231, 231);
   font-family: Arimo, sans-serif;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(51, 51, 51);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(51, 51, 51);
-  color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(51, 51, 51);
+  padding-bottom: 2.4px;
+  padding-left: 4.8px;
+  padding-right: 4.8px;
+  padding-top: 2.4px;
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(51, 51, 51);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(231, 231, 231);
@@ -1207,17 +1166,22 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(231, 231, 231);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: Arimo, sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(151, 72, 201);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(255, 255, 255);
   font-family: Helvetica;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(231, 231, 231);
+  font-size: 48px;
 }
 
 html[saved-theme="dark"] body h2 {
@@ -1252,13 +1216,13 @@ html[saved-theme="dark"] body h6 {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(255, 255, 255);
   font-family: Arimo, sans-serif;
   font-weight: 700;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(255, 255, 255);
   font-family: Arimo, sans-serif;
   font-weight: 700;
@@ -1345,20 +1309,70 @@ html[saved-theme="dark"] body .darkmode svg {
   color: rgb(175, 158, 219);
   font-family: Arimo, sans-serif;
 }`,
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(231, 231, 231);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(231, 231, 231);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  color: rgb(231, 231, 231);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(231, 231, 231);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(231, 231, 231);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  color: rgb(231, 231, 231);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
+  font-family: Arimo, sans-serif;
+}
+
+html[saved-theme="dark"] body .metadata-properties {
+  font-family: Arimo, sans-serif;
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  color: rgb(151, 72, 201);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(24, 24, 24);
+  color: rgb(231, 231, 231);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(231, 231, 231);
+  border-left-color: rgb(231, 231, 231);
+  border-right-color: rgb(231, 231, 231);
+  border-top-color: rgb(231, 231, 231);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(231, 231, 231);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(44, 44, 44);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(231, 231, 231);
+}`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(231, 231, 231);
   border-left-color: rgb(231, 231, 231);
   border-right-color: rgb(231, 231, 231);
   border-top-color: rgb(231, 231, 231);
   color: rgb(231, 231, 231);
-}
-
-html[saved-theme="dark"] body .metadata {
-  font-family: Arimo, sans-serif;
-}
-
-html[saved-theme="dark"] body .metadata-properties {
-  font-family: Arimo, sans-serif;
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -1549,6 +1563,11 @@ html[saved-theme="dark"] body ul.tags > li {
   --setting-group-heading-color: #000000 !important;
   --setting-items-background: #707070 !important;
   --setting-items-border-color: #af303d !important;
+  --shiki-code-background: #ebd9d9 !important;
+  --shiki-code-comment: #ff8585 !important;
+  --shiki-gutter-border-color: #af303d !important;
+  --shiki-gutter-text-color: #ff8585 !important;
+  --shiki-terminal-dots-color: #ff8585 !important;
   --slider-track-background: #af303d !important;
   --status-bar-background: #991e2a !important;
   --status-bar-border-color: #af303d !important;
@@ -1622,40 +1641,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgb(175, 48, 61);
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(231, 231, 231);
-  border-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .note-properties {
-  border-color: rgb(175, 48, 61);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  color: rgb(255, 62, 62);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(153, 30, 42);
   color: rgb(0, 0, 0);
@@ -1671,53 +1656,12 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(231, 231, 231);
-  color: rgb(0, 0, 0);
-}
-
 html[saved-theme="light"] body html {
   --font-code-blocks: "Arimo", sans-serif;
   --font-text-headers: "Helvetica";
   --font-text-normal: "Arimo", sans-serif;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
-  color: rgb(0, 0, 0);
-  font-family: Arimo, sans-serif;
-  outline: rgb(0, 0, 0) none 0px;
-  text-decoration-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
-  color: rgb(0, 0, 0);
-  font-family: Arimo, sans-serif;
-  outline: rgb(0, 0, 0) none 0px;
-  text-decoration-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
-  color: rgb(0, 0, 0);
-  font-family: Arimo, sans-serif;
-  outline: rgb(0, 0, 0) none 0px;
-  text-decoration-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
-  color: rgb(0, 0, 0);
-  font-family: Arimo, sans-serif;
-  outline: rgb(0, 0, 0) none 0px;
-  text-decoration-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body .text-highlight {
-  background-color: rgb(94, 169, 255);
-  color: rgb(0, 0, 0);
-  font-family: Arimo, sans-serif;
-  outline: rgb(0, 0, 0) none 0px;
-  text-decoration-color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body article > h1 {
+    typography: `html[saved-theme="light"] body .markdown-rendered > h1 {
   --font-weight: 700;
   background-color: rgb(194, 31, 37);
   border-bottom-color: rgb(231, 231, 231);
@@ -1749,6 +1693,42 @@ html[saved-theme="light"] body article > h1 {
   padding-top: 0px;
   text-transform: uppercase;
   transform: matrix(1, 0, -1, 1, 0, 0);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
+  color: rgb(0, 0, 0);
+  font-family: Arimo, sans-serif;
+  outline: rgb(0, 0, 0) none 0px;
+  text-decoration-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
+  color: rgb(0, 0, 0);
+  font-family: Arimo, sans-serif;
+  outline: rgb(0, 0, 0) none 0px;
+  text-decoration-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
+  color: rgb(0, 0, 0);
+  font-family: Arimo, sans-serif;
+  outline: rgb(0, 0, 0) none 0px;
+  text-decoration-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
+  color: rgb(0, 0, 0);
+  font-family: Arimo, sans-serif;
+  outline: rgb(0, 0, 0) none 0px;
+  text-decoration-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .text-highlight {
+  background-color: rgb(94, 169, 255);
+  color: rgb(0, 0, 0);
+  font-family: Arimo, sans-serif;
+  outline: rgb(0, 0, 0) none 0px;
+  text-decoration-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body del {
@@ -1906,21 +1886,21 @@ html[saved-theme="light"] body li.task-list-item input[type="checkbox"]:checked 
 html[saved-theme="light"] body p {
   font-family: Arimo, sans-serif;
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(255, 62, 62);
   font-family: Arimo, sans-serif;
   outline: rgb(255, 62, 62) none 0px;
   text-decoration-color: rgb(255, 62, 62);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(255, 62, 62);
   font-family: Arimo, sans-serif;
   outline: rgb(255, 62, 62) none 0px;
   text-decoration-color: rgb(255, 62, 62);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(255, 62, 62);
   font-family: Arimo, sans-serif;
   outline: rgb(255, 62, 62) none 0px;
@@ -1935,13 +1915,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -1990,45 +1963,29 @@ html[saved-theme="light"] body th {
   color: rgb(0, 0, 0);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
+  background-color: rgb(235, 217, 217);
+  border-bottom-color: rgb(175, 48, 61);
+  border-left-color: rgb(175, 48, 61);
+  border-right-color: rgb(175, 48, 61);
+  border-top-color: rgb(175, 48, 61);
   color: rgb(0, 0, 0);
   font-family: Arimo, sans-serif;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(235, 217, 217);
-  border-bottom-color: rgb(175, 48, 61);
-  border-left-color: rgb(175, 48, 61);
-  border-right-color: rgb(175, 48, 61);
-  border-top-color: rgb(175, 48, 61);
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(235, 217, 217);
-  border-bottom-color: rgb(175, 48, 61);
-  border-left-color: rgb(175, 48, 61);
-  border-right-color: rgb(175, 48, 61);
-  border-top-color: rgb(175, 48, 61);
-  color: rgb(0, 0, 0);
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  background-color: rgb(235, 217, 217);
-  border-bottom-color: rgb(175, 48, 61);
-  border-left-color: rgb(175, 48, 61);
-  border-right-color: rgb(175, 48, 61);
-  border-top-color: rgb(175, 48, 61);
+  padding-bottom: 2.4px;
+  padding-left: 4.8px;
+  padding-right: 4.8px;
+  padding-top: 2.4px;
 }
 
 html[saved-theme="light"] body pre:has(> code) {
   background-color: rgb(235, 217, 217);
-  border-bottom-color: rgb(175, 48, 61);
-  border-left-color: rgb(175, 48, 61);
-  border-right-color: rgb(175, 48, 61);
-  border-top-color: rgb(175, 48, 61);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(0, 0, 0);
@@ -2668,17 +2625,22 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: Arimo, sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(255, 62, 62);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(231, 231, 231);
   font-family: Helvetica;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(0, 0, 0);
+  font-size: 48px;
 }
 
 html[saved-theme="light"] body h2 {
@@ -2719,13 +2681,13 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(255, 255, 255);
   font-family: Arimo, sans-serif;
   font-weight: 700;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(255, 255, 255);
   font-family: Arimo, sans-serif;
   font-weight: 700;
@@ -2816,15 +2778,31 @@ html[saved-theme="light"] body .darkmode svg {
   color: rgb(255, 133, 133);
   font-family: Arimo, sans-serif;
 }`,
-    misc: `html[saved-theme="light"] body .katex-display {
-  border-bottom-color: rgb(0, 0, 0);
-  border-left-color: rgb(0, 0, 0);
-  border-right-color: rgb(0, 0, 0);
-  border-top-color: rgb(0, 0, 0);
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
   color: rgb(0, 0, 0);
 }
 
-html[saved-theme="light"] body .metadata {
+html[saved-theme="light"] body .canvas-node-file {
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(231, 231, 231);
+  border-color: rgb(0, 0, 0);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(175, 48, 61);
+  color: rgb(0, 0, 0);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
   border-bottom-color: rgb(175, 48, 61);
   border-left-color: rgb(175, 48, 61);
   border-right-color: rgb(175, 48, 61);
@@ -2834,6 +2812,45 @@ html[saved-theme="light"] body .metadata {
 
 html[saved-theme="light"] body .metadata-properties {
   font-family: Arimo, sans-serif;
+}
+
+html[saved-theme="light"] body .note-properties {
+  border-color: rgb(175, 48, 61);
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  color: rgb(255, 62, 62);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(231, 231, 231);
+  color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(153, 30, 42);
+  border-color: rgb(0, 0, 0);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(153, 30, 42);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(0, 0, 0);
+}`,
+    misc: `html[saved-theme="light"] body .katex-display {
+  border-bottom-color: rgb(0, 0, 0);
+  border-left-color: rgb(0, 0, 0);
+  border-right-color: rgb(0, 0, 0);
+  border-top-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 html[saved-theme="light"] body .navigation-progress {

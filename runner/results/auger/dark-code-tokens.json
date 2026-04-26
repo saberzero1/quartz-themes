@@ -1,82 +1,16 @@
 {
   "_codeBlock": {
     "backgroundColor": "rgba(0, 0, 0, 0)",
-    "color": "oklch(0.9901 0.0161 95.22)"
+    "color": "oklch(0.8463 0.0136 102.156)"
   },
   "_preBlock": {
-    "backgroundColor": "oklch(0.3214 0.0037 84.5916)",
-    "borderColor": "rgb(58, 58, 60)"
-  },
-  "atom": {
-    "color": "oklch(0.9901 0.0161 95.22)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "comment": {
-    "color": "oklch(0.4531 0.0049 91.5721)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "def": {
-    "color": "oklch(0.9901 0.0161 95.22)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
+    "backgroundColor": "oklch(0.2228 0.0025 67.5819)",
+    "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {
     "color": "oklch(0.9901 0.0161 95.22)",
     "fontStyle": "normal",
     "fontWeight": "700",
-    "textDecoration": "none"
-  },
-  "keyword": {
-    "color": "oklch(0.6348 0.1565 350.457)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "number": {
-    "color": "oklch(0.6348 0.1099 290.987)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "operator": {
-    "color": "oklch(0.5971 0.1691 28.3687)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "property": {
-    "color": "oklch(0.7346 0.1461 87.4626)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string": {
-    "color": "oklch(0.6513 0.1241 119.402)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string-2": {
-    "color": "oklch(0.6513 0.1241 119.402)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable": {
-    "color": "oklch(0.6701 0.0999 186.613)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable-2": {
-    "color": "oklch(0.6701 0.0999 186.613)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
     "textDecoration": "none"
   }
 }

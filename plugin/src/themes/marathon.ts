@@ -100,6 +100,7 @@ export const theme: ThemeData = {
   --search-result-background: #2e2e2e !important;
   --secondary: hsla(258, 88%, 66%) !important;
   --setting-items-radius: 5px !important;
+  --shiki-code-block-border-radius: 5px !important;
   --slider-thumb-radius: 5px !important;
   --status-bar-background: #2e2e2e !important;
   --status-bar-radius: 5px 0 0 0 !important;
@@ -139,32 +140,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   background-color: rgb(46, 46, 46);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  border-color: rgb(138, 92, 245);
-  font-weight: 300;
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.75) 0px 0px 10px 0px;
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  background-color: rgb(46, 46, 46);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(46, 46, 46);
-}
-
-html[saved-theme="dark"] body .note-properties-key {
-  font-weight: 300;
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  color: rgb(138, 92, 245);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(46, 46, 46);
 }
@@ -178,16 +153,12 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(46, 46, 46);
   border-left-color: rgb(138, 92, 245);
   border-left-style: solid;
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(46, 46, 46);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   font-weight: 300;
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   font-weight: 300;
 }
 
@@ -210,19 +181,19 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"] {
 html[saved-theme="dark"] body p {
   font-weight: 300;
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
   text-decoration-color: rgb(138, 92, 245);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
   text-decoration-color: rgb(138, 92, 245);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(138, 92, 245);
   outline: rgb(138, 92, 245) none 0px;
 }`,
@@ -261,34 +232,20 @@ html[saved-theme="dark"] body th {
   border-top-right-radius: 5px;
 }
 
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
 html[saved-theme="dark"] body pre:has(> code) {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }`,
-    images: `html[saved-theme="dark"] body img {
+    images: `html[saved-theme="dark"] body figure {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+html[saved-theme="dark"] body img {
   border-bottom-color: rgb(138, 92, 245);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -1096,11 +1053,11 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   border-top-right-radius: 5px;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-weight: 300;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(138, 92, 245);
 }
 
@@ -1166,11 +1123,11 @@ html[saved-theme="dark"] body hr {
   padding-right: 0px;
   padding-top: 1.6px;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-weight: 300;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-weight: 300;
 }`,
     toc: `html[saved-theme="dark"] body li.depth-0 {
@@ -1209,6 +1166,40 @@ html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}`,
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 0px 10px 0px;
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  background-color: rgb(46, 46, 46);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(46, 46, 46);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  border-color: rgb(138, 92, 245);
+  font-weight: 300;
+}`,
+    properties: `html[saved-theme="dark"] body .note-properties-key {
+  font-weight: 300;
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  color: rgb(138, 92, 245);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(46, 46, 46);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(46, 46, 46);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(46, 46, 46);
 }`,
     misc: `html[saved-theme="dark"] body .navigation-progress {
   background-color: rgb(46, 46, 46);
@@ -1318,6 +1309,7 @@ html[saved-theme="dark"] body ul.tags > li {
   --search-result-background: white !important;
   --secondary: hsla(258, 88%, 66%) !important;
   --setting-items-radius: 5px !important;
+  --shiki-code-block-border-radius: 5px !important;
   --slider-thumb-radius: 5px !important;
   --status-bar-background: white !important;
   --status-bar-radius: 5px 0 0 0 !important;
@@ -1351,24 +1343,6 @@ html[saved-theme="light"] body[data-slug] div#quartz-root.page, html[saved-theme
   background-color: rgb(255, 255, 255);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  border-color: rgb(138, 92, 245);
-  font-weight: 300;
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.26) 0px 0px 10px 0px;
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  background-color: rgb(255, 255, 255);
-}
-
-html[saved-theme="light"] body .note-properties-key {
-  font-weight: 300;
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(255, 255, 255);
 }
@@ -1383,11 +1357,11 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(138, 92, 245);
   border-left-style: solid;
 }`,
-    typography: `html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   font-weight: 300;
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   font-weight: 300;
 }
 
@@ -1449,34 +1423,20 @@ html[saved-theme="light"] body th {
   border-top-right-radius: 5px;
 }
 
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-html[saved-theme="light"] body pre > code, html[saved-theme="light"] pre:has(> code) {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
 html[saved-theme="light"] body pre:has(> code) {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }`,
-    images: `html[saved-theme="light"] body img {
+    images: `html[saved-theme="light"] body figure {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+html[saved-theme="light"] body img {
   border-bottom-color: rgb(138, 92, 245);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -2281,7 +2241,7 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   border-top-right-radius: 5px;
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-weight: 300;
 }
 
@@ -2347,11 +2307,11 @@ html[saved-theme="light"] body hr {
   padding-right: 0px;
   padding-top: 1.6px;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-weight: 300;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-weight: 300;
 }`,
     toc: `html[saved-theme="light"] body li.depth-0 {
@@ -2390,6 +2350,28 @@ html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-oute
   border-bottom-right-radius: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}`,
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 0px 10px 0px;
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  background-color: rgb(255, 255, 255);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  border-color: rgb(138, 92, 245);
+  font-weight: 300;
+}`,
+    properties: `html[saved-theme="light"] body .note-properties-key {
+  font-weight: 300;
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(255, 255, 255);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(255, 255, 255);
 }`,
     misc: `html[saved-theme="light"] body .navigation-progress {
   background-color: rgb(255, 255, 255);

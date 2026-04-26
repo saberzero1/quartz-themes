@@ -85,6 +85,7 @@ export const theme: ThemeData = {
   --nav-item-color-active: hsl(48, 100%, 50%) !important;
   --nav-item-color-hover: hsl(60, 100%, 50%) !important;
   --ribbon-background: hsl(48, 100%, 50%) !important;
+  --shiki-code-background: hsl(258, 20%, 23%) !important;
   --tab-text-color-focused-active: hsl(48, 100%, 50%) !important;
   --tab-text-color-focused-active-current: hsl(60, 100%, 50%) !important;
   --table-header-weight: 650 !important;
@@ -98,11 +99,6 @@ html body {
   color: var(--text-normal) !important;
 }
 
-html body .bases-table thead th {
-  border-color: rgb(255, 204, 0);
-  font-weight: 650;
-}
-
 html body html {
   --h1: 1.6em;
   --h2: 1.3em;
@@ -111,20 +107,20 @@ html body html {
   --h5: 1.05em;
   --h6: 1em;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 650;
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 650;
 }
@@ -140,17 +136,17 @@ html body del {
 html body h1.article-title {
   color: rgb(138, 92, 245);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 450;
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 450;
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 450;
 }`,
@@ -202,26 +198,16 @@ html body tr {
   border-top-color: rgb(255, 204, 0);
 }`,
     code: `html body code {
+  background-color: rgb(54, 47, 70);
   font-family: "??", "Fira Code", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(54, 47, 70);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(54, 47, 70);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(54, 47, 70);
+  padding-bottom: 2.4px;
+  padding-left: 4.8px;
+  padding-right: 4.8px;
+  padding-top: 2.4px;
 }
 
 html body pre:has(> code) {
   background-color: rgb(54, 47, 70);
-}`,
-    images: `html body figcaption {
-  font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     checkboxes: `html body .katex-display > .katex {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -861,6 +847,10 @@ html body h1 {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+html body h1.article-title {
+  color: rgb(138, 92, 245);
+}
+
 html body h2 {
   color: rgb(255, 230, 0);
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -912,15 +902,18 @@ html body .darkmode svg {
   color: rgb(138, 92, 245);
   stroke: rgb(138, 92, 245);
 }`,
-    misc: `html body .metadata {
+    bases: `html body .bases-table thead th {
+  border-color: rgb(255, 204, 0);
+  font-weight: 650;
+}`,
+    properties: `html body .metadata {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body .metadata-properties {
   font-family: "??", Ligconsolata, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html body .page-header h2.page-title {
+}`,
+    misc: `html body .page-header h2.page-title {
   color: rgb(138, 92, 245);
 }
 

@@ -126,10 +126,6 @@ html[saved-theme="dark"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="dark"] body .note-properties-tags {
-  border-radius: 24px;
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(50, 50, 50);
 }
@@ -137,19 +133,19 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(50, 50, 50);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -169,15 +165,15 @@ html[saved-theme="dark"] body h1.article-title {
 html[saved-theme="dark"] body p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
     blockquotes: `html[saved-theme="dark"] body blockquote {
@@ -190,8 +186,25 @@ html[saved-theme="dark"] body a.internal.broken {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 194.844px;
 }`,
+    code: `html[saved-theme="dark"] body code {
+  padding-bottom: 1.827px;
+  padding-left: 3.654px;
+  padding-right: 3.654px;
+  padding-top: 1.827px;
+}
+
+html[saved-theme="dark"] body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}`,
     images: `html[saved-theme="dark"] body figcaption {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html[saved-theme="dark"] body video {
@@ -730,7 +743,7 @@ html[saved-theme="dark"] body .search > .search-container > .search-space > * {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body a.internal.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="dark"] body a.internal-link.tag-link, html[saved-theme="dark"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   border-top-left-radius: 24px;
@@ -774,13 +787,13 @@ html[saved-theme="dark"] body hr {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
@@ -808,7 +821,7 @@ html[saved-theme="dark"] body .recent-notes > ul.recent-ul > li .section > .meta
     breadcrumbs: `html[saved-theme="dark"] body .breadcrumb-element p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    misc: `html[saved-theme="dark"] body .metadata {
+    properties: `html[saved-theme="dark"] body .metadata {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -816,7 +829,10 @@ html[saved-theme="dark"] body .metadata-properties {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="dark"] body .page-header h2.page-title {
+html[saved-theme="dark"] body .note-properties-tags {
+  border-radius: 24px;
+}`,
+    misc: `html[saved-theme="dark"] body .page-header h2.page-title {
   color: rgb(153, 153, 153);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -936,10 +952,6 @@ html[saved-theme="light"] body {
   color: var(--text-normal) !important;
 }
 
-html[saved-theme="light"] body .note-properties-tags {
-  border-radius: 24px;
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
   border-right-color: rgb(238, 238, 238);
 }
@@ -947,19 +959,19 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar.left {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   border-left-color: rgb(238, 238, 238);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -979,15 +991,15 @@ html[saved-theme="light"] body h1.article-title {
 html[saved-theme="light"] body p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
     blockquotes: `html[saved-theme="light"] body blockquote {
@@ -1000,8 +1012,25 @@ html[saved-theme="light"] body a.internal.broken {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 194.844px;
 }`,
+    code: `html[saved-theme="light"] body code {
+  padding-bottom: 1.827px;
+  padding-left: 3.654px;
+  padding-right: 3.654px;
+  padding-top: 1.827px;
+}
+
+html[saved-theme="light"] body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}`,
     images: `html[saved-theme="light"] body figcaption {
-  font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
     checkboxes: `html[saved-theme="light"] body .katex-display > .katex {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1533,7 +1562,7 @@ html[saved-theme="light"] body .search > .search-container > .search-space > * {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body a.internal.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html[saved-theme="light"] body a.internal-link.tag-link, html[saved-theme="light"] .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   border-top-left-radius: 24px;
@@ -1577,13 +1606,13 @@ html[saved-theme="light"] body hr {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   cursor: pointer;
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
@@ -1611,7 +1640,7 @@ html[saved-theme="light"] body .recent-notes > ul.recent-ul > li .section > .met
     breadcrumbs: `html[saved-theme="light"] body .breadcrumb-element p {
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
-    misc: `html[saved-theme="light"] body .metadata {
+    properties: `html[saved-theme="light"] body .metadata {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -1619,7 +1648,10 @@ html[saved-theme="light"] body .metadata-properties {
   font-family: "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html[saved-theme="light"] body .page-header h2.page-title {
+html[saved-theme="light"] body .note-properties-tags {
+  border-radius: 24px;
+}`,
+    misc: `html[saved-theme="light"] body .page-header h2.page-title {
   color: rgb(112, 112, 112);
   font-family: "??", "??", "??", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

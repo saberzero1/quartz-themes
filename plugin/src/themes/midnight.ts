@@ -274,6 +274,13 @@ export const theme: ThemeData = {
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shiki-active-tab-border-color: #666666 !important;
+  --shiki-code-background: #0f1116 !important;
+  --shiki-code-normal: #666666 !important;
+  --shiki-code-punctuation: #666666 !important;
+  --shiki-gutter-border-color: #282828 !important;
+  --shiki-gutter-text-color-highlight: #666666 !important;
+  --shiki-highlight-neutral: #666666 !important;
   --slider-thumb-radius: 50% !important;
   --slider-track-background: #282828 !important;
   --status-bar-background: #0f1116 !important;
@@ -362,38 +369,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   background-color: rgb(4, 8, 18);
 }
 
-html body .bases-table tbody tr:nth-child(even) {
-  background-color: rgb(27, 27, 27);
-}
-
-html body .bases-table thead th {
-  border-color: rgb(40, 40, 40);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(15, 17, 22);
-}
-
-html body .note-properties {
-  border-color: rgb(40, 40, 40);
-}
-
-html body .note-properties-key {
-  color: rgb(102, 102, 102);
-}
-
-html body .note-properties-row {
-  border-color: rgb(102, 102, 102);
-}
-
-html body .note-properties-tags {
-  border-radius: 7px;
-}
-
-html body .note-properties-value {
-  color: rgb(102, 102, 102);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(15, 17, 22);
 }
@@ -405,10 +380,6 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(15, 17, 22);
   border-left-color: rgb(40, 40, 40);
-}
-
-html body div#quartz-root {
-  background-color: rgb(4, 8, 18);
 }
 
 html body html {
@@ -428,25 +399,25 @@ html body html {
   --input-hover-border-color: black;
   --input-unfocused-border-color: transparent;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(216, 191, 216);
   outline: rgb(216, 191, 216) none 0px;
   text-decoration-color: rgb(216, 191, 216);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(216, 191, 216);
   outline: rgb(216, 191, 216) none 0px;
   text-decoration-color: rgb(216, 191, 216);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(216, 191, 216);
   outline: rgb(216, 191, 216) none 0px;
   text-decoration-color: rgb(216, 191, 216);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(216, 191, 216);
   outline: rgb(216, 191, 216) none 0px;
   text-decoration-color: rgb(216, 191, 216);
@@ -496,58 +467,24 @@ html body tr {
   background-color: rgb(15, 15, 15);
 }`,
     code: `html body code {
-  border-bottom-color: rgb(102, 102, 102);
-  border-left-color: rgb(102, 102, 102);
-  border-right-color: rgb(102, 102, 102);
-  border-top-color: rgb(102, 102, 102);
+  background-color: rgb(15, 17, 22);
+  border-bottom-color: rgb(40, 40, 40);
+  border-left-color: rgb(40, 40, 40);
+  border-right-color: rgb(40, 40, 40);
+  border-top-color: rgb(40, 40, 40);
   color: rgb(102, 102, 102);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(15, 17, 22);
-  border-bottom-color: rgb(40, 40, 40);
-  border-left-color: rgb(40, 40, 40);
-  border-right-color: rgb(40, 40, 40);
-  border-top-color: rgb(40, 40, 40);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(15, 17, 22);
-  border-bottom-color: rgb(40, 40, 40);
-  border-left-color: rgb(40, 40, 40);
-  border-right-color: rgb(40, 40, 40);
-  border-top-color: rgb(40, 40, 40);
-}
-
-html body pre > code > [data-line] {
-  border-left-color: rgb(204, 65, 67);
-}
-
-html body pre > code > [data-line][data-highlighted-line] {
-  border-left-color: rgb(204, 65, 67);
-}
-
-html body pre > code [data-highlighted-chars] {
-  border-bottom-color: rgb(204, 65, 67);
-  border-left-color: rgb(204, 65, 67);
-  border-right-color: rgb(204, 65, 67);
-  border-top-color: rgb(204, 65, 67);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(15, 17, 22);
-  border-bottom-color: rgb(40, 40, 40);
-  border-left-color: rgb(40, 40, 40);
-  border-right-color: rgb(40, 40, 40);
-  border-top-color: rgb(40, 40, 40);
 }
 
 html body pre:has(> code) {
   background-color: rgb(15, 17, 22);
-  border-bottom-color: rgb(40, 40, 40);
-  border-left-color: rgb(40, 40, 40);
-  border-right-color: rgb(40, 40, 40);
-  border-top-color: rgb(40, 40, 40);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     embeds: `html body .file-embed {
   background-color: rgb(15, 17, 22);
@@ -1209,11 +1146,15 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(132, 157, 255);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+}
+
+html body h1.article-title {
+  font-size: 40px;
 }
 
 html body hr {
@@ -1232,11 +1173,11 @@ html body hr {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(102, 102, 102);
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(102, 102, 102);
 }`,
     graph: `html body .graph > .graph-outer > .global-graph-icon {
@@ -1291,7 +1232,17 @@ html body .darkmode svg {
   border-top-color: rgb(102, 102, 102);
   color: rgb(102, 102, 102);
 }`,
-    misc: `html body .metadata {
+    canvas: `html body .canvas-sidebar {
+  background-color: rgb(15, 17, 22);
+}`,
+    bases: `html body .bases-table tbody tr:nth-child(even) {
+  background-color: rgb(27, 27, 27);
+}
+
+html body .bases-table thead th {
+  border-color: rgb(40, 40, 40);
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(40, 40, 40);
   border-left-color: rgb(40, 40, 40);
   border-right-color: rgb(40, 40, 40);
@@ -1307,7 +1258,37 @@ html body .metadata-properties {
   color: rgb(102, 102, 102);
 }
 
-html body .navigation-progress {
+html body .note-properties {
+  border-color: rgb(40, 40, 40);
+}
+
+html body .note-properties-key {
+  color: rgb(102, 102, 102);
+}
+
+html body .note-properties-row {
+  border-color: rgb(102, 102, 102);
+}
+
+html body .note-properties-tags {
+  border-radius: 7px;
+}
+
+html body .note-properties-value {
+  color: rgb(102, 102, 102);
+}
+
+html body div#quartz-root {
+  background-color: rgb(4, 8, 18);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(15, 17, 22);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(15, 17, 22);
+}`,
+    misc: `html body .navigation-progress {
   background-color: rgb(15, 17, 22);
 }
 

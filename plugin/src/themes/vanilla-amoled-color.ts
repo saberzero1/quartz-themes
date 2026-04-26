@@ -120,6 +120,11 @@ export const theme: ThemeData = {
   --search-result-background: #000 !important;
   --setting-items-background: #111 !important;
   --setting-items-border-color: #333 !important;
+  --shiki-code-background: #111 !important;
+  --shiki-code-comment: #666 !important;
+  --shiki-gutter-border-color: #333 !important;
+  --shiki-gutter-text-color: #666 !important;
+  --shiki-terminal-dots-color: #666 !important;
   --slider-thumb-border-color: #363636 !important;
   --slider-track-background: #333 !important;
   --status-bar-background: #080808 !important;
@@ -158,18 +163,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   background-color: rgb(0, 0, 0);
 }
 
-html body .bases-table thead th {
-  border-color: rgb(51, 51, 51);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(8, 8, 8);
-}
-
-html body .note-properties {
-  border-color: rgb(51, 51, 51);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(8, 8, 8);
 }
@@ -181,10 +174,6 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(8, 8, 8);
   border-left-color: rgb(51, 51, 51);
-}
-
-html body div#quartz-root {
-  background-color: rgb(0, 0, 0);
 }`,
     tables: `html body td {
   border-bottom-color: rgb(51, 51, 51);
@@ -199,23 +188,7 @@ html body th {
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
 }`,
-    code: `html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(17, 17, 17);
-  border-bottom-color: rgb(51, 51, 51);
-  border-left-color: rgb(51, 51, 51);
-  border-right-color: rgb(51, 51, 51);
-  border-top-color: rgb(51, 51, 51);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(17, 17, 17);
-  border-bottom-color: rgb(51, 51, 51);
-  border-left-color: rgb(51, 51, 51);
-  border-right-color: rgb(51, 51, 51);
-  border-top-color: rgb(51, 51, 51);
-}
-
-html body pre > code, html pre:has(> code) {
+    code: `html body code {
   background-color: rgb(17, 17, 17);
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
@@ -622,6 +595,10 @@ html body h1 {
   color: rgb(191, 97, 106);
 }
 
+html body h1.article-title {
+  color: rgb(191, 97, 106);
+}
+
 html body h2 {
   color: rgb(235, 203, 139);
 }
@@ -661,14 +638,34 @@ html body hr {
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
 }`,
-    misc: `html body .metadata {
+    canvas: `html body .canvas-sidebar {
+  background-color: rgb(8, 8, 8);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgb(51, 51, 51);
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(51, 51, 51);
   border-left-color: rgb(51, 51, 51);
   border-right-color: rgb(51, 51, 51);
   border-top-color: rgb(51, 51, 51);
 }
 
-html body .navigation-progress {
+html body .note-properties {
+  border-color: rgb(51, 51, 51);
+}
+
+html body div#quartz-root {
+  background-color: rgb(0, 0, 0);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(8, 8, 8);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(17, 17, 17);
+}`,
+    misc: `html body .navigation-progress {
   background-color: rgb(8, 8, 8);
 }
 

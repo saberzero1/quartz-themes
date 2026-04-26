@@ -79,6 +79,7 @@ export const theme: ThemeData = {
   --secondary: hsl(253, 92.4%, 85.14%) !important;
   --selection-color: #f5f7fa !important;
   --setting-group-heading-color: #f5f7fa !important;
+  --shiki-code-background: #111112 !important;
   --status-bar-background: #080808 !important;
   --suggestion-background: #080808 !important;
   --tab-background-active: #080808 !important;
@@ -117,36 +118,6 @@ html[saved-theme="dark"] body[data-slug], html[saved-theme="dark"] body[data-slu
   color: rgb(245, 247, 250);
 }
 
-html[saved-theme="dark"] body .bases-table thead th {
-  color: rgb(245, 247, 250);
-}
-
-html[saved-theme="dark"] body .canvas-node {
-  border-color: rgb(245, 247, 250);
-}
-
-html[saved-theme="dark"] body .canvas-node-content {
-  color: rgb(245, 247, 250);
-}
-
-html[saved-theme="dark"] body .canvas-node-file {
-  background-color: rgb(8, 8, 8);
-  color: rgb(245, 247, 250);
-}
-
-html[saved-theme="dark"] body .canvas-node-group {
-  border-color: rgb(245, 247, 250);
-}
-
-html[saved-theme="dark"] body .canvas-sidebar {
-  background-color: rgb(8, 8, 8);
-  border-color: rgb(245, 247, 250);
-}
-
-html[saved-theme="dark"] body .note-properties-tags {
-  color: rgb(197, 182, 252);
-}
-
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(8, 8, 8);
   color: rgb(245, 247, 250);
@@ -155,34 +126,29 @@ html[saved-theme="dark"] body .page > div#quartz-body div.sidebar {
 html[saved-theme="dark"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(8, 8, 8);
   color: rgb(245, 247, 250);
-}
-
-html[saved-theme="dark"] body div#quartz-root {
-  background-color: rgb(8, 8, 8);
-  color: rgb(245, 247, 250);
 }`,
-    typography: `html[saved-theme="dark"] body .page article p > b, html[saved-theme="dark"] b {
+    typography: `html[saved-theme="dark"] body .markdown-rendered p > b, html[saved-theme="dark"] b {
   color: rgb(245, 247, 250);
   font-family: pixel_squareregular;
   outline: rgb(245, 247, 250) none 0px;
   text-decoration-color: rgb(245, 247, 250);
 }
 
-html[saved-theme="dark"] body .page article p > em, html[saved-theme="dark"] em {
+html[saved-theme="dark"] body .markdown-rendered p > em, html[saved-theme="dark"] em {
   color: rgb(245, 247, 250);
   font-family: pixel_squareregular;
   outline: rgb(245, 247, 250) none 0px;
   text-decoration-color: rgb(245, 247, 250);
 }
 
-html[saved-theme="dark"] body .page article p > i, html[saved-theme="dark"] i {
+html[saved-theme="dark"] body .markdown-rendered p > i, html[saved-theme="dark"] i {
   color: rgb(245, 247, 250);
   font-family: pixel_squareregular;
   outline: rgb(245, 247, 250) none 0px;
   text-decoration-color: rgb(245, 247, 250);
 }
 
-html[saved-theme="dark"] body .page article p > strong, html[saved-theme="dark"] strong {
+html[saved-theme="dark"] body .markdown-rendered p > strong, html[saved-theme="dark"] strong {
   color: rgb(245, 247, 250);
   font-family: pixel_squareregular;
   outline: rgb(245, 247, 250) none 0px;
@@ -215,21 +181,21 @@ html[saved-theme="dark"] body li.task-list-item input[type="checkbox"]:checked {
 html[saved-theme="dark"] body p {
   font-family: pixel_squareregular;
 }`,
-    links: `html[saved-theme="dark"] body a.external, html[saved-theme="dark"] footer a {
+    links: `html[saved-theme="dark"] body a.external-link, html[saved-theme="dark"] footer a {
   color: rgb(197, 182, 252);
   font-family: pixel_squareregular;
   outline: rgb(197, 182, 252) none 0px;
   text-decoration-color: rgb(197, 182, 252);
 }
 
-html[saved-theme="dark"] body a.internal, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="dark"] body a.internal-link, html[saved-theme="dark"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(197, 182, 252);
   font-family: pixel_squareregular;
   outline: rgb(197, 182, 252) none 0px;
   text-decoration-color: rgb(197, 182, 252);
 }
 
-html[saved-theme="dark"] body a.internal.broken {
+html[saved-theme="dark"] body a.internal-link.broken {
   color: rgb(197, 182, 252);
   font-family: pixel_squareregular;
   outline: rgb(197, 182, 252) none 0px;
@@ -244,13 +210,6 @@ html[saved-theme="dark"] body dt {
 
 html[saved-theme="dark"] body ol > li {
   color: rgb(245, 247, 250);
-}
-
-html[saved-theme="dark"] body ol.overflow {
-  border-bottom-color: rgb(245, 247, 250);
-  border-left-color: rgb(245, 247, 250);
-  border-right-color: rgb(245, 247, 250);
-  border-top-color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body ul > li {
@@ -287,28 +246,20 @@ html[saved-theme="dark"] body th {
   color: rgb(245, 247, 250);
 }`,
     code: `html[saved-theme="dark"] body code {
-  border-bottom-color: rgb(245, 247, 250);
-  border-left-color: rgb(245, 247, 250);
-  border-right-color: rgb(245, 247, 250);
-  border-top-color: rgb(245, 247, 250);
-  color: rgb(245, 247, 250);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(17, 17, 18);
-}
-
-html[saved-theme="dark"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
   background-color: rgb(17, 17, 18);
   color: rgb(245, 247, 250);
-}
-
-html[saved-theme="dark"] body pre > code, html[saved-theme="dark"] pre:has(> code) {
-  background-color: rgb(17, 17, 18);
 }
 
 html[saved-theme="dark"] body pre:has(> code) {
   background-color: rgb(17, 17, 18);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="dark"] body audio {
   border-bottom-color: rgb(245, 247, 250);
@@ -319,7 +270,6 @@ html[saved-theme="dark"] body pre:has(> code) {
 
 html[saved-theme="dark"] body figcaption {
   color: rgb(245, 247, 250);
-  font-family: pixel_squareregular;
 }
 
 html[saved-theme="dark"] body figure {
@@ -936,13 +886,17 @@ html[saved-theme="dark"] body .search>.search-container>.search-space>.search-la
   color: rgb(245, 247, 250);
 }
 
-html[saved-theme="dark"] body a.internal.tag-link::before {
+html[saved-theme="dark"] body a.internal-link.tag-link::before {
   color: rgb(197, 182, 252);
 }
 
 html[saved-theme="dark"] body h1 {
   color: rgb(245, 247, 250);
   font-family: pixel_squareregular;
+}
+
+html[saved-theme="dark"] body h1.article-title {
+  color: rgb(245, 247, 250);
 }
 
 html[saved-theme="dark"] body h2 {
@@ -977,15 +931,15 @@ html[saved-theme="dark"] body h6 {
     scrollbars: `html[saved-theme="dark"] body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html[saved-theme="dark"] body .explorer {
+    explorer: `html[saved-theme="dark"] body .nav-files-container {
   background-color: rgb(8, 8, 8);
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: pixel_squareregular;
 }
 
-html[saved-theme="dark"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="dark"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: pixel_squareregular;
 }`,
     toc: `html[saved-theme="dark"] body details.toc summary::marker {
@@ -1034,20 +988,71 @@ html[saved-theme="dark"] body ul.section-ul {
   border-right-color: rgb(245, 247, 250);
   border-top-color: rgb(245, 247, 250);
 }`,
+    canvas: `html[saved-theme="dark"] body .canvas-node {
+  border-color: rgb(245, 247, 250);
+}
+
+html[saved-theme="dark"] body .canvas-node-content {
+  color: rgb(245, 247, 250);
+}
+
+html[saved-theme="dark"] body .canvas-node-file {
+  background-color: rgb(8, 8, 8);
+  color: rgb(245, 247, 250);
+}
+
+html[saved-theme="dark"] body .canvas-node-group {
+  border-color: rgb(245, 247, 250);
+}
+
+html[saved-theme="dark"] body .canvas-sidebar {
+  background-color: rgb(8, 8, 8);
+  border-color: rgb(245, 247, 250);
+}`,
+    bases: `html[saved-theme="dark"] body .bases-table thead th {
+  color: rgb(245, 247, 250);
+}`,
+    properties: `html[saved-theme="dark"] body .metadata {
+  font-family: pixel_squareregular;
+}
+
+html[saved-theme="dark"] body .metadata-properties {
+  font-family: pixel_squareregular;
+}
+
+html[saved-theme="dark"] body .note-properties-tags {
+  color: rgb(197, 182, 252);
+}
+
+html[saved-theme="dark"] body div#quartz-root {
+  background-color: rgb(8, 8, 8);
+  color: rgb(245, 247, 250);
+}
+
+html[saved-theme="dark"] body ol.overflow {
+  border-bottom-color: rgb(245, 247, 250);
+  border-left-color: rgb(245, 247, 250);
+  border-right-color: rgb(245, 247, 250);
+  border-top-color: rgb(245, 247, 250);
+}`,
+    stacked: `html[saved-theme="dark"] body .stacked-page {
+  background-color: rgb(8, 8, 8);
+  border-color: rgb(245, 247, 250);
+}
+
+html[saved-theme="dark"] body .stacked-page-header {
+  background-color: rgb(8, 8, 8);
+}
+
+html[saved-theme="dark"] body .stacked-page.active {
+  border-color: rgb(245, 247, 250);
+}`,
     misc: `html[saved-theme="dark"] body .katex-display {
   border-bottom-color: rgb(245, 247, 250);
   border-left-color: rgb(245, 247, 250);
   border-right-color: rgb(245, 247, 250);
   border-top-color: rgb(245, 247, 250);
   color: rgb(245, 247, 250);
-}
-
-html[saved-theme="dark"] body .metadata {
-  font-family: pixel_squareregular;
-}
-
-html[saved-theme="dark"] body .metadata-properties {
-  font-family: pixel_squareregular;
 }
 
 html[saved-theme="dark"] body .navigation-progress {
@@ -1208,36 +1213,6 @@ html[saved-theme="light"] body[data-slug], html[saved-theme="light"] body[data-s
   color: rgb(8, 8, 8);
 }
 
-html[saved-theme="light"] body .bases-table thead th {
-  color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body .canvas-node {
-  border-color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body .canvas-node-content {
-  color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body .canvas-node-file {
-  background-color: rgb(245, 247, 250);
-  color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body .canvas-node-group {
-  border-color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body .canvas-sidebar {
-  background-color: rgb(245, 247, 250);
-  border-color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body .note-properties-tags {
-  color: rgb(152, 115, 247);
-}
-
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
   background-color: rgb(245, 247, 250);
   color: rgb(8, 8, 8);
@@ -1246,34 +1221,29 @@ html[saved-theme="light"] body .page > div#quartz-body div.sidebar {
 html[saved-theme="light"] body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(245, 247, 250);
   color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body div#quartz-root {
-  background-color: rgb(245, 247, 250);
-  color: rgb(8, 8, 8);
 }`,
-    typography: `html[saved-theme="light"] body .page article p > b, html[saved-theme="light"] b {
+    typography: `html[saved-theme="light"] body .markdown-rendered p > b, html[saved-theme="light"] b {
   color: rgb(8, 8, 8);
   font-family: pixel_squareregular;
   outline: rgb(8, 8, 8) none 0px;
   text-decoration-color: rgb(8, 8, 8);
 }
 
-html[saved-theme="light"] body .page article p > em, html[saved-theme="light"] em {
+html[saved-theme="light"] body .markdown-rendered p > em, html[saved-theme="light"] em {
   color: rgb(8, 8, 8);
   font-family: pixel_squareregular;
   outline: rgb(8, 8, 8) none 0px;
   text-decoration-color: rgb(8, 8, 8);
 }
 
-html[saved-theme="light"] body .page article p > i, html[saved-theme="light"] i {
+html[saved-theme="light"] body .markdown-rendered p > i, html[saved-theme="light"] i {
   color: rgb(8, 8, 8);
   font-family: pixel_squareregular;
   outline: rgb(8, 8, 8) none 0px;
   text-decoration-color: rgb(8, 8, 8);
 }
 
-html[saved-theme="light"] body .page article p > strong, html[saved-theme="light"] strong {
+html[saved-theme="light"] body .markdown-rendered p > strong, html[saved-theme="light"] strong {
   color: rgb(8, 8, 8);
   font-family: pixel_squareregular;
   outline: rgb(8, 8, 8) none 0px;
@@ -1301,21 +1271,21 @@ html[saved-theme="light"] body h1.article-title {
 html[saved-theme="light"] body p {
   font-family: pixel_squareregular;
 }`,
-    links: `html[saved-theme="light"] body a.external, html[saved-theme="light"] footer a {
+    links: `html[saved-theme="light"] body a.external-link, html[saved-theme="light"] footer a {
   color: rgb(152, 115, 247);
   font-family: pixel_squareregular;
   outline: rgb(152, 115, 247) none 0px;
   text-decoration-color: rgb(152, 115, 247);
 }
 
-html[saved-theme="light"] body a.internal, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
+html[saved-theme="light"] body a.internal-link, html[saved-theme="light"] .breadcrumb-container .breadcrumb-element > a {
   color: rgb(152, 115, 247);
   font-family: pixel_squareregular;
   outline: rgb(152, 115, 247) none 0px;
   text-decoration-color: rgb(152, 115, 247);
 }
 
-html[saved-theme="light"] body a.internal.broken {
+html[saved-theme="light"] body a.internal-link.broken {
   color: rgb(152, 115, 247);
   font-family: pixel_squareregular;
   outline: rgb(152, 115, 247) none 0px;
@@ -1330,13 +1300,6 @@ html[saved-theme="light"] body dt {
 
 html[saved-theme="light"] body ol > li {
   color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body ol.overflow {
-  border-bottom-color: rgb(8, 8, 8);
-  border-left-color: rgb(8, 8, 8);
-  border-right-color: rgb(8, 8, 8);
-  border-top-color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body ul > li {
@@ -1373,15 +1336,18 @@ html[saved-theme="light"] body th {
   color: rgb(8, 8, 8);
 }`,
     code: `html[saved-theme="light"] body code {
-  border-bottom-color: rgb(8, 8, 8);
-  border-left-color: rgb(8, 8, 8);
-  border-right-color: rgb(8, 8, 8);
-  border-top-color: rgb(8, 8, 8);
   color: rgb(8, 8, 8);
 }
 
-html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  color: rgb(8, 8, 8);
+html[saved-theme="light"] body pre:has(> code) {
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html[saved-theme="light"] body audio {
   border-bottom-color: rgb(8, 8, 8);
@@ -1392,7 +1358,6 @@ html[saved-theme="light"] body figure[data-rehype-pretty-code-figure] > [data-re
 
 html[saved-theme="light"] body figcaption {
   color: rgb(8, 8, 8);
-  font-family: pixel_squareregular;
 }
 
 html[saved-theme="light"] body figure {
@@ -2007,13 +1972,17 @@ html[saved-theme="light"] body .search>.search-container>.search-space>.search-l
   color: rgb(8, 8, 8);
 }
 
-html[saved-theme="light"] body a.internal.tag-link::before {
+html[saved-theme="light"] body a.internal-link.tag-link::before {
   color: rgb(152, 115, 247);
 }
 
 html[saved-theme="light"] body h1 {
   color: rgb(8, 8, 8);
   font-family: pixel_squareregular;
+}
+
+html[saved-theme="light"] body h1.article-title {
+  color: rgb(8, 8, 8);
 }
 
 html[saved-theme="light"] body h2 {
@@ -2048,15 +2017,15 @@ html[saved-theme="light"] body h6 {
     scrollbars: `html[saved-theme="light"] body .callout {
   --callout-color: 8, 109, 221;
 }`,
-    explorer: `html[saved-theme="light"] body .explorer {
+    explorer: `html[saved-theme="light"] body .nav-files-container {
   background-color: rgb(245, 247, 250);
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   font-family: pixel_squareregular;
 }
 
-html[saved-theme="light"] body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html[saved-theme="light"] body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   font-family: pixel_squareregular;
 }`,
     toc: `html[saved-theme="light"] body details.toc summary::marker {
@@ -2105,20 +2074,71 @@ html[saved-theme="light"] body ul.section-ul {
   border-right-color: rgb(8, 8, 8);
   border-top-color: rgb(8, 8, 8);
 }`,
+    canvas: `html[saved-theme="light"] body .canvas-node {
+  border-color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body .canvas-node-content {
+  color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body .canvas-node-file {
+  background-color: rgb(245, 247, 250);
+  color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body .canvas-node-group {
+  border-color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body .canvas-sidebar {
+  background-color: rgb(245, 247, 250);
+  border-color: rgb(8, 8, 8);
+}`,
+    bases: `html[saved-theme="light"] body .bases-table thead th {
+  color: rgb(8, 8, 8);
+}`,
+    properties: `html[saved-theme="light"] body .metadata {
+  font-family: pixel_squareregular;
+}
+
+html[saved-theme="light"] body .metadata-properties {
+  font-family: pixel_squareregular;
+}
+
+html[saved-theme="light"] body .note-properties-tags {
+  color: rgb(152, 115, 247);
+}
+
+html[saved-theme="light"] body div#quartz-root {
+  background-color: rgb(245, 247, 250);
+  color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body ol.overflow {
+  border-bottom-color: rgb(8, 8, 8);
+  border-left-color: rgb(8, 8, 8);
+  border-right-color: rgb(8, 8, 8);
+  border-top-color: rgb(8, 8, 8);
+}`,
+    stacked: `html[saved-theme="light"] body .stacked-page {
+  background-color: rgb(245, 247, 250);
+  border-color: rgb(8, 8, 8);
+}
+
+html[saved-theme="light"] body .stacked-page-header {
+  background-color: rgb(245, 247, 250);
+}
+
+html[saved-theme="light"] body .stacked-page.active {
+  border-color: rgb(8, 8, 8);
+}`,
     misc: `html[saved-theme="light"] body .katex-display {
   border-bottom-color: rgb(8, 8, 8);
   border-left-color: rgb(8, 8, 8);
   border-right-color: rgb(8, 8, 8);
   border-top-color: rgb(8, 8, 8);
   color: rgb(8, 8, 8);
-}
-
-html[saved-theme="light"] body .metadata {
-  font-family: pixel_squareregular;
-}
-
-html[saved-theme="light"] body .metadata-properties {
-  font-family: pixel_squareregular;
 }
 
 html[saved-theme="light"] body .navigation-progress {

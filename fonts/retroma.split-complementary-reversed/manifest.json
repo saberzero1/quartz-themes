@@ -1,0 +1,56 @@
+{
+  "extractedAt": "2026-04-26T07:22:25.652Z",
+  "sourceTheme": "Retroma",
+  "fonts": [
+    {
+      "family": "W95font",
+      "style": "normal",
+      "weight": "400",
+      "file": "w95font.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Cascadia Code",
+      "style": "normal",
+      "weight": "400",
+      "file": "cascadia-code.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "iA Writer Mono S",
+      "style": "normal",
+      "weight": "400",
+      "file": "ia-writer-mono-s.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Excalifont",
+      "style": "normal",
+      "weight": "400",
+      "file": "excalifont.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Caveat",
+      "style": "normal",
+      "weight": "400",
+      "file": "caveat.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

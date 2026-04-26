@@ -166,6 +166,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: hsl(260, 100%, 96%) !important;
   --setting-items-background: hsl(260, 17%, 22%) !important;
   --setting-items-border-color: hsl(260, 16%, 35%) !important;
+  --shiki-active-tab-border-color: hsl(260, 97%, 91%) !important;
+  --shiki-code-background: hsl(260, 17%, 22%) !important;
+  --shiki-code-comment: hsl(260, 97%, 86%) !important;
+  --shiki-code-normal: hsl(260, 97%, 91%) !important;
+  --shiki-code-punctuation: hsl(260, 97%, 91%) !important;
+  --shiki-gutter-border-color: hsl(260, 16%, 35%) !important;
+  --shiki-gutter-text-color: hsl(260, 97%, 86%) !important;
+  --shiki-gutter-text-color-highlight: hsl(260, 97%, 91%) !important;
+  --shiki-highlight-neutral: hsl(260, 97%, 91%) !important;
+  --shiki-terminal-dots-color: hsl(260, 97%, 86%) !important;
   --slider-track-background: hsl(260, 16%, 35%) !important;
   --status-bar-background: hsl(260, 16%, 35%) !important;
   --status-bar-border-color: hsl(260, 16%, 35%) !important;
@@ -228,52 +238,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(241, 235, 255);
 }
 
-html body .bases-table thead th {
-  border-color: rgb(84, 75, 104);
-  color: rgb(241, 235, 255);
-}
-
-html body .canvas-node {
-  border-color: rgb(241, 235, 255);
-}
-
-html body .canvas-node-content {
-  color: rgb(241, 235, 255);
-}
-
-html body .canvas-node-file {
-  color: rgb(241, 235, 255);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(241, 235, 255);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(84, 75, 104);
-  border-color: rgb(241, 235, 255);
-}
-
-html body .note-properties {
-  border-color: rgb(84, 75, 104);
-}
-
-html body .note-properties-key {
-  color: rgb(225, 210, 254);
-}
-
-html body .note-properties-row {
-  border-color: rgb(225, 210, 254);
-}
-
-html body .note-properties-tags {
-  color: rgb(131, 81, 230);
-}
-
-html body .note-properties-value {
-  color: rgb(225, 210, 254);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(84, 75, 104);
   color: rgb(241, 235, 255);
@@ -286,11 +250,6 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(84, 75, 104);
   border-left-color: rgb(84, 75, 104);
-  color: rgb(241, 235, 255);
-}
-
-html body div#quartz-root {
-  background-color: rgb(41, 36, 51);
   color: rgb(241, 235, 255);
 }
 
@@ -331,25 +290,25 @@ html body html {
   --duo: 28;
   --uno: 260;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(241, 235, 255);
   outline: rgb(241, 235, 255) none 0px;
   text-decoration-color: rgb(241, 235, 255);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(241, 235, 255);
   outline: rgb(241, 235, 255) none 0px;
   text-decoration-color: rgb(241, 235, 255);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(241, 235, 255);
   outline: rgb(241, 235, 255) none 0px;
   text-decoration-color: rgb(241, 235, 255);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(241, 235, 255);
   outline: rgb(241, 235, 255) none 0px;
   text-decoration-color: rgb(241, 235, 255);
@@ -386,7 +345,7 @@ html body p {
   outline: rgb(225, 210, 254) none 0px;
   text-decoration-color: rgb(225, 210, 254);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   --resizer-size: 20px;
   --shadow-drag: 0px 2px 10px rgba(0, 0, 0, 0.1);
   --shadow-stationary: 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1);
@@ -422,13 +381,13 @@ html body p {
   text-decoration-color: rgb(207, 136, 74);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(131, 81, 230);
   outline: rgb(131, 81, 230) none 0px;
   text-decoration-color: rgb(131, 81, 230);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(131, 81, 230);
   outline: rgb(131, 81, 230) none 0px;
 }`,
@@ -442,13 +401,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(241, 235, 255);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(241, 235, 255);
-  border-left-color: rgb(241, 235, 255);
-  border-right-color: rgb(241, 235, 255);
-  border-top-color: rgb(241, 235, 255);
 }
 
 html body ul > li {
@@ -491,36 +443,12 @@ html body th {
   color: rgb(241, 235, 255);
 }`,
     code: `html body code {
-  border-bottom-color: rgb(207, 136, 74);
-  border-left-color: rgb(207, 136, 74);
-  border-right-color: rgb(207, 136, 74);
-  border-top-color: rgb(207, 136, 74);
+  background-color: rgb(53, 47, 66);
+  border-bottom-color: rgb(84, 75, 104);
+  border-left-color: rgb(84, 75, 104);
+  border-right-color: rgb(84, 75, 104);
+  border-top-color: rgb(84, 75, 104);
   color: rgb(207, 136, 74);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(53, 47, 66);
-  border-bottom-color: rgb(84, 75, 104);
-  border-left-color: rgb(84, 75, 104);
-  border-right-color: rgb(84, 75, 104);
-  border-top-color: rgb(84, 75, 104);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(53, 47, 66);
-  border-bottom-color: rgb(84, 75, 104);
-  border-left-color: rgb(84, 75, 104);
-  border-right-color: rgb(84, 75, 104);
-  border-top-color: rgb(84, 75, 104);
-  color: rgb(241, 235, 255);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(53, 47, 66);
-  border-bottom-color: rgb(84, 75, 104);
-  border-left-color: rgb(84, 75, 104);
-  border-right-color: rgb(84, 75, 104);
-  border-top-color: rgb(84, 75, 104);
 }
 
 html body pre:has(> code) {
@@ -1429,12 +1357,16 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(241, 235, 255);
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(131, 81, 230);
 }
 
 html body h1 {
   color: rgb(131, 81, 230);
+}
+
+html body h1.article-title {
+  color: rgb(241, 235, 255);
 }
 
 html body h2 {
@@ -1469,11 +1401,11 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(225, 210, 254);
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(225, 210, 254);
 }`,
     toc: `html body details.toc summary::marker {
@@ -1561,15 +1493,31 @@ html body .darkmode svg {
 html body .breadcrumb-element p {
   color: rgb(208, 185, 254);
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: rgb(241, 235, 255);
-  border-left-color: rgb(241, 235, 255);
-  border-right-color: rgb(241, 235, 255);
-  border-top-color: rgb(241, 235, 255);
+    canvas: `html body .canvas-node {
+  border-color: rgb(241, 235, 255);
+}
+
+html body .canvas-node-content {
   color: rgb(241, 235, 255);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  color: rgb(241, 235, 255);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(241, 235, 255);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(84, 75, 104);
+  border-color: rgb(241, 235, 255);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgb(84, 75, 104);
+  color: rgb(241, 235, 255);
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(84, 75, 104);
   border-left-color: rgb(84, 75, 104);
   border-right-color: rgb(84, 75, 104);
@@ -1583,6 +1531,57 @@ html body .metadata-properties {
   border-right-color: rgb(225, 210, 254);
   border-top-color: rgb(225, 210, 254);
   color: rgb(225, 210, 254);
+}
+
+html body .note-properties {
+  border-color: rgb(84, 75, 104);
+}
+
+html body .note-properties-key {
+  color: rgb(225, 210, 254);
+}
+
+html body .note-properties-row {
+  border-color: rgb(225, 210, 254);
+}
+
+html body .note-properties-tags {
+  color: rgb(131, 81, 230);
+}
+
+html body .note-properties-value {
+  color: rgb(225, 210, 254);
+}
+
+html body div#quartz-root {
+  background-color: rgb(41, 36, 51);
+  color: rgb(241, 235, 255);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(241, 235, 255);
+  border-left-color: rgb(241, 235, 255);
+  border-right-color: rgb(241, 235, 255);
+  border-top-color: rgb(241, 235, 255);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(84, 75, 104);
+  border-color: rgb(241, 235, 255);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(53, 47, 66);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(241, 235, 255);
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: rgb(241, 235, 255);
+  border-left-color: rgb(241, 235, 255);
+  border-right-color: rgb(241, 235, 255);
+  border-top-color: rgb(241, 235, 255);
+  color: rgb(241, 235, 255);
 }
 
 html body .navigation-progress {

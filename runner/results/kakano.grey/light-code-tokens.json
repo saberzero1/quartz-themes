@@ -1,82 +1,16 @@
 {
   "_codeBlock": {
     "backgroundColor": "rgba(0, 0, 0, 0)",
-    "color": "color(srgb 0.0525 0.0508333 0.0475)"
+    "color": "color(srgb 0.0525 0.0508333 0.0475 / 0.7)"
   },
   "_preBlock": {
     "backgroundColor": "color(srgb 0 0 0 / 0.06)",
-    "borderColor": "color(srgb 0.64375 0.63125 0.60625)"
-  },
-  "atom": {
-    "color": "color(srgb 0.0525 0.0508333 0.0475)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "comment": {
-    "color": "color(srgb 0 0 0 / 0.5)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "def": {
-    "color": "color(srgb 0.0525 0.0508333 0.0475)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
+    "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {
     "color": "color(srgb 0.0525 0.0508333 0.0475)",
     "fontStyle": "normal",
     "fontWeight": "100",
-    "textDecoration": "none"
-  },
-  "keyword": {
-    "color": "color(srgb 0.525 0.475 0.499167)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "number": {
-    "color": "color(srgb 0.485833 0.475 0.525)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "operator": {
-    "color": "color(srgb 0.525 0.475 0.478333)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "property": {
-    "color": "color(srgb 0.525 0.5225 0.475)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string": {
-    "color": "color(srgb 0.475 0.525 0.478333)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "string-2": {
-    "color": "color(srgb 0.475 0.525 0.478333)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable": {
-    "color": "color(srgb 0.475 0.525 0.524167)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
-    "textDecoration": "none"
-  },
-  "variable-2": {
-    "color": "color(srgb 0.475 0.525 0.524167)",
-    "fontStyle": "normal",
-    "fontWeight": "400",
     "textDecoration": "none"
   }
 }

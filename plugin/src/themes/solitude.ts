@@ -835,6 +835,56 @@ export const theme: ThemeData = {
   	0px 6.3px 24.7px rgba(0, 0, 0, 0.112), 0px 30px 90px rgba(0, 0, 0, 0.2) !important;
   --shadow-s: 0px 1px 2px rgba(0, 0, 0, 0.121),
   	0px 3.4px 6.7px rgba(0, 0, 0, 0.179), 0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shiki-active-tab-border-color: hsl(
+  	196,
+  	11%,
+  	68%
+  ) !important;
+  --shiki-code-background: hsl(
+  	196,
+  	11%,
+  	9%
+  ) !important;
+  --shiki-code-comment: hsl(
+  	196,
+  	11%,
+  	35%
+  ) !important;
+  --shiki-code-normal: hsl(
+  	196,
+  	11%,
+  	68%
+  ) !important;
+  --shiki-code-punctuation: hsl(
+  	196,
+  	11%,
+  	68%
+  ) !important;
+  --shiki-gutter-border-color: hsl(
+  	196,
+  	11%,
+  	14%
+  ) !important;
+  --shiki-gutter-text-color: hsl(
+  	196,
+  	11%,
+  	35%
+  ) !important;
+  --shiki-gutter-text-color-highlight: hsl(
+  	196,
+  	11%,
+  	68%
+  ) !important;
+  --shiki-highlight-neutral: hsl(
+  	196,
+  	11%,
+  	68%
+  ) !important;
+  --shiki-terminal-dots-color: hsl(
+  	196,
+  	11%,
+  	35%
+  ) !important;
   --slider-thumb-border-color: hsl(
   	254,
   	80%,
@@ -1076,55 +1126,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(198, 207, 210);
 }
 
-html body .bases-table thead th {
-  border-color: rgb(32, 38, 40);
-  color: rgb(164, 178, 182);
-  font-weight: 400;
-}
-
-html body .canvas-node {
-  border-color: rgb(198, 207, 210);
-}
-
-html body .canvas-node-content {
-  color: rgb(198, 207, 210);
-}
-
-html body .canvas-node-file {
-  color: rgb(198, 207, 210);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(198, 207, 210);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(23, 27, 28);
-  border-color: rgb(198, 207, 210);
-  box-shadow: rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.6) 2px 2px 1px 0px;
-}
-
-html body .note-properties {
-  border-color: rgb(32, 38, 40);
-}
-
-html body .note-properties-key {
-  color: rgb(164, 178, 182);
-}
-
-html body .note-properties-row {
-  border-color: rgb(164, 178, 182);
-}
-
-html body .note-properties-tags {
-  background-color: rgba(139, 108, 239, 0.1);
-  color: rgb(84, 39, 231);
-}
-
-html body .note-properties-value {
-  color: rgb(164, 178, 182);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(30, 35, 37);
   color: rgb(198, 207, 210);
@@ -1138,11 +1139,6 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgba(0, 0, 0, 0);
   border-left-color: rgb(32, 38, 40);
-  color: rgb(198, 207, 210);
-}
-
-html body div#quartz-root {
-  background-color: rgb(14, 16, 17);
   color: rgb(198, 207, 210);
 }
 
@@ -1160,28 +1156,28 @@ html body html {
   --header-6-alignment: left;
   --header-6-weight: normal;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(198, 207, 210);
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(198, 207, 210) none 0px;
   text-decoration-color: rgb(198, 207, 210);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(198, 207, 210);
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(198, 207, 210) none 0px;
   text-decoration-color: rgb(198, 207, 210);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(198, 207, 210);
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(198, 207, 210) none 0px;
   text-decoration-color: rgb(198, 207, 210);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(198, 207, 210);
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(198, 207, 210) none 0px;
@@ -1222,7 +1218,7 @@ html body p {
   outline: rgb(164, 178, 182) none 0px;
   text-decoration-color: rgb(164, 178, 182);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(2, 122, 255);
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(2, 122, 255) none 0px;
@@ -1230,7 +1226,7 @@ html body p {
   transition: opacity 0.12s ease-in-out;
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(84, 39, 231);
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(84, 39, 231) none 0px;
@@ -1238,7 +1234,7 @@ html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
   transition: opacity 0.12s ease-in-out;
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(84, 39, 231);
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   outline: rgb(84, 39, 231) none 0px;
@@ -1256,13 +1252,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(198, 207, 210);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(198, 207, 210);
-  border-left-color: rgb(198, 207, 210);
-  border-right-color: rgb(198, 207, 210);
-  border-top-color: rgb(198, 207, 210);
 }
 
 html body ul > li {
@@ -1312,45 +1301,25 @@ html body th {
   font-weight: 400;
 }`,
     code: `html body code {
-  border-bottom-color: rgb(164, 178, 182);
-  border-left-color: rgb(164, 178, 182);
-  border-right-color: rgb(164, 178, 182);
-  border-top-color: rgb(164, 178, 182);
+  background-color: rgb(20, 24, 25);
+  border-bottom-color: rgb(32, 38, 40);
+  border-left-color: rgb(32, 38, 40);
+  border-right-color: rgb(32, 38, 40);
+  border-top-color: rgb(32, 38, 40);
   color: rgb(164, 178, 182);
   font-family: "??", "Fira Code", ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, Consolas, "Source Code Pro", monospace;
 }
 
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(20, 24, 25);
-  border-bottom-color: rgb(32, 38, 40);
-  border-left-color: rgb(32, 38, 40);
-  border-right-color: rgb(32, 38, 40);
-  border-top-color: rgb(32, 38, 40);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(20, 24, 25);
-  border-bottom-color: rgb(32, 38, 40);
-  border-left-color: rgb(32, 38, 40);
-  border-right-color: rgb(32, 38, 40);
-  border-top-color: rgb(32, 38, 40);
-  color: rgb(198, 207, 210);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(20, 24, 25);
-  border-bottom-color: rgb(32, 38, 40);
-  border-left-color: rgb(32, 38, 40);
-  border-right-color: rgb(32, 38, 40);
-  border-top-color: rgb(32, 38, 40);
-}
-
 html body pre:has(> code) {
   background-color: rgb(20, 24, 25);
-  border-bottom-color: rgb(32, 38, 40);
-  border-left-color: rgb(32, 38, 40);
-  border-right-color: rgb(32, 38, 40);
-  border-top-color: rgb(32, 38, 40);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
 }`,
     images: `html body audio {
   border-bottom-color: rgb(198, 207, 210);
@@ -1361,7 +1330,7 @@ html body pre:has(> code) {
 
 html body figcaption {
   color: rgb(198, 207, 210);
-  font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "??", "Fira Code", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body figure {
@@ -2292,7 +2261,7 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(198, 207, 210);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   background-color: rgba(139, 108, 239, 0.1);
   border-bottom-color: rgba(139, 108, 239, 0.15);
   border-left-color: rgba(139, 108, 239, 0.15);
@@ -2301,13 +2270,18 @@ html body a.internal.tag-link, html .search > .search-container > .search-space 
   font-family: "??", "Fira Code", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(84, 39, 231);
 }
 
 html body h1 {
   color: rgb(198, 207, 210);
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body h1.article-title {
+  color: rgb(198, 207, 210);
+  font-size: 32px;
 }
 
 html body h2 {
@@ -2349,19 +2323,19 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  color: rgb(164, 178, 182);
-  font-family: "??", "Fira Code", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
-  color: rgb(164, 178, 182);
-  font-family: "??", "Fira Code", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-html body .explorer .folder-outer > ul {
+    explorer: `html body .nav-files-container .tree-item-children {
   border-left-color: rgb(198, 207, 210);
   border-left-width: 0px;
+}
+
+html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
+  color: rgb(164, 178, 182);
+  font-family: "??", "Fira Code", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+  color: rgb(164, 178, 182);
+  font-family: "??", "Fira Code", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
     toc: `html body details.toc summary::marker {
   color: rgb(198, 207, 210);
@@ -2453,15 +2427,33 @@ html body .breadcrumb-element p {
   color: rgb(84, 39, 231);
   font-family: "??", "Fira Code", "??", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: rgb(198, 207, 210);
-  border-left-color: rgb(198, 207, 210);
-  border-right-color: rgb(198, 207, 210);
-  border-top-color: rgb(198, 207, 210);
+    canvas: `html body .canvas-node {
+  border-color: rgb(198, 207, 210);
+}
+
+html body .canvas-node-content {
   color: rgb(198, 207, 210);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  color: rgb(198, 207, 210);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(198, 207, 210);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(23, 27, 28);
+  border-color: rgb(198, 207, 210);
+  box-shadow: rgba(255, 255, 255, 0.09) 0px 0.5px 0.5px 0.5px inset, rgba(0, 0, 0, 0.6) 2px 2px 1px 0px;
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgb(32, 38, 40);
+  color: rgb(164, 178, 182);
+  font-weight: 400;
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(32, 38, 40);
   border-left-color: rgb(32, 38, 40);
   border-right-color: rgb(32, 38, 40);
@@ -2477,6 +2469,58 @@ html body .metadata-properties {
   border-top-color: rgb(164, 178, 182);
   color: rgb(164, 178, 182);
   font-family: "??", "Fira Code", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+html body .note-properties {
+  border-color: rgb(32, 38, 40);
+}
+
+html body .note-properties-key {
+  color: rgb(164, 178, 182);
+}
+
+html body .note-properties-row {
+  border-color: rgb(164, 178, 182);
+}
+
+html body .note-properties-tags {
+  background-color: rgba(139, 108, 239, 0.1);
+  color: rgb(84, 39, 231);
+}
+
+html body .note-properties-value {
+  color: rgb(164, 178, 182);
+}
+
+html body div#quartz-root {
+  background-color: rgb(14, 16, 17);
+  color: rgb(198, 207, 210);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(198, 207, 210);
+  border-left-color: rgb(198, 207, 210);
+  border-right-color: rgb(198, 207, 210);
+  border-top-color: rgb(198, 207, 210);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(30, 35, 37);
+  border-color: rgb(32, 38, 40);
+}
+
+html body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(32, 38, 40);
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: rgb(198, 207, 210);
+  border-left-color: rgb(198, 207, 210);
+  border-right-color: rgb(198, 207, 210);
+  border-top-color: rgb(198, 207, 210);
+  color: rgb(198, 207, 210);
 }
 
 html body .navigation-progress {

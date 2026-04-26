@@ -55,10 +55,6 @@ html body .page > div#quartz-body div.sidebar.right {
   background-color: rgba(0, 0, 0, 0);
 }
 
-html body div#quartz-root {
-  background-color: rgba(0, 0, 0, 0);
-}
-
 html body html {
   --sdlt-accent: #8BA4CC;
   --sdlt-accent-muted: #304F80;
@@ -515,6 +511,16 @@ html body .callout[data-callout="warning"] {
   border-right-color: rgb(179, 179, 179);
   border-top-color: rgb(179, 179, 179);
   border-top-width: 0px;
+}`,
+    properties: `html body div#quartz-root {
+  background-color: rgba(0, 0, 0, 0);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html body .stacked-page-header {
+  background-color: rgba(0, 0, 0, 0);
 }`,
     misc: `html body .navigation-progress {
   background-color: rgba(0, 0, 0, 0);

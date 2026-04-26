@@ -192,6 +192,16 @@ export const theme: ThemeData = {
   --setting-group-heading-color: hsla(213, 3%, 82%, 1) !important;
   --setting-items-background: hsla(232, 14%, 31%, 1) !important;
   --setting-items-border-color: hsla(216, 7%, 14%, 1) !important;
+  --shiki-active-tab-border-color: hsla(213, 4%, 57%, 1) !important;
+  --shiki-code-background: hsla(232, 14%, 31%, 1) !important;
+  --shiki-code-comment: hsla(0, 0%, 61%, 1) !important;
+  --shiki-code-normal: hsla(213, 4%, 57%, 1) !important;
+  --shiki-code-punctuation: hsla(213, 4%, 57%, 1) !important;
+  --shiki-gutter-border-color: hsla(216, 7%, 14%, 1) !important;
+  --shiki-gutter-text-color: hsla(0, 0%, 61%, 1) !important;
+  --shiki-gutter-text-color-highlight: hsla(213, 4%, 57%, 1) !important;
+  --shiki-highlight-neutral: hsla(213, 4%, 57%, 1) !important;
+  --shiki-terminal-dots-color: hsla(0, 0%, 61%, 1) !important;
   --slider-track-background: hsla(216, 7%, 14%, 1) !important;
   --status-bar-background: #2B2D31 !important;
   --status-bar-border-color: hsla(216, 7%, 14%, 1) !important;
@@ -267,53 +277,6 @@ html body[data-slug], html body[data-slug] .page > div#quartz-body, html .page >
   color: rgb(208, 209, 210);
 }
 
-html body .bases-table thead th {
-  border-color: rgb(33, 35, 38);
-  color: rgb(208, 209, 210);
-  font-weight: 700;
-}
-
-html body .canvas-node {
-  border-color: rgb(208, 209, 210);
-}
-
-html body .canvas-node-content {
-  color: rgb(208, 209, 210);
-}
-
-html body .canvas-node-file {
-  color: rgb(208, 209, 210);
-}
-
-html body .canvas-node-group {
-  border-color: rgb(208, 209, 210);
-}
-
-html body .canvas-sidebar {
-  background-color: rgb(43, 45, 49);
-  border-color: rgb(208, 209, 210);
-}
-
-html body .note-properties {
-  border-color: rgb(33, 35, 38);
-}
-
-html body .note-properties-key {
-  color: rgb(141, 145, 150);
-}
-
-html body .note-properties-row {
-  border-color: rgb(141, 145, 150);
-}
-
-html body .note-properties-tags {
-  color: rgb(176, 136, 231);
-}
-
-html body .note-properties-value {
-  color: rgb(141, 145, 150);
-}
-
 html body .page > div#quartz-body div.sidebar {
   background-color: rgb(43, 45, 49);
   color: rgb(208, 209, 210);
@@ -326,11 +289,6 @@ html body .page > div#quartz-body div.sidebar.left {
 html body .page > div#quartz-body div.sidebar.right {
   background-color: rgb(43, 45, 49);
   border-left-color: rgb(33, 35, 38);
-  color: rgb(208, 209, 210);
-}
-
-html body div#quartz-root {
-  background-color: rgb(46, 48, 53);
   color: rgb(208, 209, 210);
 }
 
@@ -363,28 +321,28 @@ html body html {
   --letter-spacing-notes: -0.2px;
   --readable-line-length: 45rem;
 }`,
-    typography: `html body .page article p > b, html b {
+    typography: `html body .markdown-rendered p > b, html b {
   color: rgb(222, 175, 99);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(222, 175, 99) none 0px;
   text-decoration-color: rgb(222, 175, 99);
 }
 
-html body .page article p > em, html em {
+html body .markdown-rendered p > em, html em {
   color: rgb(184, 186, 125);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(184, 186, 125) none 0px;
   text-decoration-color: rgb(184, 186, 125);
 }
 
-html body .page article p > i, html i {
+html body .markdown-rendered p > i, html i {
   color: rgb(184, 186, 125);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(184, 186, 125) none 0px;
   text-decoration-color: rgb(184, 186, 125);
 }
 
-html body .page article p > strong, html strong {
+html body .markdown-rendered p > strong, html strong {
   color: rgb(222, 175, 99);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(222, 175, 99) none 0px;
@@ -428,7 +386,7 @@ html body p {
   outline: rgb(141, 145, 150) none 0px;
   text-decoration-color: rgb(141, 145, 150);
 }`,
-    links: `html body a.external, html footer a {
+    links: `html body a.external-link, html footer a {
   color: rgb(0, 175, 245);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -436,14 +394,14 @@ html body p {
   text-decoration-color: rgb(0, 175, 245);
 }
 
-html body a.internal, html .breadcrumb-container .breadcrumb-element > a {
+html body a.internal-link, html .breadcrumb-container .breadcrumb-element > a {
   color: rgb(228, 129, 192);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(228, 129, 192) none 0px;
   text-decoration-color: rgb(228, 129, 192);
 }
 
-html body a.internal.broken {
+html body a.internal-link.broken {
   color: rgb(228, 129, 192);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: rgb(228, 129, 192) none 0px;
@@ -459,13 +417,6 @@ html body dt {
 
 html body ol > li {
   color: rgb(208, 209, 210);
-}
-
-html body ol.overflow {
-  border-bottom-color: rgb(208, 209, 210);
-  border-left-color: rgb(208, 209, 210);
-  border-right-color: rgb(208, 209, 210);
-  border-top-color: rgb(208, 209, 210);
 }
 
 html body ul > li {
@@ -534,52 +485,24 @@ html body tr {
   border-top-color: rgb(208, 209, 210);
 }`,
     code: `html body code {
-  border-bottom-color: rgb(141, 145, 150);
-  border-left-color: rgb(141, 145, 150);
-  border-right-color: rgb(141, 145, 150);
-  border-top-color: rgb(141, 145, 150);
-  color: rgb(141, 145, 150);
-}
-
-html body figure[data-rehype-pretty-code-figure] {
-  background-color: rgb(41, 44, 46);
+  background-color: rgba(250, 168, 25, 0.1);
   border-bottom-color: rgb(33, 35, 38);
   border-left-color: rgb(33, 35, 38);
   border-right-color: rgb(33, 35, 38);
   border-top-color: rgb(33, 35, 38);
-}
-
-html body figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-  background-color: rgb(41, 44, 46);
-  border-bottom-color: rgb(33, 35, 38);
-  border-left-color: rgb(33, 35, 38);
-  border-right-color: rgb(33, 35, 38);
-  border-top-color: rgb(33, 35, 38);
-  color: rgb(208, 209, 210);
-}
-
-html body pre > code, html pre:has(> code) {
-  background-color: rgb(41, 44, 46);
-  border-bottom-color: rgb(33, 35, 38);
-  border-left-color: rgb(33, 35, 38);
-  border-right-color: rgb(33, 35, 38);
-  border-top-color: rgb(33, 35, 38);
-  padding-bottom: 6px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 6px;
+  color: rgb(244, 167, 67);
+  padding-bottom: 1px;
+  padding-left: 4.8px;
+  padding-right: 4.8px;
+  padding-top: 4px;
 }
 
 html body pre:has(> code) {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(41, 44, 46);
   border-bottom-color: rgb(33, 35, 38);
   border-left-color: rgb(33, 35, 38);
   border-right-color: rgb(33, 35, 38);
   border-top-color: rgb(33, 35, 38);
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
 }`,
     images: `html body audio {
   border-bottom-color: rgb(208, 209, 210);
@@ -590,6 +513,7 @@ html body pre:has(> code) {
 
 html body figcaption {
   color: rgb(208, 209, 210);
+  font-family: "??", "??", Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 html body figure {
@@ -1529,17 +1453,21 @@ html body .search>.search-container>.search-space>.search-layout>.results-contai
   color: rgb(208, 209, 210);
 }
 
-html body a.internal.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+html body a.internal-link.tag-link, html .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
   font-family: "??", "??", Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html body a.internal.tag-link::before {
+html body a.internal-link.tag-link::before {
   color: rgb(176, 136, 231);
 }
 
 html body h1 {
   color: rgb(138, 135, 197);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html body h1.article-title {
+  color: rgb(208, 209, 210);
 }
 
 html body h2 {
@@ -1580,12 +1508,12 @@ html body hr {
     scrollbars: `html body .callout {
   --callout-color: 2, 122, 255;
 }`,
-    explorer: `html body .explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+    explorer: `html body .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
   color: rgb(208, 209, 210);
   font-family: Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html body .explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container {
+html body .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
   color: rgb(208, 209, 210);
   font-family: Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }`,
@@ -1679,15 +1607,32 @@ html body .breadcrumb-element p {
   color: rgb(156, 156, 156);
   font-family: "??", "??", Catamaran, "Helvetica Neue", Helvetica, Arial, sans-serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", Inter, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }`,
-    misc: `html body .katex-display {
-  border-bottom-color: rgb(208, 209, 210);
-  border-left-color: rgb(208, 209, 210);
-  border-right-color: rgb(208, 209, 210);
-  border-top-color: rgb(208, 209, 210);
+    canvas: `html body .canvas-node {
+  border-color: rgb(208, 209, 210);
+}
+
+html body .canvas-node-content {
   color: rgb(208, 209, 210);
 }
 
-html body .metadata {
+html body .canvas-node-file {
+  color: rgb(208, 209, 210);
+}
+
+html body .canvas-node-group {
+  border-color: rgb(208, 209, 210);
+}
+
+html body .canvas-sidebar {
+  background-color: rgb(43, 45, 49);
+  border-color: rgb(208, 209, 210);
+}`,
+    bases: `html body .bases-table thead th {
+  border-color: rgb(33, 35, 38);
+  color: rgb(208, 209, 210);
+  font-weight: 700;
+}`,
+    properties: `html body .metadata {
   border-bottom-color: rgb(33, 35, 38);
   border-left-color: rgb(33, 35, 38);
   border-right-color: rgb(33, 35, 38);
@@ -1703,6 +1648,57 @@ html body .metadata-properties {
   border-top-color: rgb(141, 145, 150);
   color: rgb(141, 145, 150);
   font-family: "Catamaran SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html body .note-properties {
+  border-color: rgb(33, 35, 38);
+}
+
+html body .note-properties-key {
+  color: rgb(141, 145, 150);
+}
+
+html body .note-properties-row {
+  border-color: rgb(141, 145, 150);
+}
+
+html body .note-properties-tags {
+  color: rgb(176, 136, 231);
+}
+
+html body .note-properties-value {
+  color: rgb(141, 145, 150);
+}
+
+html body div#quartz-root {
+  background-color: rgb(46, 48, 53);
+  color: rgb(208, 209, 210);
+}
+
+html body ol.overflow {
+  border-bottom-color: rgb(208, 209, 210);
+  border-left-color: rgb(208, 209, 210);
+  border-right-color: rgb(208, 209, 210);
+  border-top-color: rgb(208, 209, 210);
+}`,
+    stacked: `html body .stacked-page {
+  background-color: rgb(43, 45, 49);
+  border-color: rgb(208, 209, 210);
+}
+
+html body .stacked-page-header {
+  background-color: rgb(33, 35, 38);
+}
+
+html body .stacked-page.active {
+  border-color: rgb(208, 209, 210);
+}`,
+    misc: `html body .katex-display {
+  border-bottom-color: rgb(208, 209, 210);
+  border-left-color: rgb(208, 209, 210);
+  border-right-color: rgb(208, 209, 210);
+  border-top-color: rgb(208, 209, 210);
+  color: rgb(208, 209, 210);
 }
 
 html body .navigation-progress {
